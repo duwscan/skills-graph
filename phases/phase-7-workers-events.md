@@ -1,0 +1,273 @@
+# Phase 7: Workers, Events & Batch Processing
+
+> **Timeline:** Week 13-14
+> **Dependencies:** Phase 4 (Extraction), Phase 5 (Discovery), Phase 6 (Lifecycle)
+> **Unlocks:** Phase 8 (Observability & QA)
+
+---
+
+## Goal
+
+Implement background workers for async extraction, batch processing, event-driven Typesense sync, and discovery signal aggregation using Redis Streams. This decouples heavy processing from the API request/response cycle.
+
+---
+
+## 7.1 Redis Streams Infrastructure
+
+### Context
+
+Redis Streams provides a lightweight message queue with consumer groups, acknowledgment, and dead-letter handling. It reuses the existing Redis infrastructure (no Kafka needed at this scale).
+
+### Tasks
+
+| # | Task | Detail | Files |
+|---|---|---|---|
+| 7.1.1 | Stream producer | `publishEvent(stream, event)` — uses `XADD` to append event to a Redis Stream. Auto-generates event ID. Serializes event payload as flat key-value pairs (Redis Streams requirement) | `src/services/events/producer.ts` |
+| 7.1.2 | Stream consumer base | Abstract `StreamConsumer` class: (1) `XREADGROUP` with block timeout. (2) Process each message via abstract `handleMessage()`. (3) `XACK` on success. (4) On failure: retry up to `STREAM_CONSUMER_MAX_RETRIES` times (see `src/config/constants.ts`), then move to dead-letter stream (`{stream}:dead`). (5) Graceful shutdown on SIGTERM | `src/services/events/consumer.ts` |
+| 7.1.3 | Consumer group setup script | `bun run streams:setup` — create consumer groups for all streams: `extraction:jobs` (group: `extractors`), `discovery:signals` (group: `discoverers`), `sync:typesense` (group: `syncers`). Idempotent (use `XGROUP CREATE ... MKSTREAM`) | `src/scripts/streams-setup.ts` |
+| 7.1.4 | Stream names constants | Define all stream names as constants: `STREAMS.EXTRACTION_JOBS`, `STREAMS.DISCOVERY_SIGNALS`, `STREAMS.TYPESENSE_SYNC` | `src/services/events/constants.ts` |
+
+### Checklist
+
+- [ ] `publishEvent("extraction:jobs", { doc_id, text })` adds message to stream
+- [ ] `StreamConsumer` reads messages with `XREADGROUP` and consumer group
+- [ ] `StreamConsumer` acknowledges processed messages with `XACK`
+- [ ] `StreamConsumer` retries failed messages up to `STREAM_CONSUMER_MAX_RETRIES` times (see `src/config/constants.ts`)
+- [ ] `StreamConsumer` moves poison messages to dead-letter stream
+- [ ] `StreamConsumer` shuts down gracefully on SIGTERM
+- [ ] `bun run streams:setup` creates all consumer groups
+- [ ] `bun run streams:setup` is idempotent (running twice doesn't error)
+- [ ] Dead-letter messages are inspectable: `XRANGE extraction:jobs:dead - +`
+
+---
+
+## 7.2 Batch Extraction Worker
+
+### Context
+
+The batch extraction API accepts multiple documents, queues them as individual jobs in Redis Streams, and workers process them asynchronously. Users poll for results via a job status endpoint.
+
+### Tasks
+
+| # | Task | Detail | Files |
+|---|---|---|---|
+| 7.2.1 | Batch job model | Store batch state in Redis: key `batch:{jobId}`, value `{ id, total, completed, failed, status, results: {}, created_at, completed_at }`. Status: `queued` → `processing` → `completed` / `partial_failure` | `src/services/extraction/batch.ts` |
+| 7.2.2 | `POST /api/extract/batch` | Accept `{ documents: [{ id: string, text: string, metadata?: object }], options?: ExtractOptions }`. Max `BATCH_MAX_DOCUMENTS` documents (see `src/config/constants.ts`). Generate `jobId` (nanoid). Create batch state in Redis. Publish each document as a message to `extraction:jobs` stream with `batch_id` and `doc_id`. Return `{ job_id, document_count, status: "queued" }` | `src/routes/extract.ts` |
+| 7.2.3 | `GET /api/extract/jobs/:jobId` | Return batch job status. Include: `{ id, total, completed, failed, status, results: { [doc_id]: ExtractionResult }, created_at, completed_at, progress_pct }`. If `status = "completed"`, include all results | `src/routes/extract.ts` |
+| 7.2.4 | Extraction worker | Extends `StreamConsumer`. Consumes from `extraction:jobs`. For each message: (1) run `SkillExtractionPipeline.extract(text)`, (2) store result in batch state (`HSET batch:{jobId} doc:{docId} <result>`), (3) increment completed count, (4) check if batch is done → update status, (5) ACK message | `src/workers/extraction-worker.ts` |
+| 7.2.5 | Concurrency limit | Each worker processes up to `EXTRACTION_WORKER_CONCURRENCY` documents concurrently (semaphore). Configurable via `EXTRACTION_WORKER_CONCURRENCY` env var (see `src/config/constants.ts`) | `src/workers/extraction-worker.ts` |
+| 7.2.6 | Batch TTL | Batch results in Redis expire after `BATCH_RESULT_TTL_SECONDS` (see `src/config/constants.ts`). Set TTL on batch key after completion | `src/services/extraction/batch.ts` |
+
+### Checklist
+
+- [ ] `POST /api/extract/batch` accepts up to `BATCH_MAX_DOCUMENTS` documents (see `src/config/constants.ts`)
+- [ ] `POST /api/extract/batch` returns immediately with job_id and `queued` status
+- [ ] Worker picks up jobs from `extraction:jobs` stream
+- [ ] Worker processes documents and stores results in Redis
+- [ ] `GET /api/extract/jobs/:jobId` shows progress (completed/total)
+- [ ] `GET /api/extract/jobs/:jobId` returns all results when batch is complete
+- [ ] Batch status transitions: `queued` → `processing` → `completed`
+- [ ] Failed documents: batch status becomes `partial_failure` with error details
+- [ ] Concurrency: worker processes max `EXTRACTION_WORKER_CONCURRENCY` documents simultaneously (see `src/config/constants.ts`)
+- [ ] Results expire after `BATCH_RESULT_TTL_SECONDS` (see `src/config/constants.ts`)
+- [ ] `GET /api/extract/jobs/nonexistent` returns 404
+
+---
+
+## 7.3 Discovery Signal Worker
+
+### Context
+
+The extraction pipeline's `discovered_candidates` are published as signals to a Redis Stream. The discovery worker aggregates these signals and triggers the full discovery pipeline when a candidate reaches a threshold count.
+
+### Tasks
+
+| # | Task | Detail | Files |
+|---|---|---|---|
+| 7.3.1 | Signal publishing | In `SkillExtractionPipeline`, after extraction: if `discovered_candidates` is non-empty, publish each to `discovery:signals` stream with `{ surface_form, normalized_form, category_guess, source }` | `src/services/extraction/pipeline.ts` |
+| 7.3.2 | Signal aggregation | The worker maintains counts in Redis: `signal:{normalized_form}` → count. Increment on each signal. When count reaches `DISCOVERY_SIGNAL_THRESHOLD` (see `src/config/constants.ts`, configurable via `DISCOVERY_SIGNAL_THRESHOLD` env var), trigger full discovery | `src/workers/discovery-worker.ts` |
+| 7.3.3 | Discovery trigger | When threshold reached: (1) Check if candidate already exists in review queue → skip if pending. (2) Run `DiscoveryService.deduplicateCandidate()`. (3) Add to review queue if passes dedup. (4) Reset signal counter | `src/workers/discovery-worker.ts` |
+| 7.3.4 | Signal expiry | Signal counters expire after `DISCOVERY_SIGNAL_TTL_SECONDS` (see `src/config/constants.ts`; if a candidate never reaches threshold, it's forgotten) | `src/workers/discovery-worker.ts` |
+
+### Checklist
+
+- [ ] Extraction pipeline publishes `discovered_candidates` to `discovery:signals` stream
+- [ ] Worker reads signals and increments counters in Redis
+- [ ] Counter reaches threshold → triggers deduplication + review queue add
+- [ ] Already-queued candidates are skipped (no duplicate queue entries)
+- [ ] Signal counters have `DISCOVERY_SIGNAL_TTL_SECONDS` TTL (see `src/config/constants.ts`)
+- [ ] Threshold is configurable via `DISCOVERY_SIGNAL_THRESHOLD` env var (see `src/config/constants.ts`)
+
+---
+
+## 7.4 Typesense Sync Worker
+
+### Context
+
+Instead of synchronously updating Typesense on every skill mutation (which slows down the API), mutations are published to a Redis Stream and a worker processes them asynchronously. The worker batches updates within a short time window for efficiency.
+
+### Tasks
+
+| # | Task | Detail | Files |
+|---|---|---|---|
+| 7.4.1 | PG NOTIFY → Stream bridge | The PG NOTIFY listener (Phase 6.3.2) publishes skill mutation events to `sync:typesense` stream: `{ entity_type: "skill", entity_id, mutation_type }` | `src/services/changelog/listener.ts` |
+| 7.4.2 | Sync worker | Consumes from `sync:typesense`. Collects events within a `TYPESENSE_SYNC_DEBOUNCE_MS` debounce window (see `src/config/constants.ts`). Then batch-processes: for each unique `entity_id`, re-fetch the skill with aliases and upsert into Typesense. For deprecated/merged skills, remove from Typesense | `src/workers/typesense-sync-worker.ts` |
+| 7.4.3 | Idempotent sync | Multiple events for the same skill within the debounce window are collapsed into a single Typesense operation | `src/workers/typesense-sync-worker.ts` |
+
+### Checklist
+
+- [ ] PG NOTIFY listener publishes events to `sync:typesense` stream
+- [ ] Worker reads events and debounces within `TYPESENSE_SYNC_DEBOUNCE_MS` window (see `src/config/constants.ts`)
+- [ ] Skill create/update → upsert in Typesense
+- [ ] Skill deprecate/merge → remove from Typesense
+- [ ] Multiple rapid updates to same skill → single Typesense upsert
+- [ ] Typesense stays in sync within 1-2 seconds of any mutation
+
+---
+
+## 7.5 Cache Invalidation
+
+### Tasks
+
+| # | Task | Detail | Files |
+|---|---|---|---|
+| 7.5.1 | Invalidation on mutations | In the PG NOTIFY listener: when a skill is updated/deprecated/merged, delete `taxonomy:skill:{id}` from Redis cache. For merges, also invalidate the survivor's cache | `src/services/changelog/listener.ts` |
+| 7.5.2 | Extraction cache consideration | Extraction cache entries (`extract:{hash}`) reference skill IDs. When a skill is modified, these cache entries become stale. Strategy: set short-enough TTL (`EXTRACTION_CACHE_TTL_SECONDS` — see `src/config/constants.ts`) and accept eventual consistency. Don't try to invalidate extraction cache (too many entries, unclear which reference which skills) | Documentation |
+
+### Checklist
+
+- [ ] Skill update → `taxonomy:skill:{id}` deleted from Redis
+- [ ] Skill deprecate → `taxonomy:skill:{id}` deleted from Redis
+- [ ] Skill merge → both source and survivor cache keys deleted
+- [ ] Cache miss after invalidation → fresh data fetched from DB
+
+---
+
+## 7.6 Worker Entry Point & Management
+
+### Tasks
+
+| # | Task | Detail | Files |
+|---|---|---|---|
+| 7.6.1 | Worker entry point | `src/workers/index.ts` — starts all workers: extraction, discovery, typesense-sync. Each worker runs in the same Bun process with independent event loops. Script: `bun run workers` | `src/workers/index.ts` |
+| 7.6.2 | Graceful shutdown | On SIGTERM: stop consuming new messages, wait for in-flight messages to complete (timeout: `GRACEFUL_SHUTDOWN_TIMEOUT_MS` — see `src/config/constants.ts`), close DB and Redis connections, exit | `src/workers/index.ts` |
+| 7.6.3 | Worker health logging | Each worker logs startup, message processing (debug level), errors, and shutdown. Log format: `{ worker, event, message_id, duration_ms }` | `src/workers/index.ts` |
+| 7.6.4 | npm scripts | `bun run workers` — start all workers. `bun run worker:extraction` — start only extraction worker. `bun run worker:discovery` — start only discovery worker | `package.json` |
+
+### Checklist
+
+- [ ] `bun run workers` starts all 3 workers
+- [ ] Workers log startup: `"Extraction worker started, consuming from extraction:jobs"`
+- [ ] Workers process messages and log results
+- [ ] `Ctrl+C` / SIGTERM triggers graceful shutdown
+- [ ] Workers wait for in-flight messages before exiting
+- [ ] Individual worker scripts work (`bun run worker:extraction`)
+
+---
+
+## Phase 7 Completion Verification
+
+```bash
+# Set up streams
+bun run streams:setup
+
+# Start workers in background
+bun run workers &
+WORKER_PID=$!
+
+# Submit batch extraction
+RESULT=$(curl -s -X POST http://localhost:3000/api/extract/batch \
+  -H "Content-Type: application/json" \
+  -d '{
+    "documents": [
+      {"id": "doc1", "text": "Python developer with Django and React experience"},
+      {"id": "doc2", "text": "Machine Learning engineer skilled in TensorFlow and PyTorch"},
+      {"id": "doc3", "text": "DevOps specialist with Kubernetes and Terraform expertise"}
+    ]
+  }')
+JOB_ID=$(echo $RESULT | jq -r '.job_id')
+echo "Batch job: $JOB_ID"
+
+# Poll for results (should complete within 30s)
+sleep 10
+curl "http://localhost:3000/api/extract/jobs/$JOB_ID" | jq '.status, .completed, .total'
+# → "completed", 3, 3
+
+# Get full results
+curl "http://localhost:3000/api/extract/jobs/$JOB_ID" | jq '.results.doc1.skills[:2]'
+
+# Test Typesense sync: update a skill and verify search is updated
+curl -X PATCH http://localhost:3000/api/skills/<uuid> \
+  -d '{"description": "Updated for sync test"}'
+sleep 2
+curl "http://localhost:3000/api/skills/search?q=<skill-name>" | jq '.[0].description'
+# → "Updated for sync test"
+
+# Test discovery signal aggregation
+for i in {1..5}; do
+  curl -X POST http://localhost:3000/api/extract \
+    -d '{"text": "Expert in CrewAI multi-agent framework"}'
+done
+sleep 5
+curl http://localhost:3000/api/review-queue | jq '.[].candidate_name'
+# → should include "CrewAI"
+
+# Graceful shutdown
+kill $WORKER_PID
+wait $WORKER_PID
+
+bun test src/workers/
+echo "Phase 7 complete ✓"
+```
+
+---
+
+## Phase 7 Master Checklist
+
+### 7.1 Redis Streams Infrastructure
+- [ ] `publishEvent()` producer function
+- [ ] `StreamConsumer` base class with XREADGROUP, XACK, retry, dead-letter
+- [ ] `bun run streams:setup` creates consumer groups
+- [ ] Stream name constants defined
+
+### 7.2 Batch Extraction
+- [ ] `POST /api/extract/batch` queues documents and returns job_id
+- [ ] `GET /api/extract/jobs/:jobId` shows progress and results
+- [ ] Extraction worker processes jobs concurrently (max `EXTRACTION_WORKER_CONCURRENCY` — see `src/config/constants.ts`)
+- [ ] Batch results expire after `BATCH_RESULT_TTL_SECONDS` (see `src/config/constants.ts`)
+
+### 7.3 Discovery Signal Worker
+- [ ] Extraction pipeline publishes discovered_candidates
+- [ ] Worker aggregates signals with Redis counters
+- [ ] Threshold triggers → review queue entry
+- [ ] Signal counters expire after `DISCOVERY_SIGNAL_TTL_SECONDS` (see `src/config/constants.ts`)
+
+### 7.4 Typesense Sync Worker
+- [ ] PG NOTIFY → Redis Stream bridge
+- [ ] Worker debounces and batch-upserts to Typesense
+- [ ] Typesense stays in sync within 1-2 seconds
+
+### 7.5 Cache Invalidation
+- [ ] Skill mutations invalidate taxonomy cache
+- [ ] Merge invalidates both source and survivor caches
+
+### 7.6 Worker Management
+- [ ] `bun run workers` starts all workers
+- [ ] Graceful shutdown with in-flight message completion
+- [ ] Health logging for all workers
+
+---
+
+## Future Optimization: Provider Batch APIs
+
+> **Status:** Deferred — implement when batch volume exceeds 10,000 documents/day or cost optimization becomes a priority.
+
+ARCHITECTURE.md §4.5 describes an **Offline (batch)** processing mode using Anthropic and OpenAI Batch APIs, which offer a **50% cost reduction** with a 24-hour SLA. This phase implements batch processing via Redis Streams (near-real-time), which is sufficient for initial deployment.
+
+When ready to optimize, add a `BatchAPIService` that:
+1. Collects extraction requests into JSONL files matching the Anthropic/OpenAI batch format.
+2. Submits via `POST /v1/messages/batches` (Anthropic) or the OpenAI Batch API.
+3. Polls for completion (24h SLA).
+4. Parses results and stores them in the same batch state format as the Redis Streams worker.
+
+This is a pure cost optimization — functionality is identical to the current Redis Streams approach.
