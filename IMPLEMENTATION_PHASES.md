@@ -1,7 +1,7 @@
 # Skills Graph — Implementation Phases
 
 > **Reference:** [ARCHITECTURE.md](./ARCHITECTURE.md)
-> **Stack:** Java 21 + Spring Boot 3 + Spring AI + PostgreSQL (pgvector, ltree) + Redis
+> **Stack:** Java 21 + Spring Boot 3 + Spring AI + Neo4j 5 + PostgreSQL (pgvector) + Redis
 > **Context:** LLM-First Skills Graph powering a Recruitment Agency Platform
 
 ---
@@ -40,16 +40,17 @@ skills-graph/
 │   │   │   ├── controller/                   # Spring @RestController classes
 │   │   │   ├── service/                      # Spring @Service classes
 │   │   │   ├── dto/                          # Java records + @Valid DTOs
-│   │   │   ├── domain/                       # JPA @Entity classes
-│   │   │   ├── repository/                   # Spring Data JPA repositories
+│   │   │   ├── domain/                       # @Node (Neo4j) domain classes
+│   │   │   ├── repository/                   # Spring Data Neo4j Neo4jRepository interfaces
 │   │   │   └── util/                         # Utilities (SlugUtils, etc.)
 │   │   └── resources/
 │   │       ├── application.yml               # All configuration (replaces separate env config files)
 │   │       ├── application-dev.yml           # Dev overrides
+│   │       ├── neo4j/
+│   │       │   └── schema.cypher             # Neo4j constraints and indexes
 │   │       └── db/migration/                 # Flyway SQL migration files
-│   │           └── V1__initial_schema.sql    # Full schema from ARCHITECTURE.md §2.8
+│   │           └── V1__embedding_tables.sql  # PostgreSQL embedding + changelog tables only
 │   └── src/test/java/com/skillsgraph/
-│       ├── java/com/skillsgraph/             # JUnit 5 + Spring Boot Test
 │       └── resources/
 │           └── fixtures/                     # Seed data, golden set JSON
 ├── pom.xml                                   # Maven build descriptor
@@ -63,9 +64,9 @@ skills-graph/
 
 | # | Task | Detail |
 |---|---|---|
-| 1.1.1 | Initialize Maven project | Use Spring Initializr or `./mvnw archetype:generate`. Add `spring-boot-starter-web`, `spring-boot-starter-data-jpa`, `spring-boot-starter-data-redis`, `spring-ai-anthropic-spring-boot-starter`, `spring-ai-openai-spring-boot-starter`, `flyway-core` |
+| 1.1.1 | Initialize Maven project | Use Spring Initializr or `./mvnw archetype:generate`. Add `spring-boot-starter-web`, `spring-boot-starter-data-neo4j`, `spring-boot-starter-data-jpa`, `spring-boot-starter-data-redis`, `spring-ai-anthropic-spring-boot-starter`, `spring-ai-openai-spring-boot-starter`, `flyway-core` |
 | 1.1.2 | Create `pom.xml` | Include Spring Boot 3 parent, Java 21, Spring AI BOM, postgresql JDBC driver, Flyway, Lettuce (Redis), springdoc-openapi |
-| 1.1.3 | Create `docker-compose.yml` | PostgreSQL 16 with `pgvector`, `ltree`, `pg_trgm` extensions enabled; Redis 7 |
+| 1.1.3 | Create `docker-compose.yml` | PostgreSQL 16 with `pgvector`, `pg_trgm` extensions enabled; Redis 7; Neo4j 5 with APOC plugin |
 | 1.1.4 | Environment config | `src/main/resources/application.yml` — all configuration via Spring `@ConfigurationProperties`: `DATABASE_URL`, `REDIS_URL`, `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `HELICONE_API_KEY` (optional) |
 | 1.1.5 | Centralized constants | `AppConstants.java` — all tunable values (thresholds, TTLs, limits, co-occurrence params) as `static final` fields |
 | 1.1.6 | Spring AI configuration | `AiConfig.java` — configure `ChatClient` beans (fast/standard/complex tiers) and `EmbeddingModel` bean |
@@ -89,8 +90,23 @@ services:
     ports: ["6379:6379"]
     command: redis-server --appendonly yes
 
+  neo4j:
+    image: neo4j:5
+    ports: ["7474:7474", "7687:7687"]
+    environment:
+      NEO4J_AUTH: neo4j/skills_dev
+      NEO4J_PLUGINS: '["apoc"]'
+    volumes:
+      - neo4jdata:/data
+    healthcheck:
+      test: ["CMD", "neo4j", "status"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
 volumes:
   pgdata:
+  neo4jdata:
 ```
 
 ### 1.2 Database Schema & Migrations
@@ -99,13 +115,13 @@ volumes:
 
 | # | Task | Detail |
 |---|---|---|
-| 1.2.1 | Create initial migration | `src/main/resources/db/migration/V1__initial_schema.sql` — the full schema from ARCHITECTURE.md §2.8: `skills`, `skill_aliases`, `skill_relationships`, `skill_co_occurrences`, `locale_config`, `graph_changelog` tables with all CHECK constraints, UNIQUE constraints, and indexes |
-| 1.2.2 | Enable extensions | `CREATE EXTENSION IF NOT EXISTS ltree, vector, pg_trgm;` in migration |
+| 1.2.1 | Create Neo4j schema | `src/main/resources/neo4j/schema.cypher` — Neo4j constraints (skill_id, externalId, slug, alias_id) and fulltext/property indexes. Applied on startup via `CommandLineRunner` |
+| 1.2.2 | Create PostgreSQL migration | `src/main/resources/db/migration/V1__embedding_tables.sql` — `skill_embeddings`, `alias_embeddings`, `locale_config`, `graph_changelog` tables. Enable `vector`, `pg_trgm` extensions |
 | 1.2.3 | Create HNSW vector indexes | `idx_skills_embedding`, `idx_aliases_embedding` using `vector_cosine_ops` |
-| 1.2.4 | Create trigram indexes | `idx_skills_name_trgm`, `idx_aliases_surface_trgm` for fuzzy text search |
+| 1.2.4 | Create trigram indexes | `idx_skills_name_trgm` for fuzzy text search on skill_id |
 | 1.2.5 | Create graph version sequence | `CREATE SEQUENCE graph_version_seq;` for monotonic version numbers |
-| 1.2.6 | Migration runner script | `./mvnw flyway:migrate` command to apply migrations in order |
-| 1.2.7 | Seed data script | `./mvnw spring-boot:run -Dspring-boot.run.arguments=--seed` — insert `locale_config` rows (en, vi, fr, etc.), insert 5-10 root skill categories (Technology, Business, Design, Science, Language) to bootstrap the taxonomy |
+| 1.2.6 | Migration runner script | `./mvnw flyway:migrate` command to apply PostgreSQL migrations in order |
+| 1.2.7 | Seed data script | `./mvnw spring-boot:run -Dspring-boot.run.arguments=--seed` — insert `locale_config` rows (en, vi, fr, etc.), create 5-10 root `(:Skill)` nodes in Neo4j (Technology, Business, Design, Science, Language) to bootstrap the taxonomy |
 
 ### 1.3 Database Client & ORM Layer
 
@@ -146,10 +162,10 @@ docker compose up -d
 curl http://localhost:8080/actuator/health
 # → {"status":"UP","components":{"db":{"status":"UP"},"redis":{"status":"UP"}}}
 
-# Verify database tables exist
+# Verify PostgreSQL tables exist
 docker exec -it skills-graph-postgres-1 psql -U skills -d skills_graph \
   -c "\\dt"
-# → skills, skill_aliases, skill_relationships, skill_co_occurrences, locale_config, graph_changelog
+# → skill_embeddings, alias_embeddings, locale_config, graph_changelog
 ```
 
 ---
@@ -177,30 +193,20 @@ docker exec -it skills-graph-postgres-1 psql -U skills -d skills_graph \
 | # | Task | Detail |
 |---|---|---|
 | 2.2.1 | `SkillService.create()` | Insert skill row, auto-generate `external_id` (e.g., `SK-{UUID.randomUUID()}`), auto-generate `slug`, create initial alias (canonical_name as primary alias for `en`), record in `graph_changelog` |
-| 2.2.2 | `SkillService.getById()` | Fetch skill with all aliases and direct edges (1 hop). Join across `skills`, `skill_aliases`, `skill_relationships` |
+| 2.2.2 | `SkillService.getById()` | Fetch skill with all aliases and direct edges (1 hop). Use Cypher `MATCH (s:Skill)-[:HAS_ALIAS]->(a:Alias), (s)-[r]->()` pattern via `Neo4jTemplate` |
 | 2.2.3 | `SkillService.update()` | Partial update of skill fields. Increment `version`, update `updated_at`, record in changelog |
 | 2.2.4 | `SkillService.list()` | Paginated listing with filters: `status`, `category`, `source`. Support `?q=` for trigram fuzzy search on `canonical_name` |
-| 2.2.5 | `SkillService.getAncestors()` | Recursive CTE or ltree `@>` query to get all ancestors up to root(s) |
-| 2.2.6 | `SkillService.getDescendants()` | Recursive CTE or ltree `<@` query to get all descendants to specified depth |
+| 2.2.5 | `SkillService.getAncestors()` | Cypher variable-length pattern `(s)<-[:PARENT_OF*1..depth]-(a:Skill)` to get all ancestors up to root(s) |
+| 2.2.6 | `SkillService.getDescendants()` | Cypher variable-length pattern `(parent:Skill)-[:PARENT_OF*1..depth]->(s:Skill)` to get all descendants to specified depth |
 
 **Recursive CTE for ancestors:**
 
-```sql
-WITH RECURSIVE ancestors AS (
-    SELECT target_skill_id AS skill_id, 1 AS depth
-    FROM skill_relationships
-    WHERE source_skill_id = $1
-      AND relationship_type = 'child_of'
-      AND status = 'active'
-    UNION ALL
-    SELECT r.target_skill_id, a.depth + 1
-    FROM skill_relationships r
-    JOIN ancestors a ON r.source_skill_id = a.skill_id
-    WHERE r.relationship_type = 'child_of'
-      AND r.status = 'active'
-      AND a.depth < 10
-)
-SELECT s.* FROM skills s JOIN ancestors a ON s.id = a.skill_id;
+```cypher
+// Find all ancestors up to a configurable depth
+MATCH path = (s:Skill {id: $skillId})<-[:PARENT_OF*1..$depth]-(ancestor:Skill)
+WHERE ancestor.status = 'active'
+RETURN DISTINCT ancestor, length(path) AS depth
+ORDER BY depth ASC
 ```
 
 ### 2.3 Alias Service
@@ -297,6 +303,8 @@ curl http://localhost:3000/api/taxonomy/changelog
 
 **Goal:** Add vector embedding generation for all skills/aliases, pgvector similarity search, and PostgreSQL full-text search / Typesense full-text search. This phase enables the RAG retrieval step needed by Phase 4.
 
+> **Storage split:** Graph structure (skills, aliases, relationships) lives in Neo4j. Vector embeddings live in PostgreSQL (`skill_embeddings`, `alias_embeddings` tables). `VectorSearchService` queries PostgreSQL/pgvector. `SkillService` queries Neo4j for graph data.
+
 ### 3.1 Embedding Service
 
 | # | Task | Detail |
@@ -304,8 +312,8 @@ curl http://localhost:3000/api/taxonomy/changelog
 | 3.1.1 | `EmbeddingService` class | `EmbeddingService.java` — autowires Spring AI `EmbeddingModel` (text-embedding-3-large, 1024 dims). Provides `embedText(String)` and `embedTexts(List<String>)` with Redis caching |
 | 3.1.2 | Single embedding | `embed(text: string): Promise<number[]>` — embed a single text string. Check Redis cache first (`embed:{hash(text)}`), return cached if found, otherwise call Spring AI and cache with 30-day TTL |
 | 3.1.3 | Batch embedding | `embeddingService.embedTexts(List<String>)` — embed multiple texts. Spring AI handles batch limits. Cache each result individually in Redis |
-| 3.1.4 | Embedding on skill create/update | Hook into `SkillService.create()` and `SkillService.update()` — whenever `canonical_name` or `description` changes, re-embed `"${name}: ${description}"` and store in `skills.embedding` |
-| 3.1.5 | Embedding on alias create | Hook into `AliasService.create()` — embed the alias `surface_form` and store in `skill_aliases.alias_embedding` |
+| 3.1.4 | Embedding on skill create/update | Hook into `SkillService.create()` and `SkillService.update()` — whenever `canonicalName` or `description` changes, re-embed `"${name}: ${description}"` and INSERT/UPDATE into `skill_embeddings` PostgreSQL table (keyed by Neo4j skill id) |
+| 3.1.5 | Embedding on alias create | Hook into `AliasService.create()` — embed the alias `surfaceForm` and INSERT/UPDATE into `alias_embeddings` PostgreSQL table (keyed by Neo4j alias node id) |
 | 3.1.6 | Bulk re-embedding runner | `EmbedAllRunner --embed-all` — iterates all skills + aliases missing embeddings, calls `embedTexts()` in batches of 100, updates rows. For initial backfill or after model change |
 
 ### 3.2 Vector Search (pgvector)
@@ -313,7 +321,7 @@ curl http://localhost:3000/api/taxonomy/changelog
 | # | Task | Detail |
 |---|---|---|
 | 3.2.1 | `VectorSearchService` | `src/main/java/com/skillsgraph/service/VectorSearchService.java` — nearest neighbor search against skill embeddings |
-| 3.2.2 | `findSimilarSkills()` | Given an embedding, query pgvector for top-K nearest active skills. SQL: `SELECT *, 1 - (embedding <=> $1::vector) AS similarity FROM skills WHERE status = 'active' ORDER BY embedding <=> $1::vector LIMIT $2` |
+| 3.2.2 | `findSimilarSkills()` | Given an embedding, query pgvector for top-K nearest skills. SQL: `SELECT se.skill_id, 1 - (se.embedding <=> $1::vector) AS similarity FROM skill_embeddings se ORDER BY se.embedding <=> $1::vector LIMIT $2`. Active skill IDs are maintained in a Redis set (synced from Neo4j) to filter results, or a `status` column is denormalized into the embedding table. Graph context is fetched from Neo4j via `Neo4jTemplate`. |
 | 3.2.3 | `findSimilarAliases()` | Same but against `skill_aliases.alias_embedding` — useful for duplicate alias detection |
 | 3.2.4 | `findCandidatesForChunk()` | The RAG retrieval function: given a text chunk embedding, return top-100 skills with `{ id, external_id, canonical_name, similarity }`. This is the core function used by the extraction pipeline in Phase 4 |
 | 3.2.5 | Duplicate detection | `checkDuplicate(name: string, description?: string)` — embed the candidate, search for nearest neighbors with similarity > 0.90. Return `{ isDuplicate: boolean, matches: Skill[] }` |
@@ -758,7 +766,7 @@ graph TD
 
 | Phase | Focus | Key Deliverables | Critical Files |
 |---|---|---|---|
-| **1** | Foundation | Spring Boot scaffold, PostgreSQL schema (incl. co-occurrence table), Redis client, Spring AI config, centralized constants | `src/main/java/com/skillsgraph/SkillsGraphApplication.java`, `src/main/resources/db/migration/V1__initial_schema.sql`, `docker-compose.yml`, `src/main/java/com/skillsgraph/config/AppConstants.java` |
+| **1** | Foundation | Spring Boot scaffold, Neo4j + PostgreSQL schema, Redis client, Spring AI config, centralized constants | `src/main/java/com/skillsgraph/SkillsGraphApplication.java`, `src/main/resources/neo4j/schema.cypher`, `src/main/resources/db/migration/V1__embedding_tables.sql`, `docker-compose.yml`, `src/main/java/com/skillsgraph/config/AppConstants.java` |
 | **2** | CRUD API | All taxonomy endpoints, quality guardrails, changelog, empirical provenance support | `src/main/java/com/skillsgraph/service/SkillService.java`, `src/main/java/com/skillsgraph/service/GuardrailsService.java`, `src/main/java/com/skillsgraph/controller/SkillController.java` |
 | **3** | Search & Embeddings | Embedding service, pgvector search, PostgreSQL full-text search / Typesense integration, hybrid search | `src/main/java/com/skillsgraph/service/EmbeddingService.java`, `src/main/java/com/skillsgraph/service/VectorSearchService.java`, `src/main/java/com/skillsgraph/service/FullTextSearchService.java` |
 | **4** | Extraction | RAG pipeline, section-aware chunker, section weighting, prompt engineering, skill expansion, co-occurrence recording, extraction API | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java`, `src/main/java/com/skillsgraph/service/extraction/SectionDetector.java`, `src/main/java/com/skillsgraph/service/extraction/DocumentChunker.java` |

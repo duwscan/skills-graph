@@ -30,18 +30,21 @@ skills-graph/
 │   │   │   ├── config/
 │   │   │   │   ├── AppProperties.java        # @ConfigurationProperties (env vars)
 │   │   │   │   ├── AppConstants.java         # Centralized configurable values (thresholds, TTLs, limits)
+│   │   │   │   ├── Neo4jConfig.java          # Spring Data Neo4j configuration
 │   │   │   │   └── AiConfig.java             # Spring AI provider configuration
 │   │   │   ├── controller/                   # @RestController endpoints
 │   │   │   ├── service/                      # @Service business logic
 │   │   │   ├── dto/                          # Request/response records + enums
-│   │   │   ├── entity/                       # @Entity JPA models
-│   │   │   ├── repository/                   # Spring Data JPA repositories
+│   │   │   ├── domain/                       # @Node Spring Data Neo4j models
+│   │   │   ├── repository/                   # Spring Data Neo4j Neo4jRepository interfaces
 │   │   │   └── util/                         # Utilities (SlugUtils, etc.)
 │   │   └── resources/
 │   │       ├── application.yml               # Main configuration
 │   │       ├── application-dev.yml           # Dev overrides
-│   │       └── db/migration/                 # Flyway SQL migration files
-│   │           └── V1__initial_schema.sql
+│   │       ├── neo4j/
+│   │       │   └── schema.cypher             # Neo4j constraints and indexes
+│   │       └── db/migration/                 # Flyway SQL migration files (PostgreSQL only)
+│   │           └── V1__embedding_tables.sql  # PostgreSQL embedding + changelog tables
 │   └── test/
 │       ├── java/com/skillsgraph/             # JUnit 5 + Spring Boot Test
 │       └── resources/
@@ -57,7 +60,7 @@ skills-graph/
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 1.1.1 | Initialize Maven project | Use Spring Initializr (start.spring.io) with: Spring Boot 3, Java 21, Group `com.skillsgraph`. Add starters: `spring-boot-starter-web`, `spring-boot-starter-data-jpa`, `spring-boot-starter-data-redis`, `flyway-core` | `pom.xml`, `mvnw` |
+| 1.1.1 | Initialize Maven project | Use Spring Initializr (start.spring.io) with: Spring Boot 3, Java 21, Group `com.skillsgraph`. Add starters: `spring-boot-starter-web`, `spring-boot-starter-data-neo4j`, `spring-boot-starter-data-jpa`, `spring-boot-starter-data-redis`, `flyway-core` | `pom.xml`, `mvnw` |
 | 1.1.2 | Add Spring AI dependencies | Spring AI BOM + starters: `spring-ai-anthropic-spring-boot-starter`, `spring-ai-openai-spring-boot-starter`. Pgvector JDBC extension | `pom.xml` |
 | 1.1.3 | Add tooling dependencies | Checkstyle, SpotBugs, Lombok (optional), springdoc-openapi, Testcontainers, postgresql JDBC driver | `pom.xml` |
 | 1.1.4 | Create `.env.example` | Document all required and optional env vars with example values | `.env.example` |
@@ -66,8 +69,13 @@ skills-graph/
 ### `.env.example`
 
 ```env
-# Database
+# Database (PostgreSQL - embeddings + changelog)
 DATABASE_URL=postgresql://skills:skills_dev@localhost:5432/skills_graph
+
+# Neo4j (graph storage)
+NEO4J_URI=bolt://localhost:7687
+NEO4J_USERNAME=neo4j
+NEO4J_PASSWORD=skills_dev
 
 # Redis
 REDIS_URL=redis://localhost:6379
@@ -105,14 +113,14 @@ SPRING_PROFILES_ACTIVE=development
 
 ### Context
 
-Local development requires PostgreSQL 16 with extensions (`pgvector`, `ltree`, `pg_trgm`) and Redis 7. Use the `pgvector/pgvector:pg16` Docker image which bundles pgvector. The `ltree` and `pg_trgm` extensions are built-in to PostgreSQL.
+Local development requires PostgreSQL 16 with extensions (`pgvector`, `pg_trgm`) and Redis 7, plus Neo4j 5. Use the `pgvector/pgvector:pg16` Docker image which bundles pgvector. The `pg_trgm` extension is built-in to PostgreSQL.
 
 ### Tasks
 
 | # | Task | Detail | Files |
 |---|---|---|---|
 | 1.2.1 | Create `docker-compose.yml` | PostgreSQL 16 (pgvector image) + Redis 7-alpine. Map ports 5432 and 6379. Use named volume for Postgres data persistence | `docker-compose.yml` |
-| 1.2.2 | Add init SQL script | Mount an `init.sql` that enables `ltree` and `pg_trgm` extensions on database creation. pgvector is auto-enabled by the image | `docker/init.sql` |
+| 1.2.2 | Add init SQL script | Mount an `init.sql` that enables `pg_trgm` extensions on database creation. pgvector is auto-enabled by the image | `docker/init.sql` |
 | 1.2.3 | Add full-text search service container | full-text search service server for full-text search (needed in Phase 3 but set up now to avoid reconfiguration) | `docker-compose.yml` |
 | 1.2.4 | Add Maven / application runner scripts for Docker | `./mvnw spring-boot:run -Dspring-boot.run.arguments=--infra-up` → `docker compose up -d`, `docker compose down` → `docker compose down`, `docker compose down -v && docker compose up -d` → down + remove volumes + up | `pom.xml` |
 
@@ -157,33 +165,48 @@ services:
     volumes:
       - full-text-searchdata:/data
 
+  neo4j:
+    image: neo4j:5
+    ports: ["7474:7474", "7687:7687"]
+    environment:
+      NEO4J_AUTH: neo4j/skills_dev
+      NEO4J_PLUGINS: '["apoc"]'
+    volumes:
+      - neo4jdata:/data
+    healthcheck:
+      test: ["CMD", "neo4j", "status"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
 volumes:
   pgdata:
   redisdata:
   full-text-searchdata:
+  neo4jdata:
 ```
 
 ### `docker/init.sql`
 
 ```sql
-CREATE EXTENSION IF NOT EXISTS ltree;
 CREATE EXTENSION IF NOT EXISTS vector;
 CREATE EXTENSION IF NOT EXISTS pg_trgm;
 ```
 
 ### Checklist
 
-- [ ] `docker compose up -d` starts all 3 services without errors
+- [ ] `docker compose up -d` starts all 4 services without errors
 - [ ] PostgreSQL is accessible on `localhost:5432`
 - [ ] Redis is accessible on `localhost:6379`
 - [ ] full-text search service is accessible on `localhost:8108`
+- [ ] Neo4j is accessible on `localhost:7687` (Bolt) and `localhost:7474` (HTTP browser)
 - [ ] `docker compose down && docker compose up -d` restarts cleanly (data persists)
 - [ ] `docker compose down -v && docker compose up -d` cleans all volumes and starts fresh
-- [ ] PostgreSQL has `ltree`, `vector`, `pg_trgm` extensions enabled:
+- [ ] PostgreSQL has `vector`, `pg_trgm` extensions enabled:
   ```bash
   docker exec -it skills-graph-postgres-1 psql -U skills -d skills_graph \
     -c "SELECT extname FROM pg_extension;"
-  # → ltree, vector, pg_trgm
+  # → vector, pg_trgm
   ```
 
 ---
@@ -206,6 +229,11 @@ All environment variables are validated at startup using Jakarta Bean Validation
 
 ```yaml
 spring:
+  neo4j:
+    uri: ${NEO4J_URI:bolt://localhost:7687}
+    authentication:
+      username: ${NEO4J_USERNAME:neo4j}
+      password: ${NEO4J_PASSWORD:skills_dev}
   datasource:
     url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/skills_graph}
     username: ${SPRING_DATASOURCE_USERNAME:skills}
@@ -361,26 +389,37 @@ public class AiConfig {
 
 ### Context
 
-The full schema from ARCHITECTURE.md §2.7 defines 5 tables: `skills`, `skill_aliases`, `skill_relationships`, `locale_config`, `graph_changelog`. All tables use UUID primary keys, CHECK constraints for enums, and specialized indexes (HNSW for vectors, GiST for ltree, GIN for trigrams).
+The system uses a **hybrid database architecture** (see ARCHITECTURE.md §2.8): **Neo4j 5** stores skill nodes, alias nodes, and all relationships. **PostgreSQL 16** stores vector embeddings and operational tables (`skill_embeddings`, `alias_embeddings`, `locale_config`, `graph_changelog`).
 
 ### Tasks
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 1.5.1 | Create initial migration | Full SQL schema from ARCHITECTURE.md §2.8. Include all 6 tables (`skills`, `skill_aliases`, `skill_relationships`, `skill_co_occurrences`, `locale_config`, `graph_changelog`), CHECK constraints, UNIQUE constraints, and indexes | `src/main/resources/db/migration/V1__initial_schema.sql` |
-| 1.5.2 | Create graph version sequence | `CREATE SEQUENCE graph_version_seq;` for monotonic changelog version numbers | `src/main/resources/db/migration/V1__initial_schema.sql` |
-| 1.5.3 | JPA `@Entity` classes | Define `@Entity` classes: `Skill`, `SkillAlias`, `SkillRelationship`, `SkillCoOccurrence`, `LocaleConfig`, `GraphChangelog`. Map pgvector `vector(1024)` via pgvector-hibernate, `ltree` as `String` | `src/main/java/com/skillsgraph/domain/` |
-| 1.5.4 | Flyway auto-migration | Flyway runs automatically on startup via `spring.flyway.enabled=true`. Migrations in `src/main/resources/db/migration/V*.sql`. Tracks applied migrations in `flyway_schema_history` table | `src/main/resources/db/migration/` |
-| 1.5.5 | Seed data script | `./mvnw spring-boot:run -Dspring-boot.run.arguments=--seed` — insert locale_config rows (en, vi, fr, ja, zh) and 5-10 root skill categories (Technology, Business, Design, Science, Languages, Soft Skills) | `src/main/java/com/skillsgraph/script/SeedRunner.java` |
+| 1.5.1 | Create Neo4j schema | `src/main/resources/neo4j/schema.cypher` — Neo4j constraints (skill_id, externalId, slug, alias_id) and indexes (status, category, canonicalName, fulltext). Applied on startup via a `CommandLineRunner` or `Neo4jTemplate.run()` | `src/main/resources/neo4j/schema.cypher` |
+| 1.5.2 | Create PostgreSQL migration | `src/main/resources/db/migration/V1__embedding_tables.sql` — PostgreSQL embedding tables only: `skill_embeddings`, `alias_embeddings`, `locale_config`, `graph_changelog`. CREATE SEQUENCE `graph_version_seq`. All indexes (HNSW for vectors, GIN for trigrams) | `src/main/resources/db/migration/V1__embedding_tables.sql` |
+| 1.5.3 | Spring Data Neo4j `@Node` classes | Define `@Node("Skill")` and `@Node("Alias")` classes in `domain/`. Map relationships as `@Relationship` annotations. Use `String` for IDs | `src/main/java/com/skillsgraph/domain/` |
+| 1.5.4 | Flyway auto-migration (PostgreSQL only) | Flyway runs automatically on startup via `spring.flyway.enabled=true`. Only manages the PostgreSQL embedding/changelog tables | `src/main/resources/db/migration/` |
+| 1.5.5 | Seed data script | `./mvnw spring-boot:run -Dspring-boot.run.arguments=--seed` — insert locale_config rows (en, vi, fr, ja, zh) via JPA and create 5-10 root `(:Skill)` nodes in Neo4j (Technology, Business, Design, Science, Languages, Soft Skills) | `src/main/java/com/skillsgraph/script/SeedRunner.java` |
 
 ### Tables Summary
 
+**Neo4j (graph nodes and relationships):**
+
+| Node/Relationship | Purpose | Key Properties |
+|---|---|---|
+| `(:Skill)` | Canonical skill nodes | `id`, `externalId`, `canonicalName`, `slug`, `status`, `category`, `version`, `source`, `createdAt`, `updatedAt` |
+| `(:Alias)` | Multi-locale surface forms | `id`, `surfaceForm`, `locale` (BCP-47), `isPrimary`, `source`, `createdAt` |
+| `[:PARENT_OF]`, `[:RELATED_TO]`, `[:REQUIRES]` | Directed edges between skills | `confidence`, `weight`, `provenance`, `status`, `createdAt`, `updatedAt` |
+| `[:SUPERSEDED_BY]` | Deprecation pointer | `createdAt` |
+| `[:HAS_ALIAS]` | Skill → Alias link | — |
+| `[:CO_OCCURS_WITH]` | Empirical co-occurrence | `count`, `sourceCounts`, `lastSeenAt` |
+
+**PostgreSQL (embeddings + operational tables):**
+
 | Table | Purpose | Key Columns |
 |---|---|---|
-| `skills` | Canonical skill nodes | `id`, `external_id`, `canonical_name`, `slug`, `status`, `category`, `path` (ltree), `embedding` (vector), `version` |
-| `skill_aliases` | Multi-locale surface forms | `skill_id` (FK), `surface_form`, `locale` (BCP-47), `is_primary`, `alias_embedding` (vector) |
-| `skill_relationships` | Directed edges between skills | `source_skill_id`, `target_skill_id`, `relationship_type`, `confidence`, `weight`, `provenance` (incl. `empirical`), `status` |
-| `skill_co_occurrences` | Empirical co-occurrence tracking | `skill_a_id`, `skill_b_id`, `co_occurrence_count`, `source_type_counts` (JSONB), `last_seen_at` |
+| `skill_embeddings` | Skill vector embeddings | `skill_id` (TEXT PK, matches Neo4j node id), `embedding` (vector(1024)), `updated_at` |
+| `alias_embeddings` | Alias vector embeddings | `alias_id` (TEXT PK, matches Neo4j node id), `alias_embedding` (vector(1024)), `updated_at` |
 | `locale_config` | Supported locales and coverage | `locale` (PK), `display_name`, `is_active`, `coverage_pct` |
 | `graph_changelog` | Versioned mutation log for CDC | `graph_version`, `actor`, `mutation_type`, `entity_type`, `entity_id`, `diff_payload` (JSONB) |
 
@@ -388,29 +427,38 @@ The full schema from ARCHITECTURE.md §2.7 defines 5 tables: `skills`, `skill_al
 
 | Index | Type | Purpose |
 |---|---|---|
+**Neo4j indexes (in schema.cypher):**
+
+| Index | Type | Purpose |
+|---|---|---|
+| `skill_id` constraint | Unique | Fast lookup by skill id |
+| `skill_status` | B-tree | Fast lookup of active skills |
+| `skill_category` | B-tree | Filter skills by category |
+| `skill_fulltext` | Fulltext | Full-text search on canonicalName, slug |
+| `alias_fulltext` | Fulltext | Full-text search on surfaceForm |
+
+**PostgreSQL indexes (in V1__embedding_tables.sql):**
+
+| Index | Type | Purpose |
+|---|---|---|
 | `idx_skills_embedding` | HNSW (vector_cosine_ops) | Semantic similarity search on skills |
 | `idx_aliases_embedding` | HNSW (vector_cosine_ops) | Semantic similarity search on aliases |
-| `idx_skills_path` | GiST (ltree) | Hierarchical path queries |
-| `idx_skills_name_trgm` | GIN (gin_trgm_ops) | Fuzzy text search on skill names |
-| `idx_aliases_surface_trgm` | GIN (gin_trgm_ops) | Fuzzy text search on alias surface forms |
-| `idx_skills_status` | B-tree (partial) | Fast lookup of active skills |
-| `idx_relationships_source` | B-tree | Edge lookups by source skill |
-| `idx_relationships_target` | B-tree | Edge lookups by target skill |
+| `idx_skills_name_trgm` | GIN (gin_trgm_ops) | Fuzzy text search on skill_id |
 | `idx_changelog_version` | B-tree | CDC queries by version |
 
 ### Checklist
 
-- [ ] `src/main/java/com/skillsgraph/src/main/resources/db/migration/V1__initial_schema.sql` contains complete schema (6 tables, all constraints, all indexes)
-- [ ] `CREATE SEQUENCE graph_version_seq` is included
-- [ ] `./mvnw flyway:migrate` applies migration successfully
+- [ ] `src/main/resources/neo4j/schema.cypher` contains Neo4j constraints and indexes
+- [ ] `src/main/resources/db/migration/V1__embedding_tables.sql` contains PostgreSQL embedding + changelog tables
+- [ ] `CREATE SEQUENCE graph_version_seq` is included in the SQL migration
+- [ ] `./mvnw flyway:migrate` applies PostgreSQL migration successfully
 - [ ] `./mvnw flyway:migrate` is idempotent (running twice doesn't error)
-- [ ] All 6 tables exist: `\dt` shows `skills`, `skill_aliases`, `skill_relationships`, `skill_co_occurrences`, `locale_config`, `graph_changelog`
-- [ ] All CHECK constraints work: inserting invalid `status` value fails
-- [ ] UNIQUE constraint works: inserting duplicate `slug` fails
-- [ ] `./mvnw spring-boot:run -Dspring-boot.run.arguments=--seed` inserts locale_config rows and root categories
+- [ ] PostgreSQL tables exist: `\dt` shows `skill_embeddings`, `alias_embeddings`, `locale_config`, `graph_changelog`
+- [ ] Neo4j constraints applied on startup: `skill_id`, `externalId`, `slug` are unique
+- [ ] `./mvnw spring-boot:run -Dspring-boot.run.arguments=--seed` inserts locale_config rows and root `(:Skill)` nodes in Neo4j
 - [ ] `./mvnw spring-boot:run -Dspring-boot.run.arguments=--seed` is idempotent (running twice doesn't create duplicates)
-- [ ] JPA entity schema (`src/main/java/com/skillsgraph/domain/`) matches SQL schema
-- [ ] Spring Data JPA can perform basic SELECT/INSERT on all tables
+- [ ] Spring Data Neo4j `@Node` classes match Neo4j schema
+- [ ] Spring Data Neo4j can perform basic MATCH/CREATE on Neo4j nodes
 
 ---
 
@@ -566,19 +614,20 @@ docker compose ps  # All 3 services "Up (healthy)"
 ./mvnw flyway:migrate  # → "Migration 001_initial applied"
 ./mvnw spring-boot:run -Dspring-boot.run.arguments=--seed     # → "Seeded 5 locales, 6 root categories"
 
-# Verify tables
+# Verify PostgreSQL tables
 docker exec -it skills-graph-postgres-1 psql -U skills -d skills_graph \
   -c "\dt"
-# → 6 tables (skills, skill_aliases, skill_relationships, skill_co_occurrences, locale_config, graph_changelog, _migrations)
+# → skill_embeddings, alias_embeddings, locale_config, graph_changelog
 
 # Verify extensions
 docker exec -it skills-graph-postgres-1 psql -U skills -d skills_graph \
   -c "SELECT extname FROM pg_extension;"
-# → ltree, vector, pg_trgm, plpgsql
+# → vector, pg_trgm, plpgsql
 
-# Verify seed data
-docker exec -it skills-graph-postgres-1 psql -U skills -d skills_graph \
-  -c "SELECT canonical_name FROM skills;"
+# Verify Neo4j seed data
+curl -u neo4j:skills_dev http://localhost:7474/db/data/transaction/commit \
+  -H "Content-Type: application/json" \
+  -d '{"statements":[{"statement":"MATCH (s:Skill) RETURN s.canonicalName"}]}'
 # → Technology, Business, Design, Science, Languages, Soft Skills
 
 # 3. Application
@@ -635,11 +684,12 @@ echo "Phase 1 complete ✓"
 - [ ] Helicone proxy conditionally enabled
 
 ### 1.5 Database Schema & Migrations
-- [ ] `001_initial.sql` contains complete schema (5 tables + sequence)
-- [ ] All CHECK constraints, UNIQUE constraints, indexes defined
-- [ ] `./mvnw flyway:migrate` works and is idempotent
-- [ ] `./mvnw spring-boot:run -Dspring-boot.run.arguments=--seed` populates initial data
-- [ ] JPA entity schema matches SQL
+- [ ] `src/main/resources/neo4j/schema.cypher` contains Neo4j constraints and indexes
+- [ ] `V1__embedding_tables.sql` contains PostgreSQL embedding + changelog tables
+- [ ] `./mvnw flyway:migrate` works and is idempotent (PostgreSQL only)
+- [ ] Neo4j schema applied on startup via `CommandLineRunner`
+- [ ] `./mvnw spring-boot:run -Dspring-boot.run.arguments=--seed` populates initial data in both Neo4j and PostgreSQL
+- [ ] Spring Data Neo4j `@Node` classes match Neo4j schema
 
 ### 1.6 Database & Redis Clients
 - [ ] PostgreSQL connection pool with Spring Data JPA

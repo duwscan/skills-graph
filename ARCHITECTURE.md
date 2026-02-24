@@ -136,13 +136,13 @@ graph LR
 | `description` | text | Human-readable definition |
 | `status` | enum | `candidate`, `active`, `deprecated`, `merged` |
 | `category` | enum | `domain`, `tool`, `certification`, `soft_skill`, `methodology`, `language` |
-| `path` | ltree | Hierarchical path (e.g., `tech.data_science.machine_learning`) |
-| `embedding` | vector(1024) | Semantic embedding from text-embedding-3-large |
 | `version` | integer | Monotonically increasing revision counter |
 | `source` | string | Where the skill was sourced (e.g., `curator`, `llm_discovered`, `import`) |
 | `created_at` | timestamptz | When the node was created |
 | `updated_at` | timestamptz | Last modification |
 | `metadata` | jsonb | Extensible key-value store for additional attributes |
+
+> **Note:** Vector embeddings for skills are stored in the `skill_embeddings` PostgreSQL table (not in the Neo4j node), keyed by the Neo4j skill node's `id`.
 
 ### 2.2 Alias Schema
 
@@ -235,54 +235,12 @@ Localization is handled through the **Alias table** — one alias per locale per
 > **Note:** The `skill_co_occurrences` table is separate from `skill_relationships`. Co-occurrence tracks raw signal data; edges in `skill_relationships` are the curated/validated result.
 
 ```mermaid
-erDiagram
-    SKILL_NODE {
-        uuid id PK
-        string external_id UK
-        string canonical_name
-        string slug UK
-        text description
-        enum status
-        enum category
-        ltree path
-        vector embedding
-        int version
-        timestamptz created_at
-        timestamptz updated_at
-        jsonb metadata
-    }
-
-    ALIAS {
-        uuid id PK
-        uuid skill_id FK
-        string surface_form
-        string locale
-        enum source
-        boolean is_primary
-        vector alias_embedding
-    }
-
-    EDGE {
-        uuid id PK
-        uuid source_skill_id FK
-        uuid target_skill_id FK
-        enum relationship_type
-        float confidence
-        enum provenance
-        enum status
-    }
-
-    LOCALE_CONFIG {
-        string locale PK
-        string display_name
-        boolean is_active
-        float coverage_pct
-    }
-
-    SKILL_NODE ||--o{ ALIAS : "has"
-    SKILL_NODE ||--o{ EDGE : "source"
-    SKILL_NODE ||--o{ EDGE : "target"
-    LOCALE_CONFIG ||--o{ ALIAS : "applies_to"
+graph LR
+    S1[":Skill\nMachine Learning"] -->|PARENT_OF| S2[":Skill\nDeep Learning"]
+    S1 -->|RELATED_TO| S3[":Skill\nStatistics"]
+    S2 -->|REQUIRES| S4[":Skill\nLinear Algebra"]
+    S1 -->|HAS_ALIAS| A1[":Alias\n'ML' (en)"]
+    S1 -->|HAS_ALIAS| A2[":Alias\n'apprentissage automatique' (fr)"]
 ```
 
 ### 2.7 Example Taxonomy Subgraph
@@ -306,76 +264,60 @@ graph TD
 
 > Note: "Machine Learning" has two parents — "Artificial Intelligence" and "Data Science" — demonstrating **polyhierarchy**. The orange edges highlight this.
 
-### 2.8 PostgreSQL Schema
+### 2.8 Database Schemas
+
+The system uses a **hybrid database architecture**:
+- **Neo4j 5** stores graph structure: skill nodes, alias nodes, and all relationships.
+- **PostgreSQL 16** stores vector embeddings (pgvector) and the changelog/locale configuration tables.
+
+#### Neo4j Schema (Cypher)
+
+```cypher
+// Constraints (ensure uniqueness + index)
+CREATE CONSTRAINT skill_id IF NOT EXISTS FOR (s:Skill) REQUIRE s.id IS UNIQUE;
+CREATE CONSTRAINT skill_external_id IF NOT EXISTS FOR (s:Skill) REQUIRE s.externalId IS UNIQUE;
+CREATE CONSTRAINT skill_slug IF NOT EXISTS FOR (s:Skill) REQUIRE s.slug IS UNIQUE;
+CREATE CONSTRAINT alias_id IF NOT EXISTS FOR (a:Alias) REQUIRE a.id IS UNIQUE;
+
+// Indexes
+CREATE INDEX skill_status IF NOT EXISTS FOR (s:Skill) ON (s.status);
+CREATE INDEX skill_category IF NOT EXISTS FOR (s:Skill) ON (s.category);
+CREATE INDEX skill_name IF NOT EXISTS FOR (s:Skill) ON (s.canonicalName);
+CREATE FULLTEXT INDEX skill_fulltext IF NOT EXISTS FOR (s:Skill) ON EACH [s.canonicalName, s.slug];
+CREATE FULLTEXT INDEX alias_fulltext IF NOT EXISTS FOR (a:Alias) ON EACH [a.surfaceForm];
+```
+
+**Node labels and relationship types:**
+
+| Label / Type | Properties |
+|---|---|
+| `(:Skill)` | `id`, `externalId`, `canonicalName`, `slug`, `description`, `status`, `category`, `version`, `source`, `createdAt`, `updatedAt` |
+| `(:Alias)` | `id`, `surfaceForm`, `locale`, `source`, `isPrimary`, `createdAt` |
+| `[:PARENT_OF]` | `confidence`, `weight`, `provenance`, `status`, `createdAt`, `updatedAt` |
+| `[:RELATED_TO]` | `confidence`, `weight`, `provenance`, `status`, `createdAt`, `updatedAt` |
+| `[:REQUIRES]` | `confidence`, `weight`, `provenance`, `status`, `createdAt`, `updatedAt` |
+| `[:SUPERSEDED_BY]` | `createdAt` |
+| `[:HAS_ALIAS]` | — |
+| `[:CO_OCCURS_WITH]` | `count` (int), `sourceCounts` (map), `lastSeenAt` (datetime) |
+
+#### PostgreSQL Schema (SQL)
 
 ```sql
-CREATE EXTENSION IF NOT EXISTS ltree;
 CREATE EXTENSION IF NOT EXISTS vector;
 CREATE EXTENSION IF NOT EXISTS pg_trgm;
 
--- Core skills table
-CREATE TABLE skills (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    external_id TEXT UNIQUE NOT NULL,
-    canonical_name TEXT NOT NULL,
-    slug TEXT UNIQUE NOT NULL,
-    description TEXT,
-    status TEXT NOT NULL DEFAULT 'candidate'
-        CHECK (status IN ('candidate', 'active', 'deprecated', 'merged')),
-    category TEXT
-        CHECK (category IN ('domain', 'tool', 'certification', 'soft_skill', 'methodology', 'language')),
-    path ltree NOT NULL,
-    embedding vector(1024),
-    version INT NOT NULL DEFAULT 1,
-    source TEXT,
-    created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-    updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-    metadata JSONB NOT NULL DEFAULT '{}'
+-- Skill vector embeddings (pgvector)
+CREATE TABLE skill_embeddings (
+    skill_id TEXT PRIMARY KEY,
+    embedding vector(1024) NOT NULL,
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
--- Aliases (multi-locale surface forms)
-CREATE TABLE skill_aliases (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    skill_id UUID NOT NULL REFERENCES skills(id) ON DELETE CASCADE,
-    surface_form TEXT NOT NULL,
-    locale TEXT NOT NULL DEFAULT 'en',
-    source TEXT NOT NULL DEFAULT 'curated'
-        CHECK (source IN ('curated', 'llm_discovered', 'user_submitted')),
-    is_primary BOOLEAN NOT NULL DEFAULT false,
-    alias_embedding vector(1024),
-    created_at TIMESTAMPTZ NOT NULL DEFAULT now()
-);
-
--- Relationships between skills
-CREATE TABLE skill_relationships (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    source_skill_id UUID NOT NULL REFERENCES skills(id),
-    target_skill_id UUID NOT NULL REFERENCES skills(id),
-    relationship_type TEXT NOT NULL
-        CHECK (relationship_type IN ('parent_of', 'child_of', 'related_to', 'requires', 'superseded_by')),
-    confidence FLOAT NOT NULL DEFAULT 1.0 CHECK (confidence >= 0 AND confidence <= 1),
-    weight FLOAT NOT NULL DEFAULT 1.0 CHECK (weight >= 0 AND weight <= 1),
-    provenance TEXT NOT NULL DEFAULT 'human_curated'
-        CHECK (provenance IN ('human_curated', 'llm_predicted', 'embedding_similarity', 'empirical')),
-    status TEXT NOT NULL DEFAULT 'active'
-        CHECK (status IN ('active', 'pending_review', 'rejected', 'deprecated')),
-    created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-    updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-    UNIQUE (source_skill_id, target_skill_id, relationship_type),
-    CHECK (source_skill_id != target_skill_id)
-);
-
--- Co-occurrence tracking (empirical evidence)
-CREATE TABLE skill_co_occurrences (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    skill_a_id UUID NOT NULL REFERENCES skills(id),
-    skill_b_id UUID NOT NULL REFERENCES skills(id),
-    co_occurrence_count INT NOT NULL DEFAULT 1,
-    source_type_counts JSONB NOT NULL DEFAULT '{}',
-    last_seen_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-    created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-    UNIQUE (skill_a_id, skill_b_id),
-    CHECK (skill_a_id < skill_b_id)  -- ensure consistent ordering
+-- Alias vector embeddings (pgvector)
+CREATE TABLE alias_embeddings (
+    alias_id TEXT PRIMARY KEY,
+    alias_embedding vector(1024) NOT NULL,
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
 -- Locale configuration
@@ -392,38 +334,17 @@ CREATE TABLE graph_changelog (
     graph_version BIGINT NOT NULL,
     timestamp TIMESTAMPTZ NOT NULL DEFAULT now(),
     actor TEXT NOT NULL,
-    mutation_type TEXT NOT NULL
-        CHECK (mutation_type IN ('skill_created', 'skill_updated', 'skill_deprecated',
-               'skill_merged', 'alias_added', 'alias_removed', 'edge_created',
-               'edge_updated', 'edge_deprecated')),
+    mutation_type TEXT NOT NULL,
     entity_type TEXT NOT NULL,
-    entity_id UUID NOT NULL,
+    entity_id TEXT NOT NULL,
     diff_payload JSONB NOT NULL DEFAULT '{}'
 );
 
 -- Indexes
-CREATE INDEX idx_skills_embedding ON skills USING hnsw (embedding vector_cosine_ops);
-CREATE INDEX idx_skills_path ON skills USING gist (path);
-CREATE INDEX idx_skills_name_trgm ON skills USING gin (canonical_name gin_trgm_ops);
-CREATE INDEX idx_skills_status ON skills (status) WHERE status = 'active';
-CREATE INDEX idx_skills_slug ON skills (slug);
-
-CREATE INDEX idx_aliases_embedding ON skill_aliases USING hnsw (alias_embedding vector_cosine_ops);
-CREATE INDEX idx_aliases_skill_id ON skill_aliases (skill_id);
-CREATE INDEX idx_aliases_surface_trgm ON skill_aliases USING gin (surface_form gin_trgm_ops);
-CREATE INDEX idx_aliases_locale ON skill_aliases (locale);
-
-CREATE INDEX idx_relationships_source ON skill_relationships (source_skill_id);
-CREATE INDEX idx_relationships_target ON skill_relationships (target_skill_id);
-CREATE INDEX idx_relationships_type ON skill_relationships (relationship_type);
-CREATE INDEX idx_relationships_provenance ON skill_relationships (provenance);
-
-CREATE INDEX idx_co_occurrences_skill_a ON skill_co_occurrences (skill_a_id);
-CREATE INDEX idx_co_occurrences_skill_b ON skill_co_occurrences (skill_b_id);
-CREATE INDEX idx_co_occurrences_count ON skill_co_occurrences (co_occurrence_count DESC);
-
+CREATE INDEX idx_skills_embedding ON skill_embeddings USING hnsw (embedding vector_cosine_ops);
+CREATE INDEX idx_aliases_embedding ON alias_embeddings USING hnsw (alias_embedding vector_cosine_ops);
+CREATE INDEX idx_skills_name_trgm ON skill_embeddings USING gin (skill_id gin_trgm_ops);
 CREATE INDEX idx_changelog_version ON graph_changelog (graph_version);
-CREATE INDEX idx_changelog_entity ON graph_changelog (entity_type, entity_id);
 ```
 
 ---
@@ -493,10 +414,11 @@ public class VectorSearchService {
     public List<SkillSimilarity> findNearest(String text, int limit) {
         float[] embedding = embeddingModel.embed(text);
 
-        return jdbcTemplate.query("""
-            SELECT id, canonical_name, 1 - (embedding <=> ?::vector) AS similarity
-            FROM skills WHERE status = 'active'
-            ORDER BY embedding <=> ?::vector LIMIT ?
+        // Query PostgreSQL skill_embeddings table for nearest neighbors
+        List<String> nearestIds = jdbcTemplate.query("""
+            SELECT se.skill_id, 1 - (se.embedding <=> ?::vector) AS similarity
+            FROM skill_embeddings se
+            ORDER BY se.embedding <=> ?::vector LIMIT ?
             """,
             (rs, rowNum) -> new SkillSimilarity(
                 rs.getString("id"),
@@ -505,6 +427,7 @@ public class VectorSearchService {
             ),
             pgvectorFormat(embedding), pgvectorFormat(embedding), limit
         );
+        // Graph context (aliases, relationships) is fetched from Neo4j via Neo4jTemplate
     }
 }
 ```
@@ -817,34 +740,17 @@ public class SkillExtractionPipeline {
 
 After extraction, enrich results by querying the graph for related skills:
 
-```sql
--- Get parent, child, and sibling skills for expansion
-WITH extracted AS (
-    SELECT id FROM skills WHERE id = ANY($1)
-),
-parents AS (
-    SELECT target_skill_id AS skill_id, 'parent' AS relation
-    FROM skill_relationships r
-    JOIN extracted e ON r.source_skill_id = e.id
-    WHERE r.relationship_type = 'parent_of' AND r.status = 'active'
-),
-children AS (
-    SELECT source_skill_id AS skill_id, 'child' AS relation
-    FROM skill_relationships r
-    JOIN extracted e ON r.target_skill_id = e.id
-    WHERE r.relationship_type = 'parent_of' AND r.status = 'active'
-),
-siblings AS (
-    SELECT sr2.target_skill_id AS skill_id, 'sibling' AS relation
-    FROM skill_relationships sr1
-    JOIN skill_relationships sr2 ON sr1.source_skill_id = sr2.source_skill_id
-    JOIN extracted e ON sr1.target_skill_id = e.id
-    WHERE sr1.relationship_type = 'parent_of'
-      AND sr2.relationship_type = 'parent_of'
-      AND sr2.target_skill_id != e.id
-      AND sr2.status = 'active'
-)
-SELECT * FROM parents UNION ALL SELECT * FROM children UNION ALL SELECT * FROM siblings;
+```cypher
+// Get parent, child, and sibling skills for expansion
+MATCH (target:Skill) WHERE target.id IN $skillIds
+OPTIONAL MATCH (target)-[:PARENT_OF]->(parent:Skill) WHERE parent.status = 'active'
+OPTIONAL MATCH (child:Skill)-[:PARENT_OF]->(target) WHERE child.status = 'active'
+OPTIONAL MATCH (target)-[:PARENT_OF]->(commonParent:Skill)<-[:PARENT_OF]-(sibling:Skill)
+WHERE sibling.status = 'active' AND sibling.id <> target.id
+RETURN 
+  collect(DISTINCT {skill: parent, relation: 'parent'}) +
+  collect(DISTINCT {skill: child, relation: 'child'}) +
+  collect(DISTINCT {skill: sibling, relation: 'sibling'}) AS related
 ```
 
 Expanded skills are returned with lower confidence (e.g., `original_confidence * 0.6`).
@@ -964,18 +870,29 @@ flowchart LR
 - Downstream consumers can subscribe to changelog updates via **PostgreSQL LISTEN/NOTIFY** for real-time CDC.
 - **Periodic snapshots** are taken (e.g., daily) for rollback and offline consumption.
 
+> **Note:** Neo4j does not have a built-in LISTEN/NOTIFY mechanism. After writing mutations to Neo4j, the application records them in `graph_changelog` (PostgreSQL) and fires `pg_notify('graph_changes', json)` for downstream CDC consumers. A Spring `ApplicationEvent` is also published for in-process listeners.
+
 ```java
-// Publish graph mutation event via PostgreSQL LISTEN/NOTIFY
+// Record Neo4j mutation in PostgreSQL graph_changelog, then fire pg_notify for CDC
 @Transactional
 public void publishGraphEvent(long graphVersion, String mutationType,
-                               UUID entityId, String actor) {
+                               String entityId, String actor) {
     String payload = objectMapper.writeValueAsString(Map.of(
         "graph_version", graphVersion,
         "mutation_type", mutationType,
-        "entity_id", entityId.toString(),
+        "entity_id", entityId,
         "actor", actor
     ));
+    // Write to graph_changelog (PostgreSQL)
+    jdbcTemplate.update(
+        "INSERT INTO graph_changelog (graph_version, actor, mutation_type, entity_type, entity_id, diff_payload) " +
+        "VALUES (?, ?, ?, ?, ?, ?::jsonb)",
+        graphVersion, actor, mutationType, "skill", entityId, payload
+    );
+    // Fire pg_notify for real-time cache invalidation
     jdbcTemplate.execute("SELECT pg_notify('graph_changes', '" + payload + "')");
+    // Also publish Spring ApplicationEvent for in-process listeners
+    applicationEventPublisher.publishEvent(new GraphMutationEvent(this, graphVersion, mutationType, entityId));
 }
 ```
 
@@ -998,40 +915,44 @@ When two skills are determined to be duplicates:
 4. Set source status to `merged` with a `superseded_by` edge to survivor.
 5. Record the merge in the changelog with full diff.
 
-```sql
--- Merge skill source_id into survivor_id
-BEGIN;
-  -- Move aliases
-  UPDATE skill_aliases SET skill_id = $survivor_id WHERE skill_id = $source_id;
+```cypher
+// Step 1: Move all aliases from source to survivor
+MATCH (source:Skill {id: $sourceId})-[r:HAS_ALIAS]->(alias:Alias)
+MATCH (survivor:Skill {id: $survivorId})
+DELETE r
+CREATE (survivor)-[:HAS_ALIAS]->(alias);
 
-  -- Re-point edges (source side)
-  UPDATE skill_relationships SET source_skill_id = $survivor_id
-  WHERE source_skill_id = $source_id
-  AND NOT EXISTS (
-    SELECT 1 FROM skill_relationships
-    WHERE source_skill_id = $survivor_id
-    AND target_skill_id = skill_relationships.target_skill_id
-    AND relationship_type = skill_relationships.relationship_type
-  );
+// Step 2: Re-point outgoing relationships (skip duplicates)
+MATCH (source:Skill {id: $sourceId})-[r]->(other:Skill)
+WHERE type(r) <> 'SUPERSEDED_BY'
+  AND NOT ((:Skill {id: $survivorId})-[x]->(other) WHERE type(x) = type(r))
+MATCH (survivor:Skill {id: $survivorId})
+CALL apoc.merge.relationship(survivor, type(r), {}, properties(r), other) YIELD rel
+DELETE r;
 
-  -- Re-point edges (target side)
-  UPDATE skill_relationships SET target_skill_id = $survivor_id
-  WHERE target_skill_id = $source_id
-  AND NOT EXISTS (
-    SELECT 1 FROM skill_relationships
-    WHERE target_skill_id = $survivor_id
-    AND source_skill_id = skill_relationships.source_skill_id
-    AND relationship_type = skill_relationships.relationship_type
-  );
+// Step 3: Re-point incoming relationships (skip duplicates)
+MATCH (other:Skill)-[r]->(source:Skill {id: $sourceId})
+WHERE type(r) <> 'SUPERSEDED_BY'
+  AND NOT ((other)-[x]->(:Skill {id: $survivorId}) WHERE type(x) = type(r))
+MATCH (survivor:Skill {id: $survivorId})
+CALL apoc.merge.relationship(other, type(r), {}, properties(r), survivor) YIELD rel
+DELETE r;
 
-  -- Mark source as merged
-  UPDATE skills SET status = 'merged', updated_at = now() WHERE id = $source_id;
+// Step 4: Merge CO_OCCURS_WITH data
+MATCH (source:Skill {id: $sourceId})-[r:CO_OCCURS_WITH]-(partner:Skill)
+MATCH (survivor:Skill {id: $survivorId})
+MERGE (survivor)-[existing:CO_OCCURS_WITH]-(partner)
+  ON CREATE SET existing.count = r.count, existing.sourceCounts = r.sourceCounts, existing.lastSeenAt = r.lastSeenAt
+  ON MATCH SET existing.count = existing.count + r.count, existing.lastSeenAt = datetime()
+DELETE r;
 
-  -- Create superseded_by edge
-  INSERT INTO skill_relationships (source_skill_id, target_skill_id, relationship_type, provenance)
-  VALUES ($source_id, $survivor_id, 'superseded_by', 'human_curated');
-COMMIT;
+// Step 5: Mark source as merged, create SUPERSEDED_BY
+MATCH (source:Skill {id: $sourceId}), (survivor:Skill {id: $survivorId})
+SET source.status = 'merged', source.updatedAt = datetime()
+CREATE (source)-[:SUPERSEDED_BY {createdAt: datetime()}]->(survivor);
 ```
+
+> **Note:** For dynamic relationship type re-pointing, `neo4j-apoc` library is required. Alternatively, handle each relationship type explicitly. The `graph_changelog` entry is written to PostgreSQL and `pg_notify` is fired after the Neo4j transaction completes.
 
 ### 5.4 Co-occurrence Edge Strengthening
 
@@ -1210,11 +1131,15 @@ public record ExtractionOptions(
 | **Ecosystem** | Large community | Ubiquitous, massive ecosystem | AWS-only | Smaller community |
 | **Hosting complexity** | Moderate (Aura managed) | Low (RDS, Supabase, Neon) | Low (AWS managed) | Moderate |
 | **Cost (starter)** | ~$65/month (Aura) | ~$30/month (RDS t3.medium) | ~$100/month | Self-hosted |
-| **Fit for taxonomy** | Over-engineered for a shallow DAG | Perfect: hierarchical + relational + vector | Vendor lock-in | Unnecessary complexity |
+| **Fit for taxonomy** | **Recommended (graph traversal)** | Used for vector embeddings + changelog | Vendor lock-in | Unnecessary complexity |
 
-**Recommendation: PostgreSQL 16 + pgvector 0.7+ + ltree**
+**Recommendation: Neo4j 5 + PostgreSQL 16 (pgvector) — Hybrid**
 
-A skills taxonomy is fundamentally a **shallow DAG** (4-6 levels deep), not a densely connected knowledge graph. PostgreSQL handles this with recursive CTEs or `ltree`. Combining relational data, hierarchical data, and vector search in a single database eliminates sync issues and simplifies transactions.
+The system uses a **hybrid approach**:
+- **Neo4j 5** handles all graph structure: `(:Skill)` and `(:Alias)` nodes, and typed relationships (`PARENT_OF`, `RELATED_TO`, `REQUIRES`, `SUPERSEDED_BY`, `HAS_ALIAS`, `CO_OCCURS_WITH`). Native Cypher path/traversal queries replace recursive CTEs and `ltree`.
+- **PostgreSQL 16** stores vector embeddings (`skill_embeddings`, `alias_embeddings`) via pgvector, and the `locale_config` and `graph_changelog` tables.
+
+This gives native graph traversal (index-free adjacency) without the complexity of recursive CTEs, while retaining pgvector's excellent HNSW approximate nearest-neighbor search for embeddings.
 
 ### 7.2 Embedding Infrastructure
 
@@ -1389,7 +1314,7 @@ public class ModelSelector {
 | Embedding cache | `embed:{hash(text)}` | 30 days | Avoid re-embedding identical text |
 | Rate limit counters | `ratelimit:{key}:{window}` | 1 min / 1 hr | Enforce API rate limits |
 
-**Cache invalidation:** PostgreSQL `LISTEN/NOTIFY` pushes invalidation events to the application, which deletes relevant Redis keys.
+**Cache invalidation:** After recording Neo4j mutations to `graph_changelog` in PostgreSQL, the `ChangelogService` fires `pg_notify('graph_changes', json)` for real-time cache invalidation. PostgreSQL `LISTEN/NOTIFY` pushes invalidation events to the application, which deletes relevant Redis keys.
 
 **Event Streaming — Redis Streams:**
 
@@ -1553,11 +1478,18 @@ spring:
                    │      │ └────────┘ │
                    │      └──────┬─────┘
               ┌────▼─────────────▼────┐
-              │     PostgreSQL 16     │
-              │  skills, relationships│
-              │  ltree, pgvector      │
-              │  changelog            │
-              └──────────┬────────────┘
+              ┌──────────────────────────────┐
+              │        Neo4j 5               │
+              │  (:Skill) (:Alias) nodes     │
+              │  graph relationships         │
+              │  PARENT_OF, RELATED_TO...    │
+              └──────────┬───────────────────┘
+                         │
+              ┌──────────▼───────────────────┐
+              │        PostgreSQL 16         │
+              │  skill_embeddings (pgvector) │
+              │  locale_config, changelog    │
+              └──────────┬───────────────────┘
                          │ LISTEN/NOTIFY
               ┌──────────▼────────────┐
               │       Redis 7         │
@@ -1662,7 +1594,8 @@ class SkillExtractionGoldenSetTest {
 | **HITL** | Human-In-The-Loop — curators validate automated suggestions |
 | **RAG** | Retrieval-Augmented Generation — retrieve relevant context before prompting an LLM |
 | **CDC** | Change Data Capture — streaming mutations for downstream sync |
-| **ltree** | PostgreSQL extension for hierarchical path labels |
+| **Neo4j** | Native graph database using the Cypher query language; stores skill nodes and relationships in this system |
+| **Cypher** | Declarative graph query language used by Neo4j (e.g., `MATCH (s:Skill)-[:PARENT_OF*1..5]->(a)`) |
 | **pgvector** | PostgreSQL extension for vector similarity search |
 | **Matryoshka** | Embedding technique allowing dimension reduction without retraining |
 | **Spring AI** | Spring AI — Java toolkit for LLM/embedding integration with Spring Boot |

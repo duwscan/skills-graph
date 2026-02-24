@@ -24,7 +24,7 @@ Java records with Jakarta Bean Validation annotations serve as the **single sour
 | # | Task | Detail | Files |
 |---|---|---|---|
 | 2.1.1 | Shared Java enums | Define `SkillStatus` (`candidate`, `active`, `deprecated`, `merged`), `SkillCategory` (`domain`, `tool`, `certification`, `soft_skill`, `methodology`, `language`), `RelationshipType` (`parent_of`, `child_of`, `related_to`, `requires`, `superseded_by`), `Provenance` (`human_curated`, `llm_predicted`, `embedding_similarity`, `empirical`), `AliasSource` (`curated`, `llm_discovered`, `user_submitted`), `EdgeStatus` (`active`, `pending_review`, `rejected`, `deprecated`) | `src/main/java/com/skillsgraph/dto/Enums.java` |
-| 2.1.2 | Skill schemas | `createSkillSchema`: `canonical_name` (required), `description`, `category`, `path` (ltree string), `status` (default `candidate`), `metadata` (optional JSON). Auto-generate `slug` from name. `updateSkillSchema`: all fields optional (partial). `skillResponseSchema`: full skill with `id`, `external_id`, `version`, timestamps, nested `aliases[]`, `relationships[]` | `src/main/java/com/skillsgraph/dto/SkillDto.java` |
+| 2.1.2 | Skill schemas | `createSkillSchema`: `canonical_name` (required), `description`, `category`, `status` (default `candidate`), `metadata` (optional JSON). Auto-generate `slug` from name. `updateSkillSchema`: all fields optional (partial). `skillResponseSchema`: full skill with `id`, `external_id`, `version`, timestamps, nested `aliases[]`, `relationships[]` | `src/main/java/com/skillsgraph/dto/SkillDto.java` |
 | 2.1.3 | Alias schemas | `createAliasSchema`: `surface_form`, `locale` (default `en`), `source` (default `curated`), `is_primary` (default false). `aliasResponseSchema` | `src/main/java/com/skillsgraph/dto/AliasDto.java` |
 | 2.1.4 | Edge schemas | `createEdgeSchema`: `source_skill_id` (UUID), `target_skill_id` (UUID), `relationship_type`, `confidence` (default 1.0), `provenance` (default `human_curated`). `edgeResponseSchema` | `src/main/java/com/skillsgraph/dto/EdgeDto.java` |
 | 2.1.5 | Query schemas | `paginationSchema`: `limit` (default `PAGINATION_DEFAULT_LIMIT`, max `PAGINATION_MAX_LIMIT` — see `src/main/java/com/skillsgraph/config/AppConstants.java`), `offset` (default 0). `listSkillsQuerySchema`: pagination + `status`, `category`, `q` (search text). `depthSchema`: `depth` (default `TRAVERSAL_DEFAULT_DEPTH`, max `TRAVERSAL_MAX_DEPTH`) | `src/main/java/com/skillsgraph/dto/QueryParams.java` |
@@ -51,39 +51,40 @@ The `SkillService` is the primary business logic layer for skill nodes. It handl
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 2.2.1 | `create(input)` | Validate input via `createSkillSchema`. Auto-generate `external_id` as `SK-{UUID.randomUUID()(8)}`. Auto-generate `slug` from `canonical_name` via `SlugUtils()`. Insert skill row. Create initial alias (canonical_name as primary `en` alias). Record in changelog. Return full skill object | `src/main/java/com/skillsgraph/service/SkillService.java` |
-| 2.2.2 | `getById(id)` | Fetch skill by `id` or `external_id` or `slug`. LEFT JOIN `skill_aliases` and `skill_relationships` to include all aliases and direct edges (1 hop). Group and nest results. Throw `SkillNotFoundException` if not found | `src/main/java/com/skillsgraph/service/SkillService.java` |
+| 2.2.1 | `create(input)` | Validate input via `createSkillSchema`. Auto-generate `external_id` as `SK-{UUID.randomUUID()(8)}`. Auto-generate `slug` from `canonical_name` via `SlugUtils()`. Create Neo4j `(:Skill)` node via `Neo4jTemplate` or `SkillRepository.save()`. Create initial `(:Alias)` node linked via `[:HAS_ALIAS]`. Record in `graph_changelog` (PostgreSQL). Return full skill object | `src/main/java/com/skillsgraph/service/SkillService.java` |
+| 2.2.2 | `getById(id)` | Fetch skill by `id` or `externalId` or `slug` from Neo4j. Use Cypher `MATCH (s:Skill)-[:HAS_ALIAS]->(a:Alias)` and `MATCH (s)-[r]->()` patterns via `Neo4jTemplate`. Throw `SkillNotFoundException` if not found | `src/main/java/com/skillsgraph/service/SkillService.java` |
 | 2.2.3 | `update(id, input)` | Validate input via `updateSkillSchema`. Partial update only provided fields. Increment `version`, set `updated_at = now()`. Record changelog with diff (old vs new values). If `canonical_name` changed, update the primary `en` alias too | `src/main/java/com/skillsgraph/service/SkillService.java` |
 | 2.2.4 | `list(query)` | Paginated listing with filters: `status`, `category`, `source`. If `q` parameter present, use trigram similarity search (`canonical_name % $q`) ordered by `similarity(canonical_name, $q) DESC`. Return `{ items, total, limit, offset }` | `src/main/java/com/skillsgraph/service/SkillService.java` |
-| 2.2.5 | `getAncestors(id, depth?)` | Use recursive CTE traversing `parent_of` edges upward. Limit depth (default `TRAVERSAL_DEFAULT_DEPTH`, max `TRAVERSAL_MAX_DEPTH` — see `src/main/java/com/skillsgraph/config/AppConstants.java`). Return ordered list of ancestor skills from immediate parent to root | `src/main/java/com/skillsgraph/service/SkillService.java` |
-| 2.2.6 | `getDescendants(id, depth?)` | Use recursive CTE traversing `parent_of` edges downward. Limit depth (default `TRAVERSAL_DEFAULT_DEPTH`, max `TRAVERSAL_MAX_DEPTH`). Return tree structure or flat list of descendant skills | `src/main/java/com/skillsgraph/service/SkillService.java` |
-| 2.2.7 | `getRoots()` | Return all active skills that have no incoming `parent_of` edges. SQL: `SELECT s.* FROM skills s WHERE s.status = 'active' AND NOT EXISTS (SELECT 1 FROM skill_relationships sr WHERE sr.target_skill_id = s.id AND sr.relationship_type = 'parent_of' AND sr.status = 'active')`. These are the top-level taxonomy categories (Technology, Business, Design, etc.) | `src/main/java/com/skillsgraph/service/SkillService.java` |
+| 2.2.5 | `getAncestors(id, depth?)` | Use Cypher variable-length pattern `(s:Skill {id: $skillId})<-[:PARENT_OF*1..$depth]-(ancestor:Skill)` via `Neo4jTemplate`. Limit depth (default `TRAVERSAL_DEFAULT_DEPTH`, max `TRAVERSAL_MAX_DEPTH` — see `src/main/java/com/skillsgraph/config/AppConstants.java`). Return ordered list of ancestor skills | `src/main/java/com/skillsgraph/service/SkillService.java` |
+| 2.2.6 | `getDescendants(id, depth?)` | Use Cypher variable-length pattern `(parent:Skill {id: $skillId})-[:PARENT_OF*1..$depth]->(s:Skill)` via `Neo4jTemplate`. Limit depth (default `TRAVERSAL_DEFAULT_DEPTH`, max `TRAVERSAL_MAX_DEPTH`). Return tree structure or flat list of descendant skills | `src/main/java/com/skillsgraph/service/SkillService.java` |
+| 2.2.7 | `getRoots()` | Return all active skills that have no incoming `PARENT_OF` relationships. Cypher: `MATCH (s:Skill {status: 'active'}) WHERE NOT ()-[:PARENT_OF]->(s) RETURN s`. These are the top-level taxonomy categories | `src/main/java/com/skillsgraph/service/SkillService.java` |
 | 2.2.8 | Slug utility | `public static String generateSlug(String name)` — lowercase, replace spaces with hyphens, remove special chars, truncate to `SLUG_MAX_LENGTH` chars (see `src/main/java/com/skillsgraph/config/AppConstants.java`). Handle duplicates by appending `-2`, `-3`, etc. | `src/main/java/com/skillsgraph/util/SlugUtils.java` |
 
-### Recursive CTE for Ancestors
+### Cypher Ancestors Query
 
-```sql
-WITH RECURSIVE ancestors AS (
-    -- Base case: direct parents of the given skill
-    SELECT sr.source_skill_id AS skill_id, 1 AS depth
-    FROM skill_relationships sr
-    WHERE sr.target_skill_id = $1
-      AND sr.relationship_type = 'parent_of'
-      AND sr.status = 'active'
-    UNION ALL
-    -- Recursive step: parents of parents
-    SELECT sr.source_skill_id, a.depth + 1
-    FROM skill_relationships sr
-    JOIN ancestors a ON sr.target_skill_id = a.skill_id
-    WHERE sr.relationship_type = 'parent_of'
-      AND sr.status = 'active'
-      AND a.depth < $2  -- depth limit
-)
-SELECT DISTINCT s.*, a.depth
-FROM skills s
-JOIN ancestors a ON s.id = a.skill_id
-WHERE s.status = 'active'
-ORDER BY a.depth ASC;
+```cypher
+// Find all ancestors up to configurable depth using variable-length paths
+MATCH path = (s:Skill {id: $skillId})<-[:PARENT_OF*1..$depth]-(ancestor:Skill)
+WHERE ancestor.status = 'active'
+RETURN DISTINCT ancestor, length(path) AS depth
+ORDER BY depth ASC
+```
+
+```java
+@Service
+public class SkillService {
+    private final Neo4jTemplate neo4jTemplate;
+    
+    public List<SkillWithDepth> getAncestors(String skillId, int depth) {
+        return neo4jTemplate.findAll(
+            "MATCH path = (s:Skill {id: $skillId})<-[:PARENT_OF*1..$depth]-(a:Skill) " +
+            "WHERE a.status = 'active' " +
+            "RETURN DISTINCT a, length(path) AS depth ORDER BY depth ASC",
+            Map.of("skillId", skillId, "depth", depth),
+            SkillWithDepth.class
+        );
+    }
+}
 ```
 
 ### Checklist
@@ -139,7 +140,7 @@ ORDER BY a.depth ASC;
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 2.4.1 | `create(input)` | Validate input via `createEdgeSchema`. Run quality guardrails (§2.5) BEFORE insert. Insert edge row. Record changelog. Return created edge | `src/main/java/com/skillsgraph/service/EdgeService.java` |
+| 2.4.1 | `create(input)` | Validate input via `createEdgeSchema`. Run quality guardrails (§2.5) BEFORE insert. Use Cypher to create the typed relationship: `MATCH (source:Skill {id: $sourceId}), (target:Skill {id: $targetId}) CREATE (source)-[:PARENT_OF {id: $id, confidence: $confidence, ...}]->(target)`. Record changelog. Return created edge | `src/main/java/com/skillsgraph/service/EdgeService.java` |
 | 2.4.2 | `getBySkill(skillId)` | Return all edges where skill is source or target. Group by `relationship_type`: `{ parent_of: [...], child_of: [...], related_to: [...], requires: [...] }` | `src/main/java/com/skillsgraph/service/EdgeService.java` |
 | 2.4.3 | `getRelated(skillId)` | Return skills connected via `related_to` and `requires` edges. Include the edge metadata (confidence, provenance) | `src/main/java/com/skillsgraph/service/EdgeService.java` |
 | 2.4.4 | `deprecate(edgeId)` | Set edge `status = 'deprecated'`. Record changelog | `src/main/java/com/skillsgraph/service/EdgeService.java` |
@@ -168,7 +169,7 @@ Guardrails run **before** any node or edge is committed. They enforce data integ
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 2.5.1 | Cycle detection | `checkCycle(sourceId, targetId, type)` — only applies to `parent_of` and `child_of` edges. Run BFS/DFS from `targetId` following `parent_of` edges. If `sourceId` is reachable, a cycle would be created. Return `{ valid: boolean, cyclePath?: string[] }` | `src/main/java/com/skillsgraph/service/GuardrailService.java` |
+| 2.5.1 | Cycle detection | `checkCycle(sourceId, targetId, type)` — only applies to `PARENT_OF` relationships. Use Cypher: `MATCH path = (target:Skill {id: $targetId})-[:PARENT_OF*1..10]->(source:Skill {id: $sourceId}) RETURN count(path) > 0 AS wouldCreateCycle`. Return `{ valid: boolean, cyclePath?: string[] }` | `src/main/java/com/skillsgraph/service/GuardrailService.java` |
 | 2.5.2 | Self-edge prevention | `checkSelfEdge(sourceId, targetId)` — return error if same. Technically also enforced by CHECK constraint, but checking in code gives a better error message | `src/main/java/com/skillsgraph/service/GuardrailService.java` |
 | 2.5.3 | Duplicate edge prevention | `checkDuplicateEdge(sourceId, targetId, type)` — query existing edges. Return error if duplicate found | `src/main/java/com/skillsgraph/service/GuardrailService.java` |
 | 2.5.4 | Orphan check | `checkOrphan(skillId)` — when activating a skill (`status → active`), verify at least one `parent_of` edge targets it (unless it's a root category). Return `{ valid: boolean, isRoot: boolean }` | `src/main/java/com/skillsgraph/service/GuardrailService.java` |
@@ -197,12 +198,13 @@ async function checkCycle(sourceId: string, targetId: string): Promise<CycleChec
     visited.add(id);
 
     // Get parents of current node
-    const parents = await db.query(`
-      SELECT source_skill_id FROM skill_relationships
-      WHERE target_skill_id = $1
-        AND relationship_type = 'parent_of'
-        AND status = 'active'
-    `, [id]);
+    // Cypher equivalent via Neo4jTemplate:
+    // MATCH path = (target:Skill {id: $targetId})-[:PARENT_OF*1..10]->(source:Skill {id: $sourceId})
+    // RETURN count(path) > 0 AS wouldCreateCycle
+    const parents = await neo4jTemplate.findAll(
+      "MATCH (n:Skill {id: $id})<-[:PARENT_OF]-(parent:Skill) RETURN parent",
+      Map.of("id", id), Skill.class
+    );
 
     for (const parent of parents) {
       queue.push({ id: parent.source_skill_id, path: [...path, parent.source_skill_id] });
@@ -238,7 +240,7 @@ async function checkCycle(sourceId: string, targetId: string): Promise<CycleChec
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 2.6.1 | `record(params)` | Insert row into `graph_changelog`. Get next `graph_version` from `nextval('graph_version_seq')`. Accept: `actor`, `mutation_type`, `entity_type`, `entity_id`, `diff_payload` (JSONB). Fire `pg_notify('graph_changes', json)` | `src/main/java/com/skillsgraph/service/ChangelogService.java` |
+| 2.6.1 | `record(params)` | After writing mutations to Neo4j, insert row into `graph_changelog` (PostgreSQL). Get next `graph_version` from `nextval('graph_version_seq')`. Accept: `actor`, `mutation_type`, `entity_type`, `entity_id`, `diff_payload` (JSONB). Fire `pg_notify('graph_changes', json)` for CDC consumers | `src/main/java/com/skillsgraph/service/ChangelogService.java` |
 | 2.6.2 | `list(since?, limit?)` | Paginated listing of changelog entries where `graph_version > since`. Order by `graph_version ASC`. Default limit `CHANGELOG_DEFAULT_LIMIT` (see `src/main/java/com/skillsgraph/config/AppConstants.java`) | `src/main/java/com/skillsgraph/service/ChangelogService.java` |
 | 2.6.3 | `getVersion()` | Return current graph version (latest `graph_version` from changelog). If no entries, return 0. Also return `total_skills`, `total_edges` counts | `src/main/java/com/skillsgraph/service/ChangelogService.java` |
 | 2.6.4 | `MutationType` enum | Define all valid mutation types: `skill_created`, `skill_updated`, `skill_deprecated`, `skill_merged`, `alias_added`, `alias_removed`, `edge_created`, `edge_updated`, `edge_deprecated` | `src/main/java/com/skillsgraph/service/ChangelogService.java` |
@@ -271,7 +273,7 @@ async function checkCycle(sourceId: string, targetId: string): Promise<CycleChec
 | 2.7.8 | `/api/skills/{id}/aliases` | POST | `AliasService.create()` | `@Valid("json", createAliasSchema)` |
 | 2.7.9 | `/api/skills/{id}/aliases` | GET | `AliasService.listBySkill()` | Optional `?locale=` |
 | 2.7.10 | `/api/edges` | POST | `EdgeService.create()` | `@Valid("json", createEdgeSchema)` |
-| 2.7.11 | `/api/taxonomy/roots` | GET | `SkillService.getRoots()` — return skills that have no incoming `parent_of` edges (i.e., no row in `skill_relationships` where `target_skill_id = skill.id AND relationship_type = 'parent_of' AND status = 'active'`). These are the top-level category nodes seeded in Phase 1 (Technology, Business, Design, etc.) | — |
+| 2.7.11 | `/api/taxonomy/roots` | GET | `SkillService.getRoots()` — Cypher: `MATCH (s:Skill {status: 'active'}) WHERE NOT ()-[:PARENT_OF]->(s) RETURN s`. Returns top-level category nodes seeded in Phase 1 (Technology, Business, Design, etc.) | — |
 | 2.7.12 | `/api/taxonomy/version` | GET | `ChangelogService.getVersion()` | — |
 | 2.7.13 | `/api/taxonomy/changelog` | GET | `ChangelogService.list()` | `?since=`, `?limit=` |
 

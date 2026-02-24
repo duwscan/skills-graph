@@ -23,7 +23,7 @@ When a skill becomes obsolete (e.g., "Adobe Flash"), it is deprecated with a poi
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 6.1.1 | `SkillService.deprecate(id, successorIds)` | Transaction: (1) Validate skill is `active`. (2) Set `status = 'deprecated'`. (3) Create `superseded_by` edge(s) to successor(s). (4) Remap all aliases to first successor (update `skill_id`). (5) Record changelog entries for each mutation. (6) Fire PG NOTIFY. (7) Remove from full-text search service index | `src/main/java/com/skillsgraph/service/lifecycle/DeprecationService.java` |
+| 6.1.1 | `SkillService.deprecate(id, successorIds)` | Transaction: (1) Validate skill is `active`. (2) `SET s.status = 'deprecated'` in Neo4j via Cypher. (3) `CREATE (s)-[:SUPERSEDED_BY]->(successor)` in Neo4j for each successor. (4) Remap aliases: `MATCH (s:Skill {id:$id})-[r:HAS_ALIAS]->(a:Alias) DELETE r CREATE (successor)-[:HAS_ALIAS]->(a)`. (5) Record changelog entries in PostgreSQL `graph_changelog`. (6) Fire `pg_notify('graph_changes', json)`. (7) Remove from full-text search service index | `src/main/java/com/skillsgraph/service/lifecycle/DeprecationService.java` |
 | 6.1.2 | Deprecation validation | Reject if: skill already deprecated/merged, no successor_ids provided, successor doesn't exist, successor is also deprecated/merged. Return descriptive error | `src/main/java/com/skillsgraph/service/lifecycle/DeprecationService.java` |
 | 6.1.3 | `POST /api/skills/:id/deprecate` | Accept `{ successor_ids: UUID[], notes?: string }`. Run deprecation. Return updated skill with new status and superseded_by edges | `src/main/java/com/skillsgraph/controller/SkillController.java` |
 
@@ -57,84 +57,53 @@ When two skills are discovered to be duplicates (e.g., "Machine Learning" and "M
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 6.2.1 | `SkillService.merge(sourceId, targetId)` | Full transactional merge: (1) Validate both skills. (2) Move all aliases from source to survivor. (3) Re-point all edges where source is the `source_skill_id` to survivor (skip if equivalent edge exists). (4) Re-point all edges where source is the `target_skill_id` to survivor (skip if equivalent edge exists). (5) Delete orphaned duplicate edges. (6) **Merge co-occurrence data** (see 6.2.6). (7) Set source `status = 'merged'`. (8) Create `superseded_by` edge from source to survivor. (9) Record changelog with full diff. (10) Fire PG NOTIFY. (11) Update full-text search service: remove source, re-index survivor with merged aliases | `src/main/java/com/skillsgraph/service/lifecycle/MergeService.java` |
+| 6.2.1 | `SkillService.merge(sourceId, targetId)` | Full transactional merge using Cypher: (1) Validate both skills. (2) Move all `[:HAS_ALIAS]` relationships from source to survivor. (3) Re-point all outgoing relationships from source to survivor (skip duplicates, use `apoc.merge.relationship`). (4) Re-point all incoming relationships targeting source to survivor (skip duplicates). (5) **Merge `[:CO_OCCURS_WITH]` relationships** (see 6.2.6). (6) `SET source.status = 'merged'`. (7) `CREATE (source)-[:SUPERSEDED_BY]->(survivor)`. (8) Record changelog with full diff in PostgreSQL `graph_changelog`. (9) Fire `pg_notify`. (10) Update full-text search service | `src/main/java/com/skillsgraph/service/lifecycle/MergeService.java` |
 | 6.2.2 | Edge deduplication during merge | When re-pointing edges, check if an equivalent edge already exists on the survivor (same target/source + relationship_type). If so, keep the one with higher confidence and delete the other | `src/main/java/com/skillsgraph/service/lifecycle/MergeService.java` |
 | 6.2.3 | Post-merge cycle check | After re-pointing edges, run cycle detection on the survivor's edges to ensure the merge didn't introduce cycles | `src/main/java/com/skillsgraph/service/lifecycle/MergeService.java` |
 | 6.2.4 | Merge validation | Reject if: source = target (self-merge), source or target doesn't exist, source or target already deprecated/merged | `src/main/java/com/skillsgraph/service/lifecycle/MergeService.java` |
 | 6.2.5 | `POST /api/skills/:source/merge/:target` | Run merge. Return merged result: survivor skill with all transferred aliases and edges | `src/main/java/com/skillsgraph/controller/SkillController.java` |
-| 6.2.6 | Co-occurrence data merge | During merge, transfer co-occurrence data from source to survivor in `skill_co_occurrences` table. Re-point `skill_a_id`/`skill_b_id` references from source to survivor. Where both source and survivor have co-occurrence rows with the same partner skill, sum the counts and merge `source_type_counts` JSONB. Delete orphaned rows. Maintain `CHECK (skill_a_id < skill_b_id)` constraint by swapping if needed | `src/main/java/com/skillsgraph/service/lifecycle/MergeService.java` |
+| 6.2.6 | Co-occurrence data merge | During merge, transfer `[:CO_OCCURS_WITH]` relationships from source to survivor in Neo4j. Use `MERGE (survivor)-[existing:CO_OCCURS_WITH]-(partner)` with `ON MATCH SET existing.count = existing.count + r.count`. Delete source's `[:CO_OCCURS_WITH]` relationships after merging | `src/main/java/com/skillsgraph/service/lifecycle/MergeService.java` |
 
-### Merge SQL Reference
+### Merge Cypher Reference
 
-```sql
-BEGIN;
-  -- Move aliases
-  UPDATE skill_aliases SET skill_id = $survivor WHERE skill_id = $source;
+```cypher
+// Step 1: Move all aliases from source to survivor
+MATCH (source:Skill {id: $sourceId})-[r:HAS_ALIAS]->(alias:Alias)
+MATCH (survivor:Skill {id: $survivorId})
+DELETE r
+CREATE (survivor)-[:HAS_ALIAS]->(alias);
 
-  -- Re-point edges (source side): source was the origin
-  UPDATE skill_relationships SET source_skill_id = $survivor
-  WHERE source_skill_id = $source
-  AND NOT EXISTS (
-    SELECT 1 FROM skill_relationships existing
-    WHERE existing.source_skill_id = $survivor
-    AND existing.target_skill_id = skill_relationships.target_skill_id
-    AND existing.relationship_type = skill_relationships.relationship_type
-  );
+// Step 2: Re-point outgoing relationships (skip duplicates)
+MATCH (source:Skill {id: $sourceId})-[r]->(other:Skill)
+WHERE type(r) <> 'SUPERSEDED_BY'
+  AND NOT ((:Skill {id: $survivorId})-[x]->(other) WHERE type(x) = type(r))
+MATCH (survivor:Skill {id: $survivorId})
+CALL apoc.merge.relationship(survivor, type(r), {}, properties(r), other) YIELD rel
+DELETE r;
 
-  -- Re-point edges (target side): source was the destination
-  UPDATE skill_relationships SET target_skill_id = $survivor
-  WHERE target_skill_id = $source
-  AND NOT EXISTS (
-    SELECT 1 FROM skill_relationships existing
-    WHERE existing.target_skill_id = $survivor
-    AND existing.source_skill_id = skill_relationships.source_skill_id
-    AND existing.relationship_type = skill_relationships.relationship_type
-  );
+// Step 3: Re-point incoming relationships (skip duplicates)
+MATCH (other:Skill)-[r]->(source:Skill {id: $sourceId})
+WHERE type(r) <> 'SUPERSEDED_BY'
+  AND NOT ((other)-[x]->(:Skill {id: $survivorId}) WHERE type(x) = type(r))
+MATCH (survivor:Skill {id: $survivorId})
+CALL apoc.merge.relationship(other, type(r), {}, properties(r), survivor) YIELD rel
+DELETE r;
 
-  -- Clean up orphaned edges (duplicates that couldn't be re-pointed)
-  DELETE FROM skill_relationships
-  WHERE source_skill_id = $source OR target_skill_id = $source;
+// Step 4: Merge CO_OCCURS_WITH data
+MATCH (source:Skill {id: $sourceId})-[r:CO_OCCURS_WITH]-(partner:Skill)
+MATCH (survivor:Skill {id: $survivorId})
+MERGE (survivor)-[existing:CO_OCCURS_WITH]-(partner)
+  ON CREATE SET existing.count = r.count, existing.sourceCounts = r.sourceCounts, existing.lastSeenAt = r.lastSeenAt
+  ON MATCH SET existing.count = existing.count + r.count, existing.lastSeenAt = datetime()
+DELETE r;
 
-  -- Mark source as merged
-  UPDATE skills SET status = 'merged', updated_at = now() WHERE id = $source;
-
-  -- Create superseded_by edge
-  INSERT INTO skill_relationships (source_skill_id, target_skill_id, relationship_type, provenance)
-  VALUES ($source, $survivor, 'superseded_by', 'human_curated');
-
-  -- Merge co-occurrence data: re-point source → survivor
-  -- For rows where source is skill_a_id
-  UPDATE skill_co_occurrences SET skill_a_id = $survivor
-  WHERE skill_a_id = $source
-  AND NOT EXISTS (
-    SELECT 1 FROM skill_co_occurrences existing
-    WHERE existing.skill_a_id = LEAST($survivor, skill_co_occurrences.skill_b_id)
-    AND existing.skill_b_id = GREATEST($survivor, skill_co_occurrences.skill_b_id)
-  );
-
-  -- For rows where source is skill_b_id
-  UPDATE skill_co_occurrences SET skill_b_id = $survivor
-  WHERE skill_b_id = $source
-  AND NOT EXISTS (
-    SELECT 1 FROM skill_co_occurrences existing
-    WHERE existing.skill_a_id = LEAST(skill_co_occurrences.skill_a_id, $survivor)
-    AND existing.skill_b_id = GREATEST(skill_co_occurrences.skill_a_id, $survivor)
-  );
-
-  -- For duplicate co-occurrence rows (both source and survivor have data with same partner),
-  -- sum counts into survivor's row and delete source's row
-  -- (handled programmatically — query overlapping pairs, merge counts, delete source rows)
-
-  -- Clean up any remaining co-occurrence rows referencing source
-  DELETE FROM skill_co_occurrences
-  WHERE skill_a_id = $source OR skill_b_id = $source;
-
-  -- Fix ordering constraint: ensure skill_a_id < skill_b_id after re-pointing
-  UPDATE skill_co_occurrences
-  SET skill_a_id = skill_b_id, skill_b_id = skill_a_id
-  WHERE skill_a_id > skill_b_id;
-COMMIT;
+// Step 5: Mark source as merged, create SUPERSEDED_BY
+MATCH (source:Skill {id: $sourceId}), (survivor:Skill {id: $survivorId})
+SET source.status = 'merged', source.updatedAt = datetime()
+CREATE (source)-[:SUPERSEDED_BY {createdAt: datetime()}]->(survivor);
 ```
+
+> **Note:** `apoc.merge.relationship` requires the `neo4j-apoc` library (configured via `NEO4J_PLUGINS: '["apoc"]'` in docker-compose). The `graph_changelog` entry is written to PostgreSQL and `pg_notify` is fired after the Neo4j operations complete.
 
 ### Checklist
 
@@ -168,7 +137,7 @@ COMMIT;
 | # | Task | Detail | Files |
 |---|---|---|---|
 | 6.3.1 | Enhanced version endpoint | `GET /api/taxonomy/version` returns `{ graph_version, last_mutation_at, total_skills (active), total_edges (active), total_aliases, supported_locales }` | `src/main/java/com/skillsgraph/controller/TaxonomyController.java` |
-| 6.3.2 | PG NOTIFY listener | `src/main/java/com/skillsgraph/service/changelog/PgNotifyListener.java` — subscribe to `graph_changes` channel on PostgreSQL. On notification: (1) invalidate relevant Redis cache keys (`taxonomy:skill:{id}`), (2) publish to Redis Stream for full-text search service sync (Phase 7). Start listener on app boot | `src/main/java/com/skillsgraph/service/changelog/PgNotifyListener.java` |
+| 6.3.2 | PG NOTIFY listener | `src/main/java/com/skillsgraph/service/changelog/PgNotifyListener.java` — subscribe to `graph_changes` channel on PostgreSQL. Neo4j mutations are recorded to `graph_changelog` (PostgreSQL) before `pg_notify` is fired, so this listener captures all graph changes. On notification: (1) invalidate relevant Redis cache keys (`taxonomy:skill:{id}`), (2) publish to Redis Stream for full-text search service sync (Phase 7). Start listener on app boot | `src/main/java/com/skillsgraph/service/changelog/PgNotifyListener.java` |
 | 6.3.3 | Snapshot export | `SnapshotCreateRunner` (triggered via `--snapshot-create`) — exports taxonomy as JSON: `{ version, timestamp, skills, relationships, aliases, coOccurrences, localeConfig }`. Writes to `snapshots/skills-graph-v{version}-{date}.json` | `src/main/java/com/skillsgraph/script/SnapshotCreateRunner.java` |
 | 6.3.4 | Snapshot import | `SnapshotImportRunner` (triggered via `--snapshot-import`) — truncate all tables, insert snapshot data, rebuild search vector, regenerate embeddings | `src/main/java/com/skillsgraph/script/SnapshotImportRunner.java` |
 
@@ -244,9 +213,10 @@ echo "Phase 6 complete ✓"
 - [ ] Full transaction with rollback on failure
 
 ### 6.2 Merging
-- [ ] `merge()` transfers aliases, re-points edges, handles deduplication
-- [ ] `merge()` merges co-occurrence data (re-point, sum counts, maintain ordering constraint)
-- [ ] Source marked as `merged` with `superseded_by` edge
+- [ ] `merge()` moves `[:HAS_ALIAS]` relationships from source to survivor (Cypher)
+- [ ] `merge()` re-points outgoing and incoming relationships using `apoc.merge.relationship`
+- [ ] `merge()` merges `[:CO_OCCURS_WITH]` data (MERGE + count accumulation)
+- [ ] Source marked as `merged` with `[:SUPERSEDED_BY]` relationship
 - [ ] Post-merge cycle check
 - [ ] Changelog with comprehensive diff
 - [ ] Validation rejects self-merge and invalid targets
@@ -254,5 +224,5 @@ echo "Phase 6 complete ✓"
 ### 6.3 Versioning & Snapshots
 - [ ] Enhanced version endpoint with stats
 - [ ] PG NOTIFY listener for cache invalidation
-- [ ] `./mvnw spring-boot:run -Dspring-boot.run.arguments=--snapshot-create` exports valid snapshot (includes `skill_co_occurrences` data)
+- [ ] `./mvnw spring-boot:run -Dspring-boot.run.arguments=--snapshot-create` exports valid snapshot (includes Neo4j graph data: nodes + relationships)
 - [ ] `./mvnw spring-boot:run -Dspring-boot.run.arguments=--snapshot-import` restores from snapshot
