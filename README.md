@@ -1,15 +1,37 @@
 # skills-graph
 
-To install dependencies:
+An **LLM-First Skills Graph** system powering a Recruitment Agency Platform, built with **Java 21**, **Spring Boot 3**, and **Spring AI**.
+
+## Getting Started
+
+### Prerequisites
+- Java 21 (LTS)
+- Maven 3.9+ (or use the included `./mvnw` wrapper)
+- Docker & Docker Compose
+
+### Installation
 
 ```bash
-bun install
+./mvnw dependency:resolve
 ```
 
-To run:
+### Running
 
 ```bash
-bun run index.ts
+# Start infrastructure (PostgreSQL + Redis)
+docker compose up -d
+
+# Run database migrations
+./mvnw flyway:migrate
+
+# Start the application
+./mvnw spring-boot:run
 ```
 
-This project was created using `bun init` in bun v1.3.0. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+### Testing
+
+```bash
+./mvnw test
+```
+
+This project uses **Java 21** with **Spring Boot 3** and **Spring AI**.

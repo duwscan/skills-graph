@@ -72,7 +72,7 @@ This system takes an **LLM-First** approach, diverging from LinkedIn's data-firs
 | **Locale-aware** | Every skill supports aliases in multiple languages via BCP-47 locale tags |
 | **API-first** | All operations are available via well-defined REST APIs |
 | **Versionable** | Every mutation is tracked in a changelog; the graph can be snapshotted and rolled back |
-| **LLM-native** | All intelligence (extraction, classification, discovery) is powered by generative AI via the Vercel AI SDK — no custom model training |
+| **LLM-native** | All intelligence (extraction, classification, discovery) is powered by generative AI via Spring AI — no custom model training |
 
 ### 1.5 Scale Reference Points
 
@@ -442,30 +442,35 @@ Aggregate raw text from ingestion sources (job postings, profiles, course descri
 
 Use an LLM to identify potential skills from text that are not yet in the taxonomy:
 
-```typescript
-import { generateText, Output } from "ai";
-import { anthropic } from "@ai-sdk/anthropic";
-import { z } from "zod";
+```java
+// Discovery DTO (Java record)
+public record DiscoveryCandidate(
+    String surfaceForm,
+    String normalizedForm,
+    SkillCategory categoryGuess,
+    boolean isLikelyNew,
+    String reason
+) {}
 
-const discoverySchema = z.object({
-  candidates: z.array(z.object({
-    surface_form: z.string().describe("The exact text as it appeared"),
-    normalized_form: z.string().describe("A clean, canonical version"),
-    category_guess: z.enum([
-      "domain", "tool", "certification", "soft_skill", "methodology", "language"
-    ]),
-    is_likely_new: z.boolean().describe("True if this seems like an emerging or niche skill"),
-    reason: z.string().describe("Why this might be a new skill"),
-  })),
-});
+public record DiscoveryResult(List<DiscoveryCandidate> candidates) {}
 
-const { output } = await generateText({
-  model: anthropic("claude-haiku-4-5-20251001"),
-  prompt: `Identify ALL professional skills, technologies, tools, methodologies,
-           and competencies in this text that might NOT be in a standard skills
-           taxonomy:\n\n${chunk}`,
-  output: Output.object(discoverySchema),
-});
+// Spring AI structured output
+@Service
+public class DiscoveryService {
+
+    private final ChatClient chatClient;
+
+    public DiscoveryResult extractCandidates(String chunk) {
+        return chatClient.prompt()
+            .user(u -> u.text("""
+                Identify ALL professional skills, technologies, tools, methodologies,
+                and competencies in this text that might NOT be in a standard skills
+                taxonomy:\n\n{chunk}
+                """).param("chunk", chunk))
+            .call()
+            .entity(DiscoveryResult.class);
+    }
+}
 ```
 
 **Stage 3 — Deduplication via Embeddings**
@@ -478,21 +483,30 @@ Compare discovered candidates against existing taxonomy using embedding similari
 | 0.70 – 0.90 | May be a sub-skill or variant → flag for human review |
 | < 0.70 | Likely genuinely new → add to "pending review" queue |
 
-```typescript
-import { embed } from "ai";
-import { openai } from "@ai-sdk/openai";
+```java
+@Service
+public class VectorSearchService {
 
-const { embedding } = await embed({
-  model: openai.embedding("text-embedding-3-large", { dimensions: 1024 }),
-  value: candidate.normalized_form,
-});
+    private final EmbeddingModel embeddingModel;
+    private final JdbcTemplate jdbcTemplate;
 
-// Query pgvector for nearest neighbors
-const matches = await db.query(`
-  SELECT id, canonical_name, 1 - (embedding <=> $1::vector) AS similarity
-  FROM skills WHERE status = 'active'
-  ORDER BY embedding <=> $1::vector LIMIT 5
-`, [pgvector.toSql(embedding)]);
+    public List<SkillSimilarity> findNearest(String text, int limit) {
+        float[] embedding = embeddingModel.embed(text);
+
+        return jdbcTemplate.query("""
+            SELECT id, canonical_name, 1 - (embedding <=> ?::vector) AS similarity
+            FROM skills WHERE status = 'active'
+            ORDER BY embedding <=> ?::vector LIMIT ?
+            """,
+            (rs, rowNum) -> new SkillSimilarity(
+                rs.getString("id"),
+                rs.getString("canonical_name"),
+                rs.getDouble("similarity")
+            ),
+            pgvectorFormat(embedding), pgvectorFormat(embedding), limit
+        );
+    }
+}
 ```
 
 ### 3.2 Human-in-the-Loop Curation
@@ -538,36 +552,51 @@ Pure vector math — no LLM calls needed:
 
 **Approach B — LLM Classification with Chain-of-Thought (for `parent_of` / `child_of`)**
 
-```typescript
-const relationshipSchema = z.object({
-  reasoning: z.string().describe("Explain your reasoning before classifying"),
-  classification: z.enum([
-    "PARENT_CHILD", "CHILD_PARENT", "RELATED", "PREREQUISITE", "NONE"
-  ]),
-  confidence: z.number().min(0).max(1),
-});
+```java
+// Java records for structured output
+public record RelationshipClassification(
+    String reasoning,          // Generated first for chain-of-thought
+    Classification classification,
+    @JsonProperty(required = true)
+    @Min(0) @Max(1) double confidence
+) {
+    public enum Classification { PARENT_CHILD, CHILD_PARENT, RELATED, PREREQUISITE, NONE }
+}
 
-const { output } = await generateText({
-  model: anthropic("claude-sonnet-4-5-20250929"),
-  prompt: `Classify the relationship between these two skills:
+@Service
+public class RelationshipPredictionService {
 
-    Skill A: ${skillA.name} — ${skillA.description}
-    Parent chain of A: ${skillA.breadcrumb}
+    private final ChatClient chatClient;
 
-    Skill B: ${skillB.name} — ${skillB.description}
-    Parent chain of B: ${skillB.breadcrumb}`,
-  output: Output.object(relationshipSchema),
-});
+    public RelationshipClassification classify(Skill skillA, Skill skillB) {
+        return chatClient.prompt()
+            .user(u -> u.text("""
+                Classify the relationship between these two skills:
+
+                Skill A: {nameA} — {descA}
+                Parent chain of A: {breadcrumbA}
+
+                Skill B: {nameB} — {descB}
+                Parent chain of B: {breadcrumbB}
+                """)
+                .param("nameA", skillA.getCanonicalName())
+                .param("descA", skillA.getDescription())
+                .param("breadcrumbA", skillA.getBreadcrumb())
+                .param("nameB", skillB.getCanonicalName())
+                .param("descB", skillB.getDescription())
+                .param("breadcrumbB", skillB.getBreadcrumb()))
+            .call()
+            .entity(RelationshipClassification.class);
+    }
+}
 ```
 
-> The `reasoning` field comes before `classification` in the Zod schema, forcing the model to think before classifying — improving accuracy by 10-20%.
+> The `reasoning` field comes before `classification` in the Java record, forcing the model to think before classifying — improving accuracy by 10-20%.
 
 **Batch Processing:** For taxonomy construction, classify 10-20 pairs per LLM call to reduce cost:
 
-```typescript
-const batchSchema = z.object({
-  classifications: z.array(relationshipSchema),
-});
+```java
+public record BatchClassificationResult(List<RelationshipClassification> classifications) {}
 ```
 
 ### 3.4 Quality Guardrails
@@ -624,7 +653,7 @@ Input Document → Section Detection → Chunking → Embedding → Retrieval �
 4. **Embed** — Embed each chunk using `embed()` from AI SDK
 5. **Retrieve** — Query pgvector for the top-100 most relevant skills per chunk
 6. **Prompt Construction** — System prompt + few-shot examples + candidate skill list + text chunk + section context
-7. **LLM Structured Extraction** — `generateText` + `Output.object(zodSchema)` enforces valid JSON output
+7. **LLM Structured Extraction** — Spring AI `ChatClient.call().entity(ClassName.class)` enforces structured JSON output via `BeanOutputConverter`
 8. **Validation** — Reject any skill_ids not in the taxonomy candidate list
 9. **Section Weighting** — Adjust confidence scores based on which section the skill was found in
 10. **Skill Expansion** — Query the graph for parent, child, and sibling nodes of each extracted skill
@@ -633,25 +662,30 @@ Input Document → Section Detection → Chunking → Embedding → Retrieval �
 
 ### 4.2 Prompt Engineering
 
-**Extraction Schema (Zod):**
+**Extraction Schema (Java records):**
 
-```typescript
-const extractionSchema = z.object({
-  extracted_skills: z.array(z.object({
-    skill_id: z.string().describe("The canonical ID from the candidate list"),
-    skill_name: z.string().describe("The canonical name from the candidate list"),
-    confidence: z.number().min(0).max(1),
-    evidence: z.array(z.string()).describe("Exact substring(s) from the text"),
-    proficiency_hint: z.enum(["beginner", "intermediate", "advanced", "expert", "unknown"]),
-    context_type: z.enum(["explicit", "implicit"]),
-    section: z.string().optional().describe("Which section this skill was found in, if detected"),
-  })),
-  discovered_candidates: z.array(z.object({
-    surface_form: z.string(),
-    suggested_category: z.string(),
-    reason: z.string(),
-  })).describe("Skills noticed in text that were NOT in the candidate list"),
-});
+```java
+// Jakarta Bean Validation + Jackson annotations for structured output
+public record ExtractedSkill(
+    @JsonProperty("skill_id")   String skillId,
+    @JsonProperty("skill_name") String skillName,
+    @DecimalMin("0") @DecimalMax("1") double confidence,
+    List<String> evidence,
+    ProficiencyHint proficiencyHint,
+    ContextType contextType,
+    String section  // nullable — which section this skill was found in
+) {}
+
+public record DiscoveredCandidate(
+    @JsonProperty("surface_form")      String surfaceForm,
+    @JsonProperty("suggested_category") String suggestedCategory,
+    String reason
+) {}
+
+public record ExtractionResult(
+    @JsonProperty("extracted_skills")     List<ExtractedSkill> extractedSkills,
+    @JsonProperty("discovered_candidates") List<DiscoveredCandidate> discoveredCandidates
+) {}
 ```
 
 **System Prompt:**
@@ -707,62 +741,64 @@ Output:
 
 **Full Pipeline Implementation:**
 
-```typescript
-import { generateText, Output, embed, embedMany } from "ai";
-import { anthropic } from "@ai-sdk/anthropic";
-import { openai } from "@ai-sdk/openai";
-import { z } from "zod";
+```java
+@Service
+public class SkillExtractionPipeline {
 
-class SkillExtractionPipeline {
-  private embeddingModel = openai.embedding("text-embedding-3-large", { dimensions: 1024 });
+    private final EmbeddingModel embeddingModel;
+    private final VectorSearchService vectorSearch;
+    private final ChatClient chatClient;
+    private final RedisTemplate<String, String> redisTemplate;
 
-  async extract(document: string): Promise<ExtractionResult> {
-    const chunks = this.chunk(document);
-    const results: ChunkResult[] = [];
+    public ExtractionResult extract(String document) {
+        List<Chunk> chunks = chunk(document);
+        List<ChunkResult> results = new ArrayList<>();
 
-    for (const chunk of chunks) {
-      // Check cache
-      const cacheKey = this.cacheKey(chunk);
-      const cached = await this.redis.get(cacheKey);
-      if (cached) { results.push(JSON.parse(cached)); continue; }
+        for (Chunk chunk : chunks) {
+            // Check cache
+            String cacheKey = cacheKey(chunk);
+            String cached = redisTemplate.opsForValue().get(cacheKey);
+            if (cached != null) {
+                results.add(objectMapper.readValue(cached, ChunkResult.class));
+                continue;
+            }
 
-      // RAG: retrieve relevant taxonomy subset
-      const { embedding } = await embed({
-        model: this.embeddingModel,
-        value: chunk,
-      });
-      const candidates = await this.pgvector.nearest(embedding, 100);
+            // RAG: retrieve relevant taxonomy subset
+            float[] embedding = embeddingModel.embed(chunk.text());
+            List<CandidateSkill> candidates = vectorSearch.findCandidatesForChunk(embedding, 100);
 
-      // LLM: structured extraction
-      const { output } = await generateText({
-        model: this.selectModel(chunk),
-        system: SYSTEM_PROMPT,
-        prompt: this.buildPrompt(chunk, candidates),
-        output: Output.object(extractionSchema),
-        maxRetries: 3,
-      });
+            // LLM: structured extraction
+            ExtractionResult output = chatClient.prompt()
+                .system(SYSTEM_PROMPT)
+                .user(buildPrompt(chunk.text(), candidates))
+                .call()
+                .entity(ExtractionResult.class);
 
-      // Validate: reject skill_ids not in candidate list
-      const validated = this.validate(output, candidates);
+            // Validate: reject skill_ids not in candidate list
+            ChunkResult validated = validate(output, candidates);
 
-      // Cache result
-      await this.redis.set(cacheKey, JSON.stringify(validated), "EX", 604800);
-      results.push(validated);
+            // Cache result (7-day TTL)
+            redisTemplate.opsForValue().set(cacheKey,
+                objectMapper.writeValueAsString(validated),
+                Duration.ofDays(7));
+            results.add(validated);
+        }
+
+        return mergeAndDeduplicate(results);
     }
 
-    return this.mergeAndDeduplicate(results);
-  }
+    private ChatClient selectModel(Chunk chunk) {
+        // Haiku for short/simple, Sonnet for complex/multilingual
+        if (chunk.tokenEstimate() < 500) return fastChatClient;
+        return standardChatClient;
+    }
 
-  private selectModel(chunk: string) {
-    if (chunk.length < 500) return anthropic("claude-haiku-4-5-20251001");
-    return anthropic("claude-sonnet-4-5-20250929");
-  }
-
-  private chunk(text: string): string[] {
-    // Section-based chunking with sliding window fallback
-    // Target: 1,500-2,000 tokens per chunk
-    // ...implementation
-  }
+    private List<Chunk> chunk(String text) {
+        // Section-based chunking with sliding window fallback
+        // Target: 1,500-2,000 tokens per chunk
+        // ...implementation
+        return List.of();
+    }
 }
 ```
 
@@ -847,30 +883,35 @@ final_confidence = llm_confidence × section_weight
 
 After extraction, all pairs of extracted skills from the same document are recorded in the `skill_co_occurrences` table. This builds empirical evidence for relationship edges over time.
 
-```typescript
-async function recordCoOccurrences(skillIds: string[], sourceType: string) {
-  // Generate all unique pairs (order by UUID to ensure consistent ordering)
-  const pairs = [];
-  const sorted = [...skillIds].sort();
-  for (let i = 0; i < sorted.length; i++) {
-    for (let j = i + 1; j < sorted.length; j++) {
-      pairs.push({ skillA: sorted[i], skillB: sorted[j] });
-    }
-  }
+```java
+@Service
+@Transactional
+public class CoOccurrenceService {
 
-  // Upsert each pair: increment count, update source_type_counts
-  for (const { skillA, skillB } of pairs) {
-    await db.query(`
-      INSERT INTO skill_co_occurrences (skill_a_id, skill_b_id, source_type_counts, last_seen_at)
-      VALUES ($1, $2, jsonb_build_object($3, 1), now())
-      ON CONFLICT (skill_a_id, skill_b_id)
-      DO UPDATE SET
-        co_occurrence_count = skill_co_occurrences.co_occurrence_count + 1,
-        source_type_counts = skill_co_occurrences.source_type_counts ||
-          jsonb_build_object($3, COALESCE((skill_co_occurrences.source_type_counts->>$3)::int, 0) + 1),
-        last_seen_at = now()
-    `, [skillA, skillB, sourceType]);
-  }
+    private final JdbcTemplate jdbcTemplate;
+
+    public void recordCoOccurrences(List<UUID> skillIds, String sourceType) {
+        // Generate all unique pairs (order by UUID for consistent key)
+        List<UUID> sorted = skillIds.stream().sorted().toList();
+        for (int i = 0; i < sorted.size(); i++) {
+            for (int j = i + 1; j < sorted.size(); j++) {
+                upsertPair(sorted.get(i), sorted.get(j), sourceType);
+            }
+        }
+    }
+
+    private void upsertPair(UUID skillA, UUID skillB, String sourceType) {
+        jdbcTemplate.update("""
+            INSERT INTO skill_co_occurrences (skill_a_id, skill_b_id, source_type_counts, last_seen_at)
+            VALUES (?, ?, jsonb_build_object(?, 1), now())
+            ON CONFLICT (skill_a_id, skill_b_id)
+            DO UPDATE SET
+              co_occurrence_count = skill_co_occurrences.co_occurrence_count + 1,
+              source_type_counts = skill_co_occurrences.source_type_counts ||
+                jsonb_build_object(?, COALESCE((skill_co_occurrences.source_type_counts->>?)::int, 0) + 1),
+              last_seen_at = now()
+            """, skillA, skillB, sourceType, sourceType, sourceType);
+    }
 }
 ```
 
@@ -878,16 +919,16 @@ async function recordCoOccurrences(skillIds: string[], sourceType: string) {
 
 | Mode | Technology | Use Case | Latency |
 |---|---|---|---|
-| **Online** (sync) | Hono REST/RPC endpoint | User uploads a resume for real-time extraction | < 5s p99 |
-| **Nearline** (event) | Redis Streams + Bun workers | New job posting arrives, trigger extraction | < 30s |
+| **Online** (sync) | Spring MVC REST endpoint | User uploads a resume for real-time extraction | < 5s p99 |
+| **Nearline** (event) | Redis Streams + Spring @Async workers | New job posting arrives, trigger extraction | < 30s |
 | **Offline** (batch) | Anthropic/OpenAI Batch API | Backfill extraction across millions of documents | 24h SLA, 50% cost |
 
 ### 4.7 Infrastructure Patterns
 
 | Mode | Technology | Use Case | Latency |
 |---|---|---|---|
-| **Online** (sync) | Hono REST/RPC endpoint | User uploads a resume for real-time extraction | < 5s p99 |
-| **Nearline** (event) | Redis Streams + Bun workers | New job posting arrives, trigger extraction | < 30s |
+| **Online** (sync) | Spring MVC REST endpoint | User uploads a resume for real-time extraction | < 5s p99 |
+| **Nearline** (event) | Redis Streams + Spring @Async workers | New job posting arrives, trigger extraction | < 30s |
 | **Offline** (batch) | Anthropic/OpenAI Batch API | Backfill extraction across millions of documents | 24h SLA, 50% cost |
 
 ### 4.8 Extraction Pipeline Diagram
@@ -902,7 +943,7 @@ flowchart LR
     E --> F[Prompt Builder<br/>System + Few-shot<br/>+ Candidates + Chunk<br/>+ Section context]
     F --> G{Cache<br/>Hit?}
     G -->|Hit| H[Return cached]
-    G -->|Miss| I[generateText +<br/>Output.object<br/>via AI SDK]
+    G -->|Miss| I[chatClient.call<br/>entity(Result.class)<br/>via Spring AI]
     I --> J[Validator<br/>Reject invalid IDs]
     J --> J2[Section Weighting<br/>Adjust confidence]
     J2 --> K[Skill Expansion<br/>Graph Lookup]
@@ -923,16 +964,19 @@ flowchart LR
 - Downstream consumers can subscribe to changelog updates via **PostgreSQL LISTEN/NOTIFY** for real-time CDC.
 - **Periodic snapshots** are taken (e.g., daily) for rollback and offline consumption.
 
-```typescript
-// Publish graph mutation event
-await db.query("SELECT pg_notify('graph_changes', $1)", [
-  JSON.stringify({
-    graph_version: newVersion,
-    mutation_type: "skill_created",
-    entity_id: skill.id,
-    actor: curator.id,
-  }),
-]);
+```java
+// Publish graph mutation event via PostgreSQL LISTEN/NOTIFY
+@Transactional
+public void publishGraphEvent(long graphVersion, String mutationType,
+                               UUID entityId, String actor) {
+    String payload = objectMapper.writeValueAsString(Map.of(
+        "graph_version", graphVersion,
+        "mutation_type", mutationType,
+        "entity_id", entityId.toString(),
+        "actor", actor
+    ));
+    jdbcTemplate.execute("SELECT pg_notify('graph_changes', '" + payload + "')");
+}
 ```
 
 ### 5.2 Skill Deprecation
@@ -993,49 +1037,48 @@ COMMIT;
 
 A background process periodically scans `skill_co_occurrences` and strengthens or creates relationship edges:
 
-```typescript
-async function processCoOccurrences() {
-  // Find pairs exceeding threshold that don't have empirical edges yet
-  const pairs = await db.query(`
-    SELECT co.*, s1.canonical_name AS skill_a_name, s2.canonical_name AS skill_b_name
-    FROM skill_co_occurrences co
-    JOIN skills s1 ON co.skill_a_id = s1.id
-    JOIN skills s2 ON co.skill_b_id = s2.id
-    WHERE co.co_occurrence_count >= $1
-    ORDER BY co.co_occurrence_count DESC
-  `, [CO_OCCURRENCE_EDGE_THRESHOLD]);
+```java
+@Service
+@Transactional
+public class CoOccurrenceProcessor {
 
-  for (const pair of pairs) {
-    const existing = await db.query(`
-      SELECT * FROM skill_relationships
-      WHERE ((source_skill_id = $1 AND target_skill_id = $2)
-          OR (source_skill_id = $2 AND target_skill_id = $1))
-        AND relationship_type = 'related_to'
-        AND status = 'active'
-    `, [pair.skill_a_id, pair.skill_b_id]);
+    private final JdbcTemplate jdbcTemplate;
+    private final EdgeService edgeService;
 
-    if (existing.length > 0) {
-      // Strengthen existing edge weight
-      const newWeight = Math.min(1.0,
-        existing[0].weight + (pair.co_occurrence_count / CO_OCCURRENCE_NORMALIZATION_FACTOR));
-      await db.query(`
-        UPDATE skill_relationships SET weight = $1, updated_at = now()
-        WHERE id = $2
-      `, [newWeight, existing[0].id]);
-    } else {
-      // Create new empirical edge
-      const weight = Math.min(1.0,
-        pair.co_occurrence_count / CO_OCCURRENCE_NORMALIZATION_FACTOR);
-      await EdgeService.create({
-        source_skill_id: pair.skill_a_id,
-        target_skill_id: pair.skill_b_id,
-        relationship_type: 'related_to',
-        confidence: weight,
-        weight: weight,
-        provenance: 'empirical',
-      });
+    @Scheduled(cron = "0 0 2 * * *") // nightly at 2am
+    public void processCoOccurrences() {
+        List<CoOccurrencePair> pairs = jdbcTemplate.query("""
+            SELECT co.*, s1.canonical_name AS skill_a_name, s2.canonical_name AS skill_b_name
+            FROM skill_co_occurrences co
+            JOIN skills s1 ON co.skill_a_id = s1.id
+            JOIN skills s2 ON co.skill_b_id = s2.id
+            WHERE co.co_occurrence_count >= ?
+            ORDER BY co.co_occurrence_count DESC
+            """, coOccurrencePairRowMapper, CO_OCCURRENCE_EDGE_THRESHOLD);
+
+        for (CoOccurrencePair pair : pairs) {
+            Optional<SkillRelationship> existing = edgeService
+                .findRelatedEdge(pair.skillAId(), pair.skillBId());
+
+            if (existing.isPresent()) {
+                double newWeight = Math.min(1.0,
+                    existing.get().getWeight() +
+                    (pair.coOccurrenceCount() / (double) CO_OCCURRENCE_NORMALIZATION_FACTOR));
+                edgeService.updateWeight(existing.get().getId(), newWeight);
+            } else {
+                double weight = Math.min(1.0,
+                    pair.coOccurrenceCount() / (double) CO_OCCURRENCE_NORMALIZATION_FACTOR);
+                edgeService.create(CreateEdgeRequest.builder()
+                    .sourceSkillId(pair.skillAId())
+                    .targetSkillId(pair.skillBId())
+                    .relationshipType(RelationshipType.RELATED_TO)
+                    .confidence(weight)
+                    .weight(weight)
+                    .provenance(Provenance.EMPIRICAL)
+                    .build());
+            }
+        }
     }
-  }
 }
 ```
 
@@ -1120,32 +1163,37 @@ stateDiagram-v2
 | `/api/review-queue` | GET | Return pending candidates for curator review |
 | `/api/review-queue/:id/decision` | POST | Submit approve/reject/merge/defer decision |
 
-### 6.5 Example Hono Route
+### 6.5 Example Spring @RestController
 
-```typescript
-import { Hono } from "hono";
-import { zValidator } from "@hono/zod-validator";
-import { z } from "zod";
+```java
+@RestController
+@RequestMapping("/api/extract")
+@Validated
+public class ExtractionController {
 
-const app = new Hono();
+    private final SkillExtractionPipeline pipeline;
 
-const extractBody = z.object({
-  text: z.string().min(1).max(100000),
-  options: z.object({
-    expand: z.boolean().default(true),
-    min_confidence: z.number().min(0).max(1).default(0.5),
-    locale: z.string().default("en"),
-  }).optional(),
-});
+    @PostMapping
+    public ResponseEntity<ExtractionResponse> extract(
+            @Valid @RequestBody ExtractionRequest request) {
+        ExtractionResult result = pipeline.extract(request.text(), request.options());
+        return ResponseEntity.ok(ExtractionResponse.from(result));
+    }
+}
 
-app.post("/api/extract", zValidator("json", extractBody), async (c) => {
-  const { text, options } = c.req.valid("json");
-  const pipeline = new SkillExtractionPipeline(/* deps */);
-  const result = await pipeline.extract(text, options);
-  return c.json(result);
-});
+// Request DTO with Jakarta Bean Validation
+public record ExtractionRequest(
+    @NotBlank @Size(min = 1, max = 100_000) String text,
+    ExtractionOptions options
+) {}
 
-export default app;
+public record ExtractionOptions(
+    @JsonProperty("expand")         boolean expand,
+    @JsonProperty("min_confidence") @DecimalMin("0") @DecimalMax("1") double minConfidence,
+    @NotBlank                       String locale
+) {
+    public ExtractionOptions() { this(true, 0.5, "en"); }
+}
 ```
 
 ---
@@ -1248,21 +1296,29 @@ A skills taxonomy is fundamentally a **shallow DAG** (4-6 levels deep), not a de
 
 **Tier Selection Logic:**
 
-```typescript
-function selectModel(task: string, doc: { tokenCount: number; type: string; language: string }) {
-  if (task === "duplicate_detection" || task === "semantic_search") return "EMBEDDING_ONLY";
+```java
+// Spring AI model tier selection via application.yml profiles or programmatic config
+@Service
+public class ModelSelector {
 
-  if (task === "extraction") {
-    if (doc.language !== "en") return anthropic("claude-sonnet-4-5-20250929");
-    if (doc.tokenCount < 200) return anthropic("claude-haiku-4-5-20251001");
-    if (doc.type === "research_paper") return anthropic("claude-sonnet-4-5-20250929");
-    return anthropic("claude-haiku-4-5-20251001");
-  }
+    @Autowired @Qualifier("fastChatClient")    private ChatClient fastChatClient;
+    @Autowired @Qualifier("standardChatClient") private ChatClient standardChatClient;
+    @Autowired @Qualifier("complexChatClient")  private ChatClient complexChatClient;
 
-  if (task === "relationship_classification") return anthropic("claude-sonnet-4-5-20250929");
-  if (task === "taxonomy_audit") return anthropic("claude-opus-4-6");
-
-  return anthropic("claude-haiku-4-5-20251001");
+    public ChatClient selectModel(String task, DocumentContext doc) {
+        if ("duplicate_detection".equals(task) || "semantic_search".equals(task)) {
+            return null; // EMBEDDING_ONLY — no LLM call needed
+        }
+        if ("extraction".equals(task)) {
+            if (!"en".equals(doc.language())) return standardChatClient;
+            if (doc.tokenCount() < 200)       return fastChatClient;
+            if ("research_paper".equals(doc.type())) return standardChatClient;
+            return fastChatClient;
+        }
+        if ("relationship_classification".equals(task)) return standardChatClient;
+        if ("taxonomy_audit".equals(task))              return complexChatClient;
+        return fastChatClient;
+    }
 }
 ```
 
@@ -1286,27 +1342,28 @@ function selectModel(task: string, doc: { tokenCount: number; type: string; lang
 | Redis (managed) | $50–150 | Caching + Streams |
 | Typesense (self-hosted) | $30–50 | Skills search |
 | Helicone (observability) | $0–100 | Free tier available |
-| Compute (Bun on Fly.io/Railway) | $50–200 | 2-4 instances |
+| Compute (Spring Boot on Fly.io/Railway/Render) | $50–200 | 2-4 instances |
 | **Total** | **$830–2,500** | |
 
 ### 7.6 Runtime & API Framework
 
-| Criterion | Hono + Bun | FastAPI + Python | Express + Node.js |
+| Criterion | Spring Boot 3 + Java 21 | FastAPI + Python | Express + Node.js |
 |---|---|---|---|
-| **AI SDK support** | Native (TypeScript, official Hono integration) | N/A (Python SDKs) | Partial (AI SDK supports Node) |
-| **Startup time** | ~25ms (Bun) | ~500ms | ~200ms |
-| **Type safety** | Full (TypeScript + Zod) | Good (Pydantic v2) | Moderate (TypeScript) |
-| **Streaming** | Native (`stream()` helper + `streamText()`) | StreamingResponse | Requires manual setup |
-| **Schema validation** | Zod (shared with LLM output) | Pydantic (separate from LLM) | Zod (with adapter) |
-| **Bundle size** | Minimal (Hono is ~14KB) | N/A (interpreted) | Moderate |
-| **Test runner** | Built-in (`bun test`) | pytest | jest/vitest |
+| **Spring AI support** | Native (official Spring AI integration) | N/A (Python SDKs) | N/A |
+| **Startup time** | ~2-3s (optimized with GraalVM native: ~50ms) | ~500ms | ~200ms |
+| **Type safety** | Full (Java + Jakarta Bean Validation) | Good (Pydantic v2) | Moderate (TypeScript + Zod) |
+| **Streaming** | Native (`SseEmitter` + `ChatClient.stream()`) | StreamingResponse | Requires manual setup |
+| **Schema validation** | Jakarta Bean Validation (shared annotations) | Pydantic (separate from LLM) | Zod (with adapter) |
+| **Ecosystem** | Massive (Spring, JVM) | Large (Python ML) | Large (npm) |
+| **Test runner** | JUnit 5 + Spring Boot Test (`./mvnw test`) | pytest | jest/vitest |
 
-**Recommendation: Bun + Hono**
+**Recommendation: Java 21 + Spring Boot 3 + Spring AI**
 
-- Bun runs TypeScript natively — no transpilation step
-- Hono is lightweight (14KB), Web Standards-based, and officially supported by the Vercel AI SDK
-- **Zod schemas serve as single source of truth** for both LLM structured output AND API request/response validation
-- Hono's `stream()` helper pipes `streamText()` output directly to HTTP responses for real-time extraction feedback
+- Spring Boot 3 provides production-ready auto-configuration, actuator, and observability out of the box
+- Spring AI is the first-class JVM integration for LLMs/embeddings, officially maintained by Pivotal
+- **Java records + Jakarta Bean Validation serve as single source of truth** for both LLM structured output AND API request/response validation
+- Spring AI's `ChatClient.stream()` integrates directly with Spring MVC `SseEmitter` for real-time extraction feedback
+- Virtual threads (Java 21 Project Loom) provide efficient concurrency without reactive programming complexity
 
 ### 7.7 Search
 
@@ -1319,7 +1376,7 @@ function selectModel(task: string, doc: { tokenCount: number; type: string; lang
 | **Scale fit** | Overkill for taxonomy | Perfect for 10K-100K skills | Perfect for 10K-100K skills |
 | **RAM usage** | High (JVM) | Low | Low |
 
-**Recommendation: Typesense** — autocomplete, typo tolerance ("mahcine lerning" → "Machine Learning"), faceted filtering, and synonym expansion out of the box. Single-binary deployment, far less RAM than Elasticsearch.
+**Recommendation: Typesense or PostgreSQL full-text search** — for the Java stack, PostgreSQL `tsvector` + trigram indexes handle autocomplete and typo-tolerance well at taxonomy scale (10K–100K skills). Typesense remains a valid standalone option if richer autocomplete is needed; its REST API is language-agnostic.
 
 ### 7.8 Caching & Events
 
@@ -1345,63 +1402,65 @@ function selectModel(task: string, doc: { tokenCount: number; type: string; lang
 
 **Recommendation: Redis Streams** — the taxonomy system processes hundreds to low thousands of events/sec. Redis Streams provides adequate throughput without adding another infrastructure component. Upgrade to Kafka if volume exceeds 50K events/sec.
 
-### 7.9 AI SDK & Orchestration
+### 7.9 Spring AI & Orchestration
 
-**Vercel AI SDK (`ai` package)** serves as the unified LLM/embedding abstraction layer. It eliminates the need for LangChain or LlamaIndex.
+**Spring AI** serves as the unified LLM/embedding abstraction layer. It eliminates the need for LangChain or LlamaIndex.
 
 **Why AI SDK is the right choice:**
 
-| Capability | AI SDK Function | Replaces |
+| Capability | Spring AI Component | Replaces |
 |---|---|---|
-| Structured extraction | `generateText` + `Output.object(zodSchema)` | Manual JSON parsing, LangChain output parsers |
-| Embeddings | `embed()` / `embedMany()` | Raw OpenAI SDK calls, LlamaIndex embeddings |
-| Provider switching | `createProviderRegistry()` | Manual client management, LangChain provider adapters |
-| Tool calling | `tool()` utility | LangChain tools, manual function calling |
-| Streaming | `streamText()` + Hono `stream()` | Manual SSE implementation |
-| Retries | Built-in `maxRetries` | tenacity (Python), custom retry logic |
+| Structured extraction | `ChatClient` + structured output (`BeanOutputConverter`) | Manual JSON parsing, LangChain output parsers |
+| Embeddings | `EmbeddingModel.embed()` / `embedAll()` | Raw OpenAI SDK calls, LlamaIndex embeddings |
+| Provider switching | Spring AI auto-configuration in `application.yml` | Manual client management, LangChain provider adapters |
+| Tool calling | `@Tool` annotation / `FunctionCallback` | LangChain tools, manual function calling |
+| Streaming | `ChatClient.stream()` + Spring MVC `SseEmitter` | Manual SSE implementation |
+| Retries | Spring Retry `@Retryable` / `RetryTemplate` | tenacity (Python), custom retry logic |
 
-**Provider Registry Example:**
+**Provider Configuration Example (`application.yml`):**
 
-```typescript
-import { createProviderRegistry } from "ai";
-import { anthropic } from "@ai-sdk/anthropic";
-import { openai } from "@ai-sdk/openai";
-
-const registry = createProviderRegistry({
-  anthropic,
-  openai,
-});
-
-// Switch providers with zero code change
-const model = registry.languageModel("anthropic:claude-sonnet-4-5-20250929");
-const fallback = registry.languageModel("openai:gpt-4o");
+```yaml
+spring:
+  ai:
+    anthropic:
+      api-key: ${ANTHROPIC_API_KEY}
+      chat:
+        options:
+          model: claude-sonnet-4-5-20250929
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      embedding:
+        options:
+          model: text-embedding-3-large
+          dimensions: 1024
 ```
 
-**No additional orchestration frameworks needed.** Custom pipeline classes (like `SkillExtractionPipeline`) are built directly on AI SDK primitives. This gives full control, full debuggability, and zero abstraction overhead.
+**No additional orchestration frameworks needed.** Custom pipeline classes (like `SkillExtractionPipeline`) are built directly on Spring AI primitives. This gives full control, full debuggability, and zero abstraction overhead.
 
 ### 7.10 LLM Integration Patterns
 
 **RAG Pattern (Skill Extraction):**
 
 ```
-embed(chunk) → pgvector.nearest(100) → generateText + Output.object(zodSchema) → validate
+embeddingModel.embed(chunk) → pgvector.nearest(100) → chatClient.call(prompt) + BeanOutputConverter → validate
 ```
 
 **Chain-of-Thought (Relationship Classification):**
 
-Place `reasoning` before `classification` in the Zod schema to force the model to think first:
+Place `reasoning` before `classification` in the Java record to force the model to think first:
 
-```typescript
-const schema = z.object({
-  reasoning: z.string(),      // Generated FIRST → improves accuracy
-  classification: z.enum([...]), // Generated SECOND → informed by reasoning
-  confidence: z.number(),
-});
+```java
+// BeanOutputConverter maps to Java record — field order implies generation order
+public record RelationshipClassification(
+    String reasoning,          // Generated FIRST → improves accuracy
+    Classification classification, // Generated SECOND → informed by reasoning
+    double confidence
+) {}
 ```
 
 **Structured Output Enforcement:**
 
-`Output.object(zodSchema)` handles provider-specific mechanisms transparently:
+`BeanOutputConverter<T>` and Spring AI's structured output handles provider-specific mechanisms transparently:
 - Anthropic → uses `tool_use` under the hood
 - OpenAI → uses `json_schema` response format under the hood
 
@@ -1420,18 +1479,17 @@ No provider-specific code needed in the application layer.
 
 **Rate Limiting & Concurrency:**
 
-```typescript
-import { Semaphore } from "async-mutex";
+```java
+// Spring AI with semaphore-based concurrency control
+private final Semaphore llmSemaphore = new Semaphore(50); // Max 50 concurrent LLM calls
 
-const llmSemaphore = new Semaphore(50); // Max 50 concurrent LLM calls
-
-async function callLLM(prompt: string) {
-  const [, release] = await llmSemaphore.acquire();
-  try {
-    return await generateText({ /* ... */ maxRetries: 3 });
-  } finally {
-    release();
-  }
+public ExtractionResult callLLM(String prompt) throws InterruptedException {
+    llmSemaphore.acquire();
+    try {
+        return chatClient.prompt(prompt).call().entity(ExtractionResult.class);
+    } finally {
+        llmSemaphore.release();
+    }
 }
 ```
 
@@ -1441,13 +1499,15 @@ async function callLLM(prompt: string) {
 
 Acts as a transparent proxy between the application and LLM APIs. Automatically logs every call with prompt, response, latency, cost, and token counts. Zero code changes — just update the base URL:
 
-```typescript
-import { anthropic } from "@ai-sdk/anthropic";
-
-const model = anthropic("claude-sonnet-4-5-20250929", {
-  // Helicone proxy
-  headers: { "Helicone-Auth": `Bearer ${process.env.HELICONE_API_KEY}` },
-});
+```yaml
+# application.yml — route through Helicone proxy
+spring:
+  ai:
+    anthropic:
+      base-url: https://anthropic.helicone.ai
+      api-key: ${ANTHROPIC_API_KEY}
+      default-headers:
+        Helicone-Auth: "Bearer ${HELICONE_API_KEY}"
 ```
 
 **Application Observability — OpenTelemetry + Grafana:**
@@ -1467,7 +1527,7 @@ const model = anthropic("claude-sonnet-4-5-20250929", {
 ```
                            ┌───────────────────────┐
                            │     API Gateway        │
-                           │     (Hono + Bun)       │
+                           │  (Spring Boot 3 + MVC) │
                            └───────┬───────┬────────┘
                                    │       │
                     ┌──────────────┘       └──────────────┐
@@ -1485,8 +1545,8 @@ const model = anthropic("claude-sonnet-4-5-20250929", {
     └────────┘ └───┬────┘ └───┬─────┘              └──────┬──────┘
                    │          │                            │
               ┌────▼────┐ ┌──▼─────────┐           ┌──────▼──────┐
-              │pgvector │ │ Vercel     │           │  Typesense  │
-              │(vectors)│ │ AI SDK     │           │             │
+              │pgvector │ │ Spring     │           │  Typesense  │
+              │(vectors)│ │ AI         │           │             │
               └────┬────┘ │ ┌────────┐ │           └─────────────┘
                    │      │ │Anthropic│ │
                    │      │ │OpenAI   │ │
@@ -1539,23 +1599,27 @@ const model = anthropic("claude-sonnet-4-5-20250929", {
 - **Regression threshold:** F1 must not drop more than 1% vs. previous release.
 - **A/B testing:** Support traffic splitting between model versions to compare quality in production.
 
-```typescript
-// bun test
-import { describe, test, expect } from "bun:test";
+```java
+// JUnit 5 + Spring Boot Test
+@SpringBootTest
+class SkillExtractionGoldenSetTest {
 
-describe("Skill Extraction - Golden Set", () => {
-  test("F1 score meets threshold", async () => {
-    const goldenSet = await loadGoldenSet("./test/fixtures/golden-set.json");
-    const results = await Promise.all(
-      goldenSet.map(doc => pipeline.extract(doc.text))
-    );
-    const { precision, recall, f1 } = computeMetrics(results, goldenSet);
+    @Autowired
+    private SkillExtractionPipeline pipeline;
 
-    expect(f1).toBeGreaterThan(0.85);
-    expect(precision).toBeGreaterThan(0.80);
-    expect(recall).toBeGreaterThan(0.80);
-  });
-});
+    @Test
+    void f1ScoreMeetsThreshold() throws Exception {
+        List<GoldenDocument> goldenSet = loadGoldenSet("classpath:golden-set.json");
+        List<ExtractionResult> results = goldenSet.stream()
+            .map(doc -> pipeline.extract(doc.getText()))
+            .toList();
+        Metrics metrics = computeMetrics(results, goldenSet);
+
+        assertThat(metrics.f1()).isGreaterThan(0.85);
+        assertThat(metrics.precision()).isGreaterThan(0.80);
+        assertThat(metrics.recall()).isGreaterThan(0.80);
+    }
+}
 ```
 
 ### 8.3 Taxonomy Quality Metrics
@@ -1569,7 +1633,7 @@ describe("Skill Extraction - Golden Set", () => {
 
 ### 8.4 API Contract Tests
 
-- **Schema validation:** OpenAPI spec auto-generated from Hono + Zod routes
+- **Schema validation:** OpenAPI spec auto-generated from Spring Web MVC + SpringDoc (springdoc-openapi)
 - **Latency SLOs:**
   - Taxonomy queries: p99 < 50ms
   - Skill extraction (single doc): p99 < 5s
@@ -1601,7 +1665,7 @@ describe("Skill Extraction - Golden Set", () => {
 | **ltree** | PostgreSQL extension for hierarchical path labels |
 | **pgvector** | PostgreSQL extension for vector similarity search |
 | **Matryoshka** | Embedding technique allowing dimension reduction without retraining |
-| **AI SDK** | Vercel AI SDK — TypeScript toolkit for LLM/embedding integration |
+| **Spring AI** | Spring AI — Java toolkit for LLM/embedding integration with Spring Boot |
 
 ### B. Reference Scale Parameters
 

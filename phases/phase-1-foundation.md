@@ -9,7 +9,7 @@
 
 ## Goal
 
-Set up the project scaffold, database schema, and core configuration so all subsequent phases have a solid base to build on. By the end of this phase, you should have a running Hono server on Bun with a fully migrated PostgreSQL database and Redis connection.
+Set up the project scaffold, database schema, and core configuration so all subsequent phases have a solid base to build on. By the end of this phase, you should have a running Spring Web MVC server on Bun with a fully migrated PostgreSQL database and Redis connection.
 
 ---
 
@@ -17,35 +17,35 @@ Set up the project scaffold, database schema, and core configuration so all subs
 
 ### Context
 
-The project uses **Bun** as runtime (native TypeScript, fast startup), **Hono** as the HTTP framework (lightweight, Web Standards, AI SDK compatible), and **Drizzle ORM** for type-safe database access.
+The project uses **Bun** as runtime (native Java, fast startup), **Spring Web MVC** as the HTTP framework (lightweight, Web Standards, Spring AI compatible), and **Spring Data JPA** for type-safe database access.
 
 ### Directory Structure
 
 ```
 skills-graph/
 ├── src/
-│   ├── index.ts                  # Hono app entry point
+│   ├── index.ts                  # Spring Web MVC app entry point
 │   ├── config/
-│   │   ├── env.ts                # Environment variable validation (Zod)
+│   │   ├── env.ts                # Environment variable validation (Jakarta Bean Validation)
 │   │   ├── constants.ts          # Centralized configurable values (thresholds, TTLs, limits)
-│   │   └── providers.ts          # AI SDK provider registry
+│   │   └── providers.ts          # Spring AI provider registry
 │   ├── db/
-│   │   ├── client.ts             # PostgreSQL connection pool (Drizzle)
-│   │   ├── schema.ts             # Drizzle schema definitions
+│   │   ├── client.ts             # PostgreSQL connection pool (Spring Data JPA)
+│   │   ├── schema.ts             # JPA entity schema definitions
 │   │   ├── migrations/           # SQL migration files
 │   │   │   └── 001_initial.sql
-│   │   └── redis.ts              # Redis client (ioredis)
-│   ├── routes/                   # Hono route modules
+│   │   └── redis.ts              # Redis client (Spring Data Redis (Lettuce))
+│   ├── routes/                   # Spring Web MVC route modules
 │   ├── services/                 # Business logic layer
-│   ├── schemas/                  # Shared Zod schemas
+│   ├── schemas/                  # Shared Jakarta Bean Validation schemas
 │   └── lib/                      # Utilities (slug, hash, etc.)
 ├── test/
 │   ├── fixtures/                 # Seed data, golden set
 │   └── helpers/                  # Test utilities
-├── package.json
-├── tsconfig.json
-├── bunfig.toml
-├── drizzle.config.ts
+├── pom.xml
+├── Java 21 compiler configuration
+├── (not applicable)
+├── application.yml
 ├── docker-compose.yml
 ├── .env.example
 └── ARCHITECTURE.md
@@ -55,9 +55,9 @@ skills-graph/
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 1.1.1 | Initialize Bun project | `bun init`, configure `tsconfig.json` with `strict: true`, path aliases (`@/` → `src/`). Create `bunfig.toml` if needed | `package.json`, `tsconfig.json`, `bunfig.toml` |
-| 1.1.2 | Install core dependencies | Runtime: `hono`, `@hono/zod-validator`, `zod`. AI: `ai`, `@ai-sdk/anthropic`, `@ai-sdk/openai`. DB: `drizzle-orm`, `postgres`, `drizzle-kit`. Cache: `ioredis`. Search: `typesense`. Concurrency: `async-mutex`. Utils: `nanoid`, `slugify` | `package.json` |
-| 1.1.3 | Install dev dependencies | `@types/bun`, `typescript`, `prettier`, `@biomejs/biome` (or eslint) | `package.json` |
+| 1.1.1 | Initialize Maven project | Use Spring Initializr (start.spring.io) with: Spring Boot 3, Java 21, Group `com.skillsgraph`. Add starters: `spring-boot-starter-web`, `spring-boot-starter-data-jpa`, `spring-boot-starter-data-redis`, `flyway-core` | `pom.xml`, `mvnw` |
+| 1.1.2 | Add Spring AI dependencies | Spring AI BOM + starters: `spring-ai-anthropic-spring-boot-starter`, `spring-ai-openai-spring-boot-starter`. Pgvector JDBC extension | `pom.xml` |
+| 1.1.3 | Add tooling dependencies | Checkstyle, SpotBugs, Lombok (optional), springdoc-openapi, Testcontainers, postgresql JDBC driver | `pom.xml` |
 | 1.1.4 | Create `.env.example` | Document all required and optional env vars with example values | `.env.example` |
 | 1.1.5 | Create `.gitignore` | Ignore `node_modules`, `.env`, `dist`, `*.log`, `.DS_Store` | `.gitignore` |
 
@@ -82,20 +82,20 @@ TYPESENSE_API_KEY=skills_dev_key
 HELICONE_API_KEY=
 
 # App
-PORT=3000
+SERVER_SERVER_PORT=8080
 NODE_ENV=development
 ```
 
 ### Checklist
 
-- [ ] `bun init` completed, `package.json` exists
-- [ ] `tsconfig.json` has `strict: true` and path aliases configured
+- [ ] `pom.xml` created with Spring Boot 3 parent, Java 21, and all required starters
+- [ ] `Java 21 compiler configuration` has `strict: true` and path aliases configured
 - [ ] All runtime dependencies installed and importable
 - [ ] All dev dependencies installed
 - [ ] `.env.example` created with all variables documented
 - [ ] `.gitignore` covers all standard exclusions
-- [ ] `bun run dev` script defined in `package.json` (e.g., `bun --watch src/index.ts`)
-- [ ] `bun run test` script defined in `package.json`
+- [ ] `./mvnw spring-boot:run` starts the application
+- [ ] `./mvnw test` runs JUnit 5 tests
 
 ---
 
@@ -111,8 +111,8 @@ Local development requires PostgreSQL 16 with extensions (`pgvector`, `ltree`, `
 |---|---|---|---|
 | 1.2.1 | Create `docker-compose.yml` | PostgreSQL 16 (pgvector image) + Redis 7-alpine. Map ports 5432 and 6379. Use named volume for Postgres data persistence | `docker-compose.yml` |
 | 1.2.2 | Add init SQL script | Mount an `init.sql` that enables `ltree` and `pg_trgm` extensions on database creation. pgvector is auto-enabled by the image | `docker/init.sql` |
-| 1.2.3 | Add Typesense container | Typesense server for full-text search (needed in Phase 3 but set up now to avoid reconfiguration) | `docker-compose.yml` |
-| 1.2.4 | Add npm scripts for Docker | `bun run infra:up` → `docker compose up -d`, `bun run infra:down` → `docker compose down`, `bun run infra:reset` → down + remove volumes + up | `package.json` |
+| 1.2.3 | Add full-text search service container | full-text search service server for full-text search (needed in Phase 3 but set up now to avoid reconfiguration) | `docker-compose.yml` |
+| 1.2.4 | Add Maven / application runner scripts for Docker | `./mvnw spring-boot:run -Dspring-boot.run.arguments=--infra-up` → `docker compose up -d`, `docker compose down` → `docker compose down`, `docker compose down -v && docker compose up -d` → down + remove volumes + up | `pom.xml` |
 
 ### `docker-compose.yml`
 
@@ -146,19 +146,19 @@ services:
       timeout: 5s
       retries: 5
 
-  typesense:
-    image: typesense/typesense:27.1
+  full-text-search:
+    image: full-text-search/full-text-search:27.1
     ports: ["8108:8108"]
     environment:
       TYPESENSE_API_KEY: skills_dev_key
       TYPESENSE_DATA_DIR: /data
     volumes:
-      - typesensedata:/data
+      - full-text-searchdata:/data
 
 volumes:
   pgdata:
   redisdata:
-  typesensedata:
+  full-text-searchdata:
 ```
 
 ### `docker/init.sql`
@@ -174,9 +174,9 @@ CREATE EXTENSION IF NOT EXISTS pg_trgm;
 - [ ] `docker compose up -d` starts all 3 services without errors
 - [ ] PostgreSQL is accessible on `localhost:5432`
 - [ ] Redis is accessible on `localhost:6379`
-- [ ] Typesense is accessible on `localhost:8108`
+- [ ] full-text search service is accessible on `localhost:8108`
 - [ ] `docker compose down && docker compose up -d` restarts cleanly (data persists)
-- [ ] `bun run infra:reset` cleans all volumes and starts fresh
+- [ ] `docker compose down -v && docker compose up -d` cleans all volumes and starts fresh
 - [ ] PostgreSQL has `ltree`, `vector`, `pg_trgm` extensions enabled:
   ```bash
   docker exec -it skills-graph-postgres-1 psql -U skills -d skills_graph \
@@ -190,55 +190,68 @@ CREATE EXTENSION IF NOT EXISTS pg_trgm;
 
 ### Context
 
-All environment variables are validated at startup using Zod. The app refuses to start if required variables are missing or malformed. This prevents runtime errors from misconfiguration.
+All environment variables are validated at startup using Jakarta Bean Validation. The app refuses to start if required variables are missing or malformed. This prevents runtime errors from misconfiguration.
 
 ### Tasks
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 1.3.1 | Environment schema | Define Zod schema for all env vars. Include `TYPESENSE_URL` (default `http://localhost:8108`) and `TYPESENSE_API_KEY`. Mark `HELICONE_API_KEY` as optional. Parse `PORT` as number. Validate `DATABASE_URL` starts with `postgresql://` | `src/config/env.ts` |
-| 1.3.2 | Export typed config | Export a `config` object with typed, validated values. All modules import from here instead of `process.env` | `src/config/env.ts` |
-| 1.3.3 | Fail-fast on invalid config | If Zod parsing fails, print clear error message listing missing/invalid vars and exit with code 1 | `src/config/env.ts` |
+| 1.3.1 | `application.yml` | Define all configuration properties with defaults. Required: `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, DataSource URL/credentials. Optional: `HELICONE_API_KEY`. `SERVER_PORT` defaults to 8080 | `src/main/resources/application.yml` |
+| 1.3.2 | `AppProperties.java` | `@ConfigurationProperties(prefix="app")` + `@Validated` record. All services inject `AppProperties` instead of reading `System.getenv()` directly | `src/main/java/com/skillsgraph/config/AppProperties.java` |
+| 1.3.3 | Fail-fast on invalid config | Spring Boot throws `BindException` on startup if required properties are missing/invalid. The exception message lists the invalid field names | `src/main/java/com/skillsgraph/config/AppProperties.java` |
 
-### `src/config/env.ts` (reference)
+### `src/main/resources/application.yml` (reference)
 
-```typescript
-import { z } from "zod";
+```yaml
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/skills_graph}
+    username: ${SPRING_DATASOURCE_USERNAME:skills}
+    password: ${SPRING_DATASOURCE_PASSWORD:skills_dev}
+    hikari:
+      maximum-pool-size: ${DB_POOL_SIZE:10}
+  redis:
+    host: ${SPRING_REDIS_HOST:localhost}
+    port: ${SPRING_REDIS_PORT:6379}
+  ai:
+    anthropic:
+      api-key: ${ANTHROPIC_API_KEY}
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      embedding:
+        options:
+          model: text-embedding-3-large
+          dimensions: 1024
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
 
-const envSchema = z.object({
-  DATABASE_URL: z.string().startsWith("postgresql://"),
-  REDIS_URL: z.string().startsWith("redis://"),
-  ANTHROPIC_API_KEY: z.string().min(1),
-  OPENAI_API_KEY: z.string().min(1),
-  TYPESENSE_URL: z.string().url().default("http://localhost:8108"),
-  TYPESENSE_API_KEY: z.string().min(1),
-  HELICONE_API_KEY: z.string().optional(),
-  PORT: z.coerce.number().default(3000),
-  NODE_ENV: z.enum(["development", "production", "test"]).default("development"),
-});
+app:
+  helicone-api-key: ${HELICONE_API_KEY:}
 
-const parsed = envSchema.safeParse(process.env);
+server:
+  port: ${SERVER_PORT:8080}
+  shutdown: graceful
+```
 
-if (!parsed.success) {
-  console.error("Invalid environment configuration:");
-  console.error(parsed.error.flatten().fieldErrors);
-  process.exit(1);
-}
+### `src/main/java/com/skillsgraph/config/AppProperties.java` (reference)
 
-export const config = parsed.data;
+```java
+@ConfigurationProperties(prefix = "app")
+@Validated
+public record AppProperties(
+    String heliconeApiKey  // optional — empty string if not set
+) {}
 ```
 
 ### Checklist
 
-- [ ] `src/config/env.ts` exists and exports typed `config`
-- [ ] App exits with clear error message when `DATABASE_URL` is missing
-- [ ] App exits with clear error message when `ANTHROPIC_API_KEY` is missing
+- [ ] `src/main/resources/application.yml` contains all configuration
+- [ ] Spring fails with `BindException` when `ANTHROPIC_API_KEY` is missing
 - [ ] App starts successfully when all required vars are set
-- [ ] `TYPESENSE_URL` defaults to `http://localhost:8108` when not set
-- [ ] `TYPESENSE_API_KEY` is required — app exits if missing
 - [ ] `HELICONE_API_KEY` is optional — app starts without it
-- [ ] `PORT` defaults to 3000 when not set
-- [ ] `NODE_ENV` defaults to "development" when not set
+- [ ] `SERVER_PORT` defaults to 8080 when not set
+- [ ] `SPRING_PROFILES_ACTIVE` selects the correct profile (dev/test/prod)
 
 ---
 
@@ -252,8 +265,8 @@ All tunable values (thresholds, TTLs, limits, dimensions, timeouts, etc.) are de
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 1.3b.1 | Create constants file | Define all configurable values grouped by domain: Embedding & Vector Search, Extraction Pipeline, Discovery & Review, API & Pagination, Rate Limiting, Workers & Events, Infrastructure, Quality Thresholds. Each constant has a JSDoc comment explaining its purpose | `src/config/constants.ts` |
-| 1.3b.2 | Env var overrides | For operationally-tunable values, read from `process.env` with the constant as the fallback default. See table below for which constants support env overrides | `src/config/constants.ts` |
+| 1.3b.1 | Create `AppConstants` class | Define all configurable values as `static final` fields, grouped by domain: Embedding & Vector Search, Extraction Pipeline, Discovery & Review, API & Pagination, Rate Limiting, Workers & Events, Infrastructure, Quality Thresholds. Each constant has a Javadoc comment | `src/main/java/com/skillsgraph/config/AppConstants.java` |
+| 1.3b.2 | Env var overrides | For operationally-tunable values, read from `application.yml` (via `@Value` or a dedicated properties class) with the constant as the fallback default. See table below for which constants support env overrides | `src/main/java/com/skillsgraph/config/AppConstants.java` |
 
 ### Constants Overview
 
@@ -272,66 +285,73 @@ All tunable values (thresholds, TTLs, limits, dimensions, timeouts, etc.) are de
 
 ### Checklist
 
-- [ ] `src/config/constants.ts` exists and exports all constants listed above
-- [ ] Constants are grouped by domain with clear JSDoc comments
-- [ ] Env-overridable constants fall back to their default when env var is unset
+- [ ] `AppConstants.java` exists with all constants listed above
+- [ ] Constants are grouped by domain with clear Javadoc comments
+- [ ] Env-overridable constants fall back to their static default when not configured
 - [ ] `DB_POOL_SIZE` resolves to 10 in dev and 50 in production when env var is unset
-- [ ] All other modules import from `@/config/constants` instead of hardcoding values
+- [ ] All other modules import from `AppConstants` instead of hardcoding values
 - [ ] No magic numbers remain inline in service or route files
 
 ---
 
-## 1.4 AI SDK Provider Registry
+## 1.4 Spring AI Provider Registry
 
 ### Context
 
-The Vercel AI SDK's `createProviderRegistry()` provides a unified interface to switch between LLM providers (Anthropic primary, OpenAI fallback) and embedding models. All services import models from this registry instead of creating provider instances directly.
+Spring AI's auto-configuration provides a unified interface to switch between LLM providers (Anthropic primary, OpenAI fallback) and embedding models. All services inject `ChatClient` or `EmbeddingModel` beans instead of creating provider instances directly.
 
 ### Tasks
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 1.4.1 | Create provider registry | Set up `createProviderRegistry()` with `anthropic` and `openai` providers | `src/config/providers.ts` |
-| 1.4.2 | Export model helpers | Export convenience functions: `getExtractionModel(tier)`, `getEmbeddingModel()`, `getClassificationModel()` that return the correct model instance based on tier strategy | `src/config/providers.ts` |
-| 1.4.3 | Helicone proxy support | If `HELICONE_API_KEY` is set, configure Anthropic and OpenAI providers to route through Helicone proxy | `src/config/providers.ts` |
+| 1.4.1 | Define ChatClient beans | `AiConfig.java` — define `@Bean("fastChatClient")` (Claude Haiku) and `@Bean("standardChatClient")` (Claude Sonnet) using `ChatClient.builder()` | `src/main/java/com/skillsgraph/config/AiConfig.java` |
+| 1.4.2 | EmbeddingModel bean | `EmbeddingModel` is auto-configured by Spring AI from `application.yml` (`spring.ai.openai.embedding.options.model/dimensions`). Optionally expose as a named bean for clarity | `src/main/java/com/skillsgraph/config/AiConfig.java` |
+| 1.4.3 | Helicone proxy support | If `HELICONE_API_KEY` is set, override `spring.ai.anthropic.base-url` to `https://anthropic.helicone.ai` and add `Helicone-Auth` default header via `@Conditional` bean | `src/main/java/com/skillsgraph/config/AiConfig.java` |
 
-### `src/config/providers.ts` (reference)
+### `src/main/java/com/skillsgraph/config/AiConfig.java` (reference)
 
-```typescript
-import { createProviderRegistry } from "ai";
-import { anthropic } from "@ai-sdk/anthropic";
-import { openai } from "@ai-sdk/openai";
-import { config } from "./env";
-import { EMBEDDING_MODEL, EMBEDDING_DIMENSIONS } from "./constants";
+```java
+@Configuration
+public class AiConfig {
 
-export const registry = createProviderRegistry({ anthropic, openai });
+    /**
+     * Fast ChatClient — Claude Haiku (low cost, high volume extraction)
+     */
+    @Bean("fastChatClient")
+    public ChatClient fastChatClient(AnthropicChatModel chatModel) {
+        return ChatClient.builder(chatModel)
+            .defaultOptions(AnthropicChatOptions.builder()
+                .withModel("claude-haiku-4-5-20251001")
+                .withMaxTokens(4096)
+                .build())
+            .build();
+    }
 
-export function getExtractionModel(tier: "fast" | "standard" | "complex" = "standard") {
-  switch (tier) {
-    case "fast":    return anthropic("claude-haiku-4-5-20251001");
-    case "standard": return anthropic("claude-haiku-4-5-20251001");
-    case "complex": return anthropic("claude-sonnet-4-5-20250929");
-  }
+    /**
+     * Standard ChatClient — Claude Sonnet (complex extraction, classification)
+     */
+    @Bean("standardChatClient")
+    public ChatClient standardChatClient(AnthropicChatModel chatModel) {
+        return ChatClient.builder(chatModel)
+            .defaultOptions(AnthropicChatOptions.builder()
+                .withModel("claude-sonnet-4-5-20250929")
+                .withMaxTokens(8192)
+                .build())
+            .build();
+    }
 }
-
-export function getEmbeddingModel() {
-  return openai.embedding(EMBEDDING_MODEL, { dimensions: EMBEDDING_DIMENSIONS });
-}
-
-export function getClassificationModel() {
-  return anthropic("claude-sonnet-4-5-20250929");
-}
+// EmbeddingModel is auto-configured by spring-ai-openai-spring-boot-starter
+// from application.yml: spring.ai.openai.embedding.options.model/dimensions
 ```
 
 ### Checklist
 
-- [ ] `src/config/providers.ts` exists and exports registry + model helpers
-- [ ] `getExtractionModel("fast")` returns Claude Haiku
-- [ ] `getExtractionModel("complex")` returns Claude Sonnet
-- [ ] `getEmbeddingModel()` returns the model specified by `EMBEDDING_MODEL` at `EMBEDDING_DIMENSIONS` dims (see `src/config/constants.ts`)
-- [ ] `getClassificationModel()` returns Claude Sonnet
-- [ ] When `HELICONE_API_KEY` is set, providers route through Helicone
-- [ ] When `HELICONE_API_KEY` is NOT set, providers call APIs directly
+- [ ] `AiConfig.java` defines `fastChatClient` and `standardChatClient` beans
+- [ ] `@Qualifier("fastChatClient")` resolves to Claude Haiku configuration
+- [ ] `@Qualifier("standardChatClient")` resolves to Claude Sonnet configuration
+- [ ] `EmbeddingModel` bean auto-configured from `application.yml` (text-embedding-3-large, 1024 dims)
+- [ ] When `HELICONE_API_KEY` is set, `baseURL` routes through Helicone
+- [ ] When `HELICONE_API_KEY` is NOT set, calls go directly to providers
 
 ---
 
@@ -345,11 +365,11 @@ The full schema from ARCHITECTURE.md §2.7 defines 5 tables: `skills`, `skill_al
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 1.5.1 | Create initial migration | Full SQL schema from ARCHITECTURE.md §2.8. Include all 6 tables (`skills`, `skill_aliases`, `skill_relationships`, `skill_co_occurrences`, `locale_config`, `graph_changelog`), CHECK constraints, UNIQUE constraints, and indexes | `src/db/migrations/001_initial.sql` |
-| 1.5.2 | Create graph version sequence | `CREATE SEQUENCE graph_version_seq;` for monotonic changelog version numbers | `src/db/migrations/001_initial.sql` |
-| 1.5.3 | Drizzle schema definitions | Define all tables in Drizzle schema format for type-safe queries. Map pgvector `vector(1024)` and `ltree` as custom column types | `src/db/schema.ts` |
-| 1.5.4 | Migration runner | `bun run db:migrate` script that reads `.sql` files from `migrations/` and applies them in order. Track applied migrations in a `_migrations` table | `src/db/migrate.ts` |
-| 1.5.5 | Seed data script | `bun run db:seed` — insert locale_config rows (en, vi, fr, ja, zh) and 5-10 root skill categories (Technology, Business, Design, Science, Languages, Soft Skills) | `src/db/seed.ts` |
+| 1.5.1 | Create initial migration | Full SQL schema from ARCHITECTURE.md §2.8. Include all 6 tables (`skills`, `skill_aliases`, `skill_relationships`, `skill_co_occurrences`, `locale_config`, `graph_changelog`), CHECK constraints, UNIQUE constraints, and indexes | `src/main/resources/db/migration/V1__initial_schema.sql` |
+| 1.5.2 | Create graph version sequence | `CREATE SEQUENCE graph_version_seq;` for monotonic changelog version numbers | `src/main/resources/db/migration/V1__initial_schema.sql` |
+| 1.5.3 | JPA `@Entity` classes | Define `@Entity` classes: `Skill`, `SkillAlias`, `SkillRelationship`, `SkillCoOccurrence`, `LocaleConfig`, `GraphChangelog`. Map pgvector `vector(1024)` via pgvector-hibernate, `ltree` as `String` | `src/main/java/com/skillsgraph/domain/` |
+| 1.5.4 | Flyway auto-migration | Flyway runs automatically on startup via `spring.flyway.enabled=true`. Migrations in `src/main/resources/db/migration/V*.sql`. Tracks applied migrations in `flyway_schema_history` table | `src/main/resources/db/migration/` |
+| 1.5.5 | Seed data script | `./mvnw spring-boot:run -Dspring-boot.run.arguments=--seed` — insert locale_config rows (en, vi, fr, ja, zh) and 5-10 root skill categories (Technology, Business, Design, Science, Languages, Soft Skills) | `src/main/java/com/skillsgraph/script/SeedRunner.java` |
 
 ### Tables Summary
 
@@ -378,17 +398,17 @@ The full schema from ARCHITECTURE.md §2.7 defines 5 tables: `skills`, `skill_al
 
 ### Checklist
 
-- [ ] `src/db/migrations/001_initial.sql` contains complete schema (6 tables, all constraints, all indexes)
+- [ ] `src/main/java/com/skillsgraph/src/main/resources/db/migration/V1__initial_schema.sql` contains complete schema (6 tables, all constraints, all indexes)
 - [ ] `CREATE SEQUENCE graph_version_seq` is included
-- [ ] `bun run db:migrate` applies migration successfully
-- [ ] `bun run db:migrate` is idempotent (running twice doesn't error)
+- [ ] `./mvnw flyway:migrate` applies migration successfully
+- [ ] `./mvnw flyway:migrate` is idempotent (running twice doesn't error)
 - [ ] All 6 tables exist: `\dt` shows `skills`, `skill_aliases`, `skill_relationships`, `skill_co_occurrences`, `locale_config`, `graph_changelog`
 - [ ] All CHECK constraints work: inserting invalid `status` value fails
 - [ ] UNIQUE constraint works: inserting duplicate `slug` fails
-- [ ] `bun run db:seed` inserts locale_config rows and root categories
-- [ ] `bun run db:seed` is idempotent (running twice doesn't create duplicates)
-- [ ] Drizzle schema (`src/db/schema.ts`) matches SQL schema
-- [ ] Drizzle can perform basic SELECT/INSERT on all tables
+- [ ] `./mvnw spring-boot:run -Dspring-boot.run.arguments=--seed` inserts locale_config rows and root categories
+- [ ] `./mvnw spring-boot:run -Dspring-boot.run.arguments=--seed` is idempotent (running twice doesn't create duplicates)
+- [ ] JPA entity schema (`src/main/java/com/skillsgraph/domain/`) matches SQL schema
+- [ ] Spring Data JPA can perform basic SELECT/INSERT on all tables
 
 ---
 
@@ -396,64 +416,64 @@ The full schema from ARCHITECTURE.md §2.7 defines 5 tables: `skills`, `skill_al
 
 ### Context
 
-Database access uses Drizzle ORM over `postgres` (porsager/postgres) for connection pooling. Redis uses `ioredis` with typed cache helpers. A pgvector serialization helper converts between JS arrays and PostgreSQL vector format.
+Database access uses Spring Data JPA over `postgres` (porsager/postgres) for connection pooling. Redis uses `Spring Data Redis (Lettuce)` with typed cache helpers. A pgvector serialization helper converts between JS arrays and PostgreSQL vector format.
 
 ### Tasks
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 1.6.1 | PostgreSQL client | Connection pool via `postgres` library with Drizzle ORM wrapper. Pool size from `DB_POOL_SIZE` in `src/config/constants.ts` (10 dev / 50 prod, overridable via `DB_POOL_SIZE` env var). Include connection error handling and logging | `src/db/client.ts` |
-| 1.6.2 | Redis client | ioredis connection with reconnect strategy (exponential backoff). Export typed cache helpers | `src/db/redis.ts` |
-| 1.6.3 | Cache helpers | `cacheGet<T>(key): Promise<T | null>` — JSON.parse cached value. `cacheSet(key, value, ttlSeconds)` — JSON.stringify and SET EX. `cacheDelete(key)`. `cacheMakeKey(...parts)` — join parts with `:` | `src/db/redis.ts` |
-| 1.6.4 | pgvector helpers | `toSql(embedding: number[]): string` — convert `[0.1, 0.2, ...]` to `'[0.1,0.2,...]'`. `fromSql(pgString): number[]` — parse vector string back to array | `src/lib/pgvector.ts` |
-| 1.6.5 | Graceful shutdown helpers | Export `closeDatabase()` and `closeRedis()` functions for clean shutdown | `src/db/client.ts`, `src/db/redis.ts` |
+| 1.6.1 | PostgreSQL client | Connection pool via `postgres` library with Spring Data JPA wrapper. Pool size from `DB_POOL_SIZE` in `src/main/java/com/skillsgraph/config/AppConstants.java` (10 dev / 50 prod, overridable via `DB_POOL_SIZE` env var). Include connection error handling and logging | `src/main/java/com/skillsgraph/config/DataSourceConfig.java` |
+| 1.6.2 | Redis client | Spring Data Redis (Lettuce) connection with reconnect strategy (exponential backoff). Export typed cache helpers | `src/main/java/com/skillsgraph/config/RedisConfig.java` |
+| 1.6.3 | Cache helpers | `cacheGet<T>(key): Promise<T | null>` — JSON.parse cached value. `cacheSet(key, value, ttlSeconds)` — JSON.stringify and SET EX. `cacheDelete(key)`. `cacheMakeKey(...parts)` — join parts with `:` | `src/main/java/com/skillsgraph/config/RedisConfig.java` |
+| 1.6.4 | pgvector helpers | `toSql(embedding: number[]): string` — convert `[0.1, 0.2, ...]` to `'[0.1,0.2,...]'`. `fromSql(pgString): number[]` — parse vector string back to array | `src/main/java/com/skillsgraph/util/PgVectorUtils.java` |
+| 1.6.5 | Graceful shutdown helpers | Export `closeDatabase()` and `closeRedis()` functions for clean shutdown | `src/main/java/com/skillsgraph/config/DataSourceConfig.java`, `src/main/java/com/skillsgraph/config/RedisConfig.java` |
 
 ### Checklist
 
-- [ ] `src/db/client.ts` exports Drizzle `db` instance
+- [ ] `src/main/java/com/skillsgraph/config/DataSourceConfig.java` exports Spring Data JPA `db` instance
 - [ ] Database connection works: `db.select().from(skills).limit(1)` returns without error
-- [ ] Connection pool size is configurable via `DB_POOL_SIZE` env var (see `src/config/constants.ts` for defaults)
-- [ ] `src/db/redis.ts` exports `redis` client and cache helpers
+- [ ] Connection pool size is configurable via `DB_POOL_SIZE` env var (see `src/main/java/com/skillsgraph/config/AppConstants.java` for defaults)
+- [ ] `src/main/java/com/skillsgraph/config/RedisConfig.java` exports `redis` client and cache helpers
 - [ ] Redis connection works: `redis.ping()` returns "PONG"
 - [ ] `cacheSet("test:key", { foo: "bar" }, 60)` stores value
 - [ ] `cacheGet<{foo:string}>("test:key")` retrieves typed value
 - [ ] `cacheDelete("test:key")` removes value
 - [ ] `cacheMakeKey("taxonomy", "skill", "abc123")` returns `"taxonomy:skill:abc123"`
-- [ ] `src/lib/pgvector.ts` — `toSql([0.1, 0.2, 0.3])` returns `'[0.1,0.2,0.3]'`
+- [ ] `src/main/java/com/skillsgraph/util/PgVectorUtils.java` — `toSql([0.1, 0.2, 0.3])` returns `'[0.1,0.2,0.3]'`
 - [ ] `fromSql('[0.1,0.2,0.3]')` returns `[0.1, 0.2, 0.3]`
 - [ ] Graceful shutdown: `closeDatabase()` drains pool, `closeRedis()` disconnects cleanly
 
 ---
 
-## 1.7 Hono App Skeleton
+## 1.7 Spring Web MVC App Skeleton
 
 ### Context
 
-The Hono app serves as the API gateway. At this stage, only the skeleton is set up — route groups are mounted but handlers are placeholders. Middleware includes error handling, request ID, CORS, and timing.
+The Spring Web MVC app serves as the API gateway. At this stage, only the skeleton is set up — route groups are mounted but handlers are placeholders. Middleware includes error handling, request ID, CORS, and timing.
 
 ### Tasks
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 1.7.1 | Hono app entry | Create Hono app instance. Mount route groups as placeholders: `/api/skills`, `/api/edges`, `/api/extract`, `/api/taxonomy`, `/api/review-queue` | `src/index.ts` |
-| 1.7.2 | Health check endpoint | `GET /health` — check DB connection (`SELECT 1`), Redis connection (`PING`), return `{ status, version, db, redis, uptime_seconds }` | `src/routes/health.ts` |
-| 1.7.3 | Error handler middleware | Catch-all `app.onError()` handler. Return `{ error: message, status, request_id }`. Log the full error with stack trace. Map known error types to HTTP status codes (ZodError → 400, NotFoundError → 404, ConflictError → 409, etc.) | `src/middleware/error-handler.ts` |
-| 1.7.4 | Request ID middleware | Generate `crypto.randomUUID()` for each request. Set `x-request-id` response header. Store in Hono context for logging | `src/middleware/request-id.ts` |
-| 1.7.5 | CORS middleware | Use `hono/cors` with configurable origins. Default: allow all in development, restrictive in production | `src/index.ts` |
-| 1.7.6 | Custom error classes | `NotFoundError`, `ConflictError`, `ValidationError`, `CycleDetectedError` extending base `AppError` class with `statusCode` property | `src/lib/errors.ts` |
-| 1.7.7 | Server startup | Listen on configured PORT. Log startup message with port and environment | `src/index.ts` |
+| 1.7.1 | Spring Web MVC app entry | Create Spring Web MVC app instance. Mount route groups as placeholders: `/api/skills`, `/api/edges`, `/api/extract`, `/api/taxonomy`, `/api/review-queue` | `src/main/java/com/skillsgraph/SkillsGraphApplication.java` |
+| 1.7.2 | Health check endpoint | `GET /actuator/health` — check DB connection (`SELECT 1`), Redis connection (`PING`), return `{ status, version, db, redis, uptime_seconds }` | `src/main/java/com/skillsgraph/controller/HealthController.java` |
+| 1.7.3 | Error handler middleware | Catch-all `app.onError()` handler. Return `{ error: message, status, request_id }`. Log the full error with stack trace. Map known error types to HTTP status codes (Jakarta Bean ValidationException → 400, SkillNotFoundException (extends RuntimeException) → 404, DuplicateSkillException → 409, etc.) | `src/main/java/com/skillsgraph/middleware/GlobalExceptionHandler.java` |
+| 1.7.4 | Request ID middleware | Generate `UUID.randomUUID().toString()` for each request. Set `X-Request-ID` response header. Store in Spring Web MVC context for logging | `src/main/java/com/skillsgraph/middleware/RequestIdFilter.java` |
+| 1.7.5 | CORS middleware | Use `hono/cors` with configurable origins. Default: allow all in development, restrictive in production | `src/main/java/com/skillsgraph/SkillsGraphApplication.java` |
+| 1.7.6 | Custom error classes | `SkillNotFoundException`, `DuplicateSkillException`, `ValidationException`, `CycleDetectedException` extending base `AppException` class with `statusCode` property | `src/main/java/com/skillsgraph/util/AppExceptions.java` |
+| 1.7.7 | Server startup | Listen on configured PORT. Log startup message with port and environment | `src/main/java/com/skillsgraph/SkillsGraphApplication.java` |
 
-### `src/index.ts` (reference)
+### `src/main/java/com/skillsgraph/SkillsGraphApplication.java` (reference)
 
-```typescript
-import { Hono } from "hono";
+```java
+import { Spring Web MVC } from "hono";
 import { cors } from "hono/cors";
 import { config } from "./config/env";
 import { healthRoutes } from "./routes/health";
 import { requestId } from "./middleware/request-id";
 import { errorHandler } from "./middleware/error-handler";
 
-const app = new Hono();
+const app = new Spring Web MVC();
 
 // Middleware
 app.use("*", cors());
@@ -472,22 +492,22 @@ app.route("/health", healthRoutes);
 app.onError(errorHandler);
 
 export default {
-  port: config.PORT,
+  server.port: ${SERVER_PORT:8080},
   fetch: app.fetch,
 };
 ```
 
 ### Checklist
 
-- [ ] `bun run dev` starts server on PORT 3000
-- [ ] `GET /health` returns `{ status: "ok", version: "0.1.0", db: "connected", redis: "connected", uptime_seconds: N }`
-- [ ] `GET /health` returns `{ status: "degraded", db: "disconnected" }` when DB is down
-- [ ] All responses include `x-request-id` header
+- [ ] `./mvnw spring-boot:run` starts server on PORT 8080
+- [ ] `GET /actuator/health` returns `{ status: "ok", version: "0.1.0", db: "connected", redis: "connected", uptime_seconds: N }`
+- [ ] `GET /actuator/health` returns `{ status: "degraded", db: "disconnected" }` when DB is down
+- [ ] All responses include `X-Request-ID` header
 - [ ] `GET /nonexistent` returns `{ error: "Not Found", status: 404, request_id: "..." }`
 - [ ] CORS headers are present in responses
 - [ ] Error handler catches thrown errors and returns structured JSON
-- [ ] `NotFoundError`, `ConflictError`, `ValidationError` classes exist
-- [ ] Server logs startup message: `"Skills Graph API started on port 3000 (development)"`
+- [ ] `SkillNotFoundException`, `DuplicateSkillException`, `ValidationException` classes exist
+- [ ] Server logs startup message: `"Skills Graph API started on port 8080 (development)"`
 - [ ] `Ctrl+C` triggers graceful shutdown (closes DB pool, Redis connection)
 
 ---
@@ -496,26 +516,26 @@ export default {
 
 ### Context
 
-Set up the test infrastructure with `bun test`. Write initial tests for configuration, utilities, and health check.
+Set up the test infrastructure with `./mvnw test`. Write initial tests for configuration, utilities, and health check.
 
 ### Tasks
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 1.8.1 | Test configuration | Configure `bun test` in `package.json`. Set up test environment (use `.env.test` or inline env vars) | `package.json` |
-| 1.8.2 | Test helpers | Create helpers for spinning up test DB, resetting state between tests, creating test Hono app instance | `test/helpers/setup.ts` |
-| 1.8.3 | Config tests | Test that env validation rejects missing required vars. Test default values for optional vars | `test/config/env.test.ts` |
-| 1.8.4 | pgvector helper tests | Test `toSql()` and `fromSql()` with various vector sizes and edge cases (empty, single element, large dimensions) | `test/lib/pgvector.test.ts` |
-| 1.8.5 | Health check test | Test `GET /health` returns correct shape and status | `test/routes/health.test.ts` |
-| 1.8.6 | Error handler tests | Test that different error types map to correct HTTP status codes | `test/middleware/error-handler.test.ts` |
+| 1.8.1 | Test configuration | Configure `./mvnw test` in `pom.xml`. Set up test environment (use `.env.test` or inline env vars) | `pom.xml` |
+| 1.8.2 | Test helpers | Create helpers for spinning up test DB, resetting state between tests, creating test Spring Web MVC app instance | `src/test/java/com/skillsgraph/TestSetup.java` |
+| 1.8.3 | Config tests | Test that env validation rejects missing required vars. Test default values for optional vars | `src/test/java/com/skillsgraph/config/AppPropertiesTest.java` |
+| 1.8.4 | pgvector helper tests | Test `toSql()` and `fromSql()` with various vector sizes and edge cases (empty, single element, large dimensions) | `src/test/java/com/skillsgraph/util/PgVectorUtilsTest.java` |
+| 1.8.5 | Health check test | Test `GET /actuator/health` returns correct shape and status | `src/test/java/com/skillsgraph/controller/HealthControllerTest.java` |
+| 1.8.6 | Error handler tests | Test that different error types map to correct HTTP status codes | `src/test/java/com/skillsgraph/middleware/GlobalExceptionHandlerTest.java` |
 
 ### Checklist
 
-- [ ] `bun test` runs without errors
+- [ ] `./mvnw test` runs without errors
 - [ ] Config tests pass: invalid env → exits, valid env → config object
 - [ ] pgvector helper tests pass: `toSql`, `fromSql` round-trip correctly
 - [ ] Health check test passes: correct JSON shape when DB/Redis are up
-- [ ] Error handler tests pass: ZodError → 400, NotFoundError → 404, generic → 500
+- [ ] Error handler tests pass: Jakarta Bean ValidationException → 400, SkillNotFoundException (extends RuntimeException) → 404, generic → 500
 - [ ] Tests are isolated: each test file can run independently
 - [ ] Test output shows clear pass/fail for each test case
 
@@ -531,8 +551,8 @@ docker compose up -d
 docker compose ps  # All 3 services "Up (healthy)"
 
 # 2. Database
-bun run db:migrate  # → "Migration 001_initial applied"
-bun run db:seed     # → "Seeded 5 locales, 6 root categories"
+./mvnw flyway:migrate  # → "Migration 001_initial applied"
+./mvnw spring-boot:run -Dspring-boot.run.arguments=--seed     # → "Seeded 5 locales, 6 root categories"
 
 # Verify tables
 docker exec -it skills-graph-postgres-1 psql -U skills -d skills_graph \
@@ -550,20 +570,20 @@ docker exec -it skills-graph-postgres-1 psql -U skills -d skills_graph \
 # → Technology, Business, Design, Science, Languages, Soft Skills
 
 # 3. Application
-bun run dev &
+./mvnw spring-boot:run &
 sleep 2
 
-curl http://localhost:3000/health | jq
+curl http://localhost:8080/health | jq
 # → {"status":"ok","version":"0.1.0","db":"connected","redis":"connected","uptime_seconds":2}
 
 # Verify 404 handling
-curl http://localhost:3000/api/nonexistent | jq
+curl http://localhost:8080/api/nonexistent | jq
 # → {"error":"Not Found","status":404,"request_id":"..."}
 
 kill %1
 
 # 4. Tests
-bun test
+./mvnw test
 # → All tests pass
 
 echo "Phase 1 complete ✓"
@@ -574,58 +594,58 @@ echo "Phase 1 complete ✓"
 ## Phase 1 Master Checklist
 
 ### 1.1 Project Initialization
-- [ ] Bun project initialized with `package.json`
-- [ ] `tsconfig.json` configured with `strict: true` and path aliases
+- [ ] Bun project initialized with `pom.xml`
+- [ ] `Java 21 compiler configuration` configured with `strict: true` and path aliases
 - [ ] All dependencies installed (runtime + dev)
 - [ ] `.env.example` created
 - [ ] `.gitignore` configured
 
 ### 1.2 Docker Infrastructure
-- [ ] `docker-compose.yml` with PostgreSQL, Redis, Typesense
+- [ ] `docker-compose.yml` with PostgreSQL, Redis, full-text search service
 - [ ] `docker/init.sql` enables extensions
 - [ ] All containers start and pass health checks
-- [ ] npm scripts for infra management (`infra:up`, `infra:down`, `infra:reset`)
+- [ ] Maven / application runner scripts for infra management (`infra:up`, `infra:down`, `infra:reset`)
 
 ### 1.3 Environment Configuration
-- [ ] `src/config/env.ts` validates all env vars with Zod
+- [ ] `src/main/resources/application.yml` validates all env vars with Jakarta Bean Validation
 - [ ] App fails fast with clear error on missing vars
 - [ ] Optional vars have defaults
 - [ ] Typed `config` export used throughout codebase
 
 ### 1.3b Centralized Constants
-- [ ] `src/config/constants.ts` exports all tunable values grouped by domain (incl. Section Weighting, Co-occurrence & Empirical)
+- [ ] `src/main/java/com/skillsgraph/config/AppConstants.java` exports all tunable values grouped by domain (incl. Section Weighting, Co-occurrence & Empirical)
 - [ ] Env-overridable constants read from `process.env` with defaults
-- [ ] All modules import from `@/config/constants` — no inline magic numbers
+- [ ] All modules import from `AppConstants` — no inline magic numbers
 
-### 1.4 AI SDK Provider Registry
-- [ ] `src/config/providers.ts` exports provider registry
-- [ ] Model tier helpers: `getExtractionModel()`, `getEmbeddingModel()`, `getClassificationModel()`
+### 1.4 Spring AI Provider Registry
+- [ ] `src/main/java/com/skillsgraph/config/AiConfig.java` exports provider registry
+- [ ] Model tier helpers: `getExtractionModel()`, `embeddingModel (autowired Spring AI bean)`, `standardChatClient`
 - [ ] Helicone proxy conditionally enabled
 
 ### 1.5 Database Schema & Migrations
 - [ ] `001_initial.sql` contains complete schema (5 tables + sequence)
 - [ ] All CHECK constraints, UNIQUE constraints, indexes defined
-- [ ] `bun run db:migrate` works and is idempotent
-- [ ] `bun run db:seed` populates initial data
-- [ ] Drizzle schema matches SQL
+- [ ] `./mvnw flyway:migrate` works and is idempotent
+- [ ] `./mvnw spring-boot:run -Dspring-boot.run.arguments=--seed` populates initial data
+- [ ] JPA entity schema matches SQL
 
 ### 1.6 Database & Redis Clients
-- [ ] PostgreSQL connection pool with Drizzle ORM
+- [ ] PostgreSQL connection pool with Spring Data JPA
 - [ ] Redis client with typed cache helpers
 - [ ] pgvector serialization helpers
 - [ ] Graceful shutdown functions
 
-### 1.7 Hono App Skeleton
+### 1.7 Spring Web MVC App Skeleton
 - [ ] Server starts on configured port
-- [ ] `GET /health` works and checks dependencies
+- [ ] `GET /actuator/health` works and checks dependencies
 - [ ] Error handler returns structured JSON
-- [ ] Request ID middleware adds `x-request-id` header
+- [ ] Request ID middleware adds `X-Request-ID` header
 - [ ] CORS enabled
 - [ ] Custom error classes defined
-- [ ] Graceful shutdown on SIGTERM
+- [ ] Graceful shutdown on SIGTERM (Spring's graceful shutdown)
 
 ### 1.8 Initial Tests
-- [ ] `bun test` infrastructure set up
+- [ ] `./mvnw test` infrastructure set up
 - [ ] Config validation tests pass
 - [ ] pgvector helper tests pass
 - [ ] Health check endpoint tests pass

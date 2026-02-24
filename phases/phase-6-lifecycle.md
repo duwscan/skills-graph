@@ -23,9 +23,9 @@ When a skill becomes obsolete (e.g., "Adobe Flash"), it is deprecated with a poi
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 6.1.1 | `SkillService.deprecate(id, successorIds)` | Transaction: (1) Validate skill is `active`. (2) Set `status = 'deprecated'`. (3) Create `superseded_by` edge(s) to successor(s). (4) Remap all aliases to first successor (update `skill_id`). (5) Record changelog entries for each mutation. (6) Fire PG NOTIFY. (7) Remove from Typesense index | `src/services/lifecycle/deprecation.ts` |
-| 6.1.2 | Deprecation validation | Reject if: skill already deprecated/merged, no successor_ids provided, successor doesn't exist, successor is also deprecated/merged. Return descriptive error | `src/services/lifecycle/deprecation.ts` |
-| 6.1.3 | `POST /api/skills/:id/deprecate` | Accept `{ successor_ids: UUID[], notes?: string }`. Run deprecation. Return updated skill with new status and superseded_by edges | `src/routes/skills.ts` |
+| 6.1.1 | `SkillService.deprecate(id, successorIds)` | Transaction: (1) Validate skill is `active`. (2) Set `status = 'deprecated'`. (3) Create `superseded_by` edge(s) to successor(s). (4) Remap all aliases to first successor (update `skill_id`). (5) Record changelog entries for each mutation. (6) Fire PG NOTIFY. (7) Remove from full-text search service index | `src/main/java/com/skillsgraph/service/lifecycle/DeprecationService.java` |
+| 6.1.2 | Deprecation validation | Reject if: skill already deprecated/merged, no successor_ids provided, successor doesn't exist, successor is also deprecated/merged. Return descriptive error | `src/main/java/com/skillsgraph/service/lifecycle/DeprecationService.java` |
+| 6.1.3 | `POST /api/skills/:id/deprecate` | Accept `{ successor_ids: UUID[], notes?: string }`. Run deprecation. Return updated skill with new status and superseded_by edges | `src/main/java/com/skillsgraph/controller/SkillController.java` |
 
 ### Checklist
 
@@ -34,7 +34,7 @@ When a skill becomes obsolete (e.g., "Adobe Flash"), it is deprecated with a poi
 - [ ] `deprecate()` remaps aliases from deprecated skill to first successor
 - [ ] `deprecate()` records changelog entries (skill_deprecated, alias remapping, edge creation)
 - [ ] `deprecate()` fires PG NOTIFY for CDC consumers
-- [ ] `deprecate()` removes skill from Typesense search index
+- [ ] `deprecate()` calls `searchService.removeSkill(id)` (sets `search_vector = NULL`)
 - [ ] Validation: rejects already-deprecated skill (409)
 - [ ] Validation: rejects if no successor_ids provided (400)
 - [ ] Validation: rejects if successor is deprecated/merged (422)
@@ -57,12 +57,12 @@ When two skills are discovered to be duplicates (e.g., "Machine Learning" and "M
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 6.2.1 | `SkillService.merge(sourceId, targetId)` | Full transactional merge: (1) Validate both skills. (2) Move all aliases from source to survivor. (3) Re-point all edges where source is the `source_skill_id` to survivor (skip if equivalent edge exists). (4) Re-point all edges where source is the `target_skill_id` to survivor (skip if equivalent edge exists). (5) Delete orphaned duplicate edges. (6) **Merge co-occurrence data** (see 6.2.6). (7) Set source `status = 'merged'`. (8) Create `superseded_by` edge from source to survivor. (9) Record changelog with full diff. (10) Fire PG NOTIFY. (11) Update Typesense: remove source, re-index survivor with merged aliases | `src/services/lifecycle/merge.ts` |
-| 6.2.2 | Edge deduplication during merge | When re-pointing edges, check if an equivalent edge already exists on the survivor (same target/source + relationship_type). If so, keep the one with higher confidence and delete the other | `src/services/lifecycle/merge.ts` |
-| 6.2.3 | Post-merge cycle check | After re-pointing edges, run cycle detection on the survivor's edges to ensure the merge didn't introduce cycles | `src/services/lifecycle/merge.ts` |
-| 6.2.4 | Merge validation | Reject if: source = target (self-merge), source or target doesn't exist, source or target already deprecated/merged | `src/services/lifecycle/merge.ts` |
-| 6.2.5 | `POST /api/skills/:source/merge/:target` | Run merge. Return merged result: survivor skill with all transferred aliases and edges | `src/routes/skills.ts` |
-| 6.2.6 | Co-occurrence data merge | During merge, transfer co-occurrence data from source to survivor in `skill_co_occurrences` table. Re-point `skill_a_id`/`skill_b_id` references from source to survivor. Where both source and survivor have co-occurrence rows with the same partner skill, sum the counts and merge `source_type_counts` JSONB. Delete orphaned rows. Maintain `CHECK (skill_a_id < skill_b_id)` constraint by swapping if needed | `src/services/lifecycle/merge.ts` |
+| 6.2.1 | `SkillService.merge(sourceId, targetId)` | Full transactional merge: (1) Validate both skills. (2) Move all aliases from source to survivor. (3) Re-point all edges where source is the `source_skill_id` to survivor (skip if equivalent edge exists). (4) Re-point all edges where source is the `target_skill_id` to survivor (skip if equivalent edge exists). (5) Delete orphaned duplicate edges. (6) **Merge co-occurrence data** (see 6.2.6). (7) Set source `status = 'merged'`. (8) Create `superseded_by` edge from source to survivor. (9) Record changelog with full diff. (10) Fire PG NOTIFY. (11) Update full-text search service: remove source, re-index survivor with merged aliases | `src/main/java/com/skillsgraph/service/lifecycle/MergeService.java` |
+| 6.2.2 | Edge deduplication during merge | When re-pointing edges, check if an equivalent edge already exists on the survivor (same target/source + relationship_type). If so, keep the one with higher confidence and delete the other | `src/main/java/com/skillsgraph/service/lifecycle/MergeService.java` |
+| 6.2.3 | Post-merge cycle check | After re-pointing edges, run cycle detection on the survivor's edges to ensure the merge didn't introduce cycles | `src/main/java/com/skillsgraph/service/lifecycle/MergeService.java` |
+| 6.2.4 | Merge validation | Reject if: source = target (self-merge), source or target doesn't exist, source or target already deprecated/merged | `src/main/java/com/skillsgraph/service/lifecycle/MergeService.java` |
+| 6.2.5 | `POST /api/skills/:source/merge/:target` | Run merge. Return merged result: survivor skill with all transferred aliases and edges | `src/main/java/com/skillsgraph/controller/SkillController.java` |
+| 6.2.6 | Co-occurrence data merge | During merge, transfer co-occurrence data from source to survivor in `skill_co_occurrences` table. Re-point `skill_a_id`/`skill_b_id` references from source to survivor. Where both source and survivor have co-occurrence rows with the same partner skill, sum the counts and merge `source_type_counts` JSONB. Delete orphaned rows. Maintain `CHECK (skill_a_id < skill_b_id)` constraint by swapping if needed | `src/main/java/com/skillsgraph/service/lifecycle/MergeService.java` |
 
 ### Merge SQL Reference
 
@@ -147,7 +147,7 @@ COMMIT;
 - [ ] `merge()` creates `superseded_by` edge from source to survivor
 - [ ] `merge()` records comprehensive changelog (alias transfers, edge re-pointing, status change)
 - [ ] `merge()` fires PG NOTIFY
-- [ ] `merge()` updates Typesense: removes source, re-indexes survivor
+- [ ] `merge()` updates full-text search service: removes source, re-indexes survivor
 - [ ] `merge()` merges co-occurrence data: re-points rows from source to survivor
 - [ ] `merge()` sums co-occurrence counts for overlapping partner skills
 - [ ] `merge()` maintains `skill_a_id < skill_b_id` constraint after re-pointing
@@ -167,20 +167,20 @@ COMMIT;
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 6.3.1 | Enhanced version endpoint | `GET /api/taxonomy/version` returns `{ graph_version, last_mutation_at, total_skills (active), total_edges (active), total_aliases, supported_locales }` | `src/routes/taxonomy.ts` |
-| 6.3.2 | PG NOTIFY listener | `src/services/changelog/listener.ts` — subscribe to `graph_changes` channel on PostgreSQL. On notification: (1) invalidate relevant Redis cache keys (`taxonomy:skill:{id}`), (2) publish to Redis Stream for Typesense sync (Phase 7). Start listener on app boot | `src/services/changelog/listener.ts` |
-| 6.3.3 | Snapshot export | `bun run snapshot:create` — export entire taxonomy as JSON: `{ version, timestamp, skills: [...], relationships: [...], aliases: [...], co_occurrences: [...], locale_config: [...] }`. Write to `snapshots/skills-graph-v{version}-{date}.json` | `src/scripts/snapshot-create.ts` |
-| 6.3.4 | Snapshot import | `bun run snapshot:import <file>` — import a snapshot to restore taxonomy state. Truncate all tables (including `skill_co_occurrences`), insert snapshot data, rebuild Typesense index, regenerate embeddings | `src/scripts/snapshot-import.ts` |
+| 6.3.1 | Enhanced version endpoint | `GET /api/taxonomy/version` returns `{ graph_version, last_mutation_at, total_skills (active), total_edges (active), total_aliases, supported_locales }` | `src/main/java/com/skillsgraph/controller/TaxonomyController.java` |
+| 6.3.2 | PG NOTIFY listener | `src/main/java/com/skillsgraph/service/changelog/PgNotifyListener.java` — subscribe to `graph_changes` channel on PostgreSQL. On notification: (1) invalidate relevant Redis cache keys (`taxonomy:skill:{id}`), (2) publish to Redis Stream for full-text search service sync (Phase 7). Start listener on app boot | `src/main/java/com/skillsgraph/service/changelog/PgNotifyListener.java` |
+| 6.3.3 | Snapshot export | `SnapshotCreateRunner` (triggered via `--snapshot-create`) — exports taxonomy as JSON: `{ version, timestamp, skills, relationships, aliases, coOccurrences, localeConfig }`. Writes to `snapshots/skills-graph-v{version}-{date}.json` | `src/main/java/com/skillsgraph/script/SnapshotCreateRunner.java` |
+| 6.3.4 | Snapshot import | `SnapshotImportRunner` (triggered via `--snapshot-import`) — truncate all tables, insert snapshot data, rebuild search vector, regenerate embeddings | `src/main/java/com/skillsgraph/script/SnapshotImportRunner.java` |
 
 ### Checklist
 
 - [ ] `GET /api/taxonomy/version` returns comprehensive stats
 - [ ] PG NOTIFY listener starts on app boot
 - [ ] PG NOTIFY listener invalidates Redis cache on skill mutations
-- [ ] `bun run snapshot:create` exports valid JSON file
+- [ ] `SnapshotCreateRunner` exports valid JSON file
 - [ ] Snapshot file contains all skills, relationships, aliases, co_occurrences, locale_config
 - [ ] Snapshot filename includes version and date
-- [ ] `bun run snapshot:import` restores taxonomy from snapshot
+- [ ] `SnapshotImportRunner` restores taxonomy from snapshot
 - [ ] Snapshot round-trip: export → wipe → import → verify data matches
 
 ---
@@ -189,45 +189,45 @@ COMMIT;
 
 ```bash
 # Create skills to test lifecycle
-FLASH_ID=$(curl -s -X POST http://localhost:3000/api/skills \
+FLASH_ID=$(curl -s -X POST http://localhost:8080/api/skills \
   -d '{"canonical_name":"Adobe Flash","category":"tool","path":"technology.web.flash"}' | jq -r '.id')
-HTML5_ID=$(curl -s -X POST http://localhost:3000/api/skills \
+HTML5_ID=$(curl -s -X POST http://localhost:8080/api/skills \
   -d '{"canonical_name":"HTML5 Animation","category":"tool","path":"technology.web.html5_animation"}' | jq -r '.id')
 
 # Deprecate Flash
-curl -X POST "http://localhost:3000/api/skills/$FLASH_ID/deprecate" \
+curl -X POST "http://localhost:8080/api/skills/$FLASH_ID/deprecate" \
   -d "{\"successor_ids\":[\"$HTML5_ID\"]}" | jq
 # → status: deprecated, superseded_by: HTML5 Animation
 
 # Verify Flash not in search
-curl "http://localhost:3000/api/skills/search?q=flash" | jq
+curl "http://localhost:8080/api/skills/search?q=flash" | jq
 # → empty or no Flash result
 
 # Create duplicate skills for merge test
-ML1_ID=$(curl -s -X POST http://localhost:3000/api/skills \
+ML1_ID=$(curl -s -X POST http://localhost:8080/api/skills \
   -d '{"canonical_name":"ML","category":"domain","path":"technology.ml"}' | jq -r '.id')
-curl -X POST "http://localhost:3000/api/skills/$ML1_ID/aliases" \
+curl -X POST "http://localhost:8080/api/skills/$ML1_ID/aliases" \
   -d '{"surface_form":"machine learning","locale":"en"}'
 
 # Merge ML into Machine Learning
 ML_ID="<existing-machine-learning-uuid>"
-curl -X POST "http://localhost:3000/api/skills/$ML1_ID/merge/$ML_ID" | jq
+curl -X POST "http://localhost:8080/api/skills/$ML1_ID/merge/$ML_ID" | jq
 # → source merged, aliases transferred
 
 # Verify aliases transferred
-curl "http://localhost:3000/api/skills/$ML_ID/aliases" | jq
+curl "http://localhost:8080/api/skills/$ML_ID/aliases" | jq
 # → includes "ML" alias from merged skill
 
 # Snapshot
-bun run snapshot:create
+./mvnw spring-boot:run -Dspring-boot.run.arguments=--snapshot-create
 ls snapshots/
 # → skills-graph-v15-2026-02-12.json
 
 # Version
-curl http://localhost:3000/api/taxonomy/version | jq
+curl http://localhost:8080/api/taxonomy/version | jq
 # → { graph_version: 15, total_skills: 12, ... }
 
-bun test src/services/lifecycle/
+./mvnw test -Dtest="*LifecycleTest"
 echo "Phase 6 complete ✓"
 ```
 
@@ -237,7 +237,7 @@ echo "Phase 6 complete ✓"
 
 ### 6.1 Deprecation
 - [ ] `deprecate()` with status change, superseded_by edges, alias remapping
-- [ ] Changelog, PG NOTIFY, Typesense removal
+- [ ] Changelog, PG NOTIFY, full-text search service removal
 - [ ] Validation rejects invalid deprecation requests
 - [ ] Deprecated skills excluded from search and extraction
 - [ ] Co-occurrence data preserved for historical analysis
@@ -254,5 +254,5 @@ echo "Phase 6 complete ✓"
 ### 6.3 Versioning & Snapshots
 - [ ] Enhanced version endpoint with stats
 - [ ] PG NOTIFY listener for cache invalidation
-- [ ] `bun run snapshot:create` exports valid snapshot (includes `skill_co_occurrences` data)
-- [ ] `bun run snapshot:import` restores from snapshot
+- [ ] `./mvnw spring-boot:run -Dspring-boot.run.arguments=--snapshot-create` exports valid snapshot (includes `skill_co_occurrences` data)
+- [ ] `./mvnw spring-boot:run -Dspring-boot.run.arguments=--snapshot-import` restores from snapshot
