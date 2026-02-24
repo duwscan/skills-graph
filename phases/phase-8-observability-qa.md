@@ -48,7 +48,7 @@ Helicone acts as a transparent proxy that logs every LLM call with prompt, respo
 | 8.2.2 | Request logging filter | `OncePerRequestFilter` extending `RequestLoggingFilter`: logs `{ method, path, status, durationMs, requestId, userAgent }`. INFO for 2xx, WARN for 4xx, ERROR for 5xx | `src/main/java/com/skillsgraph/middleware/RequestLoggingFilter.java` |
 | 8.2.3 | LLM call logging | `LlmCallLogger` aspect (`@Aspect`) or wrapper: logs `{ task, model, inputTokens, outputTokens, latencyMs, cacheHit, success, error }` as INFO. Integrates with Micrometer for metrics | `src/main/java/com/skillsgraph/util/LlmCallLogger.java` |
 | 8.2.4 | Enhanced health check | Custom `HealthIndicator` beans for each dependency. Spring Boot Actuator aggregates them. Expose `GET /actuator/health` with full component details: DB pool stats, Redis memory, search service status, current graph version | `src/main/java/com/skillsgraph/health/` |
-| 8.2.5 | Metrics endpoint | `GET /metrics` (optional) — return Prometheus-compatible metrics: `http_requests_total`, `http_request_duration_seconds`, `llm_calls_total`, `llm_call_duration_seconds`, `extraction_skills_found`, `cache_hit_ratio` | `src/main/java/com/skillsgraph/controller/metrics.ts` |
+| 8.2.5 | Metrics endpoint | Add `micrometer-registry-prometheus`. `GET /actuator/prometheus` exposes metrics: `http_requests_total`, `http_request_duration_seconds`, `llm_calls_total`, `llm_call_duration_seconds`, `extraction_skills_found`, `cache_hit_ratio` | `src/main/resources/application.yml` |
 
 ### Checklist
 
@@ -72,7 +72,7 @@ Helicone acts as a transparent proxy that logs every LLM call with prompt, respo
 | 8.3.1 | Rate limiter middleware | Redis-backed sliding window rate limiter. Limits per API key (or per IP if no key): Read endpoints: `RATE_LIMIT_READ` req/min. Extraction endpoints: `RATE_LIMIT_EXTRACT` req/min. Mutation endpoints: `RATE_LIMIT_MUTATE` req/min. All configurable via env vars (see `src/main/java/com/skillsgraph/config/AppConstants.java`). Return `429 Too Many Requests` with `Retry-After` header when exceeded | `src/main/java/com/skillsgraph/middleware/RateLimitFilter.java` |
 | 8.3.2 | API key authentication | `ApiKeyAuthFilter extends OncePerRequestFilter`: extracts `Authorization: Bearer <key>`. Validates against Redis hash `api_keys:{key}` → `{ role, name, createdAt }`. Roles: `READER`, `CURATOR`, `ADMIN`. Sets `SecurityContext` | `src/main/java/com/skillsgraph/middleware/ApiKeyAuthFilter.java` |
 | 8.3.3 | Role-based method security | `@PreAuthorize("hasRole('CURATOR')")` / `@PreAuthorize("hasRole('ADMIN')")` on controller methods. Enable with `@EnableMethodSecurity` | `src/main/java/com/skillsgraph/controller/` |
-| 8.3.4 | Input size limits | Verify all Jakarta Bean Validation schemas enforce maximum sizes: extraction text ≤ `EXTRACTION_MAX_TEXT_LENGTH` chars, batch ≤ `BATCH_MAX_DOCUMENTS` documents, skill name ≤ `SKILL_NAME_MAX_LENGTH` chars, description ≤ `SKILL_DESCRIPTION_MAX_LENGTH` chars, alias ≤ `ALIAS_MAX_LENGTH` chars. Add Spring Web MVC body size limit middleware (`BODY_SIZE_LIMIT` default). All limits from `src/main/java/com/skillsgraph/config/AppConstants.java` | `src/main/java/com/skillsgraph/dto/*.ts`, `src/main/java/com/skillsgraph/SkillsGraphApplication.java` |
+| 8.3.4 | Input size limits | Verify all Jakarta Bean Validation `@Size` annotations enforce limits from `AppConstants`: extraction text ≤ `EXTRACTION_MAX_TEXT_LENGTH`, batch ≤ `BATCH_MAX_DOCUMENTS`, skill name ≤ `SKILL_NAME_MAX_LENGTH`, description ≤ `SKILL_DESCRIPTION_MAX_LENGTH`, alias ≤ `ALIAS_MAX_LENGTH`. Set `spring.servlet.multipart.max-request-size` in `application.yml` | `src/main/java/com/skillsgraph/dto/`, `src/main/resources/application.yml` |
 | 8.3.5 | Security headers | Add `spring-security-web` or custom `OncePerRequestFilter` adding: `X-Content-Type-Options: nosniff`, `X-Frame-Options: DENY`, `X-XSS-Protection: 1; mode=block`, `Strict-Transport-Security` | `src/main/java/com/skillsgraph/middleware/SecurityHeadersFilter.java` |
 
 ### Checklist
@@ -184,7 +184,7 @@ COPY application.yml Java 21 compiler configuration ./
 HEALTHCHECK --interval=30s --timeout=5s --retries=3 \
   CMD curl -f http://localhost:8080/health || exit 1
 
-EXPOSE 3000
+EXPOSE 8080
 
 # Default: API server
 ENTRYPOINT ["java", "-jar", "app.jar"]
