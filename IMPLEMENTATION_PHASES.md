@@ -321,7 +321,7 @@ curl http://localhost:3000/api/taxonomy/changelog
 | # | Task | Detail |
 |---|---|---|
 | 3.2.1 | `VectorSearchService` | `src/main/java/com/skillsgraph/service/VectorSearchService.java` — nearest neighbor search against skill embeddings |
-| 3.2.2 | `findSimilarSkills()` | Given an embedding, query pgvector for top-K nearest skills. SQL: `SELECT se.skill_id, 1 - (se.embedding <=> $1::vector) AS similarity FROM skill_embeddings se ORDER BY se.embedding <=> $1::vector LIMIT $2`. Active skill IDs are maintained in a Redis set (synced from Neo4j) to filter results, or a `status` column is denormalized into the embedding table. Graph context is fetched from Neo4j via `Neo4jTemplate`. |
+| 3.2.2 | `findSimilarSkills()` | Given an embedding, query pgvector for top-K nearest skills. SQL: `SELECT se.skill_id, 1 - (se.embedding <=> $1::vector) AS similarity FROM skill_embeddings se ORDER BY se.embedding <=> $1::vector LIMIT $2`. Recommended: denormalize `status` into `skill_embeddings` to filter active skills at query time. Graph context is fetched from Neo4j via `Neo4jTemplate`. |
 | 3.2.3 | `findSimilarAliases()` | Same but against `skill_aliases.alias_embedding` — useful for duplicate alias detection |
 | 3.2.4 | `findCandidatesForChunk()` | The RAG retrieval function: given a text chunk embedding, return top-100 skills with `{ id, external_id, canonical_name, similarity }`. This is the core function used by the extraction pipeline in Phase 4 |
 | 3.2.5 | Duplicate detection | `checkDuplicate(name: string, description?: string)` — embed the candidate, search for nearest neighbors with similarity > 0.90. Return `{ isDuplicate: boolean, matches: Skill[] }` |

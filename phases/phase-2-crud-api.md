@@ -77,9 +77,9 @@ public class SkillService {
     
     public List<SkillWithDepth> getAncestors(String skillId, int depth) {
         return neo4jTemplate.findAll(
-            "MATCH path = (s:Skill {id: $skillId})<-[:PARENT_OF*1..$depth]-(a:Skill) " +
-            "WHERE a.status = 'active' " +
-            "RETURN DISTINCT a, length(path) AS depth ORDER BY depth ASC",
+            "MATCH path = (s:Skill {id: $skillId})<-[:PARENT_OF*1..$depth]-(ancestor:Skill) " +
+            "WHERE ancestor.status = 'active' " +
+            "RETURN DISTINCT ancestor, length(path) AS depth ORDER BY depth ASC",
             Map.of("skillId", skillId, "depth", depth),
             SkillWithDepth.class
         );

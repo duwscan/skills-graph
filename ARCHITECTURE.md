@@ -306,14 +306,14 @@ CREATE FULLTEXT INDEX alias_fulltext IF NOT EXISTS FOR (a:Alias) ON EACH [a.surf
 CREATE EXTENSION IF NOT EXISTS vector;
 CREATE EXTENSION IF NOT EXISTS pg_trgm;
 
--- Skill vector embeddings (pgvector)
+-- Skill vector embeddings (pgvector); skill_id references the Neo4j Skill node's `id` property
 CREATE TABLE skill_embeddings (
     skill_id TEXT PRIMARY KEY,
     embedding vector(1024) NOT NULL,
     updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
--- Alias vector embeddings (pgvector)
+-- Alias vector embeddings (pgvector); alias_id references the Neo4j Alias node's `id` property
 CREATE TABLE alias_embeddings (
     alias_id TEXT PRIMARY KEY,
     alias_embedding vector(1024) NOT NULL,
@@ -917,8 +917,7 @@ When two skills are determined to be duplicates:
 
 ```cypher
 // Step 1: Move all aliases from source to survivor
-MATCH (source:Skill {id: $sourceId})-[r:HAS_ALIAS]->(alias:Alias)
-MATCH (survivor:Skill {id: $survivorId})
+MATCH (source:Skill {id: $sourceId})-[r:HAS_ALIAS]->(alias:Alias), (survivor:Skill {id: $survivorId})
 DELETE r
 CREATE (survivor)-[:HAS_ALIAS]->(alias);
 

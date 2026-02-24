@@ -68,8 +68,7 @@ When two skills are discovered to be duplicates (e.g., "Machine Learning" and "M
 
 ```cypher
 // Step 1: Move all aliases from source to survivor
-MATCH (source:Skill {id: $sourceId})-[r:HAS_ALIAS]->(alias:Alias)
-MATCH (survivor:Skill {id: $survivorId})
+MATCH (source:Skill {id: $sourceId})-[r:HAS_ALIAS]->(alias:Alias), (survivor:Skill {id: $survivorId})
 DELETE r
 CREATE (survivor)-[:HAS_ALIAS]->(alias);
 
