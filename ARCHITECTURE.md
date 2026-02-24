@@ -421,13 +421,12 @@ public class VectorSearchService {
             ORDER BY se.embedding <=> ?::vector LIMIT ?
             """,
             (rs, rowNum) -> new SkillSimilarity(
-                rs.getString("id"),
-                rs.getString("canonical_name"),
+                rs.getString("skill_id"),
                 rs.getDouble("similarity")
             ),
             pgvectorFormat(embedding), pgvectorFormat(embedding), limit
         );
-        // Graph context (aliases, relationships) is fetched from Neo4j via Neo4jTemplate
+        // Graph context (canonical_name, aliases, relationships) is fetched from Neo4j via Neo4jTemplate
     }
 }
 ```

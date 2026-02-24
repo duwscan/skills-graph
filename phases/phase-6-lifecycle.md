@@ -104,7 +104,7 @@ SET source.status = 'merged', source.updatedAt = datetime()
 CREATE (source)-[:SUPERSEDED_BY {createdAt: datetime()}]->(survivor);
 ```
 
-> **Note:** `apoc.merge.relationship` is available in APOC Extended (configured via `NEO4J_PLUGINS: '["apoc"]'` in docker-compose). If not available, handle each relationship type explicitly with individual `MERGE` statements. The `graph_changelog` entry is written to PostgreSQL and `pg_notify` is fired after the Neo4j operations complete.
+> **Note:** `apoc.merge.relationship` requires the **APOC Core** library (bundled with Neo4j 5 by default when `NEO4J_PLUGINS: '["apoc"]'` is set in docker-compose; APOC Core is freely available). If APOC is not configured, handle each relationship type explicitly with individual `MERGE` statements. The `graph_changelog` entry is written to PostgreSQL and `pg_notify` is fired after the Neo4j operations complete.
 
 ### Checklist
 
