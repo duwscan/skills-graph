@@ -8,7 +8,7 @@
 
 ## Goal
 
-Implement background workers for async extraction, batch processing, event-driven Typesense sync, and discovery signal aggregation using Redis Streams. This decouples heavy processing from the API request/response cycle.
+Implement background workers for async extraction, batch processing, event-driven Typesense sync, **co-occurrence aggregation**, **re-analysis on skill activation**, and discovery signal aggregation using Redis Streams. This decouples heavy processing from the API request/response cycle.
 
 ---
 
@@ -24,8 +24,8 @@ Redis Streams provides a lightweight message queue with consumer groups, acknowl
 |---|---|---|---|
 | 7.1.1 | Stream producer | `publishEvent(stream, event)` — uses `XADD` to append event to a Redis Stream. Auto-generates event ID. Serializes event payload as flat key-value pairs (Redis Streams requirement) | `src/services/events/producer.ts` |
 | 7.1.2 | Stream consumer base | Abstract `StreamConsumer` class: (1) `XREADGROUP` with block timeout. (2) Process each message via abstract `handleMessage()`. (3) `XACK` on success. (4) On failure: retry up to `STREAM_CONSUMER_MAX_RETRIES` times (see `src/config/constants.ts`), then move to dead-letter stream (`{stream}:dead`). (5) Graceful shutdown on SIGTERM | `src/services/events/consumer.ts` |
-| 7.1.3 | Consumer group setup script | `bun run streams:setup` — create consumer groups for all streams: `extraction:jobs` (group: `extractors`), `discovery:signals` (group: `discoverers`), `sync:typesense` (group: `syncers`). Idempotent (use `XGROUP CREATE ... MKSTREAM`) | `src/scripts/streams-setup.ts` |
-| 7.1.4 | Stream names constants | Define all stream names as constants: `STREAMS.EXTRACTION_JOBS`, `STREAMS.DISCOVERY_SIGNALS`, `STREAMS.TYPESENSE_SYNC` | `src/services/events/constants.ts` |
+| 7.1.3 | Consumer group setup script | `bun run streams:setup` — create consumer groups for all streams: `extraction:jobs` (group: `extractors`), `discovery:signals` (group: `discoverers`), `sync:typesense` (group: `syncers`), `co-occurrence:pairs` (group: `co-occurrence-workers`), `reanalysis:jobs` (group: `reanalyzers`). Idempotent (use `XGROUP CREATE ... MKSTREAM`) | `src/scripts/streams-setup.ts` |
+| 7.1.4 | Stream names constants | Define all stream names as constants: `STREAMS.EXTRACTION_JOBS`, `STREAMS.DISCOVERY_SIGNALS`, `STREAMS.TYPESENSE_SYNC`, `STREAMS.CO_OCCURRENCE_PAIRS`, `STREAMS.REANALYSIS_JOBS` | `src/services/events/constants.ts` |
 
 ### Checklist
 
@@ -125,7 +125,62 @@ Instead of synchronously updating Typesense on every skill mutation (which slows
 
 ---
 
-## 7.5 Cache Invalidation
+## 7.5 Co-occurrence Aggregation Worker
+
+### Context
+
+The extraction pipeline publishes skill pair events to a Redis Stream after every extraction. The co-occurrence worker consumes these events and upserts pairs into the `skill_co_occurrences` table. A separate periodic job scans for pairs exceeding the threshold and creates/strengthens relationship edges.
+
+### Tasks
+
+| # | Task | Detail | Files |
+|---|---|---|---|
+| 7.5.1 | Co-occurrence event publishing | In `SkillExtractionPipeline`, after final merge: publish `{ skill_ids: string[], source_type: string }` to `co-occurrence:pairs` stream. Only include active skill IDs (not expanded, not discovered candidates) | `src/services/extraction/pipeline.ts` |
+| 7.5.2 | Co-occurrence worker | Extends `StreamConsumer`. Consumes from `co-occurrence:pairs`. For each message: generate all unique pairs from `skill_ids` (order by UUID for consistent key), upsert into `skill_co_occurrences` table (increment count, update `source_type_counts`, set `last_seen_at`). Batch within `CO_OCCURRENCE_BATCH_WINDOW_MS` debounce window (see `src/config/constants.ts`) | `src/workers/co-occurrence-worker.ts` |
+| 7.5.3 | Edge strengthening job | `bun run co-occurrence:process` — periodic script (run via cron, e.g., nightly). Scans `skill_co_occurrences` where `co_occurrence_count >= CO_OCCURRENCE_EDGE_THRESHOLD` (see `src/config/constants.ts`). For each qualifying pair: if `related_to` edge exists → update `weight = min(1.0, weight + count/CO_OCCURRENCE_NORMALIZATION_FACTOR)`. If no edge exists → create new `related_to` edge with `provenance = 'empirical'`. Record in changelog | `src/scripts/co-occurrence-process.ts` |
+
+### Checklist
+
+- [ ] Extraction pipeline publishes skill IDs to `co-occurrence:pairs` stream after extraction
+- [ ] Worker consumes events and upserts into `skill_co_occurrences` table
+- [ ] Co-occurrence count increments correctly for repeated pairs
+- [ ] `source_type_counts` tracks breakdown by cv/jd/course
+- [ ] `bun run co-occurrence:process` creates new `empirical` edges for pairs above threshold
+- [ ] `bun run co-occurrence:process` strengthens existing edge weights
+- [ ] Edge weight never exceeds 1.0
+- [ ] Changelog records edge creation/strengthening from co-occurrence
+
+---
+
+## 7.6 Re-analysis Worker
+
+### Context
+
+When a skill transitions from `candidate` to `active` (curator approves), previously processed documents that mentioned this skill (as `discovered_candidates`) should be re-extracted. This ensures candidate profiles are updated with the newly recognized skill. See ARCHITECTURE.md §5.5.
+
+### Tasks
+
+| # | Task | Detail | Files |
+|---|---|---|---|
+| 7.6.1 | Extraction log table | New migration `003_extraction_logs.sql`: `CREATE TABLE extraction_logs (id UUID PK DEFAULT gen_random_uuid(), document_hash TEXT NOT NULL, source_type TEXT, input_text_preview TEXT, discovered_candidates JSONB DEFAULT '[]', extracted_skill_ids UUID[], created_at TIMESTAMPTZ DEFAULT now())`. Index on `discovered_candidates` using GIN for JSONB containment queries | `src/db/migrations/003_extraction_logs.sql` |
+| 7.6.2 | Log extraction results | In `SkillExtractionPipeline`, after extraction: insert a row into `extraction_logs` with `document_hash` (SHA-256 of input text), `source_type`, first 500 chars of text as `input_text_preview`, `discovered_candidates` array, and `extracted_skill_ids`. Only log if `discovered_candidates` is non-empty (to limit table size) | `src/services/extraction/pipeline.ts` |
+| 7.6.3 | Activation event publishing | In `ReviewQueueService.decide()` approve flow: after skill is created and activated, publish `{ skill_id, skill_name, normalized_name, activated_at }` to `reanalysis:jobs` stream | `src/services/discovery/review-queue.ts` |
+| 7.6.4 | Re-analysis worker | Extends `StreamConsumer`. Consumes from `reanalysis:jobs`. For each activation event: (1) Query `extraction_logs` for rows where `discovered_candidates` contains the activated skill's `normalized_name` (JSONB containment: `discovered_candidates @> '[{"normalized_form": "..."}]'`). (2) For each matching log, queue the original document for re-extraction via `extraction:jobs` stream with a `reanalysis: true` flag. (3) Limit to most recent `REANALYSIS_MAX_DOCUMENTS` documents (default 1000, see `src/config/constants.ts`) to prevent runaway processing | `src/workers/reanalysis-worker.ts` |
+
+### Checklist
+
+- [ ] Migration creates `extraction_logs` table with GIN index on `discovered_candidates`
+- [ ] Extraction pipeline logs results when `discovered_candidates` is non-empty
+- [ ] Curator approve → activation event published to `reanalysis:jobs` stream
+- [ ] Re-analysis worker queries `extraction_logs` for matching documents
+- [ ] Matching documents are queued for re-extraction
+- [ ] Re-extraction picks up the newly activated skill from the taxonomy
+- [ ] `REANALYSIS_MAX_DOCUMENTS` limits prevent runaway processing (see `src/config/constants.ts`)
+- [ ] Re-analysis doesn't block the approve API response (async via stream)
+
+---
+
+## 7.7 Cache Invalidation
 
 ### Tasks
 
@@ -143,20 +198,20 @@ Instead of synchronously updating Typesense on every skill mutation (which slows
 
 ---
 
-## 7.6 Worker Entry Point & Management
+## 7.8 Worker Entry Point & Management
 
 ### Tasks
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 7.6.1 | Worker entry point | `src/workers/index.ts` — starts all workers: extraction, discovery, typesense-sync. Each worker runs in the same Bun process with independent event loops. Script: `bun run workers` | `src/workers/index.ts` |
-| 7.6.2 | Graceful shutdown | On SIGTERM: stop consuming new messages, wait for in-flight messages to complete (timeout: `GRACEFUL_SHUTDOWN_TIMEOUT_MS` — see `src/config/constants.ts`), close DB and Redis connections, exit | `src/workers/index.ts` |
-| 7.6.3 | Worker health logging | Each worker logs startup, message processing (debug level), errors, and shutdown. Log format: `{ worker, event, message_id, duration_ms }` | `src/workers/index.ts` |
-| 7.6.4 | npm scripts | `bun run workers` — start all workers. `bun run worker:extraction` — start only extraction worker. `bun run worker:discovery` — start only discovery worker | `package.json` |
+| 7.8.1 | Worker entry point | `src/workers/index.ts` — starts all workers: extraction, discovery, typesense-sync, co-occurrence, reanalysis. Each worker runs in the same Bun process with independent event loops. Script: `bun run workers` | `src/workers/index.ts` |
+| 7.8.2 | Graceful shutdown | On SIGTERM: stop consuming new messages, wait for in-flight messages to complete (timeout: `GRACEFUL_SHUTDOWN_TIMEOUT_MS` — see `src/config/constants.ts`), close DB and Redis connections, exit | `src/workers/index.ts` |
+| 7.8.3 | Worker health logging | Each worker logs startup, message processing (debug level), errors, and shutdown. Log format: `{ worker, event, message_id, duration_ms }` | `src/workers/index.ts` |
+| 7.8.4 | npm scripts | `bun run workers` — start all workers. `bun run worker:extraction` — start only extraction worker. `bun run worker:discovery` — start only discovery worker. `bun run worker:co-occurrence` — start only co-occurrence worker. `bun run worker:reanalysis` — start only re-analysis worker | `package.json` |
 
 ### Checklist
 
-- [ ] `bun run workers` starts all 3 workers
+- [ ] `bun run workers` starts all 5 workers
 - [ ] Workers log startup: `"Extraction worker started, consuming from extraction:jobs"`
 - [ ] Workers process messages and log results
 - [ ] `Ctrl+C` / SIGTERM triggers graceful shutdown
@@ -247,12 +302,26 @@ echo "Phase 7 complete ✓"
 - [ ] Worker debounces and batch-upserts to Typesense
 - [ ] Typesense stays in sync within 1-2 seconds
 
-### 7.5 Cache Invalidation
+### 7.5 Co-occurrence Aggregation
+- [ ] Extraction pipeline publishes skill pairs to `co-occurrence:pairs` stream
+- [ ] Worker consumes events and upserts into `skill_co_occurrences` table
+- [ ] `bun run co-occurrence:process` creates/strengthens empirical edges above threshold
+- [ ] Edge weight never exceeds 1.0
+- [ ] Changelog records edge creation/strengthening
+
+### 7.6 Re-analysis Worker
+- [ ] Migration creates `extraction_logs` table with GIN index
+- [ ] Extraction pipeline logs results when `discovered_candidates` is non-empty
+- [ ] Curator approve → activation event published to `reanalysis:jobs` stream
+- [ ] Re-analysis worker queries logs and queues matching documents for re-extraction
+- [ ] `REANALYSIS_MAX_DOCUMENTS` limits prevent runaway processing (see `src/config/constants.ts`)
+
+### 7.7 Cache Invalidation
 - [ ] Skill mutations invalidate taxonomy cache
 - [ ] Merge invalidates both source and survivor caches
 
-### 7.6 Worker Management
-- [ ] `bun run workers` starts all workers
+### 7.8 Worker Management
+- [ ] `bun run workers` starts all 5 workers
 - [ ] Graceful shutdown with in-flight message completion
 - [ ] Health logging for all workers
 

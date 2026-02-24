@@ -8,7 +8,7 @@
 
 ## Goal
 
-Implement the full RAG-based skill extraction pipeline — the system's **core value proposition**. Takes free text (job postings, resumes, course descriptions) and returns a ranked list of skills from the taxonomy. Uses the Vercel AI SDK's `generateText` + `Output.object()` for structured extraction.
+Implement the full RAG-based skill extraction pipeline — the system's **core value proposition**. Takes free text (job postings, resumes, course descriptions) and returns a ranked list of skills from the taxonomy. Includes **section-aware weighting** (LinkedIn-inspired) and **co-occurrence recording** for empirical edge strengthening. Uses the Vercel AI SDK's `generateText` + `Output.object()` for structured extraction.
 
 ---
 
@@ -20,17 +20,47 @@ Implement the full RAG-based skill extraction pipeline — the system's **core v
 |---|---|---|---|
 | 4.1.1 | Document parser | Accept plaintext and HTML input. Strip HTML tags while preserving text structure (headings → `\n\n`, list items → `\n- `). Normalize whitespace. Return clean plaintext | `src/services/extraction/parser.ts` |
 | 4.1.2 | Token estimator | `estimateTokens(text: string): number` — approximate token count using word-count heuristic (words * 1.3) or `tiktoken` for accuracy. Used to determine chunk boundaries | `src/services/extraction/tokenizer.ts` |
-| 4.1.3 | Section-based chunker | Split text on structural boundaries: `\n\n` (paragraphs), `\n#` (markdown headings), `---` (horizontal rules). Merge small consecutive sections until target size (~`CHUNK_TARGET_TOKENS` tokens — see `src/config/constants.ts`). If a single section exceeds `CHUNK_MAX_TOKENS` tokens, apply sliding window | `src/services/extraction/chunker.ts` |
-| 4.1.4 | Sliding window fallback | For unstructured text without clear section boundaries: split into `CHUNK_TARGET_TOKENS` token chunks with `CHUNK_OVERLAP_TOKENS` token overlap. Ensure splits happen at sentence boundaries when possible | `src/services/extraction/chunker.ts` |
-| 4.1.5 | Chunk interface | `interface Chunk { text: string; index: number; startOffset: number; endOffset: number; tokenEstimate: number; }` | `src/services/extraction/types.ts` |
+| 4.1.3 | Section detector | Detect document type (`jd`, `cv`, `generic`) and identify named sections. For JDs: look for headings like "Requirements", "Qualifications", "Responsibilities", "Nice to have", "About us". For CVs: look for "Skills", "Experience", "Projects", "Education", "Summary". Return `{ type: "jd" | "cv" | "generic", sections: Array<{ name: string; type: string; weight: number; startOffset: number; endOffset: number }> }` | `src/services/extraction/section-detector.ts` |
+| 4.1.4 | Section-based chunker | Split text on structural boundaries: `\n\n` (paragraphs), `\n#` (markdown headings), `---` (horizontal rules). Merge small consecutive sections until target size (~`CHUNK_TARGET_TOKENS` tokens — see `src/config/constants.ts`). If a single section exceeds `CHUNK_MAX_TOKENS` tokens, apply sliding window. **Preserve section metadata** on each chunk from the section detector | `src/services/extraction/chunker.ts` |
+| 4.1.5 | Sliding window fallback | For unstructured text without clear section boundaries: split into `CHUNK_TARGET_TOKENS` token chunks with `CHUNK_OVERLAP_TOKENS` token overlap. Ensure splits happen at sentence boundaries when possible | `src/services/extraction/chunker.ts` |
+| 4.1.6 | Chunk interface | `interface Chunk { text: string; index: number; startOffset: number; endOffset: number; tokenEstimate: number; section?: { name: string; type: string; weight: number; } }` | `src/services/extraction/types.ts` |
+
+### Section Weight Constants
+
+Section weights are defined in `src/config/constants.ts`:
+
+**Job Description Weights:**
+
+| Section | Constant | Default | Rationale |
+|---|---|---|---|
+| Requirements / Qualifications | `SECTION_WEIGHT_JD_REQUIREMENTS` | 1.0 | Core skills the role demands |
+| Responsibilities / Duties | `SECTION_WEIGHT_JD_RESPONSIBILITIES` | 0.9 | Skills implied by the work |
+| Nice-to-have / Preferred | `SECTION_WEIGHT_JD_NICE_TO_HAVE` | 0.75 | Optional skills |
+| About the team / Company | `SECTION_WEIGHT_JD_COMPANY` | 0.5 | Context skills, not requirements |
+| Benefits / Perks | `SECTION_WEIGHT_JD_BENEFITS` | 0.3 | Rarely contains relevant skills |
+
+**CV / Resume Weights:**
+
+| Section | Constant | Default | Rationale |
+|---|---|---|---|
+| Skills (explicit list) | `SECTION_WEIGHT_CV_SKILLS` | 1.0 | Self-declared skills |
+| Work Experience | `SECTION_WEIGHT_CV_EXPERIENCE` | 0.9 | Skills demonstrated in practice |
+| Projects | `SECTION_WEIGHT_CV_PROJECTS` | 0.85 | Skills applied in context |
+| Education / Certifications | `SECTION_WEIGHT_CV_EDUCATION` | 0.8 | Formal skill acquisition |
+| Summary / Objective | `SECTION_WEIGHT_CV_SUMMARY` | 0.7 | Often aspirational |
 
 ### Checklist
 
 - [ ] Parser strips HTML tags: `"<b>Python</b> and <i>Java</i>"` → `"Python and Java"`
 - [ ] Parser preserves structure: headings become `\n\n`, lists become `\n- `
 - [ ] Token estimator: `estimateTokens("hello world")` returns ~3
+- [ ] Section detector: JD with "Requirements" and "Responsibilities" headings → detects `type: "jd"` with 2 sections
+- [ ] Section detector: CV with "Skills" and "Experience" headings → detects `type: "cv"` with 2 sections
+- [ ] Section detector: plain text without clear headings → `type: "generic"`, no sections
+- [ ] Section detector: assigns correct weight constants to each section type
 - [ ] Section chunker: a 5-paragraph document produces 2-3 chunks of ~`CHUNK_TARGET_TOKENS` tokens (see `src/config/constants.ts`)
 - [ ] Section chunker: small paragraphs are merged together (not one chunk per paragraph)
+- [ ] Section chunker: chunks preserve `section` metadata from detector
 - [ ] Sliding window: a 4,000 token block without sections → 3 chunks with `CHUNK_OVERLAP_TOKENS` token overlap
 - [ ] Sliding window: splits at sentence boundaries (not mid-word)
 - [ ] Chunk objects have correct `startOffset` and `endOffset` relative to original text
@@ -45,7 +75,7 @@ Implement the full RAG-based skill extraction pipeline — the system's **core v
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 4.2.1 | Extraction output schema | Zod schema for LLM output: `extracted_skills[]` (skill_id, skill_name, confidence, evidence[], proficiency_hint, context_type) and `discovered_candidates[]` (surface_form, suggested_category, reason). Detailed `.describe()` on every field for LLM guidance | `src/schemas/extraction.ts` |
+| 4.2.1 | Extraction output schema | Zod schema for LLM output: `extracted_skills[]` (skill_id, skill_name, confidence, evidence[], proficiency_hint, context_type, section?) and `discovered_candidates[]` (surface_form, suggested_category, reason). Detailed `.describe()` on every field for LLM guidance. The `section` field indicates which document section the skill was found in | `src/schemas/extraction.ts` |
 | 4.2.2 | Extraction request schema | Zod schema for API input: `text` (string, 1-`EXTRACTION_MAX_TEXT_LENGTH` chars — see `src/config/constants.ts`), `options?` (expand: boolean, min_confidence: number, locale: string, max_skills: number) | `src/schemas/extraction.ts` |
 | 4.2.3 | Extraction response schema | Zod schema for API output: `skills[]`, `discovered_candidates[]`, `metadata` (chunks_processed, cache_hits, processing_time_ms, model_used) | `src/schemas/extraction.ts` |
 | 4.2.4 | System prompt | Constant string with instructions for the LLM: role, input format, output constraints ("ONLY return skills from the candidate list"), confidence scoring guidelines | `src/services/extraction/prompts.ts` |
@@ -71,27 +101,36 @@ Implement the full RAG-based skill extraction pipeline — the system's **core v
 | # | Task | Detail | Files |
 |---|---|---|---|
 | 4.3.1 | `SkillExtractionPipeline` class | Constructor: `EmbeddingService`, `VectorSearchService`, `RedisClient`, model config. Main orchestration class | `src/services/extraction/pipeline.ts` |
-| 4.3.2 | `extract(text, options?)` | Full pipeline orchestration: `parse → chunk → processChunks → mergeAndDeduplicate → expand → filterByConfidence → return` | `src/services/extraction/pipeline.ts` |
-| 4.3.3 | `processChunk(chunk)` | Per-chunk logic: (1) compute cache key `extract:{sha256(chunk.text + sortedCandidateIds)}`, (2) check Redis cache, (3) if miss: embed chunk → retrieve top `RAG_CANDIDATE_LIMIT` candidates (see `src/config/constants.ts`) → build prompt → call LLM → validate → cache → return | `src/services/extraction/pipeline.ts` |
+| 4.3.2 | `extract(text, options?)` | Full pipeline orchestration: `parse → detect sections → chunk (with section metadata) → processChunks → applyWeighting → mergeAndDeduplicate → expand → recordCoOccurrences → filterByConfidence → return` | `src/services/extraction/pipeline.ts` |
+| 4.3.3 | `processChunk(chunk)` | Per-chunk logic: (1) compute cache key `extract:{sha256(chunk.text + sortedCandidateIds)}`, (2) check Redis cache, (3) if miss: embed chunk → retrieve top `RAG_CANDIDATE_LIMIT` candidates (see `src/config/constants.ts`) → build prompt (include section context) → call LLM → validate → cache → return | `src/services/extraction/pipeline.ts` |
 | 4.3.4 | Model tier selection | `selectModel(chunk, options)` — Haiku for chunks < 500 tokens or English-only standard docs; Sonnet for multilingual, long, or complex docs. Configurable via options | `src/services/extraction/pipeline.ts` |
 | 4.3.5 | LLM call | `callLLM(prompt, model)` — use `generateText` + `Output.object(extractionSchema)` from AI SDK. Set `maxRetries: EXTRACTION_MAX_RETRIES` (see `src/config/constants.ts`). Track tokens used, latency. Return structured output | `src/services/extraction/pipeline.ts` |
 | 4.3.6 | Result validation | `validateResults(output, candidates)` — reject any `skill_id` not in the candidate list. Log stripped entries for monitoring. Return only valid extractions | `src/services/extraction/pipeline.ts` |
-| 4.3.7 | Result merging | `mergeAndDeduplicate(chunkResults[])` — for skills appearing in multiple chunks: keep highest confidence, merge evidence arrays (deduplicate), use latest proficiency_hint. Sort final results by confidence DESC | `src/services/extraction/pipeline.ts` |
-| 4.3.8 | Response caching | Cache key: `extract:{sha256(chunk + sortedCandidateIds)}`. TTL: `EXTRACTION_CACHE_TTL_SECONDS` (see `src/config/constants.ts`). Store as JSON string in Redis | `src/services/extraction/pipeline.ts` |
-| 4.3.9 | Metadata tracking | Track per-extraction: total chunks processed, cache hits, cache misses, total LLM tokens, total processing time, model used | `src/services/extraction/pipeline.ts` |
+| 4.3.7 | Section weighting | `applyWeighting(results, chunk)` — if chunk has section metadata, multiply each extracted skill's confidence by the section weight. `final_confidence = llm_confidence × section_weight`. Skills from "Requirements" sections keep full confidence; skills from "Company description" get 0.5x | `src/services/extraction/pipeline.ts` |
+| 4.3.8 | Result merging | `mergeAndDeduplicate(chunkResults[])` — for skills appearing in multiple chunks: keep highest confidence, merge evidence arrays (deduplicate), use latest proficiency_hint. Sort final results by confidence DESC | `src/services/extraction/pipeline.ts` |
+| 4.3.9 | Co-occurrence recording | After final merge, publish all pairs of extracted active skill IDs to `co-occurrence:pairs` Redis Stream with `{ skill_ids: string[], source_type: "cv" | "jd" | "course" | "generic" }`. Async — don't block the API response | `src/services/extraction/pipeline.ts` |
+| 4.3.10 | Response caching | Cache key: `extract:{sha256(chunk + sortedCandidateIds)}`. TTL: `EXTRACTION_CACHE_TTL_SECONDS` (see `src/config/constants.ts`). Store as JSON string in Redis | `src/services/extraction/pipeline.ts` |
+| 4.3.11 | Metadata tracking | Track per-extraction: total chunks processed, cache hits, cache misses, total LLM tokens, total processing time, model used, document_type, sections_detected | `src/services/extraction/pipeline.ts` |
 
 ### Checklist
 
 - [ ] `extract("Simple job description about Python")` returns extracted skills with confidence scores
 - [ ] Short text (< `CHUNK_TARGET_TOKENS` tokens) → processes as single chunk
 - [ ] Long text (> 3,000 tokens) → splits into multiple chunks, processes each
+- [ ] Section detection: JD with "Requirements" heading → `document_type: "jd"`, sections detected
+- [ ] Section weighting: skill in "Requirements" section keeps full confidence (1.0x)
+- [ ] Section weighting: skill in "Nice to have" section gets reduced confidence (0.75x)
+- [ ] Section weighting: skill in "Company description" section gets 0.5x confidence
+- [ ] Section weighting: generic text without sections → no weight adjustment (1.0x)
+- [ ] Co-occurrence: extraction of [Python, Django, React] publishes 3 pairs to Redis Stream
+- [ ] Co-occurrence: async — doesn't delay API response
 - [ ] Cache hit: second call with identical text returns immediately (< 10ms)
 - [ ] Cache miss: first call makes LLM API call and caches result
 - [ ] Validation: fabricated skill_ids from LLM are stripped (not returned)
 - [ ] Merging: skill appearing in chunk 1 (0.8) and chunk 2 (0.9) → returned with 0.9 confidence
 - [ ] Merging: evidence arrays from both chunks are combined
 - [ ] Tier selection: short English text → uses Haiku; long multilingual → uses Sonnet
-- [ ] Metadata: response includes `chunks_processed`, `cache_hits`, `processing_time_ms`
+- [ ] Metadata: response includes `chunks_processed`, `cache_hits`, `processing_time_ms`, `document_type`, `sections_detected`
 - [ ] `maxRetries: EXTRACTION_MAX_RETRIES` — LLM call retries on transient errors (see `src/config/constants.ts`)
 - [ ] Error handling: if LLM call fails after retries, chunk is skipped (not crash entire extraction)
 

@@ -4,7 +4,9 @@
 > **Version:** 0.1.0
 > **Date:** 2026-02-12
 
-This document defines the architecture for a general-purpose Skills Graph system — its data model, taxonomy management, skill extraction pipeline, graph maintenance strategy, and API surface. It is scoped to the **core graph/taxonomy layer** and excludes downstream consumers such as job matching, recommendations, or learning path engines. All intelligence is powered by **generative AI / LLMs** — no custom model training is required.
+This document defines the architecture for an **LLM-First Skills Graph** system powering a **Recruitment Agency Platform** — its data model, taxonomy management, skill extraction pipeline, graph maintenance strategy, and API surface. The core graph/taxonomy layer serves as the **single source of truth** for all skill references across the platform, enabling precise matching between candidates and job openings. All intelligence is powered by **generative AI / LLMs** — no custom model training is required.
+
+> **Origin:** This architecture adapts LinkedIn's Skills Graph approach (39K+ skills, 374K+ aliases, 200K+ edges) for a recruitment agency context, replacing LinkedIn's data-first ML pipeline (KGBert, Two-tower BERT, Multitask Scoring) with an **LLM-first orchestration pipeline** that leverages pre-trained model knowledge instead of proprietary big data.
 
 ---
 
@@ -26,35 +28,53 @@ This document defines the architecture for a general-purpose Skills Graph system
 
 ### 1.1 The Problem
 
-Skills are the lingua franca of talent, learning, and workforce planning. Yet most platforms treat them as **flat, unstructured strings** — free-text tags entered by users. This produces:
+Recruitment agencies deal with thousands of CVs and job descriptions daily. Skills are the lingua franca connecting candidates to jobs, yet most platforms treat them as **flat, unstructured strings** — free-text tags entered by recruiters or parsed from documents. This produces:
 
 - **Duplication** — "Machine Learning", "ML", "machine learning", "apprentissage automatique" all refer to the same concept but exist as separate entries.
-- **Ambiguity** — "Cadence" could mean Cadence EDA software, musical cadence, or work cadence.
+- **Ambiguity** — "Cadence" could mean Cadence EDA software, musical cadence, or work cadence. "Go" could be a programming language or a common verb.
 - **Staleness** — New skills emerge (e.g., "Prompt Engineering") while others become obsolete (e.g., "Adobe Flash"), but flat taxonomies cannot model these transitions.
 - **No relationships** — Knowing someone has "Deep Learning" implies they likely know "Machine Learning" and "Linear Algebra", but flat tags cannot express this.
+- **Poor matching** — Without structured skills, matching candidates to jobs relies on keyword overlap, missing semantically equivalent skills.
 
 ### 1.2 The Solution
 
 A centralized, curated, machine-readable **Skills Graph** that provides:
 
-- A **canonical taxonomy** of skill nodes with directed relationships (parent/child, sibling, related).
+- A **canonical taxonomy** of skill nodes with directed relationships (parent/child, sibling, related, prerequisite).
 - **Aliases and localization** so a single concept is recognized regardless of surface form or language.
-- An **LLM-powered extraction pipeline** that maps free text (job postings, resumes, course descriptions) onto the taxonomy.
+- An **LLM-powered extraction pipeline** that maps free text (job postings, resumes, course descriptions) onto the taxonomy with section-aware weighting.
+- **Co-occurrence tracking** that strengthens relationships based on real-world data from processed CVs and JDs.
 - **Quality guardrails** that keep the graph accurate as it grows.
 
-### 1.3 Design Principles
+### 1.3 LLM-First vs Data-First Approach
+
+This system takes an **LLM-First** approach, diverging from LinkedIn's data-first pipeline:
+
+| Aspect | LinkedIn (Data-First) | Our Approach (LLM-First) |
+|---|---|---|
+| **Knowledge source** | 875M+ profiles + JDs | LLM pre-trained knowledge + data accumulated over time |
+| **Taxonomy building** | Taxonomists + KGBert (fine-tuned BERT) | LLM as "virtual expert" + human review |
+| **Skill extraction** | Trie tagger + Two-tower BERT + Multitask Scoring | LLM Structured Output (JSON) + context-aware prompting |
+| **Entity resolution** | String similarity + trained embeddings | Vector search (embedding similarity) + LLM disambiguation |
+| **Relationship building** | Co-occurrence on big data + KGBert | LLM priori knowledge + empirical co-occurrence data |
+| **Feedback loop** | 200 profile edits/sec, recruiter/seeker feedback | Human-in-the-loop review + co-occurrence strengthening |
+
+### 1.4 Design Principles
 
 | Principle | Description |
 |---|---|
-| **General-purpose** | Not tied to one platform; applicable to any HR, talent, or learning system |
+| **Graph as Single Source of Truth** | All skill references across the platform use `skills.id` — no free-text skills stored elsewhere |
+| **Staged before Active** | New skills always enter as `candidate`. Only after review do they become `active` and participate in matching |
+| **Alias-first resolution** | Always try to match aliases before creating new skill nodes — minimizes duplication |
+| **Empirical overrides Priori** | Edge weights from real-world co-occurrence data gradually replace LLM-seeded initial values |
+| **Human-in-the-Loop but not blocking** | Review queue is async — the system operates with active skills while new candidates await review |
 | **Polyhierarchical** | A skill can have multiple parents (e.g., "NLP" is a child of both "Machine Learning" and "Linguistics") |
 | **Locale-aware** | Every skill supports aliases in multiple languages via BCP-47 locale tags |
-| **Human-in-the-Loop** | Curators validate and refine LLM-generated suggestions; the system never commits changes autonomously |
 | **API-first** | All operations are available via well-defined REST APIs |
 | **Versionable** | Every mutation is tracked in a changelog; the graph can be snapshotted and rolled back |
 | **LLM-native** | All intelligence (extraction, classification, discovery) is powered by generative AI via the Vercel AI SDK — no custom model training |
 
-### 1.4 Scale Reference Points
+### 1.5 Scale Reference Points
 
 | Metric | LinkedIn Reference | Recommended Starting Point |
 |---|---|---|
@@ -63,40 +83,42 @@ A centralized, curated, machine-readable **Skills Graph** that provides:
 | Edges (relationships) | ~200,000+ | 3,000–15,000 |
 | Supported locales | 26 | 2–5 |
 
-### 1.5 System Context
+### 1.6 System Context
 
 ```mermaid
 graph LR
     subgraph Sources["Ingestion Sources"]
-        JP[Job Postings]
-        PR[Profiles / Resumes]
+        JP[Job Descriptions]
+        CV[Candidate CVs / Resumes]
         CC[Course Catalogs]
         RQ[Recruiter Queries]
     end
 
     subgraph Core["Skills Graph Core"]
-        EP[Skill Extraction Pipeline]
-        SG[(Skills Graph DB)]
-        TM[Taxonomy Management]
+        EP[Skill Extraction Pipeline<br/>Section-Aware + RAG]
+        SG[(Skills Graph DB<br/>+ Co-occurrence Data)]
+        TM[Taxonomy Management<br/>+ Discovery Pipeline]
     end
 
     subgraph Actors
         CU[Taxonomy Curators]
+        RC[Recruiters]
     end
 
-    subgraph Downstream["Downstream Consumers (out of scope)"]
-        MT[Matching Engine]
+    subgraph Downstream["Downstream Consumers"]
+        MT[Candidate-Job Matching]
+        CP[Candidate Profiles]
         SR[Search & Ranking]
-        AN[Analytics]
+        AN[Workforce Analytics]
     end
 
     Sources --> EP
     EP --> SG
+    EP -->|co-occurrence signals| SG
     CU <--> TM
+    RC -->|feedback| TM
     TM --> SG
-    SG -.-> Downstream
-
-    style Downstream fill:#f5f5f5,stroke:#ccc,stroke-dasharray: 5 5
+    SG --> Downstream
 ```
 
 ---
@@ -146,9 +168,20 @@ One skill node can have many aliases across many locales. This is how the system
 | `target_skill_id` | UUID (FK) | Destination node |
 | `relationship_type` | enum | See below |
 | `confidence` | float [0,1] | LLM-assigned or embedding-derived confidence; `1.0` for curator-set edges |
-| `provenance` | enum | `human_curated`, `llm_predicted`, `embedding_similarity` |
+| `weight` | float | Empirical strength — starts at initial `confidence` value, increases with co-occurrence evidence. Used for ranking related skills |
+| `provenance` | enum | `human_curated`, `llm_predicted`, `embedding_similarity`, `empirical` |
 | `status` | enum | `active`, `pending_review`, `rejected`, `deprecated` |
 | `created_at` | timestamptz | When the edge was created |
+| `updated_at` | timestamptz | Last weight update |
+
+**Provenance Types:**
+
+| Value | Description | Initial Weight |
+|---|---|---|
+| `human_curated` | Curator explicitly created the edge | 1.0 |
+| `llm_predicted` | LLM classified the relationship (priori knowledge) | 0.5 (adjustable by co-occurrence) |
+| `embedding_similarity` | Embedding cosine similarity exceeded threshold | Similarity score |
+| `empirical` | Created or strengthened by real-world co-occurrence data | Based on co-occurrence count |
 
 **Relationship Types:**
 
@@ -162,7 +195,31 @@ One skill node can have many aliases across many locales. This is how the system
 
 The `parent_of` / `child_of` edges form a **polyhierarchical DAG** — a directed acyclic graph where a skill can have multiple parents. Cycles are prohibited and enforced by quality guardrails.
 
-### 2.4 Localization
+> **Polyhierarchy vs Polysemy:** A skill can have multiple parents (polyhierarchy), but a skill name must NOT map to multiple unrelated concepts (polysemy). For example, "Offshore Construction" can be a child of both "Construction" and "Oil & Gas" — that's polyhierarchy. But "Networking" must be split into "Computer Networking" and "Professional Networking" — those are separate skill nodes, not one node with two parents.
+
+### 2.4 Co-occurrence Tracking Schema
+
+Co-occurrence data tracks which skills appear together in the same document (CV or JD). This empirical evidence strengthens `related_to` and `requires` edges over time, and can create new edges when co-occurrence exceeds a threshold.
+
+| Field | Type | Description |
+|---|---|---|
+| `id` | UUID | Primary key |
+| `skill_a_id` | UUID (FK) | First skill (lexicographically smaller UUID to ensure uniqueness) |
+| `skill_b_id` | UUID (FK) | Second skill |
+| `co_occurrence_count` | integer | Number of documents where both skills appeared together |
+| `source_type_counts` | jsonb | Breakdown by source: `{ "cv": 45, "jd": 30, "course": 5 }` |
+| `last_seen_at` | timestamptz | Last document containing both skills |
+| `created_at` | timestamptz | First co-occurrence recorded |
+
+**How empirical evidence works:**
+
+1. Every time a CV or JD is processed, all extracted skills are recorded as co-occurring pairs.
+2. When `co_occurrence_count` exceeds `CO_OCCURRENCE_EDGE_THRESHOLD` (default: 20), the system checks if a `related_to` edge already exists.
+3. If an edge exists with `provenance = 'llm_predicted'`, the edge's `weight` is increased: `weight = min(1.0, initial_weight + (co_occurrence_count / CO_OCCURRENCE_NORMALIZATION_FACTOR))`.
+4. If no edge exists, a new `related_to` edge is created with `provenance = 'empirical'`.
+5. Over time, **empirical data overrides LLM priori knowledge** — the graph self-corrects based on real-world usage patterns.
+
+### 2.5 Localization
 
 Localization is handled through the **Alias table** — one alias per locale per skill, with the `is_primary` flag indicating the display name for that locale. A `locale_config` table tracks supported locales and their completeness:
 
@@ -173,7 +230,9 @@ Localization is handled through the **Alias table** — one alias per locale per
 | `is_active` | boolean | Whether this locale is enabled |
 | `coverage_pct` | float | Percentage of active skills with a primary alias in this locale |
 
-### 2.5 Entity-Relationship Diagram
+### 2.6 Entity-Relationship Diagram
+
+> **Note:** The `skill_co_occurrences` table is separate from `skill_relationships`. Co-occurrence tracks raw signal data; edges in `skill_relationships` are the curated/validated result.
 
 ```mermaid
 erDiagram
@@ -226,7 +285,7 @@ erDiagram
     LOCALE_CONFIG ||--o{ ALIAS : "applies_to"
 ```
 
-### 2.6 Example Taxonomy Subgraph
+### 2.7 Example Taxonomy Subgraph
 
 ```mermaid
 graph TD
@@ -247,7 +306,7 @@ graph TD
 
 > Note: "Machine Learning" has two parents — "Artificial Intelligence" and "Data Science" — demonstrating **polyhierarchy**. The orange edges highlight this.
 
-### 2.7 PostgreSQL Schema
+### 2.8 PostgreSQL Schema
 
 ```sql
 CREATE EXTENSION IF NOT EXISTS ltree;
@@ -295,13 +354,28 @@ CREATE TABLE skill_relationships (
     relationship_type TEXT NOT NULL
         CHECK (relationship_type IN ('parent_of', 'child_of', 'related_to', 'requires', 'superseded_by')),
     confidence FLOAT NOT NULL DEFAULT 1.0 CHECK (confidence >= 0 AND confidence <= 1),
+    weight FLOAT NOT NULL DEFAULT 1.0 CHECK (weight >= 0 AND weight <= 1),
     provenance TEXT NOT NULL DEFAULT 'human_curated'
-        CHECK (provenance IN ('human_curated', 'llm_predicted', 'embedding_similarity')),
+        CHECK (provenance IN ('human_curated', 'llm_predicted', 'embedding_similarity', 'empirical')),
     status TEXT NOT NULL DEFAULT 'active'
         CHECK (status IN ('active', 'pending_review', 'rejected', 'deprecated')),
     created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
     UNIQUE (source_skill_id, target_skill_id, relationship_type),
     CHECK (source_skill_id != target_skill_id)
+);
+
+-- Co-occurrence tracking (empirical evidence)
+CREATE TABLE skill_co_occurrences (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    skill_a_id UUID NOT NULL REFERENCES skills(id),
+    skill_b_id UUID NOT NULL REFERENCES skills(id),
+    co_occurrence_count INT NOT NULL DEFAULT 1,
+    source_type_counts JSONB NOT NULL DEFAULT '{}',
+    last_seen_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    UNIQUE (skill_a_id, skill_b_id),
+    CHECK (skill_a_id < skill_b_id)  -- ensure consistent ordering
 );
 
 -- Locale configuration
@@ -342,6 +416,11 @@ CREATE INDEX idx_aliases_locale ON skill_aliases (locale);
 CREATE INDEX idx_relationships_source ON skill_relationships (source_skill_id);
 CREATE INDEX idx_relationships_target ON skill_relationships (target_skill_id);
 CREATE INDEX idx_relationships_type ON skill_relationships (relationship_type);
+CREATE INDEX idx_relationships_provenance ON skill_relationships (provenance);
+
+CREATE INDEX idx_co_occurrences_skill_a ON skill_co_occurrences (skill_a_id);
+CREATE INDEX idx_co_occurrences_skill_b ON skill_co_occurrences (skill_b_id);
+CREATE INDEX idx_co_occurrences_count ON skill_co_occurrences (co_occurrence_count DESC);
 
 CREATE INDEX idx_changelog_version ON graph_changelog (graph_version);
 CREATE INDEX idx_changelog_entity ON graph_changelog (entity_type, entity_id);
@@ -534,20 +613,23 @@ flowchart TD
 The extraction pipeline uses a **Retrieval-Augmented Generation** pattern to map free text onto the taxonomy. This replaces LinkedIn's trie-based tagger + two-tower semantic model + multitask scorer with a single LLM-powered pipeline.
 
 ```
-Input Document → Chunking → Embedding → Retrieval → LLM Extraction → Validation → Expansion → Output
+Input Document → Section Detection → Chunking → Embedding → Retrieval → LLM Extraction → Validation → Section Weighting → Expansion → Co-occurrence Recording → Output
 ```
 
 **Step-by-step flow:**
 
 1. **Document Parsing** — Convert PDF/DOCX/HTML to plain text
-2. **Chunking** — Split into segments of ~1,500–2,000 tokens
-3. **Embed** — Embed each chunk using `embed()` from AI SDK
-4. **Retrieve** — Query pgvector for the top-100 most relevant skills per chunk
-5. **Prompt Construction** — System prompt + few-shot examples + candidate skill list + text chunk
-6. **LLM Structured Extraction** — `generateText` + `Output.object(zodSchema)` enforces valid JSON output
-7. **Validation** — Reject any skill_ids not in the taxonomy candidate list
-8. **Skill Expansion** — Query the graph for parent, child, and sibling nodes of each extracted skill
-9. **Merge & Deduplicate** — Combine results across chunks, keep highest confidence per skill
+2. **Section Detection** — Identify document structure and classify sections (see §4.7)
+3. **Chunking** — Split into segments of ~1,500–2,000 tokens, preserving section boundaries
+4. **Embed** — Embed each chunk using `embed()` from AI SDK
+5. **Retrieve** — Query pgvector for the top-100 most relevant skills per chunk
+6. **Prompt Construction** — System prompt + few-shot examples + candidate skill list + text chunk + section context
+7. **LLM Structured Extraction** — `generateText` + `Output.object(zodSchema)` enforces valid JSON output
+8. **Validation** — Reject any skill_ids not in the taxonomy candidate list
+9. **Section Weighting** — Adjust confidence scores based on which section the skill was found in
+10. **Skill Expansion** — Query the graph for parent, child, and sibling nodes of each extracted skill
+11. **Co-occurrence Recording** — Record all extracted skill pairs for empirical edge strengthening
+12. **Merge & Deduplicate** — Combine results across chunks, keep highest confidence per skill
 
 ### 4.2 Prompt Engineering
 
@@ -562,6 +644,7 @@ const extractionSchema = z.object({
     evidence: z.array(z.string()).describe("Exact substring(s) from the text"),
     proficiency_hint: z.enum(["beginner", "intermediate", "advanced", "expert", "unknown"]),
     context_type: z.enum(["explicit", "implicit"]),
+    section: z.string().optional().describe("Which section this skill was found in, if detected"),
   })),
   discovered_candidates: z.array(z.object({
     surface_form: z.string(),
@@ -730,7 +813,68 @@ SELECT * FROM parents UNION ALL SELECT * FROM children UNION ALL SELECT * FROM s
 
 Expanded skills are returned with lower confidence (e.g., `original_confidence * 0.6`).
 
-### 4.5 Infrastructure Patterns
+### 4.5 Section-Aware Extraction Weighting
+
+Inspired by LinkedIn's segmentation approach, skills found in different sections of a document carry different weight. The extraction pipeline detects document structure and applies section-based confidence multipliers.
+
+**Job Description Section Weights:**
+
+| Section | Weight Multiplier | Rationale |
+|---|---|---|
+| Requirements / Qualifications | 1.0 | Core skills the role demands |
+| Responsibilities / Duties | 0.9 | Skills implied by the work |
+| Nice-to-have / Preferred | 0.75 | Optional skills |
+| About the team / Company description | 0.5 | Context skills, not requirements |
+| Benefits / Perks | 0.3 | Rarely contains relevant skills |
+
+**CV / Resume Section Weights:**
+
+| Section | Weight Multiplier | Rationale |
+|---|---|---|
+| Skills (explicit list) | 1.0 | Candidate's self-declared skills |
+| Work Experience (descriptions) | 0.9 | Skills demonstrated in practice |
+| Projects | 0.85 | Skills applied in specific contexts |
+| Education / Certifications | 0.8 | Formal skill acquisition |
+| Summary / Objective | 0.7 | Often aspirational, less precise |
+
+**Section Detection:** The LLM is prompted to identify sections as part of the extraction. The `section` field in the extraction output indicates where each skill was found. After extraction, confidence scores are multiplied by the section weight:
+
+```
+final_confidence = llm_confidence × section_weight
+```
+
+### 4.6 Co-occurrence Recording
+
+After extraction, all pairs of extracted skills from the same document are recorded in the `skill_co_occurrences` table. This builds empirical evidence for relationship edges over time.
+
+```typescript
+async function recordCoOccurrences(skillIds: string[], sourceType: string) {
+  // Generate all unique pairs (order by UUID to ensure consistent ordering)
+  const pairs = [];
+  const sorted = [...skillIds].sort();
+  for (let i = 0; i < sorted.length; i++) {
+    for (let j = i + 1; j < sorted.length; j++) {
+      pairs.push({ skillA: sorted[i], skillB: sorted[j] });
+    }
+  }
+
+  // Upsert each pair: increment count, update source_type_counts
+  for (const { skillA, skillB } of pairs) {
+    await db.query(`
+      INSERT INTO skill_co_occurrences (skill_a_id, skill_b_id, source_type_counts, last_seen_at)
+      VALUES ($1, $2, jsonb_build_object($3, 1), now())
+      ON CONFLICT (skill_a_id, skill_b_id)
+      DO UPDATE SET
+        co_occurrence_count = skill_co_occurrences.co_occurrence_count + 1,
+        source_type_counts = skill_co_occurrences.source_type_counts ||
+          jsonb_build_object($3, COALESCE((skill_co_occurrences.source_type_counts->>$3)::int, 0) + 1),
+        last_seen_at = now()
+    `, [skillA, skillB, sourceType]);
+  }
+}
+```
+
+### 4.7 Infrastructure Patterns
 
 | Mode | Technology | Use Case | Latency |
 |---|---|---|---|
@@ -738,21 +882,32 @@ Expanded skills are returned with lower confidence (e.g., `original_confidence *
 | **Nearline** (event) | Redis Streams + Bun workers | New job posting arrives, trigger extraction | < 30s |
 | **Offline** (batch) | Anthropic/OpenAI Batch API | Backfill extraction across millions of documents | 24h SLA, 50% cost |
 
-### 4.6 Extraction Pipeline Diagram
+### 4.7 Infrastructure Patterns
+
+| Mode | Technology | Use Case | Latency |
+|---|---|---|---|
+| **Online** (sync) | Hono REST/RPC endpoint | User uploads a resume for real-time extraction | < 5s p99 |
+| **Nearline** (event) | Redis Streams + Bun workers | New job posting arrives, trigger extraction | < 30s |
+| **Offline** (batch) | Anthropic/OpenAI Batch API | Backfill extraction across millions of documents | 24h SLA, 50% cost |
+
+### 4.8 Extraction Pipeline Diagram
 
 ```mermaid
 flowchart LR
     A[Input Text] --> B[Document Parser<br/>PDF/DOCX → text]
-    B --> C[Chunker<br/>Section-based]
+    B --> B2[Section Detector<br/>JD/CV structure]
+    B2 --> C[Chunker<br/>Section-aware]
     C --> D[embed via AI SDK]
     D --> E[pgvector Search<br/>Top-100 candidates]
-    E --> F[Prompt Builder<br/>System + Few-shot<br/>+ Candidates + Chunk]
+    E --> F[Prompt Builder<br/>System + Few-shot<br/>+ Candidates + Chunk<br/>+ Section context]
     F --> G{Cache<br/>Hit?}
     G -->|Hit| H[Return cached]
     G -->|Miss| I[generateText +<br/>Output.object<br/>via AI SDK]
     I --> J[Validator<br/>Reject invalid IDs]
-    J --> K[Skill Expansion<br/>Graph Lookup]
-    K --> L[Merge &<br/>Deduplicate]
+    J --> J2[Section Weighting<br/>Adjust confidence]
+    J2 --> K[Skill Expansion<br/>Graph Lookup]
+    K --> K2[Co-occurrence<br/>Recording]
+    K2 --> L[Merge &<br/>Deduplicate]
     H --> L
     L --> M[Ranked Skill List]
 ```
@@ -834,7 +989,70 @@ BEGIN;
 COMMIT;
 ```
 
-### 5.4 Growth Monitoring
+### 5.4 Co-occurrence Edge Strengthening
+
+A background process periodically scans `skill_co_occurrences` and strengthens or creates relationship edges:
+
+```typescript
+async function processCoOccurrences() {
+  // Find pairs exceeding threshold that don't have empirical edges yet
+  const pairs = await db.query(`
+    SELECT co.*, s1.canonical_name AS skill_a_name, s2.canonical_name AS skill_b_name
+    FROM skill_co_occurrences co
+    JOIN skills s1 ON co.skill_a_id = s1.id
+    JOIN skills s2 ON co.skill_b_id = s2.id
+    WHERE co.co_occurrence_count >= $1
+    ORDER BY co.co_occurrence_count DESC
+  `, [CO_OCCURRENCE_EDGE_THRESHOLD]);
+
+  for (const pair of pairs) {
+    const existing = await db.query(`
+      SELECT * FROM skill_relationships
+      WHERE ((source_skill_id = $1 AND target_skill_id = $2)
+          OR (source_skill_id = $2 AND target_skill_id = $1))
+        AND relationship_type = 'related_to'
+        AND status = 'active'
+    `, [pair.skill_a_id, pair.skill_b_id]);
+
+    if (existing.length > 0) {
+      // Strengthen existing edge weight
+      const newWeight = Math.min(1.0,
+        existing[0].weight + (pair.co_occurrence_count / CO_OCCURRENCE_NORMALIZATION_FACTOR));
+      await db.query(`
+        UPDATE skill_relationships SET weight = $1, updated_at = now()
+        WHERE id = $2
+      `, [newWeight, existing[0].id]);
+    } else {
+      // Create new empirical edge
+      const weight = Math.min(1.0,
+        pair.co_occurrence_count / CO_OCCURRENCE_NORMALIZATION_FACTOR);
+      await EdgeService.create({
+        source_skill_id: pair.skill_a_id,
+        target_skill_id: pair.skill_b_id,
+        relationship_type: 'related_to',
+        confidence: weight,
+        weight: weight,
+        provenance: 'empirical',
+      });
+    }
+  }
+}
+```
+
+### 5.5 Re-analysis on Skill Activation
+
+When a skill transitions from `candidate` to `active`, previously processed documents that contained this skill (discovered as `discovered_candidates`) should be re-analyzed. This ensures candidate profiles are updated with the newly recognized skill.
+
+**Flow:**
+
+1. Curator approves a skill candidate (e.g., "LangGraph") → status becomes `active`.
+2. The system queries extraction logs for documents that had "LangGraph" in `discovered_candidates`.
+3. These documents are queued for re-extraction via the batch extraction worker.
+4. Re-extraction now matches "LangGraph" against the taxonomy (it's active), updating candidate profiles.
+
+This is implemented as an async worker (Phase 7) — it doesn't block the approval flow.
+
+### 5.6 Growth Monitoring
 
 | Metric | Description | Alert Threshold |
 |---|---|---|
@@ -845,7 +1063,7 @@ COMMIT;
 | Curator vs. LLM additions | % of nodes added by each source | Curator < 10% (curators not reviewing) |
 | Orphan nodes | Active nodes with no parent edge | > 0 (except root nodes) |
 
-### 5.5 Skill Lifecycle State Machine
+### 5.7 Skill Lifecycle State Machine
 
 ```mermaid
 stateDiagram-v2

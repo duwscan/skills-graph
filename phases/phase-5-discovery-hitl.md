@@ -8,7 +8,7 @@
 
 ## Goal
 
-Implement the skill discovery pipeline (LLM-based NER + embedding deduplication) and the curator review queue. This closes the loop: the extraction pipeline discovers unknown skills → discovery pipeline evaluates them → curators approve/reject → taxonomy grows.
+Implement the skill discovery pipeline (LLM-based NER + embedding deduplication) and the curator review queue. This closes the loop: the extraction pipeline discovers unknown skills → discovery pipeline evaluates them → curators approve/reject → taxonomy grows. Approved skills trigger **re-analysis** of previously processed documents (Phase 7).
 
 ---
 
@@ -81,7 +81,7 @@ The review queue is a staging area where discovered skill candidates await curat
 | 5.2.3 | `ReviewQueueService.list(filters?)` | Paginated listing of pending candidates, sorted by `signals_count * llm_score DESC` (highest value candidates first). Filter by `status`, `category_guess`. Include `total` count | `src/services/discovery/review-queue.ts` |
 | 5.2.4 | `ReviewQueueService.getById(id)` | Full details for a single candidate: all fields plus expanded `similar_existing` (with full skill objects) and `suggested_parents` (with full skill objects) | `src/services/discovery/review-queue.ts` |
 | 5.2.5 | `ReviewQueueService.decide(id, decision)` | Process curator decision. Update queue entry status + decision fields + `decided_at`. Then execute the decision flow (§5.2.6-5.2.8) | `src/services/discovery/review-queue.ts` |
-| 5.2.6 | Approve flow | On `approve`: (1) Create skill via `SkillService.create()` with provided name, description, category, path. (2) Generate embedding via `EmbeddingService`. (3) Create `parent_of` edges from suggested parents to new skill. (4) Add any extra aliases. (5) Run all quality guardrails. (6) Record in changelog. All in a transaction — rollback on any failure | `src/services/discovery/review-queue.ts` |
+| 5.2.6 | Approve flow | On `approve`: (1) Create skill via `SkillService.create()` with provided name, description, category, path. (2) Generate embedding via `EmbeddingService`. (3) Create `parent_of` edges from suggested parents to new skill with `provenance = 'llm_predicted'` and `weight = 0.5` (LLM priori — will be adjusted by co-occurrence data over time). (4) Add any extra aliases. (5) Run all quality guardrails. (6) Record in changelog. (7) **Publish activation event** to `reanalysis:jobs` Redis Stream for re-analysis of previously processed documents. All in a transaction — rollback on any failure | `src/services/discovery/review-queue.ts` |
 | 5.2.7 | Reject flow | On `reject`: Mark queue entry as `rejected` with `decision_notes`. No taxonomy changes | `src/services/discovery/review-queue.ts` |
 | 5.2.8 | Merge flow | On `merge`: (1) Create alias on the specified target skill via `AliasService.create()` with the candidate name as `surface_form`. (2) Generate alias embedding. (3) Mark queue entry as `merged`. (4) Record in changelog | `src/services/discovery/review-queue.ts` |
 | 5.2.9 | Defer flow | On `defer`: Mark as `deferred` with notes. Can be re-listed later with `?status=deferred` filter | `src/services/discovery/review-queue.ts` |
@@ -97,6 +97,8 @@ The review queue is a staging area where discovered skill candidates await curat
 - [ ] `decide(id, "approve")` creates skill + edges + aliases in transaction
 - [ ] `decide(id, "approve")` runs quality guardrails (cycle check, duplicate check)
 - [ ] `decide(id, "approve")` rolls back on guardrail failure
+- [ ] `decide(id, "approve")` creates edges with `provenance = 'llm_predicted'` and `weight = 0.5`
+- [ ] `decide(id, "approve")` publishes activation event to `reanalysis:jobs` stream
 - [ ] `decide(id, "reject")` marks as rejected, no taxonomy changes
 - [ ] `decide(id, "merge", { target_id })` creates alias on target skill
 - [ ] `decide(id, "defer")` marks as deferred with notes

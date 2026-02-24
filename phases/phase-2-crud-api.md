@@ -3,6 +3,7 @@
 > **Timeline:** Week 3-4
 > **Dependencies:** Phase 1 (Foundation)
 > **Unlocks:** Phase 4 (Extraction Pipeline), Phase 5 (Discovery & HITL), Phase 6 (Lifecycle)
+> **Context:** LLM-First Skills Graph — all skill references use `skills.id` as single source of truth
 
 ---
 
@@ -22,7 +23,7 @@ Zod schemas serve as the **single source of truth** for both API request/respons
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 2.1.1 | Shared enums | Define `SkillStatus` (`candidate`, `active`, `deprecated`, `merged`), `SkillCategory` (`domain`, `tool`, `certification`, `soft_skill`, `methodology`, `language`), `RelationshipType` (`parent_of`, `child_of`, `related_to`, `requires`, `superseded_by`), `Provenance` (`human_curated`, `llm_predicted`, `embedding_similarity`), `AliasSource` (`curated`, `llm_discovered`, `user_submitted`), `EdgeStatus` (`active`, `pending_review`, `rejected`, `deprecated`) | `src/schemas/enums.ts` |
+| 2.1.1 | Shared enums | Define `SkillStatus` (`candidate`, `active`, `deprecated`, `merged`), `SkillCategory` (`domain`, `tool`, `certification`, `soft_skill`, `methodology`, `language`), `RelationshipType` (`parent_of`, `child_of`, `related_to`, `requires`, `superseded_by`), `Provenance` (`human_curated`, `llm_predicted`, `embedding_similarity`, `empirical`), `AliasSource` (`curated`, `llm_discovered`, `user_submitted`), `EdgeStatus` (`active`, `pending_review`, `rejected`, `deprecated`) | `src/schemas/enums.ts` |
 | 2.1.2 | Skill schemas | `createSkillSchema`: `canonical_name` (required), `description`, `category`, `path` (ltree string), `status` (default `candidate`), `metadata` (optional JSON). Auto-generate `slug` from name. `updateSkillSchema`: all fields optional (partial). `skillResponseSchema`: full skill with `id`, `external_id`, `version`, timestamps, nested `aliases[]`, `relationships[]` | `src/schemas/skill.ts` |
 | 2.1.3 | Alias schemas | `createAliasSchema`: `surface_form`, `locale` (default `en`), `source` (default `curated`), `is_primary` (default false). `aliasResponseSchema` | `src/schemas/alias.ts` |
 | 2.1.4 | Edge schemas | `createEdgeSchema`: `source_skill_id` (UUID), `target_skill_id` (UUID), `relationship_type`, `confidence` (default 1.0), `provenance` (default `human_curated`). `edgeResponseSchema` | `src/schemas/edge.ts` |

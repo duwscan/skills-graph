@@ -3,6 +3,7 @@
 > **Timeline:** Week 15-16
 > **Dependencies:** Phase 4 (Extraction), Phase 5 (Discovery), Phase 7 (Workers)
 > **Unlocks:** Production deployment
+> **Context:** Tests must cover section-aware weighting, co-occurrence aggregation, re-analysis on skill activation, and empirical edge strengthening — features added across Phases 4-7
 
 ---
 
@@ -103,16 +104,19 @@ Tests are organized in 4 tiers: unit tests (fast, no external deps), integration
 | # | Test Category | Tests | Files |
 |---|---|---|---|
 | 8.4.1 | Unit — Guardrails | Cycle detection: simple cycle, transitive cycle, diamond DAG, deep chain (10 levels), valid DAG (no false positives). Sanitization: HTML stripping, Unicode normalization, whitespace handling, special characters. Duplicate thresholds: similarity at `SIMILARITY_DUPLICATE_THRESHOLD` → duplicate, just below → not duplicate (see `src/config/constants.ts`) | `test/unit/guardrails.test.ts` |
-| 8.4.2 | Unit — Chunker | Section-based: resume with 5 sections → 5 chunks. Sliding window: 4000-word blob → 3 chunks with overlap. Short text: 100 words → 1 chunk. Edge cases: empty text, single paragraph, very long single section | `test/unit/chunker.test.ts` |
-| 8.4.3 | Unit — Merge & Dedup | Result merging: skill in 2 chunks → highest confidence kept. Evidence combination: arrays merged and deduplicated. Empty chunks: no crash. All skills below min_confidence: empty result | `test/unit/merge-dedup.test.ts` |
-| 8.4.4 | Unit — Slug generator | Basic: "Machine Learning" → "machine-learning". Unicode: "Café Brewing" → "cafe-brewing". Special chars: "C++" → "c-plus-plus". Duplicate handling: "Python" → "python", "Python" → "python-2" | `test/unit/slug.test.ts` |
-| 8.4.5 | Integration — CRUD lifecycle | Full lifecycle test: create root → create child → add aliases → create edges → verify ancestors/descendants → update → deprecate → verify changelog has all entries | `test/integration/crud-lifecycle.test.ts` |
-| 8.4.6 | Integration — Extraction | Run extraction against 5 test documents with known expected skills. Verify each document returns at least 3 expected skills with confidence > 0.5. Measure precision and recall | `test/integration/extraction.test.ts` |
-| 8.4.7 | Integration — Discovery | Feed text with unknown skills → verify candidates extracted → verify review queue populated → approve candidate → verify skill created with edges → verify searchable in Typesense | `test/integration/discovery.test.ts` |
-| 8.4.8 | Integration — Merge | Create two skills with different aliases and edges → merge → verify: aliases transferred, edges re-pointed, no duplicates, source marked as merged, changelog complete | `test/integration/merge.test.ts` |
-| 8.4.9 | Integration — Search | Create 20+ skills with varied names → test keyword search (exact, partial, typo) → test semantic search (related concept) → test hybrid search (combined ranking) → verify category filtering | `test/integration/search.test.ts` |
-| 8.4.10 | Golden set evaluation | 50+ labeled documents with ground-truth skill annotations. Run `bun test:golden` to measure F1, precision, recall. Fail if F1 < `GOLDEN_SET_MIN_F1` (see `src/config/constants.ts`). Report per-document breakdown | `test/golden-set/evaluate.test.ts`, `test/golden-set/fixtures/` |
-| 8.4.11 | Load test | Script using `autocannon` or simple Bun loop: 50 concurrent extraction requests for 60 seconds. Measure p50/p95/p99 latency, throughput, error rate. Pass criteria: p99 < `LOAD_TEST_MAX_P99_SECONDS`s, errors < `LOAD_TEST_MAX_ERROR_RATE` (see `src/config/constants.ts`) | `test/load/extraction-load.ts` |
+| 8.4.2 | Unit — Chunker & Section Detection | Section-based: resume with 5 sections → 5 chunks. Sliding window: 4000-word blob → 3 chunks with overlap. Short text: 100 words → 1 chunk. Edge cases: empty text, single paragraph, very long single section. **Section detector**: JD with "Requirements"/"Responsibilities" → `type: "jd"` with correct weights. CV with "Skills"/"Experience" → `type: "cv"`. Plain text → `type: "generic"` | `test/unit/chunker.test.ts`, `test/unit/section-detector.test.ts` |
+| 8.4.3 | Unit — Section Weighting | Skill in "Requirements" section → confidence × 1.0. Skill in "Nice to have" → confidence × 0.75. Skill in "Company description" → confidence × 0.5. Generic text without sections → no weight adjustment (1.0×). All JD and CV weight constants applied correctly (see `src/config/constants.ts`) | `test/unit/section-weighting.test.ts` |
+| 8.4.4 | Unit — Merge & Dedup | Result merging: skill in 2 chunks → highest confidence kept. Evidence combination: arrays merged and deduplicated. Empty chunks: no crash. All skills below min_confidence: empty result | `test/unit/merge-dedup.test.ts` |
+| 8.4.5 | Unit — Slug generator | Basic: "Machine Learning" → "machine-learning". Unicode: "Café Brewing" → "cafe-brewing". Special chars: "C++" → "c-plus-plus". Duplicate handling: "Python" → "python", "Python" → "python-2" | `test/unit/slug.test.ts` |
+| 8.4.6 | Integration — CRUD lifecycle | Full lifecycle test: create root → create child → add aliases → create edges → verify ancestors/descendants → update → deprecate → verify changelog has all entries | `test/integration/crud-lifecycle.test.ts` |
+| 8.4.7 | Integration — Extraction | Run extraction against 5 test documents with known expected skills. Verify each document returns at least 3 expected skills with confidence > 0.5. Measure precision and recall. **Verify section-aware weighting**: JD with "Requirements" section → skills have full confidence; skills from "Benefits" section → reduced confidence | `test/integration/extraction.test.ts` |
+| 8.4.8 | Integration — Discovery | Feed text with unknown skills → verify candidates extracted → verify review queue populated → approve candidate → verify skill created with edges (`provenance = 'llm_predicted'`, `weight = 0.5`) → verify searchable in Typesense → **verify activation event published to `reanalysis:jobs` stream** | `test/integration/discovery.test.ts` |
+| 8.4.9 | Integration — Merge | Create two skills with different aliases and edges → merge → verify: aliases transferred, edges re-pointed, no duplicates, source marked as merged, **co-occurrence data merged** (counts summed, `skill_a_id < skill_b_id` maintained), changelog complete | `test/integration/merge.test.ts` |
+| 8.4.10 | Integration — Search | Create 20+ skills with varied names → test keyword search (exact, partial, typo) → test semantic search (related concept) → test hybrid search (combined ranking) → verify category filtering | `test/integration/search.test.ts` |
+| 8.4.11 | Integration — Co-occurrence | Extract skills from 10+ documents → verify co-occurrence pairs published to Redis Stream → verify worker upserts into `skill_co_occurrences` table → run `bun run co-occurrence:process` → verify empirical edges created for pairs above `CO_OCCURRENCE_EDGE_THRESHOLD` → verify edge weights updated correctly → verify weight never exceeds 1.0 | `test/integration/co-occurrence.test.ts` |
+| 8.4.12 | Integration — Re-analysis | Extract document with unknown skills → approve one discovered candidate → verify activation event triggers re-analysis worker → verify worker queries `extraction_logs` → verify matching documents queued for re-extraction → verify re-extraction picks up newly activated skill | `test/integration/reanalysis.test.ts` |
+| 8.4.13 | Golden set evaluation | 50+ labeled documents with ground-truth skill annotations. **Include JDs and CVs with section labels** to verify section-aware weighting. Run `bun test:golden` to measure F1, precision, recall. Fail if F1 < `GOLDEN_SET_MIN_F1` (see `src/config/constants.ts`). Report per-document breakdown. **Additional metric**: verify section-weighted confidence scores are within expected ranges | `test/golden-set/evaluate.test.ts`, `test/golden-set/fixtures/` |
+| 8.4.14 | Load test | Script using `autocannon` or simple Bun loop: 50 concurrent extraction requests for 60 seconds. Measure p50/p95/p99 latency, throughput, error rate. Pass criteria: p99 < `LOAD_TEST_MAX_P99_SECONDS`s, errors < `LOAD_TEST_MAX_ERROR_RATE` (see `src/config/constants.ts`) | `test/load/extraction-load.ts` |
 
 ### Golden Set Fixture Format
 
@@ -132,13 +136,16 @@ Tests are organized in 4 tiers: unit tests (fast, no external deps), integration
 ### Checklist
 
 - [ ] `bun test` runs all unit + integration tests
-- [ ] Unit tests: guardrails, chunker, merge, slug — all pass
+- [ ] Unit tests: guardrails, chunker, section detection, section weighting, merge, slug — all pass
 - [ ] Integration tests: CRUD lifecycle — full flow passes
-- [ ] Integration tests: extraction — returns expected skills from test documents
-- [ ] Integration tests: discovery — full flow from text to approved skill
-- [ ] Integration tests: merge — aliases and edges transferred correctly
+- [ ] Integration tests: extraction — returns expected skills from test documents with correct section weighting
+- [ ] Integration tests: discovery — full flow from text to approved skill, activation event published
+- [ ] Integration tests: merge — aliases, edges, and co-occurrence data transferred correctly
 - [ ] Integration tests: search — keyword, semantic, hybrid all return relevant results
+- [ ] Integration tests: co-occurrence — pairs recorded, empirical edges created above threshold
+- [ ] Integration tests: re-analysis — activation triggers re-extraction of matching documents
 - [ ] `bun test:golden` — F1 ≥ `GOLDEN_SET_MIN_F1`, precision ≥ `GOLDEN_SET_MIN_PRECISION`, recall ≥ `GOLDEN_SET_MIN_RECALL` (see `src/config/constants.ts`)
+- [ ] `bun test:golden` — section-weighted confidence scores within expected ranges
 - [ ] `bun run test:load` — p99 < `LOAD_TEST_MAX_P99_SECONDS`s, error rate < `LOAD_TEST_MAX_ERROR_RATE` (see `src/config/constants.ts`)
 - [ ] Test coverage: all services have at least one test
 - [ ] Tests are isolated: each test can run independently, no cross-test dependencies
@@ -278,9 +285,11 @@ echo "Skills Graph is production-ready! 🎉"
 - [ ] Security headers on all responses
 
 ### 8.4 Test Suite
-- [ ] Unit tests: guardrails, chunker, merge, slug
-- [ ] Integration tests: CRUD lifecycle, extraction, discovery, merge, search
-- [ ] Golden set: F1 ≥ `GOLDEN_SET_MIN_F1` (see `src/config/constants.ts`)
+- [ ] Unit tests: guardrails, chunker, section detection, section weighting, merge, slug
+- [ ] Integration tests: CRUD lifecycle, extraction (with section weighting), discovery (with activation event), merge (with co-occurrence), search
+- [ ] Integration tests: co-occurrence aggregation and empirical edge strengthening
+- [ ] Integration tests: re-analysis on skill activation
+- [ ] Golden set: F1 ≥ `GOLDEN_SET_MIN_F1`, section-weighted confidence validated (see `src/config/constants.ts`)
 - [ ] Load test: p99 < `LOAD_TEST_MAX_P99_SECONDS`s, errors < `LOAD_TEST_MAX_ERROR_RATE` (see `src/config/constants.ts`)
 
 ### 8.5 Production Configuration

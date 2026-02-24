@@ -2,6 +2,7 @@
 
 > **Reference:** [ARCHITECTURE.md](./ARCHITECTURE.md)
 > **Stack:** Bun + Hono + Vercel AI SDK + PostgreSQL (pgvector, ltree) + Redis + Typesense
+> **Context:** LLM-First Skills Graph powering a Recruitment Agency Platform
 
 ---
 
@@ -60,9 +61,10 @@ skills-graph/
 |---|---|---|
 | 1.1.1 | Initialize Bun project | `bun init`, configure `tsconfig.json` with `strict: true`, path aliases (`@/` → `src/`) |
 | 1.1.2 | Install core dependencies | `hono`, `@hono/zod-validator`, `zod`, `ai`, `@ai-sdk/anthropic`, `@ai-sdk/openai`, `postgres` (or `drizzle-orm` + `drizzle-kit`), `ioredis` |
-| 1.1.3 | Create `docker-compose.yml` | PostgreSQL 16 with `pgvector`, `ltree`, `pg_trgm` extensions enabled; Redis 7 |
-| 1.1.4 | Environment config | `src/config/env.ts` — validate all env vars with Zod: `DATABASE_URL`, `REDIS_URL`, `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `HELICONE_API_KEY` (optional) |
-| 1.1.5 | AI SDK provider registry | `src/config/providers.ts` — set up `createProviderRegistry()` with Anthropic (primary) and OpenAI (fallback), embedding model config |
+| 1.1.3 | Create `docker-compose.yml` | PostgreSQL 16 with `pgvector`, `ltree`, `pg_trgm` extensions enabled; Redis 7; Typesense 27 |
+| 1.1.4 | Environment config | `src/config/env.ts` — validate all env vars with Zod: `DATABASE_URL`, `REDIS_URL`, `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `TYPESENSE_URL`, `TYPESENSE_API_KEY`, `HELICONE_API_KEY` (optional) |
+| 1.1.5 | Centralized constants | `src/config/constants.ts` — all tunable values (thresholds, TTLs, limits, co-occurrence params) in one file |
+| 1.1.6 | AI SDK provider registry | `src/config/providers.ts` — set up `createProviderRegistry()` with Anthropic (primary) and OpenAI (fallback), embedding model config |
 
 **docker-compose.yml:**
 
@@ -93,7 +95,7 @@ volumes:
 
 | # | Task | Detail |
 |---|---|---|
-| 1.2.1 | Create initial migration | `migrations/001_initial.sql` — the full schema from ARCHITECTURE.md §2.7: `skills`, `skill_aliases`, `skill_relationships`, `locale_config`, `graph_changelog` tables with all CHECK constraints, UNIQUE constraints, and indexes |
+| 1.2.1 | Create initial migration | `migrations/001_initial.sql` — the full schema from ARCHITECTURE.md §2.8: `skills`, `skill_aliases`, `skill_relationships`, `skill_co_occurrences`, `locale_config`, `graph_changelog` tables with all CHECK constraints, UNIQUE constraints, and indexes |
 | 1.2.2 | Enable extensions | `CREATE EXTENSION IF NOT EXISTS ltree, vector, pg_trgm;` in migration |
 | 1.2.3 | Create HNSW vector indexes | `idx_skills_embedding`, `idx_aliases_embedding` using `vector_cosine_ops` |
 | 1.2.4 | Create trigram indexes | `idx_skills_name_trgm`, `idx_aliases_surface_trgm` for fuzzy text search |
@@ -143,7 +145,7 @@ curl http://localhost:3000/health
 # Verify database tables exist
 docker exec -it skills-graph-postgres-1 psql -U skills -d skills_graph \
   -c "\\dt"
-# → skills, skill_aliases, skill_relationships, locale_config, graph_changelog
+# → skills, skill_aliases, skill_relationships, skill_co_occurrences, locale_config, graph_changelog
 ```
 
 ---
@@ -160,9 +162,9 @@ docker exec -it skills-graph-postgres-1 psql -U skills -d skills_graph \
 |---|---|---|
 | 2.1.1 | Skill schemas | `src/schemas/skill.ts` — `createSkillSchema`, `updateSkillSchema`, `skillResponseSchema` with all fields from §2.1 (external_id, canonical_name, slug, description, status, category, path). Auto-generate `slug` from `canonical_name` if not provided |
 | 2.1.2 | Alias schemas | `src/schemas/alias.ts` — `createAliasSchema` (surface_form, locale, source, is_primary), `aliasResponseSchema` |
-| 2.1.3 | Edge schemas | `src/schemas/edge.ts` — `createEdgeSchema` (source_skill_id, target_skill_id, relationship_type, confidence, provenance), `edgeResponseSchema`. Validate relationship_type is one of the 5 enums |
+| 2.1.3 | Edge schemas | `src/schemas/edge.ts` — `createEdgeSchema` (source_skill_id, target_skill_id, relationship_type, confidence, weight, provenance), `edgeResponseSchema`. Validate relationship_type is one of the 5 enums. Include `empirical` in provenance enum |
 | 2.1.4 | Query parameter schemas | `src/schemas/query.ts` — pagination (`limit`, `offset`), sort, filter by status/category/locale |
-| 2.1.5 | Shared enums | `src/schemas/enums.ts` — `SkillStatus`, `SkillCategory`, `RelationshipType`, `Provenance`, `AliasSource` as Zod enums, exported for reuse |
+| 2.1.5 | Shared enums | `src/schemas/enums.ts` — `SkillStatus`, `SkillCategory`, `RelationshipType`, `Provenance` (including `empirical`), `AliasSource` as Zod enums, exported for reuse |
 
 ### 2.2 Skill CRUD Service
 
@@ -359,35 +361,38 @@ bun test
 
 ## Phase 4: Skill Extraction Pipeline (LLM + RAG)
 
-**Goal:** Implement the full RAG-based skill extraction pipeline from ARCHITECTURE.md §4 — the system's core value proposition. Takes free text → returns ranked skills from the taxonomy.
+**Goal:** Implement the full RAG-based skill extraction pipeline from ARCHITECTURE.md §4 — the system's core value proposition. Takes free text → returns ranked skills from the taxonomy. Includes section-aware weighting and co-occurrence recording.
 
 ### 4.1 Text Processing
 
 | # | Task | Detail |
 |---|---|---|
 | 4.1.1 | Document parser | `src/services/extraction/parser.ts` — convert input text to clean plaintext. For now, accept plaintext and basic HTML (strip tags). Later phases can add PDF/DOCX support via `pdf-parse` or `mammoth` |
-| 4.1.2 | Chunker | `src/services/extraction/chunker.ts` — implement section-based chunking (split on `\n\n`, `\n#`, heading patterns) with sliding window fallback. Target ~1,500–2,000 tokens per chunk with 200 token overlap. Use `tiktoken` or simple word-count heuristic for token estimation |
-| 4.1.3 | Chunk interface | `interface Chunk { text: string; index: number; startOffset: number; endOffset: number; }` |
+| 4.1.2 | Section detector | `src/services/extraction/section-detector.ts` — detect document type (JD vs CV vs generic) and identify sections. For JDs: Requirements, Responsibilities, Nice-to-have, Company description. For CVs: Skills, Experience, Projects, Education, Summary. Return `{ type: "jd" | "cv" | "generic", sections: Section[] }` |
+| 4.1.3 | Chunker | `src/services/extraction/chunker.ts` — implement section-based chunking (split on `\n\n`, `\n#`, heading patterns) with sliding window fallback. Target ~1,500–2,000 tokens per chunk with 200 token overlap. Preserve section metadata on each chunk. Use `tiktoken` or simple word-count heuristic for token estimation |
+| 4.1.4 | Chunk interface | `interface Chunk { text: string; index: number; startOffset: number; endOffset: number; section?: { name: string; type: string; weight: number; } }` |
 
 ### 4.2 Extraction Schemas & Prompts
 
 | # | Task | Detail |
 |---|---|---|
-| 4.2.1 | Extraction Zod schema | `src/schemas/extraction.ts` — the `extractionSchema` from ARCHITECTURE.md §4.2: `{ extracted_skills: [{ skill_id, skill_name, confidence, evidence, proficiency_hint, context_type }], discovered_candidates: [{ surface_form, suggested_category, reason }] }` |
-| 4.2.2 | System prompt | `src/services/extraction/prompts.ts` — the system prompt from §4.2. Store as a constant string. Include the 2-3 few-shot examples for consistent extraction quality |
-| 4.2.3 | Prompt builder | `buildExtractionPrompt(chunk: string, candidates: CandidateSkill[])` — format candidates as a numbered list of `{id, name}` pairs, append the chunk text. Keep total prompt size manageable (< 4,000 tokens for candidate list + chunk) |
+| 4.2.1 | Extraction Zod schema | `src/schemas/extraction.ts` — the `extractionSchema` from ARCHITECTURE.md §4.2: `{ extracted_skills: [{ skill_id, skill_name, confidence, evidence, proficiency_hint, context_type, section? }], discovered_candidates: [{ surface_form, suggested_category, reason }] }` |
+| 4.2.2 | System prompt | `src/services/extraction/prompts.ts` — the system prompt from §4.2. Store as a constant string. Include the 2-3 few-shot examples for consistent extraction quality. Include section context when available |
+| 4.2.3 | Prompt builder | `buildExtractionPrompt(chunk: string, candidates: CandidateSkill[], section?: Section)` — format candidates as a numbered list of `{id, name}` pairs, append the chunk text with section context. Keep total prompt size manageable (< 4,000 tokens for candidate list + chunk) |
 
 ### 4.3 Extraction Pipeline Core
 
 | # | Task | Detail |
 |---|---|---|
 | 4.3.1 | `SkillExtractionPipeline` class | `src/services/extraction/pipeline.ts` — the main class from §4.2. Constructor takes dependencies: `EmbeddingService`, `VectorSearchService`, `RedisClient`, provider registry |
-| 4.3.2 | `extract(document: string, options?)` | Full pipeline: parse → chunk → for each chunk { cache check → embed → retrieve candidates → build prompt → LLM call → validate → cache result } → merge & deduplicate across chunks |
+| 4.3.2 | `extract(document: string, options?)` | Full pipeline: parse → detect sections → chunk → for each chunk { cache check → embed → retrieve candidates → build prompt → LLM call → validate → apply section weighting → cache result } → merge & deduplicate across chunks → expand → record co-occurrences |
 | 4.3.3 | Model tier selection | `selectModel(chunk)` — implement the tier selection logic from §7.4: short/simple chunks → Haiku, complex/multilingual → Sonnet |
 | 4.3.4 | LLM call with structured output | Use `generateText` + `Output.object(extractionSchema)` from AI SDK. Set `maxRetries: 3`. Handle errors gracefully |
 | 4.3.5 | Result validation | `validate(output, candidates)` — reject any `skill_id` not present in the candidate list. Log stripped entries for monitoring |
-| 4.3.6 | Result merging | `mergeAndDeduplicate(chunkResults[])` — for skills appearing in multiple chunks, keep the one with highest confidence. Combine evidence arrays. Sort final results by confidence descending |
-| 4.3.7 | Response caching | Redis cache with key `extract:{hash(chunk + candidateIds)}`, 7-day TTL. Hash function: SHA-256 of sorted candidate IDs + chunk text |
+| 4.3.6 | Section weighting | `applyWeighting(results, section)` — multiply confidence by section weight factor. JD: Requirements=1.0, Responsibilities=0.9, Nice-to-have=0.75, Company=0.5. CV: Skills=1.0, Experience=0.9, Projects=0.85, Education=0.8, Summary=0.7 |
+| 4.3.7 | Result merging | `mergeAndDeduplicate(chunkResults[])` — for skills appearing in multiple chunks, keep the one with highest confidence. Combine evidence arrays. Sort final results by confidence descending |
+| 4.3.8 | Co-occurrence recording | After final merge, record all pairs of extracted skills in `skill_co_occurrences` table with source type (cv/jd/course). Async — don't block response |
+| 4.3.9 | Response caching | Redis cache with key `extract:{hash(chunk + candidateIds)}`, 7-day TTL. Hash function: SHA-256 of sorted candidate IDs + chunk text |
 
 ### 4.4 Skill Expansion
 
@@ -401,7 +406,7 @@ bun test
 
 | # | Task | Detail |
 |---|---|---|
-| 4.5.1 | `POST /api/extract` | Accept `{ text: string, options?: { expand, min_confidence, locale } }`. Run `SkillExtractionPipeline.extract()`. Return `{ skills: [...], discovered_candidates: [...], metadata: { chunks_processed, cache_hits, processing_time_ms } }` |
+| 4.5.1 | `POST /api/extract` | Accept `{ text: string, options?: { expand, min_confidence, locale, source_type } }`. `source_type` is `"cv" | "jd" | "course" | "generic"` for section detection and co-occurrence tracking. Run `SkillExtractionPipeline.extract()`. Return `{ skills: [...], discovered_candidates: [...], metadata: { chunks_processed, cache_hits, processing_time_ms, document_type, sections_detected } }` |
 | 4.5.2 | Request validation | `zValidator("json", extractRequestSchema)` — validate text length (1 to 100,000 chars), options |
 | 4.5.3 | Concurrency control | Use semaphore (from `async-mutex`) to limit concurrent LLM calls to 50. Return 429 if semaphore is full |
 
@@ -557,13 +562,13 @@ bun test src/services/lifecycle/
 
 ## Phase 7: Workers, Events & Batch Processing
 
-**Goal:** Implement background workers for async extraction, batch processing via LLM Batch API, and Redis Streams event processing from ARCHITECTURE.md §4.5 and §7.8.
+**Goal:** Implement background workers for async extraction, batch processing, event-driven Typesense sync, co-occurrence aggregation, re-analysis on skill activation, and discovery signal processing using Redis Streams.
 
 ### 7.1 Redis Streams Infrastructure
 
 | # | Task | Detail |
 |---|---|---|
-| 7.1.1 | Stream producer | `src/services/events/producer.ts` — `publishEvent(stream: string, event: object)` using `XADD`. Streams: `extraction:jobs`, `discovery:signals`, `sync:typesense` |
+| 7.1.1 | Stream producer | `src/services/events/producer.ts` — `publishEvent(stream: string, event: object)` using `XADD`. Streams: `extraction:jobs`, `discovery:signals`, `sync:typesense`, `co-occurrence:pairs`, `reanalysis:jobs` |
 | 7.1.2 | Stream consumer base | `src/services/events/consumer.ts` — base class for consuming from Redis Streams with consumer groups. Handle `XREADGROUP`, `XACK`, error recovery, dead letter queue |
 | 7.1.3 | Consumer group setup | `bun run streams:setup` — create consumer groups for each stream |
 
@@ -571,7 +576,7 @@ bun test src/services/lifecycle/
 
 | # | Task | Detail |
 |---|---|---|
-| 7.2.1 | `POST /api/extract/batch` | Accept `{ documents: [{ id, text, metadata }] }`. Publish each document as a job to `extraction:jobs` stream. Return `{ job_id, document_count, status: "queued" }` |
+| 7.2.1 | `POST /api/extract/batch` | Accept `{ documents: [{ id, text, metadata, source_type? }] }`. Publish each document as a job to `extraction:jobs` stream. Return `{ job_id, document_count, status: "queued" }` |
 | 7.2.2 | `GET /api/extract/jobs/:jobId` | Return job status and results. Store job state in Redis: `batch:{jobId}` → `{ total, completed, failed, results: [...] }` |
 | 7.2.3 | Extraction worker | `src/workers/extraction-worker.ts` — consume from `extraction:jobs`, run `SkillExtractionPipeline.extract()` for each document, store result back in Redis batch state, ACK the message |
 | 7.2.4 | Worker entry point | `src/workers/index.ts` — start all workers: `bun run workers` |
@@ -584,18 +589,34 @@ bun test src/services/lifecycle/
 | 7.3.1 | Signal aggregation | When extraction pipeline returns `discovered_candidates`, publish to `discovery:signals` stream |
 | 7.3.2 | Discovery worker | `src/workers/discovery-worker.ts` — consume signals, aggregate by normalized_form, when count exceeds threshold (default: 5, configurable via `DISCOVERY_SIGNAL_THRESHOLD` env var), run full discovery pipeline and add to review queue |
 
-### 7.4 Typesense Sync Worker
+### 7.4 Co-occurrence Aggregation Worker
 
 | # | Task | Detail |
 |---|---|---|
-| 7.4.1 | PG NOTIFY → Redis Stream bridge | The changelog listener (Phase 6.3.3) publishes skill mutation events to `sync:typesense` stream |
-| 7.4.2 | Sync worker | `src/workers/typesense-sync-worker.ts` — consume events, upsert or delete the affected skill document in Typesense. Batch multiple updates within a 500ms window for efficiency |
+| 7.4.1 | Co-occurrence event publishing | After extraction, the pipeline publishes skill pair events to `co-occurrence:pairs` stream with `{ skill_ids: string[], source_type: string }` |
+| 7.4.2 | Co-occurrence worker | `src/workers/co-occurrence-worker.ts` — consume events, upsert pairs into `skill_co_occurrences` table. Batch within a debounce window for efficiency |
+| 7.4.3 | Edge strengthening job | `bun run co-occurrence:process` — periodic job (e.g., nightly cron) that scans `skill_co_occurrences` for pairs exceeding `CO_OCCURRENCE_EDGE_THRESHOLD`. Creates new `empirical` edges or strengthens existing edge weights. See ARCHITECTURE.md §5.4 |
 
-### 7.5 Cache Invalidation Worker
+### 7.5 Re-analysis Worker
 
 | # | Task | Detail |
 |---|---|---|
-| 7.5.1 | Invalidation on skill mutation | When a skill is updated/deprecated/merged, delete: `taxonomy:skill:{id}` from Redis cache. Also invalidate any extraction cache entries that referenced this skill (via a secondary index or just expire) |
+| 7.5.1 | Activation event publishing | When a skill transitions from `candidate` → `active` (curator approve), publish to `reanalysis:jobs` stream with `{ skill_id, skill_name, activated_at }` |
+| 7.5.2 | Re-analysis worker | `src/workers/reanalysis-worker.ts` — consume activation events. Query extraction logs for documents that had this skill in `discovered_candidates`. Queue those documents for re-extraction via the batch extraction worker |
+| 7.5.3 | Extraction log table | New migration: `CREATE TABLE extraction_logs (id UUID PK, document_hash TEXT, source_type TEXT, discovered_candidates JSONB, extracted_skill_ids UUID[], created_at TIMESTAMPTZ)`. Populated by extraction pipeline to enable re-analysis |
+
+### 7.6 Typesense Sync Worker
+
+| # | Task | Detail |
+|---|---|---|
+| 7.6.1 | PG NOTIFY → Redis Stream bridge | The changelog listener (Phase 6.3.3) publishes skill mutation events to `sync:typesense` stream |
+| 7.6.2 | Sync worker | `src/workers/typesense-sync-worker.ts` — consume events, upsert or delete the affected skill document in Typesense. Batch multiple updates within a 500ms window for efficiency |
+
+### 7.7 Cache Invalidation Worker
+
+| # | Task | Detail |
+|---|---|---|
+| 7.7.1 | Invalidation on skill mutation | When a skill is updated/deprecated/merged, delete: `taxonomy:skill:{id}` from Redis cache. Also invalidate any extraction cache entries that referenced this skill (via a secondary index or just expire) |
 
 **Verification:**
 
@@ -733,11 +754,11 @@ graph TD
 
 | Phase | Focus | Key Deliverables | Critical Files |
 |---|---|---|---|
-| **1** | Foundation | Bun+Hono scaffold, PostgreSQL schema, Redis client, AI SDK config | `src/index.ts`, `migrations/001_initial.sql`, `docker-compose.yml` |
-| **2** | CRUD API | All taxonomy endpoints, quality guardrails, changelog | `src/services/skill.ts`, `src/services/guardrails.ts`, `src/routes/skills.ts` |
+| **1** | Foundation | Bun+Hono scaffold, PostgreSQL schema (incl. co-occurrence table), Redis client, AI SDK config, centralized constants | `src/index.ts`, `migrations/001_initial.sql`, `docker-compose.yml`, `src/config/constants.ts` |
+| **2** | CRUD API | All taxonomy endpoints, quality guardrails, changelog, empirical provenance support | `src/services/skill.ts`, `src/services/guardrails.ts`, `src/routes/skills.ts` |
 | **3** | Search & Embeddings | Embedding service, pgvector search, Typesense integration, hybrid search | `src/services/embedding.ts`, `src/services/vector-search.ts`, `src/services/typesense.ts` |
-| **4** | Extraction | RAG pipeline, chunker, prompt engineering, skill expansion, extraction API | `src/services/extraction/pipeline.ts`, `src/services/extraction/chunker.ts` |
+| **4** | Extraction | RAG pipeline, section-aware chunker, section weighting, prompt engineering, skill expansion, co-occurrence recording, extraction API | `src/services/extraction/pipeline.ts`, `src/services/extraction/section-detector.ts`, `src/services/extraction/chunker.ts` |
 | **5** | Discovery & HITL | Skill discovery, review queue, relationship prediction, curation API | `src/services/discovery/discovery.ts`, `src/services/discovery/relationship-prediction.ts` |
-| **6** | Lifecycle | Deprecation, merging, versioning, snapshots, CDC | `src/services/lifecycle/deprecation.ts`, `src/services/lifecycle/merge.ts` |
-| **7** | Workers & Events | Redis Streams, batch extraction, discovery worker, Typesense sync | `src/workers/extraction-worker.ts`, `src/services/events/` |
-| **8** | QA & Hardening | Helicone, logging, rate limiting, auth, test suite, Dockerfile | `src/middleware/`, `test/`, `Dockerfile` |
+| **6** | Lifecycle | Deprecation, merging, versioning, snapshots, CDC, co-occurrence cleanup on merge | `src/services/lifecycle/deprecation.ts`, `src/services/lifecycle/merge.ts` |
+| **7** | Workers & Events | Redis Streams, batch extraction, discovery worker, co-occurrence aggregation, re-analysis worker, Typesense sync | `src/workers/extraction-worker.ts`, `src/workers/co-occurrence-worker.ts`, `src/workers/reanalysis-worker.ts` |
+| **8** | QA & Hardening | Helicone, logging, rate limiting, auth, test suite (incl. section weighting + co-occurrence tests), Dockerfile | `src/middleware/`, `test/`, `Dockerfile` |

@@ -3,12 +3,13 @@
 > **Timeline:** Week 5-6
 > **Dependencies:** Phase 1 (Foundation), Phase 2 (CRUD API) recommended
 > **Unlocks:** Phase 4 (Extraction Pipeline), Phase 5 (Discovery & HITL)
+> **Context:** Embeddings power RAG retrieval, duplicate detection, co-occurrence-based relationship discovery, and semantic search
 
 ---
 
 ## Goal
 
-Add vector embedding generation for all skills/aliases, pgvector similarity search, and Typesense full-text search. This phase enables the **RAG retrieval step** needed by the extraction pipeline (Phase 4) and the **duplicate detection** needed by the discovery pipeline (Phase 5).
+Add vector embedding generation for all skills/aliases, pgvector similarity search, and Typesense full-text search. This phase enables the **RAG retrieval step** needed by the extraction pipeline (Phase 4), the **duplicate detection** needed by the discovery pipeline (Phase 5), and the **embedding-based deduplication** used during co-occurrence edge strengthening (Phase 7).
 
 ---
 
@@ -62,7 +63,7 @@ pgvector enables approximate nearest neighbor (ANN) search using HNSW indexes. T
 | 3.2.2 | `findSimilarSkills(embedding, k, filters?)` | Return top-K nearest active skills. SQL: `SELECT *, 1 - (embedding <=> $1::vector) AS similarity FROM skills WHERE status = 'active' AND embedding IS NOT NULL ORDER BY embedding <=> $1::vector LIMIT $2`. Optional filters: `category`, exclude IDs | `src/services/vector-search.ts` |
 | 3.2.3 | `findSimilarAliases(embedding, k)` | Same but against `skill_aliases.alias_embedding`. Return alias + parent skill info | `src/services/vector-search.ts` |
 | 3.2.4 | `findCandidatesForChunk(chunkEmbedding, k=RAG_CANDIDATE_LIMIT)` | The **RAG retrieval function**: given a text chunk embedding, return top `RAG_CANDIDATE_LIMIT` skills (see `src/config/constants.ts`) with `{ id, external_id, canonical_name, description, similarity }`. This is the core function used by the extraction pipeline in Phase 4. Include skill descriptions for prompt context | `src/services/vector-search.ts` |
-| 3.2.5 | `checkDuplicate(name, description?)` | Embed the candidate text via `EmbeddingService.embedText()`, search for nearest neighbors. Return `{ isDuplicate: boolean, matches: Array<{ skill, similarity }> }`. Thresholds from `src/config/constants.ts`: ≥`SIMILARITY_DUPLICATE_THRESHOLD` = duplicate, [`SIMILARITY_REVIEW_THRESHOLD`, `SIMILARITY_DUPLICATE_THRESHOLD`) = similar (flag for review), <`SIMILARITY_REVIEW_THRESHOLD` = unique | `src/services/vector-search.ts` |
+| 3.2.5 | `checkDuplicate(name, description?)` | Embed the candidate text via `EmbeddingService.embedText()`, search for nearest neighbors. Return `{ isDuplicate: boolean, matches: Array<{ skill, similarity }> }`. Thresholds from `src/config/constants.ts`: ≥`SIMILARITY_DUPLICATE_THRESHOLD` = duplicate, [`SIMILARITY_REVIEW_THRESHOLD`, `SIMILARITY_DUPLICATE_THRESHOLD`) = similar (flag for review), <`SIMILARITY_REVIEW_THRESHOLD` = unique. Also used by the discovery pipeline (Phase 5) for candidate deduplication and by the co-occurrence edge strengthening job (Phase 7) to validate pairs before creating empirical edges | `src/services/vector-search.ts` |
 | 3.2.6 | `cosineSimilarity(a, b)` | Pure JS cosine similarity between two embeddings (for in-memory comparisons without hitting DB) | `src/lib/math.ts` |
 
 ### Checklist

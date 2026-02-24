@@ -3,6 +3,7 @@
 > **Timeline:** Week 1-2
 > **Dependencies:** None (starting phase)
 > **Unlocks:** Phase 2 (CRUD API), Phase 3 (Embeddings & Search)
+> **Context:** LLM-First Skills Graph powering a Recruitment Agency Platform
 
 ---
 
@@ -260,6 +261,8 @@ All tunable values (thresholds, TTLs, limits, dimensions, timeouts, etc.) are de
 |---|---|---|
 | Embedding & Vector Search | `EMBEDDING_DIMENSIONS` (1024), `EMBEDDING_MODEL`, `EMBEDDING_CACHE_TTL_SECONDS` (30 days), `EMBEDDING_BATCH_SIZE` (100), `SIMILARITY_DUPLICATE_THRESHOLD` (0.90), `SIMILARITY_REVIEW_THRESHOLD` (0.70), `SIMILARITY_RELATED_HIGH_THRESHOLD` (0.85), `SIMILARITY_RELATED_LOW_THRESHOLD` (0.65), `RAG_CANDIDATE_LIMIT` (100) | `EMBEDDING_MODEL`, `EMBEDDING_CACHE_TTL`, `SIMILARITY_DUPLICATE_THRESHOLD`, `SIMILARITY_REVIEW_THRESHOLD`, `RAG_CANDIDATE_LIMIT` |
 | Extraction Pipeline | `CHUNK_TARGET_TOKENS` (1500), `CHUNK_MAX_TOKENS` (2000), `CHUNK_OVERLAP_TOKENS` (200), `EXTRACTION_CACHE_TTL_SECONDS` (7 days), `EXTRACTION_MAX_TEXT_LENGTH` (100000), `EXTRACTION_MIN_CONFIDENCE_DEFAULT` (0.5), `EXTRACTION_EXPANSION_FACTOR` (0.6), `EXTRACTION_EXPANSION_DEPTH_DEFAULT` (1), `EXTRACTION_MAX_RETRIES` (3), `LLM_CONCURRENCY_LIMIT` (50) | `EXTRACTION_CACHE_TTL`, `LLM_CONCURRENCY_LIMIT` |
+| Section Weighting | `SECTION_WEIGHT_JD_REQUIREMENTS` (1.0), `SECTION_WEIGHT_JD_RESPONSIBILITIES` (0.9), `SECTION_WEIGHT_JD_NICE_TO_HAVE` (0.75), `SECTION_WEIGHT_JD_COMPANY` (0.5), `SECTION_WEIGHT_JD_BENEFITS` (0.3), `SECTION_WEIGHT_CV_SKILLS` (1.0), `SECTION_WEIGHT_CV_EXPERIENCE` (0.9), `SECTION_WEIGHT_CV_PROJECTS` (0.85), `SECTION_WEIGHT_CV_EDUCATION` (0.8), `SECTION_WEIGHT_CV_SUMMARY` (0.7) | — |
+| Co-occurrence & Empirical | `CO_OCCURRENCE_EDGE_THRESHOLD` (20), `CO_OCCURRENCE_NORMALIZATION_FACTOR` (100), `CO_OCCURRENCE_BATCH_WINDOW_MS` (1000) | `CO_OCCURRENCE_EDGE_THRESHOLD`, `CO_OCCURRENCE_NORMALIZATION_FACTOR` |
 | Discovery & Review | `DISCOVERY_SIGNAL_THRESHOLD` (5), `DISCOVERY_SIGNAL_TTL_SECONDS` (30 days), `RELATIONSHIP_BATCH_SIZE` (15) | `DISCOVERY_SIGNAL_THRESHOLD`, `DISCOVERY_SIGNAL_TTL` |
 | API & Pagination | `PAGINATION_DEFAULT_LIMIT` (20), `PAGINATION_MAX_LIMIT` (100), `CHANGELOG_DEFAULT_LIMIT` (50), `TRAVERSAL_DEFAULT_DEPTH` (5), `TRAVERSAL_MAX_DEPTH` (10), `SLUG_MAX_LENGTH` (100), `SKILL_NAME_MAX_LENGTH` (200), `SKILL_DESCRIPTION_MAX_LENGTH` (5000), `ALIAS_MAX_LENGTH` (200), `BODY_SIZE_LIMIT` (1 MB) | — |
 | Rate Limiting | `RATE_LIMIT_READ` (100 req/min), `RATE_LIMIT_EXTRACT` (20 req/min), `RATE_LIMIT_MUTATE` (50 req/min) | `RATE_LIMIT_READ`, `RATE_LIMIT_EXTRACT`, `RATE_LIMIT_MUTATE` |
@@ -342,7 +345,7 @@ The full schema from ARCHITECTURE.md §2.7 defines 5 tables: `skills`, `skill_al
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 1.5.1 | Create initial migration | Full SQL schema from ARCHITECTURE.md §2.7. Include all 5 tables, CHECK constraints, UNIQUE constraints, and indexes | `src/db/migrations/001_initial.sql` |
+| 1.5.1 | Create initial migration | Full SQL schema from ARCHITECTURE.md §2.8. Include all 6 tables (`skills`, `skill_aliases`, `skill_relationships`, `skill_co_occurrences`, `locale_config`, `graph_changelog`), CHECK constraints, UNIQUE constraints, and indexes | `src/db/migrations/001_initial.sql` |
 | 1.5.2 | Create graph version sequence | `CREATE SEQUENCE graph_version_seq;` for monotonic changelog version numbers | `src/db/migrations/001_initial.sql` |
 | 1.5.3 | Drizzle schema definitions | Define all tables in Drizzle schema format for type-safe queries. Map pgvector `vector(1024)` and `ltree` as custom column types | `src/db/schema.ts` |
 | 1.5.4 | Migration runner | `bun run db:migrate` script that reads `.sql` files from `migrations/` and applies them in order. Track applied migrations in a `_migrations` table | `src/db/migrate.ts` |
@@ -354,7 +357,8 @@ The full schema from ARCHITECTURE.md §2.7 defines 5 tables: `skills`, `skill_al
 |---|---|---|
 | `skills` | Canonical skill nodes | `id`, `external_id`, `canonical_name`, `slug`, `status`, `category`, `path` (ltree), `embedding` (vector), `version` |
 | `skill_aliases` | Multi-locale surface forms | `skill_id` (FK), `surface_form`, `locale` (BCP-47), `is_primary`, `alias_embedding` (vector) |
-| `skill_relationships` | Directed edges between skills | `source_skill_id`, `target_skill_id`, `relationship_type`, `confidence`, `provenance`, `status` |
+| `skill_relationships` | Directed edges between skills | `source_skill_id`, `target_skill_id`, `relationship_type`, `confidence`, `weight`, `provenance` (incl. `empirical`), `status` |
+| `skill_co_occurrences` | Empirical co-occurrence tracking | `skill_a_id`, `skill_b_id`, `co_occurrence_count`, `source_type_counts` (JSONB), `last_seen_at` |
 | `locale_config` | Supported locales and coverage | `locale` (PK), `display_name`, `is_active`, `coverage_pct` |
 | `graph_changelog` | Versioned mutation log for CDC | `graph_version`, `actor`, `mutation_type`, `entity_type`, `entity_id`, `diff_payload` (JSONB) |
 
@@ -374,11 +378,11 @@ The full schema from ARCHITECTURE.md §2.7 defines 5 tables: `skills`, `skill_al
 
 ### Checklist
 
-- [ ] `src/db/migrations/001_initial.sql` contains complete schema (5 tables, all constraints, all indexes)
+- [ ] `src/db/migrations/001_initial.sql` contains complete schema (6 tables, all constraints, all indexes)
 - [ ] `CREATE SEQUENCE graph_version_seq` is included
 - [ ] `bun run db:migrate` applies migration successfully
 - [ ] `bun run db:migrate` is idempotent (running twice doesn't error)
-- [ ] All 5 tables exist: `\dt` shows `skills`, `skill_aliases`, `skill_relationships`, `locale_config`, `graph_changelog`
+- [ ] All 6 tables exist: `\dt` shows `skills`, `skill_aliases`, `skill_relationships`, `skill_co_occurrences`, `locale_config`, `graph_changelog`
 - [ ] All CHECK constraints work: inserting invalid `status` value fails
 - [ ] UNIQUE constraint works: inserting duplicate `slug` fails
 - [ ] `bun run db:seed` inserts locale_config rows and root categories
@@ -533,7 +537,7 @@ bun run db:seed     # → "Seeded 5 locales, 6 root categories"
 # Verify tables
 docker exec -it skills-graph-postgres-1 psql -U skills -d skills_graph \
   -c "\dt"
-# → 6 tables (skills, skill_aliases, skill_relationships, locale_config, graph_changelog, _migrations)
+# → 6 tables (skills, skill_aliases, skill_relationships, skill_co_occurrences, locale_config, graph_changelog, _migrations)
 
 # Verify extensions
 docker exec -it skills-graph-postgres-1 psql -U skills -d skills_graph \
@@ -589,7 +593,7 @@ echo "Phase 1 complete ✓"
 - [ ] Typed `config` export used throughout codebase
 
 ### 1.3b Centralized Constants
-- [ ] `src/config/constants.ts` exports all tunable values grouped by domain
+- [ ] `src/config/constants.ts` exports all tunable values grouped by domain (incl. Section Weighting, Co-occurrence & Empirical)
 - [ ] Env-overridable constants read from `process.env` with defaults
 - [ ] All modules import from `@/config/constants` — no inline magic numbers
 
