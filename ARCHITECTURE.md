@@ -1471,7 +1471,7 @@ No provider-specific code needed in the application layer.
 | Failure Mode | Detection | Fallback |
 |---|---|---|
 | LLM API timeout (> 30s) | HTTP timeout | Retry with `maxRetries: 3`; return partial results from cached chunks |
-| Invalid output | Zod validation failure | AI SDK auto-retries; if still fails, log and skip |
+| Invalid output | Jakarta Bean Validation failure | Spring AI auto-retries; if still fails, log and skip |
 | Skill IDs not in taxonomy | Post-validation check | Strip invalid IDs; escalate to stronger model if > 50% invalid |
 | Rate limited (429) | HTTP status | Queue in Redis Streams; process when limit resets |
 | Provider outage | Error rate > 10% | Switch to fallback provider via registry |

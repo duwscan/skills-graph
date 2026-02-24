@@ -44,7 +44,7 @@ skills-graph/
 │   │   │   ├── repository/                   # Spring Data JPA repositories
 │   │   │   └── util/                         # Utilities (SlugUtils, etc.)
 │   │   └── resources/
-│   │       ├── application.yml               # All configuration (replaces env.ts + src/main/resources/application.yml)
+│   │       ├── application.yml               # All configuration (replaces separate env config files)
 │   │       ├── application-dev.yml           # Dev overrides
 │   │       └── db/migration/                 # Flyway SQL migration files
 │   │           └── V1__initial_schema.sql    # Full schema from ARCHITECTURE.md §2.8
@@ -113,10 +113,10 @@ volumes:
 
 | # | Task | Detail |
 |---|---|---|
-| 1.3.1 | PostgreSQL client | `src/main/java/com/skillsgraph/config/DataSourceConfig.java` — connection pool with `postgres` (porsager/postgres) or Spring Data JPA. Include pgvector type serialization helpers |
+| 1.3.1 | PostgreSQL client | `src/main/java/com/skillsgraph/config/DataSourceConfig.java` — connection pool via Spring Data JPA (HikariCP). Include pgvector type serialization helpers |
 | 1.3.2 | Redis client | `src/main/java/com/skillsgraph/config/RedisConfig.java` — Spring Data Redis (Lettuce) connection with reconnect strategy. Export typed helpers: `cacheGet<T>()`, `cacheSet()`, `cacheDelete()`, `cacheMakeKey()` |
-| 1.3.3 | Vector helpers | `src/main/java/com/skillsgraph/util/pgvector.ts` — `toSql(embedding: number[]): string` to convert float arrays to pgvector format, `fromSql(row): number[]` to parse results |
-| 1.3.4 | Base repository pattern | `src/db/base-repository.ts` — optional base class with `findById()`, `create()`, `update()`, transaction support |
+| 1.3.3 | Vector helpers | `src/main/java/com/skillsgraph/util/PgVectorUtils.java` — `toSql(float[] embedding): String` to convert float arrays to pgvector format, `fromSql(String row): float[]` to parse results |
+| 1.3.4 | Base repository pattern | `src/main/java/com/skillsgraph/repository/BaseRepository.java` — optional base interface with `findById()`, `save()`, `update()`, transaction support via Spring Data JPA |
 
 ### 1.4 Spring Web MVC App Skeleton
 
@@ -128,7 +128,7 @@ volumes:
 | 1.4.2 | Health check | `GET /health` — returns `{ status: "ok", version, db: "connected", redis: "connected" }` |
 | 1.4.3 | Error handler middleware | Catch-all error handler that returns structured JSON errors with status codes |
 | 1.4.4 | Request ID middleware | Generate `x-request-id` header for tracing |
-| 1.4.5 | CORS middleware | Configure `hono/cors` for API access |
+| 1.4.5 | CORS middleware | Configure `WebMvcConfigurer#addCorsMappings` for API access |
 
 **Verification:**
 
@@ -164,11 +164,11 @@ docker exec -it skills-graph-postgres-1 psql -U skills -d skills_graph \
 
 | # | Task | Detail |
 |---|---|---|
-| 2.1.1 | Skill schemas | `src/main/java/com/skillsgraph/dto/skill.ts` — `createSkillSchema`, `updateSkillSchema`, `skillResponseSchema` with all fields from §2.1 (external_id, canonical_name, slug, description, status, category, path). Auto-generate `slug` from `canonical_name` if not provided |
-| 2.1.2 | Alias schemas | `src/main/java/com/skillsgraph/dto/alias.ts` — `createAliasSchema` (surface_form, locale, source, is_primary), `aliasResponseSchema` |
-| 2.1.3 | Edge schemas | `src/main/java/com/skillsgraph/dto/edge.ts` — `createEdgeSchema` (source_skill_id, target_skill_id, relationship_type, confidence, weight, provenance), `edgeResponseSchema`. Validate relationship_type is one of the 5 enums. Include `empirical` in provenance enum |
-| 2.1.4 | Query parameter schemas | `src/main/java/com/skillsgraph/dto/query.ts` — pagination (`limit`, `offset`), sort, filter by status/category/locale |
-| 2.1.5 | Shared enums | `src/main/java/com/skillsgraph/dto/enums.ts` — `SkillStatus`, `SkillCategory`, `RelationshipType`, `Provenance` (including `empirical`), `AliasSource` as Jakarta Bean Validation enums, exported for reuse |
+| 2.1.1 | Skill schemas | `src/main/java/com/skillsgraph/dto/SkillDto.java` — `createSkillSchema`, `updateSkillSchema`, `skillResponseSchema` with all fields from §2.1 (external_id, canonical_name, slug, description, status, category, path). Auto-generate `slug` from `canonical_name` if not provided |
+| 2.1.2 | Alias schemas | `src/main/java/com/skillsgraph/dto/AliasDto.java` — `createAliasSchema` (surface_form, locale, source, is_primary), `aliasResponseSchema` |
+| 2.1.3 | Edge schemas | `src/main/java/com/skillsgraph/dto/EdgeDto.java` — `createEdgeSchema` (source_skill_id, target_skill_id, relationship_type, confidence, weight, provenance), `edgeResponseSchema`. Validate relationship_type is one of the 5 enums. Include `empirical` in provenance enum |
+| 2.1.4 | Query parameter schemas | `src/main/java/com/skillsgraph/dto/QueryParams.java` — pagination (`limit`, `offset`), sort, filter by status/category/locale |
+| 2.1.5 | Shared enums | `src/main/java/com/skillsgraph/dto/Enums.java` — `SkillStatus`, `SkillCategory`, `RelationshipType`, `Provenance` (including `empirical`), `AliasSource` as Jakarta Bean Validation enums, exported for reuse |
 
 ### 2.2 Skill CRUD Service
 
@@ -312,7 +312,7 @@ curl http://localhost:3000/api/taxonomy/changelog
 
 | # | Task | Detail |
 |---|---|---|
-| 3.2.1 | `VectorSearchService` | `src/main/java/com/skillsgraph/service/vector-search.ts` — nearest neighbor search against skill embeddings |
+| 3.2.1 | `VectorSearchService` | `src/main/java/com/skillsgraph/service/VectorSearchService.java` — nearest neighbor search against skill embeddings |
 | 3.2.2 | `findSimilarSkills()` | Given an embedding, query pgvector for top-K nearest active skills. SQL: `SELECT *, 1 - (embedding <=> $1::vector) AS similarity FROM skills WHERE status = 'active' ORDER BY embedding <=> $1::vector LIMIT $2` |
 | 3.2.3 | `findSimilarAliases()` | Same but against `skill_aliases.alias_embedding` — useful for duplicate alias detection |
 | 3.2.4 | `findCandidatesForChunk()` | The RAG retrieval function: given a text chunk embedding, return top-100 skills with `{ id, external_id, canonical_name, similarity }`. This is the core function used by the extraction pipeline in Phase 4 |
@@ -322,7 +322,7 @@ curl http://localhost:3000/api/taxonomy/changelog
 
 | # | Task | Detail |
 |---|---|---|
-| 3.3.1 | PostgreSQL full-text search / Typesense client | `src/main/java/com/skillsgraph/service/full-text-search.ts` — initialize PostgreSQL full-text search / Typesense client, define `skills` collection schema: `{ id, external_id, canonical_name, slug, description, category, status, aliases: string[] }` |
+| 3.3.1 | PostgreSQL full-text search / Typesense client | `src/main/java/com/skillsgraph/service/FullTextSearchService.java` — initialize PostgreSQL full-text search / Typesense client, define `skills` collection schema: `{ id, external_id, canonical_name, slug, description, category, status, aliases: string[] }` |
 | 3.3.2 | Collection setup | `./mvnw spring-boot:run -Dspring-boot.run.arguments=--search-setup` — create the PostgreSQL full-text search / Typesense collection with the schema. Include synonym rules (e.g., "ML" ↔ "Machine Learning") |
 | 3.3.3 | Index sync on skill mutations | After every skill/alias create/update/delete, upsert or remove the document in PostgreSQL full-text search / Typesense. Use the changelog PG NOTIFY listener to trigger sync |
 | 3.3.4 | Full reindex script | `./mvnw spring-boot:run -Dspring-boot.run.arguments=--search-reindex` — drop and recreate the collection, bulk index all active skills with their aliases |
@@ -371,24 +371,24 @@ curl -X POST http://localhost:3000/api/skills \
 
 | # | Task | Detail |
 |---|---|---|
-| 4.1.1 | Document parser | `src/main/java/com/skillsgraph/service/extraction/parser.ts` — convert input text to clean plaintext. For now, accept plaintext and basic HTML (strip tags). Later phases can add PDF/DOCX support via `pdf-parse` or `mammoth` |
-| 4.1.2 | Section detector | `src/main/java/com/skillsgraph/service/extraction/section-detector.ts` — detect document type (JD vs CV vs generic) and identify sections. For JDs: Requirements, Responsibilities, Nice-to-have, Company description. For CVs: Skills, Experience, Projects, Education, Summary. Return `{ type: "jd" | "cv" | "generic", sections: Section[] }` |
-| 4.1.3 | Chunker | `src/main/java/com/skillsgraph/service/extraction/chunker.ts` — implement section-based chunking (split on `\n\n`, `\n#`, heading patterns) with sliding window fallback. Target ~1,500–2,000 tokens per chunk with 200 token overlap. Preserve section metadata on each chunk. Use `tiktoken` or simple word-count heuristic for token estimation |
+| 4.1.1 | Document parser | `src/main/java/com/skillsgraph/service/extraction/DocumentParser.java` — convert input text to clean plaintext. For now, accept plaintext and basic HTML (strip tags). Later phases can add PDF/DOCX support via Apache PDFBox or Apache POI |
+| 4.1.2 | Section detector | `src/main/java/com/skillsgraph/service/extraction/SectionDetector.java` — detect document type (JD vs CV vs generic) and identify sections. For JDs: Requirements, Responsibilities, Nice-to-have, Company description. For CVs: Skills, Experience, Projects, Education, Summary. Return `{ type: "jd" | "cv" | "generic", sections: Section[] }` |
+| 4.1.3 | Chunker | `src/main/java/com/skillsgraph/service/extraction/DocumentChunker.java` — implement section-based chunking (split on `\n\n`, `\n#`, heading patterns) with sliding window fallback. Target ~1,500–2,000 tokens per chunk with 200 token overlap. Preserve section metadata on each chunk. Use simple word-count or character-count heuristic for token estimation |
 | 4.1.4 | Chunk interface | `interface Chunk { text: string; index: number; startOffset: number; endOffset: number; section?: { name: string; type: string; weight: number; } }` |
 
 ### 4.2 Extraction Schemas & Prompts
 
 | # | Task | Detail |
 |---|---|---|
-| 4.2.1 | Extraction Java DTO (record + @Valid) | `src/main/java/com/skillsgraph/dto/extraction.ts` — the `extractionSchema` from ARCHITECTURE.md §4.2: `{ extracted_skills: [{ skill_id, skill_name, confidence, evidence, proficiency_hint, context_type, section? }], discovered_candidates: [{ surface_form, suggested_category, reason }] }` |
-| 4.2.2 | System prompt | `src/main/java/com/skillsgraph/service/extraction/prompts.ts` — the system prompt from §4.2. Store as a constant string. Include the 2-3 few-shot examples for consistent extraction quality. Include section context when available |
+| 4.2.1 | Extraction Java DTO (record + @Valid) | `src/main/java/com/skillsgraph/dto/ExtractionDto.java` — the `extractionSchema` from ARCHITECTURE.md §4.2: `{ extracted_skills: [{ skill_id, skill_name, confidence, evidence, proficiency_hint, context_type, section? }], discovered_candidates: [{ surface_form, suggested_category, reason }] }` |
+| 4.2.2 | System prompt | `src/main/java/com/skillsgraph/service/extraction/ExtractionPrompts.java` — the system prompt from §4.2. Store as a constant string. Include the 2-3 few-shot examples for consistent extraction quality. Include section context when available |
 | 4.2.3 | Prompt builder | `buildExtractionPrompt(chunk: string, candidates: CandidateSkill[], section?: Section)` — format candidates as a numbered list of `{id, name}` pairs, append the chunk text with section context. Keep total prompt size manageable (< 4,000 tokens for candidate list + chunk) |
 
 ### 4.3 Extraction Pipeline Core
 
 | # | Task | Detail |
 |---|---|---|
-| 4.3.1 | `SkillExtractionPipeline` class | `src/main/java/com/skillsgraph/service/extraction/pipeline.ts` — the main class from §4.2. Constructor takes dependencies: `EmbeddingService`, `VectorSearchService`, `RedisClient`, provider registry |
+| 4.3.1 | `SkillExtractionPipeline` class | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java` — the main class from §4.2. Constructor takes dependencies: `EmbeddingService`, `VectorSearchService`, `RedisClient`, provider registry |
 | 4.3.2 | `extract(document: string, options?)` | Full pipeline: parse → detect sections → chunk → for each chunk { cache check → embed → retrieve candidates → build prompt → LLM call → validate → apply section weighting → cache result } → merge & deduplicate across chunks → expand → record co-occurrences |
 | 4.3.3 | Model tier selection | `selectModel(chunk)` — implement the tier selection logic from §7.4: short/simple chunks → Haiku, complex/multilingual → Sonnet |
 | 4.3.4 | LLM call with structured output | `chatClient.prompt(prompt).call().entity(ExtractionResult.class)` via Spring AI. `@Retryable(maxAttempts=3)` via Spring Retry. Handle errors gracefully |
@@ -402,7 +402,7 @@ curl -X POST http://localhost:3000/api/skills \
 
 | # | Task | Detail |
 |---|---|---|
-| 4.4.1 | `SkillExpansionService` | `src/main/java/com/skillsgraph/service/extraction/expansion.ts` — given a list of extracted skill IDs, query the graph for parent, child, and sibling skills using the SQL from §4.4 |
+| 4.4.1 | `SkillExpansionService` | `src/main/java/com/skillsgraph/service/extraction/SkillExpansionService.java` — given a list of extracted skill IDs, query the graph for parent, child, and sibling skills using the SQL from §4.4 |
 | 4.4.2 | Confidence reduction | Expanded skills receive `original_confidence * 0.6` and are marked with `expansion_type: "parent" | "child" | "sibling"` |
 | 4.4.3 | Configurable expansion | Accept `options.expand: boolean` (default true) and `options.expansion_depth: number` (default 1) |
 
@@ -447,7 +447,7 @@ time curl -X POST http://localhost:3000/api/extract -d @src/test/java/com/skills
 
 | # | Task | Detail |
 |---|---|---|
-| 5.1.1 | `DiscoveryService` class | `src/main/java/com/skillsgraph/service/discovery/discovery.ts` — orchestrates the 3-stage discovery pipeline from §3.1 |
+| 5.1.1 | `DiscoveryService` class | `src/main/java/com/skillsgraph/service/discovery/DiscoveryService.java` — orchestrates the 3-stage discovery pipeline from §3.1 |
 | 5.1.2 | Stage 1: Signal collection | `collectSignals(text: string, source: string)` — extract raw skill mentions, track frequency. For now, this is triggered manually or by the extraction pipeline's `discovered_candidates` output |
 | 5.1.3 | Stage 2: LLM candidate extraction | `extractCandidates(String text)` — `fastChatClient.prompt(DISCOVERY_PROMPT)...call().entity(DiscoveryResult.class)` with zero-shot NER prompt. Model: Claude Haiku |
 | 5.1.4 | Stage 3: Embedding dedup | `deduplicateCandidate(candidate)` — embed the candidate's `normalized_form`, run `VectorSearchService.checkDuplicate()`. Classify into: alias (>0.90), review (0.70-0.90), or new (<0.70) |
@@ -468,7 +468,7 @@ time curl -X POST http://localhost:3000/api/extract -d @src/test/java/com/skills
 
 | # | Task | Detail |
 |---|---|---|
-| 5.3.1 | `RelationshipPredictionService` | `src/main/java/com/skillsgraph/service/discovery/relationship-prediction.ts` — predict relationships between skills using the two approaches from §3.3 |
+| 5.3.1 | `RelationshipPredictionService` | `src/main/java/com/skillsgraph/service/discovery/RelationshipPredictionService.java` — predict relationships between skills using the two approaches from §3.3 |
 | 5.3.2 | Embedding similarity approach | For `related_to` / duplicate detection: compute cosine similarity between two skill embeddings, apply thresholds (>0.85 → duplicate, 0.65-0.85 → related) |
 | 5.3.3 | LLM classification approach | For `parent_of` / `child_of`: `standardChatClient.prompt(COT_PROMPT)...call().entity(RelationshipClassification.class)` with chain-of-thought. Model: Claude Sonnet |
 | 5.3.4 | Batch classification | `classifyBatch(pairs: [SkillA, SkillB][])` — classify 10-20 pairs per LLM call. Use batch Java DTO (record + @Valid) |
@@ -532,7 +532,7 @@ curl http://localhost:3000/api/skills/<new-skill-uuid>
 |---|---|---|
 | 6.3.1 | Graph version endpoint | `GET /api/taxonomy/version` — return `{ graph_version, last_mutation_at, total_skills, total_edges }` |
 | 6.3.2 | Changelog CDC endpoint | `GET /api/taxonomy/changelog?since={version}&limit=100` — paginated changelog for downstream consumers |
-| 6.3.3 | PG NOTIFY listener | `src/main/java/com/skillsgraph/service/changelog/listener.ts` — subscribe to `graph_changes` channel. On notification: invalidate relevant Redis cache keys, trigger PostgreSQL full-text search / Typesense re-index for affected skills |
+| 6.3.3 | PG NOTIFY listener | `src/main/java/com/skillsgraph/service/changelog/GraphChangeListener.java` — subscribe to `graph_changes` channel. On notification: invalidate relevant Redis cache keys, trigger PostgreSQL full-text search / Typesense re-index for affected skills |
 | 6.3.4 | Snapshot script | `./mvnw spring-boot:run -Dspring-boot.run.arguments=--snapshot-create` — export entire taxonomy as JSON file: `{ version, timestamp, skills: [...], relationships: [...], aliases: [...] }`. Store in configurable location (local file or S3) |
 
 **Verification:**
@@ -572,8 +572,8 @@ curl "http://localhost:3000/api/taxonomy/changelog?since=0"
 
 | # | Task | Detail |
 |---|---|---|
-| 7.1.1 | Stream producer | `src/main/java/com/skillsgraph/service/events/producer.ts` — `publishEvent(stream: string, event: object)` using `XADD`. Streams: `extraction:jobs`, `discovery:signals`, `sync:full-text-search`, `co-occurrence:pairs`, `reanalysis:jobs` |
-| 7.1.2 | Stream consumer base | `src/main/java/com/skillsgraph/service/events/consumer.ts` — base class for consuming from Redis Streams with consumer groups. Handle `XREADGROUP`, `XACK`, error recovery, dead letter queue |
+| 7.1.1 | Stream producer | `src/main/java/com/skillsgraph/service/events/StreamEventProducer.java` — `publishEvent(stream: string, event: object)` using `XADD`. Streams: `extraction:jobs`, `discovery:signals`, `sync:full-text-search`, `co-occurrence:pairs`, `reanalysis:jobs` |
+| 7.1.2 | Stream consumer base | `src/main/java/com/skillsgraph/service/events/StreamEventConsumer.java` — base class for consuming from Redis Streams with consumer groups. Handle `XREADGROUP`, `XACK`, error recovery, dead letter queue |
 | 7.1.3 | Consumer group setup | `./mvnw spring-boot:run -Dspring-boot.run.arguments=--streams-setup` — create consumer groups for each stream |
 
 ### 7.2 Batch Extraction Worker
@@ -582,8 +582,8 @@ curl "http://localhost:3000/api/taxonomy/changelog?since=0"
 |---|---|---|
 | 7.2.1 | `POST /api/extract/batch` | Accept `{ documents: [{ id, text, metadata, source_type? }] }`. Publish each document as a job to `extraction:jobs` stream. Return `{ job_id, document_count, status: "queued" }` |
 | 7.2.2 | `GET /api/extract/jobs/:jobId` | Return job status and results. Store job state in Redis: `batch:{jobId}` → `{ total, completed, failed, results: [...] }` |
-| 7.2.3 | Extraction worker | `src/main/java/com/skillsgraph/worker/extraction-worker.ts` — consume from `extraction:jobs`, run `SkillExtractionPipeline.extract()` for each document, store result back in Redis batch state, ACK the message |
-| 7.2.4 | Worker entry point | `src/main/java/com/skillsgraph/worker/index.ts` — start all workers: `./mvnw spring-boot:run -Dspring-boot.run.arguments=--workers` |
+| 7.2.3 | Extraction worker | `src/main/java/com/skillsgraph/worker/ExtractionWorker.java` — consume from `extraction:jobs`, run `SkillExtractionPipeline.extract()` for each document, store result back in Redis batch state, ACK the message |
+| 7.2.4 | Worker entry point | `src/main/java/com/skillsgraph/worker/WorkerConfiguration.java` — start all workers: `./mvnw spring-boot:run -Dspring-boot.run.arguments=--workers` |
 | 7.2.5 | Concurrency tuning | Configure max concurrent extractions per worker (default: 10). Total across N workers = N * 10 |
 
 ### 7.3 Discovery Signal Worker
@@ -591,14 +591,14 @@ curl "http://localhost:3000/api/taxonomy/changelog?since=0"
 | # | Task | Detail |
 |---|---|---|
 | 7.3.1 | Signal aggregation | When extraction pipeline returns `discovered_candidates`, publish to `discovery:signals` stream |
-| 7.3.2 | Discovery worker | `src/main/java/com/skillsgraph/worker/discovery-worker.ts` — consume signals, aggregate by normalized_form, when count exceeds threshold (default: 5, configurable via `DISCOVERY_SIGNAL_THRESHOLD` env var), run full discovery pipeline and add to review queue |
+| 7.3.2 | Discovery worker | `src/main/java/com/skillsgraph/worker/DiscoveryWorker.java` — consume signals, aggregate by normalized_form, when count exceeds threshold (default: 5, configurable via `DISCOVERY_SIGNAL_THRESHOLD` env var), run full discovery pipeline and add to review queue |
 
 ### 7.4 Co-occurrence Aggregation Worker
 
 | # | Task | Detail |
 |---|---|---|
 | 7.4.1 | Co-occurrence event publishing | After extraction, the pipeline publishes skill pair events to `co-occurrence:pairs` stream with `{ skill_ids: string[], source_type: string }` |
-| 7.4.2 | Co-occurrence worker | `src/main/java/com/skillsgraph/worker/co-occurrence-worker.ts` — consume events, upsert pairs into `skill_co_occurrences` table. Batch within a debounce window for efficiency |
+| 7.4.2 | Co-occurrence worker | `src/main/java/com/skillsgraph/worker/CoOccurrenceWorker.java` — consume events, upsert pairs into `skill_co_occurrences` table. Batch within a debounce window for efficiency |
 | 7.4.3 | Edge strengthening job | `./mvnw spring-boot:run -Dspring-boot.run.arguments=--co-occurrence-process` — periodic job (e.g., nightly cron) that scans `skill_co_occurrences` for pairs exceeding `CO_OCCURRENCE_EDGE_THRESHOLD`. Creates new `empirical` edges or strengthens existing edge weights. See ARCHITECTURE.md §5.4 |
 
 ### 7.5 Re-analysis Worker
@@ -606,7 +606,7 @@ curl "http://localhost:3000/api/taxonomy/changelog?since=0"
 | # | Task | Detail |
 |---|---|---|
 | 7.5.1 | Activation event publishing | When a skill transitions from `candidate` → `active` (curator approve), publish to `reanalysis:jobs` stream with `{ skill_id, skill_name, activated_at }` |
-| 7.5.2 | Re-analysis worker | `src/main/java/com/skillsgraph/worker/reanalysis-worker.ts` — consume activation events. Query extraction logs for documents that had this skill in `discovered_candidates`. Queue those documents for re-extraction via the batch extraction worker |
+| 7.5.2 | Re-analysis worker | `src/main/java/com/skillsgraph/worker/ReanalysisWorker.java` — consume activation events. Query extraction logs for documents that had this skill in `discovered_candidates`. Queue those documents for re-extraction via the batch extraction worker |
 | 7.5.3 | Extraction log table | New migration: `CREATE TABLE extraction_logs (id UUID PK, document_hash TEXT, source_type TEXT, discovered_candidates JSONB, extracted_skill_ids UUID[], created_at TIMESTAMPTZ)`. Populated by extraction pipeline to enable re-analysis |
 
 ### 7.6 PostgreSQL full-text search / Typesense Sync Worker
@@ -614,7 +614,7 @@ curl "http://localhost:3000/api/taxonomy/changelog?since=0"
 | # | Task | Detail |
 |---|---|---|
 | 7.6.1 | PG NOTIFY → Redis Stream bridge | The changelog listener (Phase 6.3.3) publishes skill mutation events to `sync:full-text-search` stream |
-| 7.6.2 | Sync worker | `src/main/java/com/skillsgraph/worker/full-text-search-sync-worker.ts` — consume events, upsert or delete the affected skill document in PostgreSQL full-text search / Typesense. Batch multiple updates within a 500ms window for efficiency |
+| 7.6.2 | Sync worker | `src/main/java/com/skillsgraph/worker/FullTextSearchSyncWorker.java` — consume events, upsert or delete the affected skill document in PostgreSQL full-text search / Typesense. Batch multiple updates within a 500ms window for efficiency |
 
 ### 7.7 Cache Invalidation Worker
 
@@ -665,7 +665,7 @@ curl "http://localhost:3000/api/skills/search?q=<skill-name>"
 
 | # | Task | Detail |
 |---|---|---|
-| 8.2.1 | Structured logging | `src/main/java/com/skillsgraph/util/logger.ts` — JSON structured logger (Logback / SLF4J or SLF4J). Include request_id, duration_ms, path, status in every log |
+| 8.2.1 | Structured logging | `src/main/java/com/skillsgraph/util/StructuredLogger.java` — JSON structured logger (Logback / SLF4J or SLF4J). Include request_id, duration_ms, path, status in every log |
 | 8.2.2 | Request timing middleware | Spring Web MVC middleware that logs `{ method, path, status, duration_ms, request_id }` for every request |
 | 8.2.3 | LLM call metrics | Log every LLM call: `{ task, model, input_tokens, output_tokens, latency_ms, cache_hit, success }` |
 | 8.2.4 | Health check expansion | Expand `GET /health` to include: DB connection pool stats, Redis connection status, PostgreSQL full-text search / Typesense status, last graph version, uptime |
@@ -674,8 +674,8 @@ curl "http://localhost:3000/api/skills/search?q=<skill-name>"
 
 | # | Task | Detail |
 |---|---|---|
-| 8.3.1 | Rate limiter middleware | `src/main/java/com/skillsgraph/middleware/rate-limit.ts` — Redis-backed sliding window rate limiter. Default: 100 req/min for read endpoints, 20 req/min for extraction endpoints, 50 req/min for mutation endpoints |
-| 8.3.2 | API key authentication | `src/main/java/com/skillsgraph/middleware/auth.ts` — simple API key authentication via `Authorization: Bearer <key>` header. Store valid keys in env or Redis. Differentiate `curator` vs `reader` roles |
+| 8.3.1 | Rate limiter middleware | `src/main/java/com/skillsgraph/middleware/RateLimitFilter.java` — Redis-backed sliding window rate limiter. Default: 100 req/min for read endpoints, 20 req/min for extraction endpoints, 50 req/min for mutation endpoints |
+| 8.3.2 | API key authentication | `src/main/java/com/skillsgraph/middleware/ApiKeyAuthFilter.java` — simple API key authentication via `Authorization: Bearer <key>` header. Store valid keys in env or Redis. Differentiate `curator` vs `reader` roles |
 | 8.3.3 | Input sanitization | Verify all Java DTOs (records + @Valid) reject overly large inputs. Max text length for extraction: 100,000 chars. Max batch size: 100 documents |
 | 8.3.4 | Curator-only route guard | Middleware that checks API key role for mutation endpoints (`POST /api/skills`, `POST /api/edges`, review queue decisions) |
 
@@ -699,7 +699,7 @@ curl "http://localhost:3000/api/skills/search?q=<skill-name>"
 |---|---|---|
 | 8.5.1 | Dockerfile | Multi-stage build: `FROM eclipse-temurin:21-jdk-alpine AS build` → copy pom.xml + mvnw → `./mvnw package -DskipTests` → `FROM eclipse-temurin:21-jre-alpine AS runtime` → copy JAR → `ENTRYPOINT ["java","-jar","app.jar"]` |
 | 8.5.2 | docker-compose.prod.yml | Production compose with all services: app, workers, postgres, redis, full-text-search. Health checks, restart policies, resource limits |
-| 8.5.3 | Environment validation | App refuses to start if required env vars are missing (validated by Java DTO (record + @Valid) in `config/env.ts`) |
+| 8.5.3 | Environment validation | App refuses to start if required env vars are missing (validated by Java DTO (record + @Valid) in `config/AppProperties.java`) |
 | 8.5.4 | Graceful shutdown | Handle SIGTERM: drain in-flight requests, close DB pool, close Redis connection, stop workers cleanly |
 | 8.5.5 | README.md | Setup instructions, architecture overview, API documentation link, development workflow |
 
@@ -759,10 +759,10 @@ graph TD
 | Phase | Focus | Key Deliverables | Critical Files |
 |---|---|---|---|
 | **1** | Foundation | Spring Boot scaffold, PostgreSQL schema (incl. co-occurrence table), Redis client, Spring AI config, centralized constants | `src/main/java/com/skillsgraph/SkillsGraphApplication.java`, `src/main/resources/db/migration/V1__initial_schema.sql`, `docker-compose.yml`, `src/main/java/com/skillsgraph/config/AppConstants.java` |
-| **2** | CRUD API | All taxonomy endpoints, quality guardrails, changelog, empirical provenance support | `src/main/java/com/skillsgraph/service/skill.ts`, `src/main/java/com/skillsgraph/service/guardrails.ts`, `src/main/java/com/skillsgraph/controller/skills.ts` |
-| **3** | Search & Embeddings | Embedding service, pgvector search, PostgreSQL full-text search / Typesense integration, hybrid search | `src/main/java/com/skillsgraph/service/embedding.ts`, `src/main/java/com/skillsgraph/service/vector-search.ts`, `src/main/java/com/skillsgraph/service/full-text-search.ts` |
-| **4** | Extraction | RAG pipeline, section-aware chunker, section weighting, prompt engineering, skill expansion, co-occurrence recording, extraction API | `src/main/java/com/skillsgraph/service/extraction/pipeline.ts`, `src/main/java/com/skillsgraph/service/extraction/section-detector.ts`, `src/main/java/com/skillsgraph/service/extraction/chunker.ts` |
-| **5** | Discovery & HITL | Skill discovery, review queue, relationship prediction, curation API | `src/main/java/com/skillsgraph/service/discovery/discovery.ts`, `src/main/java/com/skillsgraph/service/discovery/relationship-prediction.ts` |
-| **6** | Lifecycle | Deprecation, merging, versioning, snapshots, CDC, co-occurrence cleanup on merge | `src/main/java/com/skillsgraph/service/lifecycle/deprecation.ts`, `src/main/java/com/skillsgraph/service/lifecycle/merge.ts` |
-| **7** | Workers & Events | Redis Streams, batch extraction, discovery worker, co-occurrence aggregation, re-analysis worker, PostgreSQL full-text search / Typesense sync | `src/main/java/com/skillsgraph/worker/extraction-worker.ts`, `src/main/java/com/skillsgraph/worker/co-occurrence-worker.ts`, `src/main/java/com/skillsgraph/worker/reanalysis-worker.ts` |
+| **2** | CRUD API | All taxonomy endpoints, quality guardrails, changelog, empirical provenance support | `src/main/java/com/skillsgraph/service/SkillService.java`, `src/main/java/com/skillsgraph/service/GuardrailsService.java`, `src/main/java/com/skillsgraph/controller/SkillController.java` |
+| **3** | Search & Embeddings | Embedding service, pgvector search, PostgreSQL full-text search / Typesense integration, hybrid search | `src/main/java/com/skillsgraph/service/EmbeddingService.java`, `src/main/java/com/skillsgraph/service/VectorSearchService.java`, `src/main/java/com/skillsgraph/service/FullTextSearchService.java` |
+| **4** | Extraction | RAG pipeline, section-aware chunker, section weighting, prompt engineering, skill expansion, co-occurrence recording, extraction API | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java`, `src/main/java/com/skillsgraph/service/extraction/SectionDetector.java`, `src/main/java/com/skillsgraph/service/extraction/DocumentChunker.java` |
+| **5** | Discovery & HITL | Skill discovery, review queue, relationship prediction, curation API | `src/main/java/com/skillsgraph/service/discovery/DiscoveryService.java`, `src/main/java/com/skillsgraph/service/discovery/RelationshipPredictionService.java` |
+| **6** | Lifecycle | Deprecation, merging, versioning, snapshots, CDC, co-occurrence cleanup on merge | `src/main/java/com/skillsgraph/service/lifecycle/DeprecationService.java`, `src/main/java/com/skillsgraph/service/lifecycle/MergeService.java` |
+| **7** | Workers & Events | Redis Streams, batch extraction, discovery worker, co-occurrence aggregation, re-analysis worker, PostgreSQL full-text search / Typesense sync | `src/main/java/com/skillsgraph/worker/ExtractionWorker.java`, `src/main/java/com/skillsgraph/worker/CoOccurrenceWorker.java`, `src/main/java/com/skillsgraph/worker/ReanalysisWorker.java` |
 | **8** | QA & Hardening | Helicone, logging, rate limiting, auth, test suite (incl. section weighting + co-occurrence tests), Dockerfile | `src/main/java/com/skillsgraph/middleware/`, `src/test/java/com/skillsgraph/`, `Dockerfile` |

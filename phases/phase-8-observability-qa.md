@@ -116,7 +116,7 @@ Tests are organized in 4 tiers: unit tests (fast, no external deps), integration
 | 8.4.11 | Integration — Co-occurrence | Extract skills from 10+ documents → verify co-occurrence pairs published to Redis Stream → verify worker upserts into `skill_co_occurrences` table → run `./mvnw spring-boot:run -Dspring-boot.run.arguments=--co-occurrence-process` → verify empirical edges created for pairs above `CO_OCCURRENCE_EDGE_THRESHOLD` → verify edge weights updated correctly → verify weight never exceeds 1.0 | `src/test/java/com/skillsgraph/integration/CoOccurrenceTest.java` |
 | 8.4.12 | Integration — Re-analysis | Extract document with unknown skills → approve one discovered candidate → verify activation event triggers re-analysis worker → verify worker queries `extraction_logs` → verify matching documents queued for re-extraction → verify re-extraction picks up newly activated skill | `src/test/java/com/skillsgraph/integration/ReanalysisTest.java` |
 | 8.4.13 | Golden set evaluation | 50+ labeled documents with ground-truth skill annotations. **Include JDs and CVs with section labels** to verify section-aware weighting. Run `./mvnw test:golden` to measure F1, precision, recall. Fail if F1 < `GOLDEN_SET_MIN_F1` (see `src/main/java/com/skillsgraph/config/AppConstants.java`). Report per-document breakdown. **Additional metric**: verify section-weighted confidence scores are within expected ranges | `src/test/java/com/skillsgraph/goldenset/GoldenSetEvaluationTest.java`, `src/test/resources/golden-set/` |
-| 8.4.14 | Load test | Script using `Gatling / k6` or simple Bun loop: 50 concurrent extraction requests for 60 seconds. Measure p50/p95/p99 latency, throughput, error rate. Pass criteria: p99 < `LOAD_TEST_MAX_P99_SECONDS`s, errors < `LOAD_TEST_MAX_ERROR_RATE` (see `src/main/java/com/skillsgraph/config/AppConstants.java`) | `src/test/java/com/skillsgraph/load/ExtractionLoadTest.java` |
+| 8.4.14 | Load test | Script using `Gatling` or `k6`: 50 concurrent extraction requests for 60 seconds. Measure p50/p95/p99 latency, throughput, error rate. Pass criteria: p99 < `LOAD_TEST_MAX_P99_SECONDS`s, errors < `LOAD_TEST_MAX_ERROR_RATE` (see `src/main/java/com/skillsgraph/config/AppConstants.java`) | `src/test/java/com/skillsgraph/load/ExtractionLoadTest.java` |
 
 ### Golden Set Fixture Format
 
@@ -178,7 +178,7 @@ RUN ./mvnw package -DskipTests
 
 # Copy source
 COPY src/ src/
-COPY application.yml Java 21 compiler configuration ./
+COPY pom.xml mvnw ./
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=5s --retries=3 \

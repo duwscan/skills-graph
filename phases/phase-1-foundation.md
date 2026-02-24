@@ -9,7 +9,7 @@
 
 ## Goal
 
-Set up the project scaffold, database schema, and core configuration so all subsequent phases have a solid base to build on. By the end of this phase, you should have a running Spring Web MVC server on Bun with a fully migrated PostgreSQL database and Redis connection.
+Set up the project scaffold, database schema, and core configuration so all subsequent phases have a solid base to build on. By the end of this phase, you should have a running Spring Boot application with a fully migrated PostgreSQL database and Redis connection.
 
 ---
 
@@ -17,35 +17,37 @@ Set up the project scaffold, database schema, and core configuration so all subs
 
 ### Context
 
-The project uses **Bun** as runtime (native Java, fast startup), **Spring Web MVC** as the HTTP framework (lightweight, Web Standards, Spring AI compatible), and **Spring Data JPA** for type-safe database access.
+The project uses **Java 21** as runtime, **Spring Boot 3 + Spring Web MVC** as the HTTP framework (lightweight, standards-based, Spring AI compatible), and **Spring Data JPA** for type-safe database access.
 
 ### Directory Structure
 
 ```
 skills-graph/
 ├── src/
-│   ├── index.ts                  # Spring Web MVC app entry point
-│   ├── config/
-│   │   ├── env.ts                # Environment variable validation (Jakarta Bean Validation)
-│   │   ├── constants.ts          # Centralized configurable values (thresholds, TTLs, limits)
-│   │   └── providers.ts          # Spring AI provider registry
-│   ├── db/
-│   │   ├── client.ts             # PostgreSQL connection pool (Spring Data JPA)
-│   │   ├── schema.ts             # JPA entity schema definitions
-│   │   ├── migrations/           # SQL migration files
-│   │   │   └── 001_initial.sql
-│   │   └── redis.ts              # Redis client (Spring Data Redis (Lettuce))
-│   ├── routes/                   # Spring Web MVC route modules
-│   ├── services/                 # Business logic layer
-│   ├── schemas/                  # Shared Jakarta Bean Validation schemas
-│   └── lib/                      # Utilities (slug, hash, etc.)
-├── test/
-│   ├── fixtures/                 # Seed data, golden set
-│   └── helpers/                  # Test utilities
+│   ├── main/
+│   │   ├── java/com/skillsgraph/
+│   │   │   ├── SkillsGraphApplication.java   # Spring Boot entry point
+│   │   │   ├── config/
+│   │   │   │   ├── AppProperties.java        # @ConfigurationProperties (env vars)
+│   │   │   │   ├── AppConstants.java         # Centralized configurable values (thresholds, TTLs, limits)
+│   │   │   │   └── AiConfig.java             # Spring AI provider configuration
+│   │   │   ├── controller/                   # @RestController endpoints
+│   │   │   ├── service/                      # @Service business logic
+│   │   │   ├── dto/                          # Request/response records + enums
+│   │   │   ├── entity/                       # @Entity JPA models
+│   │   │   ├── repository/                   # Spring Data JPA repositories
+│   │   │   └── util/                         # Utilities (SlugUtils, etc.)
+│   │   └── resources/
+│   │       ├── application.yml               # Main configuration
+│   │       ├── application-dev.yml           # Dev overrides
+│   │       └── db/migration/                 # Flyway SQL migration files
+│   │           └── V1__initial_schema.sql
+│   └── test/
+│       ├── java/com/skillsgraph/             # JUnit 5 + Spring Boot Test
+│       └── resources/
+│           └── application-test.yml          # Test configuration (Testcontainers)
 ├── pom.xml
-├── Java 21 compiler configuration
-├── (not applicable)
-├── application.yml
+├── mvnw / mvnw.cmd                           # Maven wrapper
 ├── docker-compose.yml
 ├── .env.example
 └── ARCHITECTURE.md
@@ -59,7 +61,7 @@ skills-graph/
 | 1.1.2 | Add Spring AI dependencies | Spring AI BOM + starters: `spring-ai-anthropic-spring-boot-starter`, `spring-ai-openai-spring-boot-starter`. Pgvector JDBC extension | `pom.xml` |
 | 1.1.3 | Add tooling dependencies | Checkstyle, SpotBugs, Lombok (optional), springdoc-openapi, Testcontainers, postgresql JDBC driver | `pom.xml` |
 | 1.1.4 | Create `.env.example` | Document all required and optional env vars with example values | `.env.example` |
-| 1.1.5 | Create `.gitignore` | Ignore `node_modules`, `.env`, `dist`, `*.log`, `.DS_Store` | `.gitignore` |
+| 1.1.5 | Create `.gitignore` | Ignore `target/`, `.env`, `*.log`, `.DS_Store`, `.idea/`, `*.class` | `.gitignore` |
 
 ### `.env.example`
 
@@ -82,14 +84,14 @@ TYPESENSE_API_KEY=skills_dev_key
 HELICONE_API_KEY=
 
 # App
-SERVER_SERVER_PORT=8080
-NODE_ENV=development
+SERVER_PORT=8080
+SPRING_PROFILES_ACTIVE=development
 ```
 
 ### Checklist
 
-- [ ] `pom.xml` created with Spring Boot 3 parent, Java 21, and all required starters
-- [ ] `Java 21 compiler configuration` has `strict: true` and path aliases configured
+- [ ] `pom.xml` created with Spring Boot 3 parent, Java 21 (`maven-compiler-plugin` source/target `21`), and all required starters
+- [ ] `pom.xml` compiler plugin configured for Java 21 with `-parameters` flag
 - [ ] All runtime dependencies installed and importable
 - [ ] All dev dependencies installed
 - [ ] `.env.example` created with all variables documented
@@ -416,7 +418,7 @@ The full schema from ARCHITECTURE.md §2.7 defines 5 tables: `skills`, `skill_al
 
 ### Context
 
-Database access uses Spring Data JPA over `postgres` (porsager/postgres) for connection pooling. Redis uses `Spring Data Redis (Lettuce)` with typed cache helpers. A pgvector serialization helper converts between JS arrays and PostgreSQL vector format.
+Database access uses **Spring Data JPA** (HikariCP connection pooling) with Flyway migrations. Redis uses **Spring Data Redis (Lettuce)** with typed cache helpers. A pgvector serialization helper converts between Java float arrays and PostgreSQL vector format.
 
 ### Tasks
 
@@ -459,42 +461,52 @@ The Spring Web MVC app serves as the API gateway. At this stage, only the skelet
 | 1.7.2 | Health check endpoint | `GET /actuator/health` — check DB connection (`SELECT 1`), Redis connection (`PING`), return `{ status, version, db, redis, uptime_seconds }` | `src/main/java/com/skillsgraph/controller/HealthController.java` |
 | 1.7.3 | Error handler middleware | Catch-all `app.onError()` handler. Return `{ error: message, status, request_id }`. Log the full error with stack trace. Map known error types to HTTP status codes (Jakarta Bean ValidationException → 400, SkillNotFoundException (extends RuntimeException) → 404, DuplicateSkillException → 409, etc.) | `src/main/java/com/skillsgraph/middleware/GlobalExceptionHandler.java` |
 | 1.7.4 | Request ID middleware | Generate `UUID.randomUUID().toString()` for each request. Set `X-Request-ID` response header. Store in Spring Web MVC context for logging | `src/main/java/com/skillsgraph/middleware/RequestIdFilter.java` |
-| 1.7.5 | CORS middleware | Use `hono/cors` with configurable origins. Default: allow all in development, restrictive in production | `src/main/java/com/skillsgraph/SkillsGraphApplication.java` |
+| 1.7.5 | CORS configuration | Use Spring `WebMvcConfigurer#addCorsMappings` with configurable allowed origins. Default: allow all in development, restrictive in production | `src/main/java/com/skillsgraph/config/WebMvcConfig.java` |
 | 1.7.6 | Custom error classes | `SkillNotFoundException`, `DuplicateSkillException`, `ValidationException`, `CycleDetectedException` extending base `AppException` class with `statusCode` property | `src/main/java/com/skillsgraph/util/AppExceptions.java` |
 | 1.7.7 | Server startup | Listen on configured PORT. Log startup message with port and environment | `src/main/java/com/skillsgraph/SkillsGraphApplication.java` |
 
 ### `src/main/java/com/skillsgraph/SkillsGraphApplication.java` (reference)
 
 ```java
-import { Spring Web MVC } from "hono";
-import { cors } from "hono/cors";
-import { config } from "./config/env";
-import { healthRoutes } from "./routes/health";
-import { requestId } from "./middleware/request-id";
-import { errorHandler } from "./middleware/error-handler";
+package com.skillsgraph;
 
-const app = new Spring Web MVC();
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-// Middleware
-app.use("*", cors());
-app.use("*", requestId());
+@SpringBootApplication
+public class SkillsGraphApplication {
 
-// Routes
-app.route("/health", healthRoutes);
-// Placeholder route groups (implemented in Phase 2+)
-// app.route("/api/skills", skillRoutes);
-// app.route("/api/edges", edgeRoutes);
-// app.route("/api/extract", extractRoutes);
-// app.route("/api/taxonomy", taxonomyRoutes);
-// app.route("/api/review-queue", reviewRoutes);
+    public static void main(String[] args) {
+        SpringApplication.run(SkillsGraphApplication.class, args);
+    }
+}
+```
 
-// Error handler
-app.onError(errorHandler);
+`src/main/resources/application.yml` (skeleton):
 
-export default {
-  server.port: ${SERVER_PORT:8080},
-  fetch: app.fetch,
-};
+```yaml
+server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  application:
+    name: skills-graph
+  datasource:
+    url: ${DATABASE_URL}
+    hikari:
+      maximum-pool-size: 10
+  data:
+    redis:
+      url: ${REDIS_URL}
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
 ```
 
 ### Checklist
@@ -594,8 +606,8 @@ echo "Phase 1 complete ✓"
 ## Phase 1 Master Checklist
 
 ### 1.1 Project Initialization
-- [ ] Bun project initialized with `pom.xml`
-- [ ] `Java 21 compiler configuration` configured with `strict: true` and path aliases
+- [ ] Maven project initialized with `pom.xml`
+- [ ] `Java 21` compiler configured and `strict` null handling enabled
 - [ ] All dependencies installed (runtime + dev)
 - [ ] `.env.example` created
 - [ ] `.gitignore` configured
