@@ -1,0 +1,42 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    ports: ["5432:5432"]
+    environment:
+      POSTGRES_DB: skills_graph
+      POSTGRES_USER: skills
+      POSTGRES_PASSWORD: skills_dev
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./docker/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U skills -d skills_graph"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+    command: redis-server --appendonly yes
+    volumes:
+      - redisdata:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  typesense:
+    image: typesense/typesense:27.1
+    ports: ["8108:8108"]
+    environment:
+      TYPESENSE_API_KEY: skills_dev_key
+      TYPESENSE_DATA_DIR: /data
+    volumes:
+      - typesensedata:/data
+
+volumes:
+  pgdata:
+  redisdata:
+  typesensedata:

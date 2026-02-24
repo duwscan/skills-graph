@@ -1,12 +1,40 @@
 {
   "name": "skills-graph",
-  "module": "index.ts",
+  "module": "src/index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "start": "bun src/index.ts",
+    "test": "bun test",
+    "db:migrate": "bun src/db/migrate.ts",
+    "db:seed": "bun src/db/seed.ts",
+    "infra:up": "docker compose up -d",
+    "infra:down": "docker compose down",
+    "infra:reset": "docker compose down -v && docker compose up -d"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@biomejs/biome": "^2.4.4",
+    "@types/bun": "latest",
+    "drizzle-kit": "^0.31.9",
+    "prettier": "^3.8.1"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^3.0.46",
+    "@ai-sdk/openai": "^3.0.31",
+    "@hono/zod-validator": "^0.7.6",
+    "ai": "^6.0.97",
+    "async-mutex": "^0.5.0",
+    "drizzle-orm": "^0.45.1",
+    "hono": "^4.12.2",
+    "ioredis": "^5.9.3",
+    "nanoid": "^5.1.6",
+    "postgres": "^3.4.8",
+    "slugify": "^1.6.6",
+    "typesense": "^3.0.1",
+    "zod": "^4.3.6"
   }
 }
