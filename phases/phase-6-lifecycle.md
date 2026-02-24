@@ -23,7 +23,7 @@ When a skill becomes obsolete (e.g., "Adobe Flash"), it is deprecated with a poi
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 6.1.1 | `SkillService.deprecate(id, successorIds)` | Transaction: (1) Validate skill is `active`. (2) `SET s.status = 'deprecated'` in Neo4j via Cypher. (3) `CREATE (s)-[:SUPERSEDED_BY]->(successor)` in Neo4j for each successor. (4) Remap aliases: `MATCH (s:Skill {id:$id})-[r:HAS_ALIAS]->(a:Alias) DELETE r CREATE (successor)-[:HAS_ALIAS]->(a)`. (5) Record changelog entries in PostgreSQL `graph_changelog`. (6) Fire `pg_notify('graph_changes', json)`. (7) Remove from full-text search service index | `src/main/java/com/skillsgraph/service/lifecycle/DeprecationService.java` |
+| 6.1.1 | `SkillService.deprecate(id, successorIds)` | Transaction: (1) Validate skill is `active`. (2) `SET s.status = 'deprecated'` in Neo4j via Cypher. (3) `CREATE (s)-[:SUPERSEDED_BY]->(successor)` in Neo4j for each successor. (4) Remap aliases: `MATCH (s:Skill {id:$id})-[r:HAS_ALIAS]->(a:Alias), (successor:Skill {id: $successorId}) DELETE r CREATE (successor)-[:HAS_ALIAS]->(a)`. (5) Record changelog entries in PostgreSQL `graph_changelog`. (6) Fire `pg_notify('graph_changes', json)`. (7) Remove from full-text search service index | `src/main/java/com/skillsgraph/service/lifecycle/DeprecationService.java` |
 | 6.1.2 | Deprecation validation | Reject if: skill already deprecated/merged, no successor_ids provided, successor doesn't exist, successor is also deprecated/merged. Return descriptive error | `src/main/java/com/skillsgraph/service/lifecycle/DeprecationService.java` |
 | 6.1.3 | `POST /api/skills/:id/deprecate` | Accept `{ successor_ids: UUID[], notes?: string }`. Run deprecation. Return updated skill with new status and superseded_by edges | `src/main/java/com/skillsgraph/controller/SkillController.java` |
 
@@ -73,6 +73,8 @@ DELETE r
 CREATE (survivor)-[:HAS_ALIAS]->(alias);
 
 // Step 2: Re-point outgoing relationships (skip duplicates)
+// Uses MERGE pattern; for dynamic rel types, apoc.merge.relationship (APOC Extended) can be used:
+// CALL apoc.merge.relationship(survivor, type(r), {}, properties(r), other) YIELD rel
 MATCH (source:Skill {id: $sourceId})-[r]->(other:Skill)
 WHERE type(r) <> 'SUPERSEDED_BY'
   AND NOT ((:Skill {id: $survivorId})-[x]->(other) WHERE type(x) = type(r))
@@ -102,7 +104,7 @@ SET source.status = 'merged', source.updatedAt = datetime()
 CREATE (source)-[:SUPERSEDED_BY {createdAt: datetime()}]->(survivor);
 ```
 
-> **Note:** `apoc.merge.relationship` requires the `neo4j-apoc` library (configured via `NEO4J_PLUGINS: '["apoc"]'` in docker-compose). The `graph_changelog` entry is written to PostgreSQL and `pg_notify` is fired after the Neo4j operations complete.
+> **Note:** `apoc.merge.relationship` is available in APOC Extended (configured via `NEO4J_PLUGINS: '["apoc"]'` in docker-compose). If not available, handle each relationship type explicitly with individual `MERGE` statements. The `graph_changelog` entry is written to PostgreSQL and `pg_notify` is fired after the Neo4j operations complete.
 
 ### Checklist
 

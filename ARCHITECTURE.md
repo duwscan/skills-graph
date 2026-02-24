@@ -232,7 +232,7 @@ Localization is handled through the **Alias table** — one alias per locale per
 
 ### 2.6 Entity-Relationship Diagram
 
-> **Note:** The `skill_co_occurrences` table is separate from `skill_relationships`. Co-occurrence tracks raw signal data; edges in `skill_relationships` are the curated/validated result.
+> **Note:** The `[:CO_OCCURS_WITH]` Neo4j relationship is separate from `PARENT_OF`/`RELATED_TO` relationships. Co-occurrence tracks raw empirical signal data; typed relationships like `RELATED_TO` are the curated/validated result.
 
 ```mermaid
 graph LR
@@ -787,18 +787,16 @@ final_confidence = llm_confidence × section_weight
 
 ### 4.6 Co-occurrence Recording
 
-After extraction, all pairs of extracted skills from the same document are recorded in the `skill_co_occurrences` table. This builds empirical evidence for relationship edges over time.
+After extraction, all pairs of extracted skills from the same document are recorded as `[:CO_OCCURS_WITH]` relationships in Neo4j. This builds empirical evidence for relationship edges over time.
 
 ```java
 @Service
-@Transactional
 public class CoOccurrenceService {
 
-    private final JdbcTemplate jdbcTemplate;
+    private final Neo4jTemplate neo4jTemplate;
 
-    public void recordCoOccurrences(List<UUID> skillIds, String sourceType) {
-        // Generate all unique pairs (order by UUID for consistent key)
-        List<UUID> sorted = skillIds.stream().sorted().toList();
+    public void recordCoOccurrences(List<String> skillIds, String sourceType) {
+        List<String> sorted = skillIds.stream().sorted().toList();
         for (int i = 0; i < sorted.size(); i++) {
             for (int j = i + 1; j < sorted.size(); j++) {
                 upsertPair(sorted.get(i), sorted.get(j), sourceType);
@@ -806,17 +804,15 @@ public class CoOccurrenceService {
         }
     }
 
-    private void upsertPair(UUID skillA, UUID skillB, String sourceType) {
-        jdbcTemplate.update("""
-            INSERT INTO skill_co_occurrences (skill_a_id, skill_b_id, source_type_counts, last_seen_at)
-            VALUES (?, ?, jsonb_build_object(?, 1), now())
-            ON CONFLICT (skill_a_id, skill_b_id)
-            DO UPDATE SET
-              co_occurrence_count = skill_co_occurrences.co_occurrence_count + 1,
-              source_type_counts = skill_co_occurrences.source_type_counts ||
-                jsonb_build_object(?, COALESCE((skill_co_occurrences.source_type_counts->>?)::int, 0) + 1),
-              last_seen_at = now()
-            """, skillA, skillB, sourceType, sourceType, sourceType);
+    private void upsertPair(String skillA, String skillB, String sourceType) {
+        neo4jTemplate.findAll(
+            "MATCH (a:Skill {id: $skillA}), (b:Skill {id: $skillB}) " +
+            "MERGE (a)-[co:CO_OCCURS_WITH]-(b) " +
+            "ON CREATE SET co.count = 1, co.sourceCounts = {" + sourceType + ": 1}, co.lastSeenAt = datetime() " +
+            "ON MATCH SET co.count = co.count + 1, co.lastSeenAt = datetime()",
+            Map.of("skillA", skillA, "skillB", skillB),
+            Void.class
+        );
     }
 }
 ```
@@ -951,30 +947,29 @@ SET source.status = 'merged', source.updatedAt = datetime()
 CREATE (source)-[:SUPERSEDED_BY {createdAt: datetime()}]->(survivor);
 ```
 
-> **Note:** For dynamic relationship type re-pointing, `neo4j-apoc` library is required. Alternatively, handle each relationship type explicitly. The `graph_changelog` entry is written to PostgreSQL and `pg_notify` is fired after the Neo4j transaction completes.
+> **Note:** For dynamic relationship type re-pointing, `apoc.merge.relationship` (APOC Extended) can be used. If not available, handle each relationship type explicitly with individual `MERGE` statements. The `graph_changelog` entry is written to PostgreSQL and `pg_notify` is fired after the Neo4j transaction completes.
 
 ### 5.4 Co-occurrence Edge Strengthening
 
-A background process periodically scans `skill_co_occurrences` and strengthens or creates relationship edges:
+A background process periodically scans `[:CO_OCCURS_WITH]` relationships in Neo4j and strengthens or creates typed relationship edges:
 
 ```java
 @Service
-@Transactional
 public class CoOccurrenceProcessor {
 
-    private final JdbcTemplate jdbcTemplate;
+    private final Neo4jTemplate neo4jTemplate;
     private final EdgeService edgeService;
 
     @Scheduled(cron = "0 0 2 * * *") // nightly at 2am
     public void processCoOccurrences() {
-        List<CoOccurrencePair> pairs = jdbcTemplate.query("""
-            SELECT co.*, s1.canonical_name AS skill_a_name, s2.canonical_name AS skill_b_name
-            FROM skill_co_occurrences co
-            JOIN skills s1 ON co.skill_a_id = s1.id
-            JOIN skills s2 ON co.skill_b_id = s2.id
-            WHERE co.co_occurrence_count >= ?
-            ORDER BY co.co_occurrence_count DESC
-            """, coOccurrencePairRowMapper, CO_OCCURRENCE_EDGE_THRESHOLD);
+        // Query Neo4j for high-frequency co-occurrence pairs
+        List<CoOccurrencePair> pairs = neo4jTemplate.findAll(
+            "MATCH (a:Skill)-[co:CO_OCCURS_WITH]-(b:Skill) " +
+            "WHERE co.count >= $threshold AND id(a) < id(b) " +
+            "RETURN a, b, co ORDER BY co.count DESC",
+            Map.of("threshold", CO_OCCURRENCE_EDGE_THRESHOLD),
+            CoOccurrencePair.class
+        );
 
         for (CoOccurrencePair pair : pairs) {
             Optional<SkillRelationship> existing = edgeService
