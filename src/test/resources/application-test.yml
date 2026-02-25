@@ -1,0 +1,10 @@
+app:
+  anthropic-api-key: test-anthropic-key
+  openai-api-key: test-openai-key
+  database-url: jdbc:postgresql://localhost:5432/skills_graph_test
+  neo4j-uri: bolt://localhost:7687
+  redis-url: redis://localhost:6379
+  helicone-api-key: ""
+  allowed-origins: "*"
+  environment: test
+  version: 0.1.0-test

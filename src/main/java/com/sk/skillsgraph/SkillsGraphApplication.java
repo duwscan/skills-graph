@@ -1,6 +1,6 @@
-package com.skillsgraph;
+package com.sk.skillsgraph;
 
-import com.skillsgraph.config.AppProperties;
+import com.sk.skillsgraph.config.AppProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
