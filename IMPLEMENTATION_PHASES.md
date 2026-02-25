@@ -1,7 +1,7 @@
 # Skills Graph — Implementation Phases
 
 > **Reference:** [ARCHITECTURE.md](./ARCHITECTURE.md)
-> **Stack:** Bun + Hono + Vercel AI SDK + PostgreSQL (pgvector, ltree) + Redis + Typesense
+> **Stack:** Java 21 + Spring Boot 3 + Spring AI + Neo4j 5 + PostgreSQL (pgvector) + Redis
 > **Context:** LLM-First Skills Graph powering a Recruitment Agency Platform
 
 ---
@@ -30,27 +30,32 @@ Phase 8 ── Observability, Hardening & QA ─────────── W
 ```
 skills-graph/
 ├── src/
-│   ├── index.ts                  # Hono app entry point
-│   ├── config/
-│   │   ├── env.ts                # Environment variable validation (Zod)
-│   │   └── providers.ts          # AI SDK provider registry
-│   ├── db/
-│   │   ├── client.ts             # PostgreSQL connection pool (drizzle)
-│   │   ├── migrations/           # SQL migration files
-│   │   │   └── 001_initial.sql   # Full schema from ARCHITECTURE.md §2.7
-│   │   └── redis.ts              # Redis client (ioredis)
-│   ├── routes/                   # Hono route modules
-│   ├── services/                 # Business logic layer
-│   ├── schemas/                  # Shared Zod schemas
-│   └── lib/                     # Utilities (slug, hash, etc.)
-├── test/
-│   ├── fixtures/                 # Seed data, golden set
-│   └── helpers/                  # Test utilities
-├── package.json
-├── tsconfig.json
-├── bunfig.toml
-├── drizzle.config.ts             # If using Drizzle ORM
-├── docker-compose.yml            # PostgreSQL + Redis for local dev
+│   ├── main/
+│   │   ├── java/com/skillsgraph/
+│   │   │   ├── SkillsGraphApplication.java   # Spring Boot entry point
+│   │   │   ├── config/
+│   │   │   │   ├── AppProperties.java        # @ConfigurationProperties
+│   │   │   │   ├── AiConfig.java             # Spring AI ChatClient / EmbeddingModel beans
+│   │   │   │   └── RedisConfig.java          # RedisTemplate configuration
+│   │   │   ├── controller/                   # Spring @RestController classes
+│   │   │   ├── service/                      # Spring @Service classes
+│   │   │   ├── dto/                          # Java records + @Valid DTOs
+│   │   │   ├── domain/                       # @Node (Neo4j) domain classes
+│   │   │   ├── repository/                   # Spring Data Neo4j Neo4jRepository interfaces
+│   │   │   └── util/                         # Utilities (SlugUtils, etc.)
+│   │   └── resources/
+│   │       ├── application.yml               # All configuration (replaces separate env config files)
+│   │       ├── application-dev.yml           # Dev overrides
+│   │       ├── neo4j/
+│   │       │   └── schema.cypher             # Neo4j constraints and indexes
+│   │       └── db/migration/                 # Flyway SQL migration files
+│   │           └── V1__embedding_tables.sql  # PostgreSQL embedding + changelog tables only
+│   └── src/test/java/com/skillsgraph/
+│       └── resources/
+│           └── fixtures/                     # Seed data, golden set JSON
+├── pom.xml                                   # Maven build descriptor
+├── mvnw / mvnw.cmd                           # Maven wrapper
+├── docker-compose.yml                        # PostgreSQL + Redis for local dev
 ├── .env.example
 └── ARCHITECTURE.md
 ```
@@ -59,12 +64,12 @@ skills-graph/
 
 | # | Task | Detail |
 |---|---|---|
-| 1.1.1 | Initialize Bun project | `bun init`, configure `tsconfig.json` with `strict: true`, path aliases (`@/` → `src/`) |
-| 1.1.2 | Install core dependencies | `hono`, `@hono/zod-validator`, `zod`, `ai`, `@ai-sdk/anthropic`, `@ai-sdk/openai`, `postgres` (or `drizzle-orm` + `drizzle-kit`), `ioredis` |
-| 1.1.3 | Create `docker-compose.yml` | PostgreSQL 16 with `pgvector`, `ltree`, `pg_trgm` extensions enabled; Redis 7; Typesense 27 |
-| 1.1.4 | Environment config | `src/config/env.ts` — validate all env vars with Zod: `DATABASE_URL`, `REDIS_URL`, `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `TYPESENSE_URL`, `TYPESENSE_API_KEY`, `HELICONE_API_KEY` (optional) |
-| 1.1.5 | Centralized constants | `src/config/constants.ts` — all tunable values (thresholds, TTLs, limits, co-occurrence params) in one file |
-| 1.1.6 | AI SDK provider registry | `src/config/providers.ts` — set up `createProviderRegistry()` with Anthropic (primary) and OpenAI (fallback), embedding model config |
+| 1.1.1 | Initialize Maven project | Use Spring Initializr or `./mvnw archetype:generate`. Add `spring-boot-starter-web`, `spring-boot-starter-data-neo4j`, `spring-boot-starter-data-jpa`, `spring-boot-starter-data-redis`, `spring-ai-anthropic-spring-boot-starter`, `spring-ai-openai-spring-boot-starter`, `flyway-core` |
+| 1.1.2 | Create `pom.xml` | Include Spring Boot 3 parent, Java 21, Spring AI BOM, postgresql JDBC driver, Flyway, Lettuce (Redis), springdoc-openapi |
+| 1.1.3 | Create `docker-compose.yml` | PostgreSQL 16 with `pgvector`, `pg_trgm` extensions enabled; Redis 7; Neo4j 5 with APOC plugin |
+| 1.1.4 | Environment config | `src/main/resources/application.yml` — all configuration via Spring `@ConfigurationProperties`: `DATABASE_URL`, `REDIS_URL`, `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `HELICONE_API_KEY` (optional) |
+| 1.1.5 | Centralized constants | `AppConstants.java` — all tunable values (thresholds, TTLs, limits, co-occurrence params) as `static final` fields |
+| 1.1.6 | Spring AI configuration | `AiConfig.java` — configure `ChatClient` beans (fast/standard/complex tiers) and `EmbeddingModel` bean |
 
 **docker-compose.yml:**
 
@@ -85,8 +90,23 @@ services:
     ports: ["6379:6379"]
     command: redis-server --appendonly yes
 
+  neo4j:
+    image: neo4j:5
+    ports: ["7474:7474", "7687:7687"]
+    environment:
+      NEO4J_AUTH: neo4j/skills_dev
+      NEO4J_PLUGINS: '["apoc"]'
+    volumes:
+      - neo4jdata:/data
+    healthcheck:
+      test: ["CMD", "neo4j", "status"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
 volumes:
   pgdata:
+  neo4jdata:
 ```
 
 ### 1.2 Database Schema & Migrations
@@ -95,13 +115,13 @@ volumes:
 
 | # | Task | Detail |
 |---|---|---|
-| 1.2.1 | Create initial migration | `migrations/001_initial.sql` — the full schema from ARCHITECTURE.md §2.8: `skills`, `skill_aliases`, `skill_relationships`, `skill_co_occurrences`, `locale_config`, `graph_changelog` tables with all CHECK constraints, UNIQUE constraints, and indexes |
-| 1.2.2 | Enable extensions | `CREATE EXTENSION IF NOT EXISTS ltree, vector, pg_trgm;` in migration |
+| 1.2.1 | Create Neo4j schema | `src/main/resources/neo4j/schema.cypher` — Neo4j constraints (skill_id, externalId, slug, alias_id) and fulltext/property indexes. Applied on startup via `CommandLineRunner` |
+| 1.2.2 | Create PostgreSQL migration | `src/main/resources/db/migration/V1__embedding_tables.sql` — `skill_embeddings`, `alias_embeddings`, `locale_config`, `graph_changelog` tables. Enable `vector`, `pg_trgm` extensions |
 | 1.2.3 | Create HNSW vector indexes | `idx_skills_embedding`, `idx_aliases_embedding` using `vector_cosine_ops` |
-| 1.2.4 | Create trigram indexes | `idx_skills_name_trgm`, `idx_aliases_surface_trgm` for fuzzy text search |
+| 1.2.4 | Create trigram indexes | `idx_skills_name_trgm` for fuzzy text search on skill_id |
 | 1.2.5 | Create graph version sequence | `CREATE SEQUENCE graph_version_seq;` for monotonic version numbers |
-| 1.2.6 | Migration runner script | `bun run db:migrate` command to apply migrations in order |
-| 1.2.7 | Seed data script | `bun run db:seed` — insert `locale_config` rows (en, vi, fr, etc.), insert 5-10 root skill categories (Technology, Business, Design, Science, Language) to bootstrap the taxonomy |
+| 1.2.6 | Migration runner script | `./mvnw flyway:migrate` command to apply PostgreSQL migrations in order |
+| 1.2.7 | Seed data script | `./mvnw spring-boot:run -Dspring-boot.run.arguments=--seed` — insert `locale_config` rows (en, vi, fr, etc.), create 5-10 root `(:Skill)` nodes in Neo4j (Technology, Business, Design, Science, Language) to bootstrap the taxonomy |
 
 ### 1.3 Database Client & ORM Layer
 
@@ -109,22 +129,22 @@ volumes:
 
 | # | Task | Detail |
 |---|---|---|
-| 1.3.1 | PostgreSQL client | `src/db/client.ts` — connection pool with `postgres` (porsager/postgres) or Drizzle ORM. Include pgvector type serialization helpers |
-| 1.3.2 | Redis client | `src/db/redis.ts` — ioredis connection with reconnect strategy. Export typed helpers: `cacheGet<T>()`, `cacheSet()`, `cacheDelete()`, `cacheMakeKey()` |
-| 1.3.3 | Vector helpers | `src/lib/pgvector.ts` — `toSql(embedding: number[]): string` to convert float arrays to pgvector format, `fromSql(row): number[]` to parse results |
-| 1.3.4 | Base repository pattern | `src/db/base-repository.ts` — optional base class with `findById()`, `create()`, `update()`, transaction support |
+| 1.3.1 | PostgreSQL client | `src/main/java/com/skillsgraph/config/DataSourceConfig.java` — connection pool via Spring Data JPA (HikariCP). Include pgvector type serialization helpers |
+| 1.3.2 | Redis client | `src/main/java/com/skillsgraph/config/RedisConfig.java` — Spring Data Redis (Lettuce) connection with reconnect strategy. Export typed helpers: `cacheGet<T>()`, `cacheSet()`, `cacheDelete()`, `cacheMakeKey()` |
+| 1.3.3 | Vector helpers | `src/main/java/com/skillsgraph/util/PgVectorUtils.java` — `toSql(float[] embedding): String` to convert float arrays to pgvector format, `fromSql(String row): float[]` to parse results |
+| 1.3.4 | Base repository pattern | `src/main/java/com/skillsgraph/repository/BaseRepository.java` — optional base interface with `findById()`, `save()`, `update()`, transaction support via Spring Data JPA |
 
-### 1.4 Hono App Skeleton
+### 1.4 Spring Web MVC App Skeleton
 
 **Tasks:**
 
 | # | Task | Detail |
 |---|---|---|
-| 1.4.1 | Hono app entry | `src/index.ts` — create Hono app, mount route groups (`/api/skills`, `/api/edges`, `/api/extract`, `/api/taxonomy`, `/api/review-queue`), add error handler middleware |
+| 1.4.1 | Spring Boot app entry | `src/main/java/com/skillsgraph/SkillsGraphApplication.java` — create Spring Boot app, mount route groups (`/api/skills`, `/api/edges`, `/api/extract`, `/api/taxonomy`, `/api/review-queue`), add error handler middleware |
 | 1.4.2 | Health check | `GET /health` — returns `{ status: "ok", version, db: "connected", redis: "connected" }` |
 | 1.4.3 | Error handler middleware | Catch-all error handler that returns structured JSON errors with status codes |
 | 1.4.4 | Request ID middleware | Generate `x-request-id` header for tracing |
-| 1.4.5 | CORS middleware | Configure `hono/cors` for API access |
+| 1.4.5 | CORS middleware | Configure `WebMvcConfigurer#addCorsMappings` for API access |
 
 **Verification:**
 
@@ -133,19 +153,19 @@ volumes:
 docker compose up -d
 
 # Run migration
-bun run db:migrate
+./mvnw flyway:migrate
 
 # Start dev server
-bun run dev
+./mvnw spring-boot:run
 
 # Test health endpoint
-curl http://localhost:3000/health
-# → {"status":"ok","version":"0.1.0","db":"connected","redis":"connected"}
+curl http://localhost:8080/actuator/health
+# → {"status":"UP","components":{"db":{"status":"UP"},"redis":{"status":"UP"}}}
 
-# Verify database tables exist
+# Verify PostgreSQL tables exist
 docker exec -it skills-graph-postgres-1 psql -U skills -d skills_graph \
   -c "\\dt"
-# → skills, skill_aliases, skill_relationships, skill_co_occurrences, locale_config, graph_changelog
+# → skill_embeddings, alias_embeddings, locale_config, graph_changelog
 ```
 
 ---
@@ -154,17 +174,17 @@ docker exec -it skills-graph-postgres-1 psql -U skills -d skills_graph \
 
 **Goal:** Implement all taxonomy query and mutation APIs from ARCHITECTURE.md §6 — the REST endpoints for creating, reading, updating, and managing skills, aliases, and edges. No AI/LLM features yet.
 
-### 2.1 Shared Zod Schemas
+### 2.1 Shared Jakarta Bean Validation Schemas
 
 **Tasks:**
 
 | # | Task | Detail |
 |---|---|---|
-| 2.1.1 | Skill schemas | `src/schemas/skill.ts` — `createSkillSchema`, `updateSkillSchema`, `skillResponseSchema` with all fields from §2.1 (external_id, canonical_name, slug, description, status, category, path). Auto-generate `slug` from `canonical_name` if not provided |
-| 2.1.2 | Alias schemas | `src/schemas/alias.ts` — `createAliasSchema` (surface_form, locale, source, is_primary), `aliasResponseSchema` |
-| 2.1.3 | Edge schemas | `src/schemas/edge.ts` — `createEdgeSchema` (source_skill_id, target_skill_id, relationship_type, confidence, weight, provenance), `edgeResponseSchema`. Validate relationship_type is one of the 5 enums. Include `empirical` in provenance enum |
-| 2.1.4 | Query parameter schemas | `src/schemas/query.ts` — pagination (`limit`, `offset`), sort, filter by status/category/locale |
-| 2.1.5 | Shared enums | `src/schemas/enums.ts` — `SkillStatus`, `SkillCategory`, `RelationshipType`, `Provenance` (including `empirical`), `AliasSource` as Zod enums, exported for reuse |
+| 2.1.1 | Skill schemas | `src/main/java/com/skillsgraph/dto/SkillDto.java` — `createSkillSchema`, `updateSkillSchema`, `skillResponseSchema` with all fields from §2.1 (external_id, canonical_name, slug, description, status, category, path). Auto-generate `slug` from `canonical_name` if not provided |
+| 2.1.2 | Alias schemas | `src/main/java/com/skillsgraph/dto/AliasDto.java` — `createAliasSchema` (surface_form, locale, source, is_primary), `aliasResponseSchema` |
+| 2.1.3 | Edge schemas | `src/main/java/com/skillsgraph/dto/EdgeDto.java` — `createEdgeSchema` (source_skill_id, target_skill_id, relationship_type, confidence, weight, provenance), `edgeResponseSchema`. Validate relationship_type is one of the 5 enums. Include `empirical` in provenance enum |
+| 2.1.4 | Query parameter schemas | `src/main/java/com/skillsgraph/dto/QueryParams.java` — pagination (`limit`, `offset`), sort, filter by status/category/locale |
+| 2.1.5 | Shared enums | `src/main/java/com/skillsgraph/dto/Enums.java` — `SkillStatus`, `SkillCategory`, `RelationshipType`, `Provenance` (including `empirical`), `AliasSource` as Jakarta Bean Validation enums, exported for reuse |
 
 ### 2.2 Skill CRUD Service
 
@@ -172,31 +192,21 @@ docker exec -it skills-graph-postgres-1 psql -U skills -d skills_graph \
 
 | # | Task | Detail |
 |---|---|---|
-| 2.2.1 | `SkillService.create()` | Insert skill row, auto-generate `external_id` (e.g., `SK-{nanoid}`), auto-generate `slug`, create initial alias (canonical_name as primary alias for `en`), record in `graph_changelog` |
-| 2.2.2 | `SkillService.getById()` | Fetch skill with all aliases and direct edges (1 hop). Join across `skills`, `skill_aliases`, `skill_relationships` |
+| 2.2.1 | `SkillService.create()` | Insert skill row, auto-generate `external_id` (e.g., `SK-{UUID.randomUUID()}`), auto-generate `slug`, create initial alias (canonical_name as primary alias for `en`), record in `graph_changelog` |
+| 2.2.2 | `SkillService.getById()` | Fetch skill with all aliases and direct edges (1 hop). Use Cypher `MATCH (s:Skill)-[:HAS_ALIAS]->(a:Alias), (s)-[r]->()` pattern via `Neo4jTemplate` |
 | 2.2.3 | `SkillService.update()` | Partial update of skill fields. Increment `version`, update `updated_at`, record in changelog |
 | 2.2.4 | `SkillService.list()` | Paginated listing with filters: `status`, `category`, `source`. Support `?q=` for trigram fuzzy search on `canonical_name` |
-| 2.2.5 | `SkillService.getAncestors()` | Recursive CTE or ltree `@>` query to get all ancestors up to root(s) |
-| 2.2.6 | `SkillService.getDescendants()` | Recursive CTE or ltree `<@` query to get all descendants to specified depth |
+| 2.2.5 | `SkillService.getAncestors()` | Cypher variable-length pattern `(s)<-[:PARENT_OF*1..depth]-(a:Skill)` to get all ancestors up to root(s) |
+| 2.2.6 | `SkillService.getDescendants()` | Cypher variable-length pattern `(parent:Skill)-[:PARENT_OF*1..depth]->(s:Skill)` to get all descendants to specified depth |
 
 **Recursive CTE for ancestors:**
 
-```sql
-WITH RECURSIVE ancestors AS (
-    SELECT target_skill_id AS skill_id, 1 AS depth
-    FROM skill_relationships
-    WHERE source_skill_id = $1
-      AND relationship_type = 'child_of'
-      AND status = 'active'
-    UNION ALL
-    SELECT r.target_skill_id, a.depth + 1
-    FROM skill_relationships r
-    JOIN ancestors a ON r.source_skill_id = a.skill_id
-    WHERE r.relationship_type = 'child_of'
-      AND r.status = 'active'
-      AND a.depth < 10
-)
-SELECT s.* FROM skills s JOIN ancestors a ON s.id = a.skill_id;
+```cypher
+// Find all ancestors up to a configurable depth
+MATCH path = (s:Skill {id: $skillId})<-[:PARENT_OF*1..$depth]-(ancestor:Skill)
+WHERE ancestor.status = 'active'
+RETURN DISTINCT ancestor, length(path) AS depth
+ORDER BY depth ASC
 ```
 
 ### 2.3 Alias Service
@@ -235,20 +245,20 @@ SELECT s.* FROM skills s JOIN ancestors a ON s.id = a.skill_id;
 | 2.6.3 | `ChangelogService.getVersion()` | Return current graph version (latest entry in changelog) |
 | 2.6.4 | PG NOTIFY integration | After recording a changelog entry, fire `pg_notify('graph_changes', json)` for real-time subscribers |
 
-### 2.7 Hono Route Handlers
+### 2.7 Spring Web MVC Route Handlers
 
 | # | Route | Handler | Validation |
 |---|---|---|---|
-| 2.7.1 | `POST /api/skills` | Create skill | `zValidator("json", createSkillSchema)` |
+| 2.7.1 | `POST /api/skills` | Create skill | `@Valid @RequestBody CreateSkillRequest` |
 | 2.7.2 | `GET /api/skills/:id` | Get skill with aliases + edges | Path param `:id` (UUID) |
-| 2.7.3 | `PATCH /api/skills/:id` | Update skill | `zValidator("json", updateSkillSchema)` |
-| 2.7.4 | `GET /api/skills` | List skills | `zValidator("query", listQuerySchema)` |
+| 2.7.3 | `PATCH /api/skills/{id}` | Update skill | `@Valid @RequestBody UpdateSkillRequest` |
+| 2.7.4 | `GET /api/skills` | List skills | `@ModelAttribute @Valid ListSkillsParams` |
 | 2.7.5 | `GET /api/skills/:id/ancestors` | Get ancestors | Optional `?depth=` param |
 | 2.7.6 | `GET /api/skills/:id/descendants` | Get descendants | Optional `?depth=` param |
 | 2.7.7 | `GET /api/skills/:id/related` | Get related skills | — |
-| 2.7.8 | `POST /api/skills/:id/aliases` | Add alias | `zValidator("json", createAliasSchema)` |
+| 2.7.8 | `POST /api/skills/:id/aliases` | Add alias | `@Valid @RequestBody CreateAliasRequest` |
 | 2.7.9 | `GET /api/skills/:id/aliases` | List aliases | Optional `?locale=` filter |
-| 2.7.10 | `POST /api/edges` | Create edge | `zValidator("json", createEdgeSchema)` + guardrails |
+| 2.7.10 | `POST /api/edges` | Create edge | `@Valid @RequestBody CreateEdgeRequest` + guardrails |
 | 2.7.11 | `GET /api/taxonomy/roots` | Get root categories | — |
 | 2.7.12 | `GET /api/taxonomy/version` | Get graph version | — |
 | 2.7.13 | `GET /api/taxonomy/changelog` | Paginated changelog | `?since=`, `?limit=` |
@@ -284,62 +294,64 @@ curl http://localhost:3000/api/skills/<ml-uuid>/ancestors
 curl http://localhost:3000/api/taxonomy/changelog
 
 # Run tests
-bun test
+./mvnw test
 ```
 
 ---
 
 ## Phase 3: Embedding & Search Infrastructure
 
-**Goal:** Add vector embedding generation for all skills/aliases, pgvector similarity search, and Typesense full-text search. This phase enables the RAG retrieval step needed by Phase 4.
+**Goal:** Add vector embedding generation for all skills/aliases, pgvector similarity search, and PostgreSQL full-text search / Typesense full-text search. This phase enables the RAG retrieval step needed by Phase 4.
+
+> **Storage split:** Graph structure (skills, aliases, relationships) lives in Neo4j. Vector embeddings live in PostgreSQL (`skill_embeddings`, `alias_embeddings` tables). `VectorSearchService` queries PostgreSQL/pgvector. `SkillService` queries Neo4j for graph data.
 
 ### 3.1 Embedding Service
 
 | # | Task | Detail |
 |---|---|---|
-| 3.1.1 | `EmbeddingService` class | `src/services/embedding.ts` — wraps AI SDK's `embed()` and `embedMany()` with the configured OpenAI embedding model (`text-embedding-3-large`, 1024 dims) |
-| 3.1.2 | Single embedding | `embed(text: string): Promise<number[]>` — embed a single text string. Check Redis cache first (`embed:{hash(text)}`), return cached if found, otherwise call AI SDK and cache with 30-day TTL |
-| 3.1.3 | Batch embedding | `embedMany(texts: string[]): Promise<number[][]>` — embed multiple texts. AI SDK handles automatic chunking for batch limits. Cache each individually |
-| 3.1.4 | Embedding on skill create/update | Hook into `SkillService.create()` and `SkillService.update()` — whenever `canonical_name` or `description` changes, re-embed `"${name}: ${description}"` and store in `skills.embedding` |
-| 3.1.5 | Embedding on alias create | Hook into `AliasService.create()` — embed the alias `surface_form` and store in `skill_aliases.alias_embedding` |
-| 3.1.6 | Bulk re-embedding script | `bun run embed:all` — iterate all skills + aliases missing embeddings, call `embedMany()` in batches of 100, update rows. For initial backfill or after model change |
+| 3.1.1 | `EmbeddingService` class | `EmbeddingService.java` — autowires Spring AI `EmbeddingModel` (text-embedding-3-large, 1024 dims). Provides `embedText(String)` and `embedTexts(List<String>)` with Redis caching |
+| 3.1.2 | Single embedding | `embed(text: string): Promise<number[]>` — embed a single text string. Check Redis cache first (`embed:{hash(text)}`), return cached if found, otherwise call Spring AI and cache with 30-day TTL |
+| 3.1.3 | Batch embedding | `embeddingService.embedTexts(List<String>)` — embed multiple texts. Spring AI handles batch limits. Cache each result individually in Redis |
+| 3.1.4 | Embedding on skill create/update | Hook into `SkillService.create()` and `SkillService.update()` — whenever `canonicalName` or `description` changes, re-embed `"${name}: ${description}"` and INSERT/UPDATE into `skill_embeddings` PostgreSQL table (keyed by Neo4j skill id) |
+| 3.1.5 | Embedding on alias create | Hook into `AliasService.create()` — embed the alias `surfaceForm` and INSERT/UPDATE into `alias_embeddings` PostgreSQL table (keyed by Neo4j alias node id) |
+| 3.1.6 | Bulk re-embedding runner | `EmbedAllRunner --embed-all` — iterates all skills + aliases missing embeddings, calls `embedTexts()` in batches of 100, updates rows. For initial backfill or after model change |
 
 ### 3.2 Vector Search (pgvector)
 
 | # | Task | Detail |
 |---|---|---|
-| 3.2.1 | `VectorSearchService` | `src/services/vector-search.ts` — nearest neighbor search against skill embeddings |
-| 3.2.2 | `findSimilarSkills()` | Given an embedding, query pgvector for top-K nearest active skills. SQL: `SELECT *, 1 - (embedding <=> $1::vector) AS similarity FROM skills WHERE status = 'active' ORDER BY embedding <=> $1::vector LIMIT $2` |
+| 3.2.1 | `VectorSearchService` | `src/main/java/com/skillsgraph/service/VectorSearchService.java` — nearest neighbor search against skill embeddings |
+| 3.2.2 | `findSimilarSkills()` | Given an embedding, query pgvector for top-K nearest skills. SQL: `SELECT se.skill_id, 1 - (se.embedding <=> $1::vector) AS similarity FROM skill_embeddings se ORDER BY se.embedding <=> $1::vector LIMIT $2`. Recommended: denormalize `status` into `skill_embeddings` to filter active skills at query time. Graph context is fetched from Neo4j via `Neo4jTemplate`. |
 | 3.2.3 | `findSimilarAliases()` | Same but against `skill_aliases.alias_embedding` — useful for duplicate alias detection |
 | 3.2.4 | `findCandidatesForChunk()` | The RAG retrieval function: given a text chunk embedding, return top-100 skills with `{ id, external_id, canonical_name, similarity }`. This is the core function used by the extraction pipeline in Phase 4 |
 | 3.2.5 | Duplicate detection | `checkDuplicate(name: string, description?: string)` — embed the candidate, search for nearest neighbors with similarity > 0.90. Return `{ isDuplicate: boolean, matches: Skill[] }` |
 
-### 3.3 Typesense Integration
+### 3.3 PostgreSQL full-text search / Typesense Integration
 
 | # | Task | Detail |
 |---|---|---|
-| 3.3.1 | Typesense client | `src/services/typesense.ts` — initialize Typesense client, define `skills` collection schema: `{ id, external_id, canonical_name, slug, description, category, status, aliases: string[] }` |
-| 3.3.2 | Collection setup | `bun run search:setup` — create the Typesense collection with the schema. Include synonym rules (e.g., "ML" ↔ "Machine Learning") |
-| 3.3.3 | Index sync on skill mutations | After every skill/alias create/update/delete, upsert or remove the document in Typesense. Use the changelog PG NOTIFY listener to trigger sync |
-| 3.3.4 | Full reindex script | `bun run search:reindex` — drop and recreate the collection, bulk index all active skills with their aliases |
-| 3.3.5 | Search API | `GET /api/skills/search?q={text}&category={cat}&limit={n}` — query Typesense with typo tolerance, autocomplete, category faceting. Return skill objects with highlight info |
+| 3.3.1 | PostgreSQL full-text search / Typesense client | `src/main/java/com/skillsgraph/service/FullTextSearchService.java` — initialize PostgreSQL full-text search / Typesense client, define `skills` collection schema: `{ id, external_id, canonical_name, slug, description, category, status, aliases: string[] }` |
+| 3.3.2 | Collection setup | `./mvnw spring-boot:run -Dspring-boot.run.arguments=--search-setup` — create the PostgreSQL full-text search / Typesense collection with the schema. Include synonym rules (e.g., "ML" ↔ "Machine Learning") |
+| 3.3.3 | Index sync on skill mutations | After every skill/alias create/update/delete, upsert or remove the document in PostgreSQL full-text search / Typesense. Use the changelog PG NOTIFY listener to trigger sync |
+| 3.3.4 | Full reindex script | `./mvnw spring-boot:run -Dspring-boot.run.arguments=--search-reindex` — drop and recreate the collection, bulk index all active skills with their aliases |
+| 3.3.5 | Search API | `GET /api/skills/search?q={text}&category={cat}&limit={n}` — query PostgreSQL full-text search / Typesense with typo tolerance, autocomplete, category faceting. Return skill objects with highlight info |
 
 ### 3.4 Hybrid Search Endpoint
 
 | # | Task | Detail |
 |---|---|---|
-| 3.4.1 | Combine text + vector search | `GET /api/skills/search?q={text}` — run both Typesense (keyword/fuzzy) and pgvector (semantic similarity) in parallel, merge results with reciprocal rank fusion or weighted scoring |
+| 3.4.1 | Combine text + vector search | `GET /api/skills/search?q={text}` — run both PostgreSQL full-text search / Typesense (keyword/fuzzy) and pgvector (semantic similarity) in parallel, merge results with reciprocal rank fusion or weighted scoring |
 | 3.4.2 | Search response schema | `searchResponseSchema` — `{ results: [{ skill, score, highlight, match_type: "keyword" | "semantic" }], total, query_time_ms }` |
 
 **Verification:**
 
 ```bash
 # Generate embeddings for all existing skills
-bun run embed:all
+./mvnw spring-boot:run -Dspring-boot.run.arguments=--embed-all
 
-# Set up Typesense collection
-bun run search:setup
-bun run search:reindex
+# Set up PostgreSQL full-text search / Typesense collection
+./mvnw spring-boot:run -Dspring-boot.run.arguments=--search-setup
+./mvnw spring-boot:run -Dspring-boot.run.arguments=--search-reindex
 
 # Test semantic search
 curl "http://localhost:3000/api/skills/search?q=deep+learning"
@@ -347,14 +359,14 @@ curl "http://localhost:3000/api/skills/search?q=deep+learning"
 
 # Test typo tolerance
 curl "http://localhost:3000/api/skills/search?q=mahcine+lerning"
-# → returns "Machine Learning" (Typesense typo correction)
+# → returns "Machine Learning" (PostgreSQL full-text search / Typesense typo correction)
 
 # Test duplicate detection
 curl -X POST http://localhost:3000/api/skills \
   -d '{"canonical_name":"ML","category":"domain","path":"technology.ml"}'
 # → 409 {"error":"Potential duplicate detected","matches":[{"name":"Machine Learning","similarity":0.94}]}
 
-bun test
+./mvnw test
 ```
 
 ---
@@ -367,27 +379,27 @@ bun test
 
 | # | Task | Detail |
 |---|---|---|
-| 4.1.1 | Document parser | `src/services/extraction/parser.ts` — convert input text to clean plaintext. For now, accept plaintext and basic HTML (strip tags). Later phases can add PDF/DOCX support via `pdf-parse` or `mammoth` |
-| 4.1.2 | Section detector | `src/services/extraction/section-detector.ts` — detect document type (JD vs CV vs generic) and identify sections. For JDs: Requirements, Responsibilities, Nice-to-have, Company description. For CVs: Skills, Experience, Projects, Education, Summary. Return `{ type: "jd" | "cv" | "generic", sections: Section[] }` |
-| 4.1.3 | Chunker | `src/services/extraction/chunker.ts` — implement section-based chunking (split on `\n\n`, `\n#`, heading patterns) with sliding window fallback. Target ~1,500–2,000 tokens per chunk with 200 token overlap. Preserve section metadata on each chunk. Use `tiktoken` or simple word-count heuristic for token estimation |
+| 4.1.1 | Document parser | `src/main/java/com/skillsgraph/service/extraction/DocumentParser.java` — convert input text to clean plaintext. For now, accept plaintext and basic HTML (strip tags). Later phases can add PDF/DOCX support via Apache PDFBox or Apache POI |
+| 4.1.2 | Section detector | `src/main/java/com/skillsgraph/service/extraction/SectionDetector.java` — detect document type (JD vs CV vs generic) and identify sections. For JDs: Requirements, Responsibilities, Nice-to-have, Company description. For CVs: Skills, Experience, Projects, Education, Summary. Return `{ type: "jd" | "cv" | "generic", sections: Section[] }` |
+| 4.1.3 | Chunker | `src/main/java/com/skillsgraph/service/extraction/DocumentChunker.java` — implement section-based chunking (split on `\n\n`, `\n#`, heading patterns) with sliding window fallback. Target ~1,500–2,000 tokens per chunk with 200 token overlap. Preserve section metadata on each chunk. Use simple word-count or character-count heuristic for token estimation |
 | 4.1.4 | Chunk interface | `interface Chunk { text: string; index: number; startOffset: number; endOffset: number; section?: { name: string; type: string; weight: number; } }` |
 
 ### 4.2 Extraction Schemas & Prompts
 
 | # | Task | Detail |
 |---|---|---|
-| 4.2.1 | Extraction Zod schema | `src/schemas/extraction.ts` — the `extractionSchema` from ARCHITECTURE.md §4.2: `{ extracted_skills: [{ skill_id, skill_name, confidence, evidence, proficiency_hint, context_type, section? }], discovered_candidates: [{ surface_form, suggested_category, reason }] }` |
-| 4.2.2 | System prompt | `src/services/extraction/prompts.ts` — the system prompt from §4.2. Store as a constant string. Include the 2-3 few-shot examples for consistent extraction quality. Include section context when available |
+| 4.2.1 | Extraction Java DTO (record + @Valid) | `src/main/java/com/skillsgraph/dto/ExtractionDto.java` — the `extractionSchema` from ARCHITECTURE.md §4.2: `{ extracted_skills: [{ skill_id, skill_name, confidence, evidence, proficiency_hint, context_type, section? }], discovered_candidates: [{ surface_form, suggested_category, reason }] }` |
+| 4.2.2 | System prompt | `src/main/java/com/skillsgraph/service/extraction/ExtractionPrompts.java` — the system prompt from §4.2. Store as a constant string. Include the 2-3 few-shot examples for consistent extraction quality. Include section context when available |
 | 4.2.3 | Prompt builder | `buildExtractionPrompt(chunk: string, candidates: CandidateSkill[], section?: Section)` — format candidates as a numbered list of `{id, name}` pairs, append the chunk text with section context. Keep total prompt size manageable (< 4,000 tokens for candidate list + chunk) |
 
 ### 4.3 Extraction Pipeline Core
 
 | # | Task | Detail |
 |---|---|---|
-| 4.3.1 | `SkillExtractionPipeline` class | `src/services/extraction/pipeline.ts` — the main class from §4.2. Constructor takes dependencies: `EmbeddingService`, `VectorSearchService`, `RedisClient`, provider registry |
+| 4.3.1 | `SkillExtractionPipeline` class | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java` — the main class from §4.2. Constructor takes dependencies: `EmbeddingService`, `VectorSearchService`, `RedisClient`, provider registry |
 | 4.3.2 | `extract(document: string, options?)` | Full pipeline: parse → detect sections → chunk → for each chunk { cache check → embed → retrieve candidates → build prompt → LLM call → validate → apply section weighting → cache result } → merge & deduplicate across chunks → expand → record co-occurrences |
 | 4.3.3 | Model tier selection | `selectModel(chunk)` — implement the tier selection logic from §7.4: short/simple chunks → Haiku, complex/multilingual → Sonnet |
-| 4.3.4 | LLM call with structured output | Use `generateText` + `Output.object(extractionSchema)` from AI SDK. Set `maxRetries: 3`. Handle errors gracefully |
+| 4.3.4 | LLM call with structured output | `chatClient.prompt(prompt).call().entity(ExtractionResult.class)` via Spring AI. `@Retryable(maxAttempts=3)` via Spring Retry. Handle errors gracefully |
 | 4.3.5 | Result validation | `validate(output, candidates)` — reject any `skill_id` not present in the candidate list. Log stripped entries for monitoring |
 | 4.3.6 | Section weighting | `applyWeighting(results, section)` — multiply confidence by section weight factor. JD: Requirements=1.0, Responsibilities=0.9, Nice-to-have=0.75, Company=0.5. CV: Skills=1.0, Experience=0.9, Projects=0.85, Education=0.8, Summary=0.7 |
 | 4.3.7 | Result merging | `mergeAndDeduplicate(chunkResults[])` — for skills appearing in multiple chunks, keep the one with highest confidence. Combine evidence arrays. Sort final results by confidence descending |
@@ -398,7 +410,7 @@ bun test
 
 | # | Task | Detail |
 |---|---|---|
-| 4.4.1 | `SkillExpansionService` | `src/services/extraction/expansion.ts` — given a list of extracted skill IDs, query the graph for parent, child, and sibling skills using the SQL from §4.4 |
+| 4.4.1 | `SkillExpansionService` | `src/main/java/com/skillsgraph/service/extraction/SkillExpansionService.java` — given a list of extracted skill IDs, query the graph for parent, child, and sibling skills using the SQL from §4.4 |
 | 4.4.2 | Confidence reduction | Expanded skills receive `original_confidence * 0.6` and are marked with `expansion_type: "parent" | "child" | "sibling"` |
 | 4.4.3 | Configurable expansion | Accept `options.expand: boolean` (default true) and `options.expansion_depth: number` (default 1) |
 
@@ -407,8 +419,8 @@ bun test
 | # | Task | Detail |
 |---|---|---|
 | 4.5.1 | `POST /api/extract` | Accept `{ text: string, options?: { expand, min_confidence, locale, source_type } }`. `source_type` is `"cv" | "jd" | "course" | "generic"` for section detection and co-occurrence tracking. Run `SkillExtractionPipeline.extract()`. Return `{ skills: [...], discovered_candidates: [...], metadata: { chunks_processed, cache_hits, processing_time_ms, document_type, sections_detected } }` |
-| 4.5.2 | Request validation | `zValidator("json", extractRequestSchema)` — validate text length (1 to 100,000 chars), options |
-| 4.5.3 | Concurrency control | Use semaphore (from `async-mutex`) to limit concurrent LLM calls to 50. Return 429 if semaphore is full |
+| 4.5.2 | Request validation | `@Valid @RequestBody ExtractionRequest` — validate text length (1 to 100,000 chars), options |
+| 4.5.3 | Concurrency control | Use semaphore (from `ReentrantLock / @Async`) to limit concurrent LLM calls to 50. Return 429 if semaphore is full |
 
 **Verification:**
 
@@ -424,13 +436,13 @@ curl -X POST http://localhost:3000/api/extract \
 
 # Test with a long document (multi-chunk)
 curl -X POST http://localhost:3000/api/extract \
-  -d @test/fixtures/long-resume.json
+  -d @src/test/java/com/skillsgraph/fixtures/long-resume.json
 
 # Verify caching (second call should be faster)
-time curl -X POST http://localhost:3000/api/extract -d @test/fixtures/job-description.json
-time curl -X POST http://localhost:3000/api/extract -d @test/fixtures/job-description.json  # cache hit
+time curl -X POST http://localhost:3000/api/extract -d @src/test/java/com/skillsgraph/fixtures/job-description.json
+time curl -X POST http://localhost:3000/api/extract -d @src/test/java/com/skillsgraph/fixtures/job-description.json  # cache hit
 
-bun test src/services/extraction/
+./mvnw test src/main/java/com/skillsgraph/service/extraction/
 ```
 
 ---
@@ -443,9 +455,9 @@ bun test src/services/extraction/
 
 | # | Task | Detail |
 |---|---|---|
-| 5.1.1 | `DiscoveryService` class | `src/services/discovery/discovery.ts` — orchestrates the 3-stage discovery pipeline from §3.1 |
+| 5.1.1 | `DiscoveryService` class | `src/main/java/com/skillsgraph/service/discovery/DiscoveryService.java` — orchestrates the 3-stage discovery pipeline from §3.1 |
 | 5.1.2 | Stage 1: Signal collection | `collectSignals(text: string, source: string)` — extract raw skill mentions, track frequency. For now, this is triggered manually or by the extraction pipeline's `discovered_candidates` output |
-| 5.1.3 | Stage 2: LLM candidate extraction | `extractCandidates(text: string)` — use `generateText` + `Output.object(discoverySchema)` with the zero-shot NER prompt from §3.1. Model: Claude Haiku |
+| 5.1.3 | Stage 2: LLM candidate extraction | `extractCandidates(String text)` — `fastChatClient.prompt(DISCOVERY_PROMPT)...call().entity(DiscoveryResult.class)` with zero-shot NER prompt. Model: Claude Haiku |
 | 5.1.4 | Stage 3: Embedding dedup | `deduplicateCandidate(candidate)` — embed the candidate's `normalized_form`, run `VectorSearchService.checkDuplicate()`. Classify into: alias (>0.90), review (0.70-0.90), or new (<0.70) |
 | 5.1.5 | Feed from extraction pipeline | When `SkillExtractionPipeline.extract()` returns `discovered_candidates`, automatically feed them into the discovery pipeline |
 
@@ -464,10 +476,10 @@ bun test src/services/extraction/
 
 | # | Task | Detail |
 |---|---|---|
-| 5.3.1 | `RelationshipPredictionService` | `src/services/discovery/relationship-prediction.ts` — predict relationships between skills using the two approaches from §3.3 |
+| 5.3.1 | `RelationshipPredictionService` | `src/main/java/com/skillsgraph/service/discovery/RelationshipPredictionService.java` — predict relationships between skills using the two approaches from §3.3 |
 | 5.3.2 | Embedding similarity approach | For `related_to` / duplicate detection: compute cosine similarity between two skill embeddings, apply thresholds (>0.85 → duplicate, 0.65-0.85 → related) |
-| 5.3.3 | LLM classification approach | For `parent_of` / `child_of`: use `generateText` + `Output.object(relationshipSchema)` with chain-of-thought prompt from §3.3. Model: Claude Sonnet |
-| 5.3.4 | Batch classification | `classifyBatch(pairs: [SkillA, SkillB][])` — classify 10-20 pairs per LLM call. Use batch Zod schema |
+| 5.3.3 | LLM classification approach | For `parent_of` / `child_of`: `standardChatClient.prompt(COT_PROMPT)...call().entity(RelationshipClassification.class)` with chain-of-thought. Model: Claude Sonnet |
+| 5.3.4 | Batch classification | `classifyBatch(pairs: [SkillA, SkillB][])` — classify 10-20 pairs per LLM call. Use batch Java DTO (record + @Valid) |
 | 5.3.5 | Suggest relationships for new skill | `suggestRelationships(skill)` — find 5 nearest existing skills by embedding, classify each pair, return suggested edges with confidence scores. Used during curator review |
 
 ### 5.4 Review Queue API Routes
@@ -497,7 +509,7 @@ curl -X POST http://localhost:3000/api/review-queue/<id>/decision \
 # Verify skill was created with relationships
 curl http://localhost:3000/api/skills/<new-skill-uuid>
 
-bun test src/services/discovery/
+./mvnw test src/main/java/com/skillsgraph/service/discovery/
 ```
 
 ---
@@ -528,8 +540,8 @@ bun test src/services/discovery/
 |---|---|---|
 | 6.3.1 | Graph version endpoint | `GET /api/taxonomy/version` — return `{ graph_version, last_mutation_at, total_skills, total_edges }` |
 | 6.3.2 | Changelog CDC endpoint | `GET /api/taxonomy/changelog?since={version}&limit=100` — paginated changelog for downstream consumers |
-| 6.3.3 | PG NOTIFY listener | `src/services/changelog/listener.ts` — subscribe to `graph_changes` channel. On notification: invalidate relevant Redis cache keys, trigger Typesense re-index for affected skills |
-| 6.3.4 | Snapshot script | `bun run snapshot:create` — export entire taxonomy as JSON file: `{ version, timestamp, skills: [...], relationships: [...], aliases: [...] }`. Store in configurable location (local file or S3) |
+| 6.3.3 | PG NOTIFY listener | `src/main/java/com/skillsgraph/service/changelog/GraphChangeListener.java` — subscribe to `graph_changes` channel. On notification: invalidate relevant Redis cache keys, trigger PostgreSQL full-text search / Typesense re-index for affected skills |
+| 6.3.4 | Snapshot script | `./mvnw spring-boot:run -Dspring-boot.run.arguments=--snapshot-create` — export entire taxonomy as JSON file: `{ version, timestamp, skills: [...], relationships: [...], aliases: [...] }`. Store in configurable location (local file or S3) |
 
 **Verification:**
 
@@ -552,25 +564,25 @@ curl http://localhost:3000/api/skills/<ml-uuid>/aliases
 curl "http://localhost:3000/api/taxonomy/changelog?since=0"
 
 # Create snapshot
-bun run snapshot:create
+./mvnw spring-boot:run -Dspring-boot.run.arguments=--snapshot-create
 # → snapshots/skills-graph-v42-2026-02-12.json
 
-bun test src/services/lifecycle/
+./mvnw test src/main/java/com/skillsgraph/service/lifecycle/
 ```
 
 ---
 
 ## Phase 7: Workers, Events & Batch Processing
 
-**Goal:** Implement background workers for async extraction, batch processing, event-driven Typesense sync, co-occurrence aggregation, re-analysis on skill activation, and discovery signal processing using Redis Streams.
+**Goal:** Implement background workers for async extraction, batch processing, event-driven PostgreSQL full-text search / Typesense sync, co-occurrence aggregation, re-analysis on skill activation, and discovery signal processing using Redis Streams.
 
 ### 7.1 Redis Streams Infrastructure
 
 | # | Task | Detail |
 |---|---|---|
-| 7.1.1 | Stream producer | `src/services/events/producer.ts` — `publishEvent(stream: string, event: object)` using `XADD`. Streams: `extraction:jobs`, `discovery:signals`, `sync:typesense`, `co-occurrence:pairs`, `reanalysis:jobs` |
-| 7.1.2 | Stream consumer base | `src/services/events/consumer.ts` — base class for consuming from Redis Streams with consumer groups. Handle `XREADGROUP`, `XACK`, error recovery, dead letter queue |
-| 7.1.3 | Consumer group setup | `bun run streams:setup` — create consumer groups for each stream |
+| 7.1.1 | Stream producer | `src/main/java/com/skillsgraph/service/events/StreamEventProducer.java` — `publishEvent(stream: string, event: object)` using `XADD`. Streams: `extraction:jobs`, `discovery:signals`, `sync:full-text-search`, `co-occurrence:pairs`, `reanalysis:jobs` |
+| 7.1.2 | Stream consumer base | `src/main/java/com/skillsgraph/service/events/StreamEventConsumer.java` — base class for consuming from Redis Streams with consumer groups. Handle `XREADGROUP`, `XACK`, error recovery, dead letter queue |
+| 7.1.3 | Consumer group setup | `./mvnw spring-boot:run -Dspring-boot.run.arguments=--streams-setup` — create consumer groups for each stream |
 
 ### 7.2 Batch Extraction Worker
 
@@ -578,8 +590,8 @@ bun test src/services/lifecycle/
 |---|---|---|
 | 7.2.1 | `POST /api/extract/batch` | Accept `{ documents: [{ id, text, metadata, source_type? }] }`. Publish each document as a job to `extraction:jobs` stream. Return `{ job_id, document_count, status: "queued" }` |
 | 7.2.2 | `GET /api/extract/jobs/:jobId` | Return job status and results. Store job state in Redis: `batch:{jobId}` → `{ total, completed, failed, results: [...] }` |
-| 7.2.3 | Extraction worker | `src/workers/extraction-worker.ts` — consume from `extraction:jobs`, run `SkillExtractionPipeline.extract()` for each document, store result back in Redis batch state, ACK the message |
-| 7.2.4 | Worker entry point | `src/workers/index.ts` — start all workers: `bun run workers` |
+| 7.2.3 | Extraction worker | `src/main/java/com/skillsgraph/worker/ExtractionWorker.java` — consume from `extraction:jobs`, run `SkillExtractionPipeline.extract()` for each document, store result back in Redis batch state, ACK the message |
+| 7.2.4 | Worker entry point | `src/main/java/com/skillsgraph/worker/WorkerConfiguration.java` — start all workers: `./mvnw spring-boot:run -Dspring-boot.run.arguments=--workers` |
 | 7.2.5 | Concurrency tuning | Configure max concurrent extractions per worker (default: 10). Total across N workers = N * 10 |
 
 ### 7.3 Discovery Signal Worker
@@ -587,30 +599,30 @@ bun test src/services/lifecycle/
 | # | Task | Detail |
 |---|---|---|
 | 7.3.1 | Signal aggregation | When extraction pipeline returns `discovered_candidates`, publish to `discovery:signals` stream |
-| 7.3.2 | Discovery worker | `src/workers/discovery-worker.ts` — consume signals, aggregate by normalized_form, when count exceeds threshold (default: 5, configurable via `DISCOVERY_SIGNAL_THRESHOLD` env var), run full discovery pipeline and add to review queue |
+| 7.3.2 | Discovery worker | `src/main/java/com/skillsgraph/worker/DiscoveryWorker.java` — consume signals, aggregate by normalized_form, when count exceeds threshold (default: 5, configurable via `DISCOVERY_SIGNAL_THRESHOLD` env var), run full discovery pipeline and add to review queue |
 
 ### 7.4 Co-occurrence Aggregation Worker
 
 | # | Task | Detail |
 |---|---|---|
 | 7.4.1 | Co-occurrence event publishing | After extraction, the pipeline publishes skill pair events to `co-occurrence:pairs` stream with `{ skill_ids: string[], source_type: string }` |
-| 7.4.2 | Co-occurrence worker | `src/workers/co-occurrence-worker.ts` — consume events, upsert pairs into `skill_co_occurrences` table. Batch within a debounce window for efficiency |
-| 7.4.3 | Edge strengthening job | `bun run co-occurrence:process` — periodic job (e.g., nightly cron) that scans `skill_co_occurrences` for pairs exceeding `CO_OCCURRENCE_EDGE_THRESHOLD`. Creates new `empirical` edges or strengthens existing edge weights. See ARCHITECTURE.md §5.4 |
+| 7.4.2 | Co-occurrence worker | `src/main/java/com/skillsgraph/worker/CoOccurrenceWorker.java` — consume events, upsert pairs into `skill_co_occurrences` table. Batch within a debounce window for efficiency |
+| 7.4.3 | Edge strengthening job | `./mvnw spring-boot:run -Dspring-boot.run.arguments=--co-occurrence-process` — periodic job (e.g., nightly cron) that scans `skill_co_occurrences` for pairs exceeding `CO_OCCURRENCE_EDGE_THRESHOLD`. Creates new `empirical` edges or strengthens existing edge weights. See ARCHITECTURE.md §5.4 |
 
 ### 7.5 Re-analysis Worker
 
 | # | Task | Detail |
 |---|---|---|
 | 7.5.1 | Activation event publishing | When a skill transitions from `candidate` → `active` (curator approve), publish to `reanalysis:jobs` stream with `{ skill_id, skill_name, activated_at }` |
-| 7.5.2 | Re-analysis worker | `src/workers/reanalysis-worker.ts` — consume activation events. Query extraction logs for documents that had this skill in `discovered_candidates`. Queue those documents for re-extraction via the batch extraction worker |
+| 7.5.2 | Re-analysis worker | `src/main/java/com/skillsgraph/worker/ReanalysisWorker.java` — consume activation events. Query extraction logs for documents that had this skill in `discovered_candidates`. Queue those documents for re-extraction via the batch extraction worker |
 | 7.5.3 | Extraction log table | New migration: `CREATE TABLE extraction_logs (id UUID PK, document_hash TEXT, source_type TEXT, discovered_candidates JSONB, extracted_skill_ids UUID[], created_at TIMESTAMPTZ)`. Populated by extraction pipeline to enable re-analysis |
 
-### 7.6 Typesense Sync Worker
+### 7.6 PostgreSQL full-text search / Typesense Sync Worker
 
 | # | Task | Detail |
 |---|---|---|
-| 7.6.1 | PG NOTIFY → Redis Stream bridge | The changelog listener (Phase 6.3.3) publishes skill mutation events to `sync:typesense` stream |
-| 7.6.2 | Sync worker | `src/workers/typesense-sync-worker.ts` — consume events, upsert or delete the affected skill document in Typesense. Batch multiple updates within a 500ms window for efficiency |
+| 7.6.1 | PG NOTIFY → Redis Stream bridge | The changelog listener (Phase 6.3.3) publishes skill mutation events to `sync:full-text-search` stream |
+| 7.6.2 | Sync worker | `src/main/java/com/skillsgraph/worker/FullTextSearchSyncWorker.java` — consume events, upsert or delete the affected skill document in PostgreSQL full-text search / Typesense. Batch multiple updates within a 500ms window for efficiency |
 
 ### 7.7 Cache Invalidation Worker
 
@@ -622,7 +634,7 @@ bun test src/services/lifecycle/
 
 ```bash
 # Start workers
-bun run workers &
+./mvnw spring-boot:run -Dspring-boot.run.arguments=--workers &
 
 # Submit batch extraction
 curl -X POST http://localhost:3000/api/extract/batch \
@@ -633,14 +645,14 @@ curl -X POST http://localhost:3000/api/extract/batch \
 curl http://localhost:3000/api/extract/jobs/batch-abc123
 # → {"total":2,"completed":2,"failed":0,"results":[...]}
 
-# Verify Typesense stays in sync after skill update
+# Verify PostgreSQL full-text search / Typesense stays in sync after skill update
 curl -X PATCH http://localhost:3000/api/skills/<uuid> \
   -d '{"description":"Updated description"}'
 sleep 1
 curl "http://localhost:3000/api/skills/search?q=<skill-name>"
 # → description should be updated
 
-bun test src/workers/
+./mvnw test src/main/java/com/skillsgraph/worker/
 ```
 
 ---
@@ -653,7 +665,7 @@ bun test src/workers/
 
 | # | Task | Detail |
 |---|---|---|
-| 8.1.1 | Helicone proxy setup | Configure Anthropic and OpenAI providers in the AI SDK to route through Helicone proxy by adding `Helicone-Auth` header. Only enable when `HELICONE_API_KEY` is set |
+| 8.1.1 | Helicone proxy setup | Configure Anthropic and OpenAI providers in the Spring AI to route through Helicone proxy by adding `Helicone-Auth` header. Only enable when `HELICONE_API_KEY` is set |
 | 8.1.2 | Custom properties | Add Helicone custom properties to each LLM call: `task_type` (extraction, classification, discovery), `model_tier` (haiku, sonnet, opus), `document_type` |
 | 8.1.3 | Cost alerting | Configure Helicone dashboard alerts: daily cost > 120% of 7-day average |
 
@@ -661,18 +673,18 @@ bun test src/workers/
 
 | # | Task | Detail |
 |---|---|---|
-| 8.2.1 | Structured logging | `src/lib/logger.ts` — JSON structured logger (pino or consola). Include request_id, duration_ms, path, status in every log |
-| 8.2.2 | Request timing middleware | Hono middleware that logs `{ method, path, status, duration_ms, request_id }` for every request |
+| 8.2.1 | Structured logging | `src/main/java/com/skillsgraph/util/StructuredLogger.java` — JSON structured logger (Logback / SLF4J or SLF4J). Include request_id, duration_ms, path, status in every log |
+| 8.2.2 | Request timing middleware | Spring Web MVC middleware that logs `{ method, path, status, duration_ms, request_id }` for every request |
 | 8.2.3 | LLM call metrics | Log every LLM call: `{ task, model, input_tokens, output_tokens, latency_ms, cache_hit, success }` |
-| 8.2.4 | Health check expansion | Expand `GET /health` to include: DB connection pool stats, Redis connection status, Typesense status, last graph version, uptime |
+| 8.2.4 | Health check expansion | Expand `GET /health` to include: DB connection pool stats, Redis connection status, PostgreSQL full-text search / Typesense status, last graph version, uptime |
 
 ### 8.3 Rate Limiting & Security
 
 | # | Task | Detail |
 |---|---|---|
-| 8.3.1 | Rate limiter middleware | `src/middleware/rate-limit.ts` — Redis-backed sliding window rate limiter. Default: 100 req/min for read endpoints, 20 req/min for extraction endpoints, 50 req/min for mutation endpoints |
-| 8.3.2 | API key authentication | `src/middleware/auth.ts` — simple API key authentication via `Authorization: Bearer <key>` header. Store valid keys in env or Redis. Differentiate `curator` vs `reader` roles |
-| 8.3.3 | Input sanitization | Verify all Zod schemas reject overly large inputs. Max text length for extraction: 100,000 chars. Max batch size: 100 documents |
+| 8.3.1 | Rate limiter middleware | `src/main/java/com/skillsgraph/middleware/RateLimitFilter.java` — Redis-backed sliding window rate limiter. Default: 100 req/min for read endpoints, 20 req/min for extraction endpoints, 50 req/min for mutation endpoints |
+| 8.3.2 | API key authentication | `src/main/java/com/skillsgraph/middleware/ApiKeyAuthFilter.java` — simple API key authentication via `Authorization: Bearer <key>` header. Store valid keys in env or Redis. Differentiate `curator` vs `reader` roles |
+| 8.3.3 | Input sanitization | Verify all Java DTOs (records + @Valid) reject overly large inputs. Max text length for extraction: 100,000 chars. Max batch size: 100 documents |
 | 8.3.4 | Curator-only route guard | Middleware that checks API key role for mutation endpoints (`POST /api/skills`, `POST /api/edges`, review queue decisions) |
 
 ### 8.4 Comprehensive Test Suite
@@ -686,16 +698,16 @@ bun test src/workers/
 | 8.4.5 | Integration tests — Extraction | Run extraction pipeline against 5-10 test documents with known expected skills. Verify precision > 0.80, recall > 0.80 |
 | 8.4.6 | Integration tests — Discovery | Feed text with unknown skills → verify review queue populated → approve → verify skill created with relationships |
 | 8.4.7 | Integration tests — Merge | Create two duplicate skills → merge → verify aliases transferred, edges re-pointed, source marked as merged |
-| 8.4.8 | Golden set evaluation | `test/golden-set/` — 50+ labeled documents with ground-truth skill annotations. Run `bun test:golden` to measure F1 and report regression |
-| 8.4.9 | Load test script | `bun run test:load` — using `autocannon` or simple script: 100 concurrent extraction requests, measure p50/p95/p99 latency, error rate |
+| 8.4.8 | Golden set evaluation | `src/test/java/com/skillsgraph/golden-set/` — 50+ labeled documents with ground-truth skill annotations. Run `./mvnw test:golden` to measure F1 and report regression |
+| 8.4.9 | Load test script | `./mvnw gatling:test` — using `Gatling / k6` or simple script: 100 concurrent extraction requests, measure p50/p95/p99 latency, error rate |
 
 ### 8.5 Production Configuration
 
 | # | Task | Detail |
 |---|---|---|
-| 8.5.1 | Dockerfile | Multi-stage Bun Dockerfile: `FROM oven/bun:1` → copy package.json → `bun install --frozen-lockfile` → copy src → `bun run src/index.ts` |
-| 8.5.2 | docker-compose.prod.yml | Production compose with all services: app, workers, postgres, redis, typesense. Health checks, restart policies, resource limits |
-| 8.5.3 | Environment validation | App refuses to start if required env vars are missing (validated by Zod schema in `config/env.ts`) |
+| 8.5.1 | Dockerfile | Multi-stage build: `FROM eclipse-temurin:21-jdk-alpine AS build` → copy pom.xml + mvnw → `./mvnw package -DskipTests` → `FROM eclipse-temurin:21-jre-alpine AS runtime` → copy JAR → `ENTRYPOINT ["java","-jar","app.jar"]` |
+| 8.5.2 | docker-compose.prod.yml | Production compose with all services: app, workers, postgres, redis, full-text-search. Health checks, restart policies, resource limits |
+| 8.5.3 | Environment validation | App refuses to start if required env vars are missing (validated by Java DTO (record + @Valid) in `config/AppProperties.java`) |
 | 8.5.4 | Graceful shutdown | Handle SIGTERM: drain in-flight requests, close DB pool, close Redis connection, stop workers cleanly |
 | 8.5.5 | README.md | Setup instructions, architecture overview, API documentation link, development workflow |
 
@@ -703,14 +715,14 @@ bun test src/workers/
 
 ```bash
 # Run full test suite
-bun test
+./mvnw test
 
 # Run golden set evaluation
-bun test:golden
+./mvnw test:golden
 # → F1: 0.87, Precision: 0.89, Recall: 0.85 ✓
 
 # Run load test
-bun run test:load
+./mvnw gatling:test
 # → p50: 1.2s, p95: 3.8s, p99: 5.1s, errors: 0%
 
 # Build and run production container
@@ -721,7 +733,7 @@ docker compose -f docker-compose.prod.yml up -d
 curl http://localhost:3000/health
 
 # Verify all endpoints work
-bun run test:e2e
+./mvnw failsafe:integration-test
 ```
 
 ---
@@ -754,11 +766,11 @@ graph TD
 
 | Phase | Focus | Key Deliverables | Critical Files |
 |---|---|---|---|
-| **1** | Foundation | Bun+Hono scaffold, PostgreSQL schema (incl. co-occurrence table), Redis client, AI SDK config, centralized constants | `src/index.ts`, `migrations/001_initial.sql`, `docker-compose.yml`, `src/config/constants.ts` |
-| **2** | CRUD API | All taxonomy endpoints, quality guardrails, changelog, empirical provenance support | `src/services/skill.ts`, `src/services/guardrails.ts`, `src/routes/skills.ts` |
-| **3** | Search & Embeddings | Embedding service, pgvector search, Typesense integration, hybrid search | `src/services/embedding.ts`, `src/services/vector-search.ts`, `src/services/typesense.ts` |
-| **4** | Extraction | RAG pipeline, section-aware chunker, section weighting, prompt engineering, skill expansion, co-occurrence recording, extraction API | `src/services/extraction/pipeline.ts`, `src/services/extraction/section-detector.ts`, `src/services/extraction/chunker.ts` |
-| **5** | Discovery & HITL | Skill discovery, review queue, relationship prediction, curation API | `src/services/discovery/discovery.ts`, `src/services/discovery/relationship-prediction.ts` |
-| **6** | Lifecycle | Deprecation, merging, versioning, snapshots, CDC, co-occurrence cleanup on merge | `src/services/lifecycle/deprecation.ts`, `src/services/lifecycle/merge.ts` |
-| **7** | Workers & Events | Redis Streams, batch extraction, discovery worker, co-occurrence aggregation, re-analysis worker, Typesense sync | `src/workers/extraction-worker.ts`, `src/workers/co-occurrence-worker.ts`, `src/workers/reanalysis-worker.ts` |
-| **8** | QA & Hardening | Helicone, logging, rate limiting, auth, test suite (incl. section weighting + co-occurrence tests), Dockerfile | `src/middleware/`, `test/`, `Dockerfile` |
+| **1** | Foundation | Spring Boot scaffold, Neo4j + PostgreSQL schema, Redis client, Spring AI config, centralized constants | `src/main/java/com/skillsgraph/SkillsGraphApplication.java`, `src/main/resources/neo4j/schema.cypher`, `src/main/resources/db/migration/V1__embedding_tables.sql`, `docker-compose.yml`, `src/main/java/com/skillsgraph/config/AppConstants.java` |
+| **2** | CRUD API | All taxonomy endpoints, quality guardrails, changelog, empirical provenance support | `src/main/java/com/skillsgraph/service/SkillService.java`, `src/main/java/com/skillsgraph/service/GuardrailsService.java`, `src/main/java/com/skillsgraph/controller/SkillController.java` |
+| **3** | Search & Embeddings | Embedding service, pgvector search, PostgreSQL full-text search / Typesense integration, hybrid search | `src/main/java/com/skillsgraph/service/EmbeddingService.java`, `src/main/java/com/skillsgraph/service/VectorSearchService.java`, `src/main/java/com/skillsgraph/service/FullTextSearchService.java` |
+| **4** | Extraction | RAG pipeline, section-aware chunker, section weighting, prompt engineering, skill expansion, co-occurrence recording, extraction API | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java`, `src/main/java/com/skillsgraph/service/extraction/SectionDetector.java`, `src/main/java/com/skillsgraph/service/extraction/DocumentChunker.java` |
+| **5** | Discovery & HITL | Skill discovery, review queue, relationship prediction, curation API | `src/main/java/com/skillsgraph/service/discovery/DiscoveryService.java`, `src/main/java/com/skillsgraph/service/discovery/RelationshipPredictionService.java` |
+| **6** | Lifecycle | Deprecation, merging, versioning, snapshots, CDC, co-occurrence cleanup on merge | `src/main/java/com/skillsgraph/service/lifecycle/DeprecationService.java`, `src/main/java/com/skillsgraph/service/lifecycle/MergeService.java` |
+| **7** | Workers & Events | Redis Streams, batch extraction, discovery worker, co-occurrence aggregation, re-analysis worker, PostgreSQL full-text search / Typesense sync | `src/main/java/com/skillsgraph/worker/ExtractionWorker.java`, `src/main/java/com/skillsgraph/worker/CoOccurrenceWorker.java`, `src/main/java/com/skillsgraph/worker/ReanalysisWorker.java` |
+| **8** | QA & Hardening | Helicone, logging, rate limiting, auth, test suite (incl. section weighting + co-occurrence tests), Dockerfile | `src/main/java/com/skillsgraph/middleware/`, `src/test/java/com/skillsgraph/`, `Dockerfile` |

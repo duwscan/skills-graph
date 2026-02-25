@@ -72,7 +72,7 @@ This system takes an **LLM-First** approach, diverging from LinkedIn's data-firs
 | **Locale-aware** | Every skill supports aliases in multiple languages via BCP-47 locale tags |
 | **API-first** | All operations are available via well-defined REST APIs |
 | **Versionable** | Every mutation is tracked in a changelog; the graph can be snapshotted and rolled back |
-| **LLM-native** | All intelligence (extraction, classification, discovery) is powered by generative AI via the Vercel AI SDK — no custom model training |
+| **LLM-native** | All intelligence (extraction, classification, discovery) is powered by generative AI via Spring AI — no custom model training |
 
 ### 1.5 Scale Reference Points
 
@@ -136,13 +136,13 @@ graph LR
 | `description` | text | Human-readable definition |
 | `status` | enum | `candidate`, `active`, `deprecated`, `merged` |
 | `category` | enum | `domain`, `tool`, `certification`, `soft_skill`, `methodology`, `language` |
-| `path` | ltree | Hierarchical path (e.g., `tech.data_science.machine_learning`) |
-| `embedding` | vector(1024) | Semantic embedding from text-embedding-3-large |
 | `version` | integer | Monotonically increasing revision counter |
 | `source` | string | Where the skill was sourced (e.g., `curator`, `llm_discovered`, `import`) |
 | `created_at` | timestamptz | When the node was created |
 | `updated_at` | timestamptz | Last modification |
 | `metadata` | jsonb | Extensible key-value store for additional attributes |
+
+> **Note:** Vector embeddings for skills are stored in the `skill_embeddings` PostgreSQL table (not in the Neo4j node), keyed by the Neo4j skill node's `id`.
 
 ### 2.2 Alias Schema
 
@@ -232,57 +232,15 @@ Localization is handled through the **Alias table** — one alias per locale per
 
 ### 2.6 Entity-Relationship Diagram
 
-> **Note:** The `skill_co_occurrences` table is separate from `skill_relationships`. Co-occurrence tracks raw signal data; edges in `skill_relationships` are the curated/validated result.
+> **Note:** The `[:CO_OCCURS_WITH]` Neo4j relationship is separate from `PARENT_OF`/`RELATED_TO` relationships. Co-occurrence tracks raw empirical signal data; typed relationships like `RELATED_TO` are the curated/validated result.
 
 ```mermaid
-erDiagram
-    SKILL_NODE {
-        uuid id PK
-        string external_id UK
-        string canonical_name
-        string slug UK
-        text description
-        enum status
-        enum category
-        ltree path
-        vector embedding
-        int version
-        timestamptz created_at
-        timestamptz updated_at
-        jsonb metadata
-    }
-
-    ALIAS {
-        uuid id PK
-        uuid skill_id FK
-        string surface_form
-        string locale
-        enum source
-        boolean is_primary
-        vector alias_embedding
-    }
-
-    EDGE {
-        uuid id PK
-        uuid source_skill_id FK
-        uuid target_skill_id FK
-        enum relationship_type
-        float confidence
-        enum provenance
-        enum status
-    }
-
-    LOCALE_CONFIG {
-        string locale PK
-        string display_name
-        boolean is_active
-        float coverage_pct
-    }
-
-    SKILL_NODE ||--o{ ALIAS : "has"
-    SKILL_NODE ||--o{ EDGE : "source"
-    SKILL_NODE ||--o{ EDGE : "target"
-    LOCALE_CONFIG ||--o{ ALIAS : "applies_to"
+graph LR
+    S1[":Skill\nMachine Learning"] -->|PARENT_OF| S2[":Skill\nDeep Learning"]
+    S1 -->|RELATED_TO| S3[":Skill\nStatistics"]
+    S2 -->|REQUIRES| S4[":Skill\nLinear Algebra"]
+    S1 -->|HAS_ALIAS| A1[":Alias\n'ML' (en)"]
+    S1 -->|HAS_ALIAS| A2[":Alias\n'apprentissage automatique' (fr)"]
 ```
 
 ### 2.7 Example Taxonomy Subgraph
@@ -306,76 +264,60 @@ graph TD
 
 > Note: "Machine Learning" has two parents — "Artificial Intelligence" and "Data Science" — demonstrating **polyhierarchy**. The orange edges highlight this.
 
-### 2.8 PostgreSQL Schema
+### 2.8 Database Schemas
+
+The system uses a **hybrid database architecture**:
+- **Neo4j 5** stores graph structure: skill nodes, alias nodes, and all relationships.
+- **PostgreSQL 16** stores vector embeddings (pgvector) and the changelog/locale configuration tables.
+
+#### Neo4j Schema (Cypher)
+
+```cypher
+// Constraints (ensure uniqueness + index)
+CREATE CONSTRAINT skill_id IF NOT EXISTS FOR (s:Skill) REQUIRE s.id IS UNIQUE;
+CREATE CONSTRAINT skill_external_id IF NOT EXISTS FOR (s:Skill) REQUIRE s.externalId IS UNIQUE;
+CREATE CONSTRAINT skill_slug IF NOT EXISTS FOR (s:Skill) REQUIRE s.slug IS UNIQUE;
+CREATE CONSTRAINT alias_id IF NOT EXISTS FOR (a:Alias) REQUIRE a.id IS UNIQUE;
+
+// Indexes
+CREATE INDEX skill_status IF NOT EXISTS FOR (s:Skill) ON (s.status);
+CREATE INDEX skill_category IF NOT EXISTS FOR (s:Skill) ON (s.category);
+CREATE INDEX skill_name IF NOT EXISTS FOR (s:Skill) ON (s.canonicalName);
+CREATE FULLTEXT INDEX skill_fulltext IF NOT EXISTS FOR (s:Skill) ON EACH [s.canonicalName, s.slug];
+CREATE FULLTEXT INDEX alias_fulltext IF NOT EXISTS FOR (a:Alias) ON EACH [a.surfaceForm];
+```
+
+**Node labels and relationship types:**
+
+| Label / Type | Properties |
+|---|---|
+| `(:Skill)` | `id`, `externalId`, `canonicalName`, `slug`, `description`, `status`, `category`, `version`, `source`, `createdAt`, `updatedAt` |
+| `(:Alias)` | `id`, `surfaceForm`, `locale`, `source`, `isPrimary`, `createdAt` |
+| `[:PARENT_OF]` | `confidence`, `weight`, `provenance`, `status`, `createdAt`, `updatedAt` |
+| `[:RELATED_TO]` | `confidence`, `weight`, `provenance`, `status`, `createdAt`, `updatedAt` |
+| `[:REQUIRES]` | `confidence`, `weight`, `provenance`, `status`, `createdAt`, `updatedAt` |
+| `[:SUPERSEDED_BY]` | `createdAt` |
+| `[:HAS_ALIAS]` | — |
+| `[:CO_OCCURS_WITH]` | `count` (int), `sourceCounts` (map), `lastSeenAt` (datetime) |
+
+#### PostgreSQL Schema (SQL)
 
 ```sql
-CREATE EXTENSION IF NOT EXISTS ltree;
 CREATE EXTENSION IF NOT EXISTS vector;
 CREATE EXTENSION IF NOT EXISTS pg_trgm;
 
--- Core skills table
-CREATE TABLE skills (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    external_id TEXT UNIQUE NOT NULL,
-    canonical_name TEXT NOT NULL,
-    slug TEXT UNIQUE NOT NULL,
-    description TEXT,
-    status TEXT NOT NULL DEFAULT 'candidate'
-        CHECK (status IN ('candidate', 'active', 'deprecated', 'merged')),
-    category TEXT
-        CHECK (category IN ('domain', 'tool', 'certification', 'soft_skill', 'methodology', 'language')),
-    path ltree NOT NULL,
-    embedding vector(1024),
-    version INT NOT NULL DEFAULT 1,
-    source TEXT,
-    created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-    updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-    metadata JSONB NOT NULL DEFAULT '{}'
+-- Skill vector embeddings (pgvector); skill_id references the Neo4j Skill node's `id` property
+CREATE TABLE skill_embeddings (
+    skill_id TEXT PRIMARY KEY,
+    embedding vector(1024) NOT NULL,
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
--- Aliases (multi-locale surface forms)
-CREATE TABLE skill_aliases (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    skill_id UUID NOT NULL REFERENCES skills(id) ON DELETE CASCADE,
-    surface_form TEXT NOT NULL,
-    locale TEXT NOT NULL DEFAULT 'en',
-    source TEXT NOT NULL DEFAULT 'curated'
-        CHECK (source IN ('curated', 'llm_discovered', 'user_submitted')),
-    is_primary BOOLEAN NOT NULL DEFAULT false,
-    alias_embedding vector(1024),
-    created_at TIMESTAMPTZ NOT NULL DEFAULT now()
-);
-
--- Relationships between skills
-CREATE TABLE skill_relationships (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    source_skill_id UUID NOT NULL REFERENCES skills(id),
-    target_skill_id UUID NOT NULL REFERENCES skills(id),
-    relationship_type TEXT NOT NULL
-        CHECK (relationship_type IN ('parent_of', 'child_of', 'related_to', 'requires', 'superseded_by')),
-    confidence FLOAT NOT NULL DEFAULT 1.0 CHECK (confidence >= 0 AND confidence <= 1),
-    weight FLOAT NOT NULL DEFAULT 1.0 CHECK (weight >= 0 AND weight <= 1),
-    provenance TEXT NOT NULL DEFAULT 'human_curated'
-        CHECK (provenance IN ('human_curated', 'llm_predicted', 'embedding_similarity', 'empirical')),
-    status TEXT NOT NULL DEFAULT 'active'
-        CHECK (status IN ('active', 'pending_review', 'rejected', 'deprecated')),
-    created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-    updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-    UNIQUE (source_skill_id, target_skill_id, relationship_type),
-    CHECK (source_skill_id != target_skill_id)
-);
-
--- Co-occurrence tracking (empirical evidence)
-CREATE TABLE skill_co_occurrences (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    skill_a_id UUID NOT NULL REFERENCES skills(id),
-    skill_b_id UUID NOT NULL REFERENCES skills(id),
-    co_occurrence_count INT NOT NULL DEFAULT 1,
-    source_type_counts JSONB NOT NULL DEFAULT '{}',
-    last_seen_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-    created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-    UNIQUE (skill_a_id, skill_b_id),
-    CHECK (skill_a_id < skill_b_id)  -- ensure consistent ordering
+-- Alias vector embeddings (pgvector); alias_id references the Neo4j Alias node's `id` property
+CREATE TABLE alias_embeddings (
+    alias_id TEXT PRIMARY KEY,
+    alias_embedding vector(1024) NOT NULL,
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
 -- Locale configuration
@@ -392,38 +334,17 @@ CREATE TABLE graph_changelog (
     graph_version BIGINT NOT NULL,
     timestamp TIMESTAMPTZ NOT NULL DEFAULT now(),
     actor TEXT NOT NULL,
-    mutation_type TEXT NOT NULL
-        CHECK (mutation_type IN ('skill_created', 'skill_updated', 'skill_deprecated',
-               'skill_merged', 'alias_added', 'alias_removed', 'edge_created',
-               'edge_updated', 'edge_deprecated')),
+    mutation_type TEXT NOT NULL,
     entity_type TEXT NOT NULL,
-    entity_id UUID NOT NULL,
+    entity_id TEXT NOT NULL,
     diff_payload JSONB NOT NULL DEFAULT '{}'
 );
 
 -- Indexes
-CREATE INDEX idx_skills_embedding ON skills USING hnsw (embedding vector_cosine_ops);
-CREATE INDEX idx_skills_path ON skills USING gist (path);
-CREATE INDEX idx_skills_name_trgm ON skills USING gin (canonical_name gin_trgm_ops);
-CREATE INDEX idx_skills_status ON skills (status) WHERE status = 'active';
-CREATE INDEX idx_skills_slug ON skills (slug);
-
-CREATE INDEX idx_aliases_embedding ON skill_aliases USING hnsw (alias_embedding vector_cosine_ops);
-CREATE INDEX idx_aliases_skill_id ON skill_aliases (skill_id);
-CREATE INDEX idx_aliases_surface_trgm ON skill_aliases USING gin (surface_form gin_trgm_ops);
-CREATE INDEX idx_aliases_locale ON skill_aliases (locale);
-
-CREATE INDEX idx_relationships_source ON skill_relationships (source_skill_id);
-CREATE INDEX idx_relationships_target ON skill_relationships (target_skill_id);
-CREATE INDEX idx_relationships_type ON skill_relationships (relationship_type);
-CREATE INDEX idx_relationships_provenance ON skill_relationships (provenance);
-
-CREATE INDEX idx_co_occurrences_skill_a ON skill_co_occurrences (skill_a_id);
-CREATE INDEX idx_co_occurrences_skill_b ON skill_co_occurrences (skill_b_id);
-CREATE INDEX idx_co_occurrences_count ON skill_co_occurrences (co_occurrence_count DESC);
-
+CREATE INDEX idx_skills_embedding ON skill_embeddings USING hnsw (embedding vector_cosine_ops);
+CREATE INDEX idx_aliases_embedding ON alias_embeddings USING hnsw (alias_embedding vector_cosine_ops);
+CREATE INDEX idx_skills_name_trgm ON skill_embeddings USING gin (skill_id gin_trgm_ops);
 CREATE INDEX idx_changelog_version ON graph_changelog (graph_version);
-CREATE INDEX idx_changelog_entity ON graph_changelog (entity_type, entity_id);
 ```
 
 ---
@@ -442,30 +363,35 @@ Aggregate raw text from ingestion sources (job postings, profiles, course descri
 
 Use an LLM to identify potential skills from text that are not yet in the taxonomy:
 
-```typescript
-import { generateText, Output } from "ai";
-import { anthropic } from "@ai-sdk/anthropic";
-import { z } from "zod";
+```java
+// Discovery DTO (Java record)
+public record DiscoveryCandidate(
+    String surfaceForm,
+    String normalizedForm,
+    SkillCategory categoryGuess,
+    boolean isLikelyNew,
+    String reason
+) {}
 
-const discoverySchema = z.object({
-  candidates: z.array(z.object({
-    surface_form: z.string().describe("The exact text as it appeared"),
-    normalized_form: z.string().describe("A clean, canonical version"),
-    category_guess: z.enum([
-      "domain", "tool", "certification", "soft_skill", "methodology", "language"
-    ]),
-    is_likely_new: z.boolean().describe("True if this seems like an emerging or niche skill"),
-    reason: z.string().describe("Why this might be a new skill"),
-  })),
-});
+public record DiscoveryResult(List<DiscoveryCandidate> candidates) {}
 
-const { output } = await generateText({
-  model: anthropic("claude-haiku-4-5-20251001"),
-  prompt: `Identify ALL professional skills, technologies, tools, methodologies,
-           and competencies in this text that might NOT be in a standard skills
-           taxonomy:\n\n${chunk}`,
-  output: Output.object(discoverySchema),
-});
+// Spring AI structured output
+@Service
+public class DiscoveryService {
+
+    private final ChatClient chatClient;
+
+    public DiscoveryResult extractCandidates(String chunk) {
+        return chatClient.prompt()
+            .user(u -> u.text("""
+                Identify ALL professional skills, technologies, tools, methodologies,
+                and competencies in this text that might NOT be in a standard skills
+                taxonomy:\n\n{chunk}
+                """).param("chunk", chunk))
+            .call()
+            .entity(DiscoveryResult.class);
+    }
+}
 ```
 
 **Stage 3 — Deduplication via Embeddings**
@@ -478,21 +404,31 @@ Compare discovered candidates against existing taxonomy using embedding similari
 | 0.70 – 0.90 | May be a sub-skill or variant → flag for human review |
 | < 0.70 | Likely genuinely new → add to "pending review" queue |
 
-```typescript
-import { embed } from "ai";
-import { openai } from "@ai-sdk/openai";
+```java
+@Service
+public class VectorSearchService {
 
-const { embedding } = await embed({
-  model: openai.embedding("text-embedding-3-large", { dimensions: 1024 }),
-  value: candidate.normalized_form,
-});
+    private final EmbeddingModel embeddingModel;
+    private final JdbcTemplate jdbcTemplate;
 
-// Query pgvector for nearest neighbors
-const matches = await db.query(`
-  SELECT id, canonical_name, 1 - (embedding <=> $1::vector) AS similarity
-  FROM skills WHERE status = 'active'
-  ORDER BY embedding <=> $1::vector LIMIT 5
-`, [pgvector.toSql(embedding)]);
+    public List<SkillSimilarity> findNearest(String text, int limit) {
+        float[] embedding = embeddingModel.embed(text);
+
+        // Query PostgreSQL skill_embeddings table for nearest neighbors
+        List<String> nearestIds = jdbcTemplate.query("""
+            SELECT se.skill_id, 1 - (se.embedding <=> ?::vector) AS similarity
+            FROM skill_embeddings se
+            ORDER BY se.embedding <=> ?::vector LIMIT ?
+            """,
+            (rs, rowNum) -> new SkillSimilarity(
+                rs.getString("skill_id"),
+                rs.getDouble("similarity")
+            ),
+            pgvectorFormat(embedding), pgvectorFormat(embedding), limit
+        );
+        // Graph context (canonical_name, aliases, relationships) is fetched from Neo4j via Neo4jTemplate
+    }
+}
 ```
 
 ### 3.2 Human-in-the-Loop Curation
@@ -538,36 +474,51 @@ Pure vector math — no LLM calls needed:
 
 **Approach B — LLM Classification with Chain-of-Thought (for `parent_of` / `child_of`)**
 
-```typescript
-const relationshipSchema = z.object({
-  reasoning: z.string().describe("Explain your reasoning before classifying"),
-  classification: z.enum([
-    "PARENT_CHILD", "CHILD_PARENT", "RELATED", "PREREQUISITE", "NONE"
-  ]),
-  confidence: z.number().min(0).max(1),
-});
+```java
+// Java records for structured output
+public record RelationshipClassification(
+    String reasoning,          // Generated first for chain-of-thought
+    Classification classification,
+    @JsonProperty(required = true)
+    @Min(0) @Max(1) double confidence
+) {
+    public enum Classification { PARENT_CHILD, CHILD_PARENT, RELATED, PREREQUISITE, NONE }
+}
 
-const { output } = await generateText({
-  model: anthropic("claude-sonnet-4-5-20250929"),
-  prompt: `Classify the relationship between these two skills:
+@Service
+public class RelationshipPredictionService {
 
-    Skill A: ${skillA.name} — ${skillA.description}
-    Parent chain of A: ${skillA.breadcrumb}
+    private final ChatClient chatClient;
 
-    Skill B: ${skillB.name} — ${skillB.description}
-    Parent chain of B: ${skillB.breadcrumb}`,
-  output: Output.object(relationshipSchema),
-});
+    public RelationshipClassification classify(Skill skillA, Skill skillB) {
+        return chatClient.prompt()
+            .user(u -> u.text("""
+                Classify the relationship between these two skills:
+
+                Skill A: {nameA} — {descA}
+                Parent chain of A: {breadcrumbA}
+
+                Skill B: {nameB} — {descB}
+                Parent chain of B: {breadcrumbB}
+                """)
+                .param("nameA", skillA.getCanonicalName())
+                .param("descA", skillA.getDescription())
+                .param("breadcrumbA", skillA.getBreadcrumb())
+                .param("nameB", skillB.getCanonicalName())
+                .param("descB", skillB.getDescription())
+                .param("breadcrumbB", skillB.getBreadcrumb()))
+            .call()
+            .entity(RelationshipClassification.class);
+    }
+}
 ```
 
-> The `reasoning` field comes before `classification` in the Zod schema, forcing the model to think before classifying — improving accuracy by 10-20%.
+> The `reasoning` field comes before `classification` in the Java record, forcing the model to think before classifying — improving accuracy by 10-20%.
 
 **Batch Processing:** For taxonomy construction, classify 10-20 pairs per LLM call to reduce cost:
 
-```typescript
-const batchSchema = z.object({
-  classifications: z.array(relationshipSchema),
-});
+```java
+public record BatchClassificationResult(List<RelationshipClassification> classifications) {}
 ```
 
 ### 3.4 Quality Guardrails
@@ -624,7 +575,7 @@ Input Document → Section Detection → Chunking → Embedding → Retrieval �
 4. **Embed** — Embed each chunk using `embed()` from AI SDK
 5. **Retrieve** — Query pgvector for the top-100 most relevant skills per chunk
 6. **Prompt Construction** — System prompt + few-shot examples + candidate skill list + text chunk + section context
-7. **LLM Structured Extraction** — `generateText` + `Output.object(zodSchema)` enforces valid JSON output
+7. **LLM Structured Extraction** — Spring AI `ChatClient.call().entity(ClassName.class)` enforces structured JSON output via `BeanOutputConverter`
 8. **Validation** — Reject any skill_ids not in the taxonomy candidate list
 9. **Section Weighting** — Adjust confidence scores based on which section the skill was found in
 10. **Skill Expansion** — Query the graph for parent, child, and sibling nodes of each extracted skill
@@ -633,25 +584,30 @@ Input Document → Section Detection → Chunking → Embedding → Retrieval �
 
 ### 4.2 Prompt Engineering
 
-**Extraction Schema (Zod):**
+**Extraction Schema (Java records):**
 
-```typescript
-const extractionSchema = z.object({
-  extracted_skills: z.array(z.object({
-    skill_id: z.string().describe("The canonical ID from the candidate list"),
-    skill_name: z.string().describe("The canonical name from the candidate list"),
-    confidence: z.number().min(0).max(1),
-    evidence: z.array(z.string()).describe("Exact substring(s) from the text"),
-    proficiency_hint: z.enum(["beginner", "intermediate", "advanced", "expert", "unknown"]),
-    context_type: z.enum(["explicit", "implicit"]),
-    section: z.string().optional().describe("Which section this skill was found in, if detected"),
-  })),
-  discovered_candidates: z.array(z.object({
-    surface_form: z.string(),
-    suggested_category: z.string(),
-    reason: z.string(),
-  })).describe("Skills noticed in text that were NOT in the candidate list"),
-});
+```java
+// Jakarta Bean Validation + Jackson annotations for structured output
+public record ExtractedSkill(
+    @JsonProperty("skill_id")   String skillId,
+    @JsonProperty("skill_name") String skillName,
+    @DecimalMin("0") @DecimalMax("1") double confidence,
+    List<String> evidence,
+    ProficiencyHint proficiencyHint,
+    ContextType contextType,
+    String section  // nullable — which section this skill was found in
+) {}
+
+public record DiscoveredCandidate(
+    @JsonProperty("surface_form")      String surfaceForm,
+    @JsonProperty("suggested_category") String suggestedCategory,
+    String reason
+) {}
+
+public record ExtractionResult(
+    @JsonProperty("extracted_skills")     List<ExtractedSkill> extractedSkills,
+    @JsonProperty("discovered_candidates") List<DiscoveredCandidate> discoveredCandidates
+) {}
 ```
 
 **System Prompt:**
@@ -707,62 +663,64 @@ Output:
 
 **Full Pipeline Implementation:**
 
-```typescript
-import { generateText, Output, embed, embedMany } from "ai";
-import { anthropic } from "@ai-sdk/anthropic";
-import { openai } from "@ai-sdk/openai";
-import { z } from "zod";
+```java
+@Service
+public class SkillExtractionPipeline {
 
-class SkillExtractionPipeline {
-  private embeddingModel = openai.embedding("text-embedding-3-large", { dimensions: 1024 });
+    private final EmbeddingModel embeddingModel;
+    private final VectorSearchService vectorSearch;
+    private final ChatClient chatClient;
+    private final RedisTemplate<String, String> redisTemplate;
 
-  async extract(document: string): Promise<ExtractionResult> {
-    const chunks = this.chunk(document);
-    const results: ChunkResult[] = [];
+    public ExtractionResult extract(String document) {
+        List<Chunk> chunks = chunk(document);
+        List<ChunkResult> results = new ArrayList<>();
 
-    for (const chunk of chunks) {
-      // Check cache
-      const cacheKey = this.cacheKey(chunk);
-      const cached = await this.redis.get(cacheKey);
-      if (cached) { results.push(JSON.parse(cached)); continue; }
+        for (Chunk chunk : chunks) {
+            // Check cache
+            String cacheKey = cacheKey(chunk);
+            String cached = redisTemplate.opsForValue().get(cacheKey);
+            if (cached != null) {
+                results.add(objectMapper.readValue(cached, ChunkResult.class));
+                continue;
+            }
 
-      // RAG: retrieve relevant taxonomy subset
-      const { embedding } = await embed({
-        model: this.embeddingModel,
-        value: chunk,
-      });
-      const candidates = await this.pgvector.nearest(embedding, 100);
+            // RAG: retrieve relevant taxonomy subset
+            float[] embedding = embeddingModel.embed(chunk.text());
+            List<CandidateSkill> candidates = vectorSearch.findCandidatesForChunk(embedding, 100);
 
-      // LLM: structured extraction
-      const { output } = await generateText({
-        model: this.selectModel(chunk),
-        system: SYSTEM_PROMPT,
-        prompt: this.buildPrompt(chunk, candidates),
-        output: Output.object(extractionSchema),
-        maxRetries: 3,
-      });
+            // LLM: structured extraction
+            ExtractionResult output = chatClient.prompt()
+                .system(SYSTEM_PROMPT)
+                .user(buildPrompt(chunk.text(), candidates))
+                .call()
+                .entity(ExtractionResult.class);
 
-      // Validate: reject skill_ids not in candidate list
-      const validated = this.validate(output, candidates);
+            // Validate: reject skill_ids not in candidate list
+            ChunkResult validated = validate(output, candidates);
 
-      // Cache result
-      await this.redis.set(cacheKey, JSON.stringify(validated), "EX", 604800);
-      results.push(validated);
+            // Cache result (7-day TTL)
+            redisTemplate.opsForValue().set(cacheKey,
+                objectMapper.writeValueAsString(validated),
+                Duration.ofDays(7));
+            results.add(validated);
+        }
+
+        return mergeAndDeduplicate(results);
     }
 
-    return this.mergeAndDeduplicate(results);
-  }
+    private ChatClient selectModel(Chunk chunk) {
+        // Haiku for short/simple, Sonnet for complex/multilingual
+        if (chunk.tokenEstimate() < 500) return fastChatClient;
+        return standardChatClient;
+    }
 
-  private selectModel(chunk: string) {
-    if (chunk.length < 500) return anthropic("claude-haiku-4-5-20251001");
-    return anthropic("claude-sonnet-4-5-20250929");
-  }
-
-  private chunk(text: string): string[] {
-    // Section-based chunking with sliding window fallback
-    // Target: 1,500-2,000 tokens per chunk
-    // ...implementation
-  }
+    private List<Chunk> chunk(String text) {
+        // Section-based chunking with sliding window fallback
+        // Target: 1,500-2,000 tokens per chunk
+        // ...implementation
+        return List.of();
+    }
 }
 ```
 
@@ -781,34 +739,17 @@ class SkillExtractionPipeline {
 
 After extraction, enrich results by querying the graph for related skills:
 
-```sql
--- Get parent, child, and sibling skills for expansion
-WITH extracted AS (
-    SELECT id FROM skills WHERE id = ANY($1)
-),
-parents AS (
-    SELECT target_skill_id AS skill_id, 'parent' AS relation
-    FROM skill_relationships r
-    JOIN extracted e ON r.source_skill_id = e.id
-    WHERE r.relationship_type = 'parent_of' AND r.status = 'active'
-),
-children AS (
-    SELECT source_skill_id AS skill_id, 'child' AS relation
-    FROM skill_relationships r
-    JOIN extracted e ON r.target_skill_id = e.id
-    WHERE r.relationship_type = 'parent_of' AND r.status = 'active'
-),
-siblings AS (
-    SELECT sr2.target_skill_id AS skill_id, 'sibling' AS relation
-    FROM skill_relationships sr1
-    JOIN skill_relationships sr2 ON sr1.source_skill_id = sr2.source_skill_id
-    JOIN extracted e ON sr1.target_skill_id = e.id
-    WHERE sr1.relationship_type = 'parent_of'
-      AND sr2.relationship_type = 'parent_of'
-      AND sr2.target_skill_id != e.id
-      AND sr2.status = 'active'
-)
-SELECT * FROM parents UNION ALL SELECT * FROM children UNION ALL SELECT * FROM siblings;
+```cypher
+// Get parent, child, and sibling skills for expansion
+MATCH (target:Skill) WHERE target.id IN $skillIds
+OPTIONAL MATCH (target)-[:PARENT_OF]->(parent:Skill) WHERE parent.status = 'active'
+OPTIONAL MATCH (child:Skill)-[:PARENT_OF]->(target) WHERE child.status = 'active'
+OPTIONAL MATCH (target)-[:PARENT_OF]->(commonParent:Skill)<-[:PARENT_OF]-(sibling:Skill)
+WHERE sibling.status = 'active' AND sibling.id <> target.id
+RETURN 
+  collect(DISTINCT {skill: parent, relation: 'parent'}) +
+  collect(DISTINCT {skill: child, relation: 'child'}) +
+  collect(DISTINCT {skill: sibling, relation: 'sibling'}) AS related
 ```
 
 Expanded skills are returned with lower confidence (e.g., `original_confidence * 0.6`).
@@ -845,32 +786,33 @@ final_confidence = llm_confidence × section_weight
 
 ### 4.6 Co-occurrence Recording
 
-After extraction, all pairs of extracted skills from the same document are recorded in the `skill_co_occurrences` table. This builds empirical evidence for relationship edges over time.
+After extraction, all pairs of extracted skills from the same document are recorded as `[:CO_OCCURS_WITH]` relationships in Neo4j. This builds empirical evidence for relationship edges over time.
 
-```typescript
-async function recordCoOccurrences(skillIds: string[], sourceType: string) {
-  // Generate all unique pairs (order by UUID to ensure consistent ordering)
-  const pairs = [];
-  const sorted = [...skillIds].sort();
-  for (let i = 0; i < sorted.length; i++) {
-    for (let j = i + 1; j < sorted.length; j++) {
-      pairs.push({ skillA: sorted[i], skillB: sorted[j] });
+```java
+@Service
+public class CoOccurrenceService {
+
+    private final Neo4jTemplate neo4jTemplate;
+
+    public void recordCoOccurrences(List<String> skillIds, String sourceType) {
+        List<String> sorted = skillIds.stream().sorted().toList();
+        for (int i = 0; i < sorted.size(); i++) {
+            for (int j = i + 1; j < sorted.size(); j++) {
+                upsertPair(sorted.get(i), sorted.get(j), sourceType);
+            }
+        }
     }
-  }
 
-  // Upsert each pair: increment count, update source_type_counts
-  for (const { skillA, skillB } of pairs) {
-    await db.query(`
-      INSERT INTO skill_co_occurrences (skill_a_id, skill_b_id, source_type_counts, last_seen_at)
-      VALUES ($1, $2, jsonb_build_object($3, 1), now())
-      ON CONFLICT (skill_a_id, skill_b_id)
-      DO UPDATE SET
-        co_occurrence_count = skill_co_occurrences.co_occurrence_count + 1,
-        source_type_counts = skill_co_occurrences.source_type_counts ||
-          jsonb_build_object($3, COALESCE((skill_co_occurrences.source_type_counts->>$3)::int, 0) + 1),
-        last_seen_at = now()
-    `, [skillA, skillB, sourceType]);
-  }
+    private void upsertPair(String skillA, String skillB, String sourceType) {
+        neo4jTemplate.findAll(
+            "MATCH (a:Skill {id: $skillA}), (b:Skill {id: $skillB}) " +
+            "MERGE (a)-[co:CO_OCCURS_WITH]-(b) " +
+            "ON CREATE SET co.count = 1, co.sourceCounts = {" + sourceType + ": 1}, co.lastSeenAt = datetime() " +
+            "ON MATCH SET co.count = co.count + 1, co.lastSeenAt = datetime()",
+            Map.of("skillA", skillA, "skillB", skillB),
+            Void.class
+        );
+    }
 }
 ```
 
@@ -878,16 +820,16 @@ async function recordCoOccurrences(skillIds: string[], sourceType: string) {
 
 | Mode | Technology | Use Case | Latency |
 |---|---|---|---|
-| **Online** (sync) | Hono REST/RPC endpoint | User uploads a resume for real-time extraction | < 5s p99 |
-| **Nearline** (event) | Redis Streams + Bun workers | New job posting arrives, trigger extraction | < 30s |
+| **Online** (sync) | Spring MVC REST endpoint | User uploads a resume for real-time extraction | < 5s p99 |
+| **Nearline** (event) | Redis Streams + Spring @Async workers | New job posting arrives, trigger extraction | < 30s |
 | **Offline** (batch) | Anthropic/OpenAI Batch API | Backfill extraction across millions of documents | 24h SLA, 50% cost |
 
 ### 4.7 Infrastructure Patterns
 
 | Mode | Technology | Use Case | Latency |
 |---|---|---|---|
-| **Online** (sync) | Hono REST/RPC endpoint | User uploads a resume for real-time extraction | < 5s p99 |
-| **Nearline** (event) | Redis Streams + Bun workers | New job posting arrives, trigger extraction | < 30s |
+| **Online** (sync) | Spring MVC REST endpoint | User uploads a resume for real-time extraction | < 5s p99 |
+| **Nearline** (event) | Redis Streams + Spring @Async workers | New job posting arrives, trigger extraction | < 30s |
 | **Offline** (batch) | Anthropic/OpenAI Batch API | Backfill extraction across millions of documents | 24h SLA, 50% cost |
 
 ### 4.8 Extraction Pipeline Diagram
@@ -902,7 +844,7 @@ flowchart LR
     E --> F[Prompt Builder<br/>System + Few-shot<br/>+ Candidates + Chunk<br/>+ Section context]
     F --> G{Cache<br/>Hit?}
     G -->|Hit| H[Return cached]
-    G -->|Miss| I[generateText +<br/>Output.object<br/>via AI SDK]
+    G -->|Miss| I[chatClient.call<br/>entity(Result.class)<br/>via Spring AI]
     I --> J[Validator<br/>Reject invalid IDs]
     J --> J2[Section Weighting<br/>Adjust confidence]
     J2 --> K[Skill Expansion<br/>Graph Lookup]
@@ -923,16 +865,30 @@ flowchart LR
 - Downstream consumers can subscribe to changelog updates via **PostgreSQL LISTEN/NOTIFY** for real-time CDC.
 - **Periodic snapshots** are taken (e.g., daily) for rollback and offline consumption.
 
-```typescript
-// Publish graph mutation event
-await db.query("SELECT pg_notify('graph_changes', $1)", [
-  JSON.stringify({
-    graph_version: newVersion,
-    mutation_type: "skill_created",
-    entity_id: skill.id,
-    actor: curator.id,
-  }),
-]);
+> **Note:** Neo4j does not have a built-in LISTEN/NOTIFY mechanism. After writing mutations to Neo4j, the application records them in `graph_changelog` (PostgreSQL) and fires `pg_notify('graph_changes', json)` for downstream CDC consumers. A Spring `ApplicationEvent` is also published for in-process listeners.
+
+```java
+// Record Neo4j mutation in PostgreSQL graph_changelog, then fire pg_notify for CDC
+@Transactional
+public void publishGraphEvent(long graphVersion, String mutationType,
+                               String entityId, String actor) {
+    String payload = objectMapper.writeValueAsString(Map.of(
+        "graph_version", graphVersion,
+        "mutation_type", mutationType,
+        "entity_id", entityId,
+        "actor", actor
+    ));
+    // Write to graph_changelog (PostgreSQL)
+    jdbcTemplate.update(
+        "INSERT INTO graph_changelog (graph_version, actor, mutation_type, entity_type, entity_id, diff_payload) " +
+        "VALUES (?, ?, ?, ?, ?, ?::jsonb)",
+        graphVersion, actor, mutationType, "skill", entityId, payload
+    );
+    // Fire pg_notify for real-time cache invalidation
+    jdbcTemplate.execute("SELECT pg_notify('graph_changes', '" + payload + "')");
+    // Also publish Spring ApplicationEvent for in-process listeners
+    applicationEventPublisher.publishEvent(new GraphMutationEvent(this, graphVersion, mutationType, entityId));
+}
 ```
 
 ### 5.2 Skill Deprecation
@@ -954,88 +910,89 @@ When two skills are determined to be duplicates:
 4. Set source status to `merged` with a `superseded_by` edge to survivor.
 5. Record the merge in the changelog with full diff.
 
-```sql
--- Merge skill source_id into survivor_id
-BEGIN;
-  -- Move aliases
-  UPDATE skill_aliases SET skill_id = $survivor_id WHERE skill_id = $source_id;
+```cypher
+// Step 1: Move all aliases from source to survivor
+MATCH (source:Skill {id: $sourceId})-[r:HAS_ALIAS]->(alias:Alias), (survivor:Skill {id: $survivorId})
+DELETE r
+CREATE (survivor)-[:HAS_ALIAS]->(alias);
 
-  -- Re-point edges (source side)
-  UPDATE skill_relationships SET source_skill_id = $survivor_id
-  WHERE source_skill_id = $source_id
-  AND NOT EXISTS (
-    SELECT 1 FROM skill_relationships
-    WHERE source_skill_id = $survivor_id
-    AND target_skill_id = skill_relationships.target_skill_id
-    AND relationship_type = skill_relationships.relationship_type
-  );
+// Step 2: Re-point outgoing relationships (skip duplicates)
+MATCH (source:Skill {id: $sourceId})-[r]->(other:Skill)
+WHERE type(r) <> 'SUPERSEDED_BY'
+  AND NOT ((:Skill {id: $survivorId})-[x]->(other) WHERE type(x) = type(r))
+MATCH (survivor:Skill {id: $survivorId})
+CALL apoc.merge.relationship(survivor, type(r), {}, properties(r), other) YIELD rel
+DELETE r;
 
-  -- Re-point edges (target side)
-  UPDATE skill_relationships SET target_skill_id = $survivor_id
-  WHERE target_skill_id = $source_id
-  AND NOT EXISTS (
-    SELECT 1 FROM skill_relationships
-    WHERE target_skill_id = $survivor_id
-    AND source_skill_id = skill_relationships.source_skill_id
-    AND relationship_type = skill_relationships.relationship_type
-  );
+// Step 3: Re-point incoming relationships (skip duplicates)
+MATCH (other:Skill)-[r]->(source:Skill {id: $sourceId})
+WHERE type(r) <> 'SUPERSEDED_BY'
+  AND NOT ((other)-[x]->(:Skill {id: $survivorId}) WHERE type(x) = type(r))
+MATCH (survivor:Skill {id: $survivorId})
+CALL apoc.merge.relationship(other, type(r), {}, properties(r), survivor) YIELD rel
+DELETE r;
 
-  -- Mark source as merged
-  UPDATE skills SET status = 'merged', updated_at = now() WHERE id = $source_id;
+// Step 4: Merge CO_OCCURS_WITH data
+MATCH (source:Skill {id: $sourceId})-[r:CO_OCCURS_WITH]-(partner:Skill)
+MATCH (survivor:Skill {id: $survivorId})
+MERGE (survivor)-[existing:CO_OCCURS_WITH]-(partner)
+  ON CREATE SET existing.count = r.count, existing.sourceCounts = r.sourceCounts, existing.lastSeenAt = r.lastSeenAt
+  ON MATCH SET existing.count = existing.count + r.count, existing.lastSeenAt = datetime()
+DELETE r;
 
-  -- Create superseded_by edge
-  INSERT INTO skill_relationships (source_skill_id, target_skill_id, relationship_type, provenance)
-  VALUES ($source_id, $survivor_id, 'superseded_by', 'human_curated');
-COMMIT;
+// Step 5: Mark source as merged, create SUPERSEDED_BY
+MATCH (source:Skill {id: $sourceId}), (survivor:Skill {id: $survivorId})
+SET source.status = 'merged', source.updatedAt = datetime()
+CREATE (source)-[:SUPERSEDED_BY {createdAt: datetime()}]->(survivor);
 ```
+
+> **Note:** For dynamic relationship type re-pointing, `apoc.merge.relationship` (APOC Extended) can be used. If not available, handle each relationship type explicitly with individual `MERGE` statements. The `graph_changelog` entry is written to PostgreSQL and `pg_notify` is fired after the Neo4j transaction completes.
 
 ### 5.4 Co-occurrence Edge Strengthening
 
-A background process periodically scans `skill_co_occurrences` and strengthens or creates relationship edges:
+A background process periodically scans `[:CO_OCCURS_WITH]` relationships in Neo4j and strengthens or creates typed relationship edges:
 
-```typescript
-async function processCoOccurrences() {
-  // Find pairs exceeding threshold that don't have empirical edges yet
-  const pairs = await db.query(`
-    SELECT co.*, s1.canonical_name AS skill_a_name, s2.canonical_name AS skill_b_name
-    FROM skill_co_occurrences co
-    JOIN skills s1 ON co.skill_a_id = s1.id
-    JOIN skills s2 ON co.skill_b_id = s2.id
-    WHERE co.co_occurrence_count >= $1
-    ORDER BY co.co_occurrence_count DESC
-  `, [CO_OCCURRENCE_EDGE_THRESHOLD]);
+```java
+@Service
+public class CoOccurrenceProcessor {
 
-  for (const pair of pairs) {
-    const existing = await db.query(`
-      SELECT * FROM skill_relationships
-      WHERE ((source_skill_id = $1 AND target_skill_id = $2)
-          OR (source_skill_id = $2 AND target_skill_id = $1))
-        AND relationship_type = 'related_to'
-        AND status = 'active'
-    `, [pair.skill_a_id, pair.skill_b_id]);
+    private final Neo4jTemplate neo4jTemplate;
+    private final EdgeService edgeService;
 
-    if (existing.length > 0) {
-      // Strengthen existing edge weight
-      const newWeight = Math.min(1.0,
-        existing[0].weight + (pair.co_occurrence_count / CO_OCCURRENCE_NORMALIZATION_FACTOR));
-      await db.query(`
-        UPDATE skill_relationships SET weight = $1, updated_at = now()
-        WHERE id = $2
-      `, [newWeight, existing[0].id]);
-    } else {
-      // Create new empirical edge
-      const weight = Math.min(1.0,
-        pair.co_occurrence_count / CO_OCCURRENCE_NORMALIZATION_FACTOR);
-      await EdgeService.create({
-        source_skill_id: pair.skill_a_id,
-        target_skill_id: pair.skill_b_id,
-        relationship_type: 'related_to',
-        confidence: weight,
-        weight: weight,
-        provenance: 'empirical',
-      });
+    @Scheduled(cron = "0 0 2 * * *") // nightly at 2am
+    public void processCoOccurrences() {
+        // Query Neo4j for high-frequency co-occurrence pairs
+        List<CoOccurrencePair> pairs = neo4jTemplate.findAll(
+            "MATCH (a:Skill)-[co:CO_OCCURS_WITH]-(b:Skill) " +
+            "WHERE co.count >= $threshold AND id(a) < id(b) " +
+            "RETURN a, b, co ORDER BY co.count DESC",
+            Map.of("threshold", CO_OCCURRENCE_EDGE_THRESHOLD),
+            CoOccurrencePair.class
+        );
+
+        for (CoOccurrencePair pair : pairs) {
+            Optional<SkillRelationship> existing = edgeService
+                .findRelatedEdge(pair.skillAId(), pair.skillBId());
+
+            if (existing.isPresent()) {
+                double newWeight = Math.min(1.0,
+                    existing.get().getWeight() +
+                    (pair.coOccurrenceCount() / (double) CO_OCCURRENCE_NORMALIZATION_FACTOR));
+                edgeService.updateWeight(existing.get().getId(), newWeight);
+            } else {
+                double weight = Math.min(1.0,
+                    pair.coOccurrenceCount() / (double) CO_OCCURRENCE_NORMALIZATION_FACTOR);
+                edgeService.create(CreateEdgeRequest.builder()
+                    .sourceSkillId(pair.skillAId())
+                    .targetSkillId(pair.skillBId())
+                    .relationshipType(RelationshipType.RELATED_TO)
+                    .confidence(weight)
+                    .weight(weight)
+                    .provenance(Provenance.EMPIRICAL)
+                    .build());
+            }
+        }
     }
-  }
 }
 ```
 
@@ -1120,32 +1077,37 @@ stateDiagram-v2
 | `/api/review-queue` | GET | Return pending candidates for curator review |
 | `/api/review-queue/:id/decision` | POST | Submit approve/reject/merge/defer decision |
 
-### 6.5 Example Hono Route
+### 6.5 Example Spring @RestController
 
-```typescript
-import { Hono } from "hono";
-import { zValidator } from "@hono/zod-validator";
-import { z } from "zod";
+```java
+@RestController
+@RequestMapping("/api/extract")
+@Validated
+public class ExtractionController {
 
-const app = new Hono();
+    private final SkillExtractionPipeline pipeline;
 
-const extractBody = z.object({
-  text: z.string().min(1).max(100000),
-  options: z.object({
-    expand: z.boolean().default(true),
-    min_confidence: z.number().min(0).max(1).default(0.5),
-    locale: z.string().default("en"),
-  }).optional(),
-});
+    @PostMapping
+    public ResponseEntity<ExtractionResponse> extract(
+            @Valid @RequestBody ExtractionRequest request) {
+        ExtractionResult result = pipeline.extract(request.text(), request.options());
+        return ResponseEntity.ok(ExtractionResponse.from(result));
+    }
+}
 
-app.post("/api/extract", zValidator("json", extractBody), async (c) => {
-  const { text, options } = c.req.valid("json");
-  const pipeline = new SkillExtractionPipeline(/* deps */);
-  const result = await pipeline.extract(text, options);
-  return c.json(result);
-});
+// Request DTO with Jakarta Bean Validation
+public record ExtractionRequest(
+    @NotBlank @Size(min = 1, max = 100_000) String text,
+    ExtractionOptions options
+) {}
 
-export default app;
+public record ExtractionOptions(
+    @JsonProperty("expand")         boolean expand,
+    @JsonProperty("min_confidence") @DecimalMin("0") @DecimalMax("1") double minConfidence,
+    @NotBlank                       String locale
+) {
+    public ExtractionOptions() { this(true, 0.5, "en"); }
+}
 ```
 
 ---
@@ -1162,11 +1124,15 @@ export default app;
 | **Ecosystem** | Large community | Ubiquitous, massive ecosystem | AWS-only | Smaller community |
 | **Hosting complexity** | Moderate (Aura managed) | Low (RDS, Supabase, Neon) | Low (AWS managed) | Moderate |
 | **Cost (starter)** | ~$65/month (Aura) | ~$30/month (RDS t3.medium) | ~$100/month | Self-hosted |
-| **Fit for taxonomy** | Over-engineered for a shallow DAG | Perfect: hierarchical + relational + vector | Vendor lock-in | Unnecessary complexity |
+| **Fit for taxonomy** | **Recommended (graph traversal)** | Used for vector embeddings + changelog | Vendor lock-in | Unnecessary complexity |
 
-**Recommendation: PostgreSQL 16 + pgvector 0.7+ + ltree**
+**Recommendation: Neo4j 5 + PostgreSQL 16 (pgvector) — Hybrid**
 
-A skills taxonomy is fundamentally a **shallow DAG** (4-6 levels deep), not a densely connected knowledge graph. PostgreSQL handles this with recursive CTEs or `ltree`. Combining relational data, hierarchical data, and vector search in a single database eliminates sync issues and simplifies transactions.
+The system uses a **hybrid approach**:
+- **Neo4j 5** handles all graph structure: `(:Skill)` and `(:Alias)` nodes, and typed relationships (`PARENT_OF`, `RELATED_TO`, `REQUIRES`, `SUPERSEDED_BY`, `HAS_ALIAS`, `CO_OCCURS_WITH`). Native Cypher path/traversal queries replace recursive CTEs and `ltree`.
+- **PostgreSQL 16** stores vector embeddings (`skill_embeddings`, `alias_embeddings`) via pgvector, and the `locale_config` and `graph_changelog` tables.
+
+This gives native graph traversal (index-free adjacency) without the complexity of recursive CTEs, while retaining pgvector's excellent HNSW approximate nearest-neighbor search for embeddings.
 
 ### 7.2 Embedding Infrastructure
 
@@ -1248,21 +1214,29 @@ A skills taxonomy is fundamentally a **shallow DAG** (4-6 levels deep), not a de
 
 **Tier Selection Logic:**
 
-```typescript
-function selectModel(task: string, doc: { tokenCount: number; type: string; language: string }) {
-  if (task === "duplicate_detection" || task === "semantic_search") return "EMBEDDING_ONLY";
+```java
+// Spring AI model tier selection via application.yml profiles or programmatic config
+@Service
+public class ModelSelector {
 
-  if (task === "extraction") {
-    if (doc.language !== "en") return anthropic("claude-sonnet-4-5-20250929");
-    if (doc.tokenCount < 200) return anthropic("claude-haiku-4-5-20251001");
-    if (doc.type === "research_paper") return anthropic("claude-sonnet-4-5-20250929");
-    return anthropic("claude-haiku-4-5-20251001");
-  }
+    @Autowired @Qualifier("fastChatClient")    private ChatClient fastChatClient;
+    @Autowired @Qualifier("standardChatClient") private ChatClient standardChatClient;
+    @Autowired @Qualifier("complexChatClient")  private ChatClient complexChatClient;
 
-  if (task === "relationship_classification") return anthropic("claude-sonnet-4-5-20250929");
-  if (task === "taxonomy_audit") return anthropic("claude-opus-4-6");
-
-  return anthropic("claude-haiku-4-5-20251001");
+    public ChatClient selectModel(String task, DocumentContext doc) {
+        if ("duplicate_detection".equals(task) || "semantic_search".equals(task)) {
+            return null; // EMBEDDING_ONLY — no LLM call needed
+        }
+        if ("extraction".equals(task)) {
+            if (!"en".equals(doc.language())) return standardChatClient;
+            if (doc.tokenCount() < 200)       return fastChatClient;
+            if ("research_paper".equals(doc.type())) return standardChatClient;
+            return fastChatClient;
+        }
+        if ("relationship_classification".equals(task)) return standardChatClient;
+        if ("taxonomy_audit".equals(task))              return complexChatClient;
+        return fastChatClient;
+    }
 }
 ```
 
@@ -1286,27 +1260,28 @@ function selectModel(task: string, doc: { tokenCount: number; type: string; lang
 | Redis (managed) | $50–150 | Caching + Streams |
 | Typesense (self-hosted) | $30–50 | Skills search |
 | Helicone (observability) | $0–100 | Free tier available |
-| Compute (Bun on Fly.io/Railway) | $50–200 | 2-4 instances |
+| Compute (Spring Boot on Fly.io/Railway/Render) | $50–200 | 2-4 instances |
 | **Total** | **$830–2,500** | |
 
 ### 7.6 Runtime & API Framework
 
-| Criterion | Hono + Bun | FastAPI + Python | Express + Node.js |
+| Criterion | Spring Boot 3 + Java 21 | FastAPI + Python | Express + Node.js |
 |---|---|---|---|
-| **AI SDK support** | Native (TypeScript, official Hono integration) | N/A (Python SDKs) | Partial (AI SDK supports Node) |
-| **Startup time** | ~25ms (Bun) | ~500ms | ~200ms |
-| **Type safety** | Full (TypeScript + Zod) | Good (Pydantic v2) | Moderate (TypeScript) |
-| **Streaming** | Native (`stream()` helper + `streamText()`) | StreamingResponse | Requires manual setup |
-| **Schema validation** | Zod (shared with LLM output) | Pydantic (separate from LLM) | Zod (with adapter) |
-| **Bundle size** | Minimal (Hono is ~14KB) | N/A (interpreted) | Moderate |
-| **Test runner** | Built-in (`bun test`) | pytest | jest/vitest |
+| **Spring AI support** | Native (official Spring AI integration) | N/A (Python SDKs) | N/A |
+| **Startup time** | ~2-3s (optimized with GraalVM native: ~50ms) | ~500ms | ~200ms |
+| **Type safety** | Full (Java + Jakarta Bean Validation) | Good (Pydantic v2) | Moderate (TypeScript + Zod) |
+| **Streaming** | Native (`SseEmitter` + `ChatClient.stream()`) | StreamingResponse | Requires manual setup |
+| **Schema validation** | Jakarta Bean Validation (shared annotations) | Pydantic (separate from LLM) | Zod (with adapter) |
+| **Ecosystem** | Massive (Spring, JVM) | Large (Python ML) | Large (npm) |
+| **Test runner** | JUnit 5 + Spring Boot Test (`./mvnw test`) | pytest | jest/vitest |
 
-**Recommendation: Bun + Hono**
+**Recommendation: Java 21 + Spring Boot 3 + Spring AI**
 
-- Bun runs TypeScript natively — no transpilation step
-- Hono is lightweight (14KB), Web Standards-based, and officially supported by the Vercel AI SDK
-- **Zod schemas serve as single source of truth** for both LLM structured output AND API request/response validation
-- Hono's `stream()` helper pipes `streamText()` output directly to HTTP responses for real-time extraction feedback
+- Spring Boot 3 provides production-ready auto-configuration, actuator, and observability out of the box
+- Spring AI is the first-class JVM integration for LLMs/embeddings, officially maintained by Pivotal
+- **Java records + Jakarta Bean Validation serve as single source of truth** for both LLM structured output AND API request/response validation
+- Spring AI's `ChatClient.stream()` integrates directly with Spring MVC `SseEmitter` for real-time extraction feedback
+- Virtual threads (Java 21 Project Loom) provide efficient concurrency without reactive programming complexity
 
 ### 7.7 Search
 
@@ -1319,7 +1294,7 @@ function selectModel(task: string, doc: { tokenCount: number; type: string; lang
 | **Scale fit** | Overkill for taxonomy | Perfect for 10K-100K skills | Perfect for 10K-100K skills |
 | **RAM usage** | High (JVM) | Low | Low |
 
-**Recommendation: Typesense** — autocomplete, typo tolerance ("mahcine lerning" → "Machine Learning"), faceted filtering, and synonym expansion out of the box. Single-binary deployment, far less RAM than Elasticsearch.
+**Recommendation: Typesense or PostgreSQL full-text search** — for the Java stack, PostgreSQL `tsvector` + trigram indexes handle autocomplete and typo-tolerance well at taxonomy scale (10K–100K skills). Typesense remains a valid standalone option if richer autocomplete is needed; its REST API is language-agnostic.
 
 ### 7.8 Caching & Events
 
@@ -1332,7 +1307,7 @@ function selectModel(task: string, doc: { tokenCount: number; type: string; lang
 | Embedding cache | `embed:{hash(text)}` | 30 days | Avoid re-embedding identical text |
 | Rate limit counters | `ratelimit:{key}:{window}` | 1 min / 1 hr | Enforce API rate limits |
 
-**Cache invalidation:** PostgreSQL `LISTEN/NOTIFY` pushes invalidation events to the application, which deletes relevant Redis keys.
+**Cache invalidation:** After recording Neo4j mutations to `graph_changelog` in PostgreSQL, the `ChangelogService` fires `pg_notify('graph_changes', json)` for real-time cache invalidation. PostgreSQL `LISTEN/NOTIFY` pushes invalidation events to the application, which deletes relevant Redis keys.
 
 **Event Streaming — Redis Streams:**
 
@@ -1345,63 +1320,65 @@ function selectModel(task: string, doc: { tokenCount: number; type: string; lang
 
 **Recommendation: Redis Streams** — the taxonomy system processes hundreds to low thousands of events/sec. Redis Streams provides adequate throughput without adding another infrastructure component. Upgrade to Kafka if volume exceeds 50K events/sec.
 
-### 7.9 AI SDK & Orchestration
+### 7.9 Spring AI & Orchestration
 
-**Vercel AI SDK (`ai` package)** serves as the unified LLM/embedding abstraction layer. It eliminates the need for LangChain or LlamaIndex.
+**Spring AI** serves as the unified LLM/embedding abstraction layer. It eliminates the need for LangChain or LlamaIndex.
 
 **Why AI SDK is the right choice:**
 
-| Capability | AI SDK Function | Replaces |
+| Capability | Spring AI Component | Replaces |
 |---|---|---|
-| Structured extraction | `generateText` + `Output.object(zodSchema)` | Manual JSON parsing, LangChain output parsers |
-| Embeddings | `embed()` / `embedMany()` | Raw OpenAI SDK calls, LlamaIndex embeddings |
-| Provider switching | `createProviderRegistry()` | Manual client management, LangChain provider adapters |
-| Tool calling | `tool()` utility | LangChain tools, manual function calling |
-| Streaming | `streamText()` + Hono `stream()` | Manual SSE implementation |
-| Retries | Built-in `maxRetries` | tenacity (Python), custom retry logic |
+| Structured extraction | `ChatClient` + structured output (`BeanOutputConverter`) | Manual JSON parsing, LangChain output parsers |
+| Embeddings | `EmbeddingModel.embed()` / `embedAll()` | Raw OpenAI SDK calls, LlamaIndex embeddings |
+| Provider switching | Spring AI auto-configuration in `application.yml` | Manual client management, LangChain provider adapters |
+| Tool calling | `@Tool` annotation / `FunctionCallback` | LangChain tools, manual function calling |
+| Streaming | `ChatClient.stream()` + Spring MVC `SseEmitter` | Manual SSE implementation |
+| Retries | Spring Retry `@Retryable` / `RetryTemplate` | tenacity (Python), custom retry logic |
 
-**Provider Registry Example:**
+**Provider Configuration Example (`application.yml`):**
 
-```typescript
-import { createProviderRegistry } from "ai";
-import { anthropic } from "@ai-sdk/anthropic";
-import { openai } from "@ai-sdk/openai";
-
-const registry = createProviderRegistry({
-  anthropic,
-  openai,
-});
-
-// Switch providers with zero code change
-const model = registry.languageModel("anthropic:claude-sonnet-4-5-20250929");
-const fallback = registry.languageModel("openai:gpt-4o");
+```yaml
+spring:
+  ai:
+    anthropic:
+      api-key: ${ANTHROPIC_API_KEY}
+      chat:
+        options:
+          model: claude-sonnet-4-5-20250929
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      embedding:
+        options:
+          model: text-embedding-3-large
+          dimensions: 1024
 ```
 
-**No additional orchestration frameworks needed.** Custom pipeline classes (like `SkillExtractionPipeline`) are built directly on AI SDK primitives. This gives full control, full debuggability, and zero abstraction overhead.
+**No additional orchestration frameworks needed.** Custom pipeline classes (like `SkillExtractionPipeline`) are built directly on Spring AI primitives. This gives full control, full debuggability, and zero abstraction overhead.
 
 ### 7.10 LLM Integration Patterns
 
 **RAG Pattern (Skill Extraction):**
 
 ```
-embed(chunk) → pgvector.nearest(100) → generateText + Output.object(zodSchema) → validate
+embeddingModel.embed(chunk) → pgvector.nearest(100) → chatClient.call(prompt) + BeanOutputConverter → validate
 ```
 
 **Chain-of-Thought (Relationship Classification):**
 
-Place `reasoning` before `classification` in the Zod schema to force the model to think first:
+Place `reasoning` before `classification` in the Java record to force the model to think first:
 
-```typescript
-const schema = z.object({
-  reasoning: z.string(),      // Generated FIRST → improves accuracy
-  classification: z.enum([...]), // Generated SECOND → informed by reasoning
-  confidence: z.number(),
-});
+```java
+// BeanOutputConverter maps to Java record — field order implies generation order
+public record RelationshipClassification(
+    String reasoning,          // Generated FIRST → improves accuracy
+    Classification classification, // Generated SECOND → informed by reasoning
+    double confidence
+) {}
 ```
 
 **Structured Output Enforcement:**
 
-`Output.object(zodSchema)` handles provider-specific mechanisms transparently:
+`BeanOutputConverter<T>` and Spring AI's structured output handles provider-specific mechanisms transparently:
 - Anthropic → uses `tool_use` under the hood
 - OpenAI → uses `json_schema` response format under the hood
 
@@ -1412,7 +1389,7 @@ No provider-specific code needed in the application layer.
 | Failure Mode | Detection | Fallback |
 |---|---|---|
 | LLM API timeout (> 30s) | HTTP timeout | Retry with `maxRetries: 3`; return partial results from cached chunks |
-| Invalid output | Zod validation failure | AI SDK auto-retries; if still fails, log and skip |
+| Invalid output | Jakarta Bean Validation failure | Spring AI auto-retries; if still fails, log and skip |
 | Skill IDs not in taxonomy | Post-validation check | Strip invalid IDs; escalate to stronger model if > 50% invalid |
 | Rate limited (429) | HTTP status | Queue in Redis Streams; process when limit resets |
 | Provider outage | Error rate > 10% | Switch to fallback provider via registry |
@@ -1420,18 +1397,17 @@ No provider-specific code needed in the application layer.
 
 **Rate Limiting & Concurrency:**
 
-```typescript
-import { Semaphore } from "async-mutex";
+```java
+// Spring AI with semaphore-based concurrency control
+private final Semaphore llmSemaphore = new Semaphore(50); // Max 50 concurrent LLM calls
 
-const llmSemaphore = new Semaphore(50); // Max 50 concurrent LLM calls
-
-async function callLLM(prompt: string) {
-  const [, release] = await llmSemaphore.acquire();
-  try {
-    return await generateText({ /* ... */ maxRetries: 3 });
-  } finally {
-    release();
-  }
+public ExtractionResult callLLM(String prompt) throws InterruptedException {
+    llmSemaphore.acquire();
+    try {
+        return chatClient.prompt(prompt).call().entity(ExtractionResult.class);
+    } finally {
+        llmSemaphore.release();
+    }
 }
 ```
 
@@ -1441,13 +1417,15 @@ async function callLLM(prompt: string) {
 
 Acts as a transparent proxy between the application and LLM APIs. Automatically logs every call with prompt, response, latency, cost, and token counts. Zero code changes — just update the base URL:
 
-```typescript
-import { anthropic } from "@ai-sdk/anthropic";
-
-const model = anthropic("claude-sonnet-4-5-20250929", {
-  // Helicone proxy
-  headers: { "Helicone-Auth": `Bearer ${process.env.HELICONE_API_KEY}` },
-});
+```yaml
+# application.yml — route through Helicone proxy
+spring:
+  ai:
+    anthropic:
+      base-url: https://anthropic.helicone.ai
+      api-key: ${ANTHROPIC_API_KEY}
+      default-headers:
+        Helicone-Auth: "Bearer ${HELICONE_API_KEY}"
 ```
 
 **Application Observability — OpenTelemetry + Grafana:**
@@ -1467,7 +1445,7 @@ const model = anthropic("claude-sonnet-4-5-20250929", {
 ```
                            ┌───────────────────────┐
                            │     API Gateway        │
-                           │     (Hono + Bun)       │
+                           │  (Spring Boot 3 + MVC) │
                            └───────┬───────┬────────┘
                                    │       │
                     ┌──────────────┘       └──────────────┐
@@ -1485,19 +1463,26 @@ const model = anthropic("claude-sonnet-4-5-20250929", {
     └────────┘ └───┬────┘ └───┬─────┘              └──────┬──────┘
                    │          │                            │
               ┌────▼────┐ ┌──▼─────────┐           ┌──────▼──────┐
-              │pgvector │ │ Vercel     │           │  Typesense  │
-              │(vectors)│ │ AI SDK     │           │             │
+              │pgvector │ │ Spring     │           │  Typesense  │
+              │(vectors)│ │ AI         │           │             │
               └────┬────┘ │ ┌────────┐ │           └─────────────┘
                    │      │ │Anthropic│ │
                    │      │ │OpenAI   │ │
                    │      │ └────────┘ │
                    │      └──────┬─────┘
               ┌────▼─────────────▼────┐
-              │     PostgreSQL 16     │
-              │  skills, relationships│
-              │  ltree, pgvector      │
-              │  changelog            │
-              └──────────┬────────────┘
+              ┌──────────────────────────────┐
+              │        Neo4j 5               │
+              │  (:Skill) (:Alias) nodes     │
+              │  graph relationships         │
+              │  PARENT_OF, RELATED_TO...    │
+              └──────────┬───────────────────┘
+                         │
+              ┌──────────▼───────────────────┐
+              │        PostgreSQL 16         │
+              │  skill_embeddings (pgvector) │
+              │  locale_config, changelog    │
+              └──────────┬───────────────────┘
                          │ LISTEN/NOTIFY
               ┌──────────▼────────────┐
               │       Redis 7         │
@@ -1539,23 +1524,27 @@ const model = anthropic("claude-sonnet-4-5-20250929", {
 - **Regression threshold:** F1 must not drop more than 1% vs. previous release.
 - **A/B testing:** Support traffic splitting between model versions to compare quality in production.
 
-```typescript
-// bun test
-import { describe, test, expect } from "bun:test";
+```java
+// JUnit 5 + Spring Boot Test
+@SpringBootTest
+class SkillExtractionGoldenSetTest {
 
-describe("Skill Extraction - Golden Set", () => {
-  test("F1 score meets threshold", async () => {
-    const goldenSet = await loadGoldenSet("./test/fixtures/golden-set.json");
-    const results = await Promise.all(
-      goldenSet.map(doc => pipeline.extract(doc.text))
-    );
-    const { precision, recall, f1 } = computeMetrics(results, goldenSet);
+    @Autowired
+    private SkillExtractionPipeline pipeline;
 
-    expect(f1).toBeGreaterThan(0.85);
-    expect(precision).toBeGreaterThan(0.80);
-    expect(recall).toBeGreaterThan(0.80);
-  });
-});
+    @Test
+    void f1ScoreMeetsThreshold() throws Exception {
+        List<GoldenDocument> goldenSet = loadGoldenSet("classpath:golden-set.json");
+        List<ExtractionResult> results = goldenSet.stream()
+            .map(doc -> pipeline.extract(doc.getText()))
+            .toList();
+        Metrics metrics = computeMetrics(results, goldenSet);
+
+        assertThat(metrics.f1()).isGreaterThan(0.85);
+        assertThat(metrics.precision()).isGreaterThan(0.80);
+        assertThat(metrics.recall()).isGreaterThan(0.80);
+    }
+}
 ```
 
 ### 8.3 Taxonomy Quality Metrics
@@ -1569,7 +1558,7 @@ describe("Skill Extraction - Golden Set", () => {
 
 ### 8.4 API Contract Tests
 
-- **Schema validation:** OpenAPI spec auto-generated from Hono + Zod routes
+- **Schema validation:** OpenAPI spec auto-generated from Spring Web MVC + SpringDoc (springdoc-openapi)
 - **Latency SLOs:**
   - Taxonomy queries: p99 < 50ms
   - Skill extraction (single doc): p99 < 5s
@@ -1598,10 +1587,11 @@ describe("Skill Extraction - Golden Set", () => {
 | **HITL** | Human-In-The-Loop — curators validate automated suggestions |
 | **RAG** | Retrieval-Augmented Generation — retrieve relevant context before prompting an LLM |
 | **CDC** | Change Data Capture — streaming mutations for downstream sync |
-| **ltree** | PostgreSQL extension for hierarchical path labels |
+| **Neo4j** | Native graph database using the Cypher query language; stores skill nodes and relationships in this system |
+| **Cypher** | Declarative graph query language used by Neo4j (e.g., `MATCH (s:Skill)-[:PARENT_OF*1..5]->(a)`) |
 | **pgvector** | PostgreSQL extension for vector similarity search |
 | **Matryoshka** | Embedding technique allowing dimension reduction without retraining |
-| **AI SDK** | Vercel AI SDK — TypeScript toolkit for LLM/embedding integration |
+| **Spring AI** | Spring AI — Java toolkit for LLM/embedding integration with Spring Boot |
 
 ### B. Reference Scale Parameters
 

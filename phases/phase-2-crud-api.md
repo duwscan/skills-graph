@@ -13,31 +13,31 @@ Implement all taxonomy query and mutation APIs from ARCHITECTURE.md §6 — the 
 
 ---
 
-## 2.1 Shared Zod Schemas
+## 2.1 Shared Jakarta Bean Validation Schemas
 
 ### Context
 
-Zod schemas serve as the **single source of truth** for both API request/response validation (via `@hono/zod-validator`) and later for LLM structured output (via `Output.object()`). Defining them in a shared `schemas/` directory ensures consistency.
+Java records with Jakarta Bean Validation annotations serve as the **single source of truth** for both API request/response validation (via `@Valid`) and LLM structured output (via Spring AI `BeanOutputConverter`). They live in the `dto/` package.
 
 ### Tasks
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 2.1.1 | Shared enums | Define `SkillStatus` (`candidate`, `active`, `deprecated`, `merged`), `SkillCategory` (`domain`, `tool`, `certification`, `soft_skill`, `methodology`, `language`), `RelationshipType` (`parent_of`, `child_of`, `related_to`, `requires`, `superseded_by`), `Provenance` (`human_curated`, `llm_predicted`, `embedding_similarity`, `empirical`), `AliasSource` (`curated`, `llm_discovered`, `user_submitted`), `EdgeStatus` (`active`, `pending_review`, `rejected`, `deprecated`) | `src/schemas/enums.ts` |
-| 2.1.2 | Skill schemas | `createSkillSchema`: `canonical_name` (required), `description`, `category`, `path` (ltree string), `status` (default `candidate`), `metadata` (optional JSON). Auto-generate `slug` from name. `updateSkillSchema`: all fields optional (partial). `skillResponseSchema`: full skill with `id`, `external_id`, `version`, timestamps, nested `aliases[]`, `relationships[]` | `src/schemas/skill.ts` |
-| 2.1.3 | Alias schemas | `createAliasSchema`: `surface_form`, `locale` (default `en`), `source` (default `curated`), `is_primary` (default false). `aliasResponseSchema` | `src/schemas/alias.ts` |
-| 2.1.4 | Edge schemas | `createEdgeSchema`: `source_skill_id` (UUID), `target_skill_id` (UUID), `relationship_type`, `confidence` (default 1.0), `provenance` (default `human_curated`). `edgeResponseSchema` | `src/schemas/edge.ts` |
-| 2.1.5 | Query schemas | `paginationSchema`: `limit` (default `PAGINATION_DEFAULT_LIMIT`, max `PAGINATION_MAX_LIMIT` — see `src/config/constants.ts`), `offset` (default 0). `listSkillsQuerySchema`: pagination + `status`, `category`, `q` (search text). `depthSchema`: `depth` (default `TRAVERSAL_DEFAULT_DEPTH`, max `TRAVERSAL_MAX_DEPTH`) | `src/schemas/query.ts` |
+| 2.1.1 | Shared Java enums | Define `SkillStatus` (`candidate`, `active`, `deprecated`, `merged`), `SkillCategory` (`domain`, `tool`, `certification`, `soft_skill`, `methodology`, `language`), `RelationshipType` (`parent_of`, `child_of`, `related_to`, `requires`, `superseded_by`), `Provenance` (`human_curated`, `llm_predicted`, `embedding_similarity`, `empirical`), `AliasSource` (`curated`, `llm_discovered`, `user_submitted`), `EdgeStatus` (`active`, `pending_review`, `rejected`, `deprecated`) | `src/main/java/com/skillsgraph/dto/Enums.java` |
+| 2.1.2 | Skill schemas | `createSkillSchema`: `canonical_name` (required), `description`, `category`, `status` (default `candidate`), `metadata` (optional JSON). Auto-generate `slug` from name. `updateSkillSchema`: all fields optional (partial). `skillResponseSchema`: full skill with `id`, `external_id`, `version`, timestamps, nested `aliases[]`, `relationships[]` | `src/main/java/com/skillsgraph/dto/SkillDto.java` |
+| 2.1.3 | Alias schemas | `createAliasSchema`: `surface_form`, `locale` (default `en`), `source` (default `curated`), `is_primary` (default false). `aliasResponseSchema` | `src/main/java/com/skillsgraph/dto/AliasDto.java` |
+| 2.1.4 | Edge schemas | `createEdgeSchema`: `source_skill_id` (UUID), `target_skill_id` (UUID), `relationship_type`, `confidence` (default 1.0), `provenance` (default `human_curated`). `edgeResponseSchema` | `src/main/java/com/skillsgraph/dto/EdgeDto.java` |
+| 2.1.5 | Query schemas | `paginationSchema`: `limit` (default `PAGINATION_DEFAULT_LIMIT`, max `PAGINATION_MAX_LIMIT` — see `src/main/java/com/skillsgraph/config/AppConstants.java`), `offset` (default 0). `listSkillsQuerySchema`: pagination + `status`, `category`, `q` (search text). `depthSchema`: `depth` (default `TRAVERSAL_DEFAULT_DEPTH`, max `TRAVERSAL_MAX_DEPTH`) | `src/main/java/com/skillsgraph/dto/QueryParams.java` |
 
 ### Checklist
 
-- [ ] `src/schemas/enums.ts` — all 6 enum types exported as Zod enums
-- [ ] `src/schemas/skill.ts` — `createSkillSchema`, `updateSkillSchema`, `skillResponseSchema` defined
-- [ ] `src/schemas/alias.ts` — `createAliasSchema`, `aliasResponseSchema` defined
-- [ ] `src/schemas/edge.ts` — `createEdgeSchema`, `edgeResponseSchema` defined
-- [ ] `src/schemas/query.ts` — pagination, list filters, depth param schemas
+- [ ] `src/main/java/com/skillsgraph/dto/Enums.java` — all 6 enum types exported as Java enums
+- [ ] `src/main/java/com/skillsgraph/dto/SkillDto.java` — `createSkillSchema`, `updateSkillSchema`, `skillResponseSchema` defined
+- [ ] `src/main/java/com/skillsgraph/dto/AliasDto.java` — `createAliasSchema`, `aliasResponseSchema` defined
+- [ ] `src/main/java/com/skillsgraph/dto/EdgeDto.java` — `createEdgeSchema`, `edgeResponseSchema` defined
+- [ ] `src/main/java/com/skillsgraph/dto/QueryParams.java` — pagination, list filters, depth param schemas
 - [ ] All schemas have proper defaults and constraints
-- [ ] TypeScript types can be inferred from schemas: `type CreateSkill = z.infer<typeof createSkillSchema>`
+- [ ] Java types can be inferred from schemas: `type CreateSkill = CreateSkillRequest`
 
 ---
 
@@ -51,39 +51,40 @@ The `SkillService` is the primary business logic layer for skill nodes. It handl
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 2.2.1 | `create(input)` | Validate input via `createSkillSchema`. Auto-generate `external_id` as `SK-{nanoid(8)}`. Auto-generate `slug` from `canonical_name` via `slugify()`. Insert skill row. Create initial alias (canonical_name as primary `en` alias). Record in changelog. Return full skill object | `src/services/skill.ts` |
-| 2.2.2 | `getById(id)` | Fetch skill by `id` or `external_id` or `slug`. LEFT JOIN `skill_aliases` and `skill_relationships` to include all aliases and direct edges (1 hop). Group and nest results. Throw `NotFoundError` if not found | `src/services/skill.ts` |
-| 2.2.3 | `update(id, input)` | Validate input via `updateSkillSchema`. Partial update only provided fields. Increment `version`, set `updated_at = now()`. Record changelog with diff (old vs new values). If `canonical_name` changed, update the primary `en` alias too | `src/services/skill.ts` |
-| 2.2.4 | `list(query)` | Paginated listing with filters: `status`, `category`, `source`. If `q` parameter present, use trigram similarity search (`canonical_name % $q`) ordered by `similarity(canonical_name, $q) DESC`. Return `{ items, total, limit, offset }` | `src/services/skill.ts` |
-| 2.2.5 | `getAncestors(id, depth?)` | Use recursive CTE traversing `parent_of` edges upward. Limit depth (default `TRAVERSAL_DEFAULT_DEPTH`, max `TRAVERSAL_MAX_DEPTH` — see `src/config/constants.ts`). Return ordered list of ancestor skills from immediate parent to root | `src/services/skill.ts` |
-| 2.2.6 | `getDescendants(id, depth?)` | Use recursive CTE traversing `parent_of` edges downward. Limit depth (default `TRAVERSAL_DEFAULT_DEPTH`, max `TRAVERSAL_MAX_DEPTH`). Return tree structure or flat list of descendant skills | `src/services/skill.ts` |
-| 2.2.7 | `getRoots()` | Return all active skills that have no incoming `parent_of` edges. SQL: `SELECT s.* FROM skills s WHERE s.status = 'active' AND NOT EXISTS (SELECT 1 FROM skill_relationships sr WHERE sr.target_skill_id = s.id AND sr.relationship_type = 'parent_of' AND sr.status = 'active')`. These are the top-level taxonomy categories (Technology, Business, Design, etc.) | `src/services/skill.ts` |
-| 2.2.8 | Slug utility | `generateSlug(name: string): string` — lowercase, replace spaces with hyphens, remove special chars, truncate to `SLUG_MAX_LENGTH` chars (see `src/config/constants.ts`). Handle duplicates by appending `-2`, `-3`, etc. | `src/lib/slug.ts` |
+| 2.2.1 | `create(input)` | Validate input via `createSkillSchema`. Auto-generate `external_id` as `SK-{UUID.randomUUID()(8)}`. Auto-generate `slug` from `canonical_name` via `SlugUtils()`. Create Neo4j `(:Skill)` node via `Neo4jTemplate` or `SkillRepository.save()`. Create initial `(:Alias)` node linked via `[:HAS_ALIAS]`. Record in `graph_changelog` (PostgreSQL). Return full skill object | `src/main/java/com/skillsgraph/service/SkillService.java` |
+| 2.2.2 | `getById(id)` | Fetch skill by `id` or `externalId` or `slug` from Neo4j. Use Cypher `MATCH (s:Skill)-[:HAS_ALIAS]->(a:Alias)` and `MATCH (s)-[r]->()` patterns via `Neo4jTemplate`. Throw `SkillNotFoundException` if not found | `src/main/java/com/skillsgraph/service/SkillService.java` |
+| 2.2.3 | `update(id, input)` | Validate input via `updateSkillSchema`. Partial update only provided fields. Increment `version`, set `updated_at = now()`. Record changelog with diff (old vs new values). If `canonical_name` changed, update the primary `en` alias too | `src/main/java/com/skillsgraph/service/SkillService.java` |
+| 2.2.4 | `list(query)` | Paginated listing with filters: `status`, `category`, `source`. If `q` parameter present, use trigram similarity search (`canonical_name % $q`) ordered by `similarity(canonical_name, $q) DESC`. Return `{ items, total, limit, offset }` | `src/main/java/com/skillsgraph/service/SkillService.java` |
+| 2.2.5 | `getAncestors(id, depth?)` | Use Cypher variable-length pattern `(s:Skill {id: $skillId})<-[:PARENT_OF*1..$depth]-(ancestor:Skill)` via `Neo4jTemplate`. Limit depth (default `TRAVERSAL_DEFAULT_DEPTH`, max `TRAVERSAL_MAX_DEPTH` — see `src/main/java/com/skillsgraph/config/AppConstants.java`). Return ordered list of ancestor skills | `src/main/java/com/skillsgraph/service/SkillService.java` |
+| 2.2.6 | `getDescendants(id, depth?)` | Use Cypher variable-length pattern `(parent:Skill {id: $skillId})-[:PARENT_OF*1..$depth]->(s:Skill)` via `Neo4jTemplate`. Limit depth (default `TRAVERSAL_DEFAULT_DEPTH`, max `TRAVERSAL_MAX_DEPTH`). Return tree structure or flat list of descendant skills | `src/main/java/com/skillsgraph/service/SkillService.java` |
+| 2.2.7 | `getRoots()` | Return all active skills that have no incoming `PARENT_OF` relationships. Cypher: `MATCH (s:Skill {status: 'active'}) WHERE NOT ()-[:PARENT_OF]->(s) RETURN s`. These are the top-level taxonomy categories | `src/main/java/com/skillsgraph/service/SkillService.java` |
+| 2.2.8 | Slug utility | `public static String generateSlug(String name)` — lowercase, replace spaces with hyphens, remove special chars, truncate to `SLUG_MAX_LENGTH` chars (see `src/main/java/com/skillsgraph/config/AppConstants.java`). Handle duplicates by appending `-2`, `-3`, etc. | `src/main/java/com/skillsgraph/util/SlugUtils.java` |
 
-### Recursive CTE for Ancestors
+### Cypher Ancestors Query
 
-```sql
-WITH RECURSIVE ancestors AS (
-    -- Base case: direct parents of the given skill
-    SELECT sr.source_skill_id AS skill_id, 1 AS depth
-    FROM skill_relationships sr
-    WHERE sr.target_skill_id = $1
-      AND sr.relationship_type = 'parent_of'
-      AND sr.status = 'active'
-    UNION ALL
-    -- Recursive step: parents of parents
-    SELECT sr.source_skill_id, a.depth + 1
-    FROM skill_relationships sr
-    JOIN ancestors a ON sr.target_skill_id = a.skill_id
-    WHERE sr.relationship_type = 'parent_of'
-      AND sr.status = 'active'
-      AND a.depth < $2  -- depth limit
-)
-SELECT DISTINCT s.*, a.depth
-FROM skills s
-JOIN ancestors a ON s.id = a.skill_id
-WHERE s.status = 'active'
-ORDER BY a.depth ASC;
+```cypher
+// Find all ancestors up to configurable depth using variable-length paths
+MATCH path = (s:Skill {id: $skillId})<-[:PARENT_OF*1..$depth]-(ancestor:Skill)
+WHERE ancestor.status = 'active'
+RETURN DISTINCT ancestor, length(path) AS depth
+ORDER BY depth ASC
+```
+
+```java
+@Service
+public class SkillService {
+    private final Neo4jTemplate neo4jTemplate;
+    
+    public List<SkillWithDepth> getAncestors(String skillId, int depth) {
+        return neo4jTemplate.findAll(
+            "MATCH path = (s:Skill {id: $skillId})<-[:PARENT_OF*1..$depth]-(ancestor:Skill) " +
+            "WHERE ancestor.status = 'active' " +
+            "RETURN DISTINCT ancestor, length(path) AS depth ORDER BY depth ASC",
+            Map.of("skillId", skillId, "depth", depth),
+            SkillWithDepth.class
+        );
+    }
+}
 ```
 
 ### Checklist
@@ -92,7 +93,7 @@ ORDER BY a.depth ASC;
 - [ ] `create()` — rejects duplicate `canonical_name` by checking slug uniqueness
 - [ ] `getById()` — works with UUID id, external_id (`SK-xxx`), and slug
 - [ ] `getById()` — includes nested aliases and relationships in response
-- [ ] `getById()` — throws `NotFoundError` for non-existent id
+- [ ] `getById()` — throws `SkillNotFoundException` for non-existent id
 - [ ] `update()` — partial updates work (only update provided fields)
 - [ ] `update()` — increments `version` and updates `updated_at`
 - [ ] `update()` — records changelog with before/after diff
@@ -116,10 +117,10 @@ ORDER BY a.depth ASC;
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 2.3.1 | `create(skillId, input)` | Validate input via `createAliasSchema`. If `is_primary = true`, unset any existing primary alias for the same `(skill_id, locale)` in a transaction. Insert alias row. Record changelog | `src/services/alias.ts` |
-| 2.3.2 | `listBySkill(skillId, locale?)` | Return all aliases for a skill. If `locale` param provided, filter by locale. Order by `is_primary DESC, surface_form ASC` | `src/services/alias.ts` |
-| 2.3.3 | `delete(aliasId)` | Delete alias by ID. Prevent deletion of the last `is_primary = true` alias for any locale. Throw `ValidationError` if attempted. Record changelog | `src/services/alias.ts` |
-| 2.3.4 | `update(aliasId, input)` | Update alias fields (surface_form, locale, is_primary). Handle primary promotion/demotion in transaction | `src/services/alias.ts` |
+| 2.3.1 | `create(skillId, input)` | Validate input via `createAliasSchema`. If `is_primary = true`, unset any existing primary alias for the same `(skill_id, locale)` in a transaction. Insert alias row. Record changelog | `src/main/java/com/skillsgraph/service/AliasService.java` |
+| 2.3.2 | `listBySkill(skillId, locale?)` | Return all aliases for a skill. If `locale` param provided, filter by locale. Order by `is_primary DESC, surface_form ASC` | `src/main/java/com/skillsgraph/service/AliasService.java` |
+| 2.3.3 | `delete(aliasId)` | Delete alias by ID. Prevent deletion of the last `is_primary = true` alias for any locale. Throw `ValidationException` if attempted. Record changelog | `src/main/java/com/skillsgraph/service/AliasService.java` |
+| 2.3.4 | `update(aliasId, input)` | Update alias fields (surface_form, locale, is_primary). Handle primary promotion/demotion in transaction | `src/main/java/com/skillsgraph/service/AliasService.java` |
 
 ### Checklist
 
@@ -139,11 +140,11 @@ ORDER BY a.depth ASC;
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 2.4.1 | `create(input)` | Validate input via `createEdgeSchema`. Run quality guardrails (§2.5) BEFORE insert. Insert edge row. Record changelog. Return created edge | `src/services/edge.ts` |
-| 2.4.2 | `getBySkill(skillId)` | Return all edges where skill is source or target. Group by `relationship_type`: `{ parent_of: [...], child_of: [...], related_to: [...], requires: [...] }` | `src/services/edge.ts` |
-| 2.4.3 | `getRelated(skillId)` | Return skills connected via `related_to` and `requires` edges. Include the edge metadata (confidence, provenance) | `src/services/edge.ts` |
-| 2.4.4 | `deprecate(edgeId)` | Set edge `status = 'deprecated'`. Record changelog | `src/services/edge.ts` |
-| 2.4.5 | `delete(edgeId)` | Hard delete an edge. Record changelog. Only allow if edge status is `pending_review` or `rejected` | `src/services/edge.ts` |
+| 2.4.1 | `create(input)` | Validate input via `createEdgeSchema`. Run quality guardrails (§2.5) BEFORE insert. Use Cypher to create the typed relationship: `MATCH (source:Skill {id: $sourceId}), (target:Skill {id: $targetId}) CREATE (source)-[:PARENT_OF {id: $id, confidence: $confidence, ...}]->(target)`. Record changelog. Return created edge | `src/main/java/com/skillsgraph/service/EdgeService.java` |
+| 2.4.2 | `getBySkill(skillId)` | Return all edges where skill is source or target. Group by `relationship_type`: `{ parent_of: [...], child_of: [...], related_to: [...], requires: [...] }` | `src/main/java/com/skillsgraph/service/EdgeService.java` |
+| 2.4.3 | `getRelated(skillId)` | Return skills connected via `related_to` and `requires` edges. Include the edge metadata (confidence, provenance) | `src/main/java/com/skillsgraph/service/EdgeService.java` |
+| 2.4.4 | `deprecate(edgeId)` | Set edge `status = 'deprecated'`. Record changelog | `src/main/java/com/skillsgraph/service/EdgeService.java` |
+| 2.4.5 | `delete(edgeId)` | Hard delete an edge. Record changelog. Only allow if edge status is `pending_review` or `rejected` | `src/main/java/com/skillsgraph/service/EdgeService.java` |
 
 ### Checklist
 
@@ -168,16 +169,16 @@ Guardrails run **before** any node or edge is committed. They enforce data integ
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 2.5.1 | Cycle detection | `checkCycle(sourceId, targetId, type)` — only applies to `parent_of` and `child_of` edges. Run BFS/DFS from `targetId` following `parent_of` edges. If `sourceId` is reachable, a cycle would be created. Return `{ valid: boolean, cyclePath?: string[] }` | `src/services/guardrails.ts` |
-| 2.5.2 | Self-edge prevention | `checkSelfEdge(sourceId, targetId)` — return error if same. Technically also enforced by CHECK constraint, but checking in code gives a better error message | `src/services/guardrails.ts` |
-| 2.5.3 | Duplicate edge prevention | `checkDuplicateEdge(sourceId, targetId, type)` — query existing edges. Return error if duplicate found | `src/services/guardrails.ts` |
-| 2.5.4 | Orphan check | `checkOrphan(skillId)` — when activating a skill (`status → active`), verify at least one `parent_of` edge targets it (unless it's a root category). Return `{ valid: boolean, isRoot: boolean }` | `src/services/guardrails.ts` |
-| 2.5.5 | Name sanitization | `sanitizeName(name: string): string` — strip HTML tags, normalize Unicode to NFC, trim whitespace, collapse multiple spaces. Return cleaned string | `src/services/guardrails.ts` |
-| 2.5.6 | Run all edge guardrails | `validateEdge(input)` — orchestrator that runs self-edge check, duplicate check, and cycle detection. Throws `ValidationError` or `CycleDetectedError` with descriptive message | `src/services/guardrails.ts` |
+| 2.5.1 | Cycle detection | `checkCycle(sourceId, targetId, type)` — only applies to `PARENT_OF` relationships. Use Cypher: `MATCH path = (target:Skill {id: $targetId})-[:PARENT_OF*1..10]->(source:Skill {id: $sourceId}) RETURN count(path) > 0 AS wouldCreateCycle`. Return `{ valid: boolean, cyclePath?: string[] }` | `src/main/java/com/skillsgraph/service/GuardrailService.java` |
+| 2.5.2 | Self-edge prevention | `checkSelfEdge(sourceId, targetId)` — return error if same. Technically also enforced by CHECK constraint, but checking in code gives a better error message | `src/main/java/com/skillsgraph/service/GuardrailService.java` |
+| 2.5.3 | Duplicate edge prevention | `checkDuplicateEdge(sourceId, targetId, type)` — query existing edges. Return error if duplicate found | `src/main/java/com/skillsgraph/service/GuardrailService.java` |
+| 2.5.4 | Orphan check | `checkOrphan(skillId)` — when activating a skill (`status → active`), verify at least one `parent_of` edge targets it (unless it's a root category). Return `{ valid: boolean, isRoot: boolean }` | `src/main/java/com/skillsgraph/service/GuardrailService.java` |
+| 2.5.5 | Name sanitization | `sanitizeName(name: string): string` — strip HTML tags, normalize Unicode to NFC, trim whitespace, collapse multiple spaces. Return cleaned string | `src/main/java/com/skillsgraph/service/GuardrailService.java` |
+| 2.5.6 | Run all edge guardrails | `validateEdge(input)` — orchestrator that runs self-edge check, duplicate check, and cycle detection. Throws `ValidationException` or `CycleDetectedException` with descriptive message | `src/main/java/com/skillsgraph/service/GuardrailService.java` |
 
 ### Cycle Detection Algorithm
 
-```typescript
+```java
 async function checkCycle(sourceId: string, targetId: string): Promise<CycleCheckResult> {
   // If adding edge "sourceId parent_of targetId",
   // check if targetId is already an ancestor of sourceId
@@ -197,12 +198,13 @@ async function checkCycle(sourceId: string, targetId: string): Promise<CycleChec
     visited.add(id);
 
     // Get parents of current node
-    const parents = await db.query(`
-      SELECT source_skill_id FROM skill_relationships
-      WHERE target_skill_id = $1
-        AND relationship_type = 'parent_of'
-        AND status = 'active'
-    `, [id]);
+    // Cypher equivalent via Neo4jTemplate:
+    // MATCH path = (target:Skill {id: $targetId})-[:PARENT_OF*1..10]->(source:Skill {id: $sourceId})
+    // RETURN count(path) > 0 AS wouldCreateCycle
+    const parents = await neo4jTemplate.findAll(
+      "MATCH (n:Skill {id: $id})<-[:PARENT_OF]-(parent:Skill) RETURN parent",
+      Map.of("id", id), Skill.class
+    );
 
     for (const parent of parents) {
       queue.push({ id: parent.source_skill_id, path: [...path, parent.source_skill_id] });
@@ -238,10 +240,10 @@ async function checkCycle(sourceId: string, targetId: string): Promise<CycleChec
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 2.6.1 | `record(params)` | Insert row into `graph_changelog`. Get next `graph_version` from `nextval('graph_version_seq')`. Accept: `actor`, `mutation_type`, `entity_type`, `entity_id`, `diff_payload` (JSONB). Fire `pg_notify('graph_changes', json)` | `src/services/changelog.ts` |
-| 2.6.2 | `list(since?, limit?)` | Paginated listing of changelog entries where `graph_version > since`. Order by `graph_version ASC`. Default limit `CHANGELOG_DEFAULT_LIMIT` (see `src/config/constants.ts`) | `src/services/changelog.ts` |
-| 2.6.3 | `getVersion()` | Return current graph version (latest `graph_version` from changelog). If no entries, return 0. Also return `total_skills`, `total_edges` counts | `src/services/changelog.ts` |
-| 2.6.4 | `MutationType` enum | Define all valid mutation types: `skill_created`, `skill_updated`, `skill_deprecated`, `skill_merged`, `alias_added`, `alias_removed`, `edge_created`, `edge_updated`, `edge_deprecated` | `src/services/changelog.ts` |
+| 2.6.1 | `record(params)` | After writing mutations to Neo4j, insert row into `graph_changelog` (PostgreSQL). Get next `graph_version` from `nextval('graph_version_seq')`. Accept: `actor`, `mutation_type`, `entity_type`, `entity_id`, `diff_payload` (JSONB). Fire `pg_notify('graph_changes', json)` for CDC consumers | `src/main/java/com/skillsgraph/service/ChangelogService.java` |
+| 2.6.2 | `list(since?, limit?)` | Paginated listing of changelog entries where `graph_version > since`. Order by `graph_version ASC`. Default limit `CHANGELOG_DEFAULT_LIMIT` (see `src/main/java/com/skillsgraph/config/AppConstants.java`) | `src/main/java/com/skillsgraph/service/ChangelogService.java` |
+| 2.6.3 | `getVersion()` | Return current graph version (latest `graph_version` from changelog). If no entries, return 0. Also return `total_skills`, `total_edges` counts | `src/main/java/com/skillsgraph/service/ChangelogService.java` |
+| 2.6.4 | `MutationType` enum | Define all valid mutation types: `skill_created`, `skill_updated`, `skill_deprecated`, `skill_merged`, `alias_added`, `alias_removed`, `edge_created`, `edge_updated`, `edge_deprecated` | `src/main/java/com/skillsgraph/service/ChangelogService.java` |
 
 ### Checklist
 
@@ -255,23 +257,23 @@ async function checkCycle(sourceId: string, targetId: string): Promise<CycleChec
 
 ---
 
-## 2.7 Hono Route Handlers
+## 2.7 Spring @RestController Route Handlers
 
 ### Tasks
 
 | # | Route | Method | Service Call | Validation |
 |---|---|---|---|---|
-| 2.7.1 | `/api/skills` | POST | `SkillService.create()` | `zValidator("json", createSkillSchema)` |
-| 2.7.2 | `/api/skills/:id` | GET | `SkillService.getById()` | Path param (UUID or slug) |
-| 2.7.3 | `/api/skills/:id` | PATCH | `SkillService.update()` | `zValidator("json", updateSkillSchema)` |
-| 2.7.4 | `/api/skills` | GET | `SkillService.list()` | `zValidator("query", listSkillsQuerySchema)` |
-| 2.7.5 | `/api/skills/:id/ancestors` | GET | `SkillService.getAncestors()` | Optional `?depth=` |
-| 2.7.6 | `/api/skills/:id/descendants` | GET | `SkillService.getDescendants()` | Optional `?depth=` |
-| 2.7.7 | `/api/skills/:id/related` | GET | `EdgeService.getRelated()` | — |
-| 2.7.8 | `/api/skills/:id/aliases` | POST | `AliasService.create()` | `zValidator("json", createAliasSchema)` |
-| 2.7.9 | `/api/skills/:id/aliases` | GET | `AliasService.listBySkill()` | Optional `?locale=` |
-| 2.7.10 | `/api/edges` | POST | `EdgeService.create()` | `zValidator("json", createEdgeSchema)` |
-| 2.7.11 | `/api/taxonomy/roots` | GET | `SkillService.getRoots()` — return skills that have no incoming `parent_of` edges (i.e., no row in `skill_relationships` where `target_skill_id = skill.id AND relationship_type = 'parent_of' AND status = 'active'`). These are the top-level category nodes seeded in Phase 1 (Technology, Business, Design, etc.) | — |
+| 2.7.1 | `/api/skills` | POST | `SkillService.create()` | `@Valid("json", createSkillSchema)` |
+| 2.7.2 | `/api/skills/{id}` | GET | `SkillService.getById()` | Path param (UUID or slug) |
+| 2.7.3 | `/api/skills/{id}` | PATCH | `SkillService.update()` | `@Valid("json", updateSkillSchema)` |
+| 2.7.4 | `/api/skills` | GET | `SkillService.list()` | `@Valid("query", listSkillsQuerySchema)` |
+| 2.7.5 | `/api/skills/{id}/ancestors` | GET | `SkillService.getAncestors()` | Optional `?depth=` |
+| 2.7.6 | `/api/skills/{id}/descendants` | GET | `SkillService.getDescendants()` | Optional `?depth=` |
+| 2.7.7 | `/api/skills/{id}/related` | GET | `EdgeService.getRelated()` | — |
+| 2.7.8 | `/api/skills/{id}/aliases` | POST | `AliasService.create()` | `@Valid("json", createAliasSchema)` |
+| 2.7.9 | `/api/skills/{id}/aliases` | GET | `AliasService.listBySkill()` | Optional `?locale=` |
+| 2.7.10 | `/api/edges` | POST | `EdgeService.create()` | `@Valid("json", createEdgeSchema)` |
+| 2.7.11 | `/api/taxonomy/roots` | GET | `SkillService.getRoots()` — Cypher: `MATCH (s:Skill {status: 'active'}) WHERE NOT ()-[:PARENT_OF]->(s) RETURN s`. Returns top-level category nodes seeded in Phase 1 (Technology, Business, Design, etc.) | — |
 | 2.7.12 | `/api/taxonomy/version` | GET | `ChangelogService.getVersion()` | — |
 | 2.7.13 | `/api/taxonomy/changelog` | GET | `ChangelogService.list()` | `?since=`, `?limit=` |
 
@@ -302,55 +304,55 @@ async function checkCycle(sourceId: string, targetId: string): Promise<CycleChec
 
 ```bash
 # Create root categories (should already exist from seed)
-curl http://localhost:3000/api/taxonomy/roots | jq
+curl http://localhost:8080/api/taxonomy/roots | jq
 # → [{"canonical_name":"Technology",...}, {"canonical_name":"Business",...}, ...]
 
 # Create skill hierarchy
-TECH_ID=$(curl -s -X POST http://localhost:3000/api/skills \
+TECH_ID=$(curl -s -X POST http://localhost:8080/api/skills \
   -H "Content-Type: application/json" \
   -d '{"canonical_name":"Data Science","category":"domain","description":"Field combining statistics and programming","path":"technology.data_science"}' | jq -r '.id')
 
-ML_ID=$(curl -s -X POST http://localhost:3000/api/skills \
+ML_ID=$(curl -s -X POST http://localhost:8080/api/skills \
   -H "Content-Type: application/json" \
   -d '{"canonical_name":"Machine Learning","category":"domain","description":"Subset of AI","path":"technology.data_science.machine_learning"}' | jq -r '.id')
 
 # Create parent_of edge
-curl -X POST http://localhost:3000/api/edges \
+curl -X POST http://localhost:8080/api/edges \
   -H "Content-Type: application/json" \
   -d "{\"source_skill_id\":\"$TECH_ID\",\"target_skill_id\":\"$ML_ID\",\"relationship_type\":\"parent_of\"}"
 
 # Test cycle detection
-curl -X POST http://localhost:3000/api/edges \
+curl -X POST http://localhost:8080/api/edges \
   -H "Content-Type: application/json" \
   -d "{\"source_skill_id\":\"$ML_ID\",\"target_skill_id\":\"$TECH_ID\",\"relationship_type\":\"parent_of\"}"
 # → 422 {"error":"Cycle detected"}
 
 # Add alias
-curl -X POST "http://localhost:3000/api/skills/$ML_ID/aliases" \
+curl -X POST "http://localhost:8080/api/skills/$ML_ID/aliases" \
   -H "Content-Type: application/json" \
   -d '{"surface_form":"ML","locale":"en"}'
 
-curl -X POST "http://localhost:3000/api/skills/$ML_ID/aliases" \
+curl -X POST "http://localhost:8080/api/skills/$ML_ID/aliases" \
   -H "Content-Type: application/json" \
   -d '{"surface_form":"Học máy","locale":"vi","is_primary":true}'
 
 # Get skill with all data
-curl "http://localhost:3000/api/skills/$ML_ID" | jq
+curl "http://localhost:8080/api/skills/$ML_ID" | jq
 # → full skill with aliases [ML, Machine Learning, Học máy] and relationships
 
 # Get ancestors
-curl "http://localhost:3000/api/skills/$ML_ID/ancestors" | jq
+curl "http://localhost:8080/api/skills/$ML_ID/ancestors" | jq
 # → [{"canonical_name":"Data Science","depth":1}]
 
 # Fuzzy search
-curl "http://localhost:3000/api/skills?q=mahcine+lerning" | jq
+curl "http://localhost:8080/api/skills?q=mahcine+lerning" | jq
 # → returns "Machine Learning" via trigram matching
 
 # Changelog
-curl "http://localhost:3000/api/taxonomy/changelog?since=0" | jq
+curl "http://localhost:8080/api/taxonomy/changelog?since=0" | jq
 # → all mutation entries
 
-bun test
+./mvnw test
 echo "Phase 2 complete ✓"
 ```
 
@@ -358,11 +360,11 @@ echo "Phase 2 complete ✓"
 
 ## Phase 2 Master Checklist
 
-### 2.1 Shared Zod Schemas
+### 2.1 Shared Jakarta Bean Validation Schemas
 - [ ] All enum types defined and exported
 - [ ] Create/update/response schemas for skills, aliases, edges
 - [ ] Query/pagination schemas defined
-- [ ] TypeScript types inferable from all schemas
+- [ ] Java types inferable from all schemas
 
 ### 2.2 Skill CRUD Service
 - [ ] `create()` with auto external_id, slug, initial alias, changelog
