@@ -6,7 +6,7 @@ Comprehensive reference for managing database migrations with drizzle-kit.
 
 ## Configuration
 
-### drizzle.config.ts
+### drizzle.com.sk.skillsgraph.config.ts
 
 ```typescript
 import { defineConfig } from 'drizzle-kit';
@@ -445,7 +445,7 @@ cat drizzle/0001_*.sql
 ```bash
 # Test on copy of production data
 pg_dump production_db | psql test_db
-npx drizzle-kit migrate --config=drizzle.config.test.ts
+npx drizzle-kit migrate --com.sk.skillsgraph.config=drizzle.com.sk.skillsgraph.config.test.ts
 ```
 
 ### 3. Keep Migrations Small

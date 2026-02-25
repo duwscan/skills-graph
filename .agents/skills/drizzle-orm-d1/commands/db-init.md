@@ -1,6 +1,6 @@
 # Init Drizzle + D1
 
-Set up Drizzle ORM with Cloudflare D1 database. Creates schema, migrations directory, and Drizzle config.
+Set up Drizzle ORM with Cloudflare D1 database. Creates schema, migrations directory, and Drizzle com.sk.skillsgraph.config.
 
 ---
 
@@ -33,7 +33,7 @@ npm install -D drizzle-kit better-sqlite3 @types/better-sqlite3
 src/
 └── db/
     └── schema.ts
-drizzle.config.ts
+drizzle.com.sk.skillsgraph.config.ts
 migrations/
 ```
 
@@ -58,7 +58,7 @@ export const users = sqliteTable('users', {
 
 ### 5. Create Drizzle Config
 
-Create `drizzle.config.ts`:
+Create `drizzle.com.sk.skillsgraph.config.ts`:
 
 ```typescript
 import { defineConfig } from 'drizzle-kit';
@@ -134,7 +134,7 @@ npm run db:generate
 📁 Structure:
    - src/db/schema.ts    (Define your tables)
    - src/db/index.ts     (Database helper)
-   - drizzle.config.ts   (Drizzle Kit config)
+   - drizzle.com.sk.skillsgraph.config.ts   (Drizzle Kit com.sk.skillsgraph.config)
    - migrations/         (SQL migrations)
 
 🚀 Next steps:

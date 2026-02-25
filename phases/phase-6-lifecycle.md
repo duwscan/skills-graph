@@ -25,7 +25,7 @@ When a skill becomes obsolete (e.g., "Adobe Flash"), it is deprecated with a poi
 |---|---|---|---|
 | 6.1.1 | `SkillService.deprecate(id, successorIds)` | Transaction: (1) Validate skill is `active`. (2) `SET s.status = 'deprecated'` in Neo4j via Cypher. (3) `CREATE (s)-[:SUPERSEDED_BY]->(successor)` in Neo4j for each successor. (4) Remap aliases: `MATCH (s:Skill {id:$id})-[r:HAS_ALIAS]->(a:Alias), (successor:Skill {id: $successorId}) DELETE r CREATE (successor)-[:HAS_ALIAS]->(a)`. (5) Record changelog entries in PostgreSQL `graph_changelog`. (6) Fire `pg_notify('graph_changes', json)`. (7) Remove from full-text search service index | `src/main/java/com/skillsgraph/service/lifecycle/DeprecationService.java` |
 | 6.1.2 | Deprecation validation | Reject if: skill already deprecated/merged, no successor_ids provided, successor doesn't exist, successor is also deprecated/merged. Return descriptive error | `src/main/java/com/skillsgraph/service/lifecycle/DeprecationService.java` |
-| 6.1.3 | `POST /api/skills/:id/deprecate` | Accept `{ successor_ids: UUID[], notes?: string }`. Run deprecation. Return updated skill with new status and superseded_by edges | `src/main/java/com/skillsgraph/controller/SkillController.java` |
+| 6.1.3 | `POST /api/skills/:id/deprecate` | Accept `{ successor_ids: UUID[], notes?: string }`. Run deprecation. Return updated skill with new status and superseded_by edges | `src/main/java/com/skillsgraph/com.sk.skillsgraph.controller/SkillController.java` |
 
 ### Checklist
 
@@ -61,7 +61,7 @@ When two skills are discovered to be duplicates (e.g., "Machine Learning" and "M
 | 6.2.2 | Edge deduplication during merge | When re-pointing edges, check if an equivalent edge already exists on the survivor (same target/source + relationship_type). If so, keep the one with higher confidence and delete the other | `src/main/java/com/skillsgraph/service/lifecycle/MergeService.java` |
 | 6.2.3 | Post-merge cycle check | After re-pointing edges, run cycle detection on the survivor's edges to ensure the merge didn't introduce cycles | `src/main/java/com/skillsgraph/service/lifecycle/MergeService.java` |
 | 6.2.4 | Merge validation | Reject if: source = target (self-merge), source or target doesn't exist, source or target already deprecated/merged | `src/main/java/com/skillsgraph/service/lifecycle/MergeService.java` |
-| 6.2.5 | `POST /api/skills/:source/merge/:target` | Run merge. Return merged result: survivor skill with all transferred aliases and edges | `src/main/java/com/skillsgraph/controller/SkillController.java` |
+| 6.2.5 | `POST /api/skills/:source/merge/:target` | Run merge. Return merged result: survivor skill with all transferred aliases and edges | `src/main/java/com/skillsgraph/com.sk.skillsgraph.controller/SkillController.java` |
 | 6.2.6 | Co-occurrence data merge | During merge, transfer `[:CO_OCCURS_WITH]` relationships from source to survivor in Neo4j. Use `MERGE (survivor)-[existing:CO_OCCURS_WITH]-(partner)` with `ON MATCH SET existing.count = existing.count + r.count`. Delete source's `[:CO_OCCURS_WITH]` relationships after merging | `src/main/java/com/skillsgraph/service/lifecycle/MergeService.java` |
 
 ### Merge Cypher Reference
@@ -137,10 +137,10 @@ CREATE (source)-[:SUPERSEDED_BY {createdAt: datetime()}]->(survivor);
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 6.3.1 | Enhanced version endpoint | `GET /api/taxonomy/version` returns `{ graph_version, last_mutation_at, total_skills (active), total_edges (active), total_aliases, supported_locales }` | `src/main/java/com/skillsgraph/controller/TaxonomyController.java` |
+| 6.3.1 | Enhanced version endpoint | `GET /api/taxonomy/version` returns `{ graph_version, last_mutation_at, total_skills (active), total_edges (active), total_aliases, supported_locales }` | `src/main/java/com/skillsgraph/com.sk.skillsgraph.controller/TaxonomyController.java` |
 | 6.3.2 | PG NOTIFY listener | `src/main/java/com/skillsgraph/service/changelog/PgNotifyListener.java` — subscribe to `graph_changes` channel on PostgreSQL. Neo4j mutations are recorded to `graph_changelog` (PostgreSQL) before `pg_notify` is fired, so this listener captures all graph changes. On notification: (1) invalidate relevant Redis cache keys (`taxonomy:skill:{id}`), (2) publish to Redis Stream for full-text search service sync (Phase 7). Start listener on app boot | `src/main/java/com/skillsgraph/service/changelog/PgNotifyListener.java` |
-| 6.3.3 | Snapshot export | `SnapshotCreateRunner` (triggered via `--snapshot-create`) — exports taxonomy as JSON: `{ version, timestamp, skills, relationships, aliases, coOccurrences, localeConfig }`. Writes to `snapshots/skills-graph-v{version}-{date}.json` | `src/main/java/com/skillsgraph/script/SnapshotCreateRunner.java` |
-| 6.3.4 | Snapshot import | `SnapshotImportRunner` (triggered via `--snapshot-import`) — truncate all tables, insert snapshot data, rebuild search vector, regenerate embeddings | `src/main/java/com/skillsgraph/script/SnapshotImportRunner.java` |
+| 6.3.3 | Snapshot export | `SnapshotCreateRunner` (triggered via `--snapshot-create`) — exports taxonomy as JSON: `{ version, timestamp, skills, relationships, aliases, coOccurrences, localeConfig }`. Writes to `snapshots/skills-graph-v{version}-{date}.json` | `src/main/java/com/skillsgraph/com.sk.skillsgraph.script/SnapshotCreateRunner.java` |
+| 6.3.4 | Snapshot import | `SnapshotImportRunner` (triggered via `--snapshot-import`) — truncate all tables, insert snapshot data, rebuild search vector, regenerate embeddings | `src/main/java/com/skillsgraph/com.sk.skillsgraph.script/SnapshotImportRunner.java` |
 
 ### Checklist
 
@@ -175,7 +175,7 @@ curl "http://localhost:8080/api/skills/search?q=flash" | jq
 
 # Create duplicate skills for merge test
 ML1_ID=$(curl -s -X POST http://localhost:8080/api/skills \
-  -d '{"canonical_name":"ML","category":"domain","path":"technology.ml"}' | jq -r '.id')
+  -d '{"canonical_name":"ML","category":"com.sk.skillsgraph.domain","path":"technology.ml"}' | jq -r '.id')
 curl -X POST "http://localhost:8080/api/skills/$ML1_ID/aliases" \
   -d '{"surface_form":"machine learning","locale":"en"}'
 

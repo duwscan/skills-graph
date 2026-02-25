@@ -87,4 +87,4 @@ hono optimize [entry] -t cloudflare-workers
 - Always search with `hono search` before implementing unfamiliar APIs
 - Use `--pretty` flag with `hono search` (default output is JSON)
 - `hono request` works without starting an HTTP server
-- Search for middleware usage with `hono search "middleware name"`
+- Search for com.sk.skillsgraph.middleware usage with `hono search "com.sk.skillsgraph.middleware name"`

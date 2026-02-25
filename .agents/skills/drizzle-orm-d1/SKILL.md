@@ -16,7 +16,7 @@ user-invocable: true
 
 | Command | Purpose |
 |---------|---------|
-| `/db-init` | Set up Drizzle ORM with D1 (schema, config, migrations) |
+| `/db-init` | Set up Drizzle ORM with D1 (schema, com.sk.skillsgraph.config, migrations) |
 | `/migrate` | Generate and apply database migrations |
 | `/seed` | Seed database with initial or test data |
 **Latest Version**: drizzle-orm@0.45.1, drizzle-kit@0.31.8, better-sqlite3@12.5.0
@@ -31,7 +31,7 @@ user-invocable: true
 npm install drizzle-orm
 npm install -D drizzle-kit
 
-# 2. Configure drizzle.config.ts
+# 2. Configure drizzle.com.sk.skillsgraph.config.ts
 import { defineConfig } from 'drizzle-kit';
 export default defineConfig({
   schema: './src/db/schema.ts',
@@ -262,9 +262,9 @@ This skill prevents **18** documented issues:
 **Prevention**: Use explicit return types: `Promise<User | undefined>`
 
 ### Issue #10: Drizzle Config Not Found
-**Error**: `Cannot find drizzle.config.ts`
+**Error**: `Cannot find drizzle.com.sk.skillsgraph.config.ts`
 **Why**: Wrong file location or name.
-**Prevention**: File must be `drizzle.config.ts` in project root
+**Prevention**: File must be `drizzle.com.sk.skillsgraph.config.ts` in project root
 
 ### Issue #11: Remote vs Local D1 Confusion
 **Error**: Changes not appearing in dev or production
@@ -562,7 +562,7 @@ const [result] = await D1.batch([
 **Error**: Migrations silently fail to apply (no error message)
 **Source**: [drizzle-orm#5266](https://github.com/drizzle-team/drizzle-orm/issues/5266)
 **Why It Happens**: Drizzle 1.0 beta generates nested migration folders, but `wrangler d1 migrations apply` only looks for files directly in the configured directory.
-**Prevention**: Flatten migrations with post-generation script
+**Prevention**: Flatten migrations with post-generation com.sk.skillsgraph.script
 
 **Migration Structure Issue**:
 ```bash
@@ -627,14 +627,14 @@ flattenMigrations().catch(console.error);
 ```
 
 **Workaround Until Fixed**:
-Always run the flatten script after generating migrations:
+Always run the flatten com.sk.skillsgraph.script after generating migrations:
 ```bash
 npx drizzle-kit generate
 tsx scripts/flatten-migrations.ts
 npx wrangler d1 migrations apply my-db --remote
 ```
 
-**Status**: Feature request to add `flat: true` config option (not yet implemented).
+**Status**: Feature request to add `flat: true` com.sk.skillsgraph.config option (not yet implemented).
 
 ---
 

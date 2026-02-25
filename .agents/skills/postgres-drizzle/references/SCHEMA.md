@@ -179,7 +179,7 @@ settings: jsonb('settings').$type<{
 }>(),
 
 // With default
-config: jsonb('config').$type<Record<string, unknown>>().default({}),
+com.sk.skillsgraph.config: jsonb('com.sk.skillsgraph.config').$type<Record<string, unknown>>().default({}),
 
 // JSON (text format, preserves whitespace/order)
 rawData: json('raw_data'),

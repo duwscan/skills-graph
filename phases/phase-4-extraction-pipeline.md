@@ -21,13 +21,13 @@ Implement the full RAG-based skill extraction pipeline — the system's **core v
 | 4.1.1 | Document parser | Accept plaintext and HTML input. Strip HTML tags while preserving text structure (headings → `\n\n`, list items → `\n- `). Normalize whitespace. Return clean plaintext | `src/main/java/com/skillsgraph/service/extraction/DocumentParser.java` |
 | 4.1.2 | Token estimator | `estimateTokens(String text): int` — approximate token count using word-count heuristic (words * 1.3). Used to determine chunk boundaries | `src/main/java/com/skillsgraph/service/extraction/TokenEstimator.java` |
 | 4.1.3 | Section detector | Detect document type (`jd`, `cv`, `generic`) and identify named sections. For JDs: look for headings like "Requirements", "Qualifications", "Responsibilities", "Nice to have", "About us". For CVs: look for "Skills", "Experience", "Projects", "Education", "Summary". Return `{ type: "jd" | "cv" | "generic", sections: Array<{ name: string; type: string; weight: number; startOffset: number; endOffset: number }> }` | `src/main/java/com/skillsgraph/service/extraction/SectionDetector.java` |
-| 4.1.4 | Section-based chunker | Split text on structural boundaries: `\n\n` (paragraphs), `\n#` (markdown headings), `---` (horizontal rules). Merge small consecutive sections until target size (~`CHUNK_TARGET_TOKENS` tokens — see `src/main/java/com/skillsgraph/config/AppConstants.java`). If a single section exceeds `CHUNK_MAX_TOKENS` tokens, apply sliding window. **Preserve section metadata** on each chunk from the section detector | `src/main/java/com/skillsgraph/service/extraction/DocumentChunker.java` |
+| 4.1.4 | Section-based chunker | Split text on structural boundaries: `\n\n` (paragraphs), `\n#` (markdown headings), `---` (horizontal rules). Merge small consecutive sections until target size (~`CHUNK_TARGET_TOKENS` tokens — see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`). If a single section exceeds `CHUNK_MAX_TOKENS` tokens, apply sliding window. **Preserve section metadata** on each chunk from the section detector | `src/main/java/com/skillsgraph/service/extraction/DocumentChunker.java` |
 | 4.1.5 | Sliding window fallback | For unstructured text without clear section boundaries: split into `CHUNK_TARGET_TOKENS` token chunks with `CHUNK_OVERLAP_TOKENS` token overlap. Ensure splits happen at sentence boundaries when possible | `src/main/java/com/skillsgraph/service/extraction/DocumentChunker.java` |
 | 4.1.6 | Chunk interface | `// Java record for Chunk { text: string; index: number; startOffset: number; endOffset: number; tokenEstimate: number; section?: { name: string; type: string; weight: number; } }` | `src/main/java/com/skillsgraph/service/extraction/ExtractionTypes.java` |
 
 ### Section Weight Constants
 
-Section weights are defined in `src/main/java/com/skillsgraph/config/AppConstants.java`:
+Section weights are defined in `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`:
 
 **Job Description Weights:**
 
@@ -58,7 +58,7 @@ Section weights are defined in `src/main/java/com/skillsgraph/config/AppConstant
 - [ ] Section detector: CV with "Skills" and "Experience" headings → detects `type: "cv"` with 2 sections
 - [ ] Section detector: plain text without clear headings → `type: "generic"`, no sections
 - [ ] Section detector: assigns correct weight constants to each section type
-- [ ] Section chunker: a 5-paragraph document produces 2-3 chunks of ~`CHUNK_TARGET_TOKENS` tokens (see `src/main/java/com/skillsgraph/config/AppConstants.java`)
+- [ ] Section chunker: a 5-paragraph document produces 2-3 chunks of ~`CHUNK_TARGET_TOKENS` tokens (see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`)
 - [ ] Section chunker: small paragraphs are merged together (not one chunk per paragraph)
 - [ ] Section chunker: chunks preserve `section` metadata from detector
 - [ ] Sliding window: a 4,000 token block without sections → 3 chunks with `CHUNK_OVERLAP_TOKENS` token overlap
@@ -76,11 +76,11 @@ Section weights are defined in `src/main/java/com/skillsgraph/config/AppConstant
 | # | Task | Detail | Files |
 |---|---|---|---|
 | 4.2.1 | Extraction output schema | Java record for LLM structured output: `extracted_skills[]` (skill_id, skill_name, confidence, evidence[], proficiency_hint, context_type, section?) and `discovered_candidates[]` (surface_form, suggested_category, reason). Detailed `.describe()` on every field for LLM guidance. The `section` field indicates which document section the skill was found in | `src/main/java/com/skillsgraph/dto/ExtractionDto.java` |
-| 4.2.2 | Extraction request schema | Java DTO record for API input: `text` (string, 1-`EXTRACTION_MAX_TEXT_LENGTH` chars — see `src/main/java/com/skillsgraph/config/AppConstants.java`), `options?` (expand: boolean, min_confidence: number, locale: string, max_skills: number) | `src/main/java/com/skillsgraph/dto/ExtractionDto.java` |
+| 4.2.2 | Extraction request schema | Java DTO record for API input: `text` (string, 1-`EXTRACTION_MAX_TEXT_LENGTH` chars — see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`), `options?` (expand: boolean, min_confidence: number, locale: string, max_skills: number) | `src/main/java/com/skillsgraph/dto/ExtractionDto.java` |
 | 4.2.3 | Extraction response schema | Java DTO record for API output: `skills[]`, `discovered_candidates[]`, `metadata` (chunks_processed, cache_hits, processing_time_ms, model_used) | `src/main/java/com/skillsgraph/dto/ExtractionDto.java` |
 | 4.2.4 | System prompt | Constant string with instructions for the LLM: role, input format, output constraints ("ONLY return skills from the candidate list"), confidence scoring guidelines | `src/main/java/com/skillsgraph/service/extraction/ExtractionPrompts.java` |
 | 4.2.5 | Few-shot examples | 2-3 input/output examples covering: explicit skill mention, implicit skill mention, no skills found. Include in system prompt | `src/main/java/com/skillsgraph/service/extraction/ExtractionPrompts.java` |
-| 4.2.6 | Prompt builder | `buildPrompt(chunk: string, candidates: CandidateSkill[])` — format candidates as numbered list `[SK-1001] Machine Learning`, append chunk text. Ensure total prompt stays under context limits. If too many candidates, truncate to top `RAG_CANDIDATE_LIMIT` by similarity (see `src/main/java/com/skillsgraph/config/AppConstants.java`) | `src/main/java/com/skillsgraph/service/extraction/ExtractionPrompts.java` |
+| 4.2.6 | Prompt builder | `buildPrompt(chunk: string, candidates: CandidateSkill[])` — format candidates as numbered list `[SK-1001] Machine Learning`, append chunk text. Ensure total prompt stays under context limits. If too many candidates, truncate to top `RAG_CANDIDATE_LIMIT` by similarity (see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`) | `src/main/java/com/skillsgraph/service/extraction/ExtractionPrompts.java` |
 
 ### Checklist
 
@@ -100,16 +100,16 @@ Section weights are defined in `src/main/java/com/skillsgraph/config/AppConstant
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 4.3.1 | `SkillExtractionPipeline` class | Constructor: `EmbeddingService`, `VectorSearchService`, `RedisClient`, model config. Main orchestration class | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java` |
+| 4.3.1 | `SkillExtractionPipeline` class | Constructor: `EmbeddingService`, `VectorSearchService`, `RedisClient`, model com.sk.skillsgraph.config. Main orchestration class | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java` |
 | 4.3.2 | `extract(text, options?)` | Full pipeline orchestration: `parse → detect sections → chunk (with section metadata) → processChunks → applyWeighting → mergeAndDeduplicate → expand → recordCoOccurrences → filterByConfidence → return` | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java` |
-| 4.3.3 | `processChunk(chunk)` | Per-chunk logic: (1) compute cache key `extract:{sha256(chunk.text + sortedCandidateIds)}`, (2) check Redis cache, (3) if miss: embed chunk → retrieve top `RAG_CANDIDATE_LIMIT` candidates (see `src/main/java/com/skillsgraph/config/AppConstants.java`) → build prompt (include section context) → call LLM → validate → cache → return | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java` |
+| 4.3.3 | `processChunk(chunk)` | Per-chunk logic: (1) compute cache key `extract:{sha256(chunk.text + sortedCandidateIds)}`, (2) check Redis cache, (3) if miss: embed chunk → retrieve top `RAG_CANDIDATE_LIMIT` candidates (see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`) → build prompt (include section context) → call LLM → validate → cache → return | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java` |
 | 4.3.4 | Model tier selection | `selectModel(chunk, options)` — Haiku for chunks < 500 tokens or English-only standard docs; Sonnet for multilingual, long, or complex docs. Configurable via options | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java` |
-| 4.3.5 | LLM call | `callLLM(prompt, model)` — use `chatClient.call().entity(ExtractionResult.class)` from Spring AI. Set `maxRetries: EXTRACTION_MAX_RETRIES` (see `src/main/java/com/skillsgraph/config/AppConstants.java`). Track tokens used, latency. Return structured output | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java` |
+| 4.3.5 | LLM call | `callLLM(prompt, model)` — use `chatClient.call().entity(ExtractionResult.class)` from Spring AI. Set `maxRetries: EXTRACTION_MAX_RETRIES` (see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`). Track tokens used, latency. Return structured output | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java` |
 | 4.3.6 | Result validation | `validateResults(output, candidates)` — reject any `skill_id` not in the candidate list. Log stripped entries for monitoring. Return only valid extractions | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java` |
 | 4.3.7 | Section weighting | `applyWeighting(results, chunk)` — if chunk has section metadata, multiply each extracted skill's confidence by the section weight. `final_confidence = llm_confidence × section_weight`. Skills from "Requirements" sections keep full confidence; skills from "Company description" get 0.5x | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java` |
 | 4.3.8 | Result merging | `mergeAndDeduplicate(chunkResults[])` — for skills appearing in multiple chunks: keep highest confidence, merge evidence arrays (deduplicate), use latest proficiency_hint. Sort final results by confidence DESC | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java` |
 | 4.3.9 | Co-occurrence recording | After final merge, publish all pairs of extracted active skill IDs to `co-occurrence:pairs` Redis Stream with `{ skill_ids: string[], source_type: "cv" | "jd" | "course" | "generic" }`. Async — don't block the API response | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java` |
-| 4.3.10 | Response caching | Cache key: `extract:{sha256(chunk + sortedCandidateIds)}`. TTL: `EXTRACTION_CACHE_TTL_SECONDS` (see `src/main/java/com/skillsgraph/config/AppConstants.java`). Store as JSON string in Redis | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java` |
+| 4.3.10 | Response caching | Cache key: `extract:{sha256(chunk + sortedCandidateIds)}`. TTL: `EXTRACTION_CACHE_TTL_SECONDS` (see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`). Store as JSON string in Redis | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java` |
 | 4.3.11 | Metadata tracking | Track per-extraction: total chunks processed, cache hits, cache misses, total LLM tokens, total processing time, model used, document_type, sections_detected | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java` |
 
 ### Checklist
@@ -131,7 +131,7 @@ Section weights are defined in `src/main/java/com/skillsgraph/config/AppConstant
 - [ ] Merging: evidence arrays from both chunks are combined
 - [ ] Tier selection: short English text → uses Haiku; long multilingual → uses Sonnet
 - [ ] Metadata: response includes `chunks_processed`, `cache_hits`, `processing_time_ms`, `document_type`, `sections_detected`
-- [ ] `maxRetries: EXTRACTION_MAX_RETRIES` — LLM call retries on transient errors (see `src/main/java/com/skillsgraph/config/AppConstants.java`)
+- [ ] `maxRetries: EXTRACTION_MAX_RETRIES` — LLM call retries on transient errors (see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`)
 - [ ] Error handling: if LLM call fails after retries, chunk is skipped (not crash entire extraction)
 
 ---
@@ -148,9 +148,9 @@ After extracting skills, the pipeline can optionally "expand" results by queryin
 |---|---|---|---|
 | 4.4.1 | `SkillExpansionService` | Given a list of extracted skill IDs, query the graph for related skills using recursive CTE | `src/main/java/com/skillsgraph/service/extraction/SkillExpansionService.java` |
 | 4.4.2 | Expansion SQL | Use the CTE from ARCHITECTURE.md §4.4: get parents (source of `parent_of` edges), children (target of `parent_of` edges), and siblings (other targets of same parent) | `src/main/java/com/skillsgraph/service/extraction/SkillExpansionService.java` |
-| 4.4.3 | Confidence reduction | Expanded skills receive `original_confidence * EXTRACTION_EXPANSION_FACTOR` (see `src/main/java/com/skillsgraph/config/AppConstants.java`). Mark with `expansion_type: "parent" | "child" | "sibling"` and `is_expanded: true` | `src/main/java/com/skillsgraph/service/extraction/SkillExpansionService.java` |
+| 4.4.3 | Confidence reduction | Expanded skills receive `original_confidence * EXTRACTION_EXPANSION_FACTOR` (see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`). Mark with `expansion_type: "parent" | "child" | "sibling"` and `is_expanded: true` | `src/main/java/com/skillsgraph/service/extraction/SkillExpansionService.java` |
 | 4.4.4 | Deduplication with extracted | If an expanded skill was already directly extracted, keep the directly extracted version (higher confidence). Don't add duplicates | `src/main/java/com/skillsgraph/service/extraction/SkillExpansionService.java` |
-| 4.4.5 | Configurable | Accept `options.expand: boolean` (default true) and `options.expansion_depth: number` (default `EXTRACTION_EXPANSION_DEPTH_DEFAULT` — see `src/main/java/com/skillsgraph/config/AppConstants.java`) | `src/main/java/com/skillsgraph/service/extraction/SkillExpansionService.java` |
+| 4.4.5 | Configurable | Accept `options.expand: boolean` (default true) and `options.expansion_depth: number` (default `EXTRACTION_EXPANSION_DEPTH_DEFAULT` — see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`) | `src/main/java/com/skillsgraph/service/extraction/SkillExpansionService.java` |
 
 ### Checklist
 
@@ -158,7 +158,7 @@ After extracting skills, the pipeline can optionally "expand" results by queryin
 - [ ] Expansion finds siblings: extract "PyTorch" → expansion adds "TensorFlow" (sibling)
 - [ ] Expansion finds children: extract "Data Science" → expansion adds "Machine Learning", "Data Engineering" (children)
 - [ ] Expanded skills have `is_expanded: true` and `expansion_type` set
-- [ ] Expanded skills have reduced confidence (original * `EXTRACTION_EXPANSION_FACTOR` — see `src/main/java/com/skillsgraph/config/AppConstants.java`)
+- [ ] Expanded skills have reduced confidence (original * `EXTRACTION_EXPANSION_FACTOR` — see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`)
 - [ ] No duplicates: if "Machine Learning" was both extracted and expanded, only extracted version appears
 - [ ] `expand: false` option skips expansion entirely
 - [ ] `expansion_depth: 0` skips expansion
@@ -172,19 +172,19 @@ After extracting skills, the pipeline can optionally "expand" results by queryin
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 4.5.1 | `POST /api/extract` | Accept extraction request body. Run `SkillExtractionPipeline.extract()`. Return extraction response with skills, discovered_candidates, and metadata | `src/main/java/com/skillsgraph/controller/ExtractionController.java` |
-| 4.5.2 | Request validation | `@Valid("json", extractionRequestSchema)` — validate text length (1-`EXTRACTION_MAX_TEXT_LENGTH` chars — see `src/main/java/com/skillsgraph/config/AppConstants.java`), options | `src/main/java/com/skillsgraph/controller/ExtractionController.java` |
-| 4.5.3 | Concurrency control | Use semaphore (`ReentrantLock / @Async`) to limit concurrent LLM calls to `LLM_CONCURRENCY_LIMIT` across all requests (see `src/main/java/com/skillsgraph/config/AppConstants.java`). If semaphore is full, return 429 with `Retry-After` header | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java` |
-| 4.5.4 | Min confidence filter | Apply `options.min_confidence` (default `EXTRACTION_MIN_CONFIDENCE_DEFAULT` — see `src/main/java/com/skillsgraph/config/AppConstants.java`) to filter out low-confidence extractions from the response. Still return metadata about total extractions before filtering | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java` |
+| 4.5.1 | `POST /api/extract` | Accept extraction request body. Run `SkillExtractionPipeline.extract()`. Return extraction response with skills, discovered_candidates, and metadata | `src/main/java/com/skillsgraph/com.sk.skillsgraph.controller/ExtractionController.java` |
+| 4.5.2 | Request validation | `@Valid("json", extractionRequestSchema)` — validate text length (1-`EXTRACTION_MAX_TEXT_LENGTH` chars — see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`), options | `src/main/java/com/skillsgraph/com.sk.skillsgraph.controller/ExtractionController.java` |
+| 4.5.3 | Concurrency control | Use semaphore (`ReentrantLock / @Async`) to limit concurrent LLM calls to `LLM_CONCURRENCY_LIMIT` across all requests (see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`). If semaphore is full, return 429 with `Retry-After` header | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java` |
+| 4.5.4 | Min confidence filter | Apply `options.min_confidence` (default `EXTRACTION_MIN_CONFIDENCE_DEFAULT` — see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`) to filter out low-confidence extractions from the response. Still return metadata about total extractions before filtering | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java` |
 
 ### Checklist
 
 - [ ] `POST /api/extract` with valid text → 200 with extracted skills
 - [ ] Response shape: `{ skills: [...], discovered_candidates: [...], metadata: {...} }`
 - [ ] `min_confidence: 0.8` filters out low-confidence results
-- [ ] Text > `EXTRACTION_MAX_TEXT_LENGTH` chars → 400 validation error (see `src/main/java/com/skillsgraph/config/AppConstants.java`)
+- [ ] Text > `EXTRACTION_MAX_TEXT_LENGTH` chars → 400 validation error (see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`)
 - [ ] Empty text → 400 validation error
-- [ ] 51st concurrent request → 429 with Retry-After header (limit: `LLM_CONCURRENCY_LIMIT` — see `src/main/java/com/skillsgraph/config/AppConstants.java`)
+- [ ] 51st concurrent request → 429 with Retry-After header (limit: `LLM_CONCURRENCY_LIMIT` — see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`)
 - [ ] Extraction of a typical job description completes in < 5 seconds
 - [ ] Extraction caches results — second identical request is < 100ms
 
@@ -259,12 +259,12 @@ echo "Phase 4 complete ✓"
 - [ ] Spring AI `chatClient.call().entity(ExtractionResult.class)` for structured output
 - [ ] Validation strips invalid skill_ids
 - [ ] Merging deduplicates across chunks (highest confidence wins)
-- [ ] Response caching with `EXTRACTION_CACHE_TTL_SECONDS` TTL (see `src/main/java/com/skillsgraph/config/AppConstants.java`)
+- [ ] Response caching with `EXTRACTION_CACHE_TTL_SECONDS` TTL (see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`)
 - [ ] Metadata tracking (chunks, cache hits, time, tokens)
 
 ### 4.4 Skill Expansion
 - [ ] Finds parents, children, and siblings
-- [ ] Confidence reduction (original * `EXTRACTION_EXPANSION_FACTOR` — see `src/main/java/com/skillsgraph/config/AppConstants.java`)
+- [ ] Confidence reduction (original * `EXTRACTION_EXPANSION_FACTOR` — see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`)
 - [ ] Deduplication with directly extracted skills
 - [ ] Configurable via `expand` and `expansion_depth` options
 

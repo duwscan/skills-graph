@@ -25,8 +25,8 @@ Manage D1 database migrations through Drizzle Kit. Guide the user through a safe
 Check for Drizzle configuration:
 
 ```bash
-# Find Drizzle config
-ls drizzle.config.ts drizzle.config.js 2>/dev/null
+# Find Drizzle com.sk.skillsgraph.config
+ls drizzle.com.sk.skillsgraph.config.ts drizzle.com.sk.skillsgraph.config.js 2>/dev/null
 
 # Find schema location
 grep -l "sqliteTable\|integer\|text" src/**/*.ts 2>/dev/null | head -3
@@ -35,7 +35,7 @@ grep -l "sqliteTable\|integer\|text" src/**/*.ts 2>/dev/null | head -3
 ls -la migrations/ drizzle/ 2>/dev/null | head -10
 ```
 
-If no config found:
+If no com.sk.skillsgraph.config found:
 ```
 ⚠️  Drizzle not configured in this project.
 
@@ -222,7 +222,7 @@ When `/migrate --status`:
 ═══════════════════════════════════════════════
 
 Schema: src/db/schema.ts
-Config: drizzle.config.ts
+Config: drizzle.com.sk.skillsgraph.config.ts
 
 Local Database:
   Name: my-database
@@ -293,7 +293,7 @@ But wrangler expects flat structure:
 Flattening migrations automatically...
 ```
 
-Then run the flatten script from Issue #18.
+Then run the flatten com.sk.skillsgraph.script from Issue #18.
 
 ---
 

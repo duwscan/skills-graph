@@ -293,7 +293,7 @@ reserve_pool_size = 5
 ### Transaction Pooling Limitations
 
 - No `SET SESSION` (use `SET LOCAL`)
-- No `PREPARE` without config
+- No `PREPARE` without com.sk.skillsgraph.config
 - Temp tables must be created/dropped in same transaction
 
 ### Drizzle with postgres.js

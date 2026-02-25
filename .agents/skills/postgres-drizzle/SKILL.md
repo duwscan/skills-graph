@@ -67,7 +67,7 @@ src/db/
 └── migrate.ts            # Migration runner
 drizzle/
 └── migrations/           # Generated SQL files
-drizzle.config.ts         # drizzle-kit config
+drizzle.com.sk.skillsgraph.config.ts         # drizzle-kit com.sk.skillsgraph.config
 ```
 
 ## Schema Patterns

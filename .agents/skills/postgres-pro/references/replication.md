@@ -39,7 +39,7 @@ rm -rf /var/lib/postgresql/14/main/*
 pg_basebackup -h primary-host -D /var/lib/postgresql/14/main \
   -U replicator -P -v -R -X stream -S replica_1
 
-# -R creates standby.signal and recovery config
+# -R creates standby.signal and recovery com.sk.skillsgraph.config
 # -X stream: stream WAL during backup
 # -S replica_1: use replication slot
 ```

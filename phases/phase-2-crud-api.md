@@ -23,11 +23,11 @@ Java records with Jakarta Bean Validation annotations serve as the **single sour
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 2.1.1 | Shared Java enums | Define `SkillStatus` (`candidate`, `active`, `deprecated`, `merged`), `SkillCategory` (`domain`, `tool`, `certification`, `soft_skill`, `methodology`, `language`), `RelationshipType` (`parent_of`, `child_of`, `related_to`, `requires`, `superseded_by`), `Provenance` (`human_curated`, `llm_predicted`, `embedding_similarity`, `empirical`), `AliasSource` (`curated`, `llm_discovered`, `user_submitted`), `EdgeStatus` (`active`, `pending_review`, `rejected`, `deprecated`) | `src/main/java/com/skillsgraph/dto/Enums.java` |
+| 2.1.1 | Shared Java enums | Define `SkillStatus` (`candidate`, `active`, `deprecated`, `merged`), `SkillCategory` (`com.sk.skillsgraph.domain`, `tool`, `certification`, `soft_skill`, `methodology`, `language`), `RelationshipType` (`parent_of`, `child_of`, `related_to`, `requires`, `superseded_by`), `Provenance` (`human_curated`, `llm_predicted`, `embedding_similarity`, `empirical`), `AliasSource` (`curated`, `llm_discovered`, `user_submitted`), `EdgeStatus` (`active`, `pending_review`, `rejected`, `deprecated`) | `src/main/java/com/skillsgraph/dto/Enums.java` |
 | 2.1.2 | Skill schemas | `createSkillSchema`: `canonical_name` (required), `description`, `category`, `status` (default `candidate`), `metadata` (optional JSON). Auto-generate `slug` from name. `updateSkillSchema`: all fields optional (partial). `skillResponseSchema`: full skill with `id`, `external_id`, `version`, timestamps, nested `aliases[]`, `relationships[]` | `src/main/java/com/skillsgraph/dto/SkillDto.java` |
 | 2.1.3 | Alias schemas | `createAliasSchema`: `surface_form`, `locale` (default `en`), `source` (default `curated`), `is_primary` (default false). `aliasResponseSchema` | `src/main/java/com/skillsgraph/dto/AliasDto.java` |
 | 2.1.4 | Edge schemas | `createEdgeSchema`: `source_skill_id` (UUID), `target_skill_id` (UUID), `relationship_type`, `confidence` (default 1.0), `provenance` (default `human_curated`). `edgeResponseSchema` | `src/main/java/com/skillsgraph/dto/EdgeDto.java` |
-| 2.1.5 | Query schemas | `paginationSchema`: `limit` (default `PAGINATION_DEFAULT_LIMIT`, max `PAGINATION_MAX_LIMIT` — see `src/main/java/com/skillsgraph/config/AppConstants.java`), `offset` (default 0). `listSkillsQuerySchema`: pagination + `status`, `category`, `q` (search text). `depthSchema`: `depth` (default `TRAVERSAL_DEFAULT_DEPTH`, max `TRAVERSAL_MAX_DEPTH`) | `src/main/java/com/skillsgraph/dto/QueryParams.java` |
+| 2.1.5 | Query schemas | `paginationSchema`: `limit` (default `PAGINATION_DEFAULT_LIMIT`, max `PAGINATION_MAX_LIMIT` — see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`), `offset` (default 0). `listSkillsQuerySchema`: pagination + `status`, `category`, `q` (search text). `depthSchema`: `depth` (default `TRAVERSAL_DEFAULT_DEPTH`, max `TRAVERSAL_MAX_DEPTH`) | `src/main/java/com/skillsgraph/dto/QueryParams.java` |
 
 ### Checklist
 
@@ -55,10 +55,10 @@ The `SkillService` is the primary business logic layer for skill nodes. It handl
 | 2.2.2 | `getById(id)` | Fetch skill by `id` or `externalId` or `slug` from Neo4j. Use Cypher `MATCH (s:Skill)-[:HAS_ALIAS]->(a:Alias)` and `MATCH (s)-[r]->()` patterns via `Neo4jTemplate`. Throw `SkillNotFoundException` if not found | `src/main/java/com/skillsgraph/service/SkillService.java` |
 | 2.2.3 | `update(id, input)` | Validate input via `updateSkillSchema`. Partial update only provided fields. Increment `version`, set `updated_at = now()`. Record changelog with diff (old vs new values). If `canonical_name` changed, update the primary `en` alias too | `src/main/java/com/skillsgraph/service/SkillService.java` |
 | 2.2.4 | `list(query)` | Paginated listing with filters: `status`, `category`, `source`. If `q` parameter present, use trigram similarity search (`canonical_name % $q`) ordered by `similarity(canonical_name, $q) DESC`. Return `{ items, total, limit, offset }` | `src/main/java/com/skillsgraph/service/SkillService.java` |
-| 2.2.5 | `getAncestors(id, depth?)` | Use Cypher variable-length pattern `(s:Skill {id: $skillId})<-[:PARENT_OF*1..$depth]-(ancestor:Skill)` via `Neo4jTemplate`. Limit depth (default `TRAVERSAL_DEFAULT_DEPTH`, max `TRAVERSAL_MAX_DEPTH` — see `src/main/java/com/skillsgraph/config/AppConstants.java`). Return ordered list of ancestor skills | `src/main/java/com/skillsgraph/service/SkillService.java` |
+| 2.2.5 | `getAncestors(id, depth?)` | Use Cypher variable-length pattern `(s:Skill {id: $skillId})<-[:PARENT_OF*1..$depth]-(ancestor:Skill)` via `Neo4jTemplate`. Limit depth (default `TRAVERSAL_DEFAULT_DEPTH`, max `TRAVERSAL_MAX_DEPTH` — see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`). Return ordered list of ancestor skills | `src/main/java/com/skillsgraph/service/SkillService.java` |
 | 2.2.6 | `getDescendants(id, depth?)` | Use Cypher variable-length pattern `(parent:Skill {id: $skillId})-[:PARENT_OF*1..$depth]->(s:Skill)` via `Neo4jTemplate`. Limit depth (default `TRAVERSAL_DEFAULT_DEPTH`, max `TRAVERSAL_MAX_DEPTH`). Return tree structure or flat list of descendant skills | `src/main/java/com/skillsgraph/service/SkillService.java` |
 | 2.2.7 | `getRoots()` | Return all active skills that have no incoming `PARENT_OF` relationships. Cypher: `MATCH (s:Skill {status: 'active'}) WHERE NOT ()-[:PARENT_OF]->(s) RETURN s`. These are the top-level taxonomy categories | `src/main/java/com/skillsgraph/service/SkillService.java` |
-| 2.2.8 | Slug utility | `public static String generateSlug(String name)` — lowercase, replace spaces with hyphens, remove special chars, truncate to `SLUG_MAX_LENGTH` chars (see `src/main/java/com/skillsgraph/config/AppConstants.java`). Handle duplicates by appending `-2`, `-3`, etc. | `src/main/java/com/skillsgraph/util/SlugUtils.java` |
+| 2.2.8 | Slug utility | `public static String generateSlug(String name)` — lowercase, replace spaces with hyphens, remove special chars, truncate to `SLUG_MAX_LENGTH` chars (see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`). Handle duplicates by appending `-2`, `-3`, etc. | `src/main/java/com/skillsgraph/com.sk.skillsgraph.util/SlugUtils.java` |
 
 ### Cypher Ancestors Query
 
@@ -241,7 +241,7 @@ async function checkCycle(sourceId: string, targetId: string): Promise<CycleChec
 | # | Task | Detail | Files |
 |---|---|---|---|
 | 2.6.1 | `record(params)` | After writing mutations to Neo4j, insert row into `graph_changelog` (PostgreSQL). Get next `graph_version` from `nextval('graph_version_seq')`. Accept: `actor`, `mutation_type`, `entity_type`, `entity_id`, `diff_payload` (JSONB). Fire `pg_notify('graph_changes', json)` for CDC consumers | `src/main/java/com/skillsgraph/service/ChangelogService.java` |
-| 2.6.2 | `list(since?, limit?)` | Paginated listing of changelog entries where `graph_version > since`. Order by `graph_version ASC`. Default limit `CHANGELOG_DEFAULT_LIMIT` (see `src/main/java/com/skillsgraph/config/AppConstants.java`) | `src/main/java/com/skillsgraph/service/ChangelogService.java` |
+| 2.6.2 | `list(since?, limit?)` | Paginated listing of changelog entries where `graph_version > since`. Order by `graph_version ASC`. Default limit `CHANGELOG_DEFAULT_LIMIT` (see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`) | `src/main/java/com/skillsgraph/service/ChangelogService.java` |
 | 2.6.3 | `getVersion()` | Return current graph version (latest `graph_version` from changelog). If no entries, return 0. Also return `total_skills`, `total_edges` counts | `src/main/java/com/skillsgraph/service/ChangelogService.java` |
 | 2.6.4 | `MutationType` enum | Define all valid mutation types: `skill_created`, `skill_updated`, `skill_deprecated`, `skill_merged`, `alias_added`, `alias_removed`, `edge_created`, `edge_updated`, `edge_deprecated` | `src/main/java/com/skillsgraph/service/ChangelogService.java` |
 
@@ -310,11 +310,11 @@ curl http://localhost:8080/api/taxonomy/roots | jq
 # Create skill hierarchy
 TECH_ID=$(curl -s -X POST http://localhost:8080/api/skills \
   -H "Content-Type: application/json" \
-  -d '{"canonical_name":"Data Science","category":"domain","description":"Field combining statistics and programming","path":"technology.data_science"}' | jq -r '.id')
+  -d '{"canonical_name":"Data Science","category":"com.sk.skillsgraph.domain","description":"Field combining statistics and programming","path":"technology.data_science"}' | jq -r '.id')
 
 ML_ID=$(curl -s -X POST http://localhost:8080/api/skills \
   -H "Content-Type: application/json" \
-  -d '{"canonical_name":"Machine Learning","category":"domain","description":"Subset of AI","path":"technology.data_science.machine_learning"}' | jq -r '.id')
+  -d '{"canonical_name":"Machine Learning","category":"com.sk.skillsgraph.domain","description":"Subset of AI","path":"technology.data_science.machine_learning"}' | jq -r '.id')
 
 # Create parent_of edge
 curl -X POST http://localhost:8080/api/edges \

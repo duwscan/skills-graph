@@ -338,7 +338,7 @@ npx drizzle-kit check      # Verify migrations
 
 ---
 
-## drizzle.config.ts
+## drizzle.com.sk.skillsgraph.config.ts
 
 ```typescript
 import { defineConfig } from 'drizzle-kit';

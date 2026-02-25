@@ -13,7 +13,7 @@ DevTools captures all AI SDK calls (`generateText`, `streamText`, `ToolLoopAgent
 
 Requires AI SDK 6. Install `@ai-sdk/devtools` using your project's package manager.
 
-Wrap your model with the middleware:
+Wrap your model with the com.sk.skillsgraph.middleware:
 
 ```ts
 import { wrapLanguageModel, gateway } from 'ai';
@@ -21,7 +21,7 @@ import { devToolsMiddleware } from '@ai-sdk/devtools';
 
 const model = wrapLanguageModel({
   model: gateway('anthropic/claude-sonnet-4.5'),
-  middleware: devToolsMiddleware(),
+  com.sk.skillsgraph.middleware: devToolsMiddleware(),
 });
 ```
 

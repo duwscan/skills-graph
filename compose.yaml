@@ -1,21 +1,62 @@
 services:
-  cassandra:
-    image: 'cassandra:latest'
-    environment:
-      - 'CASSANDRA_DC=dc1'
-      - 'CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch'
+  postgres:
+    image: pgvector/pgvector:pg16
     ports:
-      - '9042'
-  neo4j:
-    image: 'neo4j:latest'
+      - "5432:5432"
     environment:
-      - 'NEO4J_AUTH=neo4j/notverysecret'
+      POSTGRES_DB: skills_graph
+      POSTGRES_USER: skills
+      POSTGRES_PASSWORD: skills_dev
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./docker/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U skills -d skills_graph"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
     ports:
-      - '7687'
+      - "6379:6379"
+    command: redis-server --appendonly yes
+    volumes:
+      - redisdata:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
   typesense:
-    image: 'typesense/typesense:30.1'
-    environment:
-      - 'TYPESENSE_API_KEY=secret'
-      - 'TYPESENSE_DATA_DIR=/tmp'
+    image: typesense/typesense:27.1
     ports:
-      - '8108'
+      - "8108:8108"
+    environment:
+      TYPESENSE_API_KEY: skills_dev_key
+      TYPESENSE_DATA_DIR: /data
+    volumes:
+      - typesensedata:/data
+
+  neo4j:
+    image: neo4j:5
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      NEO4J_AUTH: neo4j/skills_dev
+      NEO4J_PLUGINS: '["apoc"]'
+    volumes:
+      - neo4jdata:/data
+    healthcheck:
+      test: ["CMD", "neo4j", "status"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  pgdata:
+  redisdata:
+  typesensedata:
+  neo4jdata:

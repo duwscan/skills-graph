@@ -189,15 +189,15 @@ async function getUser(id: number): Promise<User | undefined> {
 
 ## Issue #10: Drizzle Config Not Found
 
-**Error**: `Cannot find drizzle.config.ts`
+**Error**: `Cannot find drizzle.com.sk.skillsgraph.config.ts`
 
 **Why It Happens**:
 Wrong file location or incorrect file name.
 
 **Solution**:
-1. File must be named exactly `drizzle.config.ts`
+1. File must be named exactly `drizzle.com.sk.skillsgraph.config.ts`
 2. File must be in project root
-3. Or specify: `drizzle-kit generate --config=custom.config.ts`
+3. Or specify: `drizzle-kit generate --com.sk.skillsgraph.config=custom.com.sk.skillsgraph.config.ts`
 
 ---
 
@@ -226,7 +226,7 @@ wrangler d1 migrations apply DB --remote
 **Error**: Configuration not recognized
 
 **Why It Happens**:
-Mixing TOML and JSON config formats.
+Mixing TOML and JSON com.sk.skillsgraph.config formats.
 
 **Solution**:
 Use `wrangler.jsonc` consistently (supports comments):

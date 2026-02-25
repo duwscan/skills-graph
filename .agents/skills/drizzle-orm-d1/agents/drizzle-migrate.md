@@ -16,8 +16,8 @@ Execute this migration workflow in order:
 ### 1. Discover Schema State
 
 ```bash
-# Find Drizzle config
-cat drizzle.config.ts 2>/dev/null || cat drizzle.config.js 2>/dev/null
+# Find Drizzle com.sk.skillsgraph.config
+cat drizzle.com.sk.skillsgraph.config.ts 2>/dev/null || cat drizzle.com.sk.skillsgraph.config.js 2>/dev/null
 
 # Check current migrations
 ls -la drizzle/ 2>/dev/null || ls -la migrations/ 2>/dev/null

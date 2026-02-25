@@ -3,7 +3,7 @@
 // =============================================================================
 // Single source of truth for all tunable values across the application.
 // Values can be overridden via environment variables where noted.
-// Import from `@/config/constants` — never hardcode these values inline.
+// Import from `@/com.sk.skillsgraph.config/constants` — never hardcode these values inline.
 // =============================================================================
 
 // -----------------------------------------------------------------------------

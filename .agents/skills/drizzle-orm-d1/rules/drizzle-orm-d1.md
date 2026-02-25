@@ -1,5 +1,5 @@
 ---
-paths: "**/*schema*.ts", "**/*db*.ts", drizzle.config.ts, wrangler.jsonc, wrangler.toml
+paths: "**/*schema*.ts", "**/*db*.ts", drizzle.com.sk.skillsgraph.config.ts, wrangler.jsonc, wrangler.toml
 ---
 
 # Drizzle ORM + D1 Corrections
@@ -85,7 +85,7 @@ const db = drizzle(env.DB)
 |----------------------|----------------|
 | `db.transaction()` | `db.batch([...])` |
 | `npx drizzle-kit push` | `npx drizzle-kit generate` + `wrangler d1 migrations apply` |
-| Missing `migrations_dir` | Add to wrangler.jsonc d1_databases config |
+| Missing `migrations_dir` | Add to wrangler.jsonc d1_databases com.sk.skillsgraph.config |
 | `text()` for dates | `integer('col', { mode: 'timestamp' })` |
 | `.default(new Date())` | `.$defaultFn(() => new Date())` |
 | Import from 'wrangler' | Import from 'drizzle-orm/d1' |

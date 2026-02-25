@@ -176,14 +176,14 @@ When using `useChat` on the frontend, use `toUIMessageStreamResponse()` instead 
 ```typescript
 // ❌ Incorrect (when using useChat)
 const result = streamText({
-  // config
+  // com.sk.skillsgraph.config
 });
 
 return result.toDataStreamResponse(); // deprecated for useChat: use toUIMessageStreamResponse
 
 // ✅ Correct
 const result = streamText({
-  // config
+  // com.sk.skillsgraph.config
 });
 
 return result.toUIMessageStreamResponse();

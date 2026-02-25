@@ -1,41 +1,50 @@
 # skills-graph
 
-An **LLM-First Skills Graph** system powering a Recruitment Agency Platform, built with **Java 21**, **Spring Boot 3**, and **Spring AI**.
+Phase 1 foundation for an LLM-first Skills Graph service using Java 21, Spring Boot 4, Neo4j, PostgreSQL (pgvector), Redis, and Spring AI.
 
-## Getting Started
+## Prerequisites
 
-### Prerequisites
-- Java 21 (LTS)
-- Maven 3.9+ (or use the included `./mvnw` wrapper)
-- Docker & Docker Compose
-- Neo4j 5 (via Docker Compose)
+- Java 21
+- Docker + Docker Compose
 
-### Installation
+## Quick Start
 
 ```bash
-./mvnw dependency:resolve
-```
-
-### Running
-
-```bash
-# Start infrastructure (Neo4j + PostgreSQL + Redis)
+cp .env.example .env
 docker compose up -d
-
-# Run Neo4j schema (constraints + indexes)
-./mvnw spring-boot:run -Dspring-boot.run.arguments=--neo4j-schema
-
-# Run PostgreSQL migrations (embedding + changelog tables)
 ./mvnw flyway:migrate
-
-# Start the application
 ./mvnw spring-boot:run
 ```
 
-### Testing
+## Useful Commands
 
 ```bash
+# infra helpers (implemented via app args)
+./mvnw spring-boot:run -Dspring-boot.run.arguments=--infra-up
+./mvnw spring-boot:run -Dspring-boot.run.arguments=--infra-down
+./mvnw spring-boot:run -Dspring-boot.run.arguments=--infra-reset
+
+# seed locale + root categories
+./mvnw spring-boot:run -Dspring-boot.run.arguments=--seed
+
+# tests
 ./mvnw test
 ```
 
-This project uses **Java 21** with **Spring Boot 3**, **Spring AI**, **Neo4j 5** (graph storage), and **PostgreSQL** (vector embeddings + changelog).
+## Health Endpoint
+
+```bash
+curl http://localhost:8080/actuator/health
+```
+
+Returns:
+
+```json
+{
+  "status": "ok",
+  "version": "0.1.0",
+  "db": "connected",
+  "redis": "connected",
+  "uptime_seconds": 12
+}
+```

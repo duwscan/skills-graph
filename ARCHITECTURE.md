@@ -1265,7 +1265,7 @@ public class ModelSelector {
 
 ### 7.6 Runtime & API Framework
 
-| Criterion | Spring Boot 3 + Java 21 | FastAPI + Python | Express + Node.js |
+| Criterion | Spring Boot 4 + Java 21 | FastAPI + Python | Express + Node.js |
 |---|---|---|---|
 | **Spring AI support** | Native (official Spring AI integration) | N/A (Python SDKs) | N/A |
 | **Startup time** | ~2-3s (optimized with GraalVM native: ~50ms) | ~500ms | ~200ms |
@@ -1275,9 +1275,9 @@ public class ModelSelector {
 | **Ecosystem** | Massive (Spring, JVM) | Large (Python ML) | Large (npm) |
 | **Test runner** | JUnit 5 + Spring Boot Test (`./mvnw test`) | pytest | jest/vitest |
 
-**Recommendation: Java 21 + Spring Boot 3 + Spring AI**
+**Recommendation: Java 21 + Spring Boot 4 + Spring AI**
 
-- Spring Boot 3 provides production-ready auto-configuration, actuator, and observability out of the box
+- Spring Boot 4 provides production-ready auto-configuration, actuator, and observability out of the box
 - Spring AI is the first-class JVM integration for LLMs/embeddings, officially maintained by Pivotal
 - **Java records + Jakarta Bean Validation serve as single source of truth** for both LLM structured output AND API request/response validation
 - Spring AI's `ChatClient.stream()` integrates directly with Spring MVC `SseEmitter` for real-time extraction feedback
@@ -1445,7 +1445,7 @@ spring:
 ```
                            ┌───────────────────────┐
                            │     API Gateway        │
-                           │  (Spring Boot 3 + MVC) │
+                           │  (Spring Boot 4 + MVC) │
                            └───────┬───────┬────────┘
                                    │       │
                     ┌──────────────┘       └──────────────┐

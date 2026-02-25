@@ -25,10 +25,10 @@ The discovery pipeline has 3 stages: (1) collect signals from extraction output,
 | 5.1.1 | `DiscoveryService` class | `@Service` orchestrating the 3-stage pipeline. Autowired: `EmbeddingService`, `VectorSearchService`, `ReviewQueueService`, Spring AI `ChatClient` | `src/main/java/com/skillsgraph/service/discovery/DiscoveryService.java` |
 | 5.1.2 | Discovery Jakarta Bean Validation schema | Output schema for LLM NER: `candidates[]` with `surface_form`, `normalized_form`, `category_guess` (enum), `is_likely_new` (boolean), `reason` (string). Use `.describe()` on all fields | `src/main/java/com/skillsgraph/dto/DiscoveryDto.java` |
 | 5.1.3 | `extractCandidates(String text)` | Stage 2: `fastChatClient.prompt(DISCOVERY_PROMPT).user(u -> u.param("chunk", text)).call().entity(DiscoveryResult.class)`. Claude Haiku (high volume, lower complexity). Prompt instructs LLM to find skills NOT in a standard taxonomy | `src/main/java/com/skillsgraph/service/discovery/DiscoveryService.java` |
-| 5.1.4 | `deduplicateCandidate(candidate)` | Stage 3: Embed candidate's `normalized_form` via `EmbeddingService`. Run `VectorSearchService.checkDuplicate()`. Classify: ≥`SIMILARITY_DUPLICATE_THRESHOLD` similarity → `alias` (auto-add as alias), [`SIMILARITY_REVIEW_THRESHOLD`, `SIMILARITY_DUPLICATE_THRESHOLD`) → `review` (add to queue with similar skills noted), <`SIMILARITY_REVIEW_THRESHOLD` → `new` (add to queue as genuinely new). Thresholds from `src/main/java/com/skillsgraph/config/AppConstants.java` | `src/main/java/com/skillsgraph/service/discovery/DiscoveryService.java` |
+| 5.1.4 | `deduplicateCandidate(candidate)` | Stage 3: Embed candidate's `normalized_form` via `EmbeddingService`. Run `VectorSearchService.checkDuplicate()`. Classify: ≥`SIMILARITY_DUPLICATE_THRESHOLD` similarity → `alias` (auto-add as alias), [`SIMILARITY_REVIEW_THRESHOLD`, `SIMILARITY_DUPLICATE_THRESHOLD`) → `review` (add to queue with similar skills noted), <`SIMILARITY_REVIEW_THRESHOLD` → `new` (add to queue as genuinely new). Thresholds from `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java` | `src/main/java/com/skillsgraph/service/discovery/DiscoveryService.java` |
 | 5.1.5 | `processCandidates(candidates[])` | Process each candidate through deduplication. For `alias` type: optionally auto-create alias on matching skill. For `review` and `new`: add to review queue with similarity matches and suggested parents | `src/main/java/com/skillsgraph/service/discovery/DiscoveryService.java` |
 | 5.1.6 | `discoverFromText(text, source)` | Full pipeline: `extractCandidates(text)` → `processCandidates(results)`. Accept `source` metadata (e.g., "job_posting", "resume", "course") for tracking | `src/main/java/com/skillsgraph/service/discovery/DiscoveryService.java` |
-| 5.1.7 | Feed from extraction | When `SkillExtractionPipeline.extract()` returns `discovered_candidates`, feed them into `processCandidates()` asynchronously (don't block extraction response). Each candidate is published as a signal to the `discovery:signals` Redis Stream. The discovery worker (Phase 7) aggregates signals and triggers the full discovery pipeline when a candidate reaches `DISCOVERY_SIGNAL_THRESHOLD` (see `src/main/java/com/skillsgraph/config/AppConstants.java`, configurable via `DISCOVERY_SIGNAL_THRESHOLD` env var) | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java` |
+| 5.1.7 | Feed from extraction | When `SkillExtractionPipeline.extract()` returns `discovered_candidates`, feed them into `processCandidates()` asynchronously (don't block extraction response). Each candidate is published as a signal to the `discovery:signals` Redis Stream. The discovery worker (Phase 7) aggregates signals and triggers the full discovery pipeline when a candidate reaches `DISCOVERY_SIGNAL_THRESHOLD` (see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`, configurable via `DISCOVERY_SIGNAL_THRESHOLD` env var) | `src/main/java/com/skillsgraph/service/extraction/SkillExtractionPipeline.java` |
 
 ### Discovery Prompt
 
@@ -39,7 +39,7 @@ standard skills taxonomy.
 
 Focus on:
 - Emerging technologies and frameworks
-- Niche domain skills
+- Niche com.sk.skillsgraph.domain skills
 - New methodologies or practices
 - Tools that have gained popularity recently
 
@@ -56,7 +56,7 @@ Text: {chunk}
 - [ ] `extractCandidates()` calls LLM and returns structured candidate list
 - [ ] `extractCandidates("Expert in LangGraph and CrewAI")` returns LangGraph and CrewAI as candidates
 - [ ] `deduplicateCandidate()` correctly classifies: existing skill name → `alias`, similar → `review`, novel → `new`
-- [ ] `alias` candidates: auto-creates alias on matching skill (when confidence ≥ `SIMILARITY_DUPLICATE_THRESHOLD` — see `src/main/java/com/skillsgraph/config/AppConstants.java`)
+- [ ] `alias` candidates: auto-creates alias on matching skill (when confidence ≥ `SIMILARITY_DUPLICATE_THRESHOLD` — see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`)
 - [ ] `review` candidates: adds to queue with `similar_existing` populated
 - [ ] `new` candidates: adds to queue with `suggested_parents` populated
 - [ ] `discoverFromText()` runs full pipeline end-to-end
@@ -77,7 +77,7 @@ The review queue is a staging area where discovered skill candidates await curat
 | # | Task | Detail | Files |
 |---|---|---|---|
 | 5.2.1 | Review queue migration | New migration `V2__review_queue.sql`: `CREATE TABLE review_queue (id UUID PK DEFAULT gen_random_uuid(), candidate_name TEXT NOT NULL, normalized_name TEXT NOT NULL, category_guess TEXT, signals_count INT DEFAULT 1, llm_score FLOAT, similar_existing JSONB DEFAULT '[]', suggested_parents JSONB DEFAULT '[]', status TEXT DEFAULT 'pending' CHECK(status IN ('pending','approved','rejected','merged','deferred')), curator_id TEXT, decision TEXT, decision_notes TEXT, created_at TIMESTAMPTZ DEFAULT now(), decided_at TIMESTAMPTZ, source TEXT, UNIQUE(normalized_name, status) -- prevent duplicate pending entries)` | `src/main/java/com/skillsgraph/migrations/V2__review_queue.sql` |
-| 5.2.2 | `ReviewQueueService.add(candidate)` | Insert or update queue entry. If `normalized_name` already exists with `pending` status, increment `signals_count` instead of creating duplicate. Store `similar_existing` (skills with similarity [`SIMILARITY_REVIEW_THRESHOLD`, `SIMILARITY_DUPLICATE_THRESHOLD`) — see `src/main/java/com/skillsgraph/config/AppConstants.java`) and `suggested_parents` (nearest parent-category skills) | `src/main/java/com/skillsgraph/service/discovery/ReviewQueueService.java` |
+| 5.2.2 | `ReviewQueueService.add(candidate)` | Insert or update queue entry. If `normalized_name` already exists with `pending` status, increment `signals_count` instead of creating duplicate. Store `similar_existing` (skills with similarity [`SIMILARITY_REVIEW_THRESHOLD`, `SIMILARITY_DUPLICATE_THRESHOLD`) — see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`) and `suggested_parents` (nearest parent-category skills) | `src/main/java/com/skillsgraph/service/discovery/ReviewQueueService.java` |
 | 5.2.3 | `ReviewQueueService.list(filters?)` | Paginated listing of pending candidates, sorted by `signals_count * llm_score DESC` (highest value candidates first). Filter by `status`, `category_guess`. Include `total` count | `src/main/java/com/skillsgraph/service/discovery/ReviewQueueService.java` |
 | 5.2.4 | `ReviewQueueService.getById(id)` | Full details for a single candidate: all fields plus expanded `similar_existing` (with full skill objects) and `suggested_parents` (with full skill objects) | `src/main/java/com/skillsgraph/service/discovery/ReviewQueueService.java` |
 | 5.2.5 | `ReviewQueueService.decide(id, decision)` | Process curator decision. Update queue entry status + decision fields + `decided_at`. Then execute the decision flow (§5.2.6-5.2.8) | `src/main/java/com/skillsgraph/service/discovery/ReviewQueueService.java` |
@@ -118,9 +118,9 @@ When a new skill is being reviewed, the system suggests relationships using two 
 |---|---|---|---|
 | 5.3.1 | `RelationshipPredictionService` | Combines embedding similarity and LLM classification to suggest relationships for new or existing skills | `src/main/java/com/skillsgraph/service/discovery/RelationshipPredictionService.java` |
 | 5.3.2 | Relationship schema | Java record for LLM structured output: `reasoning` (string, generated first for CoT), `classification` (enum: PARENT_CHILD, CHILD_PARENT, RELATED, PREREQUISITE, NONE), `confidence` (number 0-1) | `src/main/java/com/skillsgraph/dto/RelationshipDto.java` |
-| 5.3.3 | `predictByEmbedding(skillA, skillB)` | Compute cosine similarity between embeddings. Return: ≥`SIMILARITY_RELATED_HIGH_THRESHOLD` → `RELATED` (high confidence), [`SIMILARITY_RELATED_LOW_THRESHOLD`, `SIMILARITY_RELATED_HIGH_THRESHOLD`) → `RELATED` (medium), <`SIMILARITY_RELATED_LOW_THRESHOLD` → `NONE`. Thresholds from `src/main/java/com/skillsgraph/config/AppConstants.java`. No LLM call needed | `src/main/java/com/skillsgraph/service/discovery/RelationshipPredictionService.java` |
+| 5.3.3 | `predictByEmbedding(skillA, skillB)` | Compute cosine similarity between embeddings. Return: ≥`SIMILARITY_RELATED_HIGH_THRESHOLD` → `RELATED` (high confidence), [`SIMILARITY_RELATED_LOW_THRESHOLD`, `SIMILARITY_RELATED_HIGH_THRESHOLD`) → `RELATED` (medium), <`SIMILARITY_RELATED_LOW_THRESHOLD` → `NONE`. Thresholds from `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`. No LLM call needed | `src/main/java/com/skillsgraph/service/discovery/RelationshipPredictionService.java` |
 | 5.3.4 | `predictByLLM(skillA, skillB)` | Use `chatClient.call().entity(RelationshipClassification.class)` with chain-of-thought prompt. Include skill names, descriptions, and parent breadcrumbs as context. Model: Claude Sonnet | `src/main/java/com/skillsgraph/service/discovery/RelationshipPredictionService.java` |
-| 5.3.5 | `classifyBatch(pairs[])` | Classify `RELATIONSHIP_BATCH_SIZE` skill pairs in a single LLM call using array schema (see `src/main/java/com/skillsgraph/config/AppConstants.java`). Returns array of classifications. Reduces cost by ~10x vs one-pair-per-call | `src/main/java/com/skillsgraph/service/discovery/RelationshipPredictionService.java` |
+| 5.3.5 | `classifyBatch(pairs[])` | Classify `RELATIONSHIP_BATCH_SIZE` skill pairs in a single LLM call using array schema (see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`). Returns array of classifications. Reduces cost by ~10x vs one-pair-per-call | `src/main/java/com/skillsgraph/service/discovery/RelationshipPredictionService.java` |
 | 5.3.6 | `suggestRelationships(skill)` | Find 5 nearest existing skills by embedding → classify each pair with LLM → return suggested edges sorted by confidence. Used to populate `suggested_parents` in review queue and during curator review | `src/main/java/com/skillsgraph/service/discovery/RelationshipPredictionService.java` |
 
 ### Chain-of-Thought Prompt
@@ -157,10 +157,10 @@ Think step by step about the relationship, then classify.
 
 | # | Route | Method | Detail | Files |
 |---|---|---|---|---|
-| 5.4.1 | `/api/review-queue` | GET | List pending candidates. Query params: `status`, `category`, `limit`, `offset`, `sort_by` (default: priority). Returns paginated list | `src/main/java/com/skillsgraph/controller/ReviewQueueController.java` |
-| 5.4.2 | `/api/review-queue/:id` | GET | Get single candidate with full details including expanded similar_existing and suggested_parents | `src/main/java/com/skillsgraph/controller/ReviewQueueController.java` |
-| 5.4.3 | `/api/review-queue/{id}/decision` | POST | Submit decision. `@Valid @RequestBody DecisionRequest` record: `DecisionType decision`, `UUID mergeTargetId?`, `List<UUID> parentIds?`, `String description?`, `SkillCategory category?`, `String path?`, `String notes?` | `src/main/java/com/skillsgraph/controller/ReviewQueueController.java` |
-| 5.4.4 | `/api/discover` | POST | Manually trigger discovery. Body: `{ text: string, source: string }`. Runs `DiscoveryService.discoverFromText()`. Returns `{ candidates_found, added_to_queue, auto_aliased }` | `src/main/java/com/skillsgraph/controller/DiscoveryController.java` |
+| 5.4.1 | `/api/review-queue` | GET | List pending candidates. Query params: `status`, `category`, `limit`, `offset`, `sort_by` (default: priority). Returns paginated list | `src/main/java/com/skillsgraph/com.sk.skillsgraph.controller/ReviewQueueController.java` |
+| 5.4.2 | `/api/review-queue/:id` | GET | Get single candidate with full details including expanded similar_existing and suggested_parents | `src/main/java/com/skillsgraph/com.sk.skillsgraph.controller/ReviewQueueController.java` |
+| 5.4.3 | `/api/review-queue/{id}/decision` | POST | Submit decision. `@Valid @RequestBody DecisionRequest` record: `DecisionType decision`, `UUID mergeTargetId?`, `List<UUID> parentIds?`, `String description?`, `SkillCategory category?`, `String path?`, `String notes?` | `src/main/java/com/skillsgraph/com.sk.skillsgraph.controller/ReviewQueueController.java` |
+| 5.4.4 | `/api/discover` | POST | Manually trigger discovery. Body: `{ text: string, source: string }`. Runs `DiscoveryService.discoverFromText()`. Returns `{ candidates_found, added_to_queue, auto_aliased }` | `src/main/java/com/skillsgraph/com.sk.skillsgraph.controller/DiscoveryController.java` |
 
 ### Checklist
 
@@ -225,7 +225,7 @@ echo "Phase 5 complete ✓"
 - [ ] 3-stage pipeline: signal collection → LLM NER → embedding dedup
 - [ ] `extractCandidates()` uses LLM zero-shot NER
 - [ ] `deduplicateCandidate()` classifies as alias/review/new
-- [ ] Auto-alias for very high similarity (≥`SIMILARITY_DUPLICATE_THRESHOLD` — see `src/main/java/com/skillsgraph/config/AppConstants.java`) candidates
+- [ ] Auto-alias for very high similarity (≥`SIMILARITY_DUPLICATE_THRESHOLD` — see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`) candidates
 - [ ] Extraction pipeline feeds discovered_candidates into discovery
 - [ ] Idempotent: no duplicate queue entries
 
@@ -241,7 +241,7 @@ echo "Phase 5 complete ✓"
 ### 5.3 Relationship Prediction
 - [ ] Embedding similarity for `related_to` detection
 - [ ] LLM chain-of-thought for `parent_of`/`child_of`
-- [ ] Batch classification (`RELATIONSHIP_BATCH_SIZE` pairs per call — see `src/main/java/com/skillsgraph/config/AppConstants.java`)
+- [ ] Batch classification (`RELATIONSHIP_BATCH_SIZE` pairs per call — see `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppConstants.java`)
 - [ ] `suggestRelationships()` for new skill placement
 
 ### 5.4 API Routes

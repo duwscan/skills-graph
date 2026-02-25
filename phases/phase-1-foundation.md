@@ -17,7 +17,7 @@ Set up the project scaffold, database schema, and core configuration so all subs
 
 ### Context
 
-The project uses **Java 21** as runtime, **Spring Boot 3 + Spring Web MVC** as the HTTP framework (lightweight, standards-based, Spring AI compatible), and **Spring Data JPA** for type-safe database access.
+The project uses **Java 21** as runtime, **Spring Boot 4 + Spring Web MVC** as the HTTP framework (lightweight, standards-based, Spring AI compatible), and **Spring Data JPA** for type-safe database access.
 
 ### Directory Structure
 
@@ -60,8 +60,8 @@ skills-graph/
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 1.1.1 | Initialize Maven project | Use Spring Initializr (start.spring.io) with: Spring Boot 3, Java 21, Group `com.skillsgraph`. Add starters: `spring-boot-starter-web`, `spring-boot-starter-data-neo4j`, `spring-boot-starter-data-jpa`, `spring-boot-starter-data-redis`, `flyway-core` | `pom.xml`, `mvnw` |
-| 1.1.2 | Add Spring AI dependencies | Spring AI BOM + starters: `spring-ai-anthropic-spring-boot-starter`, `spring-ai-openai-spring-boot-starter`. Pgvector JDBC extension | `pom.xml` |
+| 1.1.1 | Initialize Maven project | Use Spring Initializr (start.spring.io) with: Spring Boot 4, Java 21, Group `com.skillsgraph`. Add starters: `spring-boot-starter-webmvc`, `spring-boot-starter-data-neo4j`, `spring-boot-starter-data-jpa`, `spring-boot-starter-data-redis`, `spring-boot-starter-flyway` | `pom.xml`, `mvnw` |
+| 1.1.2 | Add Spring AI dependencies | Spring AI BOM + starters: `spring-ai-starter-model-anthropic`, `spring-ai-starter-model-openai`. Pgvector JDBC extension | `pom.xml` |
 | 1.1.3 | Add tooling dependencies | Checkstyle, SpotBugs, Lombok (optional), springdoc-openapi, Testcontainers, postgresql JDBC driver | `pom.xml` |
 | 1.1.4 | Create `.env.example` | Document all required and optional env vars with example values | `.env.example` |
 | 1.1.5 | Create `.gitignore` | Ignore `target/`, `.env`, `*.log`, `.DS_Store`, `.idea/`, `*.class` | `.gitignore` |
@@ -98,7 +98,7 @@ SPRING_PROFILES_ACTIVE=development
 
 ### Checklist
 
-- [ ] `pom.xml` created with Spring Boot 3 parent, Java 21 (`maven-compiler-plugin` source/target `21`), and all required starters
+- [ ] `pom.xml` created with Spring Boot 4 parent, Java 21 (`maven-compiler-plugin` source/target `21`), and all required starters
 - [ ] `pom.xml` compiler plugin configured for Java 21 with `-parameters` flag
 - [ ] All runtime dependencies installed and importable
 - [ ] All dev dependencies installed
@@ -369,7 +369,7 @@ public class AiConfig {
             .build();
     }
 }
-// EmbeddingModel is auto-configured by spring-ai-openai-spring-boot-starter
+// EmbeddingModel is auto-configured by spring-ai-starter-model-openai
 // from application.yml: spring.ai.openai.embedding.options.model/dimensions
 ```
 

@@ -28,7 +28,7 @@ coverage
 
 # logs
 logs
-_.log
+*.log
 report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
 # dotenv environment variable files
@@ -61,5 +61,6 @@ build/
 
 ### VS Code ###
 .vscode/
-# Finder (MacOS) folder config
+# Finder (MacOS) folder com.sk.skillsgraph.config
 .DS_Store
+*.class
