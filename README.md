@@ -18,6 +18,10 @@ docker compose up -d
 ./mvnw spring-boot:run
 ```
 
+Notes:
+- PostgreSQL is exposed on host port `5433` (container `5432`) to avoid conflicts with local Postgres services.
+- If AI keys are placeholders/invalid, extraction falls back to lexical matching.
+
 ## Useful Commands
 
 ```bash
@@ -109,7 +113,7 @@ curl -X POST http://localhost:8080/api/extract \
   -d '{
     "text": "Looking for a Python engineer with AWS and Docker experience.",
     "options": {
-      "expand": true,
+      "expand": false,
       "min_confidence": 0.5
     }
   }'

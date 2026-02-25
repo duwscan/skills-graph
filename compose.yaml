@@ -1,8 +1,8 @@
 services:
   postgres:
-    image: pgvector/pgvector:pg16
+    image: pgvector/pgvector:pg15
     ports:
-      - "5432:5432"
+      - "5433:5432"
     environment:
       POSTGRES_DB: skills_graph
       POSTGRES_USER: skills
@@ -40,7 +40,7 @@ services:
       - typesensedata:/data
 
   neo4j:
-    image: neo4j:5
+    image: neo4j:5.26.0-community
     ports:
       - "7474:7474"
       - "7687:7687"

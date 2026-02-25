@@ -14,7 +14,7 @@ spring:
       username: neo4j
       password: skills_dev
   datasource:
-    url: jdbc:postgresql://localhost:5432/skills_graph
+    url: jdbc:postgresql://localhost:5433/skills_graph
     username: skills
     password: skills_dev
     hikari:
