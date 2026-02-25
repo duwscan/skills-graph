@@ -19,16 +19,19 @@ docker compose up -d
 ## Useful Commands
 
 ```bash
-# infra helpers (implemented via app args)
-./mvnw spring-boot:run -Dspring-boot.run.arguments=--infra-up
-./mvnw spring-boot:run -Dspring-boot.run.arguments=--infra-down
-./mvnw spring-boot:run -Dspring-boot.run.arguments=--infra-reset
+# list shortcuts
+make help
+
+# infra
+make up
+make down
+make reset
 
 # seed locale + root categories
-./mvnw spring-boot:run -Dspring-boot.run.arguments=--seed
+make seed
 
 # tests
-./mvnw test
+make test
 ```
 
 ## Health Endpoint
