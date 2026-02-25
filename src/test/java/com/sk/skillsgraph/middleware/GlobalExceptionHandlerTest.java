@@ -32,7 +32,8 @@ class GlobalExceptionHandlerTest {
         mockMvc.perform(get("/test/not-found"))
                 .andExpect(status().isNotFound())
                 .andExpect(header().exists("X-Request-ID"))
-                .andExpect(jsonPath("$.status").value(404))
+                .andExpect(jsonPath("$.success").value(false))
+                .andExpect(jsonPath("$.code").value(404))
                 .andExpect(jsonPath("$.request_id").isNotEmpty());
     }
 
@@ -40,21 +41,24 @@ class GlobalExceptionHandlerTest {
     void duplicateMapsTo409() throws Exception {
         mockMvc.perform(get("/test/duplicate"))
                 .andExpect(status().isConflict())
-                .andExpect(jsonPath("$.status").value(409));
+                .andExpect(jsonPath("$.success").value(false))
+                .andExpect(jsonPath("$.code").value(409));
     }
 
     @Test
     void validationMapsTo400() throws Exception {
         mockMvc.perform(get("/test/validation"))
                 .andExpect(status().isBadRequest())
-                .andExpect(jsonPath("$.status").value(400));
+                .andExpect(jsonPath("$.success").value(false))
+                .andExpect(jsonPath("$.code").value(400));
     }
 
     @Test
     void unknownMapsTo500() throws Exception {
         mockMvc.perform(get("/test/runtime"))
                 .andExpect(status().isInternalServerError())
-                .andExpect(jsonPath("$.status").value(500));
+                .andExpect(jsonPath("$.success").value(false))
+                .andExpect(jsonPath("$.code").value(500));
     }
 
     @RestController

@@ -1,15 +1,19 @@
 package com.sk.skillsgraph.controller;
 
+import com.sk.skillsgraph.config.AppProperties;
+import com.sk.skillsgraph.dto.ApiResponse;
+import com.sk.skillsgraph.dto.ApiResponseEntity;
+import jakarta.servlet.http.HttpServletRequest;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.LinkedHashMap;
 import java.util.Map;
-
-import com.sk.skillsgraph.config.AppProperties;
+import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.data.redis.core.StringRedisTemplate;
 
 @RestController
 public class HealthController {
@@ -28,7 +32,7 @@ public class HealthController {
     }
 
     @GetMapping("/actuator/health")
-    public Map<String, Object> health() {
+    public ResponseEntity<ApiResponse<Map<String, Object>>> health(HttpServletRequest request) {
         String dbStatus = dependencyStatus(this::checkDatabase);
         String redisStatus = dependencyStatus(this::checkRedis);
 
@@ -38,7 +42,7 @@ public class HealthController {
         body.put("db", dbStatus);
         body.put("redis", redisStatus);
         body.put("uptime_seconds", Duration.between(startedAt, Instant.now()).toSeconds());
-        return body;
+        return ApiResponseEntity.success(HttpStatus.OK, "Health check completed", body, request);
     }
 
     private String dependencyStatus(Runnable checker) {

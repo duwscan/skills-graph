@@ -63,11 +63,15 @@ class HealthControllerTest {
         mockMvc.perform(get("/actuator/health"))
                 .andExpect(status().isOk())
                 .andExpect(header().exists("X-Request-ID"))
-                .andExpect(jsonPath("$.status").value("ok"))
-                .andExpect(jsonPath("$.version").value("0.1.0"))
-                .andExpect(jsonPath("$.db").value("connected"))
-                .andExpect(jsonPath("$.redis").value("connected"))
-                .andExpect(jsonPath("$.uptime_seconds").isNumber());
+                .andExpect(jsonPath("$.success").value(true))
+                .andExpect(jsonPath("$.code").value(200))
+                .andExpect(jsonPath("$.message").value("Health check completed"))
+                .andExpect(jsonPath("$.request_id").isNotEmpty())
+                .andExpect(jsonPath("$.data.status").value("ok"))
+                .andExpect(jsonPath("$.data.version").value("0.1.0"))
+                .andExpect(jsonPath("$.data.db").value("connected"))
+                .andExpect(jsonPath("$.data.redis").value("connected"))
+                .andExpect(jsonPath("$.data.uptime_seconds").isNumber());
     }
 
     @Test
@@ -78,8 +82,10 @@ class HealthControllerTest {
 
         mockMvc.perform(get("/actuator/health"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.status").value("degraded"))
-                .andExpect(jsonPath("$.db").value("disconnected"))
-                .andExpect(jsonPath("$.redis").value("connected"));
+                .andExpect(jsonPath("$.success").value(true))
+                .andExpect(jsonPath("$.code").value(200))
+                .andExpect(jsonPath("$.data.status").value("degraded"))
+                .andExpect(jsonPath("$.data.db").value("disconnected"))
+                .andExpect(jsonPath("$.data.redis").value("connected"));
     }
 }
