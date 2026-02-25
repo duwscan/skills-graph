@@ -15,6 +15,7 @@ public class Skill {
     private String externalId;
     private String canonicalName;
     private String slug;
+    private String description;
     private String status;
     private String category;
     private Integer version;
@@ -64,6 +65,14 @@ public class Skill {
 
     public void setSlug(String slug) {
         this.slug = slug;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getStatus() {

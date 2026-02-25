@@ -9,8 +9,10 @@ import jakarta.validation.ConstraintViolationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindException;
+import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -28,9 +30,15 @@ public class GlobalExceptionHandler {
     }
 
     @ExceptionHandler({BindException.class, MethodArgumentNotValidException.class,
-            ConstraintViolationException.class, ValidationException.class})
+            ConstraintViolationException.class, MethodArgumentTypeMismatchException.class,
+            HttpMessageNotReadableException.class})
     public ResponseEntity<ApiResponse<Void>> handleBadRequest(Exception exception, HttpServletRequest request) {
         return buildResponse(exception.getMessage(), HttpStatus.BAD_REQUEST, request);
+    }
+
+    @ExceptionHandler(ValidationException.class)
+    public ResponseEntity<ApiResponse<Void>> handleValidationException(ValidationException exception, HttpServletRequest request) {
+        return buildResponse(exception.getMessage(), HttpStatus.valueOf(exception.statusCode()), request);
     }
 
     @ExceptionHandler(AppException.class)

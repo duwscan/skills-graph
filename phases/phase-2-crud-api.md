@@ -11,6 +11,20 @@
 
 Implement all taxonomy query and mutation APIs from ARCHITECTURE.md §6 — the REST endpoints for creating, reading, updating, and managing skills, aliases, and edges. No AI/LLM features yet. By the end of this phase, you should be able to fully manage a skills taxonomy through the API.
 
+## Implementation Status (2026-02-25)
+
+- Implemented:
+  - DTO enums and request/response schemas in `src/main/java/com/sk/skillsgraph/dto/*`
+  - Services: `SkillService`, `AliasService`, `EdgeService`, `GuardrailService`, `ChangelogService`
+  - Core routes: all 13 routes in section 2.7
+  - Additional CRUD routes for completion: `PATCH/DELETE /api/skills/{id}/aliases/{aliasId}`, `GET /api/skills/{id}/edges`, `POST /api/edges/{edgeId}/deprecate`, `DELETE /api/edges/{edgeId}`
+  - Standardized `ApiResponseEntity` envelope on all implemented endpoints
+  - Guardrails: self-edge, duplicate-edge, cycle detection, name sanitization, orphan check on activation
+  - Controller tests for skills/edges/taxonomy plus exception-status coverage
+- Not in scope yet:
+  - Merge/deprecate skill lifecycle endpoints from ARCHITECTURE section 6.2
+  - Phase 3+ embedding-based retrieval and extraction pipeline APIs
+
 ---
 
 ## 2.1 Shared Jakarta Bean Validation Schemas

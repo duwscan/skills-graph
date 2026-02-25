@@ -54,6 +54,14 @@ class GlobalExceptionHandlerTest {
     }
 
     @Test
+    void customValidationStatusIsPreserved() throws Exception {
+        mockMvc.perform(get("/test/validation-422"))
+                .andExpect(status().isUnprocessableEntity())
+                .andExpect(jsonPath("$.success").value(false))
+                .andExpect(jsonPath("$.code").value(422));
+    }
+
+    @Test
     void unknownMapsTo500() throws Exception {
         mockMvc.perform(get("/test/runtime"))
                 .andExpect(status().isInternalServerError())
@@ -77,6 +85,11 @@ class GlobalExceptionHandlerTest {
         @GetMapping("/test/validation")
         public String validation() {
             throw new ValidationException("Invalid payload");
+        }
+
+        @GetMapping("/test/validation-422")
+        public String validation422() {
+            throw new ValidationException("Invalid payload", 422);
         }
 
         @GetMapping("/test/runtime")

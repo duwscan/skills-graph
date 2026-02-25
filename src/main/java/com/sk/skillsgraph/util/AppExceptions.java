@@ -35,11 +35,21 @@ public final class AppExceptions {
         public ValidationException(String message) {
             super(message, 400);
         }
+
+        public ValidationException(String message, int statusCode) {
+            super(message, statusCode);
+        }
     }
 
     public static class CycleDetectedException extends AppException {
         public CycleDetectedException(String message) {
-            super(message, 409);
+            super(message, 422);
+        }
+    }
+
+    public static class EdgeNotFoundException extends AppException {
+        public EdgeNotFoundException(String edgeId) {
+            super("Edge not found: " + edgeId, 404);
         }
     }
 }

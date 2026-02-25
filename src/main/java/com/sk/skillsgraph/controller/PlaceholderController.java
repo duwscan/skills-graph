@@ -14,24 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class PlaceholderController {
 
-    @GetMapping("/skills")
-    public ResponseEntity<ApiResponse<Map<String, Object>>> skillsRoot(HttpServletRequest request) {
-        return placeholder("skills", request);
-    }
-
-    @GetMapping("/edges")
-    public ResponseEntity<ApiResponse<Map<String, Object>>> edgesRoot(HttpServletRequest request) {
-        return placeholder("edges", request);
-    }
-
     @GetMapping("/extract")
     public ResponseEntity<ApiResponse<Map<String, Object>>> extractRoot(HttpServletRequest request) {
         return placeholder("extract", request);
-    }
-
-    @GetMapping("/taxonomy")
-    public ResponseEntity<ApiResponse<Map<String, Object>>> taxonomyRoot(HttpServletRequest request) {
-        return placeholder("taxonomy", request);
     }
 
     @GetMapping("/review-queue")
@@ -43,7 +28,7 @@ public class PlaceholderController {
         Map<String, Object> body = Map.of(
                 "route_group", routeGroup,
                 "status", "not_implemented",
-                "message", "Phase 2+ endpoints will be implemented in subsequent phases"
+                "message", "Phase 4+ endpoints will be implemented in subsequent phases"
         );
         return ApiResponseEntity.success(HttpStatus.OK, "Endpoint placeholder", body, request);
     }
