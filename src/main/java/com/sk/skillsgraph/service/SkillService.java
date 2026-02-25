@@ -37,6 +37,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.UUID;
 import org.springframework.data.neo4j.core.Neo4jClient;
@@ -51,19 +52,25 @@ public class SkillService {
     private final AliasRepository aliasRepository;
     private final GuardrailService guardrailService;
     private final ChangelogService changelogService;
+    private final EmbeddingService embeddingService;
+    private final SearchService searchService;
 
     public SkillService(
             Neo4jClient neo4jClient,
             SkillRepository skillRepository,
             AliasRepository aliasRepository,
             GuardrailService guardrailService,
-            ChangelogService changelogService
+            ChangelogService changelogService,
+            EmbeddingService embeddingService,
+            SearchService searchService
     ) {
         this.neo4jClient = neo4jClient;
         this.skillRepository = skillRepository;
         this.aliasRepository = aliasRepository;
         this.guardrailService = guardrailService;
         this.changelogService = changelogService;
+        this.embeddingService = embeddingService;
+        this.searchService = searchService;
     }
 
     @Transactional
@@ -110,6 +117,8 @@ public class SkillService {
         skill.getAliases().add(alias);
 
         skillRepository.save(skill);
+        embeddingService.embedSkillAsync(skillId, sanitizedName, input.description(), status.name());
+        searchService.indexSkillAsync(skillId);
 
         changelogService.record(
                 "system",
@@ -176,6 +185,9 @@ public class SkillService {
         SkillStatus status = input.status() == null ? parseSkillStatus(existing.status()) : input.status();
         SkillStatus existingStatus = parseSkillStatus(existing.status());
         SkillCategory existingCategory = parseSkillCategory(existing.category());
+        boolean canonicalNameChanged = !canonicalName.equals(existing.canonicalName());
+        boolean descriptionChanged = !Objects.equals(description, existing.description());
+        boolean statusChanged = status != existingStatus;
         if (status == SkillStatus.active && (existingStatus != SkillStatus.active || category != existingCategory)) {
             guardrailService.validateActivation(existing.id(), category);
         }
@@ -189,7 +201,7 @@ public class SkillService {
         existingSkill.setUpdatedAt(Instant.now());
         skillRepository.save(existingSkill);
 
-        if (!canonicalName.equals(existing.canonicalName())) {
+        if (canonicalNameChanged) {
             Optional<Alias> primaryEnAlias = existingSkill.getAliases().stream()
                     .filter(alias -> "en".equalsIgnoreCase(alias.getLocale()) && Boolean.TRUE.equals(alias.getIsPrimary()))
                     .findFirst();
@@ -204,6 +216,13 @@ public class SkillService {
                 });
             }
         }
+
+        if (canonicalNameChanged || descriptionChanged) {
+            embeddingService.embedSkillAsync(existing.id(), canonicalName, description, status.name());
+        } else if (statusChanged) {
+            embeddingService.updateSkillStatus(existing.id(), status.name());
+        }
+        searchService.indexSkillAsync(existing.id());
 
         Map<String, Object> diff = new LinkedHashMap<>();
         diff.put("before", Map.of(

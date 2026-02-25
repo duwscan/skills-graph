@@ -10,9 +10,11 @@ import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.event.EventListener;
 import org.springframework.core.env.Environment;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 @SpringBootApplication
 @EnableConfigurationProperties(AppProperties.class)
+@EnableAsync
 public class SkillsGraphApplication {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(SkillsGraphApplication.class);

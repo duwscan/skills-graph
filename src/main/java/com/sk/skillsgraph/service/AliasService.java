@@ -30,17 +30,23 @@ public class AliasService {
     private final SkillRepository skillRepository;
     private final SkillService skillService;
     private final ChangelogService changelogService;
+    private final EmbeddingService embeddingService;
+    private final SearchService searchService;
 
     public AliasService(
             AliasRepository aliasRepository,
             SkillRepository skillRepository,
             SkillService skillService,
-            ChangelogService changelogService
+            ChangelogService changelogService,
+            EmbeddingService embeddingService,
+            SearchService searchService
     ) {
         this.aliasRepository = aliasRepository;
         this.skillRepository = skillRepository;
         this.skillService = skillService;
         this.changelogService = changelogService;
+        this.embeddingService = embeddingService;
+        this.searchService = searchService;
     }
 
     @Transactional
@@ -68,6 +74,8 @@ public class AliasService {
         alias.setCreatedAt(Instant.now());
         skill.getAliases().add(alias);
         skillRepository.save(skill);
+        embeddingService.embedAliasAsync(alias.getId(), surfaceForm);
+        searchService.indexSkillAsync(skillId);
 
         changelogService.record(
                 "system",
@@ -114,6 +122,8 @@ public class AliasService {
         alias.setSource(source.name());
         alias.setIsPrimary(isPrimary);
         skillRepository.save(skill);
+        embeddingService.embedAliasAsync(aliasId, surfaceForm);
+        searchService.indexSkillAsync(skillId);
 
         changelogService.record(
                 "system",
@@ -146,6 +156,8 @@ public class AliasService {
         skill.getAliases().removeIf(existing -> aliasId.equals(existing.getId()));
         skillRepository.save(skill);
         aliasRepository.deleteById(aliasId);
+        embeddingService.deleteAliasEmbedding(aliasId);
+        searchService.indexSkillAsync(skillId);
 
         changelogService.record(
                 "system",

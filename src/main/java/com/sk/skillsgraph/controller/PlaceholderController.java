@@ -6,18 +6,13 @@ import jakarta.servlet.http.HttpServletRequest;
 import java.util.Map;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @RestController
 @RequestMapping("/api")
 public class PlaceholderController {
-
-    @GetMapping("/extract")
-    public ResponseEntity<ApiResponse<Map<String, Object>>> extractRoot(HttpServletRequest request) {
-        return placeholder("extract", request);
-    }
 
     @GetMapping("/review-queue")
     public ResponseEntity<ApiResponse<Map<String, Object>>> reviewQueueRoot(HttpServletRequest request) {

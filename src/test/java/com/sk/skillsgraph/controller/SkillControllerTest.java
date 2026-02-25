@@ -1,6 +1,7 @@
 package com.sk.skillsgraph.controller;
 
 import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.when;
@@ -20,6 +21,9 @@ import com.sk.skillsgraph.dto.Enums.Provenance;
 import com.sk.skillsgraph.dto.Enums.RelationshipType;
 import com.sk.skillsgraph.dto.Enums.SkillCategory;
 import com.sk.skillsgraph.dto.Enums.SkillStatus;
+import com.sk.skillsgraph.dto.SearchDto.MatchType;
+import com.sk.skillsgraph.dto.SearchDto.SearchResponse;
+import com.sk.skillsgraph.dto.SearchDto.SearchResult;
 import com.sk.skillsgraph.dto.SkillDto.ListSkillsResponse;
 import com.sk.skillsgraph.dto.SkillDto.SkillResponse;
 import com.sk.skillsgraph.dto.SkillDto.SkillSummary;
@@ -27,6 +31,7 @@ import com.sk.skillsgraph.middleware.GlobalExceptionHandler;
 import com.sk.skillsgraph.middleware.RequestIdFilter;
 import com.sk.skillsgraph.service.AliasService;
 import com.sk.skillsgraph.service.EdgeService;
+import com.sk.skillsgraph.service.HybridSearchService;
 import com.sk.skillsgraph.service.SkillService;
 import com.sk.skillsgraph.util.AppExceptions.SkillNotFoundException;
 import java.time.Instant;
@@ -44,14 +49,16 @@ class SkillControllerTest {
     private SkillService skillService;
     private AliasService aliasService;
     private EdgeService edgeService;
+    private HybridSearchService hybridSearchService;
 
     @BeforeEach
     void setUp() {
         skillService = Mockito.mock(SkillService.class);
         aliasService = Mockito.mock(AliasService.class);
         edgeService = Mockito.mock(EdgeService.class);
+        hybridSearchService = Mockito.mock(HybridSearchService.class);
 
-        SkillController controller = new SkillController(skillService, aliasService, edgeService);
+        SkillController controller = new SkillController(skillService, aliasService, edgeService, hybridSearchService);
         mockMvc = MockMvcBuilders.standaloneSetup(controller)
                 .setControllerAdvice(new GlobalExceptionHandler())
                 .addFilters(new RequestIdFilter())
@@ -99,12 +106,27 @@ class SkillControllerTest {
 
     @Test
     void searchSkillsReturns200() throws Exception {
-        when(skillService.list(any())).thenReturn(new ListSkillsResponse(List.of(), 0L, 20, 0));
+        when(hybridSearchService.search(anyString(), any(), anyInt())).thenReturn(new SearchResponse(
+                List.of(new SearchResult(
+                        "skill-1",
+                        "SK-ABC12345",
+                        "Machine Learning",
+                        "Subset of AI",
+                        SkillCategory.domain,
+                        SkillStatus.active,
+                        0.88D,
+                        MatchType.both,
+                        "Machine Learning"
+                )),
+                1L,
+                8L
+        ));
 
         mockMvc.perform(get("/api/skills/search").queryParam("q", "mahcine lerning"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.success").value(true))
-                .andExpect(jsonPath("$.code").value(200));
+                .andExpect(jsonPath("$.code").value(200))
+                .andExpect(jsonPath("$.data.results[0].match_type").value("both"));
     }
 
     @Test

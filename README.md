@@ -1,8 +1,8 @@
 # skills-graph
 
-Phase 1 foundation for an LLM-first Skills Graph service using Java 21, Spring Boot 4, Neo4j, PostgreSQL (pgvector), Redis, and Spring AI.
+Phase 1-3 foundation for an LLM-first Skills Graph service using Java 21, Spring Boot 4, Neo4j, PostgreSQL (pgvector), Redis, and Spring AI.
 
-Current status: Phase 2 core taxonomy CRUD API is implemented.
+Current status: Phase 4 extraction API and pipeline foundation is implemented.
 
 ## Prerequisites
 
@@ -31,6 +31,11 @@ make reset
 
 # seed locale + root categories
 make seed
+
+# embedding/search infra
+make embed-all
+make search-setup
+make search-reindex
 
 # tests
 make test
@@ -83,4 +88,29 @@ DELETE /api/edges/{edgeId}
 GET    /api/taxonomy/roots
 GET    /api/taxonomy/version
 GET    /api/taxonomy/changelog?since=0
+```
+
+`GET /api/skills/search` now returns hybrid results with:
+- keyword + semantic fusion
+- `match_type` (`keyword`, `semantic`, `both`)
+- `query_time_ms`
+
+## Phase 4 Extraction API
+
+```bash
+POST /api/extract
+```
+
+Example:
+
+```bash
+curl -X POST http://localhost:8080/api/extract \
+  -H "Content-Type: application/json" \
+  -d '{
+    "text": "Looking for a Python engineer with AWS and Docker experience.",
+    "options": {
+      "expand": true,
+      "min_confidence": 0.5
+    }
+  }'
 ```

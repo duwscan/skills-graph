@@ -52,4 +52,17 @@ public final class AppExceptions {
             super("Edge not found: " + edgeId, 404);
         }
     }
+
+    public static class ExtractionBusyException extends AppException {
+        private final int retryAfterSeconds;
+
+        public ExtractionBusyException(String message, int retryAfterSeconds) {
+            super(message, 429);
+            this.retryAfterSeconds = retryAfterSeconds;
+        }
+
+        public int retryAfterSeconds() {
+            return retryAfterSeconds;
+        }
+    }
 }

@@ -8,6 +8,8 @@ import com.sk.skillsgraph.dto.ApiResponseEntity;
 import com.sk.skillsgraph.dto.EdgeDto.EdgeResponse;
 import com.sk.skillsgraph.dto.QueryParams.DepthQuery;
 import com.sk.skillsgraph.dto.QueryParams.ListSkillsQuery;
+import com.sk.skillsgraph.dto.SearchDto.SearchFilters;
+import com.sk.skillsgraph.dto.SearchDto.SearchResponse;
 import com.sk.skillsgraph.dto.SkillDto.CreateSkillRequest;
 import com.sk.skillsgraph.dto.SkillDto.ListSkillsResponse;
 import com.sk.skillsgraph.dto.SkillDto.SkillPathNode;
@@ -15,6 +17,7 @@ import com.sk.skillsgraph.dto.SkillDto.SkillResponse;
 import com.sk.skillsgraph.dto.SkillDto.UpdateSkillRequest;
 import com.sk.skillsgraph.service.AliasService;
 import com.sk.skillsgraph.service.EdgeService;
+import com.sk.skillsgraph.service.HybridSearchService;
 import com.sk.skillsgraph.service.SkillService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
@@ -41,11 +44,18 @@ public class SkillController {
     private final SkillService skillService;
     private final AliasService aliasService;
     private final EdgeService edgeService;
+    private final HybridSearchService hybridSearchService;
 
-    public SkillController(SkillService skillService, AliasService aliasService, EdgeService edgeService) {
+    public SkillController(
+            SkillService skillService,
+            AliasService aliasService,
+            EdgeService edgeService,
+            HybridSearchService hybridSearchService
+    ) {
         this.skillService = skillService;
         this.aliasService = aliasService;
         this.edgeService = edgeService;
+        this.hybridSearchService = hybridSearchService;
     }
 
     @PostMapping
@@ -87,16 +97,16 @@ public class SkillController {
     }
 
     @GetMapping("/search")
-    public ResponseEntity<ApiResponse<ListSkillsResponse>> searchSkills(
+    public ResponseEntity<ApiResponse<SearchResponse>> searchSkills(
             @RequestParam String q,
             @RequestParam(required = false) Integer limit,
-            @RequestParam(required = false) Integer offset,
             @RequestParam(required = false) com.sk.skillsgraph.dto.Enums.SkillStatus status,
             @RequestParam(required = false) com.sk.skillsgraph.dto.Enums.SkillCategory category,
             HttpServletRequest request
     ) {
-        ListSkillsQuery query = new ListSkillsQuery(limit, offset, status, category, q);
-        return ApiResponseEntity.success(HttpStatus.OK, "Skills searched", skillService.list(query), request);
+        SearchFilters filters = new SearchFilters(category, status);
+        SearchResponse response = hybridSearchService.search(q, filters, limit == null ? 0 : limit);
+        return ApiResponseEntity.success(HttpStatus.OK, "Skills searched", response, request);
     }
 
     @GetMapping("/{id}/ancestors")
