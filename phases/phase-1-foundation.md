@@ -119,10 +119,9 @@ Local development requires PostgreSQL 16 with extensions (`pgvector`, `pg_trgm`)
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 1.2.1 | Create `docker-compose.yml` | PostgreSQL 16 (pgvector image) + Redis 7-alpine. Map ports 5432 and 6379. Use named volume for Postgres data persistence | `docker-compose.yml` |
-| 1.2.2 | Add init SQL script | Mount an `init.sql` that enables `pg_trgm` extensions on database creation. pgvector is auto-enabled by the image | `docker/init.sql` |
-| 1.2.3 | Add full-text search service container | full-text search service server for full-text search (needed in Phase 3 but set up now to avoid reconfiguration) | `docker-compose.yml` |
-| 1.2.4 | Add Maven / application runner scripts for Docker | `./mvnw spring-boot:run -Dspring-boot.run.arguments=--infra-up` → `docker compose up -d`, `docker compose down` → `docker compose down`, `docker compose down -v && docker compose up -d` → down + remove volumes + up | `pom.xml` |
+| 1.2.1 | Create `docker-compose.yml` | PostgreSQL 16 (pgvector image) + Redis 7-alpine + Neo4j 5. Map ports 5432, 6379, 7474, 7687. Use named volumes for data persistence | `docker-compose.yml` |
+| 1.2.2 | Add init SQL script | Mount an `init.sql` that enables `pg_trgm` extension on database creation. pgvector is auto-enabled by the image | `docker/init.sql` |
+| 1.2.3 | Add Maven / application runner scripts for Docker | `./mvnw spring-boot:run -Dspring-boot.run.arguments=--infra-up` → `docker compose up -d`, `docker compose down` → `docker compose down`, `docker compose down -v && docker compose up -d` → down + remove volumes + up | `pom.xml` |
 
 ### `docker-compose.yml`
 
@@ -156,14 +155,14 @@ services:
       timeout: 5s
       retries: 5
 
-  full-text-search:
-    image: full-text-search/full-text-search:27.1
+  typesense:
+    image: typesense/typesense:27.1
     ports: ["8108:8108"]
     environment:
       TYPESENSE_API_KEY: skills_dev_key
       TYPESENSE_DATA_DIR: /data
     volumes:
-      - full-text-searchdata:/data
+      - typesensedata:/data
 
   neo4j:
     image: neo4j:5
@@ -182,7 +181,7 @@ services:
 volumes:
   pgdata:
   redisdata:
-  full-text-searchdata:
+  typesensedata:
   neo4jdata:
 ```
 
@@ -198,7 +197,7 @@ CREATE EXTENSION IF NOT EXISTS pg_trgm;
 - [ ] `docker compose up -d` starts all 4 services without errors
 - [ ] PostgreSQL is accessible on `localhost:5432`
 - [ ] Redis is accessible on `localhost:6379`
-- [ ] full-text search service is accessible on `localhost:8108`
+- [ ] Typesense is accessible on `localhost:8108`
 - [ ] Neo4j is accessible on `localhost:7687` (Bolt) and `localhost:7474` (HTTP browser)
 - [ ] `docker compose down && docker compose up -d` restarts cleanly (data persists)
 - [ ] `docker compose down -v && docker compose up -d` cleans all volumes and starts fresh
