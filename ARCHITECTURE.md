@@ -1341,12 +1341,12 @@ public class ModelSelector {
 spring:
   ai:
     anthropic:
-      api-key: ${ANTHROPIC_API_KEY}
+      api-key: replace-with-anthropic-api-key
       chat:
         options:
           model: claude-sonnet-4-5-20250929
     openai:
-      api-key: ${OPENAI_API_KEY}
+      api-key: replace-with-openai-api-key
       embedding:
         options:
           model: text-embedding-3-large
@@ -1423,9 +1423,9 @@ spring:
   ai:
     anthropic:
       base-url: https://anthropic.helicone.ai
-      api-key: ${ANTHROPIC_API_KEY}
+      api-key: replace-with-anthropic-api-key
       default-headers:
-        Helicone-Auth: "Bearer ${HELICONE_API_KEY}"
+        Helicone-Auth: "Bearer replace-with-helicone-api-key"
 ```
 
 **Application Observability — OpenTelemetry + Grafana:**

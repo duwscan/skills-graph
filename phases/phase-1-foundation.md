@@ -40,7 +40,7 @@ skills-graph/
 │   │   │   └── util/                         # Utilities (SlugUtils, etc.)
 │   │   └── resources/
 │   │       ├── application.yml               # Main configuration
-│   │       ├── application-dev.yml           # Dev overrides
+│   │       ├── application-development.yml   # Development profile overrides
 │   │       ├── neo4j/
 │   │       │   └── schema.cypher             # Neo4j constraints and indexes
 │   │       └── db/migration/                 # Flyway SQL migration files (PostgreSQL only)
@@ -52,7 +52,7 @@ skills-graph/
 ├── pom.xml
 ├── mvnw / mvnw.cmd                           # Maven wrapper
 ├── docker-compose.yml
-├── .env.example
+├── src/main/resources/application-development.yml
 └── ARCHITECTURE.md
 ```
 
@@ -63,37 +63,22 @@ skills-graph/
 | 1.1.1 | Initialize Maven project | Use Spring Initializr (start.spring.io) with: Spring Boot 4, Java 21, Group `com.skillsgraph`. Add starters: `spring-boot-starter-webmvc`, `spring-boot-starter-data-neo4j`, `spring-boot-starter-data-jpa`, `spring-boot-starter-data-redis`, `spring-boot-starter-flyway` | `pom.xml`, `mvnw` |
 | 1.1.2 | Add Spring AI dependencies | Spring AI BOM + starters: `spring-ai-starter-model-anthropic`, `spring-ai-starter-model-openai`. Pgvector JDBC extension | `pom.xml` |
 | 1.1.3 | Add tooling dependencies | Checkstyle, SpotBugs, Lombok (optional), springdoc-openapi, Testcontainers, postgresql JDBC driver | `pom.xml` |
-| 1.1.4 | Create `.env.example` | Document all required and optional env vars with example values | `.env.example` |
-| 1.1.5 | Create `.gitignore` | Ignore `target/`, `.env`, `*.log`, `.DS_Store`, `.idea/`, `*.class` | `.gitignore` |
+| 1.1.4 | Create `application-development.yml` | Document development-only overrides (AI keys, local defaults) using Spring profile YAML | `src/main/resources/application-development.yml` |
+| 1.1.5 | Create `.gitignore` | Ignore `target/`, `*.log`, `.DS_Store`, `.idea/`, `*.class` | `.gitignore` |
 
-### `.env.example`
+### `application-development.yml`
 
-```env
-# Database (PostgreSQL - embeddings + changelog)
-DATABASE_URL=postgresql://skills:skills_dev@localhost:5432/skills_graph
+```yaml
+spring:
+  ai:
+    anthropic:
+      api-key: replace-with-anthropic-api-key
+    openai:
+      api-key: replace-with-openai-api-key
 
-# Neo4j (graph storage)
-NEO4J_URI=bolt://localhost:7687
-NEO4J_USERNAME=neo4j
-NEO4J_PASSWORD=skills_dev
-
-# Redis
-REDIS_URL=redis://localhost:6379
-
-# AI Providers
-ANTHROPIC_API_KEY=sk-ant-...
-OPENAI_API_KEY=sk-...
-
-# Search
-TYPESENSE_URL=http://localhost:8108
-TYPESENSE_API_KEY=skills_dev_key
-
-# Observability (optional)
-HELICONE_API_KEY=
-
-# App
-SERVER_PORT=8080
-SPRING_PROFILES_ACTIVE=development
+app:
+  allowed-origins: "*"
+  environment: development
 ```
 
 ### Checklist
@@ -102,7 +87,7 @@ SPRING_PROFILES_ACTIVE=development
 - [ ] `pom.xml` compiler plugin configured for Java 21 with `-parameters` flag
 - [ ] All runtime dependencies installed and importable
 - [ ] All dev dependencies installed
-- [ ] `.env.example` created with all variables documented
+- [ ] `application-development.yml` created with all profile-specific values documented
 - [ ] `.gitignore` covers all standard exclusions
 - [ ] `./mvnw spring-boot:run` starts the application
 - [ ] `./mvnw test` runs JUnit 5 tests
@@ -210,17 +195,17 @@ CREATE EXTENSION IF NOT EXISTS pg_trgm;
 
 ---
 
-## 1.3 Environment Configuration
+## 1.3 Application YAML Configuration
 
 ### Context
 
-All environment variables are validated at startup using Jakarta Bean Validation. The app refuses to start if required variables are missing or malformed. This prevents runtime errors from misconfiguration.
+Application YAML properties are validated at startup using Jakarta Bean Validation. The app refuses to start if required properties are missing or malformed. This prevents runtime errors from misconfiguration.
 
 ### Tasks
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 1.3.1 | `application.yml` | Define all configuration properties with defaults. Required: `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, DataSource URL/credentials. Optional: `HELICONE_API_KEY`. `SERVER_PORT` defaults to 8080 | `src/main/resources/application.yml` |
+| 1.3.1 | `application.yml` | Define all configuration properties with defaults. Required: `spring.ai.anthropic.api-key`, `spring.ai.openai.api-key`, datasource URL/credentials. Optional: `app.helicone-api-key`. `server.port` defaults to 8080 | `src/main/resources/application.yml` |
 | 1.3.2 | `AppProperties.java` | `@ConfigurationProperties(prefix="app")` + `@Validated` record. All services inject `AppProperties` instead of reading `System.getenv()` directly | `src/main/java/com/skillsgraph/config/AppProperties.java` |
 | 1.3.3 | Fail-fast on invalid config | Spring Boot throws `BindException` on startup if required properties are missing/invalid. The exception message lists the invalid field names | `src/main/java/com/skillsgraph/config/AppProperties.java` |
 
@@ -229,24 +214,25 @@ All environment variables are validated at startup using Jakarta Bean Validation
 ```yaml
 spring:
   neo4j:
-    uri: ${NEO4J_URI:bolt://localhost:7687}
+    uri: bolt://localhost:7687
     authentication:
-      username: ${NEO4J_USERNAME:neo4j}
-      password: ${NEO4J_PASSWORD:skills_dev}
+      username: neo4j
+      password: skills_dev
   datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/skills_graph}
-    username: ${SPRING_DATASOURCE_USERNAME:skills}
-    password: ${SPRING_DATASOURCE_PASSWORD:skills_dev}
+    url: jdbc:postgresql://localhost:5432/skills_graph
+    username: skills
+    password: skills_dev
     hikari:
-      maximum-pool-size: ${DB_POOL_SIZE:10}
-  redis:
-    host: ${SPRING_REDIS_HOST:localhost}
-    port: ${SPRING_REDIS_PORT:6379}
+      maximum-pool-size: 10
+  data:
+    redis:
+      host: localhost
+      port: 6379
   ai:
     anthropic:
-      api-key: ${ANTHROPIC_API_KEY}
+      api-key: replace-with-anthropic-api-key
     openai:
-      api-key: ${OPENAI_API_KEY}
+      api-key: replace-with-openai-api-key
       embedding:
         options:
           model: text-embedding-3-large
@@ -256,10 +242,10 @@ spring:
     locations: classpath:db/migration
 
 app:
-  helicone-api-key: ${HELICONE_API_KEY:}
+  helicone-api-key: ""
 
 server:
-  port: ${SERVER_PORT:8080}
+  port: 8080
   shutdown: graceful
 ```
 
@@ -276,11 +262,11 @@ public record AppProperties(
 ### Checklist
 
 - [ ] `src/main/resources/application.yml` contains all configuration
-- [ ] Spring fails with `BindException` when `ANTHROPIC_API_KEY` is missing
-- [ ] App starts successfully when all required vars are set
-- [ ] `HELICONE_API_KEY` is optional — app starts without it
-- [ ] `SERVER_PORT` defaults to 8080 when not set
-- [ ] `SPRING_PROFILES_ACTIVE` selects the correct profile (dev/test/prod)
+- [ ] Spring fails with `BindException` when required YAML properties are missing
+- [ ] App starts successfully when all required profile values are set
+- [ ] `app.helicone-api-key` is optional — app starts without it
+- [ ] `server.port` defaults to 8080
+- [ ] `spring.profiles.active` selects the correct profile (development/test/prod)
 
 ---
 
@@ -288,18 +274,18 @@ public record AppProperties(
 
 ### Context
 
-All tunable values (thresholds, TTLs, limits, dimensions, timeouts, etc.) are defined in a single **constants file** that serves as the single source of truth. This prevents hardcoded magic numbers from scattering across the codebase and makes values easy to find, change, and keep consistent. Where appropriate, constants read from environment variables with sensible defaults.
+All tunable values (thresholds, TTLs, limits, dimensions, timeouts, etc.) are defined in a single **constants file** that serves as the single source of truth. This prevents hardcoded magic numbers from scattering across the codebase and makes values easy to find, change, and keep consistent.
 
 ### Tasks
 
 | # | Task | Detail | Files |
 |---|---|---|---|
 | 1.3b.1 | Create `AppConstants` class | Define all configurable values as `static final` fields, grouped by domain: Embedding & Vector Search, Extraction Pipeline, Discovery & Review, API & Pagination, Rate Limiting, Workers & Events, Infrastructure, Quality Thresholds. Each constant has a Javadoc comment | `src/main/java/com/skillsgraph/config/AppConstants.java` |
-| 1.3b.2 | Env var overrides | For operationally-tunable values, read from `application.yml` (via `@Value` or a dedicated properties class) with the constant as the fallback default. See table below for which constants support env overrides | `src/main/java/com/skillsgraph/config/AppConstants.java` |
+| 1.3b.2 | YAML overrides | For operationally-tunable values, read from `application.yml` (via `@Value` or a dedicated properties class) with the constant as the fallback default. See table below for which constants support profile-based overrides | `src/main/java/com/skillsgraph/config/AppConstants.java` |
 
 ### Constants Overview
 
-| Group | Constants | Env Overrides |
+| Group | Constants | YAML Overrides |
 |---|---|---|
 | Embedding & Vector Search | `EMBEDDING_DIMENSIONS` (1024), `EMBEDDING_MODEL`, `EMBEDDING_CACHE_TTL_SECONDS` (30 days), `EMBEDDING_BATCH_SIZE` (100), `SIMILARITY_DUPLICATE_THRESHOLD` (0.90), `SIMILARITY_REVIEW_THRESHOLD` (0.70), `SIMILARITY_RELATED_HIGH_THRESHOLD` (0.85), `SIMILARITY_RELATED_LOW_THRESHOLD` (0.65), `RAG_CANDIDATE_LIMIT` (100) | `EMBEDDING_MODEL`, `EMBEDDING_CACHE_TTL`, `SIMILARITY_DUPLICATE_THRESHOLD`, `SIMILARITY_REVIEW_THRESHOLD`, `RAG_CANDIDATE_LIMIT` |
 | Extraction Pipeline | `CHUNK_TARGET_TOKENS` (1500), `CHUNK_MAX_TOKENS` (2000), `CHUNK_OVERLAP_TOKENS` (200), `EXTRACTION_CACHE_TTL_SECONDS` (7 days), `EXTRACTION_MAX_TEXT_LENGTH` (100000), `EXTRACTION_MIN_CONFIDENCE_DEFAULT` (0.5), `EXTRACTION_EXPANSION_FACTOR` (0.6), `EXTRACTION_EXPANSION_DEPTH_DEFAULT` (1), `EXTRACTION_MAX_RETRIES` (3), `LLM_CONCURRENCY_LIMIT` (50) | `EXTRACTION_CACHE_TTL`, `LLM_CONCURRENCY_LIMIT` |
@@ -316,8 +302,8 @@ All tunable values (thresholds, TTLs, limits, dimensions, timeouts, etc.) are de
 
 - [ ] `AppConstants.java` exists with all constants listed above
 - [ ] Constants are grouped by domain with clear Javadoc comments
-- [ ] Env-overridable constants fall back to their static default when not configured
-- [ ] `DB_POOL_SIZE` resolves to 10 in dev and 50 in production when env var is unset
+- [ ] YAML-overridable constants fall back to their static default when not configured
+- [ ] `DB_POOL_SIZE` resolves to 10 in dev and 50 in production when YAML override is unset
 - [ ] All other modules import from `AppConstants` instead of hardcoding values
 - [ ] No magic numbers remain inline in service or route files
 
@@ -533,18 +519,19 @@ public class SkillsGraphApplication {
 
 ```yaml
 server:
-  port: ${SERVER_PORT:8080}
+  port: 8080
 
 spring:
   application:
     name: skills-graph
   datasource:
-    url: ${DATABASE_URL}
+    url: jdbc:postgresql://localhost:5432/skills_graph
     hikari:
       maximum-pool-size: 10
   data:
     redis:
-      url: ${REDIS_URL}
+      host: localhost
+      port: 6379
   flyway:
     enabled: true
     locations: classpath:db/migration
@@ -581,7 +568,7 @@ Set up the test infrastructure with `./mvnw test`. Write initial tests for confi
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 1.8.1 | Test configuration | Configure `./mvnw test` in `pom.xml`. Set up test environment (use `.env.test` or inline env vars) | `pom.xml` |
+| 1.8.1 | Test configuration | Configure `./mvnw test` in `pom.xml`. Set up test profile values in `application-test.yml` or inline test properties | `pom.xml` |
 | 1.8.2 | Test helpers | Create helpers for spinning up test DB, resetting state between tests, creating test Spring Web MVC app instance | `src/test/java/com/skillsgraph/TestSetup.java` |
 | 1.8.3 | Config tests | Test that env validation rejects missing required vars. Test default values for optional vars | `src/test/java/com/skillsgraph/config/AppPropertiesTest.java` |
 | 1.8.4 | pgvector helper tests | Test `toSql()` and `fromSql()` with various vector sizes and edge cases (empty, single element, large dimensions) | `src/test/java/com/skillsgraph/util/PgVectorUtilsTest.java` |
@@ -657,7 +644,7 @@ echo "Phase 1 complete ✓"
 - [ ] Maven project initialized with `pom.xml`
 - [ ] `Java 21` compiler configured and `strict` null handling enabled
 - [ ] All dependencies installed (runtime + dev)
-- [ ] `.env.example` created
+- [ ] `application-development.yml` created
 - [ ] `.gitignore` configured
 
 ### 1.2 Docker Infrastructure
@@ -667,14 +654,14 @@ echo "Phase 1 complete ✓"
 - [ ] Maven / application runner scripts for infra management (`infra:up`, `infra:down`, `infra:reset`)
 
 ### 1.3 Environment Configuration
-- [ ] `src/main/resources/application.yml` validates all env vars with Jakarta Bean Validation
+- [ ] `src/main/resources/application.yml` validates required Spring/YAML properties with Jakarta Bean Validation
 - [ ] App fails fast with clear error on missing vars
 - [ ] Optional vars have defaults
 - [ ] Typed `config` export used throughout codebase
 
 ### 1.3b Centralized Constants
 - [ ] `src/main/java/com/skillsgraph/config/AppConstants.java` exports all tunable values grouped by domain (incl. Section Weighting, Co-occurrence & Empirical)
-- [ ] Env-overridable constants read from `process.env` with defaults
+- [ ] Constants are centralized in `AppConstants` with explicit defaults
 - [ ] All modules import from `AppConstants` — no inline magic numbers
 
 ### 1.4 Spring AI Provider Registry

@@ -14,6 +14,7 @@ import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.data.redis.autoconfigure.DataRedisProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -33,7 +34,10 @@ public class RedisConfig {
     private LettuceConnectionFactory lettuceConnectionFactory;
 
     @Bean
-    public RedisConnectionFactory redisConnectionFactory(DataRedisProperties redisProperties) {
+    public RedisConnectionFactory redisConnectionFactory(
+            DataRedisProperties redisProperties,
+            @Value("${spring.data.redis.timeout:10s}") Duration redisTimeout
+    ) {
         RedisStandaloneConfiguration serverConfig =
                 new RedisStandaloneConfiguration(redisProperties.getHost(), redisProperties.getPort());
 
@@ -52,7 +56,7 @@ public class RedisConfig {
         LettuceClientConfiguration clientConfiguration = LettuceClientConfiguration.builder()
                 .clientResources(clientResources)
                 .clientOptions(clientOptions)
-                .commandTimeout(Duration.ofMillis(AppConstants.REDIS_CONNECT_TIMEOUT_MS))
+                .commandTimeout(redisTimeout)
                 .build();
 
         lettuceConnectionFactory = new LettuceConnectionFactory(serverConfig, clientConfiguration);

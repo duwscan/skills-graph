@@ -10,7 +10,7 @@ Phase 1 foundation for an LLM-first Skills Graph service using Java 21, Spring B
 ## Quick Start
 
 ```bash
-cp .env.example .env
+# edit src/main/resources/application-development.yml with your API keys
 docker compose up -d
 ./mvnw flyway:migrate
 ./mvnw spring-boot:run

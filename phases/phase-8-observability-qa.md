@@ -160,7 +160,7 @@ Tests are organized in 4 tiers: unit tests (fast, no external deps), integration
 | # | Task | Detail | Files |
 |---|---|---|---|
 | 8.5.1 | Dockerfile | Multi-stage build: `FROM eclipse-temurin:21-jdk-alpine AS build` → copy `pom.xml` + `mvnw` → `./mvnw package -DskipTests` → `FROM eclipse-temurin:21-jre-alpine AS runtime` → copy JAR → `ENTRYPOINT ["java", "-jar", "app.jar"]`. Separate Docker Compose `workers` service with `--workers` Spring profile | `Dockerfile` |
-| 8.5.2 | docker-compose.prod.yml | Production compose: `app` (2 replicas), `workers` (1 replica), `postgres`, `redis`, `full-text-search`. Health checks on all services. Restart policies (`unless-stopped`). Resource limits (memory, CPU). Environment from `.env.prod` | `docker-compose.prod.yml` |
+| 8.5.2 | docker-compose.prod.yml | Production compose: `app` (2 replicas), `workers` (1 replica), `postgres`, `redis`, `full-text-search`. Health checks on all services. Restart policies (`unless-stopped`). Resource limits (memory, CPU). Spring profile configuration from `application-production.yml` | `docker-compose.prod.yml` |
 | 8.5.3 | Environment validation | `AppProperties` with `@Validated` causes `BindException` on startup if required fields are missing. `@PostConstruct` warnings if `HELICONE_API_KEY` not set in production profile | `src/main/java/com/skillsgraph/com.sk.skillsgraph.config/AppProperties.java` |
 | 8.5.4 | Graceful shutdown | Handle SIGTERM (Spring's graceful shutdown) and SIGINT: (1) Stop accepting new requests (Spring Web MVC). (2) Wait for in-flight requests to complete (timeout: 30s). (3) Close DB connection pool. (4) Close Redis connection. (5) Exit with code 0. Log each shutdown step | `src/main/java/com/skillsgraph/SkillsGraphApplication.java` |
 | 8.5.5 | Startup checks | Spring Boot auto-runs Flyway migrations. HikariCP connects to DB on first use (configurable max wait). Lettuce connects to Redis. `ApplicationReadyEvent` listener logs "ready" with port/profile. Add `@HealthIndicator` retry if DB unreachable | `src/main/java/com/skillsgraph/SkillsGraphApplication.java` |
@@ -196,7 +196,7 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 - [ ] `docker run skills-graph` starts the API server
 - [ ] `docker run skills-graph java -jar app.jar --spring.profiles.active=workers` starts workers
 - [ ] `docker-compose.prod.yml` starts all services with health checks
-- [ ] App refuses to start with missing `DATABASE_URL` (clear error message)
+- [ ] App refuses to start with missing required YAML properties (clear error message)
 - [ ] App waits for DB connection on startup (retry with backoff)
 - [ ] SIGTERM (Spring's graceful shutdown) triggers graceful shutdown (logged steps)
 - [ ] In-flight requests complete before shutdown

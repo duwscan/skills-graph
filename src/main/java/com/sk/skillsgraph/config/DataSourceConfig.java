@@ -6,6 +6,7 @@ import javax.sql.DataSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.jdbc.autoconfigure.DataSourceProperties;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -20,18 +21,22 @@ public class DataSourceConfig {
 
     @Bean
     @Primary
-    public DataSource dataSource(DataSourceProperties properties) {
+    public DataSource dataSource(
+            DataSourceProperties properties,
+            @Value("${spring.datasource.hikari.maximum-pool-size:10}") int maxPoolSize,
+            @Value("${spring.datasource.hikari.connection-timeout:30000}") long connectionTimeoutMs
+    ) {
         HikariDataSource dataSource = properties
                 .initializeDataSourceBuilder()
                 .type(HikariDataSource.class)
                 .build();
 
         dataSource.setPoolName("skills-graph-hikari");
-        dataSource.setMaximumPoolSize(AppConstants.DB_POOL_SIZE);
-        dataSource.setConnectionTimeout(AppConstants.DB_CONNECT_TIMEOUT_MS);
+        dataSource.setMaximumPoolSize(maxPoolSize);
+        dataSource.setConnectionTimeout(connectionTimeoutMs);
 
         this.hikariDataSource = dataSource;
-        LOGGER.info("Configured PostgreSQL pool with max size {}", AppConstants.DB_POOL_SIZE);
+        LOGGER.info("Configured PostgreSQL pool with max size {}", maxPoolSize);
         return dataSource;
     }
 

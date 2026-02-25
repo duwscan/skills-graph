@@ -45,7 +45,7 @@ skills-graph/
 │   │   │   └── com.sk.skillsgraph.util/                         # Utilities (SlugUtils, etc.)
 │   │   └── resources/
 │   │       ├── application.yml               # All configuration (replaces separate env com.sk.skillsgraph.config files)
-│   │       ├── application-dev.yml           # Dev overrides
+│   │       ├── application-development.yml   # Development profile overrides
 │   │       ├── neo4j/
 │   │       │   └── schema.cypher             # Neo4j constraints and indexes
 │   │       └── db/migration/                 # Flyway SQL migration files
@@ -56,7 +56,7 @@ skills-graph/
 ├── pom.xml                                   # Maven build descriptor
 ├── mvnw / mvnw.cmd                           # Maven wrapper
 ├── docker-compose.yml                        # PostgreSQL + Redis for local dev
-├── .env.example
+├── src/main/resources/application-development.yml
 └── ARCHITECTURE.md
 ```
 
@@ -67,7 +67,7 @@ skills-graph/
 | 1.1.1 | Initialize Maven project | Use Spring Initializr or `./mvnw archetype:generate`. Add `spring-boot-starter-webmvc`, `spring-boot-starter-data-neo4j`, `spring-boot-starter-data-jpa`, `spring-boot-starter-data-redis`, `spring-ai-starter-model-anthropic`, `spring-ai-starter-model-openai`, `spring-boot-starter-flyway` |
 | 1.1.2 | Create `pom.xml` | Include Spring Boot 4 parent, Java 21, Spring AI BOM, postgresql JDBC driver, Flyway starter, Lettuce (Redis), springdoc-openapi |
 | 1.1.3 | Create `docker-compose.yml` | PostgreSQL 16 with `pgvector`, `pg_trgm` extensions enabled; Redis 7; Neo4j 5 with APOC plugin |
-| 1.1.4 | Environment com.sk.skillsgraph.config | `src/main/resources/application.yml` — all configuration via Spring `@ConfigurationProperties`: `DATABASE_URL`, `REDIS_URL`, `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `HELICONE_API_KEY` (optional) |
+| 1.1.4 | Environment config | `src/main/resources/application.yml` + `application-development.yml` — all configuration via Spring native YAML profiles (`spring.*` and `app.*`) |
 | 1.1.5 | Centralized constants | `AppConstants.java` — all tunable values (thresholds, TTLs, limits, co-occurrence params) as `static final` fields |
 | 1.1.6 | Spring AI configuration | `AiConfig.java` — configure `ChatClient` beans (fast/standard/complex tiers) and `EmbeddingModel` bean |
 

@@ -1,0 +1,10 @@
+spring:
+  ai:
+    anthropic:
+      api-key: replace-with-anthropic-api-key
+    openai:
+      api-key: replace-with-openai-api-key
+
+app:
+  allowed-origins: "*"
+  environment: development
