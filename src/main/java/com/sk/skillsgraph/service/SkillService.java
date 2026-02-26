@@ -19,8 +19,7 @@ import com.sk.skillsgraph.dto.SkillDto.SkillPathNode;
 import com.sk.skillsgraph.dto.SkillDto.SkillResponse;
 import com.sk.skillsgraph.dto.SkillDto.SkillSummary;
 import com.sk.skillsgraph.dto.SkillDto.UpdateSkillRequest;
-import com.sk.skillsgraph.repository.AliasRepository;
-import com.sk.skillsgraph.repository.SkillRepository;
+import com.sk.skillsgraph.repository.neo4j.SkillRepository;
 import com.sk.skillsgraph.service.ChangelogService.MutationType;
 import com.sk.skillsgraph.util.AppExceptions.DuplicateSkillException;
 import com.sk.skillsgraph.util.AppExceptions.SkillNotFoundException;
@@ -49,7 +48,6 @@ public class SkillService {
 
     private final Neo4jClient neo4jClient;
     private final SkillRepository skillRepository;
-    private final AliasRepository aliasRepository;
     private final GuardrailService guardrailService;
     private final ChangelogService changelogService;
     private final EmbeddingService embeddingService;
@@ -58,7 +56,6 @@ public class SkillService {
     public SkillService(
             Neo4jClient neo4jClient,
             SkillRepository skillRepository,
-            AliasRepository aliasRepository,
             GuardrailService guardrailService,
             ChangelogService changelogService,
             EmbeddingService embeddingService,
@@ -66,7 +63,6 @@ public class SkillService {
     ) {
         this.neo4jClient = neo4jClient;
         this.skillRepository = skillRepository;
-        this.aliasRepository = aliasRepository;
         this.guardrailService = guardrailService;
         this.changelogService = changelogService;
         this.embeddingService = embeddingService;
@@ -94,29 +90,42 @@ public class SkillService {
             guardrailService.validateActivation(skillId, category);
         }
 
-        Skill skill = new Skill();
-        skill.setId(skillId);
-        skill.setExternalId(externalId);
-        skill.setCanonicalName(sanitizedName);
-        skill.setSlug(slug);
-        skill.setDescription(input.description());
-        skill.setCategory(category.name());
-        skill.setStatus(status.name());
-        skill.setSource("human_curated");
-        skill.setVersion(1);
-        skill.setCreatedAt(now);
-        skill.setUpdatedAt(now);
-
-        Alias alias = new Alias();
-        alias.setId(UUID.randomUUID().toString());
-        alias.setSurfaceForm(sanitizedName);
-        alias.setLocale("en");
-        alias.setIsPrimary(true);
-        alias.setSource(AliasSource.curated.name());
-        alias.setCreatedAt(now);
-        skill.getAliases().add(alias);
-
-        skillRepository.save(skill);
+        String aliasId = UUID.randomUUID().toString();
+        neo4jClient.query("""
+                        CREATE (s:Skill {
+                            id: $skillId,
+                            externalId: $externalId,
+                            canonicalName: $canonicalName,
+                            slug: $slug,
+                            category: $category,
+                            status: $status,
+                            source: 'human_curated',
+                            version: 1,
+                            createdAt: datetime($now),
+                            updatedAt: datetime($now)
+                        })
+                        SET s.description = $description
+                        CREATE (a:Alias {
+                            id: $aliasId,
+                            surfaceForm: $canonicalName,
+                            locale: 'en',
+                            isPrimary: true,
+                            source: $aliasSource,
+                            createdAt: datetime($now)
+                        })
+                        CREATE (s)-[:HAS_ALIAS]->(a)
+                        """)
+                .bind(skillId).to("skillId")
+                .bind(externalId).to("externalId")
+                .bind(sanitizedName).to("canonicalName")
+                .bind(slug).to("slug")
+                .bind(input.description()).to("description")
+                .bind(category.name()).to("category")
+                .bind(status.name()).to("status")
+                .bind(aliasId).to("aliasId")
+                .bind(AliasSource.curated.name()).to("aliasSource")
+                .bind(now.toString()).to("now")
+                .run();
         embeddingService.embedSkillAsync(skillId, sanitizedName, input.description(), status.name());
         searchService.indexSkillAsync(skillId);
 
@@ -192,28 +201,60 @@ public class SkillService {
             guardrailService.validateActivation(existing.id(), category);
         }
 
-        existingSkill.setCanonicalName(canonicalName);
-        existingSkill.setSlug(slug);
-        existingSkill.setDescription(description);
-        existingSkill.setCategory(category.name());
-        existingSkill.setStatus(status.name());
-        existingSkill.setVersion((existingSkill.getVersion() == null ? 1 : existingSkill.getVersion()) + 1);
-        existingSkill.setUpdatedAt(Instant.now());
-        skillRepository.save(existingSkill);
+        int nextVersion = (existingSkill.getVersion() == null ? 1 : existingSkill.getVersion()) + 1;
+        Instant updatedAt = Instant.now();
+        neo4jClient.query("""
+                        MATCH (s:Skill {id: $skillId})
+                        SET s.canonicalName = $canonicalName,
+                            s.slug = $slug,
+                            s.description = $description,
+                            s.category = $category,
+                            s.status = $status,
+                            s.version = $version,
+                            s.updatedAt = datetime($updatedAt)
+                        """)
+                .bind(existing.id()).to("skillId")
+                .bind(canonicalName).to("canonicalName")
+                .bind(slug).to("slug")
+                .bind(description).to("description")
+                .bind(category.name()).to("category")
+                .bind(status.name()).to("status")
+                .bind(nextVersion).to("version")
+                .bind(updatedAt.toString()).to("updatedAt")
+                .run();
 
         if (canonicalNameChanged) {
-            Optional<Alias> primaryEnAlias = existingSkill.getAliases().stream()
-                    .filter(alias -> "en".equalsIgnoreCase(alias.getLocale()) && Boolean.TRUE.equals(alias.getIsPrimary()))
-                    .findFirst();
-            primaryEnAlias.ifPresent(alias -> {
-                alias.setSurfaceForm(canonicalName);
-                aliasRepository.save(alias);
-            });
-            if (primaryEnAlias.isEmpty()) {
-                aliasRepository.findPrimaryBySkillIdAndLocale(existing.id(), "en").ifPresent(alias -> {
-                    alias.setSurfaceForm(canonicalName);
-                    aliasRepository.save(alias);
-                });
+            long updatedAliasCount = neo4jClient.query("""
+                            MATCH (s:Skill {id: $skillId})-[:HAS_ALIAS]->(a:Alias)
+                            WHERE toLower(coalesce(a.locale, 'en')) = 'en'
+                              AND coalesce(a.isPrimary, false) = true
+                            SET a.surfaceForm = $surfaceForm
+                            RETURN count(a) AS updated
+                            """)
+                    .bind(existing.id()).to("skillId")
+                    .bind(canonicalName).to("surfaceForm")
+                    .fetchAs(Long.class)
+                    .one()
+                    .orElse(0L);
+            if (updatedAliasCount == 0L) {
+                neo4jClient.query("""
+                                MATCH (s:Skill {id: $skillId})
+                                CREATE (a:Alias {
+                                    id: $aliasId,
+                                    surfaceForm: $surfaceForm,
+                                    locale: 'en',
+                                    isPrimary: true,
+                                    source: $source,
+                                    createdAt: datetime($createdAt)
+                                })
+                                CREATE (s)-[:HAS_ALIAS]->(a)
+                                """)
+                        .bind(existing.id()).to("skillId")
+                        .bind(UUID.randomUUID().toString()).to("aliasId")
+                        .bind(canonicalName).to("surfaceForm")
+                        .bind(AliasSource.curated.name()).to("source")
+                        .bind(updatedAt.toString()).to("createdAt")
+                        .run();
             }
         }
 
@@ -241,7 +282,7 @@ public class SkillService {
         ));
         changelogService.record("system", MutationType.skill_updated, "skill", existing.id(), diff);
 
-        return getById(existingSkill.getId());
+        return getById(existing.id());
     }
 
     public ListSkillsResponse list(ListSkillsQuery query) {
@@ -482,15 +523,83 @@ public class SkillService {
     }
 
     private Optional<Skill> findSkillEntity(String key) {
-        Optional<Skill> byId = skillRepository.findById(key);
-        if (byId.isPresent()) {
-            return byId;
+        return findSkillEntityViaCypher(key);
+    }
+
+    private Optional<Skill> findSkillEntityViaCypher(String key) {
+        return neo4jClient.query("""
+                        MATCH (s:Skill)
+                        WHERE s.id = $key OR s.externalId = $key OR s.slug = $key
+                        WITH s,
+                             CASE
+                                 WHEN s.id = $key THEN 0
+                                 WHEN s.externalId = $key THEN 1
+                                 ELSE 2
+                             END AS priority
+                        ORDER BY priority ASC
+                        LIMIT 1
+                        OPTIONAL MATCH (s)-[:HAS_ALIAS]->(a:Alias)
+                        WITH s, collect(a) AS aliases
+                        RETURN s.id AS id,
+                               s.externalId AS externalId,
+                               s.canonicalName AS canonicalName,
+                               s.slug AS slug,
+                               s.description AS description,
+                               s.status AS status,
+                               s.category AS category,
+                               s.version AS version,
+                               s.source AS source,
+                               s.createdAt AS createdAt,
+                               s.updatedAt AS updatedAt,
+                               [alias IN aliases WHERE alias IS NOT NULL | {
+                                   id: alias.id,
+                                   surfaceForm: alias.surfaceForm,
+                                   locale: alias.locale,
+                                   isPrimary: alias.isPrimary,
+                                   source: alias.source,
+                                   createdAt: alias.createdAt
+                               }] AS aliases
+                        """)
+                .bind(key).to("key")
+                .fetch()
+                .one()
+                .map(this::mapSkillWithAliases);
+    }
+
+    private Skill mapSkillWithAliases(Map<String, Object> row) {
+        Skill skill = new Skill();
+        skill.setId(asString(row.get("id")));
+        skill.setExternalId(asString(row.get("externalId")));
+        skill.setCanonicalName(asString(row.get("canonicalName")));
+        skill.setSlug(asString(row.get("slug")));
+        skill.setDescription(asString(row.get("description")));
+        skill.setStatus(asString(row.get("status")));
+        skill.setCategory(asString(row.get("category")));
+        skill.setVersion(toInt(row.get("version"), 1));
+        skill.setSource(asString(row.get("source")));
+        skill.setCreatedAt(toInstant(row.get("createdAt")));
+        skill.setUpdatedAt(toInstant(row.get("updatedAt")));
+
+        Object aliasRaw = row.get("aliases");
+        if (aliasRaw instanceof List<?> aliasRows) {
+            for (Object aliasItem : aliasRows) {
+                if (!(aliasItem instanceof Map<?, ?> aliasMap)) {
+                    continue;
+                }
+                Alias alias = new Alias();
+                alias.setId(asString(aliasMap.get("id")));
+                alias.setSurfaceForm(asString(aliasMap.get("surfaceForm")));
+                alias.setLocale(asString(aliasMap.get("locale")));
+                alias.setIsPrimary(toBoolean(aliasMap.get("isPrimary"), false));
+                alias.setSource(asString(aliasMap.get("source")));
+                alias.setCreatedAt(toInstant(aliasMap.get("createdAt")));
+                if (alias.getId() != null) {
+                    skill.getAliases().add(alias);
+                }
+            }
         }
-        Optional<Skill> byExternalId = skillRepository.findByExternalId(key);
-        if (byExternalId.isPresent()) {
-            return byExternalId;
-        }
-        return skillRepository.findBySlug(key);
+
+        return skill;
     }
 
     private SkillCore toSkillCore(Skill skill) {
@@ -548,17 +657,32 @@ public class SkillService {
     }
 
     private boolean slugExists(String slug, String currentSkillId) {
-        if (currentSkillId == null) {
-            return skillRepository.existsBySlug(slug);
-        }
-        return skillRepository.existsBySlugAndIdNot(slug, currentSkillId);
+        String query = """
+                MATCH (s:Skill {slug: $slug})
+                WHERE $currentSkillId IS NULL OR s.id <> $currentSkillId
+                RETURN count(s) > 0 AS exists
+                """;
+        return neo4jClient.query(query)
+                .bind(slug).to("slug")
+                .bind(currentSkillId).to("currentSkillId")
+                .fetchAs(Boolean.class)
+                .one()
+                .orElse(false);
     }
 
     private boolean canonicalNameExists(String canonicalName, String currentSkillId) {
-        if (currentSkillId == null) {
-            return skillRepository.existsByCanonicalNameIgnoreCase(canonicalName);
-        }
-        return skillRepository.existsByCanonicalNameIgnoreCaseAndIdNot(canonicalName, currentSkillId);
+        String query = """
+                MATCH (s:Skill)
+                WHERE toLower(coalesce(s.canonicalName, '')) = toLower($canonicalName)
+                  AND ($currentSkillId IS NULL OR s.id <> $currentSkillId)
+                RETURN count(s) > 0 AS exists
+                """;
+        return neo4jClient.query(query)
+                .bind(canonicalName).to("canonicalName")
+                .bind(currentSkillId).to("currentSkillId")
+                .fetchAs(Boolean.class)
+                .one()
+                .orElse(false);
     }
 
     private String toFullTextQuery(String rawQuery) {
@@ -644,6 +768,23 @@ public class SkillService {
 
     private String asString(Object value) {
         return value == null ? null : value.toString();
+    }
+
+    private boolean toBoolean(Object value, boolean fallback) {
+        if (value instanceof Boolean bool) {
+            return bool;
+        }
+        if (value == null) {
+            return fallback;
+        }
+        String normalized = value.toString().trim();
+        if ("true".equalsIgnoreCase(normalized)) {
+            return true;
+        }
+        if ("false".equalsIgnoreCase(normalized)) {
+            return false;
+        }
+        return fallback;
     }
 
     private int toInt(Object value, int fallback) {

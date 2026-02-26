@@ -1,7 +1,10 @@
 package com.sk.skillsgraph.service;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sk.skillsgraph.config.AppConstants;
-import com.sk.skillsgraph.config.RedisConfig.RedisCacheHelper;
+import com.sk.skillsgraph.redis.RedisJsonCacheEntry;
+import com.sk.skillsgraph.redis.RedisJsonCacheRepository;
 import com.sk.skillsgraph.util.AppExceptions.ValidationException;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
@@ -23,25 +26,32 @@ public class EmbeddingService {
     private static final Logger LOGGER = LoggerFactory.getLogger(EmbeddingService.class);
 
     private final EmbeddingModel embeddingModel;
-    private final RedisCacheHelper redisCacheHelper;
+    private final RedisJsonCacheRepository redisJsonCacheRepository;
+    private final ObjectMapper objectMapper;
     private final JdbcTemplate jdbcTemplate;
 
-    public EmbeddingService(EmbeddingModel embeddingModel, RedisCacheHelper redisCacheHelper, JdbcTemplate jdbcTemplate) {
+    public EmbeddingService(
+            EmbeddingModel embeddingModel,
+            RedisJsonCacheRepository redisJsonCacheRepository,
+            ObjectMapper objectMapper,
+            JdbcTemplate jdbcTemplate
+    ) {
         this.embeddingModel = embeddingModel;
-        this.redisCacheHelper = redisCacheHelper;
+        this.redisJsonCacheRepository = redisJsonCacheRepository;
+        this.objectMapper = objectMapper;
         this.jdbcTemplate = jdbcTemplate;
     }
 
     public float[] embedText(String text) {
         String normalized = normalizeText(text);
         String cacheKey = cacheKey(normalized);
-        float[] cached = redisCacheHelper.cacheGet(cacheKey, float[].class);
+        float[] cached = readEmbeddingFromCache(cacheKey);
         if (cached != null && cached.length > 0) {
             return cached;
         }
 
         float[] embedding = embeddingModel.embed(normalized);
-        redisCacheHelper.cacheSet(cacheKey, embedding, AppConstants.EMBEDDING_CACHE_TTL_SECONDS);
+        writeEmbeddingToCache(cacheKey, embedding);
         return embedding;
     }
 
@@ -60,7 +70,7 @@ public class EmbeddingService {
         for (int index = 0; index < texts.size(); index++) {
             String normalized = normalizeText(texts.get(index));
             String key = cacheKey(normalized);
-            float[] cached = redisCacheHelper.cacheGet(key, float[].class);
+            float[] cached = readEmbeddingFromCache(key);
             if (cached != null && cached.length > 0) {
                 resolved.set(index, cached);
                 continue;
@@ -76,7 +86,7 @@ public class EmbeddingService {
                 String normalized = misses.get(i);
                 float[] embedding = missEmbeddings.get(i);
                 resolved.set(index, embedding);
-                redisCacheHelper.cacheSet(cacheKey(normalized), embedding, AppConstants.EMBEDDING_CACHE_TTL_SECONDS);
+                writeEmbeddingToCache(cacheKey(normalized), embedding);
             }
         }
 
@@ -205,6 +215,34 @@ public class EmbeddingService {
             builder.append(Float.toString(embedding[i]));
         }
         return builder.append(']').toString();
+    }
+
+    private float[] readEmbeddingFromCache(String cacheKey) {
+        return redisJsonCacheRepository.findById(cacheKey)
+                .map(RedisJsonCacheEntry::getPayload)
+                .map(payload -> {
+                    try {
+                        return objectMapper.readValue(payload, float[].class);
+                    } catch (JsonProcessingException exception) {
+                        LOGGER.warn("Failed to deserialize embedding cache for key {}", cacheKey, exception);
+                        redisJsonCacheRepository.deleteById(cacheKey);
+                        return null;
+                    }
+                })
+                .orElse(null);
+    }
+
+    private void writeEmbeddingToCache(String cacheKey, float[] embedding) {
+        try {
+            String payload = objectMapper.writeValueAsString(embedding);
+            redisJsonCacheRepository.save(new RedisJsonCacheEntry(
+                    cacheKey,
+                    payload,
+                    AppConstants.EMBEDDING_CACHE_TTL_SECONDS
+            ));
+        } catch (JsonProcessingException exception) {
+            throw new IllegalStateException("Unable to serialize embedding cache for key " + cacheKey, exception);
+        }
     }
 
     public record SkillEmbeddingPayload(String skillId, String canonicalName, String description, String status) {

@@ -4,12 +4,13 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sk.skillsgraph.config.AppConstants;
-import com.sk.skillsgraph.repository.SkillRepository;
+import com.sk.skillsgraph.repository.neo4j.SkillRepository;
 import java.time.Instant;
 import java.util.List;
 import java.util.Map;
 import org.springframework.data.neo4j.core.Neo4jClient;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.PreparedStatementCallback;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -78,7 +79,15 @@ public class ChangelogService {
                 "entity_type", entityType,
                 "entity_id", entityId
         );
-        jdbcTemplate.update("SELECT pg_notify('graph_changes', CAST(? AS text))", toJson(notification));
+        String notificationPayload = toJson(notification);
+        jdbcTemplate.execute(
+                "SELECT pg_notify('graph_changes', CAST(? AS text))",
+                (PreparedStatementCallback<Void>) preparedStatement -> {
+                    preparedStatement.setString(1, notificationPayload);
+                    preparedStatement.execute();
+                    return null;
+                }
+        );
 
         return graphVersion == null ? 0L : graphVersion;
     }

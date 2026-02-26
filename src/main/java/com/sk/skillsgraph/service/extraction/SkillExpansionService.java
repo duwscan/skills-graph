@@ -23,6 +23,7 @@ public class SkillExpansionService {
         if (extractedSkills == null || extractedSkills.isEmpty() || depth <= 0) {
             return List.of();
         }
+        int maxDepth = Math.max(1, depth);
 
         Map<String, ExtractedSkill> directById = new HashMap<>();
         for (ExtractedSkill skill : extractedSkills) {
@@ -36,16 +37,16 @@ public class SkillExpansionService {
             if (source.skillId() == null || source.skillId().isBlank()) {
                 continue;
             }
-            List<Map<String, Object>> neighbors = new ArrayList<>(neo4jClient.query("""
+            String expansionQuery = """
                             MATCH (source:Skill {id: $skillId})
                             CALL {
                                 WITH source
-                                MATCH (ancestor:Skill)-[:PARENT_OF*1..$depth]->(source)
+                                MATCH (ancestor:Skill)-[:PARENT_OF*1..%d]->(source)
                                 WHERE coalesce(ancestor.status, 'active') = 'active'
                                 RETURN ancestor AS related, 'parent' AS expansionType
                                 UNION
                                 WITH source
-                                MATCH (source)-[:PARENT_OF*1..$depth]->(descendant:Skill)
+                                MATCH (source)-[:PARENT_OF*1..%d]->(descendant:Skill)
                                 WHERE coalesce(descendant.status, 'active') = 'active'
                                 RETURN descendant AS related, 'child' AS expansionType
                                 UNION
@@ -60,9 +61,9 @@ public class SkillExpansionService {
                                    related.externalId AS externalId,
                                    related.canonicalName AS canonicalName,
                                    expansionType
-                            """)
+                            """.formatted(maxDepth, maxDepth);
+            List<Map<String, Object>> neighbors = new ArrayList<>(neo4jClient.query(expansionQuery)
                     .bind(source.skillId()).to("skillId")
-                    .bind(depth).to("depth")
                     .fetch()
                     .all());
 

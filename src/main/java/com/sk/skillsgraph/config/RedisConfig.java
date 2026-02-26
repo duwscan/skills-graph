@@ -1,16 +1,11 @@
 package com.sk.skillsgraph.config;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import io.lettuce.core.ClientOptions;
 import io.lettuce.core.resource.ClientResources;
 import io.lettuce.core.resource.DefaultClientResources;
 import io.lettuce.core.resource.Delay;
 import jakarta.annotation.PreDestroy;
 import java.time.Duration;
-import java.util.Arrays;
-import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -69,11 +64,6 @@ public class RedisConfig {
         return new StringRedisTemplate(connectionFactory);
     }
 
-    @Bean
-    public RedisCacheHelper redisCacheHelper(StringRedisTemplate redisTemplate, ObjectMapper objectMapper) {
-        return new RedisCacheHelper(redisTemplate, objectMapper);
-    }
-
     @PreDestroy
     public void closeRedis() {
         if (lettuceConnectionFactory != null) {
@@ -82,63 +72,6 @@ public class RedisConfig {
         }
         if (clientResources != null) {
             clientResources.shutdown(1, 2, TimeUnit.SECONDS);
-        }
-    }
-
-    public static class RedisCacheHelper {
-
-        private final StringRedisTemplate redisTemplate;
-        private final ObjectMapper objectMapper;
-
-        public RedisCacheHelper(StringRedisTemplate redisTemplate, ObjectMapper objectMapper) {
-            this.redisTemplate = redisTemplate;
-            this.objectMapper = objectMapper;
-        }
-
-        public <T> T cacheGet(String key, Class<T> targetType) {
-            String cached = redisTemplate.opsForValue().get(key);
-            if (cached == null) {
-                return null;
-            }
-            try {
-                return objectMapper.readValue(cached, targetType);
-            } catch (JsonProcessingException e) {
-                throw new IllegalStateException("Unable to deserialize cached value for key " + key, e);
-            }
-        }
-
-        public <T> T cacheGet(String key, TypeReference<T> typeReference) {
-            String cached = redisTemplate.opsForValue().get(key);
-            if (cached == null) {
-                return null;
-            }
-            try {
-                return objectMapper.readValue(cached, typeReference);
-            } catch (JsonProcessingException e) {
-                throw new IllegalStateException("Unable to deserialize cached value for key " + key, e);
-            }
-        }
-
-        public void cacheSet(String key, Object value, long ttlSeconds) {
-            try {
-                String serialized = objectMapper.writeValueAsString(value);
-                redisTemplate.opsForValue().set(key, serialized, Duration.ofSeconds(ttlSeconds));
-            } catch (JsonProcessingException e) {
-                throw new IllegalStateException("Unable to serialize value for key " + key, e);
-            }
-        }
-
-        public void cacheDelete(String key) {
-            redisTemplate.delete(key);
-        }
-
-        public String cacheMakeKey(String... parts) {
-            return Arrays.stream(parts)
-                    .filter(Objects::nonNull)
-                    .map(String::trim)
-                    .filter(part -> !part.isEmpty())
-                    .reduce((left, right) -> left + ":" + right)
-                    .orElse("");
         }
     }
 }

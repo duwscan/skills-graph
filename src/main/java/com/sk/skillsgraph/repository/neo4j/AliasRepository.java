@@ -1,4 +1,4 @@
-package com.sk.skillsgraph.repository;
+package com.sk.skillsgraph.repository.neo4j;
 
 import com.sk.skillsgraph.domain.Alias;
 import java.util.Optional;

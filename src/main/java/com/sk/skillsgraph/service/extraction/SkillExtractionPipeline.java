@@ -1,8 +1,8 @@
 package com.sk.skillsgraph.service.extraction;
 
-import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sk.skillsgraph.config.AppConstants;
-import com.sk.skillsgraph.config.RedisConfig.RedisCacheHelper;
 import com.sk.skillsgraph.dto.ExtractionDto.DiscoveredCandidate;
 import com.sk.skillsgraph.dto.ExtractionDto.ExtractedSkill;
 import com.sk.skillsgraph.dto.ExtractionDto.ExtractionMetadata;
@@ -11,6 +11,8 @@ import com.sk.skillsgraph.dto.ExtractionDto.ExtractionRequest;
 import com.sk.skillsgraph.dto.ExtractionDto.ExtractionResponse;
 import com.sk.skillsgraph.dto.ExtractionDto.LlmExtractedSkill;
 import com.sk.skillsgraph.dto.ExtractionDto.LlmExtractionOutput;
+import com.sk.skillsgraph.redis.RedisJsonCacheEntry;
+import com.sk.skillsgraph.redis.RedisJsonCacheRepository;
 import com.sk.skillsgraph.service.EmbeddingService;
 import com.sk.skillsgraph.service.VectorSearchService;
 import com.sk.skillsgraph.service.VectorSearchService.ChunkCandidate;
@@ -54,8 +56,6 @@ public class SkillExtractionPipeline {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(SkillExtractionPipeline.class);
     private static final int RETRY_AFTER_SECONDS = 1;
-    private static final TypeReference<CachedChunkResult> CACHED_CHUNK_TYPE = new TypeReference<>() {
-    };
 
     private final DocumentParser documentParser;
     private final SectionDetector sectionDetector;
@@ -63,7 +63,8 @@ public class SkillExtractionPipeline {
     private final EmbeddingService embeddingService;
     private final VectorSearchService vectorSearchService;
     private final SkillExpansionService skillExpansionService;
-    private final RedisCacheHelper redisCacheHelper;
+    private final RedisJsonCacheRepository redisJsonCacheRepository;
+    private final ObjectMapper objectMapper;
     private final StringRedisTemplate redisTemplate;
     private final Neo4jClient neo4jClient;
     private final ChatClient fastChatClient;
@@ -77,7 +78,8 @@ public class SkillExtractionPipeline {
             EmbeddingService embeddingService,
             VectorSearchService vectorSearchService,
             SkillExpansionService skillExpansionService,
-            RedisCacheHelper redisCacheHelper,
+            RedisJsonCacheRepository redisJsonCacheRepository,
+            ObjectMapper objectMapper,
             StringRedisTemplate redisTemplate,
             Neo4jClient neo4jClient,
             @Qualifier("fastChatClient") ChatClient fastChatClient,
@@ -89,7 +91,8 @@ public class SkillExtractionPipeline {
         this.embeddingService = embeddingService;
         this.vectorSearchService = vectorSearchService;
         this.skillExpansionService = skillExpansionService;
-        this.redisCacheHelper = redisCacheHelper;
+        this.redisJsonCacheRepository = redisJsonCacheRepository;
+        this.objectMapper = objectMapper;
         this.redisTemplate = redisTemplate;
         this.neo4jClient = neo4jClient;
         this.fastChatClient = fastChatClient;
@@ -144,7 +147,7 @@ public class SkillExtractionPipeline {
             allDiscovered.addAll(result.discoveredCandidates());
         }
 
-        List<ExtractedSkill> merged = mergeAndDeduplicate(allExtracted);
+        List<ExtractedSkill> merged = new ArrayList<>(mergeAndDeduplicate(allExtracted));
         if (options.expand() && options.expansionDepth() > 0) {
             merged.addAll(skillExpansionService.expand(merged, options.expansionDepth()));
             merged = mergeAndDeduplicate(merged);
@@ -185,7 +188,7 @@ public class SkillExtractionPipeline {
         List<CandidateSkill> candidates = resolveCandidates(chunk.text());
 
         String cacheKey = cacheKey(chunk.text(), candidates);
-        CachedChunkResult cached = redisCacheHelper.cacheGet(cacheKey, CACHED_CHUNK_TYPE);
+        CachedChunkResult cached = readChunkCache(cacheKey);
         if (cached != null) {
             return new ChunkResult(
                     cached.extractedSkills() == null ? List.of() : cached.extractedSkills(),
@@ -210,7 +213,7 @@ public class SkillExtractionPipeline {
                     : llmResult.output().discoveredCandidates();
 
             CachedChunkResult payload = new CachedChunkResult(weighted, discovered, selectedModel);
-            redisCacheHelper.cacheSet(cacheKey, payload, AppConstants.EXTRACTION_CACHE_TTL_SECONDS);
+            writeChunkCache(cacheKey, payload);
 
             return new ChunkResult(weighted, discovered, false, selectedModel, llmResult.tokens());
         } catch (ExtractionBusyException busy) {
@@ -219,7 +222,7 @@ public class SkillExtractionPipeline {
             LOGGER.warn("LLM extraction failed for chunk {}. Falling back to lexical matching.", chunk.index(), exception);
             List<ExtractedSkill> fallback = applyWeighting(fallbackKeywordExtraction(chunk, candidates), chunk);
             CachedChunkResult payload = new CachedChunkResult(fallback, List.of(), selectedModel + ":fallback");
-            redisCacheHelper.cacheSet(cacheKey, payload, AppConstants.EXTRACTION_CACHE_TTL_SECONDS);
+            writeChunkCache(cacheKey, payload);
             return new ChunkResult(fallback, List.of(), false, selectedModel + ":fallback", 0);
         }
     }
@@ -601,6 +604,34 @@ public class SkillExtractionPipeline {
             List<DiscoveredCandidate> discoveredCandidates,
             String modelUsed
     ) {
+    }
+
+    private CachedChunkResult readChunkCache(String cacheKey) {
+        return redisJsonCacheRepository.findById(cacheKey)
+                .map(RedisJsonCacheEntry::getPayload)
+                .map(payload -> {
+                    try {
+                        return objectMapper.readValue(payload, CachedChunkResult.class);
+                    } catch (JsonProcessingException exception) {
+                        LOGGER.warn("Failed to deserialize extraction cache for key {}", cacheKey, exception);
+                        redisJsonCacheRepository.deleteById(cacheKey);
+                        return null;
+                    }
+                })
+                .orElse(null);
+    }
+
+    private void writeChunkCache(String cacheKey, CachedChunkResult payload) {
+        try {
+            String serialized = objectMapper.writeValueAsString(payload);
+            redisJsonCacheRepository.save(new RedisJsonCacheEntry(
+                    cacheKey,
+                    serialized,
+                    AppConstants.EXTRACTION_CACHE_TTL_SECONDS
+            ));
+        } catch (JsonProcessingException exception) {
+            throw new IllegalStateException("Unable to serialize extraction cache for key " + cacheKey, exception);
+        }
     }
 
     private record LlmCallResult(LlmExtractionOutput output, int tokens) {

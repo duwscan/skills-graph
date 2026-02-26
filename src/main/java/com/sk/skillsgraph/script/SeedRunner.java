@@ -1,13 +1,12 @@
 package com.sk.skillsgraph.script;
 
 import com.sk.skillsgraph.domain.LocaleConfigEntity;
-import com.sk.skillsgraph.domain.Skill;
 import java.time.Instant;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
-import com.sk.skillsgraph.repository.LocaleConfigRepository;
-import com.sk.skillsgraph.repository.SkillRepository;
+import com.sk.skillsgraph.repository.jpa.LocaleConfigRepository;
+import org.springframework.data.neo4j.core.Neo4jClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.ApplicationArguments;
@@ -20,11 +19,11 @@ public class SeedRunner implements ApplicationRunner {
     private static final Logger LOGGER = LoggerFactory.getLogger(SeedRunner.class);
 
     private final LocaleConfigRepository localeConfigRepository;
-    private final SkillRepository skillRepository;
+    private final Neo4jClient neo4jClient;
 
-    public SeedRunner(LocaleConfigRepository localeConfigRepository, SkillRepository skillRepository) {
+    public SeedRunner(LocaleConfigRepository localeConfigRepository, Neo4jClient neo4jClient) {
         this.localeConfigRepository = localeConfigRepository;
-        this.skillRepository = skillRepository;
+        this.neo4jClient = neo4jClient;
     }
 
     @Override
@@ -68,21 +67,26 @@ public class SeedRunner implements ApplicationRunner {
         for (Map<String, String> root : roots) {
             String rootId = root.get("id");
             Instant now = Instant.now();
-            Skill skill = skillRepository.findById(rootId).orElseGet(() -> {
-                Skill created = new Skill();
-                created.setId(rootId);
-                created.setExternalId(UUID.nameUUIDFromBytes(rootId.getBytes()).toString());
-                created.setCanonicalName(root.get("name"));
-                created.setSlug(root.get("slug"));
-                created.setStatus("active");
-                created.setCategory(root.get("category"));
-                created.setVersion(1);
-                created.setSource("seed");
-                created.setCreatedAt(now);
-                return created;
-            });
-            skill.setUpdatedAt(now);
-            skillRepository.save(skill);
+            String externalId = UUID.nameUUIDFromBytes(rootId.getBytes()).toString();
+            neo4jClient.query("""
+                            MERGE (s:Skill {id: $id})
+                            ON CREATE SET s.externalId = $externalId,
+                                          s.createdAt = datetime($now)
+                            SET s.canonicalName = $canonicalName,
+                                s.slug = $slug,
+                                s.status = 'active',
+                                s.category = $category,
+                                s.version = 1,
+                                s.source = 'seed',
+                                s.updatedAt = datetime($now)
+                            """)
+                    .bind(rootId).to("id")
+                    .bind(externalId).to("externalId")
+                    .bind(root.get("name")).to("canonicalName")
+                    .bind(root.get("slug")).to("slug")
+                    .bind(root.get("category")).to("category")
+                    .bind(now.toString()).to("now")
+                    .run();
         }
 
         LOGGER.info("Seeded root Skill nodes in Neo4j");

@@ -7,7 +7,7 @@ import com.sk.skillsgraph.dto.SearchDto.MatchType;
 import com.sk.skillsgraph.dto.SearchDto.SearchFilters;
 import com.sk.skillsgraph.dto.SearchDto.SearchResponse;
 import com.sk.skillsgraph.dto.SearchDto.SearchResult;
-import com.sk.skillsgraph.repository.SkillRepository;
+import com.sk.skillsgraph.repository.neo4j.SkillRepository;
 import com.sk.skillsgraph.util.AppExceptions.ValidationException;
 import java.util.ArrayList;
 import java.util.Comparator;

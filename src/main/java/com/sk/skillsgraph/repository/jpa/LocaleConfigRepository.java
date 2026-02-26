@@ -1,4 +1,4 @@
-package com.sk.skillsgraph.repository;
+package com.sk.skillsgraph.repository.jpa;
 
 import com.sk.skillsgraph.domain.LocaleConfigEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
