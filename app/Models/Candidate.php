@@ -12,6 +12,17 @@ class Candidate extends Model
     use HasFactory;
 
     /**
+     * The accessors to append to the model's array form.
+     *
+     * @var list<string>
+     */
+    protected $appends = [
+        'current_or_last_company',
+        'first_work_start_date',
+        'last_work_end_date',
+    ];
+
+    /**
      * The attributes that are mass assignable.
      *
      * @var list<string>
@@ -47,5 +58,72 @@ class Candidate extends Model
     public function workHistories(): HasMany
     {
         return $this->hasMany(WorkHistory::class);
+    }
+
+    /**
+     * Get the current or most recent company name for the candidate.
+     */
+    public function getCurrentOrLastCompanyAttribute(): ?string
+    {
+        $histories = $this->relationLoaded('workHistories')
+            ? $this->workHistories
+            : $this->workHistories()->get();
+
+        if ($histories->isEmpty()) {
+            return null;
+        }
+
+        $latest = $histories
+            ->filter(fn (WorkHistory $history): bool => (string) $history->company_name !== '')
+            ->sortByDesc('start_date')
+            ->first();
+
+        return $latest?->company_name ?: null;
+    }
+
+    /**
+     * Get the first date the candidate started working.
+     */
+    public function getFirstWorkStartDateAttribute(): ?string
+    {
+        $histories = $this->relationLoaded('workHistories')
+            ? $this->workHistories
+            : $this->workHistories()->get();
+
+        $first = $histories
+            ->filter(fn (WorkHistory $history): bool => $history->start_date !== null)
+            ->sortBy('start_date')
+            ->first();
+
+        if ($first === null || $first->start_date === null) {
+            return null;
+        }
+
+        return method_exists($first->start_date, 'toDateString')
+            ? $first->start_date->toDateString()
+            : (string) $first->start_date;
+    }
+
+    /**
+     * Get the most recent end date across all work history entries.
+     */
+    public function getLastWorkEndDateAttribute(): ?string
+    {
+        $histories = $this->relationLoaded('workHistories')
+            ? $this->workHistories
+            : $this->workHistories()->get();
+
+        $last = $histories
+            ->filter(fn (WorkHistory $history): bool => $history->end_date !== null)
+            ->sortByDesc('end_date')
+            ->first();
+
+        if ($last === null || $last->end_date === null) {
+            return null;
+        }
+
+        return method_exists($last->end_date, 'toDateString')
+            ? $last->end_date->toDateString()
+            : (string) $last->end_date;
     }
 }

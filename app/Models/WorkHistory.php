@@ -27,6 +27,19 @@ class WorkHistory extends Model
     ];
 
     /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return [
+            'start_date' => 'date',
+            'end_date' => 'date',
+        ];
+    }
+
+    /**
      * Get the candidate that owns the work history.
      */
     public function candidate(): BelongsTo
