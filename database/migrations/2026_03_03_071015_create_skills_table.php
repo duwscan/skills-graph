@@ -25,6 +25,9 @@ return new class extends Migration
             $table->timestampsTz();
         });
 
+        DB::statement('CREATE EXTENSION IF NOT EXISTS ltree');
+        DB::statement('CREATE EXTENSION IF NOT EXISTS vector');
+
         DB::statement('ALTER TABLE skills ALTER COLUMN id SET DEFAULT gen_random_uuid()');
 
         DB::statement('ALTER TABLE skills ADD COLUMN path ltree NOT NULL');
