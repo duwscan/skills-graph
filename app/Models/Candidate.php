@@ -12,6 +12,15 @@ class Candidate extends Model
     use HasFactory;
 
     /**
+     * The relationships that should always be loaded.
+     *
+     * @var list<string>
+     */
+    protected $with = [
+        'workHistories',
+    ];
+
+    /**
      * The accessors to append to the model's array form.
      *
      * @var list<string>
