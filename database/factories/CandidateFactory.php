@@ -22,7 +22,6 @@ class CandidateFactory extends Factory
             'last_name' => fake()->lastName(),
             'email' => fake()->unique()->safeEmail(),
             'phone' => fake()->optional(0.7)->phoneNumber(),
-            'linkedin_url' => fake()->optional(0.5)->url(),
             'summary' => fake()->optional(0.6)->paragraph(),
         ];
     }

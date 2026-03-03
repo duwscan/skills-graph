@@ -18,11 +18,11 @@ class CVPraser
     ) {}
 
     /**
-     * Invoke the class instance.
+     * Handle parsing a CV file into a Cv model.
      *
      * @param  Candidate|int|null  $candidate  Optional candidate to associate the parsed CV with.
      */
-    public function __invoke(UploadedFile|string $file, Candidate|int|null $candidate = null): Cv
+    public function handle(UploadedFile|string $file, Candidate|int|null $candidate = null): Cv
     {
         $attachments = $file instanceof UploadedFile
             ? [$file]
@@ -31,7 +31,6 @@ class CVPraser
         $response = $this->agent->prompt(
             'Parse the attached CV file and return raw text blocks for each section.',
             attachments: $attachments,
-            model: config('ai.providers.litellm.model'),
         );
 
         $attributes = [

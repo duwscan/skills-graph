@@ -22,7 +22,6 @@ class Candidate extends Model
         'last_name',
         'email',
         'phone',
-        'linkedin_url',
         'summary',
     ];
 
