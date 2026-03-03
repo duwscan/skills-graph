@@ -33,6 +33,7 @@ class SkillAlias extends Model
     {
         return [
             'is_primary' => 'boolean',
+            'alias_embedding' => 'array',
         ];
     }
 

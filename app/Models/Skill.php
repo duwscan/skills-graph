@@ -37,6 +37,7 @@ class Skill extends Model
     protected function casts(): array
     {
         return [
+            'embedding' => 'array',
             'metadata' => 'array',
         ];
     }

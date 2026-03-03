@@ -10,6 +10,13 @@ class LocaleConfig extends Model
     use HasFactory;
 
     /**
+     * The table associated with the model.
+     *
+     * @var string
+     */
+    protected $table = 'locale_config';
+
+    /**
      * The attributes that are mass assignable.
      *
      * @var list<string>

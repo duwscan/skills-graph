@@ -27,6 +27,7 @@ return new class extends Migration
 
         DB::statement('CREATE EXTENSION IF NOT EXISTS ltree');
         DB::statement('CREATE EXTENSION IF NOT EXISTS vector');
+        DB::statement('CREATE EXTENSION IF NOT EXISTS pg_trgm');
 
         DB::statement('ALTER TABLE skills ALTER COLUMN id SET DEFAULT gen_random_uuid()');
 

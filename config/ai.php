@@ -17,7 +17,7 @@ return [
     'default_for_images' => 'gemini',
     'default_for_audio' => 'openai',
     'default_for_transcription' => 'openai',
-    'default_for_embeddings' => 'openai',
+    'default_for_embeddings' => env('EMBEDDING_PROVIDER', 'ollama_openai'),
     'default_for_reranking' => 'cohere',
 
     /*
@@ -30,6 +30,9 @@ return [
     | based on your application's available caching stores and needs.
     |
     */
+
+    'embedding_model' => env('EMBEDDING_MODEL', 'mxbai-embed-large'),
+    'embedding_dimensions' => (int) env('EMBEDDING_DIMENSIONS', 1024),
 
     'caching' => [
         'embeddings' => [
@@ -103,6 +106,12 @@ return [
             'driver' => 'ollama',
             'key' => env('OLLAMA_API_KEY', ''),
             'url' => env('OLLAMA_BASE_URL', 'http://localhost:11434'),
+        ],
+
+        'ollama_openai' => [
+            'driver' => 'openai',
+            'key' => env('OLLAMA_API_KEY', 'ollama'),
+            'url' => env('OLLAMA_BASE_URL', 'http://localhost:11434').'/v1',
         ],
 
         'openai' => [

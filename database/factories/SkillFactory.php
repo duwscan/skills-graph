@@ -25,7 +25,7 @@ class SkillFactory extends Factory
     public function definition(): array
     {
         return [
-            'external_id' => $this->faker->unique()->bothify('SK-####'),
+            'external_id' => $this->faker->unique()->bothify('SK-######'),
             'canonical_name' => $this->faker->unique()->sentence(2),
             'slug' => $this->faker->unique()->slug(),
             'description' => $this->faker->sentence(8),
