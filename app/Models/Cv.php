@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Cv extends Model
 {
@@ -12,6 +13,7 @@ class Cv extends Model
      * @var list<string>
      */
     protected $fillable = [
+        'candidate_id',
         'basic_info',
         'experiences',
         'educations',
@@ -21,6 +23,14 @@ class Cv extends Model
         'skills',
         'metatdata_blocks',
     ];
+
+    /**
+     * Get the candidate that owns the CV.
+     */
+    public function candidate(): BelongsTo
+    {
+        return $this->belongsTo(Candidate::class);
+    }
 
     /**
      * Get the attributes that should be cast.

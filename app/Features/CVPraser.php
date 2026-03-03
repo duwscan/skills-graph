@@ -3,6 +3,7 @@
 namespace App\Features;
 
 use App\Ai\Agents\CvParser;
+use App\Models\Candidate;
 use App\Models\Cv;
 use Illuminate\Http\UploadedFile;
 use Laravel\Ai\Files;
@@ -18,8 +19,10 @@ class CVPraser
 
     /**
      * Invoke the class instance.
+     *
+     * @param  Candidate|int|null  $candidate  Optional candidate to associate the parsed CV with.
      */
-    public function __invoke(UploadedFile|string $file): Cv
+    public function __invoke(UploadedFile|string $file, Candidate|int|null $candidate = null): Cv
     {
         $attachments = $file instanceof UploadedFile
             ? [$file]
@@ -31,7 +34,7 @@ class CVPraser
             model: config('ai.providers.litellm.model'),
         );
 
-        return Cv::create([
+        $attributes = [
             'basic_info' => (string) ($response['basic_info'] ?? ''),
             'experiences' => (string) ($response['experiences'] ?? ''),
             'educations' => (string) ($response['educations'] ?? ''),
@@ -40,6 +43,12 @@ class CVPraser
             'awards' => (string) ($response['awards'] ?? ''),
             'skills' => (string) ($response['skills'] ?? ''),
             'metatdata_blocks' => $response['metatdata_blocks'] ?? [],
-        ]);
+        ];
+
+        if ($candidate !== null) {
+            $attributes['candidate_id'] = $candidate instanceof Candidate ? $candidate->id : $candidate;
+        }
+
+        return Cv::create($attributes);
     }
 }
