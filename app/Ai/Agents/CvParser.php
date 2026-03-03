@@ -36,6 +36,7 @@ Your job is to:
 - For each field, return the corresponding raw block of text exactly as it appears in the CV text.
 - You may normalize obviously broken line breaks or duplicated spaces if it improves readability.
 - If a section does not exist, return an empty string for that field.
+- If the parsed text includes artificial markers like "<PARSED TEXT FOR PAGE: 1 / 2>", strip those markers out and do not include them in any field.
 
 Only use the provided schema keys and do not add extra fields.
 PROMPT;

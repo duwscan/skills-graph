@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => 'openai',
+    'default' => env('DEFAULT_AI_PROVIDER', 'openai'),
     'default_for_images' => 'gemini',
     'default_for_audio' => 'openai',
     'default_for_transcription' => 'openai',
@@ -107,8 +107,16 @@ return [
 
         'openai' => [
             'driver' => 'openai',
+            'model' => env('OPENAI_MODEL', 'github_copilot/gpt-5-mini'),
             'key' => env('OPENAI_API_KEY'),
             'url' => env('OPENAI_API_URL', 'https://api.openai.com/v1'),
+        ],
+
+        'litellm' => [
+            'driver' => 'openai',
+            'model' => env('LITTELM_MODEL', 'github_copilot/gpt-5-mini'),
+            'key' => env('LITTELM_API_KEY', ''),
+            'url' => env('LITTELM_API_URL', 'http://0.0.0.0:4000/v1'),
         ],
 
         'openrouter' => [

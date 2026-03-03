@@ -28,6 +28,7 @@ class CVPraser
         $response = $this->agent->prompt(
             'Parse the attached CV file and return raw text blocks for each section.',
             attachments: $attachments,
+            model: config('ai.providers.litellm.model'),
         );
 
         return Cv::create([
