@@ -124,7 +124,7 @@ class Candidate extends Model
 
         $last = $histories
             ->filter(fn (WorkHistory $history): bool => $history->end_date !== null)
-            ->sortByDesc('end_date')
+            ->sortByDesc(callback: 'end_date')
             ->first();
 
         if ($last === null || $last->end_date === null) {
