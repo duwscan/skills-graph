@@ -40,4 +40,12 @@ class Candidate extends Model
     {
         return $this->hasMany(Cv::class);
     }
+
+    /**
+     * Get the work history entries for the candidate.
+     */
+    public function workHistories(): HasMany
+    {
+        return $this->hasMany(WorkHistory::class);
+    }
 }

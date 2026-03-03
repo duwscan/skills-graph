@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Cv extends Model
 {
@@ -30,6 +31,14 @@ class Cv extends Model
     public function candidate(): BelongsTo
     {
         return $this->belongsTo(Candidate::class);
+    }
+
+    /**
+     * Get the work history entries associated with this CV.
+     */
+    public function workHistories(): HasMany
+    {
+        return $this->hasMany(WorkHistory::class);
     }
 
     /**
