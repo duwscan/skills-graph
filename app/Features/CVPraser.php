@@ -38,6 +38,7 @@ class CVPraser
             'projects' => (string) ($response['projects'] ?? ''),
             'awards' => (string) ($response['awards'] ?? ''),
             'skills' => (string) ($response['skills'] ?? ''),
+            'metatdata_blocks' => $response['metatdata_blocks'] ?? [],
         ]);
     }
 }

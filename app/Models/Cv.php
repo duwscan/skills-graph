@@ -19,5 +19,18 @@ class Cv extends Model
         'projects',
         'awards',
         'skills',
+        'metatdata_blocks',
     ];
+
+    /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return [
+            'metatdata_blocks' => 'array',
+        ];
+    }
 }

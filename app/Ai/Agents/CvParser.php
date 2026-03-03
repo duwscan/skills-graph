@@ -31,6 +31,8 @@ Your job is to:
   - projects
   - awards
   - skills
+- metatdata_blocks (all remaining content blocks that do not clearly belong to the sections above)
+- metatdata_blocks may include layout artefacts, repeated headers / footers, or miscellaneous notes.
 - For each field, return the corresponding raw block of text exactly as it appears in the CV text.
 - You may normalize obviously broken line breaks or duplicated spaces if it improves readability.
 - If a section does not exist, return an empty string for that field.
@@ -52,6 +54,9 @@ PROMPT;
             'projects' => $schema->string()->required(),
             'awards' => $schema->string()->required(),
             'skills' => $schema->string()->required(),
+            'metatdata_blocks' => $schema->array()
+                ->items($schema->string())
+                ->required(),
         ];
     }
 }
