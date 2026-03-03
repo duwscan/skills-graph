@@ -1,0 +1,12 @@
+[mcp_servers.laravel-boost]
+command = "php"
+args = ["artisan", "boost:mcp"]
+cwd = "/Users/anndt/Sites/Yopaz/jv/skills-graph"
+
+[mcp_servers.herd]
+command = "php"
+args = ["/Applications/Herd.app/Contents/Resources/herd-mcp.phar"]
+cwd = "/Users/anndt/Sites/Yopaz/jv/skills-graph"
+
+[mcp_servers.herd.env]
+SITE_PATH = "/Users/anndt/Sites/Yopaz/jv/skills-graph"
