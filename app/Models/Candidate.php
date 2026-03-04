@@ -19,6 +19,7 @@ class Candidate extends Model
      */
     protected $with = [
         'workHistories',
+        'jobExpectation',
     ];
 
     /**

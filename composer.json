@@ -9,7 +9,9 @@
         "php": "^8.2",
         "laravel/ai": "^0.2.5",
         "laravel/framework": "^12.0",
-        "laravel/tinker": "^2.10.1"
+        "laravel/tinker": "^2.10.1",
+        "php-open-source-saver/jwt-auth": "^2.8",
+        "spatie/laravel-permission": "^7.2"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -49,6 +51,9 @@
         "test": [
             "@php artisan config:clear --ansi",
             "@php artisan test"
+        ],
+        "jwt-superadmin": [
+            "@php artisan jwt:superadmin"
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
