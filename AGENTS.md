@@ -242,4 +242,8 @@ protected function isAccessible(User $user, ?string $path = null): bool
 - This application uses the Laravel AI SDK (`laravel/ai`) for all AI functionality.
 - Activate the `developing-with-ai-sdk` skill when building, editing, updating, debugging, or testing AI agents, text generation, chat, streaming, structured output, tools, image generation, audio, transcription, embeddings, reranking, vector stores, files, conversation memory, or any AI provider integration (OpenAI, Anthropic, Gemini, Cohere, Groq, xAI, ElevenLabs, Jina, OpenRouter).
 
+## Roles & permissions
+
+- When referencing roles or permissions in code (middleware strings, policies, checks), always use the `RoleAlias` and `PermissionAlias` enums instead of hard-coded strings. For example, prefer `permission:'.PermissionAlias::ManageCandidates->value` over `'permission:manage-candidates'`.
+
 </laravel-boost-guidelines>

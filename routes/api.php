@@ -1,5 +1,6 @@
 <?php
 
+use App\Enums\PermissionAlias;
 use App\Http\Controllers\Api\CandidateController;
 use App\Http\Controllers\Api\CandidateJobExpectationController;
 use App\Http\Controllers\Api\CandidateWorkHistoryController;
@@ -24,11 +25,14 @@ Route::prefix('auth')->group(function (): void {
 Route::middleware('auth:api')->group(function (): void {
     Route::post('/cv/parse', ParseCvController::class)->name('api.cv.parse');
 
-    Route::apiResource('candidates', CandidateController::class);
+    Route::apiResource('candidates', CandidateController::class)
+        ->middleware(PermissionAlias::ManageCandidates->toPermissionMiddleware());
 
     Route::apiResource('candidates.work-histories', CandidateWorkHistoryController::class)
-        ->scoped();
+        ->scoped()
+        ->middleware(PermissionAlias::ManageCandidates->toPermissionMiddleware());
 
     Route::apiSingleton('candidates.job-expectation', CandidateJobExpectationController::class)
-        ->creatable();
+        ->creatable()
+        ->middleware(PermissionAlias::ManageCandidates->toPermissionMiddleware());
 });

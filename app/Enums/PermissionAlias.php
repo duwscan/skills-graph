@@ -15,4 +15,9 @@ enum PermissionAlias: string
     {
         return array_column(self::cases(), 'value');
     }
+
+    public function toPermissionMiddleware(): string
+    {
+        return 'permission:'.$this->value;
+    }
 }
