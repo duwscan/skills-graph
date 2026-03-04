@@ -5,10 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Laravel\Scout\Searchable;
 
 class Skill extends Model
 {
     use HasFactory;
+    use Searchable;
 
     /**
      * The attributes that are mass assignable.
@@ -39,6 +41,25 @@ class Skill extends Model
         return [
             'embedding' => 'array',
             'metadata' => 'array',
+        ];
+    }
+
+    /**
+     * Get the data that should be indexed by Laravel Scout.
+     *
+     * @return array<string, mixed>
+     */
+    public function toSearchableArray(): array
+    {
+        return [
+            'id' => $this->id,
+            'external_id' => $this->external_id,
+            'canonical_name' => $this->canonical_name,
+            'slug' => $this->slug,
+            'description' => $this->description,
+            'category' => $this->category,
+            'status' => $this->status,
+            'aliases' => $this->aliases()->pluck('surface_form')->all(),
         ];
     }
 

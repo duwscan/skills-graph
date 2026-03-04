@@ -36,7 +36,7 @@ return [
 
     'caching' => [
         'embeddings' => [
-            'cache' => false,
+            'cache' => env('EMBEDDING_CACHE', false),
             'store' => env('CACHE_STORE', 'database'),
         ],
     ],

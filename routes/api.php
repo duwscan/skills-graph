@@ -4,6 +4,7 @@ use App\Enums\PermissionAlias;
 use App\Http\Controllers\Api\CandidateController;
 use App\Http\Controllers\Api\CandidateJobExpectationController;
 use App\Http\Controllers\Api\CandidateWorkHistoryController;
+use App\Http\Controllers\Api\SkillSearchController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ParseCvController;
 use Illuminate\Support\Facades\Route;
@@ -24,6 +25,9 @@ Route::prefix('auth')->group(function (): void {
 
 Route::middleware('auth:api')->group(function (): void {
     Route::post('/cv/parse', ParseCvController::class)->name('api.cv.parse');
+
+    Route::get('skills/search', SkillSearchController::class)
+        ->name('api.skills.search');
 
     Route::apiResource('candidates', CandidateController::class)
         ->middleware(permission_middleware(PermissionAlias::ManageCandidates));

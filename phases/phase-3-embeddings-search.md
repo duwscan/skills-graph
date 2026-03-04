@@ -1,51 +1,53 @@
-# Phase 3: Embedding & Search Infrastructure
+# Phase 3: Embedding & Search Infrastructure (Laravel Backend)
 
-> **Timeline:** Week 5-6
-> **Dependencies:** Phase 1 (Foundation), Phase 2 (CRUD API) recommended
-> **Unlocks:** Phase 4 (Extraction Pipeline), Phase 5 (Discovery & HITL)
-> **Context:** Embeddings power RAG retrieval, duplicate detection, co-occurrence-based relationship discovery, and semantic search
+> **Timeline:** Week 5-6  
+> **Dependencies:** Phase 1 (Foundation), Phase 2 (CRUD API) recommended  
+> **Unlocks:** Phase 4 (Extraction Pipeline), Phase 5 (Discovery & HITL)  
+> **Context:** Embeddings power RAG retrieval, duplicate detection, co-occurrence-based relationship discovery, and semantic search  
+> **Note:** This document describes the **Laravel 12 backend implementation**. The original TS/Bun file paths remain in earlier phases for historical context only.
 
 ---
 
 ## Goal
 
-Add vector embedding generation for all skills/aliases, pgvector similarity search, and Typesense full-text search. This phase enables the **RAG retrieval step** needed by the extraction pipeline (Phase 4), the **duplicate detection** needed by the discovery pipeline (Phase 5), and the **embedding-based deduplication** used during co-occurrence edge strengthening (Phase 7).
+Add vector embedding generation for all skills/aliases, pgvector similarity search, and Typesense full-text search in the **Laravel** backend. This phase enables the **RAG retrieval step** needed by the extraction pipeline (Phase 4), the **duplicate detection** needed by the discovery pipeline (Phase 5), and the **embedding-based deduplication** used during co-occurrence edge strengthening (Phase 7).
 
 ---
 
-## 3.1 Embedding Service
+## 3.1 Embedding Service (Laravel AI)
 
 ### Context
 
-Embeddings are generated via the Vercel AI SDK's `embed()` and `embedMany()` functions using the model specified by `EMBEDDING_MODEL` at `EMBEDDING_DIMENSIONS` dimensions (see `src/config/constants.ts`; defaults: `text-embedding-3-large` at 1024 — Matryoshka reduction from 3072). All embeddings are cached in Redis with a TTL of `EMBEDDING_CACHE_TTL_SECONDS` to avoid redundant API calls.
+Embeddings are generated via the **Laravel AI SDK** (`laravel/ai`) using the `Embeddings` API and the model configured in `config/ai.php`:
+
+- Provider: `ai.default_for_embeddings` (e.g. `ollama_openai`, `openai`, etc.).
+- Model: `ai.embedding_model` (e.g. `mxbai-embed-large`).
+- Dimensions: `ai.embedding_dimensions` (defaults to `1024`).
+
+Caching is handled through Laravel AI’s built-in embedding caching:
+
+- Global toggle: `ai.caching.embeddings.cache` (wired to `EMBEDDING_CACHE` env).
+- Store: `ai.caching.embeddings.store` (defaults to `CACHE_STORE`).
+
+All embedding operations are centralized in `App\Ai\EmbeddingService`.
 
 ### Tasks
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 3.1.1 | `EmbeddingService` class | Constructor takes `getEmbeddingModel()` from providers config and Redis client. Handles all embedding operations with caching | `src/services/embedding.ts` |
-| 3.1.2 | `embedText(text)` | Embed a single text string. Cache key: `embed:{sha256(text)}`. Check Redis cache first → return cached if found → call `embed()` from AI SDK → cache result with `EMBEDDING_CACHE_TTL_SECONDS` TTL (see `src/config/constants.ts`) → return embedding (number[]) | `src/services/embedding.ts` |
-| 3.1.3 | `embedTexts(texts[])` | Embed multiple texts. Check cache for each → call `embedMany()` for cache misses only → cache each result → return all embeddings in order. AI SDK automatically handles batch size limits | `src/services/embedding.ts` |
-| 3.1.4 | `embedSkill(skill)` | Generate embedding for `"${skill.canonical_name}: ${skill.description || ''}"` and UPDATE the skill's `embedding` column in PostgreSQL | `src/services/embedding.ts` |
-| 3.1.5 | `embedAlias(alias)` | Generate embedding for `alias.surface_form` and UPDATE the alias's `alias_embedding` column | `src/services/embedding.ts` |
-| 3.1.6 | Hook into SkillService | After `SkillService.create()` and `SkillService.update()` (when name or description changes), call `embedSkill()`. After `AliasService.create()`, call `embedAlias()`. Use async (non-blocking) — don't delay the API response | `src/services/skill.ts`, `src/services/alias.ts` |
-| 3.1.7 | Bulk re-embedding script | `bun run embed:all` — query all skills and aliases with NULL embeddings, batch embed in groups of `EMBEDDING_BATCH_SIZE` (see `src/config/constants.ts`) using `embedTexts()`, update rows. Report progress. For initial backfill or after embedding model change | `src/scripts/embed-all.ts` |
+| 3.1.1 | `EmbeddingService` class | Wrap the Laravel AI `Embeddings` API, reading provider/model/dimensions from `config/ai.php`. Provide `embed()` and `embedMany()` with optional caching | `app/Ai/EmbeddingService.php`, `config/ai.php` |
+| 3.1.2 | Embedding caching | Enable caching via `ai.caching.embeddings.cache` / `EMBEDDING_CACHE` and per-call `->cache()` options. Rely on the AI SDK for cache keys and TTLs | `app/Ai/EmbeddingService.php`, `config/ai.php` |
+| 3.1.3 | Skill embedding backfill | Use the `skills:embed` Artisan command to generate embeddings for all skills and aliases with `NULL` embeddings; support chunking and `--force` re-embedding | `app/Console/Commands/EmbedSkillsAndAliases.php` |
+| 3.1.4 | Skill & alias columns | Store embeddings in PostgreSQL `vector(1024)` columns on `skills.embedding` and `skill_aliases.alias_embedding` | `database/migrations/2026_03_03_071015_create_skills_table.php`, `database/migrations/2026_03_03_071016_create_skill_aliases_table.php`, `app/Models/Skill.php`, `app/Models/SkillAlias.php` |
 
 ### Checklist
 
-- [ ] `EmbeddingService` class instantiated with correct model and Redis client
-- [ ] `embedText("Machine Learning")` returns a `EMBEDDING_DIMENSIONS`-dimension float array (see `src/config/constants.ts`)
-- [ ] `embedText("Machine Learning")` called twice → second call hits Redis cache (verify with Redis `GET`)
-- [ ] `embedTexts(["Python", "JavaScript", "TypeScript"])` returns 3 embeddings, each `EMBEDDING_DIMENSIONS` dims
-- [ ] `embedTexts()` only calls AI SDK for cache misses (verify with mock)
-- [ ] `embedSkill()` updates the `skills.embedding` column
-- [ ] `embedAlias()` updates the `skill_aliases.alias_embedding` column
-- [ ] Creating a skill via API triggers async embedding generation
-- [ ] Updating a skill's name triggers re-embedding
-- [ ] Creating an alias triggers async alias embedding
-- [ ] `bun run embed:all` processes all skills/aliases with NULL embeddings
-- [ ] `bun run embed:all` is idempotent (skips already-embedded entries)
-- [ ] `bun run embed:all` reports progress: `"Embedded 100/350 skills..."`
+- [ ] `EmbeddingService` uses `config/ai.php` provider/model and `embedding_dimensions`.
+- [ ] Embedding caching can be toggled via `EMBEDDING_CACHE` and per-call `->cache()`.
+- [ ] `php artisan skills:embed` processes all skills/aliases with `NULL` embeddings.
+- [ ] `skills:embed` is idempotent by default (skips already-embedded entries).
+- [ ] `skills:embed --force` re-embeds all records and reports progress.
+- [ ] Skills and aliases have 1024-dimension embeddings persisted in PostgreSQL.
 
 ---
 
@@ -53,162 +55,160 @@ Embeddings are generated via the Vercel AI SDK's `embed()` and `embedMany()` fun
 
 ### Context
 
-pgvector enables approximate nearest neighbor (ANN) search using HNSW indexes. The `VectorSearchService` wraps these queries for use by the extraction pipeline (RAG retrieval), duplicate detection, and semantic search.
+pgvector enables approximate nearest neighbor (ANN) search using HNSW indexes. The Laravel `VectorSearchService` wraps these queries for RAG retrieval, duplicate detection, and semantic search.
+
+- `skills.embedding` and `skill_aliases.alias_embedding` are `vector(1024)` with HNSW indexes.
+- All similarity queries use cosine distance `<=>`.
+- Tunable thresholds and RAG limits live in `config/skills_graph.php`.
 
 ### Tasks
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 3.2.1 | `VectorSearchService` class | Constructor takes DB client. All methods query pgvector using cosine distance (`<=>`) | `src/services/vector-search.ts` |
-| 3.2.2 | `findSimilarSkills(embedding, k, filters?)` | Return top-K nearest active skills. SQL: `SELECT *, 1 - (embedding <=> $1::vector) AS similarity FROM skills WHERE status = 'active' AND embedding IS NOT NULL ORDER BY embedding <=> $1::vector LIMIT $2`. Optional filters: `category`, exclude IDs | `src/services/vector-search.ts` |
-| 3.2.3 | `findSimilarAliases(embedding, k)` | Same but against `skill_aliases.alias_embedding`. Return alias + parent skill info | `src/services/vector-search.ts` |
-| 3.2.4 | `findCandidatesForChunk(chunkEmbedding, k=RAG_CANDIDATE_LIMIT)` | The **RAG retrieval function**: given a text chunk embedding, return top `RAG_CANDIDATE_LIMIT` skills (see `src/config/constants.ts`) with `{ id, external_id, canonical_name, description, similarity }`. This is the core function used by the extraction pipeline in Phase 4. Include skill descriptions for prompt context | `src/services/vector-search.ts` |
-| 3.2.5 | `checkDuplicate(name, description?)` | Embed the candidate text via `EmbeddingService.embedText()`, search for nearest neighbors. Return `{ isDuplicate: boolean, matches: Array<{ skill, similarity }> }`. Thresholds from `src/config/constants.ts`: ≥`SIMILARITY_DUPLICATE_THRESHOLD` = duplicate, [`SIMILARITY_REVIEW_THRESHOLD`, `SIMILARITY_DUPLICATE_THRESHOLD`) = similar (flag for review), <`SIMILARITY_REVIEW_THRESHOLD` = unique. Also used by the discovery pipeline (Phase 5) for candidate deduplication and by the co-occurrence edge strengthening job (Phase 7) to validate pairs before creating empirical edges | `src/services/vector-search.ts` |
-| 3.2.6 | `cosineSimilarity(a, b)` | Pure JS cosine similarity between two embeddings (for in-memory comparisons without hitting DB) | `src/lib/math.ts` |
+| 3.2.1 | `VectorSearchService` class | Service that encapsulates pgvector queries and uses cosine distance for similarity; relies on Eloquent models | `app/Ai/VectorSearchService.php` |
+| 3.2.2 | `findSimilarSkills(embedding, k, filters?)` | Return top‑K nearest active skills. SQL: `SELECT *, 1 - (embedding <=> ?::vector) AS similarity FROM skills WHERE status = 'active' AND embedding IS NOT NULL [AND filters] ORDER BY embedding <=> ?::vector LIMIT k`. Optional filters: `category`, `exclude_ids` | `app/Ai/VectorSearchService.php` |
+| 3.2.3 | `findSimilarAliases(embedding, k)` | Same pattern but against `skill_aliases.alias_embedding`, joining back to `skills` and returning alias + parent skill info | `app/Ai/VectorSearchService.php` |
+| 3.2.4 | `findCandidatesForChunk(chunkEmbedding, k=rag_candidate_limit)` | RAG retrieval function: given a chunk embedding, return top `rag_candidate_limit` skills from config with `{ id, external_id, canonical_name, description, similarity }` | `app/Ai/VectorSearchService.php`, `config/skills_graph.php` |
+| 3.2.5 | `checkDuplicate(name, description?)` | Embed candidate text via `EmbeddingService->embed()`, search for nearest neighbors, and return `{ isDuplicate: bool, matches: [{ skill, similarity }] }`. Use thresholds from `config/skills_graph.php`: `similarity_duplicate_threshold`, `similarity_review_threshold` | `app/Ai/VectorSearchService.php` |
+| 3.2.6 | `cosineSimilarity(a, b)` | Pure PHP cosine similarity between two embeddings (for in-memory comparisons) | `app/Ai/VectorSearchService.php` |
 
 ### Checklist
 
-- [ ] `findSimilarSkills()` returns skills ordered by similarity (highest first)
-- [ ] `findSimilarSkills()` only returns active skills with non-null embeddings
-- [ ] `findSimilarSkills()` respects the `k` limit
-- [ ] `findSimilarAliases()` returns aliases with parent skill info
-- [ ] `findCandidatesForChunk()` returns top `RAG_CANDIDATE_LIMIT` candidates with required fields
-- [ ] `findCandidatesForChunk()` query completes in < 50ms on 10K skills
-- [ ] `checkDuplicate("Machine Learning")` returns `isDuplicate: true` when "Machine Learning" exists
-- [ ] `checkDuplicate("Quantum Computing")` returns `isDuplicate: false` when it doesn't exist
-- [ ] `checkDuplicate("ML")` returns `isDuplicate: true` (alias match via alias embedding)
-- [ ] `cosineSimilarity([1,0], [1,0])` returns 1.0
-- [ ] `cosineSimilarity([1,0], [0,1])` returns 0.0
+- [ ] `findSimilarSkills()` returns active skills ordered by similarity (highest first).
+- [ ] `findSimilarSkills()` respects `k` and filter options (`category`, `exclude_ids`).
+- [ ] `findSimilarAliases()` returns aliases with parent skill info and similarity.
+- [ ] `findCandidatesForChunk()` returns top `rag_candidate_limit` candidates with required fields.
+- [ ] `checkDuplicate("Machine Learning")` returns `isDuplicate: true` when that skill exists.
+- [ ] `checkDuplicate("Quantum Computing")` returns `isDuplicate: false` when unique.
+- [ ] `cosineSimilarity([1,0], [1,0])` returns `1.0`, `cosineSimilarity([1,0], [0,1])` returns `0.0`.
+- [ ] PHPUnit tests in `tests/Unit/Ai/VectorSearchServiceTest.php` cover ordering, thresholds, and cosine similarity.
 
 ---
 
-## 3.3 Typesense Integration
+## 3.3 Typesense Integration (Laravel)
 
 ### Context
 
-Typesense provides fast full-text search with built-in autocomplete, typo tolerance, and faceting. It's ideal for the skills search API where users type partial queries like "mahcine lerning" and expect "Machine Learning" to appear.
+Typesense provides fast full‑text search with autocomplete, typo tolerance, and faceting. It backs the skills search API where users type partial or fuzzy queries and expect relevant skills like “Machine Learning” to appear.
+
+The Laravel implementation uses:
+
+- PHP client: `typesense/typesense-php`.
+- Config: `config/typesense.php`.
+- Service: `App\Ai\TypesenseSearchService`.
+- Artisan commands: `search:setup`, `search:reindex`.
 
 ### Tasks
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 3.3.1 | Typesense client | Initialize Typesense client with server URL and API key from env. Export singleton instance | `src/services/typesense.ts` |
-| 3.3.2 | Collection schema | Define `skills` collection: `{ id (string, PK), external_id, canonical_name (string, facet), slug, description, category (string, facet), status (string, facet), aliases (string[], facet) }`. Configure `canonical_name` and `aliases` as searchable fields with typo tolerance | `src/services/typesense.ts` |
-| 3.3.3 | `setupCollection()` | Create or update the Typesense collection. Idempotent — delete and recreate if exists. Script: `bun run search:setup` | `src/scripts/search-setup.ts` |
-| 3.3.4 | `indexSkill(skill)` | Upsert a single skill document into Typesense. Fetch all aliases for the skill and include them as a `string[]` field. Called after skill/alias mutations | `src/services/typesense.ts` |
-| 3.3.5 | `removeSkill(skillId)` | Remove a skill document from Typesense. Called when skill is deprecated/merged | `src/services/typesense.ts` |
-| 3.3.6 | `reindexAll()` | Drop collection, recreate, bulk index all active skills with aliases. Script: `bun run search:reindex`. Report progress | `src/scripts/search-reindex.ts` |
-| 3.3.7 | `search(query, filters?, limit?)` | Search Typesense: `query_by: "canonical_name,aliases,description"`, `filter_by` for category/status, `per_page` for limit. Return `{ results: [{ skill, score, highlights }], total, search_time_ms }` | `src/services/typesense.ts` |
-| 3.3.8 | Sync on mutations | After skill/alias create/update/delete (in SkillService and AliasService), call `indexSkill()` to keep Typesense in sync. Use async (non-blocking) | `src/services/skill.ts`, `src/services/alias.ts` |
+| 3.3.1 | Typesense config | Configure host, port, protocol, API key, and collection name via env (`TYPESENSE_HOST`, `TYPESENSE_PORT`, `TYPESENSE_PROTOCOL`, `TYPESENSE_API_KEY`) | `config/typesense.php` |
+| 3.3.2 | Typesense client & schema | Initialize Typesense client and define the `skills` collection: `{ id (string, PK), external_id, canonical_name (string, facet), slug, description, category (string, facet), status (string, facet), aliases (string[], facet) }` | `app/Ai/TypesenseSearchService.php` |
+| 3.3.3 | `setupCollection()` | Idempotently drop and recreate the `skills` collection with the schema above; exposed via `php artisan search:setup` | `app/Ai/TypesenseSearchService.php`, `app/Console/Commands/TypesenseSetup.php` |
+| 3.3.4 | `indexSkill(Skill $skill)` | Upsert a single skill document into Typesense, including aliases from the `Skill::aliases` relationship | `app/Ai/TypesenseSearchService.php` |
+| 3.3.5 | `removeSkill(skillId)` | Remove a skill document from Typesense when deprecated/merged/deleted | `app/Ai/TypesenseSearchService.php` |
+| 3.3.6 | `reindexAll()` | Drop collection, recreate, and bulk index all active skills (with aliases), chunked by 100; exposed via `php artisan search:reindex` | `app/Ai/TypesenseSearchService.php`, `app/Console/Commands/TypesenseReindex.php` |
+| 3.3.7 | `search(query, filters?, limit?)` | Search Typesense with `query_by="canonical_name,aliases,description"`, `filter_by` for `category`/`status`, `per_page` for limit. Return `{ results: [{ skill_id, score, highlights }], total, search_time_ms }` | `app/Ai/TypesenseSearchService.php` |
+| 3.3.8 | Commands testing | Feature tests ensure `search:setup` and `search:reindex` invoke the Typesense service correctly | `tests/Feature/Console/TypesenseCommandsTest.php` |
 
 ### Checklist
 
-- [ ] Typesense client connects to the container from docker-compose
-- [ ] `bun run search:setup` creates the `skills` collection
-- [ ] `bun run search:reindex` indexes all active skills with their aliases
-- [ ] `search("machine learning")` returns "Machine Learning" as top result
-- [ ] `search("mahcine lerning")` returns "Machine Learning" (typo tolerance)
-- [ ] `search("ML")` returns "Machine Learning" (alias search)
-- [ ] `search("python", { category: "tool" })` filters by category
-- [ ] `search("pyth")` returns "Python" (prefix/autocomplete)
-- [ ] Creating a new skill via API makes it searchable in Typesense within 1s
-- [ ] Updating a skill name updates the Typesense document
-- [ ] Adding an alias makes the skill findable by that alias in Typesense
-- [ ] `reindexAll()` completes without errors and all active skills are indexed
+- [ ] Typesense client connects using `config/typesense.php` values.
+- [ ] `php artisan search:setup` creates (or recreates) the `skills` collection.
+- [ ] `php artisan search:reindex` indexes all active skills with aliases.
+- [ ] `search("machine learning")` returns “Machine Learning” as a top result.
+- [ ] `search("mahcine lerning")` still returns “Machine Learning” (typo tolerance).
+- [ ] `search("ML")` returns “Machine Learning” via alias search.
+- [ ] `search("python", { category: "tool" })` filters by category.
+- [ ] Real‑time sync on skill/alias mutations can be added via queued jobs and `TypesenseSearchService::indexSkill()` / `removeSkill()` in later phases.
 
 ---
 
-## 3.4 Hybrid Search Endpoint
+## 3.4 Hybrid Search Endpoint (Laravel API)
 
 ### Context
 
-The search API combines Typesense (keyword/fuzzy) and pgvector (semantic similarity) results for comprehensive search. This gives users the best of both worlds: exact keyword matches AND semantically similar skills.
+The search API combines:
+
+- **Typesense** for keyword / fuzzy search.
++- **pgvector** for semantic similarity via embeddings.
+
+This gives users the best of both worlds: exact keyword matches AND semantically similar skills.
+
+The hybrid logic lives in `App\Ai\HybridSearchService` and is exposed via an authenticated Laravel API endpoint.
 
 ### Tasks
 
 | # | Task | Detail | Files |
 |---|---|---|---|
-| 3.4.1 | `HybridSearchService` | Run Typesense search and pgvector search in parallel. Merge results using reciprocal rank fusion (RRF): `score = Σ 1/(k + rank_i)` where `k=60` and `rank_i` is the rank in each result list. Deduplicate by skill ID, keeping highest merged score | `src/services/hybrid-search.ts` |
-| 3.4.2 | Search API route | `GET /api/skills/search?q={text}&category={cat}&status={status}&limit={n}` — calls `HybridSearchService`, returns `{ results: [{ skill, score, match_type }], total, query_time_ms }` | `src/routes/skills.ts` |
-| 3.4.3 | Search response schema | Zod schema for the search response: `searchResponseSchema` with typed results including highlights | `src/schemas/search.ts` |
+| 3.4.1 | `HybridSearchService` | Run Typesense search and pgvector search, merge via reciprocal rank fusion (RRF): `score = Σ 1/(k + rank_i)` with `k = 60`, where `rank_i` is the result rank in each list. Deduplicate by skill ID and compute `match_type` (`"keyword"`, `"semantic"`, `"both"`) | `app/Ai/HybridSearchService.php` |
+| 3.4.2 | Request validation | Validate `q`, `category`, `status`, and `limit` (bounded by `pagination_max_limit`) via `SkillSearchRequest` | `app/Http/Requests/SkillSearchRequest.php`, `config/skills_graph.php` |
+| 3.4.3 | Search API route | `GET /api/skills/search?q={text}&category={cat}&status={status}&limit={n}` — calls `HybridSearchService`, returns `{ results: [{ skill, score, match_type, highlights }], total, query_time_ms }` | `app/Http/Controllers/Api/SkillSearchController.php`, `routes/api.php` |
+| 3.4.4 | Feature tests | Ensure validation, structure, and wiring with `HybridSearchService` work as expected | `tests/Feature/Api/SkillSearchTest.php` |
 
 ### Checklist
 
-- [ ] `GET /api/skills/search?q=machine+learning` returns results from both Typesense and pgvector
-- [ ] Results are deduplicated (no skill appears twice)
-- [ ] Results are ranked by merged RRF score
-- [ ] `match_type` field indicates `"keyword"`, `"semantic"`, or `"both"`
-- [ ] Response includes `query_time_ms` for performance monitoring
-- [ ] Empty query returns empty results (not all skills)
-- [ ] Category filter works: `?category=tool` only returns tools
-- [ ] Limit defaults to `PAGINATION_DEFAULT_LIMIT`, max `PAGINATION_MAX_LIMIT` (see `src/config/constants.ts`)
+- [ ] `GET /api/skills/search?q=machine+learning` returns results from both Typesense and pgvector (when configured).
+- [ ] Results are deduplicated (no skill appears twice).
+- [ ] Results are ranked by merged RRF score.
+- [ ] `match_type` indicates `"keyword"`, `"semantic"`, or `"both"`.
+- [ ] Response includes `query_time_ms` for performance monitoring.
+- [ ] Empty query is rejected by validation (422), not treated as “return all”.
+- [ ] Category filter works: `?category=tool` returns only tools.
+- [ ] Limit defaults to `pagination_default_limit`, max `pagination_max_limit` from `config/skills_graph.php`.
 
 ---
 
-## Phase 3 Completion Verification
+## Phase 3 Completion Verification (Laravel)
 
 ```bash
 # Generate embeddings for seed data
-bun run embed:all
-# → "Embedded 6/6 skills, 6/6 aliases"
+php artisan skills:embed --chunk=50
+# → "Embedded N skills.", "Embedded M skill aliases."
 
 # Set up Typesense
-bun run search:setup
-bun run search:reindex
-# → "Indexed 6 skills"
+php artisan search:setup
+php artisan search:reindex
+# → "Typesense skills collection ready.", "Typesense reindex completed."
 
 # Test semantic search (pgvector)
-curl "http://localhost:3000/api/skills/search?q=artificial+intelligence" | jq
+curl "http://localhost/api/skills/search?q=artificial+intelligence" | jq
 # → returns "Technology" and related skills by semantic similarity
 
 # Test fuzzy search (Typesense)
-curl "http://localhost:3000/api/skills/search?q=technlogy" | jq
+curl "http://localhost/api/skills/search?q=technlogy" | jq
 # → returns "Technology" via typo correction
 
-# Test duplicate detection
-curl -X POST http://localhost:3000/api/skills \
-  -H "Content-Type: application/json" \
-  -d '{"canonical_name":"Tech","category":"domain","path":"tech"}'
-# → 409 if "Technology" exists with similarity > 0.90
-
-# Verify real-time sync: create skill, then search
-curl -X POST http://localhost:3000/api/skills \
-  -H "Content-Type: application/json" \
-  -d '{"canonical_name":"Python","category":"tool","description":"Programming language","path":"technology.programming.python"}'
-sleep 1
-curl "http://localhost:3000/api/skills/search?q=python" | jq
-# → returns newly created "Python" skill
-
-bun test
-echo "Phase 3 complete ✓"
+# Verify hybrid results and filters
+curl "http://localhost/api/skills/search?q=python&category=tool" | jq
+# → returns "Python" tool skills
 ```
 
 ---
 
-## Phase 3 Master Checklist
+## Phase 3 Master Checklist (Laravel)
 
 ### 3.1 Embedding Service
-- [ ] `EmbeddingService` with cached `embedText()` and `embedTexts()`
-- [ ] Auto-embedding on skill create/update and alias create
-- [ ] `bun run embed:all` bulk backfill script
-- [ ] Redis caching with `EMBEDDING_CACHE_TTL_SECONDS` TTL (see `src/config/constants.ts`)
-- [ ] Correct model: `EMBEDDING_MODEL` at `EMBEDDING_DIMENSIONS` dimensions (see `src/config/constants.ts`)
+- [ ] `EmbeddingService` uses `config/ai.php` provider/model/dimensions.
+- [ ] Embedding caching configurable via `EMBEDDING_CACHE` and per-call `->cache()`.
+- [ ] `php artisan skills:embed` bulk backfill script for skills and aliases.
 
 ### 3.2 Vector Search (pgvector)
-- [ ] `findSimilarSkills()` with cosine distance
-- [ ] `findSimilarAliases()` for alias matching
-- [ ] `findCandidatesForChunk()` — the RAG retrieval function (top `RAG_CANDIDATE_LIMIT` — see `src/config/constants.ts`)
-- [ ] `checkDuplicate()` with similarity thresholds
-- [ ] `cosineSimilarity()` utility function
+- [ ] `findSimilarSkills()` with cosine distance and filters.
+- [ ] `findSimilarAliases()` for alias matching.
+- [ ] `findCandidatesForChunk()` — RAG retrieval (top `rag_candidate_limit` from `config/skills_graph.php`).
+- [ ] `checkDuplicate()` with similarity thresholds from `config/skills_graph.php`.
+- [ ] `cosineSimilarity()` utility function.
+- [ ] Unit tests in `tests/Unit/Ai/VectorSearchServiceTest.php`.
 
 ### 3.3 Typesense Integration
-- [ ] Client connects, collection schema defined
-- [ ] `bun run search:setup` and `bun run search:reindex` scripts
-- [ ] `search()` with typo tolerance, autocomplete, faceting
-- [ ] Real-time sync on skill/alias mutations
-- [ ] `indexSkill()` and `removeSkill()` functions
+- [ ] Client connects, collection schema defined in `config/typesense.php` / `TypesenseSearchService`.
+- [ ] `php artisan search:setup` and `php artisan search:reindex` Artisan commands work.
+- [ ] `TypesenseSearchService::search()` supports typo tolerance, autocomplete, and faceting via Typesense.
+- [ ] Future: real-time sync on skill/alias mutations via queued jobs.
 
 ### 3.4 Hybrid Search Endpoint
-- [ ] `GET /api/skills/search` combines keyword + semantic results
-- [ ] Reciprocal rank fusion deduplicates and ranks
-- [ ] Response includes match_type and query_time_ms
+- [ ] `GET /api/skills/search` combines keyword + semantic results via `HybridSearchService`.
+- [ ] Reciprocal rank fusion deduplicates and ranks.
+- [ ] Response includes `match_type` and `query_time_ms`.
+- [ ] Feature tests in `tests/Feature/Api/SkillSearchTest.php` pass.
