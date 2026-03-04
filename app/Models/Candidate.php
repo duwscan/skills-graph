@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Candidate extends Model
 {
@@ -67,6 +68,14 @@ class Candidate extends Model
     public function workHistories(): HasMany
     {
         return $this->hasMany(WorkHistory::class);
+    }
+
+    /**
+     * Get the job expectation for the candidate.
+     */
+    public function jobExpectation(): HasOne
+    {
+        return $this->hasOne(JobExpectation::class);
     }
 
     /**
