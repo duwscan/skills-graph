@@ -26,13 +26,13 @@ Route::middleware('auth:api')->group(function (): void {
     Route::post('/cv/parse', ParseCvController::class)->name('api.cv.parse');
 
     Route::apiResource('candidates', CandidateController::class)
-        ->middleware(PermissionAlias::ManageCandidates->toPermissionMiddleware());
+        ->middleware(permission_middleware(PermissionAlias::ManageCandidates));
 
     Route::apiResource('candidates.work-histories', CandidateWorkHistoryController::class)
         ->scoped()
-        ->middleware(PermissionAlias::ManageCandidates->toPermissionMiddleware());
+        ->middleware(permission_middleware(PermissionAlias::ManageCandidates));
 
     Route::apiSingleton('candidates.job-expectation', CandidateJobExpectationController::class)
         ->creatable()
-        ->middleware(PermissionAlias::ManageCandidates->toPermissionMiddleware());
+        ->middleware(permission_middleware(PermissionAlias::ManageCandidates));
 });
