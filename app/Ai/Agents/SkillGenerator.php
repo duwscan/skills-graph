@@ -13,14 +13,10 @@ class SkillGenerator implements Agent, HasStructuredOutput
 {
     use Promptable;
 
-    /**
-     * @param  list<string>  $existingSkills  Canonical names already generated (for continuation-aware batching)
-     */
     public function __construct(
         public string $domain = '',
         public string $category = '',
         public string $subcategory = '',
-        public array $existingSkills = [],
     ) {}
 
     /**
@@ -47,22 +43,8 @@ class SkillGenerator implements Agent, HasStructuredOutput
             $contextBlock = "Current taxonomy context:\n".implode("\n", $parts)."\n\n";
         }
 
-        $existingBlock = '';
-
-        if ($this->existingSkills !== []) {
-            $existingJson = json_encode($this->existingSkills, JSON_UNESCAPED_UNICODE);
-            $existingBlock = <<<EXISTING
-
-Already generated canonical skills (do NOT repeat or paraphrase):
-{$existingJson}
-
-If a new concept is too similar to an existing skill, skip it. Return only net-new skills.
-EXISTING;
-        }
-
         return Prompt::get('taxonomy/generate-skill-batch', [
             'contextBlock' => $contextBlock,
-            'existingBlock' => $existingBlock,
         ]);
     }
 

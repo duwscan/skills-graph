@@ -60,7 +60,6 @@ class TaxonomyService
     /**
      * Generate a batch of skills for a specific taxonomy segment.
      *
-     * @param  list<string>  $existingSkills
      * @param  \Closure(string, array<string, mixed>, array<string, string>): void|null  $onLogOutput
      * @return array{domain: string, category: string, subcategory: string, skills: list<array<string, mixed>>}
      */
@@ -68,7 +67,6 @@ class TaxonomyService
         string $domain,
         string $category,
         string $subcategory,
-        array $existingSkills = [],
         int $targetCount = self::DEFAULT_BATCH_SIZE,
         ?string $provider = null,
         ?\Closure $onLogOutput = null,
@@ -77,7 +75,6 @@ class TaxonomyService
             domain: $domain,
             category: $category,
             subcategory: $subcategory,
-            existingSkills: $existingSkills,
         );
 
         $prompt = "Generate {$targetCount} skills for the following taxonomy segment.\n\n"
@@ -345,7 +342,6 @@ class TaxonomyService
 
             $this->notify($onProgress, 'phase_start', ['phase' => 'skills']);
 
-            $existingSkills = [];
             $totalBatches = $this->countBatches($taxonomyMap);
             $completedBatches = 0;
 
@@ -368,7 +364,6 @@ class TaxonomyService
                                         'category' => $categoryName,
                                         'subcategory' => $subcategoryName,
                                     ]);
-                                    $existingSkills[] = $s['canonical_name'];
                                 }
                                 $completedBatches++;
                                 $this->notify($onProgress, 'batch_complete', [
@@ -390,7 +385,6 @@ class TaxonomyService
                             domain: $domainName,
                             category: $categoryName,
                             subcategory: $subcategoryName,
-                            existingSkills: $existingSkills,
                             targetCount: $targetCount,
                             provider: $provider,
                             onLogOutput: $onLogOutput,
@@ -403,7 +397,6 @@ class TaxonomyService
                                 'category' => $categoryName,
                                 'subcategory' => $subcategoryName,
                             ]);
-                            $existingSkills[] = $s['canonical_name'];
                         }
 
                         $completedBatches++;

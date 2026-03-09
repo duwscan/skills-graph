@@ -38,6 +38,3 @@ Do not include:
 - Vague traits such as hardworking, leadership, teamwork unless directly modeled as an operational or communication skill in hiring datasets.
 - Company-specific internal jargon.
 - Obsolete technologies unless still meaningfully present in hiring demand.
-@if($existingBlock !== '')
-{!! $existingBlock !!}
-@endif

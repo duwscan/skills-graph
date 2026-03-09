@@ -60,7 +60,6 @@ class TaxonomyServiceTest extends TestCase
             domain: 'IT',
             category: 'Software Engineering',
             subcategory: 'Backend Development',
-            existingSkills: ['PHP'],
             targetCount: 5,
         );
 
@@ -195,42 +194,26 @@ class TaxonomyServiceTest extends TestCase
             domain: 'IT',
             category: 'Software Engineering',
             subcategory: 'Backend Development',
-            existingSkills: ['PHP', 'Laravel'],
         );
 
         $this->assertEquals('IT', $agent->domain);
         $this->assertEquals('Software Engineering', $agent->category);
         $this->assertEquals('Backend Development', $agent->subcategory);
-        $this->assertEquals(['PHP', 'Laravel'], $agent->existingSkills);
     }
 
-    public function test_skill_generator_agent_instructions_include_existing_skills(): void
+    public function test_skill_generator_agent_instructions_include_context(): void
     {
         $agent = new SkillGenerator(
             domain: 'IT',
             category: 'Software Engineering',
             subcategory: 'Backend',
-            existingSkills: ['PHP', 'Laravel'],
         );
 
         $instructions = (string) $agent->instructions();
 
-        $this->assertStringContainsString('PHP', $instructions);
-        $this->assertStringContainsString('Laravel', $instructions);
+        $this->assertStringContainsString('IT', $instructions);
+        $this->assertStringContainsString('Software Engineering', $instructions);
         $this->assertStringContainsString('Backend', $instructions);
-    }
-
-    public function test_skill_generator_agent_instructions_without_existing_skills(): void
-    {
-        $agent = new SkillGenerator(
-            domain: 'IT',
-            category: 'Software Engineering',
-            subcategory: 'Backend',
-        );
-
-        $instructions = (string) $agent->instructions();
-
-        $this->assertStringNotContainsString('Already generated', $instructions);
     }
 
     public function test_auto_fake_generates_valid_structured_output(): void
