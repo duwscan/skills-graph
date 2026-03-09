@@ -123,7 +123,7 @@ return [
 
         'litellm' => [
             'driver' => 'openai',
-            'model' => env('LITTELM_MODEL', 'github_copilot/gpt-5-mini'),
+            'model' => env('LITTELM_MODEL', 'openai/gpt-5-mini'),
             'key' => env('LITTELM_API_KEY', ''),
             'url' => env('LITTELM_API_URL', 'http://0.0.0.0:4000/v1'),
         ],
