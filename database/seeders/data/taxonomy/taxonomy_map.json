@@ -1,0 +1,559 @@
+{
+    "domains": [
+        {
+            "domain": "IT",
+            "categories": [
+                {
+                    "category": "Software Engineering & Application Development",
+                    "subcategories": [
+                        "Backend development",
+                        "Frontend development",
+                        "Mobile application development",
+                        "API design & integration",
+                        "Microservices architecture",
+                        "Legacy application modernization",
+                        "Secure coding practices",
+                        "Performance optimization & profiling",
+                        "Software build & dependency management",
+                        "Code review & quality standards"
+                    ]
+                },
+                {
+                    "category": "Cloud Platforms & Infrastructure",
+                    "subcategories": [
+                        "Cloud architecture & landing zones",
+                        "Compute, storage & networking services",
+                        "Infrastructure as Code (IaC)",
+                        "Cloud cost management (FinOps)",
+                        "Cloud migration & re-platforming",
+                        "Hybrid & multi-cloud operations",
+                        "Cloud identity & access management",
+                        "Cloud resilience & disaster recovery",
+                        "Container platforms in cloud",
+                        "Cloud governance & policy enforcement"
+                    ]
+                },
+                {
+                    "category": "DevOps, CI\/CD & Release Engineering",
+                    "subcategories": [
+                        "CI\/CD pipeline design",
+                        "Release orchestration & deployment strategies",
+                        "Configuration management",
+                        "Artifact repositories & versioning",
+                        "Environment provisioning & automation",
+                        "Observability integration in delivery",
+                        "DevSecOps practices",
+                        "Site reliability practices (SLO\/SLI)",
+                        "Incident response runbooks & automation",
+                        "Change management for releases"
+                    ]
+                },
+                {
+                    "category": "Cybersecurity Operations & Engineering",
+                    "subcategories": [
+                        "Security monitoring & SIEM operations",
+                        "Vulnerability management",
+                        "Threat detection & response (EDR\/XDR)",
+                        "Identity security & privileged access",
+                        "Network security engineering",
+                        "Application security testing",
+                        "Security architecture & controls design",
+                        "Data security & encryption",
+                        "Security compliance operations",
+                        "Penetration testing & red teaming"
+                    ]
+                },
+                {
+                    "category": "Network Engineering & Connectivity",
+                    "subcategories": [
+                        "Routing & switching",
+                        "Wireless networking",
+                        "Network security (firewalls\/VPN)",
+                        "Load balancing & traffic management",
+                        "DNS\/DHCP\/IP address management",
+                        "SD-WAN & WAN optimization",
+                        "Network monitoring & performance",
+                        "Network automation & scripting",
+                        "Voice\/UC networking",
+                        "Data center networking"
+                    ]
+                },
+                {
+                    "category": "Systems Engineering & Endpoint Management",
+                    "subcategories": [
+                        "Server administration (Linux\/Windows)",
+                        "Virtualization platforms",
+                        "Endpoint management & MDM",
+                        "Patch management",
+                        "Directory services administration",
+                        "Systems monitoring & alerting",
+                        "Backup & restore operations",
+                        "Storage administration",
+                        "Remote access & VDI",
+                        "Hardware lifecycle & asset management"
+                    ]
+                },
+                {
+                    "category": "Data Engineering & Integration",
+                    "subcategories": [
+                        "ETL\/ELT pipeline development",
+                        "Data warehousing",
+                        "Data lake & lakehouse engineering",
+                        "Streaming data processing",
+                        "Data modeling & schema design",
+                        "Data integration & middleware",
+                        "Data quality engineering",
+                        "Metadata management & lineage",
+                        "Master data management (MDM)",
+                        "Data platform operations"
+                    ]
+                },
+                {
+                    "category": "Analytics, BI & Reporting",
+                    "subcategories": [
+                        "Dashboard development",
+                        "Self-service BI enablement",
+                        "Reporting automation",
+                        "KPI\/metrics definition & management",
+                        "Semantic layer & data marts",
+                        "Data visualization standards",
+                        "Ad hoc analysis & insights",
+                        "BI performance optimization",
+                        "Embedded analytics",
+                        "Analytics governance"
+                    ]
+                },
+                {
+                    "category": "AI\/ML Engineering & Applied Data Science",
+                    "subcategories": [
+                        "Feature engineering",
+                        "Model development & evaluation",
+                        "Model deployment & serving",
+                        "MLOps pipelines & monitoring",
+                        "Natural language processing",
+                        "Computer vision",
+                        "Recommendation systems",
+                        "Time series forecasting",
+                        "Responsible AI & model governance",
+                        "Experiment tracking & A\/B testing"
+                    ]
+                },
+                {
+                    "category": "Enterprise Applications & Platforms",
+                    "subcategories": [
+                        "ERP configuration & integration",
+                        "CRM configuration & customization",
+                        "IT service management platforms",
+                        "Collaboration platforms administration",
+                        "Business process automation platforms",
+                        "Integration platform as a service (iPaaS)",
+                        "Low-code\/no-code application development",
+                        "Enterprise content management",
+                        "Workflow & case management",
+                        "Application lifecycle administration"
+                    ]
+                },
+                {
+                    "category": "IT Service Management & Support Operations",
+                    "subcategories": [
+                        "Incident management",
+                        "Problem management",
+                        "Change enablement",
+                        "Service request fulfillment",
+                        "Knowledge management",
+                        "Service catalog management",
+                        "Service level management",
+                        "IT asset management",
+                        "End-user support & troubleshooting",
+                        "Major incident coordination"
+                    ]
+                },
+                {
+                    "category": "IT Governance, Risk & Compliance",
+                    "subcategories": [
+                        "IT controls design & testing",
+                        "Risk assessment & treatment",
+                        "Policy & standards management",
+                        "Third-party\/vendor risk management",
+                        "Audit readiness & evidence management",
+                        "Data privacy operations",
+                        "Business continuity planning",
+                        "Security & IT compliance reporting",
+                        "Access reviews & recertification",
+                        "Technology governance forums & decisioning"
+                    ]
+                }
+            ]
+        },
+        {
+            "domain": "Finance",
+            "categories": [
+                {
+                    "category": "Financial Planning & Analysis (FP&A)",
+                    "subcategories": [
+                        "Budgeting & forecasting",
+                        "Management reporting & variance analysis",
+                        "Financial modeling",
+                        "Scenario planning & sensitivity analysis",
+                        "Revenue & margin analytics",
+                        "Cost analytics & optimization",
+                        "Headcount & workforce planning",
+                        "KPI design & performance dashboards",
+                        "Business partnering & decision support",
+                        "Planning systems administration"
+                    ]
+                },
+                {
+                    "category": "Accounting Operations (Record-to-Report)",
+                    "subcategories": [
+                        "General ledger accounting",
+                        "Month-end close management",
+                        "Journal entries & reconciliations",
+                        "Fixed assets accounting",
+                        "Intercompany accounting",
+                        "Accruals & provisions",
+                        "Financial statement preparation",
+                        "Consolidations & eliminations",
+                        "Close process controls & checklists",
+                        "Accounting policy application"
+                    ]
+                },
+                {
+                    "category": "Accounts Payable & Procure-to-Pay",
+                    "subcategories": [
+                        "Invoice processing & matching",
+                        "Vendor master data management",
+                        "Payment processing & controls",
+                        "Expense management & reimbursements",
+                        "Purchase order compliance",
+                        "AP aging & working capital management",
+                        "Dispute resolution & vendor inquiries",
+                        "Indirect tax handling in AP",
+                        "AP automation & workflow",
+                        "Supplier onboarding & validation"
+                    ]
+                },
+                {
+                    "category": "Accounts Receivable & Order-to-Cash",
+                    "subcategories": [
+                        "Billing & invoicing operations",
+                        "Cash application",
+                        "Collections management",
+                        "Credit management & risk assessment",
+                        "AR aging & delinquency analytics",
+                        "Dispute management & deductions",
+                        "Revenue-related operational controls",
+                        "Customer master data management",
+                        "AR automation & e-invoicing",
+                        "Bad debt provisioning support"
+                    ]
+                },
+                {
+                    "category": "Treasury & Cash Management",
+                    "subcategories": [
+                        "Cash positioning & forecasting",
+                        "Bank account management",
+                        "Payments governance & fraud controls",
+                        "Liquidity management",
+                        "Debt & credit facility administration",
+                        "Foreign exchange operations",
+                        "Hedging operations support",
+                        "Treasury management systems",
+                        "Working capital optimization",
+                        "Bank reconciliations oversight"
+                    ]
+                },
+                {
+                    "category": "Tax Operations & Compliance",
+                    "subcategories": [
+                        "Corporate income tax compliance support",
+                        "Indirect tax (VAT\/GST\/sales tax) operations",
+                        "Tax provision support",
+                        "Transfer pricing documentation support",
+                        "Withholding tax processing",
+                        "Tax reporting & filings coordination",
+                        "Tax audits support & evidence",
+                        "Tax data management & controls",
+                        "Cross-border tax operations support",
+                        "Tax technology & automation"
+                    ]
+                },
+                {
+                    "category": "Financial Reporting & External Disclosure",
+                    "subcategories": [
+                        "Statutory financial statements",
+                        "Regulatory reporting coordination",
+                        "Disclosure controls & procedures",
+                        "Technical accounting memos",
+                        "XBRL\/structured reporting operations",
+                        "Audit coordination & PBC management",
+                        "Notes & schedules preparation",
+                        "Segment & management discussion support",
+                        "Reporting calendar & governance",
+                        "Stakeholder reporting packs"
+                    ]
+                },
+                {
+                    "category": "Cost Accounting & Operational Finance",
+                    "subcategories": [
+                        "Product costing & standard costs",
+                        "Inventory valuation & reserves",
+                        "Manufacturing variance analysis",
+                        "Cost allocation methodologies",
+                        "Operational KPI costing",
+                        "Margin analysis by product\/customer",
+                        "Bill of materials cost rollups",
+                        "Capacity & utilization analytics",
+                        "Cost controls & approval workflows",
+                        "Cost accounting systems support"
+                    ]
+                },
+                {
+                    "category": "Internal Controls, Audit & SOX Operations",
+                    "subcategories": [
+                        "Control design & documentation",
+                        "Control testing & walkthroughs",
+                        "SOX compliance coordination",
+                        "Issue remediation tracking",
+                        "Process risk assessments",
+                        "Audit evidence management",
+                        "Segregation of duties analysis",
+                        "IT-dependent controls coordination",
+                        "Policy compliance monitoring",
+                        "Continuous controls monitoring"
+                    ]
+                },
+                {
+                    "category": "Corporate Finance & Capital Structure",
+                    "subcategories": [
+                        "Capital budgeting & investment appraisal",
+                        "Debt financing support",
+                        "Equity transactions support",
+                        "Dividend & capital return analysis",
+                        "Valuation analysis",
+                        "Covenant monitoring support",
+                        "Capital structure modeling",
+                        "Investor materials financial support",
+                        "Transaction due diligence support",
+                        "Post-deal integration finance support"
+                    ]
+                },
+                {
+                    "category": "Risk, Compliance & Financial Crime (Finance-Side)",
+                    "subcategories": [
+                        "Operational risk reporting support",
+                        "Financial risk analytics support",
+                        "Compliance monitoring & reporting",
+                        "AML\/KYC operations support",
+                        "Sanctions screening operations support",
+                        "Fraud analytics & prevention support",
+                        "Regulatory exam readiness support",
+                        "Policy & procedure maintenance",
+                        "Case management & escalation support",
+                        "Third-party risk reporting support"
+                    ]
+                },
+                {
+                    "category": "Finance Data, Systems & Automation",
+                    "subcategories": [
+                        "ERP finance module administration",
+                        "Financial data governance",
+                        "Master data management (finance)",
+                        "Finance reporting tools & BI",
+                        "Robotic process automation (finance)",
+                        "Close & consolidation systems",
+                        "Planning & budgeting systems",
+                        "Data reconciliation & controls automation",
+                        "Process mining & optimization",
+                        "Finance systems integration"
+                    ]
+                }
+            ]
+        },
+        {
+            "domain": "F&B",
+            "categories": [
+                {
+                    "category": "Food Preparation & Cooking Operations",
+                    "subcategories": [
+                        "Knife skills & ingredient prep",
+                        "Hot line cooking (grill\/saute\/fry)",
+                        "Cold kitchen & garde manger",
+                        "Batch cooking & production planning",
+                        "Recipe execution & consistency",
+                        "Food holding & temperature control",
+                        "Allergen-safe preparation practices",
+                        "Plating & presentation standards",
+                        "Kitchen station setup & breakdown",
+                        "Speed, timing & ticket management"
+                    ]
+                },
+                {
+                    "category": "Baking, Pastry & Desserts",
+                    "subcategories": [
+                        "Doughs & breads production",
+                        "Cakes, sponges & laminated pastries",
+                        "Dessert assembly & plating",
+                        "Chocolate & confectionery work",
+                        "Custards, creams & frozen desserts",
+                        "Baking production scheduling",
+                        "Proofing, fermentation & baking control",
+                        "Ingredient scaling & batch calculations",
+                        "Decorating & finishing techniques",
+                        "Pastry station sanitation & storage"
+                    ]
+                },
+                {
+                    "category": "Beverage Service (Non-Alcoholic)",
+                    "subcategories": [
+                        "Espresso extraction & dialing-in",
+                        "Milk steaming & latte art",
+                        "Brewed coffee methods",
+                        "Tea preparation & service",
+                        "Smoothies & blended beverages",
+                        "Juice & beverage batching",
+                        "Equipment cleaning & calibration",
+                        "Beverage menu execution",
+                        "Speed of service for beverages",
+                        "Beverage inventory rotation & storage"
+                    ]
+                },
+                {
+                    "category": "Bar & Alcoholic Beverage Operations",
+                    "subcategories": [
+                        "Classic cocktail preparation",
+                        "Beer service & draft system handling",
+                        "Wine service & basic pairing guidance",
+                        "Spirits knowledge for service",
+                        "Bar mise en place & batching",
+                        "Responsible alcohol service compliance",
+                        "Bar sanitation & glassware handling",
+                        "Cash handling & tab management",
+                        "Bar inventory counts & requisitions",
+                        "Speed bartending & service flow"
+                    ]
+                },
+                {
+                    "category": "Front-of-House Guest Service",
+                    "subcategories": [
+                        "Table service sequence & etiquette",
+                        "Order taking & menu guidance",
+                        "Guest recovery & complaint handling",
+                        "Reservation & waitlist management",
+                        "Upselling & suggestive selling",
+                        "POS order entry & modifiers",
+                        "Food running & table maintenance",
+                        "Event\/banquet guest service",
+                        "Accessibility & special request handling",
+                        "Service timing coordination with kitchen"
+                    ]
+                },
+                {
+                    "category": "Quick Service & High-Volume Operations",
+                    "subcategories": [
+                        "Counter service & queue management",
+                        "Drive-thru operations",
+                        "Assembly line & station rotation",
+                        "Speed of service metrics execution",
+                        "Order accuracy & verification",
+                        "Batch holding & waste minimization",
+                        "Packaging & labeling for takeout",
+                        "Peak period staffing & deployment",
+                        "Equipment readiness checks",
+                        "Customer issue resolution at speed"
+                    ]
+                },
+                {
+                    "category": "Food Safety, Hygiene & Regulatory Compliance",
+                    "subcategories": [
+                        "Personal hygiene & cross-contamination prevention",
+                        "Time\/temperature monitoring",
+                        "Cleaning & sanitation procedures",
+                        "Allergen management & labeling",
+                        "Receiving inspections & temperature checks",
+                        "Pest prevention practices",
+                        "Food storage & rotation (FIFO)",
+                        "Health inspection readiness",
+                        "Incident reporting (illness\/contamination)",
+                        "Safety data sheets & chemical handling"
+                    ]
+                },
+                {
+                    "category": "Kitchen Operations & Back-of-House Management",
+                    "subcategories": [
+                        "Prep lists & production planning",
+                        "Par levels & station replenishment",
+                        "Kitchen scheduling & labor deployment",
+                        "Line checks & quality control",
+                        "Equipment operation & basic troubleshooting",
+                        "Waste tracking & yield management",
+                        "Communication during service (expo)",
+                        "Recipe documentation & updates",
+                        "Closing procedures & next-day readiness",
+                        "BOH workflow optimization"
+                    ]
+                },
+                {
+                    "category": "Inventory, Purchasing & Supplier Management",
+                    "subcategories": [
+                        "Inventory counts & cycle counting",
+                        "Ordering & replenishment planning",
+                        "Receiving & invoice matching (operational)",
+                        "Storage organization & temperature logs",
+                        "Supplier communication & issue resolution",
+                        "Cost tracking & price change management",
+                        "Menu ingredient availability planning",
+                        "Waste, spoilage & shrink control",
+                        "Par setting & reorder points",
+                        "Product specification management"
+                    ]
+                },
+                {
+                    "category": "Menu Development & Culinary R&D",
+                    "subcategories": [
+                        "Recipe development & testing",
+                        "Menu engineering & item profitability",
+                        "Portioning & standardization",
+                        "Ingredient sourcing for new items",
+                        "Seasonal menu planning",
+                        "Dietary preference adaptation",
+                        "Sensory evaluation & tasting panels",
+                        "Menu descriptions & allergen statements",
+                        "Operational feasibility assessment",
+                        "Menu rollout training materials"
+                    ]
+                },
+                {
+                    "category": "Catering, Events & Banquet Operations",
+                    "subcategories": [
+                        "Event setup & breakdown",
+                        "Banquet service execution",
+                        "Buffet setup & replenishment",
+                        "Offsite catering logistics",
+                        "BEO interpretation & coordination",
+                        "Large-batch production & holding",
+                        "Equipment packing & transport",
+                        "Client communication & special requests",
+                        "Staff briefing & role assignment",
+                        "Post-event reconciliation & waste handling"
+                    ]
+                },
+                {
+                    "category": "F&B Cost Control & Revenue Operations",
+                    "subcategories": [
+                        "Food cost calculation & tracking",
+                        "Beverage cost calculation & tracking",
+                        "Portion control & yield optimization",
+                        "Waste logging & reduction programs",
+                        "Cash handling controls (FOH)",
+                        "Discounts, comps & void controls",
+                        "Sales mix & menu performance analysis",
+                        "Labor cost monitoring (operational)",
+                        "Pricing updates & margin targets",
+                        "Daily sales reconciliation support"
+                    ]
+                }
+            ]
+        }
+    ]
+}
