@@ -651,7 +651,7 @@ class TaxonomyService
 
         $perSubcategory = (int) ceil($totalForDomain / max($subcategoryCount, 1));
 
-        return max(30, min(150, $perSubcategory));
+        return max(10, min(10, $perSubcategory));
     }
 
     /**

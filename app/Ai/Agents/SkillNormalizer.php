@@ -4,11 +4,13 @@ namespace App\Ai\Agents;
 
 use Chimit\Prompt;
 use Illuminate\Contracts\JsonSchema\JsonSchema;
+use Laravel\Ai\Attributes\Model;
 use Laravel\Ai\Contracts\Agent;
 use Laravel\Ai\Contracts\HasStructuredOutput;
 use Laravel\Ai\Promptable;
 use Stringable;
 
+#[Model('gpt-5-mini')]
 class SkillNormalizer implements Agent, HasStructuredOutput
 {
     use Promptable;
