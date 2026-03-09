@@ -41,8 +41,12 @@ class SkillSearchRequest extends FormRequest
     {
         return [
             'q' => $this->string('q')->toString(),
-            'category' => $this->string('category')->nullable(),
-            'status' => $this->string('status')->nullable(),
+            'category' => $this->filled('category')
+                ? $this->string('category')->toString()
+                : null,
+            'status' => $this->filled('status')
+                ? $this->string('status')->toString()
+                : null,
             'limit' => $this->integer('limit') ?: null,
         ];
     }

@@ -11,6 +11,20 @@ class SkillAlias extends Model
     use HasFactory;
 
     /**
+     * The primary key type is a UUID string.
+     *
+     * @var string
+     */
+    protected $keyType = 'string';
+
+    /**
+     * The primary key is not an auto-incrementing integer.
+     *
+     * @var bool
+     */
+    public $incrementing = false;
+
+    /**
      * The attributes that are mass assignable.
      *
      * @var list<string>

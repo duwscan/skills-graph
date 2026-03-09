@@ -35,7 +35,6 @@ class TypesenseSearchService
                 ['name' => 'status', 'type' => 'string', 'facet' => true],
                 ['name' => 'aliases', 'type' => 'string[]', 'facet' => true, 'optional' => true],
             ],
-            'default_sorting_field' => 'canonical_name',
         ];
 
         $client->collections->create($schema);
@@ -80,7 +79,7 @@ class TypesenseSearchService
         Skill::query()
             ->where('status', 'active')
             ->orderBy('id')
-            ->chunk(100, function ($skills) use ($collectionName): void {
+            ->chunk(100, function ($skills) use ($collectionName, $client): void {
                 /** @var Collection<int, Skill> $skills */
                 $documents = $skills->map(function (Skill $skill): array {
                     return [

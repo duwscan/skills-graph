@@ -67,6 +67,50 @@ npm run dev
 
 Sau đó truy cập ứng dụng tại `http://localhost:8000` (hoặc port mà `php artisan serve` hiển thị).
 
+### Cấu hình Typesense (search kỹ năng)
+
+Để dùng full-text search cho `Skill` (hybrid với pgvector embeddings), dự án sử dụng **Typesense** + client PHP:
+
+- Package PHP: `typesense/typesense-php`
+- Config: `config/typesense.php`
+- Service: `App\Ai\TypesenseSearchService`
+- Lệnh Artisan:
+  - `php artisan search:setup` — tạo/khởi tạo collection `skills` trong Typesense.
+  - `php artisan search:reindex` — reindex toàn bộ `Skill` đang active sang Typesense.
+
+#### 1. Chạy Typesense cục bộ (đề xuất bằng Docker)
+
+Ví dụ nhanh (nếu bạn chưa có Typesense):
+
+```bash
+docker run -d \
+  -p 8108:8108 \
+  -v ./typesense-data:/data \
+  -e TYPESENSE_API_KEY=skills_dev_key \
+  -e TYPESENSE_DATA_DIR=/data \
+  typesense/typesense:27.1
+```
+
+#### 2. Biến môi trường cần thiết
+
+Các biến này được đọc trong `config/typesense.php`:
+
+- `TYPESENSE_HOST` (mặc định `localhost`)
+- `TYPESENSE_PORT` (mặc định `8108`)
+- `TYPESENSE_PROTOCOL` (mặc định `http`)
+- `TYPESENSE_API_KEY` (bắt buộc khi bạn thực sự gọi API Typesense)
+
+Ví dụ cấu hình trong `.env`:
+
+```env
+TYPESENSE_HOST=localhost
+TYPESENSE_PORT=8108
+TYPESENSE_PROTOCOL=http
+TYPESENSE_API_KEY=skills_dev_key
+```
+
+> Lưu ý: Nếu bạn **chưa** cấu hình Typesense mà chỉ muốn chạy ứng dụng/Laravel bình thường, hãy tránh gọi các lệnh / endpoint có đụng tới `TypesenseSearchService` (như `search:setup`, `search:reindex`, hoặc `/api/skills/search`) cho đến khi cấu hình xong.
+
 ### Chạy test
 
 ```bash

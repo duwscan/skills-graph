@@ -13,6 +13,30 @@ class Skill extends Model
     use Searchable;
 
     /**
+     * The primary key type is a UUID string.
+     *
+     * @var string
+     */
+    protected $keyType = 'string';
+
+    /**
+     * The primary key is not an auto-incrementing integer.
+     *
+     * @var bool
+     */
+    public $incrementing = false;
+
+    /**
+     * The attributes that should be hidden for serialization.
+     *
+     * @var list<string>
+     */
+    protected $hidden = [
+        'embedding',
+        'metadata',
+    ];
+
+    /**
      * The attributes that are mass assignable.
      *
      * @var list<string>
