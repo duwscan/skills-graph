@@ -11,11 +11,17 @@ use Laravel\Ai\Contracts\HasStructuredOutput;
 use Laravel\Ai\Promptable;
 use Stringable;
 
-#[MaxTokens(16384)]
-#[Temperature(0.2)]
 class SkillNormalizer implements Agent, HasStructuredOutput
 {
     use Promptable;
+
+    /**
+     * HTTP request timeout in seconds. 0 = no limit.
+     */
+    public function timeout(): int
+    {
+        return (int) config('ai.request_timeout', 0);
+    }
 
     /**
      * Get the instructions that the agent should follow.

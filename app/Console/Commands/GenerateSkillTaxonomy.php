@@ -30,7 +30,7 @@ class GenerateSkillTaxonomy extends Command
 
         $phase = (string) $this->option('phase');
         $domainOptions = (array) $this->option('domain');
-        $provider = $this->option('provider') ? (string) $this->option('provider') : null;
+        $provider = $this->option('provider') ? (string) $this->option(key: 'provider') : null;
         $dryRun = (bool) $this->option('dry-run');
         $resume = (bool) $this->option('resume');
 
@@ -38,8 +38,6 @@ class GenerateSkillTaxonomy extends Command
 
         $this->components->info('Starting taxonomy generation for: '.implode(', ', $domains));
         $this->components->info("Phase: {$phase} | Dry run: ".($dryRun ? 'yes' : 'no').' | Resume: '.($resume ? 'yes' : 'no'));
-
-        $effectivePhase = $dryRun && $phase === 'all' ? 'enrich' : $phase;
 
         if ($dryRun && $phase === 'import') {
             $this->components->warn('Dry run mode: skipping import phase.');
@@ -53,7 +51,7 @@ class GenerateSkillTaxonomy extends Command
 
         $service->runPipeline(
             domains: $domains,
-            phase: $effectivePhase,
+            phase: $phase,
             resume: $resume,
             provider: $provider,
             onProgress: function (string $event, array $data) use (&$progressBar): void {

@@ -11,8 +11,6 @@ use Laravel\Ai\Contracts\HasStructuredOutput;
 use Laravel\Ai\Promptable;
 use Stringable;
 
-#[MaxTokens(16384)]
-#[Temperature(0.5)]
 class SkillGenerator implements Agent, HasStructuredOutput
 {
     use Promptable;
@@ -26,6 +24,14 @@ class SkillGenerator implements Agent, HasStructuredOutput
         public string $subcategory = '',
         public array $existingSkills = [],
     ) {}
+
+    /**
+     * HTTP request timeout in seconds. 0 = no limit.
+     */
+    public function timeout(): int
+    {
+        return (int) config('ai.request_timeout', 0);
+    }
 
     /**
      * Get the instructions that the agent should follow.

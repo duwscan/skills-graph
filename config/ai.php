@@ -14,6 +14,18 @@ return [
     */
 
     'default' => env('DEFAULT_AI_PROVIDER', 'openai'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Request Timeout (seconds)
+    |--------------------------------------------------------------------------
+    |
+    | Timeout for AI HTTP requests (e.g. to LiteLLM / OpenAI-compatible APIs).
+    | Use 0 for no limit. Default 0 for long-running taxonomy generation.
+    |
+    */
+    'request_timeout' => (int) env('AI_REQUEST_TIMEOUT', 0),
+
     'default_for_images' => 'gemini',
     'default_for_audio' => 'openai',
     'default_for_transcription' => 'openai',

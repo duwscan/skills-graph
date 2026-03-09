@@ -11,8 +11,6 @@ use Laravel\Ai\Contracts\HasStructuredOutput;
 use Laravel\Ai\Promptable;
 use Stringable;
 
-#[MaxTokens(8192)]
-#[Temperature(0.4)]
 class TaxonomyDesigner implements Agent, HasStructuredOutput
 {
     use Promptable;
@@ -21,6 +19,14 @@ class TaxonomyDesigner implements Agent, HasStructuredOutput
      * @param  list<string>  $domains
      */
     public function __construct(public array $domains = []) {}
+
+    /**
+     * HTTP request timeout in seconds. 0 = no limit.
+     */
+    public function timeout(): int
+    {
+        return (int) config('ai.request_timeout', 0);
+    }
 
     /**
      * Get the instructions that the agent should follow.
@@ -51,7 +57,7 @@ class TaxonomyDesigner implements Agent, HasStructuredOutput
                                 $schema->object([
                                     'category' => $schema->string()->required(),
                                     'subcategories' => $schema->array()
-                                        ->items($schema->string())
+                                        ->items(type: $schema->string())
                                         ->required(),
                                 ])->withoutAdditionalProperties()
                             )

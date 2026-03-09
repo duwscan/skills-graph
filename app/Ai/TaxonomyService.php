@@ -16,9 +16,9 @@ class TaxonomyService
 {
     private const DEFAULT_BATCH_SIZE = 100;
 
-    private const NORMALIZE_CHUNK_SIZE = 200;
+    private const NORMALIZE_CHUNK_SIZE = 100;
 
-    private const ENRICH_CHUNK_SIZE = 50;
+    private const ENRICH_CHUNK_SIZE = 20;
 
     private string $outputPath;
 
@@ -44,8 +44,8 @@ class TaxonomyService
 
         /** @var StructuredAgentResponse $response */
         $response = $provider !== null
-            ? $agent->prompt($prompt, provider: $provider)
-            : $agent->prompt($prompt);
+            ? $agent->prompt($prompt, provider: $provider, model: 'openai/gpt-5.2')
+            : $agent->prompt($prompt, model: 'openai/gpt-5.2');
 
         $result = $response->toArray();
 
@@ -88,8 +88,9 @@ class TaxonomyService
 
         /** @var StructuredAgentResponse $response */
         $response = $provider !== null
-            ? $agent->prompt($prompt, provider: $provider)
-            : $agent->prompt($prompt);
+            ? $agent->prompt($prompt, provider: $provider, model: 'openai/gpt-5.2')
+            : $agent->prompt($prompt, model: 'openai/gpt-5.2');
+
 
         $result = $response->toArray();
 
@@ -118,8 +119,8 @@ class TaxonomyService
 
             /** @var StructuredAgentResponse $response */
             $response = $provider !== null
-                ? $agent->prompt($prompt, provider: $provider)
-                : $agent->prompt($prompt);
+                ? $agent->prompt($prompt, provider: $provider, model: 'openai/gpt-5.2')
+                : $agent->prompt($prompt, model: 'openai/gpt-5.2');
 
             $result = $response->toArray();
 
@@ -155,8 +156,8 @@ class TaxonomyService
 
             /** @var StructuredAgentResponse $response */
             $response = $provider !== null
-                ? $agent->prompt($prompt, provider: $provider)
-                : $agent->prompt($prompt);
+                ? $agent->prompt($prompt, provider: $provider, model: 'openai/gpt-5.2')
+                : $agent->prompt($prompt, model: 'openai/gpt-5.2');
 
             $result = $response->toArray();
 
