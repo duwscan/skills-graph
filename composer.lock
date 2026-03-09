@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0ba90125338e7ec26e603e7131723cfb",
+    "content-hash": "c5c2188932e1b8d810ea0a7f9d5cc646",
     "packages": [
         {
             "name": "brick/math",
@@ -134,6 +134,62 @@
                 }
             ],
             "time": "2024-02-09T16:56:22+00:00"
+        },
+        {
+            "name": "chimit/prompt",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chimit/prompt.git",
+                "reference": "42e1f24d008f0316344e87dad6cc40e0eee936cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chimit/prompt/zipball/42e1f24d008f0316344e87dad6cc40e0eee936cd",
+                "reference": "42e1f24d008f0316344e87dad6cc40e0eee936cd",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/filesystem": "^9.0 || ^10.0 || ^11.0 || ^12.0",
+                "illuminate/support": "^9.0 || ^10.0 || ^11.0 || ^12.0",
+                "illuminate/view": "^9.0 || ^10.0 || ^11.0 || ^12.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Chimit\\PromptServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Chimit\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "chimit",
+                    "email": "chimit@users.noreply.github.com",
+                    "homepage": "https://chimit.me"
+                }
+            ],
+            "description": "Manage AI prompts in Blade style.",
+            "keywords": [
+                "ai",
+                "blade",
+                "laravel",
+                "prompts"
+            ],
+            "support": {
+                "issues": "https://github.com/chimit/prompt/issues",
+                "source": "https://github.com/chimit/prompt/tree/v1.1.0"
+            },
+            "time": "2026-02-03T16:44:54+00:00"
         },
         {
             "name": "clue/stream-filter",

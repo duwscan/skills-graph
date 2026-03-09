@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Ai\TaxonomyService;
 use App\Models\LocaleConfig;
 use Carbon\CarbonImmutable;
 use Carbon\CarbonInterface;
@@ -30,17 +31,60 @@ class SkillGraphSeeder extends Seeder
 
     /**
      * Run the database seeds.
+     *
+     * Uses taxonomy-mode (LLM-generated data) when available, falling back to legacy ESCO mode.
      */
     public function run(): void
     {
         $this->truncateSkillGraphTables();
         $this->seedLocaleConfig();
 
+        if ($this->hasTaxonomyData()) {
+            $this->seedFromTaxonomy();
+
+            return;
+        }
+
         $skills = $this->seedSkills();
 
         $this->seedAliases($skills);
         $this->seedRelationships($skills);
         $this->seedCoOccurrences($skills);
+    }
+
+    private function hasTaxonomyData(): bool
+    {
+        $candidates = [
+            database_path('seeders/data/taxonomy/skills_final.json'),
+            database_path('seeders/data/taxonomy/skills_enriched.json'),
+        ];
+
+        foreach ($candidates as $path) {
+            if (is_file($path)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private function seedFromTaxonomy(): void
+    {
+        $service = new TaxonomyService;
+        $enriched = $service->loadEnriched();
+
+        if ($enriched === null || ($enriched['skills'] ?? []) === []) {
+            $this->command?->getOutput()?->writeln('<comment>Taxonomy data file found but empty, falling back to legacy mode.</comment>');
+            $skills = $this->seedSkills();
+            $this->seedAliases($skills);
+            $this->seedRelationships($skills);
+            $this->seedCoOccurrences($skills);
+
+            return;
+        }
+
+        $taxonomyMap = $service->loadTaxonomyMap();
+        $service->importToDatabase($enriched['skills'], $taxonomyMap);
     }
 
     /**
