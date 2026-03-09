@@ -4,8 +4,6 @@ namespace App\Ai\Agents;
 
 use Chimit\Prompt;
 use Illuminate\Contracts\JsonSchema\JsonSchema;
-use Laravel\Ai\Attributes\MaxTokens;
-use Laravel\Ai\Attributes\Temperature;
 use Laravel\Ai\Contracts\Agent;
 use Laravel\Ai\Contracts\HasStructuredOutput;
 use Laravel\Ai\Promptable;
@@ -45,7 +43,7 @@ class SkillEnricher implements Agent, HasStructuredOutput
                             ->items($schema->string())
                             ->required(),
                         'description' => $schema->string()->required(),
-                        'parent_skill' => $schema->string()->nullable(),
+                        'parent_skill' => $schema->string()->required(),
                         'related_skills' => $schema->array()
                             ->items($schema->string())
                             ->required(),

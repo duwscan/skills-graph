@@ -33,9 +33,10 @@ class TaxonomyService
      * Generate a taxonomy map (domains > categories > subcategories).
      *
      * @param  list<string>  $domains
+     * @param  \Closure(string, array<string, mixed>): void|null  $onLogOutput
      * @return array{domains: list<array{domain: string, categories: list<array{category: string, subcategories: list<string>}>}>}
      */
-    public function designTaxonomy(array $domains, ?string $provider = null): array
+    public function designTaxonomy(array $domains, ?string $provider = null, ?\Closure $onLogOutput = null): array
     {
         $agent = new TaxonomyDesigner($domains);
 
@@ -44,10 +45,12 @@ class TaxonomyService
 
         /** @var StructuredAgentResponse $response */
         $response = $provider !== null
-            ? $agent->prompt($prompt, provider: $provider, model: 'openai/gpt-5.2')
-            : $agent->prompt($prompt, model: 'openai/gpt-5.2');
+            ? $agent->prompt($prompt, provider: $provider)
+            : $agent->prompt($prompt);
 
         $result = $response->toArray();
+
+        $onLogOutput?->__invoke('taxonomy', $result);
 
         $this->writeJson('taxonomy_map.json', $result);
 
@@ -58,6 +61,7 @@ class TaxonomyService
      * Generate a batch of skills for a specific taxonomy segment.
      *
      * @param  list<string>  $existingSkills
+     * @param  \Closure(string, array<string, mixed>, array<string, string>): void|null  $onLogOutput
      * @return array{domain: string, category: string, subcategory: string, skills: list<array<string, mixed>>}
      */
     public function generateSkillBatch(
@@ -67,6 +71,7 @@ class TaxonomyService
         array $existingSkills = [],
         int $targetCount = self::DEFAULT_BATCH_SIZE,
         ?string $provider = null,
+        ?\Closure $onLogOutput = null,
     ): array {
         $agent = new SkillGenerator(
             domain: $domain,
@@ -88,11 +93,16 @@ class TaxonomyService
 
         /** @var StructuredAgentResponse $response */
         $response = $provider !== null
-            ? $agent->prompt($prompt, provider: $provider, model: 'openai/gpt-5.2')
-            : $agent->prompt($prompt, model: 'openai/gpt-5.2');
-
+            ? $agent->prompt($prompt, provider: $provider)
+            : $agent->prompt($prompt);
 
         $result = $response->toArray();
+
+        $onLogOutput?->__invoke('skills', $result, [
+            'domain' => $domain,
+            'category' => $category,
+            'subcategory' => $subcategory,
+        ]);
 
         $filename = $this->batchFilename($domain, $category, $subcategory);
         $this->writeJson("skill_batches/{$filename}", $result);
@@ -104,12 +114,14 @@ class TaxonomyService
      * Normalize and deduplicate a set of skills.
      *
      * @param  list<array<string, mixed>>  $skills
+     * @param  \Closure(string, array<string, mixed>, int): void|null  $onLogOutput
      * @return array{merged_skills: list<array<string, mixed>>, removed_duplicates: list<array{removed: string, merged_into: string, reason: string}>}
      */
-    public function normalizeSkills(array $skills, ?string $provider = null): array
+    public function normalizeSkills(array $skills, ?string $provider = null, ?\Closure $onLogOutput = null): array
     {
         $allMerged = [];
         $allRemoved = [];
+        $chunkIndex = 0;
 
         foreach (array_chunk($skills, self::NORMALIZE_CHUNK_SIZE) as $chunk) {
             $agent = new SkillNormalizer;
@@ -119,10 +131,12 @@ class TaxonomyService
 
             /** @var StructuredAgentResponse $response */
             $response = $provider !== null
-                ? $agent->prompt($prompt, provider: $provider, model: 'openai/gpt-5.2')
-                : $agent->prompt($prompt, model: 'openai/gpt-5.2');
+                ? $agent->prompt($prompt, provider: $provider)
+                : $agent->prompt($prompt);
 
             $result = $response->toArray();
+
+            $onLogOutput?->__invoke('normalize', $result, ['chunk' => $chunkIndex++]);
 
             $allMerged = array_merge($allMerged, $result['merged_skills'] ?? []);
             $allRemoved = array_merge($allRemoved, $result['removed_duplicates'] ?? []);
@@ -142,11 +156,13 @@ class TaxonomyService
      * Enrich skills with additional metadata.
      *
      * @param  list<array<string, mixed>>  $skills
+     * @param  \Closure(string, array<string, mixed>, int): void|null  $onLogOutput
      * @return array{skills: list<array<string, mixed>>}
      */
-    public function enrichSkills(array $skills, ?string $provider = null): array
+    public function enrichSkills(array $skills, ?string $provider = null, ?\Closure $onLogOutput = null): array
     {
         $allEnriched = [];
+        $chunkIndex = 0;
 
         foreach (array_chunk($skills, self::ENRICH_CHUNK_SIZE) as $chunk) {
             $agent = new SkillEnricher;
@@ -156,10 +172,12 @@ class TaxonomyService
 
             /** @var StructuredAgentResponse $response */
             $response = $provider !== null
-                ? $agent->prompt($prompt, provider: $provider, model: 'openai/gpt-5.2')
-                : $agent->prompt($prompt, model: 'openai/gpt-5.2');
+                ? $agent->prompt($prompt, provider: $provider)
+                : $agent->prompt($prompt);
 
             $result = $response->toArray();
+
+            $onLogOutput?->__invoke('enrich', $result, ['chunk' => $chunkIndex++]);
 
             $allEnriched = array_merge($allEnriched, $result['skills'] ?? []);
         }
@@ -293,6 +311,7 @@ class TaxonomyService
      * Run the full pipeline.
      *
      * @param  list<string>  $domains
+     * @param  \Closure(string, array<string, mixed>, array<string, mixed>|null): void|null  $onLogOutput
      */
     public function runPipeline(
         array $domains,
@@ -300,6 +319,7 @@ class TaxonomyService
         bool $resume = false,
         ?string $provider = null,
         ?Closure $onProgress = null,
+        ?Closure $onLogOutput = null,
     ): void {
         $phase ??= 'all';
         $shouldRun = fn (string $p): bool => $phase === 'all' || $phase === $p;
@@ -310,7 +330,7 @@ class TaxonomyService
 
             $taxonomyMap = $resume ? $this->loadTaxonomyMap() : null;
             if ($taxonomyMap === null) {
-                $taxonomyMap = $this->designTaxonomy($domains, $provider);
+                $taxonomyMap = $this->designTaxonomy($domains, $provider, $onLogOutput);
             }
 
             $this->notify($onProgress, 'phase_complete', ['phase' => 'taxonomy', 'domains' => count($taxonomyMap['domains'] ?? [])]);
@@ -373,6 +393,7 @@ class TaxonomyService
                             existingSkills: $existingSkills,
                             targetCount: $targetCount,
                             provider: $provider,
+                            onLogOutput: $onLogOutput,
                         );
 
                         $batchSkills = $batch['skills'] ?? [];
@@ -408,7 +429,7 @@ class TaxonomyService
                 $allSkills = $this->loadAllBatchSkills();
             }
 
-            $normalized = $this->normalizeSkills($allSkills, $provider);
+            $normalized = $this->normalizeSkills($allSkills, $provider, $onLogOutput);
             $allSkills = $normalized['merged_skills'];
 
             $this->notify($onProgress, 'phase_complete', [
@@ -426,7 +447,7 @@ class TaxonomyService
                 $allSkills = $normalized['merged_skills'] ?? [];
             }
 
-            $enriched = $this->enrichSkills($allSkills, $provider);
+            $enriched = $this->enrichSkills($allSkills, $provider, $onLogOutput);
             $allSkills = $this->mergeEnrichedData($allSkills, $enriched['skills'] ?? []);
 
             $this->writeJson('skills_final.json', ['skills' => $allSkills]);

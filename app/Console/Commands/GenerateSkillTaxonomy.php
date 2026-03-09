@@ -15,7 +15,8 @@ class GenerateSkillTaxonomy extends Command
         {--domain=* : Specific domains to generate (it, finance, fnb)}
         {--provider= : AI provider override}
         {--dry-run : Generate files but skip DB import}
-        {--resume : Resume from last completed batch}';
+        {--resume : Resume from last completed batch}
+        {--log-output : Log every LLM response to terminal}';
 
     /**
      * @var string
@@ -33,6 +34,7 @@ class GenerateSkillTaxonomy extends Command
         $provider = $this->option('provider') ? (string) $this->option(key: 'provider') : null;
         $dryRun = (bool) $this->option('dry-run');
         $resume = (bool) $this->option('resume');
+        $logOutput = (bool) $this->option('log-output');
 
         $domains = $this->resolveDomains($domainOptions);
 
@@ -62,6 +64,7 @@ class GenerateSkillTaxonomy extends Command
                     default => null,
                 };
             },
+            onLogOutput: $logOutput ? $this->makeLogOutputCallback() : null,
         );
 
         if (! $dryRun && in_array($phase, ['all', 'import'], true)) {
@@ -76,6 +79,7 @@ class GenerateSkillTaxonomy extends Command
                         default => null,
                     };
                 },
+                onLogOutput: null,
             );
         }
 
@@ -174,5 +178,24 @@ class GenerateSkillTaxonomy extends Command
         $count = $data['count'] ?? 0;
 
         $this->line("  [{$domain} > {$category} > {$subcategory}] {$count} skills", verbosity: 'v');
+    }
+
+    /**
+     * @return \Closure(string, array<string, mixed>, array<string, mixed>|null): void
+     */
+    private function makeLogOutputCallback(): \Closure
+    {
+        return function (string $phase, array $data, ?array $context = null): void {
+            $this->newLine();
+            $label = $phase;
+            if ($context !== null && $context !== []) {
+                $parts = array_filter($context);
+                if ($parts !== []) {
+                    $label .= ' ['.implode(' > ', $parts).']';
+                }
+            }
+            $this->line("<fg=gray>=== LLM output ({$label}) ===</>");
+            $this->line(json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+        };
     }
 }

@@ -8,7 +8,7 @@ Rules:
 - Keep descriptions concise and internal-facing (for data teams, not marketing).
 - related_skills must be strongly related in a hiring-market context, not random neighboring terms.
 - common_roles should be practical roles seen in hiring markets (2-5 roles per skill).
-- parent_skill should be the most direct broader concept (null if the skill is already top-level).
+- parent_skill should be the most direct broader concept (use empty string "" if the skill is already top-level).
 - keywords should be useful for text-based extraction from CVs and job descriptions (3-8 keywords).
 - confidence_seed should reflect how confident you are that this is a well-defined, real-market skill (0.0 to 1.0).
 - market_relevance_score should estimate current labor-market demand for this skill (0.0 to 1.0).

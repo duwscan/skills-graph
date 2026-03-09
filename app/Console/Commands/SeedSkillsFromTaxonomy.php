@@ -13,7 +13,9 @@ class SeedSkillsFromTaxonomy extends Command
         {--domain=* : Specific domains to generate (it, finance, fnb)}
         {--provider= : AI provider override}
         {--dry-run : Generate JSON files but skip DB import}
-        {--resume : Resume from last completed batch}';
+        {--resume : Resume from last completed batch}
+        {--log-output : Log every LLM response to terminal (default)}
+        {--no-log-output : Disable LLM output logging}';
 
     /**
      * @var string
@@ -45,6 +47,8 @@ class SeedSkillsFromTaxonomy extends Command
         if ($dryRun) {
             $arguments['--dry-run'] = true;
         }
+
+        $arguments['--log-output'] = ! (bool) $this->option('no-log-output');
 
         $this->components->info('Seeding skills using the LLM taxonomy pipeline...');
 
