@@ -1,0 +1,305 @@
+{
+    "domain": "F&B",
+    "category": "Inventory, Purchasing & Supplier Management",
+    "subcategory": "Product specification management",
+    "skills": [
+        {
+            "canonical_name": "Product specification development",
+            "aliases": [
+                "product spec authoring",
+                "product spec writing",
+                "spec sheet development"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Create and document comprehensive product specifications covering composition, sensory attributes, packaging details, acceptance criteria, and required metadata for manufacturing and compliance.",
+            "parent_skill": "Product specification management",
+            "related_skills": [
+                "Ingredient specification management",
+                "Packaging specification and material compatibility",
+                "Bill of Materials (BOM) and formulation control",
+                "Specification change control and versioning",
+                "Allergen and labeling compliance"
+            ],
+            "keywords": [
+                "product spec",
+                "specification sheet",
+                "attributes",
+                "acceptance criteria"
+            ],
+            "common_roles": [
+                "Product development",
+                "Quality assurance",
+                "Procurement & purchasing",
+                "R&D food science"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ingredient specification management",
+            "aliases": [
+                "ingredient spec",
+                "raw material specification",
+                "raw material spec management"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Define and maintain ingredient-level specifications including identity, grade, source\/origin, composition limits, microbiological and chemical criteria, and traceability requirements.",
+            "parent_skill": "Product specification management",
+            "related_skills": [
+                "Bill of Materials (BOM) and formulation control",
+                "Supplier specification alignment and acceptance criteria",
+                "Allergen and labeling compliance",
+                "Product specification development"
+            ],
+            "keywords": [
+                "ingredient spec",
+                "raw material",
+                "spec limits",
+                "traceability"
+            ],
+            "common_roles": [
+                "Procurement & purchasing",
+                "Quality assurance",
+                "Supply chain management",
+                "R&D food science"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen and labeling compliance",
+            "aliases": [
+                "allergen management",
+                "label compliance",
+                "ingredient labeling compliance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Interpret and apply allergen control rules and labeling regulations to product specifications, ensuring correct declarable allergens, precautionary statements, and claims compliance.",
+            "parent_skill": "Product specification management",
+            "related_skills": [
+                "Product specification development",
+                "Ingredient specification management",
+                "Nutritional analysis interpretation",
+                "Specification change control and versioning"
+            ],
+            "keywords": [
+                "allergens",
+                "labeling",
+                "declaration",
+                "precautionary statements"
+            ],
+            "common_roles": [
+                "Quality assurance",
+                "Regulatory affairs",
+                "Product development",
+                "Procurement & purchasing"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Nutritional analysis interpretation",
+            "aliases": [
+                "nutrition labeling interpretation",
+                "nutritional panel analysis",
+                "nutrition facts interpretation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Interpret laboratory or calculated nutritional data to produce accurate nutrition information, ingredient declarations, nutrient claims, and comply with labeling requirements.",
+            "parent_skill": "Product specification management",
+            "related_skills": [
+                "Product specification development",
+                "Allergen and labeling compliance",
+                "Shelf-life and stability specification"
+            ],
+            "keywords": [
+                "nutrition facts",
+                "macros",
+                "micros",
+                "nutrient claims"
+            ],
+            "common_roles": [
+                "R&D food science",
+                "Quality assurance",
+                "Product development"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Shelf-life and stability specification",
+            "aliases": [
+                "shelf life specification",
+                "stability specification",
+                "expiry specification"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Define shelf-life, storage and handling conditions, and required stability testing protocols and acceptance criteria to ensure product quality throughout distribution and retail.",
+            "parent_skill": "Product specification management",
+            "related_skills": [
+                "Product specification development",
+                "Packaging specification and material compatibility",
+                "Nutritional analysis interpretation"
+            ],
+            "keywords": [
+                "shelf life",
+                "stability testing",
+                "storage conditions",
+                "expiry"
+            ],
+            "common_roles": [
+                "Quality assurance",
+                "Product development",
+                "Supply chain management"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Packaging specification and material compatibility",
+            "aliases": [
+                "packaging spec",
+                "packaging materials specification",
+                "material compatibility assessment"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Specify packaging formats, materials, barrier properties, and compatibility with product formulation to protect quality, meet labeling requirements, and support shelf-life objectives.",
+            "parent_skill": "Product specification management",
+            "related_skills": [
+                "Product specification development",
+                "Shelf-life and stability specification",
+                "Supplier specification alignment and acceptance criteria"
+            ],
+            "keywords": [
+                "packaging",
+                "materials",
+                "barrier properties",
+                "compatibility"
+            ],
+            "common_roles": [
+                "Packaging engineering",
+                "Product development",
+                "Procurement & purchasing"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Specification change control and versioning",
+            "aliases": [
+                "spec change control",
+                "spec version control",
+                "specification revision management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Manage specification revisions, approval workflows, version history, and controlled distribution to ensure manufacturing and suppliers use the correct and current specifications.",
+            "parent_skill": "Product specification management",
+            "related_skills": [
+                "Product specification development",
+                "PLM\/PIM\/ERP specification systems",
+                "Supplier specification alignment and acceptance criteria"
+            ],
+            "keywords": [
+                "change control",
+                "versioning",
+                "approval workflow",
+                "revision"
+            ],
+            "common_roles": [
+                "Quality assurance",
+                "Product development",
+                "Supply chain management"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bill of Materials (BOM) and formulation control",
+            "aliases": [
+                "BOM management",
+                "formulation control",
+                "recipe control"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintain and control BOMs, formula\/component weights, tolerances, yield factors and conversion rules to ensure consistent production and accurate costing tied to product specifications.",
+            "parent_skill": "Product specification management",
+            "related_skills": [
+                "Ingredient specification management",
+                "Product specification development",
+                "PLM\/PIM\/ERP specification systems"
+            ],
+            "keywords": [
+                "BOM",
+                "formulation",
+                "yield",
+                "tolerances"
+            ],
+            "common_roles": [
+                "Manufacturing operations",
+                "Product development",
+                "Procurement & purchasing"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Supplier specification alignment and acceptance criteria",
+            "aliases": [
+                "supplier spec alignment",
+                "supplier acceptance criteria",
+                "vendor specification management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Coordinate and negotiate specification requirements, testing methods and acceptance criteria with suppliers to ensure delivered materials and packaging meet product and regulatory needs.",
+            "parent_skill": "Product specification management",
+            "related_skills": [
+                "Ingredient specification management",
+                "Packaging specification and material compatibility",
+                "Specification change control and versioning"
+            ],
+            "keywords": [
+                "supplier spec",
+                "acceptance testing",
+                "vendor requirements",
+                "incoming inspection"
+            ],
+            "common_roles": [
+                "Procurement & purchasing",
+                "Quality assurance",
+                "Supply chain management"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "PLM\/PIM\/ERP specification systems",
+            "aliases": [
+                "PLM systems",
+                "PIM systems",
+                "ERP specification module",
+                "product lifecycle management software"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use Product Lifecycle Management, Product Information Management or ERP specification modules to author, control, distribute and integrate product specifications with BOMs, labels and procurement systems.",
+            "parent_skill": "Product specification management",
+            "related_skills": [
+                "Specification change control and versioning",
+                "Bill of Materials (BOM) and formulation control",
+                "Product specification development"
+            ],
+            "keywords": [
+                "PLM",
+                "PIM",
+                "ERP",
+                "spec management software"
+            ],
+            "common_roles": [
+                "Product development",
+                "IT application support",
+                "Quality assurance"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

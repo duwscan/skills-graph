@@ -1,0 +1,309 @@
+{
+    "domain": "IT",
+    "category": "Cloud Platforms & Infrastructure",
+    "subcategory": "Cloud cost management (FinOps)",
+    "skills": [
+        {
+            "canonical_name": "FinOps practice and governance",
+            "aliases": [
+                "FinOps implementation",
+                "FinOps governance",
+                "cloud financial operations"
+            ],
+            "skill_type": "process_skill",
+            "description": "Establishing organizational FinOps processes, roles, policies and governance to manage cloud spend across engineering, finance and business units.",
+            "parent_skill": "Cloud cost management (FinOps)",
+            "related_skills": [
+                "Cloud tagging strategy & governance",
+                "Cloud cost forecasting & budgeting",
+                "FinOps tools (cloud cost management platforms)"
+            ],
+            "keywords": [
+                "FinOps",
+                "governance",
+                "policy",
+                "cross-functional",
+                "cost ownership"
+            ],
+            "common_roles": [
+                "FinOps Engineer",
+                "Cloud Financial Analyst",
+                "Platform Engineer",
+                "Cloud Architect"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cloud cost forecasting & budgeting",
+            "aliases": [
+                "cloud cost forecasting",
+                "cloud budgeting",
+                "budget forecasting for cloud"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Creating forecasts, budgets and spend plans for cloud consumption using historical data, growth assumptions and seasonal patterns.",
+            "parent_skill": "Cloud cost management (FinOps)",
+            "related_skills": [
+                "FinOps practice and governance",
+                "Cost allocation, chargeback & showback modeling",
+                "Cost anomaly detection & alerting"
+            ],
+            "keywords": [
+                "forecasting",
+                "budgeting",
+                "trend analysis",
+                "capacity planning",
+                "consumption modeling"
+            ],
+            "common_roles": [
+                "Cloud Financial Analyst",
+                "FinOps Engineer",
+                "Finance Business Partner"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cloud tagging strategy & governance",
+            "aliases": [
+                "resource tagging strategy",
+                "cost tag governance",
+                "tagging taxonomy"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and enforcing consistent resource tagging policies to enable cost allocation, reporting and automation across cloud environments.",
+            "parent_skill": "Cloud cost management (FinOps)",
+            "related_skills": [
+                "Cost allocation, chargeback & showback modeling",
+                "FinOps practice and governance",
+                "FinOps tools (cloud cost management platforms)"
+            ],
+            "keywords": [
+                "tags",
+                "naming conventions",
+                "metadata",
+                "policy enforcement",
+                "cost centers"
+            ],
+            "common_roles": [
+                "Cloud Engineer",
+                "Platform Engineer",
+                "FinOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "FinOps tools (cloud cost management platforms)",
+            "aliases": [
+                "cloud cost management tools",
+                "FinOps platforms",
+                "cost management platforms (e.g., AWS Cost Explorer, Azure Cost Management, Google Cloud Billing, CloudHealth, Kubecost)"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using SaaS and native cloud tools to measure, visualize and manage cloud spend, including dashboards, reports, recommendations and automated actions.",
+            "parent_skill": "Cloud cost management (FinOps)",
+            "related_skills": [
+                "Cloud cost reporting & dashboarding",
+                "Cost anomaly detection & alerting",
+                "Cloud billing analysis & invoice reconciliation"
+            ],
+            "keywords": [
+                "CloudHealth",
+                "AWS Cost Explorer",
+                "Azure Cost Management",
+                "Kubecost",
+                "billing APIs",
+                "cost dashboards"
+            ],
+            "common_roles": [
+                "FinOps Engineer",
+                "Cloud Cost Analyst",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Reserved instance & savings plan management",
+            "aliases": [
+                "RI management",
+                "savings plan optimization",
+                "commitment purchase optimization"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Analyzing usage patterns and managing reserved instances and savings plans (or equivalent committed-use discounts) to reduce predictable compute costs.",
+            "parent_skill": "Cloud cost management (FinOps)",
+            "related_skills": [
+                "Cloud cost forecasting & budgeting",
+                "Rightsizing & autoscaling optimization",
+                "FinOps tools (cloud cost management platforms)"
+            ],
+            "keywords": [
+                "reserved instances",
+                "savings plans",
+                "commitments",
+                "cost commitments",
+                "discount optimization"
+            ],
+            "common_roles": [
+                "FinOps Engineer",
+                "Cloud Financial Analyst",
+                "Cloud Operations Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Rightsizing & autoscaling optimization",
+            "aliases": [
+                "rightsizing",
+                "instance right-sizing",
+                "autoscaling policy tuning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Optimizing instance sizes, resource limits and autoscaling policies to match workload demand while minimizing excess capacity and cost.",
+            "parent_skill": "Cloud cost management (FinOps)",
+            "related_skills": [
+                "Container\/Kubernetes cost optimization",
+                "Reserved instance & savings plan management",
+                "FinOps tools (cloud cost management platforms)"
+            ],
+            "keywords": [
+                "rightsizing",
+                "autoscaling",
+                "instance types",
+                "resource optimization",
+                "scaling policies"
+            ],
+            "common_roles": [
+                "DevOps Engineer",
+                "Site Reliability Engineer",
+                "Cloud Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cost allocation, chargeback & showback modeling",
+            "aliases": [
+                "chargeback modeling",
+                "showback implementation",
+                "internal cost allocation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Designing models and rules to allocate cloud costs to teams, products or business units and implementing chargeback or showback reporting.",
+            "parent_skill": "Cloud cost management (FinOps)",
+            "related_skills": [
+                "Cloud tagging strategy & governance",
+                "Cloud cost forecasting & budgeting",
+                "Cloud cost reporting & dashboarding"
+            ],
+            "keywords": [
+                "chargeback",
+                "showback",
+                "cost centers",
+                "allocation rules",
+                "internal billing"
+            ],
+            "common_roles": [
+                "Cloud Financial Analyst",
+                "FinOps Engineer",
+                "Finance Business Partner"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cloud billing analysis & invoice reconciliation",
+            "aliases": [
+                "billing reconciliation",
+                "invoice analysis",
+                "cloud invoice reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Reviewing cloud bills, reconciling invoices to usage and contracts, identifying billing errors and ensuring accuracy of charges.",
+            "parent_skill": "Cloud cost management (FinOps)",
+            "related_skills": [
+                "FinOps tools (cloud cost management platforms)",
+                "Cost anomaly detection & alerting",
+                "Reserved instance & savings plan management"
+            ],
+            "keywords": [
+                "billing",
+                "invoices",
+                "reconciliation",
+                "billing errors",
+                "cloud charges"
+            ],
+            "common_roles": [
+                "Cloud Financial Analyst",
+                "Finance Operations",
+                "FinOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Container\/Kubernetes cost optimization",
+            "aliases": [
+                "Kubernetes cost optimization",
+                "container cost allocation",
+                "K8s cost optimization"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Optimizing costs for containerized workloads by tuning resource requests\/limits, scheduling, namespace-level chargeback and right-sizing clusters.",
+            "parent_skill": "Cloud cost management (FinOps)",
+            "related_skills": [
+                "Rightsizing & autoscaling optimization",
+                "Cloud tagging strategy & governance",
+                "FinOps tools (cloud cost management platforms)"
+            ],
+            "keywords": [
+                "Kubernetes",
+                "containers",
+                "namespace billing",
+                "node autoscaling",
+                "resource requests"
+            ],
+            "common_roles": [
+                "Platform Engineer",
+                "Site Reliability Engineer",
+                "DevOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cost anomaly detection & alerting",
+            "aliases": [
+                "cost spike detection",
+                "cost alerts",
+                "anomalous spend detection"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Implementing monitoring and alerting to detect unexpected cost spikes or anomalies and trigger investigations or automated mitigations.",
+            "parent_skill": "Cloud cost management (FinOps)",
+            "related_skills": [
+                "Cloud cost forecasting & budgeting",
+                "Cloud billing analysis & invoice reconciliation",
+                "FinOps tools (cloud cost management platforms)"
+            ],
+            "keywords": [
+                "anomaly detection",
+                "alerts",
+                "monitoring",
+                "spike detection",
+                "thresholds"
+            ],
+            "common_roles": [
+                "FinOps Engineer",
+                "Cloud Cost Analyst",
+                "SRE"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

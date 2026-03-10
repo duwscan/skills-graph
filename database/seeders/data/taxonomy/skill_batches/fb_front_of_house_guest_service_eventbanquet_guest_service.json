@@ -1,0 +1,286 @@
+{
+    "domain": "F&B",
+    "category": "Front-of-House Guest Service",
+    "subcategory": "Event\/banquet guest service",
+    "skills": [
+        {
+            "canonical_name": "Banquet setup and breakdown",
+            "aliases": [
+                "Event set-up and tear-down",
+                "Banquet room setup",
+                "Event room breakdown"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Preparing and restoring event spaces to specifications, including furniture layout, place settings, linens, signage, and cleaning for pre- and post-event.",
+            "parent_skill": "Event\/banquet guest service",
+            "related_skills": [
+                "Seating coordination and place-setting arrangement",
+                "Buffet and self-service station management",
+                "Event POS operation and group billing"
+            ],
+            "keywords": [
+                "room setup",
+                "tear-down",
+                "layout",
+                "linens",
+                "place settings"
+            ],
+            "common_roles": [
+                "Front-of-house operations",
+                "Event service teams",
+                "Catering operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Plated meal service (banquets)",
+            "aliases": [
+                "Plated service",
+                "Silver service (banquet context)",
+                "Course-by-course plated service"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Delivering individually plated courses to guests in a timed, coordinated manner following service standards for banquets and seated events.",
+            "parent_skill": "Event\/banquet guest service",
+            "related_skills": [
+                "Event service timing and course sequencing",
+                "Food expediting and kitchen liaison",
+                "Table clearing and bussing"
+            ],
+            "keywords": [
+                "plated",
+                "course service",
+                "seated dinner",
+                "service sequence"
+            ],
+            "common_roles": [
+                "Front-of-house operations",
+                "Event service teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Buffet and self-service station management",
+            "aliases": [
+                "Buffet line management",
+                "Self-service station setup",
+                "Chafing dish and buffet oversight"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Setting up, monitoring, replenishing and maintaining buffet or self-service stations to ensure food safety, presentation, portioning, and guest flow.",
+            "parent_skill": "Event\/banquet guest service",
+            "related_skills": [
+                "Banquet setup and breakdown",
+                "Dietary restriction and allergen accommodation",
+                "Event POS operation and group billing"
+            ],
+            "keywords": [
+                "buffet",
+                "food display",
+                "replenishment",
+                "guest flow"
+            ],
+            "common_roles": [
+                "Event service teams",
+                "Catering operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Beverage and tray service",
+            "aliases": [
+                "Tray passing",
+                "Wine and beverage service",
+                "Banquet beverage service"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Preparing, carrying and serving beverages and drink trays to guests safely and efficiently, including basic wine pouring and non-alcoholic service at events.",
+            "parent_skill": "Event\/banquet guest service",
+            "related_skills": [
+                "Plated meal service (banquets)",
+                "Guest complaint resolution and conflict de-escalation"
+            ],
+            "keywords": [
+                "tray service",
+                "wine pouring",
+                "beverage service",
+                "tray carry"
+            ],
+            "common_roles": [
+                "Front-of-house operations",
+                "Event service teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Seating coordination and place-setting arrangement",
+            "aliases": [
+                "Seating plan execution",
+                "Guest seating management",
+                "Place-setting arrangement"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Executing seating plans, guiding guests to assigned seats, arranging place settings and managing last-minute seating changes for organized guest flow.",
+            "parent_skill": "Event\/banquet guest service",
+            "related_skills": [
+                "Banquet setup and breakdown",
+                "Plated meal service (banquets)",
+                "Event service timing and course sequencing"
+            ],
+            "keywords": [
+                "seating plan",
+                "host duties",
+                "place settings",
+                "guest placement"
+            ],
+            "common_roles": [
+                "Front-of-house operations",
+                "Event service teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Event service timing and course sequencing",
+            "aliases": [
+                "Course timing coordination",
+                "Service sequencing",
+                "Event timing coordination"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning and managing timing for courses, speeches, breaks and service transitions to maintain smooth event flow and align front-of-house with kitchen and AV schedules.",
+            "parent_skill": "Event\/banquet guest service",
+            "related_skills": [
+                "Plated meal service (banquets)",
+                "Food expediting and kitchen liaison",
+                "Seating coordination and place-setting arrangement"
+            ],
+            "keywords": [
+                "timing",
+                "sequence",
+                "service pacing",
+                "event flow"
+            ],
+            "common_roles": [
+                "Event service teams",
+                "Front-of-house coordinators"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food expediting and kitchen liaison",
+            "aliases": [
+                "Expediter duties",
+                "Kitchen liaison",
+                "Food expediting"
+            ],
+            "skill_type": "process_skill",
+            "description": "Coordinating between kitchen and service staff to prioritize ticket times, check plate quality, sequence courses and communicate service issues under event conditions.",
+            "parent_skill": "Event\/banquet guest service",
+            "related_skills": [
+                "Event service timing and course sequencing",
+                "Plated meal service (banquets)",
+                "Banquet setup and breakdown"
+            ],
+            "keywords": [
+                "expedite",
+                "kitchen communication",
+                "ticket management",
+                "quality check"
+            ],
+            "common_roles": [
+                "Front-of-house coordinators",
+                "Event service teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dietary restriction and allergen accommodation",
+            "aliases": [
+                "Allergen management",
+                "Special-diet accommodation",
+                "Dietary needs handling"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Identifying, documenting and implementing dietary restrictions and allergen controls during events, communicating with kitchen staff and guests to reduce risk.",
+            "parent_skill": "Event\/banquet guest service",
+            "related_skills": [
+                "Buffet and self-service station management",
+                "Food expediting and kitchen liaison"
+            ],
+            "keywords": [
+                "allergens",
+                "gluten-free",
+                "vegetarian",
+                "special diets"
+            ],
+            "common_roles": [
+                "Event service teams",
+                "Catering operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Event POS operation and group billing",
+            "aliases": [
+                "Group billing",
+                "Event point-of-sale operation",
+                "Banquet billing"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operating point-of-sale systems and handling group checks, split billing, payment collections and invoicing processes specific to events and banquets.",
+            "parent_skill": "Event\/banquet guest service",
+            "related_skills": [
+                "Banquet setup and breakdown",
+                "Buffet and self-service station management"
+            ],
+            "keywords": [
+                "POS",
+                "group billing",
+                "invoicing",
+                "payment processing"
+            ],
+            "common_roles": [
+                "Front-of-house operations",
+                "Event finance support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Guest complaint resolution and conflict de-escalation",
+            "aliases": [
+                "Guest issue resolution",
+                "Conflict de-escalation",
+                "Service recovery"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Managing guest complaints and conflicts calmly and effectively during events, using service recovery techniques, clear communication and escalation protocols when necessary.",
+            "parent_skill": "Event\/banquet guest service",
+            "related_skills": [
+                "Beverage and tray service",
+                "Dietary restriction and allergen accommodation",
+                "Seating coordination and place-setting arrangement"
+            ],
+            "keywords": [
+                "service recovery",
+                "de-escalation",
+                "guest relations",
+                "complaint handling"
+            ],
+            "common_roles": [
+                "Front-of-house operations",
+                "Event service teams"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,275 @@
+{
+    "domain": "IT",
+    "category": "Enterprise Applications & Platforms",
+    "subcategory": "Application lifecycle administration",
+    "skills": [
+        {
+            "canonical_name": "Release management",
+            "aliases": [
+                "Release orchestration",
+                "Release coordination",
+                "Deployment planning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning, coordinating, and governing application releases across environments to ensure predictable, auditable rollouts and rollbacks.",
+            "parent_skill": "Application lifecycle administration",
+            "related_skills": [
+                "CI\/CD pipeline administration",
+                "Deployment automation",
+                "Change management for applications"
+            ],
+            "keywords": [
+                "release",
+                "release window",
+                "release train",
+                "rollout",
+                "rollback",
+                "release calendar"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "CI\/CD pipeline administration",
+            "aliases": [
+                "Continuous integration\/continuous delivery administration",
+                "Pipeline management",
+                "Build and pipeline administration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing, operating and troubleshooting continuous integration and continuous delivery pipelines that build, test and deploy application artifacts.",
+            "parent_skill": "Application lifecycle administration",
+            "related_skills": [
+                "Deployment automation",
+                "Artifact repository management",
+                "Release management"
+            ],
+            "keywords": [
+                "CI",
+                "CD",
+                "pipelines",
+                "build automation",
+                "stages",
+                "job orchestration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Deployment automation",
+            "aliases": [
+                "Automated deployments",
+                "Deployment orchestration",
+                "Automated release deployment"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implementing automated processes and scripts to deploy application components across environments with repeatable, auditable steps.",
+            "parent_skill": "Application lifecycle administration",
+            "related_skills": [
+                "CI\/CD pipeline administration",
+                "Infrastructure as code administration",
+                "Environment provisioning and lifecycle"
+            ],
+            "keywords": [
+                "automation",
+                "deploy",
+                "orchestration",
+                "blue-green",
+                "canary",
+                "rollout automation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Application configuration management",
+            "aliases": [
+                "App configuration management",
+                "Configuration drift control",
+                "Feature flag administration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing application configuration data, templates and runtime settings across environments to ensure consistent behavior and controlled changes.",
+            "parent_skill": "Application lifecycle administration",
+            "related_skills": [
+                "Environment provisioning and lifecycle",
+                "Deployment automation",
+                "Application performance monitoring (APM) administration"
+            ],
+            "keywords": [
+                "configuration",
+                "config files",
+                "environment variables",
+                "feature flags",
+                "config management"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Environment provisioning and lifecycle",
+            "aliases": [
+                "Environment provisioning",
+                "Environment lifecycle management",
+                "Dev\/test\/prod environment provisioning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Provisioning, cloning, refreshing and managing development, testing, staging and production application environments throughout their lifecycle.",
+            "parent_skill": "Application lifecycle administration",
+            "related_skills": [
+                "Infrastructure as code administration",
+                "Application configuration management",
+                "Deployment automation"
+            ],
+            "keywords": [
+                "provisioning",
+                "environment",
+                "sandbox",
+                "refresh",
+                "cloning",
+                "golden image"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Patch and update management for applications",
+            "aliases": [
+                "Application patch management",
+                "App update lifecycle",
+                "Hotfix and patch administration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Assessing, scheduling, testing and deploying vendor and custom application patches and updates while minimizing service disruption and ensuring compliance.",
+            "parent_skill": "Application lifecycle administration",
+            "related_skills": [
+                "Change management for applications",
+                "Release management",
+                "Application backup and disaster recovery administration"
+            ],
+            "keywords": [
+                "patch",
+                "security update",
+                "hotfix",
+                "patch window",
+                "vulnerability remediation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Application backup and disaster recovery administration",
+            "aliases": [
+                "Application backup administration",
+                "App disaster recovery",
+                "Application restore management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Defining, implementing and testing backup, retention and recovery procedures for application platforms to meet RTO\/RPO objectives and ensure data integrity.",
+            "parent_skill": "Application lifecycle administration",
+            "related_skills": [
+                "Patch and update management for applications",
+                "Application decommissioning and retirement",
+                "Change management for applications"
+            ],
+            "keywords": [
+                "backup",
+                "restore",
+                "RTO",
+                "RPO",
+                "replication",
+                "disaster recovery"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Application performance monitoring (APM) administration",
+            "aliases": [
+                "APM administration",
+                "Application monitoring administration",
+                "Telemetry and observability for applications"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and maintaining application performance monitoring, observability and telemetry systems to collect metrics, traces and logs for operational insight.",
+            "parent_skill": "Application lifecycle administration",
+            "related_skills": [
+                "Application configuration management",
+                "Application performance tuning",
+                "CI\/CD pipeline administration"
+            ],
+            "keywords": [
+                "APM",
+                "monitoring",
+                "observability",
+                "telemetry",
+                "traces",
+                "metrics"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Application access and entitlement management",
+            "aliases": [
+                "App access administration",
+                "Entitlement provisioning",
+                "Application role and permission management"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Managing user accounts, roles, permissions and entitlement processes for applications to enforce least privilege, auditability and compliance with access policies.",
+            "parent_skill": "Application lifecycle administration",
+            "related_skills": [
+                "Change management for applications",
+                "Application decommissioning and retirement",
+                "Patch and update management for applications"
+            ],
+            "keywords": [
+                "access control",
+                "entitlements",
+                "RBAC",
+                "provisioning",
+                "access review",
+                "SOD"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Application decommissioning and retirement",
+            "aliases": [
+                "Application retirement",
+                "App decommissioning",
+                "Application sunsetting"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning and executing end-of-life activities for applications including data migration\/archival, shutdown sequencing, license termination and environment cleanup.",
+            "parent_skill": "Application lifecycle administration",
+            "related_skills": [
+                "Application backup and disaster recovery administration",
+                "Application access and entitlement management",
+                "Change management for applications"
+            ],
+            "keywords": [
+                "decommission",
+                "retirement",
+                "sunset",
+                "archival",
+                "data migration",
+                "shutdown plan"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

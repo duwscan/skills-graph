@@ -1,0 +1,281 @@
+{
+    "domain": "IT",
+    "category": "IT Governance, Risk & Compliance",
+    "subcategory": "IT controls design & testing",
+    "skills": [
+        {
+            "canonical_name": "IT controls design",
+            "aliases": [
+                "design of IT controls",
+                "control design"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing preventive, detective and corrective IT controls aligned to business processes and risk objectives, including defining control objectives, control activities, and success criteria.",
+            "parent_skill": "IT controls design & testing",
+            "related_skills": [
+                "Control framework mapping",
+                "Access control design & testing",
+                "Segregation of duties (SoD) analysis"
+            ],
+            "keywords": [
+                "control design",
+                "preventive controls",
+                "detective controls",
+                "control objectives"
+            ],
+            "common_roles": [
+                "Audit & assurance professionals",
+                "GRC practitioners"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "IT general controls (ITGC) testing",
+            "aliases": [
+                "ITGC testing",
+                "IT general controls testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning and executing testing of IT general controls (e.g., access, change management, backup\/recovery, operations) to assess their operating effectiveness.",
+            "parent_skill": "IT controls design & testing",
+            "related_skills": [
+                "Change management controls testing",
+                "Access control design & testing",
+                "Audit data analytics for control testing"
+            ],
+            "keywords": [
+                "ITGC",
+                "testing",
+                "operating effectiveness",
+                "controls testing"
+            ],
+            "common_roles": [
+                "Audit & assurance professionals",
+                "IT risk teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Application controls testing",
+            "aliases": [
+                "application control testing",
+                "transactional controls testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Assessing design and operating effectiveness of application-level controls that ensure completeness, accuracy and authorization of transactions.",
+            "parent_skill": "IT controls design & testing",
+            "related_skills": [
+                "IT general controls (ITGC) testing",
+                "Audit data analytics for control testing",
+                "Control remediation management"
+            ],
+            "keywords": [
+                "application controls",
+                "transactional controls",
+                "testing",
+                "completeness"
+            ],
+            "common_roles": [
+                "Audit & assurance professionals",
+                "GRC practitioners"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control framework mapping",
+            "aliases": [
+                "controls-to-framework mapping",
+                "framework mapping"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Mapping organizational controls to industry frameworks and standards (e.g., COSO, COBIT, NIST, ISO) to demonstrate coverage and identify gaps.",
+            "parent_skill": "IT controls design & testing",
+            "related_skills": [
+                "IT controls design",
+                "Control remediation management",
+                "Segregation of duties (SoD) analysis"
+            ],
+            "keywords": [
+                "framework mapping",
+                "COSO",
+                "COBIT",
+                "NIST",
+                "control coverage"
+            ],
+            "common_roles": [
+                "GRC practitioners",
+                "Risk & compliance teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Segregation of duties (SoD) analysis",
+            "aliases": [
+                "SoD analysis",
+                "segregation of duties analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing role and transaction conflicts to identify segregation of duties risks, design compensating controls and recommend mitigation strategies.",
+            "parent_skill": "IT controls design & testing",
+            "related_skills": [
+                "Access control design & testing",
+                "Control framework mapping",
+                "Control remediation management"
+            ],
+            "keywords": [
+                "SoD",
+                "segregation of duties",
+                "conflict analysis",
+                "compensating controls"
+            ],
+            "common_roles": [
+                "GRC practitioners",
+                "Internal control analysts"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Access control design & testing",
+            "aliases": [
+                "access controls testing",
+                "user access review",
+                "privileged access controls"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing, implementing and testing logical access controls and user entitlement reviews, including privileged access, authentication and provisioning processes.",
+            "parent_skill": "IT controls design & testing",
+            "related_skills": [
+                "Segregation of duties (SoD) analysis",
+                "IT general controls (ITGC) testing",
+                "Audit data analytics for control testing"
+            ],
+            "keywords": [
+                "access control",
+                "user access review",
+                "privileged access",
+                "authentication"
+            ],
+            "common_roles": [
+                "IT risk teams",
+                "GRC practitioners"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Change management controls testing",
+            "aliases": [
+                "change controls testing",
+                "change management control testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Evaluating controls over software development and change management processes (e.g., approvals, testing, deployment) to ensure only authorized, tested changes are promoted.",
+            "parent_skill": "IT controls design & testing",
+            "related_skills": [
+                "IT general controls (ITGC) testing",
+                "Application controls testing",
+                "Control remediation management"
+            ],
+            "keywords": [
+                "change management",
+                "change controls",
+                "deployment",
+                "code promotion"
+            ],
+            "common_roles": [
+                "IT risk teams",
+                "Audit & assurance professionals"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control self-assessment (CSA) facilitation",
+            "aliases": [
+                "control self-assessment",
+                "CSA facilitation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Facilitating control self-assessment workshops and surveys with process owners to collect control evidence, evaluate effectiveness and drive ownership.",
+            "parent_skill": "IT controls design & testing",
+            "related_skills": [
+                "Control remediation management",
+                "Control framework mapping",
+                "IT controls design"
+            ],
+            "keywords": [
+                "CSA",
+                "self-assessment",
+                "facilitation",
+                "process owners"
+            ],
+            "common_roles": [
+                "GRC practitioners",
+                "Risk & compliance teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Audit data analytics for control testing",
+            "aliases": [
+                "control testing analytics",
+                "audit analytics",
+                "data analytics for controls"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Using data analytics, scripting and query tools to sample, test and visualize control-related datasets (e.g., access logs, change records, transaction data) to support testing and exception identification.",
+            "parent_skill": "IT controls design & testing",
+            "related_skills": [
+                "IT general controls (ITGC) testing",
+                "Application controls testing",
+                "Control remediation management"
+            ],
+            "keywords": [
+                "data analytics",
+                "audit analytics",
+                "SQL",
+                "sampling",
+                "scripts"
+            ],
+            "common_roles": [
+                "Audit & assurance professionals",
+                "GRC practitioners"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control remediation management",
+            "aliases": [
+                "remediation tracking",
+                "control remediation coordination"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Coordinating remediation activities for identified control deficiencies, tracking remediation status, validating fixes and reporting remediation progress to stakeholders.",
+            "parent_skill": "IT controls design & testing",
+            "related_skills": [
+                "Control framework mapping",
+                "Control self-assessment (CSA) facilitation",
+                "Segregation of duties (SoD) analysis"
+            ],
+            "keywords": [
+                "remediation",
+                "issue tracking",
+                "deficiency closure",
+                "root cause"
+            ],
+            "common_roles": [
+                "GRC practitioners",
+                "Risk & compliance teams"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

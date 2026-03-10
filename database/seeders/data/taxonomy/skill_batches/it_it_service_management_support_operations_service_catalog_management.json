@@ -1,0 +1,297 @@
+{
+    "domain": "IT",
+    "category": "IT Service Management & Support Operations",
+    "subcategory": "Service catalog management",
+    "skills": [
+        {
+            "canonical_name": "Service catalog design",
+            "aliases": [
+                "Catalog design",
+                "Service catalog architecture",
+                "Catalog UX design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing the structure, taxonomy, user experience and category organization of a service catalog to make services discoverable and consumable.",
+            "parent_skill": "Service catalog management",
+            "related_skills": [
+                "Service modeling and definition",
+                "Service catalog content and metadata management",
+                "Service catalog platform configuration"
+            ],
+            "keywords": [
+                "catalog design",
+                "catalog taxonomy",
+                "service categories",
+                "catalog UX"
+            ],
+            "common_roles": [
+                "Service catalog practitioners",
+                "ITSM practitioners",
+                "Service design teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service modeling and definition",
+            "aliases": [
+                "Service definition",
+                "Service item modeling",
+                "Catalog item definition"
+            ],
+            "skill_type": "process_skill",
+            "description": "Defining service items' attributes, inputs\/outputs, ownership, SLAs, costs and operational requirements to create repeatable, measurable catalog entries.",
+            "parent_skill": "Service catalog management",
+            "related_skills": [
+                "Service catalog content and metadata management",
+                "SLA mapping for catalog items",
+                "Service catalog governance"
+            ],
+            "keywords": [
+                "service model",
+                "service attributes",
+                "service definition",
+                "catalog item"
+            ],
+            "common_roles": [
+                "ITSM practitioners",
+                "Service owners",
+                "Process owners"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service catalog governance",
+            "aliases": [
+                "Catalog governance",
+                "Service catalog policy management",
+                "Catalog compliance and policy"
+            ],
+            "skill_type": "process_skill",
+            "description": "Establishing policies, approval models, ownership, review cadences and compliance controls for catalog content, changes and access.",
+            "parent_skill": "Service catalog management",
+            "related_skills": [
+                "Catalog lifecycle management",
+                "Access and entitlement control for catalog items",
+                "Service catalog content and metadata management"
+            ],
+            "keywords": [
+                "governance",
+                "catalog policy",
+                "approval model",
+                "catalog ownership"
+            ],
+            "common_roles": [
+                "Service owners",
+                "ITSM governance teams",
+                "Process owners"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Catalog lifecycle management",
+            "aliases": [
+                "Service onboarding and retirement",
+                "Catalog item lifecycle",
+                "Service lifecycle management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Managing onboarding, versioning, updates and retirement of catalog items including validation checks, stakeholder sign-off and publish\/unpublish processes.",
+            "parent_skill": "Service catalog management",
+            "related_skills": [
+                "Service modeling and definition",
+                "Service catalog governance",
+                "Service catalog platform configuration"
+            ],
+            "keywords": [
+                "onboarding",
+                "retirement",
+                "lifecycle",
+                "catalog updates"
+            ],
+            "common_roles": [
+                "Service catalog practitioners",
+                "Service owners",
+                "Change coordination teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service request workflow design",
+            "aliases": [
+                "Request workflow design",
+                "Catalog workflow orchestration",
+                "Service request flow design"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing the approval, assignment and fulfillment workflows for catalog requests, including escalation, notifications and connectors to downstream systems.",
+            "parent_skill": "Service catalog management",
+            "related_skills": [
+                "Service request orchestration integration",
+                "Service catalog platform configuration",
+                "Catalog lifecycle management"
+            ],
+            "keywords": [
+                "workflow design",
+                "approval flow",
+                "request orchestration",
+                "fulfillment flow"
+            ],
+            "common_roles": [
+                "IT operations teams",
+                "Service catalog practitioners",
+                "Platform administrators"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service catalog platform configuration",
+            "aliases": [
+                "Catalog platform administration",
+                "Service catalog configuration",
+                "ServiceNow\/Jira\/BMC catalog configuration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and administering service catalog functionality in service management platforms (forms, categories, workflows, request types, UI policies and integrations).",
+            "parent_skill": "Service catalog management",
+            "related_skills": [
+                "Service request workflow design",
+                "Service catalog content and metadata management",
+                "Service catalog platform integration"
+            ],
+            "keywords": [
+                "platform configuration",
+                "catalog admin",
+                "service management platform",
+                "catalog forms"
+            ],
+            "common_roles": [
+                "Platform administrators",
+                "Service catalog practitioners",
+                "ITSM support teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service catalog content and metadata management",
+            "aliases": [
+                "Catalog content management",
+                "Catalog metadata management",
+                "Catalog descriptions and attributes"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Creating, maintaining and standardizing catalog item descriptions, metadata, categories, tags and searchable attributes to ensure accuracy and discoverability.",
+            "parent_skill": "Service catalog management",
+            "related_skills": [
+                "Service modeling and definition",
+                "Service catalog design",
+                "Catalog lifecycle management"
+            ],
+            "keywords": [
+                "content management",
+                "metadata",
+                "catalog descriptions",
+                "searchability"
+            ],
+            "common_roles": [
+                "Service catalog practitioners",
+                "Content owners",
+                "Service owners"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SLA mapping for catalog items",
+            "aliases": [
+                "SLA mapping",
+                "SLA alignment for catalog items",
+                "Catalog SLA configuration"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Mapping service level agreements and measurable targets (response\/resolution times, availability) to specific catalog items and request types to support commitments and reporting.",
+            "parent_skill": "Service catalog management",
+            "related_skills": [
+                "Service modeling and definition",
+                "Catalog analytics and KPI reporting",
+                "Service catalog governance"
+            ],
+            "keywords": [
+                "SLA mapping",
+                "service levels",
+                "SLA configuration",
+                "performance targets"
+            ],
+            "common_roles": [
+                "ITSM practitioners",
+                "Service owners",
+                "Operations analysts"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Access and entitlement control for catalog items",
+            "aliases": [
+                "Catalog access control",
+                "Entitlement management for catalog",
+                "Catalog item permissions"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Defining and enforcing who can view, request or approve specific catalog items using roles, groups, entitlement rules and integration with identity\/access systems.",
+            "parent_skill": "Service catalog management",
+            "related_skills": [
+                "Service catalog governance",
+                "Service catalog platform configuration",
+                "Service request workflow design"
+            ],
+            "keywords": [
+                "access control",
+                "entitlement",
+                "permissions",
+                "catalog visibility"
+            ],
+            "common_roles": [
+                "Security and access teams",
+                "Service owners",
+                "Platform administrators"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Catalog analytics and KPI reporting",
+            "aliases": [
+                "Catalog reporting",
+                "Catalog metrics and analytics",
+                "Service catalog KPIs"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Measuring catalog performance through metrics (request volume, fulfillment time, requester satisfaction, accuracy) and producing reports\/dashboards to drive improvements.",
+            "parent_skill": "Service catalog management",
+            "related_skills": [
+                "SLA mapping for catalog items",
+                "Service catalog content and metadata management",
+                "Service catalog governance"
+            ],
+            "keywords": [
+                "analytics",
+                "KPI",
+                "reporting",
+                "catalog metrics"
+            ],
+            "common_roles": [
+                "Operations analysts",
+                "Service catalog practitioners",
+                "Business intelligence teams"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

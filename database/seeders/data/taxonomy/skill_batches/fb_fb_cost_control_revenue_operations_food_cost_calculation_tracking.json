@@ -1,0 +1,307 @@
+{
+    "domain": "F&B",
+    "category": "F&B Cost Control & Revenue Operations",
+    "subcategory": "Food cost calculation & tracking",
+    "skills": [
+        {
+            "canonical_name": "Standard recipe costing",
+            "aliases": [
+                "recipe costing",
+                "standardised recipe cost",
+                "recipe cost calculation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculating the food cost of each menu item using standardized recipes, ingredients, yields and portion sizes to produce per‑portion and per‑dish cost values.",
+            "parent_skill": "Food cost calculation & tracking",
+            "related_skills": [
+                "Yield analysis and edible portion calculation",
+                "Portion control implementation",
+                "Menu engineering and contribution margin analysis"
+            ],
+            "keywords": [
+                "recipe cost",
+                "per‑portion cost",
+                "ingredient costing",
+                "standard recipes"
+            ],
+            "common_roles": [
+                "Kitchen Manager",
+                "Executive Chef",
+                "Cost Controller",
+                "Culinary Operations Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food cost percentage analysis",
+            "aliases": [
+                "food cost % analysis",
+                "food cost percentage calculation",
+                "cost of goods sold percentage"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculating and monitoring food cost as a percentage of sales, analyzing trends and variances against targets and budgets.",
+            "parent_skill": "Food cost calculation & tracking",
+            "related_skills": [
+                "Food cost reporting and KPI dashboarding",
+                "POS sales reconciliation",
+                "Menu engineering and contribution margin analysis"
+            ],
+            "keywords": [
+                "food cost %",
+                "COGS %",
+                "variance to budget",
+                "trend analysis"
+            ],
+            "common_roles": [
+                "Food & Beverage Manager",
+                "Restaurant Manager",
+                "Cost Controller",
+                "Finance Business Partner (F&B)"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Yield analysis and edible portion calculation",
+            "aliases": [
+                "yield analysis",
+                "edible portion (EP) calculation",
+                "trim loss analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Measuring and calculating usable yield from raw food items (EP%), accounting for trim, shrinkage and cooking loss to reflect true ingredient costs.",
+            "parent_skill": "Food cost calculation & tracking",
+            "related_skills": [
+                "Standard recipe costing",
+                "Inventory valuation and FIFO accounting",
+                "Portion control implementation"
+            ],
+            "keywords": [
+                "EP%",
+                "AP to EP",
+                "shrinkage",
+                "trim loss"
+            ],
+            "common_roles": [
+                "Executive Chef",
+                "Kitchen Manager",
+                "Culinary Analyst",
+                "Procurement Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inventory valuation and FIFO accounting",
+            "aliases": [
+                "inventory valuation",
+                "FIFO inventory management",
+                "perishable inventory accounting"
+            ],
+            "skill_type": "process_skill",
+            "description": "Valuing on‑hand food inventory using appropriate costing methods (FIFO for perishables), tracking opening\/closing balances and cost of goods sold impacts.",
+            "parent_skill": "Food cost calculation & tracking",
+            "related_skills": [
+                "Waste tracking and variance analysis",
+                "Invoice reconciliation and purchase matching",
+                "Food cost reporting and KPI dashboarding"
+            ],
+            "keywords": [
+                "FIFO",
+                "inventory valuation",
+                "opening balance",
+                "COGS calculation"
+            ],
+            "common_roles": [
+                "Inventory Controller",
+                "Cost Controller",
+                "Restaurant Manager",
+                "Finance Manager (Operations)"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Portion control implementation",
+            "aliases": [
+                "portion control systems",
+                "serving size control",
+                "portion management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and enforcing portioning standards (measuring tools, training, plating guidelines) to reduce variance and maintain recipe cost targets.",
+            "parent_skill": "Food cost calculation & tracking",
+            "related_skills": [
+                "Standard recipe costing",
+                "Waste tracking and variance analysis",
+                "Yield analysis and edible portion calculation"
+            ],
+            "keywords": [
+                "portioning",
+                "scoop counts",
+                "dispensers",
+                "plating guides"
+            ],
+            "common_roles": [
+                "Kitchen Supervisor",
+                "Executive Chef",
+                "Restaurant Manager",
+                "Quality Assurance Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Waste tracking and food variance analysis",
+            "aliases": [
+                "food waste tracking",
+                "waste variance analysis",
+                "scrap tracking"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Recording and analyzing food waste, spoilage and spoilage events to identify causes, quantify cost impact and recommend corrective actions.",
+            "parent_skill": "Food cost calculation & tracking",
+            "related_skills": [
+                "Inventory valuation and FIFO accounting",
+                "Portion control implementation",
+                "Food cost reporting and KPI dashboarding"
+            ],
+            "keywords": [
+                "waste log",
+                "spoilage",
+                "variance to theoretical",
+                "waste reduction"
+            ],
+            "common_roles": [
+                "Operations Manager",
+                "Kitchen Manager",
+                "Cost Controller",
+                "Quality Assurance Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Invoice reconciliation and purchase matching",
+            "aliases": [
+                "supplier invoice reconciliation",
+                "AP purchase matching",
+                "purchase invoice matching"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Matching supplier invoices to purchase orders and receiving records, resolving price\/quantity discrepancies and ensuring accurate food cost posting.",
+            "parent_skill": "Food cost calculation & tracking",
+            "related_skills": [
+                "Inventory valuation and FIFO accounting",
+                "Purchasing and vendor cost analysis",
+                "Food cost reporting and KPI dashboarding"
+            ],
+            "keywords": [
+                "invoice matching",
+                "PO reconciliation",
+                "supplier discrepancies",
+                "invoice variance"
+            ],
+            "common_roles": [
+                "Purchasing Manager",
+                "Accounts Payable Specialist",
+                "Cost Controller",
+                "Procurement Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Menu engineering and contribution margin analysis",
+            "aliases": [
+                "menu engineering",
+                "menu profitability analysis",
+                "contribution margin analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing menu item profitability using cost, price and sales data to calculate contribution margins and identify pricing\/placement strategies.",
+            "parent_skill": "Food cost calculation & tracking",
+            "related_skills": [
+                "Food cost percentage analysis",
+                "Standard recipe costing",
+                "POS sales reconciliation"
+            ],
+            "keywords": [
+                "menu mix",
+                "contribution margin",
+                "item profitability",
+                "menu optimization"
+            ],
+            "common_roles": [
+                "Food & Beverage Director",
+                "Revenue Manager",
+                "Executive Chef",
+                "Business Analyst (F&B)"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "POS sales reconciliation",
+            "aliases": [
+                "POS integration",
+                "point of sale reconciliation",
+                "sales to cost reconciliation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Integrating and reconciling point‑of‑sale sales data with inventory and recipe costs to calculate actual food cost and sales mix by item.",
+            "parent_skill": "Food cost calculation & tracking",
+            "related_skills": [
+                "Food cost percentage analysis",
+                "Food cost reporting and KPI dashboarding",
+                "Menu engineering and contribution margin analysis"
+            ],
+            "keywords": [
+                "POS data",
+                "sales reconciliation",
+                "item sales",
+                "integration"
+            ],
+            "common_roles": [
+                "Restaurant Manager",
+                "Operations Analyst",
+                "Cost Controller",
+                "IT Operations (F&B)"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food cost reporting and KPI dashboarding",
+            "aliases": [
+                "food cost reporting",
+                "F&B KPI dashboarding",
+                "cost reporting and dashboards"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and producing regular food cost reports and dashboards (daily\/weekly\/monthly) presenting KPIs, variances and actionable insights for operations and finance.",
+            "parent_skill": "Food cost calculation & tracking",
+            "related_skills": [
+                "Food cost percentage analysis",
+                "Inventory valuation and FIFO accounting",
+                "POS sales reconciliation"
+            ],
+            "keywords": [
+                "dashboards",
+                "KPI reporting",
+                "daily food cost",
+                "variance reporting"
+            ],
+            "common_roles": [
+                "Cost Controller",
+                "Finance Manager (Operations)",
+                "Operations Manager",
+                "Business Intelligence Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

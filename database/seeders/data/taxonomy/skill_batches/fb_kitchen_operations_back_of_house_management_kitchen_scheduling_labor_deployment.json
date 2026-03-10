@@ -1,0 +1,268 @@
+{
+    "domain": "F&B",
+    "category": "Kitchen Operations & Back-of-House Management",
+    "subcategory": "Kitchen scheduling & labor deployment",
+    "skills": [
+        {
+            "canonical_name": "Shift scheduling and roster creation",
+            "aliases": [
+                "shift scheduling",
+                "roster creation",
+                "schedule planning",
+                "staff rostering"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and producing daily\/weekly work schedules that assign staff to shifts while meeting coverage requirements and operational constraints.",
+            "parent_skill": "Kitchen scheduling & labor deployment",
+            "related_skills": [
+                "Restaurant scheduling software",
+                "Coverage optimization and break scheduling",
+                "Shift availability and swap coordination"
+            ],
+            "keywords": [
+                "shifts",
+                "roster",
+                "coverage",
+                "shift patterns",
+                "rotation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Labor forecasting and demand planning",
+            "aliases": [
+                "demand forecasting",
+                "staff demand planning",
+                "shift demand forecasting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing historical sales\/cover data and business drivers to predict staffing demand by time period and role.",
+            "parent_skill": "Kitchen scheduling & labor deployment",
+            "related_skills": [
+                "Labor cost budgeting and forecasting",
+                "Coverage optimization and break scheduling",
+                "Shift scheduling and roster creation"
+            ],
+            "keywords": [
+                "forecasting",
+                "demand planning",
+                "sales per labor hour",
+                "covers",
+                "predictive staffing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Restaurant scheduling software",
+            "aliases": [
+                "scheduling software",
+                "shift scheduling tools",
+                "HotSchedules",
+                "7shifts",
+                "Deputy"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using digital scheduling platforms designed for restaurants to build rosters, publish shifts, capture availability, and integrate with timekeeping.",
+            "parent_skill": "Kitchen scheduling & labor deployment",
+            "related_skills": [
+                "Shift scheduling and roster creation",
+                "Time and attendance management",
+                "Shift availability and swap coordination"
+            ],
+            "keywords": [
+                "software",
+                "scheduling app",
+                "shift publishing",
+                "mobile scheduling",
+                "employee portal"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Time and attendance management",
+            "aliases": [
+                "attendance tracking",
+                "timekeeping",
+                "clock-in\/out management",
+                "timesheet management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing employee time capture, validating hours worked, reconciling exceptions, and ensuring accurate records for payroll.",
+            "parent_skill": "Kitchen scheduling & labor deployment",
+            "related_skills": [
+                "Restaurant scheduling software",
+                "Wage and hour compliance",
+                "Overtime control and management"
+            ],
+            "keywords": [
+                "timeclock",
+                "timesheets",
+                "punches",
+                "attendance",
+                "hours worked"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Overtime control and management",
+            "aliases": [
+                "overtime management",
+                "overtime reduction",
+                "OT control"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Monitoring and controlling employee overtime through scheduling, approvals, and operational adjustments to limit excess labor cost.",
+            "parent_skill": "Kitchen scheduling & labor deployment",
+            "related_skills": [
+                "Shift scheduling and roster creation",
+                "Time and attendance management",
+                "Labor forecasting and demand planning"
+            ],
+            "keywords": [
+                "overtime",
+                "OT",
+                "approvals",
+                "limit hours",
+                "cost control"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Wage and hour compliance",
+            "aliases": [
+                "wage & hour compliance",
+                "labor law compliance",
+                "working time compliance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Ensuring schedules, breaks, overtime rules, and time records meet local labor laws and wage-and-hour regulations.",
+            "parent_skill": "Kitchen scheduling & labor deployment",
+            "related_skills": [
+                "Time and attendance management",
+                "Overtime control and management"
+            ],
+            "keywords": [
+                "labor law",
+                "break entitlements",
+                "minimum wage",
+                "overtime rules",
+                "compliance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Labor cost budgeting and forecasting",
+            "aliases": [
+                "labor budgeting",
+                "labor cost forecasting",
+                "labor spend planning"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Projecting and allocating labor costs by shift, daypart, and role to meet financial targets and inform scheduling decisions.",
+            "parent_skill": "Kitchen scheduling & labor deployment",
+            "related_skills": [
+                "Labor forecasting and demand planning",
+                "Coverage optimization and break scheduling"
+            ],
+            "keywords": [
+                "labor cost",
+                "budgeting",
+                "forecast",
+                "labor % of revenue",
+                "scheduling budget"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Shift availability and swap coordination",
+            "aliases": [
+                "shift swapping",
+                "availability management",
+                "shift bid coordination"
+            ],
+            "skill_type": "process_skill",
+            "description": "Collecting employee availability, managing shift bids and swap requests, and coordinating replacements while maintaining adequate coverage.",
+            "parent_skill": "Kitchen scheduling & labor deployment",
+            "related_skills": [
+                "Shift scheduling and roster creation",
+                "Restaurant scheduling software",
+                "Time and attendance management"
+            ],
+            "keywords": [
+                "availability",
+                "shift swap",
+                "coverage",
+                "request handling",
+                "on-call"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-training planning and skill matrix management",
+            "aliases": [
+                "cross-training planning",
+                "skill matrix planning",
+                "multi-skill rostering"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Identifying critical skills across roles, planning cross-training, and maintaining a skill matrix to enable flexible staffing and reduce understaffing risk.",
+            "parent_skill": "Kitchen scheduling & labor deployment",
+            "related_skills": [
+                "Shift scheduling and roster creation",
+                "Coverage optimization and break scheduling"
+            ],
+            "keywords": [
+                "cross-train",
+                "skill matrix",
+                "multi-skilled staff",
+                "flexible rostering",
+                "bench strength"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Coverage optimization and break scheduling",
+            "aliases": [
+                "schedule optimization",
+                "coverage modeling",
+                "break planning"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Modeling and optimizing shift coverage and employee breaks to balance service levels, legal break requirements, and labor cost efficiency.",
+            "parent_skill": "Kitchen scheduling & labor deployment",
+            "related_skills": [
+                "Labor forecasting and demand planning",
+                "Shift scheduling and roster creation",
+                "Labor cost budgeting and forecasting"
+            ],
+            "keywords": [
+                "coverage",
+                "optimization",
+                "breaks",
+                "service level",
+                "staffing model"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,295 @@
+{
+    "domain": "Finance",
+    "category": "Cost Accounting & Operational Finance",
+    "subcategory": "Operational KPI costing",
+    "skills": [
+        {
+            "canonical_name": "Activity-Based Costing (ABC)",
+            "aliases": [
+                "Activity Based Costing",
+                "ABC costing",
+                "Activity-based cost allocation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Methodology for assigning overhead and indirect costs to products, services, or customers based on activities and resource consumption.",
+            "parent_skill": "Operational KPI costing",
+            "related_skills": [
+                "Cost Allocation Modeling",
+                "Cost Driver Analysis & Root Cause Attribution",
+                "Time-Driven Activity-Based Costing (TDABC)"
+            ],
+            "keywords": [
+                "activities",
+                "cost pools",
+                "cost drivers",
+                "resource tracing"
+            ],
+            "common_roles": [
+                "Cost Accountant",
+                "Management Accountant",
+                "Operational Finance Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Time-Driven Activity-Based Costing (TDABC)",
+            "aliases": [
+                "Time Driven ABC",
+                "TDABC"
+            ],
+            "skill_type": "process_skill",
+            "description": "A simplified ABC variant that uses time equations and capacity estimates to assign costs to activities and outputs for operational costing and KPI analysis.",
+            "parent_skill": "Operational KPI costing",
+            "related_skills": [
+                "Activity-Based Costing (ABC)",
+                "Cost-to-Serve Analysis",
+                "Operational Cost Forecasting & Rolling Forecasts"
+            ],
+            "keywords": [
+                "time equations",
+                "capacity cost rate",
+                "practical capacity",
+                "process time"
+            ],
+            "common_roles": [
+                "Financial Analyst",
+                "Cost Accountant",
+                "Operational Excellence Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cost Allocation Modeling",
+            "aliases": [
+                "overhead allocation",
+                "allocation modeling",
+                "cost apportionment"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and implementing rules, drivers and algorithms for allocating indirect and shared costs across products, services, departments and KPI measures.",
+            "parent_skill": "Operational KPI costing",
+            "related_skills": [
+                "Activity-Based Costing (ABC)",
+                "Standard Costing & Variance Analysis",
+                "Cost Driver Analysis & Root Cause Attribution"
+            ],
+            "keywords": [
+                "allocation bases",
+                "drivers",
+                "apportionment",
+                "service center recharges"
+            ],
+            "common_roles": [
+                "Management Accountant",
+                "Controller",
+                "Operational Finance Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Standard Costing & Variance Analysis",
+            "aliases": [
+                "standard costing",
+                "variance analysis",
+                "standard cost variances"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Setting standard costs for products\/services and analyzing variances (price, volume, efficiency, mix) to explain differences between actual and expected cost KPIs.",
+            "parent_skill": "Operational KPI costing",
+            "related_skills": [
+                "Cost Allocation Modeling",
+                "Unit Costing & Contribution Margin Analysis",
+                "Operational Cost Forecasting & Rolling Forecasts"
+            ],
+            "keywords": [
+                "material variance",
+                "labor efficiency",
+                "overhead variance",
+                "favorable\/unfavorable"
+            ],
+            "common_roles": [
+                "Cost Accountant",
+                "FP&A Analyst",
+                "Manufacturing Finance Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cost-to-Serve Analysis",
+            "aliases": [
+                "CTS analysis",
+                "cost to serve modeling",
+                "customer cost-to-serve"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Quantifying the end-to-end costs of serving customers, channels or segments to inform pricing, distribution and operational KPI decisions.",
+            "parent_skill": "Operational KPI costing",
+            "related_skills": [
+                "Activity-Based Costing (ABC)",
+                "Unit Costing & Contribution Margin Analysis",
+                "Cost Driver Analysis & Root Cause Attribution"
+            ],
+            "keywords": [
+                "customer segmentation",
+                "channel costs",
+                "order-to-cash cost",
+                "service profitability"
+            ],
+            "common_roles": [
+                "Commercial Finance Analyst",
+                "Customer Profitability Analyst",
+                "Operational Finance Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Unit Costing & Contribution Margin Analysis",
+            "aliases": [
+                "unit costing",
+                "per unit cost analysis",
+                "contribution margin analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculating per-unit costs and contribution margins to assess product\/service profitability and support KPI-driven pricing and operational decisions.",
+            "parent_skill": "Operational KPI costing",
+            "related_skills": [
+                "Standard Costing & Variance Analysis",
+                "Cost-to-Serve Analysis",
+                "Operational Cost Forecasting & Rolling Forecasts"
+            ],
+            "keywords": [
+                "per unit",
+                "variable cost",
+                "fixed cost allocation",
+                "CM1\/CM2"
+            ],
+            "common_roles": [
+                "Pricing Analyst",
+                "Product Finance Manager",
+                "Financial Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cost Driver Analysis & Root Cause Attribution",
+            "aliases": [
+                "cost driver analysis",
+                "root cause cost analysis",
+                "driver-based costing"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Identifying and quantifying the primary drivers of cost variability and attributing changes in operational KPIs to root causes for corrective actions.",
+            "parent_skill": "Operational KPI costing",
+            "related_skills": [
+                "Activity-Based Costing (ABC)",
+                "Cost Allocation Modeling",
+                "Operational KPI Design for Cost Metrics"
+            ],
+            "keywords": [
+                "driver identification",
+                "regression analysis",
+                "causal attribution",
+                "cost variability"
+            ],
+            "common_roles": [
+                "Data-driven Finance Analyst",
+                "Operational Improvement Analyst",
+                "Management Accountant"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Operational KPI Design for Cost Metrics",
+            "aliases": [
+                "KPI design for costs",
+                "cost metric design",
+                "designing cost KPIs"
+            ],
+            "skill_type": "process_skill",
+            "description": "Defining, structuring and governing operational KPIs (unit cost, cost per FTE, cost per transaction, etc.) to ensure alignment with business objectives and decision-making.",
+            "parent_skill": "Operational KPI costing",
+            "related_skills": [
+                "Cost Driver Analysis & Root Cause Attribution",
+                "Cost Allocation Modeling",
+                "Cost-to-Serve Analysis"
+            ],
+            "keywords": [
+                "KPI definitions",
+                "metric governance",
+                "target setting",
+                "operational dashboards"
+            ],
+            "common_roles": [
+                "Finance Business Partner",
+                "Operational Finance Analyst",
+                "FP&A Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SAP Controlling (SAP CO)",
+            "aliases": [
+                "SAP CO",
+                "SAP Controlling module",
+                "SAP cost controlling"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use and configuration of SAP Controlling module for cost center accounting, internal orders, product costing and integration with operational cost KPIs.",
+            "parent_skill": "Operational KPI costing",
+            "related_skills": [
+                "Cost Allocation Modeling",
+                "Standard Costing & Variance Analysis"
+            ],
+            "keywords": [
+                "cost centers",
+                "internal orders",
+                "product costing",
+                "settlement rules"
+            ],
+            "common_roles": [
+                "ERP Finance Analyst",
+                "Cost Accountant",
+                "Financial Systems Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Operational Cost Forecasting & Rolling Forecasts",
+            "aliases": [
+                "cost forecasting",
+                "rolling forecasts",
+                "operational cost projection"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Preparing short- and medium-term forecasts of operational costs using driver-based, rolling and scenario techniques to update KPI expectations and budgets.",
+            "parent_skill": "Operational KPI costing",
+            "related_skills": [
+                "Standard Costing & Variance Analysis",
+                "Time-Driven Activity-Based Costing (TDABC)",
+                "Unit Costing & Contribution Margin Analysis"
+            ],
+            "keywords": [
+                "driver-based forecast",
+                "scenario planning",
+                "rolling budget",
+                "forecast accuracy"
+            ],
+            "common_roles": [
+                "FP&A Analyst",
+                "Operational Finance Analyst",
+                "Financial Planning Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

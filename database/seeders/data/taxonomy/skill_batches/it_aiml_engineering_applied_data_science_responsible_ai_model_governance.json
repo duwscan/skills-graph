@@ -1,0 +1,268 @@
+{
+    "domain": "IT",
+    "category": "AI\/ML Engineering & Applied Data Science",
+    "subcategory": "Responsible AI & model governance",
+    "skills": [
+        {
+            "canonical_name": "Model Risk Assessment",
+            "aliases": [
+                "model risk analysis",
+                "ML model risk assessment"
+            ],
+            "skill_type": "process_skill",
+            "description": "Systematic identification and evaluation of risks introduced by ML\/AI models across performance, fairness, privacy, robustness, security, and operational domains.",
+            "parent_skill": "Responsible AI & model governance",
+            "related_skills": [
+                "Model Governance Implementation",
+                "Model Monitoring and Drift Detection",
+                "Regulatory AI Compliance",
+                "AI Fairness Evaluation"
+            ],
+            "keywords": [
+                "model risk",
+                "risk assessment",
+                "impact analysis",
+                "risk register",
+                "residual risk"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "AI Fairness Evaluation",
+            "aliases": [
+                "fairness testing",
+                "algorithmic fairness assessment",
+                "fairness auditing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing quantitative and qualitative tests and metrics to measure and report fairness and disparate impacts across protected or sensitive groups.",
+            "parent_skill": "Responsible AI & model governance",
+            "related_skills": [
+                "Bias Mitigation Techniques",
+                "Explainable AI Techniques",
+                "Data Privacy Impact Assessment",
+                "Model Risk Assessment"
+            ],
+            "keywords": [
+                "fairness metrics",
+                "disparate impact",
+                "equalized odds",
+                "statistical parity",
+                "fairness audit"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bias Mitigation Techniques",
+            "aliases": [
+                "bias correction",
+                "de-biasing methods",
+                "algorithmic bias mitigation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying preprocessing, in-processing, and post-processing algorithms and design choices to reduce unwanted bias in training data and model predictions.",
+            "parent_skill": "Responsible AI & model governance",
+            "related_skills": [
+                "AI Fairness Evaluation",
+                "Explainable AI Techniques",
+                "Model Monitoring and Drift Detection"
+            ],
+            "keywords": [
+                "reweighing",
+                "adversarial debiasing",
+                "preprocessing",
+                "post-processing",
+                "fairness-aware learning"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Explainable AI Techniques",
+            "aliases": [
+                "model interpretability techniques",
+                "XAI methods",
+                "interpretability methods"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Methods for producing intelligible explanations of model behavior including feature attributions, surrogate models, counterfactuals, and rule extraction.",
+            "parent_skill": "Responsible AI & model governance",
+            "related_skills": [
+                "Explainability Tools and Libraries",
+                "Audit-ready Model Documentation",
+                "AI Fairness Evaluation"
+            ],
+            "keywords": [
+                "feature attribution",
+                "surrogate models",
+                "counterfactual explanations",
+                "local explanations",
+                "global interpretability"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Explainability Tools and Libraries",
+            "aliases": [
+                "XAI tools",
+                "model interpretability tools",
+                "SHAP\/LIME\/Captum"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Practical experience using libraries and toolkits to produce model explanations and interpretability artifacts (e.g., SHAP, LIME, Captum, Alibi).",
+            "parent_skill": "Responsible AI & model governance",
+            "related_skills": [
+                "Explainable AI Techniques",
+                "Model Monitoring and Drift Detection",
+                "Audit-ready Model Documentation"
+            ],
+            "keywords": [
+                "SHAP",
+                "LIME",
+                "Captum",
+                "ELI5",
+                "Alibi"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Model Governance Implementation",
+            "aliases": [
+                "model governance framework implementation",
+                "operational model governance",
+                "model lifecycle governance"
+            ],
+            "skill_type": "process_skill",
+            "description": "Defining and operationalizing governance processes for model approval, versioning, access control, lineage, risk sign-off, and change management across the model lifecycle.",
+            "parent_skill": "Responsible AI & model governance",
+            "related_skills": [
+                "Model Risk Assessment",
+                "Audit-ready Model Documentation",
+                "Regulatory AI Compliance"
+            ],
+            "keywords": [
+                "governance framework",
+                "model registry",
+                "versioning",
+                "change control",
+                "approval workflows"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Model Monitoring and Drift Detection",
+            "aliases": [
+                "model monitoring",
+                "concept drift detection",
+                "data drift monitoring"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing monitoring pipelines and metrics to detect performance degradation, data or concept drift, and to trigger retraining or mitigation actions.",
+            "parent_skill": "Responsible AI & model governance",
+            "related_skills": [
+                "Model Risk Assessment",
+                "Model Governance Implementation",
+                "Explainability Tools and Libraries"
+            ],
+            "keywords": [
+                "drift detection",
+                "performance monitoring",
+                "alerting",
+                "data quality",
+                "telemetry"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data Privacy Impact Assessment for AI",
+            "aliases": [
+                "AI data protection impact assessment",
+                "privacy impact assessment for models",
+                "DPIA for ML"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Assessing privacy risks related to training and inference data, documenting lawful basis, applying minimization and anonymization techniques, and recommending mitigations for model deployments.",
+            "parent_skill": "Responsible AI & model governance",
+            "related_skills": [
+                "Regulatory AI Compliance",
+                "Model Governance Implementation",
+                "AI Fairness Evaluation"
+            ],
+            "keywords": [
+                "DPIA",
+                "anonymization",
+                "pseudonymization",
+                "data minimization",
+                "privacy risk"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory AI Compliance",
+            "aliases": [
+                "AI regulatory compliance",
+                "algorithmic accountability compliance",
+                "AI policy compliance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Interpreting and applying AI-related legal and regulatory requirements, standards, and obligations (e.g., algorithmic accountability, data protection) to model development and deployment.",
+            "parent_skill": "Responsible AI & model governance",
+            "related_skills": [
+                "Data Privacy Impact Assessment for AI",
+                "Model Governance Implementation",
+                "Audit-ready Model Documentation"
+            ],
+            "keywords": [
+                "AI regulation",
+                "algorithmic accountability",
+                "compliance monitoring",
+                "regulatory reporting",
+                "governance controls"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Audit-ready Model Documentation",
+            "aliases": [
+                "model documentation for audits",
+                "model cards and datasheets",
+                "model documentation standards"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Creating and maintaining versioned, reproducible documentation (model cards, datasheets, lineage, training and evaluation records) to support audits, governance, and explainability needs.",
+            "parent_skill": "Responsible AI & model governance",
+            "related_skills": [
+                "Model Governance Implementation",
+                "Explainable AI Techniques",
+                "Regulatory AI Compliance"
+            ],
+            "keywords": [
+                "model cards",
+                "datasheets",
+                "lineage",
+                "versioning",
+                "reproducibility"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

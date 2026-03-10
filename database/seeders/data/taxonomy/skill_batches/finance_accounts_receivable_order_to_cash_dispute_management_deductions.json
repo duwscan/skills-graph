@@ -1,0 +1,289 @@
+{
+    "domain": "Finance",
+    "category": "Accounts Receivable & Order-to-Cash",
+    "subcategory": "Dispute management & deductions",
+    "skills": [
+        {
+            "canonical_name": "Accounts Receivable dispute resolution",
+            "aliases": [
+                "AR dispute resolution",
+                "invoice dispute resolution",
+                "billing dispute handling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "End-to-end management of customer invoice disputes including logging, investigation, escalation, resolution and closure to recover revenue or adjust accounts.",
+            "parent_skill": "Accounts Receivable & Order-to-Cash",
+            "related_skills": [
+                "Customer deductions management",
+                "Credit memo processing",
+                "Stakeholder communication for disputes",
+                "Root cause analysis for billing disputes"
+            ],
+            "keywords": [
+                "dispute resolution",
+                "invoice dispute",
+                "billing issue",
+                "dispute lifecycle"
+            ],
+            "common_roles": [
+                "Accounts receivable professional",
+                "Order-to-Cash specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Customer deductions management",
+            "aliases": [
+                "deduction management",
+                "customer deduction processing",
+                "short-pay & deduction handling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Identify, categorize and process customer deductions and claimbacks (e.g., pricing, quality, promotional) and work to validate and recover deducted amounts.",
+            "parent_skill": "Accounts Receivable & Order-to-Cash",
+            "related_skills": [
+                "Short payment investigation",
+                "Chargeback management",
+                "Credit memo processing",
+                "Dispute resolution"
+            ],
+            "keywords": [
+                "deductions",
+                "short payments",
+                "claimback",
+                "promotional deductions"
+            ],
+            "common_roles": [
+                "Accounts receivable professional",
+                "Order-to-Cash specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Short payment and underpayment investigation",
+            "aliases": [
+                "short-pay investigation",
+                "underpayment research",
+                "partial payment investigation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Analyze payments that do not match invoiced amounts to determine reason (e.g., deductions, unapplied cash, discounts) and identify corrective actions to resolve the discrepancy.",
+            "parent_skill": "Accounts Receivable & Order-to-Cash",
+            "related_skills": [
+                "Payment remittance matching",
+                "Invoice reconciliation & research",
+                "Customer deductions management"
+            ],
+            "keywords": [
+                "short payment",
+                "underpayment",
+                "partial payment",
+                "remittance research"
+            ],
+            "common_roles": [
+                "Accounts receivable professional",
+                "Cash application specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Credit memo processing and adjustments",
+            "aliases": [
+                "credit memo issuance",
+                "credit note processing",
+                "AR adjustments"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Create, approve and apply credit memos or adjustments to customer accounts following investigation or agreed settlements, ensuring proper accounting and customer notification.",
+            "parent_skill": "Accounts Receivable & Order-to-Cash",
+            "related_skills": [
+                "Accounts receivable dispute resolution",
+                "Revenue impact assessment",
+                "ERP dispute management"
+            ],
+            "keywords": [
+                "credit memo",
+                "credit note",
+                "account adjustment",
+                "AR credit"
+            ],
+            "common_roles": [
+                "Accounts receivable professional",
+                "Order-to-Cash specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Invoice reconciliation and research",
+            "aliases": [
+                "invoice research",
+                "billing reconciliation",
+                "invoice matching and reconciliation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Reconcile invoices to orders, shipments and contracts; investigate discrepancies using source documents and transaction histories to determine root cause and resolution path.",
+            "parent_skill": "Accounts Receivable & Order-to-Cash",
+            "related_skills": [
+                "Short payment and underpayment investigation",
+                "Root cause analysis for billing disputes",
+                "Payment remittance matching"
+            ],
+            "keywords": [
+                "invoice reconciliation",
+                "billing research",
+                "order-to-invoice matching",
+                "discrepancy investigation"
+            ],
+            "common_roles": [
+                "Accounts receivable professional",
+                "Billing analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Root cause analysis for billing disputes",
+            "aliases": [
+                "billing root cause analysis",
+                "dispute root cause identification",
+                "RCA for AR disputes"
+            ],
+            "skill_type": "process_skill",
+            "description": "Apply structured problem-solving methods to identify systemic causes of recurring billing errors or deductions and recommend process or control changes to prevent recurrence.",
+            "parent_skill": "Accounts Receivable & Order-to-Cash",
+            "related_skills": [
+                "Invoice reconciliation and research",
+                "Dispute aging & KPI reporting",
+                "Process improvement for O2C"
+            ],
+            "keywords": [
+                "root cause analysis",
+                "RCA",
+                "5 Whys",
+                "corrective action"
+            ],
+            "common_roles": [
+                "Process improvement analyst",
+                "Accounts receivable professional"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dispute aging analysis and KPI reporting",
+            "aliases": [
+                "dispute aging reporting",
+                "AR dispute metrics",
+                "dispute KPI tracking"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Track and analyze dispute aging buckets and key performance indicators (e.g., days to resolution, dispute backlog, recovery rate) to monitor team performance and prioritize remediation.",
+            "parent_skill": "Accounts Receivable & Order-to-Cash",
+            "related_skills": [
+                "Accounts receivable dispute resolution",
+                "Root cause analysis for billing disputes",
+                "Collections analytics"
+            ],
+            "keywords": [
+                "aging analysis",
+                "KPI reporting",
+                "days to resolution",
+                "dispute backlog"
+            ],
+            "common_roles": [
+                "Accounts receivable analyst",
+                "Order-to-Cash manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Payment remittance and exception matching",
+            "aliases": [
+                "remittance matching",
+                "applied cash exceptions",
+                "remittance reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Match incoming remittance advices and payments to open invoices, investigate unapplied or short-paid transactions and resolve exceptions through research and customer contact.",
+            "parent_skill": "Accounts Receivable & Order-to-Cash",
+            "related_skills": [
+                "Short payment and underpayment investigation",
+                "Invoice reconciliation and research",
+                "ERP dispute management"
+            ],
+            "keywords": [
+                "remittance",
+                "payment matching",
+                "unapplied cash",
+                "exception handling"
+            ],
+            "common_roles": [
+                "Cash application specialist",
+                "Accounts receivable professional"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ERP dispute management modules (SAP\/Oracle\/NetSuite)",
+            "aliases": [
+                "SAP Dispute Management",
+                "Oracle Receivables dispute management",
+                "NetSuite dispute tracking"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use ERP-native dispute management functionality to log, route, track and resolve AR disputes—including case management, workflow, documentation and integration with billing and collections.",
+            "parent_skill": "Accounts Receivable & Order-to-Cash",
+            "related_skills": [
+                "Accounts receivable dispute resolution",
+                "Invoice reconciliation and research",
+                "Credit memo processing and adjustments"
+            ],
+            "keywords": [
+                "ERP dispute module",
+                "SAP FSCM",
+                "Oracle AR dispute",
+                "NetSuite disputes"
+            ],
+            "common_roles": [
+                "Order-to-Cash specialist",
+                "ERP AR analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Stakeholder communication and negotiation for disputes",
+            "aliases": [
+                "customer dispute negotiation",
+                "dispute communications",
+                "customer settlement negotiation"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Communicate clearly with customers, sales, billing and internal stakeholders to present findings, negotiate settlements or credits, obtain approvals and drive timely dispute resolution.",
+            "parent_skill": "Accounts Receivable & Order-to-Cash",
+            "related_skills": [
+                "Accounts receivable dispute resolution",
+                "Customer deductions management",
+                "Credit memo processing and adjustments"
+            ],
+            "keywords": [
+                "negotiation",
+                "stakeholder communication",
+                "customer liaison",
+                "dispute settlement"
+            ],
+            "common_roles": [
+                "Accounts receivable professional",
+                "Customer billing liaison"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

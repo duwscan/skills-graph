@@ -1,0 +1,306 @@
+{
+    "domain": "F&B",
+    "category": "Bar & Alcoholic Beverage Operations",
+    "subcategory": "Classic cocktail preparation",
+    "skills": [
+        {
+            "canonical_name": "Classic cocktail recipe knowledge",
+            "aliases": [
+                "classic cocktail recipes",
+                "cocktail canon knowledge",
+                "standard cocktail recipes"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Understanding standardized recipes, ingredient proportions and common historical\/modern variants for classic cocktails (e.g., Martini, Old Fashioned, Negroni, Manhattan, Daiquiri).",
+            "parent_skill": "Classic cocktail preparation",
+            "related_skills": [
+                "Jiggering and precise measuring",
+                "Cocktail balance and flavor profiling",
+                "Garnishing and citrus finishing"
+            ],
+            "keywords": [
+                "recipes",
+                "proportions",
+                "Martini",
+                "Old Fashioned",
+                "Negroni"
+            ],
+            "common_roles": [
+                "Bartender",
+                "Mixologist",
+                "Head Bartender",
+                "Beverage Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Shaking technique",
+            "aliases": [
+                "cocktail shaking",
+                "shake technique",
+                "Boston shaking"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Performing effective shaking methods (Boston, Cobbler) to chill, dilute and aerate shaken cocktails while managing equipment and speed for consistent texture and temperature.",
+            "parent_skill": "Classic cocktail preparation",
+            "related_skills": [
+                "Ice management and dilution control",
+                "Double-straining and filtration techniques",
+                "Jiggering and precise measuring"
+            ],
+            "keywords": [
+                "Boston shaker",
+                "Cobbler shaker",
+                "aeration",
+                "chilling",
+                "dilution"
+            ],
+            "common_roles": [
+                "Bartender",
+                "Mixologist",
+                "Barback"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Stirring technique",
+            "aliases": [
+                "cocktail stirring",
+                "stir technique",
+                "spoon stirring"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Using glass or metal mixing vessels and bar spoons to gently stir spirit-forward cocktails to achieve correct dilution, clarity and temperature without over-aeration.",
+            "parent_skill": "Classic cocktail preparation",
+            "related_skills": [
+                "Ice management and dilution control",
+                "Double-straining and filtration techniques",
+                "Cocktail balance and flavor profiling"
+            ],
+            "keywords": [
+                "mixing glass",
+                "bar spoon",
+                "clarity",
+                "dilution",
+                "Martini"
+            ],
+            "common_roles": [
+                "Bartender",
+                "Mixologist",
+                "Head Bartender"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Muddling and maceration",
+            "aliases": [
+                "muddling technique",
+                "maceration",
+                "herb and fruit muddling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Extracting flavors from fresh ingredients (citrus, herbs, fruits) using appropriate muddling pressure and technique while avoiding over-extraction or bitterness.",
+            "parent_skill": "Classic cocktail preparation",
+            "related_skills": [
+                "Garnishing and citrus finishing",
+                "Syrup, cordial and bitters preparation",
+                "Cocktail balance and flavor profiling"
+            ],
+            "keywords": [
+                "muddle",
+                "mint",
+                "fruit maceration",
+                "herbs",
+                "bitterness"
+            ],
+            "common_roles": [
+                "Bartender",
+                "Mixologist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Jiggering and precise measuring",
+            "aliases": [
+                "measuring spirits",
+                "jigger technique",
+                "accurate pouring"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Accurate measurement of spirits, liqueurs and mixers using jiggers, pour spouts and scales to maintain recipe consistency and portion control.",
+            "parent_skill": "Classic cocktail preparation",
+            "related_skills": [
+                "Classic cocktail recipe knowledge",
+                "Ice management and dilution control",
+                "Cocktail balance and flavor profiling"
+            ],
+            "keywords": [
+                "jigger",
+                "measurements",
+                "pour spout",
+                "ml",
+                "oz"
+            ],
+            "common_roles": [
+                "Bartender",
+                "Head Bartender",
+                "Beverage Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ice management and dilution control",
+            "aliases": [
+                "ice handling",
+                "dilution management",
+                "ice quality control"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Selecting, handling and using appropriate ice types (cubes, spheres, crushed) and quantities to control dilution, temperature and presentation of classic cocktails.",
+            "parent_skill": "Classic cocktail preparation",
+            "related_skills": [
+                "Shaking technique",
+                "Stirring technique",
+                "Jiggering and precise measuring"
+            ],
+            "keywords": [
+                "ice spheres",
+                "crushed ice",
+                "dilution",
+                "temperature control",
+                "clear ice"
+            ],
+            "common_roles": [
+                "Bartender",
+                "Mixologist",
+                "Barback"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Garnishing and citrus finishing",
+            "aliases": [
+                "cocktail garnish",
+                "citrus twist",
+                "zesting and finishing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Preparing and applying appropriate garnishes (peels, twists, herbs, cherries) and citrus finishes to enhance aroma, flavor and visual presentation of classic cocktails.",
+            "parent_skill": "Classic cocktail preparation",
+            "related_skills": [
+                "Muddling and maceration",
+                "Classic cocktail recipe knowledge",
+                "Glassware selection and presentation"
+            ],
+            "keywords": [
+                "twist",
+                "peel",
+                "zest",
+                "garnish",
+                "orange peel"
+            ],
+            "common_roles": [
+                "Bartender",
+                "Mixologist",
+                "Head Bartender"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Syrup, cordial and bitters preparation",
+            "aliases": [
+                "homemade syrups",
+                "cordial making",
+                "bitters blending"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Formulating and preparing sugar syrups, flavored cordials and house bitters at appropriate concentrations for consistent flavoring of classic cocktails.",
+            "parent_skill": "Classic cocktail preparation",
+            "related_skills": [
+                "Classic cocktail recipe knowledge",
+                "Muddling and maceration",
+                "Cocktail balance and flavor profiling"
+            ],
+            "keywords": [
+                "simple syrup",
+                "demerara syrup",
+                "cordial",
+                "bitters",
+                "infusion"
+            ],
+            "common_roles": [
+                "Bartender",
+                "Mixologist",
+                "Beverage Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Double-straining and filtration techniques",
+            "aliases": [
+                "fine straining",
+                "double strain",
+                "cocktail filtration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Using fine strainers, chinois or tea strainers to remove fine solids and achieve a smooth, clean-textured cocktail while minimizing flavor loss.",
+            "parent_skill": "Classic cocktail preparation",
+            "related_skills": [
+                "Shaking technique",
+                "Stirring technique",
+                "Muddling and maceration"
+            ],
+            "keywords": [
+                "Hawthorne strainer",
+                "fine mesh",
+                "chinois",
+                "texture",
+                "clarity"
+            ],
+            "common_roles": [
+                "Bartender",
+                "Mixologist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cocktail balance and flavor profiling",
+            "aliases": [
+                "flavor balancing",
+                "cocktail tasting",
+                "palate profiling"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Assessing and adjusting acid, sweetness, bitterness, alcohol strength and aromatic components to achieve a well-balanced classic cocktail consistent with recipe intent.",
+            "parent_skill": "Classic cocktail preparation",
+            "related_skills": [
+                "Classic cocktail recipe knowledge",
+                "Syrup, cordial and bitters preparation",
+                "Jiggering and precise measuring"
+            ],
+            "keywords": [
+                "balance",
+                "acidity",
+                "sweetness",
+                "bitterness",
+                "aroma"
+            ],
+            "common_roles": [
+                "Bartender",
+                "Mixologist",
+                "Beverage Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

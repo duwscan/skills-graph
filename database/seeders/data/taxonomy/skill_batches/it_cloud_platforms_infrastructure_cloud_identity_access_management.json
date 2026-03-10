@@ -1,0 +1,303 @@
+{
+    "domain": "IT",
+    "category": "Cloud Platforms & Infrastructure",
+    "subcategory": "Cloud identity & access management",
+    "skills": [
+        {
+            "canonical_name": "Cloud IAM architecture design",
+            "aliases": [
+                "IAM architecture design",
+                "Identity architecture",
+                "Cloud identity architecture"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing scalable, secure identity and access management architectures for cloud environments, including authentication, authorization, federation, and lifecycle patterns.",
+            "parent_skill": "Cloud identity & access management",
+            "related_skills": [
+                "Role-Based Access Control (RBAC) design",
+                "Attribute-Based Access Control (ABAC) implementation",
+                "OAuth 2.0 \/ OpenID Connect (OIDC) implementation",
+                "Single Sign-On (SSO) architecture and implementation",
+                "Identity provisioning and SCIM integration"
+            ],
+            "keywords": [
+                "architecture",
+                "design",
+                "federation",
+                "scalability",
+                "high-availability"
+            ],
+            "common_roles": [
+                "Cloud Security Engineer",
+                "Security Architect",
+                "Identity Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "AWS Identity and Access Management (IAM)",
+            "aliases": [
+                "AWS IAM",
+                "Amazon IAM"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and managing AWS IAM resources including users, groups, roles, policies, STS, and permissions boundaries to enforce least-privilege access in AWS.",
+            "parent_skill": "Cloud identity & access management",
+            "related_skills": [
+                "IAM policy authoring for cloud platforms",
+                "Cloud IAM architecture design",
+                "Least-privilege access model implementation"
+            ],
+            "keywords": [
+                "aws",
+                "policy",
+                "roles",
+                "permissions",
+                "sts"
+            ],
+            "common_roles": [
+                "Cloud Engineer",
+                "DevOps Engineer",
+                "Cloud Security Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Azure Active Directory (Azure AD \/ Microsoft Entra) administration",
+            "aliases": [
+                "Azure AD",
+                "Microsoft Entra ID",
+                "Entra administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Managing Azure Active Directory\/Entra tenant configuration, users, groups, app registrations, conditional access, and integration with on-prem and SaaS identity providers.",
+            "parent_skill": "Cloud identity & access management",
+            "related_skills": [
+                "Conditional Access policy design",
+                "SCIM provisioning and automated user lifecycle management",
+                "Single Sign-On (SSO) architecture and implementation"
+            ],
+            "keywords": [
+                "azure",
+                "entra",
+                "conditional access",
+                "tenant",
+                "sso"
+            ],
+            "common_roles": [
+                "Identity Administrator",
+                "Cloud Security Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Google Cloud IAM administration",
+            "aliases": [
+                "GCP IAM",
+                "Google Cloud Identity and Access Management"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Creating and managing IAM roles, policies, service accounts, and resource-level permissions within Google Cloud Platform to control access and enforce least privilege.",
+            "parent_skill": "Cloud identity & access management",
+            "related_skills": [
+                "IAM policy authoring for cloud platforms",
+                "Cloud IAM architecture design",
+                "Service account and workload identity management"
+            ],
+            "keywords": [
+                "gcp",
+                "roles",
+                "policies",
+                "service account",
+                "workload identity"
+            ],
+            "common_roles": [
+                "Cloud Engineer",
+                "DevOps Engineer",
+                "Cloud Security Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "OAuth 2.0 \/ OpenID Connect (OIDC) implementation",
+            "aliases": [
+                "OAuth2",
+                "OIDC",
+                "OpenID Connect"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Implementing OAuth 2.0 authorization flows and OpenID Connect authentication, token issuance\/validation, refresh tokens, scopes, and secure client integration.",
+            "parent_skill": "Cloud identity & access management",
+            "related_skills": [
+                "Single Sign-On (SSO) architecture and implementation",
+                "JWT handling and token lifecycle management",
+                "Cloud IAM architecture design"
+            ],
+            "keywords": [
+                "oauth",
+                "oidc",
+                "tokens",
+                "jwt",
+                "authorization"
+            ],
+            "common_roles": [
+                "Identity Engineer",
+                "Application Security Engineer",
+                "Backend Developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SAML 2.0 integration",
+            "aliases": [
+                "SAML",
+                "SAML2"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Integrating Service Provider and Identity Provider using SAML 2.0 for federated authentication, including metadata exchange, assertions, signatures, and encryption.",
+            "parent_skill": "Cloud identity & access management",
+            "related_skills": [
+                "Single Sign-On (SSO) architecture and implementation",
+                "Identity federation",
+                "Cloud IAM architecture design"
+            ],
+            "keywords": [
+                "saml",
+                "federation",
+                "assertion",
+                "metadata",
+                "ssO"
+            ],
+            "common_roles": [
+                "Identity Engineer",
+                "Integration Engineer",
+                "Cloud Security Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Role-Based Access Control (RBAC) design",
+            "aliases": [
+                "RBAC",
+                "Role design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and implementing role models, role hierarchies, and entitlement mappings to assign permissions efficiently and maintain least-privilege access across cloud resources.",
+            "parent_skill": "Cloud identity & access management",
+            "related_skills": [
+                "Role mining and entitlement modeling",
+                "Least-privilege access model implementation",
+                "Identity Governance and Administration (IGA)"
+            ],
+            "keywords": [
+                "rbac",
+                "roles",
+                "entitlements",
+                "least privilege",
+                "role engineering"
+            ],
+            "common_roles": [
+                "IAM Architect",
+                "Identity Analyst",
+                "Security Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Attribute-Based Access Control (ABAC) implementation",
+            "aliases": [
+                "ABAC",
+                "Attribute-based authorization"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implementing ABAC policies that evaluate attributes (user, resource, environment) to make dynamic authorization decisions in cloud and hybrid environments.",
+            "parent_skill": "Cloud identity & access management",
+            "related_skills": [
+                "RBAC design",
+                "Policy authoring for cloud platforms",
+                "Cloud IAM architecture design"
+            ],
+            "keywords": [
+                "abac",
+                "attributes",
+                "policy",
+                "dynamic authorization",
+                "contextual access"
+            ],
+            "common_roles": [
+                "IAM Engineer",
+                "Security Architect",
+                "Access Control Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SCIM provisioning and automated user lifecycle management",
+            "aliases": [
+                "SCIM provisioning",
+                "user provisioning",
+                "automated identity lifecycle"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing SCIM-based provisioning and deprovisioning, group synchronization, and automated lifecycle workflows between identity providers and applications.",
+            "parent_skill": "Cloud identity & access management",
+            "related_skills": [
+                "Azure Active Directory (Azure AD \/ Microsoft Entra) administration",
+                "Identity Governance and Administration (IGA)",
+                "Okta administration"
+            ],
+            "keywords": [
+                "scim",
+                "provisioning",
+                "lifecycle",
+                "synchronization",
+                "deprovisioning"
+            ],
+            "common_roles": [
+                "Identity Administrator",
+                "IAM Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Privileged Access Management (PAM) operations",
+            "aliases": [
+                "PAM",
+                "privileged account management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing privileged accounts, session brokering, credential vaulting, just-in-time elevation, and monitoring controls to reduce risk from high-privilege access.",
+            "parent_skill": "Cloud identity & access management",
+            "related_skills": [
+                "Secrets management for identities",
+                "Least-privilege access model implementation",
+                "Access reviews and certification"
+            ],
+            "keywords": [
+                "pam",
+                "privileged",
+                "vault",
+                "session monitoring",
+                "jita"
+            ],
+            "common_roles": [
+                "Security Operations Engineer",
+                "IAM Administrator",
+                "Cloud Security Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

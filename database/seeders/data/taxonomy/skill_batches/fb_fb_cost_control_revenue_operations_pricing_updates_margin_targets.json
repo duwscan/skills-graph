@@ -1,0 +1,284 @@
+{
+    "domain": "F&B",
+    "category": "F&B Cost Control & Revenue Operations",
+    "subcategory": "Pricing updates & margin targets",
+    "skills": [
+        {
+            "canonical_name": "Menu engineering",
+            "aliases": [
+                "Menu item profitability analysis",
+                "Menu profitability optimization",
+                "Menu item contribution analysis"
+            ],
+            "skill_type": "process_skill",
+            "description": "Systematic analysis and design of a food\/beverage menu to maximize profitability and customer appeal by categorizing items by popularity and profitability and recommending price\/replacement decisions.",
+            "parent_skill": "Pricing updates & margin targets",
+            "related_skills": [
+                "Contribution margin analysis",
+                "Menu mix optimization & demand forecasting",
+                "Promotional pricing strategy"
+            ],
+            "keywords": [
+                "menu analysis",
+                "menu profitability",
+                "menu design",
+                "item placement",
+                "menu matrix"
+            ],
+            "common_roles": [
+                "F&B Revenue Operations",
+                "Menu Development & Optimization",
+                "Operations Management"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cost-plus pricing",
+            "aliases": [
+                "Markup pricing",
+                "Cost-based menu pricing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Setting prices by calculating total unit cost (food, labor, overhead) and applying a target markup to achieve desired margins and cover fixed costs.",
+            "parent_skill": "Pricing updates & margin targets",
+            "related_skills": [
+                "Food cost percentage control",
+                "Contribution margin analysis",
+                "POS price update implementation"
+            ],
+            "keywords": [
+                "markup",
+                "pricing formula",
+                "cost base",
+                "menu price setting"
+            ],
+            "common_roles": [
+                "F&B Revenue Operations",
+                "Finance\/Cost Control"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Price elasticity analysis",
+            "aliases": [
+                "Demand elasticity analysis",
+                "Price sensitivity analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Quantitative assessment of how changes in price affect consumer demand and sales volume to predict revenue and margin impacts of price adjustments.",
+            "parent_skill": "Pricing updates & margin targets",
+            "related_skills": [
+                "Menu mix optimization & demand forecasting",
+                "Promotional pricing strategy",
+                "Competitor price monitoring"
+            ],
+            "keywords": [
+                "elasticity",
+                "price sensitivity",
+                "demand response",
+                "price-demand curve"
+            ],
+            "common_roles": [
+                "F&B Analytics & Forecasting",
+                "Revenue Operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Contribution margin analysis",
+            "aliases": [
+                "Item-level margin analysis",
+                "Per-item gross margin calculation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculating and interpreting contribution margin per menu item (sales price minus variable costs) to inform pricing, promotions, and menu decisions.",
+            "parent_skill": "Pricing updates & margin targets",
+            "related_skills": [
+                "Menu engineering",
+                "Food cost percentage control",
+                "Cost-plus pricing"
+            ],
+            "keywords": [
+                "contribution margin",
+                "item margin",
+                "variable cost",
+                "profitability per item"
+            ],
+            "common_roles": [
+                "Finance\/Cost Control",
+                "F&B Analytics"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "POS price update implementation",
+            "aliases": [
+                "Point-of-sale price rollout",
+                "POS pricing updates",
+                "Menu price deployment"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operational execution of price changes across POS systems, digital ordering channels, and printed menus, including version control, testing, and rollback procedures.",
+            "parent_skill": "Pricing updates & margin targets",
+            "related_skills": [
+                "Pricing governance & approval workflows",
+                "Competitor price monitoring",
+                "Menu engineering"
+            ],
+            "keywords": [
+                "POS update",
+                "price deployment",
+                "digital menu update",
+                "price sync"
+            ],
+            "common_roles": [
+                "Operations Management",
+                "F&B Revenue Operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Competitor price monitoring",
+            "aliases": [
+                "Market price scanning",
+                "Competitive pricing surveillance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Ongoing collection and analysis of competitor and market pricing to identify price positioning opportunities and threats that inform price updates and promotions.",
+            "parent_skill": "Pricing updates & margin targets",
+            "related_skills": [
+                "Price elasticity analysis",
+                "Promotional pricing strategy",
+                "POS price update implementation"
+            ],
+            "keywords": [
+                "price monitoring",
+                "competitive intelligence",
+                "market scan",
+                "price benchmarking"
+            ],
+            "common_roles": [
+                "Revenue Operations",
+                "Market Research & Insights"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Promotional pricing strategy",
+            "aliases": [
+                "Discount strategy",
+                "Promotion impact modeling",
+                "Limited-time offer pricing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and evaluating temporary price promotions and discounts to drive traffic, optimize margins, and avoid cannibalization, including sequencing and timing of offers.",
+            "parent_skill": "Pricing updates & margin targets",
+            "related_skills": [
+                "Price elasticity analysis",
+                "Contribution margin analysis",
+                "Competitor price monitoring"
+            ],
+            "keywords": [
+                "promotion design",
+                "discounting",
+                "LTO",
+                "price promotion"
+            ],
+            "common_roles": [
+                "Revenue Operations",
+                "Marketing & Promotions"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food cost percentage control",
+            "aliases": [
+                "Food cost management",
+                "Food cost % targeting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Setting, tracking and managing food cost as a percentage of sales through portion control, supplier pricing management, and recipe costing to meet margin targets.",
+            "parent_skill": "Pricing updates & margin targets",
+            "related_skills": [
+                "Contribution margin analysis",
+                "Cost-plus pricing",
+                "Menu engineering"
+            ],
+            "keywords": [
+                "food cost %",
+                "portion control",
+                "recipe costing",
+                "supplier pricing"
+            ],
+            "common_roles": [
+                "Cost Control & Procurement",
+                "Kitchen Operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Menu mix optimization & demand forecasting",
+            "aliases": [
+                "Sales mix analysis",
+                "Menu sales forecasting",
+                "Item-level demand forecasting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing historical sales and demand patterns to forecast item performance and optimize the sales mix for improved revenue and margin outcomes.",
+            "parent_skill": "Pricing updates & margin targets",
+            "related_skills": [
+                "Price elasticity analysis",
+                "Menu engineering",
+                "Contribution margin analysis"
+            ],
+            "keywords": [
+                "sales mix",
+                "demand forecast",
+                "mix optimization",
+                "time-series forecasting"
+            ],
+            "common_roles": [
+                "F&B Analytics & Forecasting",
+                "Revenue Operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Pricing governance & approval workflows",
+            "aliases": [
+                "Price change governance",
+                "Pricing change control process",
+                "Price approval workflow"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and enforcing formal approval processes, audit trails and roles\/responsibilities for pricing changes to ensure accuracy, compliance and alignment with margin targets.",
+            "parent_skill": "Pricing updates & margin targets",
+            "related_skills": [
+                "POS price update implementation",
+                "Contribution margin analysis",
+                "Competitor price monitoring"
+            ],
+            "keywords": [
+                "governance",
+                "approval workflow",
+                "change control",
+                "audit trail"
+            ],
+            "common_roles": [
+                "Finance\/Cost Control",
+                "Operations Management"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

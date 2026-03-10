@@ -1,0 +1,292 @@
+{
+    "domain": "IT",
+    "category": "Systems Engineering & Endpoint Management",
+    "subcategory": "Hardware lifecycle & asset management",
+    "skills": [
+        {
+            "canonical_name": "IT asset lifecycle management",
+            "aliases": [
+                "ITAM",
+                "hardware asset management",
+                "asset lifecycle management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "End-to-end management of physical IT assets through planning, procurement, deployment, maintenance, tracking and disposal; includes policy, vendor coordination, and lifecycle governance.",
+            "parent_skill": "",
+            "related_skills": [
+                "Asset inventory and discovery",
+                "Lifecycle cost analysis and budgeting for hardware",
+                "Hardware procurement planning",
+                "Hardware decommissioning and secure disposal",
+                "Warranty and repair management",
+                "Asset inventory governance & CMDB maintenance"
+            ],
+            "keywords": [
+                "ITAM",
+                "asset lifecycle",
+                "hardware lifecycle",
+                "asset policy"
+            ],
+            "common_roles": [
+                "IT Asset Manager",
+                "Endpoint Manager",
+                "Systems Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Asset inventory and discovery",
+            "aliases": [
+                "hardware inventory management",
+                "device discovery"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintain accurate, automated records of physical devices using discovery methods (agent-based, network scans, APIs) and reconcile discovered data with inventories.",
+            "parent_skill": "IT asset lifecycle management",
+            "related_skills": [
+                "Asset inventory governance & CMDB maintenance",
+                "Endpoint provisioning and imaging",
+                "Asset tagging and tracking"
+            ],
+            "keywords": [
+                "inventory",
+                "discovery",
+                "network scan",
+                "asset reporting"
+            ],
+            "common_roles": [
+                "Systems Administrator",
+                "Endpoint Manager",
+                "IT Asset Coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Asset inventory governance & CMDB maintenance",
+            "aliases": [
+                "CMDB maintenance",
+                "asset data governance",
+                "configuration data governance"
+            ],
+            "skill_type": "process_skill",
+            "description": "Define and enforce data models, naming conventions, reconciliation processes and quality controls for asset records held in CMDBs and inventory systems.",
+            "parent_skill": "IT asset lifecycle management",
+            "related_skills": [
+                "Asset inventory and discovery",
+                "Lifecycle cost analysis and budgeting for hardware"
+            ],
+            "keywords": [
+                "CMDB",
+                "data governance",
+                "reconciliation",
+                "asset data quality"
+            ],
+            "common_roles": [
+                "CMDB Administrator",
+                "IT Asset Manager",
+                "Configuration Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Endpoint provisioning and imaging",
+            "aliases": [
+                "device imaging",
+                "OS provisioning",
+                "endpoint provisioning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Create and deploy standardized OS images, configuration baselines and enrollment processes for new and refreshed endpoints including driver packaging and automation for zero-touch provisioning.",
+            "parent_skill": "IT asset lifecycle management",
+            "related_skills": [
+                "Asset inventory and discovery",
+                "Asset refresh planning and rollout",
+                "Asset tagging and tracking"
+            ],
+            "keywords": [
+                "imaging",
+                "provisioning",
+                "golden image",
+                "zero-touch"
+            ],
+            "common_roles": [
+                "Desktop Engineer",
+                "Endpoint Administrator",
+                "Systems Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Asset tagging and tracking (barcode\/RFID)",
+            "aliases": [
+                "barcode asset tagging",
+                "RFID asset tracking",
+                "physical asset tagging"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implement and operate physical tagging workflows (barcode, RFID, serial) and tracking processes to record location, custody and status of hardware assets throughout their lifecycle.",
+            "parent_skill": "IT asset lifecycle management",
+            "related_skills": [
+                "Asset inventory and discovery",
+                "Warranty and repair management"
+            ],
+            "keywords": [
+                "barcode",
+                "RFID",
+                "asset tag",
+                "physical inventory"
+            ],
+            "common_roles": [
+                "IT Asset Coordinator",
+                "Inventory Specialist",
+                "Endpoint Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Hardware procurement planning",
+            "aliases": [
+                "device procurement planning",
+                "hardware acquisition planning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Specify device requirements, define refresh cadence, align procurement with budget and vendor selection processes, and coordinate purchase logistics for hardware fleets.",
+            "parent_skill": "IT asset lifecycle management",
+            "related_skills": [
+                "Lifecycle cost analysis and budgeting for hardware",
+                "Warranty and repair management",
+                "Asset refresh planning and rollout"
+            ],
+            "keywords": [
+                "procurement",
+                "purchase planning",
+                "refresh cycle",
+                "vendor selection"
+            ],
+            "common_roles": [
+                "Procurement Specialist",
+                "IT Asset Manager",
+                "Endpoint Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Warranty and repair management",
+            "aliases": [
+                "RMA management",
+                "repair lifecycle coordination",
+                "service repair management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Manage warranty claims, repair and RMA workflows with vendors, coordinate spares and logistics, and maintain repair records tied to asset inventory.",
+            "parent_skill": "IT asset lifecycle management",
+            "related_skills": [
+                "Asset tagging and tracking (barcode\/RFID)",
+                "Hardware decommissioning and secure disposal"
+            ],
+            "keywords": [
+                "RMA",
+                "warranty",
+                "repair",
+                "service coordination"
+            ],
+            "common_roles": [
+                "Field Technician",
+                "IT Asset Coordinator",
+                "Endpoint Support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Hardware decommissioning and secure disposal",
+            "aliases": [
+                "device decommissioning",
+                "secure hardware disposal",
+                "data sanitization"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Execute secure decommissioning processes including data erasure, chain-of-custody, asset disposition, and compliance with e-waste and data protection regulations.",
+            "parent_skill": "IT asset lifecycle management",
+            "related_skills": [
+                "Warranty and repair management",
+                "Asset tagging and tracking (barcode\/RFID)"
+            ],
+            "keywords": [
+                "decommission",
+                "data erasure",
+                "e-waste",
+                "disposition"
+            ],
+            "common_roles": [
+                "IT Asset Manager",
+                "Security Administrator",
+                "Endpoint Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Lifecycle cost analysis and budgeting for hardware",
+            "aliases": [
+                "hardware TCO analysis",
+                "total cost of ownership for devices",
+                "device lifecycle cost analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Model and forecast total cost of ownership for hardware assets, including procurement, maintenance, warranty, refresh cycles, depreciation and operational costs to inform budgeting decisions.",
+            "parent_skill": "IT asset lifecycle management",
+            "related_skills": [
+                "Hardware procurement planning",
+                "Asset inventory governance & CMDB maintenance"
+            ],
+            "keywords": [
+                "TCO",
+                "budgeting",
+                "cost model",
+                "depreciation"
+            ],
+            "common_roles": [
+                "IT Finance Analyst",
+                "IT Asset Manager",
+                "Procurement Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Asset refresh planning and rollout",
+            "aliases": [
+                "hardware refresh planning",
+                "device refresh rollout"
+            ],
+            "skill_type": "process_skill",
+            "description": "Plan and execute large-scale hardware refresh programs including staging, pilot testing, phased deployment, logistics coordination and post-rollout validation.",
+            "parent_skill": "IT asset lifecycle management",
+            "related_skills": [
+                "Endpoint provisioning and imaging",
+                "Hardware procurement planning",
+                "Asset tagging and tracking (barcode\/RFID)"
+            ],
+            "keywords": [
+                "refresh",
+                "rollout",
+                "staging",
+                "pilot"
+            ],
+            "common_roles": [
+                "Project Manager",
+                "Endpoint Manager",
+                "Deployment Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

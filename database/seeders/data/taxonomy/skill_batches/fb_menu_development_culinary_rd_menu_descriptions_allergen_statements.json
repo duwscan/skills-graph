@@ -1,0 +1,300 @@
+{
+    "domain": "F&B",
+    "category": "Menu Development & Culinary R&D",
+    "subcategory": "Menu descriptions & allergen statements",
+    "skills": [
+        {
+            "canonical_name": "Food menu copywriting",
+            "aliases": [
+                "menu description writing",
+                "menu copy",
+                "dish description writing"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Writing concise, engaging menu item descriptions that accurately convey ingredients, preparation, and sensory attributes while aligning with brand voice.",
+            "parent_skill": "Menu descriptions & allergen statements",
+            "related_skills": [
+                "Multilingual menu translation & localization",
+                "Accessible dietary and allergen communication",
+                "Menu nutrition estimation"
+            ],
+            "keywords": [
+                "menu copy",
+                "dish description",
+                "sensory language",
+                "brand tone",
+                "menu voice"
+            ],
+            "common_roles": [
+                "Menu developer",
+                "Culinary product developer",
+                "Food copywriter"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen statement writing",
+            "aliases": [
+                "allergen declaration drafting",
+                "allergen statement drafting",
+                "allergen notice writing"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Composing clear, accurate allergen statements for menus and packaging that reflect ingredient data and applicable regulatory or retailer requirements.",
+            "parent_skill": "Menu descriptions & allergen statements",
+            "related_skills": [
+                "Ingredient allergen mapping",
+                "Precautionary allergen labeling (PAL) implementation",
+                "Allergen cross-contact risk assessment"
+            ],
+            "keywords": [
+                "allergen statement",
+                "declaration",
+                "contains",
+                "may contain",
+                "allergen notice"
+            ],
+            "common_roles": [
+                "Food technologist",
+                "Regulatory affairs specialist",
+                "Menu developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ingredient allergen mapping",
+            "aliases": [
+                "ingredient-to-allergen mapping",
+                "allergen ingredient mapping",
+                "allergen ingredient cross-reference"
+            ],
+            "skill_type": "process_skill",
+            "description": "Systematically mapping recipe and formulation ingredients to regulated allergen categories and allergenic ingredients for accurate labeling and menu information.",
+            "parent_skill": "Menu descriptions & allergen statements",
+            "related_skills": [
+                "Nutrition analysis software",
+                "Allergen statement writing",
+                "Ingredient traceability mapping"
+            ],
+            "keywords": [
+                "ingredient mapping",
+                "allergen matrix",
+                "recipe analysis",
+                "food composition"
+            ],
+            "common_roles": [
+                "Product developer",
+                "Nutritionist\/dietitian",
+                "Quality assurance specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen cross-contact risk assessment",
+            "aliases": [
+                "cross-contact risk assessment",
+                "allergen cross-contact evaluation",
+                "cross-contact hazard analysis"
+            ],
+            "skill_type": "process_skill",
+            "description": "Evaluating risk of unintended allergen transfer during ingredient handling, preparation, and service to inform labeling, training, and operational controls.",
+            "parent_skill": "Menu descriptions & allergen statements",
+            "related_skills": [
+                "Precautionary allergen labeling (PAL) implementation",
+                "Allergen statement writing",
+                "Allergen cross-contact mitigation in menu design"
+            ],
+            "keywords": [
+                "cross-contact",
+                "allergen transfer",
+                "risk assessment",
+                "food handling controls"
+            ],
+            "common_roles": [
+                "Food safety manager",
+                "Quality assurance specialist",
+                "Culinary operations manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Precautionary allergen labeling (PAL) implementation",
+            "aliases": [
+                "precautionary allergen labeling implementation",
+                "may contain labeling implementation",
+                "PAL policy application"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Applying best-practice approaches for precautionary 'may contain' labeling and other advisory statements based on risk assessment, legal context, and business policy.",
+            "parent_skill": "Menu descriptions & allergen statements",
+            "related_skills": [
+                "Allergen cross-contact risk assessment",
+                "Allergen statement writing",
+                "Regulatory allergen knowledge"
+            ],
+            "keywords": [
+                "PAL",
+                "may contain",
+                "precautionary labeling",
+                "advisory statement"
+            ],
+            "common_roles": [
+                "Regulatory affairs specialist",
+                "Quality assurance specialist",
+                "Product developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Menu nutrition estimation",
+            "aliases": [
+                "nutrition analysis for menu items",
+                "menu nutritional analysis",
+                "nutritional estimation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Estimating macronutrient and calorie values for menu items using ingredient composition data and portion control to produce nutrition information for menus and labeling.",
+            "parent_skill": "Menu descriptions & allergen statements",
+            "related_skills": [
+                "Nutrition analysis software",
+                "Food menu copywriting",
+                "Ingredient allergen mapping"
+            ],
+            "keywords": [
+                "calorie calculation",
+                "macronutrients",
+                "nutrition facts",
+                "portion sizing"
+            ],
+            "common_roles": [
+                "Nutritionist\/dietitian",
+                "Product developer",
+                "Menu developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Nutrition analysis software",
+            "aliases": [
+                "nutrition calculator software",
+                "food composition database software",
+                "nutrition analysis tools"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using software and food composition databases to calculate nutrient values, generate nutrition labels, and support menu-level nutrition reporting.",
+            "parent_skill": "Menu descriptions & allergen statements",
+            "related_skills": [
+                "Menu nutrition estimation",
+                "Menu management software configuration",
+                "Ingredient allergen mapping"
+            ],
+            "keywords": [
+                "nutrition software",
+                "food database",
+                "ESHA-like tools",
+                "nutrient calculation"
+            ],
+            "common_roles": [
+                "Nutritionist\/dietitian",
+                "Product developer",
+                "Food technologist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Menu management software configuration",
+            "aliases": [
+                "menu management system configuration",
+                "menu CMS configuration",
+                "digital menu system setup"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring menu and kitchen management platforms to display ingredient lists, dietary flags, allergen notices, and localized descriptions consistently across channels.",
+            "parent_skill": "Menu descriptions & allergen statements",
+            "related_skills": [
+                "Nutrition analysis software",
+                "Multilingual menu translation & localization",
+                "Allergen statement writing"
+            ],
+            "keywords": [
+                "menu system",
+                "CMS",
+                "allegen flags",
+                "dietary filters",
+                "menu syndication"
+            ],
+            "common_roles": [
+                "Menu operations specialist",
+                "Culinary product developer",
+                "IT business analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Multilingual menu translation & localization",
+            "aliases": [
+                "menu localization",
+                "multilingual menu translation",
+                "menu copy localization"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Translating and adapting menu content, ingredient names, and allergen\/dietary statements for target languages and cultural contexts while preserving compliance and culinary meaning.",
+            "parent_skill": "Menu descriptions & allergen statements",
+            "related_skills": [
+                "Food menu copywriting",
+                "Menu management software configuration",
+                "Accessible dietary and allergen communication"
+            ],
+            "keywords": [
+                "localization",
+                "translation",
+                "multilingual menus",
+                "terminology management"
+            ],
+            "common_roles": [
+                "Localization specialist",
+                "Translator",
+                "Menu developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Accessible dietary and allergen communication",
+            "aliases": [
+                "plain language allergen communication",
+                "dietary information accessibility",
+                "clear menu allergen communication"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Crafting menu and allergen information in plain language and accessible formats (e.g., clear labels, icons, descriptive filters) to support diverse dietary needs and reduce consumer confusion.",
+            "parent_skill": "Menu descriptions & allergen statements",
+            "related_skills": [
+                "Allergen statement writing",
+                "Food menu copywriting",
+                "Multilingual menu translation & localization"
+            ],
+            "keywords": [
+                "plain language",
+                "accessibility",
+                "dietary icons",
+                "consumer clarity"
+            ],
+            "common_roles": [
+                "Menu developer",
+                "Food safety educator",
+                "Customer experience specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

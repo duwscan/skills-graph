@@ -1,0 +1,289 @@
+{
+    "domain": "Finance",
+    "category": "Internal Controls, Audit & SOX Operations",
+    "subcategory": "Process risk assessments",
+    "skills": [
+        {
+            "canonical_name": "Process Risk Identification",
+            "aliases": [
+                "risk identification",
+                "identify process risks",
+                "process risk id"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Systematic identification of events, process steps or conditions that could lead to financial, compliance, operational or reporting failures within a business process.",
+            "parent_skill": "Process risk assessments",
+            "related_skills": [
+                "Process Mapping",
+                "Inherent and Residual Risk Assessment",
+                "Risk Scoring and Prioritization"
+            ],
+            "keywords": [
+                "risk registers",
+                "risk events",
+                "threat identification",
+                "process-level risks"
+            ],
+            "common_roles": [
+                "audit practitioners",
+                "risk and compliance practitioners",
+                "process owners"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Process Mapping",
+            "aliases": [
+                "process flow mapping",
+                "swimlane mapping",
+                "value stream mapping"
+            ],
+            "skill_type": "process_skill",
+            "description": "Documenting process steps, actors, inputs\/outputs and control points to create a visual representation used for risk identification and control design.",
+            "parent_skill": "Process risk assessments",
+            "related_skills": [
+                "Process Risk Identification",
+                "Walkthroughs and Process Walkthrough Facilitation",
+                "Process Documentation Review"
+            ],
+            "keywords": [
+                "process flows",
+                "swimlanes",
+                "process documentation",
+                "as-is mapping"
+            ],
+            "common_roles": [
+                "process improvement practitioners",
+                "control owners",
+                "audit teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inherent and Residual Risk Assessment",
+            "aliases": [
+                "inherent risk assessment",
+                "residual risk assessment",
+                "risk before and after controls"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluating the level of risk present before controls (inherent) and after considering existing controls (residual) to inform control priorities and testing focus.",
+            "parent_skill": "Process risk assessments",
+            "related_skills": [
+                "Risk Scoring and Prioritization",
+                "Control Gap Analysis",
+                "Key Risk Indicator (KRI) Development"
+            ],
+            "keywords": [
+                "inherent risk",
+                "residual risk",
+                "control impact",
+                "risk magnitude"
+            ],
+            "common_roles": [
+                "risk assessment practitioners",
+                "internal controls staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Risk Scoring and Prioritization",
+            "aliases": [
+                "risk scoring",
+                "risk prioritization",
+                "risk ranking"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Applying quantitative or qualitative scales and criteria to score identified risks and prioritize remediation, testing or monitoring activities.",
+            "parent_skill": "Process risk assessments",
+            "related_skills": [
+                "Inherent and Residual Risk Assessment",
+                "Key Risk Indicator (KRI) Development",
+                "Control Gap Analysis"
+            ],
+            "keywords": [
+                "risk matrix",
+                "heat map",
+                "likelihood",
+                "impact"
+            ],
+            "common_roles": [
+                "risk and compliance practitioners",
+                "audit planners"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control Gap Analysis",
+            "aliases": [
+                "control gap assessment",
+                "gap analysis for controls",
+                "control deficiency analysis"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Assessing current control coverage against required controls, identifying deficiencies, root causes and remediation opportunities affecting process risk.",
+            "parent_skill": "Process risk assessments",
+            "related_skills": [
+                "Process Control Testing Design",
+                "Inherent and Residual Risk Assessment",
+                "Process Documentation Review"
+            ],
+            "keywords": [
+                "control deficiencies",
+                "remediation",
+                "control coverage",
+                "root cause"
+            ],
+            "common_roles": [
+                "compliance practitioners",
+                "control owners",
+                "internal audit teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Walkthroughs and Process Walkthrough Facilitation",
+            "aliases": [
+                "process walkthroughs",
+                "control walkthrough facilitation",
+                "process walkthrough"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Leading and documenting walkthroughs with process owners to validate understanding of processes, controls and key risk points used during risk assessments.",
+            "parent_skill": "Process risk assessments",
+            "related_skills": [
+                "Process Mapping",
+                "Process Documentation Review",
+                "Process Risk Identification"
+            ],
+            "keywords": [
+                "walkthrough facilitation",
+                "process confirmation",
+                "evidence collection",
+                "stakeholder interviews"
+            ],
+            "common_roles": [
+                "audit facilitators",
+                "control testing teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Process Control Testing Design",
+            "aliases": [
+                "control test design",
+                "designing control tests",
+                "test approach for controls"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing appropriate control test procedures (nature, timing, extent) aligned to assessed risks and control objectives for effective validation.",
+            "parent_skill": "Process risk assessments",
+            "related_skills": [
+                "Audit Sampling Methodology",
+                "Control Gap Analysis",
+                "Data Analytics for Risk Assessment"
+            ],
+            "keywords": [
+                "test design",
+                "control objectives",
+                "test matrix",
+                "test procedures"
+            ],
+            "common_roles": [
+                "test designers",
+                "internal controls personnel"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Audit Sampling Methodology",
+            "aliases": [
+                "statistical sampling for audit",
+                "sampling methodology",
+                "audit sampling"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Applying statistical and non-statistical sampling techniques to select representative samples for testing controls and transactions during risk assessments.",
+            "parent_skill": "Process risk assessments",
+            "related_skills": [
+                "Process Control Testing Design",
+                "Data Analytics for Risk Assessment"
+            ],
+            "keywords": [
+                "random sampling",
+                "attribute sampling",
+                "monetary unit sampling",
+                "sample size"
+            ],
+            "common_roles": [
+                "audit testing practitioners",
+                "control testing teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Key Risk Indicator (KRI) Development",
+            "aliases": [
+                "KRI development",
+                "key risk indicator design",
+                "risk metrics development"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, defining and operationalizing measurable indicators that signal changes in process risk exposures to support monitoring and escalation.",
+            "parent_skill": "Process risk assessments",
+            "related_skills": [
+                "Risk Scoring and Prioritization",
+                "Data Analytics for Risk Assessment",
+                "Inherent and Residual Risk Assessment"
+            ],
+            "keywords": [
+                "KRIs",
+                "risk metrics",
+                "thresholds",
+                "monitoring"
+            ],
+            "common_roles": [
+                "risk monitoring practitioners",
+                "control owners"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data Analytics for Risk Assessment",
+            "aliases": [
+                "data-driven risk assessment",
+                "analytics for risk",
+                "analytical testing for controls"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Using data analysis techniques (trend analysis, exception testing, anomaly detection) to identify control weaknesses, fraud indicators or process exceptions that affect risk.",
+            "parent_skill": "Process risk assessments",
+            "related_skills": [
+                "Audit Sampling Methodology",
+                "Key Risk Indicator (KRI) Development",
+                "Process Control Testing Design"
+            ],
+            "keywords": [
+                "anomaly detection",
+                "trend analysis",
+                "transaction testing",
+                "data interrogation"
+            ],
+            "common_roles": [
+                "data-enabled auditors",
+                "risk analytics practitioners"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

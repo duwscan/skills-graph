@@ -1,0 +1,307 @@
+{
+    "domain": "IT",
+    "category": "Cloud Platforms & Infrastructure",
+    "subcategory": "Infrastructure as Code (IaC)",
+    "skills": [
+        {
+            "canonical_name": "Infrastructure as Code (IaC)",
+            "aliases": [
+                "Infrastructure-as-Code",
+                "IaC"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Principles and practices for defining, provisioning and managing infrastructure via machine-readable declarative or programmatic configuration rather than manual processes.",
+            "parent_skill": "Cloud Platforms & Infrastructure",
+            "related_skills": [
+                "Terraform",
+                "AWS CloudFormation",
+                "Pulumi",
+                "Ansible for provisioning & infrastructure automation",
+                "IaC state management & drift detection",
+                "Policy-as-code & compliance testing for IaC"
+            ],
+            "keywords": [
+                "declarative provisioning",
+                "automation",
+                "idempotent",
+                "templates",
+                "manifests",
+                "provisioning pipeline"
+            ],
+            "common_roles": [
+                "DevOps Engineer",
+                "Cloud Engineer",
+                "Platform Engineer",
+                "Site Reliability Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Terraform",
+            "aliases": [
+                "HashiCorp Terraform",
+                "Terraform CLI"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Terraform (HCL-based) to author, plan, apply and manage cloud and on-prem infrastructure resources and providers as code.",
+            "parent_skill": "Infrastructure as Code (IaC)",
+            "related_skills": [
+                "Terraform module design & reuse",
+                "IaC state management & drift detection",
+                "Policy-as-code & compliance testing for IaC"
+            ],
+            "keywords": [
+                "HCL",
+                "terraform.tfvars",
+                "providers",
+                "state file",
+                "backend",
+                "plan\/apply"
+            ],
+            "common_roles": [
+                "DevOps Engineer",
+                "Infrastructure Engineer",
+                "Cloud Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Terraform module design & reuse",
+            "aliases": [
+                "Terraform modules",
+                "Terraform moduleization",
+                "reusable IaC modules"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, testing and publishing reusable Terraform modules or components to promote DRY, consistency and lifecycle governance across environments.",
+            "parent_skill": "Terraform",
+            "related_skills": [
+                "Terraform",
+                "IaC state management & drift detection",
+                "Policy-as-code & compliance testing for IaC"
+            ],
+            "keywords": [
+                "module registry",
+                "inputs\/outputs",
+                "versioning",
+                "composition",
+                "reusability"
+            ],
+            "common_roles": [
+                "Platform Engineer",
+                "DevOps Engineer",
+                "Cloud Architect",
+                "Infrastructure Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "IaC state management & drift detection",
+            "aliases": [
+                "state management",
+                "drift detection",
+                "IaC reconciliation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Managing IaC state files\/backends, locking, remote state, and processes to detect and remediate drift between declared configuration and deployed resources.",
+            "parent_skill": "Infrastructure as Code (IaC)",
+            "related_skills": [
+                "Terraform",
+                "AWS CloudFormation",
+                "Pulumi"
+            ],
+            "keywords": [
+                "state file",
+                "remote backend",
+                "state locking",
+                "refresh",
+                "drift remediation",
+                "reconcile"
+            ],
+            "common_roles": [
+                "Site Reliability Engineer",
+                "DevOps Engineer",
+                "Cloud Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Pulumi",
+            "aliases": [
+                "Pulumi SDK"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Pulumi to provision and manage cloud infrastructure using general-purpose programming languages (TypeScript, Python, Go, .NET) instead of domain-specific languages.",
+            "parent_skill": "Infrastructure as Code (IaC)",
+            "related_skills": [
+                "IaC state management & drift detection",
+                "Policy-as-code & compliance testing for IaC"
+            ],
+            "keywords": [
+                "infrastructure as code with general-purpose languages",
+                "TypeScript",
+                "Python",
+                "Go",
+                ".NET",
+                "pulumi up"
+            ],
+            "common_roles": [
+                "Cloud Engineer",
+                "DevOps Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "AWS CloudFormation",
+            "aliases": [
+                "CloudFormation",
+                "AWS CFN"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Authoring and managing AWS infrastructure via CloudFormation templates, stacks and change sets using JSON\/YAML to declare resources and dependencies.",
+            "parent_skill": "Infrastructure as Code (IaC)",
+            "related_skills": [
+                "IaC state management & drift detection",
+                "Policy-as-code & compliance testing for IaC"
+            ],
+            "keywords": [
+                "YAML",
+                "JSON",
+                "stacks",
+                "change sets",
+                "stack policies",
+                "nested stacks"
+            ],
+            "common_roles": [
+                "Cloud Engineer",
+                "AWS Engineer",
+                "DevOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Azure Resource Manager (ARM) templates",
+            "aliases": [
+                "ARM templates",
+                "Azure ARM templates",
+                "Azure Resource Manager templates"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Creating and deploying Azure infrastructure using ARM JSON templates to define resources, parameters, variables and outputs for repeatable deployments.",
+            "parent_skill": "Infrastructure as Code (IaC)",
+            "related_skills": [
+                "Bicep",
+                "IaC state management & drift detection"
+            ],
+            "keywords": [
+                "JSON templates",
+                "resource group",
+                "parameters",
+                "deployments",
+                "arm"
+            ],
+            "common_roles": [
+                "Cloud Engineer",
+                "Azure Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bicep",
+            "aliases": [
+                "Azure Bicep"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Bicep, the declarative domain-specific language for authoring Azure infrastructure that compiles to ARM templates and simplifies resource declaration and module composition.",
+            "parent_skill": "Azure Resource Manager (ARM) templates",
+            "related_skills": [
+                "Azure Resource Manager (ARM) templates",
+                "IaC moduleization & reusable modules"
+            ],
+            "keywords": [
+                "declarative language",
+                "bicep modules",
+                "transpile to ARM",
+                "az bicep"
+            ],
+            "common_roles": [
+                "Azure Engineer",
+                "Cloud Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ansible for provisioning & infrastructure automation",
+            "aliases": [
+                "Ansible Playbooks",
+                "Ansible automation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Ansible playbooks, roles and inventories to provision cloud resources, configure systems and automate infrastructure tasks in an idempotent manner.",
+            "parent_skill": "Infrastructure as Code (IaC)",
+            "related_skills": [
+                "Infrastructure as Code (IaC)",
+                "Configuration management",
+                "IaC state management & drift detection"
+            ],
+            "keywords": [
+                "YAML playbooks",
+                "roles",
+                "inventories",
+                "idempotence",
+                "ansible-playbook"
+            ],
+            "common_roles": [
+                "Automation Engineer",
+                "DevOps Engineer",
+                "Infrastructure Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Policy-as-code & compliance testing for IaC",
+            "aliases": [
+                "policy as code",
+                "infrastructure policy enforcement",
+                "IaC policy testing"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Defining, testing and enforcing organizational policies as code (e.g., OPA, Conftest, Sentinel) to validate IaC templates and prevent non-compliant deployments.",
+            "parent_skill": "Infrastructure as Code (IaC)",
+            "related_skills": [
+                "IaC state management & drift detection",
+                "Terraform",
+                "AWS CloudFormation"
+            ],
+            "keywords": [
+                "OPA",
+                "Conftest",
+                "policy enforcement",
+                "compliance testing",
+                "guardrails",
+                "pre-deploy validation"
+            ],
+            "common_roles": [
+                "Cloud Security Engineer",
+                "DevOps Engineer",
+                "Platform Engineer",
+                "Compliance Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

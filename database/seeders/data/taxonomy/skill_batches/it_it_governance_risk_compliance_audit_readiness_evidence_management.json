@@ -1,0 +1,248 @@
+{
+    "domain": "IT",
+    "category": "IT Governance, Risk & Compliance",
+    "subcategory": "Audit readiness & evidence management",
+    "skills": [
+        {
+            "canonical_name": "Audit readiness assessment",
+            "aliases": [
+                "Readiness assessment",
+                "Audit preparedness evaluation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning and performing assessments to determine an organization's preparedness for an upcoming IT audit, including gap identification, remediation tracking, and evidence readiness scoring.",
+            "parent_skill": "Audit readiness & evidence management",
+            "related_skills": [
+                "Control evidence mapping",
+                "Audit evidence collection",
+                "Records retention and disposition (IT evidence)"
+            ],
+            "keywords": [
+                "readiness",
+                "gap analysis",
+                "audit prep",
+                "remediation plan"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Audit evidence collection",
+            "aliases": [
+                "Evidence gathering",
+                "Audit artifact collection"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Systematic identification, retrieval and initial validation of documents, logs, configurations and artifacts required to demonstrate control operation for audits.",
+            "parent_skill": "Audit readiness & evidence management",
+            "related_skills": [
+                "Automated evidence collection (APIs & scripts)",
+                "Digital evidence chain of custody management",
+                "GRC platform administration"
+            ],
+            "keywords": [
+                "artifacts",
+                "evidence retrieval",
+                "log collection",
+                "configuration files"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "GRC platform administration",
+            "aliases": [
+                "GRC tool administration",
+                "GRC platform management",
+                "Audit evidence repository administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and maintaining Governance, Risk & Compliance (GRC) or audit evidence repositories, including user roles, evidence ingestion, workflows and report generation.",
+            "parent_skill": "Audit readiness & evidence management",
+            "related_skills": [
+                "Audit evidence collection",
+                "Automated evidence collection (APIs & scripts)",
+                "Audit evidence packaging and reporting"
+            ],
+            "keywords": [
+                "GRC",
+                "evidence repository",
+                "platform config",
+                "workflow"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control evidence mapping",
+            "aliases": [
+                "Control-to-evidence mapping",
+                "Control-evidence traceability"
+            ],
+            "skill_type": "process_skill",
+            "description": "Mapping controls to specific evidence items and data sources to demonstrate design and operating effectiveness during audits, including maintaining traceability matrices.",
+            "parent_skill": "Audit readiness & evidence management",
+            "related_skills": [
+                "Control-to-framework mapping",
+                "Audit evidence collection",
+                "IT General Controls (ITGC) knowledge"
+            ],
+            "keywords": [
+                "traceability",
+                "evidence mapping",
+                "control matrix",
+                "mapping"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "IT General Controls (ITGC) knowledge",
+            "aliases": [
+                "ITGC compliance knowledge",
+                "IT general controls understanding"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Understanding of common IT general controls (access, change management, backup\/recovery, logical\/physical security) and how they map to financial and operational audit requirements.",
+            "parent_skill": "Audit readiness & evidence management",
+            "related_skills": [
+                "Control evidence mapping",
+                "Audit log analysis",
+                "Audit readiness assessment"
+            ],
+            "keywords": [
+                "access controls",
+                "change management",
+                "backup",
+                "ITGC"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Audit log analysis",
+            "aliases": [
+                "Log review for audits",
+                "Audit log forensics"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing system, application and security logs to extract, validate and interpret evidence of control execution and anomalies relevant to audit objectives.",
+            "parent_skill": "Audit readiness & evidence management",
+            "related_skills": [
+                "Audit evidence collection",
+                "Automated evidence collection (APIs & scripts)",
+                "Digital evidence chain of custody management"
+            ],
+            "keywords": [
+                "log analysis",
+                "SIEM",
+                "chain of events",
+                "forensics"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Digital evidence chain of custody management",
+            "aliases": [
+                "Chain of custody for digital evidence",
+                "Evidence integrity management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Processes and controls to preserve, timestamp, document and protect the integrity of digital evidence from collection through storage, transfer and disposition for audit or legal use.",
+            "parent_skill": "Audit readiness & evidence management",
+            "related_skills": [
+                "Audit evidence collection",
+                "Records retention and disposition (IT evidence)",
+                "Audit evidence packaging and reporting"
+            ],
+            "keywords": [
+                "chain of custody",
+                "evidence integrity",
+                "hashing",
+                "timestamp"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated evidence collection (APIs & scripts)",
+            "aliases": [
+                "Automated artifact collection",
+                "Scripted evidence collection"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Developing and operating automated workflows, scripts and API integrations to collect, normalize and ingest evidence from systems and cloud services into evidence repositories or GRC tools.",
+            "parent_skill": "Audit readiness & evidence management",
+            "related_skills": [
+                "GRC platform administration",
+                "Audit log analysis",
+                "Audit evidence collection"
+            ],
+            "keywords": [
+                "automation",
+                "APIs",
+                "scripting",
+                "ingestion"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Records retention and disposition (IT evidence)",
+            "aliases": [
+                "Evidence retention policy execution",
+                "Records disposition for audit artifacts"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing and enforcing retention schedules, archival procedures and secure disposition for audit evidence and records in accordance with policy and legal requirements.",
+            "parent_skill": "Audit readiness & evidence management",
+            "related_skills": [
+                "Digital evidence chain of custody management",
+                "GRC platform administration",
+                "Audit readiness assessment"
+            ],
+            "keywords": [
+                "retention",
+                "archival",
+                "disposition",
+                "records management"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Audit evidence packaging and reporting",
+            "aliases": [
+                "Evidence submission packaging",
+                "Audit evidence reporting"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Assembling, annotating and presenting evidence packages and executive-summary reports for internal and external auditors, including documenting evidence context and acceptance criteria.",
+            "parent_skill": "Audit readiness & evidence management",
+            "related_skills": [
+                "Audit readiness assessment",
+                "Digital evidence chain of custody management",
+                "GRC platform administration"
+            ],
+            "keywords": [
+                "packaging",
+                "reporting",
+                "annotating",
+                "auditor communications"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

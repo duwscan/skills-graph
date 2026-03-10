@@ -1,0 +1,306 @@
+{
+    "domain": "IT",
+    "category": "IT Service Management & Support Operations",
+    "subcategory": "Service level management",
+    "skills": [
+        {
+            "canonical_name": "Service Level Agreement (SLA) design and negotiation",
+            "aliases": [
+                "SLA design",
+                "SLA negotiation",
+                "Service Level Agreement drafting"
+            ],
+            "skill_type": "process_skill",
+            "description": "Define, structure and negotiate contractual service commitments (SLA terms, targets, exclusions and responsibilities) with customers and suppliers.",
+            "parent_skill": "Service level management",
+            "related_skills": [
+                "Service Level Objective (SLO) definition and measurement",
+                "Vendor and third-party SLA governance",
+                "Contractual breach, remediation and penalty management"
+            ],
+            "keywords": [
+                "SLA",
+                "service targets",
+                "negotiation",
+                "service commitments",
+                "contract terms"
+            ],
+            "common_roles": [
+                "Service Level Manager",
+                "Vendor Manager",
+                "ITSM Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SLA monitoring and operational reporting",
+            "aliases": [
+                "Service level monitoring",
+                "SLA reporting",
+                "SLA performance monitoring"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Continuously track SLA adherence, aggregate incidents and requests against targets, and produce operational reports for stakeholders.",
+            "parent_skill": "Service level management",
+            "related_skills": [
+                "Service level reporting automation and dashboards",
+                "Service performance KPI definition and measurement",
+                "Incident impact classification and escalation coordination"
+            ],
+            "keywords": [
+                "monitoring",
+                "breach detection",
+                "uptime",
+                "availability",
+                "reporting"
+            ],
+            "common_roles": [
+                "IT Operations Analyst",
+                "Service Desk Manager",
+                "ITSM Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service Level Objective (SLO) definition and measurement",
+            "aliases": [
+                "SLO definition",
+                "Service objective measurement",
+                "SLO measurement"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Define measurable service objectives tied to customer outcomes and establish methods to measure and validate those objectives.",
+            "parent_skill": "Service level management",
+            "related_skills": [
+                "Service performance KPI definition and measurement",
+                "SLA design and negotiation",
+                "Baseline service measurement and trend analysis"
+            ],
+            "keywords": [
+                "SLO",
+                "objectives",
+                "measurement",
+                "SLI",
+                "service targets"
+            ],
+            "common_roles": [
+                "SRE",
+                "Service Level Manager",
+                "ITSM Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service catalog management",
+            "aliases": [
+                "Service catalogue management",
+                "service catalog maintenance",
+                "catalog governance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Create, maintain and govern a service catalog that documents available services, service descriptions, SLAs and delivery models for customers.",
+            "parent_skill": "Service level management",
+            "related_skills": [
+                "SLA design and negotiation",
+                "Service level reporting automation and dashboards",
+                "Continuous service improvement (CSI) and SLA review cycles"
+            ],
+            "keywords": [
+                "service catalog",
+                "service descriptions",
+                "service offerings",
+                "catalog governance"
+            ],
+            "common_roles": [
+                "Service Catalog Manager",
+                "ITSM Manager",
+                "Business Relationship Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Incident impact classification and escalation coordination",
+            "aliases": [
+                "incident prioritization",
+                "impact assessment and escalation",
+                "escalation coordination"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Assess incident impact against services and SLAs, determine priority, and coordinate escalations across support tiers and third parties to meet targets.",
+            "parent_skill": "Service level management",
+            "related_skills": [
+                "SLA monitoring and operational reporting",
+                "Service Level Objective (SLO) definition and measurement",
+                "Vendor and third-party SLA governance"
+            ],
+            "keywords": [
+                "impact classification",
+                "priority",
+                "escalation",
+                "incident management",
+                "response SLAs"
+            ],
+            "common_roles": [
+                "Incident Manager",
+                "Service Desk Team Lead",
+                "IT Operations Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service performance KPI definition and measurement",
+            "aliases": [
+                "service KPI definition",
+                "performance metrics for services",
+                "service metric design"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Identify and define key performance indicators (KPIs) for services, design measurement approaches, and interpret metrics to evaluate service health.",
+            "parent_skill": "Service level management",
+            "related_skills": [
+                "SLA monitoring and operational reporting",
+                "Service Level Objective (SLO) definition and measurement",
+                "Baseline service measurement and trend analysis"
+            ],
+            "keywords": [
+                "KPI",
+                "metrics",
+                "performance",
+                "measurement",
+                "service health"
+            ],
+            "common_roles": [
+                "Service Performance Analyst",
+                "ITSM Analyst",
+                "Service Level Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service level reporting automation and dashboards",
+            "aliases": [
+                "SLA dashboards",
+                "automated service reporting",
+                "service reporting automation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Automate collection, transformation and visualization of SLA and KPI data into dashboards and scheduled reports for stakeholders.",
+            "parent_skill": "Service level management",
+            "related_skills": [
+                "SLA monitoring and operational reporting",
+                "Service catalog management",
+                "Service performance KPI definition and measurement"
+            ],
+            "keywords": [
+                "dashboards",
+                "automation",
+                "reporting",
+                "visualization",
+                "data pipeline"
+            ],
+            "common_roles": [
+                "IT Reporting Analyst",
+                "Service Operations Analyst",
+                "Business Intelligence Developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Continuous service improvement (CSI) and SLA review cycles",
+            "aliases": [
+                "SLA review cycles",
+                "service improvement planning",
+                "continuous improvement for services"
+            ],
+            "skill_type": "process_skill",
+            "description": "Plan and execute periodic SLA reviews, root cause analysis and improvement initiatives to improve service levels and contractual outcomes.",
+            "parent_skill": "Service level management",
+            "related_skills": [
+                "Service catalog management",
+                "Service performance KPI definition and measurement",
+                "Vendor and third-party SLA governance"
+            ],
+            "keywords": [
+                "CSI",
+                "SLA review",
+                "root cause analysis",
+                "improvement plan",
+                "remediation"
+            ],
+            "common_roles": [
+                "Continuous Improvement Manager",
+                "Service Level Manager",
+                "Process Improvement Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor and third-party SLA governance",
+            "aliases": [
+                "third-party SLA management",
+                "vendor SLA governance",
+                "supplier SLA oversight"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Enforce, monitor and coordinate supplier and partner SLAs, managing performance reviews, consequences for breaches and cross-party escalations.",
+            "parent_skill": "Service level management",
+            "related_skills": [
+                "SLA design and negotiation",
+                "Contractual breach, remediation and penalty management",
+                "Incident impact classification and escalation coordination"
+            ],
+            "keywords": [
+                "vendor management",
+                "third-party",
+                "SLA oversight",
+                "performance review",
+                "supplier"
+            ],
+            "common_roles": [
+                "Vendor Manager",
+                "Third-Party Risk Manager",
+                "Service Level Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Contractual breach, remediation and penalty management",
+            "aliases": [
+                "SLA breach handling",
+                "penalty assessment and remediation",
+                "breach remediation management"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Identify SLA breaches, execute remediation actions, calculate contractual penalties or credits, and coordinate legal\/contract teams as required.",
+            "parent_skill": "Service level management",
+            "related_skills": [
+                "SLA design and negotiation",
+                "Vendor and third-party SLA governance",
+                "Continuous service improvement (CSI) and SLA review cycles"
+            ],
+            "keywords": [
+                "breach",
+                "remediation",
+                "penalty",
+                "service credits",
+                "contract enforcement"
+            ],
+            "common_roles": [
+                "Contract Manager",
+                "Service Level Manager",
+                "Vendor Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

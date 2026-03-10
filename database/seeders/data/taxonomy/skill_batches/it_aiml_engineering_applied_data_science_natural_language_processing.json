@@ -1,0 +1,259 @@
+{
+    "domain": "IT",
+    "category": "AI\/ML Engineering & Applied Data Science",
+    "subcategory": "Natural language processing",
+    "skills": [
+        {
+            "canonical_name": "Transformer model fine-tuning",
+            "aliases": [
+                "Fine-tuning Transformers",
+                "Fine-tune pre-trained language models",
+                "Adapter tuning",
+                "LoRA fine-tuning"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Adapting pre-trained transformer architectures (BERT, GPT, T5, etc.) to downstream NLP tasks via full or parameter-efficient fine-tuning, including techniques like adapters and LoRA.",
+            "parent_skill": "Natural language processing",
+            "related_skills": [
+                "Hugging Face Transformers (library)",
+                "Prompt engineering for large language models",
+                "Hyperparameter tuning for NLP",
+                "Model deployment for NLP"
+            ],
+            "keywords": [
+                "fine-tune",
+                "transfer learning",
+                "adapter",
+                "LoRA",
+                "pre-trained model"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Prompt engineering for large language models",
+            "aliases": [
+                "Prompt design",
+                "Instruction prompt tuning",
+                "Prompt crafting"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, iterating, and evaluating natural language prompts and few-shot contexts to elicit desired behavior from large language models (LLMs) and optimize task performance.",
+            "parent_skill": "Natural language processing",
+            "related_skills": [
+                "Transformer model fine-tuning",
+                "LLM evaluation & metrics",
+                "Retrieval-augmented generation"
+            ],
+            "keywords": [
+                "prompt",
+                "few-shot",
+                "chain-of-thought",
+                "zero-shot"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Named entity recognition (NER)",
+            "aliases": [
+                "Entity recognition",
+                "Entity extraction"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Building and deploying models and pipelines to identify and classify named entities (people, organizations, locations, etc.) in text, including annotation schema design and post-processing.",
+            "parent_skill": "Natural language processing",
+            "related_skills": [
+                "Tokenization & subword modeling",
+                "NLP data annotation & dataset curation",
+                "NER evaluation (F1, entity-level)"
+            ],
+            "keywords": [
+                "NER",
+                "entity",
+                "IOB tagging",
+                "NER pipeline"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Text classification",
+            "aliases": [
+                "Document classification",
+                "Sentiment & topic classification",
+                "Multi-label text classification"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing, training, and evaluating models that assign labels to text inputs for tasks such as sentiment analysis, topic tagging, intent detection, and multi-label categorization.",
+            "parent_skill": "Natural language processing",
+            "related_skills": [
+                "Transformer model fine-tuning",
+                "Embedding generation & semantic similarity",
+                "NLP model evaluation & metrics"
+            ],
+            "keywords": [
+                "classification",
+                "sentiment",
+                "intent",
+                "multi-label"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Embedding generation & semantic similarity",
+            "aliases": [
+                "Semantic embeddings",
+                "Vector embeddings",
+                "Sentence embedding"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Creating and using dense vector representations (embeddings) for words, sentences, or documents to power semantic search, clustering, retrieval, and similarity-based applications.",
+            "parent_skill": "Natural language processing",
+            "related_skills": [
+                "Retrieval-augmented generation",
+                "Vector search & ANN",
+                "Text classification"
+            ],
+            "keywords": [
+                "embeddings",
+                "semantic search",
+                "cosine similarity",
+                "vector"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Hugging Face Transformers (library)",
+            "aliases": [
+                "Transformers library",
+                "huggingface\/transformers"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using the Hugging Face Transformers ecosystem (transformers, datasets, tokenizers, Trainer API) to load, fine-tune, evaluate, and deploy pre-trained transformer models for NLP tasks.",
+            "parent_skill": "Natural language processing",
+            "related_skills": [
+                "Transformer model fine-tuning",
+                "Tokenization & subword modeling",
+                "Model deployment for NLP"
+            ],
+            "keywords": [
+                "huggingface",
+                "transformers",
+                "datasets",
+                "Trainer"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sequence-to-sequence modeling & attention mechanisms",
+            "aliases": [
+                "Seq2seq modeling",
+                "Encoder-decoder models",
+                "Attention-based seq2seq"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and training encoder-decoder architectures (seq2seq) and attention mechanisms for tasks such as machine translation, summarization, and conditional generation.",
+            "parent_skill": "Natural language processing",
+            "related_skills": [
+                "Transformer model fine-tuning",
+                "Tokenization & subword modeling",
+                "NLP model evaluation & metrics"
+            ],
+            "keywords": [
+                "seq2seq",
+                "encoder-decoder",
+                "attention",
+                "transformer"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tokenization & subword modeling",
+            "aliases": [
+                "Byte-Pair Encoding (BPE)",
+                "WordPiece",
+                "SentencePiece",
+                "tokenizer design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and applying tokenization strategies and subword segmentation (BPE, WordPiece, SentencePiece) to preprocess text for modern NLP models and handle vocabulary\/unknown-token issues.",
+            "parent_skill": "Natural language processing",
+            "related_skills": [
+                "Transformer model fine-tuning",
+                "Embedding generation & semantic similarity",
+                "Hugging Face Transformers (library)"
+            ],
+            "keywords": [
+                "tokenization",
+                "BPE",
+                "WordPiece",
+                "vocabulary"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "NLP model evaluation & metrics",
+            "aliases": [
+                "NLP evaluation",
+                "Perplexity, BLEU, ROUGE, F1"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Selecting and applying quantitative and qualitative evaluation methods and metrics (perplexity, BLEU, ROUGE, METEOR, F1, precision\/recall, human evaluation) to assess NLP model performance and fairness.",
+            "parent_skill": "Natural language processing",
+            "related_skills": [
+                "Text classification",
+                "Sequence-to-sequence modeling & attention mechanisms",
+                "LLM evaluation & metrics"
+            ],
+            "keywords": [
+                "BLEU",
+                "ROUGE",
+                "F1",
+                "perplexity",
+                "evaluation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "NLP data annotation & dataset curation",
+            "aliases": [
+                "Annotation guideline creation",
+                "Labeling workflows",
+                "Dataset cleaning for NLP"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Creating annotation schemas and guidelines, managing labeling workflows, ensuring quality control (IAA), and curating datasets for supervised and semi-supervised NLP model development.",
+            "parent_skill": "Natural language processing",
+            "related_skills": [
+                "Named entity recognition (NER)",
+                "Text classification",
+                "Data augmentation for NLP"
+            ],
+            "keywords": [
+                "annotation",
+                "inter-annotator agreement",
+                "dataset curation",
+                "labeling"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

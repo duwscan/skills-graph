@@ -1,0 +1,291 @@
+{
+    "domain": "Finance",
+    "category": "Financial Planning & Analysis (FP&A)",
+    "subcategory": "Cost analytics & optimization",
+    "skills": [
+        {
+            "canonical_name": "Driver-based cost modeling",
+            "aliases": [
+                "driver-based modeling",
+                "driver-based forecasting",
+                "cost driver modeling"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Building financial models that link cost behavior to underlying operational drivers (e.g., volumes, headcount, machine hours) for forecasting, planning, and scenario analysis.",
+            "parent_skill": "Cost analytics & optimization",
+            "related_skills": [
+                "Cost forecasting",
+                "Scenario & sensitivity analysis for costs",
+                "Unit economics & contribution margin analysis",
+                "Cost allocation & chargeback methodologies"
+            ],
+            "keywords": [
+                "cost drivers",
+                "driver model",
+                "activity drivers",
+                "forecast",
+                "what-if"
+            ],
+            "common_roles": [
+                "FP&A Analyst",
+                "Cost Analyst",
+                "Financial Planning & Analysis Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Activity-based costing",
+            "aliases": [
+                "ABC costing",
+                "activity based cost analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Allocating overhead and indirect costs to products, services, or customers based on the actual activities that drive those costs to improve cost accuracy and profitability analysis.",
+            "parent_skill": "Cost analytics & optimization",
+            "related_skills": [
+                "Cost allocation & chargeback methodologies",
+                "Cost-to-serve analysis",
+                "Unit economics & contribution margin analysis",
+                "Spend analytics"
+            ],
+            "keywords": [
+                "activity drivers",
+                "overhead allocation",
+                "indirect costs",
+                "cost pools"
+            ],
+            "common_roles": [
+                "Cost Analyst",
+                "Management Accountant",
+                "FP&A Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cost variance analysis",
+            "aliases": [
+                "variance analysis",
+                "budget vs actual variance analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Identifying, quantifying, and explaining differences between actual and budgeted\/standard costs through root-cause analysis to inform corrective actions and forecasting updates.",
+            "parent_skill": "Cost analytics & optimization",
+            "related_skills": [
+                "Cost forecasting",
+                "Driver-based cost modeling",
+                "Scenario & sensitivity analysis for costs"
+            ],
+            "keywords": [
+                "variance",
+                "budget variance",
+                "actual vs budget",
+                "root cause"
+            ],
+            "common_roles": [
+                "Financial Analyst",
+                "Cost Analyst",
+                "FP&A Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Zero-based budgeting",
+            "aliases": [
+                "ZBB",
+                "zero base budgeting"
+            ],
+            "skill_type": "process_skill",
+            "description": "A budgeting approach that requires building the budget from a zero base each period, justifying all expenses to identify inefficiencies and reallocate resources for cost optimization.",
+            "parent_skill": "Cost analytics & optimization",
+            "related_skills": [
+                "Cost optimization strategies",
+                "Spend analytics",
+                "Cost allocation & chargeback methodologies"
+            ],
+            "keywords": [
+                "zero-based",
+                "budget justification",
+                "cost elimination",
+                "budget rebuild"
+            ],
+            "common_roles": [
+                "FP&A Manager",
+                "Budgeting Lead",
+                "Cost Transformation Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Spend analytics",
+            "aliases": [
+                "procurement spend analysis",
+                "spend analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing procurement, vendor, and operating expenditures to identify trends, supplier concentration, savings opportunities, and areas for cost reduction or process improvement.",
+            "parent_skill": "Cost analytics & optimization",
+            "related_skills": [
+                "Supplier spend segmentation & consolidation analysis",
+                "Cost benchmarking",
+                "Procurement optimization"
+            ],
+            "keywords": [
+                "spend categories",
+                "supplier analysis",
+                "savings opportunities",
+                "spend visibility"
+            ],
+            "common_roles": [
+                "Procurement Analyst",
+                "Spend Analyst",
+                "FP&A Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cost-to-serve analysis",
+            "aliases": [
+                "cost to serve",
+                "CTS analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculating the full cost of serving customers, products, or channels (including direct, indirect and distribution costs) to inform pricing, channel strategy, and portfolio decisions.",
+            "parent_skill": "Cost analytics & optimization",
+            "related_skills": [
+                "Activity-based costing",
+                "Unit economics & contribution margin analysis",
+                "Pricing analysis"
+            ],
+            "keywords": [
+                "customer profitability",
+                "channel cost",
+                "end-to-end cost",
+                "service cost"
+            ],
+            "common_roles": [
+                "Commercial Finance Analyst",
+                "Pricing Analyst",
+                "Cost Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Unit economics & contribution margin analysis",
+            "aliases": [
+                "unit economics analysis",
+                "contribution margin analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Assessing per-unit revenue, variable and fixed cost contributions to evaluate profitability drivers, break-even points, and the financial impact of operational changes.",
+            "parent_skill": "Cost analytics & optimization",
+            "related_skills": [
+                "Cost-to-serve analysis",
+                "Driver-based cost modeling",
+                "Pricing elasticity analysis"
+            ],
+            "keywords": [
+                "contribution margin",
+                "break-even",
+                "unit cost",
+                "marginal cost"
+            ],
+            "common_roles": [
+                "FP&A Analyst",
+                "Product Finance Analyst",
+                "Business Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Scenario & sensitivity analysis for costs",
+            "aliases": [
+                "cost scenario analysis",
+                "sensitivity analysis"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and executing scenario and sensitivity tests on cost drivers and assumptions to quantify upside\/downside risk and support decision-making under uncertainty.",
+            "parent_skill": "Cost analytics & optimization",
+            "related_skills": [
+                "Driver-based cost modeling",
+                "Cost forecasting",
+                "Cost variance analysis"
+            ],
+            "keywords": [
+                "what-if",
+                "sensitivity",
+                "scenario planning",
+                "stress testing"
+            ],
+            "common_roles": [
+                "Financial Planning & Analysis Manager",
+                "Risk Analyst",
+                "FP&A Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cost allocation & chargeback methodologies",
+            "aliases": [
+                "cost allocation",
+                "chargeback models"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and applying methods to allocate shared costs across business units, products, or services (direct allocation, step-down, reciprocal, chargebacks) to reflect true consumption and accountability.",
+            "parent_skill": "Cost analytics & optimization",
+            "related_skills": [
+                "Activity-based costing",
+                "Internal cost recovery",
+                "Financial controlling"
+            ],
+            "keywords": [
+                "allocation bases",
+                "chargeback",
+                "reciprocal method",
+                "step-down"
+            ],
+            "common_roles": [
+                "Controller",
+                "Cost Accountant",
+                "FP&A Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Supplier spend segmentation & consolidation analysis",
+            "aliases": [
+                "supplier segmentation",
+                "supplier consolidation analysis"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Segmenting suppliers by spend, risk, and strategic value and analyzing consolidation opportunities to reduce unit costs, improve terms, and streamline procurement processes.",
+            "parent_skill": "Cost analytics & optimization",
+            "related_skills": [
+                "Spend analytics",
+                "Procurement optimization",
+                "Supplier negotiation analytics"
+            ],
+            "keywords": [
+                "supplier segmentation",
+                "consolidation",
+                "supplier rationalization",
+                "strategic sourcing"
+            ],
+            "common_roles": [
+                "Procurement Analyst",
+                "Sourcing Manager",
+                "Cost Optimization Lead"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

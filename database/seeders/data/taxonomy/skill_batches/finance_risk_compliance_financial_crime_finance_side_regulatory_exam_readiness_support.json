@@ -1,0 +1,318 @@
+{
+    "domain": "Finance",
+    "category": "Risk, Compliance & Financial Crime (Finance-Side)",
+    "subcategory": "Regulatory exam readiness support",
+    "skills": [
+        {
+            "canonical_name": "Regulatory exam readiness planning",
+            "aliases": [
+                "exam readiness planning",
+                "regulatory examination planning",
+                "exam preparation planning",
+                "regulatory exam program planning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Developing structured plans, scopes, timelines, resource allocations and governance for preparing for regulatory examinations.",
+            "parent_skill": "Regulatory exam readiness support",
+            "related_skills": [
+                "Regulatory gap analysis for examinations",
+                "Remediation planning and tracking for examination findings",
+                "Mock regulatory exams and tabletop exercises",
+                "Evidence and documentation management for exams"
+            ],
+            "keywords": [
+                "planning",
+                "governance",
+                "timeline",
+                "scope",
+                "resource allocation",
+                "examination calendar"
+            ],
+            "common_roles": [
+                "Compliance Manager",
+                "Regulatory Program Manager",
+                "Exam Readiness Lead"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory gap analysis for examinations",
+            "aliases": [
+                "exam gap analysis",
+                "regulatory readiness assessment",
+                "readiness gap assessment",
+                "controls gap analysis for exams"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Assessing current policies, controls, processes and evidence against regulatory expectations to identify deficiencies and areas requiring remediation prior to an exam.",
+            "parent_skill": "Regulatory exam readiness support",
+            "related_skills": [
+                "Regulatory exam readiness planning",
+                "Control testing design for regulatory exams",
+                "Policy and procedure review and update for exam compliance"
+            ],
+            "keywords": [
+                "gap analysis",
+                "control mapping",
+                "benchmarking",
+                "risk assessment",
+                "compliance assessment"
+            ],
+            "common_roles": [
+                "Compliance Analyst",
+                "Risk Manager",
+                "Internal Audit"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Mock regulatory exams and tabletop exercises",
+            "aliases": [
+                "mock exams",
+                "tabletop exercises",
+                "simulated regulatory exams",
+                "practice examiner sessions"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and conducting simulated examinations and scenario-based tabletop exercises to test controls, decision-making and examiner interactions under realistic conditions.",
+            "parent_skill": "Regulatory exam readiness support",
+            "related_skills": [
+                "Regulatory exam readiness planning",
+                "Examiner engagement and stakeholder communication",
+                "Remediation planning and tracking for examination findings"
+            ],
+            "keywords": [
+                "simulation",
+                "tabletop",
+                "dry run",
+                "scenario testing",
+                "readiness testing"
+            ],
+            "common_roles": [
+                "Exam Readiness Lead",
+                "Compliance Officer",
+                "Internal Audit"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Evidence and documentation management for exams",
+            "aliases": [
+                "exam evidence management",
+                "documentation preparation for regulators",
+                "evidence collection for exams",
+                "regulatory evidence indexing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Collecting, organizing, indexing, version-controlling and producing supporting documents and artifacts requested by regulators during examinations.",
+            "parent_skill": "Regulatory exam readiness support",
+            "related_skills": [
+                "Regulatory exam readiness planning",
+                "Regulatory response drafting and submission",
+                "Data sampling and analytics for regulatory exams"
+            ],
+            "keywords": [
+                "document management",
+                "evidence repository",
+                "indexing",
+                "version control",
+                "audit trail"
+            ],
+            "common_roles": [
+                "Compliance Coordinator",
+                "Regulatory Operations Specialist",
+                "Records Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory response drafting and submission",
+            "aliases": [
+                "regulatory response writing",
+                "exam response drafting",
+                "formal examiner response preparation",
+                "regulatory correspondence drafting"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Preparing clear, accurate, and regulator-tailored written responses, submissions and cover documentation addressing examiner requests, findings and inquiries.",
+            "parent_skill": "Regulatory exam readiness support",
+            "related_skills": [
+                "Evidence and documentation management for exams",
+                "Examiner engagement and stakeholder communication",
+                "Remediation planning and tracking for examination findings"
+            ],
+            "keywords": [
+                "regulatory correspondence",
+                "response letters",
+                "examination submissions",
+                "formal replies",
+                "regulatory communication"
+            ],
+            "common_roles": [
+                "Compliance Officer",
+                "Regulatory Affairs Analyst",
+                "Legal Counsel (compliance)"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Remediation planning and tracking for examination findings",
+            "aliases": [
+                "remediation tracking",
+                "findings remediation management",
+                "corrective action planning",
+                "remediation program management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Developing, prioritizing, implementing and tracking corrective action plans in response to examination findings, including root-cause analysis and metrics reporting.",
+            "parent_skill": "Regulatory exam readiness support",
+            "related_skills": [
+                "Regulatory gap analysis for examinations",
+                "Regulatory response drafting and submission",
+                "Control testing design for regulatory exams"
+            ],
+            "keywords": [
+                "corrective action",
+                "remediation plan",
+                "issue tracking",
+                "root cause analysis",
+                "status reporting"
+            ],
+            "common_roles": [
+                "Remediation Manager",
+                "Compliance Manager",
+                "Project Manager (compliance)"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control testing design for regulatory exams",
+            "aliases": [
+                "compliance testing design for regulatory exams",
+                "control testing for examinations",
+                "test plan design for exams"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing testing programs and procedures to evaluate the operating effectiveness of controls that regulators will examine, including test objectives, evidence requirements and sampling approach.",
+            "parent_skill": "Regulatory exam readiness support",
+            "related_skills": [
+                "Regulatory gap analysis for examinations",
+                "Data sampling and analytics for regulatory exams",
+                "Remediation planning and tracking for examination findings"
+            ],
+            "keywords": [
+                "test design",
+                "control assessment",
+                "test procedures",
+                "evidence criteria",
+                "test objectives"
+            ],
+            "common_roles": [
+                "Internal Auditor",
+                "Compliance Testing Lead",
+                "Control Assurance Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Examiner engagement and stakeholder communication",
+            "aliases": [
+                "examiner relations",
+                "regulatory examiner engagement",
+                "stakeholder liaison during exams",
+                "exam communications management"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Managing interactions with regulators and internal stakeholders during an examination, including briefings, status updates, inquiry management and maintaining professional relationships with examiners.",
+            "parent_skill": "Regulatory exam readiness support",
+            "related_skills": [
+                "Mock regulatory exams and tabletop exercises",
+                "Regulatory response drafting and submission",
+                "Regulatory exam readiness planning"
+            ],
+            "keywords": [
+                "stakeholder management",
+                "examiner briefings",
+                "interface",
+                "issue escalation",
+                "relationship management"
+            ],
+            "common_roles": [
+                "Head of Compliance",
+                "Exam Readiness Lead",
+                "Regulatory Liaison"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data sampling and analytics for regulatory exams",
+            "aliases": [
+                "exam data sampling",
+                "analytics for examination evidence",
+                "data extraction and sampling for exams",
+                "population sampling for compliance testing"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Extracting, sampling and analyzing data sets to produce representative evidence and metrics required for testing control effectiveness and responding to examiner requests.",
+            "parent_skill": "Regulatory exam readiness support",
+            "related_skills": [
+                "Control testing design for regulatory exams",
+                "Evidence and documentation management for exams",
+                "Regulatory gap analysis for examinations"
+            ],
+            "keywords": [
+                "data extraction",
+                "sampling methodology",
+                "statistical sampling",
+                "data analysis",
+                "evidence generation"
+            ],
+            "common_roles": [
+                "Data Analyst (compliance)",
+                "Compliance Testing Analyst",
+                "Forensic Data Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Policy and procedure review and update for exam compliance",
+            "aliases": [
+                "policy review for regulatory exams",
+                "procedure update for exam readiness",
+                "policy and SOP revision for compliance",
+                "regulatory policy alignment"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Reviewing, revising and aligning policies, standard operating procedures and governance documents to ensure they meet current regulatory expectations and evidence requirements for examinations.",
+            "parent_skill": "Regulatory exam readiness support",
+            "related_skills": [
+                "Regulatory gap analysis for examinations",
+                "Remediation planning and tracking for examination findings",
+                "Regulatory response drafting and submission"
+            ],
+            "keywords": [
+                "policy review",
+                "SOP update",
+                "document governance",
+                "regulatory alignment",
+                "controls documentation"
+            ],
+            "common_roles": [
+                "Policy Manager",
+                "Compliance Officer",
+                "Regulatory Affairs Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

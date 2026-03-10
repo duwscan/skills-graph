@@ -1,0 +1,294 @@
+{
+    "domain": "F&B",
+    "category": "Baking, Pastry & Desserts",
+    "subcategory": "Dessert assembly & plating",
+    "skills": [
+        {
+            "canonical_name": "Piping and decorative techniques",
+            "aliases": [
+                "decorative piping",
+                "pastry bag techniques",
+                "piping nozzle work"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Controlled use of pastry bags, nozzles and tips to pipe creams, buttercreams, meringues, mousses and decorative elements (rosettes, borders, writing, ruffles) with consistent pressure and finish.",
+            "parent_skill": "Dessert assembly & plating",
+            "related_skills": [
+                "Garnish selection and finishing touches",
+                "Plating composition and visual design",
+                "Use of molds and ring usage for desserts"
+            ],
+            "keywords": [
+                "pastry bag",
+                "nozzle",
+                "tip sizes",
+                "rosette",
+                "buttercream"
+            ],
+            "common_roles": [
+                "pastry kitchen staff",
+                "dessert station"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Chocolate tempering and molding",
+            "aliases": [
+                "tempering chocolate",
+                "chocolate molding",
+                "couverture handling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Techniques for melting, tempering (seeding, tabling or machine methods), molding, enrobing and finishing chocolate components to achieve correct temper, snap, sheen and release from molds.",
+            "parent_skill": "Dessert assembly & plating",
+            "related_skills": [
+                "Use of molds and ring usage for desserts",
+                "Garnish selection and finishing touches"
+            ],
+            "keywords": [
+                "tempering",
+                "couverture",
+                "molding",
+                "shiny finish",
+                "snap"
+            ],
+            "common_roles": [
+                "pastry kitchen staff",
+                "chocolate station"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Mirror glaze preparation and finishing",
+            "aliases": [
+                "mirror glaze",
+                "glace miroir",
+                "glaze pouring"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Preparation, coloring and temperature-controlled pouring of mirror glazes to achieve a smooth, high-gloss finish on mousse cakes and plated elements, including troubleshooting common defects (bubbles, streaks).",
+            "parent_skill": "Dessert assembly & plating",
+            "related_skills": [
+                "Cold-set and gelatin-based setting techniques",
+                "Plating composition and visual design",
+                "Temperature control for plated desserts"
+            ],
+            "keywords": [
+                "mirror glaze",
+                "shiny finish",
+                "glaze temp",
+                "pouring technique"
+            ],
+            "common_roles": [
+                "pastry kitchen staff",
+                "specialty dessert team"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Plating composition and visual design",
+            "aliases": [
+                "dessert plating design",
+                "plate composition",
+                "visual dessert presentation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing plated desserts with attention to balance, focal point, color, height, negative space and symmetry to create visually appealing, photographable presentations that meet style and portioning guidelines.",
+            "parent_skill": "Dessert assembly & plating",
+            "related_skills": [
+                "Piping and decorative techniques",
+                "Sauce and coulis application techniques",
+                "Garnish selection and finishing touches"
+            ],
+            "keywords": [
+                "composition",
+                "negative space",
+                "focal point",
+                "height",
+                "color balance"
+            ],
+            "common_roles": [
+                "pastry kitchen staff",
+                "dessert station"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sauce and coulis application techniques",
+            "aliases": [
+                "sauce plating",
+                "coulis application",
+                "sauce dotting and streaking"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Controlled application of sauces, coulis and reductions using spoons, squeeze bottles, brushes and sieves to create dots, streaks, pools and textures that complement plated desserts without overpowering them.",
+            "parent_skill": "Dessert assembly & plating",
+            "related_skills": [
+                "Plating composition and visual design",
+                "Portioning and yield control for desserts",
+                "Temperature control for plated desserts"
+            ],
+            "keywords": [
+                "squeeze bottle",
+                "spoon smear",
+                "coulis",
+                "reduction",
+                "dotting"
+            ],
+            "common_roles": [
+                "pastry kitchen staff",
+                "dessert station"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Molds and ring usage for desserts",
+            "aliases": [
+                "ring molds",
+                "silicone molds",
+                "dessert rings and forms"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Selection, lining, filling, demolding and cleaning of metal rings, silicone molds, and acetate forms to produce consistent shapes, clean edges and layered constructions for plated desserts.",
+            "parent_skill": "Dessert assembly & plating",
+            "related_skills": [
+                "Chocolate tempering and molding",
+                "Cold-set and gelatin-based setting techniques",
+                "Piping and decorative techniques"
+            ],
+            "keywords": [
+                "ring mold",
+                "silicone form",
+                "acetate",
+                "demolding",
+                "clean edge"
+            ],
+            "common_roles": [
+                "pastry kitchen staff",
+                "dessert production"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cold-set and gelatin-based setting techniques",
+            "aliases": [
+                "gelatin setting",
+                "agar-agar techniques",
+                "mousse and mousse-set"
+            ],
+            "skill_type": "process_skill",
+            "description": "Knowledge and application of gelatin, agar, pectin and stabilizers including bloom times, concentration, temperature control and setting behavior to create stable mousses, bavarois, gels and layered dessert textures.",
+            "parent_skill": "Dessert assembly & plating",
+            "related_skills": [
+                "Mirror glaze preparation and finishing",
+                "Molds and ring usage for desserts",
+                "Temperature control for plated desserts"
+            ],
+            "keywords": [
+                "gelatin bloom",
+                "agar",
+                "stabilizers",
+                "setting temp",
+                "mousse"
+            ],
+            "common_roles": [
+                "pastry kitchen staff",
+                "dessert lab"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Portioning and yield control for desserts",
+            "aliases": [
+                "portion control",
+                "consistent plating",
+                "dessert yield management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Techniques for weighing, scooping and dividing dessert elements to ensure consistent portion sizes, plating times, cost control and predictable service yields across covers and events.",
+            "parent_skill": "Dessert assembly & plating",
+            "related_skills": [
+                "Sauce and coulis application techniques",
+                "Temperature control for plated desserts"
+            ],
+            "keywords": [
+                "weighing",
+                "scoop sizes",
+                "yield",
+                "cost control",
+                "consistency"
+            ],
+            "common_roles": [
+                "pastry kitchen staff",
+                "banquet pastry team"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Garnish selection and finishing touches",
+            "aliases": [
+                "micro-herb garnishing",
+                "edible garnish preparation",
+                "final dessert finishing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Preparing and applying final decorative elements—caramels, tuiles, spun sugar, candied fruit, edible flowers, micro-herbs and dusts—ensuring flavor, texture and visual harmony without compromising safety or stability.",
+            "parent_skill": "Dessert assembly & plating",
+            "related_skills": [
+                "Piping and decorative techniques",
+                "Chocolate tempering and molding",
+                "Plating composition and visual design"
+            ],
+            "keywords": [
+                "tuille",
+                "spun sugar",
+                "edible flowers",
+                "micro herbs",
+                "candied fruit"
+            ],
+            "common_roles": [
+                "pastry kitchen staff",
+                "dessert station"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Temperature control for plated desserts",
+            "aliases": [
+                "cold chain management",
+                "dessert refrigeration control",
+                "holding temp management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing holding, display and service temperatures (blast chilling, refrigeration, warming and transport) for plated desserts to preserve texture, appearance and food safety during plating and service windows.",
+            "parent_skill": "Dessert assembly & plating",
+            "related_skills": [
+                "Cold-set and gelatin-based setting techniques",
+                "Mirror glaze preparation and finishing",
+                "Portioning and yield control for desserts"
+            ],
+            "keywords": [
+                "blast chiller",
+                "holding temps",
+                "service window",
+                "transport",
+                "meltdown prevention"
+            ],
+            "common_roles": [
+                "pastry kitchen staff",
+                "banquet pastry team"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

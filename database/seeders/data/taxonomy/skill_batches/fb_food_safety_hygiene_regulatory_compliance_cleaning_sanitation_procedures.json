@@ -1,0 +1,308 @@
+{
+    "domain": "F&B",
+    "category": "Food Safety, Hygiene & Regulatory Compliance",
+    "subcategory": "Cleaning & sanitation procedures",
+    "skills": [
+        {
+            "canonical_name": "Sanitation Standard Operating Procedure (SSOP) implementation",
+            "aliases": [
+                "SSOP execution",
+                "Sanitation SOP implementation",
+                "Sanitation standard operating procedures"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Apply, follow and enforce written Sanitation Standard Operating Procedures to ensure cleaning tasks meet regulatory and HACCP-based requirements.",
+            "parent_skill": "Cleaning & sanitation procedures",
+            "related_skills": [
+                "Cleaning schedule development & recordkeeping",
+                "Food-contact surface sanitation",
+                "PPE use & hygiene compliance monitoring"
+            ],
+            "keywords": [
+                "SSOP",
+                "sanitation SOP",
+                "procedures",
+                "HACCP support",
+                "compliance"
+            ],
+            "common_roles": [
+                "sanitation staff",
+                "quality assurance",
+                "food safety supervisor",
+                "kitchen staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cleaning chemical selection & dilution management",
+            "aliases": [
+                "chemical dosing",
+                "chemical dilution calculation",
+                "detergent selection"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Select appropriate cleaning agents for surfaces and soils, calculate safe\/effective dilutions, manage storage and compatibility, and control dosing systems.",
+            "parent_skill": "Cleaning & sanitation procedures",
+            "related_skills": [
+                "Sanitizer and disinfectant application techniques",
+                "Cleaning equipment operation & maintenance",
+                "Chemical safety & hazard communication"
+            ],
+            "keywords": [
+                "dilution",
+                "concentration",
+                "detergent",
+                "alkaline",
+                "acid cleaners",
+                "compatibility"
+            ],
+            "common_roles": [
+                "sanitation technician",
+                "kitchen staff",
+                "maintenance staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sanitizer and disinfectant application techniques",
+            "aliases": [
+                "disinfectant application",
+                "sanitiser application",
+                "contact time control"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Apply sanitizers and disinfectants using correct methods (spray, foam, wipe), concentrations and contact times for food-contact and non-food-contact surfaces to achieve microbial control.",
+            "parent_skill": "Cleaning & sanitation procedures",
+            "related_skills": [
+                "Cleaning chemical selection & dilution management",
+                "Food-contact surface sanitation",
+                "Environmental monitoring & swab testing"
+            ],
+            "keywords": [
+                "contact time",
+                "ppm",
+                "spray",
+                "foam",
+                "wipe",
+                "sanitiser"
+            ],
+            "common_roles": [
+                "sanitation staff",
+                "line cleaners",
+                "kitchen staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cleaning equipment operation & maintenance",
+            "aliases": [
+                "floor scrubber operation",
+                "pressure washer operation",
+                "CIP system operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operate and perform routine maintenance on cleaning equipment (e.g., floor scrubbers, pressure washers, steam cleaners, CIP systems) and troubleshoot basic faults to maintain cleaning effectiveness.",
+            "parent_skill": "Cleaning & sanitation procedures",
+            "related_skills": [
+                "Cleaning chemical selection & dilution management",
+                "Biofilm control & removal techniques",
+                "Cleaning schedule development & recordkeeping"
+            ],
+            "keywords": [
+                "CIP",
+                "pressure washer",
+                "floor scrubber",
+                "equipment maintenance",
+                "calibration"
+            ],
+            "common_roles": [
+                "maintenance staff",
+                "sanitation technician",
+                "kitchen staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Environmental monitoring & swab testing",
+            "aliases": [
+                "ATP testing",
+                "swab testing",
+                "environmental microbiology monitoring"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Collect environmental swabs and perform\/interpret rapid tests (ATP, microbiological swabs), analyze results against action limits and recommend corrective sanitation actions.",
+            "parent_skill": "Cleaning & sanitation procedures",
+            "related_skills": [
+                "Sanitizer and disinfectant application techniques",
+                "SSOP implementation",
+                "Biofilm control & removal techniques"
+            ],
+            "keywords": [
+                "ATP",
+                "microbial swab",
+                "environmental monitoring",
+                "action limits",
+                "trim testing"
+            ],
+            "common_roles": [
+                "quality assurance",
+                "food safety technician",
+                "lab technician"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-contamination prevention procedures",
+            "aliases": [
+                "cross-contamination control",
+                "segregation procedures",
+                "color-coding systems"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and implement procedures to prevent cross-contamination through zoning, sequencing of tasks, color-coded tools, dedicated equipment and material flow controls.",
+            "parent_skill": "Cleaning & sanitation procedures",
+            "related_skills": [
+                "Food-contact surface sanitation",
+                "Cleaning schedule development & recordkeeping",
+                "PPE use & hygiene compliance monitoring"
+            ],
+            "keywords": [
+                "zoning",
+                "color-coding",
+                "segregation",
+                "sequencing",
+                "contamination control"
+            ],
+            "common_roles": [
+                "kitchen staff",
+                "quality assurance",
+                "production supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cleaning schedule development & recordkeeping",
+            "aliases": [
+                "sanitation scheduling",
+                "cleaning logs",
+                "sanitation record management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Create, implement and maintain cleaning schedules, checklists and digital logs to ensure traceability, accountability and regulatory audit readiness.",
+            "parent_skill": "Cleaning & sanitation procedures",
+            "related_skills": [
+                "SSOP implementation",
+                "Environmental monitoring & swab testing",
+                "Cleaning equipment operation & maintenance"
+            ],
+            "keywords": [
+                "schedules",
+                "checklists",
+                "logs",
+                "traceability",
+                "audit"
+            ],
+            "common_roles": [
+                "sanitation supervisor",
+                "quality assurance",
+                "operations coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Biofilm control & removal techniques",
+            "aliases": [
+                "biofilm removal",
+                "enzymatic cleaner use",
+                "drainline biofilm control"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Identify, prevent and remove biofilms from equipment and drains using mechanical action, appropriate chemistries (enzymatic or oxidizing agents) and CIP parameter adjustments.",
+            "parent_skill": "Cleaning & sanitation procedures",
+            "related_skills": [
+                "Cleaning equipment operation & maintenance",
+                "Environmental monitoring & swab testing",
+                "Sanitizer and disinfectant application techniques"
+            ],
+            "keywords": [
+                "biofilm",
+                "enzymes",
+                "CIP",
+                "drain cleaning",
+                "mechanical removal"
+            ],
+            "common_roles": [
+                "maintenance staff",
+                "sanitation technician",
+                "quality assurance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Waste segregation & disposal for food establishments",
+            "aliases": [
+                "waste management (food service)",
+                "grease trap management",
+                "organic waste segregation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implement waste segregation, handling and disposal procedures (organic, recyclable, hazardous, grease) to reduce contamination risks and comply with local waste regulations.",
+            "parent_skill": "Cleaning & sanitation procedures",
+            "related_skills": [
+                "Cross-contamination prevention procedures",
+                "Cleaning schedule development & recordkeeping"
+            ],
+            "keywords": [
+                "segregation",
+                "grease trap",
+                "waste streams",
+                "disposal",
+                "hazardous waste"
+            ],
+            "common_roles": [
+                "kitchen staff",
+                "facilities staff",
+                "sanitation staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "PPE use & hygiene compliance monitoring",
+            "aliases": [
+                "personal protective equipment compliance",
+                "handwashing monitoring",
+                "hygiene enforcement"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Select and enforce correct PPE and personal hygiene practices (handwashing, glove use, hair restraints), monitor adherence and take corrective actions to maintain hygiene standards.",
+            "parent_skill": "Cleaning & sanitation procedures",
+            "related_skills": [
+                "SSOP implementation",
+                "Cross-contamination prevention procedures"
+            ],
+            "keywords": [
+                "PPE",
+                "hand hygiene",
+                "glove policy",
+                "hairnets",
+                "compliance monitoring"
+            ],
+            "common_roles": [
+                "food safety supervisor",
+                "kitchen manager",
+                "sanitation supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

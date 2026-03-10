@@ -1,0 +1,286 @@
+{
+    "domain": "Finance",
+    "category": "Finance Data, Systems & Automation",
+    "subcategory": "Robotic process automation (finance)",
+    "skills": [
+        {
+            "canonical_name": "RPA development",
+            "aliases": [
+                "robotic process automation development",
+                "automation workflow development",
+                "automation script development"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and building automated workflows within RPA platforms including activity sequencing, data transformation, selectors\/element targeting, variables, exception handling and debugging.",
+            "parent_skill": "Robotic process automation (finance)",
+            "related_skills": [
+                "UiPath platform",
+                "Automation Anywhere platform",
+                "Blue Prism platform",
+                "Intelligent document processing (finance)",
+                "RPA testing and quality assurance",
+                "ERP & accounting system integration for RPA",
+                "RPA solution architecture"
+            ],
+            "keywords": [
+                "workflow development",
+                "selectors",
+                "variables",
+                "debugging",
+                "automation scripts"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "UiPath platform",
+            "aliases": [
+                "UiPath Studio",
+                "UiPath Orchestrator",
+                "UiPath platform"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using the UiPath ecosystem (Studio, Orchestrator, Robots) to develop, deploy, schedule and monitor finance automation workflows.",
+            "parent_skill": "Robotic process automation (finance)",
+            "related_skills": [
+                "RPA development",
+                "RPA testing and quality assurance",
+                "RPA solution architecture",
+                "RPA governance and controls (finance)",
+                "Intelligent document processing (finance)"
+            ],
+            "keywords": [
+                "UiPath",
+                "Studio",
+                "Orchestrator",
+                "robots",
+                "scheduling"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automation Anywhere platform",
+            "aliases": [
+                "Automation Anywhere",
+                "Automation Anywhere Enterprise",
+                "AA platform"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Developing and operating automation solutions using Automation Anywhere's platform components (Control Room, Bots, Bot Runner) for finance processes.",
+            "parent_skill": "Robotic process automation (finance)",
+            "related_skills": [
+                "RPA development",
+                "RPA testing and quality assurance",
+                "RPA solution architecture",
+                "RPA governance and controls (finance)",
+                "Intelligent document processing (finance)"
+            ],
+            "keywords": [
+                "Automation Anywhere",
+                "Control Room",
+                "Bots",
+                "Bot Runner",
+                "automation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Blue Prism platform",
+            "aliases": [
+                "Blue Prism",
+                "Blue Prism RPA platform"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Implementing finance automations using Blue Prism platform features such as Process Studio, Object Studio and Control Room for enterprise-grade unattended and attended bots.",
+            "parent_skill": "Robotic process automation (finance)",
+            "related_skills": [
+                "RPA development",
+                "RPA testing and quality assurance",
+                "RPA solution architecture",
+                "RPA governance and controls (finance)",
+                "ERP & accounting system integration for RPA"
+            ],
+            "keywords": [
+                "Blue Prism",
+                "Process Studio",
+                "Control Room",
+                "objects",
+                "robots"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intelligent document processing (finance)",
+            "aliases": [
+                "IDP",
+                "document understanding",
+                "invoice OCR",
+                "OCR data extraction"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Extracting, classifying and validating structured and unstructured financial documents (invoices, statements, remittances) using OCR, NLP and ML techniques integrated with RPA pipelines.",
+            "parent_skill": "Robotic process automation (finance)",
+            "related_skills": [
+                "RPA development",
+                "RPA testing and quality assurance",
+                "ERP & accounting system integration for RPA",
+                "UiPath platform",
+                "Automation Anywhere platform"
+            ],
+            "keywords": [
+                "OCR",
+                "NLP",
+                "invoice extraction",
+                "document classification",
+                "validation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "RPA process assessment",
+            "aliases": [
+                "automation opportunity assessment",
+                "process suitability analysis",
+                "process discovery for automation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Analyzing finance processes to identify automation candidates, quantify ROI, map process steps, exceptions and system touchpoints to prioritize RPA initiatives.",
+            "parent_skill": "Robotic process automation (finance)",
+            "related_skills": [
+                "RPA solution architecture",
+                "RPA governance and controls (finance)",
+                "RPA development"
+            ],
+            "keywords": [
+                "process discovery",
+                "ROI analysis",
+                "process mapping",
+                "opportunity assessment",
+                "feasibility"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "RPA solution architecture",
+            "aliases": [
+                "automation solution architecture",
+                "RPA architecture design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing end-to-end automation solutions for finance that define bot distribution, orchestration, security, integrations, scalability and error handling patterns.",
+            "parent_skill": "Robotic process automation (finance)",
+            "related_skills": [
+                "RPA development",
+                "ERP & accounting system integration for RPA",
+                "RPA governance and controls (finance)",
+                "UiPath platform"
+            ],
+            "keywords": [
+                "architecture",
+                "orchestration",
+                "scalability",
+                "integration design",
+                "security"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ERP & accounting system integration for RPA",
+            "aliases": [
+                "ERP integration for RPA",
+                "SAP RPA integration",
+                "Oracle RPA integration",
+                "Workday RPA integration"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Integrating RPA bots with enterprise resource planning and accounting systems via APIs, connectors, screen automation and secure data exchange to automate financial transactions and reconciliations.",
+            "parent_skill": "Robotic process automation (finance)",
+            "related_skills": [
+                "RPA development",
+                "RPA solution architecture",
+                "Intelligent document processing (finance)",
+                "UiPath platform",
+                "Blue Prism platform"
+            ],
+            "keywords": [
+                "ERP",
+                "API integration",
+                "connectors",
+                "SAP",
+                "Oracle",
+                "reconciliation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "RPA testing and quality assurance",
+            "aliases": [
+                "automation QA",
+                "robot testing",
+                "RPA regression testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning and executing unit, integration and regression tests for bots, validating data accuracy, exception scenarios and stability of finance automations across environments.",
+            "parent_skill": "Robotic process automation (finance)",
+            "related_skills": [
+                "RPA development",
+                "UiPath platform",
+                "Automation Anywhere platform",
+                "Intelligent document processing (finance)",
+                "RPA governance and controls (finance)"
+            ],
+            "keywords": [
+                "testing",
+                "QA",
+                "regression",
+                "integration testing",
+                "validation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "RPA governance and controls (finance)",
+            "aliases": [
+                "RPA governance",
+                "automation controls",
+                "RPA risk and compliance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Establishing policies, change controls, access management, audit trails and performance controls for finance automations to ensure regulatory compliance, auditability and operational risk mitigation.",
+            "parent_skill": "Robotic process automation (finance)",
+            "related_skills": [
+                "RPA solution architecture",
+                "RPA process assessment",
+                "RPA testing and quality assurance",
+                "ERP & accounting system integration for RPA"
+            ],
+            "keywords": [
+                "governance",
+                "controls",
+                "audit trail",
+                "access management",
+                "compliance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

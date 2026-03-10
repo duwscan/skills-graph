@@ -1,0 +1,274 @@
+{
+    "domain": "IT",
+    "category": "DevOps, CI\/CD & Release Engineering",
+    "subcategory": "Change management for releases",
+    "skills": [
+        {
+            "canonical_name": "Release management",
+            "aliases": [
+                "Release coordination",
+                "Release planning",
+                "Release lifecycle management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Plan, schedule and coordinate end-to-end software and platform releases across teams and environments to ensure predictable, low-risk delivery.",
+            "parent_skill": "Change management for releases",
+            "related_skills": [
+                "Release orchestration",
+                "Release window and deployment scheduling",
+                "Change risk assessment",
+                "Change advisory board (CAB) coordination",
+                "Post-release monitoring and incident integration",
+                "Rollback and remediation planning",
+                "ITSM change management tools (ServiceNow, Jira Service Management)"
+            ],
+            "keywords": [
+                "release plan",
+                "release calendar",
+                "release cadence",
+                "release lifecycle",
+                "deployment coordination"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Change advisory board (CAB) coordination",
+            "aliases": [
+                "CAB facilitation",
+                "CAB coordination",
+                "Change board coordination"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Organize, prepare materials for, and facilitate change advisory board meetings to review, approve or reject release and change requests with stakeholders.",
+            "parent_skill": "Change management for releases",
+            "related_skills": [
+                "Change risk assessment",
+                "Release management",
+                "ITSM change management tools (ServiceNow, Jira Service Management)",
+                "Release orchestration"
+            ],
+            "keywords": [
+                "CAB",
+                "stakeholder review",
+                "change approvals",
+                "meeting facilitation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Change risk assessment for releases",
+            "aliases": [
+                "Release risk assessment",
+                "Impact and risk analysis for changes"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Identify and evaluate technical and business risks associated with a release, including impact analysis, rollback risk and mitigation planning.",
+            "parent_skill": "Change management for releases",
+            "related_skills": [
+                "Release management",
+                "Rollback and remediation planning",
+                "Post-release monitoring and incident integration",
+                "Change advisory board (CAB) coordination"
+            ],
+            "keywords": [
+                "impact analysis",
+                "risk matrix",
+                "risk mitigation",
+                "pre-deployment testing",
+                "rollback risk"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Release orchestration",
+            "aliases": [
+                "Pipeline gating",
+                "Deployment orchestration",
+                "Release gating and approvals"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and implement orchestration of release steps and pipeline gates (automated and manual) to enforce quality checks, approvals and sequencing across environments.",
+            "parent_skill": "Change management for releases",
+            "related_skills": [
+                "Release management",
+                "ITSM change management tools (ServiceNow, Jira Service Management)",
+                "Feature flag strategy and rollout",
+                "Release window and deployment scheduling"
+            ],
+            "keywords": [
+                "pipeline gates",
+                "approval gates",
+                "orchestration",
+                "deployment pipeline",
+                "staging to production"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Feature flag strategy and rollout",
+            "aliases": [
+                "Feature toggle management",
+                "Feature flagging strategy",
+                "Canary\/gradual rollout strategy"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Define and operate feature-flagging and gradual rollout strategies to decouple deployment from release, control exposure, and reduce release risk.",
+            "parent_skill": "Change management for releases",
+            "related_skills": [
+                "Release orchestration",
+                "Post-release monitoring and incident integration",
+                "Rollback and remediation planning",
+                "Change risk assessment for releases"
+            ],
+            "keywords": [
+                "feature flags",
+                "toggles",
+                "dark launch",
+                "canary releases",
+                "progressive rollout"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Rollback and remediation planning",
+            "aliases": [
+                "Rollback planning",
+                "Remediation runbook creation",
+                "Backout planning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Develop and validate rollback procedures and remediation playbooks to restore service or mitigate impact quickly when a release fails or causes incidents.",
+            "parent_skill": "Change management for releases",
+            "related_skills": [
+                "Change risk assessment for releases",
+                "Post-release monitoring and incident integration",
+                "Release management",
+                "Feature flag strategy and rollout"
+            ],
+            "keywords": [
+                "rollback plan",
+                "backout procedure",
+                "remediation playbook",
+                "runbook",
+                "emergency rollback"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Post-release monitoring and incident integration",
+            "aliases": [
+                "Post-deployment monitoring",
+                "Release telemetry and incident correlation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Set up and interpret production monitoring, health checks and telemetry after releases and integrate findings into incident response and change evaluation processes.",
+            "parent_skill": "Change management for releases",
+            "related_skills": [
+                "Rollback and remediation planning",
+                "Feature flag strategy and rollout",
+                "Change risk assessment for releases",
+                "Release management"
+            ],
+            "keywords": [
+                "post-deploy checks",
+                "observability",
+                "SLO\/SLI monitoring",
+                "alerting",
+                "incident correlation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Release window and deployment scheduling",
+            "aliases": [
+                "Deployment scheduling",
+                "Release window management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Plan and manage approved deployment windows, blackout periods and coordination across teams and dependencies to minimize service disruption.",
+            "parent_skill": "Change management for releases",
+            "related_skills": [
+                "Release management",
+                "Release orchestration",
+                "Change advisory board (CAB) coordination"
+            ],
+            "keywords": [
+                "deployment window",
+                "maintenance window",
+                "scheduling",
+                "blackout period",
+                "cross-team coordination"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Release documentation and release notes authoring",
+            "aliases": [
+                "Release notes writing",
+                "Release documentation",
+                "Change communication"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Produce clear release notes, runbooks, change logs and stakeholder communications that summarize changes, impact, rollback steps and known issues.",
+            "parent_skill": "Change management for releases",
+            "related_skills": [
+                "Change advisory board (CAB) coordination",
+                "Release management",
+                "Rollback and remediation planning",
+                "Post-release monitoring and incident integration"
+            ],
+            "keywords": [
+                "release notes",
+                "runbook",
+                "change log",
+                "stakeholder communication",
+                "post-release summary"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ITSM change management tools (ServiceNow, Jira Service Management)",
+            "aliases": [
+                "ServiceNow change management",
+                "Jira Service Management change",
+                "ITSM change tools"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use ITSM\/change management tools to create, track and manage change requests, approvals, CAB tickets and audit trails for releases (examples: ServiceNow, Jira Service Management).",
+            "parent_skill": "Change management for releases",
+            "related_skills": [
+                "Change advisory board (CAB) coordination",
+                "Release management",
+                "Release orchestration"
+            ],
+            "keywords": [
+                "ServiceNow",
+                "Jira Service Management",
+                "change tickets",
+                "approval workflows",
+                "audit trail"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

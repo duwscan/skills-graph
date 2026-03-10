@@ -1,0 +1,277 @@
+{
+    "domain": "Finance",
+    "category": "Accounting Operations (Record-to-Report)",
+    "subcategory": "Fixed assets accounting",
+    "skills": [
+        {
+            "canonical_name": "Depreciation accounting",
+            "aliases": [
+                "Depreciation calculation",
+                "Depreciation posting",
+                "Chargeable depreciation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Calculate and record depreciation expense using appropriate methods (straight-line, declining balance, units of production), determine useful lives and salvage values, and prepare related journal entries and disclosures.",
+            "parent_skill": "Fixed assets accounting",
+            "related_skills": [
+                "Fixed asset register maintenance",
+                "Month-end fixed asset close",
+                "Fixed asset reconciliations and roll-forward schedules",
+                "SAP FI-AA",
+                "Fixed asset accounting using Microsoft Excel"
+            ],
+            "keywords": [
+                "useful life",
+                "salvage value",
+                "straight-line",
+                "declining balance",
+                "journal entry",
+                "accumulated depreciation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Fixed asset register maintenance",
+            "aliases": [
+                "Asset master data management",
+                "Asset register management",
+                "Asset ledger maintenance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Create and maintain asset master records and attributes (location, cost center, capitalization date, useful life, asset class), ensure data integrity and audit readiness of the fixed asset register.",
+            "parent_skill": "Fixed assets accounting",
+            "related_skills": [
+                "Fixed asset physical verification and tagging",
+                "Fixed asset reconciliations and roll-forward schedules",
+                "SAP FI-AA",
+                "Oracle EBS Fixed Assets"
+            ],
+            "keywords": [
+                "asset master",
+                "asset class",
+                "asset tag",
+                "cost center",
+                "asset ID"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Fixed asset capitalization",
+            "aliases": [
+                "Capitalization accounting",
+                "Asset capitalization policy application",
+                "Capex capitalization"
+            ],
+            "skill_type": "process_skill",
+            "description": "Apply capitalization policies to determine whether expenditures meet criteria for capitalization versus expense; record asset additions, set capitalization dates and initial costs, and ensure compliance with internal policy and accounting standards.",
+            "parent_skill": "Fixed assets accounting",
+            "related_skills": [
+                "Fixed asset register maintenance",
+                "Depreciation accounting",
+                "Fixed asset reconciliations and roll-forward schedules",
+                "Month-end fixed asset close"
+            ],
+            "keywords": [
+                "capital expenditure",
+                "capex",
+                "thresholds",
+                "beneficial ownership",
+                "initial recognition"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Asset disposals and transfers accounting",
+            "aliases": [
+                "Asset disposal accounting",
+                "Asset retirement and transfer",
+                "Fixed asset disposal journal entry"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Account for disposals, retirements and internal transfers of fixed assets, calculate gain\/loss on disposal, reverse accumulated depreciation when applicable, and record appropriate journal entries and tax impacts.",
+            "parent_skill": "Fixed assets accounting",
+            "related_skills": [
+                "Fixed asset register maintenance",
+                "Depreciation accounting",
+                "Fixed asset reconciliations and roll-forward schedules",
+                "Fixed asset physical verification and tagging"
+            ],
+            "keywords": [
+                "gain\/loss on disposal",
+                "asset retirement",
+                "proceeds",
+                "derecognition",
+                "transfer journal"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Impairment testing for fixed assets",
+            "aliases": [
+                "Asset impairment analysis",
+                "Impairment assessment",
+                "Recoverable amount testing"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Perform impairment assessments by estimating recoverable amounts, comparing carrying amounts to recoverable values, calculating impairment losses under relevant accounting standards, and preparing supporting analysis and disclosures.",
+            "parent_skill": "Fixed assets accounting",
+            "related_skills": [
+                "Fixed asset revaluation and adjustments",
+                "Fixed asset reconciliations and roll-forward schedules",
+                "Fixed asset register maintenance",
+                "Month-end fixed asset close"
+            ],
+            "keywords": [
+                "recoverable amount",
+                "discounted cash flow",
+                "impairment loss",
+                "value in use",
+                "fair value less costs to sell"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Fixed asset physical verification and tagging",
+            "aliases": [
+                "Asset tagging",
+                "Fixed asset inventory counts",
+                "Physical asset verification"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Plan and execute physical inventories of fixed assets, apply tagging\/barcoding procedures, reconcile physical counts to the asset register, and support audit and insurance requirements.",
+            "parent_skill": "Fixed assets accounting",
+            "related_skills": [
+                "Fixed asset register maintenance",
+                "Asset disposals and transfers accounting",
+                "Fixed asset reconciliations and roll-forward schedules"
+            ],
+            "keywords": [
+                "asset tag",
+                "barcode",
+                "physical count",
+                "inventory reconciliation",
+                "asset location"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Fixed asset reconciliations and roll-forward schedules",
+            "aliases": [
+                "Asset roll-forward",
+                "Fixed asset reconciliations",
+                "Fixed asset reconciliation schedule"
+            ],
+            "skill_type": "process_skill",
+            "description": "Prepare month\/period roll-forward schedules reconciling opening and closing asset balances, additions, disposals, depreciation, impairments and transfers; investigate and resolve variances between sub-ledger and general ledger.",
+            "parent_skill": "Fixed assets accounting",
+            "related_skills": [
+                "Month-end fixed asset close",
+                "Fixed asset register maintenance",
+                "Depreciation accounting",
+                "Asset disposals and transfers accounting"
+            ],
+            "keywords": [
+                "roll-forward",
+                "sub-ledger reconciliation",
+                "GL recon",
+                "variance analysis",
+                "schedule"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Month-end fixed asset close",
+            "aliases": [
+                "Fixed asset month-end close",
+                "FA month-end procedures",
+                "Fixed asset period close"
+            ],
+            "skill_type": "process_skill",
+            "description": "Execute fixed-asset-specific month-end close activities including posting depreciation, closing asset sub-ledgers, performing reconciliations and roll-forwards, accruals, and preparing supporting documentation for financial close.",
+            "parent_skill": "Fixed assets accounting",
+            "related_skills": [
+                "Depreciation accounting",
+                "Fixed asset reconciliations and roll-forward schedules",
+                "Fixed asset register maintenance",
+                "SAP FI-AA"
+            ],
+            "keywords": [
+                "month-end",
+                "close checklist",
+                "accruals",
+                "supporting schedules",
+                "period close"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SAP FI-AA (Fixed Assets)",
+            "aliases": [
+                "SAP Fixed Assets",
+                "SAP FI Asset Accounting",
+                "SAP FI-AA module"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configure and use SAP Financials Asset Accounting (FI-AA) module to manage asset master data, post additions\/disposals, run depreciation programs, produce roll-forward reports and reconcile FA sub-ledger to the general ledger.",
+            "parent_skill": "Fixed assets accounting",
+            "related_skills": [
+                "Fixed asset register maintenance",
+                "Depreciation accounting",
+                "Month-end fixed asset close",
+                "Fixed asset reconciliations and roll-forward schedules"
+            ],
+            "keywords": [
+                "FI-AA",
+                "asset master",
+                "AW01N",
+                "AFAB",
+                "asset posting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Lease accounting for right-of-use assets (IFRS 16 \/ ASC 842)",
+            "aliases": [
+                "Lease accounting (ROU assets)",
+                "IFRS 16 lease accounting",
+                "ASC 842 lease accounting"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Account for leases under IFRS 16 \/ ASC 842 including recognition and measurement of right-of-use assets and lease liabilities, initial measurement, subsequent depreciation and interest, remeasurements, and required disclosures.",
+            "parent_skill": "Fixed assets accounting",
+            "related_skills": [
+                "Fixed asset capitalization",
+                "Depreciation accounting",
+                "Fixed asset reconciliations and roll-forward schedules"
+            ],
+            "keywords": [
+                "right-of-use",
+                "lease liability",
+                "initial measurement",
+                "lease term",
+                "discount rate"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

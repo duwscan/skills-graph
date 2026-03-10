@@ -1,0 +1,275 @@
+{
+    "domain": "IT",
+    "category": "Cybersecurity Operations & Engineering",
+    "subcategory": "Security monitoring & SIEM operations",
+    "skills": [
+        {
+            "canonical_name": "SIEM administration & deployment",
+            "aliases": [
+                "SIEM administration",
+                "SIEM deployment",
+                "SIEM setup and configuration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Installing, configuring, managing and scaling enterprise SIEM platforms; managing data pipelines, indexing, clustering, licensing and access control for production environments.",
+            "parent_skill": "Security monitoring & SIEM operations",
+            "related_skills": [
+                "Log ingestion, parsing & normalization",
+                "SIEM tuning & noise reduction",
+                "Splunk platform administration",
+                "Elastic Stack (Elasticsearch, Logstash, Kibana) for security"
+            ],
+            "keywords": [
+                "deployment",
+                "configuration",
+                "scaling",
+                "indexing",
+                "access control"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Detection engineering (SIEM rule development)",
+            "aliases": [
+                "SIEM rule development",
+                "correlation rule authoring",
+                "alert rule development",
+                "signature development"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and implementing detection logic for SIEMs including correlation rules, signatures, ML-based detections and rule testing to identify security-relevant activity with minimal false positives.",
+            "parent_skill": "Security monitoring & SIEM operations",
+            "related_skills": [
+                "SIEM query languages (SPL, KQL, Lucene)",
+                "SIEM tuning & noise reduction",
+                "Threat hunting"
+            ],
+            "keywords": [
+                "correlation rules",
+                "detections",
+                "false positives",
+                "rule testing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Security alert triage & investigation",
+            "aliases": [
+                "alert triage",
+                "incident triage",
+                "alert investigation",
+                "investigate security alerts"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Rapidly assessing, prioritizing and investigating SIEM-generated alerts to determine validity, scope, impact and next steps for containment and escalation.",
+            "parent_skill": "Security monitoring & SIEM operations",
+            "related_skills": [
+                "Threat hunting",
+                "Security incident triage & investigation",
+                "SIEM tuning & noise reduction"
+            ],
+            "keywords": [
+                "triage",
+                "investigation",
+                "prioritization",
+                "escalation",
+                "containment"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Threat hunting",
+            "aliases": [
+                "proactive threat hunting",
+                "host\/network threat hunting",
+                "adversary hunting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Proactive, hypothesis-driven searches across logs and telemetry to discover stealthy or unknown threats, using analytics, indicators of compromise and enrichment sources to validate findings.",
+            "parent_skill": "Security monitoring & SIEM operations",
+            "related_skills": [
+                "SIEM query languages (SPL, KQL, Lucene)",
+                "Detection engineering (SIEM rule development)",
+                "Log ingestion, parsing & normalization"
+            ],
+            "keywords": [
+                "hypothesis-driven",
+                "IOC",
+                "telemetry analysis",
+                "anomaly detection"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Log ingestion, parsing & normalization",
+            "aliases": [
+                "log parsing",
+                "log normalization",
+                "log onboarding",
+                "log ingestion"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Onboarding log sources, parsing raw telemetry, normalizing fields and mapping log schemas to a common structure to enable consistent detection, search and analytics.",
+            "parent_skill": "Security monitoring & SIEM operations",
+            "related_skills": [
+                "SIEM administration & deployment",
+                "Elastic Stack (Elasticsearch, Logstash, Kibana) for security",
+                "Splunk platform administration"
+            ],
+            "keywords": [
+                "parsing",
+                "normalization",
+                "log schemas",
+                "onboarding",
+                "field mapping"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SIEM query languages (SPL, KQL, Lucene)",
+            "aliases": [
+                "SPL",
+                "KQL",
+                "Lucene query",
+                "Elasticsearch DSL queries",
+                "Kusto Query Language"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Crafting and optimizing searches and queries in SIEM-specific query languages (e.g., Splunk SPL, KQL, Lucene\/Elasticsearch DSL) for detection, investigation and reporting.",
+            "parent_skill": "Security monitoring & SIEM operations",
+            "related_skills": [
+                "Detection engineering (SIEM rule development)",
+                "Threat hunting",
+                "Splunk platform administration",
+                "Elastic Stack (Elasticsearch, Logstash, Kibana) for security"
+            ],
+            "keywords": [
+                "SPL",
+                "KQL",
+                "Lucene",
+                "queries",
+                "search optimization"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Splunk platform administration",
+            "aliases": [
+                "Splunk administration",
+                "Splunk Enterprise administration",
+                "Splunk ops"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Administering Splunk platform components including forwarders, indexers, search heads, knowledge objects, role-based access, data models and performance tuning for security use cases.",
+            "parent_skill": "Security monitoring & SIEM operations",
+            "related_skills": [
+                "SIEM administration & deployment",
+                "SIEM query languages (SPL, KQL, Lucene)",
+                "Log ingestion, parsing & normalization"
+            ],
+            "keywords": [
+                "Splunk",
+                "forwarders",
+                "indexers",
+                "search head",
+                "knowledge objects"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Elastic Stack (Elasticsearch, Logstash, Kibana) for security",
+            "aliases": [
+                "ELK Stack",
+                "Elastic SIEM",
+                "Elasticsearch for security",
+                "Logstash\/Kibana security analytics"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Elasticsearch, Logstash, Beats and Kibana for ingesting, parsing, indexing and analyzing security telemetry; building dashboards, detections and alerting in Elastic security workflows.",
+            "parent_skill": "Security monitoring & SIEM operations",
+            "related_skills": [
+                "Log ingestion, parsing & normalization",
+                "SIEM query languages (SPL, KQL, Lucene)",
+                "SIEM administration & deployment"
+            ],
+            "keywords": [
+                "Elasticsearch",
+                "Logstash",
+                "Kibana",
+                "Beats",
+                "dashboards"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SIEM tuning & noise reduction",
+            "aliases": [
+                "alert tuning",
+                "reduce false positives",
+                "alert noise reduction",
+                "SIEM alert optimization"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Analyzing alert volumes and feedback to refine detection rules, thresholds and enrichment to reduce false positives and alert fatigue while preserving detection coverage.",
+            "parent_skill": "Security monitoring & SIEM operations",
+            "related_skills": [
+                "Detection engineering (SIEM rule development)",
+                "Security alert triage & investigation",
+                "Log ingestion, parsing & normalization"
+            ],
+            "keywords": [
+                "tuning",
+                "false positives",
+                "thresholds",
+                "enrichment",
+                "alert fatigue"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SOAR playbook development & orchestration",
+            "aliases": [
+                "SOAR playbook development",
+                "security orchestration",
+                "automated incident response playbooks",
+                "SOAR automation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and implementing automated response workflows and playbooks using SOAR platforms to orchestrate investigations, enrich telemetry, execute containment steps and integrate tools.",
+            "parent_skill": "Security monitoring & SIEM operations",
+            "related_skills": [
+                "Security alert triage & investigation",
+                "SIEM administration & deployment",
+                "SIEM tuning & noise reduction"
+            ],
+            "keywords": [
+                "SOAR",
+                "playbooks",
+                "orchestration",
+                "automation",
+                "incident response"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

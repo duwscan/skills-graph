@@ -1,0 +1,311 @@
+{
+    "domain": "Finance",
+    "category": "Financial Planning & Analysis (FP&A)",
+    "subcategory": "Headcount & workforce planning",
+    "skills": [
+        {
+            "canonical_name": "Headcount forecasting",
+            "aliases": [
+                "workforce forecasting",
+                "staffing forecast",
+                "headcount projection",
+                "FTE forecasting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Quantitative prediction of future employee counts by role, team, location or function to support budgeting and capacity planning.",
+            "parent_skill": "Headcount & workforce planning",
+            "related_skills": [
+                "Workforce modeling",
+                "Scenario and sensitivity analysis (headcount)",
+                "Labor cost modeling",
+                "Workforce reporting & dashboards"
+            ],
+            "keywords": [
+                "forecast",
+                "projection",
+                "FTE",
+                "staffing plan",
+                "demand planning"
+            ],
+            "common_roles": [
+                "FP&A Analyst",
+                "Workforce Planning Analyst",
+                "Finance Business Partner",
+                "People Analytics Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Workforce modeling",
+            "aliases": [
+                "staffing model development",
+                "FTE modeling",
+                "workforce model creation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and maintaining structured models (usually in spreadsheets or BI tools) that represent headcount, roles, hierarchies and staffing rules for planning and scenario analysis.",
+            "parent_skill": "Headcount & workforce planning",
+            "related_skills": [
+                "Headcount forecasting",
+                "Capacity planning (workforce)",
+                "Labor cost modeling",
+                "HRIS data integration for workforce planning"
+            ],
+            "keywords": [
+                "model",
+                "assumptions",
+                "drivers",
+                "workforce structure",
+                "forecast model"
+            ],
+            "common_roles": [
+                "Workforce Planning Analyst",
+                "FP&A Manager",
+                "People Analytics Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Labor cost modeling",
+            "aliases": [
+                "salary cost modeling",
+                "compensation cost forecasting",
+                "payroll cost modeling"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Estimating current and future employee-related costs (salaries, benefits, taxes, bonuses) aligned to headcount plans and business drivers.",
+            "parent_skill": "Headcount & workforce planning",
+            "related_skills": [
+                "Headcount forecasting",
+                "Workforce budgeting & reconciliation",
+                "FTE allocation and optimization"
+            ],
+            "keywords": [
+                "labor cost",
+                "compensation",
+                "benefits",
+                "payroll",
+                "cost drivers"
+            ],
+            "common_roles": [
+                "FP&A Analyst",
+                "Finance Manager",
+                "Workforce Planning Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Scenario and sensitivity analysis (headcount)",
+            "aliases": [
+                "headcount scenario planning",
+                "what-if analysis (headcount)",
+                "sensitivity testing (workforce)"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Creating and evaluating alternative headcount and hiring scenarios to quantify business impact under varying assumptions and sensitivities.",
+            "parent_skill": "Headcount & workforce planning",
+            "related_skills": [
+                "Headcount forecasting",
+                "Workforce modeling",
+                "Labor cost modeling"
+            ],
+            "keywords": [
+                "scenario",
+                "what-if",
+                "sensitivity",
+                "stress test",
+                "contingency plan"
+            ],
+            "common_roles": [
+                "FP&A Analyst",
+                "Workforce Planning Analyst",
+                "Finance Business Partner"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "FTE allocation and optimization",
+            "aliases": [
+                "full-time equivalent allocation",
+                "FTE optimization",
+                "resource allocation (headcount)"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Assigning and rebalancing FTEs across teams, projects and locations to meet capacity needs while minimizing cost and redundancy.",
+            "parent_skill": "Headcount & workforce planning",
+            "related_skills": [
+                "Workforce modeling",
+                "Capacity planning (workforce)",
+                "Workforce reporting & dashboards"
+            ],
+            "keywords": [
+                "allocation",
+                "right-sizing",
+                "capacity",
+                "redeployment",
+                "optimization"
+            ],
+            "common_roles": [
+                "Workforce Planning Manager",
+                "Finance Business Partner",
+                "People Operations Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Attrition and turnover analysis",
+            "aliases": [
+                "employee turnover analysis",
+                "churn analysis (workforce)",
+                "voluntary\/involuntary turnover analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing historical hiring, exit and retention patterns to quantify expected attrition rates and their impact on headcount plans.",
+            "parent_skill": "Headcount & workforce planning",
+            "related_skills": [
+                "Headcount forecasting",
+                "Recruitment pipeline forecasting",
+                "Workforce reporting & dashboards"
+            ],
+            "keywords": [
+                "attrition",
+                "turnover",
+                "retention",
+                "tenure",
+                "exit rates"
+            ],
+            "common_roles": [
+                "People Analytics Analyst",
+                "Workforce Planning Analyst",
+                "HR Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Recruitment pipeline forecasting",
+            "aliases": [
+                "hiring pipeline forecasting",
+                "candidate pipeline forecasting",
+                "talent supply forecasting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Estimating timing, volume and conversion rates of open requisitions, candidate flows and offers to predict hires and time-to-fill against headcount needs.",
+            "parent_skill": "Headcount & workforce planning",
+            "related_skills": [
+                "Headcount forecasting",
+                "Attrition and turnover analysis",
+                "HRIS data integration for workforce planning"
+            ],
+            "keywords": [
+                "pipeline",
+                "time-to-fill",
+                "requisition",
+                "sourcing",
+                "conversion rate"
+            ],
+            "common_roles": [
+                "Talent Acquisition Analyst",
+                "Workforce Planning Analyst",
+                "Recruitment Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "HRIS data integration for workforce planning",
+            "aliases": [
+                "HR data integration",
+                "workforce data integration",
+                "HRIS integration for planning"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Mapping, extracting and transforming HRIS, payroll and ATS data into planning models and BI systems to ensure accurate headcount inputs.",
+            "parent_skill": "Headcount & workforce planning",
+            "related_skills": [
+                "Workforce modeling",
+                "Workforce reporting & dashboards",
+                "Recruitment pipeline forecasting"
+            ],
+            "keywords": [
+                "HRIS",
+                "data ETL",
+                "data mapping",
+                "ATS",
+                "data pipeline"
+            ],
+            "common_roles": [
+                "People Analytics Engineer",
+                "Workforce Planning Analyst",
+                "HRIS Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Workforce reporting & dashboards",
+            "aliases": [
+                "headcount reporting",
+                "workforce dashboarding",
+                "headcount KPI reporting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and maintaining KPIs, reports and dashboards that visualize headcount, hiring progress, costs and workforce metrics for stakeholders.",
+            "parent_skill": "Headcount & workforce planning",
+            "related_skills": [
+                "HRIS data integration for workforce planning",
+                "Headcount forecasting",
+                "Labor cost modeling"
+            ],
+            "keywords": [
+                "dashboards",
+                "KPI",
+                "reporting",
+                "visualization",
+                "BI"
+            ],
+            "common_roles": [
+                "FP&A Analyst",
+                "People Analytics Analyst",
+                "Workforce Planning Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Headcount governance & approval workflows",
+            "aliases": [
+                "headcount approval process",
+                "staffing governance",
+                "position control"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Establishing and operating policies, controls and approval steps for opening, hiring, reallocating and closing positions to maintain budget and compliance.",
+            "parent_skill": "Headcount & workforce planning",
+            "related_skills": [
+                "Workforce reporting & dashboards",
+                "Workforce budgeting & reconciliation",
+                "FTE allocation and optimization"
+            ],
+            "keywords": [
+                "governance",
+                "approval",
+                "position control",
+                "policy",
+                "compliance"
+            ],
+            "common_roles": [
+                "Workforce Planning Manager",
+                "HR Operations Manager",
+                "Finance Business Partner"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

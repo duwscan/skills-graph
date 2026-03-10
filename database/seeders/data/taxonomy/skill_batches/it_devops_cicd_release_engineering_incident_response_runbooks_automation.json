@@ -1,0 +1,318 @@
+{
+    "domain": "IT",
+    "category": "DevOps, CI\/CD & Release Engineering",
+    "subcategory": "Incident response runbooks & automation",
+    "skills": [
+        {
+            "canonical_name": "Incident response runbook development",
+            "aliases": [
+                "runbook authoring",
+                "incident playbook development",
+                "playbook authoring",
+                "runbook creation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and writing procedural runbooks\/playbooks that document detection, remediation, escalation, and verification steps for operational incidents.",
+            "parent_skill": "Incident response runbooks & automation",
+            "related_skills": [
+                "Runbook CI\/CD and version control",
+                "Playbook testing and simulation",
+                "Runbook telemetry and observability",
+                "Automated incident remediation design"
+            ],
+            "keywords": [
+                "runbook",
+                "playbook",
+                "SOP",
+                "incident procedure",
+                "step-by-step remediation"
+            ],
+            "common_roles": [
+                "Site Reliability Engineer",
+                "DevOps Engineer",
+                "Platform Engineer",
+                "Incident Response Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Runbook CI\/CD and version control",
+            "aliases": [
+                "runbook pipeline",
+                "runbook versioning",
+                "runbook GitOps"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying CI\/CD practices and version control to runbooks and automation artifacts, including testing, review workflows, and automated deployments of runbook code or configurations.",
+            "parent_skill": "Incident response runbooks & automation",
+            "related_skills": [
+                "Incident response runbook development",
+                "Playbook testing and simulation",
+                "Ansible for runbook automation",
+                "Rundeck (runbook orchestration)"
+            ],
+            "keywords": [
+                "CI\/CD",
+                "Git",
+                "pipeline",
+                "merge requests",
+                "automated deployment"
+            ],
+            "common_roles": [
+                "Platform Engineer",
+                "DevOps Engineer",
+                "Release Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Playbook testing and simulation",
+            "aliases": [
+                "runbook testing",
+                "playbook simulation",
+                "synthetic incident testing",
+                "tabletop runbook exercises"
+            ],
+            "skill_type": "process_skill",
+            "description": "Validating runbook correctness and effectiveness through unit tests, dry-runs, simulations, and tabletop exercises to ensure safe automated execution during real incidents.",
+            "parent_skill": "Incident response runbooks & automation",
+            "related_skills": [
+                "Incident response runbook development",
+                "Runbook CI\/CD and version control",
+                "Runbook telemetry and observability"
+            ],
+            "keywords": [
+                "testing",
+                "simulation",
+                "dry-run",
+                "tabletop",
+                "validation"
+            ],
+            "common_roles": [
+                "Site Reliability Engineer",
+                "Incident Response Engineer",
+                "DevOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated incident remediation design",
+            "aliases": [
+                "automated remediation",
+                "self-healing automation",
+                "automated incident response"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing automated remediation workflows and scripts that diagnose, mitigate, and recover from known incidents while minimizing risk of collateral impact.",
+            "parent_skill": "Incident response runbooks & automation",
+            "related_skills": [
+                "Ansible for runbook automation",
+                "Rundeck (runbook orchestration)",
+                "Alert-to-automation mapping",
+                "Runbook CI\/CD and version control"
+            ],
+            "keywords": [
+                "self-healing",
+                "remediation",
+                "rollback",
+                "recovery automation",
+                "safety checks"
+            ],
+            "common_roles": [
+                "Site Reliability Engineer",
+                "Platform Engineer",
+                "Automation Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ansible for runbook automation",
+            "aliases": [
+                "Ansible automation for incident response",
+                "Ansible playbooks for remediation",
+                "Ansible runbook automation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Ansible (playbooks, roles, modules) to implement automated remediation, configuration changes, and operational runbooks.",
+            "parent_skill": "Incident response runbooks & automation",
+            "related_skills": [
+                "Automated incident remediation design",
+                "Runbook CI\/CD and version control",
+                "Runbook telemetry and observability",
+                "ChatOps integration for incident runbooks"
+            ],
+            "keywords": [
+                "ansible",
+                "playbook",
+                "YAML",
+                "automation",
+                "modules"
+            ],
+            "common_roles": [
+                "DevOps Engineer",
+                "Site Reliability Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Rundeck (runbook orchestration)",
+            "aliases": [
+                "Rundeck orchestration",
+                "RunDeck job orchestration",
+                "Rundeck runbook execution"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Rundeck to schedule, orchestrate, and execute runbooks\/jobs for incident response, including access control, job chaining, and logging.",
+            "parent_skill": "Incident response runbooks & automation",
+            "related_skills": [
+                "Automated incident remediation design",
+                "Runbook CI\/CD and version control",
+                "ChatOps integration for incident runbooks"
+            ],
+            "keywords": [
+                "rundeck",
+                "orchestration",
+                "job scheduler",
+                "runbook execution",
+                "ACL"
+            ],
+            "common_roles": [
+                "Platform Engineer",
+                "Operations Engineer",
+                "SRE"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ServiceNow Orchestration",
+            "aliases": [
+                "ServiceNow runbook automation",
+                "ServiceNow workflow automation",
+                "SNOW orchestration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Implementing automated remediation and incident workflows within ServiceNow using orchestration, workflows, and integrations with tooling and monitoring systems.",
+            "parent_skill": "Incident response runbooks & automation",
+            "related_skills": [
+                "Runbook CI\/CD and version control",
+                "ChatOps integration for incident runbooks",
+                "Automated incident remediation design"
+            ],
+            "keywords": [
+                "servicenow",
+                "orchestration",
+                "workflow",
+                "integration",
+                "incident automation"
+            ],
+            "common_roles": [
+                "IT Operations Engineer",
+                "Platform Engineer",
+                "ServiceNow Developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ChatOps integration for incident runbooks",
+            "aliases": [
+                "ChatOps runbook automation",
+                "Slack runbook integration",
+                "Teams runbook automation",
+                "bot-triggered runbooks"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Integrating runbooks with collaboration platforms (Slack, Microsoft Teams, etc.) and chat bots to enable on-call teams to trigger, monitor, and interact with automated remediation from chat.",
+            "parent_skill": "Incident response runbooks & automation",
+            "related_skills": [
+                "Ansible for runbook automation",
+                "Rundeck (runbook orchestration)",
+                "ServiceNow Orchestration",
+                "Automated incident escalation logic design"
+            ],
+            "keywords": [
+                "chatops",
+                "slack",
+                "ms teams",
+                "bots",
+                "collaboration"
+            ],
+            "common_roles": [
+                "SRE",
+                "On-call Engineer",
+                "DevOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Alert-to-automation mapping",
+            "aliases": [
+                "alert-to-runbook mapping",
+                "alert enrichment for automation",
+                "automation routing for alerts"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Designing mappings and enrichment logic that translate alerts from monitoring systems into deterministic automation actions or prioritized human workflows.",
+            "parent_skill": "Incident response runbooks & automation",
+            "related_skills": [
+                "Automated incident remediation design",
+                "Runbook CI\/CD and version control",
+                "Runbook telemetry and observability",
+                "Playbook testing and simulation"
+            ],
+            "keywords": [
+                "alerts",
+                "enrichment",
+                "routing",
+                "deduplication",
+                "alerting rules"
+            ],
+            "common_roles": [
+                "Monitoring Engineer",
+                "SRE",
+                "DevOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Runbook telemetry and observability",
+            "aliases": [
+                "runbook logging and metrics",
+                "automation observability",
+                "runbook audit trails"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Instrumenting runbooks and automation to emit logs, metrics, traces, and audits used for monitoring execution, diagnosing failures, and measuring automation effectiveness.",
+            "parent_skill": "Incident response runbooks & automation",
+            "related_skills": [
+                "Playbook testing and simulation",
+                "Runbook CI\/CD and version control",
+                "Incident response runbook development",
+                "Alert-to-automation mapping"
+            ],
+            "keywords": [
+                "telemetry",
+                "observability",
+                "logs",
+                "metrics",
+                "audit"
+            ],
+            "common_roles": [
+                "SRE",
+                "Observability Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

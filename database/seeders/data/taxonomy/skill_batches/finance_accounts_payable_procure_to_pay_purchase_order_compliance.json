@@ -1,0 +1,291 @@
+{
+    "domain": "Finance",
+    "category": "Accounts Payable & Procure-to-Pay",
+    "subcategory": "Purchase order compliance",
+    "skills": [
+        {
+            "canonical_name": "3-way matching (PO, invoice, goods receipt)",
+            "aliases": [
+                "three-way match",
+                "PO-invoice-GR matching",
+                "PO three way matching"
+            ],
+            "skill_type": "process_skill",
+            "description": "Perform and verify matching among purchase orders, supplier invoices, and goods receipts to ensure invoice accuracy and authorization before payment.",
+            "parent_skill": "Purchase order compliance",
+            "related_skills": [
+                "Invoice-to-PO reconciliation",
+                "PO exception handling and escalation",
+                "PO data quality & master data governance"
+            ],
+            "keywords": [
+                "match",
+                "invoice verification",
+                "goods receipt",
+                "PO",
+                "tolerance"
+            ],
+            "common_roles": [
+                "Accounts Payable specialist",
+                "P2P analyst",
+                "Procure-to-Pay operator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Invoice-to-PO reconciliation",
+            "aliases": [
+                "invoice reconciliation to PO",
+                "invoice-PO reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Reconcile supplier invoices against purchase orders to identify discrepancies in quantities, prices, taxes, and payment terms prior to payment approval.",
+            "parent_skill": "Purchase order compliance",
+            "related_skills": [
+                "3-way matching (PO, invoice, goods receipt)",
+                "PO exception handling and escalation",
+                "Purchase order change control & amendment management"
+            ],
+            "keywords": [
+                "reconciliation",
+                "invoice validation",
+                "price variance",
+                "quantity variance"
+            ],
+            "common_roles": [
+                "Accounts Payable specialist",
+                "P2P analyst",
+                "AP clerk"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Purchase order compliance auditing",
+            "aliases": [
+                "PO compliance audit",
+                "purchase order audit"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Design and execute audits of PO creation, approvals, and fulfillment to ensure adherence to internal policies, contractual terms, and regulatory requirements.",
+            "parent_skill": "Purchase order compliance",
+            "related_skills": [
+                "Purchase order policy development and enforcement",
+                "Contract-to-PO alignment",
+                "PO data quality & master data governance"
+            ],
+            "keywords": [
+                "audit",
+                "controls testing",
+                "compliance review",
+                "sample testing"
+            ],
+            "common_roles": [
+                "Compliance analyst",
+                "Internal auditor",
+                "P2P control analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Purchase order change control & amendment management",
+            "aliases": [
+                "PO change control",
+                "PO amendments management",
+                "purchase order modification control"
+            ],
+            "skill_type": "process_skill",
+            "description": "Manage and control changes to purchase orders, including revisions, cancellations, and amendments while maintaining traceability and authorizations.",
+            "parent_skill": "Purchase order compliance",
+            "related_skills": [
+                "Purchase order approval workflow configuration",
+                "Invoice-to-PO reconciliation",
+                "PO exception handling and escalation"
+            ],
+            "keywords": [
+                "change orders",
+                "amendments",
+                "revision control",
+                "versions"
+            ],
+            "common_roles": [
+                "Procurement coordinator",
+                "P2P analyst",
+                "Purchasing administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Supplier purchase order validation (onboarding checks)",
+            "aliases": [
+                "supplier PO validation",
+                "vendor PO checks",
+                "supplier onboarding PO checks"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Validate supplier details, pricing, tax status and PO terms at onboarding and before PO issuance to prevent compliance and payment issues.",
+            "parent_skill": "Purchase order compliance",
+            "related_skills": [
+                "Contract-to-PO alignment",
+                "PO data quality & master data governance",
+                "Invoice-to-PO reconciliation"
+            ],
+            "keywords": [
+                "supplier validation",
+                "vendor setup",
+                "tax ID checks",
+                "pricing validation"
+            ],
+            "common_roles": [
+                "Supplier onboarding specialist",
+                "Procurement analyst",
+                "Accounts Payable specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "PO exception handling and escalation",
+            "aliases": [
+                "purchase order exception management",
+                "PO discrepancies escalation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Identify, document and route PO-related exceptions (pricing, receipt, authorization) through defined remediation and escalation paths to resolution.",
+            "parent_skill": "Purchase order compliance",
+            "related_skills": [
+                "Invoice-to-PO reconciliation",
+                "3-way matching (PO, invoice, goods receipt)",
+                "Purchase order change control & amendment management"
+            ],
+            "keywords": [
+                "exceptions",
+                "discrepancies",
+                "escalation",
+                "root cause"
+            ],
+            "common_roles": [
+                "P2P exception handler",
+                "Accounts Payable analyst",
+                "Procurement operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Purchase order approval workflow configuration",
+            "aliases": [
+                "PO approval workflow setup",
+                "purchase order approval routing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and configure approval routing rules and workflow logic for purchase orders to enforce segregation of duties and spending limits in P2P systems.",
+            "parent_skill": "Purchase order compliance",
+            "related_skills": [
+                "PO data quality & master data governance",
+                "3-way matching (PO, invoice, goods receipt)",
+                "Purchase order policy development and enforcement"
+            ],
+            "keywords": [
+                "workflow",
+                "approval routing",
+                "delegation",
+                "spend limits"
+            ],
+            "common_roles": [
+                "P2P system administrator",
+                "Procurement operations",
+                "AP manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Contract-to-PO alignment",
+            "aliases": [
+                "contract-PO compliance",
+                "contract to purchase order matching"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Ensure purchase orders reflect negotiated contract terms, pricing schedules and SLAs to prevent off-contract spending and invoicing errors.",
+            "parent_skill": "Purchase order compliance",
+            "related_skills": [
+                "Purchase order compliance auditing",
+                "Supplier purchase order validation (onboarding checks)",
+                "Invoice-to-PO reconciliation"
+            ],
+            "keywords": [
+                "contract compliance",
+                "off-contract spend",
+                "pricing schedules",
+                "SLA"
+            ],
+            "common_roles": [
+                "Contract compliance analyst",
+                "Procurement analyst",
+                "P2P specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "PO data quality & master data governance",
+            "aliases": [
+                "purchase order data governance",
+                "PO master data quality"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Maintain and monitor PO master data accuracy (supplier IDs, item codes, GL coding, tax attributes) and implement controls to prevent data-related compliance errors.",
+            "parent_skill": "Purchase order compliance",
+            "related_skills": [
+                "Supplier purchase order validation (onboarding checks)",
+                "Purchase order approval workflow configuration",
+                "Purchase order policy development and enforcement"
+            ],
+            "keywords": [
+                "master data",
+                "data governance",
+                "GL coding",
+                "data validation"
+            ],
+            "common_roles": [
+                "P2P data analyst",
+                "Master data steward",
+                "Procurement operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Purchase order policy development and enforcement",
+            "aliases": [
+                "PO policy enforcement",
+                "purchase order policy management"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Develop, document and enforce PO policies and controls (approval thresholds, authorized suppliers, allowed spend) to ensure consistent procurement compliance.",
+            "parent_skill": "Purchase order compliance",
+            "related_skills": [
+                "Purchase order compliance auditing",
+                "Purchase order approval workflow configuration",
+                "Contract-to-PO alignment"
+            ],
+            "keywords": [
+                "policy",
+                "controls",
+                "approval limits",
+                "authorized suppliers"
+            ],
+            "common_roles": [
+                "P2P policy manager",
+                "Procurement compliance",
+                "AP\/P2P process owner"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

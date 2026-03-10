@@ -1,0 +1,320 @@
+{
+    "domain": "F&B",
+    "category": "Front-of-House Guest Service",
+    "subcategory": "POS order entry & modifiers",
+    "skills": [
+        {
+            "canonical_name": "POS order entry",
+            "aliases": [
+                "order entry",
+                "entering orders into POS",
+                "POS ticketing",
+                "keying orders"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Accurately entering guest orders into a point-of-sale system, including selecting items, quantities, courses, and basic notes.",
+            "parent_skill": "POS order entry & modifiers",
+            "related_skills": [
+                "Order modifiers and special requests",
+                "Order routing and course sequencing",
+                "POS payment processing and tender handling",
+                "Suggestive selling during order entry"
+            ],
+            "keywords": [
+                "order entry",
+                "item selection",
+                "ticketing",
+                "POS input",
+                "order accuracy"
+            ],
+            "common_roles": [
+                "Server",
+                "Cashier",
+                "Bartender",
+                "Host",
+                "Food Runner"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Order modifiers and special requests",
+            "aliases": [
+                "modifiers",
+                "special request entry",
+                "customization entry",
+                "item modifiers"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Applying item-level modifiers and special preparation instructions in the POS to reflect guest customizations and prep needs.",
+            "parent_skill": "POS order entry & modifiers",
+            "related_skills": [
+                "POS order entry",
+                "Allergy and dietary restriction accommodation",
+                "Order routing and course sequencing"
+            ],
+            "keywords": [
+                "modifiers",
+                "custom orders",
+                "special instructions",
+                "no onion",
+                "extra sauce"
+            ],
+            "common_roles": [
+                "Server",
+                "Cashier",
+                "Bartender",
+                "Host"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergy and dietary restriction accommodation",
+            "aliases": [
+                "allergen handling",
+                "dietary modifications",
+                "allergy notes in POS",
+                "special diet entry"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Recording and communicating guest allergens and dietary restrictions through POS notes\/modifiers to ensure safe preparation and regulatory compliance.",
+            "parent_skill": "POS order entry & modifiers",
+            "related_skills": [
+                "Order modifiers and special requests",
+                "Order routing and course sequencing"
+            ],
+            "keywords": [
+                "allergen",
+                "gluten-free",
+                "nut allergy",
+                "vegan",
+                "dietary restriction"
+            ],
+            "common_roles": [
+                "Server",
+                "Supervisor",
+                "Expediter",
+                "Host"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Split bill and split payment processing",
+            "aliases": [
+                "split checks",
+                "split tender",
+                "split payment entry",
+                "divide check"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Dividing checks and processing multiple payments or tenders on a single table within the POS while maintaining accurate itemization and tip handling.",
+            "parent_skill": "POS order entry & modifiers",
+            "related_skills": [
+                "POS payment processing and tender handling",
+                "POS order entry"
+            ],
+            "keywords": [
+                "split bill",
+                "multiple payments",
+                "tender types",
+                "itemized split"
+            ],
+            "common_roles": [
+                "Server",
+                "Cashier",
+                "Shift Supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Promotion and discount application",
+            "aliases": [
+                "apply discounts",
+                "coupon redemption",
+                "promo entry",
+                "comp processing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Applying discounts, coupons, promotional pricing, and manager comps via POS, ensuring correct authorization and pricing adjustments.",
+            "parent_skill": "POS order entry & modifiers",
+            "related_skills": [
+                "POS menu configuration and modifier mapping",
+                "POS payment processing and tender handling"
+            ],
+            "keywords": [
+                "discount",
+                "coupon",
+                "promotion",
+                "comp",
+                "price override"
+            ],
+            "common_roles": [
+                "Server",
+                "Cashier",
+                "Shift Supervisor",
+                "Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Order routing and course sequencing",
+            "aliases": [
+                "send to kitchen",
+                "course routing",
+                "fire orders",
+                "kitchen routing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Routing orders and modifiers to the correct kitchen stations with appropriate course sequencing and timing to support kitchen workflow and guest pacing.",
+            "parent_skill": "POS order entry & modifiers",
+            "related_skills": [
+                "POS order entry",
+                "Order modifiers and special requests",
+                "Allergy and dietary restriction accommodation"
+            ],
+            "keywords": [
+                "send to kitchen",
+                "course",
+                "timing",
+                "kitchen station",
+                "fire"
+            ],
+            "common_roles": [
+                "Server",
+                "Expediter",
+                "Food Runner"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "POS menu configuration and modifier mapping",
+            "aliases": [
+                "menu mapping",
+                "modifier mapping",
+                "POS item configuration",
+                "menu configuration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Setting up and maintaining POS menu items, pricing, category mapping, and modifier associations to ensure accurate order entry, pricing and reporting.",
+            "parent_skill": "POS order entry & modifiers",
+            "related_skills": [
+                "Promotion and discount application",
+                "POS order entry",
+                "Toast POS operation"
+            ],
+            "keywords": [
+                "menu setup",
+                "modifier groups",
+                "pricing",
+                "item categories",
+                "POS admin"
+            ],
+            "common_roles": [
+                "Manager",
+                "Shift Supervisor",
+                "Back-of-House Lead"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "POS payment processing and tender handling",
+            "aliases": [
+                "payment processing",
+                "card and cash handling",
+                "tender processing",
+                "contactless payments"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Accepting and processing payments (credit\/debit, cash, contactless), handling tips, refunds and end-of-shift payment reconciliation through the POS.",
+            "parent_skill": "POS order entry & modifiers",
+            "related_skills": [
+                "Split bill and split payment processing",
+                "Promotion and discount application"
+            ],
+            "keywords": [
+                "payment",
+                "tender",
+                "refund",
+                "tip processing",
+                "reconciliation"
+            ],
+            "common_roles": [
+                "Cashier",
+                "Server",
+                "Bartender",
+                "Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Suggestive selling during order entry",
+            "aliases": [
+                "upselling",
+                "order-based upsell",
+                "suggestive upsell",
+                "recommendations at POS"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Using POS prompts and customer interactions while entering orders to recommend add-ons, upgrades, or high-margin items to increase check average.",
+            "parent_skill": "POS order entry & modifiers",
+            "related_skills": [
+                "POS order entry",
+                "Promotion and discount application",
+                "Order modifiers and special requests"
+            ],
+            "keywords": [
+                "upsell",
+                "recommendation",
+                "add-on",
+                "check average",
+                "suggestive selling"
+            ],
+            "common_roles": [
+                "Server",
+                "Bartender",
+                "Cashier"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Toast POS operation",
+            "aliases": [
+                "Toast",
+                "Toast POS",
+                "Toast restaurant POS",
+                "Toast terminal operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operating the Toast point-of-sale platform for menu navigation, order entry, modifiers, payments, promos, and basic reporting in restaurant environments.",
+            "parent_skill": "POS order entry & modifiers",
+            "related_skills": [
+                "POS order entry",
+                "POS menu configuration and modifier mapping",
+                "POS payment processing and tender handling"
+            ],
+            "keywords": [
+                "Toast",
+                "restaurant POS",
+                "Toast back office",
+                "terminal",
+                "Toast setup"
+            ],
+            "common_roles": [
+                "Server",
+                "Cashier",
+                "Manager",
+                "Bartender"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

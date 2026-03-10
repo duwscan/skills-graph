@@ -1,0 +1,291 @@
+{
+    "domain": "Finance",
+    "category": "Finance Data, Systems & Automation",
+    "subcategory": "Planning & budgeting systems",
+    "skills": [
+        {
+            "canonical_name": "Planning model design & dimensional modeling",
+            "aliases": [
+                "planning model design",
+                "dimensional modeling for planning",
+                "cube design for budgeting systems",
+                "planning data model design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing planning models, dimensions, hierarchies and calculations that drive FP&A systems and support aggregation, allocations and reporting.",
+            "parent_skill": "Planning & budgeting systems",
+            "related_skills": [
+                "Anaplan",
+                "Workday Adaptive Planning",
+                "Driver-based forecasting",
+                "Planning system data integration (ETL\/ELT)"
+            ],
+            "keywords": [
+                "dimensions",
+                "hierarchies",
+                "measures",
+                "allocations",
+                "calculation logic"
+            ],
+            "common_roles": [
+                "FP&A Analyst",
+                "Financial Systems Analyst",
+                "Planning Systems Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Driver-based forecasting",
+            "aliases": [
+                "driver-based planning",
+                "driver-based budgeting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Building forecasts that use operational and business drivers (volume, rates, productivity) to project financials and test sensitivities.",
+            "parent_skill": "Planning & budgeting systems",
+            "related_skills": [
+                "Planning model design & dimensional modeling",
+                "Scenario modeling & what-if analysis",
+                "Rolling forecasts"
+            ],
+            "keywords": [
+                "drivers",
+                "assumptions",
+                "unit economics",
+                "sensitivity"
+            ],
+            "common_roles": [
+                "FP&A Analyst",
+                "Business Planning Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Rolling forecasts",
+            "aliases": [
+                "rolling forecasting",
+                "continuous forecasting",
+                "rolling forecast process"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and operating continuous forecast cycles that extend the planning horizon and update projections regularly.",
+            "parent_skill": "Planning & budgeting systems",
+            "related_skills": [
+                "Driver-based forecasting",
+                "Budget cycle management & workflow configuration",
+                "Scenario modeling & what-if analysis"
+            ],
+            "keywords": [
+                "horizon",
+                "reforecast",
+                "update cadence",
+                "forecasting cycle"
+            ],
+            "common_roles": [
+                "FP&A Manager",
+                "Finance Business Partner"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Scenario modeling & what-if analysis",
+            "aliases": [
+                "scenario planning",
+                "what-if modeling",
+                "sensitivity analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Creating and comparing alternative financial scenarios within planning systems to evaluate impacts of assumptions and decisions.",
+            "parent_skill": "Planning & budgeting systems",
+            "related_skills": [
+                "Driver-based forecasting",
+                "Planning model design & dimensional modeling",
+                "Rolling forecasts"
+            ],
+            "keywords": [
+                "scenario manager",
+                "what-if",
+                "stress testing",
+                "sensitivity"
+            ],
+            "common_roles": [
+                "FP&A Analyst",
+                "Financial Planning Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Planning system data integration (ETL\/ELT)",
+            "aliases": [
+                "ETL for planning systems",
+                "data integration for FP&A",
+                "data pipelines for budgeting systems"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Extracting, transforming and loading transactional, master and external data into planning systems while ensuring data quality and lineage.",
+            "parent_skill": "Planning & budgeting systems",
+            "related_skills": [
+                "Master data management for planning",
+                "Planning model design & dimensional modeling",
+                "Planning system access control & user provisioning"
+            ],
+            "keywords": [
+                "ETL",
+                "ELT",
+                "data mapping",
+                "data validation",
+                "API integration"
+            ],
+            "common_roles": [
+                "Financial Systems Analyst",
+                "Finance Data Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Budget cycle management & workflow configuration",
+            "aliases": [
+                "budget process orchestration",
+                "budget workflow setup",
+                "planning approvals configuration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Configuring and managing budgeting cycles, task lists, approvals, notifications and role assignments inside planning platforms.",
+            "parent_skill": "Planning & budgeting systems",
+            "related_skills": [
+                "Planning system access control & user provisioning",
+                "Rolling forecasts",
+                "Planning system data integration (ETL\/ELT)"
+            ],
+            "keywords": [
+                "workflows",
+                "approvals",
+                "calendar",
+                "task orchestration"
+            ],
+            "common_roles": [
+                "Planning Systems Administrator",
+                "FP&A Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Variance analysis for budgeting & forecasting",
+            "aliases": [
+                "budget variance analysis",
+                "forecast variance analysis",
+                "actual vs budget analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing differences between actuals, budgets and forecasts to identify drivers, prepare explanations and support decision-making.",
+            "parent_skill": "Planning & budgeting systems",
+            "related_skills": [
+                "Scenario modeling & what-if analysis",
+                "Driver-based forecasting",
+                "Planning system data integration (ETL\/ELT)"
+            ],
+            "keywords": [
+                "variance",
+                "root cause",
+                "actuals vs plan",
+                "explanation"
+            ],
+            "common_roles": [
+                "FP&A Analyst",
+                "Finance Business Partner"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Anaplan",
+            "aliases": [
+                "Anaplan platform",
+                "Anaplan model building",
+                "Anaplan planning"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using the Anaplan planning platform for model building, allocations, driver-based planning, scenario management and workflow configuration.",
+            "parent_skill": "Planning & budgeting systems",
+            "related_skills": [
+                "Planning model design & dimensional modeling",
+                "Driver-based forecasting",
+                "Planning system data integration (ETL\/ELT)"
+            ],
+            "keywords": [
+                "Anaplan",
+                "HyperModel",
+                "modules",
+                "line items",
+                "SYS01"
+            ],
+            "common_roles": [
+                "Anaplan Model Builder",
+                "Financial Systems Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Workday Adaptive Planning",
+            "aliases": [
+                "Adaptive Planning",
+                "Adaptive Insights",
+                "Workday Adaptive"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Implementing and operating Workday Adaptive Planning for budgeting, forecasting, scenario analysis and reporting.",
+            "parent_skill": "Planning & budgeting systems",
+            "related_skills": [
+                "Planning model design & dimensional modeling",
+                "Budget cycle management & workflow configuration",
+                "Variance analysis for budgeting & forecasting"
+            ],
+            "keywords": [
+                "Adaptive",
+                "sheets",
+                "dimensions",
+                "driver-based planning"
+            ],
+            "common_roles": [
+                "Planning Systems Administrator",
+                "FP&A Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Planning system access control & user provisioning",
+            "aliases": [
+                "planning system security",
+                "user provisioning for planning systems",
+                "roles and permissions (planning platforms)"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Configuring roles, permissions, segregation of duties and audit\/logging controls within planning platforms to meet security and internal control requirements.",
+            "parent_skill": "Planning & budgeting systems",
+            "related_skills": [
+                "Budget cycle management & workflow configuration",
+                "Planning system data integration (ETL\/ELT)"
+            ],
+            "keywords": [
+                "access control",
+                "roles",
+                "segregation of duties",
+                "audit trail"
+            ],
+            "common_roles": [
+                "Financial Systems Administrator",
+                "Internal Controls Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

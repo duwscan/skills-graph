@@ -1,0 +1,269 @@
+{
+    "domain": "IT",
+    "category": "Network Engineering & Connectivity",
+    "subcategory": "Network security (firewalls\/VPN)",
+    "skills": [
+        {
+            "canonical_name": "Firewall configuration & management",
+            "aliases": [
+                "firewall administration",
+                "firewall management",
+                "firewall config"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Installing, configuring, and maintaining perimeter and internal firewalls including rule lifecycle, firmware updates, and device hardening.",
+            "parent_skill": "Network security (firewalls\/VPN)",
+            "related_skills": [
+                "Firewall policy design & rule engineering",
+                "Next-Generation Firewall (NGFW) configuration",
+                "Firewall high-availability & clustering",
+                "Firewall logging, monitoring and SIEM integration"
+            ],
+            "keywords": [
+                "firewall",
+                "device hardening",
+                "firmware update",
+                "management plane",
+                "access-list"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "VPN design & implementation",
+            "aliases": [
+                "vpn architecture",
+                "vpn deployment",
+                "site-to-site and remote-access VPN design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and deploying VPN solutions (site-to-site, remote access) that meet security, performance and scalability requirements across WAN and cloud environments.",
+            "parent_skill": "Network security (firewalls\/VPN)",
+            "related_skills": [
+                "IPsec VPN implementation",
+                "SSL VPN implementation",
+                "VPN troubleshooting and connectivity diagnostics",
+                "Network segmentation & NAC for access control"
+            ],
+            "keywords": [
+                "site-to-site",
+                "remote-access",
+                "split tunneling",
+                "tunneling",
+                "vpn topology"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "IPsec VPN implementation",
+            "aliases": [
+                "IPsec configuration",
+                "IKE\/IPsec setup",
+                "ipsec vpn"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Configuring and managing IPsec-based VPNs including IKE\/IKEv2, encryption\/authentication algorithms, key exchange, and interoperability across vendors.",
+            "parent_skill": "Network security (firewalls\/VPN)",
+            "related_skills": [
+                "VPN design & implementation",
+                "VPN troubleshooting and connectivity diagnostics",
+                "Firewall configuration & management"
+            ],
+            "keywords": [
+                "IPsec",
+                "IKE",
+                "IKEv2",
+                "ESP",
+                "phase1 phase2"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SSL VPN implementation",
+            "aliases": [
+                "SSL VPN configuration",
+                "TLS VPN",
+                "remote-access ssl vpn"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Deploying and configuring SSL\/TLS-based remote-access VPNs, clientless portals, and client-based VPNs with authentication, split tunneling and endpoint considerations.",
+            "parent_skill": "Network security (firewalls\/VPN)",
+            "related_skills": [
+                "VPN design & implementation",
+                "VPN troubleshooting and connectivity diagnostics",
+                "Firewall logging, monitoring and SIEM integration"
+            ],
+            "keywords": [
+                "SSL",
+                "TLS",
+                "clientless vpn",
+                "remote access",
+                "vpn client"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Next-Generation Firewall (NGFW) configuration",
+            "aliases": [
+                "ngfw configuration",
+                "application-aware firewall configuration",
+                "next gen firewall setup"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring NGFW features such as application inspection, IDS\/IPS, intrusion prevention signatures, URL filtering, and integrated threat intelligence.",
+            "parent_skill": "Network security (firewalls\/VPN)",
+            "related_skills": [
+                "Firewall policy design & rule engineering",
+                "Firewall logging, monitoring and SIEM integration",
+                "Firewall performance optimization & high-availability"
+            ],
+            "keywords": [
+                "NGFW",
+                "application control",
+                "IPS",
+                "URL filtering",
+                "threat intelligence"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Firewall policy design & rule engineering",
+            "aliases": [
+                "firewall rule design",
+                "access control policy engineering",
+                "firewall rule optimization"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Creating effective firewall policies and rule sets, performing rule ordering, object management, least-privilege enforcement and policy impact analysis.",
+            "parent_skill": "Network security (firewalls\/VPN)",
+            "related_skills": [
+                "Firewall configuration & management",
+                "Network segmentation & NAC for access control",
+                "Firewall logging, monitoring and SIEM integration"
+            ],
+            "keywords": [
+                "ACL",
+                "rulebase",
+                "least privilege",
+                "policy cleanup",
+                "object sprawl"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Firewall performance optimization & high-availability",
+            "aliases": [
+                "firewall tuning",
+                "firewall HA and clustering",
+                "firewall failover configuration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Tuning firewall throughput and connections, configuring clustering\/HA (failover, state synchronization), and capacity planning to meet SLA requirements.",
+            "parent_skill": "Network security (firewalls\/VPN)",
+            "related_skills": [
+                "Firewall configuration & management",
+                "Next-Generation Firewall (NGFW) configuration",
+                "VPN design & implementation"
+            ],
+            "keywords": [
+                "high availability",
+                "clustering",
+                "state sync",
+                "failover",
+                "throughput tuning"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Firewall logging, monitoring and SIEM integration",
+            "aliases": [
+                "firewall logging",
+                "siem integration for firewalls",
+                "firewall event monitoring"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Collecting, normalizing and analyzing firewall logs, creating alerts and dashboards, and integrating firewall events with SIEM and SOC workflows for incident detection.",
+            "parent_skill": "Network security (firewalls\/VPN)",
+            "related_skills": [
+                "Firewall policy design & rule engineering",
+                "VPN troubleshooting and connectivity diagnostics",
+                "Next-Generation Firewall (NGFW) configuration"
+            ],
+            "keywords": [
+                "syslog",
+                "CEF",
+                "log aggregation",
+                "SIEM",
+                "event correlation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "VPN troubleshooting and connectivity diagnostics",
+            "aliases": [
+                "vpn troubleshooting",
+                "vpn diagnostics",
+                "tunnel troubleshooting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Diagnosing VPN connectivity issues using packet captures, logs, tunnel negotiation debug, key exchange analysis and connectivity testing across endpoints.",
+            "parent_skill": "Network security (firewalls\/VPN)",
+            "related_skills": [
+                "IPsec VPN implementation",
+                "SSL VPN implementation",
+                "Firewall logging, monitoring and SIEM integration"
+            ],
+            "keywords": [
+                "packet capture",
+                "Wireshark",
+                "phase1",
+                "phase2",
+                "connectivity tests"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Network segmentation & NAC for access control",
+            "aliases": [
+                "network segmentation",
+                "NAC implementation",
+                "microsegmentation for firewall policies"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and implementing network segmentation and Network Access Control (NAC) controls to enforce firewall policies, reduce attack surface and isolate workloads.",
+            "parent_skill": "Network security (firewalls\/VPN)",
+            "related_skills": [
+                "Firewall policy design & rule engineering",
+                "VPN design & implementation",
+                "Firewall configuration & management"
+            ],
+            "keywords": [
+                "segmentation",
+                "VLAN",
+                "NAC",
+                "microsegmentation",
+                "zone-based firewall"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

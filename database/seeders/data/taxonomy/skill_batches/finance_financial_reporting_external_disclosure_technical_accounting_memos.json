@@ -1,0 +1,276 @@
+{
+    "domain": "Finance",
+    "category": "Financial Reporting & External Disclosure",
+    "subcategory": "Technical accounting memos",
+    "skills": [
+        {
+            "canonical_name": "Accounting standards research (ASC\/IFRS)",
+            "aliases": [
+                "Standards research",
+                "GAAP research",
+                "IFRS research",
+                "ASC research",
+                "Accounting literature research"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Perform authoritative literature research and interpretive analysis of accounting standards (e.g., ASC codification, IFRS), staff guidance, ASUs, IFRIC\/SIC, and accounting bulletins to determine appropriate financial reporting treatment.",
+            "parent_skill": "Technical accounting memos",
+            "related_skills": [
+                "Technical accounting memo drafting",
+                "Lease accounting assessment (ASC 842 \/ IFRS 16)",
+                "Business combinations accounting and PPA analysis",
+                "Income tax accounting impact analysis (ASC 740)"
+            ],
+            "keywords": [
+                "ASC",
+                "IFRS",
+                "codification",
+                "ASU",
+                "IFRIC",
+                "accounting literature"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Technical accounting memo drafting",
+            "aliases": [
+                "Accounting memo writing",
+                "Memo preparation",
+                "Technical memo drafting",
+                "Accounting issue write-up"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Compose clear, structured technical accounting memoranda that document facts, analysis, authoritative references, accounting conclusions, required journal entries, and recommended disclosures for internal and external stakeholders.",
+            "parent_skill": "Technical accounting memos",
+            "related_skills": [
+                "Accounting standards research (ASC\/IFRS)",
+                "Technical accounting memo review and quality control",
+                "Financial statement disclosure drafting",
+                "Accounting judgment and assumptions documentation"
+            ],
+            "keywords": [
+                "memo",
+                "write-up",
+                "conclusion",
+                "journal entry",
+                "documentation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Accounting judgment and assumptions documentation",
+            "aliases": [
+                "Judgment documentation",
+                "Assumptions documentation",
+                "Estimate rationale documentation",
+                "Significant estimate documentation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Capture and document management judgments, significant estimates and underlying assumptions, sensitivity analyses, and rationale supporting accounting conclusions for audit and governance purposes.",
+            "parent_skill": "Technical accounting memos",
+            "related_skills": [
+                "Impairment testing analysis and memo",
+                "Valuation model development for accounting memos",
+                "Lease accounting assessment (ASC 842 \/ IFRS 16)"
+            ],
+            "keywords": [
+                "judgment",
+                "estimates",
+                "assumptions",
+                "sensitivity",
+                "rationale"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial statement disclosure drafting",
+            "aliases": [
+                "Disclosure note drafting",
+                "Footnote drafting",
+                "Financial disclosure writing",
+                "Notes to financial statements drafting"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Draft and edit financial statement footnotes and disclosure language to ensure completeness, regulatory compliance and consistency with accounting conclusions and auditor requirements.",
+            "parent_skill": "Technical accounting memos",
+            "related_skills": [
+                "Technical accounting memo drafting",
+                "Accounting standards research (ASC\/IFRS)",
+                "SEC\/Regulatory disclosure analysis"
+            ],
+            "keywords": [
+                "footnotes",
+                "disclosures",
+                "notes",
+                "financial statements",
+                "disclosure wording"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Impairment testing analysis and memo",
+            "aliases": [
+                "Impairment memo",
+                "Impairment analysis (goodwill\/assets)",
+                "Recoverability analysis"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Perform impairment testing for goodwill, indefinite-lived intangibles and long-lived assets: develop cash flow forecasts, select discount rates, run sensitivity analyses and document conclusions in a technical memo consistent with accounting standards.",
+            "parent_skill": "Technical accounting memos",
+            "related_skills": [
+                "Valuation model development for accounting memos",
+                "Accounting judgment and assumptions documentation",
+                "Accounting standards research (ASC\/IFRS)"
+            ],
+            "keywords": [
+                "impairment",
+                "goodwill",
+                "discounted cash flow",
+                "recoverable amount",
+                "sensitivity"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Business combinations accounting and PPA analysis",
+            "aliases": [
+                "Purchase price allocation accounting",
+                "PPA analysis",
+                "Business combination memo"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Analyze acquisition accounting issues, identify and measure acquired assets and liabilities at fair value, allocate purchase price, calculate goodwill and document purchase price allocation and consolidation adjustments in a technical memo.",
+            "parent_skill": "Technical accounting memos",
+            "related_skills": [
+                "Valuation model development for accounting memos",
+                "Accounting standards research (ASC\/IFRS)",
+                "Income tax accounting impact analysis (ASC 740)"
+            ],
+            "keywords": [
+                "PPA",
+                "purchase price allocation",
+                "goodwill",
+                "acquisition accounting",
+                "fair value"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Lease accounting assessment (ASC 842 \/ IFRS 16)",
+            "aliases": [
+                "Lease classification and accounting",
+                "Lease memo",
+                "Right-of-use accounting assessment"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Evaluate lease contracts to determine lease classification, measure lease liabilities and right-of-use assets, calculate lease-related journal entries and required disclosures in accordance with ASC 842 or IFRS 16.",
+            "parent_skill": "Technical accounting memos",
+            "related_skills": [
+                "Accounting standards research (ASC\/IFRS)",
+                "Technical accounting memo drafting",
+                "Accounting judgment and assumptions documentation"
+            ],
+            "keywords": [
+                "ASC 842",
+                "IFRS 16",
+                "ROU asset",
+                "lease liability",
+                "lease classification"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Income tax accounting impact analysis (ASC 740)",
+            "aliases": [
+                "Tax accounting memo",
+                "Deferred tax analysis memo",
+                "ASC 740 analysis"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Analyze and document income tax accounting consequences for financial reporting, including recognition of deferred tax assets\/liabilities, valuation allowances, and accounting for uncertain tax positions consistent with ASC 740 or relevant standards.",
+            "parent_skill": "Technical accounting memos",
+            "related_skills": [
+                "Business combinations accounting and PPA analysis",
+                "Accounting standards research (ASC\/IFRS)",
+                "Technical accounting memo drafting"
+            ],
+            "keywords": [
+                "ASC 740",
+                "deferred tax",
+                "valuation allowance",
+                "UTP",
+                "uncertain tax positions"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Valuation model development for accounting memos",
+            "aliases": [
+                "DCF modeling for accounting",
+                "Fair value modeling",
+                "Valuation memo"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Build and document valuation models (DCF, market, income approach) and supporting calculations used to support fair value measurements, impairment testing and purchase price allocations in technical accounting memoranda.",
+            "parent_skill": "Technical accounting memos",
+            "related_skills": [
+                "Impairment testing analysis and memo",
+                "Business combinations accounting and PPA analysis",
+                "Accounting judgment and assumptions documentation"
+            ],
+            "keywords": [
+                "DCF",
+                "WACC",
+                "fair value",
+                "valuation",
+                "modeling"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Technical accounting memo review and quality control",
+            "aliases": [
+                "Memo review",
+                "Technical memo QC",
+                "Accounting memo peer review",
+                "Technical memo checklist review"
+            ],
+            "skill_type": "process_skill",
+            "description": "Perform peer reviews and quality-control checks of technical accounting memoranda to ensure accurate citations, consistent assumptions, adequate audit trail, completeness of disclosures and alignment with internal policies and external requirements.",
+            "parent_skill": "Technical accounting memos",
+            "related_skills": [
+                "Technical accounting memo drafting",
+                "Accounting standards research (ASC\/IFRS)",
+                "Financial statement disclosure drafting"
+            ],
+            "keywords": [
+                "peer review",
+                "quality control",
+                "checklist",
+                "governance",
+                "oversight"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

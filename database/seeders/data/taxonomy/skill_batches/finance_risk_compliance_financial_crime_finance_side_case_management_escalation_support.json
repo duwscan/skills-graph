@@ -1,0 +1,298 @@
+{
+    "domain": "Finance",
+    "category": "Risk, Compliance & Financial Crime (Finance-Side)",
+    "subcategory": "Case management & escalation support",
+    "skills": [
+        {
+            "canonical_name": "Case management workflow design",
+            "aliases": [
+                "case workflow design",
+                "investigation workflow mapping",
+                "case process mapping"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and documenting end-to-end case handling workflows, including intake, triage, investigation, escalation, remediation and closure steps.",
+            "parent_skill": "Case management & escalation support",
+            "related_skills": [
+                "Case triage and prioritization",
+                "Quality assurance of case files",
+                "Case management software administration"
+            ],
+            "keywords": [
+                "workflow",
+                "process mapping",
+                "SLA",
+                "intake",
+                "closure"
+            ],
+            "common_roles": [
+                "Fraud Investigator",
+                "Financial Crime Analyst",
+                "Risk Operations Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Case triage and prioritization",
+            "aliases": [
+                "case prioritisation",
+                "case triaging",
+                "alert triage"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Assessing incoming alerts or reports to determine severity, priority, required resources and next actions based on risk, policy and resource constraints.",
+            "parent_skill": "Case management & escalation support",
+            "related_skills": [
+                "Escalation management and stakeholder coordination",
+                "AML case investigation",
+                "Case management workflow design"
+            ],
+            "keywords": [
+                "triage",
+                "prioritization",
+                "risk scoring",
+                "SLA adherence"
+            ],
+            "common_roles": [
+                "Alert Triage Analyst",
+                "Financial Crime Analyst",
+                "Operations Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Escalation management and stakeholder coordination",
+            "aliases": [
+                "incident escalation",
+                "stakeholder escalation",
+                "management escalation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing escalation paths, coordinating cross-functional stakeholders, and ensuring timely resolution and communication during high-impact or complex cases.",
+            "parent_skill": "Case management & escalation support",
+            "related_skills": [
+                "Case triage and prioritization",
+                "Regulatory incident reporting",
+                "Communication of case outcomes"
+            ],
+            "keywords": [
+                "escalation",
+                "incident management",
+                "stakeholder engagement",
+                "SLAs"
+            ],
+            "common_roles": [
+                "Escalation Manager",
+                "Risk Operations Lead",
+                "Incident Response Coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory incident reporting",
+            "aliases": [
+                "suspicious activity reporting",
+                "SAR preparation",
+                "regulatory reporting for incidents"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Preparing and submitting mandatory regulatory reports (e.g., suspicious activity or incident reports) and maintaining required supporting documentation and timelines.",
+            "parent_skill": "Case management & escalation support",
+            "related_skills": [
+                "AML case investigation",
+                "Cross-border data handling and privacy compliance",
+                "Evidence collection and chain of custody"
+            ],
+            "keywords": [
+                "SAR",
+                "regulatory filing",
+                "reporting timelines",
+                "compliance reporting"
+            ],
+            "common_roles": [
+                "Compliance Analyst",
+                "Financial Crime Investigator",
+                "Regulatory Reporting Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "AML case investigation",
+            "aliases": [
+                "anti-money laundering investigation",
+                "transaction monitoring investigation",
+                "AML investigations"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Conducting structured investigations into potential money laundering, including transaction analysis, customer due diligence, pattern detection and documentation of findings.",
+            "parent_skill": "Case management & escalation support",
+            "related_skills": [
+                "Case triage and prioritization",
+                "Regulatory incident reporting",
+                "Evidence collection and chain of custody"
+            ],
+            "keywords": [
+                "transaction monitoring",
+                "CDD",
+                "suspicious activity",
+                "financial crime"
+            ],
+            "common_roles": [
+                "AML Investigator",
+                "Financial Crime Analyst",
+                "Sanctions Screening Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Case management software administration",
+            "aliases": [
+                "CMS administration",
+                "case management system configuration",
+                "investigation platform administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring, administering and maintaining case management platforms: creating case templates, workflows, user roles, reports and integrations with data sources.",
+            "parent_skill": "Case management & escalation support",
+            "related_skills": [
+                "Case management workflow design",
+                "Data extraction and integration",
+                "Quality assurance of case files"
+            ],
+            "keywords": [
+                "case system",
+                "platform configuration",
+                "roles and permissions",
+                "integrations"
+            ],
+            "common_roles": [
+                "Case Management Administrator",
+                "Systems Analyst",
+                "Operations Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Evidence collection and chain of custody",
+            "aliases": [
+                "investigative evidence handling",
+                "chain of custody management",
+                "evidence preservation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Collecting, preserving and documenting evidence with auditable chain-of-custody procedures to ensure admissibility and regulatory compliance during investigations.",
+            "parent_skill": "Case management & escalation support",
+            "related_skills": [
+                "AML case investigation",
+                "Regulatory incident reporting",
+                "Cross-border data handling and privacy compliance"
+            ],
+            "keywords": [
+                "chain of custody",
+                "evidence preservation",
+                "audit trail",
+                "forensics"
+            ],
+            "common_roles": [
+                "Investigations Analyst",
+                "Compliance Investigator",
+                "Fraud Investigator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Quality assurance of case files",
+            "aliases": [
+                "case file QA",
+                "investigation quality review",
+                "case audit"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Reviewing case files for completeness, policy adherence, evidentiary standards and accuracy; identifying remediation actions and training needs based on audit findings.",
+            "parent_skill": "Case management & escalation support",
+            "related_skills": [
+                "Case management workflow design",
+                "Case management software administration",
+                "Root cause analysis for incidents"
+            ],
+            "keywords": [
+                "quality assurance",
+                "case review",
+                "audit",
+                "compliance checks"
+            ],
+            "common_roles": [
+                "Quality Assurance Analyst",
+                "Compliance Auditor",
+                "Investigations Team Lead"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Root cause analysis for incidents",
+            "aliases": [
+                "RCA",
+                "incident root cause analysis",
+                "problem analysis"
+            ],
+            "skill_type": "process_skill",
+            "description": "Systematically identifying underlying causes of recurring or significant incidents using structured techniques (e.g., 5 Whys, fishbone) to inform remediation and prevention.",
+            "parent_skill": "Case management & escalation support",
+            "related_skills": [
+                "Quality assurance of case files",
+                "Case management workflow design",
+                "Escalation management and stakeholder coordination"
+            ],
+            "keywords": [
+                "root cause",
+                "5 Whys",
+                "fishbone",
+                "post-incident review"
+            ],
+            "common_roles": [
+                "Incident Analyst",
+                "Risk Manager",
+                "Process Improvement Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-border data handling and privacy compliance",
+            "aliases": [
+                "international data transfer compliance",
+                "privacy compliance for investigations",
+                "data protection in investigations"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Applying data protection and cross-border transfer rules to investigative activities, ensuring lawful basis for processing, appropriate safeguards and regulatory compliance (e.g., data minimization, access controls).",
+            "parent_skill": "Case management & escalation support",
+            "related_skills": [
+                "Evidence collection and chain of custody",
+                "Regulatory incident reporting",
+                "Case management software administration"
+            ],
+            "keywords": [
+                "data privacy",
+                "cross-border transfer",
+                "GDPR",
+                "data minimization"
+            ],
+            "common_roles": [
+                "Privacy Officer",
+                "Compliance Analyst",
+                "Data Protection Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

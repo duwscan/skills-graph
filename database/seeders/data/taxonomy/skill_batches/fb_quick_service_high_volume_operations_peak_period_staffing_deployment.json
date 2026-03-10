@@ -1,0 +1,267 @@
+{
+    "domain": "F&B",
+    "category": "Quick Service & High-Volume Operations",
+    "subcategory": "Peak period staffing & deployment",
+    "skills": [
+        {
+            "canonical_name": "Peak demand forecasting",
+            "aliases": [
+                "peak staffing forecast",
+                "demand forecasting for peak periods",
+                "peak-period demand projection"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Using historical sales, seasonality, and event data to predict customer demand during peak windows to inform staffing levels.",
+            "parent_skill": "",
+            "related_skills": [
+                "Real-time POS data monitoring",
+                "Workforce management (WFM) software",
+                "Surge staffing & on-call pool coordination"
+            ],
+            "keywords": [
+                "demand forecast",
+                "historical sales",
+                "seasonality",
+                "peak windows",
+                "staffing levels"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Real-time POS data monitoring",
+            "aliases": [
+                "live sales monitoring",
+                "POS throughput monitoring",
+                "real-time transaction tracking"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Monitoring point-of-sale and order-entry data in real time to detect demand spikes, queue lengths, and throughput issues during peak periods.",
+            "parent_skill": "",
+            "related_skills": [
+                "Peak demand forecasting",
+                "Real-time shift reallocation",
+                "Queue and customer flow management during peaks"
+            ],
+            "keywords": [
+                "POS",
+                "throughput",
+                "live data",
+                "real-time monitoring",
+                "order volume"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Real-time shift reallocation",
+            "aliases": [
+                "dynamic scheduling",
+                "on-the-fly shift reallocation",
+                "in-shift redeployment"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Rapidly adjusting staffing assignments and redeploying team members during a shift in response to live demand or operational disruptions.",
+            "parent_skill": "",
+            "related_skills": [
+                "Workforce management (WFM) software",
+                "Surge staffing & on-call pool coordination",
+                "Break and relief scheduling for peaks"
+            ],
+            "keywords": [
+                "redeployment",
+                "dynamic rostering",
+                "shift changes",
+                "real-time adjustments",
+                "flex staffing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Workforce management (WFM) software",
+            "aliases": [
+                "staff scheduling software",
+                "employee scheduling tools",
+                "shift planning system",
+                "WFM tools"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Proficiency using workforce management and scheduling platforms to plan shifts, manage timekeeping, forecast labor, and execute rapid schedule changes.",
+            "parent_skill": "",
+            "related_skills": [
+                "Peak demand forecasting",
+                "Real-time shift reallocation",
+                "Break and relief scheduling for peaks"
+            ],
+            "keywords": [
+                "scheduling",
+                "time & attendance",
+                "shift planner",
+                "roster",
+                "WFM"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-training for role flexibility",
+            "aliases": [
+                "multi-skilling",
+                "multi-role training",
+                "cross-functional training"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and delivering training so employees can competently perform multiple roles, enabling rapid redeployment during peak demand.",
+            "parent_skill": "",
+            "related_skills": [
+                "Rapid onboarding for peak periods",
+                "Real-time shift reallocation",
+                "Queue and customer flow management during peaks"
+            ],
+            "keywords": [
+                "multi-skill",
+                "role flexibility",
+                "backup staffing",
+                "cross-train",
+                "skill matrix"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Rapid onboarding for peak periods",
+            "aliases": [
+                "fast onboarding",
+                "quick start training",
+                "accelerated orientation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Processes and materials to onboard temporary or newly hired staff quickly and safely so they can contribute during high-volume shifts with minimal ramp time.",
+            "parent_skill": "",
+            "related_skills": [
+                "Cross-training for role flexibility",
+                "Surge staffing & on-call pool coordination",
+                "Workforce management (WFM) software"
+            ],
+            "keywords": [
+                "onboarding",
+                "orientation",
+                "short-form training",
+                "peak-ready",
+                "quick start"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Surge staffing & on-call pool coordination",
+            "aliases": [
+                "temp pool coordination",
+                "on-call rostering",
+                "surge labor management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Building and managing a reserve of on-call or temporary workers and coordinating their activation and deployment during unexpected or planned peaks.",
+            "parent_skill": "",
+            "related_skills": [
+                "Peak demand forecasting",
+                "Rapid onboarding for peak periods",
+                "Real-time shift reallocation"
+            ],
+            "keywords": [
+                "on-call",
+                "temp labor",
+                "reserve staff",
+                "activation",
+                "surge"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Break and relief scheduling for peaks",
+            "aliases": [
+                "staggered breaks",
+                "relief management",
+                "peak break planning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing staggered break patterns and relief coverage to maintain service levels and legal compliance while minimizing understaffed periods during busiest times.",
+            "parent_skill": "",
+            "related_skills": [
+                "Real-time shift reallocation",
+                "Workforce management (WFM) software",
+                "Peak-period overtime & labor compliance"
+            ],
+            "keywords": [
+                "staggered breaks",
+                "relief scheduling",
+                "coverage planning",
+                "break roster",
+                "service continuity"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Peak-period overtime & labor compliance",
+            "aliases": [
+                "overtime compliance",
+                "break and overtime regulations",
+                "peak labor law compliance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Understanding and applying labor laws, overtime rules, and rest-break requirements specifically as they affect scheduling, pay, and staffing during peak operations.",
+            "parent_skill": "",
+            "related_skills": [
+                "Break and relief scheduling for peaks",
+                "Workforce management (WFM) software"
+            ],
+            "keywords": [
+                "overtime",
+                "labor law",
+                "rest breaks",
+                "pay rules",
+                "compliance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Queue and customer flow management during peaks",
+            "aliases": [
+                "peak customer flow management",
+                "queue control during busy periods",
+                "crowd flow coordination"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Tactics and procedures to manage customer queues, reduce perceived wait time, and optimize service flow in high-volume periods while coordinating staff tasks.",
+            "parent_skill": "",
+            "related_skills": [
+                "Real-time POS data monitoring",
+                "Cross-training for role flexibility",
+                "Real-time shift reallocation"
+            ],
+            "keywords": [
+                "queue management",
+                "customer flow",
+                "wait time reduction",
+                "throughput",
+                "peak service"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

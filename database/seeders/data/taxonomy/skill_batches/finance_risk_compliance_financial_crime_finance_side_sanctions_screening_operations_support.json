@@ -1,0 +1,288 @@
+{
+    "domain": "Finance",
+    "category": "Risk, Compliance & Financial Crime (Finance-Side)",
+    "subcategory": "Sanctions screening operations support",
+    "skills": [
+        {
+            "canonical_name": "Sanctions screening rules tuning",
+            "aliases": [
+                "Screening rule optimization",
+                "Alert rule tuning",
+                "Rules configuration for screening"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, calibrating and maintaining screening rules and thresholds to balance detection coverage and false positives in sanctions screening systems.",
+            "parent_skill": "Sanctions screening operations support",
+            "related_skills": [
+                "False positive triage and alert disposition",
+                "Screening system testing and validation",
+                "Performance monitoring and KPI reporting for screening operations"
+            ],
+            "keywords": [
+                "rule tuning",
+                "threshold calibration",
+                "match sensitivity",
+                "false positive reduction"
+            ],
+            "common_roles": [
+                "Sanctions screening operations support",
+                "AML operations support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Watchlist and sanctions list management",
+            "aliases": [
+                "Sanctions list maintenance",
+                "Watchlist refresh and curation",
+                "List update management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintaining, updating and managing sanction lists and watchlists (including list ingestion, normalization and version control) used for screening.",
+            "parent_skill": "Sanctions screening operations support",
+            "related_skills": [
+                "Data quality and enrichment for screening",
+                "Regulatory and sanctions list compliance knowledge",
+                "Screening system configuration for payments and trade"
+            ],
+            "keywords": [
+                "watchlist maintenance",
+                "list ingestion",
+                "sanctions updates",
+                "list normalization"
+            ],
+            "common_roles": [
+                "Sanctions screening operations support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "False positive triage and alert disposition",
+            "aliases": [
+                "Alert investigation and disposition",
+                "Alert triage",
+                "Case disposition for screening alerts"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Investigating screening alerts to determine true matches, documenting findings, and closing or escalating alerts according to policy and SLA.",
+            "parent_skill": "Sanctions screening operations support",
+            "related_skills": [
+                "Case management for sanctions investigations",
+                "Screening system testing and validation",
+                "Suspicious activity reporting support"
+            ],
+            "keywords": [
+                "alert triage",
+                "investigation",
+                "disposition",
+                "escalation"
+            ],
+            "common_roles": [
+                "Sanctions screening operations support",
+                "AML operations support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Name matching and fuzzy matching logic",
+            "aliases": [
+                "Fuzzy name matching",
+                "Name matching algorithms",
+                "Fuzzy matching for screening"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Understanding and applying fuzzy matching techniques, transliteration handling and matching logic used to match customer data against sanctions and PEP lists.",
+            "parent_skill": "Sanctions screening operations support",
+            "related_skills": [
+                "Data quality and enrichment for screening",
+                "Sanctions screening rules tuning",
+                "Screening system testing and validation"
+            ],
+            "keywords": [
+                "fuzzy matching",
+                "transliteration",
+                "approximate string matching",
+                "levenshtein",
+                "phonetic matching"
+            ],
+            "common_roles": [
+                "Sanctions screening operations support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Screening system configuration for payments and trade",
+            "aliases": [
+                "Payment screening configuration",
+                "Trade and payments screening setup",
+                "Channel-specific screening configuration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Configuring screening parameters and workflows tailored to payment rails, cross-border transactions and trade finance instruments to ensure appropriate coverage.",
+            "parent_skill": "Sanctions screening operations support",
+            "related_skills": [
+                "Sanctions screening rules tuning",
+                "Data quality and enrichment for screening",
+                "Performance monitoring and KPI reporting for screening operations"
+            ],
+            "keywords": [
+                "payment screening",
+                "trade screening",
+                "channels",
+                "transaction-level rules"
+            ],
+            "common_roles": [
+                "Sanctions screening operations support",
+                "Transaction monitoring support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data quality and enrichment for screening",
+            "aliases": [
+                "Screening data quality assessment",
+                "Data enrichment for name matching",
+                "Customer data normalization"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Assessing and improving the quality of input data (names, addresses, identifiers), and applying enrichment processes (standardization, transliteration, additional identifiers) to improve screening accuracy.",
+            "parent_skill": "Sanctions screening operations support",
+            "related_skills": [
+                "Watchlist and sanctions list management",
+                "Name matching and fuzzy matching logic",
+                "Screening system configuration for payments and trade"
+            ],
+            "keywords": [
+                "data normalization",
+                "enrichment",
+                "address standardization",
+                "identifier matching"
+            ],
+            "common_roles": [
+                "Sanctions screening operations support",
+                "Data quality support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Screening system testing and validation",
+            "aliases": [
+                "Screening UAT and QA",
+                "System validation for screening",
+                "Regression testing for screening systems"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and executing test cases, performing regression and acceptance testing, and validating screening changes to ensure functional accuracy and compliance before production deployment.",
+            "parent_skill": "Sanctions screening operations support",
+            "related_skills": [
+                "Sanctions screening rules tuning",
+                "Performance monitoring and KPI reporting for screening operations",
+                "Case management for sanctions investigations"
+            ],
+            "keywords": [
+                "UAT",
+                "regression testing",
+                "validation",
+                "test cases"
+            ],
+            "common_roles": [
+                "Sanctions screening operations support",
+                "Quality assurance support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Case management for sanctions investigations",
+            "aliases": [
+                "Investigations case workflow",
+                "Case handling for screening alerts",
+                "Investigation case lifecycle management"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using case management systems and associated workflows to document investigations, manage evidence, track escalations and maintain audit trails for sanctions-related cases.",
+            "parent_skill": "Sanctions screening operations support",
+            "related_skills": [
+                "False positive triage and alert disposition",
+                "Suspicious activity reporting support",
+                "Screening system testing and validation"
+            ],
+            "keywords": [
+                "case management",
+                "investigation workflow",
+                "audit trail",
+                "evidence capture"
+            ],
+            "common_roles": [
+                "Sanctions screening operations support",
+                "AML investigations support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory and sanctions list compliance knowledge",
+            "aliases": [
+                "Sanctions compliance knowledge",
+                "Sanctions list regulatory awareness",
+                "Sanctions rules and regulatory understanding"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Knowledge of international sanctions regimes, relevant regulatory obligations and the practical implications for screening policies, escalation and reporting.",
+            "parent_skill": "Sanctions screening operations support",
+            "related_skills": [
+                "Watchlist and sanctions list management",
+                "Suspicious activity reporting support",
+                "Screening system configuration for payments and trade"
+            ],
+            "keywords": [
+                "sanctions regimes",
+                "OFAC",
+                "EU sanctions",
+                "regulatory obligations",
+                "compliance"
+            ],
+            "common_roles": [
+                "Sanctions screening operations support",
+                "Compliance operations support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Performance monitoring and KPI reporting for screening operations",
+            "aliases": [
+                "Screening operations metrics and reporting",
+                "KPI tracking for screening",
+                "Operational performance monitoring for screening"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Defining, tracking and reporting key performance indicators (throughput, false positive rate, SLA adherence) to optimize screening operations and support governance.",
+            "parent_skill": "Sanctions screening operations support",
+            "related_skills": [
+                "Sanctions screening rules tuning",
+                "Screening system testing and validation",
+                "Data quality and enrichment for screening"
+            ],
+            "keywords": [
+                "KPI",
+                "metrics",
+                "false positive rate",
+                "SLA",
+                "operational reporting"
+            ],
+            "common_roles": [
+                "Sanctions screening operations support",
+                "Operations performance analysis"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

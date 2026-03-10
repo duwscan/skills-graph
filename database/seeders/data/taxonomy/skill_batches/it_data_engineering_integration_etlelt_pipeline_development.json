@@ -1,0 +1,306 @@
+{
+    "domain": "IT",
+    "category": "Data Engineering & Integration",
+    "subcategory": "ETL\/ELT pipeline development",
+    "skills": [
+        {
+            "canonical_name": "ETL pipeline development",
+            "aliases": [
+                "Batch ETL development",
+                "Extract-Transform-Load pipeline design",
+                "ETL development"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing, building and maintaining batch-oriented pipelines that extract data from sources, apply transformations, and load into target systems.",
+            "parent_skill": "ETL\/ELT pipeline development",
+            "related_skills": [
+                "Data ingestion (APIs, files, message queues)",
+                "Data transformation with SQL",
+                "Data pipeline orchestration",
+                "Performance tuning for ETL\/ELT pipelines"
+            ],
+            "keywords": [
+                "batch processing",
+                "source extraction",
+                "data staging",
+                "load jobs",
+                "scheduling"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "ETL Developer",
+                "Data Integration Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ELT pipeline development",
+            "aliases": [
+                "Modern ELT development",
+                "Extract-Load-Transform pipeline design",
+                "ELT development"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Building pipelines that extract and load raw data into analytical stores (data warehouse\/lake) and apply transformations in-place, often leveraging SQL-based transformation tools.",
+            "parent_skill": "ETL\/ELT pipeline development",
+            "related_skills": [
+                "dbt",
+                "Cloud data warehouse integration",
+                "Data transformation with SQL",
+                "Data pipeline orchestration"
+            ],
+            "keywords": [
+                "ELT",
+                "in-warehouse transformations",
+                "data warehouse",
+                "data lake"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Analytics Engineer",
+                "Data Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data pipeline orchestration",
+            "aliases": [
+                "Workflow orchestration",
+                "Data workflow orchestration",
+                "Orchestrating ETL\/ELT workflows"
+            ],
+            "skill_type": "process_skill",
+            "description": "Coordinating and managing dependencies, scheduling, retries and monitoring of multi-step data workflows across systems.",
+            "parent_skill": "ETL\/ELT pipeline development",
+            "related_skills": [
+                "Apache Airflow",
+                "Workflow scheduling with Apache Airflow",
+                "Operational monitoring for data pipelines"
+            ],
+            "keywords": [
+                "DAGs",
+                "scheduling",
+                "dependencies",
+                "retries",
+                "observability"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Platform Engineer",
+                "Site Reliability Engineer (data)"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Apache Airflow",
+            "aliases": [
+                "Airflow",
+                "Airflow DAG development",
+                "Apache Airflow (workflow scheduler)"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Apache Airflow to author, schedule, monitor and maintain directed acyclic graph (DAG) based data workflows and tasks.",
+            "parent_skill": "ETL\/ELT pipeline development",
+            "related_skills": [
+                "Data pipeline orchestration",
+                "Workflow scheduling with Apache Airflow",
+                "Operational monitoring for data pipelines"
+            ],
+            "keywords": [
+                "DAG",
+                "operators",
+                "sensors",
+                "Airflow scheduler",
+                "XCom"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "ETL Developer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "dbt",
+            "aliases": [
+                "data build tool",
+                "dbt modeling",
+                "dbt transformations"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using dbt to implement modular SQL transformations, data models, tests, and documentation for ELT workflows in analytical warehouses.",
+            "parent_skill": "ETL\/ELT pipeline development",
+            "related_skills": [
+                "ELT pipeline development",
+                "Data transformation with SQL",
+                "Schema management and evolution"
+            ],
+            "keywords": [
+                "models",
+                "macros",
+                "tests",
+                "materializations",
+                "Jinja"
+            ],
+            "common_roles": [
+                "Analytics Engineer",
+                "Data Engineer",
+                "BI Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Change Data Capture (CDC)",
+            "aliases": [
+                "CDC",
+                "change-data-capture",
+                "incremental change capture"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implementing techniques to capture and propagate row-level data changes from source databases to downstream systems in near real-time.",
+            "parent_skill": "ETL\/ELT pipeline development",
+            "related_skills": [
+                "Streaming data pipeline development",
+                "Apache Kafka",
+                "Debezium"
+            ],
+            "keywords": [
+                "log-based CDC",
+                "incremental replication",
+                "binlog",
+                "WAL"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Integration Engineer",
+                "Streaming Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Streaming data pipeline development",
+            "aliases": [
+                "real-time data pipeline development",
+                "event streaming pipeline development"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and building pipelines for continuous ingestion, processing and delivery of event\/streaming data with low latency requirements.",
+            "parent_skill": "ETL\/ELT pipeline development",
+            "related_skills": [
+                "Apache Kafka",
+                "Apache Spark",
+                "Change Data Capture (CDC)"
+            ],
+            "keywords": [
+                "stream processing",
+                "real-time",
+                "event-driven",
+                "low latency",
+                "windowing"
+            ],
+            "common_roles": [
+                "Streaming Engineer",
+                "Data Engineer",
+                "Big Data Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Apache Spark",
+            "aliases": [
+                "Spark",
+                "PySpark",
+                "Spark SQL"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Apache Spark for distributed data processing, transformations and analytics across large datasets in batch or streaming modes.",
+            "parent_skill": "ETL\/ELT pipeline development",
+            "related_skills": [
+                "Streaming data pipeline development",
+                "ETL pipeline development",
+                "Performance tuning for ETL\/ELT pipelines"
+            ],
+            "keywords": [
+                "RDD",
+                "DataFrame",
+                "Spark Streaming",
+                "structured streaming",
+                "executor tuning"
+            ],
+            "common_roles": [
+                "Big Data Engineer",
+                "Data Engineer",
+                "ETL Developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data ingestion (APIs, files, message queues)",
+            "aliases": [
+                "data ingestion",
+                "ingesting data from APIs",
+                "file and queue ingestion"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Implementing reliable mechanisms to acquire data from sources such as APIs, files, databases and message queues into processing systems.",
+            "parent_skill": "ETL\/ELT pipeline development",
+            "related_skills": [
+                "ETL pipeline development",
+                "Streaming data pipeline development",
+                "Change Data Capture (CDC)"
+            ],
+            "keywords": [
+                "API ingestion",
+                "FTP",
+                "S3",
+                "message broker",
+                "connectors"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Integration Engineer",
+                "ETL Developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data quality testing and validation",
+            "aliases": [
+                "data validation",
+                "data quality checks",
+                "data profiling and testing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Defining and implementing automated tests, checks and monitoring to ensure accuracy, completeness and integrity of pipeline outputs.",
+            "parent_skill": "ETL\/ELT pipeline development",
+            "related_skills": [
+                "dbt",
+                "Operational monitoring for data pipelines",
+                "Schema management and evolution"
+            ],
+            "keywords": [
+                "unit tests",
+                "schema checks",
+                "null checks",
+                "anomaly detection",
+                "data profiling"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Analytics Engineer",
+                "Data Quality Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,256 @@
+{
+    "domain": "IT",
+    "category": "Network Engineering & Connectivity",
+    "subcategory": "Network monitoring & performance",
+    "skills": [
+        {
+            "canonical_name": "Network performance monitoring",
+            "aliases": [
+                "NPM",
+                "network monitoring"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing, implementing and operating systems to collect and analyze network performance metrics (latency, throughput, packet loss) across infrastructure.",
+            "parent_skill": "Network monitoring & performance",
+            "related_skills": [
+                "Time-series visualization with Grafana",
+                "Prometheus metrics collection",
+                "SLA and KPI monitoring"
+            ],
+            "keywords": [
+                "network performance",
+                "NPM",
+                "latency",
+                "throughput",
+                "packet loss"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Packet capture and analysis",
+            "aliases": [
+                "pcap analysis",
+                "packet sniffing",
+                "tcpdump",
+                "Wireshark"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Capturing, filtering and interpreting packet-level traffic to diagnose network issues using packet analyzers and command-line captures.",
+            "parent_skill": "Network monitoring & performance",
+            "related_skills": [
+                "Flow-based traffic analysis",
+                "Latency and jitter analysis"
+            ],
+            "keywords": [
+                "packet capture",
+                "pcap",
+                "Wireshark",
+                "tcpdump",
+                "deep packet inspection"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Flow-based traffic analysis",
+            "aliases": [
+                "NetFlow analysis",
+                "IPFIX analysis",
+                "sFlow analysis",
+                "flow monitoring"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Collecting and interpreting flow records (NetFlow\/IPFIX\/sFlow) to understand traffic patterns, top talkers and bandwidth usage.",
+            "parent_skill": "Network monitoring & performance",
+            "related_skills": [
+                "Packet capture and analysis",
+                "Network capacity planning"
+            ],
+            "keywords": [
+                "NetFlow",
+                "IPFIX",
+                "sFlow",
+                "flow records",
+                "top talkers"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SNMP monitoring and MIB management",
+            "aliases": [
+                "SNMP polling",
+                "MIB management",
+                "SNMP traps"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using SNMP to poll devices, process traps and manage MIBs\/OIDs for device health and metric collection.",
+            "parent_skill": "Network monitoring & performance",
+            "related_skills": [
+                "Network performance monitoring",
+                "Prometheus metrics collection"
+            ],
+            "keywords": [
+                "SNMP",
+                "MIB",
+                "OID",
+                "SNMP trap",
+                "device polling"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Prometheus metrics collection",
+            "aliases": [
+                "Prometheus monitoring",
+                "Prometheus scraping"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring Prometheus to scrape, store and expose time-series metrics from network exporters and services for alerting and analysis.",
+            "parent_skill": "Network monitoring & performance",
+            "related_skills": [
+                "Grafana dashboards & visualization",
+                "Network telemetry"
+            ],
+            "keywords": [
+                "Prometheus",
+                "exporters",
+                "metrics scraping",
+                "time-series"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Grafana dashboards and visualization",
+            "aliases": [
+                "Grafana visualization",
+                "time-series dashboards"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Designing and maintaining Grafana dashboards and visualizations to surface network metrics, trends and alerts for stakeholders.",
+            "parent_skill": "Network monitoring & performance",
+            "related_skills": [
+                "Prometheus metrics collection",
+                "SLA and KPI monitoring"
+            ],
+            "keywords": [
+                "Grafana",
+                "dashboards",
+                "visualization",
+                "panels",
+                "time-series"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Network telemetry and streaming telemetry",
+            "aliases": [
+                "streaming telemetry",
+                "gNMI",
+                "gRPC telemetry"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Implementing streaming telemetry (gNMI\/gRPC\/gnmi) to continuously export structured device telemetry for real-time monitoring and analytics.",
+            "parent_skill": "Network monitoring & performance",
+            "related_skills": [
+                "Prometheus metrics collection",
+                "SNMP monitoring and MIB management"
+            ],
+            "keywords": [
+                "streaming telemetry",
+                "gNMI",
+                "gRPC",
+                "telemetry",
+                "data streaming"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Synthetic monitoring and availability testing",
+            "aliases": [
+                "synthetic transactions",
+                "uptime testing",
+                "synthetic probes"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and running synthetic probes\/transactions to simulate user behavior and verify end-to-end availability and performance from multiple locations.",
+            "parent_skill": "Network monitoring & performance",
+            "related_skills": [
+                "Real user monitoring (RUM)",
+                "SLA and KPI monitoring"
+            ],
+            "keywords": [
+                "synthetic monitoring",
+                "synthetic tests",
+                "availability",
+                "uptime",
+                "probes"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Real user monitoring (RUM) for network performance",
+            "aliases": [
+                "RUM",
+                "end-user monitoring",
+                "browser\/network RUM"
+            ],
+            "skill_type": "process_skill",
+            "description": "Collecting and analyzing real-user telemetry to correlate application and network performance experienced by end users across geographies and networks.",
+            "parent_skill": "Network monitoring & performance",
+            "related_skills": [
+                "Synthetic monitoring and availability testing",
+                "Grafana dashboards & visualization"
+            ],
+            "keywords": [
+                "RUM",
+                "real user monitoring",
+                "end-user experience",
+                "page load",
+                "resource timing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Network capacity planning and performance tuning",
+            "aliases": [
+                "capacity forecasting",
+                "bandwidth planning",
+                "performance optimization"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing historical metrics and trends to forecast capacity needs, plan upgrades and tune network configurations for target performance levels.",
+            "parent_skill": "Network monitoring & performance",
+            "related_skills": [
+                "Flow-based traffic analysis",
+                "Network performance monitoring"
+            ],
+            "keywords": [
+                "capacity planning",
+                "forecasting",
+                "bandwidth",
+                "performance tuning",
+                "trend analysis"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

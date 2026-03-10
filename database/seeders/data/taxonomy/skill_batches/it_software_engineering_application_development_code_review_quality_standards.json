@@ -1,0 +1,270 @@
+{
+    "domain": "IT",
+    "category": "Software Engineering & Application Development",
+    "subcategory": "Code review & quality standards",
+    "skills": [
+        {
+            "canonical_name": "Code Review",
+            "aliases": [
+                "peer code review",
+                "PR review",
+                "pull request review"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Systematically inspect source code changes (e.g., pull requests) to find defects, improve design, ensure readability, and enforce team standards.",
+            "parent_skill": "Code review & quality standards",
+            "related_skills": [
+                "Static Code Analysis",
+                "Pull Request Management",
+                "Peer Review Facilitation",
+                "Code Quality Metrics and Measurement",
+                "Secure Code Review"
+            ],
+            "keywords": [
+                "code review",
+                "pull request",
+                "PR",
+                "diff review",
+                "review checklist"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Static Code Analysis",
+            "aliases": [
+                "static analysis",
+                "SAST"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Apply and interpret static analysis tools to detect bugs, code smells, and vulnerabilities without executing the program.",
+            "parent_skill": "Code review & quality standards",
+            "related_skills": [
+                "Linting and Code Style Enforcement",
+                "CI Quality Gates",
+                "Secure Code Review",
+                "Code Quality Metrics and Measurement"
+            ],
+            "keywords": [
+                "static analyzer",
+                "code smell",
+                "SonarQube",
+                "FindBugs",
+                "PMD"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Linting and Code Style Enforcement",
+            "aliases": [
+                "code linting",
+                "style enforcement",
+                "style guidelines enforcement"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configure and use linters and style-checking tools to enforce formatting, naming conventions, and language-specific style rules across a codebase.",
+            "parent_skill": "Code review & quality standards",
+            "related_skills": [
+                "Automated Code Formatting",
+                "Static Code Analysis",
+                "CI Quality Gates"
+            ],
+            "keywords": [
+                "lint",
+                "eslint",
+                "prettier",
+                "style guide",
+                "formatting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Unit Testing",
+            "aliases": [
+                "unit tests",
+                "writing unit tests",
+                "xUnit testing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Design and implement automated unit tests to verify individual components' behavior using appropriate test frameworks and mocking where needed.",
+            "parent_skill": "Code review & quality standards",
+            "related_skills": [
+                "Test Coverage Analysis",
+                "CI Quality Gates",
+                "Refactoring for Maintainability"
+            ],
+            "keywords": [
+                "unit test",
+                "test framework",
+                "mocking",
+                "TDD",
+                "xUnit"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Test Coverage Analysis",
+            "aliases": [
+                "coverage analysis",
+                "code coverage measurement"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Measure and interpret code coverage metrics to identify untested areas and guide testing priorities, balancing coverage goals with risk.",
+            "parent_skill": "Code review & quality standards",
+            "related_skills": [
+                "Unit Testing",
+                "Mutation Testing",
+                "CI Quality Gates",
+                "Code Quality Metrics and Measurement"
+            ],
+            "keywords": [
+                "coverage",
+                "line coverage",
+                "branch coverage",
+                "coverage tools",
+                "coverage threshold"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "CI Quality Gates",
+            "aliases": [
+                "continuous integration quality gates",
+                "build quality gates",
+                "automated quality checks"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and enforce automated pipeline checks (tests, linters, coverage, static analysis) that must pass before merging or releasing code.",
+            "parent_skill": "Code review & quality standards",
+            "related_skills": [
+                "Static Code Analysis",
+                "Test Coverage Analysis",
+                "Pull Request Management",
+                "Code Review Automation"
+            ],
+            "keywords": [
+                "CI",
+                "quality gate",
+                "pipeline",
+                "pre-merge checks",
+                "automation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Secure Code Review",
+            "aliases": [
+                "security code review",
+                "vulnerability-focused review"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Evaluate source code for security flaws and vulnerability patterns, applying secure-coding principles and OWASP\/top-10 awareness during reviews.",
+            "parent_skill": "Code review & quality standards",
+            "related_skills": [
+                "Static Code Analysis",
+                "CI Quality Gates",
+                "Penetration Testing",
+                "Threat Modeling"
+            ],
+            "keywords": [
+                "security review",
+                "vulnerabilities",
+                "OWASP",
+                "SAST",
+                "input validation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Pull Request Management",
+            "aliases": [
+                "PR workflow",
+                "pull request workflow",
+                "git PR management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Manage the lifecycle of pull requests including branching coordination, review assignment, conflict resolution, and merge strategies to keep delivery smooth.",
+            "parent_skill": "Code review & quality standards",
+            "related_skills": [
+                "Code Review",
+                "CI Quality Gates",
+                "Branching Strategy",
+                "Code Review Automation"
+            ],
+            "keywords": [
+                "pull request",
+                "merge",
+                "rebase",
+                "review assignment",
+                "merge strategy"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Code Quality Metrics and Measurement",
+            "aliases": [
+                "code metrics",
+                "technical debt measurement",
+                "maintainability metrics"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Define, collect, and interpret quantitative indicators (e.g., complexity, code churn, technical debt) to assess maintainability and guide improvements.",
+            "parent_skill": "Code review & quality standards",
+            "related_skills": [
+                "Static Code Analysis",
+                "Test Coverage Analysis",
+                "Refactoring for Maintainability"
+            ],
+            "keywords": [
+                "cyclomatic complexity",
+                "technical debt",
+                "maintainability index",
+                "code churn",
+                "metrics"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Refactoring for Maintainability",
+            "aliases": [
+                "code refactoring",
+                "improving code maintainability"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Apply systematic code restructuring techniques to reduce complexity, remove duplication, and improve readability while preserving behavior.",
+            "parent_skill": "Code review & quality standards",
+            "related_skills": [
+                "Unit Testing",
+                "Code Quality Metrics and Measurement",
+                "Design Patterns"
+            ],
+            "keywords": [
+                "refactor",
+                "clean code",
+                "reduce complexity",
+                "code smells",
+                "modularization"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

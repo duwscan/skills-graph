@@ -1,0 +1,305 @@
+{
+    "domain": "F&B",
+    "category": "Front-of-House Guest Service",
+    "subcategory": "Upselling & suggestive selling",
+    "skills": [
+        {
+            "canonical_name": "Suggestive selling",
+            "aliases": [
+                "suggestive selling techniques",
+                "suggestive recommendations",
+                "suggestive sales"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Making timely, guest-focused recommendations (phrasing and timing) to increase average check without pressuring the guest.",
+            "parent_skill": "Upselling & suggestive selling",
+            "related_skills": [
+                "Upselling",
+                "Guest needs assessment and buying signals",
+                "Sales scripting and suggestive language",
+                "Menu and product knowledge",
+                "POS upsell prompt utilization"
+            ],
+            "keywords": [
+                "recommendation",
+                "suggest",
+                "upsell",
+                "timing",
+                "phrasing"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Guest-facing staff",
+                "Service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Upselling",
+            "aliases": [
+                "upsell techniques",
+                "up-selling"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Persuading guests to choose higher-margin, premium, or upgraded items to increase transaction value.",
+            "parent_skill": "Upselling & suggestive selling",
+            "related_skills": [
+                "Suggestive selling",
+                "Cross-selling",
+                "Add-on promotion and bundling",
+                "Handling objections and closing sales",
+                "Menu and product knowledge",
+                "POS upsell prompt utilization"
+            ],
+            "keywords": [
+                "upgrade",
+                "premium",
+                "check average",
+                "menu upgrade"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Guest-facing staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-selling",
+            "aliases": [
+                "cross sell",
+                "complementary item recommendations"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Recommending complementary items (sides, beverages, desserts) to broaden the guest's order and increase overall spend.",
+            "parent_skill": "Upselling & suggestive selling",
+            "related_skills": [
+                "Add-on promotion and bundling",
+                "Suggestive selling",
+                "Menu and product knowledge"
+            ],
+            "keywords": [
+                "complementary",
+                "side",
+                "beverage",
+                "dessert",
+                "bundle"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Guest-facing staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Menu and product knowledge",
+            "aliases": [
+                "menu knowledge",
+                "product knowledge",
+                "dish knowledge"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Familiarity with menu items, ingredients, preparation methods, flavor profiles, pricing, and modifiers to inform confident recommendations.",
+            "parent_skill": "Upselling & suggestive selling",
+            "related_skills": [
+                "Food and beverage pairing",
+                "Suggestive selling",
+                "Upselling",
+                "Cross-selling"
+            ],
+            "keywords": [
+                "ingredients",
+                "flavor profile",
+                "pricing",
+                "modifiers"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Guest-facing staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food and beverage pairing",
+            "aliases": [
+                "pairing recommendations",
+                "food-beverage pairing",
+                "wine pairing"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Recommending complementary food and beverage combinations based on flavor, occasion, and margin considerations.",
+            "parent_skill": "Upselling & suggestive selling",
+            "related_skills": [
+                "Menu and product knowledge",
+                "Suggestive selling",
+                "Upselling"
+            ],
+            "keywords": [
+                "pairing",
+                "wine",
+                "beer",
+                "flavor match",
+                "pair"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Guest-facing staff",
+                "Beverage-oriented staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Add-on promotion and bundling",
+            "aliases": [
+                "bundle selling",
+                "combo promotion",
+                "add-on selling"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and promoting combos, side additions, and fixed-price bundles or specials to increase per-guest revenue and simplify choices.",
+            "parent_skill": "Upselling & suggestive selling",
+            "related_skills": [
+                "Upselling",
+                "Cross-selling",
+                "POS upsell prompt utilization",
+                "Menu and product knowledge"
+            ],
+            "keywords": [
+                "bundle",
+                "combo",
+                "special",
+                "add-on",
+                "promotion"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Guest-facing staff",
+                "Service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Handling objections and closing sales",
+            "aliases": [
+                "objection handling",
+                "closing techniques",
+                "closing sales"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Responding to guest hesitations, addressing concerns, and guiding the interaction to a purchase decision while preserving guest comfort.",
+            "parent_skill": "Upselling & suggestive selling",
+            "related_skills": [
+                "Suggestive selling",
+                "Upselling",
+                "Guest needs assessment and buying signals",
+                "Sales scripting and suggestive language"
+            ],
+            "keywords": [
+                "objections",
+                "close",
+                "overcome hesitations",
+                "reassurance"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Guest-facing staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "POS upsell prompt utilization",
+            "aliases": [
+                "POS upsell prompts",
+                "point-of-sale suggestive prompts",
+                "POS suggestive prompts"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using point-of-sale system prompts and built-in suggestive flows (e.g., add-on suggestions, upgrade buttons) to increase average check and reduce missed opportunities.",
+            "parent_skill": "Upselling & suggestive selling",
+            "related_skills": [
+                "Suggestive selling",
+                "Add-on promotion and bundling",
+                "Upselling",
+                "Sales scripting and suggestive language"
+            ],
+            "keywords": [
+                "POS",
+                "prompt",
+                "add-on",
+                "upgrade",
+                "checkout"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Guest-facing staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Guest needs assessment and buying signals",
+            "aliases": [
+                "reading guest cues",
+                "recognizing buying signals",
+                "guest cue reading"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Observing verbal and nonverbal cues to determine guest preferences, mood, and readiness to accept recommendations or make upgrades.",
+            "parent_skill": "Upselling & suggestive selling",
+            "related_skills": [
+                "Suggestive selling",
+                "Menu and product knowledge",
+                "Handling objections and closing sales",
+                "Sales scripting and suggestive language"
+            ],
+            "keywords": [
+                "nonverbal cues",
+                "verbal cues",
+                "preference",
+                "readiness"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Guest-facing staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sales scripting and suggestive language",
+            "aliases": [
+                "suggestive phrasing",
+                "sales scripts",
+                "suggestive dialogue"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Crafting concise, context-appropriate phrases and scripts that encourage add-ons or upgrades while maintaining a hospitable tone.",
+            "parent_skill": "Upselling & suggestive selling",
+            "related_skills": [
+                "Suggestive selling",
+                "Handling objections and closing sales",
+                "Guest needs assessment and buying signals",
+                "POS upsell prompt utilization"
+            ],
+            "keywords": [
+                "script",
+                "phrase",
+                "language",
+                "tone",
+                "pitch"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Guest-facing staff"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

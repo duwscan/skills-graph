@@ -1,0 +1,308 @@
+{
+    "domain": "Finance",
+    "category": "Accounts Payable & Procure-to-Pay",
+    "subcategory": "Vendor master data management",
+    "skills": [
+        {
+            "canonical_name": "Vendor master data governance",
+            "aliases": [
+                "Vendor data governance",
+                "Supplier master governance",
+                "Vendor master policy management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and enforcing policies, roles, and rules for creation, update, and retirement of vendor master records to ensure consistency and accountability.",
+            "parent_skill": "Vendor master data management",
+            "related_skills": [
+                "Vendor master change control & lifecycle management",
+                "Vendor data quality monitoring & metrics",
+                "Vendor onboarding & registration",
+                "Vendor data stewardship"
+            ],
+            "keywords": [
+                "governance",
+                "policy",
+                "data stewardship",
+                "ownership",
+                "standards"
+            ],
+            "common_roles": [
+                "Master Data Analyst",
+                "Vendor Data Steward",
+                "Procure-to-Pay Process Owner"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor onboarding & registration",
+            "aliases": [
+                "Supplier onboarding",
+                "Vendor setup",
+                "Supplier registration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operational processes and controls for validating, collecting, and entering vendor information into the master system, including KYC\/business validation steps.",
+            "parent_skill": "Vendor master data management",
+            "related_skills": [
+                "Vendor master data governance",
+                "Supplier access control & data security (vendor master)",
+                "Vendor data cleansing & deduplication"
+            ],
+            "keywords": [
+                "onboarding",
+                "registration",
+                "KYC",
+                "validation",
+                "vendor setup"
+            ],
+            "common_roles": [
+                "Accounts Payable Specialist",
+                "Vendor Onboarding Coordinator",
+                "Procure-to-Pay Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor data cleansing & deduplication",
+            "aliases": [
+                "Supplier data cleansing",
+                "Vendor dedupe",
+                "Duplicate vendor resolution"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Techniques and operational tasks to identify, clean, standardize, and merge duplicate or inaccurate vendor records to maintain a single source of truth.",
+            "parent_skill": "Vendor master data management",
+            "related_skills": [
+                "Vendor data quality monitoring & metrics",
+                "Vendor hierarchy & relationship management",
+                "Vendor master reconciliation & exceptions handling"
+            ],
+            "keywords": [
+                "cleansing",
+                "standardization",
+                "deduplication",
+                "data normalization",
+                "merge"
+            ],
+            "common_roles": [
+                "Master Data Analyst",
+                "Data Quality Specialist",
+                "Accounts Payable Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor hierarchy & relationship management",
+            "aliases": [
+                "Supplier hierarchy management",
+                "Vendor parent-child mapping",
+                "Related vendor management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Modeling and maintaining vendor relationships such as parent\/subsidiary, site-level suppliers, and complex supplier networks within the master data.",
+            "parent_skill": "Vendor master data management",
+            "related_skills": [
+                "Vendor data cleansing & deduplication",
+                "Vendor master data integration (ERP\/API)",
+                "Vendor master data governance"
+            ],
+            "keywords": [
+                "hierarchy",
+                "relationship mapping",
+                "parent-subsidiary",
+                "site-level vendors",
+                "vendor groups"
+            ],
+            "common_roles": [
+                "Master Data Manager",
+                "Procure-to-Pay Analyst",
+                "Vendor Data Steward"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor master data integration (ERP\/API)",
+            "aliases": [
+                "Vendor data integration",
+                "Supplier master integration",
+                "ERP vendor integration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and managing integrations between vendor master systems and ERPs, procurement platforms, payment systems or external data sources via APIs, interfaces, and batch processes.",
+            "parent_skill": "Vendor master data management",
+            "related_skills": [
+                "SAP Vendor Master (SAP MM \/ S\/4HANA)",
+                "Vendor master change control & lifecycle management",
+                "Vendor master reconciliation & exceptions handling"
+            ],
+            "keywords": [
+                "integration",
+                "API",
+                "interface",
+                "ERP",
+                "synchronization"
+            ],
+            "common_roles": [
+                "ERP Data Administrator",
+                "Integration Analyst",
+                "Master Data Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor master data quality monitoring & metrics",
+            "aliases": [
+                "Supplier data quality monitoring",
+                "Vendor data KPIs",
+                "Vendor master data quality"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Defining and measuring KPIs, dashboards and exception reports (e.g., completeness, accuracy, duplicates) to continuously monitor and improve vendor master data quality.",
+            "parent_skill": "Vendor master data management",
+            "related_skills": [
+                "Vendor data cleansing & deduplication",
+                "Vendor master data governance",
+                "Vendor master reconciliation & exceptions handling"
+            ],
+            "keywords": [
+                "KPIs",
+                "dashboards",
+                "data quality",
+                "metrics",
+                "monitoring"
+            ],
+            "common_roles": [
+                "Data Quality Analyst",
+                "Master Data Analyst",
+                "Procure-to-Pay Reporting Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Supplier access control & data security (vendor master)",
+            "aliases": [
+                "Vendor master access control",
+                "Supplier data security",
+                "Vendor master role-based access"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Implementing role-based access, segregation of duties, audit logging and data protection controls for vendor master systems to meet internal security and regulatory requirements.",
+            "parent_skill": "Vendor master data management",
+            "related_skills": [
+                "Vendor master data governance",
+                "Vendor master change control & lifecycle management",
+                "Vendor master reconciliation & exceptions handling"
+            ],
+            "keywords": [
+                "access control",
+                "RBAC",
+                "data security",
+                "audit trail",
+                "segregation of duties"
+            ],
+            "common_roles": [
+                "IT GRC Analyst",
+                "Master Data Governance Lead",
+                "Security & Compliance Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor master change control & lifecycle management",
+            "aliases": [
+                "Supplier master change management",
+                "Vendor master lifecycle",
+                "Vendor record change control"
+            ],
+            "skill_type": "process_skill",
+            "description": "Managing controlled processes for vendor record changes, approvals, periodic reviews, archiving\/inactivation and end-of-life procedures for supplier records.",
+            "parent_skill": "Vendor master data management",
+            "related_skills": [
+                "Vendor master data governance",
+                "Vendor onboarding & registration",
+                "Vendor master data integration (ERP\/API)"
+            ],
+            "keywords": [
+                "change control",
+                "lifecycle",
+                "inactivation",
+                "periodic review",
+                "approval workflows"
+            ],
+            "common_roles": [
+                "Master Data Manager",
+                "Procure-to-Pay Process Owner",
+                "Vendor Data Steward"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor master reconciliation & exceptions handling",
+            "aliases": [
+                "Supplier reconciliation",
+                "Vendor statement reconciliation",
+                "Vendor data exception management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Reconciling vendor master records across systems, identifying mismatches or exceptions, and driving resolution workflows with stakeholders and third parties.",
+            "parent_skill": "Vendor master data management",
+            "related_skills": [
+                "Vendor data cleansing & deduplication",
+                "Vendor master data integration (ERP\/API)",
+                "Vendor master data quality monitoring & metrics"
+            ],
+            "keywords": [
+                "reconciliation",
+                "exceptions",
+                "mismatch resolution",
+                "cross-system",
+                "recon"
+            ],
+            "common_roles": [
+                "Accounts Payable Analyst",
+                "Master Data Reconciliation Specialist",
+                "Procure-to-Pay Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SAP Vendor Master (SAP MM \/ S\/4HANA)",
+            "aliases": [
+                "SAP Vendor Master",
+                "SAP MM vendor master",
+                "SAP S\/4HANA vendor master"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and maintaining vendor master records and related vendor tables within SAP (MM and S\/4HANA), including vendor account groups, partner functions and vendor synchronizations.",
+            "parent_skill": "Vendor master data management",
+            "related_skills": [
+                "Vendor master data integration (ERP\/API)",
+                "Vendor onboarding & registration",
+                "Vendor master reconciliation & exceptions handling"
+            ],
+            "keywords": [
+                "SAP",
+                "MM",
+                "S\/4HANA",
+                "vendor tables",
+                "account group"
+            ],
+            "common_roles": [
+                "SAP Master Data Consultant",
+                "ERP Data Administrator",
+                "Procure-to-Pay Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

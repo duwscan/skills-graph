@@ -1,0 +1,280 @@
+{
+    "domain": "Finance",
+    "category": "Internal Controls, Audit & SOX Operations",
+    "subcategory": "IT-dependent controls coordination",
+    "skills": [
+        {
+            "canonical_name": "IT controls testing coordination",
+            "aliases": [
+                "IT-dependent controls testing coordination",
+                "IT control testing coordination"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Plan, schedule and coordinate testing activities for IT-dependent controls across IT, finance and audit stakeholders, ensuring evidence collection, test scoping and issue escalation.",
+            "parent_skill": "IT-dependent controls coordination",
+            "related_skills": [
+                "ITGC assessment",
+                "User access review coordination",
+                "Control remediation tracking & issue management",
+                "IT audit liaison & stakeholder communication"
+            ],
+            "keywords": [
+                "test plans",
+                "evidence collection",
+                "test scripts",
+                "audit window",
+                "sampling"
+            ],
+            "common_roles": [
+                "audit & compliance function",
+                "SOX operations",
+                "IT controls function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ITGC assessment",
+            "aliases": [
+                "IT general controls assessment",
+                "ITGC testing"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluate the design and operating effectiveness of IT general controls (access, change management, operations) and identify control gaps and testing implications.",
+            "parent_skill": "IT-dependent controls coordination",
+            "related_skills": [
+                "IT controls testing coordination",
+                "Change management controls coordination",
+                "Segregation of duties (SoD) analysis for IT systems"
+            ],
+            "keywords": [
+                "logical access",
+                "change controls",
+                "configuration management",
+                "operational controls"
+            ],
+            "common_roles": [
+                "audit & compliance function",
+                "IT controls function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "User access review coordination",
+            "aliases": [
+                "access review coordination",
+                "user access certification coordination"
+            ],
+            "skill_type": "process_skill",
+            "description": "Coordinate periodic user access reviews and certifications, manage reviewer assignments, reconcile provisioning\/deprovisioning evidence and document remediation of inappropriate access.",
+            "parent_skill": "IT-dependent controls coordination",
+            "related_skills": [
+                "ITGC assessment",
+                "Segregation of duties (SoD) analysis for IT systems",
+                "Control remediation tracking & issue management"
+            ],
+            "keywords": [
+                "access recertification",
+                "entitlement review",
+                "provisioning",
+                "deprovisioning"
+            ],
+            "common_roles": [
+                "SOX operations",
+                "audit & compliance function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Change management controls coordination",
+            "aliases": [
+                "change control coordination",
+                "change management control testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Coordinate validation and testing of change management controls, including change request reviews, segregation of promotion, emergency change handling and related evidence capture.",
+            "parent_skill": "IT-dependent controls coordination",
+            "related_skills": [
+                "ITGC assessment",
+                "IT controls testing coordination",
+                "Continuous controls monitoring"
+            ],
+            "keywords": [
+                "change requests",
+                "promotion procedures",
+                "emergency changes",
+                "change logs"
+            ],
+            "common_roles": [
+                "IT operations",
+                "SOX operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Segregation of duties (SoD) analysis for IT systems",
+            "aliases": [
+                "SoD analysis",
+                "segregation of duties analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyze system roles, entitlements and transaction flows to identify segregation conflicts, risk scenarios and mitigating controls within enterprise IT systems.",
+            "parent_skill": "IT-dependent controls coordination",
+            "related_skills": [
+                "User access review coordination",
+                "ITGC assessment",
+                "Continuous controls monitoring"
+            ],
+            "keywords": [
+                "role mining",
+                "entitlement mapping",
+                "conflict matrix",
+                "mitigating controls"
+            ],
+            "common_roles": [
+                "audit & compliance function",
+                "IT controls function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "IT audit liaison & stakeholder communication",
+            "aliases": [
+                "audit liaison for IT controls",
+                "stakeholder communication for IT audits"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Serve as the primary communicator between IT, internal audit, external auditors and business stakeholders to align expectations, clarify evidence needs and resolve testing issues.",
+            "parent_skill": "IT-dependent controls coordination",
+            "related_skills": [
+                "IT controls testing coordination",
+                "Control remediation tracking & issue management"
+            ],
+            "keywords": [
+                "stakeholder management",
+                "status reporting",
+                "request clarification",
+                "audit responses"
+            ],
+            "common_roles": [
+                "audit & compliance function",
+                "SOX operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "GRC platform configuration & evidence extraction",
+            "aliases": [
+                "GRC tool configuration",
+                "governance risk and compliance platform configuration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configure governance, risk and compliance platforms to manage control frameworks, automate evidence collection, extract audit artifacts and support control testing workflows.",
+            "parent_skill": "IT-dependent controls coordination",
+            "related_skills": [
+                "IT controls testing coordination",
+                "Continuous controls monitoring",
+                "Control remediation tracking & issue management"
+            ],
+            "keywords": [
+                "evidence automation",
+                "control frameworks",
+                "data extraction",
+                "workflow configuration"
+            ],
+            "common_roles": [
+                "SOX operations",
+                "audit & compliance function",
+                "IT controls function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control remediation tracking & issue management",
+            "aliases": [
+                "remediation tracking",
+                "control issue management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Track control deficiencies from identification through remediation, manage remediation owners, validate corrective actions and report status to audit and compliance stakeholders.",
+            "parent_skill": "IT-dependent controls coordination",
+            "related_skills": [
+                "IT audit liaison & stakeholder communication",
+                "User access review coordination",
+                "GRC platform configuration & evidence extraction"
+            ],
+            "keywords": [
+                "deficiency tracking",
+                "remediation plans",
+                "root cause",
+                "closure validation"
+            ],
+            "common_roles": [
+                "SOX operations",
+                "audit & compliance function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Continuous controls monitoring",
+            "aliases": [
+                "automated controls monitoring",
+                "continuous monitoring of IT controls"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and operate continuous monitoring processes that use automated data feeds and rules to detect control exceptions, surface anomalies and reduce manual testing effort.",
+            "parent_skill": "IT-dependent controls coordination",
+            "related_skills": [
+                "GRC platform configuration & evidence extraction",
+                "Segregation of duties (SoD) analysis for IT systems",
+                "Change management controls coordination"
+            ],
+            "keywords": [
+                "automated rules",
+                "exception alerts",
+                "data feeds",
+                "anomaly detection"
+            ],
+            "common_roles": [
+                "IT controls function",
+                "SOX operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "IT-dependent controls documentation & evidence management",
+            "aliases": [
+                "controls documentation management",
+                "evidence management for IT controls"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Create and maintain standardized control narratives, test evidence packages, control matrices and retention of artifacts to support SOX testing and audits.",
+            "parent_skill": "IT-dependent controls coordination",
+            "related_skills": [
+                "IT controls testing coordination",
+                "GRC platform configuration & evidence extraction",
+                "Control remediation tracking & issue management"
+            ],
+            "keywords": [
+                "control narratives",
+                "test evidence",
+                "control matrix",
+                "artifact retention"
+            ],
+            "common_roles": [
+                "SOX operations",
+                "audit & compliance function"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

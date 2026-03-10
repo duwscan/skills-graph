@@ -1,0 +1,256 @@
+{
+    "domain": "Finance",
+    "category": "Accounts Receivable & Order-to-Cash",
+    "subcategory": "Bad debt provisioning support",
+    "skills": [
+        {
+            "canonical_name": "Allowance for doubtful accounts calculation",
+            "aliases": [
+                "allowance for bad debts calculation",
+                "bad debt provision calculation",
+                "allowance for doubtful accounts (ADA) calculation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Compute and apply allowance amounts for uncollectible receivables using company policy and historical loss rates; prepare schedules used to derive provision figures.",
+            "parent_skill": "Accounts receivable accounting",
+            "related_skills": [
+                "Accounts receivable aging analysis",
+                "Provisioning journal entries",
+                "Expected credit loss (ECL) modeling"
+            ],
+            "keywords": [
+                "ADA",
+                "bad debt provision",
+                "loss rate",
+                "provision schedule"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Accounts receivable aging analysis",
+            "aliases": [
+                "AR aging analysis",
+                "aging schedule analysis",
+                "receivables aging"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Segment receivables by age buckets, identify delinquent accounts, and analyze trends to inform provisioning and collection prioritization.",
+            "parent_skill": "Accounts receivable reporting",
+            "related_skills": [
+                "Allowance for doubtful accounts calculation",
+                "Collections effectiveness monitoring",
+                "Customer credit risk assessment"
+            ],
+            "keywords": [
+                "aging report",
+                "30\/60\/90",
+                "delinquency",
+                "past due"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Expected credit loss (ECL) modeling",
+            "aliases": [
+                "IFRS 9 ECL modeling",
+                "CECL modeling",
+                "expected credit loss calculation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Design and maintain expected credit loss models compliant with IFRS 9\/CECL, including lifetime versus 12‑month loss estimation, forward-looking adjustments, and staging assessments.",
+            "parent_skill": "Financial provisioning and regulatory accounting",
+            "related_skills": [
+                "Allowance for doubtful accounts calculation",
+                "Customer credit risk assessment",
+                "Provisioning journal entries"
+            ],
+            "keywords": [
+                "IFRS 9",
+                "CECL",
+                "forward-looking",
+                "staging"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Provisioning journal entries",
+            "aliases": [
+                "provision journal entries",
+                "provisioning entries",
+                "bad debt journal entries"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Prepare, post, and reconcile journal entries for bad debt provisions and adjustments, ensuring accuracy of general ledger and supporting documentation.",
+            "parent_skill": "General ledger accounting",
+            "related_skills": [
+                "Allowance for doubtful accounts calculation",
+                "Receivables reconciliation and balance sheet impact analysis"
+            ],
+            "keywords": [
+                "journal entry",
+                "GL posting",
+                "provision adjustment",
+                "accrual"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bad debt write-off and charge-off processing",
+            "aliases": [
+                "write-off processing",
+                "charge-off processing",
+                "AR write-offs"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Execute write-off and charge-off workflows according to policy, update customer accounts, coordinate approvals, and maintain audit trails for removed receivables.",
+            "parent_skill": "Accounts receivable operations",
+            "related_skills": [
+                "Collections effectiveness monitoring",
+                "Provisioning journal entries",
+                "Accounts receivable aging analysis"
+            ],
+            "keywords": [
+                "write-off",
+                "charge-off",
+                "writeoff approval",
+                "credit memos"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Customer credit risk assessment",
+            "aliases": [
+                "creditworthiness assessment",
+                "customer risk scoring",
+                "customer credit evaluation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluate customers' ability to pay using financial statements, payment history, external ratings and internal scoring to inform provisioning and collection strategies.",
+            "parent_skill": "Credit risk management",
+            "related_skills": [
+                "Expected credit loss (ECL) modeling",
+                "Accounts receivable aging analysis",
+                "Collections effectiveness monitoring"
+            ],
+            "keywords": [
+                "risk score",
+                "credit check",
+                "payment history",
+                "financial analysis"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Receivables reconciliation and balance sheet impact analysis",
+            "aliases": [
+                "AR reconciliation",
+                "reconciles AR to subledger",
+                "balance sheet impact of provisions"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Reconcile accounts receivable sub-ledger to GL, quantify the balance sheet impact of provisions and write-offs, and investigate discrepancies affecting financial statements.",
+            "parent_skill": "Financial close and reconciliation",
+            "related_skills": [
+                "Provisioning journal entries",
+                "Allowance for doubtful accounts calculation",
+                "Bad debt write-off and charge-off processing"
+            ],
+            "keywords": [
+                "sub-ledger",
+                "GL reconciliation",
+                "reconciliation",
+                "balance sheet"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Collections effectiveness monitoring",
+            "aliases": [
+                "collection effectiveness index",
+                "collections KPI monitoring",
+                "DSO and collections reporting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Track and report on collections KPIs (e.g., DSO, CEI, cure rates), identify performance gaps, and provide input to provisioning decisions based on portfolio trends.",
+            "parent_skill": "Order-to-cash performance management",
+            "related_skills": [
+                "Accounts receivable aging analysis",
+                "Customer credit risk assessment",
+                "Bad debt write-off and charge-off processing"
+            ],
+            "keywords": [
+                "DSO",
+                "CEI",
+                "KPI",
+                "cure rate"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SQL for receivables data extraction",
+            "aliases": [
+                "SQL for AR",
+                "T-SQL for receivables",
+                "structured query language for accounts receivable"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Write and optimize SQL queries to extract, transform and aggregate receivables data from transactional databases for analysis, reconciliation and provisioning models.",
+            "parent_skill": "Data extraction and reporting",
+            "related_skills": [
+                "Advanced Excel for provisioning models",
+                "Accounts receivable aging analysis",
+                "Power BI for AR reporting"
+            ],
+            "keywords": [
+                "SQL",
+                "queries",
+                "joins",
+                "data extraction"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Advanced Excel for provisioning models",
+            "aliases": [
+                "Excel pivot tables for AR",
+                "Power Query for provisioning",
+                "Excel modelling for bad debt provision"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Build and maintain provisioning and allowance models using Excel features such as PivotTables, Power Query, advanced formulas (XLOOKUP), and scenario analysis.",
+            "parent_skill": "Financial modelling and analysis tools",
+            "related_skills": [
+                "Allowance for doubtful accounts calculation",
+                "SQL for receivables data extraction",
+                "Expected credit loss (ECL) modeling"
+            ],
+            "keywords": [
+                "Excel",
+                "PivotTable",
+                "Power Query",
+                "XLOOKUP"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

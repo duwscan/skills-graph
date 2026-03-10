@@ -1,0 +1,269 @@
+{
+    "domain": "IT",
+    "category": "Network Engineering & Connectivity",
+    "subcategory": "Load balancing & traffic management",
+    "skills": [
+        {
+            "canonical_name": "Application (Layer 7) load balancing",
+            "aliases": [
+                "Layer 7 load balancing",
+                "L7 load balancing",
+                "content-based routing",
+                "application layer routing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing, configuring and operating load balancing that makes routing decisions based on application-layer data (HTTP headers, URL, cookies, payload).",
+            "parent_skill": "Load balancing & traffic management",
+            "related_skills": [
+                "Transport (Layer 4) load balancing",
+                "Session persistence (sticky sessions)",
+                "SSL\/TLS termination and offloading",
+                "Reverse proxy and software load balancer configuration (NGINX\/HAProxy)"
+            ],
+            "keywords": [
+                "L7",
+                "content switching",
+                "header-based routing",
+                "URL routing",
+                "API gateway routing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Transport (Layer 4) load balancing",
+            "aliases": [
+                "Layer 4 load balancing",
+                "L4 load balancing",
+                "network layer load balancing",
+                "TCP\/UDP load balancing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Configuring and managing load balancing based on transport-layer information such as IP addresses and TCP\/UDP ports for high-throughput, low-latency distribution.",
+            "parent_skill": "Load balancing & traffic management",
+            "related_skills": [
+                "Application (Layer 7) load balancing",
+                "Load balancing algorithms and traffic distribution strategies",
+                "High availability and failover design"
+            ],
+            "keywords": [
+                "L4",
+                "IP hash",
+                "port-based routing",
+                "transport layer"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Load balancing algorithms and traffic distribution strategies",
+            "aliases": [
+                "load balancing algorithms",
+                "traffic distribution strategies",
+                "algorithm selection for load balancers"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Selecting, tuning and evaluating load distribution methods (round-robin, least-connections, weighted, consistent hashing, latency-based) to meet performance and availability goals.",
+            "parent_skill": "Load balancing & traffic management",
+            "related_skills": [
+                "Transport (Layer 4) load balancing",
+                "Application (Layer 7) load balancing",
+                "Capacity planning for load balancers"
+            ],
+            "keywords": [
+                "round-robin",
+                "least-connections",
+                "consistent hashing",
+                "weighted balancing",
+                "latency-based routing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SSL\/TLS termination and offloading",
+            "aliases": [
+                "TLS termination",
+                "SSL offloading",
+                "TLS offload"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Configuring load balancers or proxies to terminate TLS\/SSL, manage certificates, and offload cryptographic processing from backend services while maintaining security best practices.",
+            "parent_skill": "Load balancing & traffic management",
+            "related_skills": [
+                "Application (Layer 7) load balancing",
+                "Health checks and backend monitoring (load balancers)",
+                "Reverse proxy and software load balancer configuration (NGINX\/HAProxy)"
+            ],
+            "keywords": [
+                "TLS termination",
+                "certificate management",
+                "SSL offload",
+                "cipher suites",
+                "HTTPS offloading"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Health checks and backend monitoring (load balancers)",
+            "aliases": [
+                "load balancer health checks",
+                "backend monitoring for load balancers",
+                "probe configuration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and configuring health probes, readiness\/liveness checks and monitoring metrics to detect unhealthy backends and trigger automated failover or traffic rerouting.",
+            "parent_skill": "Load balancing & traffic management",
+            "related_skills": [
+                "High availability and failover design",
+                "SSL\/TLS termination and offloading",
+                "Load balancing algorithms and traffic distribution strategies"
+            ],
+            "keywords": [
+                "health probe",
+                "readiness check",
+                "liveness check",
+                "backend status",
+                "failover"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Session persistence and affinity configuration",
+            "aliases": [
+                "sticky sessions",
+                "session affinity",
+                "cookie-based persistence"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing and tuning session persistence mechanisms (cookie-based, source IP, token affinity) to maintain user session continuity across load-balanced backends.",
+            "parent_skill": "Load balancing & traffic management",
+            "related_skills": [
+                "Application (Layer 7) load balancing",
+                "Transport (Layer 4) load balancing",
+                "Load balancing algorithms and traffic distribution strategies"
+            ],
+            "keywords": [
+                "sticky sessions",
+                "affinity",
+                "cookie affinity",
+                "source-IP persistence"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Global Server Load Balancing (GSLB) and DNS traffic steering",
+            "aliases": [
+                "GSLB",
+                "DNS-based load balancing",
+                "geo-DNS routing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and operating geographically distributed traffic steering using DNS, geo-routing, latency-based policies and health-aware global failover.",
+            "parent_skill": "Load balancing & traffic management",
+            "related_skills": [
+                "CDN integration for traffic offload",
+                "High availability and failover design",
+                "Load balancing algorithms and traffic distribution strategies"
+            ],
+            "keywords": [
+                "GSLB",
+                "geo-routing",
+                "DNS failover",
+                "latency-based routing",
+                "anycast"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Load balancer automation and Infrastructure-as-Code (IaC)",
+            "aliases": [
+                "load balancer automation",
+                "IaC for load balancers",
+                "automation for traffic management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Automating provisioning, configuration and policy changes for load balancers using Infrastructure-as-Code and CI\/CD practices to ensure repeatability and version control.",
+            "parent_skill": "Load balancing & traffic management",
+            "related_skills": [
+                "Reverse proxy and software load balancer configuration (NGINX\/HAProxy)",
+                "Cloud load balancing (AWS\/GCP\/Azure)",
+                "Health checks and backend monitoring (load balancers)"
+            ],
+            "keywords": [
+                "Infrastructure as Code",
+                "Terraform",
+                "Ansible",
+                "automation",
+                "CI\/CD"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Reverse proxy and software load balancer configuration (NGINX\/HAProxy)",
+            "aliases": [
+                "NGINX load balancing",
+                "HAProxy configuration",
+                "software load balancer setup"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Installing, configuring and tuning software reverse proxies (commonly NGINX or HAProxy) to perform load balancing, SSL termination, caching and request routing at scale.",
+            "parent_skill": "Load balancing & traffic management",
+            "related_skills": [
+                "Application (Layer 7) load balancing",
+                "SSL\/TLS termination and offloading",
+                "Load balancer automation and Infrastructure-as-Code (IaC)"
+            ],
+            "keywords": [
+                "NGINX",
+                "HAProxy",
+                "reverse proxy",
+                "proxy buffering",
+                "upstream configuration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cloud load balancing (AWS\/GCP\/Azure)",
+            "aliases": [
+                "managed cloud load balancers",
+                "AWS ELB\/ALB\/NLB",
+                "GCP Load Balancing",
+                "Azure Load Balancer\/Application Gateway"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Designing, configuring and operating managed load balancing services provided by cloud platforms to distribute traffic, integrate with autoscaling and enforce security controls.",
+            "parent_skill": "Load balancing & traffic management",
+            "related_skills": [
+                "Load balancer automation and Infrastructure-as-Code (IaC)",
+                "Global Server Load Balancing (GSLB) and DNS traffic steering",
+                "Health checks and backend monitoring (load balancers)"
+            ],
+            "keywords": [
+                "ELB",
+                "ALB",
+                "NLB",
+                "Cloud LB",
+                "Application Gateway"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

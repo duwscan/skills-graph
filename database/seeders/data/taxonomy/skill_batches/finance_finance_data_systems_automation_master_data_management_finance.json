@@ -1,0 +1,267 @@
+{
+    "domain": "Finance",
+    "category": "Finance Data, Systems & Automation",
+    "subcategory": "Master data management (finance)",
+    "skills": [
+        {
+            "canonical_name": "Financial master data modeling",
+            "aliases": [
+                "master data modeling (finance)",
+                "financial data model design",
+                "finance master-data schema design"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Designing canonical data models, entity-relationship schemas and attribute taxonomies for finance master data (customers, vendors, GL accounts, legal entities).",
+            "parent_skill": "Master data management (finance)",
+            "related_skills": [
+                "Reference data management (finance)",
+                "Finance data governance",
+                "Metadata management and data lineage (finance)"
+            ],
+            "keywords": [
+                "data model",
+                "entity model",
+                "schema",
+                "attributes",
+                "master data"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Finance data governance",
+            "aliases": [
+                "financial data governance",
+                "master data governance (finance)",
+                "finance data stewardship"
+            ],
+            "skill_type": "process_skill",
+            "description": "Establishing policies, ownership, stewardship, standards and decision rights for financial master data across the organization.",
+            "parent_skill": "Master data management (finance)",
+            "related_skills": [
+                "Financial master data quality management",
+                "Chart of accounts governance",
+                "Legal entity and org hierarchy management"
+            ],
+            "keywords": [
+                "data policy",
+                "stewardship",
+                "ownership",
+                "data standards",
+                "governance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial master data quality management",
+            "aliases": [
+                "master data quality (finance)",
+                "finance data QA",
+                "financial master-data cleansing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implementing profiling, validation rules, deduplication, completeness checks and remediation processes to maintain accurate finance master data.",
+            "parent_skill": "Master data management (finance)",
+            "related_skills": [
+                "Finance data governance",
+                "Master data reconciliation (finance)",
+                "Master data migration and ETL"
+            ],
+            "keywords": [
+                "data quality",
+                "profiling",
+                "validation",
+                "deduplication",
+                "remediation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Reference data management (finance)",
+            "aliases": [
+                "financial reference data management",
+                "reference data governance (finance)",
+                "finance reference-data maintenance"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Managing standardized reference datasets used in finance systems (currency codes, country codes, account types, tax codes) including classification and distribution.",
+            "parent_skill": "Master data management (finance)",
+            "related_skills": [
+                "Financial master data modeling",
+                "Finance data governance",
+                "Metadata management and data lineage (finance)"
+            ],
+            "keywords": [
+                "reference data",
+                "taxonomies",
+                "codes",
+                "classification",
+                "distribution"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Chart of accounts governance",
+            "aliases": [
+                "COA governance",
+                "chart of accounts management",
+                "GL structure governance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Defining, maintaining and controlling the chart of accounts structure, segment rules, rollups and mapping to financial reporting requirements.",
+            "parent_skill": "Master data management (finance)",
+            "related_skills": [
+                "Financial master data modeling",
+                "Finance data governance",
+                "Master data reconciliation (finance)"
+            ],
+            "keywords": [
+                "chart of accounts",
+                "GL",
+                "account structure",
+                "rollup",
+                "mapping"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Legal entity and org hierarchy management",
+            "aliases": [
+                "legal entity management (LEM)",
+                "organizational hierarchy management",
+                "entity hierarchy maintenance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintaining legal entity master records, ownership structures, consolidation hierarchies and intercompany relationships for finance processes.",
+            "parent_skill": "Master data management (finance)",
+            "related_skills": [
+                "Reference data management (finance)",
+                "Master data reconciliation (finance)",
+                "Finance data governance"
+            ],
+            "keywords": [
+                "legal entity",
+                "hierarchy",
+                "consolidation",
+                "intercompany",
+                "ownership"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Master data reconciliation (finance)",
+            "aliases": [
+                "financial master-data reconciliation",
+                "master data vs transactional reconciliation",
+                "data-to-ledger reconciliation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Reconciling master data across systems and to financial ledgers to identify mismatches, mapping errors and consolidation issues.",
+            "parent_skill": "Master data management (finance)",
+            "related_skills": [
+                "Financial master data quality management",
+                "Chart of accounts governance",
+                "Master data migration and ETL"
+            ],
+            "keywords": [
+                "reconciliation",
+                "data matching",
+                "ledger",
+                "mapping errors",
+                "variance analysis"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "MDM platform configuration",
+            "aliases": [
+                "master data management platform configuration",
+                "MDM system setup",
+                "MDM configuration (Informatica\/Stibo\/SAP\/Oracle)"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and administering master data management platforms including data models, workflows, matching rules, hierarchies and interfaces.",
+            "parent_skill": "Master data management (finance)",
+            "related_skills": [
+                "Master data migration and ETL",
+                "Financial master data quality management",
+                "Metadata management and data lineage (finance)"
+            ],
+            "keywords": [
+                "MDM",
+                "Informatica MDM",
+                "Stibo STEP",
+                "SAP MDG",
+                "platform configuration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Master data migration and ETL",
+            "aliases": [
+                "master data ETL",
+                "financial data migration",
+                "master-data load and transformation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning and executing extraction, transformation and load processes for migrating or consolidating finance master data between systems. Includes mapping, cleansing and validation.",
+            "parent_skill": "Master data management (finance)",
+            "related_skills": [
+                "MDM platform configuration",
+                "Financial master data quality management",
+                "Master data reconciliation (finance)"
+            ],
+            "keywords": [
+                "ETL",
+                "migration",
+                "data mapping",
+                "transformation",
+                "data load"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Metadata management and data lineage (finance)",
+            "aliases": [
+                "financial metadata management",
+                "data lineage for finance",
+                "master data metadata tracking"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Documenting and maintaining metadata, provenance and end-to-end lineage for financial master data to support impact analysis, auditing and traceability.",
+            "parent_skill": "Master data management (finance)",
+            "related_skills": [
+                "Finance data governance",
+                "MDM platform configuration",
+                "Reference data management (finance)"
+            ],
+            "keywords": [
+                "metadata",
+                "data lineage",
+                "provenance",
+                "impact analysis",
+                "traceability"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

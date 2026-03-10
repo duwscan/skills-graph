@@ -1,0 +1,325 @@
+{
+    "domain": "Finance",
+    "category": "Accounts Payable & Procure-to-Pay",
+    "subcategory": "AP automation & workflow",
+    "skills": [
+        {
+            "canonical_name": "Invoice OCR & Intelligent Document Processing (IDP)",
+            "aliases": [
+                "Invoice OCR",
+                "Intelligent Document Processing",
+                "IDP for invoices",
+                "Invoice data capture",
+                "Optical Character Recognition for invoices"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using OCR\/IDP technologies to automatically extract, validate and structure invoice data for downstream AP workflows.",
+            "parent_skill": "AP automation & workflow",
+            "related_skills": [
+                "AP workflow configuration & orchestration",
+                "AP exception handling & dispute resolution",
+                "RPA for AP",
+                "E-invoicing formats & compliance",
+                "ERP integration for AP"
+            ],
+            "keywords": [
+                "OCR",
+                "IDP",
+                "document capture",
+                "invoice parsing",
+                "data extraction"
+            ],
+            "common_roles": [
+                "AP Automation Specialist",
+                "Invoice Processing Specialist",
+                "P2P Analyst",
+                "Finance Systems Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "AP workflow configuration & orchestration",
+            "aliases": [
+                "Invoice workflow configuration",
+                "AP workflow design",
+                "Workflow orchestration for AP",
+                "Approval routing configuration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and configuring automated approval, routing and exception flows for accounts payable processes within AP platforms or workflow engines.",
+            "parent_skill": "AP automation & workflow",
+            "related_skills": [
+                "Invoice OCR & Intelligent Document Processing (IDP)",
+                "Purchase order matching (2-way & 3-way)",
+                "ERP integration for AP",
+                "Workflow analytics & AP KPIs",
+                "Process mining for AP & automation discovery"
+            ],
+            "keywords": [
+                "approval routing",
+                "workflow rules",
+                "business rules",
+                "approvals",
+                "SLA"
+            ],
+            "common_roles": [
+                "P2P Analyst",
+                "AP Workflow Administrator",
+                "AP Manager",
+                "Finance Systems Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Purchase order matching (2-way & 3-way matching)",
+            "aliases": [
+                "PO matching",
+                "Two-way matching",
+                "Three-way matching",
+                "Invoice-to-PO matching"
+            ],
+            "skill_type": "process_skill",
+            "description": "Configuring and executing automated matching of invoices to purchase orders and goods receipts to validate charges prior to payment.",
+            "parent_skill": "AP automation & workflow",
+            "related_skills": [
+                "ERP integration for AP",
+                "Vendor master data management & onboarding automation",
+                "AP exception handling & dispute resolution",
+                "AP workflow configuration & orchestration"
+            ],
+            "keywords": [
+                "PO match",
+                "GRN",
+                "match tolerance",
+                "invoice validation"
+            ],
+            "common_roles": [
+                "Accounts Payable Analyst",
+                "P2P Specialist",
+                "Procure-to-Pay Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "AP exception handling & dispute resolution",
+            "aliases": [
+                "Invoice exception management",
+                "AP dispute resolution",
+                "Payment exception handling",
+                "Invoice discrepancy resolution"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing and resolving invoice exceptions, supplier disputes and payment holds using automated tooling and stakeholder coordination.",
+            "parent_skill": "AP automation & workflow",
+            "related_skills": [
+                "Purchase order matching (2-way & 3-way matching)",
+                "Vendor master data management & onboarding automation",
+                "AP workflow configuration & orchestration",
+                "Workflow analytics & AP KPIs"
+            ],
+            "keywords": [
+                "exceptions",
+                "disputes",
+                "investigation",
+                "remediation",
+                "root cause analysis"
+            ],
+            "common_roles": [
+                "Accounts Payable Specialist",
+                "P2P Analyst",
+                "AP Operations Lead"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor master data management & onboarding automation",
+            "aliases": [
+                "Vendor master management",
+                "Supplier master data management",
+                "Supplier onboarding automation",
+                "Vendor data governance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintaining accurate supplier records, automating onboarding and validations to reduce payment errors and fraud in AP processes.",
+            "parent_skill": "AP automation & workflow",
+            "related_skills": [
+                "ERP integration for AP",
+                "Purchase order matching (2-way & 3-way matching)",
+                "AP exception handling & dispute resolution",
+                "E-invoicing formats & compliance"
+            ],
+            "keywords": [
+                "vendor data",
+                "supplier onboarding",
+                "data validation",
+                "duplicate prevention",
+                "vendor onboarding"
+            ],
+            "common_roles": [
+                "Vendor Master Data Analyst",
+                "P2P Specialist",
+                "Accounts Payable Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Robotic Process Automation (RPA) for AP",
+            "aliases": [
+                "RPA for accounts payable",
+                "Robotic Process Automation in AP",
+                "AP RPA"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Designing, developing and maintaining RPA bots to automate repetitive AP tasks such as data entry, reconciliation and status updates.",
+            "parent_skill": "AP automation & workflow",
+            "related_skills": [
+                "Invoice OCR & Intelligent Document Processing (IDP)",
+                "ERP integration for AP",
+                "AP workflow configuration & orchestration",
+                "Process mining for AP & automation discovery"
+            ],
+            "keywords": [
+                "RPA",
+                "bot development",
+                "automation scripts",
+                "UiPath",
+                "Automation Anywhere"
+            ],
+            "common_roles": [
+                "RPA Developer",
+                "Automation Engineer",
+                "AP Automation Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ERP integration for AP (AP system integrations & APIs)",
+            "aliases": [
+                "AP ERP integration",
+                "ERP interfaces for accounts payable",
+                "API integration for AP"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Integrating AP automation platforms with ERP systems and other finance applications using APIs, middleware or connectors to enable end-to-end P2P flows.",
+            "parent_skill": "AP automation & workflow",
+            "related_skills": [
+                "Invoice OCR & Intelligent Document Processing (IDP)",
+                "Purchase order matching (2-way & 3-way matching)",
+                "Vendor master data management & onboarding automation",
+                "RPA for AP"
+            ],
+            "keywords": [
+                "ERP",
+                "API",
+                "connectors",
+                "integration",
+                "middleware"
+            ],
+            "common_roles": [
+                "Integration Specialist",
+                "Finance Systems Analyst",
+                "P2P Integration Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "E-invoicing formats & compliance",
+            "aliases": [
+                "Electronic invoicing",
+                "e-invoicing compliance",
+                "Peppol\/UBL invoicing standards"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Knowledge of electronic invoicing standards, transmission protocols and regulatory requirements to ensure compliant invoice exchange and processing.",
+            "parent_skill": "AP automation & workflow",
+            "related_skills": [
+                "ERP integration for AP",
+                "Invoice OCR & Intelligent Document Processing (IDP)",
+                "Vendor master data management & onboarding automation"
+            ],
+            "keywords": [
+                "e-invoice",
+                "Peppol",
+                "UBL",
+                "compliance",
+                "electronic transmission"
+            ],
+            "common_roles": [
+                "Compliance Analyst",
+                "E-invoicing Specialist",
+                "P2P Operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Workflow analytics & AP KPIs",
+            "aliases": [
+                "AP analytics",
+                "Invoice cycle time analysis",
+                "AP performance metrics",
+                "DPO analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Measuring and analyzing AP performance indicators (e.g., invoice cycle time, DPO, exception rates) and using insights to optimize automation and processes.",
+            "parent_skill": "AP automation & workflow",
+            "related_skills": [
+                "Process mining for AP & automation discovery",
+                "AP workflow configuration & orchestration",
+                "AP exception handling & dispute resolution"
+            ],
+            "keywords": [
+                "KPI",
+                "analytics",
+                "DPO",
+                "cycle time",
+                "dashboards"
+            ],
+            "common_roles": [
+                "P2P Analyst",
+                "Finance Data Analyst",
+                "AP Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Process mining for AP & automation discovery",
+            "aliases": [
+                "AP process mining",
+                "Process discovery",
+                "Automation opportunity discovery"
+            ],
+            "skill_type": "process_skill",
+            "description": "Using process mining techniques and event-log analysis to map real AP processes, identify bottlenecks and uncover automation opportunities.",
+            "parent_skill": "AP automation & workflow",
+            "related_skills": [
+                "Workflow analytics & AP KPIs",
+                "RPA for AP",
+                "AP workflow configuration & orchestration",
+                "Invoice OCR & Intelligent Document Processing (IDP)"
+            ],
+            "keywords": [
+                "process mining",
+                "event logs",
+                "bottleneck analysis",
+                "automation discovery",
+                "process mapping"
+            ],
+            "common_roles": [
+                "Process Analyst",
+                "Automation Consultant",
+                "P2P Improvement Lead"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,249 @@
+{
+    "domain": "IT",
+    "category": "Cloud Platforms & Infrastructure",
+    "subcategory": "Cloud resilience & disaster recovery",
+    "skills": [
+        {
+            "canonical_name": "Disaster recovery planning",
+            "aliases": [
+                "DR planning",
+                "Disaster recovery strategy"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating and maintaining documented recovery strategies, scope, objectives, roles, dependencies and step-by-step procedures to restore cloud services and data after outages or disasters.",
+            "parent_skill": "Cloud resilience & disaster recovery",
+            "related_skills": [
+                "Business continuity planning",
+                "RTO\/RPO definition and optimization",
+                "Incident runbook and playbook development",
+                "Disaster recovery testing and tabletop exercises"
+            ],
+            "keywords": [
+                "recovery strategy",
+                "DR scope",
+                "service dependencies",
+                "recovery procedures"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Business continuity planning",
+            "aliases": [
+                "BCP",
+                "Business continuity strategy"
+            ],
+            "skill_type": "process_skill",
+            "description": "Defining organizational capability and processes to continue critical business functions during and after incidents, aligning recovery priorities with business impact and stakeholders.",
+            "parent_skill": "Cloud resilience & disaster recovery",
+            "related_skills": [
+                "Disaster recovery planning",
+                "RTO\/RPO definition and optimization",
+                "Risk assessment for cloud services"
+            ],
+            "keywords": [
+                "continuity plan",
+                "critical functions",
+                "stakeholder alignment",
+                "impact analysis"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "RTO\/RPO definition and optimization",
+            "aliases": [
+                "RTO\/RPO",
+                "Recovery Time Objective and Recovery Point Objective"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing applications and data to define, validate and optimize Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO) based on business impact, cost and technical feasibility.",
+            "parent_skill": "Cloud resilience & disaster recovery",
+            "related_skills": [
+                "Disaster recovery planning",
+                "Cloud backup and restore strategies",
+                "Multi-region replication and failover design"
+            ],
+            "keywords": [
+                "RTO",
+                "RPO",
+                "business impact analysis",
+                "recovery SLAs"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cloud backup and restore strategies",
+            "aliases": [
+                "Cloud backup strategy",
+                "Backup and restore"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing backup models (full, incremental, snapshot), retention policies, encryption, and restore procedures for cloud-native and hybrid workloads to meet RTO\/RPO targets.",
+            "parent_skill": "Cloud resilience & disaster recovery",
+            "related_skills": [
+                "RTO\/RPO definition and optimization",
+                "Multi-region replication and failover design",
+                "Infrastructure as Code for disaster recovery"
+            ],
+            "keywords": [
+                "snapshots",
+                "incremental backup",
+                "retention policy",
+                "data restore"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated failover orchestration",
+            "aliases": [
+                "Failover automation",
+                "Orchestrated failover"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing and operating automated failover processes and tooling that detect failures and shift traffic or workloads to standby systems with minimal manual intervention.",
+            "parent_skill": "Cloud resilience & disaster recovery",
+            "related_skills": [
+                "Multi-region replication and failover design",
+                "Runbook and incident playbook development",
+                "Chaos engineering for cloud resilience"
+            ],
+            "keywords": [
+                "health checks",
+                "automatic failover",
+                "orchestration",
+                "self-healing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Multi-region replication and failover design",
+            "aliases": [
+                "Cross-region replication",
+                "Geo-redundant replication"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing data and application architectures across regions to enable replication, consistency models, and reliable failover patterns that satisfy resilience and latency requirements.",
+            "parent_skill": "Cloud resilience & disaster recovery",
+            "related_skills": [
+                "Cloud backup and restore strategies",
+                "RTO\/RPO definition and optimization",
+                "Automated failover orchestration"
+            ],
+            "keywords": [
+                "replication",
+                "geo-redundancy",
+                "consistency",
+                "cross-region failover"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Disaster recovery testing and tabletop exercises",
+            "aliases": [
+                "DR testing",
+                "Tabletop exercises",
+                "Failover testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning, executing and evaluating regular DR tests and tabletop simulations to validate recovery plans, identify gaps, measure RTO\/RPO performance and ensure stakeholder readiness.",
+            "parent_skill": "Cloud resilience & disaster recovery",
+            "related_skills": [
+                "Disaster recovery planning",
+                "Incident runbook and playbook development",
+                "Chaos engineering for cloud resilience"
+            ],
+            "keywords": [
+                "test plan",
+                "simulation",
+                "failover drill",
+                "after-action review"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Infrastructure as Code for disaster recovery",
+            "aliases": [
+                "IaC for DR",
+                "Disaster recovery as code"
+            ],
+            "skill_type": "process_skill",
+            "description": "Using infrastructure-as-code practices and templates to provision, version and automate recovery environments and DR runbooks so recovery steps can be executed consistently and reproducibly.",
+            "parent_skill": "Cloud resilience & disaster recovery",
+            "related_skills": [
+                "Cloud backup and restore strategies",
+                "Automated failover orchestration",
+                "Disaster recovery testing and tabletop exercises"
+            ],
+            "keywords": [
+                "IaC",
+                "provisioning templates",
+                "recovery automation",
+                "repeatable environments"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Chaos engineering for cloud resilience",
+            "aliases": [
+                "Chaos testing",
+                "Fault injection testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and running controlled experiments (fault injection, latency, resource failures) against cloud systems to uncover resilience weaknesses and validate automated recovery mechanisms.",
+            "parent_skill": "Cloud resilience & disaster recovery",
+            "related_skills": [
+                "Disaster recovery testing and tabletop exercises",
+                "Automated failover orchestration",
+                "Incident runbook and playbook development"
+            ],
+            "keywords": [
+                "fault injection",
+                "resilience testing",
+                "blast radius",
+                "steady-state hypothesis"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Incident runbook and playbook development",
+            "aliases": [
+                "Runbook authoring",
+                "DR playbook development"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Creating actionable, role-specific runbooks and incident playbooks with step-by-step procedures, escalation paths, verification checks and rollback steps for recovering cloud services.",
+            "parent_skill": "Cloud resilience & disaster recovery",
+            "related_skills": [
+                "Disaster recovery planning",
+                "Disaster recovery testing and tabletop exercises",
+                "Automated failover orchestration"
+            ],
+            "keywords": [
+                "runbook",
+                "playbook",
+                "escalation",
+                "verification"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

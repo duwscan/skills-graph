@@ -1,0 +1,313 @@
+{
+    "domain": "F&B",
+    "category": "Inventory, Purchasing & Supplier Management",
+    "subcategory": "Ordering & replenishment planning",
+    "skills": [
+        {
+            "canonical_name": "Demand forecasting (F&B)",
+            "aliases": [
+                "sales forecasting",
+                "demand planning for restaurants",
+                "forecasting demand"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Developing short- and long-term demand estimates for food and beverage items using historical sales, seasonality, menu cycles, promotions and event signals to inform ordering and production.",
+            "parent_skill": "Ordering & replenishment planning",
+            "related_skills": [
+                "Safety stock & reorder point calculation",
+                "Par level setting and menu-linked replenishment",
+                "Economic order quantity (EOQ) and order-sizing",
+                "Inventory cycle counting & reconciliation"
+            ],
+            "keywords": [
+                "forecasting",
+                "seasonality",
+                "time series",
+                "promotions",
+                "sales smoothing"
+            ],
+            "common_roles": [
+                "Inventory Manager",
+                "Supply Chain Analyst",
+                "Restaurant Manager",
+                "Operations Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Safety stock & reorder point calculation",
+            "aliases": [
+                "reorder point calculation",
+                "ROP calculation",
+                "safety inventory calculation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Quantifying safety stock and determining reorder points by combining demand variability, lead-time variability and desired service levels to minimize stockouts and overstock in F&B operations.",
+            "parent_skill": "Ordering & replenishment planning",
+            "related_skills": [
+                "Demand forecasting (F&B)",
+                "Supplier lead-time management & reliability assessment",
+                "Par level setting and menu-linked replenishment"
+            ],
+            "keywords": [
+                "safety stock",
+                "reorder point",
+                "service level",
+                "lead time variability"
+            ],
+            "common_roles": [
+                "Procurement Specialist",
+                "Inventory Planner",
+                "Kitchen Manager",
+                "Supply Chain Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Economic order quantity (EOQ) and order-sizing",
+            "aliases": [
+                "order quantity optimization",
+                "EOQ modeling",
+                "optimal order sizing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying EOQ, lot-sizing and cost trade-off methods to determine optimal order quantities that balance ordering, holding and spoilage costs specific to perishable F&B items.",
+            "parent_skill": "Ordering & replenishment planning",
+            "related_skills": [
+                "Safety stock & reorder point calculation",
+                "Demand forecasting (F&B)",
+                "Purchase order processing & supplier communication"
+            ],
+            "keywords": [
+                "EOQ",
+                "lot sizing",
+                "order frequency",
+                "holding costs",
+                "spoilage"
+            ],
+            "common_roles": [
+                "Inventory Planner",
+                "Procurement Specialist",
+                "Supply Chain Analyst",
+                "Operations Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Supplier lead-time management & reliability assessment",
+            "aliases": [
+                "lead time analysis",
+                "supplier reliability evaluation",
+                "lead-time variability tracking"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Measuring and managing supplier lead times, on-time delivery performance and variability to adjust replenishment parameters and maintain continuity of supply for perishable goods.",
+            "parent_skill": "Ordering & replenishment planning",
+            "related_skills": [
+                "Safety stock & reorder point calculation",
+                "Vendor-managed inventory (VMI) coordination",
+                "Purchase order processing & supplier communication"
+            ],
+            "keywords": [
+                "lead time",
+                "on-time delivery",
+                "supplier performance",
+                "delivery variance"
+            ],
+            "common_roles": [
+                "Supplier Manager",
+                "Procurement Specialist",
+                "Inventory Manager",
+                "Operations Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Par level setting and menu-linked replenishment",
+            "aliases": [
+                "par level management",
+                "menu-driven stock levels",
+                "par stock configuration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Establishing and maintaining par levels for inventory items based on menu usage patterns, shift planning and service levels to support timely replenishment and reduce waste.",
+            "parent_skill": "Ordering & replenishment planning",
+            "related_skills": [
+                "Demand forecasting (F&B)",
+                "Safety stock & reorder point calculation",
+                "Inventory cycle counting & reconciliation"
+            ],
+            "keywords": [
+                "par levels",
+                "menu linkage",
+                "replenishment frequency",
+                "usage rates"
+            ],
+            "common_roles": [
+                "Kitchen Manager",
+                "Restaurant Manager",
+                "Inventory Manager",
+                "Purchasing Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Purchase order processing & supplier communication",
+            "aliases": [
+                "PO processing",
+                "purchase order management",
+                "order placement"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Creating, approving and transmitting purchase orders; managing order confirmations, changes and basic negotiations with suppliers to ensure correct quantities, prices and delivery terms.",
+            "parent_skill": "Ordering & replenishment planning",
+            "related_skills": [
+                "Supplier lead-time management & reliability assessment",
+                "Vendor-managed inventory (VMI) coordination",
+                "Automated ordering systems configuration"
+            ],
+            "keywords": [
+                "purchase order",
+                "order confirmations",
+                "supplier communication",
+                "order amendments"
+            ],
+            "common_roles": [
+                "Purchasing Coordinator",
+                "Procurement Specialist",
+                "Kitchen Manager",
+                "Inventory Clerk"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor-managed inventory (VMI) coordination",
+            "aliases": [
+                "VMI coordination",
+                "vendor-managed replenishment",
+                "supplier-managed inventory"
+            ],
+            "skill_type": "process_skill",
+            "description": "Coordinating inventory replenishment models where suppliers monitor usage\/stock and replenish items; defining SLAs, data exchange, responsibilities and dispute resolution processes.",
+            "parent_skill": "Ordering & replenishment planning",
+            "related_skills": [
+                "Automated ordering systems configuration",
+                "Supplier lead-time management & reliability assessment",
+                "Purchase order processing & supplier communication"
+            ],
+            "keywords": [
+                "VMI",
+                "service level agreements",
+                "data sharing",
+                "replenishment cadence"
+            ],
+            "common_roles": [
+                "Supplier Manager",
+                "Procurement Specialist",
+                "Inventory Manager",
+                "Supply Chain Coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated ordering systems configuration (ERP\/procurement)",
+            "aliases": [
+                "procurement system configuration",
+                "ERP ordering setup",
+                "automatic reorder system setup"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring automated ordering rules, reorder triggers, vendor catalogs and integrations within ERP or procurement platforms to enable electronic ordering and reduce manual errors.",
+            "parent_skill": "Ordering & replenishment planning",
+            "related_skills": [
+                "Purchase order processing & supplier communication",
+                "Vendor-managed inventory (VMI) coordination",
+                "Demand forecasting (F&B)"
+            ],
+            "keywords": [
+                "ERP",
+                "procurement",
+                "reorder rules",
+                "system integration",
+                "automation"
+            ],
+            "common_roles": [
+                "Procurement Systems Analyst",
+                "Inventory Manager",
+                "IT - Supply Chain",
+                "Purchasing Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inventory cycle counting & reconciliation",
+            "aliases": [
+                "cycle counting",
+                "stock reconciliation",
+                "periodic inventory checks"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Running regular cycle counts, reconciling physical inventory to system records, investigating variances and updating replenishment parameters to maintain accurate stock visibility.",
+            "parent_skill": "Ordering & replenishment planning",
+            "related_skills": [
+                "Par level setting and menu-linked replenishment",
+                "Demand forecasting (F&B)",
+                "Lot, expiry date tracking & FEFO\/FIFO rotation"
+            ],
+            "keywords": [
+                "cycle count",
+                "inventory reconciliation",
+                "variance analysis",
+                "stock accuracy"
+            ],
+            "common_roles": [
+                "Inventory Clerk",
+                "Inventory Manager",
+                "Warehouse Supervisor",
+                "Restaurant Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Lot, expiry date tracking & FEFO\/FIFO rotation",
+            "aliases": [
+                "expiry date management",
+                "lot tracking",
+                "FEFO rotation",
+                "FIFO stock rotation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Managing lot numbers, expiry\/best-before dates and implementing FEFO\/FIFO rotation rules to ensure food safety, regulatory traceability and minimize waste from expired stock.",
+            "parent_skill": "Ordering & replenishment planning",
+            "related_skills": [
+                "Inventory cycle counting & reconciliation",
+                "Purchase order processing & supplier communication",
+                "Supplier lead-time management & reliability assessment"
+            ],
+            "keywords": [
+                "lot tracking",
+                "expiry dates",
+                "FEFO",
+                "FIFO",
+                "traceability"
+            ],
+            "common_roles": [
+                "Quality Assurance Manager",
+                "Inventory Manager",
+                "Kitchen Manager",
+                "Food Safety Coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

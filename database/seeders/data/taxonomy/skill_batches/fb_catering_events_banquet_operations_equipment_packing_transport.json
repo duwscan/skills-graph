@@ -1,0 +1,308 @@
+{
+    "domain": "F&B",
+    "category": "Catering, Events & Banquet Operations",
+    "subcategory": "Equipment packing & transport",
+    "skills": [
+        {
+            "canonical_name": "Crate packing and bracing",
+            "aliases": [
+                "crate packing",
+                "crating",
+                "packing for transport",
+                "wooden crate packing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Prepare and secure items in crates or boxes using internal bracing, cushioning and blocking to prevent movement or damage during transit.",
+            "parent_skill": "Equipment packing & transport",
+            "related_skills": [
+                "Palletization and shrink-wrap",
+                "Fragile item handling",
+                "Inventory tagging and labeling"
+            ],
+            "keywords": [
+                "crating",
+                "bracing",
+                "cushioning",
+                "blocking",
+                "packing"
+            ],
+            "common_roles": [
+                "Event operations crew",
+                "Catering logistics staff",
+                "Banquet setup team"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cargo securing and tie-down lashing",
+            "aliases": [
+                "load tie-down",
+                "ratchet strap securing",
+                "cargo lashing",
+                "tie-down techniques"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Apply straps, ropes, edge protection and lashing techniques to secure equipment and props on pallets, dollies or vehicle beds to prevent shifting in transit.",
+            "parent_skill": "Equipment packing & transport",
+            "related_skills": [
+                "Load balancing and weight distribution",
+                "Vehicle loading and unloading optimization",
+                "Compliance with manual handling and transport safety"
+            ],
+            "keywords": [
+                "straps",
+                "ratchet straps",
+                "tie-down",
+                "lashing",
+                "edge protectors"
+            ],
+            "common_roles": [
+                "Event operations crew",
+                "Catering logistics staff",
+                "Stage and set transport teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Load balancing and weight distribution",
+            "aliases": [
+                "weight distribution",
+                "load balancing",
+                "center of gravity planning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Plan and arrange equipment and pallets to distribute weight evenly for safe transport, vehicle stability and compliance with axle\/load limits.",
+            "parent_skill": "Equipment packing & transport",
+            "related_skills": [
+                "Cargo securing and tie-down lashing",
+                "Vehicle loading and unloading optimization",
+                "Route planning and logistics coordination for equipment transport"
+            ],
+            "keywords": [
+                "weight distribution",
+                "axle load",
+                "center of gravity",
+                "stability"
+            ],
+            "common_roles": [
+                "Logistics support staff",
+                "Catering operations staff",
+                "Banquet setup team"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Fragile item handling (glassware & china)",
+            "aliases": [
+                "fragile handling",
+                "glassware packing",
+                "china handling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Handle, pack and secure fragile items such as glassware, dishes and decorative pieces using protective materials and handling best practices to minimize breakage.",
+            "parent_skill": "Equipment packing & transport",
+            "related_skills": [
+                "Crate packing and bracing",
+                "Inventory tagging and labeling",
+                "Palletization and shrink-wrap"
+            ],
+            "keywords": [
+                "glassware",
+                "china",
+                "fragile",
+                "bubble wrap",
+                "padding"
+            ],
+            "common_roles": [
+                "Banquet setup team",
+                "Catering logistics staff",
+                "Event operations crew"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inventory tagging and labeling",
+            "aliases": [
+                "asset tagging",
+                "labeling for transport",
+                "crate labeling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Apply and manage clear labels, barcodes or asset tags on equipment and crates to support tracking, identification and correct placement at event sites.",
+            "parent_skill": "Equipment packing & transport",
+            "related_skills": [
+                "Equipment inventory reconciliation",
+                "Crate packing and bracing",
+                "Route planning and logistics coordination for equipment transport"
+            ],
+            "keywords": [
+                "labeling",
+                "asset tag",
+                "barcode",
+                "identification",
+                "packing list"
+            ],
+            "common_roles": [
+                "Inventory control staff",
+                "Event logistics assistants",
+                "Catering operations staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Manual material handling equipment operation (pallet jack, hand truck, dolly)",
+            "aliases": [
+                "pallet jack operation",
+                "hand truck use",
+                "dolly operation",
+                "manual MHE operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operate manual material handling tools (pallet jacks, hand trucks, dollies) to move crates, pallets and equipment safely and efficiently within loading areas and event sites.",
+            "parent_skill": "Equipment packing & transport",
+            "related_skills": [
+                "Cargo securing and tie-down lashing",
+                "Palletization and shrink-wrap",
+                "Vehicle loading and unloading optimization"
+            ],
+            "keywords": [
+                "pallet jack",
+                "hand truck",
+                "dolly",
+                "material handling",
+                "MHE"
+            ],
+            "common_roles": [
+                "Warehouse support staff",
+                "Event setup crew",
+                "Catering logistics staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Forklift operation",
+            "aliases": [
+                "lift truck operation",
+                "forklift driving",
+                "counterbalance forklift operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operate powered forklifts to lift, stack and move pallets and large equipment for loading, storage and event staging while following safe operating practices.",
+            "parent_skill": "Equipment packing & transport",
+            "related_skills": [
+                "Palletization and shrink-wrap",
+                "Vehicle loading and unloading optimization",
+                "Manual material handling equipment operation (pallet jack, hand truck, dolly)"
+            ],
+            "keywords": [
+                "forklift",
+                "lift truck",
+                "pallet handling",
+                "powered MHE"
+            ],
+            "common_roles": [
+                "Warehouse staff",
+                "Logistics personnel",
+                "Catering logistics staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Palletization and shrink-wrap",
+            "aliases": [
+                "pallet wrapping",
+                "palletizing",
+                "shrink-wrapping pallets"
+            ],
+            "skill_type": "process_skill",
+            "description": "Arrange items on pallets, secure loads with stretch film or shrink-wrap and stabilize pallet loads for transport and storage.",
+            "parent_skill": "Equipment packing & transport",
+            "related_skills": [
+                "Crate packing and bracing",
+                "Manual material handling equipment operation (pallet jack, hand truck, dolly)",
+                "Forklift operation"
+            ],
+            "keywords": [
+                "pallet wrap",
+                "stretch film",
+                "shrink-wrap",
+                "pallet load",
+                "stabilize"
+            ],
+            "common_roles": [
+                "Warehouse support staff",
+                "Catering logistics staff",
+                "Event setup crew"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Route planning and logistics coordination for equipment transport",
+            "aliases": [
+                "transport route planning",
+                "equipment transport coordination",
+                "logistics coordination"
+            ],
+            "skill_type": "process_skill",
+            "description": "Plan delivery routes, schedules and handover points for event equipment; coordinate timing with venues and transport providers to ensure on-time setup and teardown.",
+            "parent_skill": "Equipment packing & transport",
+            "related_skills": [
+                "Load balancing and weight distribution",
+                "Inventory tagging and labeling",
+                "Vehicle loading and unloading optimization"
+            ],
+            "keywords": [
+                "route planning",
+                "scheduling",
+                "transport coordination",
+                "delivery planning",
+                "logistics"
+            ],
+            "common_roles": [
+                "Logistics coordinators",
+                "Catering operations staff",
+                "Event logistics personnel"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Compliance with manual handling and transport safety",
+            "aliases": [
+                "manual handling safety",
+                "transport safety compliance",
+                "PPE and lifting safety"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Apply legal and organizational requirements for manual handling, PPE, load limits and vehicle safety during packing and transport operations to reduce injury and liability.",
+            "parent_skill": "Equipment packing & transport",
+            "related_skills": [
+                "Manual material handling equipment operation (pallet jack, hand truck, dolly)",
+                "Cargo securing and tie-down lashing",
+                "Load balancing and weight distribution"
+            ],
+            "keywords": [
+                "manual handling",
+                "PPE",
+                "safety procedures",
+                "transport regulations",
+                "load limits"
+            ],
+            "common_roles": [
+                "Event operations crew",
+                "Logistics personnel",
+                "Catering operations staff"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,307 @@
+{
+    "domain": "IT",
+    "category": "Systems Engineering & Endpoint Management",
+    "subcategory": "Endpoint management & MDM",
+    "skills": [
+        {
+            "canonical_name": "Mobile Device Management (MDM) administration",
+            "aliases": [
+                "MDM administration",
+                "mobile device administration",
+                "mobile device management"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Manage enrollment, configuration, policy enforcement and lifecycle of mobile devices (iOS\/Android) using MDM solutions to ensure corporate access and security.",
+            "parent_skill": "Endpoint management & MDM",
+            "related_skills": [
+                "Unified Endpoint Management (UEM) administration",
+                "Mobile Application Management (MAM)",
+                "Device compliance and conditional access configuration",
+                "Microsoft Intune",
+                "Jamf Pro"
+            ],
+            "keywords": [
+                "MDM",
+                "enrollment",
+                "device policy",
+                "BYOD",
+                "EMM"
+            ],
+            "common_roles": [
+                "Mobile Device Administrator",
+                "Endpoint Engineer",
+                "Systems Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Unified Endpoint Management (UEM) administration",
+            "aliases": [
+                "UEM administration",
+                "unified endpoint management"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Manage and orchestrate cross-platform endpoint lifecycle (desktops, laptops, mobile, IoT) including provisioning, policy, app management and compliance through a unified console.",
+            "parent_skill": "Endpoint management & MDM",
+            "related_skills": [
+                "Mobile Device Management (MDM) administration",
+                "Endpoint provisioning and imaging",
+                "Patch management for endpoints",
+                "Microsoft Intune",
+                "Jamf Pro"
+            ],
+            "keywords": [
+                "UEM",
+                "cross-platform endpoint management",
+                "endpoint lifecycle",
+                "consolidated management"
+            ],
+            "common_roles": [
+                "UEM Engineer",
+                "Endpoint Engineer",
+                "Systems Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Microsoft Intune",
+            "aliases": [
+                "Intune",
+                "Microsoft Endpoint Manager - Intune",
+                "Intune MDM"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configure and operate Microsoft Intune for device enrollment, policy management, app deployment, device compliance and conditional access in cloud-managed environments.",
+            "parent_skill": "Endpoint management & MDM",
+            "related_skills": [
+                "Mobile Device Management (MDM) administration",
+                "Unified Endpoint Management (UEM) administration",
+                "Device compliance and conditional access configuration",
+                "Mobile Application Management (MAM)"
+            ],
+            "keywords": [
+                "Intune",
+                "MEM",
+                "cloud MDM",
+                "app deployment",
+                "conditional access"
+            ],
+            "common_roles": [
+                "Endpoint Engineer",
+                "Cloud Endpoint Administrator",
+                "Systems Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Jamf Pro",
+            "aliases": [
+                "Jamf",
+                "Jamf Pro (Apple device management)"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Deploy and manage Apple macOS and iOS devices, configuration profiles, inventory and app distribution using Jamf Pro for enterprise Apple environments.",
+            "parent_skill": "Endpoint management & MDM",
+            "related_skills": [
+                "Mobile Device Management (MDM) administration",
+                "Mobile Application Management (MAM)",
+                "Endpoint provisioning and imaging"
+            ],
+            "keywords": [
+                "Jamf",
+                "macOS management",
+                "iOS management",
+                "Apple device management"
+            ],
+            "common_roles": [
+                "Mac Systems Administrator",
+                "Endpoint Engineer",
+                "Apple Device Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Endpoint provisioning and imaging",
+            "aliases": [
+                "OS imaging",
+                "endpoint deployment",
+                "device provisioning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design, build and automate OS images and provisioning workflows for new and replacement endpoints, including enrollment integration with MDM\/UEM systems.",
+            "parent_skill": "Endpoint management & MDM",
+            "related_skills": [
+                "Unified Endpoint Management (UEM) administration",
+                "Mobile Device Management (MDM) administration",
+                "Microsoft Intune",
+                "Jamf Pro",
+                "Patch management for endpoints"
+            ],
+            "keywords": [
+                "imaging",
+                "provisioning",
+                "autopilot",
+                "DEP",
+                "deployment automation"
+            ],
+            "common_roles": [
+                "Desktop Support Engineer",
+                "Endpoint Engineer",
+                "Systems Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Patch management for endpoints",
+            "aliases": [
+                "endpoint patching",
+                "software update management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Plan, deploy and validate operating system and application updates across endpoints, maintain update baselines and compliance reporting to reduce vulnerability exposure.",
+            "parent_skill": "Endpoint management & MDM",
+            "related_skills": [
+                "Endpoint security configuration and hardening",
+                "Endpoint provisioning and imaging",
+                "Unified Endpoint Management (UEM) administration"
+            ],
+            "keywords": [
+                "patching",
+                "updates",
+                "update compliance",
+                "vulnerability remediation"
+            ],
+            "common_roles": [
+                "Patch Manager",
+                "Endpoint Engineer",
+                "Systems Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Mobile Application Management (MAM)",
+            "aliases": [
+                "app management for mobile",
+                "mobile app lifecycle management"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Manage enterprise mobile applications' deployment, protection policies, updates and lifecycle (containerization, app wrapping, app protection policies) separately or alongside MDM.",
+            "parent_skill": "Endpoint management & MDM",
+            "related_skills": [
+                "Mobile Device Management (MDM) administration",
+                "Microsoft Intune",
+                "Jamf Pro",
+                "Device compliance and conditional access configuration"
+            ],
+            "keywords": [
+                "MAM",
+                "app deployment",
+                "app protection",
+                "enterprise apps",
+                "app lifecycle"
+            ],
+            "common_roles": [
+                "Mobile App Administrator",
+                "Endpoint Engineer",
+                "Application Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Device compliance and conditional access configuration",
+            "aliases": [
+                "device compliance policy configuration",
+                "conditional access policy configuration"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Define, implement and maintain device posture checks, compliance rules and conditional access policies to control resource access based on endpoint state and identity signals.",
+            "parent_skill": "Endpoint management & MDM",
+            "related_skills": [
+                "Microsoft Intune",
+                "Mobile Device Management (MDM) administration",
+                "Endpoint security configuration and hardening"
+            ],
+            "keywords": [
+                "conditional access",
+                "compliance policies",
+                "posture assessment",
+                "access control"
+            ],
+            "common_roles": [
+                "Endpoint Security Engineer",
+                "Security Operations Engineer",
+                "UEM Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Remote endpoint support and troubleshooting",
+            "aliases": [
+                "remote desktop support",
+                "remote troubleshooting",
+                "remote device support"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Remotely diagnose and resolve endpoint hardware, OS, network and configuration issues using remote support tools, logs and diagnostic techniques to restore user productivity.",
+            "parent_skill": "Endpoint management & MDM",
+            "related_skills": [
+                "Endpoint provisioning and imaging",
+                "Patch management for endpoints",
+                "Endpoint security configuration and hardening",
+                "Microsoft Intune"
+            ],
+            "keywords": [
+                "remote support",
+                "troubleshooting",
+                "RDP",
+                "remote assistance",
+                "diagnostics"
+            ],
+            "common_roles": [
+                "Desktop Support Technician",
+                "Helpdesk Engineer",
+                "Endpoint Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Endpoint security configuration and hardening",
+            "aliases": [
+                "endpoint hardening",
+                "device security configuration",
+                "endpoint protection configuration"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Configure and maintain endpoint security controls such as EDR\/antivirus, host firewalls, disk encryption and secure baselines to reduce attack surface and meet compliance requirements.",
+            "parent_skill": "Endpoint management & MDM",
+            "related_skills": [
+                "Patch management for endpoints",
+                "Device compliance and conditional access configuration",
+                "Endpoint provisioning and imaging"
+            ],
+            "keywords": [
+                "hardening",
+                "EDR",
+                "antivirus",
+                "encryption",
+                "secure baseline"
+            ],
+            "common_roles": [
+                "Endpoint Security Engineer",
+                "Security Operations Engineer",
+                "Systems Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

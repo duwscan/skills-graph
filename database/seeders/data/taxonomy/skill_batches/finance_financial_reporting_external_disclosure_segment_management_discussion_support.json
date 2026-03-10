@@ -1,0 +1,287 @@
+{
+    "domain": "Finance",
+    "category": "Financial Reporting & External Disclosure",
+    "subcategory": "Segment & management discussion support",
+    "skills": [
+        {
+            "canonical_name": "Operating segment identification",
+            "aliases": [
+                "segment identification",
+                "operating segment determination"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Apply accounting standards and economic criteria to determine and document a company's operating segments for external reporting and disclosure.",
+            "parent_skill": "Segment & management discussion support",
+            "related_skills": [
+                "Segment reporting (IFRS 8 \/ ASC 280) compliance",
+                "Intersegment eliminations & consolidation adjustments",
+                "Segment performance analysis"
+            ],
+            "keywords": [
+                "operating segments",
+                "reportable segments",
+                "aggregation criteria",
+                "chief operating decision maker"
+            ],
+            "common_roles": [
+                "financial reporting function",
+                "external reporting function",
+                "audit support function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Segment reporting (IFRS 8 \/ ASC 280) compliance",
+            "aliases": [
+                "segment disclosures",
+                "operating segment reporting"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Prepare and review segment disclosures in external financial statements to meet IFRS 8 or ASC 280 requirements, including required metrics and reconciliation to consolidated results.",
+            "parent_skill": "Segment & management discussion support",
+            "related_skills": [
+                "Operating segment identification",
+                "Non-GAAP reconciliation and disclosure",
+                "External disclosure coordination and review"
+            ],
+            "keywords": [
+                "IFRS 8",
+                "ASC 280",
+                "segment footnotes",
+                "reportable segments"
+            ],
+            "common_roles": [
+                "external reporting function",
+                "financial reporting function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Management discussion & analysis (MD&A) drafting",
+            "aliases": [
+                "MD&A drafting",
+                "management discussion writing",
+                "MD&A narrative preparation"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Develop clear, accurate MD&A narratives that explain financial performance, trends, risks and segment drivers for inclusion in external filings and investor communications.",
+            "parent_skill": "Segment & management discussion support",
+            "related_skills": [
+                "Segment performance analysis",
+                "Investor presentation development",
+                "External disclosure coordination and review"
+            ],
+            "keywords": [
+                "MD&A",
+                "narrative reporting",
+                "financial commentary",
+                "trend analysis"
+            ],
+            "common_roles": [
+                "financial reporting function",
+                "investor relations function",
+                "management reporting function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Segment performance analysis",
+            "aliases": [
+                "segment profitability analysis",
+                "segment P&L analysis",
+                "business segment analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyze revenue, costs, margins, growth and other drivers at the segment level to identify trends, variances and performance drivers for reporting and management discussion.",
+            "parent_skill": "Segment & management discussion support",
+            "related_skills": [
+                "KPI design and tracking for segments",
+                "Variance analysis and earnings reconciliation",
+                "Management discussion & analysis (MD&A) drafting"
+            ],
+            "keywords": [
+                "segment margins",
+                "revenue mix",
+                "driver analysis",
+                "trend analysis"
+            ],
+            "common_roles": [
+                "management reporting function",
+                "financial planning and analysis function",
+                "financial reporting function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "KPI design and tracking for segments",
+            "aliases": [
+                "segment KPIs",
+                "key performance indicators for segments"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Define, calculate and monitor meaningful KPIs for each business segment to support management reporting, MD&A narratives and investor communications.",
+            "parent_skill": "Segment & management discussion support",
+            "related_skills": [
+                "Segment performance analysis",
+                "Management discussion & analysis (MD&A) drafting",
+                "Data aggregation for segment reporting"
+            ],
+            "keywords": [
+                "KPIs",
+                "segment metrics",
+                "unit economics",
+                "performance monitoring"
+            ],
+            "common_roles": [
+                "management reporting function",
+                "financial planning and analysis function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Non-GAAP reconciliation and disclosure",
+            "aliases": [
+                "non-GAAP reconciliation",
+                "adjusted measures reconciliation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Prepare reconciliations and disclosures for non-GAAP\/adjusted measures, ensuring transparency and compliance with external disclosure guidance and investor communication standards.",
+            "parent_skill": "Segment & management discussion support",
+            "related_skills": [
+                "Segment reporting (IFRS 8 \/ ASC 280) compliance",
+                "Variance analysis and earnings reconciliation",
+                "External disclosure coordination and review"
+            ],
+            "keywords": [
+                "adjusted EBITDA",
+                "reconciliations",
+                "non-GAAP measures",
+                "disclosure controls"
+            ],
+            "common_roles": [
+                "external reporting function",
+                "investor relations function",
+                "financial reporting function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intersegment eliminations & consolidation adjustments",
+            "aliases": [
+                "intercompany eliminations",
+                "segment consolidation adjustments"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Apply elimination, reclassification and consolidation adjustments to transform segment-level transactions and intercompany activity into consolidated financial results.",
+            "parent_skill": "Segment & management discussion support",
+            "related_skills": [
+                "Financial consolidation data mapping for segments",
+                "Operating segment identification",
+                "Segment reporting (IFRS 8 \/ ASC 280) compliance"
+            ],
+            "keywords": [
+                "eliminations",
+                "intercompany",
+                "consolidation",
+                "adjusting entries"
+            ],
+            "common_roles": [
+                "financial reporting function",
+                "external reporting function",
+                "financial consolidation function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "External disclosure coordination and review",
+            "aliases": [
+                "external disclosure coordination",
+                "filing review coordination"
+            ],
+            "skill_type": "process_skill",
+            "description": "Coordinate cross-functional review, approval and timing of segment and MD&A disclosures for regulatory filings and investor releases, ensuring accuracy and control adherence.",
+            "parent_skill": "Segment & management discussion support",
+            "related_skills": [
+                "Management discussion & analysis (MD&A) drafting",
+                "Segment reporting (IFRS 8 \/ ASC 280) compliance",
+                "Non-GAAP reconciliation and disclosure"
+            ],
+            "keywords": [
+                "disclosure controls",
+                "review cycle",
+                "cross-functional coordination",
+                "filing timelines"
+            ],
+            "common_roles": [
+                "external reporting function",
+                "financial reporting function",
+                "investor relations function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Variance analysis and earnings reconciliation",
+            "aliases": [
+                "variance analysis",
+                "earnings reconciliation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Reconcile reported results to prior periods or guidance and analyze variances (by segment and consolidated) to support MD&A, investor communications and internal decision-making.",
+            "parent_skill": "Segment & management discussion support",
+            "related_skills": [
+                "Segment performance analysis",
+                "Non-GAAP reconciliation and disclosure",
+                "Management discussion & analysis (MD&A) drafting"
+            ],
+            "keywords": [
+                "variance drivers",
+                "reconciliations",
+                "forecast vs actual",
+                "guidance reconciliation"
+            ],
+            "common_roles": [
+                "management reporting function",
+                "financial planning and analysis function",
+                "external reporting function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial consolidation data mapping for segments",
+            "aliases": [
+                "segment data aggregation",
+                "consolidation mapping for segments"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Design and maintain mappings and data flows from sub-ledgers and business units into consolidation and reporting systems to produce accurate segment-level reporting.",
+            "parent_skill": "Segment & management discussion support",
+            "related_skills": [
+                "Intersegment eliminations & consolidation adjustments",
+                "KPI design and tracking for segments",
+                "External disclosure coordination and review"
+            ],
+            "keywords": [
+                "data mapping",
+                "consolidation systems",
+                "data aggregation",
+                "chart of accounts mapping"
+            ],
+            "common_roles": [
+                "financial consolidation function",
+                "financial reporting function",
+                "management reporting function"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

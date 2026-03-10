@@ -1,0 +1,255 @@
+{
+    "domain": "IT",
+    "category": "Cybersecurity Operations & Engineering",
+    "subcategory": "Security compliance operations",
+    "skills": [
+        {
+            "canonical_name": "Security policy development",
+            "aliases": [
+                "security policy writing",
+                "policy development",
+                "security policy design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, drafting, reviewing and updating organizational security policies and standards to meet business needs and compliance requirements.",
+            "parent_skill": "Security compliance operations",
+            "related_skills": [
+                "Compliance monitoring and reporting",
+                "Control testing and evidence collection",
+                "Security awareness program coordination"
+            ],
+            "keywords": [
+                "policies",
+                "standards",
+                "security governance",
+                "policy lifecycle"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Compliance monitoring and reporting",
+            "aliases": [
+                "compliance reporting",
+                "continuous compliance monitoring",
+                "compliance metrics reporting"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Ongoing tracking of compliance posture using controls, metrics and evidence; producing reports for stakeholders and regulators.",
+            "parent_skill": "Security compliance operations",
+            "related_skills": [
+                "GRC platform administration",
+                "Framework control mapping",
+                "Audit planning and remediation management"
+            ],
+            "keywords": [
+                "dashboards",
+                "KPIs",
+                "evidence",
+                "reporting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory gap analysis",
+            "aliases": [
+                "regulatory gap assessment",
+                "compliance gap analysis",
+                "requirements gap analysis"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Comparing current controls and processes against regulatory or standard requirements to identify gaps and remediation priorities.",
+            "parent_skill": "Security compliance operations",
+            "related_skills": [
+                "Framework control mapping",
+                "Control testing and evidence collection",
+                "Audit planning and remediation management"
+            ],
+            "keywords": [
+                "gap assessment",
+                "requirements",
+                "remediation plan",
+                "compliance baseline"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control testing and evidence collection",
+            "aliases": [
+                "control testing",
+                "evidence collection for audits",
+                "control validation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Executing tests of security controls, collecting and organizing evidence to demonstrate control effectiveness for audits and assessments.",
+            "parent_skill": "Security compliance operations",
+            "related_skills": [
+                "Audit planning and remediation management",
+                "Compliance monitoring and reporting",
+                "Framework control mapping"
+            ],
+            "keywords": [
+                "testing",
+                "evidence",
+                "sample selection",
+                "control effectiveness"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Audit planning and remediation management",
+            "aliases": [
+                "audit coordination",
+                "remediation tracking",
+                "audit remediation management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Coordinating internal\/external audits, developing audit plans, tracking findings and managing remediation activities to closure.",
+            "parent_skill": "Security compliance operations",
+            "related_skills": [
+                "Control testing and evidence collection",
+                "Compliance monitoring and reporting",
+                "Regulatory gap analysis"
+            ],
+            "keywords": [
+                "findings",
+                "remediation",
+                "audit scope",
+                "closure"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Third-party security risk management",
+            "aliases": [
+                "vendor risk management",
+                "third-party risk assessment",
+                "supplier security risk management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Assessing and managing security and compliance risks associated with vendors and service providers, including due diligence and monitoring.",
+            "parent_skill": "Security compliance operations",
+            "related_skills": [
+                "Regulatory gap analysis",
+                "Control testing and evidence collection",
+                "GRC platform administration"
+            ],
+            "keywords": [
+                "vendor assessment",
+                "third-party",
+                "due diligence",
+                "contractual controls"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data protection impact assessment (DPIA)",
+            "aliases": [
+                "data privacy impact assessment",
+                "DPIA"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Performing structured assessments of processing activities to identify privacy risks and required controls to comply with data protection regulations.",
+            "parent_skill": "Security compliance operations",
+            "related_skills": [
+                "Regulatory gap analysis",
+                "Security policy development",
+                "Third-party security risk management"
+            ],
+            "keywords": [
+                "privacy",
+                "PIA",
+                "risk mitigation",
+                "data processing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Framework control mapping",
+            "aliases": [
+                "control mapping",
+                "framework mapping",
+                "controls-to-framework mapping"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Mapping organizational controls to industry standards and regulatory frameworks (e.g., NIST, ISO, PCI) to demonstrate coverage and identify overlaps or gaps.",
+            "parent_skill": "Security compliance operations",
+            "related_skills": [
+                "Regulatory gap analysis",
+                "Compliance monitoring and reporting",
+                "Control testing and evidence collection"
+            ],
+            "keywords": [
+                "NIST",
+                "ISO",
+                "PCI",
+                "control matrix"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "GRC platform administration",
+            "aliases": [
+                "GRC tool administration",
+                "governance, risk and compliance platform administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and maintaining Governance, Risk and Compliance platforms to automate assessments, control libraries, workflows, evidence collection and reporting.",
+            "parent_skill": "Security compliance operations",
+            "related_skills": [
+                "Compliance monitoring and reporting",
+                "Audit planning and remediation management",
+                "Third-party security risk management"
+            ],
+            "keywords": [
+                "GRC",
+                "tooling",
+                "workflows",
+                "automation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Security awareness program coordination",
+            "aliases": [
+                "security awareness training coordination",
+                "security training program management",
+                "user security awareness"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Designing and coordinating security awareness and training initiatives to drive compliance with policies and reduce human-related security risk.",
+            "parent_skill": "Security compliance operations",
+            "related_skills": [
+                "Security policy development",
+                "Audit planning and remediation management",
+                "GRC platform administration"
+            ],
+            "keywords": [
+                "training",
+                "phishing simulation",
+                "awareness campaigns",
+                "behavior change"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

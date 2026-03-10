@@ -1,0 +1,309 @@
+{
+    "domain": "IT",
+    "category": "Data Engineering & Integration",
+    "subcategory": "Data warehousing",
+    "skills": [
+        {
+            "canonical_name": "Dimensional modeling",
+            "aliases": [
+                "star schema design",
+                "snowflake schema design",
+                "fact and dimension modeling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing fact and dimension tables and related schemas to support analytical queries, aggregations and business reporting.",
+            "parent_skill": "Data warehousing",
+            "related_skills": [
+                "Data warehouse architecture design",
+                "Query performance tuning",
+                "ETL\/ELT pipeline development"
+            ],
+            "keywords": [
+                "star schema",
+                "snowflake",
+                "fact table",
+                "dimension table",
+                "slowly changing dimensions",
+                "SCD"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Data Warehouse Engineer",
+                "Analytics Engineer",
+                "BI Developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data warehouse architecture design",
+            "aliases": [
+                "enterprise data warehouse design",
+                "modern data warehouse architecture",
+                "analytic data platform design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Defining high-level and component-level architecture for centralized or cloud-based data warehouses including storage, processing, ingestion, and access patterns.",
+            "parent_skill": "Data warehousing",
+            "related_skills": [
+                "Dimensional modeling",
+                "ETL\/ELT pipeline development",
+                "Databricks Lakehouse"
+            ],
+            "keywords": [
+                "data warehouse",
+                "lakehouse",
+                "architecture patterns",
+                "ingestion",
+                "analytics platform"
+            ],
+            "common_roles": [
+                "Data Architect",
+                "Senior Data Engineer",
+                "Data Warehouse Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ETL\/ELT pipeline development",
+            "aliases": [
+                "ETL development",
+                "ELT pipeline development",
+                "data ingestion development"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implementing extract-transform-load or extract-load-transform processes to move and prepare data for analytical use, emphasizing reliability, idempotency and schema handling.",
+            "parent_skill": "Data warehousing",
+            "related_skills": [
+                "Data pipeline orchestration",
+                "Data warehouse testing & data quality",
+                "Query performance tuning"
+            ],
+            "keywords": [
+                "data ingestion",
+                "transformations",
+                "data cleansing",
+                "batch processing",
+                "streaming ingestion"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "ETL Developer",
+                "Analytics Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data pipeline orchestration",
+            "aliases": [
+                "workflow orchestration",
+                "Airflow",
+                "Prefect",
+                "Dagster",
+                "workflow automation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and operating task orchestration and scheduling systems to manage dependencies, retries, monitoring and deployment of data pipelines.",
+            "parent_skill": "Data warehousing",
+            "related_skills": [
+                "ETL\/ELT pipeline development",
+                "Data warehouse testing & data quality",
+                "Data warehouse architecture design"
+            ],
+            "keywords": [
+                "orchestration",
+                "scheduling",
+                "DAG",
+                "task dependencies",
+                "monitoring"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Platform Engineer",
+                "SRE (data pipelines)"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Query performance tuning for analytics",
+            "aliases": [
+                "SQL optimization",
+                "analytical query tuning",
+                "execution plan optimization"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Optimizing SQL queries, indexing, partitioning and data layouts to reduce latency and cost for analytical workloads on data warehouses.",
+            "parent_skill": "Data warehousing",
+            "related_skills": [
+                "Dimensional modeling",
+                "Data partitioning and clustering strategies",
+                "Cloud data warehouse platforms"
+            ],
+            "keywords": [
+                "query plan",
+                "indexing",
+                "explain analyze",
+                "cost-based optimization",
+                "materialized views"
+            ],
+            "common_roles": [
+                "BI Developer",
+                "Data Engineer",
+                "Analytics Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data warehouse testing & data quality",
+            "aliases": [
+                "DW testing",
+                "data validation",
+                "data reconciliation",
+                "data quality assurance"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implementing automated tests, validation rules and monitoring to ensure correctness, completeness and freshness of data in the warehouse.",
+            "parent_skill": "Data warehousing",
+            "related_skills": [
+                "ETL\/ELT pipeline development",
+                "Data pipeline orchestration",
+                "Operational monitoring"
+            ],
+            "keywords": [
+                "unit tests",
+                "regression tests",
+                "data checks",
+                "row counts",
+                "schema drift detection"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "QA Engineer (data)",
+                "Analytics Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Snowflake",
+            "aliases": [
+                "Snowflake Data Cloud",
+                "Snowflake DW"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using the Snowflake cloud data platform for storage, query processing, data sharing, performance tuning and cost management of analytical workloads.",
+            "parent_skill": "Data warehousing",
+            "related_skills": [
+                "Query performance tuning for analytics",
+                "ETL\/ELT pipeline development",
+                "Data warehouse architecture design"
+            ],
+            "keywords": [
+                "virtual warehouses",
+                "micro-partitions",
+                "time travel",
+                "zero-copy cloning",
+                "storage compute separation"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Cloud Data Engineer",
+                "Analytics Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Google BigQuery",
+            "aliases": [
+                "BigQuery",
+                "BQ"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operating Google BigQuery for large-scale analytics including SQL, cost-aware query design, table partitioning\/clustering and integration with GCP services.",
+            "parent_skill": "Data warehousing",
+            "related_skills": [
+                "Query performance tuning for analytics",
+                "ETL\/ELT pipeline development",
+                "Data pipeline orchestration"
+            ],
+            "keywords": [
+                "serverless DW",
+                "columnar storage",
+                "partitioned tables",
+                "clustering",
+                "BigQuery ML"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Cloud Data Engineer",
+                "Analytics Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Amazon Redshift",
+            "aliases": [
+                "Redshift",
+                "Redshift Spectrum"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Designing and managing Amazon Redshift clusters and related features (Spectrum, RA3 nodes) for scalable, cost-effective analytical querying on AWS.",
+            "parent_skill": "Data warehousing",
+            "related_skills": [
+                "Query performance tuning for analytics",
+                "Data warehouse architecture design",
+                "ETL\/ELT pipeline development"
+            ],
+            "keywords": [
+                "columnar store",
+                "dist keys",
+                "sort keys",
+                "vacuum",
+                "spectrum"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Cloud Data Engineer",
+                "BI Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Databricks Lakehouse",
+            "aliases": [
+                "Databricks",
+                "Delta Lake",
+                "lakehouse architecture"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Databricks and Delta Lake to implement lakehouse patterns: unified batch\/stream processing, ACID storage on object stores, and scalable analytics.",
+            "parent_skill": "Data warehousing",
+            "related_skills": [
+                "Data warehouse architecture design",
+                "ETL\/ELT pipeline development",
+                "Data pipeline orchestration"
+            ],
+            "keywords": [
+                "Delta Lake",
+                "ACID on S3\/ADLS",
+                "structured streaming",
+                "Spark",
+                "Unity Catalog"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Machine Learning Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

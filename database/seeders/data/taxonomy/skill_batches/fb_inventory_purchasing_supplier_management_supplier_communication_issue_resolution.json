@@ -1,0 +1,304 @@
+{
+    "domain": "F&B",
+    "category": "Inventory, Purchasing & Supplier Management",
+    "subcategory": "Supplier communication & issue resolution",
+    "skills": [
+        {
+            "canonical_name": "Supplier relationship management",
+            "aliases": [
+                "vendor relationship management",
+                "supplier relationship"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Building and maintaining productive, ongoing relationships with suppliers to ensure reliable supply, mutual performance improvement, and issue resolution.",
+            "parent_skill": "Supplier communication & issue resolution",
+            "related_skills": [
+                "Supplier performance monitoring and reporting",
+                "Contract and SLA interpretation for issue resolution",
+                "Escalation management with suppliers",
+                "Cross-cultural supplier communication"
+            ],
+            "keywords": [
+                "supplier relationship",
+                "vendor management",
+                "supplier engagement",
+                "relationship building"
+            ],
+            "common_roles": [
+                "Procurement Manager",
+                "Vendor Manager",
+                "Category Manager",
+                "Supply Chain Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Supplier performance monitoring and reporting",
+            "aliases": [
+                "supplier scorecarding",
+                "vendor performance measurement",
+                "supplier performance metrics"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Collecting, analyzing and reporting supplier KPIs (on-time delivery, quality, lead times) to track performance and drive continuous improvement.",
+            "parent_skill": "Supplier communication & issue resolution",
+            "related_skills": [
+                "Supplier relationship management",
+                "Root cause analysis for supply issues",
+                "Contract and SLA interpretation for issue resolution"
+            ],
+            "keywords": [
+                "supplier KPIs",
+                "scorecard",
+                "on-time delivery",
+                "defect rate",
+                "lead time"
+            ],
+            "common_roles": [
+                "Supply Chain Analyst",
+                "Procurement Analyst",
+                "Quality Manager",
+                "Category Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Escalation management with suppliers",
+            "aliases": [
+                "vendor escalation procedures",
+                "supplier escalation handling"
+            ],
+            "skill_type": "process_skill",
+            "description": "Defining and executing escalation paths, priority rules and timelines to resolve supplier issues that cannot be handled at operational levels.",
+            "parent_skill": "Supplier communication & issue resolution",
+            "related_skills": [
+                "Supplier risk communication and incident reporting",
+                "Contract and SLA interpretation for issue resolution",
+                "Purchase order communication and confirmation"
+            ],
+            "keywords": [
+                "escalation path",
+                "priority matrix",
+                "issue escalation",
+                "escalation SLA"
+            ],
+            "common_roles": [
+                "Procurement Manager",
+                "Operations Manager",
+                "Supplier Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Purchase order communication and confirmation",
+            "aliases": [
+                "PO communication",
+                "order confirmation communication",
+                "purchase order follow-up"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Communicating purchase order details, confirmations, delivery schedules and changes with suppliers to prevent misunderstandings and delivery failures.",
+            "parent_skill": "Supplier communication & issue resolution",
+            "related_skills": [
+                "Purchase order and delivery coordination",
+                "Invoice and billing discrepancy resolution with suppliers",
+                "Supplier relationship management"
+            ],
+            "keywords": [
+                "purchase order",
+                "PO confirmation",
+                "order follow-up",
+                "delivery schedule"
+            ],
+            "common_roles": [
+                "Purchasing Agent",
+                "Inventory Manager",
+                "Procurement Coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Supplier corrective action coordination",
+            "aliases": [
+                "CAPA coordination",
+                "supplier corrective action request (SCAR) management",
+                "supplier corrective action management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Managing corrective action processes with suppliers, including root cause identification, action plan development, tracking implementation and verifying effectiveness.",
+            "parent_skill": "Supplier communication & issue resolution",
+            "related_skills": [
+                "Root cause analysis for supply issues",
+                "Supplier quality issue reporting",
+                "Supplier performance monitoring and reporting"
+            ],
+            "keywords": [
+                "corrective action",
+                "CAPA",
+                "SCAR",
+                "action plan",
+                "nonconformity"
+            ],
+            "common_roles": [
+                "Quality Assurance Manager",
+                "Supplier Quality Engineer",
+                "Procurement Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Invoice and billing discrepancy resolution with suppliers",
+            "aliases": [
+                "vendor invoice dispute resolution",
+                "billing reconciliation with suppliers",
+                "supplier invoice reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Identifying, investigating and resolving discrepancies between supplier invoices and purchase orders\/deliveries to ensure accurate payments and supplier relations.",
+            "parent_skill": "Supplier communication & issue resolution",
+            "related_skills": [
+                "Purchase order communication and confirmation",
+                "Contract and SLA interpretation for issue resolution",
+                "Supplier relationship management"
+            ],
+            "keywords": [
+                "invoice dispute",
+                "billing discrepancy",
+                "PO vs invoice",
+                "credit note",
+                "reconciliation"
+            ],
+            "common_roles": [
+                "Accounts Payable Specialist",
+                "Procurement Coordinator",
+                "Finance Business Partner"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Contract and SLA interpretation for issue resolution",
+            "aliases": [
+                "vendor agreement interpretation",
+                "SLA dispute resolution",
+                "contract interpretation for suppliers"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Interpreting contract terms and service level agreements to determine obligations, penalties and remedies when supplier issues arise.",
+            "parent_skill": "Supplier communication & issue resolution",
+            "related_skills": [
+                "Escalation management with suppliers",
+                "Supplier performance monitoring and reporting",
+                "Invoice and billing discrepancy resolution with suppliers"
+            ],
+            "keywords": [
+                "SLA",
+                "contract terms",
+                "service levels",
+                "penalties",
+                "remedies"
+            ],
+            "common_roles": [
+                "Procurement Manager",
+                "Legal Counsel (Procurement)",
+                "Category Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Root cause analysis for supply issues",
+            "aliases": [
+                "supplier root cause analysis",
+                "supplier RCA",
+                "5-why analysis for suppliers"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Applying structured problem-solving methods to identify underlying causes of supplier failures (quality, delivery, compliance) and inform corrective actions.",
+            "parent_skill": "Supplier communication & issue resolution",
+            "related_skills": [
+                "Supplier corrective action coordination",
+                "Supplier performance monitoring and reporting",
+                "Supplier quality issue reporting"
+            ],
+            "keywords": [
+                "root cause",
+                "RCA",
+                "5 Whys",
+                "fishbone",
+                "problem solving"
+            ],
+            "common_roles": [
+                "Quality Engineer",
+                "Supply Chain Analyst",
+                "Continuous Improvement Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-cultural supplier communication",
+            "aliases": [
+                "international supplier communication",
+                "multicultural vendor communication"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Communicating effectively with suppliers across different languages, cultures and time zones, adapting style and expectations to minimize misunderstandings.",
+            "parent_skill": "Supplier communication & issue resolution",
+            "related_skills": [
+                "Supplier relationship management",
+                "Purchase order communication and confirmation",
+                "Escalation management with suppliers"
+            ],
+            "keywords": [
+                "cross-cultural",
+                "international suppliers",
+                "language barriers",
+                "time zones",
+                "cultural awareness"
+            ],
+            "common_roles": [
+                "Global Sourcing Manager",
+                "Procurement Manager",
+                "Supplier Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Supplier risk communication and incident reporting",
+            "aliases": [
+                "supplier incident reporting",
+                "vendor risk notification",
+                "supplier risk escalation"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Notifying internal stakeholders and suppliers about supply chain incidents or risks, documenting impacts, and coordinating timely mitigation and follow-up.",
+            "parent_skill": "Supplier communication & issue resolution",
+            "related_skills": [
+                "Escalation management with suppliers",
+                "Contract and SLA interpretation for issue resolution",
+                "Supplier corrective action coordination"
+            ],
+            "keywords": [
+                "incident report",
+                "risk communication",
+                "supplier incident",
+                "mitigation",
+                "notification"
+            ],
+            "common_roles": [
+                "Risk Manager",
+                "Procurement Manager",
+                "Operations Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

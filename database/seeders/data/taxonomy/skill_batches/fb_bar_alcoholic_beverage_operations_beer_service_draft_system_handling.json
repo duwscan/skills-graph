@@ -1,0 +1,318 @@
+{
+    "domain": "F&B",
+    "category": "Bar & Alcoholic Beverage Operations",
+    "subcategory": "Beer service & draft system handling",
+    "skills": [
+        {
+            "canonical_name": "Draft line cleaning and sanitation",
+            "aliases": [
+                "beer line cleaning",
+                "draught line sanitation",
+                "keg line cleaning",
+                "beer line CIP"
+            ],
+            "skill_type": "process_skill",
+            "description": "Routine cleaning and sanitizing of beer lines using approved chemicals and procedures (including CIP) to prevent contamination and off-flavors.",
+            "parent_skill": "Beer service & draft system handling",
+            "related_skills": [
+                "Tap and faucet maintenance and cleaning",
+                "Draft system troubleshooting and repair",
+                "Food safety and beverage sanitation compliance"
+            ],
+            "keywords": [
+                "line cleaning",
+                "CIP",
+                "sanitizer",
+                "caustic",
+                "rinse"
+            ],
+            "common_roles": [
+                "Bartender",
+                "Barback",
+                "Draft Technician",
+                "Bar Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Keg handling and changeover",
+            "aliases": [
+                "keg tapping",
+                "keg replacement",
+                "keg changeover procedure",
+                "keg coupler operation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Safe handling, tapping, uncoupling and replacing of kegs, including correct coupler use, bleed procedures and disposal of empty kegs.",
+            "parent_skill": "Beer service & draft system handling",
+            "related_skills": [
+                "Draft line cleaning and sanitation",
+                "Draft beer inventory management and FIFO rotation",
+                "CO2 and gas blend regulation"
+            ],
+            "keywords": [
+                "tapping",
+                "coupler",
+                "keg swap",
+                "bleed"
+            ],
+            "common_roles": [
+                "Bartender",
+                "Barback",
+                "Stockroom Associate",
+                "Draft Technician"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "CO2 and gas blend regulation",
+            "aliases": [
+                "CO2 system management",
+                "regulator adjustment",
+                "nitrogen system setup",
+                "gas pressure regulation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Setting up and adjusting gas regulators, monitoring gas pressures and blends (CO2\/N2) to maintain correct dispense pressure and carbonation levels.",
+            "parent_skill": "Beer service & draft system handling",
+            "related_skills": [
+                "Carbonation measurement and adjustment",
+                "Draft system troubleshooting and repair",
+                "Keg handling and changeover"
+            ],
+            "keywords": [
+                "regulator",
+                "PSI",
+                "CO2",
+                "nitrogen",
+                "gas line"
+            ],
+            "common_roles": [
+                "Draft Technician",
+                "Bar Manager",
+                "Beverage Manager",
+                "Bartender"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Draft system troubleshooting and repair",
+            "aliases": [
+                "draft line troubleshooting",
+                "keg line repair",
+                "draft leak detection",
+                "draught system diagnostics"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Diagnosing and repairing common draft system faults such as leaks, pressure loss, flow restrictions, frozen lines and malfunctioning regulators or faucets.",
+            "parent_skill": "Beer service & draft system handling",
+            "related_skills": [
+                "CO2 and gas blend regulation",
+                "Tap and faucet maintenance and cleaning",
+                "Draft line cleaning and sanitation"
+            ],
+            "keywords": [
+                "leak detection",
+                "pressure loss",
+                "flow",
+                "repair",
+                "diagnostics"
+            ],
+            "common_roles": [
+                "Draft Technician",
+                "Bar Manager",
+                "Maintenance Technician",
+                "Bartender"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Beer pouring technique and glassware handling",
+            "aliases": [
+                "beer pouring",
+                "proper pour technique",
+                "head control",
+                "glass handling for beer"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Manual pouring skills including glass selection, angling, head control, correct serving volumes and minimizing waste to ensure consistent presentation and taste.",
+            "parent_skill": "Beer service & draft system handling",
+            "related_skills": [
+                "Beer styles knowledge and glassware selection",
+                "Keg handling and changeover"
+            ],
+            "keywords": [
+                "pour",
+                "head",
+                "glass angle",
+                "serving size",
+                "presentation"
+            ],
+            "common_roles": [
+                "Bartender",
+                "Taproom Server",
+                "Barback"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Temperature control and refrigeration monitoring for beer",
+            "aliases": [
+                "beer temperature management",
+                "keg cooler monitoring",
+                "glycol system monitoring",
+                "beer fridge monitoring"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Monitoring and managing beer temperatures across coolers, kegs and lines to maintain ideal service temperatures and prevent quality degradation.",
+            "parent_skill": "Beer service & draft system handling",
+            "related_skills": [
+                "Carbonation measurement and adjustment",
+                "Draft system troubleshooting and repair",
+                "Draft beer inventory management and FIFO rotation"
+            ],
+            "keywords": [
+                "temperature",
+                "thermometer",
+                "cooler",
+                "glycol",
+                "setpoint"
+            ],
+            "common_roles": [
+                "Bar Manager",
+                "Draft Technician",
+                "Beverage Manager",
+                "Bartender"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Carbonation measurement and adjustment",
+            "aliases": [
+                "carbonation control",
+                "CO2 volumes adjustment",
+                "CO2 measurement",
+                "beer carbonation testing"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Measuring beer carbonation (volumes of CO2) and calculating\/adjusting gas pressure or temperature to achieve target carbonation for specific beer styles.",
+            "parent_skill": "Beer service & draft system handling",
+            "related_skills": [
+                "CO2 and gas blend regulation",
+                "Temperature control and refrigeration monitoring for beer",
+                "Draft system troubleshooting and repair"
+            ],
+            "keywords": [
+                "CO2 volumes",
+                "carbonation",
+                "testing",
+                "hydrometer",
+                "volumes"
+            ],
+            "common_roles": [
+                "Draft Technician",
+                "Brewery Taproom Staff",
+                "Bar Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tap and faucet maintenance and cleaning",
+            "aliases": [
+                "faucet cleaning",
+                "tap maintenance",
+                "beer faucet disassembly",
+                "tap O-ring replacement"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Disassembling, cleaning, lubricating and reassembling taps and faucets, replacing seals and O-rings to ensure proper flow and hygiene.",
+            "parent_skill": "Beer service & draft system handling",
+            "related_skills": [
+                "Draft line cleaning and sanitation",
+                "Draft system troubleshooting and repair"
+            ],
+            "keywords": [
+                "faucet",
+                "O-ring",
+                "disassemble",
+                "clean",
+                "lubricate"
+            ],
+            "common_roles": [
+                "Bartender",
+                "Barback",
+                "Draft Technician"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Draft beer inventory management and FIFO rotation",
+            "aliases": [
+                "keg inventory control",
+                "keg rotation",
+                "keg tracking",
+                "FIFO keg rotation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Tracking keg inventory, monitoring remaining volumes, applying FIFO stock rotation and logging lot\/expiry data to minimize waste and ensure freshness.",
+            "parent_skill": "Beer service & draft system handling",
+            "related_skills": [
+                "Keg handling and changeover",
+                "Temperature control and refrigeration monitoring for beer"
+            ],
+            "keywords": [
+                "inventory",
+                "FIFO",
+                "keg tracking",
+                "stock rotation",
+                "waste reduction"
+            ],
+            "common_roles": [
+                "Bar Manager",
+                "Barback",
+                "Inventory Clerk",
+                "Draft Technician"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Beer styles knowledge and glassware selection",
+            "aliases": [
+                "beer style knowledge",
+                "beer style recognition",
+                "glassware selection for beer",
+                "beer style and glass pairing"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Understanding common beer styles, flavor profiles and ideal glassware to optimize presentation, pouring technique and customer recommendations.",
+            "parent_skill": "Beer service & draft system handling",
+            "related_skills": [
+                "Beer pouring technique and glassware handling",
+                "Carbonation measurement and adjustment"
+            ],
+            "keywords": [
+                "ales",
+                "lagers",
+                "stout",
+                "glassware",
+                "style recognition"
+            ],
+            "common_roles": [
+                "Bartender",
+                "Taproom Server",
+                "Beverage Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,309 @@
+{
+    "domain": "IT",
+    "category": "Data Engineering & Integration",
+    "subcategory": "Streaming data processing",
+    "skills": [
+        {
+            "canonical_name": "Apache Kafka",
+            "aliases": [
+                "Kafka",
+                "Kafka messaging",
+                "Apache Kafka broker"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Distributed publish–subscribe messaging system used to build real-time streaming pipelines and event-driven architectures.",
+            "parent_skill": "Streaming data processing",
+            "related_skills": [
+                "Schema management for streaming data",
+                "Exactly-once processing and delivery semantics",
+                "Streaming observability and monitoring",
+                "Change Data Capture (CDC) for streaming"
+            ],
+            "keywords": [
+                "topics",
+                "brokers",
+                "partitions",
+                "producers",
+                "consumers",
+                "Kafka Connect",
+                "Kafka Streams"
+            ],
+            "common_roles": [
+                "Data engineering",
+                "Streaming platform teams",
+                "Platform engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Apache Flink",
+            "aliases": [
+                "Flink",
+                "Apache Flink stream processing"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Stream-first distributed processing engine for low-latency, stateful, and event-time-aware stream processing at scale.",
+            "parent_skill": "Streaming data processing",
+            "related_skills": [
+                "Stateful stream processing",
+                "Windowing and stream joins",
+                "Exactly-once processing and delivery semantics",
+                "Streaming observability and monitoring"
+            ],
+            "keywords": [
+                "event time",
+                "state backend",
+                "checkpoints",
+                "watermarks",
+                "Flink SQL"
+            ],
+            "common_roles": [
+                "Data engineering",
+                "Analytics engineering",
+                "Platform engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Apache Spark Structured Streaming",
+            "aliases": [
+                "Spark Structured Streaming",
+                "Structured Streaming"
+            ],
+            "skill_type": "tool_skill",
+            "description": "High-level Spark API for building continuous incremental query-based stream processing using micro-batch or continuous processing modes.",
+            "parent_skill": "Streaming data processing",
+            "related_skills": [
+                "Windowing and stream joins",
+                "Stateful stream processing",
+                "Streaming observability and monitoring"
+            ],
+            "keywords": [
+                "micro-batch",
+                "continuous processing",
+                "Spark SQL",
+                "trigger",
+                "foreachBatch"
+            ],
+            "common_roles": [
+                "Data engineering",
+                "Analytics engineering",
+                "Platform engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Amazon Kinesis",
+            "aliases": [
+                "Kinesis",
+                "AWS Kinesis",
+                "Kinesis Data Streams"
+            ],
+            "skill_type": "tool_skill",
+            "description": "AWS-managed streaming service for ingesting, processing, and storing real-time data streams at scale in the cloud.",
+            "parent_skill": "Streaming data processing",
+            "related_skills": [
+                "Real-time data pipeline design",
+                "Streaming observability and monitoring",
+                "Schema management for streaming data"
+            ],
+            "keywords": [
+                "Kinesis Data Streams",
+                "Kinesis Data Firehose",
+                "Kinesis Data Analytics",
+                "shards",
+                "provisioned throughput"
+            ],
+            "common_roles": [
+                "Data engineering",
+                "Cloud platform teams",
+                "Streaming platform teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Change Data Capture (CDC) for streaming",
+            "aliases": [
+                "CDC",
+                "Change-data-capture",
+                "Debezium usage"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Techniques and tools for capturing database row-level changes and streaming them reliably into downstream systems in real time.",
+            "parent_skill": "Streaming data processing",
+            "related_skills": [
+                "Apache Kafka",
+                "Schema management for streaming data",
+                "Real-time data pipeline design"
+            ],
+            "keywords": [
+                "log-based CDC",
+                "binlog",
+                "oplog",
+                "transactional guarantees",
+                "Debezium"
+            ],
+            "common_roles": [
+                "Data engineering",
+                "Analytics engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Schema management for streaming data",
+            "aliases": [
+                "Streaming schema management",
+                "Avro\/Protobuf\/JSON Schema for streams",
+                "Schema Registry usage"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Design and governance of message schemas, versioning, and registry usage to ensure compatibility and data quality across streaming systems.",
+            "parent_skill": "Streaming data processing",
+            "related_skills": [
+                "Apache Kafka",
+                "Change Data Capture (CDC) for streaming",
+                "Exactly-once processing and delivery semantics"
+            ],
+            "keywords": [
+                "schema evolution",
+                "backward compatibility",
+                "forward compatibility",
+                "Confluent Schema Registry",
+                "Avro",
+                "Protobuf",
+                "JSON Schema"
+            ],
+            "common_roles": [
+                "Data engineering",
+                "Data governance teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Windowing and stream joins",
+            "aliases": [
+                "Windowing",
+                "Stream joins",
+                "stream windowing (tumbling\/sliding\/session)"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying time-window semantics and join strategies (tumbling, sliding, session, stream-to-stream, stream-to-table) to compute aggregations and correlations over streams.",
+            "parent_skill": "Streaming data processing",
+            "related_skills": [
+                "Apache Flink",
+                "Apache Spark Structured Streaming",
+                "Stateful stream processing"
+            ],
+            "keywords": [
+                "tumbling window",
+                "sliding window",
+                "session window",
+                "event-time joins",
+                "late data",
+                "watermarks"
+            ],
+            "common_roles": [
+                "Data engineering",
+                "Analytics engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Stateful stream processing",
+            "aliases": [
+                "Stateful processing",
+                "maintaining state in streams"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing state management patterns (local and external state stores), checkpointing and recovery for long-running stream computations.",
+            "parent_skill": "Streaming data processing",
+            "related_skills": [
+                "Apache Flink",
+                "Apache Spark Structured Streaming",
+                "Exactly-once processing and delivery semantics"
+            ],
+            "keywords": [
+                "state backend",
+                "checkpointing",
+                "savepoints",
+                "state TTL",
+                "external state store"
+            ],
+            "common_roles": [
+                "Data engineering",
+                "Platform engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Exactly-once processing and delivery semantics",
+            "aliases": [
+                "exactly-once",
+                "idempotent processing",
+                "transactional streaming"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Understanding and operating guarantees for message delivery and processing (at-most-once, at-least-once, exactly-once), including transactionality and idempotence strategies in streaming pipelines.",
+            "parent_skill": "Streaming data processing",
+            "related_skills": [
+                "Apache Kafka",
+                "Stateful stream processing",
+                "Schema management for streaming data"
+            ],
+            "keywords": [
+                "idempotence",
+                "transactions",
+                "commits",
+                "deduplication",
+                "delivery guarantees"
+            ],
+            "common_roles": [
+                "Data engineering",
+                "Streaming platform teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Streaming observability and monitoring",
+            "aliases": [
+                "streaming monitoring",
+                "observability for streams",
+                "metrics and tracing for streaming pipelines"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Instrumenting, monitoring, and troubleshooting streaming pipelines using metrics, logs, traces, alerting and SLAs to ensure reliability and performance.",
+            "parent_skill": "Streaming data processing",
+            "related_skills": [
+                "Apache Kafka",
+                "Amazon Kinesis",
+                "Exactly-once processing and delivery semantics"
+            ],
+            "keywords": [
+                "metrics",
+                "tracing",
+                "logs",
+                "SLA",
+                "alerting",
+                "end-to-end latency",
+                "throughput",
+                "backpressure"
+            ],
+            "common_roles": [
+                "Platform engineering",
+                "Data engineering",
+                "DevOps"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

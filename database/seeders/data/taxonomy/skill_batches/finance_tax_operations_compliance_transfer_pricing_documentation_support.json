@@ -1,0 +1,302 @@
+{
+    "domain": "Finance",
+    "category": "Tax Operations & Compliance",
+    "subcategory": "Transfer pricing documentation support",
+    "skills": [
+        {
+            "canonical_name": "Master file and local file preparation",
+            "aliases": [
+                "Master file preparation",
+                "Local file preparation",
+                "MF-LF documentation",
+                "OECD documentation preparation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Assemble and draft OECD-aligned master file and local file documentation, including narrative descriptions, intercompany transaction schedules, financial schedules and supporting exhibits required for transfer pricing compliance.",
+            "parent_skill": "Transfer pricing documentation support",
+            "related_skills": [
+                "Transfer pricing benchmarking and economic analysis",
+                "Financial statement analysis and reconciliation for TP",
+                "Transfer pricing documentation coordination and project management",
+                "Country-by-country reporting support (CbCR)"
+            ],
+            "keywords": [
+                "master file",
+                "local file",
+                "OECD",
+                "documentation",
+                "schedules"
+            ],
+            "common_roles": [
+                "tax compliance",
+                "transfer pricing practice",
+                "tax operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Transfer pricing benchmarking and economic analysis",
+            "aliases": [
+                "TP benchmarking",
+                "Economic comparables analysis",
+                "Arm's length range analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Perform economic analyses to identify arm's-length comparables, calculate profitability measures, determine arm's-length ranges, and evaluate adjustments (size, accounting, geographic) to support pricing positions.",
+            "parent_skill": "Transfer pricing documentation support",
+            "related_skills": [
+                "Comparable database research (Orbis\/Capital IQ\/BvD)",
+                "Financial statement analysis and reconciliation for TP",
+                "Transfer pricing financial modeling in Excel",
+                "Transfer pricing position memorandum drafting"
+            ],
+            "keywords": [
+                "comparables",
+                "arm's length",
+                "benchmarking",
+                "profitability",
+                "adjustments"
+            ],
+            "common_roles": [
+                "tax advisory",
+                "transfer pricing analytics"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Comparable database research (Orbis\/Capital IQ\/BvD)",
+            "aliases": [
+                "Orbis research",
+                "BvD comparables search",
+                "Capital IQ search",
+                "comparables database research"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Query commercial financial databases to identify and extract comparable companies\/transactions, apply filters and selection criteria, export financial metrics, and document search strategies used in benchmarking.",
+            "parent_skill": "Transfer pricing documentation support",
+            "related_skills": [
+                "Transfer pricing benchmarking and economic analysis",
+                "Financial statement analysis and reconciliation for TP",
+                "Transfer pricing financial modeling in Excel"
+            ],
+            "keywords": [
+                "Orbis",
+                "BvD",
+                "Capital IQ",
+                "database search",
+                "comparables"
+            ],
+            "common_roles": [
+                "transfer pricing analytics",
+                "tax research"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Country-by-country reporting support (CbCR)",
+            "aliases": [
+                "CbCR support",
+                "Country-by-Country report preparation",
+                "BEPS CbC reporting support"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Support preparation of Country-by-Country reporting by aggregating and reconciling constituent data, mapping local reporting fields to statutory records, preparing schedules, and coordinating filing timelines with local teams.",
+            "parent_skill": "Transfer pricing documentation support",
+            "related_skills": [
+                "Master file and local file preparation",
+                "Financial statement analysis and reconciliation for TP",
+                "Transfer pricing documentation coordination and project management"
+            ],
+            "keywords": [
+                "CbCR",
+                "BEPS",
+                "reporting",
+                "reconciliation",
+                "aggregation"
+            ],
+            "common_roles": [
+                "tax compliance",
+                "global tax reporting"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intercompany agreement analysis for transfer pricing",
+            "aliases": [
+                "Intercompany contract review",
+                "ICA analysis",
+                "Intercompany terms review"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Review and analyze intercompany agreements to identify commercial terms, delineate controlled transactions, assess alignment with transfer pricing policies, and recommend contractual or pricing adjustments.",
+            "parent_skill": "Transfer pricing documentation support",
+            "related_skills": [
+                "Master file and local file preparation",
+                "Transfer pricing audit support and tax authority responses",
+                "Transfer pricing position memorandum drafting"
+            ],
+            "keywords": [
+                "intercompany agreements",
+                "contracts",
+                "terms",
+                "TP alignment",
+                "transaction delineation"
+            ],
+            "common_roles": [
+                "tax operations",
+                "transfer pricing review"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Transfer pricing documentation coordination and project management",
+            "aliases": [
+                "TP documentation project management",
+                "documentation coordination",
+                "TP project coordination"
+            ],
+            "skill_type": "process_skill",
+            "description": "Plan, coordinate and manage transfer pricing documentation projects across jurisdictions: set timelines, collect stakeholder inputs, manage version control, track deliverables and ensure timely local-file submissions.",
+            "parent_skill": "Transfer pricing documentation support",
+            "related_skills": [
+                "Master file and local file preparation",
+                "Country-by-country reporting support (CbCR)",
+                "Transfer pricing audit support and tax authority responses"
+            ],
+            "keywords": [
+                "project management",
+                "stakeholder coordination",
+                "timelines",
+                "version control",
+                "deliverables"
+            ],
+            "common_roles": [
+                "tax operations",
+                "global tax reporting"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Transfer pricing audit support and tax authority responses",
+            "aliases": [
+                "TP audit support",
+                "tax authority response preparation",
+                "transfer pricing controversy support"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Prepare documentation, schedules and tailored responses to tax authority queries on transfer pricing positions, coordinate evidence collection, and support dispute and negotiation processes.",
+            "parent_skill": "Transfer pricing documentation support",
+            "related_skills": [
+                "Intercompany agreement analysis for transfer pricing",
+                "Master file and local file preparation",
+                "Transfer pricing position memorandum drafting"
+            ],
+            "keywords": [
+                "audit",
+                "tax authority",
+                "responses",
+                "dispute support",
+                "negotiation"
+            ],
+            "common_roles": [
+                "tax controversy",
+                "tax compliance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial statement analysis and reconciliation for TP",
+            "aliases": [
+                "TP financial analysis",
+                "financial reconciliations for TP",
+                "statutory to TP reconciliation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyze statutory financial statements to extract and adjust relevant metrics for transfer pricing (revenue, cost bases, EBITDA), perform reconciliations between accounting and TP bases, and prepare schedules for documentation.",
+            "parent_skill": "Transfer pricing documentation support",
+            "related_skills": [
+                "Transfer pricing benchmarking and economic analysis",
+                "Comparable database research (Orbis\/Capital IQ\/BvD)",
+                "Master file and local file preparation"
+            ],
+            "keywords": [
+                "financial statements",
+                "reconciliation",
+                "EBITDA",
+                "adjustments",
+                "schedules"
+            ],
+            "common_roles": [
+                "tax operations",
+                "transfer pricing analytics"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Transfer pricing financial modeling in Excel",
+            "aliases": [
+                "TP Excel modeling",
+                "Excel transfer pricing model",
+                "financial modeling for TP"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Design and build transfer pricing models in Excel to calculate arm's-length margins, cost-plus\/functional allocations, profit splits and sensitivity scenarios; use formulas, pivot tables and structured worksheets to support documentation.",
+            "parent_skill": "Transfer pricing documentation support",
+            "related_skills": [
+                "Transfer pricing benchmarking and economic analysis",
+                "Financial statement analysis and reconciliation for TP",
+                "Comparable database research (Orbis\/Capital IQ\/BvD)"
+            ],
+            "keywords": [
+                "Excel",
+                "modeling",
+                "sensitivity analysis",
+                "profitability",
+                "formulas"
+            ],
+            "common_roles": [
+                "transfer pricing analytics",
+                "tax operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Transfer pricing position memorandum drafting",
+            "aliases": [
+                "TP memo drafting",
+                "position paper drafting",
+                "transfer pricing narrative drafting"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Draft clear, defensible position memoranda and narratives that explain transfer pricing methodologies, economic analyses and policy choices for internal stakeholders and tax authorities.",
+            "parent_skill": "Transfer pricing documentation support",
+            "related_skills": [
+                "Intercompany agreement analysis for transfer pricing",
+                "Transfer pricing benchmarking and economic analysis",
+                "Master file and local file preparation"
+            ],
+            "keywords": [
+                "position memo",
+                "narrative",
+                "defensible position",
+                "documentation",
+                "tax authority"
+            ],
+            "common_roles": [
+                "tax advisory",
+                "transfer pricing practice"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

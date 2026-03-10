@@ -1,0 +1,311 @@
+{
+    "domain": "F&B",
+    "category": "Baking, Pastry & Desserts",
+    "subcategory": "Decorating & finishing techniques",
+    "skills": [
+        {
+            "canonical_name": "Buttercream piping and decoration",
+            "aliases": [
+                "buttercream piping",
+                "piping with buttercream",
+                "buttercream decorating",
+                "buttercream flowers"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Creating decorative elements, borders, flowers and lettering using buttercream with piping bags and tips; includes consistency control and tip technique.",
+            "parent_skill": "Decorating & finishing techniques",
+            "related_skills": [
+                "Royal icing piping and flooding",
+                "Ganache glazing and finishing",
+                "Cake crumb coating and tier assembly",
+                "Surface texturing and stenciling"
+            ],
+            "keywords": [
+                "piping",
+                "buttercream",
+                "piping tips",
+                "consistency",
+                "decorating"
+            ],
+            "common_roles": [
+                "Cake Decorator",
+                "Pastry Chef",
+                "Pastry Cook",
+                "Bakery Production Baker"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Fondant smoothing and sculpting",
+            "aliases": [
+                "fondant work",
+                "fondant covering",
+                "fondant sculpting",
+                "gum paste modeling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Covering cakes with rolled fondant, smoothing seams, and creating molded shapes or sculpted figures; includes working with gum paste and modeling tools.",
+            "parent_skill": "Decorating & finishing techniques",
+            "related_skills": [
+                "Surface texturing and stenciling",
+                "Airbrush decoration and color application",
+                "Sugar sculpture (pulled, blown, isomalt)"
+            ],
+            "keywords": [
+                "fondant",
+                "smoothing",
+                "modeling",
+                "gum paste",
+                "cake covering"
+            ],
+            "common_roles": [
+                "Cake Decorator",
+                "Pastry Chef",
+                "Wedding Cake Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Royal icing piping and flooding",
+            "aliases": [
+                "royal icing decoration",
+                "icing flooding",
+                "cookie piping"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Using royal icing for fine piping, lacework and flood-filling on cookies and cakes; includes mixing correct consistencies and drying control.",
+            "parent_skill": "Decorating & finishing techniques",
+            "related_skills": [
+                "Buttercream piping and decoration",
+                "Surface texturing and stenciling"
+            ],
+            "keywords": [
+                "royal icing",
+                "flooding",
+                "consistency",
+                "lace",
+                "piping"
+            ],
+            "common_roles": [
+                "Cookie Decorator",
+                "Pastry Chef",
+                "Baker"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Mirror glaze finishing",
+            "aliases": [
+                "mirror glaze application",
+                "glossy mirror finish",
+                "entremet glazing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Preparing and applying high-gloss mirror glazes to entremets and cakes, achieving smooth, reflective and marbled finishes.",
+            "parent_skill": "Decorating & finishing techniques",
+            "related_skills": [
+                "Ganache glazing and finishing",
+                "Airbrush decoration and color application",
+                "Chocolate tempering and molding for decorations"
+            ],
+            "keywords": [
+                "mirror glaze",
+                "glazing",
+                "entremet",
+                "marbling",
+                "gloss"
+            ],
+            "common_roles": [
+                "Pastry Chef",
+                "Entremet Specialist",
+                "Pastry Cook"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Chocolate tempering and molding for decorations",
+            "aliases": [
+                "chocolate tempering",
+                "chocolate molding",
+                "tempered chocolate decorations"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Tempering chocolate to achieve stable crystal structure and using molds, transfer sheets and piping to produce decorative chocolate elements.",
+            "parent_skill": "Decorating & finishing techniques",
+            "related_skills": [
+                "Ganache glazing and finishing",
+                "Sugar sculpture (pulled, blown, isomalt)"
+            ],
+            "keywords": [
+                "tempering",
+                "molding",
+                "chocolate",
+                "tempered",
+                "decorations"
+            ],
+            "common_roles": [
+                "Chocolatier",
+                "Pastry Chef",
+                "Confectioner"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sugar sculpture (pulled, blown, isomalt)",
+            "aliases": [
+                "pulled sugar",
+                "blown sugar",
+                "isomalt work",
+                "sugar showpiece"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Heating and manipulating sugar or isomalt to create pulled, blown or cast decorative pieces and showpieces; includes coloring and safety handling.",
+            "parent_skill": "Decorating & finishing techniques",
+            "related_skills": [
+                "Fondant smoothing and sculpting",
+                "Chocolate tempering and molding for decorations",
+                "Airbrush decoration and color application"
+            ],
+            "keywords": [
+                "pulled sugar",
+                "blown sugar",
+                "isomalt",
+                "sugar sculpture",
+                "showpiece"
+            ],
+            "common_roles": [
+                "Pastry Chef",
+                "Showpiece Artist",
+                "Confectioner"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cake crumb coating and tier assembly",
+            "aliases": [
+                "crumb coat",
+                "tier stacking",
+                "cake assembly",
+                "dowel and stack cakes"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Leveling cake layers, applying crumb coats, doweling and stacking tiers safely and squarely to prepare cakes for final decoration and transport.",
+            "parent_skill": "Decorating & finishing techniques",
+            "related_skills": [
+                "Buttercream piping and decoration",
+                "Fondant smoothing and sculpting"
+            ],
+            "keywords": [
+                "crumb coat",
+                "stacking",
+                "doweling",
+                "assembly",
+                "leveling"
+            ],
+            "common_roles": [
+                "Cake Decorator",
+                "Pastry Cook",
+                "Production Baker"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Airbrush decoration and color application",
+            "aliases": [
+                "airbrushing",
+                "cake airbrush",
+                "edible airbrush"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operating compressed-air airbrush systems and edible colorants to apply gradients, shading, stencils and detailed colorwork on cakes and pastries.",
+            "parent_skill": "Decorating & finishing techniques",
+            "related_skills": [
+                "Fondant smoothing and sculpting",
+                "Mirror glaze finishing",
+                "Surface texturing and stenciling"
+            ],
+            "keywords": [
+                "airbrush",
+                "edible color",
+                "shading",
+                "gradient",
+                "stencil"
+            ],
+            "common_roles": [
+                "Cake Decorator",
+                "Pastry Chef",
+                "Specialty Decorator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ganache glazing and finishing",
+            "aliases": [
+                "ganache coating",
+                "ganache drip",
+                "ganache finish"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Preparing ganache to target consistency and applying as a glaze, drip or smooth coating; includes setting, polishing and temperature control.",
+            "parent_skill": "Decorating & finishing techniques",
+            "related_skills": [
+                "Mirror glaze finishing",
+                "Chocolate tempering and molding for decorations",
+                "Buttercream piping and decoration"
+            ],
+            "keywords": [
+                "ganache",
+                "drip",
+                "glaze",
+                "polish",
+                "consistency"
+            ],
+            "common_roles": [
+                "Pastry Chef",
+                "Chocolate Specialist",
+                "Cake Decorator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Surface texturing and stenciling",
+            "aliases": [
+                "stenciling",
+                "embossing",
+                "textured finishes",
+                "stencil work"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying textures and patterns using stencils, embossing mats, combs, spatulas and cutters to create consistent surface finishes on buttercream, fondant and royal icing.",
+            "parent_skill": "Decorating & finishing techniques",
+            "related_skills": [
+                "Royal icing piping and flooding",
+                "Fondant smoothing and sculpting",
+                "Airbrush decoration and color application"
+            ],
+            "keywords": [
+                "stencil",
+                "emboss",
+                "texturing",
+                "comb",
+                "pattern"
+            ],
+            "common_roles": [
+                "Cake Decorator",
+                "Pastry Chef",
+                "Decorating Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

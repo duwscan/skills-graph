@@ -1,0 +1,260 @@
+{
+    "domain": "IT",
+    "category": "DevOps, CI\/CD & Release Engineering",
+    "subcategory": "Release orchestration & deployment strategies",
+    "skills": [
+        {
+            "canonical_name": "Release orchestration",
+            "aliases": [
+                "deployment orchestration",
+                "pipeline orchestration",
+                "release automation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and coordinating automated steps, policies and approvals that move software artifacts from build to production across environments.",
+            "parent_skill": "Release orchestration & deployment strategies",
+            "related_skills": [
+                "Artifact versioning and promotion",
+                "Deployment rollback and recovery strategies",
+                "Progressive delivery",
+                "Release gating and automated approvals"
+            ],
+            "keywords": [
+                "orchestration",
+                "release pipeline",
+                "deployment pipeline",
+                "release automation",
+                "deployment workflow"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Blue-green deployment",
+            "aliases": [
+                "blue\/green deployment",
+                "blue green deployment"
+            ],
+            "skill_type": "process_skill",
+            "description": "Deployment strategy that maintains two production environments (blue and green) and switches traffic between them to enable fast cutovers and simple rollbacks.",
+            "parent_skill": "Release orchestration & deployment strategies",
+            "related_skills": [
+                "Traffic routing and shifting for releases",
+                "Zero-downtime deployment strategies",
+                "Immutable infrastructure deployments"
+            ],
+            "keywords": [
+                "blue-green",
+                "switch traffic",
+                "cutover",
+                "deployment swap",
+                "environment swap"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Canary deployment",
+            "aliases": [
+                "canary release",
+                "canary rollout"
+            ],
+            "skill_type": "process_skill",
+            "description": "Gradual rollout technique delivering new versions to a small subset of users or servers first to validate changes before wider release.",
+            "parent_skill": "Release orchestration & deployment strategies",
+            "related_skills": [
+                "Progressive delivery",
+                "Traffic routing and shifting for releases",
+                "Feature flags"
+            ],
+            "keywords": [
+                "canary",
+                "gradual rollout",
+                "staged rollout",
+                "percent rollout",
+                "traffic split"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Rolling deployment",
+            "aliases": [
+                "rolling update",
+                "rolling upgrade"
+            ],
+            "skill_type": "process_skill",
+            "description": "Deployment approach that updates application instances incrementally to minimize downtime by replacing instances in batches.",
+            "parent_skill": "Release orchestration & deployment strategies",
+            "related_skills": [
+                "Zero-downtime deployment strategies",
+                "Canary deployment",
+                "Immutable infrastructure deployments"
+            ],
+            "keywords": [
+                "rolling update",
+                "batch update",
+                "instance replacement",
+                "in-place upgrade"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Feature flagging",
+            "aliases": [
+                "feature flags",
+                "feature toggles",
+                "feature rollout management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Using toggles to enable, disable or gradually expose features at runtime to control rollouts, A\/B tests and quick rollbacks without redeploying code.",
+            "parent_skill": "Release orchestration & deployment strategies",
+            "related_skills": [
+                "Progressive delivery",
+                "Canary deployment",
+                "Release gating and automated approvals"
+            ],
+            "keywords": [
+                "feature toggle",
+                "toggle",
+                "runtime flag",
+                "feature rollout",
+                "kill switch"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Progressive delivery",
+            "aliases": [
+                "progressive rollout",
+                "progressive release"
+            ],
+            "skill_type": "process_skill",
+            "description": "A set of release practices (canaries, feature flags, traffic shaping) that enable controlled, risk-aware rollouts and rapid feedback loops.",
+            "parent_skill": "Release orchestration & deployment strategies",
+            "related_skills": [
+                "Canary deployment",
+                "Feature flagging",
+                "Traffic routing and shifting for releases"
+            ],
+            "keywords": [
+                "progressive delivery",
+                "gradual release",
+                "risk-aware rollout",
+                "staged release"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Immutable infrastructure deployments",
+            "aliases": [
+                "immutable deployments",
+                "immutable servers",
+                "immutable infra deployments"
+            ],
+            "skill_type": "process_skill",
+            "description": "Deployment practice of replacing whole infrastructure components (images\/instances) rather than mutating them in place to ensure reproducibility and easier rollbacks.",
+            "parent_skill": "Release orchestration & deployment strategies",
+            "related_skills": [
+                "Rolling deployment",
+                "Blue-green deployment",
+                "Infrastructure as code"
+            ],
+            "keywords": [
+                "immutable",
+                "golden image",
+                "image baking",
+                "replace not patch"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Artifact versioning and promotion",
+            "aliases": [
+                "artifact promotion",
+                "build artifact versioning",
+                "artifact lifecycle management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing build artifacts through versioning, environment promotion (e.g., dev→qa→prod) and provenance tracking to ensure reproducible releases.",
+            "parent_skill": "Release orchestration & deployment strategies",
+            "related_skills": [
+                "Release orchestration",
+                "CI\/CD pipeline design",
+                "Dependency management"
+            ],
+            "keywords": [
+                "artifact",
+                "versioning",
+                "promotion",
+                "build promotion",
+                "provenance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Deployment rollback and recovery strategies",
+            "aliases": [
+                "rollback strategies",
+                "deployment rollback planning",
+                "release recovery"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Planning and implementing automated and manual rollback procedures, failover plans and data recovery steps to restore service after faulty releases.",
+            "parent_skill": "Release orchestration & deployment strategies",
+            "related_skills": [
+                "Blue-green deployment",
+                "Immutable infrastructure deployments",
+                "Disaster recovery"
+            ],
+            "keywords": [
+                "rollback",
+                "failback",
+                "recovery",
+                "abort deployment",
+                "restore"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Traffic routing and shifting for releases",
+            "aliases": [
+                "traffic shifting",
+                "traffic routing for deployments",
+                "traffic splitting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Controlling request routing and traffic weights (via load balancers, service mesh or CDN) to direct users to specific versions during rollouts and tests.",
+            "parent_skill": "Release orchestration & deployment strategies",
+            "related_skills": [
+                "Canary deployment",
+                "Blue-green deployment",
+                "Progressive delivery"
+            ],
+            "keywords": [
+                "traffic split",
+                "weight-based routing",
+                "service mesh routing",
+                "load balancer rules"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

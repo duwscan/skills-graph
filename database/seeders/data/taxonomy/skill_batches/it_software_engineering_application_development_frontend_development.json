@@ -1,0 +1,298 @@
+{
+    "domain": "IT",
+    "category": "Software Engineering & Application Development",
+    "subcategory": "Frontend development",
+    "skills": [
+        {
+            "canonical_name": "JavaScript",
+            "aliases": [
+                "JS",
+                "ECMAScript",
+                "ES6",
+                "ES2015+"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Core client-side programming language used to build interactive web interfaces and behavior in browsers and single-page applications.",
+            "parent_skill": "Frontend development",
+            "related_skills": [
+                "TypeScript",
+                "React",
+                "Frontend Performance Optimization",
+                "Frontend Testing"
+            ],
+            "keywords": [
+                "javascript",
+                "es6",
+                "ecmascript",
+                "client-side",
+                "DOM"
+            ],
+            "common_roles": [
+                "Frontend Developer",
+                "Web Developer",
+                "UI Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "TypeScript",
+            "aliases": [
+                "TS"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Statically typed superset of JavaScript that adds type annotations and compile-time checks to improve developer tooling and maintainability for large front-end codebases.",
+            "parent_skill": "Frontend development",
+            "related_skills": [
+                "JavaScript",
+                "React",
+                "Build Tools & Bundlers"
+            ],
+            "keywords": [
+                "typescript",
+                "static types",
+                "tsconfig",
+                "type checking"
+            ],
+            "common_roles": [
+                "Frontend Developer",
+                "Frontend Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "React",
+            "aliases": [
+                "React.js",
+                "reactjs",
+                "ReactJS"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Popular JavaScript library for building component-based user interfaces and single-page applications with a virtual DOM and declarative rendering.",
+            "parent_skill": "Frontend development",
+            "related_skills": [
+                "JavaScript",
+                "TypeScript",
+                "UI Component & Design System Development",
+                "State Management"
+            ],
+            "keywords": [
+                "react",
+                "jsx",
+                "hooks",
+                "virtual DOM",
+                "component"
+            ],
+            "common_roles": [
+                "Frontend Developer",
+                "UI Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Responsive Web Design",
+            "aliases": [
+                "Mobile-first design",
+                "Adaptive design",
+                "Responsive design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Techniques and best practices for building layouts and interfaces that adapt to different screen sizes and devices using fluid grids, media queries and flexible assets.",
+            "parent_skill": "Frontend development",
+            "related_skills": [
+                "CSS",
+                "HTML",
+                "Frontend Performance Optimization"
+            ],
+            "keywords": [
+                "responsive",
+                "media queries",
+                "mobile-first",
+                "breakpoints"
+            ],
+            "common_roles": [
+                "Frontend Developer",
+                "Web Designer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "CSS",
+            "aliases": [
+                "Cascading Style Sheets",
+                "Styling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Style sheet language used to control visual presentation, layout, and responsive behavior of HTML content, including modern features like Flexbox and Grid.",
+            "parent_skill": "Frontend development",
+            "related_skills": [
+                "Responsive Web Design",
+                "Sass\/SCSS",
+                "CSS-in-JS"
+            ],
+            "keywords": [
+                "css",
+                "flexbox",
+                "grid",
+                "selectors",
+                "layout"
+            ],
+            "common_roles": [
+                "Frontend Developer",
+                "UI Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Web Accessibility (a11y)",
+            "aliases": [
+                "Accessibility",
+                "WCAG",
+                "a11y"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Knowledge of accessibility standards (WCAG), semantic HTML, ARIA and testing practices to make web applications usable by people with disabilities and compliant with accessibility guidelines.",
+            "parent_skill": "Frontend development",
+            "related_skills": [
+                "HTML",
+                "Frontend Testing",
+                "Semantic HTML"
+            ],
+            "keywords": [
+                "accessibility",
+                "wcag",
+                "aria",
+                "screen reader",
+                "keyboard navigation"
+            ],
+            "common_roles": [
+                "Frontend Developer",
+                "Accessibility Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Frontend Performance Optimization",
+            "aliases": [
+                "Web performance optimization",
+                "Front-end performance tuning"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Techniques to measure and improve client-side performance, including asset optimization, code splitting, lazy loading, caching, and rendering performance analysis.",
+            "parent_skill": "Frontend development",
+            "related_skills": [
+                "Build Tools & Bundlers",
+                "Responsive Web Design",
+                "JavaScript"
+            ],
+            "keywords": [
+                "performance",
+                "lighthouse",
+                "code-splitting",
+                "lazy loading",
+                "critical rendering"
+            ],
+            "common_roles": [
+                "Frontend Developer",
+                "Performance Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Frontend Testing (Unit & E2E)",
+            "aliases": [
+                "Front-end testing",
+                "UI testing",
+                "E2E testing"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Practices and tools for writing unit, integration and end-to-end tests for user interfaces, ensuring functionality and regression protection using frameworks like Jest, Testing Library and Cypress.",
+            "parent_skill": "Frontend development",
+            "related_skills": [
+                "JavaScript",
+                "React",
+                "Web Accessibility (a11y)"
+            ],
+            "keywords": [
+                "testing",
+                "jest",
+                "cypress",
+                "testing-library",
+                "e2e"
+            ],
+            "common_roles": [
+                "Frontend Developer",
+                "QA Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Build Tools & Bundlers",
+            "aliases": [
+                "Webpack",
+                "Rollup",
+                "Parcel",
+                "Vite",
+                "Module bundlers"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuration and use of build systems and bundlers to transform, bundle and optimize frontend assets (JS, CSS, images), including task runners and dev server tooling.",
+            "parent_skill": "Frontend development",
+            "related_skills": [
+                "TypeScript",
+                "Frontend Performance Optimization",
+                "NPM\/Yarn"
+            ],
+            "keywords": [
+                "webpack",
+                "vite",
+                "bundler",
+                "build pipeline",
+                "tree shaking"
+            ],
+            "common_roles": [
+                "Frontend Developer",
+                "Build Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "UI Component & Design System Development",
+            "aliases": [
+                "Design systems",
+                "Component-driven development",
+                "Atomic design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and implementing reusable UI components and patterns, creating component libraries and documentation to ensure consistency, scalability and developer collaboration (often with Storybook).",
+            "parent_skill": "Frontend development",
+            "related_skills": [
+                "React",
+                "CSS",
+                "Frontend Testing (Unit & E2E)"
+            ],
+            "keywords": [
+                "design system",
+                "component library",
+                "storybook",
+                "atomic design",
+                "reusability"
+            ],
+            "common_roles": [
+                "Frontend Developer",
+                "UI Engineer",
+                "Design System Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

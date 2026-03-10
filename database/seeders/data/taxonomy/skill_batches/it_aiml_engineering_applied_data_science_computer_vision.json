@@ -1,0 +1,305 @@
+{
+    "domain": "IT",
+    "category": "AI\/ML Engineering & Applied Data Science",
+    "subcategory": "Computer vision",
+    "skills": [
+        {
+            "canonical_name": "Image preprocessing and augmentation",
+            "aliases": [
+                "Image preprocessing",
+                "Data augmentation (vision)",
+                "Image augmentation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Techniques and pipelines for cleaning, resizing, normalizing, and augmenting image data to improve model robustness and training performance.",
+            "parent_skill": "Computer vision",
+            "related_skills": [
+                "OpenCV and image processing libraries",
+                "Representation learning & feature embeddings for CV",
+                "Image annotation and dataset labeling workflows"
+            ],
+            "keywords": [
+                "normalization",
+                "resizing",
+                "cropping",
+                "color jitter",
+                "flip",
+                "random crop",
+                "mixup",
+                "cutmix"
+            ],
+            "common_roles": [
+                "Computer Vision Engineer",
+                "Machine Learning Engineer",
+                "Data Scientist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Convolutional Neural Networks (CNNs)",
+            "aliases": [
+                "CNN",
+                "Convolutional networks"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Design, training and architecture knowledge of convolutional neural networks for image classification, detection and feature extraction.",
+            "parent_skill": "Computer vision",
+            "related_skills": [
+                "Representation learning & feature embeddings for CV",
+                "Transfer learning & fine-tuning for vision",
+                "Object detection"
+            ],
+            "keywords": [
+                "ResNet",
+                "MobileNet",
+                "Inception",
+                "Conv layer",
+                "pooling"
+            ],
+            "common_roles": [
+                "Computer Vision Engineer",
+                "Deep Learning Engineer",
+                "AI Researcher"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Object detection",
+            "aliases": [
+                "Object detection models",
+                "Bounding box detection"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Techniques and models for detecting and localizing objects in images and video, including single-stage and two-stage detectors.",
+            "parent_skill": "Computer vision",
+            "related_skills": [
+                "Convolutional Neural Networks (CNNs)",
+                "Model optimization & deployment for computer vision",
+                "OpenCV and image processing libraries"
+            ],
+            "keywords": [
+                "YOLO",
+                "Faster R-CNN",
+                "SSD",
+                "anchor boxes",
+                "NMS"
+            ],
+            "common_roles": [
+                "Computer Vision Engineer",
+                "Machine Learning Engineer",
+                "Robotics Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Semantic and instance segmentation",
+            "aliases": [
+                "Image segmentation",
+                "Instance segmentation",
+                "Semantic segmentation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Methods for pixel-level classification of images, distinguishing between semantic segmentation (class-level) and instance-level segmentation (separate object instances).",
+            "parent_skill": "Computer vision",
+            "related_skills": [
+                "Convolutional Neural Networks (CNNs)",
+                "Object detection",
+                "Model optimization & deployment for computer vision"
+            ],
+            "keywords": [
+                "U-Net",
+                "Mask R-CNN",
+                "FCN",
+                "pixel labeling",
+                "IoU"
+            ],
+            "common_roles": [
+                "Computer Vision Engineer",
+                "Medical Imaging Engineer",
+                "Autonomous Systems Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vision Transformers and attention models",
+            "aliases": [
+                "Vision Transformer",
+                "ViT",
+                "Attention models (vision)"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Application and adaptation of transformer-based architectures and attention mechanisms to image and video tasks.",
+            "parent_skill": "Computer vision",
+            "related_skills": [
+                "Representation learning & feature embeddings for CV",
+                "Convolutional Neural Networks (CNNs)",
+                "Transfer learning & fine-tuning for vision"
+            ],
+            "keywords": [
+                "transformer",
+                "self-attention",
+                "patch embedding",
+                "Swin Transformer"
+            ],
+            "common_roles": [
+                "Computer Vision Engineer",
+                "Deep Learning Engineer",
+                "AI Researcher"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Transfer learning and fine-tuning for vision",
+            "aliases": [
+                "Fine-tuning (vision)",
+                "Pretrained model adaptation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Using pretrained vision models and strategies for fine-tuning and adapting them to downstream tasks with limited labeled data.",
+            "parent_skill": "Computer vision",
+            "related_skills": [
+                "Convolutional Neural Networks (CNNs)",
+                "Vision Transformers and attention models",
+                "Representation learning & feature embeddings for CV"
+            ],
+            "keywords": [
+                "pretrained models",
+                "domain adaptation",
+                "feature extractor",
+                "few-shot"
+            ],
+            "common_roles": [
+                "Machine Learning Engineer",
+                "Computer Vision Engineer",
+                "Data Scientist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Representation learning & feature embeddings for CV",
+            "aliases": [
+                "Feature extraction (vision)",
+                "Embeddings (images)",
+                "Contrastive learning (vision)"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Learning image representations and embeddings, including supervised and self-supervised approaches, to create transferable features for downstream tasks.",
+            "parent_skill": "Computer vision",
+            "related_skills": [
+                "Transfer learning & fine-tuning for vision",
+                "Vision Transformers and attention models",
+                "Image preprocessing and augmentation"
+            ],
+            "keywords": [
+                "Siamese",
+                "contrastive",
+                "SimCLR",
+                "feature vectors",
+                "embedding space"
+            ],
+            "common_roles": [
+                "Machine Learning Engineer",
+                "Computer Vision Engineer",
+                "AI Researcher"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Model optimization and deployment for computer vision",
+            "aliases": [
+                "CV model optimization",
+                "Inference optimization (vision)",
+                "Edge deployment for vision models"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Techniques and tooling for optimizing, exporting, and deploying vision models for production—focusing on latency, memory, and edge\/inference constraints.",
+            "parent_skill": "Computer vision",
+            "related_skills": [
+                "Object detection",
+                "Semantic and instance segmentation",
+                "OpenCV and image processing libraries"
+            ],
+            "keywords": [
+                "quantization",
+                "pruning",
+                "ONNX",
+                "TensorRT",
+                "FP16",
+                "model serving"
+            ],
+            "common_roles": [
+                "Machine Learning Engineer",
+                "MLOps Engineer",
+                "Computer Vision Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Image and video annotation & labeling workflows",
+            "aliases": [
+                "Dataset annotation (vision)",
+                "Image labeling",
+                "Video annotation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operational processes, tools, quality control and guidelines for creating labeled image\/video datasets, including annotation formats and inter-annotator agreement practices.",
+            "parent_skill": "Computer vision",
+            "related_skills": [
+                "Image preprocessing and augmentation",
+                "Model optimization and deployment for computer vision",
+                "OpenCV and image processing libraries"
+            ],
+            "keywords": [
+                "bounding boxes",
+                "segmentation masks",
+                "COCO format",
+                "labeling tools",
+                "quality assurance"
+            ],
+            "common_roles": [
+                "Data Labeling Specialist",
+                "Computer Vision Engineer",
+                "Dataset Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "OpenCV and image processing libraries",
+            "aliases": [
+                "OpenCV",
+                "Image processing libraries"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Proficiency with OpenCV and equivalent libraries for classical image processing tasks such as filtering, geometric transforms, feature detection and color space conversions.",
+            "parent_skill": "Computer vision",
+            "related_skills": [
+                "Image preprocessing and augmentation",
+                "Object detection",
+                "Image and video annotation & labeling workflows"
+            ],
+            "keywords": [
+                "cv2",
+                "filters",
+                "SIFT",
+                "ORB",
+                "morphology"
+            ],
+            "common_roles": [
+                "Computer Vision Engineer",
+                "Robotics Engineer",
+                "Image Processing Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

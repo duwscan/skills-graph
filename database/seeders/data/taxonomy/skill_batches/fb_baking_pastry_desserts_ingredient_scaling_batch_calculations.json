@@ -1,0 +1,304 @@
+{
+    "domain": "F&B",
+    "category": "Baking, Pastry & Desserts",
+    "subcategory": "Ingredient scaling & batch calculations",
+    "skills": [
+        {
+            "canonical_name": "Recipe scaling and batch calculations",
+            "aliases": [
+                "Batch scaling",
+                "Batch calculations",
+                "Recipe scaling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Apply proportional adjustments to ingredient quantities and totals to convert recipes between different batch sizes while maintaining formulation integrity.",
+            "parent_skill": "Ingredient scaling & batch calculations",
+            "related_skills": [
+                "Baker's percentage formulation",
+                "Unit and measurement conversion",
+                "Spreadsheet modeling for recipe scaling",
+                "Production scaling for commercial equipment"
+            ],
+            "keywords": [
+                "scale recipe",
+                "batch size",
+                "proportion",
+                "ratio",
+                "multiplier"
+            ],
+            "common_roles": [
+                "bakery production",
+                "pastry production",
+                "culinary operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Baker's percentage formulation",
+            "aliases": [
+                "Bakers percentage",
+                "Baker's percent",
+                "Baker percentage"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Use baker's percentage methodology to express ingredient ratios relative to flour weight to standardize formulations and enable accurate scaling.",
+            "parent_skill": "Ingredient scaling & batch calculations",
+            "related_skills": [
+                "Recipe scaling and batch calculations",
+                "Unit and measurement conversion",
+                "Yield and shrinkage calculations"
+            ],
+            "keywords": [
+                "baker's percent",
+                "flour basis",
+                "formulation",
+                "percentages"
+            ],
+            "common_roles": [
+                "bakery production",
+                "pastry production",
+                "culinary operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Yield and shrinkage calculations",
+            "aliases": [
+                "Yield calculation",
+                "Shrinkage estimation",
+                "Baked yield estimation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Estimate and calculate finished-product yield, moisture loss, and shrinkage to determine required ingredient input and expected output quantities.",
+            "parent_skill": "Ingredient scaling & batch calculations",
+            "related_skills": [
+                "Baker's percentage formulation",
+                "Portion sizing and serving yield optimization",
+                "Production scaling for commercial equipment"
+            ],
+            "keywords": [
+                "yield",
+                "shrinkage",
+                "moisture loss",
+                "finished product yield",
+                "waste factor"
+            ],
+            "common_roles": [
+                "bakery production",
+                "pastry production",
+                "food manufacturing operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Unit and measurement conversion",
+            "aliases": [
+                "Metric-imperial conversion",
+                "Weight-volume conversion",
+                "Volume-to-weight conversion"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Convert between units (grams, kilograms, ounces, pounds, liters, cups) and between volume and weight for ingredients with differing densities to ensure accurate quantities.",
+            "parent_skill": "Ingredient scaling & batch calculations",
+            "related_skills": [
+                "Recipe scaling and batch calculations",
+                "Spreadsheet modeling for recipe scaling",
+                "Baker's percentage formulation"
+            ],
+            "keywords": [
+                "unit conversion",
+                "metric to imperial",
+                "grams to cups",
+                "density",
+                "measurement"
+            ],
+            "common_roles": [
+                "bakery production",
+                "pastry production",
+                "culinary operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Production scaling for commercial equipment",
+            "aliases": [
+                "Upscaling recipes",
+                "Industrial scaling",
+                "Equipment capacity scaling"
+            ],
+            "skill_type": "process_skill",
+            "description": "Adjust recipes and processes to account for commercial equipment capacities, mixing dynamics, proofing limits and differences in heat transfer when moving from small batches to large-scale production.",
+            "parent_skill": "Ingredient scaling & batch calculations",
+            "related_skills": [
+                "Recipe scaling and batch calculations",
+                "Baking time and temperature adjustment for scaled batches",
+                "Yield and shrinkage calculations"
+            ],
+            "keywords": [
+                "scale up",
+                "commercial oven",
+                "mixing capacity",
+                "heat transfer",
+                "production scale"
+            ],
+            "common_roles": [
+                "food manufacturing operations",
+                "bakery production",
+                "culinary operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ingredient cost scaling and food cost per batch",
+            "aliases": [
+                "Food cost calculation",
+                "Costing per batch",
+                "Ingredient cost forecasting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculate ingredient costs and total food cost on a per-batch and per-portion basis when scaling recipes, including unit price conversions and cost variance analysis.",
+            "parent_skill": "Ingredient scaling & batch calculations",
+            "related_skills": [
+                "Spreadsheet modeling for recipe scaling",
+                "Yield and shrinkage calculations",
+                "Unit and measurement conversion"
+            ],
+            "keywords": [
+                "costing",
+                "food cost",
+                "ingredient price",
+                "cost per portion",
+                "cost variance"
+            ],
+            "common_roles": [
+                "culinary operations",
+                "food manufacturing operations",
+                "bakery production"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Portion sizing and serving yield optimization",
+            "aliases": [
+                "Portion control",
+                "Serving yield calculation",
+                "Serve size optimization"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Determine ideal portion sizes and optimize serving yields to meet recipe yield targets, customer expectations and cost constraints when scaling production.",
+            "parent_skill": "Ingredient scaling & batch calculations",
+            "related_skills": [
+                "Yield and shrinkage calculations",
+                "Ingredient cost scaling and food cost per batch",
+                "Recipe scaling and batch calculations"
+            ],
+            "keywords": [
+                "portion size",
+                "serving yield",
+                "portion control",
+                "yield optimization"
+            ],
+            "common_roles": [
+                "bakery production",
+                "culinary operations",
+                "food manufacturing operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen and ingredient constraint management during scaling",
+            "aliases": [
+                "Allergen tracking in recipes",
+                "Ingredient constraint scaling",
+                "Allergen-aware scaling"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Identify and manage allergen presence, dietary constraints and substitution impacts while scaling recipes to ensure compliance with labeling and safety requirements.",
+            "parent_skill": "Ingredient scaling & batch calculations",
+            "related_skills": [
+                "Recipe scaling and batch calculations",
+                "Ingredient cost scaling and food cost per batch"
+            ],
+            "keywords": [
+                "allergen management",
+                "ingredient substitution",
+                "dietary constraints",
+                "labeling compliance"
+            ],
+            "common_roles": [
+                "culinary operations",
+                "food safety management",
+                "bakery production"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Spreadsheet modeling for recipe scaling",
+            "aliases": [
+                "Excel recipe modeling",
+                "Google Sheets recipe templates",
+                "Recipe spreadsheet modeling"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Build and maintain spreadsheet models and templates (Excel\/Google Sheets) for automated recipe scaling, cost calculations, unit conversions and version control.",
+            "parent_skill": "Ingredient scaling & batch calculations",
+            "related_skills": [
+                "Recipe scaling and batch calculations",
+                "Unit and measurement conversion",
+                "Ingredient cost scaling and food cost per batch"
+            ],
+            "keywords": [
+                "Excel",
+                "Google Sheets",
+                "spreadsheet model",
+                "formula templates",
+                "automation"
+            ],
+            "common_roles": [
+                "culinary operations",
+                "bakery production",
+                "food manufacturing operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Baking time and temperature adjustment for scaled batches",
+            "aliases": [
+                "Time-temperature adjustment",
+                "Scaling bake times and temperatures",
+                "Bake profile adjustment"
+            ],
+            "skill_type": "process_skill",
+            "description": "Adapt baking time, temperature and thermal profiles to compensate for changes in batch mass, pan size and equipment when scaling recipes to ensure consistent product quality.",
+            "parent_skill": "Ingredient scaling & batch calculations",
+            "related_skills": [
+                "Production scaling for commercial equipment",
+                "Recipe scaling and batch calculations",
+                "Yield and shrinkage calculations"
+            ],
+            "keywords": [
+                "bake time",
+                "temperature adjustment",
+                "thermal profile",
+                "heat transfer",
+                "consistent bake"
+            ],
+            "common_roles": [
+                "bakery production",
+                "pastry production",
+                "food manufacturing operations"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

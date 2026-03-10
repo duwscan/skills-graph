@@ -1,0 +1,275 @@
+{
+    "domain": "Finance",
+    "category": "Cost Accounting & Operational Finance",
+    "subcategory": "Cost accounting systems support",
+    "skills": [
+        {
+            "canonical_name": "Cost accounting systems configuration",
+            "aliases": [
+                "cost system configuration",
+                "cost module configuration",
+                "costing configuration"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Set up and maintain cost-related configuration in ERP\/financial systems (cost elements, cost centers, valuation classes, standard\/actual costing, costing runs).",
+            "parent_skill": "Cost accounting systems support",
+            "related_skills": [
+                "Inventory valuation methods configuration",
+                "Cost allocations and chargebacks configuration",
+                "SAP S\/4HANA Cost Management",
+                "Oracle Cloud ERP Cost Management",
+                "Month-end close and cost reconciliations"
+            ],
+            "keywords": [
+                "ERP configuration",
+                "cost centers",
+                "valuation classes",
+                "standard costing",
+                "actual costing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SAP S\/4HANA Cost Management",
+            "aliases": [
+                "SAP CO",
+                "SAP Controlling",
+                "SAP ECC CO"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use and support SAP S\/4HANA cost management\/controlling modules for cost capture, allocations, product costing, and integration with FI and MM modules.",
+            "parent_skill": "Cost accounting systems support",
+            "related_skills": [
+                "Cost accounting systems configuration",
+                "Cost allocations and chargebacks configuration",
+                "Month-end close and cost reconciliations",
+                "SQL for cost accounting data extraction"
+            ],
+            "keywords": [
+                "SAP CO",
+                "S\/4HANA",
+                "product costing",
+                "activity-based costing",
+                "controlling"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Oracle Cloud ERP Cost Management",
+            "aliases": [
+                "Oracle Cost Management Cloud",
+                "Oracle Fusion Costing",
+                "Oracle EBS costing"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configure and support Oracle Cloud\/Oracle Fusion cost management components, including item costs, cost groups, cost flows and GL integration.",
+            "parent_skill": "Cost accounting systems support",
+            "related_skills": [
+                "Cost accounting systems configuration",
+                "Inventory valuation methods configuration",
+                "Month-end close and cost reconciliations",
+                "Data migration and master data management (cost modules)"
+            ],
+            "keywords": [
+                "Oracle Cloud",
+                "Fusion",
+                "item cost",
+                "costing run",
+                "cost flows"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inventory valuation methods configuration",
+            "aliases": [
+                "valuation method setup",
+                "FIFO\/LIFO\/weighted average configuration",
+                "standard vs moving average setup"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Design and configure inventory valuation and costing method settings in financial systems (FIFO, LIFO, weighted\/moving average, standard costing) and understand their accounting impact.",
+            "parent_skill": "Cost accounting systems support",
+            "related_skills": [
+                "Cost accounting systems configuration",
+                "SAP S\/4HANA Cost Management",
+                "Oracle Cloud ERP Cost Management",
+                "Month-end close and cost reconciliations"
+            ],
+            "keywords": [
+                "FIFO",
+                "LIFO",
+                "weighted average",
+                "moving average",
+                "inventory valuation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cost allocations and chargebacks configuration",
+            "aliases": [
+                "allocation rule configuration",
+                "driver-based allocations",
+                "chargeback setup"
+            ],
+            "skill_type": "process_skill",
+            "description": "Define and implement allocation models and chargeback mechanisms in ERP systems, including driver selection, distribution cycles, reciprocal allocations and automatic scheduling.",
+            "parent_skill": "Cost accounting systems support",
+            "related_skills": [
+                "Cost accounting systems configuration",
+                "SAP S\/4HANA Cost Management",
+                "Month-end close and cost reconciliations",
+                "Cost accounting system testing and validation"
+            ],
+            "keywords": [
+                "allocations",
+                "chargebacks",
+                "cost drivers",
+                "distribution cycle",
+                "reciprocal allocation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Month-end close and cost reconciliations",
+            "aliases": [
+                "cost close procedures",
+                "cost reconciliation",
+                "period close for costing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Execute and support month\/period-end costing activities: run costing processes, reconcile inventory and cost variances to the GL, post adjustments and prepare close packs for finance.",
+            "parent_skill": "Cost accounting systems support",
+            "related_skills": [
+                "Cost accounting systems configuration",
+                "Inventory valuation methods configuration",
+                "Cost allocations and chargebacks configuration",
+                "Cost accounting system testing and validation"
+            ],
+            "keywords": [
+                "month-end close",
+                "reconciliations",
+                "cost variance",
+                "GL reconciliation",
+                "period close"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SQL for cost accounting data extraction",
+            "aliases": [
+                "cost accounting SQL",
+                "T-SQL for finance",
+                "cost data queries"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Write and optimize SQL queries to extract, transform and analyze cost accounting data from transactional and reporting databases for reconciliations, variance analysis and reporting.",
+            "parent_skill": "Cost accounting systems support",
+            "related_skills": [
+                "Cost accounting system testing and validation",
+                "Data migration and master data management (cost modules)",
+                "Cost accounting systems configuration"
+            ],
+            "keywords": [
+                "SQL",
+                "queries",
+                "data extraction",
+                "ETL",
+                "cost tables"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data migration and master data management (cost modules)",
+            "aliases": [
+                "cost master data management",
+                "cost data migration",
+                "item cost migration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Plan and execute migration and ongoing master-data management for cost-related entities (cost centers, items, BOM costs), including mapping, cleansing, validation and cutover activities.",
+            "parent_skill": "Cost accounting systems support",
+            "related_skills": [
+                "SQL for cost accounting data extraction",
+                "Oracle Cloud ERP Cost Management",
+                "SAP S\/4HANA Cost Management",
+                "Cost accounting system testing and validation"
+            ],
+            "keywords": [
+                "data migration",
+                "master data",
+                "data mapping",
+                "BOM cost",
+                "cutover"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cost accounting system testing and validation",
+            "aliases": [
+                "cost system testing",
+                "costing UAT",
+                "costing regression testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and execute unit, integration and user-acceptance test cases for costing functionality; validate system outputs against business rules and accounting requirements.",
+            "parent_skill": "Cost accounting systems support",
+            "related_skills": [
+                "Cost accounting systems configuration",
+                "Data migration and master data management (cost modules)",
+                "Month-end close and cost reconciliations"
+            ],
+            "keywords": [
+                "UAT",
+                "integration testing",
+                "test scripts",
+                "regression",
+                "validation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "End-user support and training for cost accounting systems",
+            "aliases": [
+                "cost system support",
+                "end-user training for costing",
+                "cost module documentation"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Provide operational user support, create training materials and maintain documentation for cost accounting system processes, common issues and best practices.",
+            "parent_skill": "Cost accounting systems support",
+            "related_skills": [
+                "Cost accounting system testing and validation",
+                "Data migration and master data management (cost modules)",
+                "Cost accounting systems configuration"
+            ],
+            "keywords": [
+                "training",
+                "knowledge base",
+                "user support",
+                "SLA",
+                "documentation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,316 @@
+{
+    "domain": "IT",
+    "category": "IT Service Management & Support Operations",
+    "subcategory": "Service request fulfillment",
+    "skills": [
+        {
+            "canonical_name": "Service request intake & validation",
+            "aliases": [
+                "request intake",
+                "service request validation",
+                "request intake validation",
+                "fulfillment intake"
+            ],
+            "skill_type": "process_skill",
+            "description": "Receiving, verifying and validating incoming service requests (completeness, eligibility, priority) before they enter fulfillment workflows.",
+            "parent_skill": "Service request fulfillment",
+            "related_skills": [
+                "Request triage, categorization & routing",
+                "ITSM ticketing system administration",
+                "Service catalog management",
+                "Knowledge base authoring & curation"
+            ],
+            "keywords": [
+                " intake form",
+                "request metadata",
+                "request validation",
+                "submission verification",
+                "request fields"
+            ],
+            "common_roles": [
+                "service desk staff",
+                "support staff",
+                "service request coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Request triage, categorization & routing",
+            "aliases": [
+                "ticket triage",
+                "request categorization",
+                "request routing",
+                "queue routing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Assessing incoming requests to determine category, priority and the correct fulfillment group or workflow for handling.",
+            "parent_skill": "Service request fulfillment",
+            "related_skills": [
+                "Service request intake & validation",
+                "ITSM ticketing system administration",
+                "SLA monitoring & management"
+            ],
+            "keywords": [
+                "triage",
+                "categorize",
+                "routing rules",
+                "assignment",
+                "priority"
+            ],
+            "common_roles": [
+                "front-line support",
+                "service desk staff",
+                "request routing coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ITSM ticketing system administration",
+            "aliases": [
+                "ticketing system admin",
+                "ITSM tool configuration",
+                "ticket workflow configuration",
+                "service desk tool administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and maintaining IT service management\/ticketing platforms: queues, forms, workflows, SLAs and integrations used for request fulfillment.",
+            "parent_skill": "Service request fulfillment",
+            "related_skills": [
+                "Service request intake & validation",
+                "Request triage, categorization & routing",
+                "Service request automation design",
+                "Knowledge base authoring & curation"
+            ],
+            "keywords": [
+                "ITSM",
+                "ticket queues",
+                "workflow rules",
+                "forms configuration",
+                "platform integrations"
+            ],
+            "common_roles": [
+                "ITSM administrator",
+                "support tools administrator",
+                "service operations staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service catalog management",
+            "aliases": [
+                "service catalog maintenance",
+                "catalog publishing",
+                "catalog governance"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, maintaining and publishing a service catalog: defining standard request items, fulfillment steps, entitlements and SLAs.",
+            "parent_skill": "Service request fulfillment",
+            "related_skills": [
+                "Service request intake & validation",
+                "Service request automation design",
+                "SLA monitoring & management"
+            ],
+            "keywords": [
+                "service item",
+                "catalog entry",
+                "entitlement",
+                "catalog lifecycle",
+                "offerings"
+            ],
+            "common_roles": [
+                "service catalog owner",
+                "service delivery staff",
+                "service portfolio coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SLA monitoring & management",
+            "aliases": [
+                "service level monitoring",
+                "SLA adherence",
+                "SLA reporting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Tracking service-level targets for request fulfillment, managing breaches, escalations and continuous improvement of SLA performance.",
+            "parent_skill": "Service request fulfillment",
+            "related_skills": [
+                "Request triage, categorization & routing",
+                "Service request reporting & metrics analysis",
+                "ITSM ticketing system administration"
+            ],
+            "keywords": [
+                "SLA",
+                "time to resolution",
+                "SLA breach",
+                "escalation",
+                "target monitoring"
+            ],
+            "common_roles": [
+                "service operations staff",
+                "support managers",
+                "service delivery analysts"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Knowledge base authoring & curation",
+            "aliases": [
+                "KB writing",
+                "knowledge management for support",
+                "article authoring",
+                "knowledge curation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Creating, maintaining and curating support articles, runbooks and FAQs to enable faster resolution and standardized fulfillment of service requests.",
+            "parent_skill": "Service request fulfillment",
+            "related_skills": [
+                "ITSM ticketing system administration",
+                "Service request intake & validation",
+                "User communication & expectation management"
+            ],
+            "keywords": [
+                "knowledge article",
+                "runbook",
+                "FAQ",
+                "content curation",
+                "article lifecycle"
+            ],
+            "common_roles": [
+                "knowledge authors",
+                "support staff",
+                "service delivery analysts"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service request automation design",
+            "aliases": [
+                "request fulfillment automation",
+                "workflow automation for service requests",
+                "fulfillment orchestration design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing automated fulfillment workflows (scripts, orchestration, connectors) to streamline repetitive service request tasks and handoffs.",
+            "parent_skill": "Service request fulfillment",
+            "related_skills": [
+                "ITSM ticketing system administration",
+                "Service catalog management",
+                "Service request reporting & metrics analysis"
+            ],
+            "keywords": [
+                "workflow automation",
+                "orchestration",
+                "scripted fulfillment",
+                "connectors",
+                "automation design"
+            ],
+            "common_roles": [
+                "automation engineer",
+                "service operations automation specialist",
+                "support engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Access provisioning & identity lifecycle handling",
+            "aliases": [
+                "account provisioning",
+                "access request fulfillment",
+                "user account provisioning",
+                "provisioning\/deprovisioning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Executing and coordinating access requests, account creation, modification and deprovisioning in accordance with policies and entitlements.",
+            "parent_skill": "Service request fulfillment",
+            "related_skills": [
+                "Service catalog management",
+                "SLA monitoring & management",
+                "Service request automation design"
+            ],
+            "keywords": [
+                "provisioning",
+                "deprovisioning",
+                "access request",
+                "account lifecycle",
+                "entitlements"
+            ],
+            "common_roles": [
+                "access provisioning staff",
+                "support staff",
+                "identity operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "User communication & expectation management",
+            "aliases": [
+                "user updates",
+                "customer communication",
+                "stakeholder communication for requests",
+                "expectation management"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Communicating status, timelines and next steps to requesters and stakeholders to set expectations and reduce escalations during fulfillment.",
+            "parent_skill": "Service request fulfillment",
+            "related_skills": [
+                "SLA monitoring & management",
+                "Knowledge base authoring & curation",
+                "Request triage, categorization & routing"
+            ],
+            "keywords": [
+                "status updates",
+                "expectation setting",
+                "requester communication",
+                "stakeholder updates",
+                "notification"
+            ],
+            "common_roles": [
+                "service desk staff",
+                "support staff",
+                "service delivery coordinators"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service request reporting & metrics analysis",
+            "aliases": [
+                "request metrics analysis",
+                "service request reporting",
+                "request fulfillment analytics",
+                "KPI analysis for request fulfillment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Collecting and analyzing request fulfillment metrics (volume, backlog, resolution times) to produce reports, dashboards and improvement recommendations.",
+            "parent_skill": "Service request fulfillment",
+            "related_skills": [
+                "SLA monitoring & management",
+                "Service request automation design",
+                "Service catalog management"
+            ],
+            "keywords": [
+                "KPIs",
+                "dashboards",
+                "metrics",
+                "trend analysis",
+                "reporting"
+            ],
+            "common_roles": [
+                "service operations analysts",
+                "support analysts",
+                "service delivery analysts"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

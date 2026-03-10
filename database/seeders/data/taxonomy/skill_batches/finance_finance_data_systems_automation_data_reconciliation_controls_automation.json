@@ -1,0 +1,309 @@
+{
+    "domain": "Finance",
+    "category": "Finance Data, Systems & Automation",
+    "subcategory": "Data reconciliation & controls automation",
+    "skills": [
+        {
+            "canonical_name": "Account reconciliation",
+            "aliases": [
+                "Balance sheet reconciliation",
+                "Ledger reconciliation",
+                "Account-to-account reconciliation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Performing systematic matching of ledger balances to source records and resolving discrepancies to ensure financial statement accuracy.",
+            "parent_skill": "Data reconciliation & controls automation",
+            "related_skills": [
+                "Reconciliation automation design",
+                "Data mapping for reconciliations",
+                "Automated exception management",
+                "Journal entry automation"
+            ],
+            "keywords": [
+                "reconciliation",
+                "balance sheet",
+                "ledger",
+                "matching",
+                "variance"
+            ],
+            "common_roles": [
+                "Reconciliation Analyst",
+                "Staff Accountant",
+                "Finance Operations Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Reconciliation automation design",
+            "aliases": [
+                "Automated reconciliation design",
+                "Reconciliation workflow design",
+                "Matching rules design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing automated reconciliation workflows, including matching logic, exception routing, thresholds, and reconciliation cadence.",
+            "parent_skill": "Data reconciliation & controls automation",
+            "related_skills": [
+                "Reconciliation platform configuration",
+                "Data mapping for reconciliations",
+                "Robotic Process Automation (RPA) for finance",
+                "Automated exception management"
+            ],
+            "keywords": [
+                "workflow",
+                "matching rules",
+                "automation",
+                "exception routing"
+            ],
+            "common_roles": [
+                "Financial Systems Analyst",
+                "Finance Automation Engineer",
+                "Reconciliation Lead"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Reconciliation platform configuration",
+            "aliases": [
+                "BlackLine configuration",
+                "Trintech Cadency configuration",
+                "Reconciliation software configuration",
+                "Oracle Account Reconciliation Cloud configuration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and administrating reconciliation and close management platforms to implement matching rules, workflows, and control tests.",
+            "parent_skill": "Data reconciliation & controls automation",
+            "related_skills": [
+                "Reconciliation automation design",
+                "SQL for reconciliation and controls",
+                "Continuous controls monitoring"
+            ],
+            "keywords": [
+                "platform",
+                "configuration",
+                "BlackLine",
+                "Trintech",
+                "account reconciliation"
+            ],
+            "common_roles": [
+                "Financial Systems Analyst",
+                "Reconciliation Analyst",
+                "Finance Automation Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Robotic Process Automation (RPA) for finance",
+            "aliases": [
+                "Finance RPA",
+                "UiPath for finance",
+                "Automation Anywhere for finance"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using RPA tools to automate repetitive finance tasks such as data extraction, file transfers, system integrations and routine reconciliations.",
+            "parent_skill": "Data reconciliation & controls automation",
+            "related_skills": [
+                "Reconciliation automation design",
+                "Journal entry automation",
+                "Reconciliation platform configuration"
+            ],
+            "keywords": [
+                "RPA",
+                "robotic process automation",
+                "UiPath",
+                "Automation Anywhere",
+                "finance automation"
+            ],
+            "common_roles": [
+                "Finance Automation Engineer",
+                "Finance Operations Analyst",
+                "RPA Developer (Finance)"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SQL for reconciliation and controls",
+            "aliases": [
+                "SQL querying for reconciliations",
+                "T-SQL for reconciliation",
+                "Database querying for controls"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Writing SQL queries to extract, transform and validate financial data used in reconciliations, control tests and exception investigations.",
+            "parent_skill": "Data reconciliation & controls automation",
+            "related_skills": [
+                "Data mapping for reconciliations",
+                "Data matching and fuzzy matching algorithms",
+                "Reconciliation platform configuration"
+            ],
+            "keywords": [
+                "SQL",
+                "queries",
+                "data extraction",
+                "ETL",
+                "controls"
+            ],
+            "common_roles": [
+                "Financial Systems Analyst",
+                "Data Analyst (Finance)",
+                "Reconciliation Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated exception management",
+            "aliases": [
+                "Exception handling automation",
+                "Automated exception routing",
+                "Exception lifecycle automation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Defining and operating automated processes for identifying, routing, tracking and resolving reconciliation exceptions to reduce manual intervention.",
+            "parent_skill": "Data reconciliation & controls automation",
+            "related_skills": [
+                "Reconciliation automation design",
+                "Continuous controls monitoring",
+                "Account reconciliation"
+            ],
+            "keywords": [
+                "exception",
+                "escalation",
+                "routing",
+                "case management",
+                "automation"
+            ],
+            "common_roles": [
+                "Reconciliation Analyst",
+                "Finance Operations Analyst",
+                "Treasury Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Continuous controls monitoring",
+            "aliases": [
+                "Continuous control monitoring",
+                "CCM",
+                "Automated controls monitoring"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implementing automated, ongoing checks of financial controls and reconciliations to detect anomalies and evidence control effectiveness in near real-time.",
+            "parent_skill": "Data reconciliation & controls automation",
+            "related_skills": [
+                "Reconciliation platform configuration",
+                "Automated exception management",
+                "SQL for reconciliation and controls"
+            ],
+            "keywords": [
+                "controls",
+                "monitoring",
+                "continuous",
+                "anomaly detection",
+                "control testing"
+            ],
+            "common_roles": [
+                "Internal Controls Analyst",
+                "SOX Compliance Analyst",
+                "Financial Systems Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Journal entry automation",
+            "aliases": [
+                "Automated journal entries",
+                "Recurring journal automation",
+                "Journal upload automation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Automating creation, validation and posting of recurring and rule-based journal entries to streamline close and reduce manual posting errors.",
+            "parent_skill": "Data reconciliation & controls automation",
+            "related_skills": [
+                "Robotic Process Automation (RPA) for finance",
+                "Reconciliation automation design",
+                "Reconciliation platform configuration"
+            ],
+            "keywords": [
+                "journal",
+                "automation",
+                "recurring",
+                "postings",
+                "close"
+            ],
+            "common_roles": [
+                "Financial Systems Analyst",
+                "Staff Accountant",
+                "Finance Automation Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data matching and fuzzy matching algorithms",
+            "aliases": [
+                "Fuzzy matching for reconciliations",
+                "Probabilistic matching",
+                "Approximate string matching"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing deterministic and fuzzy matching algorithms to reconcile records with imperfect or partially matching attributes.",
+            "parent_skill": "Data reconciliation & controls automation",
+            "related_skills": [
+                "SQL for reconciliation and controls",
+                "Reconciliation automation design",
+                "Data mapping for reconciliations"
+            ],
+            "keywords": [
+                "fuzzy matching",
+                "approximate match",
+                "algorithm",
+                "record linkage",
+                "reconciliation"
+            ],
+            "common_roles": [
+                "Data Analyst (Finance)",
+                "Finance Automation Engineer",
+                "Reconciliation Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data mapping for reconciliations",
+            "aliases": [
+                "Reconciliation data mapping",
+                "Source-to-ledger mapping",
+                "ETL for reconciliations"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating and maintaining mappings and transformations from source systems to the general ledger format to enable accurate automated reconciliations.",
+            "parent_skill": "Data reconciliation & controls automation",
+            "related_skills": [
+                "SQL for reconciliation and controls",
+                "Data matching and fuzzy matching algorithms",
+                "Reconciliation platform configuration"
+            ],
+            "keywords": [
+                "data mapping",
+                "ETL",
+                "source-to-ledger",
+                "transformations",
+                "schema mapping"
+            ],
+            "common_roles": [
+                "Data Analyst (Finance)",
+                "Financial Systems Analyst",
+                "ETL Developer (Finance)"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

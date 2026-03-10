@@ -1,0 +1,292 @@
+{
+    "domain": "Finance",
+    "category": "Accounting Operations (Record-to-Report)",
+    "subcategory": "Accruals & provisions",
+    "skills": [
+        {
+            "canonical_name": "Accrual accounting",
+            "aliases": [
+                "Accruals accounting",
+                "Accrual basis accounting"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying accrual accounting principles to record revenues and expenses when earned\/incurred rather than when cash is exchanged, including recognition, cutoff and matching rules.",
+            "parent_skill": "Accruals & provisions",
+            "related_skills": [
+                "Accruals journal entries",
+                "Month-end accruals close",
+                "Accruals reconciliation & variance analysis"
+            ],
+            "keywords": [
+                "accrual basis",
+                "cutoff",
+                "matching principle",
+                "revenue recognition",
+                "expense recognition"
+            ],
+            "common_roles": [
+                "Staff Accountant",
+                "General Ledger Accountant",
+                "Financial Accountant"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Accruals journal entries",
+            "aliases": [
+                "Accrual journal posting",
+                "Accrual adjusting entries"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Preparing, posting and documenting accrual and reversing journal entries in the general ledger, including estimating amounts and selecting appropriate account codes.",
+            "parent_skill": "Accruals & provisions",
+            "related_skills": [
+                "Accrual accounting",
+                "Month-end accruals close",
+                "ERP general ledger accruals processing"
+            ],
+            "keywords": [
+                "journal entries",
+                "adjusting entries",
+                "reversing entries",
+                "GL posting"
+            ],
+            "common_roles": [
+                "GL Accountant",
+                "Record-to-Report Analyst",
+                "Staff Accountant"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Month-end accruals close",
+            "aliases": [
+                "Month-end accrual process",
+                "Accruals close activities"
+            ],
+            "skill_type": "process_skill",
+            "description": "Coordinating and executing month-end processes for identifying, approving and recording accruals and provisions to meet close timetables and reporting requirements.",
+            "parent_skill": "Accruals & provisions",
+            "related_skills": [
+                "Accruals journal entries",
+                "Accruals reconciliation & variance analysis",
+                "Internal controls for accruals & provisions"
+            ],
+            "keywords": [
+                "month-end close",
+                "close schedule",
+                "cutoff",
+                "close checklist"
+            ],
+            "common_roles": [
+                "Record-to-Report Analyst",
+                "Financial Reporting Analyst",
+                "R2R Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Accruals reconciliation & variance analysis",
+            "aliases": [
+                "Accruals reconciliation",
+                "Accruals variance analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Reconciling accrual balances to supporting schedules, investigating variances against budgets\/prior periods, and escalating material differences for correction or disclosure.",
+            "parent_skill": "Accruals & provisions",
+            "related_skills": [
+                "Month-end accruals close",
+                "Accruals journal entries",
+                "Provision estimation & judgment"
+            ],
+            "keywords": [
+                "reconciliation",
+                "variance analysis",
+                "supporting schedules",
+                "materiality"
+            ],
+            "common_roles": [
+                "Financial Analyst",
+                "Record-to-Report Analyst",
+                "Staff Accountant"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bad debt provisioning (allowance for doubtful accounts)",
+            "aliases": [
+                "Provision for doubtful accounts",
+                "Bad debt reserve"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Calculating and recording allowances for doubtful accounts based on aging analyses, historical loss rates and specific account reviews to reflect collectible receivables.",
+            "parent_skill": "Accruals & provisions",
+            "related_skills": [
+                "Provision estimation & judgment",
+                "Accruals reconciliation & variance analysis",
+                "Expected Credit Loss (ECL) modelling"
+            ],
+            "keywords": [
+                "bad debt",
+                "allowance for doubtful accounts",
+                "accounts receivable provisioning",
+                "aging analysis"
+            ],
+            "common_roles": [
+                "Credit Controller",
+                "AR Accountant",
+                "Financial Accountant"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Expected Credit Loss (ECL) modelling",
+            "aliases": [
+                "ECL provisioning",
+                "IFRS 9 expected credit loss"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Applying IFRS 9 ECL methodology (or analogous regulatory frameworks) to estimate credit losses, including staging, forward-looking adjustments and model governance requirements.",
+            "parent_skill": "Accruals & provisions",
+            "related_skills": [
+                "Bad debt provisioning (allowance for doubtful accounts)",
+                "Provision estimation & judgment",
+                "IFRS and US GAAP provisioning standards"
+            ],
+            "keywords": [
+                "IFRS 9",
+                "staging",
+                "forward-looking",
+                "credit risk",
+                "lifetime expected credit loss"
+            ],
+            "common_roles": [
+                "Credit Risk Analyst",
+                "Provisioning Analyst",
+                "Financial Reporting Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Provision estimation & judgment",
+            "aliases": [
+                "Provisions estimation",
+                "Accounting judgement for provisions"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Using quantitative and qualitative methods to estimate provisions (e.g., warranty, restructuring, legal) including scenario analysis, probability-weighting and documenting management judgement.",
+            "parent_skill": "Accruals & provisions",
+            "related_skills": [
+                "Accruals reconciliation & variance analysis",
+                "Bad debt provisioning (allowance for doubtful accounts)",
+                "IFRS and US GAAP provisioning standards"
+            ],
+            "keywords": [
+                "estimation",
+                "management judgement",
+                "scenario analysis",
+                "probability-weighted"
+            ],
+            "common_roles": [
+                "Financial Accountant",
+                "Provisioning Analyst",
+                "Financial Reporting Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "BlackLine and accruals automation tools",
+            "aliases": [
+                "Accruals automation (BlackLine, Trintech)",
+                "Reconciliation and accrual automation tools"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and using cloud-based reconciliation and accrual automation platforms (e.g., BlackLine, Trintech) to automate accrual calculation, workflow, reconciliations and controls.",
+            "parent_skill": "Accruals & provisions",
+            "related_skills": [
+                "ERP general ledger accruals processing",
+                "Month-end accruals close",
+                "Accruals reconciliation & variance analysis"
+            ],
+            "keywords": [
+                "BlackLine",
+                "Trintech",
+                "accrual automation",
+                "reconciliation software",
+                "close automation"
+            ],
+            "common_roles": [
+                "Record-to-Report Analyst",
+                "Financial Systems Analyst",
+                "R2R Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ERP general ledger accruals processing",
+            "aliases": [
+                "GL accruals processing (SAP\/Oracle\/Workday)",
+                "ERP accrual posting"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and executing accrual-related processes in ERP general ledger systems (such as SAP FI, Oracle E-Business Suite, Workday), including recurring accruals, reversing entries and integration with subledgers.",
+            "parent_skill": "Accruals & provisions",
+            "related_skills": [
+                "Accruals journal entries",
+                "BlackLine and accruals automation tools",
+                "Month-end accruals close"
+            ],
+            "keywords": [
+                "SAP FI",
+                "Oracle EBS",
+                "Workday",
+                "recurring accruals",
+                "GL automation"
+            ],
+            "common_roles": [
+                "ERP Accountant",
+                "GL Accountant",
+                "Financial Systems Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Internal controls for accruals & provisions (SOX)",
+            "aliases": [
+                "Accruals internal controls",
+                "SOX controls for provisions"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Designing, testing and documenting internal controls over accruals and provisions to ensure accurate financial reporting and compliance with SOX and other regulatory requirements.",
+            "parent_skill": "Accruals & provisions",
+            "related_skills": [
+                "Month-end accruals close",
+                "Accruals journal entries",
+                "Accruals reconciliation & variance analysis"
+            ],
+            "keywords": [
+                "SOX",
+                "internal controls",
+                "control testing",
+                "segregation of duties",
+                "control documentation"
+            ],
+            "common_roles": [
+                "Internal Controls Analyst",
+                "SOX Compliance Analyst",
+                "Financial Reporting Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,259 @@
+{
+    "domain": "Finance",
+    "category": "Financial Planning & Analysis (FP&A)",
+    "subcategory": "KPI design & performance dashboards",
+    "skills": [
+        {
+            "canonical_name": "KPI framework design",
+            "aliases": [
+                "KPI framework",
+                "KPI design",
+                "performance indicator framework"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design end-to-end KPI frameworks that align metrics to strategy and objectives, specifying hierarchy, leading vs. lagging indicators, measurement cadence, and ownership.",
+            "parent_skill": "KPI design & performance dashboards",
+            "related_skills": [
+                "Metric taxonomy & data dictionary",
+                "KPI governance & stewardship",
+                "KPI target setting & forecasting"
+            ],
+            "keywords": [
+                "strategy alignment",
+                "objectives",
+                "lead\/lag indicators",
+                "measurement cadence"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Metric taxonomy & data dictionary",
+            "aliases": [
+                "metric taxonomy",
+                "metrics dictionary",
+                "KPI data dictionary",
+                "metric definitions"
+            ],
+            "skill_type": "process_skill",
+            "description": "Create and maintain a standardized taxonomy and data dictionary for metrics, documenting exact calculations, units, data sources, update frequency and metric owners.",
+            "parent_skill": "KPI design & performance dashboards",
+            "related_skills": [
+                "KPI framework design",
+                "KPI governance & stewardship",
+                "Financial KPI calculation & normalization"
+            ],
+            "keywords": [
+                "definitions",
+                "calculation rules",
+                "units",
+                "source mapping"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "KPI target setting & forecasting",
+            "aliases": [
+                "target setting",
+                "KPI forecasting",
+                "goal setting for KPIs"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Define KPI targets and forecast trajectories using historical trends, driver-based models, seasonality adjustments and scenario analysis to set realistic performance goals.",
+            "parent_skill": "KPI design & performance dashboards",
+            "related_skills": [
+                "KPI framework design",
+                "Financial KPI calculation & normalization",
+                "ETL & data modeling for dashboards"
+            ],
+            "keywords": [
+                "targets",
+                "forecasting",
+                "scenario analysis",
+                "driver-based forecasting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial KPI calculation & normalization",
+            "aliases": [
+                "KPI calculation",
+                "KPI normalization",
+                "per-unit metrics",
+                "normalized financial metrics"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Compute and normalize financial KPIs (e.g., margins, returns, revenue per unit), define denominators and rates, and apply adjustments for comparability across periods and segments.",
+            "parent_skill": "KPI design & performance dashboards",
+            "related_skills": [
+                "Metric taxonomy & data dictionary",
+                "KPI target setting & forecasting",
+                "Variance analysis for KPIs"
+            ],
+            "keywords": [
+                "margins",
+                "ratios",
+                "per-unit",
+                "normalization"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "KPI governance & stewardship",
+            "aliases": [
+                "metric governance",
+                "KPI stewardship",
+                "metric change control"
+            ],
+            "skill_type": "process_skill",
+            "description": "Establish processes and controls for KPI ownership, change management, approval workflows, and metric lifecycle to ensure consistency and data integrity across the organization.",
+            "parent_skill": "KPI design & performance dashboards",
+            "related_skills": [
+                "Metric taxonomy & data dictionary",
+                "KPI framework design",
+                "ETL & data modeling for dashboards"
+            ],
+            "keywords": [
+                "ownership",
+                "change management",
+                "approvals",
+                "data integrity"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dashboard design & UX for finance",
+            "aliases": [
+                "dashboard design",
+                "finance dashboard UX",
+                "report layout design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Design financial dashboards with effective layout, visual hierarchy, filtering\/navigation, and responsive considerations to support quick insight and decision-making by finance stakeholders.",
+            "parent_skill": "KPI design & performance dashboards",
+            "related_skills": [
+                "Data visualization for finance",
+                "Dashboard development in Power BI",
+                "Data storytelling & executive reporting"
+            ],
+            "keywords": [
+                "layout",
+                "visual hierarchy",
+                "filters",
+                "navigation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data visualization for finance",
+            "aliases": [
+                "financial data visualization",
+                "visualization best practices",
+                "charting for finance"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Select and apply appropriate chart types, color\/labeling conventions and annotation techniques for financial data to accurately convey trends, comparisons and distributions.",
+            "parent_skill": "KPI design & performance dashboards",
+            "related_skills": [
+                "Dashboard design & UX for finance",
+                "Data storytelling & executive reporting",
+                "Dashboard development in Power BI"
+            ],
+            "keywords": [
+                "charts",
+                "color theory",
+                "annotations",
+                "trend visualization"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dashboard development in Power BI",
+            "aliases": [
+                "Power BI dashboard development",
+                "PowerBI report authoring",
+                "Power BI report development"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Build interactive finance reports and dashboards in Power BI, including data modeling, DAX measures, visuals, filters, performance optimization and security (row-level security) configuration.",
+            "parent_skill": "KPI design & performance dashboards",
+            "related_skills": [
+                "ETL & data modeling for dashboards",
+                "Data visualization for finance",
+                "Dashboard design & UX for finance"
+            ],
+            "keywords": [
+                "Power BI",
+                "DAX",
+                "data model",
+                "row-level security"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ETL & data modeling for dashboards",
+            "aliases": [
+                "data modeling for dashboards",
+                "ETL for dashboards",
+                "star schema modeling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Prepare, cleanse and transform source data and design analytical data models (star\/snowflake schemas) to support performant KPI queries and accurate dashboard reporting.",
+            "parent_skill": "KPI design & performance dashboards",
+            "related_skills": [
+                "Dashboard development in Power BI",
+                "Metric taxonomy & data dictionary",
+                "KPI governance & stewardship"
+            ],
+            "keywords": [
+                "ETL",
+                "data model",
+                "cleanse",
+                "performance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data storytelling & executive reporting",
+            "aliases": [
+                "data storytelling",
+                "executive dashboards presentation",
+                "insight communication"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Synthesize KPI results into concise narratives and visual summaries for executives, highlighting implications, recommended actions and follow-up analyses required.",
+            "parent_skill": "KPI design & performance dashboards",
+            "related_skills": [
+                "Dashboard design & UX for finance",
+                "Data visualization for finance",
+                "KPI target setting & forecasting"
+            ],
+            "keywords": [
+                "narrative",
+                "insights",
+                "executive summary",
+                "presentation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

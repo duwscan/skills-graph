@@ -1,0 +1,299 @@
+{
+    "domain": "F&B",
+    "category": "Baking, Pastry & Desserts",
+    "subcategory": "Baking production scheduling",
+    "skills": [
+        {
+            "canonical_name": "Bakery production scheduling",
+            "aliases": [
+                "bakery scheduling",
+                "baking production planning",
+                "production schedule for bakery"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating and maintaining production timetables for bakery operations to meet demand, coordinate lines, and optimize resource use.",
+            "parent_skill": "Baking production scheduling",
+            "related_skills": [
+                "Batch sizing and run planning",
+                "Production sequencing and flow optimization",
+                "Shift and labor scheduling for bakery production",
+                "Production scheduling software (MRP\/ERP)"
+            ],
+            "keywords": [
+                "production timetable",
+                "schedule planner",
+                "daily bake schedule",
+                "production calendar"
+            ],
+            "common_roles": [
+                "Production Planner",
+                "Bakery Manager",
+                "Head Baker",
+                "Operations Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Batch sizing and run planning",
+            "aliases": [
+                "batch size calculation",
+                "run planning",
+                "bake lot sizing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Determining optimal batch sizes and sequencing to meet demand while minimizing changeovers, spoilage, and setup time.",
+            "parent_skill": "Baking production scheduling",
+            "related_skills": [
+                "Capacity planning and line balancing (bakery)",
+                "Waste minimization and yield optimization",
+                "Bakery production scheduling"
+            ],
+            "keywords": [
+                "batch size",
+                "run length",
+                "setup reduction",
+                "lot sizing"
+            ],
+            "common_roles": [
+                "Production Planner",
+                "Head Baker",
+                "Process Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Demand forecasting for baked goods",
+            "aliases": [
+                "sales forecasting (bakery)",
+                "demand planning for bakery products",
+                "baked goods demand forecast"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Using historical sales, promotions, seasonality and market signals to predict future demand for breads, pastries and desserts.",
+            "parent_skill": "Baking production scheduling",
+            "related_skills": [
+                "Ingredient inventory planning and reorder point setting",
+                "Bakery production scheduling",
+                "Production scheduling software (MRP\/ERP)"
+            ],
+            "keywords": [
+                "forecasting",
+                "time series",
+                "seasonality",
+                "sales patterns"
+            ],
+            "common_roles": [
+                "Supply Chain Planner",
+                "Demand Planner",
+                "Production Planner"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ingredient inventory planning and reorder point setting",
+            "aliases": [
+                "raw material planning (bakery)",
+                "ingredient reorder point",
+                "inventory ordering for bakery"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Calculating safety stock, lead times and reorder points for flour, yeast, dairy and other ingredients to support production schedules.",
+            "parent_skill": "Baking production scheduling",
+            "related_skills": [
+                "Demand forecasting for baked goods",
+                "Production scheduling software (MRP\/ERP)",
+                "Shelf-life and freshness scheduling"
+            ],
+            "keywords": [
+                "safety stock",
+                "reorder point",
+                "lead time",
+                "min\/max levels"
+            ],
+            "common_roles": [
+                "Inventory Planner",
+                "Procurement Specialist",
+                "Production Planner"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Capacity planning and line balancing (bakery)",
+            "aliases": [
+                "line balancing for bakery",
+                "production capacity planning",
+                "oven and line capacity planning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Assessing equipment, oven, and staff capacity to align production output with demand and minimize bottlenecks.",
+            "parent_skill": "Baking production scheduling",
+            "related_skills": [
+                "Batch sizing and run planning",
+                "Production sequencing and flow optimization",
+                "Shift and labor scheduling for bakery production"
+            ],
+            "keywords": [
+                "throughput",
+                "bottleneck analysis",
+                "load leveling",
+                "capacity utilization"
+            ],
+            "common_roles": [
+                "Operations Manager",
+                "Production Planner",
+                "Process Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Production sequencing and flow optimization",
+            "aliases": [
+                "sequence planning",
+                "flow optimization (bakery)",
+                "production order sequencing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Ordering production runs and arranging workflows to reduce changeovers, cross-contamination risk, and overall cycle time.",
+            "parent_skill": "Baking production scheduling",
+            "related_skills": [
+                "Batch sizing and run planning",
+                "Capacity planning and line balancing (bakery)",
+                "Allergen scheduling and cross-contamination control"
+            ],
+            "keywords": [
+                "sequence",
+                "routing",
+                "changeover minimization",
+                "flow"
+            ],
+            "common_roles": [
+                "Production Planner",
+                "Head Baker",
+                "Quality Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Shelf-life and freshness scheduling",
+            "aliases": [
+                "freshness routing",
+                "FIFO scheduling",
+                "shelf life management"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Scheduling production and distribution to ensure product freshness, manage expiration dates, and comply with food safety and labeling requirements.",
+            "parent_skill": "Baking production scheduling",
+            "related_skills": [
+                "Ingredient inventory planning and reorder point setting",
+                "Waste minimization and yield optimization",
+                "Bakery production scheduling"
+            ],
+            "keywords": [
+                "FIFO",
+                "best before",
+                "expiration",
+                "freshness"
+            ],
+            "common_roles": [
+                "Quality Manager",
+                "Logistics Coordinator",
+                "Production Planner"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Waste minimization and yield optimization",
+            "aliases": [
+                "yield management (bakery)",
+                "waste reduction planning",
+                "scrap reduction"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Analyzing production processes to reduce ingredient waste, improve dough yields and lower finished-goods shrinkage.",
+            "parent_skill": "Baking production scheduling",
+            "related_skills": [
+                "Batch sizing and run planning",
+                "Shelf-life and freshness scheduling",
+                "Production sequencing and flow optimization"
+            ],
+            "keywords": [
+                "yield",
+                "waste reduction",
+                "shrinkage",
+                "efficiency"
+            ],
+            "common_roles": [
+                "Process Improvement Specialist",
+                "Production Manager",
+                "Head Baker"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Production scheduling software (MRP\/ERP)",
+            "aliases": [
+                "MRP for bakery",
+                "ERP production planning",
+                "production planning software"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using MRP\/ERP or specialized bakery scheduling software to create, adjust and track production plans, inventory and orders.",
+            "parent_skill": "Baking production scheduling",
+            "related_skills": [
+                "Bakery production scheduling",
+                "Demand forecasting for baked goods",
+                "Ingredient inventory planning and reorder point setting"
+            ],
+            "keywords": [
+                "MRP",
+                "ERP",
+                "production planning tool",
+                "scheduling system"
+            ],
+            "common_roles": [
+                "Production Planner",
+                "Supply Chain Planner",
+                "Operations Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Shift and labor scheduling for bakery production",
+            "aliases": [
+                "staff rostering (bakery)",
+                "baker shift planning",
+                "labor scheduling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Planning staff shifts and assignments to align labor availability with production schedules while controlling labor costs and complying with work rules.",
+            "parent_skill": "Baking production scheduling",
+            "related_skills": [
+                "Capacity planning and line balancing (bakery)",
+                "Bakery production scheduling",
+                "Production sequencing and flow optimization"
+            ],
+            "keywords": [
+                "rostering",
+                "shift planning",
+                "labor allocation",
+                "work schedules"
+            ],
+            "common_roles": [
+                "Bakery Manager",
+                "Shift Supervisor",
+                "Operations Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

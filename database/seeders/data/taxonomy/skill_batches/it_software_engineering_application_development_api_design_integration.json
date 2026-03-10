@@ -1,0 +1,343 @@
+{
+    "domain": "IT",
+    "category": "Software Engineering & Application Development",
+    "subcategory": "API design & integration",
+    "skills": [
+        {
+            "canonical_name": "RESTful API design",
+            "aliases": [
+                "REST API design",
+                "REST API architecture",
+                "Representational State Transfer"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing HTTP\/REST APIs including resource modeling, URI design, HTTP methods\/status codes, HATEOAS considerations and standard conventions for payloads and errors.",
+            "parent_skill": "API design & integration",
+            "related_skills": [
+                "OpenAPI Specification (Swagger)",
+                "API versioning strategy",
+                "API testing & contract testing",
+                "API security"
+            ],
+            "keywords": [
+                "REST",
+                "HTTP",
+                "resources",
+                "CRUD",
+                "status codes",
+                "HATEOAS",
+                "URI design"
+            ],
+            "common_roles": [
+                "Backend Developer",
+                "API Engineer",
+                "Integration Engineer",
+                "Full Stack Developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "GraphQL API design",
+            "aliases": [
+                "GraphQL schema design",
+                "GraphQL API development"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing GraphQL schemas, queries, mutations and subscriptions with attention to schema boundaries, pagination, batching, and performance trade-offs.",
+            "parent_skill": "API design & integration",
+            "related_skills": [
+                "API security",
+                "API testing & contract testing",
+                "API performance monitoring",
+                "RESTful API design"
+            ],
+            "keywords": [
+                "GraphQL",
+                "schema",
+                "resolver",
+                "queries",
+                "mutations",
+                "subscriptions",
+                "pagination"
+            ],
+            "common_roles": [
+                "Backend Developer",
+                "API Engineer",
+                "Frontend Developer",
+                "Full Stack Developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "API security",
+            "aliases": [
+                "API hardening",
+                "secure API design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying security best practices to APIs, including authentication\/authorization patterns, input validation, rate limiting, encryption in transit, and protection against common attacks (e.g., injection, CSRF).",
+            "parent_skill": "API design & integration",
+            "related_skills": [
+                "OAuth 2.0 & OpenID Connect",
+                "API gateway configuration",
+                "TLS \/ HTTPS",
+                "API monitoring & performance optimization"
+            ],
+            "keywords": [
+                "authentication",
+                "authorization",
+                "TLS",
+                "rate limiting",
+                "input validation",
+                "OWASP",
+                "JWT"
+            ],
+            "common_roles": [
+                "Security Engineer",
+                "Backend Developer",
+                "API Engineer",
+                "DevOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "OAuth 2.0 & OpenID Connect",
+            "aliases": [
+                "OAuth2",
+                "OIDC",
+                "OpenID Connect"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Implementing OAuth 2.0 authorization flows and OpenID Connect for API authentication and delegated access, including token issuance, refresh, scopes and token validation.",
+            "parent_skill": "API design & integration",
+            "related_skills": [
+                "API security",
+                "JWT",
+                "API gateway configuration",
+                "Identity federation"
+            ],
+            "keywords": [
+                "OAuth2",
+                "OpenID Connect",
+                "authorization code",
+                "implicit flow",
+                "client credentials",
+                "refresh token",
+                "scopes",
+                "JWT"
+            ],
+            "common_roles": [
+                "Backend Developer",
+                "Security Engineer",
+                "Identity Engineer",
+                "API Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "OpenAPI Specification (Swagger)",
+            "aliases": [
+                "OpenAPI",
+                "Swagger",
+                "OpenAPI spec"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using the OpenAPI specification to define, document and generate client\/server code for RESTful APIs, including schema definitions, examples, and contract-driven workflows.",
+            "parent_skill": "API design & integration",
+            "related_skills": [
+                "RESTful API design",
+                "API documentation & developer portals",
+                "API testing & contract testing",
+                "API lifecycle management"
+            ],
+            "keywords": [
+                "OpenAPI",
+                "Swagger",
+                "API spec",
+                "YAML",
+                "JSON Schema",
+                "code generation",
+                "contract"
+            ],
+            "common_roles": [
+                "API Engineer",
+                "Backend Developer",
+                "Integration Engineer",
+                "Technical Writer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "API gateway configuration",
+            "aliases": [
+                "API gateway management",
+                "gateway configuration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and managing API gateways and proxies (e.g., routing, load balancing, authentication, rate limiting, caching and request\/response transformations) to mediate traffic to backend services.",
+            "parent_skill": "API design & integration",
+            "related_skills": [
+                "API security",
+                "API monitoring & performance optimization",
+                "OAuth 2.0 & OpenID Connect",
+                "API lifecycle management"
+            ],
+            "keywords": [
+                "API gateway",
+                "routing",
+                "rate limiting",
+                "caching",
+                "authz",
+                "reverse proxy",
+                "traffic management"
+            ],
+            "common_roles": [
+                "DevOps Engineer",
+                "Site Reliability Engineer",
+                "Integration Engineer",
+                "API Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Event-driven integration & webhooks",
+            "aliases": [
+                "event-driven architecture",
+                "webhook implementation",
+                "pub\/sub integration"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing event-driven integrations and webhooks including event schema design, delivery guarantees (at-most-once, at-least-once), idempotency, retries and backpressure handling.",
+            "parent_skill": "API design & integration",
+            "related_skills": [
+                "gRPC & Protocol Buffers",
+                "API gateway configuration",
+                "API monitoring & performance optimization",
+                "Message queuing"
+            ],
+            "keywords": [
+                "webhooks",
+                "pub\/sub",
+                "events",
+                "idempotency",
+                "retry",
+                "event schema",
+                "asynchronous"
+            ],
+            "common_roles": [
+                "Integration Engineer",
+                "Backend Developer",
+                "Platform Engineer",
+                "Full Stack Developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "API testing & contract testing",
+            "aliases": [
+                "API testing",
+                "consumer-driven contract testing",
+                "contract testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and executing API tests (unit, integration, end-to-end) and contract testing between services (e.g., Pact) to validate API behavior and prevent breaking changes across teams.",
+            "parent_skill": "API design & integration",
+            "related_skills": [
+                "OpenAPI Specification (Swagger)",
+                "RESTful API design",
+                "GraphQL API design",
+                "CI\/CD"
+            ],
+            "keywords": [
+                "contract testing",
+                "integration tests",
+                "Pact",
+                "Postman",
+                "automated tests",
+                "mocking",
+                "schema validation"
+            ],
+            "common_roles": [
+                "QA Engineer",
+                "Backend Developer",
+                "SDET",
+                "API Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "API monitoring & performance optimization",
+            "aliases": [
+                "API observability",
+                "API performance tuning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Monitoring API health, latency and throughput; diagnosing bottlenecks using logging, metrics and distributed tracing; and applying caching, pagination and load-shedding to improve performance and reliability.",
+            "parent_skill": "API design & integration",
+            "related_skills": [
+                "API gateway configuration",
+                "API security",
+                "Site reliability engineering",
+                "profiling & tracing"
+            ],
+            "keywords": [
+                "observability",
+                "APM",
+                "metrics",
+                "tracing",
+                "latency",
+                "throughput",
+                "caching"
+            ],
+            "common_roles": [
+                "Site Reliability Engineer",
+                "DevOps Engineer",
+                "Backend Developer",
+                "Performance Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "gRPC & Protocol Buffers",
+            "aliases": [
+                "gRPC",
+                "Protocol Buffers",
+                "protobuf"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Designing and implementing RPC-style APIs using gRPC and Protocol Buffers for high-performance, strongly-typed inter-service communication and streaming.",
+            "parent_skill": "API design & integration",
+            "related_skills": [
+                "Event-driven integration & webhooks",
+                "API security",
+                "API gateway configuration",
+                "API testing & contract testing"
+            ],
+            "keywords": [
+                "gRPC",
+                "protobuf",
+                "RPC",
+                "IDL",
+                "streaming",
+                "binary protocol"
+            ],
+            "common_roles": [
+                "Backend Developer",
+                "Platform Engineer",
+                "Microservices Engineer",
+                "API Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

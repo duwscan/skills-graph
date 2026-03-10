@@ -1,0 +1,309 @@
+{
+    "domain": "F&B",
+    "category": "Beverage Service (Non-Alcoholic)",
+    "subcategory": "Equipment cleaning & calibration",
+    "skills": [
+        {
+            "canonical_name": "Beverage equipment sanitization",
+            "aliases": [
+                "equipment sanitization",
+                "beverage equipment cleaning",
+                "sanitizing beverage equipment"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Performing routine cleaning and sanitization procedures on beverage preparation and dispensing equipment to remove soils, biofilm, and microbial contamination according to established procedures.",
+            "parent_skill": "Equipment cleaning & calibration",
+            "related_skills": [
+                "Descaling and limescale removal",
+                "Chemical sanitiser handling & dilution testing",
+                "Temperature calibration & verification"
+            ],
+            "keywords": [
+                "sanitization",
+                "cleaning",
+                "biofilm",
+                "surface sanitiser",
+                "sink-side cleaning"
+            ],
+            "common_roles": [
+                "Barista",
+                "Cafe Crew",
+                "Beverage Attendant",
+                "Kitchen Steward"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Descaling and limescale removal",
+            "aliases": [
+                "descaling",
+                "scale removal",
+                "decalcification"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Removing mineral deposits (limescale) from boilers, kettles, espresso group heads, and hot-water systems using mechanical and chemical methods while protecting equipment materials.",
+            "parent_skill": "Equipment cleaning & calibration",
+            "related_skills": [
+                "Espresso machine cleaning & maintenance",
+                "Water filtration maintenance & cartridge replacement",
+                "Chemical sanitiser handling & dilution testing"
+            ],
+            "keywords": [
+                "limescale",
+                "descale",
+                "acid cleaner",
+                "boiler maintenance"
+            ],
+            "common_roles": [
+                "Barista",
+                "Cafe Technician",
+                "Beverage Service Technician",
+                "Kitchen Steward"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Espresso machine cleaning & maintenance",
+            "aliases": [
+                "espresso machine maintenance",
+                "backflushing",
+                "group head cleaning",
+                "steam wand cleaning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Routine and preventive maintenance tasks specific to espresso machines, including backflushing, gasket and group head inspection, steam wand purge\/clean, and routine part replacement to ensure consistent performance.",
+            "parent_skill": "Equipment cleaning & calibration",
+            "related_skills": [
+                "Descaling and limescale removal",
+                "Coffee grinder calibration & maintenance",
+                "Beverage equipment sanitization"
+            ],
+            "keywords": [
+                "backflush",
+                "steam wand",
+                "group head",
+                "espresso maintenance"
+            ],
+            "common_roles": [
+                "Barista",
+                "Cafe Technician",
+                "Coffee Shop Supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Coffee grinder calibration & burr maintenance",
+            "aliases": [
+                "grinder calibration",
+                "burr alignment",
+                "grinder maintenance",
+                "dose calibration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Adjusting grinder settings, aligning and replacing burrs, and calibrating dose\/weight output to ensure grind consistency and accurate portioning for beverage quality.",
+            "parent_skill": "Equipment cleaning & calibration",
+            "related_skills": [
+                "Espresso machine cleaning & maintenance",
+                "Beverage dosing and portioning calibration"
+            ],
+            "keywords": [
+                "grinder",
+                "burrs",
+                "dose",
+                "grind size",
+                "calibration"
+            ],
+            "common_roles": [
+                "Barista",
+                "Coffee Technician",
+                "Cafe Trainer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Water filtration maintenance & cartridge replacement",
+            "aliases": [
+                "water filter maintenance",
+                "filter cartridge replacement",
+                "water system servicing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Servicing point-of-use and upstream water filtration systems, performing scheduled cartridge replacements, membrane cleaning, and basic water quality checks to protect beverage equipment and product quality.",
+            "parent_skill": "Equipment cleaning & calibration",
+            "related_skills": [
+                "Descaling and limescale removal",
+                "Beverage equipment sanitization",
+                "Temperature calibration & verification"
+            ],
+            "keywords": [
+                "water filter",
+                "cartridge",
+                "RO maintenance",
+                "sediment filter",
+                "TDS"
+            ],
+            "common_roles": [
+                "Beverage Technician",
+                "Barista",
+                "Facilities Maintenance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ice machine cleaning & sanitation",
+            "aliases": [
+                "ice machine maintenance",
+                "ice maker cleaning",
+                "ice machine defrosting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Cleaning, sanitizing, and performing preventive maintenance on commercial ice machines including scale removal, mold\/microbial control, and routine component inspection to ensure food-safe ice production.",
+            "parent_skill": "Equipment cleaning & calibration",
+            "related_skills": [
+                "Beverage equipment sanitization",
+                "Water filtration maintenance & cartridge replacement",
+                "Chemical sanitiser handling & dilution testing"
+            ],
+            "keywords": [
+                "ice machine",
+                "sanitation",
+                "ice bin",
+                "defrost",
+                "scale"
+            ],
+            "common_roles": [
+                "Kitchen Steward",
+                "Beverage Attendant",
+                "Facilities Technician"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Soda fountain and carbonation system cleaning & calibration",
+            "aliases": [
+                "soda dispenser maintenance",
+                "carbonation calibration",
+                "syrup line cleaning",
+                "fountain calibration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Cleaning and calibrating soda fountains and carbonation systems, including syrup line sanitization, CO2 pressure and flow adjustments, and verification of syrup-to-water ratios for consistent beverage quality.",
+            "parent_skill": "Equipment cleaning & calibration",
+            "related_skills": [
+                "Beverage dosing and portioning calibration",
+                "Chemical sanitiser handling & dilution testing",
+                "Water filtration maintenance & cartridge replacement"
+            ],
+            "keywords": [
+                "soda fountain",
+                "carbonation",
+                "CO2 pressure",
+                "syrup ratio",
+                "line cleaning"
+            ],
+            "common_roles": [
+                "Beverage Attendant",
+                "Food Service Technician",
+                "Cafeteria Operator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Beverage dosing and portioning calibration",
+            "aliases": [
+                "pump calibration",
+                "portion control calibration",
+                "syrup pump calibration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Calibrating and testing pumps, dispensers, portioning devices, and scales to ensure correct beverage ingredient volumes and repeatable portion sizes for cost control and consistent taste.",
+            "parent_skill": "Equipment cleaning & calibration",
+            "related_skills": [
+                "Coffee grinder calibration & burr maintenance",
+                "Soda fountain and carbonation system cleaning & calibration",
+                "Temperature calibration & verification"
+            ],
+            "keywords": [
+                "dosing",
+                "portioning",
+                "pump",
+                "dispensing",
+                "calibration"
+            ],
+            "common_roles": [
+                "Cafe Supervisor",
+                "Barista",
+                "Beverage Technician"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Chemical sanitiser handling & dilution testing",
+            "aliases": [
+                "sanitiser dilution",
+                "cleaning chemical handling",
+                "chemical concentration testing"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Safe selection, handling, mixing and testing of cleaning chemicals and sanitisers, including correct dilution, contact time, PPE use, and documentation to meet health and safety standards.",
+            "parent_skill": "Equipment cleaning & calibration",
+            "related_skills": [
+                "Beverage equipment sanitization",
+                "Descaling and limescale removal",
+                "Ice machine cleaning & sanitation"
+            ],
+            "keywords": [
+                "sanitiser",
+                "chemical safety",
+                "dilution",
+                "PPE",
+                "concentration test strips"
+            ],
+            "common_roles": [
+                "Kitchen Steward",
+                "Barista",
+                "Health & Safety Officer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Temperature calibration & verification",
+            "aliases": [
+                "thermometer calibration",
+                "probe verification",
+                "temperature validation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Calibrating and verifying temperature sensors, thermometers, and heating\/cooling setpoints on beverage equipment to ensure safe holding temperatures and process accuracy in line with food safety requirements.",
+            "parent_skill": "Equipment cleaning & calibration",
+            "related_skills": [
+                "Beverage equipment sanitization",
+                "Beverage dosing and portioning calibration",
+                "Water filtration maintenance & cartridge replacement"
+            ],
+            "keywords": [
+                "temperature",
+                "calibration",
+                "thermometer",
+                "probe",
+                "validation"
+            ],
+            "common_roles": [
+                "Quality Assurance",
+                "Cafe Manager",
+                "Beverage Technician"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

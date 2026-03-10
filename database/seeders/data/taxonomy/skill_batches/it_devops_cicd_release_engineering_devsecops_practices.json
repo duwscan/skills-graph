@@ -1,0 +1,299 @@
+{
+    "domain": "IT",
+    "category": "DevOps, CI\/CD & Release Engineering",
+    "subcategory": "DevSecOps practices",
+    "skills": [
+        {
+            "canonical_name": "Secure coding practices",
+            "aliases": [
+                "secure coding",
+                "secure development practices",
+                "OWASP secure coding"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Application development techniques and patterns that reduce common vulnerabilities (e.g., input validation, output encoding, least privilege, secure error handling).",
+            "parent_skill": "DevSecOps practices",
+            "related_skills": [
+                "Threat modeling",
+                "Static Application Security Testing (SAST)",
+                "Security automation in CI\/CD pipelines"
+            ],
+            "keywords": [
+                "input validation",
+                "least privilege",
+                "secure defaults",
+                "error handling"
+            ],
+            "common_roles": [
+                "Application Security Engineer",
+                "Software Engineer",
+                "DevSecOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Threat modeling",
+            "aliases": [
+                "attack surface analysis",
+                "threat analysis",
+                "data flow modeling"
+            ],
+            "skill_type": "process_skill",
+            "description": "Structured practice to identify, prioritize and mitigate threats to an application or system by analyzing assets, attackers, entry points and mitigations (e.g., STRIDE, PASTA).",
+            "parent_skill": "DevSecOps practices",
+            "related_skills": [
+                "Secure coding practices",
+                "Infrastructure-as-Code (IaC) security",
+                "Vulnerability management and remediation workflows"
+            ],
+            "keywords": [
+                "attack surface",
+                "data flow",
+                "STRIDE",
+                "risk assessment"
+            ],
+            "common_roles": [
+                "Threat Modeler",
+                "Application Security Engineer",
+                "DevSecOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Static Application Security Testing (SAST)",
+            "aliases": [
+                "static code analysis",
+                "source code scanning",
+                "SAST"
+            ],
+            "skill_type": "process_skill",
+            "description": "Technique for analyzing source code, bytecode or binaries to find security flaws without executing the program, including integration into build pipelines and rule tuning.",
+            "parent_skill": "DevSecOps practices",
+            "related_skills": [
+                "Secure coding practices",
+                "Security automation in CI\/CD pipelines",
+                "Software Composition Analysis (SCA)"
+            ],
+            "keywords": [
+                "static analysis",
+                "code scanning",
+                "rule tuning",
+                "false positives"
+            ],
+            "common_roles": [
+                "Security Engineer",
+                "DevSecOps Engineer",
+                "Software Developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dynamic Application Security Testing (DAST)",
+            "aliases": [
+                "dynamic testing",
+                "runtime application scanning",
+                "DAST"
+            ],
+            "skill_type": "process_skill",
+            "description": "Black-box testing approach that analyzes running applications for vulnerabilities (e.g., injection, session issues), often used against staging environments and integrated into CI\/CD gates.",
+            "parent_skill": "DevSecOps practices",
+            "related_skills": [
+                "Security automation in CI\/CD pipelines",
+                "Runtime security",
+                "Vulnerability management and remediation workflows"
+            ],
+            "keywords": [
+                "runtime scanning",
+                "black-box testing",
+                "fuzzing",
+                "input validation"
+            ],
+            "common_roles": [
+                "Application Security Engineer",
+                "QA Engineer",
+                "DevSecOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Software Composition Analysis (SCA) and dependency vulnerability management",
+            "aliases": [
+                "dependency scanning",
+                "third-party dependency analysis",
+                "SCA"
+            ],
+            "skill_type": "process_skill",
+            "description": "Processes and tools to inventory open-source and third-party components, detect known vulnerabilities, manage licenses and prioritize remediation across CI\/CD and production.",
+            "parent_skill": "DevSecOps practices",
+            "related_skills": [
+                "Vulnerability management and remediation workflows",
+                "SBOM practices",
+                "Security automation in CI\/CD pipelines"
+            ],
+            "keywords": [
+                "dependency scanning",
+                "SBOM",
+                "third-party risk",
+                "CVE"
+            ],
+            "common_roles": [
+                "DevSecOps Engineer",
+                "Security Engineer",
+                "Release Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Secrets management",
+            "aliases": [
+                "secret management",
+                "credential vaulting",
+                "secure secret storage"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Practices and operational controls for storing, rotating and injecting secrets (API keys, tokens, credentials) securely into applications and pipelines, including access controls and auditability.",
+            "parent_skill": "DevSecOps practices",
+            "related_skills": [
+                "Security automation in CI\/CD pipelines",
+                "Infrastructure-as-Code (IaC) security",
+                "Runtime security"
+            ],
+            "keywords": [
+                "secret rotation",
+                "vaulting",
+                "credential injection",
+                "access control"
+            ],
+            "common_roles": [
+                "DevOps Engineer",
+                "Cloud Engineer",
+                "DevSecOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Container and Kubernetes security",
+            "aliases": [
+                "container security",
+                "k8s security",
+                "image scanning",
+                "runtime container protection"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Security practices for containerized environments, including image hardening, image scanning, runtime protection, pod security policies and Kubernetes RBAC\/network policies.",
+            "parent_skill": "DevSecOps practices",
+            "related_skills": [
+                "Secrets management",
+                "Runtime security",
+                "Infrastructure-as-Code (IaC) security"
+            ],
+            "keywords": [
+                "image scanning",
+                "pod security",
+                "RBAC",
+                "runtime defense"
+            ],
+            "common_roles": [
+                "Cloud Engineer",
+                "Site Reliability Engineer",
+                "DevSecOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Infrastructure-as-Code (IaC) security",
+            "aliases": [
+                "IaC scanning",
+                "terraform security",
+                "cloudformation security",
+                "IaC policy enforcement"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Identification and remediation of security issues in infrastructure-as-code templates (Terraform, CloudFormation, ARM) using policy-as-code and scanning tools, plus secure IaC patterns and drift detection.",
+            "parent_skill": "DevSecOps practices",
+            "related_skills": [
+                "Policy-as-code",
+                "Container and Kubernetes security",
+                "Security automation in CI\/CD pipelines"
+            ],
+            "keywords": [
+                "IaC scanning",
+                "policy-as-code",
+                "drift detection",
+                "secure modules"
+            ],
+            "common_roles": [
+                "Cloud Engineer",
+                "DevOps Engineer",
+                "DevSecOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Security automation in CI\/CD pipelines",
+            "aliases": [
+                "pipeline security automation",
+                "security gates in CI\/CD",
+                "security-as-code in pipelines"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Embedding automated security checks (SAST\/DAST\/SCA\/scanning, policy enforcement, secrets checks) into CI\/CD workflows to enable shift-left testing, gating and automatic remediation actions.",
+            "parent_skill": "DevSecOps practices",
+            "related_skills": [
+                "Static Application Security Testing (SAST)",
+                "Dynamic Application Security Testing (DAST)",
+                "Software Composition Analysis (SCA)"
+            ],
+            "keywords": [
+                "CI\/CD gates",
+                "pipeline scanning",
+                "shift-left",
+                "automation"
+            ],
+            "common_roles": [
+                "Release Engineer",
+                "DevOps Engineer",
+                "DevSecOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vulnerability management and remediation workflows",
+            "aliases": [
+                "vulnerability lifecycle management",
+                "vuln triage",
+                "patch and remediation management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operational processes to triage discovered vulnerabilities, assign severity\/priorities, track remediation progress, coordinate patches, and measure time-to-remediate across development and operations.",
+            "parent_skill": "DevSecOps practices",
+            "related_skills": [
+                "Software Composition Analysis (SCA)",
+                "Security automation in CI\/CD pipelines",
+                "Incident response for security events"
+            ],
+            "keywords": [
+                "triage",
+                "patching",
+                "CVE prioritization",
+                "SLA"
+            ],
+            "common_roles": [
+                "Vulnerability Analyst",
+                "Security Operations Engineer",
+                "DevSecOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

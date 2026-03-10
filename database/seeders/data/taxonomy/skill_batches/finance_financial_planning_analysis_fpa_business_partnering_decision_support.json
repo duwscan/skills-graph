@@ -1,0 +1,287 @@
+{
+    "domain": "Finance",
+    "category": "Financial Planning & Analysis (FP&A)",
+    "subcategory": "Business partnering & decision support",
+    "skills": [
+        {
+            "canonical_name": "Driver-based forecasting",
+            "aliases": [
+                "driver-based planning",
+                "driver-led forecasting",
+                "driver modelling"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Creating forecasts that use business drivers (volumes, pricing, conversion rates, etc.) to project financial outcomes and enable scenario planning.",
+            "parent_skill": "Business partnering & decision support",
+            "related_skills": [
+                "Financial modeling",
+                "Scenario analysis",
+                "KPI design and performance measurement"
+            ],
+            "keywords": [
+                "drivers",
+                "driver model",
+                "top-down bottom-up",
+                "forecast drivers"
+            ],
+            "common_roles": [
+                "FP&A teams",
+                "commercial finance functions"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial modeling",
+            "aliases": [
+                "forecast modeling",
+                "scenario modeling",
+                "sensitivity modeling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Building quantitative models (cash flow, P&L, balance sheet) to evaluate scenarios, sensitivities, and support financial decisions.",
+            "parent_skill": "Business partnering & decision support",
+            "related_skills": [
+                "Driver-based forecasting",
+                "Sensitivity and scenario analysis",
+                "Business case development & investment appraisal"
+            ],
+            "keywords": [
+                "DCF",
+                "model build",
+                "integrated financial model",
+                "Excel modeling"
+            ],
+            "common_roles": [
+                "FP&A teams",
+                "finance analysis functions"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sensitivity and scenario analysis",
+            "aliases": [
+                "what-if analysis",
+                "scenario planning",
+                "stress testing (analysis)"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Quantifying how changes in assumptions affect financial outcomes and producing alternative scenarios to inform decision-making.",
+            "parent_skill": "Business partnering & decision support",
+            "related_skills": [
+                "Financial modeling",
+                "Driver-based forecasting",
+                "Decision support frameworks"
+            ],
+            "keywords": [
+                "what-if",
+                "scenario",
+                "sensitivity",
+                "range analysis"
+            ],
+            "common_roles": [
+                "FP&A teams",
+                "strategic finance functions"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Variance analysis and root-cause analysis",
+            "aliases": [
+                "budget vs actual analysis",
+                "earnings variance analysis",
+                "root cause identification"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing differences between forecasts\/budgets and actuals, isolating drivers of variance and identifying corrective actions.",
+            "parent_skill": "Business partnering & decision support",
+            "related_skills": [
+                "Management reporting and pack preparation",
+                "KPI design and performance measurement",
+                "Stakeholder management and relationship building"
+            ],
+            "keywords": [
+                "variance",
+                "actual vs plan",
+                "root cause",
+                "explain variances"
+            ],
+            "common_roles": [
+                "FP&A teams",
+                "operational finance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Business case development and investment appraisal",
+            "aliases": [
+                "business case modelling",
+                "investment appraisal",
+                "cost-benefit analysis"
+            ],
+            "skill_type": "process_skill",
+            "description": "Structuring, quantifying and evaluating investment proposals using financial metrics (NPV, payback, IRR) and non-financial considerations.",
+            "parent_skill": "Business partnering & decision support",
+            "related_skills": [
+                "Financial modeling",
+                "Scenario analysis",
+                "Stakeholder management and relationship building"
+            ],
+            "keywords": [
+                "NPV",
+                "IRR",
+                "payback",
+                "investment case"
+            ],
+            "common_roles": [
+                "capital planning functions",
+                "commercial finance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "KPI design and performance measurement",
+            "aliases": [
+                "metric design",
+                "performance metric development",
+                "scorecard design"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Defining, aligning and maintaining key performance indicators that measure business performance and drive decision-making.",
+            "parent_skill": "Business partnering & decision support",
+            "related_skills": [
+                "Management reporting and pack preparation",
+                "Driver-based forecasting",
+                "Financial data visualization and storytelling"
+            ],
+            "keywords": [
+                "KPIs",
+                "metrics",
+                "OKRs (in context)",
+                "scorecards"
+            ],
+            "common_roles": [
+                "performance management functions",
+                "FP&A teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Management reporting and pack preparation",
+            "aliases": [
+                "management packs",
+                "monthly reporting",
+                "executive reporting packs"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Producing structured financial and operational reporting for leadership, including commentary, variance explanations and decision-ready summaries.",
+            "parent_skill": "Business partnering & decision support",
+            "related_skills": [
+                "Variance analysis and root-cause analysis",
+                "Financial data visualization and storytelling",
+                "Stakeholder management and relationship building"
+            ],
+            "keywords": [
+                "management report",
+                "monthly close reporting",
+                "board pack",
+                "narrative commentary"
+            ],
+            "common_roles": [
+                "FP&A teams",
+                "corporate finance functions"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Stakeholder management and relationship building",
+            "aliases": [
+                "business partnering",
+                "cross-functional stakeholder engagement",
+                "internal client management"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Engaging business stakeholders proactively, understanding their information needs and influencing decisions through partnership.",
+            "parent_skill": "Business partnering & decision support",
+            "related_skills": [
+                "Management reporting and pack preparation",
+                "Business case development and investment appraisal",
+                "Financial data visualization and storytelling"
+            ],
+            "keywords": [
+                "stakeholder",
+                "business partner",
+                "engagement",
+                "influence"
+            ],
+            "common_roles": [
+                "finance business partner functions",
+                "cross-functional finance liaisons"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial data visualization and storytelling",
+            "aliases": [
+                "data storytelling",
+                "insight communication",
+                "financial storytelling"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Turning financial analyses into clear visualizations and narratives that communicate implications and recommended actions to non-financial audiences.",
+            "parent_skill": "Business partnering & decision support",
+            "related_skills": [
+                "Management reporting and pack preparation",
+                "KPI design and performance measurement",
+                "Stakeholder management and relationship building"
+            ],
+            "keywords": [
+                "visualization",
+                "charts",
+                "insights",
+                "narrative"
+            ],
+            "common_roles": [
+                "FP&A communication functions",
+                "analytics-to-business translators"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "FP&A systems configuration and integration",
+            "aliases": [
+                "planning system configuration",
+                "FP&A platform administration",
+                "budgeting & forecasting systems setup"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and integrating budgeting, forecasting and reporting platforms (data models, load routines, access controls) to support FP&A processes.",
+            "parent_skill": "Business partnering & decision support",
+            "related_skills": [
+                "Financial modeling",
+                "Management reporting and pack preparation",
+                "Driver-based forecasting"
+            ],
+            "keywords": [
+                "implementation",
+                "integration",
+                "ETL",
+                "data model"
+            ],
+            "common_roles": [
+                "FP&A systems support functions",
+                "finance technology liaisons"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

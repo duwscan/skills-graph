@@ -1,0 +1,264 @@
+{
+    "domain": "Finance",
+    "category": "Treasury & Cash Management",
+    "subcategory": "Cash positioning & forecasting",
+    "skills": [
+        {
+            "canonical_name": "Short-term cash forecasting (rolling forecast)",
+            "aliases": [
+                "cash forecasting",
+                "rolling cash forecast",
+                "short term cash forecast",
+                "daily cash forecast"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Building and maintaining short-term (typically daily to 90-day) cash forecasts using historical flows, payment schedules and receivables\/payables inputs to predict liquidity needs.",
+            "parent_skill": "Cash positioning & forecasting",
+            "related_skills": [
+                "Daily cash positioning & intraday liquidity management",
+                "Cash flow modelling and projection (Excel)",
+                "Forecast accuracy measurement & KPI reporting"
+            ],
+            "keywords": [
+                "rolling forecast",
+                "cash forecast",
+                "forecasting horizon",
+                "daily liquidity"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Daily cash positioning & intraday liquidity management",
+            "aliases": [
+                "daily cash position",
+                "intraday liquidity management",
+                "cash sweeps",
+                "end-of-day cash position"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Monitoring, aggregating and managing bank balances and intraday flows to ensure required liquidity levels, timely settlements and bank account optimization across time zones.",
+            "parent_skill": "Cash positioning & forecasting",
+            "related_skills": [
+                "Short-term cash forecasting (rolling forecast)",
+                "Bank statement formats and file processing (MT940\/CAMT)",
+                "Treasury Management Systems (TMS) configuration & cash forecast automation"
+            ],
+            "keywords": [
+                "intraday",
+                "cash position",
+                "bank balances",
+                "liquidity"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash flow modelling and projection (Excel)",
+            "aliases": [
+                "cash flow modelling",
+                "Excel cash flow modelling",
+                "cash projection modelling",
+                "financial modelling for cash"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and maintaining cash flow models and projections—often in Excel or spreadsheet tools—incorporating drivers, assumptions, scenario switches and sensitivity analysis.",
+            "parent_skill": "Cash positioning & forecasting",
+            "related_skills": [
+                "Short-term cash forecasting (rolling forecast)",
+                "Liquidity scenario analysis & stress testing",
+                "Forecast accuracy measurement & KPI reporting"
+            ],
+            "keywords": [
+                "Excel",
+                "cash model",
+                "sensitivity analysis",
+                "drivers"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Liquidity scenario analysis & stress testing",
+            "aliases": [
+                "liquidity stress testing",
+                "scenario planning for liquidity",
+                "cash stress scenarios"
+            ],
+            "skill_type": "process_skill",
+            "description": "Developing and running scenarios and stress tests to evaluate cash and liquidity outcomes under adverse or unexpected conditions and informing contingency plans.",
+            "parent_skill": "Cash positioning & forecasting",
+            "related_skills": [
+                "Short-term cash forecasting (rolling forecast)",
+                "Forecast accuracy measurement & KPI reporting",
+                "Short-term funding and investment optimization"
+            ],
+            "keywords": [
+                "stress test",
+                "scenario analysis",
+                "contingency funding",
+                "what-if analysis"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Forecast accuracy measurement & KPI reporting",
+            "aliases": [
+                "forecast accuracy measurement",
+                "cash forecast KPIs",
+                "MAPE\/MAD for cash forecasting"
+            ],
+            "skill_type": "process_skill",
+            "description": "Establishing and tracking metrics (e.g., MAPE, MAD, bias) and dashboards to measure forecast performance, identify drivers of variance and improve forecasting processes.",
+            "parent_skill": "Cash positioning & forecasting",
+            "related_skills": [
+                "Short-term cash forecasting (rolling forecast)",
+                "Cash flow modelling and projection (Excel)",
+                "Liquidity scenario analysis & stress testing"
+            ],
+            "keywords": [
+                "KPIs",
+                "MAPE",
+                "MAD",
+                "variance analysis"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bank statement formats and file processing (MT940\/CAMT)",
+            "aliases": [
+                "MT940 processing",
+                "CAMT.053",
+                "bank statement file formats",
+                "bank file reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Understanding and processing standard bank statement and reporting formats (e.g., MT940, CAMT) and mapping\/importing these files into treasury systems for reconciliation and cash position updates.",
+            "parent_skill": "Cash positioning & forecasting",
+            "related_skills": [
+                "Daily cash positioning & intraday liquidity management",
+                "Treasury Management Systems (TMS) configuration & cash forecast automation",
+                "Bank connectivity and payment file processing"
+            ],
+            "keywords": [
+                "MT940",
+                "CAMT",
+                "bank statement",
+                "file import"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Treasury Management Systems (TMS) configuration & cash forecast automation",
+            "aliases": [
+                "Treasury Management System",
+                "TMS configuration",
+                "Kyriba",
+                "SAP Treasury",
+                "FIS Quantum"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and using Treasury Management Systems to automate cash forecast ingest, consolidations, bank connectivity, and reporting; includes template\/configuration setup and integration with ERP\/bank feeds.",
+            "parent_skill": "Cash positioning & forecasting",
+            "related_skills": [
+                "Bank statement formats and file processing (MT940\/CAMT)",
+                "Daily cash positioning & intraday liquidity management",
+                "Short-term cash forecasting (rolling forecast)"
+            ],
+            "keywords": [
+                "TMS",
+                "automation",
+                "bank connectivity",
+                "ERP integration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intercompany cash pooling and netting",
+            "aliases": [
+                "cash pooling",
+                "intercompany netting",
+                "notional pooling",
+                "physical cash pooling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and operating intercompany cash pooling, netting and settlement processes to centralize liquidity, optimize interest and reduce external funding needs.",
+            "parent_skill": "Cash positioning & forecasting",
+            "related_skills": [
+                "Short-term cash forecasting (rolling forecast)",
+                "Short-term funding and investment optimization",
+                "Bank connectivity and payment file processing"
+            ],
+            "keywords": [
+                "cash pool",
+                "netting",
+                "notional pooling",
+                "intercompany settlement"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Short-term funding and investment optimization",
+            "aliases": [
+                "short-term funding",
+                "treasury investment optimization",
+                "working capital funding"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Selecting and managing short-term funding sources and investment placements (e.g., repos, money market, intra-group loans) and optimizing funding costs versus liquidity risk.",
+            "parent_skill": "Cash positioning & forecasting",
+            "related_skills": [
+                "Liquidity scenario analysis & stress testing",
+                "Intercompany cash pooling and netting",
+                "Short-term cash forecasting (rolling forecast)"
+            ],
+            "keywords": [
+                "funding",
+                "short-term investments",
+                "liquidity optimization",
+                "working capital"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "FX cash forecasting & hedge integration",
+            "aliases": [
+                "FX cash forecasting",
+                "foreign exchange cash forecast",
+                "hedge integration for cash forecasts"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Incorporating FX exposures and currency conversion impacts into cash forecasts and coordinating with treasury hedging strategies to reflect hedge settlements and net cash impact.",
+            "parent_skill": "Cash positioning & forecasting",
+            "related_skills": [
+                "Short-term cash forecasting (rolling forecast)",
+                "Short-term funding and investment optimization",
+                "Liquidity scenario analysis & stress testing"
+            ],
+            "keywords": [
+                "FX",
+                "currency exposure",
+                "hedge settlements",
+                "FX forecast"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

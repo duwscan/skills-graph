@@ -1,0 +1,298 @@
+{
+    "domain": "F&B",
+    "category": "Menu Development & Culinary R&D",
+    "subcategory": "Operational feasibility assessment",
+    "skills": [
+        {
+            "canonical_name": "Recipe scaling and portion control",
+            "aliases": [
+                "recipe scaling",
+                "portion control",
+                "batch scaling",
+                "standardization of portions"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Adjusting and standardizing ingredient quantities and portion sizes to maintain product consistency, yield and sensory profile when moving from R&D to production.",
+            "parent_skill": "Operational feasibility assessment",
+            "related_skills": [
+                "Yield and shrinkage analysis",
+                "Food cost modelling",
+                "Pilot production trial design"
+            ],
+            "keywords": [
+                "scaling formula",
+                "portion size",
+                "standard recipe",
+                "batch conversion"
+            ],
+            "common_roles": [
+                "Culinary R&D teams",
+                "Menu development teams",
+                "Operations teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food cost modelling",
+            "aliases": [
+                "cost modelling",
+                "food cost analysis",
+                "menu pricing analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Building cost models for recipes and menus to calculate ingredient costs, cost of goods sold (COGS), margin impacts and pricing implications for scalable production.",
+            "parent_skill": "Operational feasibility assessment",
+            "related_skills": [
+                "Yield and shrinkage analysis",
+                "Ingredient availability and supplier assessment",
+                "Recipe scaling and portion control"
+            ],
+            "keywords": [
+                "COGS",
+                "margin calculation",
+                "pricing",
+                "cost per portion"
+            ],
+            "common_roles": [
+                "Culinary R&D teams",
+                "Product development teams",
+                "Operations teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Yield and shrinkage analysis",
+            "aliases": [
+                "yield analysis",
+                "shrinkage calculation",
+                "trim yield assessment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Measuring and forecasting raw-to-finished product yields, trimming losses and shrink to estimate true ingredient requirements, waste and cost impacts in scaled production.",
+            "parent_skill": "Operational feasibility assessment",
+            "related_skills": [
+                "Recipe scaling and portion control",
+                "Food cost modelling",
+                "Production capacity and throughput planning"
+            ],
+            "keywords": [
+                "yield rate",
+                "trim loss",
+                "usable yield",
+                "waste calculation"
+            ],
+            "common_roles": [
+                "Culinary R&D teams",
+                "Operations teams",
+                "Quality assurance teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ingredient availability and supplier assessment",
+            "aliases": [
+                "ingredient sourcing assessment",
+                "supplier evaluation",
+                "supplier capacity assessment"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Evaluating supplier capacity, lead times, seasonal availability, minimum order quantities and supply chain risks to ensure consistent ingredient supply for menu items.",
+            "parent_skill": "Operational feasibility assessment",
+            "related_skills": [
+                "Food cost modelling",
+                "Packaging compatibility and manufacturing integration",
+                "Food regulatory and labeling assessment"
+            ],
+            "keywords": [
+                "lead time",
+                "seasonality",
+                "MOQ",
+                "supplier risk"
+            ],
+            "common_roles": [
+                "Procurement teams",
+                "Culinary R&D teams",
+                "Operations teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Production capacity and throughput planning",
+            "aliases": [
+                "throughput planning",
+                "line capacity assessment",
+                "production planning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Analyzing manufacturing line capabilities, cycle times, takt time and bottlenecks to determine feasible production volumes, shift requirements and scale-up constraints.",
+            "parent_skill": "Operational feasibility assessment",
+            "related_skills": [
+                "Equipment needs assessment",
+                "Yield and shrinkage analysis",
+                "Pilot production trial design"
+            ],
+            "keywords": [
+                "takt time",
+                "cycle time",
+                "bottleneck analysis",
+                "line speed"
+            ],
+            "common_roles": [
+                "Operations teams",
+                "Manufacturing planning teams",
+                "Culinary R&D teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Equipment needs assessment",
+            "aliases": [
+                "equipment specification",
+                "machinery requirement analysis",
+                "production equipment assessment"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Determining required equipment types, capacities, technical specifications and layout constraints needed to scale recipes and integrate items into existing production lines.",
+            "parent_skill": "Operational feasibility assessment",
+            "related_skills": [
+                "Production capacity and throughput planning",
+                "Pilot production trial design",
+                "Packaging compatibility and manufacturing integration"
+            ],
+            "keywords": [
+                "capacity sizing",
+                "equipment spec",
+                "footprint",
+                "utilities requirements"
+            ],
+            "common_roles": [
+                "Operations teams",
+                "Facilities planning teams",
+                "Culinary R&D teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Pilot production trial design",
+            "aliases": [
+                "pilot trials",
+                "test production runs",
+                "pilot run execution"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and executing pilot production batches to validate recipes, processes, yields, equipment interactions and packaging before full-scale manufacturing.",
+            "parent_skill": "Operational feasibility assessment",
+            "related_skills": [
+                "Recipe scaling and portion control",
+                "Yield and shrinkage analysis",
+                "Equipment needs assessment"
+            ],
+            "keywords": [
+                "pilot run",
+                "scale-up validation",
+                "test batch",
+                "process validation"
+            ],
+            "common_roles": [
+                "Culinary R&D teams",
+                "Operations teams",
+                "Quality teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Shelf-life and stability testing planning",
+            "aliases": [
+                "shelf life testing planning",
+                "product stability assessment",
+                "shelf-life study design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning accelerated and real-time shelf-life and stability studies to define product shelf life, optimal storage\/transport conditions and labeling claims.",
+            "parent_skill": "Operational feasibility assessment",
+            "related_skills": [
+                "Food regulatory and labeling assessment",
+                "Packaging compatibility and manufacturing integration",
+                "Pilot production trial design"
+            ],
+            "keywords": [
+                "accelerated testing",
+                "real-time stability",
+                "shelf life",
+                "storage conditions"
+            ],
+            "common_roles": [
+                "Quality assurance teams",
+                "Culinary R&D teams",
+                "Packaging teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food regulatory and labeling assessment",
+            "aliases": [
+                "labeling compliance assessment",
+                "ingredient regulatory assessment",
+                "allergen labeling assessment"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Assessing ingredient legality, allergen requirements, nutritional labeling, claims substantiation and country-specific regulatory constraints for menu items and packaged products.",
+            "parent_skill": "Operational feasibility assessment",
+            "related_skills": [
+                "Shelf-life and stability testing planning",
+                "Ingredient availability and supplier assessment",
+                "Packaging compatibility and manufacturing integration"
+            ],
+            "keywords": [
+                "allergen declaration",
+                "nutrition facts",
+                "label claims",
+                "regulatory requirements"
+            ],
+            "common_roles": [
+                "Compliance teams",
+                "Quality assurance teams",
+                "Culinary R&D teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Packaging compatibility and manufacturing integration",
+            "aliases": [
+                "packaging compatibility assessment",
+                "packaging manufacturability",
+                "packaging line integration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Evaluating packaging formats, materials and filling\/closure processes to ensure packaging supports product stability, label requirements, production speed and distribution needs.",
+            "parent_skill": "Operational feasibility assessment",
+            "related_skills": [
+                "Equipment needs assessment",
+                "Shelf-life and stability testing planning",
+                "Food regulatory and labeling assessment"
+            ],
+            "keywords": [
+                "pack format",
+                "line integration",
+                "material compatibility",
+                "filling speed"
+            ],
+            "common_roles": [
+                "Packaging teams",
+                "Culinary R&D teams",
+                "Operations teams"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

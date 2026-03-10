@@ -1,0 +1,257 @@
+{
+    "domain": "Finance",
+    "category": "Financial Reporting & External Disclosure",
+    "subcategory": "XBRL\/structured reporting operations",
+    "skills": [
+        {
+            "canonical_name": "XBRL instance creation and tagging",
+            "aliases": [
+                "XBRL tagging",
+                "XBRL instance preparation",
+                "instance document tagging"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Preparing XBRL instance documents by applying taxonomy concepts to financial statements and disclosures, ensuring correct contexts, units, and concept references.",
+            "parent_skill": "XBRL\/structured reporting operations",
+            "related_skills": [
+                "Inline XBRL (iXBRL) authoring",
+                "Financial data mapping to XBRL taxonomies",
+                "XBRL validation and quality assurance"
+            ],
+            "keywords": [
+                "instance document",
+                "context",
+                "unit",
+                "concept tagging"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inline XBRL (iXBRL) authoring",
+            "aliases": [
+                "iXBRL authoring",
+                "inline XBRL tagging",
+                "iXBRL preparation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Creating and validating inline XBRL documents that embed XBRL tags within human-readable HTML to meet jurisdictions' iXBRL filing requirements.",
+            "parent_skill": "XBRL\/structured reporting operations",
+            "related_skills": [
+                "XBRL instance creation and tagging",
+                "XBRL validation and quality assurance",
+                "ESEF (European Single Electronic Format) compliance"
+            ],
+            "keywords": [
+                "iXBRL",
+                "inline",
+                "HTML",
+                "tagging"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "XBRL taxonomy design and extension",
+            "aliases": [
+                "taxonomy development",
+                "taxonomy extension",
+                "XBRL taxonomy modelling"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, customizing and extending XBRL taxonomies (including creating custom concepts, labels, references and relationships) to represent organization-specific reporting requirements.",
+            "parent_skill": "XBRL\/structured reporting operations",
+            "related_skills": [
+                "XBRL formula and calculation rules",
+                "XML and XBRL schema technical proficiency",
+                "Financial data mapping to XBRL taxonomies"
+            ],
+            "keywords": [
+                "taxonomy",
+                "extension",
+                "custom concepts",
+                "labels"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial data mapping to XBRL taxonomies",
+            "aliases": [
+                "data mapping to XBRL",
+                "ERP to XBRL mapping",
+                "source-to-taxonomy mapping"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Mapping financial and disclosure data from source systems (ERP, consolidation tools, spreadsheets) to taxonomy concepts and instance document structures for automated tagging and filing.",
+            "parent_skill": "XBRL\/structured reporting operations",
+            "related_skills": [
+                "XBRL instance creation and tagging",
+                "XBRL taxonomy design and extension",
+                "XML and XBRL schema technical proficiency"
+            ],
+            "keywords": [
+                "mapping",
+                "ETL",
+                "source systems",
+                "data transformation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "XBRL validation and quality assurance",
+            "aliases": [
+                "XBRL QA",
+                "instance validation",
+                "XBRL data quality checks"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Running validation rules, automated checks and manual reviews to detect taxonomy errors, validation failures, calculation mismatches and disclosure inconsistencies in XBRL documents prior to filing.",
+            "parent_skill": "XBRL\/structured reporting operations",
+            "related_skills": [
+                "XBRL formula and calculation rules",
+                "Inline XBRL (iXBRL) authoring",
+                "XBRL governance and change management"
+            ],
+            "keywords": [
+                "validation",
+                "QA",
+                "error remediation",
+                "rule checking"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "XML and XBRL schema technical proficiency",
+            "aliases": [
+                "XSD and XML skills",
+                "XML Schema for XBRL",
+                "XBRL schema understanding"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Understanding XML technologies (XSD, namespaces, schemas) and how XBRL schemas and linkbases are constructed and referenced to support taxonomy development and instance validation.",
+            "parent_skill": "XBRL\/structured reporting operations",
+            "related_skills": [
+                "XBRL taxonomy design and extension",
+                "XBRL formula and calculation rules",
+                "Financial data mapping to XBRL taxonomies"
+            ],
+            "keywords": [
+                "XML",
+                "XSD",
+                "namespaces",
+                "linkbase"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "XBRL formula and calculation rules",
+            "aliases": [
+                "XBRL calculations",
+                "formula linkbase",
+                "calculation relationships"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Authoring, interpreting and testing XBRL calculation and formula linkbases to ensure numeric relationships, ratios and business rules are correctly represented and validated in instance documents.",
+            "parent_skill": "XBRL\/structured reporting operations",
+            "related_skills": [
+                "XBRL taxonomy design and extension",
+                "XBRL validation and quality assurance",
+                "XML and XBRL schema technical proficiency"
+            ],
+            "keywords": [
+                "formula",
+                "calculation",
+                "ratio checks",
+                "linkbase"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ESEF (European Single Electronic Format) compliance",
+            "aliases": [
+                "ESEF reporting",
+                "European iXBRL compliance",
+                "ESEF filing requirements"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Knowledge of ESEF rules and reporting requirements (including iXBRL tagging, taxonomy use and submission formats) to ensure periodic financial reports meet EU regulatory standards.",
+            "parent_skill": "XBRL\/structured reporting operations",
+            "related_skills": [
+                "Inline XBRL (iXBRL) authoring",
+                "XBRL validation and quality assurance",
+                "XBRL governance and change management"
+            ],
+            "keywords": [
+                "ESEF",
+                "EU reporting",
+                "regulatory requirements",
+                "iXBRL"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Workiva (Wdesk) platform",
+            "aliases": [
+                "Workiva",
+                "Wdesk",
+                "Workiva platform for XBRL"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using the Workiva platform to prepare, tag, review and publish XBRL\/iXBRL reports, including workflow management, linking source data and generating validated filings.",
+            "parent_skill": "XBRL\/structured reporting operations",
+            "related_skills": [
+                "XBRL instance creation and tagging",
+                "XBRL validation and quality assurance",
+                "Financial data mapping to XBRL taxonomies"
+            ],
+            "keywords": [
+                "Workiva",
+                "Wdesk",
+                "reporting platform",
+                "workflow"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "XBRL governance and change management",
+            "aliases": [
+                "XBRL governance",
+                "structured reporting change management",
+                "taxonomy governance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Establishing policies, version control, approval workflows and stakeholder coordination for taxonomy updates, tagging standards and XBRL filing processes across the organization.",
+            "parent_skill": "XBRL\/structured reporting operations",
+            "related_skills": [
+                "XBRL taxonomy design and extension",
+                "XBRL validation and quality assurance",
+                "ESEF (European Single Electronic Format) compliance"
+            ],
+            "keywords": [
+                "governance",
+                "version control",
+                "standards",
+                "change management"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

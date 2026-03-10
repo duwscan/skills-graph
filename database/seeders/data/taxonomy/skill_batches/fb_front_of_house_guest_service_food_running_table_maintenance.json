@@ -1,0 +1,260 @@
+{
+    "domain": "F&B",
+    "category": "Front-of-House Guest Service",
+    "subcategory": "Food running & table maintenance",
+    "skills": [
+        {
+            "canonical_name": "Tray balancing and load management",
+            "aliases": [
+                "tray balancing",
+                "tray carrying",
+                "balancing trays"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Safely carrying and balancing multiple plates, glasses, and items on a tray while navigating busy dining areas and minimizing risk of spills or dropped items.",
+            "parent_skill": "Food running & table maintenance",
+            "related_skills": [
+                "Plate delivery",
+                "Spill containment and cleanup",
+                "Hot plate handling safety",
+                "Service timing and run optimization"
+            ],
+            "keywords": [
+                "tray",
+                "balance",
+                "multi-plate carry",
+                "load distribution",
+                "stability"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Plate delivery",
+            "aliases": [
+                "food running",
+                "plate run",
+                "running food"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Transporting plated dishes from kitchen to guest tables, performing correct handoffs, verifying orders, and ensuring food quality on arrival.",
+            "parent_skill": "Food running & table maintenance",
+            "related_skills": [
+                "Tray balancing and load management",
+                "Service timing and run optimization",
+                "Communication with kitchen and servers",
+                "Guest-facing table maintenance etiquette"
+            ],
+            "keywords": [
+                "food delivery",
+                "handoff",
+                "order accuracy",
+                "timely delivery"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Table bussing and clearing",
+            "aliases": [
+                "bussing tables",
+                "clearing tables",
+                "table clear down"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Efficient removal of dishes, glassware, and utensils between covers while minimizing disruption, stacking\/transporting soiled items for washing, and maintaining clear pathways.",
+            "parent_skill": "Food running & table maintenance",
+            "related_skills": [
+                "Crumbing and table cleaning technique",
+                "Table resetting and side-station setup",
+                "Spill containment and cleanup"
+            ],
+            "keywords": [
+                "clear plates",
+                "busser",
+                "soiled dish transport",
+                "table turnover"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Table resetting and side-station setup",
+            "aliases": [
+                "table resetting",
+                "side work setup",
+                "setting tables"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Restoring a table to service-ready condition including linens, place settings, condiments, glassware, and ensuring side stations are stocked for efficient service.",
+            "parent_skill": "Food running & table maintenance",
+            "related_skills": [
+                "Table bussing and clearing",
+                "Crumbing and table cleaning technique",
+                "Service timing and run optimization"
+            ],
+            "keywords": [
+                "place settings",
+                "side station",
+                "condiment setup",
+                "table turnover setup"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Crumbing and table cleaning technique",
+            "aliases": [
+                "using a crumber",
+                "crumb removal",
+                "table wiping"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Removing crumbs and light debris from tables and surfaces discreetly and efficiently using appropriate tools and motions without disrupting guests.",
+            "parent_skill": "Food running & table maintenance",
+            "related_skills": [
+                "Table bussing and clearing",
+                "Table resetting and side-station setup",
+                "Guest-facing table maintenance etiquette"
+            ],
+            "keywords": [
+                "crumber",
+                "crumb sweep",
+                "table hygiene",
+                "discreet cleaning"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Spill containment and cleanup",
+            "aliases": [
+                "spill response",
+                "spill cleanup",
+                "cleaning spills"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Rapidly containing and cleaning liquid or food spills to protect guest safety and preserve table surfaces, including appropriate use of absorbents and signage.",
+            "parent_skill": "Food running & table maintenance",
+            "related_skills": [
+                "Hot plate handling safety",
+                "Table bussing and clearing",
+                "Guest-facing table maintenance etiquette"
+            ],
+            "keywords": [
+                "spill kit",
+                "mop",
+                "absorbent",
+                "wet floor signage"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Hot plate handling safety",
+            "aliases": [
+                "handling hot plates",
+                "hot dish handling",
+                "safe hot plate carry"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Safe techniques and precautions for transporting hot plates and dishes to prevent burns and comply with workplace safety practices at the point of service.",
+            "parent_skill": "Food running & table maintenance",
+            "related_skills": [
+                "Tray balancing and load management",
+                "Spill containment and cleanup",
+                "Plate delivery"
+            ],
+            "keywords": [
+                "burn prevention",
+                "heat-safe handling",
+                "safety procedures",
+                "protective gear"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service timing and run optimization",
+            "aliases": [
+                "service timing",
+                "run coordination",
+                "food run timing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning and executing food runs to synchronize delivery across a section, minimize wait times, and ensure dishes reach guests at optimal temperature and presentation.",
+            "parent_skill": "Food running & table maintenance",
+            "related_skills": [
+                "Plate delivery",
+                "Tray balancing and load management",
+                "Communication with kitchen and servers"
+            ],
+            "keywords": [
+                "timing",
+                "run planning",
+                "synchronization",
+                "service flow"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Communication with kitchen and servers",
+            "aliases": [
+                "kitchen coordination",
+                "expo communication",
+                "run communication"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Clear, concise verbal and non-verbal coordination with kitchen staff and servers to confirm orders, prioritize runs, and report issues affecting service.",
+            "parent_skill": "Food running & table maintenance",
+            "related_skills": [
+                "Plate delivery",
+                "Service timing and run optimization",
+                "Guest-facing table maintenance etiquette"
+            ],
+            "keywords": [
+                "order checks",
+                "expeditor",
+                "handoff communication",
+                "priority signaling"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Guest-facing table maintenance etiquette",
+            "aliases": [
+                "discreet table service",
+                "guest etiquette for table maintenance",
+                "polite bussing"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Techniques for interacting with guests while performing bussing, clearing, and resetting—maintaining politeness, minimizing intrusion, and responding to guest cues.",
+            "parent_skill": "Food running & table maintenance",
+            "related_skills": [
+                "Crumbing and table cleaning technique",
+                "Table bussing and clearing",
+                "Spill containment and cleanup"
+            ],
+            "keywords": [
+                "politeness",
+                "discretion",
+                "guest comfort",
+                "non-intrusive service"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,307 @@
+{
+    "domain": "IT",
+    "category": "Software Engineering & Application Development",
+    "subcategory": "Microservices architecture",
+    "skills": [
+        {
+            "canonical_name": "Microservices architecture design",
+            "aliases": [
+                "microservice architecture design",
+                "microservices design",
+                "microservice architecture"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing systems as a set of independently deployable services, including service boundaries, data ownership, and integration strategies.",
+            "parent_skill": "Microservices architecture",
+            "related_skills": [
+                "Service decomposition & bounded contexts",
+                "API design (REST, gRPC, OpenAPI)",
+                "Resilience & reliability patterns for distributed systems",
+                "Domain-Driven Design (DDD)"
+            ],
+            "keywords": [
+                "service boundaries",
+                "decentralized data",
+                "scalability",
+                "independent deployment",
+                "microservices principles"
+            ],
+            "common_roles": [
+                "Software Architect",
+                "Backend Engineer",
+                "Senior Software Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service decomposition & bounded contexts",
+            "aliases": [
+                "service decomposition",
+                "bounded context identification",
+                "service partitioning"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Techniques for breaking a monolith or domain into coherent microservices by identifying bounded contexts, responsibilities, and data ownership.",
+            "parent_skill": "Microservices architecture",
+            "related_skills": [
+                "Domain-Driven Design (DDD)",
+                "Microservices architecture design",
+                "API design (REST, gRPC, OpenAPI)"
+            ],
+            "keywords": [
+                "decomposition",
+                "bounded contexts",
+                "domain modeling",
+                "service granularity"
+            ],
+            "common_roles": [
+                "Backend Engineer",
+                "Software Architect",
+                "Technical Lead"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Domain-Driven Design (DDD) for distributed systems",
+            "aliases": [
+                "DDD",
+                "domain driven design",
+                "domain modeling for microservices"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying DDD patterns (entities, aggregates, bounded contexts, ubiquitous language) to model domains and inform microservice boundaries and contracts.",
+            "parent_skill": "Microservices architecture",
+            "related_skills": [
+                "Service decomposition & bounded contexts",
+                "Event-driven architecture & event sourcing",
+                "API design (REST, gRPC, OpenAPI)"
+            ],
+            "keywords": [
+                "ubiquitous language",
+                "aggregates",
+                "bounded context",
+                "domain modeling"
+            ],
+            "common_roles": [
+                "Software Architect",
+                "Backend Engineer",
+                "Technical Lead"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "API design (REST, gRPC, OpenAPI)",
+            "aliases": [
+                "REST API design",
+                "gRPC API design",
+                "OpenAPI design",
+                "API contract design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing stable, versioned service interfaces and contracts using REST, gRPC, or OpenAPI specifications, including pagination, error handling, and backward compatibility.",
+            "parent_skill": "Microservices architecture",
+            "related_skills": [
+                "Microservices architecture design",
+                "Inter-service communication (synchronous & asynchronous)",
+                "Service discovery & API gateway configuration"
+            ],
+            "keywords": [
+                "REST",
+                "gRPC",
+                "OpenAPI",
+                "API versioning",
+                "API contract"
+            ],
+            "common_roles": [
+                "Backend Engineer",
+                "API Engineer",
+                "Integration Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inter-service communication (synchronous & asynchronous)",
+            "aliases": [
+                "interservice communication",
+                "service-to-service communication",
+                "synchronous and asynchronous messaging"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Selecting and implementing communication patterns between services, including HTTP, gRPC, message queues, publish\/subscribe, and considerations for latency and consistency.",
+            "parent_skill": "Microservices architecture",
+            "related_skills": [
+                "API design (REST, gRPC, OpenAPI)",
+                "Event-driven architecture & event sourcing",
+                "Resilience & reliability patterns for distributed systems"
+            ],
+            "keywords": [
+                "HTTP",
+                "gRPC",
+                "message queues",
+                "pub\/sub",
+                "async communication"
+            ],
+            "common_roles": [
+                "Backend Engineer",
+                "Integration Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Event-driven architecture & event sourcing",
+            "aliases": [
+                "event driven architecture",
+                "event sourcing",
+                "publish\/subscribe architecture"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing systems that use events as primary means of communication and state changes, including event sourcing patterns, change-data-capture, and eventual consistency models.",
+            "parent_skill": "Microservices architecture",
+            "related_skills": [
+                "Inter-service communication (synchronous & asynchronous)",
+                "Domain-Driven Design (DDD) for distributed systems",
+                "Stream processing"
+            ],
+            "keywords": [
+                "events",
+                "event sourcing",
+                "CDC",
+                "event-driven",
+                "event bus"
+            ],
+            "common_roles": [
+                "Backend Engineer",
+                "Data Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Containerization with Docker",
+            "aliases": [
+                "Docker containerization",
+                "dockerizing applications",
+                "container packaging"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Packaging microservices as containers using Docker, creating Dockerfiles, multi-stage builds, and image optimization for deployment pipelines.",
+            "parent_skill": "Microservices architecture",
+            "related_skills": [
+                "Kubernetes orchestration for microservices",
+                "CI\/CD pipelines for microservices",
+                "Container security best practices"
+            ],
+            "keywords": [
+                "Dockerfile",
+                "containers",
+                "image optimization",
+                "container build"
+            ],
+            "common_roles": [
+                "Platform Engineer",
+                "DevOps Engineer",
+                "Backend Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Kubernetes orchestration for microservices",
+            "aliases": [
+                "K8s for microservices",
+                "Kubernetes orchestration",
+                "kubernetes deployment"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Kubernetes to deploy, scale, and manage microservices workloads, including Service, Deployment, StatefulSet, Helm charts, and autoscaling patterns.",
+            "parent_skill": "Microservices architecture",
+            "related_skills": [
+                "Containerization with Docker",
+                "Service discovery & API gateway configuration",
+                "CI\/CD pipelines for microservices"
+            ],
+            "keywords": [
+                "Kubernetes",
+                "Helm",
+                "deployments",
+                "autoscaling",
+                "pods"
+            ],
+            "common_roles": [
+                "Platform Engineer",
+                "Site Reliability Engineer",
+                "DevOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Observability & distributed tracing for microservices",
+            "aliases": [
+                "microservices observability",
+                "distributed tracing",
+                "logging and metrics for microservices"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing logging, metrics, and distributed tracing across services to enable monitoring, root-cause analysis, and SLO-based operations (instrumentation, correlation IDs, trace propagation).",
+            "parent_skill": "Microservices architecture",
+            "related_skills": [
+                "Kubernetes orchestration for microservices",
+                "Resilience & reliability patterns for distributed systems",
+                "CI\/CD pipelines for microservices"
+            ],
+            "keywords": [
+                "tracing",
+                "OpenTelemetry",
+                "logs",
+                "metrics",
+                "observability"
+            ],
+            "common_roles": [
+                "Site Reliability Engineer",
+                "Backend Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Resilience & reliability patterns for distributed systems",
+            "aliases": [
+                "reliability patterns",
+                "resilience patterns",
+                "circuit breaker, bulkhead, retry patterns"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying fault-tolerance and resilience techniques (circuit breaker, bulkhead, retries, timeouts, backpressure) to maintain availability and stability in microservices environments.",
+            "parent_skill": "Microservices architecture",
+            "related_skills": [
+                "Inter-service communication (synchronous & asynchronous)",
+                "Observability & distributed tracing for microservices",
+                "Kubernetes orchestration for microservices"
+            ],
+            "keywords": [
+                "circuit breaker",
+                "bulkhead",
+                "retries",
+                "timeouts",
+                "backpressure"
+            ],
+            "common_roles": [
+                "Backend Engineer",
+                "Site Reliability Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,287 @@
+{
+    "domain": "Finance",
+    "category": "Cost Accounting & Operational Finance",
+    "subcategory": "Inventory valuation & reserves",
+    "skills": [
+        {
+            "canonical_name": "Inventory valuation methods",
+            "aliases": [
+                "inventory costing methods",
+                "valuation of inventory",
+                "inventory cost methods"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Knowledge and application of frameworks to determine inventory cost for financial reporting and cost of goods sold.",
+            "parent_skill": "Inventory valuation & reserves",
+            "related_skills": [
+                "FIFO inventory valuation",
+                "LIFO inventory valuation",
+                "Weighted average cost inventory valuation",
+                "Cost-to-retail (retail inventory) method",
+                "Lower of cost or market \/ net realizable value assessment"
+            ],
+            "keywords": [
+                "inventory valuation",
+                "costing methods",
+                "COGS",
+                "ending inventory",
+                "valuation basis"
+            ],
+            "common_roles": [
+                "Cost Accountant",
+                "Inventory Analyst",
+                "Financial Reporting Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "FIFO inventory valuation",
+            "aliases": [
+                "First-in, first-out",
+                "FIFO costing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying the FIFO method to assign cost to inventory layers and calculate cost of goods sold based on oldest purchases being recognized first.",
+            "parent_skill": "Inventory valuation & reserves",
+            "related_skills": [
+                "Inventory valuation methods",
+                "LIFO inventory valuation",
+                "Weighted average cost inventory valuation"
+            ],
+            "keywords": [
+                "FIFO",
+                "first-in first-out",
+                "inventory layers",
+                "COGS"
+            ],
+            "common_roles": [
+                "Cost Accountant",
+                "Inventory Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "LIFO inventory valuation",
+            "aliases": [
+                "Last-in, first-out",
+                "LIFO costing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying the LIFO method to value inventory and determine cost of goods sold by assuming newest inventory is sold first (relevant in jurisdictions and under GAAP where allowed).",
+            "parent_skill": "Inventory valuation & reserves",
+            "related_skills": [
+                "Inventory valuation methods",
+                "FIFO inventory valuation",
+                "Weighted average cost inventory valuation",
+                "Lower of cost or market \/ net realizable value assessment"
+            ],
+            "keywords": [
+                "LIFO",
+                "last-in first-out",
+                "inventory layers",
+                "COGS"
+            ],
+            "common_roles": [
+                "Cost Accountant",
+                "Financial Reporting Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Weighted average cost inventory valuation",
+            "aliases": [
+                "weighted-average cost",
+                "WAC inventory valuation",
+                "average cost method"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Calculating inventory unit cost by averaging the cost of goods available for sale and applying that average to ending inventory and COGS.",
+            "parent_skill": "Inventory valuation & reserves",
+            "related_skills": [
+                "Inventory valuation methods",
+                "FIFO inventory valuation",
+                "LIFO inventory valuation"
+            ],
+            "keywords": [
+                "weighted average",
+                "WAC",
+                "average cost",
+                "inventory costing"
+            ],
+            "common_roles": [
+                "Inventory Accountant",
+                "Cost Accountant"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cost-to-retail (retail inventory) method",
+            "aliases": [
+                "retail inventory method",
+                "cost-to-retail"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Estimating ending inventory value by converting retail selling prices to cost using historical or current cost-to-retail ratios, often used by retailers for interim reporting.",
+            "parent_skill": "Inventory valuation & reserves",
+            "related_skills": [
+                "Inventory valuation methods",
+                "Inventory reconciliation and stocktake adjustments"
+            ],
+            "keywords": [
+                "retail inventory method",
+                "cost-to-retail",
+                "retail margin",
+                "ending inventory estimate"
+            ],
+            "common_roles": [
+                "Retail Accountant",
+                "Inventory Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Lower of cost or market \/ net realizable value assessment",
+            "aliases": [
+                "LCM",
+                "LCNRV",
+                "net realizable value assessment",
+                "lower of cost and market"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Evaluating whether inventory must be written down by comparing carrying cost to market or NRV and applying the appropriate accounting standard guidance for impairment and measurement.",
+            "parent_skill": "Inventory valuation & reserves",
+            "related_skills": [
+                "Inventory impairment testing and write-downs",
+                "Inventory obsolescence provisioning"
+            ],
+            "keywords": [
+                "lower of cost or market",
+                "NRV",
+                "impairment",
+                "write-down",
+                "valuation allowance"
+            ],
+            "common_roles": [
+                "Financial Reporting Analyst",
+                "Controller"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inventory obsolescence provisioning",
+            "aliases": [
+                "obsolescence reserves",
+                "inventory reserve provisioning",
+                "obsolete inventory provisioning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Estimating and maintaining reserves for obsolete, slow-moving, or damaged inventory based on usage, sales forecasts, and aging analysis.",
+            "parent_skill": "Inventory valuation & reserves",
+            "related_skills": [
+                "Inventory valuation methods",
+                "Inventory impairment testing and write-downs",
+                "Inventory reconciliation and stocktake adjustments"
+            ],
+            "keywords": [
+                "obsolescence reserve",
+                "provisioning",
+                "aging analysis",
+                "slow-moving stock"
+            ],
+            "common_roles": [
+                "Inventory Analyst",
+                "Cost Accountant"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inventory impairment testing and write-downs",
+            "aliases": [
+                "inventory write-down process",
+                "inventory impairment assessment",
+                "inventory writeoff"
+            ],
+            "skill_type": "process_skill",
+            "description": "Performing procedures to identify impaired inventory, quantify write-down amounts, document accounting entries, and ensure compliant disclosure and recording.",
+            "parent_skill": "Inventory valuation & reserves",
+            "related_skills": [
+                "Lower of cost or market \/ net realizable value assessment",
+                "Inventory obsolescence provisioning"
+            ],
+            "keywords": [
+                "impairment testing",
+                "write-down",
+                "journal entry",
+                "disclosure"
+            ],
+            "common_roles": [
+                "Financial Reporting Analyst",
+                "Controller"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Standard cost variance analysis (inventory)",
+            "aliases": [
+                "standard costing variance analysis",
+                "material variance analysis",
+                "production variance analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing variances between standard costs and actual costs for materials, labor, and overhead to explain inventory valuation differences and operational performance.",
+            "parent_skill": "Inventory valuation & reserves",
+            "related_skills": [
+                "Inventory valuation methods",
+                "Cost-to-retail (retail inventory) method"
+            ],
+            "keywords": [
+                "standard cost",
+                "variance analysis",
+                "material price variance",
+                "efficiency variance"
+            ],
+            "common_roles": [
+                "Cost Accountant",
+                "Management Accountant"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inventory reconciliation and stocktake adjustments",
+            "aliases": [
+                "stocktake reconciliation",
+                "physical inventory reconciliation",
+                "cycle count adjustments"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Reconciling physical counts to general ledger inventory balances, investigating discrepancies, and posting accurate adjustments to maintain inventory integrity.",
+            "parent_skill": "Inventory valuation & reserves",
+            "related_skills": [
+                "Inventory obsolescence provisioning",
+                "Inventory impairment testing and write-downs"
+            ],
+            "keywords": [
+                "cycle count",
+                "stocktake",
+                "reconciliation",
+                "adjusting journal entry",
+                "shrinkage"
+            ],
+            "common_roles": [
+                "Inventory Analyst",
+                "Operations Accountant"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

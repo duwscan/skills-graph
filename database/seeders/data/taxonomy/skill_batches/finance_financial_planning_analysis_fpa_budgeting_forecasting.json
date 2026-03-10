@@ -1,0 +1,248 @@
+{
+    "domain": "Finance",
+    "category": "Financial Planning & Analysis (FP&A)",
+    "subcategory": "Budgeting & forecasting",
+    "skills": [
+        {
+            "canonical_name": "Annual budgeting",
+            "aliases": [
+                "annual budget process",
+                "budget cycle planning",
+                "yearly budgeting"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, coordinating and delivering an organization's yearly budget including planning assumptions, timelines, approvals and consolidated submissions.",
+            "parent_skill": "Budgeting & forecasting",
+            "related_skills": [
+                "Budget consolidation & reporting",
+                "Variance analysis",
+                "Zero-based budgeting"
+            ],
+            "keywords": [
+                "budget cycle",
+                "budget calendar",
+                "capex budget",
+                "opex budget"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Rolling forecasting",
+            "aliases": [
+                "rolling forecast",
+                "continuous forecasting",
+                "rolling 12-month forecast"
+            ],
+            "skill_type": "process_skill",
+            "description": "Maintaining and updating forecasts on a continuous basis (e.g., monthly or quarterly) to extend the planning horizon and reflect recent performance and outlook changes.",
+            "parent_skill": "Budgeting & forecasting",
+            "related_skills": [
+                "Driver-based forecasting",
+                "Scenario and sensitivity analysis",
+                "Forecast automation"
+            ],
+            "keywords": [
+                "continuous forecast",
+                "rolling horizon",
+                "rolling plan"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Driver-based forecasting",
+            "aliases": [
+                "driver-based planning",
+                "key-driver forecasting",
+                "activity-based forecasting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Building forecasts based on operational or business drivers (e.g., units sold, headcount, conversion rates) to link financial outcomes to underlying business activity.",
+            "parent_skill": "Budgeting & forecasting",
+            "related_skills": [
+                "Financial modeling for FP&A",
+                "Scenario and sensitivity analysis",
+                "Variance analysis"
+            ],
+            "keywords": [
+                "drivers",
+                "assumption modeling",
+                "operational drivers"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Zero-based budgeting",
+            "aliases": [
+                "ZBB",
+                "zero base budgeting",
+                "zero-based planning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Budgeting method that requires building each budget line from zero with justification of costs and activities rather than using prior-period baselines.",
+            "parent_skill": "Budgeting & forecasting",
+            "related_skills": [
+                "Cost allocation modeling",
+                "Annual budgeting",
+                "Budget consolidation & reporting"
+            ],
+            "keywords": [
+                "cost justification",
+                "base-zero",
+                "activity review"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Variance analysis",
+            "aliases": [
+                "budget vs actual analysis",
+                "variance reporting",
+                "performance variance analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Investigating and explaining differences between budgeted\/forecasted figures and actual results to identify drivers of performance and inform corrective actions.",
+            "parent_skill": "Budgeting & forecasting",
+            "related_skills": [
+                "Annual budgeting",
+                "Driver-based forecasting",
+                "Scenario and sensitivity analysis"
+            ],
+            "keywords": [
+                "budget variance",
+                "forecast variance",
+                "root cause analysis"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial modeling for FP&A",
+            "aliases": [
+                "FP&A financial modeling",
+                "budget model building",
+                "forecast modeling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Building integrated financial models (income statement, balance sheet, cash flow) to support budgeting, forecasting, scenario analysis and decision-making.",
+            "parent_skill": "Budgeting & forecasting",
+            "related_skills": [
+                "Driver-based forecasting",
+                "Cash flow forecasting",
+                "Scenario and sensitivity analysis"
+            ],
+            "keywords": [
+                "integrated model",
+                "three-statement model",
+                "model assumptions"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Scenario and sensitivity analysis",
+            "aliases": [
+                "scenario planning",
+                "sensitivity testing",
+                "what-if analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Creating and evaluating multiple forecast scenarios and sensitivity tests to quantify the financial impact of different assumptions and risks.",
+            "parent_skill": "Budgeting & forecasting",
+            "related_skills": [
+                "Financial modeling for FP&A",
+                "Rolling forecasting",
+                "Driver-based forecasting"
+            ],
+            "keywords": [
+                "what-if",
+                "upside\/downside",
+                "stress testing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Budget consolidation & reporting",
+            "aliases": [
+                "budget consolidation",
+                "budget reporting",
+                "consolidated budgeting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Collecting, validating and consolidating budget inputs from multiple business units and producing standardized reports and dashboards for stakeholders.",
+            "parent_skill": "Budgeting & forecasting",
+            "related_skills": [
+                "Annual budgeting",
+                "Forecast automation",
+                "Variance analysis"
+            ],
+            "keywords": [
+                "consolidation",
+                "intercompany",
+                "report packs"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash flow forecasting",
+            "aliases": [
+                "short-term cash forecasting",
+                "cashflow projection",
+                "liquidity forecasting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Projecting future cash inflows and outflows to manage liquidity, working capital and funding decisions over short- and medium-term horizons.",
+            "parent_skill": "Budgeting & forecasting",
+            "related_skills": [
+                "Financial modeling for FP&A",
+                "Variance analysis",
+                "Forecast automation"
+            ],
+            "keywords": [
+                "liquidity",
+                "working capital",
+                "cash projection"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Forecast automation",
+            "aliases": [
+                "forecast automation (FP&A)",
+                "automated forecasting",
+                "forecast pipeline automation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and implementing automated data collection, transformation and refresh processes to reduce manual work and improve timeliness and accuracy of forecasts.",
+            "parent_skill": "Budgeting & forecasting",
+            "related_skills": [
+                "Budget consolidation & reporting",
+                "Rolling forecasting",
+                "Financial modeling for FP&A"
+            ],
+            "keywords": [
+                "automation",
+                "ETL",
+                "data pipeline"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

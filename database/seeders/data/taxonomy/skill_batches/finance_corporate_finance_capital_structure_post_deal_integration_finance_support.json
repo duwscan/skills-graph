@@ -1,0 +1,298 @@
+{
+    "domain": "Finance",
+    "category": "Corporate Finance & Capital Structure",
+    "subcategory": "Post-deal integration finance support",
+    "skills": [
+        {
+            "canonical_name": "Chart of accounts mapping and harmonization",
+            "aliases": [
+                "COA mapping",
+                "chart of accounts harmonization",
+                "chart of accounts alignment"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and implementing a unified chart of accounts across legacy entities, including account mapping, roll-up structures, and taxonomy alignment to enable consolidated reporting.",
+            "parent_skill": "Post-deal integration finance support",
+            "related_skills": [
+                "ERP financial data migration and mapping",
+                "Consolidated post-merger financial reporting",
+                "FP&A process integration"
+            ],
+            "keywords": [
+                "COA",
+                "chart of accounts",
+                "mapping",
+                "account alignment",
+                "general ledger"
+            ],
+            "common_roles": [
+                "FP&A",
+                "Accounting & Reporting",
+                "Finance Transformation"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ERP financial data migration and mapping",
+            "aliases": [
+                "financial data migration",
+                "ETL for finance systems",
+                "finance data mapping"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning and executing extraction, transformation and loading of financial master and transactional data between legacy and target ERP\/GL systems, including validation and reconciliation processes.",
+            "parent_skill": "Post-deal integration finance support",
+            "related_skills": [
+                "Chart of accounts mapping and harmonization",
+                "Intercompany reconciliation and elimination",
+                "Month-end close integration and acceleration"
+            ],
+            "keywords": [
+                "data migration",
+                "ETL",
+                "data mapping",
+                "data validation",
+                "ERP migration"
+            ],
+            "common_roles": [
+                "Finance Transformation",
+                "Accounting & Reporting"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intercompany reconciliation and elimination",
+            "aliases": [
+                "intercompany reconciliations",
+                "interco elimination",
+                "intercompany settlement reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Reconciling intercompany balances, resolving mismatches, and preparing eliminating entries to produce accurate consolidated financial statements post-integration.",
+            "parent_skill": "Post-deal integration finance support",
+            "related_skills": [
+                "Consolidated post-merger financial reporting",
+                "ERP financial data migration and mapping",
+                "Month-end close integration and acceleration"
+            ],
+            "keywords": [
+                "intercompany",
+                "eliminations",
+                "reconciliations",
+                "interco",
+                "consolidation entries"
+            ],
+            "common_roles": [
+                "Accounting & Reporting",
+                "Corporate Accounting"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Consolidated post-merger financial reporting",
+            "aliases": [
+                "post-merger consolidated reporting",
+                "merged entity financial reporting",
+                "combined financial statements preparation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Preparing and delivering consolidated financial statements, management packs and statutory reports for the combined entity, including adjustments required for integration.",
+            "parent_skill": "Post-deal integration finance support",
+            "related_skills": [
+                "Chart of accounts mapping and harmonization",
+                "Intercompany reconciliation and elimination",
+                "Purchase price allocation (PPA) accounting"
+            ],
+            "keywords": [
+                "consolidation",
+                "combined financials",
+                "management reporting",
+                "statutory reporting",
+                "financial close"
+            ],
+            "common_roles": [
+                "Accounting & Reporting",
+                "FP&A"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Purchase price allocation (PPA) accounting",
+            "aliases": [
+                "PPA accounting",
+                "purchase price allocation adjustments",
+                "acquisition accounting"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Applying acquisition accounting rules to allocate purchase consideration to acquired assets and liabilities, recording goodwill\/intangibles, and making post-close PPA adjustments in accordance with GAAP\/IFRS.",
+            "parent_skill": "Post-deal integration finance support",
+            "related_skills": [
+                "Consolidated post-merger financial reporting",
+                "SOX and internal control integration",
+                "Financial close integration"
+            ],
+            "keywords": [
+                "PPA",
+                "acquisition accounting",
+                "goodwill",
+                "IFRS 3",
+                "ASC 805"
+            ],
+            "common_roles": [
+                "Accounting & Reporting",
+                "Corporate Finance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Synergy tracking and realization reporting",
+            "aliases": [
+                "synergy tracking",
+                "cost-savings realization reporting",
+                "post-merger synergy measurement"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Defining, measuring and reporting cost and revenue synergies identified in the integration plan, including establishing baselines, KPIs, and tracking realized vs. target savings over time.",
+            "parent_skill": "Post-deal integration finance support",
+            "related_skills": [
+                "FP&A process integration",
+                "Consolidated post-merger financial reporting",
+                "Cash & treasury integration and liquidity management"
+            ],
+            "keywords": [
+                "synergies",
+                "cost savings",
+                "realization",
+                "KPIs",
+                "benefit tracking"
+            ],
+            "common_roles": [
+                "FP&A",
+                "Corporate Finance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash & treasury integration and liquidity management",
+            "aliases": [
+                "treasury integration",
+                "liquidity integration",
+                "cash management integration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Integrating cash management, banking structures, and treasury operations across entities, centralizing liquidity, and managing combined entity cash forecasting, payments and bank relationships.",
+            "parent_skill": "Post-deal integration finance support",
+            "related_skills": [
+                "Cash flow forecasting for combined entity",
+                "ERP financial data migration and mapping",
+                "Synergy tracking and realization reporting"
+            ],
+            "keywords": [
+                "treasury",
+                "liquidity",
+                "cash pooling",
+                "bank accounts",
+                "payments"
+            ],
+            "common_roles": [
+                "Treasury",
+                "Corporate Finance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "FP&A process integration (budgeting & forecasting)",
+            "aliases": [
+                "FP&A integration",
+                "budgeting process harmonization",
+                "forecast consolidation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Aligning budgeting, forecasting and management reporting processes across legacy organizations, including driver-based models, rolling forecasts and KPI harmonization for the combined entity.",
+            "parent_skill": "Post-deal integration finance support",
+            "related_skills": [
+                "Chart of accounts mapping and harmonization",
+                "Synergy tracking and realization reporting",
+                "Consolidated post-merger financial reporting"
+            ],
+            "keywords": [
+                "FP&A",
+                "budgeting",
+                "forecasting",
+                "rolling forecast",
+                "driver-based model"
+            ],
+            "common_roles": [
+                "FP&A",
+                "Finance Transformation"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Month-end close integration and acceleration",
+            "aliases": [
+                "close integration",
+                "period close acceleration",
+                "integrated month-end close"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Harmonizing and accelerating month-end close activities across merged entities, including task sequencing, reconciliations, consolidation timing and automation to meet combined reporting deadlines.",
+            "parent_skill": "Post-deal integration finance support",
+            "related_skills": [
+                "ERP financial data migration and mapping",
+                "Intercompany reconciliation and elimination",
+                "Consolidated post-merger financial reporting"
+            ],
+            "keywords": [
+                "month-end close",
+                "close calendar",
+                "close automation",
+                "reconciliations",
+                "closing process"
+            ],
+            "common_roles": [
+                "Accounting & Reporting",
+                "Finance Operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SOX and internal control integration and remediation",
+            "aliases": [
+                "SOX integration",
+                "internal control remediation",
+                "control harmonization post-merger"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Assessing, redesigning and implementing internal controls for the combined entity, remediating control gaps identified during integration and ensuring compliance with SOX and other regulations.",
+            "parent_skill": "Post-deal integration finance support",
+            "related_skills": [
+                "Purchase price allocation (PPA) accounting",
+                "ERP financial data migration and mapping",
+                "Month-end close integration and acceleration"
+            ],
+            "keywords": [
+                "SOX",
+                "internal controls",
+                "control remediation",
+                "compliance",
+                "risk assessment"
+            ],
+            "common_roles": [
+                "Internal Audit",
+                "Compliance & Controls"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,316 @@
+{
+    "domain": "F&B",
+    "category": "Inventory, Purchasing & Supplier Management",
+    "subcategory": "Par setting & reorder points",
+    "skills": [
+        {
+            "canonical_name": "Reorder point calculation",
+            "aliases": [
+                "ROP calculation",
+                "reorder point formula",
+                "reorder threshold calculation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Compute the inventory level at which to trigger replenishment orders by combining expected demand and supplier lead time.",
+            "parent_skill": "Par setting & reorder points",
+            "related_skills": [
+                "Lead time estimation for suppliers",
+                "Safety stock calculation",
+                "Par level setting",
+                "Demand forecasting for perishable inventory",
+                "Automated reorder rule configuration"
+            ],
+            "keywords": [
+                "reorder point",
+                "ROP",
+                "reorder threshold",
+                "trigger level",
+                "lead time demand"
+            ],
+            "common_roles": [
+                "Inventory management",
+                "Purchasing",
+                "Supply chain operations",
+                "Kitchen operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Par level setting",
+            "aliases": [
+                "par level calculation",
+                "par stocking level",
+                "standard par"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Define standard on-hand quantities for items (par levels) to sustain operations and maintain service targets between replenishments.",
+            "parent_skill": "Par setting & reorder points",
+            "related_skills": [
+                "Reorder point calculation",
+                "Safety stock calculation",
+                "ABC inventory classification",
+                "Demand forecasting for perishable inventory",
+                "Inventory turnover analysis"
+            ],
+            "keywords": [
+                "par level",
+                "par stock",
+                "minimum stock",
+                "standard stock level"
+            ],
+            "common_roles": [
+                "Inventory management",
+                "Purchasing",
+                "Kitchen operations",
+                "Procurement"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Safety stock calculation",
+            "aliases": [
+                "safety stock determination",
+                "buffer stock calculation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculate additional inventory held to protect against variability in demand and supplier lead time to achieve a target service level.",
+            "parent_skill": "Par setting & reorder points",
+            "related_skills": [
+                "Reorder point calculation",
+                "Lead time estimation for suppliers",
+                "Demand forecasting for perishable inventory",
+                "Economic order quantity (EOQ) optimization"
+            ],
+            "keywords": [
+                "safety stock",
+                "buffer stock",
+                "service level",
+                "stockout protection",
+                "demand variability"
+            ],
+            "common_roles": [
+                "Inventory management",
+                "Purchasing",
+                "Supply chain operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Lead time estimation for suppliers",
+            "aliases": [
+                "supplier lead time calculation",
+                "vendor lead-time estimation",
+                "lead-time analysis"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Assess and quantify supplier lead times (order-to-delivery) including variability to inform reorder points and safety stock.",
+            "parent_skill": "Par setting & reorder points",
+            "related_skills": [
+                "Vendor delivery performance monitoring",
+                "Reorder point calculation",
+                "Safety stock calculation"
+            ],
+            "keywords": [
+                "lead time",
+                "supplier lead time",
+                "vendor lead-time",
+                "order lead time",
+                "lead time variability"
+            ],
+            "common_roles": [
+                "Procurement",
+                "Purchasing",
+                "Inventory management"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Demand forecasting for perishable inventory",
+            "aliases": [
+                "perishable demand forecasting",
+                "demand forecasting (perishables)",
+                "short-term demand forecasting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Generate short-term and seasonal demand forecasts for perishable items using historical consumption, seasonality, and promotional factors to minimize waste and stockouts.",
+            "parent_skill": "Par setting & reorder points",
+            "related_skills": [
+                "Inventory turnover analysis",
+                "Par level setting",
+                "Safety stock calculation",
+                "Reorder point calculation"
+            ],
+            "keywords": [
+                "demand forecast",
+                "perishables forecasting",
+                "consumption patterns",
+                "seasonality",
+                "waste reduction"
+            ],
+            "common_roles": [
+                "Inventory management",
+                "Kitchen operations",
+                "Purchasing",
+                "Procurement"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Economic order quantity (EOQ) optimization",
+            "aliases": [
+                "EOQ model",
+                "economic order quantity calculation",
+                "optimal order quantity"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Apply EOQ and related inventory models to determine order quantities that balance ordering and holding costs while meeting operational constraints.",
+            "parent_skill": "Par setting & reorder points",
+            "related_skills": [
+                "Inventory turnover analysis",
+                "Reorder point calculation",
+                "Safety stock calculation",
+                "Automated reorder rule configuration"
+            ],
+            "keywords": [
+                "EOQ",
+                "economic order quantity",
+                "order optimization",
+                "ordering cost",
+                "holding cost"
+            ],
+            "common_roles": [
+                "Inventory management",
+                "Purchasing",
+                "Procurement",
+                "Supply chain operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inventory turnover analysis",
+            "aliases": [
+                "stock turnover analysis",
+                "inventory turnover calculation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyze how quickly inventory is used or sold over time to inform par levels, purchasing frequency, and waste reduction strategies.",
+            "parent_skill": "Par setting & reorder points",
+            "related_skills": [
+                "ABC inventory classification",
+                "Demand forecasting for perishable inventory",
+                "Par level setting"
+            ],
+            "keywords": [
+                "inventory turnover",
+                "turnover rate",
+                "days inventory outstanding",
+                "stock velocity",
+                "sell-through rate"
+            ],
+            "common_roles": [
+                "Inventory management",
+                "Purchasing",
+                "Supply chain operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ABC inventory classification",
+            "aliases": [
+                "ABC analysis",
+                "pareto inventory classification",
+                "ABC categorization"
+            ],
+            "skill_type": "process_skill",
+            "description": "Segment inventory into A\/B\/C categories based on value and usage frequency to prioritize par levels, replenishment policies, and inventory controls.",
+            "parent_skill": "Par setting & reorder points",
+            "related_skills": [
+                "Inventory turnover analysis",
+                "Par level setting",
+                "Economic order quantity (EOQ) optimization"
+            ],
+            "keywords": [
+                "ABC analysis",
+                "pareto",
+                "inventory segmentation",
+                "critical items",
+                "high-value items"
+            ],
+            "common_roles": [
+                "Inventory management",
+                "Procurement",
+                "Purchasing",
+                "Supply chain operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor delivery performance monitoring",
+            "aliases": [
+                "supplier performance tracking",
+                "delivery performance measurement",
+                "on-time delivery monitoring"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Track and evaluate supplier delivery metrics (OTD, lead-time variance, fill rate) to adjust reorder policies and improve supply reliability.",
+            "parent_skill": "Par setting & reorder points",
+            "related_skills": [
+                "Lead time estimation for suppliers",
+                "Reorder point calculation",
+                "Vendor relationship management"
+            ],
+            "keywords": [
+                "OTD",
+                "on-time delivery",
+                "supplier KPI",
+                "fill rate",
+                "lead-time variance"
+            ],
+            "common_roles": [
+                "Procurement",
+                "Purchasing",
+                "Supply chain operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated reorder rule configuration",
+            "aliases": [
+                "reorder rule setup",
+                "automatic replenishment configuration",
+                "min\/max rule configuration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and configure automated replenishment rules in inventory systems (min\/max, reorder points, batch sizes) to enforce par levels and reduce manual ordering.",
+            "parent_skill": "Par setting & reorder points",
+            "related_skills": [
+                "Reorder point calculation",
+                "Economic order quantity (EOQ) optimization",
+                "Perpetual inventory system integration"
+            ],
+            "keywords": [
+                "automatic reorder",
+                "replenishment rules",
+                "min\/max settings",
+                "reorder automation",
+                "system configuration"
+            ],
+            "common_roles": [
+                "Inventory management",
+                "Purchasing",
+                "Operations technology"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,305 @@
+{
+    "domain": "IT",
+    "category": "DevOps, CI\/CD & Release Engineering",
+    "subcategory": "Artifact repositories & versioning",
+    "skills": [
+        {
+            "canonical_name": "Git (distributed version control)",
+            "aliases": [
+                "Git",
+                "distributed version control",
+                "git vcs"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use and administration of Git for source code version control, including commits, branching, merging, rebasing, and repository management workflows.",
+            "parent_skill": "Artifact repositories & versioning",
+            "related_skills": [
+                "Branching and merging strategies",
+                "Release tagging and promotion",
+                "Git Large File Storage (Git LFS)"
+            ],
+            "keywords": [
+                "git",
+                "version control",
+                "vcs",
+                "merge",
+                "rebase"
+            ],
+            "common_roles": [
+                "DevOps Engineer",
+                "Software Engineer",
+                "Build\/Release Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Branching and merging strategies",
+            "aliases": [
+                "branching strategy",
+                "GitFlow",
+                "trunk-based development",
+                "feature branching",
+                "branch management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and applying branching\/merging workflows (e.g., GitFlow, trunk-based) to support parallel development, release stabilization, and CI\/CD pipelines.",
+            "parent_skill": "Artifact repositories & versioning",
+            "related_skills": [
+                "Git (distributed version control)",
+                "Release tagging and promotion",
+                "CI\/CD pipeline integration"
+            ],
+            "keywords": [
+                "gitflow",
+                "trunk-based",
+                "feature-branch",
+                "merge strategy"
+            ],
+            "common_roles": [
+                "Release Engineer",
+                "DevOps Engineer",
+                "Software Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Semantic Versioning (SemVer)",
+            "aliases": [
+                "SemVer",
+                "semantic versioning",
+                "versioning scheme"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying semantic versioning rules and policies to assign meaningful version numbers and drive compatibility\/upgrade decisions across artifacts and packages.",
+            "parent_skill": "Artifact repositories & versioning",
+            "related_skills": [
+                "Release tagging and promotion",
+                "Dependency management and lockfiles",
+                "Artifact repository management"
+            ],
+            "keywords": [
+                "semver",
+                "major.minor.patch",
+                "versioning"
+            ],
+            "common_roles": [
+                "Release Engineer",
+                "DevOps Engineer",
+                "Build Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Artifact repository management",
+            "aliases": [
+                "binary repository management",
+                "artifact management",
+                "artifact repositories"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operating and governing binary\/package repositories (storage, access control, cleanup, replication, promotion and metadata) for build artifacts and packages.",
+            "parent_skill": "Artifact repositories & versioning",
+            "related_skills": [
+                "JFrog Artifactory",
+                "Sonatype Nexus Repository",
+                "Container registry management",
+                "Immutable artifact promotion"
+            ],
+            "keywords": [
+                "artifact repo",
+                "binaries",
+                "package storage",
+                "repo cleanup",
+                "replication"
+            ],
+            "common_roles": [
+                "Platform Engineer",
+                "DevOps Engineer",
+                "Build\/Release Engineer",
+                "Site Reliability Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "JFrog Artifactory",
+            "aliases": [
+                "Artifactory",
+                "jfrog"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring, operating and integrating JFrog Artifactory as a universal artifact repository for binaries, Docker images, and package types across CI\/CD pipelines.",
+            "parent_skill": "Artifact repositories & versioning",
+            "related_skills": [
+                "Artifact repository management",
+                "Repository replication and proxying",
+                "CI\/CD pipeline integration"
+            ],
+            "keywords": [
+                "artifactory",
+                "jfrog artifactory",
+                "artifact repository"
+            ],
+            "common_roles": [
+                "Platform Engineer",
+                "DevOps Engineer",
+                "Build Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sonatype Nexus Repository",
+            "aliases": [
+                "Nexus",
+                "Sonatype Nexus"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Deploying and managing Sonatype Nexus Repository for hosting and proxying Maven, npm, Docker, and other package types; handling security and lifecycle policies.",
+            "parent_skill": "Artifact repositories & versioning",
+            "related_skills": [
+                "Artifact repository management",
+                "Dependency management and lockfiles",
+                "Repository security and access control"
+            ],
+            "keywords": [
+                "nexus",
+                "sonatype",
+                "nexus repository"
+            ],
+            "common_roles": [
+                "Platform Engineer",
+                "DevOps Engineer",
+                "Build\/Release Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Container registry management",
+            "aliases": [
+                "Docker registry management",
+                "container image registry",
+                "Harbor management",
+                "ECR management"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Managing container image registries (push\/pull policies, immutability, vulnerability scanning, lifecycle\/pruning, access control and replication) for deployment pipelines.",
+            "parent_skill": "Artifact repositories & versioning",
+            "related_skills": [
+                "Artifact repository management",
+                "Immutable artifact promotion",
+                "CI\/CD pipeline integration"
+            ],
+            "keywords": [
+                "container registry",
+                "docker registry",
+                "harbor",
+                "ecr",
+                "image lifecycle"
+            ],
+            "common_roles": [
+                "Platform Engineer",
+                "DevOps Engineer",
+                "SRE",
+                "Cloud Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dependency management and lockfiles",
+            "aliases": [
+                "dependency management",
+                "package locking",
+                "lockfile management"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Managing third-party dependencies, transitive resolution, reproducible builds via lockfiles (e.g., package-lock.json, Gemfile.lock, pnpm-lock), and vulnerability\/upgrade workflows.",
+            "parent_skill": "Artifact repositories & versioning",
+            "related_skills": [
+                "Artifact repository management",
+                "Semantic Versioning (SemVer)",
+                "Repository security and access control"
+            ],
+            "keywords": [
+                "dependencies",
+                "lockfile",
+                "reproducible builds",
+                "dependency resolution"
+            ],
+            "common_roles": [
+                "Software Engineer",
+                "Build Engineer",
+                "DevOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Release tagging and promotion",
+            "aliases": [
+                "release tagging",
+                "artifact promotion",
+                "release promotion"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating and managing release tags, signing and promoting immutable artifacts across environments (staging → production), and coordinating versioned rollouts in CI\/CD.",
+            "parent_skill": "Artifact repositories & versioning",
+            "related_skills": [
+                "Semantic Versioning (SemVer)",
+                "Branching and merging strategies",
+                "Artifact repository management",
+                "Immutable artifact promotion"
+            ],
+            "keywords": [
+                "tagging",
+                "promotion",
+                "release tag",
+                "staging to production"
+            ],
+            "common_roles": [
+                "Release Engineer",
+                "DevOps Engineer",
+                "Build\/Release Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Git Large File Storage (Git LFS) and large asset versioning",
+            "aliases": [
+                "Git LFS",
+                "large file versioning",
+                "git-lfs"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Git LFS and related techniques to version and manage large binary assets in source repositories, including storage\/backing store configuration and CI handling.",
+            "parent_skill": "Artifact repositories & versioning",
+            "related_skills": [
+                "Git (distributed version control)",
+                "Artifact repository management",
+                "Container registry management"
+            ],
+            "keywords": [
+                "git lfs",
+                "large assets",
+                "binary versioning",
+                "lfs"
+            ],
+            "common_roles": [
+                "Software Engineer",
+                "DevOps Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

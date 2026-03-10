@@ -1,0 +1,288 @@
+{
+    "domain": "Finance",
+    "category": "Tax Operations & Compliance",
+    "subcategory": "Tax reporting & filings coordination",
+    "skills": [
+        {
+            "canonical_name": "Corporate tax return preparation",
+            "aliases": [
+                "corporate income tax return preparation",
+                "corporate tax filings",
+                "corporate return preparation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Prepare and assemble corporate income tax returns and associated schedules, compute taxable income and adjustments, and consolidate positions for group filings.",
+            "parent_skill": "Tax reporting & filings coordination",
+            "related_skills": [
+                "Tax data reconciliation & return mapping",
+                "Tax filing calendar management",
+                "Tax provision coordination for filings"
+            ],
+            "keywords": [
+                "corporate tax return",
+                "tax return preparation",
+                "consolidated return",
+                "tax schedules"
+            ],
+            "common_roles": [
+                "Tax operations",
+                "Tax accounting"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax filing calendar management",
+            "aliases": [
+                "tax filing schedule management",
+                "filings calendar coordination",
+                "tax deadline management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Create and maintain multi-jurisdictional tax filing calendars, monitor deadlines, manage extensions, and coordinate reminders and submission timelines.",
+            "parent_skill": "Tax reporting & filings coordination",
+            "related_skills": [
+                "Tax e-filing & tax portal management",
+                "Corporate tax return preparation",
+                "VAT\/GST reporting & filings coordination"
+            ],
+            "keywords": [
+                "filing calendar",
+                "tax deadlines",
+                "extensions",
+                "due dates"
+            ],
+            "common_roles": [
+                "Tax operations",
+                "Shared services tax teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Multistate income tax compliance",
+            "aliases": [
+                "state tax compliance",
+                "US multistate tax filings",
+                "state income tax filings"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Coordinate state and local income\/franchise tax registrations, apportionment calculations, nexus assessments, and preparation and submission of state tax returns.",
+            "parent_skill": "Tax reporting & filings coordination",
+            "related_skills": [
+                "Tax filing calendar management",
+                "Tax data reconciliation & return mapping",
+                "Intercompany tax & withholding coordination"
+            ],
+            "keywords": [
+                "state tax",
+                "apportionment",
+                "nexus",
+                "state filings"
+            ],
+            "common_roles": [
+                "Tax operations",
+                "Finance compliance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "VAT\/GST reporting & filings coordination",
+            "aliases": [
+                "indirect tax reporting",
+                "VAT filing coordination",
+                "GST return coordination"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Prepare and manage indirect tax returns (VAT\/GST) including filing submissions, reclaim processes, reporting adjustments, and jurisdictional compliance requirements.",
+            "parent_skill": "Tax reporting & filings coordination",
+            "related_skills": [
+                "Tax e-filing & tax portal management",
+                "Tax data reconciliation & return mapping",
+                "Tax audit and tax authority inquiry coordination"
+            ],
+            "keywords": [
+                "VAT",
+                "GST",
+                "indirect tax",
+                "VAT returns"
+            ],
+            "common_roles": [
+                "Indirect tax teams",
+                "Tax operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax e-filing & tax portal management",
+            "aliases": [
+                "electronic tax filing",
+                "tax portal submission",
+                "e-file management"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use and administer electronic tax filing systems and government portals to submit tax returns, manage portal credentials, monitor submission status, and handle acknowledgements.",
+            "parent_skill": "Tax reporting & filings coordination",
+            "related_skills": [
+                "Tax filing calendar management",
+                "VAT\/GST reporting & filings coordination",
+                "Tax reporting process automation & workflow orchestration"
+            ],
+            "keywords": [
+                "e-filing",
+                "tax portal",
+                "electronic submission",
+                "portal credentials"
+            ],
+            "common_roles": [
+                "Tax operations",
+                "Shared services tax teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax data reconciliation & return mapping",
+            "aliases": [
+                "GL to tax reconciliation",
+                "tax return reconciliation",
+                "tax mapping"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Reconcile accounting general ledger balances to tax return lines, document permanent and temporary differences, and map financial statement items to tax reporting requirements.",
+            "parent_skill": "Tax reporting & filings coordination",
+            "related_skills": [
+                "Corporate tax return preparation",
+                "Tax provision coordination for filings",
+                "Tax audit and tax authority inquiry coordination"
+            ],
+            "keywords": [
+                "reconciliation",
+                "GL to tax",
+                "tax mapping",
+                "temporary differences"
+            ],
+            "common_roles": [
+                "Tax accounting",
+                "Finance compliance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax provision coordination for filings",
+            "aliases": [
+                "tax provision support",
+                "provision-to-return coordination",
+                "deferred tax reconciliation support"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Coordinate tax provision inputs and reconciliations to support tax return positions, including provision-to-return adjustments, deferred tax analysis, and accounting disclosures needed for filings.",
+            "parent_skill": "Tax reporting & filings coordination",
+            "related_skills": [
+                "Tax data reconciliation & return mapping",
+                "Corporate tax return preparation",
+                "Tax audit and tax authority inquiry coordination"
+            ],
+            "keywords": [
+                "tax provision",
+                "provision-to-return",
+                "deferred tax",
+                "tax accruals"
+            ],
+            "common_roles": [
+                "Tax accounting",
+                "Financial reporting support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intercompany tax & withholding coordination",
+            "aliases": [
+                "intercompany tax compliance",
+                "withholding tax coordination",
+                "cross-border withholding coordination"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Manage intercompany tax matters including withholding tax calculation and filings, treaty application coordination, documentation for cross-border transactions, and related reporting obligations.",
+            "parent_skill": "Tax reporting & filings coordination",
+            "related_skills": [
+                "Multistate income tax compliance",
+                "VAT\/GST reporting & filings coordination",
+                "Tax data reconciliation & return mapping"
+            ],
+            "keywords": [
+                "withholding tax",
+                "intercompany filings",
+                "cross-border tax",
+                "treaty"
+            ],
+            "common_roles": [
+                "Global tax operations",
+                "In-house tax teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax audit and tax authority inquiry coordination",
+            "aliases": [
+                "tax audit coordination",
+                "tax authority response coordination",
+                "tax controversy support"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Coordinate responses to tax authority audits and inquiries by compiling supporting documentation, liaising with external advisors and internal stakeholders, and managing timelines for submissions.",
+            "parent_skill": "Tax reporting & filings coordination",
+            "related_skills": [
+                "Tax data reconciliation & return mapping",
+                "Tax provision coordination for filings",
+                "Tax e-filing & tax portal management"
+            ],
+            "keywords": [
+                "tax audit",
+                "inquiry response",
+                "supporting documentation",
+                "tax authority"
+            ],
+            "common_roles": [
+                "Tax operations",
+                "Compliance liaison"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax reporting process automation & workflow orchestration",
+            "aliases": [
+                "tax automation",
+                "tax workflow automation",
+                "RPA for tax reporting"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and implement automated workflows and orchestration for tax reporting tasks, including data extraction, validation, filing triggers, status tracking, and integration with tax systems.",
+            "parent_skill": "Tax reporting & filings coordination",
+            "related_skills": [
+                "Tax e-filing & tax portal management",
+                "Tax data reconciliation & return mapping",
+                "Tax filing calendar management"
+            ],
+            "keywords": [
+                "automation",
+                "RPA",
+                "workflow",
+                "tax workflow",
+                "scripting"
+            ],
+            "common_roles": [
+                "Tax operations",
+                "Finance automation teams"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

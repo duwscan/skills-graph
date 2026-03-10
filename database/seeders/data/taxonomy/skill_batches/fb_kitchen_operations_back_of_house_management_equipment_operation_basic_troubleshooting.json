@@ -1,0 +1,262 @@
+{
+    "domain": "F&B",
+    "category": "Kitchen Operations & Back-of-House Management",
+    "subcategory": "Equipment operation & basic troubleshooting",
+    "skills": [
+        {
+            "canonical_name": "Commercial convection and deck oven operation",
+            "aliases": [
+                "convection oven operation",
+                "deck oven operation",
+                "bakery oven operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operate and manage commercial convection and deck ovens, including selecting baking profiles, loading\/arranging racks, adjusting temperature and time settings, performing daily cleaning, and basic operational checks.",
+            "parent_skill": "Equipment operation & basic troubleshooting",
+            "related_skills": [
+                "Combi oven operation and programming",
+                "Temperature monitoring, probe calibration and verification",
+                "Basic equipment troubleshooting and preventive maintenance"
+            ],
+            "keywords": [
+                "oven",
+                "baking profiles",
+                "rack management",
+                "temperature control",
+                "cleaning"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Commercial deep fryer operation",
+            "aliases": [
+                "deep fryer operation",
+                "fry station operation",
+                "commercial fryer operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Safely operate commercial deep fryers: manage oil loading and disposal, set appropriate temperatures and cook times, monitor oil quality, perform routine filtering, and follow safety and cleaning procedures.",
+            "parent_skill": "Equipment operation & basic troubleshooting",
+            "related_skills": [
+                "Basic equipment troubleshooting and preventive maintenance",
+                "Temperature monitoring, probe calibration and verification"
+            ],
+            "keywords": [
+                "fryer",
+                "oil management",
+                "filtration",
+                "temperature control",
+                "safety"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Grill and griddle operation",
+            "aliases": [
+                "chargrill operation",
+                "flat-top griddle operation",
+                "commercial grill operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operate commercial grills and griddles, including heat zoning, surface preparation and seasoning, cooking technique adjustments, safe handling, and routine cleaning and maintenance.",
+            "parent_skill": "Equipment operation & basic troubleshooting",
+            "related_skills": [
+                "Basic equipment troubleshooting and preventive maintenance",
+                "Ventilation hood and exhaust basic maintenance"
+            ],
+            "keywords": [
+                "grill",
+                "griddle",
+                "heat zones",
+                "surface maintenance",
+                "cleaning"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Combi oven operation and programming",
+            "aliases": [
+                "combi-steam oven operation",
+                "combi oven programming",
+                "steam-combi oven use"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use and program combi ovens: select modes (steam, convection, combination), set humidity and temperature parameters, create and run recipe programs, monitor cycles, and perform routine cleaning and descaling.",
+            "parent_skill": "Equipment operation & basic troubleshooting",
+            "related_skills": [
+                "Commercial convection and deck oven operation",
+                "Temperature monitoring, probe calibration and verification",
+                "Basic equipment troubleshooting and preventive maintenance"
+            ],
+            "keywords": [
+                "combi oven",
+                "programming",
+                "steam",
+                "humidity control",
+                "cycle management"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Commercial refrigeration operation and monitoring",
+            "aliases": [
+                "walk-in refrigerator operation",
+                "walk-in freezer operation",
+                "cold storage monitoring"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operate and monitor commercial refrigeration systems: manage temperature setpoints, log and respond to alarms, check door seals and defrost cycles, and perform routine inspections to ensure safe cold storage.",
+            "parent_skill": "Equipment operation & basic troubleshooting",
+            "related_skills": [
+                "Temperature monitoring, probe calibration and verification",
+                "Basic equipment troubleshooting and preventive maintenance",
+                "Ventilation hood and exhaust basic maintenance"
+            ],
+            "keywords": [
+                "refrigeration",
+                "walk-in",
+                "temperature logging",
+                "alarms",
+                "defrost"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Commercial dishwasher operation and sanitation",
+            "aliases": [
+                "warewasher operation",
+                "dish machine operation",
+                "industrial dishwasher operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operate commercial dishwashers: load\/unload protocols, select appropriate wash\/sanitizing cycles, manage chemical dosing and rinse temperatures, perform routine cleaning, and verify sanitation outcomes.",
+            "parent_skill": "Equipment operation & basic troubleshooting",
+            "related_skills": [
+                "Temperature monitoring, probe calibration and verification",
+                "Basic equipment troubleshooting and preventive maintenance"
+            ],
+            "keywords": [
+                "dishwasher",
+                "sanitation",
+                "chemical dosing",
+                "rinse temperature",
+                "maintenance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tilting skillet and steam kettle operation",
+            "aliases": [
+                "tilting pan operation",
+                "steam-jacketed kettle operation",
+                "braising pan operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operate large-volume tilting skillets and steam-jacketed kettles: control temperature\/pressure settings, perform safe tilting\/pouring procedures, monitor cooking cycles, and carry out cleaning and basic maintenance.",
+            "parent_skill": "Equipment operation & basic troubleshooting",
+            "related_skills": [
+                "Basic equipment troubleshooting and preventive maintenance",
+                "Temperature monitoring, probe calibration and verification"
+            ],
+            "keywords": [
+                "tilting skillet",
+                "steam kettle",
+                "large-batch cooking",
+                "temperature control",
+                "safe pouring"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ventilation hood and exhaust basic maintenance",
+            "aliases": [
+                "hood system monitoring",
+                "exhaust fan basic maintenance",
+                "grease filter cleaning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Perform routine monitoring and basic maintenance of commercial ventilation and hood systems: inspect fan operation, clean or replace grease filters, check hood fire suppression indicators, and escalate mechanical issues.",
+            "parent_skill": "Equipment operation & basic troubleshooting",
+            "related_skills": [
+                "Grill and griddle operation",
+                "Basic equipment troubleshooting and preventive maintenance"
+            ],
+            "keywords": [
+                "ventilation",
+                "hood",
+                "grease filters",
+                "exhaust fan",
+                "maintenance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Basic equipment troubleshooting and preventive maintenance",
+            "aliases": [
+                "kitchen equipment troubleshooting",
+                "preventative maintenance for kitchen equipment",
+                "basic appliance troubleshooting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Diagnose common faults in kitchen equipment, perform routine preventive maintenance (lubrication, belt checks, filter changes), execute minor repairs or part replacements, and coordinate with service technicians for complex issues.",
+            "parent_skill": "Equipment operation & basic troubleshooting",
+            "related_skills": [
+                "Commercial convection and deck oven operation",
+                "Commercial deep fryer operation",
+                "Combi oven operation and programming"
+            ],
+            "keywords": [
+                "troubleshooting",
+                "preventive maintenance",
+                "diagnostics",
+                "repair coordination",
+                "parts replacement"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Temperature monitoring, probe calibration and verification",
+            "aliases": [
+                "thermometer calibration",
+                "probe thermometer use",
+                "temperature logging and verification"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Use, calibrate and verify probe thermometers and temperature data loggers: perform calibration checks (e.g., ice-point), conduct regular temperature checks across equipment and food items, maintain logs, and support HACCP and food-safety compliance.",
+            "parent_skill": "Equipment operation & basic troubleshooting",
+            "related_skills": [
+                "Commercial refrigeration operation and monitoring",
+                "Commercial convection and deck oven operation",
+                "Commercial dishwasher operation and sanitation"
+            ],
+            "keywords": [
+                "temperature monitoring",
+                "probe calibration",
+                "HACCP",
+                "data logging",
+                "food safety"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

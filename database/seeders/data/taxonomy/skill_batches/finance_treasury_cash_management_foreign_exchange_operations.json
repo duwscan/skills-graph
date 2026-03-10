@@ -1,0 +1,267 @@
+{
+    "domain": "Finance",
+    "category": "Treasury & Cash Management",
+    "subcategory": "Foreign exchange operations",
+    "skills": [
+        {
+            "canonical_name": "FX spot trade execution",
+            "aliases": [
+                "spot FX execution",
+                "spot foreign exchange execution",
+                "FX spot trading"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Execution and lifecycle handling of spot foreign exchange trades, including trade capture, venue selection, trade affirmation and intraday monitoring.",
+            "parent_skill": "Foreign exchange operations",
+            "related_skills": [
+                "Electronic FX trading platforms",
+                "FX settlement, confirmation & reconciliation",
+                "FX exposure measurement & reporting"
+            ],
+            "keywords": [
+                "spot",
+                "trade capture",
+                "affirmation",
+                "trade execution",
+                "currency pair"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "FX forwards and NDF processing",
+            "aliases": [
+                "forward FX processing",
+                "non-deliverable forward processing",
+                "NDF operations"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Processing lifecycle for deliverable forwards and non-deliverable forwards (NDFs), including deal booking, settlement instructions, roll\/close procedures and valuation impacts.",
+            "parent_skill": "Foreign exchange operations",
+            "related_skills": [
+                "FX settlement, confirmation & reconciliation",
+                "FX hedging strategy implementation",
+                "FX exposure measurement & reporting"
+            ],
+            "keywords": [
+                "forwards",
+                "NDF",
+                "settlement",
+                "roll",
+                "booking"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "FX options processing",
+            "aliases": [
+                "foreign exchange options processing",
+                "FX derivatives operations",
+                "options lifecycle management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operational handling of FX options including premium collection\/payout, exercise\/assignment processing, settlement, and position management for vanilla option structures.",
+            "parent_skill": "Foreign exchange operations",
+            "related_skills": [
+                "FX forwards and NDF processing",
+                "FX exposure measurement & reporting",
+                "FX hedging strategy implementation"
+            ],
+            "keywords": [
+                "options",
+                "premium",
+                "exercise",
+                "assignment",
+                "derivatives"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Electronic FX trading platforms",
+            "aliases": [
+                "FX e-trading platforms",
+                "electronic FX venues",
+                "FX ECN\/MD platforms"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use and operational knowledge of electronic FX trading venues and execution management systems for price discovery, order routing and trade capture.",
+            "parent_skill": "Foreign exchange operations",
+            "related_skills": [
+                "FX spot trade execution",
+                "SWIFT MT\/MX messaging for FX",
+                "FX settlement, confirmation & reconciliation"
+            ],
+            "keywords": [
+                "e-trading",
+                "execution management",
+                "liquidity",
+                "order routing",
+                "electronic"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SWIFT MT\/MX messaging for FX",
+            "aliases": [
+                "SWIFT messaging for FX",
+                "MT messages FX",
+                "MX formats FX"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Knowledge of SWIFT message formats (MT\/MX) and messaging workflows used for FX confirmations, settlements and payment instructions, including message creation and troubleshooting.",
+            "parent_skill": "Foreign exchange operations",
+            "related_skills": [
+                "FX settlement, confirmation & reconciliation",
+                "FX forwards and NDF processing",
+                "Regulatory & sanctions screening for FX payments"
+            ],
+            "keywords": [
+                "SWIFT",
+                "MT",
+                "MX",
+                "message types",
+                "gpi"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "FX settlement, confirmation & reconciliation",
+            "aliases": [
+                "FX settlements and confirmations",
+                "FX trade reconciliation",
+                "settlement matching FX"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing the confirmation and settlement lifecycle for FX trades, including settlement instruction generation, matching\/affirmation, exception handling and reconciliations with cash positions.",
+            "parent_skill": "Foreign exchange operations",
+            "related_skills": [
+                "SWIFT MT\/MX messaging for FX",
+                "FX spot trade execution",
+                "Electronic FX trading platforms"
+            ],
+            "keywords": [
+                "confirmation",
+                "settlement instruction",
+                "matching",
+                "reconciliation",
+                "exceptions"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "FX exposure measurement & reporting",
+            "aliases": [
+                "currency exposure measurement",
+                "FX exposure reporting",
+                "foreign exchange exposure analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Quantifying and reporting FX exposures across cash flows and balance sheet items, including position aggregation, sensitivity analysis and regular exposure reporting for stakeholders.",
+            "parent_skill": "Foreign exchange operations",
+            "related_skills": [
+                "FX hedging strategy implementation",
+                "FX P&L attribution and position keeping",
+                "FX forwards and NDF processing"
+            ],
+            "keywords": [
+                "exposure",
+                "sensitivity",
+                "reporting",
+                "currency risk",
+                "aggregation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "FX hedging strategy implementation",
+            "aliases": [
+                "foreign exchange hedging execution",
+                "currency hedging implementation",
+                "hedge execution FX"
+            ],
+            "skill_type": "process_skill",
+            "description": "Translating hedging policy into executed transactions and operational workflows, including selection of instruments (forwards, options), timing, documentation and effectiveness tracking.",
+            "parent_skill": "Foreign exchange operations",
+            "related_skills": [
+                "FX exposure measurement & reporting",
+                "FX forwards and NDF processing",
+                "FX options processing"
+            ],
+            "keywords": [
+                "hedging",
+                "policy execution",
+                "effectiveness",
+                "hedge accounting",
+                "instrument selection"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Counterparty credit assessment for FX",
+            "aliases": [
+                "FX counterparty credit evaluation",
+                "counterparty limit assessment FX",
+                "FX credit risk assessment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Assessing creditworthiness and establishing\/monitoring counterparty limits for FX trading and settlement, including exposure calculation and collateral considerations.",
+            "parent_skill": "Foreign exchange operations",
+            "related_skills": [
+                "Regulatory & sanctions screening for FX payments",
+                "FX forwards and NDF processing",
+                "FX settlement, confirmation & reconciliation"
+            ],
+            "keywords": [
+                "counterparty",
+                "credit limits",
+                "exposure calculation",
+                "collateral",
+                "counterparty risk"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory & sanctions screening for FX payments",
+            "aliases": [
+                "sanctions screening FX",
+                "AML screening for FX payments",
+                "transaction sanctions checks FX"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Applying regulatory requirements and sanctions\/AML screening to FX payments and cross-border FX transactions, including watchlist screening, documentation checks and escalation processes.",
+            "parent_skill": "Foreign exchange operations",
+            "related_skills": [
+                "SWIFT MT\/MX messaging for FX",
+                "Counterparty credit assessment for FX",
+                "FX settlement, confirmation & reconciliation"
+            ],
+            "keywords": [
+                "sanctions",
+                "AML",
+                "screening",
+                "compliance",
+                "watchlist"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

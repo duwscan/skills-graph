@@ -1,0 +1,290 @@
+{
+    "domain": "Finance",
+    "category": "Risk, Compliance & Financial Crime (Finance-Side)",
+    "subcategory": "AML\/KYC operations support",
+    "skills": [
+        {
+            "canonical_name": "Customer due diligence (CDD)",
+            "aliases": [
+                "CDD",
+                "Customer due-diligence",
+                "Customer due diligence process"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Assessing and verifying customer identity and business relationships to determine AML\/KYC risk and meet regulatory requirements.",
+            "parent_skill": "AML\/KYC operations support",
+            "related_skills": [
+                "KYC onboarding and documentation verification",
+                "Customer risk rating and risk-scoring",
+                "Enhanced due diligence (EDD)",
+                "Politically exposed person (PEP) identification and risk assessment"
+            ],
+            "keywords": [
+                "identity verification",
+                "beneficial owner",
+                "CDD checks",
+                "know your customer"
+            ],
+            "common_roles": [
+                "Front-line compliance operations",
+                "KYC operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Enhanced due diligence (EDD)",
+            "aliases": [
+                "EDD",
+                "Enhanced KYC",
+                "Enhanced due-diligence"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Conducting deeper investigation and additional verification for higher-risk customers, including escalation, documentation of findings, and recommended controls.",
+            "parent_skill": "AML\/KYC operations support",
+            "related_skills": [
+                "Customer due diligence (CDD)",
+                "Adverse media and negative-news screening",
+                "Politically exposed person (PEP) identification and risk assessment",
+                "Suspicious activity report (SAR) drafting and regulatory reporting"
+            ],
+            "keywords": [
+                "high-risk customers",
+                "escalation",
+                "source of funds",
+                "enhanced checks"
+            ],
+            "common_roles": [
+                "Higher-risk customer review teams",
+                "KYC remediation projects"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "KYC onboarding and documentation verification",
+            "aliases": [
+                "KYC onboarding",
+                "ID document verification",
+                "Account opening KYC checks"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Validating customer onboarding documentation and identity materials, applying checklist requirements and resolving missing or inconsistent KYC information.",
+            "parent_skill": "AML\/KYC operations support",
+            "related_skills": [
+                "Customer due diligence (CDD)",
+                "AML case management system usage",
+                "KYC remediation and remediation projects"
+            ],
+            "keywords": [
+                "proof of identity",
+                "proof of address",
+                "document verification",
+                "onboarding"
+            ],
+            "common_roles": [
+                "Onboarding operations",
+                "Client onboarding support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Transaction monitoring alert investigation",
+            "aliases": [
+                "transaction monitoring",
+                "AML alert investigation",
+                "Transaction alerts triage"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Reviewing automated monitoring alerts, analyzing transactional behaviour against rules\/scenarios, documenting findings and determining escalation or closure.",
+            "parent_skill": "AML\/KYC operations support",
+            "related_skills": [
+                "Transaction monitoring scenario tuning",
+                "Suspicious activity report (SAR) drafting and regulatory reporting",
+                "AML case management system usage"
+            ],
+            "keywords": [
+                "alerts",
+                "suspicious transactions",
+                "monitoring rules",
+                "triage"
+            ],
+            "common_roles": [
+                "Transaction monitoring teams",
+                "Alert investigation teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sanctions and watchlist screening and adjudication",
+            "aliases": [
+                "sanctions screening",
+                "watchlist screening",
+                "watchlist adjudication",
+                "sanctions match investigation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Running name and entity screenings against sanctions and watchlists, evaluating potential hits, and making match\/no-match determinations with appropriate documentation.",
+            "parent_skill": "AML\/KYC operations support",
+            "related_skills": [
+                "Name screening and fuzzy-matching techniques",
+                "Adverse media and negative-news screening",
+                "Sanctions list interpretation and regulatory implications"
+            ],
+            "keywords": [
+                "OFAC screening",
+                "watchlists",
+                "false positives",
+                "name matching"
+            ],
+            "common_roles": [
+                "Screening operations",
+                "Sanctions compliance support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Adverse media and negative-news screening",
+            "aliases": [
+                "negative news screening",
+                "adverse media checks",
+                "media screening"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Searching and interpreting public-source negative news and media references to identify reputational or AML-related risk indicators for customers and counterparties.",
+            "parent_skill": "AML\/KYC operations support",
+            "related_skills": [
+                "Politically exposed person (PEP) identification and risk assessment",
+                "Enhanced due diligence (EDD)",
+                "Sanctions and watchlist screening and adjudication"
+            ],
+            "keywords": [
+                "negative news",
+                "media monitoring",
+                "reputational risk",
+                "public-source checks"
+            ],
+            "common_roles": [
+                "Investigations support",
+                "KYC analysts"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Politically exposed person (PEP) identification and risk assessment",
+            "aliases": [
+                "PEP screening",
+                "PEP risk assessment",
+                "politically exposed persons screening"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Identifying PEPs and assessing associated corruption and influence risks, including family\/close associates screening and ongoing monitoring requirements.",
+            "parent_skill": "AML\/KYC operations support",
+            "related_skills": [
+                "Customer due diligence (CDD)",
+                "Enhanced due diligence (EDD)",
+                "Adverse media and negative-news screening"
+            ],
+            "keywords": [
+                "PEP lists",
+                "close associates",
+                "influence risk",
+                "ongoing monitoring"
+            ],
+            "common_roles": [
+                "KYC compliance teams",
+                "Risk assessment teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Suspicious activity report (SAR) drafting and regulatory reporting",
+            "aliases": [
+                "SAR drafting",
+                "suspicious activity reporting",
+                "regulatory reporting for AML"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Preparing and submitting detailed reports of suspected financial crime to the relevant authority, including evidence collation, narrative construction and timely filing.",
+            "parent_skill": "AML\/KYC operations support",
+            "related_skills": [
+                "Transaction monitoring alert investigation",
+                "Enhanced due diligence (EDD)",
+                "AML case management system usage"
+            ],
+            "keywords": [
+                "reporting",
+                "filing",
+                "regulatory submission",
+                "narrative"
+            ],
+            "common_roles": [
+                "Regulatory reporting teams",
+                "Investigations support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "AML case management system usage",
+            "aliases": [
+                "case management systems",
+                "AML case management",
+                "investigation case system usage"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operating AML\/financial-crime case management platforms to record investigations, manage workflows, route escalations and maintain audit trails and documentation.",
+            "parent_skill": "AML\/KYC operations support",
+            "related_skills": [
+                "Transaction monitoring alert investigation",
+                "Suspicious activity report (SAR) drafting and regulatory reporting",
+                "KYC onboarding and documentation verification"
+            ],
+            "keywords": [
+                "case system",
+                "workflow",
+                "audit trail",
+                "case notes"
+            ],
+            "common_roles": [
+                "Operations support",
+                "Investigations coordinators"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Customer risk rating and risk-scoring model application",
+            "aliases": [
+                "customer risk scoring",
+                "risk-based approach (RBA) application",
+                "customer risk assessment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Applying risk-scoring methodologies and models to assign risk ratings to customers based on attributes, behaviors and external risk indicators to drive monitoring and controls.",
+            "parent_skill": "AML\/KYC operations support",
+            "related_skills": [
+                "Customer due diligence (CDD)",
+                "Transaction monitoring scenario tuning",
+                "Enhanced due diligence (EDD)"
+            ],
+            "keywords": [
+                "risk scoring",
+                "RBA",
+                "risk rating",
+                "model application"
+            ],
+            "common_roles": [
+                "Risk assessment teams",
+                "KYC operations analysts"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

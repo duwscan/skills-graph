@@ -1,0 +1,291 @@
+{
+    "domain": "Finance",
+    "category": "Corporate Finance & Capital Structure",
+    "subcategory": "Equity transactions support",
+    "skills": [
+        {
+            "canonical_name": "Equity issuance financial modeling",
+            "aliases": [
+                "equity issuance modeling",
+                "capital raise financial model",
+                "capital raise modeling",
+                "pro forma equity modeling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and building financial models to evaluate equity issuance scenarios, including pro forma cap tables, dilution analysis, proceeds allocation, pricing sensitivity and investor return metrics.",
+            "parent_skill": "Equity transactions support",
+            "related_skills": [
+                "Capital structure analysis & optimization",
+                "Equity valuation (DCF & comparable company analysis)",
+                "Bookbuilding & investor allocation management",
+                "Financial statement analysis"
+            ],
+            "keywords": [
+                "pro forma cap table",
+                "dilution analysis",
+                "offer proceeds",
+                "sensitivity analysis"
+            ],
+            "common_roles": [
+                "Equity capital markets teams",
+                "Corporate finance professionals",
+                "Transaction support teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "IPO and listing process management",
+            "aliases": [
+                "initial public offering process",
+                "IPO transaction management",
+                "listing process coordination"
+            ],
+            "skill_type": "process_skill",
+            "description": "Managing end-to-end IPO\/listing workflows, coordinating timelines, stakeholders (issuers, underwriters, advisors, exchanges), and key milestones from preparation through listing and stabilization.",
+            "parent_skill": "Equity transactions support",
+            "related_skills": [
+                "Securities filings & regulatory compliance for equity transactions",
+                "Roadshow & investor outreach coordination",
+                "Prospectus & offering memorandum preparation support"
+            ],
+            "keywords": [
+                "IPO timeline",
+                "exchange listing",
+                "listing requirements",
+                "stabilization"
+            ],
+            "common_roles": [
+                "Equity capital markets teams",
+                "Corporate finance professionals"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Equity valuation (DCF & comparable company analysis)",
+            "aliases": [
+                "equity valuation",
+                "DCF valuation",
+                "comps analysis",
+                "precedent transactions valuation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Valuing companies for equity transactions using discounted cash flow models, comparable company multiples, and precedent transaction analysis, including sensitivity testing and scenario analysis.",
+            "parent_skill": "Equity transactions support",
+            "related_skills": [
+                "Equity issuance financial modeling",
+                "Capital structure analysis & optimization",
+                "Financial statement analysis"
+            ],
+            "keywords": [
+                "DCF",
+                "EV\/EBITDA",
+                "P\/E",
+                "valuation multiples"
+            ],
+            "common_roles": [
+                "Corporate finance professionals",
+                "Equity capital markets teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bookbuilding & investor allocation management",
+            "aliases": [
+                "bookbuilding",
+                "investor allocation management",
+                "syndicate book management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operating the bookbuilding process for equity offerings: collecting investor indications, managing order books, advising on pricing, allocating shares, and coordinating with syndicate banks and sales teams.",
+            "parent_skill": "Equity transactions support",
+            "related_skills": [
+                "Roadshow & investor outreach coordination",
+                "Equity issuance financial modeling",
+                "Shareholder register & transfer agent coordination"
+            ],
+            "keywords": [
+                "bookrunner",
+                "investor indications",
+                "allocation",
+                "offer pricing"
+            ],
+            "common_roles": [
+                "Equity capital markets teams",
+                "Transaction support teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Prospectus & offering memorandum preparation support",
+            "aliases": [
+                "prospectus preparation",
+                "offering memorandum drafting",
+                "prospectus support"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Coordinating and supplying finance-related content for prospectuses and offering memoranda, ensuring accuracy of financial disclosures, risk factor description, management discussion and required statutory sections.",
+            "parent_skill": "Equity transactions support",
+            "related_skills": [
+                "Securities filings & regulatory compliance for equity transactions",
+                "Due diligence coordination for equity offerings",
+                "IPO and listing process management"
+            ],
+            "keywords": [
+                "prospectus",
+                "offering memorandum",
+                "financial disclosure",
+                "risk factors"
+            ],
+            "common_roles": [
+                "Corporate finance professionals",
+                "Equity capital markets teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Securities filings & regulatory compliance for equity transactions",
+            "aliases": [
+                "securities filings",
+                "equity regulatory filings",
+                "registration statement preparation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Preparing and coordinating regulatory filings required for equity offerings and listings (registration statements, listing applications and equivalents), ensuring compliance with securities laws, disclosure rules and exchange requirements.",
+            "parent_skill": "Equity transactions support",
+            "related_skills": [
+                "Prospectus & offering memorandum preparation support",
+                "IPO and listing process management",
+                "Corporate governance compliance"
+            ],
+            "keywords": [
+                "registration statement",
+                "regulatory filing",
+                "disclosure compliance",
+                "listing application"
+            ],
+            "common_roles": [
+                "Equity capital markets teams",
+                "Legal and compliance support groups"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Due diligence coordination for equity offerings",
+            "aliases": [
+                "equity transaction due diligence",
+                "deal due diligence coordination",
+                "diligence management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Organizing and managing due diligence processes for equity transactions, including data room setup and maintenance, coordinating information requests across finance, legal and business teams, and tracking completion of diligence items.",
+            "parent_skill": "Equity transactions support",
+            "related_skills": [
+                "Prospectus & offering memorandum preparation support",
+                "Financial statement analysis",
+                "Securities filings & regulatory compliance for equity transactions"
+            ],
+            "keywords": [
+                "data room",
+                "diligence checklist",
+                "information request",
+                "confirmations"
+            ],
+            "common_roles": [
+                "Transaction support teams",
+                "Corporate finance professionals"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Shareholder register & transfer agent coordination",
+            "aliases": [
+                "share register management",
+                "transfer agent coordination",
+                "shareholder register reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Coordinating with transfer agents, registries and custodians to update shareholder registers, manage share issuance and settlement, reconcile holdings and execute corporate actions during equity transactions.",
+            "parent_skill": "Equity transactions support",
+            "related_skills": [
+                "Bookbuilding & investor allocation management",
+                "Securities settlement",
+                "Corporate actions processing"
+            ],
+            "keywords": [
+                "transfer agent",
+                "share issuance",
+                "settlement",
+                "register reconciliation"
+            ],
+            "common_roles": [
+                "Treasury and corporate actions teams",
+                "Corporate finance professionals"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Roadshow & investor outreach coordination",
+            "aliases": [
+                "investor roadshow coordination",
+                "investor outreach",
+                "roadshow logistics"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Planning and executing investor roadshows and outreach for equity deals: preparing management presentation materials, scheduling investor meetings, briefing management, and capturing investor feedback for pricing and allocation decisions.",
+            "parent_skill": "Equity transactions support",
+            "related_skills": [
+                "Bookbuilding & investor allocation management",
+                "Prospectus & offering memorandum preparation support",
+                "Investor relations coordination"
+            ],
+            "keywords": [
+                "roadshow",
+                "investor meetings",
+                "presentation deck",
+                "investor feedback"
+            ],
+            "common_roles": [
+                "Equity capital markets teams",
+                "Investor relations support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Capital structure analysis & optimization",
+            "aliases": [
+                "capital structure modeling",
+                "capital structure optimization",
+                "debt–equity mix analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Assessing current and pro forma capital structures to evaluate leverage, cost of capital and financing alternatives; modeling effects of equity issuances on ownership, cost of capital and credit metrics to recommend optimal financing mixes.",
+            "parent_skill": "Equity transactions support",
+            "related_skills": [
+                "Equity valuation (DCF & comparable company analysis)",
+                "Equity issuance financial modeling",
+                "Financial statement analysis"
+            ],
+            "keywords": [
+                "WACC",
+                "leverage",
+                "debt capacity",
+                "pro forma capitalization"
+            ],
+            "common_roles": [
+                "Corporate finance professionals",
+                "Treasury teams"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

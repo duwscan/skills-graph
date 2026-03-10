@@ -1,0 +1,308 @@
+{
+    "domain": "Finance",
+    "category": "Accounts Receivable & Order-to-Cash",
+    "subcategory": "AR automation & e-invoicing",
+    "skills": [
+        {
+            "canonical_name": "E-invoicing compliance (standards & local regulation)",
+            "aliases": [
+                "electronic invoicing compliance",
+                "e-invoice regulatory compliance",
+                "PEPPOL compliance",
+                "XRechnung compliance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Knowledge of electronic invoicing legal requirements, message standards and country-specific regulations (e.g., PEPPOL, ZUGFeRD\/Factur‑X, XRechnung) required to implement compliant e-invoicing processes.",
+            "parent_skill": "AR automation & e-invoicing",
+            "related_skills": [
+                "EDI invoicing (ANSI X12, EDIFACT)",
+                "API integration for ERP\/billing systems",
+                "Invoice validation & exception handling automation"
+            ],
+            "keywords": [
+                "PEPPOL",
+                "ZUGFeRD",
+                "Factur-X",
+                "XRechnung",
+                "local e-invoice law"
+            ],
+            "common_roles": [
+                "Accounts Receivable Analyst",
+                "Order-to-Cash Manager",
+                "Compliance Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "EDI invoicing (ANSI X12, EDIFACT)",
+            "aliases": [
+                "electronic data interchange invoicing",
+                "EDI billing",
+                "EDIFACT invoicing"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Designing, implementing and managing invoice exchange using EDI standards (e.g., ANSI X12, EDIFACT) and associated translation\/mapping tools for automated invoicing.",
+            "parent_skill": "AR automation & e-invoicing",
+            "related_skills": [
+                "API integration for ERP\/billing systems",
+                "E-invoicing compliance (standards & local regulation)",
+                "Invoice data mapping & master data management"
+            ],
+            "keywords": [
+                "EDI",
+                "ANSI X12",
+                "EDIFACT",
+                "translation",
+                "mapping"
+            ],
+            "common_roles": [
+                "ERP Integration Developer",
+                "Order-to-Cash Specialist",
+                "B2B Integration Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "OCR & Intelligent Document Processing (IDP) for invoices",
+            "aliases": [
+                "invoice OCR",
+                "IDP invoice capture",
+                "document capture for invoicing"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Applying optical character recognition and machine-learning based document processing to extract structured invoice data from scanned or PDF invoices for downstream AR automation.",
+            "parent_skill": "AR automation & e-invoicing",
+            "related_skills": [
+                "Invoice validation & exception handling automation",
+                "Invoice data mapping & master data management",
+                "Cash application automation"
+            ],
+            "keywords": [
+                "OCR",
+                "IDP",
+                "invoice capture",
+                "ML extraction",
+                "document classification"
+            ],
+            "common_roles": [
+                "Accounts Receivable Analyst",
+                "Automation Engineer",
+                "Data Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Robotic Process Automation (RPA) for Accounts Receivable",
+            "aliases": [
+                "RPA AR",
+                "robotic process automation for O2C",
+                "bots for accounts receivable"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using RPA platforms to automate repetitive Accounts Receivable tasks such as invoice posting, statement generation, and basic reconciliations, including bot design, deployment and maintenance.",
+            "parent_skill": "AR automation & e-invoicing",
+            "related_skills": [
+                "Cash application automation",
+                "Invoice validation & exception handling automation",
+                "API integration for ERP\/billing systems"
+            ],
+            "keywords": [
+                "RPA",
+                "bots",
+                "automation",
+                "UiPath",
+                "automation workflows"
+            ],
+            "common_roles": [
+                "Automation Engineer",
+                "Order-to-Cash Specialist",
+                "Finance Operations Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash application automation",
+            "aliases": [
+                "automated cash posting",
+                "auto-cash application",
+                "electronic cash application"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Automating the allocation of incoming payments to open invoices using rule-based matching, remittance data parsing, lockbox processing and algorithmic matching to reduce manual cash posting.",
+            "parent_skill": "AR automation & e-invoicing",
+            "related_skills": [
+                "Automated payment reconciliation",
+                "OCR & Intelligent Document Processing (IDP) for invoices",
+                "Invoice data mapping & master data management"
+            ],
+            "keywords": [
+                "cash application",
+                "remittance",
+                "auto-allocation",
+                "lockbox",
+                "payment matching"
+            ],
+            "common_roles": [
+                "Accounts Receivable Analyst",
+                "Cash Application Specialist",
+                "Order-to-Cash Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated payment reconciliation",
+            "aliases": [
+                "payment reconciliation automation",
+                "auto reconciliation",
+                "electronic reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing automated reconciliation between bank\/payment provider records and ledger\/invoice data, including inbound payment normalization, exception detection and suggested postings.",
+            "parent_skill": "AR automation & e-invoicing",
+            "related_skills": [
+                "Cash application automation",
+                "API integration for ERP\/billing systems",
+                "Invoice validation & exception handling automation"
+            ],
+            "keywords": [
+                "reconciliation",
+                "bank feed",
+                "payment provider",
+                "match rules",
+                "exceptions"
+            ],
+            "common_roles": [
+                "Payments Analyst",
+                "Finance Operations Analyst",
+                "Order-to-Cash Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "API integration for ERP\/billing systems",
+            "aliases": [
+                "AR API integration",
+                "ERP integration for invoicing",
+                "billing system APIs"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Designing and implementing API-based integrations between e-invoicing\/automation platforms and ERP or billing systems to enable real-time invoice exchange, payment status updates and automated posting.",
+            "parent_skill": "AR automation & e-invoicing",
+            "related_skills": [
+                "EDI invoicing (ANSI X12, EDIFACT)",
+                "Robotic Process Automation (RPA) for Accounts Receivable",
+                "Automated payment reconciliation"
+            ],
+            "keywords": [
+                "APIs",
+                "REST",
+                "SOAP",
+                "webhooks",
+                "ERP"
+            ],
+            "common_roles": [
+                "ERP Integration Developer",
+                "Integration Architect",
+                "Finance Systems Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Invoice validation & exception handling automation",
+            "aliases": [
+                "automated invoice validation",
+                "exception workflow automation",
+                "invoice matching automation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating automated validation checks, business-rule engines and exception workflows to detect invoice errors, route discrepancies for investigation and reduce manual interventions.",
+            "parent_skill": "AR automation & e-invoicing",
+            "related_skills": [
+                "OCR & Intelligent Document Processing (IDP) for invoices",
+                "Order-to-Cash workflow automation & orchestration",
+                "Cash application automation"
+            ],
+            "keywords": [
+                "validation rules",
+                "exceptions",
+                "business rules",
+                "workflow",
+                "invoice matching"
+            ],
+            "common_roles": [
+                "Accounts Receivable Analyst",
+                "Order-to-Cash Manager",
+                "Process Improvement Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Order-to-Cash workflow automation & orchestration",
+            "aliases": [
+                "O2C automation",
+                "order-to-cash orchestration",
+                "end-to-end O2C automation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and implementing end-to-end automation across order-to-cash: order capture, billing\/e-invoicing, payment processing, collections and reporting, including orchestration across systems and teams.",
+            "parent_skill": "AR automation & e-invoicing",
+            "related_skills": [
+                "Invoice validation & exception handling automation",
+                "Cash application automation",
+                "API integration for ERP\/billing systems"
+            ],
+            "keywords": [
+                "O2C",
+                "orchestration",
+                "end-to-end automation",
+                "process mapping",
+                "touchless"
+            ],
+            "common_roles": [
+                "Order-to-Cash Manager",
+                "Finance Automation Engineer",
+                "Process Architect"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Invoice data mapping & master data management",
+            "aliases": [
+                "invoice data mapping",
+                "master data management for invoicing",
+                "MDM for AR"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Building and maintaining accurate data models, mapping rules and master data (customer, GL, tax codes) to ensure reliable invoice processing, matching and reporting in automated AR systems.",
+            "parent_skill": "AR automation & e-invoicing",
+            "related_skills": [
+                "EDI invoicing (ANSI X12, EDIFACT)",
+                "OCR & Intelligent Document Processing (IDP) for invoices",
+                "Cash application automation"
+            ],
+            "keywords": [
+                "data mapping",
+                "master data",
+                "customer master",
+                "GL mapping",
+                "tax codes"
+            ],
+            "common_roles": [
+                "Data Analyst",
+                "Accounts Receivable Analyst",
+                "Finance Systems Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,267 @@
+{
+    "domain": "Finance",
+    "category": "Finance Data, Systems & Automation",
+    "subcategory": "Financial data governance",
+    "skills": [
+        {
+            "canonical_name": "Financial data governance framework design",
+            "aliases": [
+                "finance data governance framework",
+                "governance framework for financial data",
+                "data governance framework (finance)"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and documenting the policies, roles, processes, and metrics that define how financial data is governed across the organization.",
+            "parent_skill": "Financial data governance",
+            "related_skills": [
+                "Data stewardship and role-based governance (financial data)",
+                "Financial metadata management",
+                "Financial data quality management"
+            ],
+            "keywords": [
+                "policy",
+                "roles",
+                "process design",
+                "operating model",
+                "RACI"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial data lineage and mapping",
+            "aliases": [
+                "data lineage (finance)",
+                "financial data mapping",
+                "data flow mapping for financial data"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Identifying, documenting and validating the origin, transformations, and destination of financial data across systems and processes.",
+            "parent_skill": "Financial data governance",
+            "related_skills": [
+                "Financial metadata management",
+                "ETL and data pipeline governance (finance)",
+                "Data cataloging and discovery for finance"
+            ],
+            "keywords": [
+                "lineage",
+                "traceability",
+                "mapping",
+                "data flow",
+                "sources"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial metadata management",
+            "aliases": [
+                "finance metadata management",
+                "metadata governance (financial data)",
+                "business glossaries for finance"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Creating and maintaining metadata, business glossaries, and semantic models to ensure financial data is discoverable, well-defined and consistent.",
+            "parent_skill": "Financial data governance",
+            "related_skills": [
+                "Data cataloging and discovery for finance",
+                "Financial data lineage and mapping",
+                "Financial data classification and sensitivity labeling"
+            ],
+            "keywords": [
+                "metadata",
+                "business glossary",
+                "definitions",
+                "taxonomies",
+                "semantic model"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial data quality management",
+            "aliases": [
+                "data quality (financial)",
+                "financial data validation and profiling",
+                "DQ management for finance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Establishing and operating data quality rules, monitoring, profiling and remediation processes specific to financial datasets to ensure accuracy and completeness.",
+            "parent_skill": "Financial data governance",
+            "related_skills": [
+                "Financial metadata management",
+                "ETL and data pipeline governance (finance)",
+                "Financial data lineage and mapping"
+            ],
+            "keywords": [
+                "data quality",
+                "profiling",
+                "validation rules",
+                "cleansing",
+                "monitoring"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Master data management (financial entities)",
+            "aliases": [
+                "financial MDM",
+                "master data governance (finance)",
+                "reference data management for finance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing canonical records and authoritative reference data for financial entities (accounts, instruments, counterparties) including matching, consolidation and synchronization.",
+            "parent_skill": "Financial data governance",
+            "related_skills": [
+                "Financial data quality management",
+                "Financial metadata management",
+                "Data cataloging and discovery for finance"
+            ],
+            "keywords": [
+                "MDM",
+                "reference data",
+                "golden record",
+                "entity resolution",
+                "synchronization"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory reporting data governance",
+            "aliases": [
+                "regulatory data governance (finance)",
+                "compliance data governance",
+                "reporting data governance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Governance practices and controls to ensure financial data used for regulatory and statutory reporting is complete, auditable and compliant with reporting rules.",
+            "parent_skill": "Financial data governance",
+            "related_skills": [
+                "Financial data retention, archival and lifecycle management",
+                "Financial data lineage and mapping",
+                "Financial data access control and security governance"
+            ],
+            "keywords": [
+                "regulatory reporting",
+                "auditability",
+                "compliance",
+                "data controls",
+                "reporting lineage"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial data access control and security governance",
+            "aliases": [
+                "data access governance (finance)",
+                "financial data security governance",
+                "role-based access governance for financial data"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Defining and enforcing access controls, segregation of duties, encryption and monitoring to protect financial data and meet privacy and security requirements.",
+            "parent_skill": "Financial data governance",
+            "related_skills": [
+                "Data classification and sensitivity labeling (financial data)",
+                "Financial metadata management",
+                "Regulatory reporting data governance"
+            ],
+            "keywords": [
+                "access control",
+                "RBAC",
+                "security",
+                "encryption",
+                "monitoring"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data cataloging and discovery for finance",
+            "aliases": [
+                "financial data cataloging",
+                "data discovery (financial)",
+                "catalog implementation for finance"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implementing and operating catalogs and discovery processes that index financial datasets, metadata and lineage to enable search, governance and reuse.",
+            "parent_skill": "Financial data governance",
+            "related_skills": [
+                "Financial metadata management",
+                "Financial data lineage and mapping",
+                "Financial data quality management"
+            ],
+            "keywords": [
+                "data catalog",
+                "discovery",
+                "indexing",
+                "search",
+                "dataset inventory"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data classification and sensitivity labeling (financial data)",
+            "aliases": [
+                "financial data classification",
+                "sensitivity labeling (finance)",
+                "data sensitivity classification"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Applying classification schemes and labels to financial data to identify sensitivity, impact and handling requirements for security, sharing and retention decisions.",
+            "parent_skill": "Financial data governance",
+            "related_skills": [
+                "Financial data access control and security governance",
+                "Financial data retention, archival and lifecycle management",
+                "Financial metadata management"
+            ],
+            "keywords": [
+                "classification",
+                "sensitivity",
+                "labels",
+                "handling rules",
+                "data protection"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial data retention, archival and lifecycle management",
+            "aliases": [
+                "data retention (financial)",
+                "archival policies for finance",
+                "data lifecycle management (financial)"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Defining and operating retention, archival, purge and restoration policies for financial data to meet regulatory, legal and business requirements.",
+            "parent_skill": "Financial data governance",
+            "related_skills": [
+                "Regulatory reporting data governance",
+                "Data classification and sensitivity labeling (financial data)",
+                "Financial data access control and security governance"
+            ],
+            "keywords": [
+                "retention",
+                "archival",
+                "purge",
+                "lifecycle",
+                "restore"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,288 @@
+{
+    "domain": "F&B",
+    "category": "Food Preparation & Cooking Operations",
+    "subcategory": "Cold kitchen & garde manger",
+    "skills": [
+        {
+            "canonical_name": "Garde-manger mise en place",
+            "aliases": [
+                "Cold kitchen mise en place",
+                "Garde manger miseup",
+                "Cold station mise en place"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Planning, organizing and preparing all ingredients, tools and workstation layout specific to the cold kitchen (garde-manger) before service.",
+            "parent_skill": "Cold kitchen & garde manger",
+            "related_skills": [
+                "Precision knife skills (cold prep)",
+                "Cold plating and garnish presentation",
+                "Sandwich, canapé and hors d'oeuvre assembly"
+            ],
+            "keywords": [
+                "mise en place",
+                "prep",
+                "station setup",
+                "garde-manger prep"
+            ],
+            "common_roles": [
+                "kitchen staff",
+                "culinary staff",
+                "food production staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Precision knife skills (cold prep)",
+            "aliases": [
+                "Cold prep knife skills",
+                "Garde-manger knife work",
+                "Fine knife skills (cold)"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Accurate cutting, julienne, batonnet, brunoise and thin slicing techniques applied to vegetables, fruits and cold proteins for cold preparations.",
+            "parent_skill": "Cold kitchen & garde manger",
+            "related_skills": [
+                "Garde-manger mise en place",
+                "Charcuterie slicing & presentation",
+                "Terrine and pâté fabrication"
+            ],
+            "keywords": [
+                "julienne",
+                "brunoise",
+                "thin slicing",
+                "knife handling"
+            ],
+            "common_roles": [
+                "kitchen staff",
+                "culinary staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Charcuterie slicing & presentation",
+            "aliases": [
+                "Charcuterie board assembly",
+                "Cured meat slicing",
+                "Cold cuts presentation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Preparing, thinly slicing, arranging and styling cured meats and accompaniments (cheeses, pickles, breads) for service and platters.",
+            "parent_skill": "Cold kitchen & garde manger",
+            "related_skills": [
+                "Precision knife skills (cold prep)",
+                "Cold plating and garnish presentation",
+                "Curing and cold preservation techniques"
+            ],
+            "keywords": [
+                "charcuterie",
+                "platter",
+                "meat slicing",
+                "presentation"
+            ],
+            "common_roles": [
+                "culinary staff",
+                "food service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Curing and cold preservation techniques",
+            "aliases": [
+                "Meat curing",
+                "Dry curing and wet curing",
+                "Cold preservation methods"
+            ],
+            "skill_type": "process_skill",
+            "description": "Techniques for preserving proteins and other ingredients at low temperatures, including salting, curing, smoking and controlled cold maturation.",
+            "parent_skill": "Cold kitchen & garde manger",
+            "related_skills": [
+                "Charcuterie slicing & presentation",
+                "Pickling and quick preservation",
+                "Cold chain management & temperature control"
+            ],
+            "keywords": [
+                "curing",
+                "salting",
+                "cold maturation",
+                "smoking"
+            ],
+            "common_roles": [
+                "culinary staff",
+                "food production staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Terrine and pâté fabrication",
+            "aliases": [
+                "Terrine making",
+                "Pâté production",
+                "Mousse and forcemeat preparation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Formulating, seasoning, binding and molding forcemeats, terrines and pâtés, including proper chilling and glazing techniques for cold service.",
+            "parent_skill": "Cold kitchen & garde manger",
+            "related_skills": [
+                "Precision knife skills (cold prep)",
+                "Garde-manger mise en place",
+                "Cold chain management & temperature control"
+            ],
+            "keywords": [
+                "terrine",
+                "pâté",
+                "forcemeat",
+                "molding"
+            ],
+            "common_roles": [
+                "culinary staff",
+                "kitchen staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Emulsified dressings and cold sauces",
+            "aliases": [
+                "Mayonnaise preparation",
+                "Vinaigrette emulsions",
+                "Cold sauce making"
+            ],
+            "skill_type": "process_skill",
+            "description": "Preparing stable emulsions and cold sauces (mayonnaises, vinaigrettes, aioli) with balanced seasoning and texture for salads and cold dishes.",
+            "parent_skill": "Cold kitchen & garde manger",
+            "related_skills": [
+                "Salad composition and dressing",
+                "Pickling and quick preservation",
+                "Cold plating and garnish presentation"
+            ],
+            "keywords": [
+                "emulsion",
+                "mayonnaise",
+                "vinaigrette",
+                "aioli"
+            ],
+            "common_roles": [
+                "culinary staff",
+                "kitchen staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sandwich, canapé and hors d'oeuvre assembly",
+            "aliases": [
+                "Canapé assembly",
+                "Cold hors d'oeuvre prep",
+                "Sandwich station assembly"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Efficient construction and finishing of sandwiches, canapés and bite-sized cold appetizers to specification and portion control for service.",
+            "parent_skill": "Cold kitchen & garde manger",
+            "related_skills": [
+                "Garde-manger mise en place",
+                "Emulsified dressings and cold sauces",
+                "Cold plating and garnish presentation"
+            ],
+            "keywords": [
+                "canapés",
+                "sandwiches",
+                "hors d'oeuvre",
+                "assembly"
+            ],
+            "common_roles": [
+                "culinary staff",
+                "food production staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cold plating and garnish presentation",
+            "aliases": [
+                "Cold dish plating",
+                "Garde-manger presentation",
+                "Cold plate finishing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Compositional layout, garnishing and finishing techniques specific to cold plates and platters that enhance visual appeal and maintain temperature integrity.",
+            "parent_skill": "Cold kitchen & garde manger",
+            "related_skills": [
+                "Charcuterie slicing & presentation",
+                "Emulsified dressings and cold sauces",
+                "Garde-manger mise en place"
+            ],
+            "keywords": [
+                "plating",
+                "garnish",
+                "presentation",
+                "cold plates"
+            ],
+            "common_roles": [
+                "culinary staff",
+                "kitchen staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Pickling and quick preservation",
+            "aliases": [
+                "Quick pickling",
+                "Brining for cold dishes",
+                "Refrigerated fermentation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Short-term preservation techniques such as quick pickling, brining and refrigerated lacto-fermentation used to add flavor and extend shelf life in cold preparations.",
+            "parent_skill": "Cold kitchen & garde manger",
+            "related_skills": [
+                "Curing and cold preservation techniques",
+                "Emulsified dressings and cold sauces",
+                "Cold chain management & temperature control"
+            ],
+            "keywords": [
+                "pickling",
+                "brine",
+                "lacto-fermentation",
+                "quick preserve"
+            ],
+            "common_roles": [
+                "culinary staff",
+                "food production staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cold chain management and temperature control",
+            "aliases": [
+                "Cold storage control",
+                "Refrigeration monitoring",
+                "Temperature-controlled storage"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Maintaining and monitoring refrigerated storage conditions, logging temperatures, and applying cold-chain best practices to ensure food safety and regulatory compliance.",
+            "parent_skill": "Cold kitchen & garde manger",
+            "related_skills": [
+                "Garde-manger mise en place",
+                "Terrine and pâté fabrication",
+                "Pickling and quick preservation"
+            ],
+            "keywords": [
+                "cold chain",
+                "temperature log",
+                "refrigeration",
+                "food safety"
+            ],
+            "common_roles": [
+                "kitchen staff",
+                "food production staff"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,307 @@
+{
+    "domain": "IT",
+    "category": "Data Engineering & Integration",
+    "subcategory": "Data platform operations",
+    "skills": [
+        {
+            "canonical_name": "Data platform monitoring and observability",
+            "aliases": [
+                "data observability",
+                "platform monitoring",
+                "data pipeline monitoring",
+                "telemetry for data platforms"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and operating monitoring, metrics, logging and tracing specifically for data platforms and pipelines to detect, alert and diagnose data quality and operational issues.",
+            "parent_skill": "Data platform operations",
+            "related_skills": [
+                "Incident management and on-call for data systems",
+                "CI\/CD for data pipelines",
+                "Database performance tuning"
+            ],
+            "keywords": [
+                "observability",
+                "metrics",
+                "logging",
+                "tracing",
+                "data quality monitoring",
+                "SLIs",
+                "SLOs"
+            ],
+            "common_roles": [
+                "data engineering teams",
+                "platform engineering teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ETL\/ELT orchestration and scheduling",
+            "aliases": [
+                "workflow orchestration",
+                "data pipeline scheduling",
+                "job scheduling for ETL",
+                "pipeline orchestration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, operating and optimizing orchestration of batch and streaming extract-transform-load\/ELT jobs, including dependency management, retries and SLA enforcement.",
+            "parent_skill": "Data platform operations",
+            "related_skills": [
+                "CI\/CD for data pipelines",
+                "Data platform monitoring and observability",
+                "Backup and disaster recovery for data platforms"
+            ],
+            "keywords": [
+                "Airflow",
+                "Dag scheduling",
+                "workflow",
+                "cron",
+                "dependencies",
+                "retries",
+                "SLA"
+            ],
+            "common_roles": [
+                "data engineering teams",
+                "platform engineering teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "CI\/CD for data pipelines",
+            "aliases": [
+                "data pipeline continuous integration",
+                "data pipeline continuous delivery",
+                "pipeline deployment automation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying continuous integration and continuous delivery practices to data pipelines and platform code, including automated testing, schema checks, and automated deployments.",
+            "parent_skill": "Data platform operations",
+            "related_skills": [
+                "ETL\/ELT orchestration and scheduling",
+                "Infrastructure as Code (IaC) for data platforms",
+                "Schema management and migration for data warehouses"
+            ],
+            "keywords": [
+                "CI\/CD",
+                "automated testing",
+                "deployment pipeline",
+                "unit tests",
+                "integration tests"
+            ],
+            "common_roles": [
+                "data engineering teams",
+                "platform engineering teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Database performance tuning",
+            "aliases": [
+                "query performance tuning",
+                "DB tuning",
+                "indexing and query optimization"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Optimizing database and data warehouse performance through query optimization, indexing, partitioning, statistics, execution plans and configuration tuning for OLAP\/OLTP workloads.",
+            "parent_skill": "Data platform operations",
+            "related_skills": [
+                "Data platform monitoring and observability",
+                "Capacity planning and autoscaling for data platforms",
+                "Schema management and migration for data warehouses"
+            ],
+            "keywords": [
+                "query optimization",
+                "indexing",
+                "partitioning",
+                "execution plan",
+                "optimizer stats",
+                "latency"
+            ],
+            "common_roles": [
+                "data engineering teams",
+                "platform engineering teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Backup, recovery and disaster recovery for data platforms",
+            "aliases": [
+                "data backup and restore",
+                "DR for data systems",
+                "disaster recovery planning for data platforms"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and operating backup, restore and disaster recovery strategies for data storage and processing systems to meet recovery time and recovery point objectives.",
+            "parent_skill": "Data platform operations",
+            "related_skills": [
+                "Incident management and on-call for data systems",
+                "ETL\/ELT orchestration and scheduling",
+                "Data platform monitoring and observability"
+            ],
+            "keywords": [
+                "backup",
+                "restore",
+                "RTO",
+                "RPO",
+                "replication",
+                "failover"
+            ],
+            "common_roles": [
+                "data engineering teams",
+                "platform engineering teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Capacity planning and autoscaling for data platforms",
+            "aliases": [
+                "resource planning for data systems",
+                "scaling data platforms",
+                "capacity management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Forecasting resource needs, designing autoscaling policies and right-sizing compute\/storage to ensure performance and cost-efficiency for data processing and storage systems.",
+            "parent_skill": "Data platform operations",
+            "related_skills": [
+                "Database performance tuning",
+                "Cost optimization for cloud data platforms",
+                "Infrastructure as Code (IaC) for data platforms"
+            ],
+            "keywords": [
+                "autoscaling",
+                "right-sizing",
+                "capacity forecasting",
+                "throughput",
+                "resource utilization"
+            ],
+            "common_roles": [
+                "data engineering teams",
+                "platform engineering teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Infrastructure as Code (IaC) for data platforms",
+            "aliases": [
+                "IaC for data systems",
+                "infrastructure automation for data platforms",
+                "declarative infra for data workloads"
+            ],
+            "skill_type": "process_skill",
+            "description": "Managing data platform infrastructure through declarative code and automation (versioned templates, modules, and pipelines) to provision, configure and reproduce environments reliably.",
+            "parent_skill": "Data platform operations",
+            "related_skills": [
+                "CI\/CD for data pipelines",
+                "Capacity planning and autoscaling for data platforms",
+                "Backup, recovery and disaster recovery for data platforms"
+            ],
+            "keywords": [
+                "Terraform",
+                "CloudFormation",
+                "ARM",
+                "automation",
+                "provisioning",
+                "immutable infrastructure"
+            ],
+            "common_roles": [
+                "platform engineering teams",
+                "data engineering teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data platform security operations",
+            "aliases": [
+                "data security operations",
+                "data access controls",
+                "encryption and key management for data platforms"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Implementing and operating security controls for data platforms, including access management, encryption, key management, auditing and compliance-related monitoring.",
+            "parent_skill": "Data platform operations",
+            "related_skills": [
+                "Backup, recovery and disaster recovery for data platforms",
+                "Schema management and migration for data warehouses",
+                "Data platform monitoring and observability"
+            ],
+            "keywords": [
+                "access control",
+                "encryption",
+                "IAM",
+                "audit logs",
+                "data masking",
+                "KMS"
+            ],
+            "common_roles": [
+                "platform engineering teams",
+                "data engineering teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Incident management and on-call for data systems",
+            "aliases": [
+                "data ops incident response",
+                "on-call for data platforms",
+                "root cause analysis for data incidents"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing operational incidents affecting data systems, including alert triage, escalation, runbook execution, post-incident analysis and continuous improvement of runbooks and tooling.",
+            "parent_skill": "Data platform operations",
+            "related_skills": [
+                "Data platform monitoring and observability",
+                "Backup, recovery and disaster recovery for data platforms",
+                "Data platform security operations"
+            ],
+            "keywords": [
+                "on-call",
+                "incident response",
+                "runbook",
+                "postmortem",
+                "RCA"
+            ],
+            "common_roles": [
+                "platform engineering teams",
+                "data engineering teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Schema management and migration for data warehouses",
+            "aliases": [
+                "schema evolution",
+                "data model migration",
+                "DDL migrations for warehouses"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing, versioning and applying schema changes safely in data warehouses and lakehouses, including migration strategies, backward\/forward compatibility and data migration testing.",
+            "parent_skill": "Data platform operations",
+            "related_skills": [
+                "CI\/CD for data pipelines",
+                "Database performance tuning",
+                "Data platform monitoring and observability"
+            ],
+            "keywords": [
+                "schema evolution",
+                "migrations",
+                "DDL",
+                "backfill",
+                "compatibility"
+            ],
+            "common_roles": [
+                "data engineering teams",
+                "platform engineering teams"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

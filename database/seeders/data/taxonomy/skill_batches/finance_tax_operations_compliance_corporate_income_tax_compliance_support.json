@@ -1,0 +1,264 @@
+{
+    "domain": "Finance",
+    "category": "Tax Operations & Compliance",
+    "subcategory": "Corporate income tax compliance support",
+    "skills": [
+        {
+            "canonical_name": "Corporate income tax return preparation",
+            "aliases": [
+                "Corporate tax return preparation",
+                "CIT return preparation",
+                "Company tax return filing support"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Preparing and assembling data, schedules and calculations needed to complete corporate income tax returns in accordance with local tax law and filing requirements.",
+            "parent_skill": "Corporate income tax compliance support",
+            "related_skills": [
+                "Tax data reconciliation and analysis",
+                "Tax compliance calendar management",
+                "Withholding tax compliance and reporting"
+            ],
+            "keywords": [
+                "tax return",
+                "corporate tax",
+                "tax schedules",
+                "return preparation",
+                "filing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax provision support (ASC 740 \/ IAS 12)",
+            "aliases": [
+                "Tax provision assistance",
+                "Deferred tax calculations",
+                "Income tax provision support"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Assisting in preparation of tax provisions including current and deferred tax calculations, temporary differences, tax rate application and disclosure support under ASC 740 \/ IAS 12 frameworks.",
+            "parent_skill": "Corporate income tax compliance support",
+            "related_skills": [
+                "Corporate tax provision software",
+                "Tax data reconciliation and analysis",
+                "Permanent establishment & cross-border tax analysis"
+            ],
+            "keywords": [
+                "ASC 740",
+                "IAS 12",
+                "deferred tax",
+                "current tax",
+                "provision"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax data reconciliation and analysis",
+            "aliases": [
+                "Tax data reconciliation",
+                "Tax account reconciliations",
+                "Tax data analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Reconciling tax-related balances to accounting subledgers, trial balance and tax returns; analyzing variances and preparing supporting analyses for tax filings and provisions.",
+            "parent_skill": "Corporate income tax compliance support",
+            "related_skills": [
+                "Tax provision support (ASC 740 \/ IAS 12)",
+                "Corporate income tax return preparation",
+                "Corporate tax provision software"
+            ],
+            "keywords": [
+                "reconciliation",
+                "variance analysis",
+                "tax accounts",
+                "trial balance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax compliance calendar management",
+            "aliases": [
+                "Tax filing calendar management",
+                "Tax compliance scheduling",
+                "Filing deadline coordination"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating and maintaining tax filing calendars, tracking deadlines, coordinating submissions across jurisdictions and ensuring timely filing and payment activities.",
+            "parent_skill": "Corporate income tax compliance support",
+            "related_skills": [
+                "Corporate income tax return preparation",
+                "Withholding tax compliance and reporting",
+                "Tax audit & stakeholder communication"
+            ],
+            "keywords": [
+                "filing calendar",
+                "deadlines",
+                "compliance calendar",
+                "submission coordination"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Transfer pricing documentation support",
+            "aliases": [
+                "TP documentation support",
+                "Transfer pricing compliance support",
+                "Intercompany pricing documentation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Supporting preparation and review of transfer pricing documentation, benchmarking analyses and local file\/global file deliverables to meet regulatory requirements.",
+            "parent_skill": "Corporate income tax compliance support",
+            "related_skills": [
+                "Intercompany transaction tax support",
+                "Permanent establishment & cross-border tax analysis",
+                "Tax audit & stakeholder communication"
+            ],
+            "keywords": [
+                "transfer pricing",
+                "local file",
+                "global file",
+                "benchmarking",
+                "intercompany"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intercompany transaction tax support",
+            "aliases": [
+                "Intercompany tax support",
+                "Intercompany transaction analysis",
+                "Intercompany tax compliance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Analyzing tax implications of intercompany transactions, supporting tax reporting and documentation for cross-entity trades, and coordinating adjustments across finance and tax systems.",
+            "parent_skill": "Corporate income tax compliance support",
+            "related_skills": [
+                "Transfer pricing documentation support",
+                "Tax data reconciliation and analysis",
+                "Corporate income tax return preparation"
+            ],
+            "keywords": [
+                "intercompany",
+                "transfer pricing",
+                "intercompany charges",
+                "tax implications"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Withholding tax compliance and reporting",
+            "aliases": [
+                "Withholding tax management",
+                "WHT compliance",
+                "Withholding tax reporting"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Determining withholding tax obligations on payments to vendors and related parties, preparing filings and certificates, and ensuring proper withholding, remittance and documentation.",
+            "parent_skill": "Corporate income tax compliance support",
+            "related_skills": [
+                "Corporate income tax return preparation",
+                "Tax compliance calendar management",
+                "Intercompany transaction tax support"
+            ],
+            "keywords": [
+                "withholding tax",
+                "WHT",
+                "remittance",
+                "tax certificates",
+                "reporting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Permanent establishment and cross-border tax analysis",
+            "aliases": [
+                "PE analysis",
+                "Cross-border tax analysis",
+                "Permanent establishment assessment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Assessing whether business activities create a permanent establishment in other jurisdictions, analyzing cross-border tax exposure and advising on tax residency and allocation of income.",
+            "parent_skill": "Corporate income tax compliance support",
+            "related_skills": [
+                "Transfer pricing documentation support",
+                "Intercompany transaction tax support",
+                "Tax provision support (ASC 740 \/ IAS 12)"
+            ],
+            "keywords": [
+                "permanent establishment",
+                "PE",
+                "cross-border",
+                "tax residency",
+                "international tax"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Corporate tax provision software",
+            "aliases": [
+                "Tax provision software",
+                "Provisioning software (ONESOURCE, Corptax)",
+                "Income tax provisioning tools"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using corporate tax provision and compliance software tools to calculate provisions, manage tax data, generate reports and support tax return preparation and filings.",
+            "parent_skill": "Corporate income tax compliance support",
+            "related_skills": [
+                "Tax provision support (ASC 740 \/ IAS 12)",
+                "Tax data reconciliation and analysis",
+                "Corporate income tax return preparation"
+            ],
+            "keywords": [
+                "ONESOURCE",
+                "Corptax",
+                "tax software",
+                "provisioning",
+                "tax systems"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax audit & stakeholder communication",
+            "aliases": [
+                "Tax audit support",
+                "Audit liaison for tax",
+                "Tax documentation and audit communication"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Preparing documentation and responding to inquiries during tax audits, coordinating with external auditors and internal stakeholders, and communicating tax positions and supporting evidence clearly.",
+            "parent_skill": "Corporate income tax compliance support",
+            "related_skills": [
+                "Tax compliance calendar management",
+                "Transfer pricing documentation support",
+                "Corporate income tax return preparation"
+            ],
+            "keywords": [
+                "tax audit",
+                "audit liaison",
+                "documentation",
+                "stakeholder communication",
+                "tax inquiries"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

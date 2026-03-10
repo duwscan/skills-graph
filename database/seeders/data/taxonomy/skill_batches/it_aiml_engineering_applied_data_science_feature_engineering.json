@@ -1,0 +1,276 @@
+{
+    "domain": "IT",
+    "category": "AI\/ML Engineering & Applied Data Science",
+    "subcategory": "Feature engineering",
+    "skills": [
+        {
+            "canonical_name": "Feature selection",
+            "aliases": [
+                "variable selection",
+                "feature subset selection",
+                "feature scoring"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Techniques and practices to identify the most predictive or relevant features from a candidate set, including filter, wrapper, and embedded methods.",
+            "parent_skill": "Feature engineering",
+            "related_skills": [
+                "Feature importance & interpretability",
+                "Dimensionality reduction",
+                "Feature construction"
+            ],
+            "keywords": [
+                "filter methods",
+                "wrapper methods",
+                "embedded methods",
+                "recursive feature elimination",
+                "feature ranking"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Feature construction",
+            "aliases": [
+                "feature generation",
+                "feature creation",
+                "derived features",
+                "feature engineering (construction)"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and creating new features from raw data (interactions, polynomials, aggregations, binnings) to improve model signal.",
+            "parent_skill": "Feature engineering",
+            "related_skills": [
+                "Feature selection",
+                "Time-series feature engineering",
+                "Text feature engineering",
+                "Numerical scaling & normalization"
+            ],
+            "keywords": [
+                "feature interactions",
+                "polynomial features",
+                "binning",
+                "aggregation",
+                "one-hot"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Categorical encoding",
+            "aliases": [
+                "encoding categorical variables",
+                "label encoding",
+                "one-hot encoding",
+                "target encoding",
+                "ordinal encoding",
+                "frequency encoding"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Methods to convert categorical variables into numeric representations suitable for ML models, including low-cardinality and high-cardinality strategies.",
+            "parent_skill": "Feature engineering",
+            "related_skills": [
+                "Feature construction",
+                "Feature selection",
+                "Feature importance & interpretability"
+            ],
+            "keywords": [
+                "one-hot",
+                "dummy variables",
+                "target encoding",
+                "hashing trick",
+                "embedding"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Numerical scaling & normalization",
+            "aliases": [
+                "feature scaling",
+                "standardization",
+                "min-max scaling",
+                "normalization"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying transformations to numeric features to ensure appropriate scale and distribution for model training (standard scaling, min-max, log transforms, robust scaling).",
+            "parent_skill": "Feature engineering",
+            "related_skills": [
+                "Missing value imputation",
+                "Outlier treatment",
+                "Feature pipelines & automation"
+            ],
+            "keywords": [
+                "standard scaler",
+                "minmax scaler",
+                "robust scaler",
+                "log transform",
+                "power transform"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Missing value imputation",
+            "aliases": [
+                "missing data handling",
+                "NA imputation",
+                "imputation strategies"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Techniques to handle missing or incomplete data in features, including simple imputations, model-based imputation, and indicator\/locality-aware strategies.",
+            "parent_skill": "Feature engineering",
+            "related_skills": [
+                "Numerical scaling & normalization",
+                "Categorical encoding",
+                "Feature pipelines & automation"
+            ],
+            "keywords": [
+                "mean imputation",
+                "median imputation",
+                "KNN imputation",
+                "multivariate imputation",
+                "missingness indicator"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Time-series feature engineering",
+            "aliases": [
+                "temporal feature engineering",
+                "lag feature creation",
+                "rolling window features",
+                "seasonal feature extraction"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Creating features specific to temporal data such as lags, rolling statistics, time-based aggregations, and calendar\/seasonality indicators for forecasting and sequence models.",
+            "parent_skill": "Feature engineering",
+            "related_skills": [
+                "Feature construction",
+                "Feature pipelines & automation",
+                "Feature importance & interpretability"
+            ],
+            "keywords": [
+                "lags",
+                "rolling mean",
+                "expanding window",
+                "time-based aggregation",
+                "seasonality"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Text feature engineering",
+            "aliases": [
+                "NLP feature engineering",
+                "text feature extraction",
+                "bag-of-words feature creation",
+                "n-gram features"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Transforming raw text into structured features such as bag-of-words, TF-IDF, n-grams, token counts, and engineered signals from linguistic metadata.",
+            "parent_skill": "Feature engineering",
+            "related_skills": [
+                "Feature construction",
+                "Feature selection",
+                "Embedding features for categorical variables"
+            ],
+            "keywords": [
+                "TF-IDF",
+                "n-grams",
+                "tokenization",
+                "stopword removal",
+                "char n-grams"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Feature pipelines & automation",
+            "aliases": [
+                "feature engineering pipelines",
+                "ETL for features",
+                "feature transformation pipelines",
+                "automated feature workflows"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, implementing, and automating repeatable feature transformation workflows (pipelines) for training and serving, including versioning, testing, and CI\/CD integration.",
+            "parent_skill": "Feature engineering",
+            "related_skills": [
+                "Feature store engineering",
+                "Numerical scaling & normalization",
+                "Missing value imputation"
+            ],
+            "keywords": [
+                "pipelines",
+                "orchestration",
+                "CI\/CD",
+                "data validation",
+                "reproducibility"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Feature store engineering",
+            "aliases": [
+                "feature registry management",
+                "feature serving",
+                "feature versioning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operational design and management of feature stores and registries: registering features, ensuring consistent offline\/online feature logic, versioning, and serving at scale.",
+            "parent_skill": "Feature engineering",
+            "related_skills": [
+                "Feature pipelines & automation",
+                "Feature pipelines & automation",
+                "Feature importance & interpretability"
+            ],
+            "keywords": [
+                "online serving",
+                "offline feature materialization",
+                "feature versioning",
+                "feature lineage",
+                "latency"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Feature importance & interpretability",
+            "aliases": [
+                "feature explainability",
+                "feature importance analysis",
+                "SHAP\/PD\/ICE analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing and explaining the influence of features on model predictions using global and local explainability methods (permutation importance, SHAP, partial dependence).",
+            "parent_skill": "Feature engineering",
+            "related_skills": [
+                "Feature selection",
+                "Feature construction",
+                "Categorical encoding"
+            ],
+            "keywords": [
+                "SHAP",
+                "LIME",
+                "partial dependence",
+                "permutation importance",
+                "feature contribution"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

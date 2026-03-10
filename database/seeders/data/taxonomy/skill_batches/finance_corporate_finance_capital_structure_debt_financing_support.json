@@ -1,0 +1,262 @@
+{
+    "domain": "Finance",
+    "category": "Corporate Finance & Capital Structure",
+    "subcategory": "Debt financing support",
+    "skills": [
+        {
+            "canonical_name": "Debt structuring",
+            "aliases": [
+                "capital stack modeling",
+                "capital structure optimization",
+                "structuring debt instruments"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Designing the mix, seniority, and terms of debt within a company’s capital structure to meet financing objectives and investor constraints.",
+            "parent_skill": "Debt financing support",
+            "related_skills": [
+                "Debt financial modeling",
+                "Loan pricing and interest rate analysis",
+                "Debt refinancing strategy"
+            ],
+            "keywords": [
+                "capital stack",
+                "seniority",
+                "subordination",
+                "mezzanine",
+                "senior debt"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Debt financial modeling",
+            "aliases": [
+                "debt modeling",
+                "leveraged finance modeling",
+                "debt schedule modeling",
+                "amortization schedule modeling"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Building and maintaining financial models that forecast cash flows, debt service capacity, amortization, covenant tests, and impacts of financing alternatives.",
+            "parent_skill": "Debt financing support",
+            "related_skills": [
+                "Debt structuring",
+                "Credit analysis (debt financing)",
+                "Covenant compliance monitoring and reporting"
+            ],
+            "keywords": [
+                "financial model",
+                "cash flow waterfall",
+                "debt schedule",
+                "DSCR",
+                "EBITDA"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Credit analysis (debt financing)",
+            "aliases": [
+                "credit underwriting for corporate debt",
+                "borrower credit analysis",
+                "credit risk assessment (debt)"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Assessing a borrower’s creditworthiness and repayment capacity through financial statement analysis, cash-flow stress testing, and risk factor evaluation.",
+            "parent_skill": "Debt financing support",
+            "related_skills": [
+                "Debt financial modeling",
+                "Loan pricing and interest rate analysis",
+                "Lender due diligence coordination"
+            ],
+            "keywords": [
+                "credit underwriting",
+                "default risk",
+                "cash flow analysis",
+                "coverage ratios"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Loan pricing and interest rate analysis",
+            "aliases": [
+                "loan pricing",
+                "interest rate modelling for loans",
+                "pricing of debt facilities"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluating and setting interest rates, spreads, margin structures, and pricing terms for loan facilities based on credit, market, and structural considerations.",
+            "parent_skill": "Debt financing support",
+            "related_skills": [
+                "Credit analysis (debt financing)",
+                "Debt structuring",
+                "Debt refinancing strategy"
+            ],
+            "keywords": [
+                "spread",
+                "margin",
+                "benchmark rate",
+                "yield",
+                "pricing grid"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Loan covenant negotiation",
+            "aliases": [
+                "covenant negotiation",
+                "negotiating loan covenants",
+                "financial covenant negotiation"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Negotiating the scope, triggers, thresholds, and remedial provisions of financial and non-financial loan covenants with lenders and legal advisers.",
+            "parent_skill": "Debt financing support",
+            "related_skills": [
+                "Debt documentation review (loan agreements)",
+                "Debt structuring",
+                "Covenant compliance monitoring and reporting"
+            ],
+            "keywords": [
+                "covenant package",
+                "maintenance covenants",
+                "incurrence covenants",
+                "negotiation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Loan syndication coordination",
+            "aliases": [
+                "syndicated loan management",
+                "syndication coordination",
+                "managing loan syndication processes"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Coordinating the distribution, allocation, and communication between arrangers, participating lenders, and the borrower during a syndicated loan raise.",
+            "parent_skill": "Debt financing support",
+            "related_skills": [
+                "Lender due diligence coordination",
+                "Debt documentation review (loan agreements)",
+                "Debt structuring"
+            ],
+            "keywords": [
+                "arranger",
+                "bookrunner",
+                "allocation",
+                "syndicate",
+                "commitment"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Lender due diligence coordination",
+            "aliases": [
+                "due diligence coordination (lenders)",
+                "managing lender due diligence",
+                "lender DD coordination"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing information requests, data room access, and coordination between advisers, management, and prospective lenders during credit due diligence.",
+            "parent_skill": "Debt financing support",
+            "related_skills": [
+                "Credit analysis (debt financing)",
+                "Loan syndication coordination",
+                "Debt documentation review (loan agreements)"
+            ],
+            "keywords": [
+                "data room",
+                "DD checklist",
+                "information memorandum",
+                "data requests"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Debt documentation review (loan agreements)",
+            "aliases": [
+                "loan agreement review",
+                "debt documentation analysis",
+                "reviewing credit agreements"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Reviewing and interpreting loan agreements, security documents, intercreditor agreements, and associated legal terms to identify obligations and risks.",
+            "parent_skill": "Debt financing support",
+            "related_skills": [
+                "Loan covenant negotiation",
+                "Lender due diligence coordination",
+                "Covenant compliance monitoring and reporting"
+            ],
+            "keywords": [
+                "credit agreement",
+                "security package",
+                "representations and warranties",
+                "events of default"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Debt refinancing strategy",
+            "aliases": [
+                "refinancing strategy",
+                "debt reprofiling",
+                "refinance execution planning"
+            ],
+            "skill_type": "methodology",
+            "description": "Developing and executing plans to refinance existing debt to improve terms, extend maturities, or adjust capital structure in response to market or company needs.",
+            "parent_skill": "Debt financing support",
+            "related_skills": [
+                "Debt structuring",
+                "Loan pricing and interest rate analysis",
+                "Loan syndication coordination"
+            ],
+            "keywords": [
+                "refinance",
+                "maturity extension",
+                "term-out",
+                "call strategy"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Covenant compliance monitoring and reporting",
+            "aliases": [
+                "covenant monitoring",
+                "loan covenant reporting",
+                "financial covenant tracking"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Establishing processes and controls to monitor covenant tests, produce compliance reports, and manage covenant breaches or waiver requests.",
+            "parent_skill": "Debt financing support",
+            "related_skills": [
+                "Debt financial modeling",
+                "Debt documentation review (loan agreements)",
+                "Loan covenant negotiation"
+            ],
+            "keywords": [
+                "compliance report",
+                "covenant test",
+                "breach management",
+                "waiver"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

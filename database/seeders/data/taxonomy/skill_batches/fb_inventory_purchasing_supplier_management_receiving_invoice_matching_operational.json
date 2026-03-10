@@ -1,0 +1,300 @@
+{
+    "domain": "F&B",
+    "category": "Inventory, Purchasing & Supplier Management",
+    "subcategory": "Receiving & invoice matching (operational)",
+    "skills": [
+        {
+            "canonical_name": "Goods receipt inspection",
+            "aliases": [
+                "incoming goods inspection",
+                "receiving inspection",
+                "goods receiving inspection",
+                "inspection at receipt"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Inspect incoming shipments for correct quantity, quality, labeling, temperature and visible damage against purchase orders and packing lists; document findings.",
+            "parent_skill": "Receiving & invoice matching (operational)",
+            "related_skills": [
+                "Dock-to-stock processing",
+                "Food safety receiving compliance",
+                "Shortage and damage claims management"
+            ],
+            "keywords": [
+                "inspection",
+                "receiving",
+                "quality check",
+                "quantity verification",
+                "temperature check"
+            ],
+            "common_roles": [
+                "Receiving Clerk",
+                "Warehouse Receiver",
+                "Inventory Controller",
+                "Quality Inspector"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Three-way match (PO\/receipt\/invoice)",
+            "aliases": [
+                "3-way matching",
+                "PO-receipt-invoice matching",
+                "purchase order matching"
+            ],
+            "skill_type": "process_skill",
+            "description": "Match purchase orders, goods receipts and supplier invoices to validate payment accuracy and identify discrepancies before accounts payable processing.",
+            "parent_skill": "Receiving & invoice matching (operational)",
+            "related_skills": [
+                "Invoice reconciliation",
+                "AP invoice approval workflow coordination",
+                "EDI invoice\/ASN processing"
+            ],
+            "keywords": [
+                "three-way match",
+                "PO matching",
+                "invoice verification",
+                "accounts payable"
+            ],
+            "common_roles": [
+                "Accounts Payable Clerk",
+                "Purchasing Coordinator",
+                "Inventory Accountant"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Invoice reconciliation",
+            "aliases": [
+                "invoice matching",
+                "supplier invoice reconciliation",
+                "invoice verification and reconciliation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyze and reconcile supplier invoices against POs, receipts and contracts; calculate adjustments, credits and flag issues for resolution.",
+            "parent_skill": "Receiving & invoice matching (operational)",
+            "related_skills": [
+                "Three-way match (PO\/receipt\/invoice)",
+                "Shortage and damage claims management",
+                "AP invoice approval workflow coordination"
+            ],
+            "keywords": [
+                "reconciliation",
+                "invoice analysis",
+                "variance investigation",
+                "credit notes"
+            ],
+            "common_roles": [
+                "Accounts Payable Clerk",
+                "Inventory Accountant",
+                "Purchasing Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Supplier ASN and delivery verification",
+            "aliases": [
+                "ASN matching",
+                "advanced shipping notice verification",
+                "delivery verification"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Validate supplier-provided advance shipping notices (ASNs) and delivery documents against actual receipts to confirm expected shipments and flag exceptions.",
+            "parent_skill": "Receiving & invoice matching (operational)",
+            "related_skills": [
+                "Goods receipt inspection",
+                "EDI invoice\/ASN processing",
+                "Dock-to-stock processing"
+            ],
+            "keywords": [
+                "ASN",
+                "advanced shipping notice",
+                "delivery check",
+                "shipment verification"
+            ],
+            "common_roles": [
+                "Receiving Clerk",
+                "Logistics Coordinator",
+                "Warehouse Supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Warehouse Management System (WMS) operation",
+            "aliases": [
+                "WMS data entry",
+                "warehouse system operation",
+                "inventory system updates"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use Warehouse Management Systems to record receipts, update inventory status, allocate put-away locations and generate receiving documentation.",
+            "parent_skill": "Receiving & invoice matching (operational)",
+            "related_skills": [
+                "Dock-to-stock processing",
+                "Goods receipt inspection",
+                "Three-way match (PO\/receipt\/invoice)"
+            ],
+            "keywords": [
+                "WMS",
+                "inventory system",
+                "put-away",
+                "receiving transactions"
+            ],
+            "common_roles": [
+                "Warehouse Operator",
+                "Receiving Clerk",
+                "Inventory Controller"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "EDI invoice\/ASN processing",
+            "aliases": [
+                "electronic invoice processing",
+                "EDI ASN handling",
+                "electronic data interchange processing"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Process and reconcile invoices and ASNs exchanged via EDI streams, interpret EDI transaction sets and resolve mapping or transmission exceptions.",
+            "parent_skill": "Receiving & invoice matching (operational)",
+            "related_skills": [
+                "Three-way match (PO\/receipt\/invoice)",
+                "Supplier ASN and delivery verification",
+                "Invoice reconciliation"
+            ],
+            "keywords": [
+                "EDI",
+                "837\/810\/856",
+                "electronic invoices",
+                "ASN"
+            ],
+            "common_roles": [
+                "EDI Specialist",
+                "Accounts Payable Analyst",
+                "Logistics Coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dock-to-stock processing",
+            "aliases": [
+                "dock-to-inventory",
+                "put-away coordination",
+                "receiving to storage process"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Coordinate unloading, staging, quality checks and put-away activities to transfer received goods from dock to storage while updating inventory records promptly.",
+            "parent_skill": "Receiving & invoice matching (operational)",
+            "related_skills": [
+                "Warehouse Management System (WMS) operation",
+                "Goods receipt inspection",
+                "Shortage and damage claims management"
+            ],
+            "keywords": [
+                "put-away",
+                "staging",
+                "unloading",
+                "inventory update"
+            ],
+            "common_roles": [
+                "Warehouse Supervisor",
+                "Receiving Lead",
+                "Logistics Coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Shortage and damage claims management",
+            "aliases": [
+                "claims processing",
+                "supplier shortage management",
+                "damage claim processing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Document and manage claims for damaged or short shipments, prepare evidence, liaise with suppliers and coordinate credits, replacements or adjustments.",
+            "parent_skill": "Receiving & invoice matching (operational)",
+            "related_skills": [
+                "Goods receipt inspection",
+                "Invoice reconciliation",
+                "Supplier communication for discrepancy resolution"
+            ],
+            "keywords": [
+                "claims",
+                "shortage",
+                "damage",
+                "supplier credit"
+            ],
+            "common_roles": [
+                "Receiving Clerk",
+                "Purchasing Coordinator",
+                "Inventory Controller"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Supplier communication for discrepancy resolution",
+            "aliases": [
+                "supplier coordination",
+                "discrepancy communication",
+                "vendor communication for discrepancies"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Communicate with suppliers to resolve quantity, quality or invoicing discrepancies; escalate issues, negotiate credits or arrange replacements and document outcomes.",
+            "parent_skill": "Receiving & invoice matching (operational)",
+            "related_skills": [
+                "Shortage and damage claims management",
+                "Invoice reconciliation",
+                "Three-way match (PO\/receipt\/invoice)"
+            ],
+            "keywords": [
+                "supplier communication",
+                "dispute resolution",
+                "vendor coordination",
+                "credit negotiation"
+            ],
+            "common_roles": [
+                "Purchasing Coordinator",
+                "Accounts Payable Clerk",
+                "Receiving Supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food safety receiving compliance",
+            "aliases": [
+                "receiving HACCP compliance",
+                "temperature control compliance",
+                "traceability at receipt"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Apply food-safety and regulatory requirements during receiving, including temperature checks, traceability recording, allergen labeling verification and HACCP critical control point adherence.",
+            "parent_skill": "Receiving & invoice matching (operational)",
+            "related_skills": [
+                "Goods receipt inspection",
+                "Supplier ASN and delivery verification",
+                "Dock-to-stock processing"
+            ],
+            "keywords": [
+                "HACCP",
+                "temperature control",
+                "traceability",
+                "food safety"
+            ],
+            "common_roles": [
+                "Quality Assurance Specialist",
+                "Receiving Clerk",
+                "Food Safety Coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

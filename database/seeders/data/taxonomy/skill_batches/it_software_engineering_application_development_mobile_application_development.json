@@ -1,0 +1,293 @@
+{
+    "domain": "IT",
+    "category": "Software Engineering & Application Development",
+    "subcategory": "Mobile application development",
+    "skills": [
+        {
+            "canonical_name": "Android app development",
+            "aliases": [
+                "Android development",
+                "Android application development",
+                "Android SDK development"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing, building, and maintaining native Android applications using Android platform APIs, lifecycle management, and platform-specific UI\/UX conventions.",
+            "parent_skill": "Mobile application development",
+            "related_skills": [
+                "Mobile app architecture & design patterns",
+                "Mobile performance optimization",
+                "Mobile testing & QA",
+                "Mobile CI\/CD & release automation",
+                "Mobile security & app hardening"
+            ],
+            "keywords": [
+                "Android",
+                "APK",
+                "Android SDK",
+                "Jetpack",
+                "Activity",
+                "Fragment",
+                "ADB"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "iOS app development",
+            "aliases": [
+                "iOS development",
+                "iOS application development",
+                "iOS SDK development"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Developing native iOS applications leveraging platform frameworks, lifecycle and memory management, and Apple Human Interface Guidelines.",
+            "parent_skill": "Mobile application development",
+            "related_skills": [
+                "Mobile app architecture & design patterns",
+                "Mobile performance optimization",
+                "Mobile testing & QA",
+                "Mobile CI\/CD & release automation",
+                "Mobile security & app hardening"
+            ],
+            "keywords": [
+                "iOS",
+                "UIKit",
+                "SwiftUI",
+                "Xcode",
+                "Storyboard",
+                "App Store"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "React Native development",
+            "aliases": [
+                "React Native",
+                "ReactNative",
+                "React-Native development"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Building cross-platform mobile apps using the React Native framework, including bridging native modules and optimizing JavaScript-to-native performance.",
+            "parent_skill": "Mobile application development",
+            "related_skills": [
+                "Mobile app architecture & design patterns",
+                "Mobile performance optimization",
+                "Mobile testing & QA",
+                "Mobile CI\/CD & release automation"
+            ],
+            "keywords": [
+                "React Native",
+                "JSX",
+                "Metro bundler",
+                "Hermes",
+                "bridge",
+                "Expo"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Flutter development",
+            "aliases": [
+                "Flutter",
+                "Flutter app development",
+                "Flutter framework"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Creating cross-platform mobile applications with Flutter and Dart, focusing on widget-based UI, hot reload workflows, and platform integration.",
+            "parent_skill": "Mobile application development",
+            "related_skills": [
+                "Dart programming",
+                "Mobile performance optimization",
+                "Mobile testing & QA",
+                "Mobile CI\/CD & release automation"
+            ],
+            "keywords": [
+                "Flutter",
+                "Dart",
+                "widgets",
+                "hot reload",
+                "Skia",
+                "platform channels"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Mobile UI\/UX design",
+            "aliases": [
+                "Mobile user interface design",
+                "Mobile user experience design",
+                "Mobile UX\/UI"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Designing mobile-specific user interfaces and experiences that account for touch interactions, screen sizes, accessibility, and platform design guidelines.",
+            "parent_skill": "Mobile application development",
+            "related_skills": [
+                "Android app development",
+                "iOS app development",
+                "Mobile app architecture & design patterns",
+                "Mobile performance optimization"
+            ],
+            "keywords": [
+                "wireframing",
+                "prototyping",
+                "usability",
+                "accessibility",
+                "touch targets",
+                "responsive"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Mobile performance optimization",
+            "aliases": [
+                "Mobile app performance tuning",
+                "Mobile performance engineering"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Profiling and optimizing mobile apps for CPU, memory, network, and battery efficiency to improve responsiveness and reduce resource consumption.",
+            "parent_skill": "Mobile application development",
+            "related_skills": [
+                "Android app development",
+                "iOS app development",
+                "Flutter development",
+                "React Native development",
+                "Mobile app architecture & design patterns"
+            ],
+            "keywords": [
+                "profiling",
+                "memory leaks",
+                "battery optimization",
+                "network optimization",
+                "latency",
+                "ANR"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Mobile app architecture & design patterns",
+            "aliases": [
+                "Mobile application architecture",
+                "Mobile design patterns",
+                "MVVM for mobile"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying scalable architecture approaches and design patterns (e.g., MVVM, MVC, Clean Architecture) to structure mobile apps for maintainability, testability, and modularity.",
+            "parent_skill": "Mobile application development",
+            "related_skills": [
+                "Android app development",
+                "iOS app development",
+                "React Native development",
+                "Flutter development",
+                "Mobile testing & QA"
+            ],
+            "keywords": [
+                "MVVM",
+                "MVC",
+                "Clean Architecture",
+                "modularity",
+                "separation of concerns",
+                "dependency injection"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Mobile testing & QA",
+            "aliases": [
+                "Mobile app testing",
+                "Mobile quality assurance",
+                "Mobile automated testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and executing testing strategies for mobile applications, including unit, integration, UI\/instrumentation, and device\/OS compatibility testing.",
+            "parent_skill": "Mobile application development",
+            "related_skills": [
+                "Android app development",
+                "iOS app development",
+                "Flutter development",
+                "React Native development",
+                "Mobile CI\/CD & release automation"
+            ],
+            "keywords": [
+                "unit tests",
+                "UI tests",
+                "end-to-end testing",
+                "device farm",
+                "test automation",
+                "instrumentation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Mobile CI\/CD & release automation",
+            "aliases": [
+                "Mobile continuous integration",
+                "Mobile continuous delivery",
+                "Mobile release automation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing CI\/CD pipelines and release automation for mobile apps, covering build signing, artifact distribution, automated testing, and beta\/production releases.",
+            "parent_skill": "Mobile application development",
+            "related_skills": [
+                "Mobile testing & QA",
+                "Android app development",
+                "iOS app development",
+                "React Native development",
+                "Flutter development"
+            ],
+            "keywords": [
+                "CI\/CD",
+                "Fastlane",
+                "Bitrise",
+                "code signing",
+                "beta distribution",
+                "automated builds"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Mobile security & app hardening",
+            "aliases": [
+                "Mobile application security",
+                "App hardening",
+                "Mobile app threat mitigation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Applying security best practices to mobile apps, including secure storage, data encryption, secure network communication, code obfuscation, and platform-specific hardening techniques.",
+            "parent_skill": "Mobile application development",
+            "related_skills": [
+                "Android app development",
+                "iOS app development",
+                "Mobile performance optimization",
+                "Mobile CI\/CD & release automation"
+            ],
+            "keywords": [
+                "encryption",
+                "secure storage",
+                "OWASP Mobile Top 10",
+                "obfuscation",
+                "TLS",
+                "code signing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

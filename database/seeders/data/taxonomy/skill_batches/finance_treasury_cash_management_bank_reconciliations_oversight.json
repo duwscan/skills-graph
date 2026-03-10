@@ -1,0 +1,258 @@
+{
+    "domain": "Finance",
+    "category": "Treasury & Cash Management",
+    "subcategory": "Bank reconciliations oversight",
+    "skills": [
+        {
+            "canonical_name": "Bank reconciliation review and verification",
+            "aliases": [
+                "bank rec review",
+                "reconciliation verification",
+                "bank reconciliations review"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Performing structured review of bank-to-ledger reconciliations to verify completeness, accuracy, and appropriate supporting documentation.",
+            "parent_skill": "Bank reconciliations oversight",
+            "related_skills": [
+                "Reconciliation exception management and escalation",
+                "Month-end reconciliation and close coordination",
+                "Suspense account management and clearing"
+            ],
+            "keywords": [
+                "bank rec",
+                "verification",
+                "supporting documentation",
+                "matching"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Reconciliation exception management and escalation",
+            "aliases": [
+                "exception handling",
+                "break management",
+                "reconciliation escalation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Identifying, triaging, documenting and escalating unreconciled items or breaks according to SLAs and escalation paths until resolution.",
+            "parent_skill": "Bank reconciliations oversight",
+            "related_skills": [
+                "Root cause analysis for reconciliation breaks",
+                "Suspense account management and clearing",
+                "Reconciliation policy, procedures and process documentation"
+            ],
+            "keywords": [
+                "exceptions",
+                "breaks",
+                "triage",
+                "SLA",
+                "escalation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Suspense account management and clearing",
+            "aliases": [
+                "suspense account reconciliation",
+                "clearing suspended items",
+                "unidentified payments resolution"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing suspense\/clearing accounts by researching unidentified or unmatched transactions, posting temporary entries, and clearing items promptly.",
+            "parent_skill": "Bank reconciliations oversight",
+            "related_skills": [
+                "Bank reconciliation review and verification",
+                "Reconciliation exception management and escalation",
+                "Root cause analysis for reconciliation breaks"
+            ],
+            "keywords": [
+                "suspense",
+                "clearing",
+                "unidentified payments",
+                "temporary posting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Reconciliation automation configuration",
+            "aliases": [
+                "bank feed configuration",
+                "auto-match rules setup",
+                "reconciliation workflow automation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Designing and configuring automated reconciliation workflows, including bank feed ingestion, matching rules, and thresholds within reconciliation platforms or ERPs.",
+            "parent_skill": "Bank reconciliations oversight",
+            "related_skills": [
+                "Bank statement ingestion and electronic file handling",
+                "Reconciliation reporting and dashboarding",
+                "Bank reconciliation review and verification"
+            ],
+            "keywords": [
+                "automation",
+                "bank feed",
+                "auto-match",
+                "matching rules"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Root cause analysis for reconciliation breaks",
+            "aliases": [
+                "breakroot analysis",
+                "reconciliation investigation",
+                "cause analysis for breaks"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Investigating the underlying causes of reconciliation discrepancies using transactional analysis, system traces, and cross-ledger comparisons to prevent recurrence.",
+            "parent_skill": "Bank reconciliations oversight",
+            "related_skills": [
+                "Reconciliation exception management and escalation",
+                "Suspense account management and clearing",
+                "Reconciliation policy, procedures and process documentation"
+            ],
+            "keywords": [
+                "root cause",
+                "investigation",
+                "transaction analysis",
+                "system trace"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SOX and internal controls for bank reconciliations",
+            "aliases": [
+                "reconciliation internal controls",
+                "SOX controls for reconciliations",
+                "controls compliance for bank recs"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Designing, testing and enforcing internal control frameworks and SOX-compliant procedures specific to bank reconciliations, authorization, segregation of duties and audit trails.",
+            "parent_skill": "Bank reconciliations oversight",
+            "related_skills": [
+                "Reconciliation policy, procedures and process documentation",
+                "Bank reconciliation review and verification",
+                "Month-end reconciliation and close coordination"
+            ],
+            "keywords": [
+                "SOX",
+                "internal controls",
+                "audit trail",
+                "segregation of duties"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Month-end reconciliation and close coordination",
+            "aliases": [
+                "month-end bank recs",
+                "close process coordination",
+                "period-end reconciliation management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Coordinating and executing bank reconciliation activities required for month-end\/period-end close, ensuring reconciliations are completed, reviewed and signed off on schedule.",
+            "parent_skill": "Bank reconciliations oversight",
+            "related_skills": [
+                "Bank reconciliation review and verification",
+                "SOX and internal controls for bank reconciliations",
+                "Reconciliation KPI reporting and dashboarding"
+            ],
+            "keywords": [
+                "month-end",
+                "close",
+                "sign-off",
+                "timeline"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intercompany and related-party cash reconciliation oversight",
+            "aliases": [
+                "intercompany cash recon",
+                "related-party reconciliation",
+                "IC reconciliation oversight"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Overseeing reconciliation of intercompany bank balances and related-party cash flows, including netting, eliminations and partner confirmations.",
+            "parent_skill": "Bank reconciliations oversight",
+            "related_skills": [
+                "Bank reconciliation review and verification",
+                "Month-end reconciliation and close coordination",
+                "Reconciliation exception management and escalation"
+            ],
+            "keywords": [
+                "intercompany",
+                "related-party",
+                "eliminations",
+                "confirmations"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Reconciliation KPI reporting and dashboarding",
+            "aliases": [
+                "reconciliation metrics",
+                "reconciliation dashboards",
+                "KPI reporting for bank recs"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Defining, producing and interpreting KPIs and dashboards (e.g., aged exceptions, time-to-clear, automation rates) to monitor reconciliation performance and drive improvements.",
+            "parent_skill": "Bank reconciliations oversight",
+            "related_skills": [
+                "Reconciliation automation configuration",
+                "Month-end reconciliation and close coordination",
+                "Root cause analysis for reconciliation breaks"
+            ],
+            "keywords": [
+                "KPI",
+                "dashboard",
+                "metrics",
+                "automation rate"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Reconciliation policy, procedures and process documentation",
+            "aliases": [
+                "reconciliation SOPs",
+                "bank rec procedures",
+                "process documentation for reconciliations"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating and maintaining standard operating procedures, policies and process maps for bank reconciliation activities, roles, SLAs and auditability.",
+            "parent_skill": "Bank reconciliations oversight",
+            "related_skills": [
+                "SOX and internal controls for bank reconciliations",
+                "Reconciliation exception management and escalation",
+                "Reconciliation automation configuration"
+            ],
+            "keywords": [
+                "SOP",
+                "policy",
+                "process map",
+                "documentation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

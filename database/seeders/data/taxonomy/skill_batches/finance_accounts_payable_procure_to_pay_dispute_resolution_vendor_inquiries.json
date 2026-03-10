@@ -1,0 +1,273 @@
+{
+    "domain": "Finance",
+    "category": "Accounts Payable & Procure-to-Pay",
+    "subcategory": "Dispute resolution & vendor inquiries",
+    "skills": [
+        {
+            "canonical_name": "Invoice discrepancy investigation",
+            "aliases": [
+                "invoice variance analysis",
+                "invoice mismatch investigation",
+                "discrepant invoice analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyze invoice and supporting documentation to identify causes of mismatches between purchase orders, receipts and invoices and determine corrective actions.",
+            "parent_skill": "Dispute resolution & vendor inquiries",
+            "related_skills": [
+                "Vendor statement reconciliation",
+                "Root cause analysis for recurring AP discrepancies",
+                "ERP dispute and case management"
+            ],
+            "keywords": [
+                "invoice",
+                "PO match",
+                "three-way match",
+                "variance",
+                "invoice validation"
+            ],
+            "common_roles": [
+                "Accounts Payable Analyst",
+                "Procure-to-Pay Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor dispute case management",
+            "aliases": [
+                "end-to-end dispute management",
+                "AP dispute case handling"
+            ],
+            "skill_type": "process_skill",
+            "description": "Manage the lifecycle of vendor disputes from intake through resolution, including documentation, tracking, coordination with stakeholders, and closure.",
+            "parent_skill": "Dispute resolution & vendor inquiries",
+            "related_skills": [
+                "Dispute triage and escalation",
+                "ERP dispute and case management",
+                "Vendor communication for AP inquiries"
+            ],
+            "keywords": [
+                "case management",
+                "dispute lifecycle",
+                "resolution tracking",
+                "case documentation"
+            ],
+            "common_roles": [
+                "Accounts Payable Specialist",
+                "Vendor Management Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dispute triage and escalation",
+            "aliases": [
+                "dispute prioritization",
+                "escalation management for vendor issues"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Assess incoming vendor inquiries and disputes to prioritize, assign severity, and escalate to appropriate internal teams or management per defined workflows and SLAs.",
+            "parent_skill": "Dispute resolution & vendor inquiries",
+            "related_skills": [
+                "SLA and KPI monitoring for vendor inquiries",
+                "Vendor dispute case management"
+            ],
+            "keywords": [
+                "triage",
+                "escalation",
+                "priority",
+                "issue routing"
+            ],
+            "common_roles": [
+                "Procure-to-Pay Analyst",
+                "Accounts Payable Team Lead"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor communication for AP inquiries",
+            "aliases": [
+                "vendor correspondence",
+                "vendor inquiry response"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Communicate clearly and professionally with vendors regarding invoice status, dispute details, payment timing and documentation requirements across email, phone, and portal channels.",
+            "parent_skill": "Dispute resolution & vendor inquiries",
+            "related_skills": [
+                "Vendor dispute case management",
+                "Credit memo and offset processing"
+            ],
+            "keywords": [
+                "vendor communication",
+                "stakeholder correspondence",
+                "email templates",
+                "phone negotiation"
+            ],
+            "common_roles": [
+                "Accounts Payable Specialist",
+                "Vendor Relationship Coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Payment hold and release management",
+            "aliases": [
+                "payment blocking and release",
+                "payment suspension management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Apply and manage payment holds, review supporting documentation, coordinate approvals, and release payments in accordance with policies and controls.",
+            "parent_skill": "Dispute resolution & vendor inquiries",
+            "related_skills": [
+                "Dispute triage and escalation",
+                "ERP dispute and case management"
+            ],
+            "keywords": [
+                "payment hold",
+                "payment release",
+                "approval workflow",
+                "controls"
+            ],
+            "common_roles": [
+                "Accounts Payable Specialist",
+                "Treasury Operations Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Credit memo and offset processing",
+            "aliases": [
+                "credit note application",
+                "vendor offset processing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Process vendor credit memos, apply offsets to open invoices or accounts, ensure accurate accounting treatment and communicate adjustments to vendors and stakeholders.",
+            "parent_skill": "Dispute resolution & vendor inquiries",
+            "related_skills": [
+                "Invoice discrepancy investigation",
+                "Vendor statement reconciliation"
+            ],
+            "keywords": [
+                "credit memo",
+                "offset",
+                "applied credits",
+                "account adjustments"
+            ],
+            "common_roles": [
+                "Accounts Payable Clerk",
+                "Procure-to-Pay Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor statement reconciliation",
+            "aliases": [
+                "vendor account reconciliation",
+                "supplier statement matching"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Compare vendor-provided statements to internal ledger balances to identify unapplied payments, missing invoices, and outstanding disputes and reconcile differences.",
+            "parent_skill": "Dispute resolution & vendor inquiries",
+            "related_skills": [
+                "Invoice discrepancy investigation",
+                "Chargeback and short-payment resolution"
+            ],
+            "keywords": [
+                "statement reconciliation",
+                "aging",
+                "open items",
+                "ledger matching"
+            ],
+            "common_roles": [
+                "Accounts Payable Reconciler",
+                "Procure-to-Pay Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Root cause analysis for recurring AP discrepancies",
+            "aliases": [
+                "AP recurring issue analysis",
+                "systemic discrepancy investigation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Identify underlying process, data or system causes for repeated invoice or payment errors and recommend sustainable corrective actions to reduce future disputes.",
+            "parent_skill": "Dispute resolution & vendor inquiries",
+            "related_skills": [
+                "ERP dispute and case management",
+                "Process improvement for procure-to-pay"
+            ],
+            "keywords": [
+                "root cause",
+                "recurring errors",
+                "process defects",
+                "continuous improvement"
+            ],
+            "common_roles": [
+                "Process Improvement Analyst",
+                "Procure-to-Pay Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ERP dispute and case management",
+            "aliases": [
+                "AP case management in ERP",
+                "SAP Ariba dispute handling",
+                "Coupa dispute management",
+                "Oracle Payables case management"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use ERP or P2P platform case management features to log, track, update and resolve vendor disputes and inquiries, including workflows, attachments and audit trails.",
+            "parent_skill": "Dispute resolution & vendor inquiries",
+            "related_skills": [
+                "Vendor dispute case management",
+                "Invoice discrepancy investigation"
+            ],
+            "keywords": [
+                "ERP",
+                "case management",
+                "P2P platform",
+                "ticketing"
+            ],
+            "common_roles": [
+                "Accounts Payable Analyst",
+                "Procure-to-Pay Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SLA and KPI monitoring for vendor inquiries",
+            "aliases": [
+                "dispute SLA monitoring",
+                "vendor inquiry performance tracking"
+            ],
+            "skill_type": "process_skill",
+            "description": "Monitor and report on service level agreements and key performance indicators for vendor inquiry and dispute handling to ensure timely resolution and continuous improvement.",
+            "parent_skill": "Dispute resolution & vendor inquiries",
+            "related_skills": [
+                "Dispute triage and escalation",
+                "Vendor dispute case management"
+            ],
+            "keywords": [
+                "SLA",
+                "KPI",
+                "performance metrics",
+                "reporting"
+            ],
+            "common_roles": [
+                "Procure-to-Pay Analyst",
+                "Accounts Payable Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

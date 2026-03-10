@@ -1,0 +1,326 @@
+{
+    "domain": "F&B",
+    "category": "Beverage Service (Non-Alcoholic)",
+    "subcategory": "Beverage inventory rotation & storage",
+    "skills": [
+        {
+            "canonical_name": "FIFO inventory rotation",
+            "aliases": [
+                "first-in first-out",
+                "first in first out inventory rotation",
+                "FIFO stock rotation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying first-in, first-out principles to ensure older beverage stock is sold or used before newer stock to reduce spoilage and expired products.",
+            "parent_skill": "Beverage inventory rotation & storage",
+            "related_skills": [
+                "Date coding & product labeling",
+                "Inventory cycle counting (beverages)",
+                "Shelf-life management (beverages)"
+            ],
+            "keywords": [
+                "FIFO",
+                "stock rotation",
+                "first-in first-out",
+                "expiry control"
+            ],
+            "common_roles": [
+                "inventory staff",
+                "beverage operations staff",
+                "stock associate"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cold chain management (beverages)",
+            "aliases": [
+                "cold chain control",
+                "temperature-controlled supply chain for beverages",
+                "refrigerated logistics (beverages)"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintaining required temperature conditions across storage, handling and transport of chilled or frozen non-alcoholic beverages to preserve quality and safety.",
+            "parent_skill": "Beverage inventory rotation & storage",
+            "related_skills": [
+                "Temperature monitoring & logging",
+                "Storage layout optimization (beverage inventory)",
+                "Cleaning & sanitization of storage equipment"
+            ],
+            "keywords": [
+                "cold chain",
+                "refrigeration",
+                "chilled storage",
+                "temperature control"
+            ],
+            "common_roles": [
+                "beverage operations staff",
+                "quality control staff",
+                "logistics support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Temperature monitoring & logging",
+            "aliases": [
+                "temperature logging",
+                "temperature record keeping",
+                "thermograph monitoring"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Recording and tracking storage and display temperatures for beverage stock using logs or digital sensors to ensure compliance and product integrity.",
+            "parent_skill": "Beverage inventory rotation & storage",
+            "related_skills": [
+                "Cold chain management (beverages)",
+                "Date coding & product labeling",
+                "Cleaning & sanitization of storage equipment"
+            ],
+            "keywords": [
+                "temperature log",
+                "monitoring",
+                "data logging",
+                "thermometer records"
+            ],
+            "common_roles": [
+                "inventory staff",
+                "quality control staff",
+                "facilities staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Shelf-life management (beverages)",
+            "aliases": [
+                "expiry management",
+                "shelf life monitoring",
+                "expiration date management"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Tracking product shelf-life, interpreting shelf-life indicators and making decisions about markdowns, promotions or disposal to minimize losses.",
+            "parent_skill": "Beverage inventory rotation & storage",
+            "related_skills": [
+                "FIFO inventory rotation",
+                "Perishable beverage demand forecasting",
+                "Date coding & product labeling"
+            ],
+            "keywords": [
+                "shelf-life",
+                "expiry",
+                "best before",
+                "product life"
+            ],
+            "common_roles": [
+                "inventory staff",
+                "merchandising staff",
+                "operations planners"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Date coding & product labeling",
+            "aliases": [
+                "date marking",
+                "batch and date coding",
+                "labeling for expiry"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Applying and verifying clear date, batch and handling labels on beverage products to support rotation, traceability and shelf-life decisions.",
+            "parent_skill": "Beverage inventory rotation & storage",
+            "related_skills": [
+                "FIFO inventory rotation",
+                "Shelf-life management (beverages)",
+                "Inventory cycle counting (beverages)"
+            ],
+            "keywords": [
+                "date code",
+                "labeling",
+                "batch code",
+                "expiry label"
+            ],
+            "common_roles": [
+                "inventory staff",
+                "packaging staff",
+                "quality assurance staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inventory cycle counting (beverages)",
+            "aliases": [
+                "cycle counts",
+                "stock counting (beverages)",
+                "periodic inventory checks"
+            ],
+            "skill_type": "process_skill",
+            "description": "Performing regular, planned counts of beverage stock to reconcile physical quantities with inventory records and identify shrinkage or mis-rotation.",
+            "parent_skill": "Beverage inventory rotation & storage",
+            "related_skills": [
+                "FIFO inventory rotation",
+                "Stock replenishment scheduling",
+                "Date coding & product labeling"
+            ],
+            "keywords": [
+                "cycle count",
+                "stocktake",
+                "inventory audit",
+                "reconciliation"
+            ],
+            "common_roles": [
+                "inventory staff",
+                "stock associate",
+                "operations staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Storage layout optimization (beverage inventory)",
+            "aliases": [
+                "storage optimization",
+                "warehouse layout for beverages",
+                "shelf organization (beverages)"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and implementing shelving, racking and display arrangements to maximize space, ensure proper rotation and maintain temperature zones for beverages.",
+            "parent_skill": "Beverage inventory rotation & storage",
+            "related_skills": [
+                "Cold chain management (beverages)",
+                "FIFO inventory rotation",
+                "Stock replenishment scheduling"
+            ],
+            "keywords": [
+                "layout",
+                "racking",
+                "slotting",
+                "space utilization"
+            ],
+            "common_roles": [
+                "operations planners",
+                "inventory staff",
+                "facilities staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Perishable beverage demand forecasting",
+            "aliases": [
+                "short-term beverage demand forecasting",
+                "perishable stock forecasting",
+                "demand planning for perishable drinks"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Using sales data, seasonality and promotional plans to predict short shelf-life beverage demand and guide ordering and rotation decisions.",
+            "parent_skill": "Beverage inventory rotation & storage",
+            "related_skills": [
+                "Shelf-life management (beverages)",
+                "Stock replenishment scheduling",
+                "FIFO inventory rotation"
+            ],
+            "keywords": [
+                "demand forecast",
+                "sales forecasting",
+                "perishable planning",
+                "ordering qty"
+            ],
+            "common_roles": [
+                "inventory planners",
+                "operations planners",
+                "merchandising staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Stock replenishment scheduling (beverages)",
+            "aliases": [
+                "replenishment planning",
+                "ordering schedule for beverages",
+                "restocking cadence"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning and executing replenishment cycles for beverage stock, balancing lead times, shelf-life and storage capacity to maintain availability and reduce waste.",
+            "parent_skill": "Beverage inventory rotation & storage",
+            "related_skills": [
+                "Perishable beverage demand forecasting",
+                "Inventory cycle counting (beverages)",
+                "Storage layout optimization (beverage inventory)"
+            ],
+            "keywords": [
+                "replenishment",
+                "restock schedule",
+                "lead time",
+                "order frequency"
+            ],
+            "common_roles": [
+                "inventory planners",
+                "purchasing support",
+                "operations staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Spoilage reduction & waste minimization (beverages)",
+            "aliases": [
+                "waste reduction for beverages",
+                "spoilage control",
+                "loss prevention (perishable drinks)"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing practices (discounting, donation, repurpose, proper storage) and monitoring to minimize beverage spoilage, food waste and associated costs.",
+            "parent_skill": "Beverage inventory rotation & storage",
+            "related_skills": [
+                "Shelf-life management (beverages)",
+                "Perishable beverage demand forecasting",
+                "FIFO inventory rotation"
+            ],
+            "keywords": [
+                "waste reduction",
+                "spoilage",
+                "markdowns",
+                "donation"
+            ],
+            "common_roles": [
+                "operations staff",
+                "sustainability coordinators",
+                "inventory staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cleaning & sanitization of storage equipment",
+            "aliases": [
+                "storage area sanitation",
+                "cleaning refrigerated units",
+                "sanitization of shelves and coolers"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Performing cleaning and sanitization procedures for storage racks, refrigeration units and display equipment to maintain hygiene, prevent contamination and comply with food safety rules.",
+            "parent_skill": "Beverage inventory rotation & storage",
+            "related_skills": [
+                "Cold chain management (beverages)",
+                "Temperature monitoring & logging",
+                "Allergen cross-contact prevention"
+            ],
+            "keywords": [
+                "cleaning",
+                "sanitization",
+                "hygiene",
+                "sanitary procedures"
+            ],
+            "common_roles": [
+                "facilities staff",
+                "sanitation staff",
+                "inventory staff"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

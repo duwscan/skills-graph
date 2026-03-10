@@ -1,0 +1,258 @@
+{
+    "domain": "F&B",
+    "category": "Food Safety, Hygiene & Regulatory Compliance",
+    "subcategory": "Food storage & rotation (FIFO)",
+    "skills": [
+        {
+            "canonical_name": "FIFO inventory rotation",
+            "aliases": [
+                "first-in, first-out rotation",
+                "first in first out",
+                "FIFO rotation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Apply and maintain first-in, first-out procedures to ensure older stock is used before newer stock to minimize spoilage and waste.",
+            "parent_skill": "Food storage & rotation (FIFO)",
+            "related_skills": [
+                "Food labeling and date coding",
+                "Stock shelf-life assessment",
+                "Rotation audit and recordkeeping",
+                "FIFO digital inventory systems"
+            ],
+            "keywords": [
+                "rotation",
+                "expiry",
+                "stock movement",
+                "inventory control"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Temperature monitoring and logging",
+            "aliases": [
+                "temperature checks",
+                "temp logging",
+                "temperature recording"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Regularly measure, record and interpret storage temperature data for refrigerated, frozen and ambient environments to maintain product safety and quality.",
+            "parent_skill": "Food storage & rotation (FIFO)",
+            "related_skills": [
+                "Cold chain management",
+                "Rotation audit and recordkeeping",
+                "FIFO digital inventory systems"
+            ],
+            "keywords": [
+                "thermometer",
+                "data logger",
+                "temperature control",
+                "cold storage"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cold chain management",
+            "aliases": [
+                "cold chain control",
+                "refrigerated supply management",
+                "temperature-controlled logistics"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintain integrity of temperature-sensitive products through storage and transportation controls, monitoring, and contingency handling to prevent spoilage and safety breaches.",
+            "parent_skill": "Food storage & rotation (FIFO)",
+            "related_skills": [
+                "Temperature monitoring and logging",
+                "FIFO digital inventory systems",
+                "Storage layout and segregation"
+            ],
+            "keywords": [
+                "cold chain",
+                "refrigeration",
+                "transit temperature",
+                "chilled goods"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food labeling and date coding",
+            "aliases": [
+                "date coding",
+                "use-by labeling",
+                "best-before labeling"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Implement and manage labeling practices including manufacture dates, use-by\/best-before dates, and batch identifiers to support traceability and correct rotation.",
+            "parent_skill": "Food storage & rotation (FIFO)",
+            "related_skills": [
+                "FIFO inventory rotation",
+                "Rotation audit and recordkeeping",
+                "Stock shelf-life assessment"
+            ],
+            "keywords": [
+                "labeling",
+                "expiry date",
+                "batch code",
+                "traceability"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Stock shelf-life assessment",
+            "aliases": [
+                "shelf life evaluation",
+                "expiry assessment",
+                "product shelf-life analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluate product shelf life and stability factors to determine appropriate storage conditions, rotation frequency, and safe use windows.",
+            "parent_skill": "Food storage & rotation (FIFO)",
+            "related_skills": [
+                "Food labeling and date coding",
+                "FIFO inventory rotation",
+                "Storage layout and segregation"
+            ],
+            "keywords": [
+                "shelf life",
+                "stability",
+                "expiry estimation",
+                "sensory evaluation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Storage layout and segregation",
+            "aliases": [
+                "storage zoning",
+                "product segregation",
+                "allergen and raw\/cooked separation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Design and maintain storage layouts that separate products by type, allergen risk, contamination potential and temperature zone to reduce cross-contamination and facilitate rotation.",
+            "parent_skill": "Food storage & rotation (FIFO)",
+            "related_skills": [
+                "Cold chain management",
+                "Stock shelf-life assessment",
+                "Hazard analysis for storage"
+            ],
+            "keywords": [
+                "segregation",
+                "zoning",
+                "cross-contamination",
+                "allergen control"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Hazard analysis for storage",
+            "aliases": [
+                "storage HACCP controls",
+                "storage risk assessment",
+                "hazard analysis (storage)"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Identify and evaluate biological, chemical and physical hazards specific to storage environments and establish control measures consistent with HACCP and local regulations.",
+            "parent_skill": "Food storage & rotation (FIFO)",
+            "related_skills": [
+                "Storage layout and segregation",
+                "Temperature monitoring and logging",
+                "Rotation audit and recordkeeping"
+            ],
+            "keywords": [
+                "HACCP",
+                "risk assessment",
+                "critical control points",
+                "storage hazards"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "FIFO digital inventory systems",
+            "aliases": [
+                "inventory management software (FIFO)",
+                "digital stock rotation systems",
+                "warehouse management FIFO"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use digital inventory or warehouse management systems configured to enforce FIFO rules, track batch codes, lot dates and automate rotation alerts.",
+            "parent_skill": "Food storage & rotation (FIFO)",
+            "related_skills": [
+                "FIFO inventory rotation",
+                "Temperature monitoring and logging",
+                "Rotation audit and recordkeeping"
+            ],
+            "keywords": [
+                "WMS",
+                "IMS",
+                "lot tracking",
+                "inventory software"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ambient and chilled storage optimization",
+            "aliases": [
+                "storage space optimization",
+                "cold room organization",
+                "warehouse layout optimization"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Optimize storage density and access patterns in ambient and chilled areas to improve rotation efficiency, minimize handling time and reduce product degradation.",
+            "parent_skill": "Food storage & rotation (FIFO)",
+            "related_skills": [
+                "Storage layout and segregation",
+                "FIFO inventory rotation",
+                "FIFO digital inventory systems"
+            ],
+            "keywords": [
+                "space utilization",
+                "racking",
+                "accessibility",
+                "flow optimization"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Rotation audit and recordkeeping",
+            "aliases": [
+                "stock rotation audits",
+                "rotation records",
+                "inventory rotation documentation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Conduct regular audits of stock rotation practices and maintain accurate records of inspections, corrective actions and inventory movements for compliance and continuous improvement.",
+            "parent_skill": "Food storage & rotation (FIFO)",
+            "related_skills": [
+                "FIFO inventory rotation",
+                "Temperature monitoring and logging",
+                "Food labeling and date coding"
+            ],
+            "keywords": [
+                "audit",
+                "recordkeeping",
+                "compliance",
+                "corrective action"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

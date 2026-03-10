@@ -1,0 +1,307 @@
+{
+    "domain": "F&B",
+    "category": "Food Preparation & Cooking Operations",
+    "subcategory": "Speed, timing & ticket management",
+    "skills": [
+        {
+            "canonical_name": "Ticket prioritization and sequencing",
+            "aliases": [
+                "Order prioritization",
+                "Ticket sequencing",
+                "Order sequencing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Assessing incoming orders and arranging the sequence of ticket execution to maximize throughput, meet service times, and optimize station workload.",
+            "parent_skill": "Speed, timing & ticket management",
+            "related_skills": [
+                "Order pacing and timing",
+                "Cross-station synchronization",
+                "Expediter coordination"
+            ],
+            "keywords": [
+                "priority",
+                "ticket",
+                "sequence",
+                "order flow",
+                "throughput"
+            ],
+            "common_roles": [
+                "kitchen staff",
+                "line staff",
+                "culinary leadership"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Expediter coordination",
+            "aliases": [
+                "Expediting",
+                "Pass coordination",
+                "Plate\/run coordination"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Coordinating between cooks and front-of-house to ensure timely plating, quality checks, and accurate ticket completion during service.",
+            "parent_skill": "Speed, timing & ticket management",
+            "related_skills": [
+                "Ticket prioritization and sequencing",
+                "Communication of ticket updates to front-of-house",
+                "Cross-station synchronization"
+            ],
+            "keywords": [
+                "expedite",
+                "pass",
+                "plating",
+                "coordination",
+                "quality check"
+            ],
+            "common_roles": [
+                "kitchen staff",
+                "culinary leadership",
+                "service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Kitchen Display System (KDS) operation",
+            "aliases": [
+                "KDS operation",
+                "Kitchen display operation",
+                "Order display system operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using electronic kitchen display systems to receive, monitor, update and close tickets; managing digital ticket routing, timers, and status flags.",
+            "parent_skill": "Speed, timing & ticket management",
+            "related_skills": [
+                "Ticket time tracking & KPI monitoring",
+                "Ticket prioritization and sequencing",
+                "Order pacing and timing"
+            ],
+            "keywords": [
+                "KDS",
+                "kitchen display",
+                "order screen",
+                "digital tickets",
+                "timers"
+            ],
+            "common_roles": [
+                "kitchen staff",
+                "line staff",
+                "service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Order pacing and timing",
+            "aliases": [
+                "Service pacing",
+                "Pacing orders",
+                "Seat and course timing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Controlling the tempo of order preparation and release so that courses and multi-item tickets arrive at appropriate intervals, matching dining room flow and quality standards.",
+            "parent_skill": "Speed, timing & ticket management",
+            "related_skills": [
+                "Ticket prioritization and sequencing",
+                "Prep scheduling & mise en place timing",
+                "Cross-station synchronization"
+            ],
+            "keywords": [
+                "pacing",
+                "timing",
+                "service flow",
+                "course timing",
+                "ticket release"
+            ],
+            "common_roles": [
+                "kitchen staff",
+                "service staff",
+                "culinary leadership"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Rush management (high-volume service)",
+            "aliases": [
+                "Service rush handling",
+                "High-volume shift management",
+                "Dinner rush management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintaining speed, quality and ticket throughput during peak service periods through prioritization, simplified prep, and streamlined communication.",
+            "parent_skill": "Speed, timing & ticket management",
+            "related_skills": [
+                "Ticket prioritization and sequencing",
+                "Expediter coordination",
+                "Batch and par-cook timing"
+            ],
+            "keywords": [
+                "rush",
+                "peak service",
+                "throughput",
+                "high-volume",
+                "service peak"
+            ],
+            "common_roles": [
+                "kitchen staff",
+                "culinary leadership",
+                "service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ticket time tracking & KPI monitoring",
+            "aliases": [
+                "Ticket time tracking",
+                "Ticket KPI monitoring",
+                "Average ticket time monitoring"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Measuring, logging and analyzing ticket times and related KPIs (e.g., ticket-to-table time, ticket completion time) to identify bottlenecks and improve service speed.",
+            "parent_skill": "Speed, timing & ticket management",
+            "related_skills": [
+                "Kitchen Display System (KDS) operation",
+                "Order pacing and timing",
+                "Prep scheduling & mise en place timing"
+            ],
+            "keywords": [
+                "KPI",
+                "ticket time",
+                "analytics",
+                "throughput metrics",
+                "bottleneck analysis"
+            ],
+            "common_roles": [
+                "kitchen staff",
+                "kitchen managers",
+                "culinary leadership"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Prep scheduling and mise en place timing",
+            "aliases": [
+                "Mise en place timing",
+                "Prep scheduling",
+                "Prep timing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Planning and timing prep tasks so required components are available when tickets demand them, balancing freshness with readiness to speed ticket completion.",
+            "parent_skill": "Speed, timing & ticket management",
+            "related_skills": [
+                "Batch and par-cook timing",
+                "Order pacing and timing",
+                "Ticket time tracking & KPI monitoring"
+            ],
+            "keywords": [
+                "mise en place",
+                "prep",
+                "scheduling",
+                "ingredient readiness",
+                "prep list"
+            ],
+            "common_roles": [
+                "kitchen staff",
+                "prep cooks",
+                "culinary leadership"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Batch and par-cook timing",
+            "aliases": [
+                "Batch cooking timing",
+                "Par-cooking timing",
+                "Parcook scheduling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Timing and coordinating batch or par-cooking processes so items can be finished quickly to order while retaining quality and food safety.",
+            "parent_skill": "Speed, timing & ticket management",
+            "related_skills": [
+                "Prep scheduling and mise en place timing",
+                "Rush management (high-volume service)",
+                "Order pacing and timing"
+            ],
+            "keywords": [
+                "batch cook",
+                "par-cook",
+                "holding time",
+                "finish to order",
+                "cook-ahead"
+            ],
+            "common_roles": [
+                "kitchen staff",
+                "line staff",
+                "culinary leadership"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-station synchronization",
+            "aliases": [
+                "Station synchronization",
+                "Inter-station timing",
+                "Station coordination"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Coordinating timing across multiple kitchen stations so components of a ticket complete simultaneously and are plated together correctly.",
+            "parent_skill": "Speed, timing & ticket management",
+            "related_skills": [
+                "Ticket prioritization and sequencing",
+                "Expediter coordination",
+                "Order pacing and timing"
+            ],
+            "keywords": [
+                "stations",
+                "synchronization",
+                "timing",
+                "coordination",
+                "handoff"
+            ],
+            "common_roles": [
+                "kitchen staff",
+                "culinary leadership",
+                "line staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Communication of ticket updates to front-of-house",
+            "aliases": [
+                "Ticket updates to FOH",
+                "Order status communication",
+                "Ticket status communication"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Providing clear, timely updates about order status, delays or modifications to front-of-house staff to manage guest expectations and reduce service errors.",
+            "parent_skill": "Speed, timing & ticket management",
+            "related_skills": [
+                "Expediter coordination",
+                "Kitchen Display System (KDS) operation",
+                "Ticket prioritization and sequencing"
+            ],
+            "keywords": [
+                "communication",
+                "front-of-house",
+                "order status",
+                "updates",
+                "guest expectation"
+            ],
+            "common_roles": [
+                "service staff",
+                "kitchen staff",
+                "culinary leadership"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

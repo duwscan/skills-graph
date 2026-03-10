@@ -1,0 +1,314 @@
+{
+    "domain": "F&B",
+    "category": "F&B Cost Control & Revenue Operations",
+    "subcategory": "Daily sales reconciliation support",
+    "skills": [
+        {
+            "canonical_name": "Daily sales reconciliation",
+            "aliases": [
+                "end-of-day reconciliation",
+                "EOD reconciliation",
+                "daily revenue reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Process of comparing and confirming daily recorded sales (cash, card, gift cards, third-party) against POS reports and bank\/merchant records to produce a balanced revenue figure.",
+            "parent_skill": "Daily sales reconciliation support",
+            "related_skills": [
+                "Point-of-sale (POS) system operation and reporting",
+                "Cash handling and till reconciliation",
+                "Credit card settlement and merchant batch reconciliation",
+                "Sales variance analysis (daily)",
+                "Spreadsheet-based reconciliation (Excel \/ Google Sheets)"
+            ],
+            "keywords": [
+                "EOD",
+                "sales close",
+                "reconciliation",
+                "daily revenue",
+                "till count"
+            ],
+            "common_roles": [
+                "Restaurant Manager",
+                "Shift Supervisor",
+                "Revenue Operations Analyst",
+                "Back-office Clerk"
+            ],
+            "language": "en",
+            "status": "stable"
+        },
+        {
+            "canonical_name": "Cash handling and till reconciliation",
+            "aliases": [
+                "cash reconciliation",
+                "till reconciliation",
+                "cash count"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Accurate counting, recording and reconciling of cash takings, float management, and preparation of cash variances and deposit-ready cash reports.",
+            "parent_skill": "Daily sales reconciliation support",
+            "related_skills": [
+                "Daily sales reconciliation",
+                "Daily deposit preparation and bank reconciliation",
+                "Discrepancy investigation and exception management"
+            ],
+            "keywords": [
+                "cash count",
+                "till",
+                "float",
+                "over\/short",
+                "deposit"
+            ],
+            "common_roles": [
+                "Shift Supervisor",
+                "Restaurant Manager",
+                "Cashier",
+                "Back-office Clerk"
+            ],
+            "language": "en",
+            "status": "stable"
+        },
+        {
+            "canonical_name": "Point-of-sale (POS) system operation and reporting",
+            "aliases": [
+                "POS reporting",
+                "POS operation",
+                "restaurant POS systems"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use of restaurant point-of-sale systems to run sales reports, close shifts, audit transactions, export end-of-day data, and troubleshoot transaction records.",
+            "parent_skill": "Daily sales reconciliation support",
+            "related_skills": [
+                "Daily sales reconciliation",
+                "Credit card settlement and merchant batch reconciliation",
+                "Refund, void and chargeback reconciliation",
+                "Spreadsheet-based reconciliation (Excel \/ Google Sheets)"
+            ],
+            "keywords": [
+                "POS",
+                "sales report",
+                "shift close",
+                "transactions",
+                "export"
+            ],
+            "common_roles": [
+                "Shift Supervisor",
+                "Restaurant Manager",
+                "POS Administrator",
+                "Back-office Clerk"
+            ],
+            "language": "en",
+            "status": "stable"
+        },
+        {
+            "canonical_name": "Credit card settlement and merchant batch reconciliation",
+            "aliases": [
+                "merchant batch reconciliation",
+                "card batch settlement",
+                "merchant settlement"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Matching POS card transactions to merchant acquiring batches and bank\/processor deposits, validating fees and resolving batch\/settlement mismatches.",
+            "parent_skill": "Daily sales reconciliation support",
+            "related_skills": [
+                "Point-of-sale (POS) system operation and reporting",
+                "Daily sales reconciliation",
+                "Daily deposit preparation and bank reconciliation"
+            ],
+            "keywords": [
+                "merchant",
+                "batch",
+                "settlement",
+                "processor",
+                "card fees"
+            ],
+            "common_roles": [
+                "Revenue Operations Analyst",
+                "Back-office Clerk",
+                "Finance Clerk",
+                "Restaurant Manager"
+            ],
+            "language": "en",
+            "status": "stable"
+        },
+        {
+            "canonical_name": "Refund, void and chargeback reconciliation",
+            "aliases": [
+                "refund reconciliation",
+                "void transaction audit",
+                "chargeback verification"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Identifying, validating and documenting refunds, voids and chargebacks against POS records and payment processor data to ensure correct accounting and minimize revenue leakage.",
+            "parent_skill": "Daily sales reconciliation support",
+            "related_skills": [
+                "Point-of-sale (POS) system operation and reporting",
+                "Credit card settlement and merchant batch reconciliation",
+                "Discrepancy investigation and exception management"
+            ],
+            "keywords": [
+                "refunds",
+                "voids",
+                "chargebacks",
+                "dispute",
+                "audit"
+            ],
+            "common_roles": [
+                "Back-office Clerk",
+                "Revenue Operations Analyst",
+                "Shift Supervisor"
+            ],
+            "language": "en",
+            "status": "stable"
+        },
+        {
+            "canonical_name": "Tips and gratuity allocation reconciliation",
+            "aliases": [
+                "tip reconciliation",
+                "gratuity allocation",
+                "service charge reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Reconciling credit card tips, pooled gratuities and service charges with payroll and POS records, ensuring correct distribution and reporting of tip liabilities.",
+            "parent_skill": "Daily sales reconciliation support",
+            "related_skills": [
+                "Daily sales reconciliation",
+                "Payroll coordination",
+                "Sales variance analysis (daily)"
+            ],
+            "keywords": [
+                "tips",
+                "gratuity",
+                "pooling",
+                "service charge",
+                "tip-out"
+            ],
+            "common_roles": [
+                "Restaurant Manager",
+                "Payroll Coordinator",
+                "Shift Supervisor",
+                "Back-office Clerk"
+            ],
+            "language": "en",
+            "status": "stable"
+        },
+        {
+            "canonical_name": "Sales variance analysis (daily)",
+            "aliases": [
+                "daily variance analysis",
+                "sales variance investigation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing differences between expected and actual sales figures (by outlet, shift, payment type), identifying root causes, and recommending corrective actions.",
+            "parent_skill": "Daily sales reconciliation support",
+            "related_skills": [
+                "Daily sales reconciliation",
+                "Discrepancy investigation and exception management",
+                "Spreadsheet-based reconciliation (Excel \/ Google Sheets)"
+            ],
+            "keywords": [
+                "variance",
+                "root cause",
+                "analysis",
+                "exceptions",
+                "trend"
+            ],
+            "common_roles": [
+                "Revenue Operations Analyst",
+                "Finance Analyst",
+                "Restaurant Manager"
+            ],
+            "language": "en",
+            "status": "stable"
+        },
+        {
+            "canonical_name": "Daily deposit preparation and bank reconciliation",
+            "aliases": [
+                "deposit prep",
+                "bank reconciliation (daily)",
+                "cash deposit preparation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Preparing physical and electronic deposits, matching deposits to bank statements and merchant settlements, and documenting supporting schedules for daily bank reconciliation.",
+            "parent_skill": "Daily sales reconciliation support",
+            "related_skills": [
+                "Cash handling and till reconciliation",
+                "Credit card settlement and merchant batch reconciliation",
+                "Daily sales reconciliation"
+            ],
+            "keywords": [
+                "deposit",
+                "bank rec",
+                "bank statement",
+                "deposit slip",
+                "merchant deposit"
+            ],
+            "common_roles": [
+                "Back-office Clerk",
+                "Restaurant Manager",
+                "Revenue Operations Analyst"
+            ],
+            "language": "en",
+            "status": "stable"
+        },
+        {
+            "canonical_name": "Discrepancy investigation and exception management",
+            "aliases": [
+                "exception handling",
+                "discrepancy resolution",
+                "investigate sales exceptions"
+            ],
+            "skill_type": "process_skill",
+            "description": "Structured process for identifying, documenting and resolving mismatches, missing transactions or unexplained variances including escalation workflows and corrective controls.",
+            "parent_skill": "Daily sales reconciliation support",
+            "related_skills": [
+                "Sales variance analysis (daily)",
+                "Refund, void and chargeback reconciliation",
+                "Daily sales reconciliation"
+            ],
+            "keywords": [
+                "exceptions",
+                "investigation",
+                "root cause",
+                "escalation",
+                "corrective action"
+            ],
+            "common_roles": [
+                "Revenue Operations Analyst",
+                "Restaurant Manager",
+                "Back-office Clerk"
+            ],
+            "language": "en",
+            "status": "stable"
+        },
+        {
+            "canonical_name": "Spreadsheet-based reconciliation (Excel \/ Google Sheets)",
+            "aliases": [
+                "Excel reconciliation",
+                "Google Sheets reconciliation",
+                "spreadsheet reconciliation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using spreadsheets to import POS and bank data, perform lookups, pivot analysis, formula-driven reconciliations and produce reconciliation schedules and exception reports.",
+            "parent_skill": "Daily sales reconciliation support",
+            "related_skills": [
+                "Daily sales reconciliation",
+                "Sales variance analysis (daily)",
+                "Point-of-sale (POS) system operation and reporting"
+            ],
+            "keywords": [
+                "Excel",
+                "Google Sheets",
+                "VLOOKUP",
+                "pivot table",
+                "reconciliation schedule"
+            ],
+            "common_roles": [
+                "Revenue Operations Analyst",
+                "Back-office Clerk",
+                "Finance Analyst"
+            ],
+            "language": "en",
+            "status": "stable"
+        }
+    ]
+}

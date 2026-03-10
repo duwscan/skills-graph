@@ -1,0 +1,308 @@
+{
+    "domain": "F&B",
+    "category": "F&B Cost Control & Revenue Operations",
+    "subcategory": "Beverage cost calculation & tracking",
+    "skills": [
+        {
+            "canonical_name": "Beverage cost calculation",
+            "aliases": [
+                "drink cost calculation",
+                "beverage pour cost calculation",
+                "pour cost calculation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Compute cost per beverage serving by combining ingredient quantities, yields (AP\/EP), unit prices, garnishes and portioning to derive cost-per-item and cost-of-sales metrics.",
+            "parent_skill": "Beverage cost calculation & tracking",
+            "related_skills": [
+                "Standardized beverage recipe costing",
+                "Beverage yield and shrinkage analysis",
+                "Beverage pricing strategy & margin optimization",
+                "POS beverage sales reconciliation"
+            ],
+            "keywords": [
+                "unit cost",
+                "cost per serving",
+                "AP",
+                "EP",
+                "portion cost",
+                "cost of goods sold",
+                "ingredient costing"
+            ],
+            "common_roles": [
+                "Cost control function",
+                "Revenue management",
+                "Beverage operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Standardized beverage recipe costing",
+            "aliases": [
+                "standard drink costing",
+                "recipe cost standardization",
+                "standardized drink recipe costing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Create and maintain standardized beverage recipes with defined measures and yields to ensure consistent costing, portion control and performance across shifts and outlets.",
+            "parent_skill": "Beverage cost calculation & tracking",
+            "related_skills": [
+                "Beverage cost calculation",
+                "Beverage yield and shrinkage analysis",
+                "Beverage par-level planning & reorder point calculation"
+            ],
+            "keywords": [
+                "recipe standardization",
+                "portion control",
+                "yield",
+                "spec sheets",
+                "standard recipes"
+            ],
+            "common_roles": [
+                "Beverage operations",
+                "Inventory control",
+                "Purchasing\/Procurement"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Beverage inventory management",
+            "aliases": [
+                "beverage stock control",
+                "bar inventory management",
+                "liquor inventory management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operational management of beverage stock including cycle counts, full stocktakes, stock rotation (FIFO), shrink monitoring and recording inventory adjustments.",
+            "parent_skill": "Beverage cost calculation & tracking",
+            "related_skills": [
+                "Beverage inventory management software",
+                "Beverage par-level planning & reorder point calculation",
+                "POS beverage sales reconciliation",
+                "Beverage yield and shrinkage analysis"
+            ],
+            "keywords": [
+                "cycle count",
+                "stocktake",
+                "FIFO",
+                "inventory adjustment",
+                "stock rotation"
+            ],
+            "common_roles": [
+                "Inventory control",
+                "Beverage operations",
+                "Purchasing\/Procurement"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Beverage yield and shrinkage analysis",
+            "aliases": [
+                "liquor yield analysis",
+                "over-pour and waste analysis",
+                "beverage shrink analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyze yield, waste, spillage, breakage and theft to quantify shrinkage and its impact on beverage costs and margins; identify causes and corrective actions.",
+            "parent_skill": "Beverage cost calculation & tracking",
+            "related_skills": [
+                "Beverage cost calculation",
+                "Beverage inventory management",
+                "Standardized beverage recipe costing"
+            ],
+            "keywords": [
+                "shrinkage",
+                "waste reporting",
+                "yield testing",
+                "overpour",
+                "variance analysis"
+            ],
+            "common_roles": [
+                "Cost control function",
+                "Revenue management",
+                "Inventory control"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "POS beverage sales reconciliation",
+            "aliases": [
+                "point-of-sale beverage reconciliation",
+                "POS sales-to-inventory matching"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Reconcile POS beverage sales and modifiers with inventory depletion records and revenue reports to detect discrepancies, voids, comping and theft.",
+            "parent_skill": "Beverage cost calculation & tracking",
+            "related_skills": [
+                "Beverage inventory management",
+                "Beverage cost calculation",
+                "Beverage inventory management software",
+                "Vendor invoice reconciliation for beverage purchases"
+            ],
+            "keywords": [
+                "POS reconciliation",
+                "sales variance",
+                "voids",
+                "comps",
+                "transaction auditing"
+            ],
+            "common_roles": [
+                "Revenue management",
+                "Inventory control",
+                "Cost control function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor invoice reconciliation for beverage purchases",
+            "aliases": [
+                "beverage AP invoice matching",
+                "vendor reconciliation (beverage)"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Match supplier invoices to purchase orders and received deliveries, verify unit pricing, identify pricing variances, and update inventory costs and ledgers accordingly.",
+            "parent_skill": "Beverage cost calculation & tracking",
+            "related_skills": [
+                "Beverage inventory management",
+                "Beverage cost calculation",
+                "Alcohol excise & tax compliance (beverages)"
+            ],
+            "keywords": [
+                "invoice matching",
+                "purchase order",
+                "receiving",
+                "price variance",
+                "accounts payable"
+            ],
+            "common_roles": [
+                "Purchasing\/Procurement",
+                "Inventory control",
+                "Cost control function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Beverage par-level planning & reorder point calculation",
+            "aliases": [
+                "par level planning",
+                "beverage reorder point calculation",
+                "stock par determination"
+            ],
+            "skill_type": "process_skill",
+            "description": "Establish minimum par levels and reorder points for beverage items using historical usage, lead times and safety stock to avoid stockouts while minimizing carrying costs.",
+            "parent_skill": "Beverage cost calculation & tracking",
+            "related_skills": [
+                "Beverage inventory management",
+                "Beverage inventory management software",
+                "Vendor invoice reconciliation for beverage purchases"
+            ],
+            "keywords": [
+                "par",
+                "reorder point",
+                "lead time",
+                "safety stock",
+                "EOQ"
+            ],
+            "common_roles": [
+                "Inventory control",
+                "Purchasing\/Procurement",
+                "Beverage operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Beverage pricing strategy & margin optimization",
+            "aliases": [
+                "menu pricing (beverages)",
+                "pricing optimization (drinks)"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Develop beverage pricing and promotion strategies to achieve target gross margins and revenue objectives, using cost data, competitor benchmarking and demand analysis.",
+            "parent_skill": "Beverage cost calculation & tracking",
+            "related_skills": [
+                "Beverage cost calculation",
+                "POS beverage sales reconciliation",
+                "Standardized beverage recipe costing"
+            ],
+            "keywords": [
+                "margin optimization",
+                "menu engineering",
+                "price elasticity",
+                "competitor pricing",
+                "promotions"
+            ],
+            "common_roles": [
+                "Revenue management",
+                "Cost control function",
+                "Beverage operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Beverage inventory management software",
+            "aliases": [
+                "BevSpot",
+                "Partender",
+                "BinWise",
+                "beverage stock management systems"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use specialized software and mobile apps for beverage inventory counts, cost tracking, ordering, variance reporting and integration with POS and purchasing systems.",
+            "parent_skill": "Beverage cost calculation & tracking",
+            "related_skills": [
+                "Beverage inventory management",
+                "POS beverage sales reconciliation",
+                "Beverage par-level planning & reorder point calculation"
+            ],
+            "keywords": [
+                "inventory app",
+                "mobile counting",
+                "cloud inventory",
+                "software integration"
+            ],
+            "common_roles": [
+                "Inventory control",
+                "Beverage operations",
+                "Purchasing\/Procurement"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Alcohol excise & tax compliance (beverages)",
+            "aliases": [
+                "alcohol tax reporting",
+                "beverage excise compliance",
+                "alcohol beverage tax compliance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Understand and apply applicable excise taxes, duty rates, licensing and reporting requirements for alcoholic beverages to ensure correct tax calculation and regulatory compliance.",
+            "parent_skill": "Beverage cost calculation & tracking",
+            "related_skills": [
+                "Vendor invoice reconciliation for beverage purchases",
+                "Beverage cost calculation"
+            ],
+            "keywords": [
+                "excise tax",
+                "alcohol duty",
+                "tax reporting",
+                "regulatory compliance",
+                "license reporting"
+            ],
+            "common_roles": [
+                "Cost control function",
+                "Purchasing\/Procurement",
+                "Accounting\/Finance function"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,316 @@
+{
+    "domain": "F&B",
+    "category": "Catering, Events & Banquet Operations",
+    "subcategory": "Large-batch production & holding",
+    "skills": [
+        {
+            "canonical_name": "Large-batch recipe scaling",
+            "aliases": [
+                "recipe scaling",
+                "scaling recipes for events",
+                "batch recipe conversion",
+                "high-volume recipe adaptation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Adjusting ingredient quantities, proportions, and workflows to maintain flavor, texture, and yield when converting recipes from small-scale to large-batch production.",
+            "parent_skill": "",
+            "related_skills": [
+                "Portion control & yield management",
+                "Production scheduling & service timing",
+                "Combi oven & steam kettle operation"
+            ],
+            "keywords": [
+                "scaling",
+                "yield",
+                "batching",
+                "portioning",
+                "recipe conversion"
+            ],
+            "common_roles": [
+                "catering production staff",
+                "banquet kitchen teams",
+                "central production kitchens"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Production scheduling & service timing",
+            "aliases": [
+                "event production scheduling",
+                "service timing coordination",
+                "batch production planning",
+                "service run timing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning and sequencing production tasks, cook-to-hold timing, and plating\/service windows to ensure components are ready concurrently for large events.",
+            "parent_skill": "",
+            "related_skills": [
+                "Large-batch recipe scaling",
+                "Banquet line setup & station organization",
+                "Time-temperature control for holding"
+            ],
+            "keywords": [
+                "scheduling",
+                "production plan",
+                "timing",
+                "run sheet",
+                "mise en place"
+            ],
+            "common_roles": [
+                "catering planners",
+                "banquet operations teams",
+                "large-scale production coordinators"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Portion control & yield management",
+            "aliases": [
+                "portioning",
+                "standard portion control",
+                "yield calculation",
+                "food yield management"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Measuring, standardizing and monitoring portion sizes and cooked yields to control food cost, consistency and compliance in high-volume service.",
+            "parent_skill": "",
+            "related_skills": [
+                "Large-batch recipe scaling",
+                "FIFO inventory rotation & stock control",
+                "Production scheduling & service timing"
+            ],
+            "keywords": [
+                "yield",
+                "food cost",
+                "portioning",
+                "EP\/AP ratios",
+                "standard portions"
+            ],
+            "common_roles": [
+                "catering cost control staff",
+                "production cooks",
+                "kitchen supervisors"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Time-temperature control for holding",
+            "aliases": [
+                "holding temperature control",
+                "hot holding management",
+                "cold holding control",
+                "time and temperature monitoring"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Managing and documenting safe holding temperatures and allowable time windows for hot and cold foods to prevent bacterial growth and meet food-safety standards.",
+            "parent_skill": "",
+            "related_skills": [
+                "Blast chilling & cold-holding techniques",
+                "Sanitation & cross-contamination prevention (large-scale)",
+                "Production scheduling & service timing"
+            ],
+            "keywords": [
+                "holding temps",
+                "time-temperature",
+                "danger zone",
+                "logbooks",
+                "food safety"
+            ],
+            "common_roles": [
+                "banquet kitchen supervisors",
+                "catering food safety monitors",
+                "large-scale production leads"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Blast chilling & cold-holding techniques",
+            "aliases": [
+                "rapid chilling",
+                "blast chiller operation",
+                "cold-hold procedures",
+                "chill-down processes"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Techniques and operational controls for rapidly reducing food temperature after cooking and maintaining safe cold-holding during storage and transport in high-volume operations.",
+            "parent_skill": "",
+            "related_skills": [
+                "Time-temperature control for holding",
+                "Combi oven & steam kettle operation",
+                "FIFO inventory rotation & stock control"
+            ],
+            "keywords": [
+                "blast chill",
+                "rapid chill",
+                "cold chain",
+                "cooldown",
+                "storage temps"
+            ],
+            "common_roles": [
+                "central production teams",
+                "catering logistics staff",
+                "banquet production staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sous-vide high-volume production",
+            "aliases": [
+                "large-scale sous-vide",
+                "sous vide batch production",
+                "vacuum-cook production"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning and executing sous-vide cooking at scale, including portion vacuuming, long-time low-temperature controls, batch cycling and post-cook handling for events.",
+            "parent_skill": "",
+            "related_skills": [
+                "Time-temperature control for holding",
+                "Regeneration\/rethermalization of pre-cooked foods",
+                "Combi oven & steam kettle operation"
+            ],
+            "keywords": [
+                "sous-vide",
+                "low-temp cooking",
+                "vacuum packing",
+                "batch cycles",
+                "cook-chill"
+            ],
+            "common_roles": [
+                "large-scale production chefs",
+                "catering sous chefs",
+                "food production specialists"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Combi oven & steam kettle operation",
+            "aliases": [
+                "combi oven use",
+                "steam kettle operation",
+                "convection-steam oven operation",
+                "tilting kettle operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Safe and efficient operation, programming and maintenance practices for combi ovens and steam\/tilting kettles used in high-volume cooking and batch production.",
+            "parent_skill": "",
+            "related_skills": [
+                "Large-batch recipe scaling",
+                "Blast chilling & cold-holding techniques",
+                "Production scheduling & service timing"
+            ],
+            "keywords": [
+                "combi oven",
+                "steam kettle",
+                "tilting kettle",
+                "programmable oven",
+                "batch cooking equipment"
+            ],
+            "common_roles": [
+                "production cooks",
+                "kitchen equipment operators",
+                "banquet kitchen teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "FIFO inventory rotation & stock control",
+            "aliases": [
+                "first in first out rotation",
+                "stock rotation",
+                "inventory rotation procedures",
+                "warehouse rotation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing inventory flow using FIFO and related controls to minimize spoilage, ensure product freshness and support predictable supply for scheduled large-batch production.",
+            "parent_skill": "",
+            "related_skills": [
+                "Portion control & yield management",
+                "Blast chilling & cold-holding techniques",
+                "Sanitation & cross-contamination prevention (large-scale)"
+            ],
+            "keywords": [
+                "FIFO",
+                "inventory",
+                "rotation",
+                "stock control",
+                "expiry management"
+            ],
+            "common_roles": [
+                "catering storeroom staff",
+                "production inventory clerks",
+                "banquet procurement assistants"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sanitation & cross-contamination prevention (large-scale)",
+            "aliases": [
+                "large-scale sanitation",
+                "cross-contamination controls",
+                "industrial kitchen sanitation",
+                "cleaning and sanitation for events"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Implementing cleaning schedules, allergen separation, PPE use and surface\/equipment sanitation protocols specific to high-volume kitchens to reduce contamination risk and meet regulatory standards.",
+            "parent_skill": "",
+            "related_skills": [
+                "Time-temperature control for holding",
+                "FIFO inventory rotation & stock control",
+                "Combi oven & steam kettle operation"
+            ],
+            "keywords": [
+                "sanitation",
+                "allergen control",
+                "cleaning schedules",
+                "PPE",
+                "cross-contamination"
+            ],
+            "common_roles": [
+                "kitchen sanitation teams",
+                "catering compliance officers",
+                "large-scale food safety coordinators"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Banquet line setup & station organization",
+            "aliases": [
+                "line setup for banquets",
+                "station organization",
+                "service line assembly",
+                "batch plating line configuration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and organizing production and service lines, station assignments and flow for efficient plating, garnish application and synchronized service during large events.",
+            "parent_skill": "",
+            "related_skills": [
+                "Production scheduling & service timing",
+                "Large-batch recipe scaling",
+                "Portion control & yield management"
+            ],
+            "keywords": [
+                "line setup",
+                "station layout",
+                "assembly line",
+                "plating flow",
+                "service coordination"
+            ],
+            "common_roles": [
+                "banquet production leads",
+                "catering operations staff",
+                "event kitchen coordinators"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

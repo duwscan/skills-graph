@@ -1,0 +1,262 @@
+{
+    "domain": "IT",
+    "category": "Analytics, BI & Reporting",
+    "subcategory": "Analytics governance",
+    "skills": [
+        {
+            "canonical_name": "Analytics Data Governance",
+            "aliases": [
+                "Analytics governance",
+                "Governance for analytics",
+                "BI governance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and operating governance frameworks, roles, and processes that ensure analytic assets are trustworthy, discoverable, and used according to policy.",
+            "parent_skill": "Analytics governance",
+            "related_skills": [
+                "Analytics Metadata Management",
+                "Analytics Data Cataloging",
+                "Analytics Access & Entitlement Management",
+                "Analytics Policy and Standards",
+                "Analytics Data Lineage"
+            ],
+            "keywords": [
+                "data governance",
+                "analytics governance",
+                "governance framework",
+                "data stewardship"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Analytics Metadata Management",
+            "aliases": [
+                "Metadata management for analytics",
+                "BI metadata management",
+                "Analytics metadata governance"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Capturing, organizing, and maintaining metadata (business, technical, operational) to support discovery, interpretation, and lineage of analytic assets.",
+            "parent_skill": "Analytics governance",
+            "related_skills": [
+                "Analytics Data Cataloging",
+                "Analytics Data Lineage",
+                "Analytics Data Governance",
+                "Metrics Taxonomy Design"
+            ],
+            "keywords": [
+                "metadata",
+                "business glossary",
+                "technical metadata",
+                "semantic layer"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Analytics Data Lineage",
+            "aliases": [
+                "Data lineage for analytics",
+                "Analytics lineage tracking",
+                "BI lineage"
+            ],
+            "skill_type": "process_skill",
+            "description": "Tracing and documenting the origin, transformations, and destinations of data used in analytics to enable impact analysis and auditability.",
+            "parent_skill": "Analytics governance",
+            "related_skills": [
+                "Analytics Metadata Management",
+                "Analytics Data Cataloging",
+                "Analytics Change Control"
+            ],
+            "keywords": [
+                "lineage",
+                "provenance",
+                "dataflow",
+                "impact analysis"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Analytics Data Cataloging",
+            "aliases": [
+                "Data cataloging for analytics",
+                "Analytics catalog management",
+                "BI data catalog"
+            ],
+            "skill_type": "process_skill",
+            "description": "Organizing and curating searchable inventories of analytic datasets, reports, and models to support self-service and governed reuse.",
+            "parent_skill": "Analytics governance",
+            "related_skills": [
+                "Analytics Metadata Management",
+                "Analytics Data Lineage",
+                "Analytics Quality Monitoring"
+            ],
+            "keywords": [
+                "data catalog",
+                "dataset inventory",
+                "discovery",
+                "data dictionary"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Metrics Taxonomy Design",
+            "aliases": [
+                "Master metrics governance",
+                "Business metrics taxonomy",
+                "Metrics governance"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Defining, standardizing, and governing business metric definitions, calculations, and ownership to ensure consistency across reports and models.",
+            "parent_skill": "Analytics governance",
+            "related_skills": [
+                "Analytics Metadata Management",
+                "Analytics Data Governance",
+                "Analytics Policy and Standards"
+            ],
+            "keywords": [
+                "metrics",
+                "measures",
+                "KPIs",
+                "metric definitions",
+                "semantic layer"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Analytics Model Governance",
+            "aliases": [
+                "Model governance for analytics",
+                "ML governance",
+                "Model risk governance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Establishing policies, controls, and review processes for predictive and statistical models used in analytics to manage model risk and regulatory expectations.",
+            "parent_skill": "Analytics governance",
+            "related_skills": [
+                "Analytics Quality Monitoring",
+                "Analytics Policy and Standards",
+                "Analytics Data Lineage"
+            ],
+            "keywords": [
+                "model governance",
+                "model validation",
+                "model lifecycle",
+                "model risk"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Analytics Access & Entitlement Management",
+            "aliases": [
+                "Analytics access governance",
+                "BI access control",
+                "Analytic entitlement management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Defining and enforcing who can access analytic datasets, dashboards, and models, including role-based entitlements, approval workflows, and auditing.",
+            "parent_skill": "Analytics governance",
+            "related_skills": [
+                "Analytics Data Governance",
+                "Analytics Policy and Standards",
+                "Analytics Change Control"
+            ],
+            "keywords": [
+                "access control",
+                "entitlements",
+                "RBAC",
+                "data access",
+                "privilege management"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Analytics Change Control and Release Management",
+            "aliases": [
+                "Analytics change management",
+                "BI release management",
+                "Analytics deployment controls"
+            ],
+            "skill_type": "process_skill",
+            "description": "Managing changes to analytic assets (datasets, reports, models, dashboards) through versioning, testing, approvals, and controlled deployment processes.",
+            "parent_skill": "Analytics governance",
+            "related_skills": [
+                "Analytics Data Lineage",
+                "Analytics Quality Monitoring",
+                "Analytics Access & Entitlement Management"
+            ],
+            "keywords": [
+                "change control",
+                "versioning",
+                "release process",
+                "deployment pipeline"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Analytics Quality Monitoring",
+            "aliases": [
+                "Analytic data quality monitoring",
+                "BI quality assurance",
+                "Analytics data validation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing ongoing checks, SLAs, and alerting to detect, triage, and remediate data and metric correctness issues affecting analytics outputs.",
+            "parent_skill": "Analytics governance",
+            "related_skills": [
+                "Analytics Data Cataloging",
+                "Analytics Data Lineage",
+                "Analytics Change Control and Release Management"
+            ],
+            "keywords": [
+                "data quality",
+                "SLA monitoring",
+                "anomaly detection",
+                "data validation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Analytics Policy and Standards",
+            "aliases": [
+                "Analytics governance policy",
+                "Analytics standards development",
+                "BI policy management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating and maintaining policies, coding standards, naming conventions, and compliance requirements that govern analytic development and usage.",
+            "parent_skill": "Analytics governance",
+            "related_skills": [
+                "Analytics Data Governance",
+                "Metrics Taxonomy Design",
+                "Analytics Model Governance"
+            ],
+            "keywords": [
+                "policies",
+                "standards",
+                "naming conventions",
+                "governance policy"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

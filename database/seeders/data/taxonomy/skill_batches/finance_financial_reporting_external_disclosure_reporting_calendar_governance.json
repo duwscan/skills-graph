@@ -1,0 +1,308 @@
+{
+    "domain": "Finance",
+    "category": "Financial Reporting & External Disclosure",
+    "subcategory": "Reporting calendar & governance",
+    "skills": [
+        {
+            "canonical_name": "Financial reporting calendar management",
+            "aliases": [
+                "reporting calendar management",
+                "reporting schedule management",
+                "financial statement calendar management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Create, maintain and govern the master calendar of all external and statutory reporting events, deadlines, deliverables and escalation points across reporting periods.",
+            "parent_skill": "Financial reporting governance",
+            "related_skills": [
+                "Period-end close scheduling",
+                "Regulatory reporting deadline management",
+                "Reporting governance framework design",
+                "Reporting calendar automation & integration"
+            ],
+            "keywords": [
+                "master calendar",
+                "reporting schedule",
+                "deadlines",
+                "deliverables",
+                "escalation"
+            ],
+            "common_roles": [
+                "Financial Reporting Manager",
+                "Financial Controller",
+                "Reporting Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Period-end close scheduling",
+            "aliases": [
+                "period close scheduling",
+                "month-end close scheduling",
+                "close calendar management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Plan and sequence period-end closing activities, define task dependencies and SLAs, and coordinate timing across accounting, consolidation and operational teams to meet reporting deadlines.",
+            "parent_skill": "Financial reporting governance",
+            "related_skills": [
+                "Financial reporting calendar management",
+                "Reporting calendar automation & integration",
+                "Audit and external reporting coordination"
+            ],
+            "keywords": [
+                "close schedule",
+                "task sequencing",
+                "SLAs",
+                "dependencies",
+                "period close"
+            ],
+            "common_roles": [
+                "Financial Controller",
+                "Close Manager",
+                "Consolidation Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory reporting deadline management",
+            "aliases": [
+                "regulatory reporting calendar",
+                "statutory reporting deadlines management",
+                "filing deadline management"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Monitor, interpret and enforce statutory and regulatory filing deadlines for financial statements and required disclosures to ensure timely submissions and avoid penalties.",
+            "parent_skill": "Financial reporting governance",
+            "related_skills": [
+                "Regulatory change monitoring for reporting obligations",
+                "Financial reporting calendar management",
+                "Disclosure controls and procedures (DC&P)"
+            ],
+            "keywords": [
+                "filing deadlines",
+                "statutory deadlines",
+                "compliance calendar",
+                "submissions",
+                "regulatory filings"
+            ],
+            "common_roles": [
+                "External Reporting Analyst",
+                "Corporate Controller",
+                "Compliance Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Disclosure controls and procedures (DC&P)",
+            "aliases": [
+                "disclosure controls",
+                "DC&P",
+                "disclosure control procedures"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Design, document and maintain controls and procedures that ensure accuracy, completeness and timeliness of disclosures in external financial reports.",
+            "parent_skill": "Financial reporting governance",
+            "related_skills": [
+                "Internal controls over financial reporting (ICFR) governance",
+                "Regulatory reporting deadline management",
+                "Reporting governance framework design"
+            ],
+            "keywords": [
+                "DC&P",
+                "controls",
+                "disclosure accuracy",
+                "documentation",
+                "control testing"
+            ],
+            "common_roles": [
+                "SOX\/Controls Manager",
+                "Financial Reporting Manager",
+                "Internal Audit Coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Internal controls over financial reporting (ICFR) governance",
+            "aliases": [
+                "ICFR governance",
+                "internal controls over financial reporting",
+                "financial reporting controls governance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Establish and oversee ICFR policies, control ownership, testing programs and remediation processes to support reliable financial reporting and regulatory compliance.",
+            "parent_skill": "Financial reporting governance",
+            "related_skills": [
+                "Disclosure controls and procedures (DC&P)",
+                "Regulatory reporting deadline management",
+                "Reporting governance framework design"
+            ],
+            "keywords": [
+                "ICFR",
+                "control ownership",
+                "control testing",
+                "remediation",
+                "SOX"
+            ],
+            "common_roles": [
+                "Controller",
+                "SOX Manager",
+                "Internal Audit Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Reporting governance framework design",
+            "aliases": [
+                "reporting governance design",
+                "financial reporting governance framework",
+                "reporting policy design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Define roles, responsibilities, escalation paths, approval gates and policies that govern the end-to-end external reporting process and reporting-related decision rights.",
+            "parent_skill": "Financial reporting governance",
+            "related_skills": [
+                "Financial reporting calendar management",
+                "Disclosure controls and procedures (DC&P)",
+                "Internal controls over financial reporting (ICFR) governance"
+            ],
+            "keywords": [
+                "governance framework",
+                "roles and responsibilities",
+                "approval gates",
+                "escalation",
+                "reporting policy"
+            ],
+            "common_roles": [
+                "Chief Accounting Officer",
+                "Financial Reporting Manager",
+                "Corporate Controller"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Stakeholder coordination for external reporting",
+            "aliases": [
+                "cross-functional reporting coordination",
+                "stakeholder management for reporting",
+                "reporting stakeholder coordination"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Engage and coordinate with accounting, tax, legal, investor relations, business units and auditors to collect inputs, resolve issues and align timelines for external disclosures.",
+            "parent_skill": "Financial reporting governance",
+            "related_skills": [
+                "Financial reporting calendar management",
+                "Audit and external reporting coordination",
+                "Reporting governance framework design"
+            ],
+            "keywords": [
+                "stakeholder engagement",
+                "cross-functional",
+                "issue resolution",
+                "communication",
+                "alignment"
+            ],
+            "common_roles": [
+                "Reporting Manager",
+                "Financial Reporting Analyst",
+                "Investor Relations Liaison"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Reporting calendar automation & integration",
+            "aliases": [
+                "reporting calendar automation",
+                "calendar workflow automation for reporting",
+                "automated reporting calendar integration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Implement and maintain automation and integrations that synchronize reporting calendars with ERPs, consolidation tools, workflow systems and calendar platforms to reduce manual coordination.",
+            "parent_skill": "Financial reporting governance",
+            "related_skills": [
+                "Financial reporting calendar management",
+                "Period-end close scheduling",
+                "Reporting governance framework design"
+            ],
+            "keywords": [
+                "automation",
+                "integration",
+                "workflow",
+                "ERP integration",
+                "calendar sync"
+            ],
+            "common_roles": [
+                "Financial Systems Analyst",
+                "FP&A Systems Manager",
+                "Reporting Automation Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Audit and external reporting coordination",
+            "aliases": [
+                "audit coordination",
+                "year-end audit coordination",
+                "external audit coordination"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Manage scheduling, deliverables, data requests and issue follow-up with external auditors and assurance providers throughout interim and year-end reporting cycles.",
+            "parent_skill": "Financial reporting governance",
+            "related_skills": [
+                "Period-end close scheduling",
+                "Stakeholder coordination for external reporting",
+                "Regulatory reporting deadline management"
+            ],
+            "keywords": [
+                "audit schedule",
+                "auditor requests",
+                "deliverables",
+                "assurance coordination",
+                "year-end"
+            ],
+            "common_roles": [
+                "Audit Coordinator",
+                "Financial Controller",
+                "External Reporting Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory change monitoring for reporting obligations",
+            "aliases": [
+                "regulatory change monitoring",
+                "reporting obligation monitoring",
+                "regulatory impact monitoring for reporting"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Continuously track regulatory, accounting standards and disclosure rule changes, assess impacts on reporting timelines and requirements, and update calendars and governance accordingly.",
+            "parent_skill": "Financial reporting governance",
+            "related_skills": [
+                "Regulatory reporting deadline management",
+                "Reporting governance framework design",
+                "Disclosure controls and procedures (DC&P)"
+            ],
+            "keywords": [
+                "regulatory updates",
+                "accounting standards",
+                "impact assessment",
+                "rule changes",
+                "obligation tracking"
+            ],
+            "common_roles": [
+                "Compliance Analyst",
+                "Financial Reporting Analyst",
+                "Accounting Policy Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

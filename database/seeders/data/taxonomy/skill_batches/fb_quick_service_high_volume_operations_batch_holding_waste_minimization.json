@@ -1,0 +1,298 @@
+{
+    "domain": "F&B",
+    "category": "Quick Service & High-Volume Operations",
+    "subcategory": "Batch holding & waste minimization",
+    "skills": [
+        {
+            "canonical_name": "Holding temperature control",
+            "aliases": [
+                "hot-holding temperature control",
+                "cold-holding temperature control",
+                "holding temp monitoring"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing and maintaining safe and quality-preserving temperatures for hot and cold batches during holding, including corrective actions for deviations.",
+            "parent_skill": "Batch holding & waste minimization",
+            "related_skills": [
+                "Temperature monitoring systems",
+                "Food safety plan implementation",
+                "Shelf-life monitoring & date labeling"
+            ],
+            "keywords": [
+                "hot holding",
+                "cold holding",
+                "temperature control",
+                "holding specs",
+                "danger zone"
+            ],
+            "common_roles": [
+                "kitchen staff",
+                "line cook",
+                "shift supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "FIFO inventory rotation",
+            "aliases": [
+                "first-in-first-out",
+                "stock rotation",
+                "rotate stock"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implementing first-in-first-out inventory practices and physical rotation methods to minimize spoilage and ensure older product is used before newer stock.",
+            "parent_skill": "Batch holding & waste minimization",
+            "related_skills": [
+                "Shelf-life monitoring & date labeling",
+                "Waste tracking & reporting",
+                "Batch scheduling & production planning"
+            ],
+            "keywords": [
+                "FIFO",
+                "inventory rotation",
+                "stock rotation",
+                "shelf rotation"
+            ],
+            "common_roles": [
+                "inventory associate",
+                "kitchen staff",
+                "operations supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Portion control",
+            "aliases": [
+                "portion sizing",
+                "serving standardization",
+                "portion measurement"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Using standardized measures, tools, and procedures to portion food consistently to control cost, reduce waste, and maintain product quality.",
+            "parent_skill": "Batch holding & waste minimization",
+            "related_skills": [
+                "Recipe scaling & standardization",
+                "Yield and trim loss calculation",
+                "Waste tracking & reporting"
+            ],
+            "keywords": [
+                "portion sizes",
+                "measuring scoops",
+                "dispenser control",
+                "serving standards"
+            ],
+            "common_roles": [
+                "line cook",
+                "food preparation worker",
+                "shift supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Batch scheduling & production planning",
+            "aliases": [
+                "production planning",
+                "batch cook scheduling",
+                "production scheduling"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning batch sizes, cook times, and production windows to align output with demand forecasts and minimize leftover inventory.",
+            "parent_skill": "Batch holding & waste minimization",
+            "related_skills": [
+                "FIFO inventory rotation",
+                "Waste tracking & reporting",
+                "Recipe scaling & standardization"
+            ],
+            "keywords": [
+                "production plan",
+                "batch sizes",
+                "shift planning",
+                "demand alignment"
+            ],
+            "common_roles": [
+                "production planner",
+                "kitchen supervisor",
+                "operations manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Yield and trim loss calculation",
+            "aliases": [
+                "yield calculation",
+                "trim loss analysis",
+                "usable yield assessment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Measuring product yield and calculating trim or prep losses to inform portioning, recipe costs, and inventory needs.",
+            "parent_skill": "Batch holding & waste minimization",
+            "related_skills": [
+                "Recipe scaling & standardization",
+                "Portion control",
+                "Waste tracking & reporting"
+            ],
+            "keywords": [
+                "yield %",
+                "trim loss",
+                "as-used yield",
+                "waste percentage"
+            ],
+            "common_roles": [
+                "food production analyst",
+                "kitchen manager",
+                "quality assurance specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Waste tracking & reporting",
+            "aliases": [
+                "waste logs",
+                "waste reporting",
+                "waste audit"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Documenting, quantifying, and analyzing food and packaging waste to identify patterns and opportunities for reduction and cost savings.",
+            "parent_skill": "Batch holding & waste minimization",
+            "related_skills": [
+                "Yield and trim loss calculation",
+                "Batch scheduling & production planning",
+                "Ingredient cross-utilization"
+            ],
+            "keywords": [
+                "waste log",
+                "waste metrics",
+                "waste audit",
+                "waste analytics"
+            ],
+            "common_roles": [
+                "operations analyst",
+                "kitchen supervisor",
+                "sustainability coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Recipe scaling & standardization",
+            "aliases": [
+                "standardized recipes",
+                "recipe scaling",
+                "portion recipe standardization"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating and adjusting standardized recipes and procedures to scale consistently for batch production while maintaining cost, yield, and quality targets.",
+            "parent_skill": "Batch holding & waste minimization",
+            "related_skills": [
+                "Yield and trim loss calculation",
+                "Portion control",
+                "Batch scheduling & production planning"
+            ],
+            "keywords": [
+                "standard recipes",
+                "scaling formulas",
+                "batch recipes",
+                "cost per portion"
+            ],
+            "common_roles": [
+                "menu developer",
+                "kitchen supervisor",
+                "production chef"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Shelf-life monitoring & date labeling",
+            "aliases": [
+                "use-by labeling",
+                "date coding",
+                "product dating"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Applying and monitoring use-by\/hold-by dates, labeling practices, and shelf-life limits to prevent spoilage and ensure proper rotation.",
+            "parent_skill": "Batch holding & waste minimization",
+            "related_skills": [
+                "FIFO inventory rotation",
+                "Holding temperature control",
+                "Food safety plan implementation"
+            ],
+            "keywords": [
+                "date label",
+                "use-by",
+                "hold-by",
+                "shelf life"
+            ],
+            "common_roles": [
+                "kitchen staff",
+                "inventory associate",
+                "quality assurance specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Temperature monitoring systems",
+            "aliases": [
+                "thermometers",
+                "temperature data loggers",
+                "remote temperature monitoring"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Selecting, operating, and maintaining temperature measurement tools and monitoring systems (manual and automated) used for holding and storage compliance.",
+            "parent_skill": "Batch holding & waste minimization",
+            "related_skills": [
+                "Holding temperature control",
+                "Food safety plan implementation",
+                "Shelf-life monitoring & date labeling"
+            ],
+            "keywords": [
+                "data logger",
+                "digital thermometer",
+                "remote probe",
+                "temp sensors"
+            ],
+            "common_roles": [
+                "maintenance technician",
+                "quality assurance specialist",
+                "kitchen supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food safety plan implementation",
+            "aliases": [
+                "HACCP implementation",
+                "food safety management",
+                "local food safety compliance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Applying HACCP principles and local food safety regulations to holding, storage, and batch processes to ensure regulatory compliance and minimize safety-related waste.",
+            "parent_skill": "Batch holding & waste minimization",
+            "related_skills": [
+                "Holding temperature control",
+                "Shelf-life monitoring & date labeling",
+                "Temperature monitoring systems"
+            ],
+            "keywords": [
+                "HACCP",
+                "food safety",
+                "regulatory compliance",
+                "critical control points"
+            ],
+            "common_roles": [
+                "quality assurance specialist",
+                "operations manager",
+                "kitchen supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

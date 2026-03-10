@@ -1,0 +1,295 @@
+{
+    "domain": "F&B",
+    "category": "Front-of-House Guest Service",
+    "subcategory": "Order taking & menu guidance",
+    "skills": [
+        {
+            "canonical_name": "Menu knowledge",
+            "aliases": [
+                "Food and beverage knowledge",
+                "Menu familiarity",
+                "Dish ingredients knowledge"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Understanding menu items, ingredients, preparation methods, portioning, and daily specials to accurately inform guests and support ordering decisions.",
+            "parent_skill": "Order taking & menu guidance",
+            "related_skills": [
+                "Menu presentation and dish description",
+                "Allergen and dietary communication",
+                "Food and beverage pairing recommendations"
+            ],
+            "keywords": [
+                "menu",
+                "ingredients",
+                "preparation",
+                "specials",
+                "portions"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Guest service staff",
+                "Food service attendants"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Order entry (POS)",
+            "aliases": [
+                "POS order entry",
+                "Order input",
+                "Order taking in POS"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Accurately recording guest orders into the point-of-sale or order system, including modifiers, courses, and timing instructions.",
+            "parent_skill": "Order taking & menu guidance",
+            "related_skills": [
+                "Point-of-sale (POS) system operation",
+                "Order verification and accuracy"
+            ],
+            "keywords": [
+                "POS",
+                "order entry",
+                "modifiers",
+                "courses",
+                "timing"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Guest service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Point-of-sale (POS) system operation",
+            "aliases": [
+                "POS operation",
+                "Order management system operation",
+                "Terminal operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operating electronic POS terminals, handheld\/tablet ordering devices and order management interfaces to process transactions and send orders to production.",
+            "parent_skill": "Order taking & menu guidance",
+            "related_skills": [
+                "Order entry (POS)",
+                "Remote order taking (phone and online)"
+            ],
+            "keywords": [
+                "POS",
+                "handheld",
+                "tablet",
+                "order management",
+                "checkout"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Guest service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Suggestive selling and upselling",
+            "aliases": [
+                "Upselling",
+                "Suggestive selling",
+                "Recommend add-ons"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Proactively recommending additional items, upgrades, or higher-margin options to increase average check while matching guest preferences.",
+            "parent_skill": "Order taking & menu guidance",
+            "related_skills": [
+                "Menu knowledge",
+                "Menu presentation and dish description",
+                "Food and beverage pairing recommendations"
+            ],
+            "keywords": [
+                "upsell",
+                "suggestive selling",
+                "add-ons",
+                "average check",
+                "recommendations"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Guest service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen and dietary communication",
+            "aliases": [
+                "Food allergen communication",
+                "Dietary restriction accommodation",
+                "Allergy disclosure"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Identifying common allergens and dietary considerations in menu items and clearly communicating options and risks to guests in accordance with safety practices.",
+            "parent_skill": "Order taking & menu guidance",
+            "related_skills": [
+                "Menu knowledge",
+                "Order modification and special requests"
+            ],
+            "keywords": [
+                "allergens",
+                "dietary restrictions",
+                "gluten-free",
+                "vegan",
+                "cross-contact"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Guest service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Order modification and special requests",
+            "aliases": [
+                "Handling special requests",
+                "Customizing orders",
+                "Order modifiers"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing guest requests for substitutions, ingredient removals\/additions, portion changes, and other customizations while coordinating with kitchen staff.",
+            "parent_skill": "Order taking & menu guidance",
+            "related_skills": [
+                "Order entry (POS)",
+                "Allergen and dietary communication",
+                "Order verification and accuracy"
+            ],
+            "keywords": [
+                "modifications",
+                "substitutions",
+                "custom orders",
+                "kitchen communication",
+                "modifiers"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Guest service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Order verification and accuracy",
+            "aliases": [
+                "Order confirmation",
+                "Double-checking orders",
+                "Verify order accuracy"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing checks such as repeating orders, reading back modifiers and verifying tickets to minimize errors and ensure correct delivery of items.",
+            "parent_skill": "Order taking & menu guidance",
+            "related_skills": [
+                "Order entry (POS)",
+                "Order modification and special requests",
+                "Point-of-sale (POS) system operation"
+            ],
+            "keywords": [
+                "verification",
+                "accuracy",
+                "confirmation",
+                "read-back",
+                "ticket checking"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Guest service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Menu presentation and dish description",
+            "aliases": [
+                "Describing menu items",
+                "Explaining dishes",
+                "Menu communication"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Effectively describing flavors, textures, preparation style and portion sizes to help guests make informed choices and set expectations.",
+            "parent_skill": "Order taking & menu guidance",
+            "related_skills": [
+                "Menu knowledge",
+                "Suggestive selling and upselling",
+                "Food and beverage pairing recommendations"
+            ],
+            "keywords": [
+                "description",
+                "presentation",
+                "flavor profile",
+                "portion",
+                "guest communication"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Guest service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food and beverage pairing recommendations",
+            "aliases": [
+                "Menu pairing recommendations",
+                "Wine and food pairing",
+                "Beverage pairing suggestions"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Applying knowledge of flavor profiles and menu composition to recommend complementary beverage or course pairings that enhance guest experience.",
+            "parent_skill": "Order taking & menu guidance",
+            "related_skills": [
+                "Menu knowledge",
+                "Menu presentation and dish description",
+                "Suggestive selling and upselling"
+            ],
+            "keywords": [
+                "pairing",
+                "wine",
+                "beverage",
+                "flavor matching",
+                "recommendation"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Guest service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Remote order taking (phone and online)",
+            "aliases": [
+                "Phone order taking",
+                "Online order taking",
+                "Remote ordering"
+            ],
+            "skill_type": "process_skill",
+            "description": "Receiving and processing orders via phone, web or third-party platforms, coordinating timing, payment and special instructions for takeout or delivery.",
+            "parent_skill": "Order taking & menu guidance",
+            "related_skills": [
+                "Point-of-sale (POS) system operation",
+                "Order entry (POS)",
+                "Order verification and accuracy"
+            ],
+            "keywords": [
+                "phone orders",
+                "online orders",
+                "third-party",
+                "takeout",
+                "delivery coordination"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Guest service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

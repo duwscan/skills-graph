@@ -1,0 +1,294 @@
+{
+    "domain": "IT",
+    "category": "Cybersecurity Operations & Engineering",
+    "subcategory": "Network security engineering",
+    "skills": [
+        {
+            "canonical_name": "Network security architecture design",
+            "aliases": [
+                "secure network architecture",
+                "network security design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing end-to-end network topologies, security zones, and controls that protect assets while meeting performance and operational requirements.",
+            "parent_skill": "Network security engineering",
+            "related_skills": [
+                "Secure network segmentation",
+                "Firewall policy design and management",
+                "Secure routing and switching"
+            ],
+            "keywords": [
+                "security zones",
+                "defense in depth",
+                "architecture",
+                "network design"
+            ],
+            "common_roles": [
+                "Network Security Engineer",
+                "Security Architect",
+                "Infrastructure Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Firewall policy design and management",
+            "aliases": [
+                "firewall rule design",
+                "firewall configuration management",
+                "NGFW policy management"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Creating, optimizing, and maintaining firewall rules and policies to enforce network access controls and minimize rulebase complexity and risk.",
+            "parent_skill": "Network security engineering",
+            "related_skills": [
+                "Network security architecture design",
+                "Secure network segmentation",
+                "Logging, SIEM integration, and network telemetry"
+            ],
+            "keywords": [
+                "ACL",
+                "policy tuning",
+                "rulebase",
+                "access control"
+            ],
+            "common_roles": [
+                "Network Security Engineer",
+                "Security Operations Engineer",
+                "Firewall Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intrusion detection and prevention (IDS\/IPS) deployment and tuning",
+            "aliases": [
+                "IDS tuning",
+                "IPS configuration",
+                "intrusion prevention management"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Deploying and tuning IDS\/IPS systems to detect and block malicious traffic while minimizing false positives and ensuring compatibility with network performance.",
+            "parent_skill": "Network security engineering",
+            "related_skills": [
+                "Network traffic analysis and packet inspection",
+                "Logging, SIEM integration, and network telemetry",
+                "DDoS mitigation and network resilience engineering"
+            ],
+            "keywords": [
+                "anomaly detection",
+                "signature-based detection",
+                "false positives",
+                "traffic inspection"
+            ],
+            "common_roles": [
+                "Security Operations Engineer",
+                "Network Security Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Secure network segmentation",
+            "aliases": [
+                "network microsegmentation",
+                "VLAN security design",
+                "zone-based segmentation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing segmentation strategies (VLANs, VRFs, microsegmentation) to limit lateral movement and apply least-privilege networking controls.",
+            "parent_skill": "Network security engineering",
+            "related_skills": [
+                "Network security architecture design",
+                "Secure routing and switching",
+                "Network access control (NAC) implementation"
+            ],
+            "keywords": [
+                "microsegmentation",
+                "VLAN",
+                "isolation",
+                "east-west traffic"
+            ],
+            "common_roles": [
+                "Security Architect",
+                "Network Security Engineer",
+                "Infrastructure Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "VPN and secure remote connectivity",
+            "aliases": [
+                "IPsec VPN management",
+                "SSL VPN administration",
+                "remote access security"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Implementing and operating secure remote and site-to-site connectivity solutions, including encryption, key management, and access controls for remote users and branches.",
+            "parent_skill": "Network security engineering",
+            "related_skills": [
+                "Firewall policy design and management",
+                "Network access control (NAC) implementation",
+                "Logging, SIEM integration, and network telemetry"
+            ],
+            "keywords": [
+                "VPN",
+                "remote access",
+                "encryption",
+                "tunneling"
+            ],
+            "common_roles": [
+                "Network Engineer",
+                "Network Security Engineer",
+                "Security Operations Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Packet capture and network traffic analysis",
+            "aliases": [
+                "network packet analysis",
+                "pcap analysis",
+                "traffic forensics"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Capturing, decoding, and analyzing network traffic to investigate incidents, troubleshoot performance issues, and validate security controls.",
+            "parent_skill": "Network security engineering",
+            "related_skills": [
+                "Intrusion detection and prevention (IDS\/IPS) deployment and tuning",
+                "Logging, SIEM integration, and network telemetry",
+                "Network traffic baseline and anomaly detection"
+            ],
+            "keywords": [
+                "packet capture",
+                "flow analysis",
+                "pcap",
+                "protocol decoding"
+            ],
+            "common_roles": [
+                "Security Analyst",
+                "Network Security Engineer",
+                "Threat Hunter"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Secure routing and switching",
+            "aliases": [
+                "routing security",
+                "secure switch configuration",
+                "ACL and route filtering"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Configuring and hardening routing and switching protocols (ACLs, route filtering, authentication) to protect control and data planes from compromise and misconfiguration.",
+            "parent_skill": "Network security engineering",
+            "related_skills": [
+                "Network security architecture design",
+                "Firewall policy design and management",
+                "VPN and secure remote connectivity"
+            ],
+            "keywords": [
+                "BGP security",
+                "OSPF authentication",
+                "ACL",
+                "route filtering"
+            ],
+            "common_roles": [
+                "Network Engineer",
+                "Network Security Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Network access control (NAC) implementation",
+            "aliases": [
+                "endpoint network access control",
+                "802.1X implementation",
+                "network admission control"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Deploying and operating NAC solutions to enforce device posture, authentication, and remediation before granting network access.",
+            "parent_skill": "Network security engineering",
+            "related_skills": [
+                "Secure network segmentation",
+                "VPN and secure remote connectivity",
+                "Logging, SIEM integration, and network telemetry"
+            ],
+            "keywords": [
+                "802.1X",
+                "posture assessment",
+                "guest access",
+                "enforcement"
+            ],
+            "common_roles": [
+                "Network Security Engineer",
+                "Security Operations Engineer",
+                "Infrastructure Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "DDoS mitigation and network resilience engineering",
+            "aliases": [
+                "DDoS defense",
+                "network traffic scrubbing",
+                "resilient network design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and operating defenses and architectures (rate limiting, traffic scrubbing, redundancy) to detect, mitigate, and recover from volumetric and protocol attacks.",
+            "parent_skill": "Network security engineering",
+            "related_skills": [
+                "Intrusion detection and prevention (IDS\/IPS) deployment and tuning",
+                "Logging, SIEM integration, and network telemetry",
+                "Secure network architecture design"
+            ],
+            "keywords": [
+                "traffic filtering",
+                "rate limiting",
+                "scrubbing",
+                "resilience"
+            ],
+            "common_roles": [
+                "Network Security Engineer",
+                "Security Operations Engineer",
+                "Site Reliability Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Logging, SIEM integration, and network telemetry",
+            "aliases": [
+                "network telemetry collection",
+                "SIEM network log ingestion",
+                "flow and log integration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Collecting, normalizing, and integrating network logs and telemetry (flows, syslog, NetFlow) into security monitoring and incident response pipelines.",
+            "parent_skill": "Network security engineering",
+            "related_skills": [
+                "Packet capture and network traffic analysis",
+                "Intrusion detection and prevention (IDS\/IPS) deployment and tuning",
+                "Network access control (NAC) implementation"
+            ],
+            "keywords": [
+                "NetFlow",
+                "syslog",
+                "telemetry",
+                "SIEM"
+            ],
+            "common_roles": [
+                "Security Analyst",
+                "Security Operations Engineer",
+                "Network Security Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

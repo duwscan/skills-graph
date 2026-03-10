@@ -1,0 +1,296 @@
+{
+    "domain": "F&B",
+    "category": "F&B Cost Control & Revenue Operations",
+    "subcategory": "Portion control & yield optimization",
+    "skills": [
+        {
+            "canonical_name": "Recipe costing",
+            "aliases": [
+                "food cost calculation",
+                "cost-per-dish calculation",
+                "menu item costing"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculating the ingredient, labor and overhead cost per recipe or menu item to determine food cost percentage and inform pricing decisions.",
+            "parent_skill": "Portion control & yield optimization",
+            "related_skills": [
+                "Menu engineering for profitability",
+                "Inventory shrinkage and variance analysis",
+                "Batch scaling and production yield optimization"
+            ],
+            "keywords": [
+                "food cost",
+                "cost per portion",
+                "ingredient cost",
+                "plate cost"
+            ],
+            "common_roles": [
+                "Culinary operations",
+                "Cost control function",
+                "Menu planning"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food yield analysis",
+            "aliases": [
+                "yield analysis",
+                "edible yield calculation",
+                "trim loss analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Measuring and analyzing edible yield from raw ingredients (after trimming, peeling, cooking) to quantify loss and adjust purchasing, recipes, and pricing.",
+            "parent_skill": "Portion control & yield optimization",
+            "related_skills": [
+                "Yield testing and trim-loss measurement",
+                "Inventory shrinkage and variance analysis",
+                "Batch scaling and production yield optimization"
+            ],
+            "keywords": [
+                "edible yield",
+                "trim yield",
+                "percent yield",
+                "yield percentage"
+            ],
+            "common_roles": [
+                "Food production",
+                "Procurement planning",
+                "Culinary operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Portion control implementation",
+            "aliases": [
+                "portioning management",
+                "standard portion enforcement",
+                "portion control procedures"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and enforcing standard portion sizes across service channels using SOPs, checklists and staff training to ensure consistency and control costs.",
+            "parent_skill": "Portion control & yield optimization",
+            "related_skills": [
+                "Portion weighing and measurement",
+                "Portion control equipment operation",
+                "Waste minimization and recovery techniques"
+            ],
+            "keywords": [
+                "SOP",
+                "portion standards",
+                "portions per serving",
+                "consistency"
+            ],
+            "common_roles": [
+                "Culinary operations",
+                "Quality control",
+                "Training and onboarding"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Portion weighing and measurement",
+            "aliases": [
+                "portion weighing",
+                "serving size measurement",
+                "measured portioning"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Using scales, scoops and measuring tools to portion ingredients and finished dishes to defined weight\/volume specifications for consistent cost and customer experience.",
+            "parent_skill": "Portion control & yield optimization",
+            "related_skills": [
+                "Portion control equipment operation",
+                "Portion control implementation",
+                "Recipe costing"
+            ],
+            "keywords": [
+                "kitchen scales",
+                "measuring scoops",
+                "grams",
+                "ounces"
+            ],
+            "common_roles": [
+                "Food production",
+                "Front-of-house portion control",
+                "Culinary operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Yield testing and trim-loss measurement",
+            "aliases": [
+                "yield testing",
+                "trim-loss measurement",
+                "butchery yield testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Structured procedures to test and record yields from raw ingredients (e.g., meat, produce), including tracking trim weights, recovery rates and documenting results for recipe adjustment.",
+            "parent_skill": "Portion control & yield optimization",
+            "related_skills": [
+                "Food yield analysis",
+                "Batch scaling and production yield optimization",
+                "Inventory shrinkage and variance analysis"
+            ],
+            "keywords": [
+                "trim weight",
+                "test batch",
+                "yield trial",
+                "percent recovered"
+            ],
+            "common_roles": [
+                "Culinary operations",
+                "Quality assurance",
+                "Procurement planning"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Menu engineering for profitability",
+            "aliases": [
+                "menu engineering",
+                "menu profitability analysis",
+                "menu mix analysis"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying analytical and design techniques (e.g., contribution margin, menu mix analysis, item placement) to optimize a menu for profitability and operational efficiency.",
+            "parent_skill": "Portion control & yield optimization",
+            "related_skills": [
+                "Recipe costing",
+                "Inventory shrinkage and variance analysis",
+                "Batch scaling and production yield optimization"
+            ],
+            "keywords": [
+                "contribution margin",
+                "menu mix",
+                "pricing strategy",
+                "profitability"
+            ],
+            "common_roles": [
+                "Menu planning",
+                "Culinary operations",
+                "Revenue operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Batch scaling and production yield optimization",
+            "aliases": [
+                "batch scaling",
+                "production yield optimization",
+                "recipe scaling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Scaling recipes and production processes from test batches to full-service volumes while controlling yield variability, consistency and cost per portion.",
+            "parent_skill": "Portion control & yield optimization",
+            "related_skills": [
+                "Food yield analysis",
+                "Recipe costing",
+                "Yield testing and trim-loss measurement"
+            ],
+            "keywords": [
+                "scaling factor",
+                "batch size",
+                "production run",
+                "consistency"
+            ],
+            "common_roles": [
+                "Food production",
+                "Culinary operations",
+                "Banquet and catering operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Waste minimization and recovery techniques",
+            "aliases": [
+                "waste reduction techniques",
+                "food recovery practices",
+                "byproduct utilization"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Practical methods to reduce food waste and recover usable food (e.g., cross-utilization, trim repurposing, FIFO, composting coordination) to cut costs and improve yields.",
+            "parent_skill": "Portion control & yield optimization",
+            "related_skills": [
+                "Portion control implementation",
+                "Yield testing and trim-loss measurement",
+                "Inventory shrinkage and variance analysis"
+            ],
+            "keywords": [
+                "cross-utilization",
+                "FIFO",
+                "composting",
+                "byproduct use"
+            ],
+            "common_roles": [
+                "Sustainability operations",
+                "Culinary operations",
+                "Cost control function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Portion control equipment operation",
+            "aliases": [
+                "scale and portioner operation",
+                "portion equipment use",
+                "portioning device operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Safe and accurate operation, calibration and basic maintenance of portion control tools and equipment such as digital scales, portion scoops, fillers and slicers.",
+            "parent_skill": "Portion control & yield optimization",
+            "related_skills": [
+                "Portion weighing and measurement",
+                "Portion control implementation"
+            ],
+            "keywords": [
+                "calibration",
+                "kitchen scale",
+                "portion scoop",
+                "equipment maintenance"
+            ],
+            "common_roles": [
+                "Food production",
+                "Culinary operations",
+                "Quality control"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inventory shrinkage and variance analysis",
+            "aliases": [
+                "inventory variance analysis",
+                "shrinkage analysis",
+                "stock variance investigation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Identifying, measuring and investigating variances between expected and actual inventory levels to uncover causes (waste, theft, yield loss, recording errors) and recommend controls.",
+            "parent_skill": "Portion control & yield optimization",
+            "related_skills": [
+                "Food yield analysis",
+                "Recipe costing",
+                "Waste minimization and recovery techniques"
+            ],
+            "keywords": [
+                "shrinkage",
+                "variance report",
+                "stocktake",
+                "loss analysis"
+            ],
+            "common_roles": [
+                "Inventory control",
+                "Cost control function",
+                "Culinary operations"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,300 @@
+{
+    "domain": "F&B",
+    "category": "Kitchen Operations & Back-of-House Management",
+    "subcategory": "Prep lists & production planning",
+    "skills": [
+        {
+            "canonical_name": "Kitchen production planning",
+            "aliases": [
+                "production planning",
+                "kitchen production scheduling",
+                "service period scheduling"
+            ],
+            "skill_type": "process_skill",
+            "description": "Developing overall prep and cook schedules that align ingredient preparation, batch cooking, and staffing with daily service patterns and events.",
+            "parent_skill": "",
+            "related_skills": [
+                "Prep list creation",
+                "Batch cooking scheduling",
+                "Prep station allocation and labor planning",
+                "Food usage forecasting"
+            ],
+            "keywords": [
+                "scheduling",
+                "service periods",
+                "shift planning",
+                "throughput"
+            ],
+            "common_roles": [
+                "Kitchen Manager",
+                "Sous Chef",
+                "Executive Chef",
+                "Catering Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Prep list creation",
+            "aliases": [
+                "daily prep list",
+                "prep checklist management",
+                "prep task list"
+            ],
+            "skill_type": "process_skill",
+            "description": "Assembling station-specific daily checklists that list ingredients, quantities, prep tasks and hold\/finish requirements needed for service.",
+            "parent_skill": "Kitchen production planning",
+            "related_skills": [
+                "Recipe scaling and portion control",
+                "Prep station allocation and labor planning",
+                "Par level management"
+            ],
+            "keywords": [
+                "checklist",
+                "station lists",
+                "mise en place",
+                "daily prep"
+            ],
+            "common_roles": [
+                "Line Cook",
+                "Prep Cook",
+                "Sous Chef",
+                "Kitchen Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Recipe scaling and portion control",
+            "aliases": [
+                "recipe scaling",
+                "portion control",
+                "batch recipe scaling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Adjusting standardized recipes and portion sizes accurately for different batch sizes or service volumes to ensure consistency and cost control.",
+            "parent_skill": "",
+            "related_skills": [
+                "Yield analysis",
+                "Prep list creation",
+                "Par level management"
+            ],
+            "keywords": [
+                "EP\/AP",
+                "scaling",
+                "portions",
+                "standardized recipes"
+            ],
+            "common_roles": [
+                "Sous Chef",
+                "Production Cook",
+                "Kitchen Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Par level management",
+            "aliases": [
+                "par setting",
+                "inventory par levels",
+                "minimum stock levels"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Setting and maintaining par (minimum) stock levels for ingredients and prepped items to meet service needs while minimizing waste and overstock.",
+            "parent_skill": "",
+            "related_skills": [
+                "Food usage forecasting",
+                "Prep list creation",
+                "FIFO perishable rotation"
+            ],
+            "keywords": [
+                "stock levels",
+                "reorder points",
+                "safety stock",
+                "inventory control"
+            ],
+            "common_roles": [
+                "Kitchen Manager",
+                "Purchasing Coordinator",
+                "Sous Chef"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food usage forecasting",
+            "aliases": [
+                "demand forecasting",
+                "consumption forecasting",
+                "demand planning"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing historical sales, bookings, seasonality and events to predict ingredient and finished-item demand for production planning and ordering.",
+            "parent_skill": "",
+            "related_skills": [
+                "Par level management",
+                "Kitchen production planning",
+                "Yield analysis"
+            ],
+            "keywords": [
+                "forecasting",
+                "sales history",
+                "demand patterns",
+                "consumption"
+            ],
+            "common_roles": [
+                "Kitchen Manager",
+                "Catering Planner",
+                "Executive Chef"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Batch cooking scheduling",
+            "aliases": [
+                "batch cooking planning",
+                "cook-chill scheduling",
+                "bulk cooking scheduling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Planning and sequencing large-quantity cooking runs, including cook-chill\/freeze cycles, hold times and reheating schedules to meet future service demand safely.",
+            "parent_skill": "Kitchen production planning",
+            "related_skills": [
+                "FIFO perishable rotation",
+                "Prep list creation",
+                "Recipe scaling and portion control"
+            ],
+            "keywords": [
+                "batch",
+                "bulk prep",
+                "hold time",
+                "cook-chill"
+            ],
+            "common_roles": [
+                "Production Cook",
+                "Sous Chef",
+                "Kitchen Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Yield analysis",
+            "aliases": [
+                "yield management",
+                "EP\/AP analysis",
+                "trim loss analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Measuring edible yield from raw ingredients, identifying trim and shrinkage, and recommending adjustments to recipes, purchasing or prep to improve cost-efficiency.",
+            "parent_skill": "",
+            "related_skills": [
+                "Recipe scaling and portion control",
+                "Food usage forecasting",
+                "Par level management"
+            ],
+            "keywords": [
+                "yield",
+                "trim",
+                "shrinkage",
+                "cost of goods"
+            ],
+            "common_roles": [
+                "Kitchen Manager",
+                "Sous Chef",
+                "Procurement Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "FIFO perishable rotation",
+            "aliases": [
+                "first-in first-out rotation",
+                "date-based rotation",
+                "stock rotation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Implementing and enforcing date-coding and FIFO procedures for perishables to minimize spoilage and ensure food safety and regulatory compliance.",
+            "parent_skill": "",
+            "related_skills": [
+                "Par level management",
+                "Batch cooking scheduling",
+                "Prep list creation"
+            ],
+            "keywords": [
+                "FIFO",
+                "date coding",
+                "rotation",
+                "shelf life"
+            ],
+            "common_roles": [
+                "Food Safety Manager",
+                "Kitchen Manager",
+                "Inventory Clerk"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ingredient cross-utilization planning",
+            "aliases": [
+                "cross-utilization planning",
+                "menu cross-utilization",
+                "multi-use ingredient planning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing prep and menu strategies that reuse ingredients across dishes to reduce waste, lower costs and simplify prep lists while maintaining quality.",
+            "parent_skill": "",
+            "related_skills": [
+                "Food usage forecasting",
+                "Par level management",
+                "Recipe scaling and portion control"
+            ],
+            "keywords": [
+                "cross-utilization",
+                "menu engineering",
+                "waste reduction",
+                "ingredient optimization"
+            ],
+            "common_roles": [
+                "Executive Chef",
+                "Menu Developer",
+                "Kitchen Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Prep station allocation and labor planning",
+            "aliases": [
+                "station allocation",
+                "prep labor scheduling",
+                "task-to-station allocation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Assigning prep tasks to specific stations, estimating labor hours for prep windows and aligning staffing to production needs to meet service with efficiency.",
+            "parent_skill": "Kitchen production planning",
+            "related_skills": [
+                "Prep list creation",
+                "Kitchen production planning",
+                "Batch cooking scheduling"
+            ],
+            "keywords": [
+                "labor planning",
+                "stationing",
+                "work allocation",
+                "shift preparation"
+            ],
+            "common_roles": [
+                "Kitchen Manager",
+                "Sous Chef",
+                "Line Supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

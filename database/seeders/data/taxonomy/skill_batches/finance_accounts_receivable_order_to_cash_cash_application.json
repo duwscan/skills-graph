@@ -1,0 +1,289 @@
+{
+    "domain": "Finance",
+    "category": "Accounts Receivable & Order-to-Cash",
+    "subcategory": "Cash application",
+    "skills": [
+        {
+            "canonical_name": "Cash application",
+            "aliases": [
+                "payment application",
+                "cash posting",
+                "invoice payment allocation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying customer payments to open invoices in the accounts receivable ledger, ensuring accurate posting and aging updates.",
+            "parent_skill": "Cash application",
+            "related_skills": [
+                "ERP cash\/payment posting",
+                "Automated cash application",
+                "Payment exception resolution",
+                "Unapplied cash investigation"
+            ],
+            "keywords": [
+                "payment posting",
+                "invoice matching",
+                "AR ledger",
+                "aging"
+            ],
+            "common_roles": [
+                "Accounts receivable operations",
+                "Order-to-cash teams",
+                "Shared services finance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated cash application",
+            "aliases": [
+                "auto cash application",
+                "automated payment matching",
+                "auto-apply"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, configuring and operating rule-based or machine-learning systems that automatically match and apply payments to invoices and accounts.",
+            "parent_skill": "Cash application",
+            "related_skills": [
+                "Cash application",
+                "ERP cash\/payment posting",
+                "Electronic remittance advice (ERA) reconciliation"
+            ],
+            "keywords": [
+                "auto-match",
+                "matching rules",
+                "algorithmic posting",
+                "machine learning"
+            ],
+            "common_roles": [
+                "Accounts receivable operations",
+                "Order-to-cash automation"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Lockbox processing",
+            "aliases": [
+                "bank lockbox processing",
+                "lockbox remittances"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Handling and processing customer payments received through bank lockbox services, including posting, scanning remittances and exception routing.",
+            "parent_skill": "Cash application",
+            "related_skills": [
+                "Bank statement reconciliation",
+                "Electronic remittance advice (ERA) reconciliation",
+                "ERP cash\/payment posting"
+            ],
+            "keywords": [
+                "lockbox",
+                "bank remittance",
+                "scanning",
+                "remittance data"
+            ],
+            "common_roles": [
+                "Shared services finance",
+                "Bank operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Electronic remittance advice (ERA) reconciliation",
+            "aliases": [
+                "ERA reconciliation",
+                "remittance reconciliation",
+                "remittance matching"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Extracting, interpreting and matching electronic remittance advices to payments and invoices to enable accurate application and posting.",
+            "parent_skill": "Cash application",
+            "related_skills": [
+                "Automated cash application",
+                "Electronic payment formats and protocols",
+                "ERP cash\/payment posting"
+            ],
+            "keywords": [
+                "ERA",
+                "remittance",
+                "remittance advice",
+                "EFT"
+            ],
+            "common_roles": [
+                "Accounts receivable operations",
+                "Order-to-cash teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Unapplied cash investigation",
+            "aliases": [
+                "unidentified cash research",
+                "unapplied cash resolution",
+                "unallocated payment research"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Investigating and resolving unidentified or unapplied customer payments through research, customer contact and ledger adjustments.",
+            "parent_skill": "Cash application",
+            "related_skills": [
+                "Payment exception resolution",
+                "Cash application",
+                "ERP cash\/payment posting"
+            ],
+            "keywords": [
+                "unapplied cash",
+                "unidentified payment",
+                "research",
+                "allocation"
+            ],
+            "common_roles": [
+                "Accounts receivable operations",
+                "Shared services finance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Payment exception resolution",
+            "aliases": [
+                "cash application exceptions",
+                "deduction and short-pay resolution",
+                "payment dispute resolution"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Diagnosing and resolving discrepancies such as short pays, deductions, credits and disputes between payments received and invoiced amounts.",
+            "parent_skill": "Cash application",
+            "related_skills": [
+                "Unapplied cash investigation",
+                "Cash application",
+                "Collections"
+            ],
+            "keywords": [
+                "short pays",
+                "deductions",
+                "dispute",
+                "adjustments"
+            ],
+            "common_roles": [
+                "Order-to-cash teams",
+                "Accounts receivable operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ERP cash\/payment posting",
+            "aliases": [
+                "ERP payment posting",
+                "ERP cash posting",
+                "SAP cash posting",
+                "Oracle NetSuite cash application"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using enterprise resource planning systems to post payments, record adjustments, reverse entries and run cash application reports in the AR ledger.",
+            "parent_skill": "Cash application",
+            "related_skills": [
+                "Cash application",
+                "Automated cash application",
+                "Bank statement reconciliation"
+            ],
+            "keywords": [
+                "ERP",
+                "payment posting",
+                "journal entry",
+                "AR ledger"
+            ],
+            "common_roles": [
+                "Shared services finance",
+                "Accounts receivable operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bank statement reconciliation",
+            "aliases": [
+                "statement-to-ledger reconciliation",
+                "bank reconciliation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Reconciling bank statements and deposits to accounts receivable cash activity to confirm accuracy of postings and identify timing differences.",
+            "parent_skill": "Cash application",
+            "related_skills": [
+                "ERP cash\/payment posting",
+                "Lockbox processing",
+                "Unapplied cash investigation"
+            ],
+            "keywords": [
+                "bank reconciliation",
+                "deposits",
+                "timing differences",
+                "clearing"
+            ],
+            "common_roles": [
+                "Treasury and cash management",
+                "Accounts receivable operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Electronic payment formats and protocols",
+            "aliases": [
+                "ACH\/SEPA\/ISO20022\/BAI2 formats",
+                "payment format standards",
+                "EFT file formats"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Knowledge of electronic payment file formats, messaging protocols and mapping (ACH, SEPA, ISO 20022, BAI2, EDI) used to exchange remittance and payment data with banks and customers.",
+            "parent_skill": "Cash application",
+            "related_skills": [
+                "Electronic remittance advice (ERA) reconciliation",
+                "Automated cash application",
+                "ERP cash\/payment posting"
+            ],
+            "keywords": [
+                "ACH",
+                "ISO20022",
+                "BAI2",
+                "remittance file",
+                "EDI"
+            ],
+            "common_roles": [
+                "Treasury and cash management",
+                "Order-to-cash automation"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash forecasting from receivables",
+            "aliases": [
+                "AR cash forecasting",
+                "receivables cash flow forecasting",
+                "short-term cash forecasting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Projecting short-term cash inflows from outstanding receivables using aging analysis, payment patterns and collections data to support liquidity planning.",
+            "parent_skill": "Cash application",
+            "related_skills": [
+                "Bank statement reconciliation",
+                "Collections",
+                "Accounts receivable aging analysis"
+            ],
+            "keywords": [
+                "cash forecast",
+                "cash flow",
+                "aging analysis",
+                "payment behavior"
+            ],
+            "common_roles": [
+                "Treasury and cash management",
+                "Order-to-cash planning"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

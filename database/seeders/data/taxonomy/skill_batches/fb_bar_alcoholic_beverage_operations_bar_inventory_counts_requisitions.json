@@ -1,0 +1,287 @@
+{
+    "domain": "F&B",
+    "category": "Bar & Alcoholic Beverage Operations",
+    "subcategory": "Bar inventory counts & requisitions",
+    "skills": [
+        {
+            "canonical_name": "Cycle counting (beverage inventory)",
+            "aliases": [
+                "cycle counts",
+                "periodic stock counts",
+                "bar cycle counting"
+            ],
+            "skill_type": "process_skill",
+            "description": "Regularly count selected inventory items on a rotating schedule to maintain accurate stock records and reduce the need for full physical inventories.",
+            "parent_skill": "Bar inventory counts & requisitions",
+            "related_skills": [
+                "Physical inventory reconciliation and variance analysis",
+                "Par level setting and adjustment",
+                "Inventory management software (POS\/inventory systems)"
+            ],
+            "keywords": [
+                "cycle count",
+                "spot check",
+                "inventory accuracy",
+                "count schedule"
+            ],
+            "common_roles": [
+                "bar operations",
+                "inventory control"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Par level setting and adjustment",
+            "aliases": [
+                "par management",
+                "setting par levels",
+                "reorder threshold adjustment"
+            ],
+            "skill_type": "process_skill",
+            "description": "Define and maintain minimum stock quantities (pars) for beverages and supplies to trigger replenishment while minimizing overstock.",
+            "parent_skill": "Bar inventory counts & requisitions",
+            "related_skills": [
+                "Demand forecasting and par optimization",
+                "Purchase order and stock requisition processing",
+                "Cycle counting (beverage inventory)"
+            ],
+            "keywords": [
+                "par levels",
+                "reorder point",
+                "safety stock",
+                "minimum stock"
+            ],
+            "common_roles": [
+                "bar operations",
+                "inventory control"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Purchase order and stock requisition processing",
+            "aliases": [
+                "requisition processing",
+                "purchase order creation",
+                "stock ordering"
+            ],
+            "skill_type": "process_skill",
+            "description": "Create, submit and track purchase orders or internal requisitions for alcoholic beverages and supplies according to par levels and approvals.",
+            "parent_skill": "Bar inventory counts & requisitions",
+            "related_skills": [
+                "Supplier coordination for replenishment",
+                "Inventory management software (POS\/inventory systems)",
+                "Receiving and goods inspection"
+            ],
+            "keywords": [
+                "PO",
+                "requisition",
+                "order approval",
+                "ordering workflow"
+            ],
+            "common_roles": [
+                "inventory control",
+                "purchasing\/procurement"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inventory management software (POS\/inventory systems)",
+            "aliases": [
+                "bar inventory software",
+                "POS inventory module",
+                "beverage inventory system"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use point-of-sale and inventory management tools to record counts, process requisitions, track stock movement and generate inventory reports.",
+            "parent_skill": "Bar inventory counts & requisitions",
+            "related_skills": [
+                "Cycle counting (beverage inventory)",
+                "Physical inventory reconciliation and variance analysis",
+                "Purchase order and stock requisition processing"
+            ],
+            "keywords": [
+                "POS",
+                "inventory system",
+                "stock ledger",
+                "inventory reports"
+            ],
+            "common_roles": [
+                "bar operations",
+                "inventory control"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Receiving and goods inspection (beverages)",
+            "aliases": [
+                "delivery inspection",
+                "goods receiving",
+                "incoming stock inspection"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Inspect deliveries for correct items, quantities, temperatures, and damage; match invoices to POs and update inventory records upon receipt.",
+            "parent_skill": "Bar inventory counts & requisitions",
+            "related_skills": [
+                "Purchase order and stock requisition processing",
+                "Keg and tapped beverage tracking",
+                "Inventory management software (POS\/inventory systems)"
+            ],
+            "keywords": [
+                "receiving",
+                "inspection",
+                "invoice matching",
+                "quality check"
+            ],
+            "common_roles": [
+                "back-of-house operations",
+                "inventory control"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "FIFO stock rotation and shelf-life management",
+            "aliases": [
+                "first-in first-out",
+                "stock rotation",
+                "shelf life control"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Apply FIFO principles and manage expiration\/best-before dates to ensure beverage quality, regulatory compliance and minimize waste.",
+            "parent_skill": "Bar inventory counts & requisitions",
+            "related_skills": [
+                "Receiving and goods inspection (beverages)",
+                "Waste, spillage and shrinkage tracking",
+                "Cycle counting (beverage inventory)"
+            ],
+            "keywords": [
+                "FIFO",
+                "expiry management",
+                "shelf-life",
+                "rotation"
+            ],
+            "common_roles": [
+                "bar operations",
+                "quality control"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Keg and tapped beverage tracking",
+            "aliases": [
+                "keg tracking",
+                "tap line management",
+                "on-tap inventory control"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Track keg fill levels, tap changes, serial\/keg IDs and carbonation\/dispense metrics to manage on-tap inventory and prevent loss.",
+            "parent_skill": "Bar inventory counts & requisitions",
+            "related_skills": [
+                "Receiving and goods inspection (beverages)",
+                "Inventory management software (POS\/inventory systems)",
+                "Waste, spillage and shrinkage tracking"
+            ],
+            "keywords": [
+                "keg ID",
+                "on-tap",
+                "tap rotation",
+                "keg returns"
+            ],
+            "common_roles": [
+                "beverage operations",
+                "bar operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Waste, spillage and shrinkage tracking",
+            "aliases": [
+                "loss tracking",
+                "waste monitoring",
+                "shrinkage reporting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Record and analyze beverage waste, spills, breakage and theft to quantify loss, identify patterns and implement reduction measures.",
+            "parent_skill": "Bar inventory counts & requisitions",
+            "related_skills": [
+                "Physical inventory reconciliation and variance analysis",
+                "FIFO stock rotation and shelf-life management",
+                "Keg and tapped beverage tracking"
+            ],
+            "keywords": [
+                "waste log",
+                "shrinkage",
+                "loss prevention",
+                "waste analysis"
+            ],
+            "common_roles": [
+                "inventory control",
+                "bar operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Physical inventory reconciliation and variance analysis",
+            "aliases": [
+                "inventory reconciliation",
+                "variance reporting",
+                "stock variance analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Compare physical counts to inventory records, calculate variances, investigate causes and recommend corrective actions to improve accuracy.",
+            "parent_skill": "Bar inventory counts & requisitions",
+            "related_skills": [
+                "Cycle counting (beverage inventory)",
+                "Waste, spillage and shrinkage tracking",
+                "Inventory management software (POS\/inventory systems)"
+            ],
+            "keywords": [
+                "variance",
+                "reconciliation",
+                "adjustments",
+                "root cause"
+            ],
+            "common_roles": [
+                "inventory control",
+                "back-of-house operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Demand forecasting and par optimization",
+            "aliases": [
+                "demand planning",
+                "usage forecasting",
+                "consumption forecasting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyze historical sales and event patterns to forecast beverage demand and optimize par levels and order timing for cost and service balance.",
+            "parent_skill": "Bar inventory counts & requisitions",
+            "related_skills": [
+                "Par level setting and adjustment",
+                "Purchase order and stock requisition processing",
+                "Inventory management software (POS\/inventory systems)"
+            ],
+            "keywords": [
+                "forecasting",
+                "usage trends",
+                "par optimization",
+                "consumption analysis"
+            ],
+            "common_roles": [
+                "inventory control",
+                "beverage operations"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

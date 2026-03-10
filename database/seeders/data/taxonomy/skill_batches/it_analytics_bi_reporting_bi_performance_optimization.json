@@ -1,0 +1,298 @@
+{
+    "domain": "IT",
+    "category": "Analytics, BI & Reporting",
+    "subcategory": "BI performance optimization",
+    "skills": [
+        {
+            "canonical_name": "SQL query optimization",
+            "aliases": [
+                "query tuning",
+                "SQL tuning",
+                "query performance tuning"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Analyze and rewrite SQL queries to reduce execution time and resource usage by improving joins, predicates, window functions, subqueries, and set operations.",
+            "parent_skill": "",
+            "related_skills": [
+                "Query execution plan analysis",
+                "Indexing and partitioning for analytical databases"
+            ],
+            "keywords": [
+                "SQL",
+                "joins",
+                "subquery",
+                "window functions",
+                "predicate pushdown"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "BI Developer",
+                "Analytics Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Query execution plan analysis",
+            "aliases": [
+                "execution plan analysis",
+                "EXPLAIN plan analysis",
+                "query plan profiling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Interpret database execution plans and optimizer output to identify costly operators, missing statistics, and opportunities for plan stabilization or rewrite.",
+            "parent_skill": "SQL query optimization",
+            "related_skills": [
+                "SQL query optimization",
+                "Performance monitoring & benchmarking for BI systems"
+            ],
+            "keywords": [
+                "execution plan",
+                "EXPLAIN",
+                "optimizer",
+                "cost-based analysis",
+                "profiling"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Database Administrator",
+                "BI Developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Indexing and partitioning for analytical databases",
+            "aliases": [
+                "table partitioning",
+                "index strategy",
+                "partition pruning",
+                "columnstore indexing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Design and implement indexing and partitioning schemes (including columnstore\/clustered indexes and partition keys) to minimize IO and exploit partition pruning for large analytical tables.",
+            "parent_skill": "",
+            "related_skills": [
+                "SQL query optimization",
+                "Columnar storage & compression optimization"
+            ],
+            "keywords": [
+                "partitioning",
+                "indexing",
+                "columnstore",
+                "sharding",
+                "partition pruning"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Database Administrator",
+                "Analytics Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Materialized views and aggregation design",
+            "aliases": [
+                "pre-aggregation",
+                "summary tables",
+                "materialized view refresh strategies"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Create and maintain materialized views or summary\/aggregate tables to accelerate analytical queries while managing refresh strategies and storage tradeoffs.",
+            "parent_skill": "",
+            "related_skills": [
+                "Indexing and partitioning for analytical databases",
+                "ETL\/ELT performance tuning"
+            ],
+            "keywords": [
+                "materialized views",
+                "aggregations",
+                "refresh",
+                "pre-aggregation",
+                "summary table"
+            ],
+            "common_roles": [
+                "BI Developer",
+                "Data Engineer",
+                "Analytics Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ETL\/ELT performance tuning",
+            "aliases": [
+                "pipeline optimization",
+                "ETL tuning",
+                "ELT optimization"
+            ],
+            "skill_type": "process_skill",
+            "description": "Optimize data ingestion and transformation pipelines for throughput and latency by parallelizing jobs, minimizing data movement, using pushdown, and tuning resource allocation.",
+            "parent_skill": "",
+            "related_skills": [
+                "Materialized views and aggregation design",
+                "Caching strategies for BI workloads"
+            ],
+            "keywords": [
+                "ETL",
+                "ELT",
+                "pipeline",
+                "parallelism",
+                "pushdown"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Analytics Engineer",
+                "ETL Developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dashboard and report performance optimization",
+            "aliases": [
+                "dashboard tuning",
+                "report performance tuning",
+                "visualization performance optimization"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Improve BI dashboard and report responsiveness by reducing query counts, optimizing visualizations, using extracts\/caching, lazy loading, and efficient filter designs.",
+            "parent_skill": "",
+            "related_skills": [
+                "Caching strategies for BI workloads",
+                "SQL query optimization"
+            ],
+            "keywords": [
+                "dashboard",
+                "visualization",
+                "cached extracts",
+                "rendering",
+                "query consolidation"
+            ],
+            "common_roles": [
+                "BI Developer",
+                "Analytics Manager",
+                "BI Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Caching strategies for BI workloads",
+            "aliases": [
+                "query caching",
+                "result caching",
+                "cache invalidation strategies"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and operate caching layers and invalidation rules (query caches, materialized caches, CDN or in-memory caches) to reduce repeated computation and improve user-facing latency.",
+            "parent_skill": "",
+            "related_skills": [
+                "Dashboard and report performance optimization",
+                "Materialized views and aggregation design"
+            ],
+            "keywords": [
+                "cache",
+                "invalidation",
+                "ttl",
+                "warm caches",
+                "query cache"
+            ],
+            "common_roles": [
+                "BI Developer",
+                "Data Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Columnar storage & compression optimization",
+            "aliases": [
+                "columnar format optimization",
+                "Parquet\/ORC tuning",
+                "compression tuning"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Apply columnar storage formats and compression settings (encoding, dictionary, bloom filters) to reduce storage and IO for analytic workloads while preserving query performance.",
+            "parent_skill": "",
+            "related_skills": [
+                "Indexing and partitioning for analytical databases",
+                "ETL\/ELT performance tuning"
+            ],
+            "keywords": [
+                "columnar",
+                "compression",
+                "Parquet",
+                "ORC",
+                "encoding"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Data Architect",
+                "Analytics Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Performance monitoring & benchmarking for BI systems",
+            "aliases": [
+                "BI benchmarking",
+                "query performance monitoring",
+                "load testing for BI"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Establish metrics, run benchmarks and load tests, and monitor query\/system telemetry (latency, throughput, concurrency) to detect regressions and guide capacity planning.",
+            "parent_skill": "",
+            "related_skills": [
+                "Query execution plan analysis",
+                "ETL\/ELT performance tuning"
+            ],
+            "keywords": [
+                "benchmarking",
+                "monitoring",
+                "SLAs",
+                "latency",
+                "concurrency"
+            ],
+            "common_roles": [
+                "Platform Engineer",
+                "Data Engineer",
+                "SRE"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "In-memory analytics and OLAP optimization",
+            "aliases": [
+                "OLAP cube tuning",
+                "in-memory cube optimization",
+                "aggregation cube performance"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Optimize in-memory analytical models and OLAP structures (cubes, tabular models) by tuning aggregation strategies, hierarchies, memory allocation, and partitioning for fast multidimensional queries.",
+            "parent_skill": "",
+            "related_skills": [
+                "Materialized views and aggregation design",
+                "Columnar storage & compression optimization"
+            ],
+            "keywords": [
+                "OLAP",
+                "in-memory",
+                "cube",
+                "tabular model",
+                "aggregation"
+            ],
+            "common_roles": [
+                "BI Developer",
+                "Analytics Engineer",
+                "Data Warehouse Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,295 @@
+{
+    "domain": "IT",
+    "category": "Data Engineering & Integration",
+    "subcategory": "Data quality engineering",
+    "skills": [
+        {
+            "canonical_name": "Data profiling",
+            "aliases": [
+                "dataset profiling",
+                "column profiling",
+                "schema profiling"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing datasets to summarize structure, distributions, patterns, nulls and anomalies to understand data quality and inform downstream rules.",
+            "parent_skill": "Data quality engineering",
+            "related_skills": [
+                "Data validation and rule authoring",
+                "Data cleansing and standardization",
+                "Data quality monitoring and SLA management"
+            ],
+            "keywords": [
+                "profiling",
+                "data statistics",
+                "null analysis",
+                "value distribution"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Data Quality Engineer",
+                "Analytics Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data validation and rule authoring",
+            "aliases": [
+                "data validation",
+                "data quality rules",
+                "rule-based validation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing validation logic and rules (constraints, assertions, checks) to detect inaccuracies, schema violations, and business-rule breaches in data pipelines.",
+            "parent_skill": "Data quality engineering",
+            "related_skills": [
+                "Data profiling",
+                "Great Expectations",
+                "Apache Deequ",
+                "Test-driven data development"
+            ],
+            "keywords": [
+                "validation rules",
+                "assertions",
+                "constraints",
+                "business rules"
+            ],
+            "common_roles": [
+                "Data Quality Engineer",
+                "Data Engineer",
+                "ETL Developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data cleansing and standardization",
+            "aliases": [
+                "data cleaning",
+                "data normalization",
+                "standardizing data"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying transformations to correct, deduplicate, normalize and standardize values (formats, encodings, units, reference data) to improve consistency and usability.",
+            "parent_skill": "Data quality engineering",
+            "related_skills": [
+                "Record linkage and entity resolution",
+                "Data profiling",
+                "Data validation and rule authoring"
+            ],
+            "keywords": [
+                "cleaning",
+                "normalization",
+                "standardization",
+                "deduplication"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Data Steward",
+                "ETL Developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Record linkage and entity resolution",
+            "aliases": [
+                "deduplication",
+                "entity matching",
+                "record linkage"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Techniques and algorithms for identifying and merging records that refer to the same real-world entity across datasets, including fuzzy matching and probabilistic linkage.",
+            "parent_skill": "Data quality engineering",
+            "related_skills": [
+                "Data cleansing and standardization",
+                "Data profiling",
+                "Master data management"
+            ],
+            "keywords": [
+                "fuzzy matching",
+                "linkage",
+                "entity matching",
+                "dedupe"
+            ],
+            "common_roles": [
+                "Data Quality Engineer",
+                "Master Data Management Specialist",
+                "Data Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data lineage implementation and analysis",
+            "aliases": [
+                "data lineage",
+                "pipeline lineage analysis",
+                "provenance tracking"
+            ],
+            "skill_type": "process_skill",
+            "description": "Instrumenting and analyzing lineage to trace data origins, transformations and downstream consumers for root-cause analysis, impact assessment and governance.",
+            "parent_skill": "Data quality engineering",
+            "related_skills": [
+                "Data quality monitoring and SLA management",
+                "Data catalog integration for quality",
+                "Data profiling"
+            ],
+            "keywords": [
+                "lineage",
+                "provenance",
+                "impact analysis",
+                "traceability"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Data Platform Engineer",
+                "Data Steward"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data quality monitoring and SLA management",
+            "aliases": [
+                "data observability",
+                "quality monitoring",
+                "SLA monitoring for data"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operationalizing continuous monitoring, alerts and service-level agreements for data freshness, completeness, accuracy and reliability across pipelines and environments.",
+            "parent_skill": "Data quality engineering",
+            "related_skills": [
+                "Data lineage implementation and analysis",
+                "Test-driven data development",
+                "Data validation and rule authoring"
+            ],
+            "keywords": [
+                "monitoring",
+                "SLA",
+                "alerts",
+                "observability"
+            ],
+            "common_roles": [
+                "Data Reliability Engineer",
+                "Data Quality Engineer",
+                "Data Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Test-driven data development (data testing)",
+            "aliases": [
+                "data pipeline testing",
+                "unit testing for data",
+                "data regression testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying test-driven principles to data workflows including unit, integration and regression tests for ETL\/ELT processes to prevent regressions and ensure expected outputs.",
+            "parent_skill": "Data quality engineering",
+            "related_skills": [
+                "Data validation and rule authoring",
+                "Data quality monitoring and SLA management",
+                "Great Expectations"
+            ],
+            "keywords": [
+                "TDD",
+                "data tests",
+                "regression tests",
+                "integration testing"
+            ],
+            "common_roles": [
+                "Analytics Engineer",
+                "Data Engineer",
+                "Data Quality Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Great Expectations (data testing framework)",
+            "aliases": [
+                "GreatExpectations",
+                "GE data testing"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using the Great Expectations framework to define, execute and document data expectations, validations and data testing suites integrated into pipelines.",
+            "parent_skill": "Data quality engineering",
+            "related_skills": [
+                "Test-driven data development",
+                "Data validation and rule authoring",
+                "Data quality monitoring and SLA management"
+            ],
+            "keywords": [
+                "Great Expectations",
+                "expectations",
+                "data docs",
+                "assertions"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Analytics Engineer",
+                "Data Quality Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Apache Deequ",
+            "aliases": [
+                "Deequ",
+                "Amazon Deequ"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Applying Apache Deequ (a library for data quality checks on large datasets) to express and run scalable unit tests and metrics over data in distributed environments.",
+            "parent_skill": "Data quality engineering",
+            "related_skills": [
+                "Data validation and rule authoring",
+                "Data quality monitoring and SLA management",
+                "Data profiling"
+            ],
+            "keywords": [
+                "Deequ",
+                "data checks",
+                "metrics",
+                "Spark"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Big Data Engineer",
+                "Data Quality Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SQL for data quality checks",
+            "aliases": [
+                "SQL data validation",
+                "SQL data testing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Using SQL to author data quality checks, write validation queries, perform profiling tasks and create reproducible tests and reports for tabular datasets.",
+            "parent_skill": "Data quality engineering",
+            "related_skills": [
+                "Data profiling",
+                "Data validation and rule authoring",
+                "Test-driven data development"
+            ],
+            "keywords": [
+                "SQL",
+                "validation queries",
+                "data checks",
+                "assertions"
+            ],
+            "common_roles": [
+                "Data Analyst",
+                "Data Engineer",
+                "ETL Developer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

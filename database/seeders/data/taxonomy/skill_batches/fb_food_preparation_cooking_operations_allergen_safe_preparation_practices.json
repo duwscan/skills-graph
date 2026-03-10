@@ -1,0 +1,258 @@
+{
+    "domain": "F&B",
+    "category": "Food Preparation & Cooking Operations",
+    "subcategory": "Allergen-safe preparation practices",
+    "skills": [
+        {
+            "canonical_name": "Allergen cross-contact prevention",
+            "aliases": [
+                "cross-contamination prevention",
+                "prevent cross-contact",
+                "cross contact control"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Procedures and practices to prevent transfer of allergenic proteins between ingredients, surfaces, utensils and finished dishes during preparation and service.",
+            "parent_skill": "Allergen-safe preparation practices",
+            "related_skills": [
+                "Allergen segregation and dedicated equipment management",
+                "Allergen cleaning and sanitization protocols",
+                "Cross-contact risk assessment and mitigation"
+            ],
+            "keywords": [
+                "cross-contact",
+                "cross-contamination",
+                "allergen transfer",
+                "separation",
+                "control measures"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen segregation and dedicated equipment management",
+            "aliases": [
+                "allergen segregation",
+                "dedicated allergen-free utensils management",
+                "separate prep areas"
+            ],
+            "skill_type": "operational_skill,",
+            "description": "Managing separate storage, preparation areas, utensils and equipment (including labeling and color-coding) to maintain allergen-free zones and prevent mixing of allergenic and non-allergenic items.",
+            "parent_skill": "Allergen-safe preparation practices",
+            "related_skills": [
+                "Allergen cross-contact prevention",
+                "Allergen cleaning and sanitization protocols"
+            ],
+            "keywords": [
+                "segregation",
+                "dedicated equipment",
+                "storage separation",
+                "color-coding",
+                "labeling"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Use of rapid allergen detection kits",
+            "aliases": [
+                "rapid allergen testing",
+                "lateral flow allergen tests",
+                "surface allergen testing"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operation, sampling technique and interpretation of portable rapid immunoassay or sensor-based kits used to detect specific allergens on surfaces or in food samples.",
+            "parent_skill": "Allergen-safe preparation practices",
+            "related_skills": [
+                "Allergen cleaning and sanitization protocols",
+                "Allergen control recordkeeping and traceability"
+            ],
+            "keywords": [
+                "rapid test",
+                "lateral flow",
+                "surface swab",
+                "detection kit",
+                "allergen sensor"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen cleaning and sanitization protocols",
+            "aliases": [
+                "allergen sanitation procedures",
+                "allergen cleaning procedures",
+                "cleaning to prevent allergens"
+            ],
+            "skill_type": "process_skill",
+            "description": "Validated cleaning and sanitizing procedures (appropriate detergents, contact times, verification methods) designed to remove allergen residues from equipment, utensils and surfaces.",
+            "parent_skill": "Allergen-safe preparation practices",
+            "related_skills": [
+                "Allergen cross-contact prevention",
+                "Use of rapid allergen detection kits"
+            ],
+            "keywords": [
+                "sanitization",
+                "cleaning protocol",
+                "contact time",
+                "verification",
+                "residue removal"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Knowledge of major food allergens and hidden sources",
+            "aliases": [
+                "major allergen identification",
+                "allergen ingredient recognition",
+                "hidden allergen awareness"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Familiarity with regulated major allergens and common hidden or derivative sources in ingredients and processed foods, including cross-reactivity concerns.",
+            "parent_skill": "Allergen-safe preparation practices",
+            "related_skills": [
+                "Allergen labeling and menu disclosure",
+                "Allergen-safe recipe modification and substitution"
+            ],
+            "keywords": [
+                "major allergens",
+                "hidden sources",
+                "ingredients",
+                "cross-reactivity",
+                "allergen list"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen labeling and menu disclosure",
+            "aliases": [
+                "allergen menu labeling",
+                "ingredient disclosure",
+                "allergen communication on menus"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Preparing accurate menu labels, ingredient lists and consumer-facing disclosures to meet regulatory and industry requirements and inform customers about allergen content and cross-contact risks.",
+            "parent_skill": "Allergen-safe preparation practices",
+            "related_skills": [
+                "Knowledge of major food allergens and hidden sources",
+                "Communication of allergen information to customers and staff"
+            ],
+            "keywords": [
+                "menu labeling",
+                "disclosure",
+                "allergen warning",
+                "regulatory disclosure",
+                "ingredient list"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen-safe recipe modification and substitution",
+            "aliases": [
+                "allergen-free recipe development",
+                "allergen substitution techniques",
+                "recipe reformulation for allergens"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Reformulating recipes and selecting safe ingredient substitutes to remove or reduce allergen content while preserving texture, flavor and product quality.",
+            "parent_skill": "Allergen-safe preparation practices",
+            "related_skills": [
+                "Knowledge of major food allergens and hidden sources",
+                "Allergen cross-contact prevention"
+            ],
+            "keywords": [
+                "substitution",
+                "reformulation",
+                "alternative ingredients",
+                "gluten-free baking",
+                "dairy-free alternatives"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-contact risk assessment and mitigation",
+            "aliases": [
+                "allergen risk assessment",
+                "allergen hazard analysis",
+                "cross-contact risk assessment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Identifying points of potential allergen cross-contact in kitchen workflows, evaluating likelihood and impact, and designing operational controls to reduce risk.",
+            "parent_skill": "Allergen-safe preparation practices",
+            "related_skills": [
+                "Allergen cross-contact prevention",
+                "Allergen control recordkeeping and traceability"
+            ],
+            "keywords": [
+                "hazard analysis",
+                "risk mitigation",
+                "critical control points",
+                "HACCP",
+                "workflow assessment"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Communication of allergen information to customers and staff",
+            "aliases": [
+                "allergen communication",
+                "customer allergen advisories",
+                "staff allergen briefings"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Clear verbal and written communication of allergen risks, menu options and safe handling procedures to guests and team members, including front-of-house and back-of-house coordination.",
+            "parent_skill": "Allergen-safe preparation practices",
+            "related_skills": [
+                "Allergen labeling and menu disclosure",
+                "Knowledge of major food allergens and hidden sources"
+            ],
+            "keywords": [
+                "customer communication",
+                "staff training",
+                "allergen advisories",
+                "verbal disclosure",
+                "written notices"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen control recordkeeping and traceability",
+            "aliases": [
+                "allergen traceability",
+                "allergen control logs",
+                "ingredient traceability for allergens"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Maintaining accurate records of ingredient sources, substitutions, cleaning and verification logs and incident reports to demonstrate control measures and support traceability or recalls.",
+            "parent_skill": "Allergen-safe preparation practices",
+            "related_skills": [
+                "Allergen labeling and menu disclosure",
+                "Cross-contact risk assessment and mitigation"
+            ],
+            "keywords": [
+                "traceability",
+                "batch records",
+                "logs",
+                "audit trail",
+                "recall readiness"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

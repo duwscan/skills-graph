@@ -1,0 +1,293 @@
+{
+    "domain": "Finance",
+    "category": "Internal Controls, Audit & SOX Operations",
+    "subcategory": "SOX compliance coordination",
+    "skills": [
+        {
+            "canonical_name": "SOX compliance coordination",
+            "aliases": [
+                "SOX coordination",
+                "SOX program coordination",
+                "SOX compliance program management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Coordinating end-to-end SOX compliance activities across business, IT and finance stakeholders, including planning, scheduling, stakeholder communication, and overall program delivery.",
+            "parent_skill": "Internal Controls, Audit & SOX Operations",
+            "related_skills": [
+                "SOX control testing",
+                "SOX remediation management",
+                "SOX documentation & evidence management",
+                "Audit management platforms"
+            ],
+            "keywords": [
+                "program coordination",
+                "stakeholder management",
+                "SOX",
+                "compliance calendar",
+                "status reporting"
+            ],
+            "common_roles": [
+                "SOX Coordinator",
+                "SOX Program Manager",
+                "Internal Controls Coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SOX control testing",
+            "aliases": [
+                "SOX testing",
+                "test of controls",
+                "operational control testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and executing tests of internal controls to evaluate operating effectiveness in accordance with SOX testing plans and sampling methodologies.",
+            "parent_skill": "SOX compliance coordination",
+            "related_skills": [
+                "SOX data analytics for testing",
+                "Audit management platforms",
+                "SOX documentation & evidence management"
+            ],
+            "keywords": [
+                "test design",
+                "sampling",
+                "test execution",
+                "control effectiveness"
+            ],
+            "common_roles": [
+                "SOX Tester",
+                "Internal Audit Staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SOX control design",
+            "aliases": [
+                "control design for SOX",
+                "SOX control mapping",
+                "control architecture"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Creating, mapping and assessing control activities and control objectives to meet SOX requirements and to mitigate financial reporting risks.",
+            "parent_skill": "SOX compliance coordination",
+            "related_skills": [
+                "Internal control risk assessment",
+                "SOX documentation & evidence management",
+                "Control self-assessment facilitation"
+            ],
+            "keywords": [
+                "control mapping",
+                "control objectives",
+                "design adequacy",
+                "SOX mapping"
+            ],
+            "common_roles": [
+                "Control Designer",
+                "SOX Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SOX remediation management",
+            "aliases": [
+                "remediation tracking",
+                "SOX remediation",
+                "deficiency remediation management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing remediation efforts for SOX control deficiencies, including root-cause analysis, remediation planning, owner coordination, tracking status and validating corrective actions.",
+            "parent_skill": "SOX compliance coordination",
+            "related_skills": [
+                "SOX deficiency assessment",
+                "SOX documentation & evidence management",
+                "Audit management platforms"
+            ],
+            "keywords": [
+                "remediation plan",
+                "deficiency tracking",
+                "root cause",
+                "corrective action"
+            ],
+            "common_roles": [
+                "Remediation Manager",
+                "SOX Program Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Internal control risk assessment",
+            "aliases": [
+                "IC risk assessment",
+                "inherent and residual risk assessment",
+                "control risk assessment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Assessing inherent and residual risks to financial reporting and evaluating where controls are required, prioritizing testing and remediation based on risk exposure.",
+            "parent_skill": "SOX compliance coordination",
+            "related_skills": [
+                "SOX control design",
+                "SOX control testing",
+                "SOX data analytics for testing"
+            ],
+            "keywords": [
+                "risk assessment",
+                "inherent risk",
+                "residual risk",
+                "risk scoring"
+            ],
+            "common_roles": [
+                "Risk Analyst",
+                "SOX Risk Assessor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control self-assessment facilitation",
+            "aliases": [
+                "CSA facilitation",
+                "control self assessment",
+                "self-assessment workshops"
+            ],
+            "skill_type": "process_skill",
+            "description": "Leading control self-assessment activities with process owners to validate control design and operating effectiveness and to collect attestation evidence.",
+            "parent_skill": "SOX compliance coordination",
+            "related_skills": [
+                "SOX control design",
+                "SOX documentation & evidence management",
+                "Internal control risk assessment"
+            ],
+            "keywords": [
+                "attestation",
+                "process owner",
+                "workshops",
+                "control evidence"
+            ],
+            "common_roles": [
+                "CSA Facilitator",
+                "Internal Controls Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Audit management platforms",
+            "aliases": [
+                "AuditBoard",
+                "Workiva",
+                "TeamMate",
+                "audit management software",
+                "SOX compliance software"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using audit and SOX management platforms to manage testing plans, evidence, deficiency tracking, attestations and reporting (examples: AuditBoard, Workiva, TeamMate).",
+            "parent_skill": "SOX compliance coordination",
+            "related_skills": [
+                "SOX documentation & evidence management",
+                "SOX control testing",
+                "SOX remediation management"
+            ],
+            "keywords": [
+                "AuditBoard",
+                "Workiva",
+                "evidence repository",
+                "deficiency tracking",
+                "control testing tools"
+            ],
+            "common_roles": [
+                "SOX Systems Administrator",
+                "Audit Platform User"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SOX documentation & evidence management",
+            "aliases": [
+                "SOX evidence management",
+                "control documentation",
+                "evidence repository management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintaining accurate control documentation, test evidence, attestations and working papers to support SOX testing and external audit requirements.",
+            "parent_skill": "SOX compliance coordination",
+            "related_skills": [
+                "Audit management platforms",
+                "SOX control testing",
+                "SOX remediation management"
+            ],
+            "keywords": [
+                "workpapers",
+                "evidence retention",
+                "documentation standards",
+                "audit support"
+            ],
+            "common_roles": [
+                "Control Documentation Specialist",
+                "SOX Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Continuous control monitoring and automation",
+            "aliases": [
+                "continuous monitoring",
+                "continuous control monitoring",
+                "control automation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implementing and operating automated controls and continuous monitoring solutions to detect control failures and reduce manual testing effort.",
+            "parent_skill": "SOX compliance coordination",
+            "related_skills": [
+                "Audit management platforms",
+                "SOX data analytics for testing",
+                "SOX control testing"
+            ],
+            "keywords": [
+                "automation",
+                "continuous monitoring",
+                "real-time controls",
+                "RPA controls"
+            ],
+            "common_roles": [
+                "Control Automation Analyst",
+                "Continuous Monitoring Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SOX data analytics for testing",
+            "aliases": [
+                "SOX analytics",
+                "data analytics for SOX testing",
+                "analytics-driven testing"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Applying data analysis techniques (queries, sampling, exception analysis) to test controls, identify anomalies and support SOX testing conclusions.",
+            "parent_skill": "SOX compliance coordination",
+            "related_skills": [
+                "SOX control testing",
+                "Continuous control monitoring and automation",
+                "Internal control risk assessment"
+            ],
+            "keywords": [
+                "data analytics",
+                "SQL",
+                "exception testing",
+                "sample selection"
+            ],
+            "common_roles": [
+                "Data Analytics for Audit",
+                "SOX Data Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

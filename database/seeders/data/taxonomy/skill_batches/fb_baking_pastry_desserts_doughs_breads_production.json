@@ -1,0 +1,307 @@
+{
+    "domain": "F&B",
+    "category": "Baking, Pastry & Desserts",
+    "subcategory": "Doughs & breads production",
+    "skills": [
+        {
+            "canonical_name": "Sourdough starter cultivation & maintenance",
+            "aliases": [
+                "sourdough management",
+                "starter maintenance",
+                "levain cultivation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Preparing, feeding, maintaining and troubleshooting wild-yeast sourdough starters (levains) to ensure stable activity and consistent leavening.",
+            "parent_skill": "Doughs & breads production",
+            "related_skills": [
+                "Fermentation control & scheduling",
+                "Hydration calculation & flour absorption adjustment",
+                "Dough rheology assessment & troubleshooting"
+            ],
+            "keywords": [
+                "starter feed",
+                "levain",
+                "wild yeast",
+                "acidity",
+                "refreshment schedule"
+            ],
+            "common_roles": [
+                "Artisan baker",
+                "Bread baker",
+                "Bakery production operator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Fermentation control & scheduling",
+            "aliases": [
+                "bulk fermentation management",
+                "proofing schedule planning",
+                "fermentation scheduling"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning and controlling fermentation stages (bulk fermentation, intermediate rests, final proof) to achieve target flavor, texture and dough strength.",
+            "parent_skill": "Doughs & breads production",
+            "related_skills": [
+                "Dough temperature management (Desired Dough Temperature)",
+                "Retardation (cold fermentation) & cold storage handling",
+                "Dough rheology assessment & troubleshooting"
+            ],
+            "keywords": [
+                "bulk fermentation",
+                "proofing time",
+                "retardation",
+                "scheduling",
+                "fermentation control"
+            ],
+            "common_roles": [
+                "Bakery production operator",
+                "Bread baker",
+                "Production baker"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dough temperature management (Desired Dough Temperature)",
+            "aliases": [
+                "desired dough temperature control",
+                "DDT calculation",
+                "dough temperature control"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculating and controlling dough temperature (DDT) through ingredient temps, equipment settings and environment to ensure predictable fermentation and dough handling.",
+            "parent_skill": "Doughs & breads production",
+            "related_skills": [
+                "Fermentation control & scheduling",
+                "Mixing & kneading techniques",
+                "Hydration calculation & flour absorption adjustment"
+            ],
+            "keywords": [
+                "DDT",
+                "dough temp",
+                "ingredient temp",
+                "temperature adjustment",
+                "mixing friction"
+            ],
+            "common_roles": [
+                "Bread baker",
+                "Artisan baker",
+                "Bakery production operator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Mixing & kneading techniques",
+            "aliases": [
+                "dough mixing methods",
+                "kneading methods",
+                "straight dough and sponge methods"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying appropriate mixing and kneading methods (straight, sponge-and-dough, autolyse, stretch-and-fold) to develop gluten and desired dough structure.",
+            "parent_skill": "Doughs & breads production",
+            "related_skills": [
+                "Spiral and planetary mixer operation & maintenance",
+                "Dough temperature management (Desired Dough Temperature)",
+                "Dough rheology assessment & troubleshooting"
+            ],
+            "keywords": [
+                "autolyse",
+                "sponge",
+                "stretch and fold",
+                "gluten development",
+                "mixing time"
+            ],
+            "common_roles": [
+                "Bread baker",
+                "Pastry chef",
+                "Bakery production operator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dough scaling & portioning",
+            "aliases": [
+                "dough dividing",
+                "portioning and scaling",
+                "benching"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Accurately scaling, dividing and portioning dough using hand methods or mechanical dividers to meet recipe yields, consistent product weight and production efficiency.",
+            "parent_skill": "Doughs & breads production",
+            "related_skills": [
+                "Spiral and planetary mixer operation & maintenance",
+                "Dough rheology assessment & troubleshooting",
+                "Fermentation control & scheduling"
+            ],
+            "keywords": [
+                "scaling",
+                "dough weight",
+                "dividing",
+                "portion control",
+                "dough divider"
+            ],
+            "common_roles": [
+                "Bakery production operator",
+                "Commercial baker",
+                "Bread baker"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Laminated dough production (croissants & puff pastry)",
+            "aliases": [
+                "lamination",
+                "croissant dough lamination",
+                "puff pastry technique"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating laminated doughs by folding and rolling alternating layers of dough and fat to produce flakiness and lift, including handling temperature, blocking and resting schedules.",
+            "parent_skill": "Doughs & breads production",
+            "related_skills": [
+                "Dough temperature management (Desired Dough Temperature)",
+                "Spiral and planetary mixer operation & maintenance",
+                "Dough scaling & portioning"
+            ],
+            "keywords": [
+                "lamination",
+                "turns",
+                "butter block",
+                "rolling",
+                "blocking"
+            ],
+            "common_roles": [
+                "Pastry chef",
+                "Bakery production operator",
+                "Artisan baker"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Spiral and planetary mixer operation & maintenance",
+            "aliases": [
+                "mixer operation",
+                "spiral mixer operation",
+                "planetary mixer use"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operating, adjusting and performing basic maintenance on commercial spiral and planetary mixers, including speed\/timing selection and safety procedures.",
+            "parent_skill": "Doughs & breads production",
+            "related_skills": [
+                "Mixing & kneading techniques",
+                "Dough temperature management (Desired Dough Temperature)",
+                "Dough scaling & portioning"
+            ],
+            "keywords": [
+                "spiral mixer",
+                "planetary mixer",
+                "mix time",
+                "safety guards",
+                "mixer speeds"
+            ],
+            "common_roles": [
+                "Commercial baker",
+                "Bakery production operator",
+                "Bread baker"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Retardation (cold fermentation) & cold storage handling",
+            "aliases": [
+                "cold fermentation management",
+                "retarding dough",
+                "refrigerated proofing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Using refrigerated storage to slow fermentation (retarding), managing timing, temperatures and handling to improve flavor, shelf life and production scheduling.",
+            "parent_skill": "Doughs & breads production",
+            "related_skills": [
+                "Fermentation control & scheduling",
+                "Dough temperature management (Desired Dough Temperature)",
+                "Hydration calculation & flour absorption adjustment"
+            ],
+            "keywords": [
+                "retardation",
+                "cold proof",
+                "refrigeration",
+                "chill time",
+                "shelf life"
+            ],
+            "common_roles": [
+                "Bakery production operator",
+                "Commercial baker",
+                "Artisan baker"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Hydration calculation & flour absorption adjustment",
+            "aliases": [
+                "hydration adjustment",
+                "flour absorption calculation",
+                "water-to-flour ratio control"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculating and adjusting dough hydration based on flour absorption rates, recipe scaling and desired crumb characteristics to achieve consistent dough handling and final texture.",
+            "parent_skill": "Doughs & breads production",
+            "related_skills": [
+                "Dough temperature management (Desired Dough Temperature)",
+                "Mixing & kneading techniques",
+                "Dough rheology assessment & troubleshooting"
+            ],
+            "keywords": [
+                "hydration",
+                "absorption",
+                "water ratio",
+                "bakers percent",
+                "formula scaling"
+            ],
+            "common_roles": [
+                "Bread baker",
+                "Artisan baker",
+                "Bakery production operator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dough rheology assessment & troubleshooting",
+            "aliases": [
+                "dough diagnostics",
+                "gluten development assessment",
+                "dough handling troubleshooting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Assessing dough properties (elasticity, extensibility, stickiness), diagnosing issues (over\/under-proofing, weak gluten, excessive hydration) and applying corrective actions.",
+            "parent_skill": "Doughs & breads production",
+            "related_skills": [
+                "Mixing & kneading techniques",
+                "Hydration calculation & flour absorption adjustment",
+                "Fermentation control & scheduling"
+            ],
+            "keywords": [
+                "rheology",
+                "extensibility",
+                "elasticity",
+                "troubleshooting",
+                "dough feel"
+            ],
+            "common_roles": [
+                "Artisan baker",
+                "Bread baker",
+                "Bakery production supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

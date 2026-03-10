@@ -1,0 +1,297 @@
+{
+    "domain": "Finance",
+    "category": "Accounts Payable & Procure-to-Pay",
+    "subcategory": "Supplier onboarding & validation",
+    "skills": [
+        {
+            "canonical_name": "Supplier due diligence",
+            "aliases": [
+                "vendor due diligence",
+                "third-party due diligence",
+                "supplier background checks"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Conducting verification of supplier identity, ownership, financial standing and compliance history to determine suitability for onboarding.",
+            "parent_skill": "Supplier onboarding & validation",
+            "related_skills": [
+                "Sanctions and PEP screening",
+                "Supplier risk assessment and scoring",
+                "Contract and tax documentation verification"
+            ],
+            "keywords": [
+                "background checks",
+                "ownership verification",
+                "financial checks",
+                "third-party risk"
+            ],
+            "common_roles": [
+                "Accounts payable operations",
+                "Procure-to-pay operations",
+                "Compliance & risk function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sanctions and PEP screening",
+            "aliases": [
+                "sanctions screening",
+                "PEP screening",
+                "watchlist screening"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Using screening criteria and tools to identify suppliers listed on sanctions, politically exposed person (PEP) lists or other watchlists that pose regulatory risk.",
+            "parent_skill": "Supplier onboarding & validation",
+            "related_skills": [
+                "Supplier due diligence",
+                "Supplier risk assessment and scoring",
+                "Bank account and payment details verification"
+            ],
+            "keywords": [
+                "watchlist",
+                "sanctions list",
+                "PEP",
+                "OFAC"
+            ],
+            "common_roles": [
+                "Compliance & risk function",
+                "Procure-to-pay operations",
+                "Accounts payable operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Supplier risk assessment and scoring",
+            "aliases": [
+                "vendor risk scoring",
+                "supplier risk modelling",
+                "third-party risk assessment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Designing and applying quantitative and qualitative models to score suppliers on operational, financial, compliance and reputational risk dimensions.",
+            "parent_skill": "Supplier onboarding & validation",
+            "related_skills": [
+                "Supplier due diligence",
+                "Sanctions and PEP screening",
+                "Supplier data quality and cleansing"
+            ],
+            "keywords": [
+                "risk scoring",
+                "risk model",
+                "due diligence",
+                "third-party risk"
+            ],
+            "common_roles": [
+                "Procure-to-pay operations",
+                "Risk & compliance function",
+                "Vendor data management function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor master data management",
+            "aliases": [
+                "vendor master data",
+                "supplier master data management",
+                "vendor master maintenance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Creating, maintaining and governing supplier master records (legal name, tax ID, payment terms, contact info) to ensure a single source of truth across systems.",
+            "parent_skill": "Supplier onboarding & validation",
+            "related_skills": [
+                "Supplier data quality and cleansing",
+                "Bank account and payment details verification",
+                "Supplier portal administration and user support"
+            ],
+            "keywords": [
+                "master data",
+                "vendor record",
+                "data governance",
+                "tax ID"
+            ],
+            "common_roles": [
+                "Vendor data management function",
+                "Accounts payable operations",
+                "Procure-to-pay operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Supplier data quality and cleansing",
+            "aliases": [
+                "vendor data cleansing",
+                "supplier data validation",
+                "master data cleansing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Validating, standardizing and correcting supplier data fields (addresses, tax identifiers, contact details) to reduce duplicates and downstream processing errors.",
+            "parent_skill": "Supplier onboarding & validation",
+            "related_skills": [
+                "Vendor master data management",
+                "Bank account and payment details verification",
+                "E-invoicing and supplier electronic setup"
+            ],
+            "keywords": [
+                "data cleansing",
+                "standardization",
+                "deduplication",
+                "data validation"
+            ],
+            "common_roles": [
+                "Vendor data management function",
+                "Accounts payable operations",
+                "Procure-to-pay operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bank account and payment details verification",
+            "aliases": [
+                "bank account verification",
+                "payment details validation",
+                "supplier bank validation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Verifying supplier banking details and payment setup (account ownership, IBAN\/SWIFT correctness) to prevent payment fraud and failed transfers.",
+            "parent_skill": "Supplier onboarding & validation",
+            "related_skills": [
+                "Sanctions and PEP screening",
+                "Vendor master data management",
+                "E-invoicing and supplier electronic setup"
+            ],
+            "keywords": [
+                "IBAN validation",
+                "account verification",
+                "payment setup",
+                "fraud prevention"
+            ],
+            "common_roles": [
+                "Accounts payable operations",
+                "Treasury operations",
+                "Procure-to-pay operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Supplier onboarding workflow configuration (P2P platforms)",
+            "aliases": [
+                "onboarding workflow configuration",
+                "supplier onboarding configuration",
+                "P2P onboarding setup"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and configuring end-to-end supplier onboarding workflows (approvals, validations, handoffs) within procure-to-pay platforms to enforce controls and SLAs.",
+            "parent_skill": "Supplier onboarding & validation",
+            "related_skills": [
+                "Vendor master data management",
+                "Supplier portal administration and user support",
+                "E-invoicing and supplier electronic setup"
+            ],
+            "keywords": [
+                "workflow design",
+                "P2P configuration",
+                "approval flows",
+                "SLA"
+            ],
+            "common_roles": [
+                "Procure-to-pay operations",
+                "Vendor data management function",
+                "Procurement operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "E-invoicing and supplier electronic setup",
+            "aliases": [
+                "electronic invoicing setup",
+                "e-invoice onboarding",
+                "PEPPOL\/EDI supplier setup"
+            ],
+            "skill_type": "process_skill",
+            "description": "Configuring suppliers for electronic invoicing networks and formats (EDI, PEPPOL, XML) including validation of invoice schema and transmission endpoints.",
+            "parent_skill": "Supplier onboarding & validation",
+            "related_skills": [
+                "Supplier data quality and cleansing",
+                "Vendor master data management",
+                "Supplier onboarding workflow configuration (P2P platforms)"
+            ],
+            "keywords": [
+                "e-invoicing",
+                "EDI",
+                "PEPPOL",
+                "invoice schema"
+            ],
+            "common_roles": [
+                "Procure-to-pay operations",
+                "Accounts payable operations",
+                "Vendor data management function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Contract and tax documentation verification",
+            "aliases": [
+                "tax document review",
+                "W-9\/W-8 verification",
+                "supplier contract verification"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Reviewing and validating supplier contracts, tax forms and certificate documents (tax IDs, VAT registration, insurance certificates) required for legal and tax compliance.",
+            "parent_skill": "Supplier onboarding & validation",
+            "related_skills": [
+                "Supplier due diligence",
+                "Vendor master data management",
+                "Sanctions and PEP screening"
+            ],
+            "keywords": [
+                "tax forms",
+                "VAT",
+                "insurance certificate",
+                "contract review"
+            ],
+            "common_roles": [
+                "Compliance & risk function",
+                "Accounts payable operations",
+                "Procure-to-pay operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Supplier portal administration and user support",
+            "aliases": [
+                "vendor portal administration",
+                "supplier portal management",
+                "supplier onboarding support"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing supplier-facing onboarding portals, supporting supplier registration, troubleshooting access issues and guiding suppliers through required validation steps.",
+            "parent_skill": "Supplier onboarding & validation",
+            "related_skills": [
+                "Supplier onboarding workflow configuration (P2P platforms)",
+                "Vendor master data management",
+                "E-invoicing and supplier electronic setup"
+            ],
+            "keywords": [
+                "portal support",
+                "supplier helpdesk",
+                "registration assistance",
+                "user management"
+            ],
+            "common_roles": [
+                "Vendor data management function",
+                "Accounts payable operations",
+                "Procure-to-pay operations"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

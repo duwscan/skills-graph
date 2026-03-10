@@ -1,0 +1,294 @@
+{
+    "domain": "F&B",
+    "category": "F&B Cost Control & Revenue Operations",
+    "subcategory": "Cash handling controls (FOH)",
+    "skills": [
+        {
+            "canonical_name": "Cash drawer management",
+            "aliases": [
+                "cash float management",
+                "drawer operation",
+                "till management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing the physical cash drawer including organizing denominations, opening\/closing procedures, secure storage, and preparing the drawer for shifts to ensure accurate till counts.",
+            "parent_skill": "Cash handling controls (FOH)",
+            "related_skills": [
+                "Safe drop and deposit procedures",
+                "POS transaction reconciliation",
+                "Cash handling training"
+            ],
+            "keywords": [
+                "cash drawer",
+                "float",
+                "till",
+                "opening\/closing",
+                "denominations"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Shift supervisors",
+                "Cash handling staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "POS transaction reconciliation",
+            "aliases": [
+                "POS cash balancing",
+                "point-of-sale reconciliation",
+                "end-of-shift reconciliation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Matching POS-recorded sales, card settlements and receipts to physical cash on hand; performing end-of-shift balancing and documenting\/resolving discrepancies.",
+            "parent_skill": "Cash handling controls (FOH)",
+            "related_skills": [
+                "Cash drawer management",
+                "Cash variance analysis",
+                "Cash audit procedures"
+            ],
+            "keywords": [
+                "POS",
+                "reconciliation",
+                "till balancing",
+                "end-of-shift",
+                "sales matching"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Revenue operations staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash variance analysis",
+            "aliases": [
+                "cash discrepancy analysis",
+                "till variance investigation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing differences between recorded transactions and cash counts, identifying patterns and root causes of variances to reduce loss and improve controls.",
+            "parent_skill": "Cash handling controls (FOH)",
+            "related_skills": [
+                "POS transaction reconciliation",
+                "Cash audit procedures",
+                "Loss prevention"
+            ],
+            "keywords": [
+                "variance",
+                "discrepancy",
+                "root cause",
+                "analysis",
+                "trend detection"
+            ],
+            "common_roles": [
+                "Revenue operations staff",
+                "Front-of-house managers"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Safe drop and deposit procedures",
+            "aliases": [
+                "safe drops",
+                "bank deposit preparation",
+                "cash drop procedures"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Executing procedures for removing excess cash from tills to secure storage (safe), preparing bank deposits, and documenting drops for auditability and security.",
+            "parent_skill": "Cash handling controls (FOH)",
+            "related_skills": [
+                "Cash transport & chain-of-custody management",
+                "Cash handling SOP development & compliance"
+            ],
+            "keywords": [
+                "safe drop",
+                "deposit",
+                "secured storage",
+                "drop log",
+                "deposit slip"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Shift supervisors"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash handling SOP development & compliance",
+            "aliases": [
+                "cash handling procedures",
+                "cash handling policy compliance",
+                "cash SOPs"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Designing, documenting and enforcing standard operating procedures for cash handling to meet internal control requirements and regulatory expectations.",
+            "parent_skill": "Cash handling controls (FOH)",
+            "related_skills": [
+                "Cash handling training & coaching",
+                "Cash audit procedures",
+                "POS transaction reconciliation"
+            ],
+            "keywords": [
+                "SOP",
+                "policy",
+                "compliance",
+                "internal control",
+                "procedure"
+            ],
+            "common_roles": [
+                "Operations staff",
+                "Front-of-house managers"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Counterfeit detection & cash authentication",
+            "aliases": [
+                "counterfeit bill detection",
+                "fake currency identification",
+                "bill authentication"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Identifying counterfeit or tampered currency through visual and tactile checks and use of authentication tools; escalating and documenting suspected counterfeit incidents.",
+            "parent_skill": "Cash handling controls (FOH)",
+            "related_skills": [
+                "Cash handling training & coaching",
+                "Cash audit procedures"
+            ],
+            "keywords": [
+                "counterfeit",
+                "authentication",
+                "UV pen",
+                "security features",
+                "fake bill"
+            ],
+            "common_roles": [
+                "Cash handling staff",
+                "Front-of-house staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash transport & chain-of-custody management",
+            "aliases": [
+                "cash courier procedures",
+                "chain of custody for cash",
+                "cash handoff logging"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Coordinating secure transfer of cash between tills, safes and banking points while maintaining documented chain-of-custody and transfer logs to prevent loss and enable audits.",
+            "parent_skill": "Cash handling controls (FOH)",
+            "related_skills": [
+                "Safe drop and deposit procedures",
+                "Loss prevention"
+            ],
+            "keywords": [
+                "chain of custody",
+                "cash transport",
+                "handoff log",
+                "security",
+                "deposit pickup"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Operations staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tip handling and tip-out reconciliation",
+            "aliases": [
+                "tip pooling administration",
+                "gratuity reconciliation",
+                "tip distribution"
+            ],
+            "skill_type": "process_skill",
+            "description": "Managing the recording, pooling, distribution and reconciliation of tips and gratuities in accordance with company policies and payroll requirements.",
+            "parent_skill": "Cash handling controls (FOH)",
+            "related_skills": [
+                "Payroll coordination",
+                "Cash reporting",
+                "Cash handling SOP development & compliance"
+            ],
+            "keywords": [
+                "tips",
+                "tip pooling",
+                "tip-out",
+                "gratuity",
+                "distribution"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "FOH managers"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash audit procedures & internal controls",
+            "aliases": [
+                "cash audit",
+                "till audit",
+                "surprise cash audit"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Planning and executing periodic and surprise audits of cash handling practices and records to verify compliance with controls, detect irregularities and recommend corrective actions.",
+            "parent_skill": "Cash handling controls (FOH)",
+            "related_skills": [
+                "POS transaction reconciliation",
+                "Cash variance analysis",
+                "Loss prevention"
+            ],
+            "keywords": [
+                "internal audit",
+                "surprise audit",
+                "control testing",
+                "audit log",
+                "reconciliation"
+            ],
+            "common_roles": [
+                "Revenue operations staff",
+                "Operations staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash handling training & coaching",
+            "aliases": [
+                "cashier training",
+                "till operation training",
+                "cash handling onboarding"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Delivering practical training and coaching to staff on cash procedures, reconciliation, fraud awareness and customer-facing cash interactions to ensure consistent, secure practices.",
+            "parent_skill": "Cash handling controls (FOH)",
+            "related_skills": [
+                "Cash handling SOP development & compliance",
+                "Counterfeit detection & cash authentication",
+                "POS transaction reconciliation"
+            ],
+            "keywords": [
+                "training",
+                "coaching",
+                "onboarding",
+                "workshop",
+                "skills transfer"
+            ],
+            "common_roles": [
+                "Front-of-house managers",
+                "Training coordinators"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

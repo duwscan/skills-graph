@@ -1,0 +1,265 @@
+{
+    "domain": "F&B",
+    "category": "Catering, Events & Banquet Operations",
+    "subcategory": "Event setup & breakdown",
+    "skills": [
+        {
+            "canonical_name": "Floor plan reading and layout implementation",
+            "aliases": [
+                "event floor plan interpretation",
+                "venue floorplan reading",
+                "layout implementation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Interpret venue floor plans, event diagrams and seating charts and translate them into accurate on-site layouts that meet client and venue requirements.",
+            "parent_skill": "Event setup & breakdown",
+            "related_skills": [
+                "Table and seating setup",
+                "Furniture and equipment handling",
+                "Load-in\/load-out logistics and vehicle staging",
+                "Venue protection and surface safeguarding"
+            ],
+            "keywords": [
+                "floor plan",
+                "layout",
+                "seating chart",
+                "venue diagram",
+                "banquet layout"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Table and seating setup",
+            "aliases": [
+                "table setup",
+                "seating arrangement setup",
+                "banquet table placement"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Arrange tables, chairs and place settings according to event specifications and timing, including specialty layouts (rounds, long tables, classroom).",
+            "parent_skill": "Event setup & breakdown",
+            "related_skills": [
+                "Floor plan reading and layout implementation",
+                "Furniture and equipment handling",
+                "Venue protection and surface safeguarding"
+            ],
+            "keywords": [
+                "table layout",
+                "seating",
+                "place settings",
+                "banquet setup"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Furniture and equipment handling",
+            "aliases": [
+                "moving furniture",
+                "equipment moving",
+                "manual handling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Safe manual handling and transport of tables, chairs, displays and event equipment using correct lifting techniques and basic handling aids (dollies, moving blankets).",
+            "parent_skill": "Event setup & breakdown",
+            "related_skills": [
+                "Load-in\/load-out logistics and vehicle staging",
+                "Venue protection and surface safeguarding",
+                "Inventory control and equipment tagging"
+            ],
+            "keywords": [
+                "manual handling",
+                "dolly",
+                "furniture moving",
+                "equipment handling"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Audio-visual staging and cable management",
+            "aliases": [
+                "AV staging",
+                "audio visual setup",
+                "cable routing and management"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Stage and position AV equipment, manage power and signal cable routing, label and secure cables, and coordinate basic AV placement with technicians.",
+            "parent_skill": "Event setup & breakdown",
+            "related_skills": [
+                "Lighting rigging and placement",
+                "Inventory control and equipment tagging",
+                "Load-in\/load-out logistics and vehicle staging"
+            ],
+            "keywords": [
+                "AV",
+                "cabling",
+                "speaker placement",
+                "projector setup",
+                "cable tape"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Lighting rigging and placement",
+            "aliases": [
+                "stage lighting setup",
+                "lighting placement",
+                "lighting rigging"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Install, position and secure lighting fixtures and basic rigging elements for events, including focus, basic aiming and safe mounting practices.",
+            "parent_skill": "Event setup & breakdown",
+            "related_skills": [
+                "Audio-visual staging and cable management",
+                "Temporary structure assembly (tents, stages, truss)",
+                "Setup\/breakdown safety and egress compliance"
+            ],
+            "keywords": [
+                "lighting",
+                "rigging",
+                "stage lights",
+                "spotlight",
+                "lighting focus"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Temporary structure assembly (tents, stages, truss)",
+            "aliases": [
+                "tent erection",
+                "stage assembly",
+                "truss installation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Assemble and secure temporary event structures—such as marquees, portable stages and truss systems—following manufacturer guidelines and site constraints.",
+            "parent_skill": "Event setup & breakdown",
+            "related_skills": [
+                "Lighting rigging and placement",
+                "Load-in\/load-out logistics and vehicle staging",
+                "Setup\/breakdown safety and egress compliance"
+            ],
+            "keywords": [
+                "tent",
+                "marquee",
+                "stage assembly",
+                "truss",
+                "temporary structure"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Load-in\/load-out logistics and vehicle staging",
+            "aliases": [
+                "load in\/out logistics",
+                "vehicle marshalling",
+                "equipment loading coordination"
+            ],
+            "skill_type": "process_skill",
+            "description": "Plan and execute efficient load-in and load-out operations, coordinate vehicle placement, docking\/unloading sequences and staging areas to optimize turnaround time.",
+            "parent_skill": "Event setup & breakdown",
+            "related_skills": [
+                "Furniture and equipment handling",
+                "Inventory control and equipment tagging",
+                "Floor plan reading and layout implementation"
+            ],
+            "keywords": [
+                "load in",
+                "load out",
+                "vehicle staging",
+                "docking",
+                "turnaround"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inventory control and equipment tagging",
+            "aliases": [
+                "asset tagging",
+                "equipment inventory",
+                "barcoding event equipment"
+            ],
+            "skill_type": "process_skill",
+            "description": "Track, tag and reconcile event assets and equipment before, during and after events using inventories, barcode\/RFID or manual logs to prevent loss and ensure availability.",
+            "parent_skill": "Event setup & breakdown",
+            "related_skills": [
+                "Load-in\/load-out logistics and vehicle staging",
+                "Audio-visual staging and cable management",
+                "Furniture and equipment handling"
+            ],
+            "keywords": [
+                "inventory",
+                "asset tracking",
+                "tagging",
+                "reconciliation",
+                "RFID"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Venue protection and surface safeguarding",
+            "aliases": [
+                "floor protection",
+                "surface protection",
+                "protective coverings"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Select and install protective materials (floor covers, corner guards, chair pads) and procedures to prevent damage to venue surfaces and furnishings during setup and breakdown.",
+            "parent_skill": "Event setup & breakdown",
+            "related_skills": [
+                "Furniture and equipment handling",
+                "Table and seating setup",
+                "Load-in\/load-out logistics and vehicle staging"
+            ],
+            "keywords": [
+                "floor cover",
+                "surface protection",
+                "venue safeguarding",
+                "protective film"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Setup\/breakdown safety and egress compliance",
+            "aliases": [
+                "setup safety compliance",
+                "breakdown safety",
+                "egress planning"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Implement safety protocols, maintain clear egress routes, and follow venue\/fire-code requirements and permit conditions during event setup and breakdown to protect staff and guests.",
+            "parent_skill": "Event setup & breakdown",
+            "related_skills": [
+                "Temporary structure assembly (tents, stages, truss)",
+                "Lighting rigging and placement",
+                "Floor plan reading and layout implementation"
+            ],
+            "keywords": [
+                "safety",
+                "egress",
+                "fire code",
+                "permit compliance",
+                "risk mitigation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,299 @@
+{
+    "domain": "F&B",
+    "category": "Front-of-House Guest Service",
+    "subcategory": "Accessibility & special request handling",
+    "skills": [
+        {
+            "canonical_name": "Accessible seating coordination",
+            "aliases": [
+                "Accessible seating arrangements",
+                "Wheelchair seating coordination",
+                "Priority seating for disabilities"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Planning and arranging dining\/queue seating to meet mobility, sight, and companion-access needs while balancing reservations and capacity.",
+            "parent_skill": "Accessibility & special request handling",
+            "related_skills": [
+                "Service animal accommodation",
+                "Special request intake & tracking",
+                "ADA & accessibility regulation knowledge"
+            ],
+            "keywords": [
+                "wheelchair",
+                "accessible seating",
+                "table placement",
+                "path clearance",
+                "reservation adjustment"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Host",
+                "Restaurant manager",
+                "Guest services associate"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service animal accommodation",
+            "aliases": [
+                "Service animal handling",
+                "Support animal protocols"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing guest interactions and on-premises procedures for service animals, including access, hygiene considerations, and staff communication.",
+            "parent_skill": "Accessibility & special request handling",
+            "related_skills": [
+                "ADA & accessibility regulation knowledge",
+                "Accessible seating coordination",
+                "Special request intake & tracking"
+            ],
+            "keywords": [
+                "service animal",
+                "assistance animal",
+                "animal access",
+                "pet policy"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Server",
+                "Host",
+                "Guest services associate"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Assistive technology setup and operation",
+            "aliases": [
+                "Hearing loop operation",
+                "Captioning setup",
+                "Braille and large-print menu provisioning",
+                "Digital accessibility tools"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Installing, configuring, and operating assistive devices and accessibility technologies used in service delivery (e.g., hearing loops, captioning systems, Braille\/large-print materials, accessible digital menus).",
+            "parent_skill": "Accessibility & special request handling",
+            "related_skills": [
+                "Visual impairment assistance & menu adaptation",
+                "Hearing impairment accommodation",
+                "ADA & accessibility regulation knowledge"
+            ],
+            "keywords": [
+                "hearing loop",
+                "captioning",
+                "Braille",
+                "large print menus",
+                "digital accessible menu"
+            ],
+            "common_roles": [
+                "Restaurant manager",
+                "Front-of-house staff",
+                "Operations supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ADA and accessibility regulation knowledge",
+            "aliases": [
+                "Accessibility legislation knowledge",
+                "Disability access regulations"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Understanding relevant accessibility laws, local regulations, and venue obligations (e.g., ADA-type requirements) that affect seating, access, communication, and service policies.",
+            "parent_skill": "Accessibility & special request handling",
+            "related_skills": [
+                "Accessible seating coordination",
+                "Service animal accommodation",
+                "Special needs emergency response"
+            ],
+            "keywords": [
+                "ADA",
+                "accessibility compliance",
+                "regulatory requirements",
+                "disability access"
+            ],
+            "common_roles": [
+                "Restaurant manager",
+                "Operations manager",
+                "Compliance officer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Special diet and allergen accommodation",
+            "aliases": [
+                "Dietary restriction handling",
+                "Gluten-free and allergy accommodation",
+                "Kosher\/halal request coordination"
+            ],
+            "skill_type": "process_skill",
+            "description": "Taking, communicating, and implementing guest dietary requests and restrictions (e.g., allergies, intolerances, religious diets) including menu modifications and cross-department communication.",
+            "parent_skill": "Accessibility & special request handling",
+            "related_skills": [
+                "Cross-contact prevention procedures",
+                "Allergen communication with guests",
+                "Special request intake & tracking"
+            ],
+            "keywords": [
+                "allergy accommodation",
+                "dietary requests",
+                "menu substitution",
+                "intolerance"
+            ],
+            "common_roles": [
+                "Server",
+                "Host",
+                "Kitchen lead",
+                "Restaurant manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-contact prevention procedures",
+            "aliases": [
+                "Allergen cross-contact prevention",
+                "Safe food handling for allergies"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing kitchen-level practices to prevent allergen cross-contact (e.g., separate prep areas, utensil control, cleaning protocols, labeling) and coordinating with FOH staff on safe service.",
+            "parent_skill": "Accessibility & special request handling",
+            "related_skills": [
+                "Special diet and allergen accommodation",
+                "Food safety procedures",
+                "Special request intake & tracking"
+            ],
+            "keywords": [
+                "cross-contact",
+                "allergen control",
+                "separate prep",
+                "contamination prevention"
+            ],
+            "common_roles": [
+                "Kitchen staff",
+                "Chef de cuisine",
+                "Server",
+                "Restaurant manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Accessible communication techniques",
+            "aliases": [
+                "Clear communication for guests with disabilities",
+                "Alternative format communication",
+                "Plain-language customer communication"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Using verbal and nonverbal communication strategies (plain language, written confirmation, read-back, slowed speech, clear enunciation) and alternative formats to ensure understanding for guests with sensory or cognitive impairments.",
+            "parent_skill": "Accessibility & special request handling",
+            "related_skills": [
+                "Basic sign language for hospitality",
+                "Hearing impairment accommodation",
+                "Special request intake & tracking"
+            ],
+            "keywords": [
+                "plain language",
+                "read-back",
+                "written confirmation",
+                "communication access"
+            ],
+            "common_roles": [
+                "Server",
+                "Host",
+                "Concierge",
+                "Guest services associate"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Basic sign language for hospitality",
+            "aliases": [
+                "Customer-service sign language",
+                "Hospitality sign language basics"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Knowledge of essential sign language phrases and gestures used in hospitality settings (e.g., greetings, order-taking, safety cues) to support guests who are deaf or hard of hearing.",
+            "parent_skill": "Accessibility & special request handling",
+            "related_skills": [
+                "Accessible communication techniques",
+                "Hearing impairment accommodation"
+            ],
+            "keywords": [
+                "sign language",
+                "ASL basics",
+                "deaf communication",
+                "visual cues"
+            ],
+            "common_roles": [
+                "Server",
+                "Host",
+                "Guest services associate"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Visual impairment assistance and menu adaptation",
+            "aliases": [
+                "Assisting visually impaired guests",
+                "Tactile and large-print menu provision"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Guiding guests with low or no vision safely through the venue, describing items clearly, and providing accessible menu formats (large-print, Braille, tactile or audio menus).",
+            "parent_skill": "Accessibility & special request handling",
+            "related_skills": [
+                "Assistive technology setup and operation",
+                "Accessible seating coordination",
+                "Accessible communication techniques"
+            ],
+            "keywords": [
+                "guide assistance",
+                "large print",
+                "Braille menu",
+                "audio menu"
+            ],
+            "common_roles": [
+                "Server",
+                "Host",
+                "Guest services associate"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Special request intake and tracking",
+            "aliases": [
+                "Guest special request documentation",
+                "Request logging and communication"
+            ],
+            "skill_type": "process_skill",
+            "description": "Capturing, documenting, and communicating accessibility and special-service requests (dietary, mobility, sensory, celebrations) across shifts and departments to ensure consistent fulfillment.",
+            "parent_skill": "Accessibility & special request handling",
+            "related_skills": [
+                "Accessible seating coordination",
+                "Special diet and allergen accommodation",
+                "Service animal accommodation"
+            ],
+            "keywords": [
+                "request intake",
+                "tracking system",
+                "guest notes",
+                "handoff"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Host",
+                "Restaurant manager",
+                "Guest services associate"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,290 @@
+{
+    "domain": "Finance",
+    "category": "Cost Accounting & Operational Finance",
+    "subcategory": "Product costing & standard costs",
+    "skills": [
+        {
+            "canonical_name": "Standard costing",
+            "aliases": [
+                "standard cost accounting",
+                "standard costs"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Establishing, maintaining and applying standard unit costs for materials, labor and overhead to support budgeting, pricing and variance analysis.",
+            "parent_skill": "Product costing & standard costs",
+            "related_skills": [
+                "Standard cost variance analysis",
+                "ERP standard costing configuration",
+                "Cost roll-up (Bill of Materials)"
+            ],
+            "keywords": [
+                "standard cost",
+                "standard rate",
+                "unit standard",
+                "price standard"
+            ],
+            "common_roles": [
+                "Cost Accountant",
+                "Product Cost Analyst",
+                "Management Accountant"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Standard cost variance analysis",
+            "aliases": [
+                "variance analysis",
+                "standard cost variance reporting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing and reconciling variances between actual and standard costs (materials, labor, overhead), performing root-cause analysis and preparing variance reports for stakeholders.",
+            "parent_skill": "Product costing & standard costs",
+            "related_skills": [
+                "Standard costing",
+                "Unit cost and COGS analysis",
+                "Cost of goods manufactured (COGM) calculation"
+            ],
+            "keywords": [
+                "material variance",
+                "labor variance",
+                "overhead variance",
+                "variance reconciliation"
+            ],
+            "common_roles": [
+                "Cost Accountant",
+                "Financial Analyst",
+                "Product Cost Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cost roll-up (Bill of Materials)",
+            "aliases": [
+                "BOM cost roll-up",
+                "product cost roll-up",
+                "indented BOM costing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Aggregating component, subassembly and resource costs through the bill of materials and routing to compute finished-goods standard cost.",
+            "parent_skill": "Product costing & standard costs",
+            "related_skills": [
+                "Standard costing",
+                "ERP standard costing configuration",
+                "Cost of goods manufactured (COGM) calculation"
+            ],
+            "keywords": [
+                "BOM",
+                "cost roll-up",
+                "routing cost",
+                "component cost"
+            ],
+            "common_roles": [
+                "Manufacturing Finance Analyst",
+                "Product Cost Analyst",
+                "Cost Accountant"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Activity-based costing (ABC)",
+            "aliases": [
+                "ABC costing",
+                "activity based costing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Allocating indirect costs to products using activities and cost drivers to improve accuracy of product costing and support pricing and profitability analysis.",
+            "parent_skill": "Product costing & standard costs",
+            "related_skills": [
+                "Overhead allocation",
+                "Unit cost and COGS analysis"
+            ],
+            "keywords": [
+                "cost drivers",
+                "activity pools",
+                "ABC analysis",
+                "indirect cost allocation"
+            ],
+            "common_roles": [
+                "Management Accountant",
+                "Product Cost Analyst",
+                "Financial Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Overhead allocation",
+            "aliases": [
+                "overhead apportionment",
+                "indirect cost allocation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Designing and applying allocation bases and drivers to assign manufacturing and non-manufacturing overheads to products, departments and cost centers.",
+            "parent_skill": "Product costing & standard costs",
+            "related_skills": [
+                "Activity-based costing (ABC)",
+                "Standard cost variance analysis",
+                "Cost roll-up (Bill of Materials)"
+            ],
+            "keywords": [
+                "allocation base",
+                "overhead rate",
+                "apportionment",
+                "burden rate"
+            ],
+            "common_roles": [
+                "Cost Accountant",
+                "Manufacturing Finance Analyst",
+                "Controller"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Standard cost modeling and simulation",
+            "aliases": [
+                "standard cost simulation",
+                "scenario costing",
+                "what-if costing"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Building models (typically in Excel or BI tools) to simulate standard cost impacts, perform sensitivity analysis and evaluate scenario outcomes for pricing and budgeting decisions.",
+            "parent_skill": "Product costing & standard costs",
+            "related_skills": [
+                "Standard costing",
+                "ERP standard costing configuration",
+                "Unit cost and COGS analysis"
+            ],
+            "keywords": [
+                "sensitivity analysis",
+                "cost modeling",
+                "what-if",
+                "scenario planning"
+            ],
+            "common_roles": [
+                "Financial Analyst",
+                "Product Cost Analyst",
+                "Cost Accountant"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cost of goods manufactured (COGM) calculation",
+            "aliases": [
+                "COGM reconciliation",
+                "manufactured cost reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Calculating and reconciling total manufacturing costs for a period — raw materials, work-in-progress, direct labor and applied overhead — to determine finished goods cost flows.",
+            "parent_skill": "Product costing & standard costs",
+            "related_skills": [
+                "Cost roll-up (Bill of Materials)",
+                "Standard cost variance analysis",
+                "Inventory revaluation & standard cost adjustment"
+            ],
+            "keywords": [
+                "COGM",
+                "WIP reconciliation",
+                "manufacturing costs",
+                "finished goods cost"
+            ],
+            "common_roles": [
+                "Manufacturing Accountant",
+                "Cost Accountant",
+                "Plant Controller"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Unit cost and COGS analysis",
+            "aliases": [
+                "unit cost analysis",
+                "COGS analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing per-unit product costs and their impact on cost of goods sold, gross margin and inventory valuation to support pricing and profitability decisions.",
+            "parent_skill": "Product costing & standard costs",
+            "related_skills": [
+                "Standard cost variance analysis",
+                "Activity-based costing (ABC)",
+                "Standard costing"
+            ],
+            "keywords": [
+                "unit cost",
+                "COGS",
+                "per-unit analysis",
+                "margin analysis"
+            ],
+            "common_roles": [
+                "Product Cost Analyst",
+                "Financial Analyst",
+                "Cost Accountant"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inventory revaluation & standard cost adjustment",
+            "aliases": [
+                "standard cost revaluation",
+                "inventory revaluation for standard costs",
+                "standard cost adjustments"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Executing accounting and operational processes to update inventory carrying values and post standard cost adjustment entries when standard costs are changed or refreshed.",
+            "parent_skill": "Product costing & standard costs",
+            "related_skills": [
+                "Standard costing",
+                "ERP standard costing configuration",
+                "Cost of goods manufactured (COGM) calculation"
+            ],
+            "keywords": [
+                "inventory revaluation",
+                "cost adjustment",
+                "standard cost change",
+                "accounting entries"
+            ],
+            "common_roles": [
+                "Cost Accountant",
+                "Inventory Accountant",
+                "Financial Controller"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ERP standard costing configuration",
+            "aliases": [
+                "ERP cost configuration",
+                "SAP product costing setup",
+                "Oracle cost management configuration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and maintaining standard costing functionality in ERP systems (cost elements, BOM\/routing costing, costing runs, price\/variance posting and reporting).",
+            "parent_skill": "Product costing & standard costs",
+            "related_skills": [
+                "Standard costing",
+                "Cost roll-up (Bill of Materials)",
+                "Inventory revaluation & standard cost adjustment"
+            ],
+            "keywords": [
+                "ERP costing",
+                "costing run",
+                "price variance",
+                "cost elements"
+            ],
+            "common_roles": [
+                "ERP Finance Analyst",
+                "Product Cost Analyst",
+                "Cost Accountant"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

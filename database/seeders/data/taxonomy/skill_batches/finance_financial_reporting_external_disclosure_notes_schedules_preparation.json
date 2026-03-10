@@ -1,0 +1,342 @@
+{
+    "domain": "Finance",
+    "category": "Financial Reporting & External Disclosure",
+    "subcategory": "Notes & schedules preparation",
+    "skills": [
+        {
+            "canonical_name": "Financial statement note drafting",
+            "aliases": [
+                "Note drafting",
+                "Footnote drafting",
+                "Financial note writing",
+                "Disclosure narrative drafting"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Composing clear, audit-ready explanatory text for financial statement notes, including accounting policies, assumptions, and supporting disclosures.",
+            "parent_skill": "Notes & schedules preparation",
+            "related_skills": [
+                "Disclosure checklist management and SOX linkage",
+                "Balance sheet schedules preparation",
+                "Income statement schedules preparation",
+                "Lease accounting note preparation"
+            ],
+            "keywords": [
+                "footnotes",
+                "disclosure narratives",
+                "accounting policy",
+                "management commentary",
+                "audit-ready"
+            ],
+            "common_roles": [
+                "financial reporting professionals",
+                "external reporting teams",
+                "corporate accounting"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Balance sheet schedules preparation",
+            "aliases": [
+                "Balance sheet schedules",
+                "BS schedules",
+                "Balance sheet rollforward"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Preparing detailed supporting schedules and rollforwards for balance sheet line items (assets, liabilities, equity) to support external disclosures and audits.",
+            "parent_skill": "Notes & schedules preparation",
+            "related_skills": [
+                "Account reconciliations for financial reporting",
+                "Fixed assets schedule preparation and reconciliation",
+                "General ledger data extraction and mapping for notes"
+            ],
+            "keywords": [
+                "current assets",
+                "long-term liabilities",
+                "equity rollforward",
+                "supporting schedules",
+                "rollforward"
+            ],
+            "common_roles": [
+                "financial reporting professionals",
+                "corporate accounting",
+                "external reporting teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Income statement schedules preparation",
+            "aliases": [
+                "Income statement schedules",
+                "P&L schedules",
+                "Profit and loss schedules",
+                "Income statement rollforward"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Creating detailed schedules that reconcile and explain income statement line items, variances, and non-recurring items for disclosure purposes.",
+            "parent_skill": "Notes & schedules preparation",
+            "related_skills": [
+                "Financial statement note drafting",
+                "Cash flow schedules and reconciliation",
+                "General ledger data extraction and mapping for notes"
+            ],
+            "keywords": [
+                "revenue analysis",
+                "cost of goods sold",
+                "operating expenses",
+                "non-recurring items",
+                "variance analysis"
+            ],
+            "common_roles": [
+                "financial reporting professionals",
+                "management reporting",
+                "corporate accounting"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash flow schedules and reconciliation",
+            "aliases": [
+                "Cash flow schedule",
+                "Cash recon for statements",
+                "Statement of cash flows reconciliation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Preparing cash flow statement schedules and reconciling movements in cash-related accounts, including operating, investing and financing activities.",
+            "parent_skill": "Notes & schedules preparation",
+            "related_skills": [
+                "Income statement schedules preparation",
+                "Balance sheet schedules preparation",
+                "General ledger data extraction and mapping for notes"
+            ],
+            "keywords": [
+                "operating cash flow",
+                "investing cash flow",
+                "financing cash flow",
+                "cash recon",
+                "non-cash adjustments"
+            ],
+            "common_roles": [
+                "financial reporting professionals",
+                "treasury-adjacent reporting",
+                "corporate accounting"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Account reconciliations for financial reporting",
+            "aliases": [
+                "Account reconciliations",
+                "GL reconciliations",
+                "Reconciliation for reporting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Executing and documenting reconciliations between the general ledger and supporting schedules or subledgers to ensure accuracy of note disclosures.",
+            "parent_skill": "Notes & schedules preparation",
+            "related_skills": [
+                "Balance sheet schedules preparation",
+                "Disclosure checklist management and SOX linkage",
+                "General ledger data extraction and mapping for notes"
+            ],
+            "keywords": [
+                "general ledger",
+                "subledger",
+                "reconcile",
+                "supporting schedules",
+                "reconciliation framework"
+            ],
+            "common_roles": [
+                "financial reporting operations",
+                "corporate accounting",
+                "external reporting teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Fixed assets schedule preparation and reconciliation",
+            "aliases": [
+                "Fixed asset schedules",
+                "FA rollforward",
+                "Property plant and equipment schedules",
+                "Accumulated depreciation schedule"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Preparing rollforwards and reconciliations for property, plant and equipment, including capital additions, disposals, depreciation, and impairment disclosures.",
+            "parent_skill": "Notes & schedules preparation",
+            "related_skills": [
+                "Balance sheet schedules preparation",
+                "Lease accounting note preparation",
+                "Account reconciliations for financial reporting"
+            ],
+            "keywords": [
+                "PPE",
+                "capex",
+                "depreciation",
+                "impairment",
+                "asset register"
+            ],
+            "common_roles": [
+                "fixed assets accounting",
+                "financial reporting professionals",
+                "corporate accounting"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Consolidation and intercompany elimination schedules",
+            "aliases": [
+                "Consolidation schedules",
+                "Intercompany elimination",
+                "Group consolidation workpapers"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Preparing consolidation worksheets and intercompany elimination schedules to reconcile subsidiary balances and transactions for group financial statements and notes.",
+            "parent_skill": "Notes & schedules preparation",
+            "related_skills": [
+                "General ledger data extraction and mapping for notes",
+                "Account reconciliations for financial reporting",
+                "Disclosure checklist management and SOX linkage"
+            ],
+            "keywords": [
+                "intercompany",
+                "eliminations",
+                "consolidation",
+                "minority interest",
+                "group reporting"
+            ],
+            "common_roles": [
+                "consolidation accounting",
+                "group financial reporting",
+                "external reporting teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Lease accounting note preparation (ASC 842 \/ IFRS 16)",
+            "aliases": [
+                "Lease disclosure",
+                "Lease accounting notes",
+                "Right-of-use note preparation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Preparing lease-related disclosures and schedules compliant with current lease accounting standards (ASC 842, IFRS 16), including right-of-use assets, lease liabilities and maturity analyses.",
+            "parent_skill": "Notes & schedules preparation",
+            "related_skills": [
+                "Fixed assets schedule preparation and reconciliation",
+                "Financial statement note drafting",
+                "Disclosure checklist management and SOX linkage"
+            ],
+            "keywords": [
+                "ASC 842",
+                "IFRS 16",
+                "right-of-use",
+                "lease liability",
+                "lease term"
+            ],
+            "common_roles": [
+                "lease accounting",
+                "financial reporting professionals",
+                "external reporting teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Disclosure checklist management and SOX linkage",
+            "aliases": [
+                "Disclosure checklist",
+                "Disclosure control linkage",
+                "SOX disclosure reconciliation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Maintaining external disclosure checklists, mapping disclosures to control documentation (e.g., SOX), and ensuring all note requirements are addressed and evidence is retained.",
+            "parent_skill": "Notes & schedules preparation",
+            "related_skills": [
+                "Financial statement note drafting",
+                "Account reconciliations for financial reporting",
+                "Consolidation and intercompany elimination schedules"
+            ],
+            "keywords": [
+                "disclosure checklist",
+                "control mapping",
+                "SOX linkage",
+                "evidence retention",
+                "external disclosure controls"
+            ],
+            "common_roles": [
+                "financial reporting controls",
+                "external reporting teams",
+                "corporate accounting"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Advanced Excel for financial reporting",
+            "aliases": [
+                "Excel for reporting",
+                "Excel financial modeling for disclosures",
+                "Excel macros and power tools"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using advanced Excel functionality (pivot tables, Power Query\/Power Pivot, formulas, macros\/VBA) to build, automate and validate schedules and disclosures.",
+            "parent_skill": "Notes & schedules preparation",
+            "related_skills": [
+                "Balance sheet schedules preparation",
+                "Income statement schedules preparation",
+                "General ledger data extraction and mapping for notes"
+            ],
+            "keywords": [
+                "pivot tables",
+                "power query",
+                "power pivot",
+                "macros",
+                "VBA",
+                "XLOOKUP"
+            ],
+            "common_roles": [
+                "financial reporting professionals",
+                "data preparation for reporting",
+                "corporate accounting"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "General ledger data extraction and mapping for notes",
+            "aliases": [
+                "GL data extraction",
+                "GL mapping for disclosures",
+                "Subledger to GL mapping"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Extracting transactional data from general ledger\/ERP systems and mapping it to supporting schedules and note line items to enable reconciliations and disclosure preparation.",
+            "parent_skill": "Notes & schedules preparation",
+            "related_skills": [
+                "Account reconciliations for financial reporting",
+                "Consolidation and intercompany elimination schedules",
+                "Advanced Excel for financial reporting"
+            ],
+            "keywords": [
+                "ERP extraction",
+                "data mapping",
+                "GL export",
+                "subledger",
+                "data transformation"
+            ],
+            "common_roles": [
+                "financial reporting operations",
+                "corporate accounting",
+                "external reporting teams"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

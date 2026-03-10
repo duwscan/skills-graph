@@ -1,0 +1,294 @@
+{
+    "domain": "Finance",
+    "category": "Internal Controls, Audit & SOX Operations",
+    "subcategory": "Continuous controls monitoring",
+    "skills": [
+        {
+            "canonical_name": "Continuous controls monitoring (program design)",
+            "aliases": [
+                "CCM program design",
+                "continuous monitoring program design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and governing an organization-wide continuous controls monitoring program, including framework, objectives, roles, metrics, and implementation roadmap.",
+            "parent_skill": "Continuous controls monitoring",
+            "related_skills": [
+                "SOX control scoping for continuous monitoring",
+                "Control monitoring platform configuration",
+                "CCM rule development & optimization"
+            ],
+            "keywords": [
+                "CCM program",
+                "program design",
+                "governance",
+                "monitoring framework"
+            ],
+            "common_roles": [
+                "Internal Auditor",
+                "Controls Manager",
+                "Risk Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "CCM rule development & optimization",
+            "aliases": [
+                "monitoring rule development",
+                "exception rule scripting",
+                "rule tuning for CCM"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Authoring, testing and refining automated detection rules or scripts that identify control exceptions and unusual transactions for continuous monitoring.",
+            "parent_skill": "Continuous controls monitoring",
+            "related_skills": [
+                "Continuous controls monitoring (program design)",
+                "Monitoring rule performance measurement & KPI reporting",
+                "Automated control testing implementation"
+            ],
+            "keywords": [
+                "rule development",
+                "exception detection",
+                "rule tuning",
+                "scripting"
+            ],
+            "common_roles": [
+                "SOX\/Controls Analyst",
+                "Data Analyst (controls)",
+                "Internal Auditor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated control testing implementation",
+            "aliases": [
+                "automated control testing",
+                "continuous automated testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implementing automated tests to validate design and operating effectiveness of controls on a scheduled or real-time basis, including test orchestration and result validation.",
+            "parent_skill": "Continuous controls monitoring",
+            "related_skills": [
+                "CCM rule development & optimization",
+                "Control data analytics and visualization",
+                "Exception management & remediation workflow management"
+            ],
+            "keywords": [
+                "automated testing",
+                "control testing",
+                "real-time testing",
+                "test orchestration"
+            ],
+            "common_roles": [
+                "Controls Analyst",
+                "IT Auditor",
+                "SOX Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control data analytics and visualization",
+            "aliases": [
+                "controls analytics",
+                "controls data visualization",
+                "analytics for CCM"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Using statistical, SQL, Python\/R and visualization tools to analyze control datasets, detect anomalies, identify trends and present monitoring insights to stakeholders.",
+            "parent_skill": "Continuous controls monitoring",
+            "related_skills": [
+                "Monitoring rule performance measurement & KPI reporting",
+                "Data integration for CCM (ETL\/ELT)",
+                "CCM rule development & optimization"
+            ],
+            "keywords": [
+                "SQL",
+                "Python",
+                "data visualization",
+                "anomaly detection"
+            ],
+            "common_roles": [
+                "Data Analyst (controls)",
+                "Internal Auditor",
+                "Controls Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Exception management & remediation workflow management",
+            "aliases": [
+                "exceptions handling for CCM",
+                "remediation coordination",
+                "incident and remediation management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing the lifecycle of monitoring exceptions: triage, assignment, investigation, remediation tracking, and verification of remediation effectiveness.",
+            "parent_skill": "Continuous controls monitoring",
+            "related_skills": [
+                "Automated control testing implementation",
+                "Control monitoring platform configuration",
+                "Control self-assessment facilitation for continuous monitoring"
+            ],
+            "keywords": [
+                "exception management",
+                "remediation",
+                "incident tracking",
+                "root cause analysis"
+            ],
+            "common_roles": [
+                "Remediation Manager",
+                "Controls Analyst",
+                "Internal Auditor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control monitoring platform configuration",
+            "aliases": [
+                "CCM platform configuration",
+                "monitoring platform admin",
+                "continuous monitoring tool configuration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and administering continuous monitoring platforms and modules (e.g., rule deployment, user roles, scheduling, connectors) to support CCM processes.",
+            "parent_skill": "Continuous controls monitoring",
+            "related_skills": [
+                "Data integration for CCM (ETL\/ELT)",
+                "Automated control testing implementation",
+                "Exception management & remediation workflow management"
+            ],
+            "keywords": [
+                "platform configuration",
+                "tool administration",
+                "connectors",
+                "scheduling"
+            ],
+            "common_roles": [
+                "Controls Platform Administrator",
+                "SOX\/Controls Analyst",
+                "IT Auditor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SOX control scoping for continuous monitoring",
+            "aliases": [
+                "SOX scoping for CCM",
+                "control scoping for continuous monitoring"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Identifying and prioritizing SOX-relevant processes and controls suitable for continuous monitoring, including materiality assessment and risk-based scoping.",
+            "parent_skill": "Continuous controls monitoring",
+            "related_skills": [
+                "Continuous controls monitoring (program design)",
+                "Automated control testing implementation",
+                "Control self-assessment facilitation for continuous monitoring"
+            ],
+            "keywords": [
+                "SOX scoping",
+                "materiality",
+                "risk assessment",
+                "control selection"
+            ],
+            "common_roles": [
+                "SOX Analyst",
+                "Internal Auditor",
+                "Controls Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data integration for CCM (ETL\/ELT)",
+            "aliases": [
+                "controls ETL",
+                "data ingestion for monitoring",
+                "controls data pipelines"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing ETL\/ELT processes and data pipelines to extract, transform and load transactional and master data into monitoring systems for analysis and rule execution.",
+            "parent_skill": "Continuous controls monitoring",
+            "related_skills": [
+                "Control data analytics and visualization",
+                "Control monitoring platform configuration",
+                "CCM rule development & optimization"
+            ],
+            "keywords": [
+                "ETL",
+                "data pipeline",
+                "data ingestion",
+                "connectors"
+            ],
+            "common_roles": [
+                "Data Engineer (controls)",
+                "Controls Analyst",
+                "IT Auditor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Monitoring rule performance measurement & KPI reporting",
+            "aliases": [
+                "rule performance measurement",
+                "CCM KPI reporting",
+                "monitoring effectiveness metrics"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Defining and tracking KPIs and metrics for monitoring rules and the CCM program (false positives, coverage, time-to-remediate), and producing regular reports to demonstrate effectiveness and trends.",
+            "parent_skill": "Continuous controls monitoring",
+            "related_skills": [
+                "Control data analytics and visualization",
+                "CCM rule development & optimization",
+                "Continuous controls monitoring (program design)"
+            ],
+            "keywords": [
+                "KPIs",
+                "false positives",
+                "coverage",
+                "time-to-remediate"
+            ],
+            "common_roles": [
+                "Controls Manager",
+                "Internal Auditor",
+                "Data Analyst (controls)"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control self-assessment facilitation for continuous monitoring",
+            "aliases": [
+                "CSA facilitation",
+                "control self-assessment for CCM",
+                "facilitating control testing workshops"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Leading and facilitating control self-assessment sessions with process owners to validate monitoring findings, obtain attestations, and drive ownership of control remediation.",
+            "parent_skill": "Continuous controls monitoring",
+            "related_skills": [
+                "Exception management & remediation workflow management",
+                "SOX control scoping for continuous monitoring",
+                "Continuous controls monitoring (program design)"
+            ],
+            "keywords": [
+                "facilitation",
+                "attestation",
+                "process owner engagement",
+                "workshops"
+            ],
+            "common_roles": [
+                "Internal Auditor",
+                "Controls Analyst",
+                "Risk & Controls Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

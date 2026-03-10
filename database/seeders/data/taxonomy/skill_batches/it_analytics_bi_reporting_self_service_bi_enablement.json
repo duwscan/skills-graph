@@ -1,0 +1,301 @@
+{
+    "domain": "IT",
+    "category": "Analytics, BI & Reporting",
+    "subcategory": "Self-service BI enablement",
+    "skills": [
+        {
+            "canonical_name": "Semantic layer modeling",
+            "aliases": [
+                "metric layer",
+                "business semantic model",
+                "semantic modeling",
+                "business metrics modeling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing a semantic\/metric layer that exposes consistent, business-friendly measures and dimensions for self-service consumption.",
+            "parent_skill": "Self-service BI enablement",
+            "related_skills": [
+                "Metrics governance",
+                "Data modeling",
+                "Curated dataset creation for self-service"
+            ],
+            "keywords": [
+                "semantic layer",
+                "metrics",
+                "business glossary",
+                "consistent metrics"
+            ],
+            "common_roles": [
+                "BI Analyst",
+                "Analytics Engineer",
+                "BI Developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Curated dataset creation for self-service",
+            "aliases": [
+                "curated dataset development",
+                "data mart design",
+                "curated data provisioning",
+                "consumable dataset creation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Developing cleansed, documented and performance-optimized datasets (views, marts, exposure tables) tailored for business user self-service analysis.",
+            "parent_skill": "Self-service BI enablement",
+            "related_skills": [
+                "Data preparation and transformation for self-service",
+                "Semantic layer modeling",
+                "BI platform administration"
+            ],
+            "keywords": [
+                "data mart",
+                "dataset",
+                "data curation",
+                "materialized views"
+            ],
+            "common_roles": [
+                "Data Analyst",
+                "Analytics Engineer",
+                "BI Developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "BI platform administration",
+            "aliases": [
+                "self-service BI platform administration",
+                "report server administration",
+                "BI workspace administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and operating self-service BI platforms (user\/workspace management, scheduling, resource sizing, connectivity and deployment pipelines) to support business users.",
+            "parent_skill": "Self-service BI enablement",
+            "related_skills": [
+                "Data access provisioning & entitlement management",
+                "Performance tuning for BI",
+                "Curated dataset creation for self-service"
+            ],
+            "keywords": [
+                "admin",
+                "scheduling",
+                "connectors",
+                "workspaces"
+            ],
+            "common_roles": [
+                "BI Administrator",
+                "BI Developer",
+                "Data Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dashboard and report design for business users",
+            "aliases": [
+                "dashboard design",
+                "report UX design",
+                "self-service report design",
+                "business user dashboard design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing intuitive, goal-oriented dashboards and reports that enable non-technical users to explore data, answer business questions and take action.",
+            "parent_skill": "Self-service BI enablement",
+            "related_skills": [
+                "Data visualization best practices",
+                "User training for BI tools",
+                "Performance tuning for BI"
+            ],
+            "keywords": [
+                "visualization",
+                "UX",
+                "storytelling",
+                "dashboard"
+            ],
+            "common_roles": [
+                "BI Analyst",
+                "Data Analyst",
+                "Product Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data access provisioning & entitlement management",
+            "aliases": [
+                "data access provisioning",
+                "entitlement management",
+                "access controls for BI",
+                "dataset permissions management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing user access to datasets and reports including RBAC, row-level security, workspace permissions and automated provisioning workflows for self-service users.",
+            "parent_skill": "Self-service BI enablement",
+            "related_skills": [
+                "BI platform administration",
+                "Data governance for self-service",
+                "Compliance and data privacy"
+            ],
+            "keywords": [
+                "RBAC",
+                "row-level security",
+                "permissions",
+                "entitlements"
+            ],
+            "common_roles": [
+                "BI Administrator",
+                "Data Governance Lead",
+                "Security Operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Metrics governance",
+            "aliases": [
+                "business metric governance",
+                "metric definition management",
+                "governed metrics"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Establishing and enforcing authoritative definitions, ownership, versioning and change controls for business metrics used in self-service analytics.",
+            "parent_skill": "Self-service BI enablement",
+            "related_skills": [
+                "Semantic layer modeling",
+                "Data cataloging and metadata management for BI",
+                "Data lineage and provenance"
+            ],
+            "keywords": [
+                "metric definitions",
+                "owners",
+                "data quality",
+                "versioning"
+            ],
+            "common_roles": [
+                "Data Governance Lead",
+                "BI Manager",
+                "Analytics Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data cataloging and metadata management for BI",
+            "aliases": [
+                "data cataloging",
+                "metadata management",
+                "business glossary management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintaining searchable catalogs and metadata (dataset descriptions, owners, tags, sample queries) to help business users discover and trust self-service data assets.",
+            "parent_skill": "Self-service BI enablement",
+            "related_skills": [
+                "Data lineage and provenance",
+                "Metrics governance",
+                "Curated dataset creation for self-service"
+            ],
+            "keywords": [
+                "catalog",
+                "metadata",
+                "discovery",
+                "business glossary"
+            ],
+            "common_roles": [
+                "Data Steward",
+                "Analytics Engineer",
+                "Data Catalog Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "User training and enablement for BI tools",
+            "aliases": [
+                "BI training",
+                "business user enablement",
+                "self-service user training"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Designing and delivering role-based training, documentation and support resources to onboard business users to self-service BI capabilities and best practices.",
+            "parent_skill": "Self-service BI enablement",
+            "related_skills": [
+                "Dashboard and report design for business users",
+                "Adoption measurement for BI",
+                "Change management"
+            ],
+            "keywords": [
+                "training",
+                "onboarding",
+                "knowledge transfer",
+                "documentation"
+            ],
+            "common_roles": [
+                "Training Specialist",
+                "BI Analyst",
+                "Change Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Adoption measurement for BI",
+            "aliases": [
+                "BI usage analytics",
+                "self-service adoption metrics",
+                "report usage tracking"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Tracking and analyzing usage, engagement and impact metrics (active users, report views, query patterns) to measure adoption and guide enablement efforts.",
+            "parent_skill": "Self-service BI enablement",
+            "related_skills": [
+                "User training and enablement for BI tools",
+                "BI platform administration",
+                "Change management"
+            ],
+            "keywords": [
+                "usage analytics",
+                "adoption",
+                "telemetry",
+                "engagement"
+            ],
+            "common_roles": [
+                "BI Manager",
+                "Analytics Lead",
+                "Product Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data lineage and provenance for self-service",
+            "aliases": [
+                "data lineage",
+                "data provenance tracking",
+                "data traceability"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Capturing and exposing upstream sources, transformations and ownership for datasets and metrics so self-service users can assess trust and impact of analyses.",
+            "parent_skill": "Self-service BI enablement",
+            "related_skills": [
+                "Data cataloging and metadata management for BI",
+                "Metrics governance",
+                "Compliance and data privacy"
+            ],
+            "keywords": [
+                "lineage",
+                "provenance",
+                "traceability",
+                "data pipeline"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Data Steward",
+                "Analytics Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,300 @@
+{
+    "domain": "F&B",
+    "category": "Baking, Pastry & Desserts",
+    "subcategory": "Pastry station sanitation & storage",
+    "skills": [
+        {
+            "canonical_name": "Pastry station cleaning and sanitizing",
+            "aliases": [
+                "station sanitation",
+                "workstation cleaning",
+                "pastry station sanitation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Execute routine cleaning and sanitizing of pastry workstations, surfaces, tools, and small equipment to maintain hygiene and prevent contamination during production.",
+            "parent_skill": "Pastry station sanitation & storage",
+            "related_skills": [
+                "Sanitizer and cleaning chemical handling",
+                "Cleaning recordkeeping and sanitation logs",
+                "Sanitation SOP development & adherence",
+                "Cross-contamination prevention in pastry production"
+            ],
+            "keywords": [
+                "cleaning",
+                "sanitizing",
+                "workstation",
+                "surface sanitation",
+                "hygiene"
+            ],
+            "common_roles": [
+                "Baker",
+                "Pastry Cook",
+                "Kitchen Supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sanitizer and cleaning chemical handling",
+            "aliases": [
+                "cleaning chemical safety",
+                "sanitizer mixing and dosing",
+                "chemical handling for sanitation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Select, mix, store, and apply sanitizers and cleaning chemicals safely and to manufacturer\/regulatory specifications, including PPE use and MSDS awareness.",
+            "parent_skill": "Pastry station sanitation & storage",
+            "related_skills": [
+                "Pastry station cleaning and sanitizing",
+                "Sanitation SOP development & adherence",
+                "Cleaning recordkeeping and sanitation logs"
+            ],
+            "keywords": [
+                "sanitizer",
+                "chemical safety",
+                "PPE",
+                "MSDS",
+                "dosing"
+            ],
+            "common_roles": [
+                "Baker",
+                "Bakery Manager",
+                "Pastry Chef"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-contamination prevention in pastry production",
+            "aliases": [
+                "contamination control",
+                "cross contamination prevention",
+                "cross-contact prevention"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implement practices and workspace flows to prevent biological, chemical, and allergen cross-contamination between ingredients, products, and equipment.",
+            "parent_skill": "Pastry station sanitation & storage",
+            "related_skills": [
+                "Allergen segregation and labeling in pastry",
+                "Pastry station cleaning and sanitizing",
+                "Dry ingredient storage and humidity control"
+            ],
+            "keywords": [
+                "cross-contamination",
+                "cross-contact",
+                "hygienic workflow",
+                "segregation"
+            ],
+            "common_roles": [
+                "Pastry Cook",
+                "Baker",
+                "Quality Assurance Technician"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cold storage temperature control and monitoring",
+            "aliases": [
+                "refrigeration monitoring",
+                "cooler\/freezer temperature control",
+                "cold storage monitoring"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Monitor and control temperatures of walk-in coolers, freezers and refrigerated display\/storage to maintain safe holding conditions, perform checks, and take corrective actions.",
+            "parent_skill": "Pastry station sanitation & storage",
+            "related_skills": [
+                "Inventory rotation (FIFO) for pastry ingredients",
+                "Cleaning recordkeeping and sanitation logs",
+                "Dry ingredient storage and humidity control"
+            ],
+            "keywords": [
+                "temperature monitoring",
+                "refrigeration",
+                "thermometer calibration",
+                "cold chain"
+            ],
+            "common_roles": [
+                "Bakery Manager",
+                "Baker",
+                "Kitchen Supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inventory rotation (FIFO) for pastry ingredients",
+            "aliases": [
+                "FIFO inventory rotation",
+                "first-in-first-out stock rotation",
+                "ingredient rotation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Apply and enforce first-in-first-out (FIFO) procedures for ingredient and product storage to minimize spoilage, waste, and food safety risks.",
+            "parent_skill": "Pastry station sanitation & storage",
+            "related_skills": [
+                "Cold storage temperature control and monitoring",
+                "Dry ingredient storage and humidity control",
+                "Cleaning recordkeeping and sanitation logs"
+            ],
+            "keywords": [
+                "FIFO",
+                "stock rotation",
+                "expiry management",
+                "first in first out"
+            ],
+            "common_roles": [
+                "Bakery Manager",
+                "Stockroom Clerk",
+                "Purchasing Coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen segregation and labeling in pastry",
+            "aliases": [
+                "allergen management",
+                "allergen control procedures",
+                "allergen labeling"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Segregate allergenic ingredients and finished products, apply correct labeling and documentation, and implement controls to prevent allergen cross-contact in pastry production.",
+            "parent_skill": "Pastry station sanitation & storage",
+            "related_skills": [
+                "Cross-contamination prevention in pastry production",
+                "Pastry station cleaning and sanitizing",
+                "Sanitation SOP development & adherence"
+            ],
+            "keywords": [
+                "allergens",
+                "labeling",
+                "cross-contact",
+                "segregation"
+            ],
+            "common_roles": [
+                "Quality Assurance Technician",
+                "Pastry Chef",
+                "Baker"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dry ingredient storage and humidity control",
+            "aliases": [
+                "dry goods storage management",
+                "humidity control for dry ingredients",
+                "flour and sugar storage practices"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Manage storage of flours, sugars, powders and other dry goods to control exposure to humidity, pests and contamination using proper containers, shelving, and environmental controls.",
+            "parent_skill": "Pastry station sanitation & storage",
+            "related_skills": [
+                "Pest control monitoring and prevention in bakery areas",
+                "Inventory rotation (FIFO) for pastry ingredients",
+                "Cross-contamination prevention in pastry production"
+            ],
+            "keywords": [
+                "dry storage",
+                "humidity control",
+                "pest prevention",
+                "bulk ingredients"
+            ],
+            "common_roles": [
+                "Baker",
+                "Bakery Manager",
+                "Stockroom Clerk"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sanitation SOP development and adherence",
+            "aliases": [
+                "sanitation standard operating procedures",
+                "cleaning procedure development",
+                "SOP for sanitation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Develop, document and implement sanitation standard operating procedures (SOPs) for pastry stations and storage areas, and ensure team adherence and training.",
+            "parent_skill": "Pastry station sanitation & storage",
+            "related_skills": [
+                "Pastry station cleaning and sanitizing",
+                "Sanitizer and cleaning chemical handling",
+                "Cleaning recordkeeping and sanitation logs"
+            ],
+            "keywords": [
+                "SOP",
+                "procedure",
+                "sanitation plan",
+                "training"
+            ],
+            "common_roles": [
+                "Bakery Manager",
+                "Quality Assurance Specialist",
+                "Kitchen Supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cleaning recordkeeping and sanitation logs",
+            "aliases": [
+                "sanitation documentation",
+                "cleaning log maintenance",
+                "sanitation record keeping"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Maintain accurate cleaning schedules, sanitation logs and corrective action records to support traceability, audits and regulatory compliance in pastry operations.",
+            "parent_skill": "Pastry station sanitation & storage",
+            "related_skills": [
+                "Sanitizer and cleaning chemical handling",
+                "Sanitation SOP development and adherence",
+                "Cold storage temperature control and monitoring"
+            ],
+            "keywords": [
+                "logs",
+                "recordkeeping",
+                "cleaning schedule",
+                "audit-ready"
+            ],
+            "common_roles": [
+                "Quality Assurance Technician",
+                "Bakery Manager",
+                "Baker"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Pest control monitoring and prevention in bakery areas",
+            "aliases": [
+                "bakery pest control",
+                "pest monitoring and prevention",
+                "vermin control in bakery"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Monitor for pest activity and implement prevention controls (sealing, traps, sanitation, vendor coordination) to protect ingredient and product integrity in pastry storage and production areas.",
+            "parent_skill": "Pastry station sanitation & storage",
+            "related_skills": [
+                "Dry ingredient storage and humidity control",
+                "Pastry station cleaning and sanitizing",
+                "Cleaning recordkeeping and sanitation logs"
+            ],
+            "keywords": [
+                "pest control",
+                "rodent prevention",
+                "inspection",
+                "integrated pest management"
+            ],
+            "common_roles": [
+                "Bakery Manager",
+                "Facilities Technician",
+                "Baker"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

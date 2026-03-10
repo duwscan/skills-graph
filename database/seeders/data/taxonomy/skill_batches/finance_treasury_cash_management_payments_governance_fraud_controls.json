@@ -1,0 +1,297 @@
+{
+    "domain": "Finance",
+    "category": "Treasury & Cash Management",
+    "subcategory": "Payments governance & fraud controls",
+    "skills": [
+        {
+            "canonical_name": "Payments risk assessment",
+            "aliases": [
+                "payment risk assessment",
+                "payments risk analysis",
+                "payment channel risk assessment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Assess and quantify fraud, operational, liquidity and compliance risks across payment channels and products; produce risk ratings and remediation recommendations.",
+            "parent_skill": "Payments governance & fraud controls",
+            "related_skills": [
+                "Payment controls design",
+                "Transaction monitoring",
+                "Third-party payment processor risk management"
+            ],
+            "keywords": [
+                "risk assessment",
+                "risk scoring",
+                "scenario analysis",
+                "payments risk"
+            ],
+            "common_roles": [
+                "Payments Risk Manager",
+                "Treasury Analyst",
+                "Risk Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Transaction monitoring",
+            "aliases": [
+                "real-time transaction monitoring",
+                "payment monitoring",
+                "transactions surveillance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Design, configure and operate monitoring rules and alerting for payments flows to detect suspicious activity, anomalies and rule breaches in real time or batch.",
+            "parent_skill": "Payments governance & fraud controls",
+            "related_skills": [
+                "Fraud detection analytics",
+                "Sanctions and AML screening",
+                "Payment controls testing & auditing"
+            ],
+            "keywords": [
+                "alerts",
+                "rule tuning",
+                "thresholds",
+                "monitoring platform"
+            ],
+            "common_roles": [
+                "Fraud Analyst",
+                "AML Analyst",
+                "Payment Operations Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Fraud detection analytics",
+            "aliases": [
+                "fraud analytics",
+                "payment fraud modeling",
+                "anomaly detection for payments"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Develop and validate analytic models, machine-learning classifiers and rule-based systems to identify likely fraudulent payments and reduce false positives.",
+            "parent_skill": "Payments governance & fraud controls",
+            "related_skills": [
+                "Transaction monitoring",
+                "Payment controls design",
+                "Payments messaging standards (SWIFT\/ISO 20022\/NACHA)"
+            ],
+            "keywords": [
+                "machine learning",
+                "feature engineering",
+                "model validation",
+                "false positives"
+            ],
+            "common_roles": [
+                "Fraud Data Scientist",
+                "Fraud Analyst",
+                "Payments Risk Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sanctions and AML screening",
+            "aliases": [
+                "sanctions screening",
+                "AML transaction screening",
+                "watchlist screening"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Apply rules, name and transaction screening against sanctions lists, PEPs and other watchlists to ensure payments comply with AML\/CFT and sanctions requirements.",
+            "parent_skill": "Payments governance & fraud controls",
+            "related_skills": [
+                "Transaction monitoring",
+                "Payment controls testing & auditing",
+                "Third-party payment processor risk management"
+            ],
+            "keywords": [
+                "watchlists",
+                "PEP screening",
+                "name screening",
+                "false hits"
+            ],
+            "common_roles": [
+                "AML Analyst",
+                "Sanctions Compliance Officer",
+                "Payments Compliance Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Payment controls design",
+            "aliases": [
+                "controls design for payments",
+                "payments control framework",
+                "payment governance design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Define and document preventive and detective controls across payment lifecycles (authorization, routing, clearing, settlement) to mitigate fraud and operational risk.",
+            "parent_skill": "Payments governance & fraud controls",
+            "related_skills": [
+                "Payments risk assessment",
+                "Payment controls testing & auditing",
+                "Segregation of duties for payments"
+            ],
+            "keywords": [
+                "control matrix",
+                "SOD",
+                "preventive controls",
+                "detective controls"
+            ],
+            "common_roles": [
+                "Payments Controls Manager",
+                "Treasury Manager",
+                "Risk Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Payment reconciliation and exception management",
+            "aliases": [
+                "payment reconciliation",
+                "reconciliation and exception handling",
+                "bank reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Perform matching and reconciliation of payment transactions across internal ledgers, bank statements and clearing systems and manage exception workflows to resolution.",
+            "parent_skill": "Payments governance & fraud controls",
+            "related_skills": [
+                "Transaction monitoring",
+                "Chargeback and dispute management",
+                "Payments messaging standards (SWIFT\/ISO 20022\/NACHA)"
+            ],
+            "keywords": [
+                "reconciliation",
+                "exceptions",
+                "clearing",
+                "stale items"
+            ],
+            "common_roles": [
+                "Payment Operations Analyst",
+                "Treasury Analyst",
+                "Reconciliation Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Chargeback and dispute management",
+            "aliases": [
+                "dispute resolution",
+                "chargeback processing",
+                "card dispute management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Manage chargebacks and disputes end-to-end, including investigation, evidence collection, representment, and reporting to minimize financial loss and operational impact.",
+            "parent_skill": "Payments governance & fraud controls",
+            "related_skills": [
+                "Payment reconciliation and exception management",
+                "Transaction monitoring",
+                "Third-party payment processor risk management"
+            ],
+            "keywords": [
+                "representment",
+                "chargeback reason codes",
+                "dispute workflows",
+                "merchant disputes"
+            ],
+            "common_roles": [
+                "Chargeback Specialist",
+                "Fraud Analyst",
+                "Payment Operations Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Third-party payment processor risk management",
+            "aliases": [
+                "vendor risk management (payments)",
+                "acquirer and processor risk oversight",
+                "payments vendor oversight"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Assess and manage operational, security and compliance risks associated with acquirers, gateways, processors and other payment vendors, including SLA and contract control testing.",
+            "parent_skill": "Payments governance & fraud controls",
+            "related_skills": [
+                "Payments risk assessment",
+                "Sanctions and AML screening",
+                "Payment controls design"
+            ],
+            "keywords": [
+                "vendor due diligence",
+                "SLA",
+                "third-party risk",
+                "processor onboarding"
+            ],
+            "common_roles": [
+                "Vendor Risk Manager",
+                "Payments Operations Manager",
+                "Treasury Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Payment controls testing & auditing",
+            "aliases": [
+                "fraud control testing",
+                "payments audit testing",
+                "controls effectiveness testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Plan and execute testing of payment controls and fraud-prevention measures (sampling, walkthroughs, KPI testing) and report control effectiveness and remediation items.",
+            "parent_skill": "Payments governance & fraud controls",
+            "related_skills": [
+                "Payment controls design",
+                "Transaction monitoring",
+                "Sanctions and AML screening"
+            ],
+            "keywords": [
+                "control testing",
+                "sampling",
+                "KPI",
+                "remediation"
+            ],
+            "common_roles": [
+                "Internal Auditor",
+                "Controls Assurance Analyst",
+                "Payments Compliance Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Payments messaging standards (SWIFT\/ISO 20022\/NACHA)",
+            "aliases": [
+                "ISO 20022",
+                "SWIFT messaging",
+                "NACHA format"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Understand payment message formats, field structures and routing conventions (e.g., ISO 20022, SWIFT MT\/FIN, NACHA) to support rule creation, reconciliation and integration with banking partners.",
+            "parent_skill": "Payments governance & fraud controls",
+            "related_skills": [
+                "Payment reconciliation and exception management",
+                "Fraud detection analytics",
+                "Transaction monitoring"
+            ],
+            "keywords": [
+                "ISO20022",
+                "SWIFT",
+                "NACHA",
+                "message formats"
+            ],
+            "common_roles": [
+                "Payments Integration Engineer",
+                "Treasury Analyst",
+                "Payments Operations Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

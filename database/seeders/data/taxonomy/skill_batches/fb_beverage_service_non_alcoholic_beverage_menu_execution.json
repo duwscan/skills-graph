@@ -1,0 +1,285 @@
+{
+    "domain": "F&B",
+    "category": "Beverage Service (Non-Alcoholic)",
+    "subcategory": "Beverage menu execution",
+    "skills": [
+        {
+            "canonical_name": "Standardized beverage recipe execution",
+            "aliases": [
+                "recipe adherence",
+                "drink build to spec",
+                "standard drink preparation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Accurately preparing beverages to established recipes and specifications, including ingredient weights\/volumes, sequence, and timing to ensure consistency across service.",
+            "parent_skill": "Beverage menu execution",
+            "related_skills": [
+                "Beverage portioning and yield control",
+                "Mise en place for beverage service",
+                "Mocktail mixing techniques"
+            ],
+            "keywords": [
+                "recipe adherence",
+                "consistency",
+                "specs",
+                "drink build"
+            ],
+            "common_roles": [
+                "front-of-house beverage staff",
+                "cafe operations staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Espresso machine operation",
+            "aliases": [
+                "commercial espresso operation",
+                "espresso machine use",
+                "espresso group head operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operating commercial espresso machines including dosing, tamping, extraction control, group head maintenance, and basic troubleshooting for consistent espresso-based drinks.",
+            "parent_skill": "Beverage menu execution",
+            "related_skills": [
+                "Milk steaming and texturing",
+                "Coffee extraction and brew control",
+                "Sanitization of beverage equipment"
+            ],
+            "keywords": [
+                "espresso machine",
+                "dosing",
+                "extraction",
+                "group head"
+            ],
+            "common_roles": [
+                "coffee service staff",
+                "cafe operations staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Milk steaming and texturing",
+            "aliases": [
+                "milk frothing",
+                "milk texturing",
+                "microfoam steaming"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Steaming, frothing, and texturing dairy and alternative milks to achieve target temperatures and microfoam textures for lattes, cappuccinos, and other hot beverages.",
+            "parent_skill": "Beverage menu execution",
+            "related_skills": [
+                "Espresso machine operation",
+                "Standardized beverage recipe execution",
+                "Beverage temperature control"
+            ],
+            "keywords": [
+                "microfoam",
+                "steam wand",
+                "milk temp",
+                "frothing"
+            ],
+            "common_roles": [
+                "coffee service staff",
+                "cafe operations staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Commercial blender operation",
+            "aliases": [
+                "industrial blender use",
+                "high-volume blender operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Safely operating commercial blenders and high-speed mixers for smoothies, frappes, and blended beverages, including proper load, speed settings, and secure pitcher handling.",
+            "parent_skill": "Beverage menu execution",
+            "related_skills": [
+                "Cold beverage assembly and dispensing",
+                "Mise en place for beverage service",
+                "Sanitization of beverage equipment"
+            ],
+            "keywords": [
+                "blender",
+                "speed settings",
+                "smoothie",
+                "frappe"
+            ],
+            "common_roles": [
+                "beverage preparation staff",
+                "cafe operations staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Mocktail mixing techniques",
+            "aliases": [
+                "non-alcoholic mixology",
+                "alcohol-free cocktail preparation",
+                "drink shaking and stirring"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying bar mixing techniques (shaking, stirring, muddling, layering) adapted for non-alcoholic beverages to balance flavors, texture, and presentation per menu recipes.",
+            "parent_skill": "Beverage menu execution",
+            "related_skills": [
+                "Standardized beverage recipe execution",
+                "Garnish and drink presentation",
+                "Beverage portioning and yield control"
+            ],
+            "keywords": [
+                "shaking",
+                "muddling",
+                "stirring",
+                "flavor balance"
+            ],
+            "common_roles": [
+                "front-of-house beverage staff",
+                "beverage prep staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Garnish and drink presentation",
+            "aliases": [
+                "drink plating",
+                "beverage styling",
+                "drink garnish placement"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Preparing and applying garnishes, glassware selection, and finishing touches to beverages to meet brand presentation standards and enhance guest experience.",
+            "parent_skill": "Beverage menu execution",
+            "related_skills": [
+                "Mocktail mixing techniques",
+                "Standardized beverage recipe execution",
+                "Mise en place for beverage service"
+            ],
+            "keywords": [
+                "garnish",
+                "presentation",
+                "glassware",
+                "visual appeal"
+            ],
+            "common_roles": [
+                "front-of-house beverage staff",
+                "cafe operations staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Mise en place for beverage service",
+            "aliases": [
+                "beverage workstation setup",
+                "drink station prep",
+                "service line setup"
+            ],
+            "skill_type": "process_skill",
+            "description": "Organizing and preparing a beverage workstation before and during service including stocking ingredients, tools, garnishes, and equipment staging to optimize speed and accuracy.",
+            "parent_skill": "Beverage menu execution",
+            "related_skills": [
+                "Standardized beverage recipe execution",
+                "Commercial blender operation",
+                "Beverage portioning and yield control"
+            ],
+            "keywords": [
+                "setup",
+                "station",
+                "prep",
+                "stocking"
+            ],
+            "common_roles": [
+                "beverage preparation staff",
+                "cafe operations staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Beverage portioning and yield control",
+            "aliases": [
+                "portion control for drinks",
+                "ingredient yield management",
+                "drink cost portioning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Measuring and controlling ingredient portions and yields for beverages to manage cost, waste, and consistency, using scoops, jiggers, scales, or preset dispensers.",
+            "parent_skill": "Beverage menu execution",
+            "related_skills": [
+                "Standardized beverage recipe execution",
+                "Inventory usage monitoring",
+                "Mise en place for beverage service"
+            ],
+            "keywords": [
+                "portioning",
+                "yield",
+                "cost control",
+                "measuring"
+            ],
+            "common_roles": [
+                "beverage operations staff",
+                "front-of-house beverage staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Beverage temperature control and holding",
+            "aliases": [
+                "hot and cold beverage holding",
+                "temperature management for drinks"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintaining and monitoring beverage temperatures through correct brewing parameters, holding procedures, and equipment (hot plates, chillers, insulated servers) to preserve quality and safety.",
+            "parent_skill": "Beverage menu execution",
+            "related_skills": [
+                "Milk steaming and texturing",
+                "Coffee extraction and brew control",
+                "Sanitization of beverage equipment"
+            ],
+            "keywords": [
+                "temperature",
+                "holding",
+                "quality control",
+                "hot holding"
+            ],
+            "common_roles": [
+                "beverage preparation staff",
+                "cafe operations staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sanitization of beverage equipment (food safety)",
+            "aliases": [
+                "beverage equipment cleaning",
+                "sanitizing drink equipment",
+                "cleaning espresso and blender equipment"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Cleaning, sanitizing, and maintaining beverage equipment and utensils per food safety standards and manufacturer guidelines to prevent contamination and ensure safe service.",
+            "parent_skill": "Beverage menu execution",
+            "related_skills": [
+                "Espresso machine operation",
+                "Commercial blender operation",
+                "Beverage temperature control and holding"
+            ],
+            "keywords": [
+                "sanitization",
+                "cleaning",
+                "food safety",
+                "equipment maintenance"
+            ],
+            "common_roles": [
+                "beverage operations staff",
+                "front-of-house beverage staff"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

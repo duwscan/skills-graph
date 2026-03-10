@@ -1,0 +1,295 @@
+{
+    "domain": "IT",
+    "category": "Cybersecurity Operations & Engineering",
+    "subcategory": "Application security testing",
+    "skills": [
+        {
+            "canonical_name": "Static Application Security Testing (SAST)",
+            "aliases": [
+                "Static code analysis",
+                "SAST",
+                "static analysis (code)"
+            ],
+            "skill_type": "process_skill",
+            "description": "Analysis of source or bytecode to identify security vulnerabilities earlier in the development lifecycle using static analysis techniques and tools.",
+            "parent_skill": "Application security testing",
+            "related_skills": [
+                "Software Composition Analysis (SCA)",
+                "Secure Code Review",
+                "Application security test automation & CI\/CD integration"
+            ],
+            "keywords": [
+                "static analysis",
+                "source code scanning",
+                "secure coding",
+                "false positive triage"
+            ],
+            "common_roles": [
+                "Application Security Engineer",
+                "DevSecOps Engineer",
+                "Security Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dynamic Application Security Testing (DAST)",
+            "aliases": [
+                "Dynamic analysis",
+                "DAST",
+                "black-box web application testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Testing a running application by interacting with its interfaces to discover runtime vulnerabilities such as injection, authentication, and session issues.",
+            "parent_skill": "Application security testing",
+            "related_skills": [
+                "Web Application Penetration Testing",
+                "Burp Suite",
+                "Application security test automation & CI\/CD integration"
+            ],
+            "keywords": [
+                "dynamic scanning",
+                "runtime testing",
+                "black-box testing",
+                "web vulnerability scanning"
+            ],
+            "common_roles": [
+                "Security Tester",
+                "Application Security Engineer",
+                "Penetration Tester"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Interactive Application Security Testing (IAST)",
+            "aliases": [
+                "IAST",
+                "interactive application security testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Instrumentation-based testing that combines aspects of SAST and DAST by monitoring application behavior and code execution during tests to detect vulnerabilities with contextual code traces.",
+            "parent_skill": "Application security testing",
+            "related_skills": [
+                "Static Application Security Testing (SAST)",
+                "Dynamic Application Security Testing (DAST)",
+                "Application security test automation & CI\/CD integration"
+            ],
+            "keywords": [
+                "runtime instrumentation",
+                "code tracing",
+                "contextual vulnerability detection",
+                "IAST agents"
+            ],
+            "common_roles": [
+                "DevSecOps Engineer",
+                "Application Security Engineer",
+                "Security Tester"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Software Composition Analysis (SCA)",
+            "aliases": [
+                "dependency scanning",
+                "third-party dependency scanning",
+                "SCA"
+            ],
+            "skill_type": "process_skill",
+            "description": "Identifying and managing known vulnerabilities in open-source and third-party components, including license and dependency mapping and remediation prioritization.",
+            "parent_skill": "Application security testing",
+            "related_skills": [
+                "Static Application Security Testing (SAST)",
+                "Application security test automation & CI\/CD integration",
+                "Dependency vulnerability management"
+            ],
+            "keywords": [
+                "dependency scan",
+                "open source vulnerabilities",
+                "SBOM",
+                "third-party risk"
+            ],
+            "common_roles": [
+                "DevSecOps Engineer",
+                "Application Security Engineer",
+                "Security Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Web Application Penetration Testing",
+            "aliases": [
+                "web app pentesting",
+                "web penetration testing",
+                "application penetration testing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Manual and automated techniques to simulate attackers against web applications to find and exploit vulnerabilities, validate impact, and produce remediation guidance.",
+            "parent_skill": "Application security testing",
+            "related_skills": [
+                "Dynamic Application Security Testing (DAST)",
+                "Burp Suite",
+                "Fuzz Testing (Fuzzing)"
+            ],
+            "keywords": [
+                "exploit development",
+                "attack surface analysis",
+                "vulnerability validation",
+                "proof-of-concept"
+            ],
+            "common_roles": [
+                "Penetration Tester",
+                "Security Consultant",
+                "Application Security Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "API Security Testing",
+            "aliases": [
+                "API testing",
+                "REST API security testing",
+                "GraphQL security testing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Assessing APIs for authentication, authorization, injection, data exposure, rate limiting, and other API-specific security issues using tooling and manual techniques.",
+            "parent_skill": "Application security testing",
+            "related_skills": [
+                "Dynamic Application Security Testing (DAST)",
+                "Web Application Penetration Testing",
+                "Burp Suite"
+            ],
+            "keywords": [
+                "API fuzzing",
+                "schema validation",
+                "access control testing",
+                "token misuse"
+            ],
+            "common_roles": [
+                "Application Security Engineer",
+                "Security Tester",
+                "DevSecOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Secure Code Review",
+            "aliases": [
+                "manual code review for security",
+                "secure code analysis"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Manual inspection of source code to identify insecure patterns, logic flaws, and misuse of cryptography or APIs, and provide actionable remediation recommendations.",
+            "parent_skill": "Application security testing",
+            "related_skills": [
+                "Static Application Security Testing (SAST)",
+                "Software Composition Analysis (SCA)",
+                "Secure coding practices"
+            ],
+            "keywords": [
+                "code audit",
+                "security findings",
+                "code-level remediation",
+                "secure review checklist"
+            ],
+            "common_roles": [
+                "Application Security Engineer",
+                "Security Analyst",
+                "Developer with security responsibilities"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Fuzz Testing (Fuzzing)",
+            "aliases": [
+                "fuzzing",
+                "fuzz tests",
+                "automated input fuzzing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Automated testing that feeds malformed or unexpected inputs to software interfaces to discover crashes, memory corruption, and input-handling vulnerabilities.",
+            "parent_skill": "Application security testing",
+            "related_skills": [
+                "Web Application Penetration Testing",
+                "Dynamic Application Security Testing (DAST)",
+                "Burp Suite"
+            ],
+            "keywords": [
+                "fuzzer",
+                "coverage-guided fuzzing",
+                "input mutation",
+                "sanitizer"
+            ],
+            "common_roles": [
+                "Security Researcher",
+                "Application Security Engineer",
+                "Penetration Tester"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Burp Suite",
+            "aliases": [
+                "Burp",
+                "PortSwigger Burp",
+                "Burp Proxy"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using the Burp Suite platform for web application security testing—proxying, scanning, interception, exploitation and automated testing workflows.",
+            "parent_skill": "Application security testing",
+            "related_skills": [
+                "Dynamic Application Security Testing (DAST)",
+                "Web Application Penetration Testing",
+                "Fuzz Testing (Fuzzing)"
+            ],
+            "keywords": [
+                "intercepting proxy",
+                "intruder",
+                "repeater",
+                "active scanner"
+            ],
+            "common_roles": [
+                "Penetration Tester",
+                "Security Tester",
+                "Application Security Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Application security test automation & CI\/CD integration",
+            "aliases": [
+                "security testing automation",
+                "automated SAST\/DAST pipeline",
+                "CI\/CD security testing integration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and implementing automated security test pipelines (SAST, DAST, SCA, IAST) integrated into CI\/CD workflows to provide fast feedback and enforce gating policies.",
+            "parent_skill": "Application security testing",
+            "related_skills": [
+                "Static Application Security Testing (SAST)",
+                "Dynamic Application Security Testing (DAST)",
+                "Software Composition Analysis (SCA)"
+            ],
+            "keywords": [
+                "pipeline integration",
+                "pre-merge scanning",
+                "gating",
+                "security as code"
+            ],
+            "common_roles": [
+                "DevSecOps Engineer",
+                "Application Security Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

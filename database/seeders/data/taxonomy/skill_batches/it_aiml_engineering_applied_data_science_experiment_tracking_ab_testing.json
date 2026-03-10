@@ -1,0 +1,272 @@
+{
+    "domain": "IT",
+    "category": "AI\/ML Engineering & Applied Data Science",
+    "subcategory": "Experiment tracking & A\/B testing",
+    "skills": [
+        {
+            "canonical_name": "A\/B test design",
+            "aliases": [
+                "A\/B testing",
+                "randomized controlled experiments",
+                "controlled experiments"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing randomized experiments including hypothesis formulation, treatment\/control assignment, variant creation, and blocking\/stratification to ensure valid causal comparisons.",
+            "parent_skill": "Experiment tracking & A\/B testing",
+            "related_skills": [
+                "Experimentation metrics definition & KPI selection",
+                "Statistical hypothesis testing for experiments",
+                "Power analysis & sample size calculation",
+                "Experiment instrumentation & telemetry",
+                "Feature flagging & experimentation platforms"
+            ],
+            "keywords": [
+                "randomization",
+                "treatment assignment",
+                "control group",
+                "blocking",
+                "stratification",
+                "hypothesis"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Experimentation metrics definition & KPI selection",
+            "aliases": [
+                "experiment metric design",
+                "A\/B test KPI selection",
+                "metric hygiene"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Defining primary and guardrail metrics, metric eligibility, aggregation windows, and business-aligned KPIs to measure treatment effects reliably.",
+            "parent_skill": "Experiment tracking & A\/B testing",
+            "related_skills": [
+                "A\/B test design",
+                "Experiment instrumentation & telemetry",
+                "Statistical hypothesis testing for experiments",
+                "Experiment tracking & metadata management"
+            ],
+            "keywords": [
+                "primary metric",
+                "guardrail",
+                "denominator",
+                "event definition",
+                "business metric"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Statistical hypothesis testing for experiments",
+            "aliases": [
+                "frequentist A\/B testing",
+                "t-test for experiments",
+                "significance testing"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Applying frequentist statistical tests (t-test, z-test, chi-squared, nonparametric tests) and interpreting p-values, confidence intervals, and assumptions in experiment analysis.",
+            "parent_skill": "Experiment tracking & A\/B testing",
+            "related_skills": [
+                "Power analysis & sample size calculation",
+                "Multiple testing correction & false discovery control",
+                "A\/B test design",
+                "Experiment instrumentation & telemetry"
+            ],
+            "keywords": [
+                "p-value",
+                "confidence interval",
+                "t-test",
+                "z-test",
+                "chi-square"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Power analysis & sample size calculation",
+            "aliases": [
+                "sample size estimation",
+                "power calculation",
+                "minimum detectable effect estimation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Estimating required sample sizes and detectable effect sizes using power analysis, accounting for baseline rates, variance, significance threshold, and experiment duration.",
+            "parent_skill": "Experiment tracking & A\/B testing",
+            "related_skills": [
+                "A\/B test design",
+                "Statistical hypothesis testing for experiments",
+                "Experimentation metrics definition & KPI selection"
+            ],
+            "keywords": [
+                "power",
+                "MDE",
+                "sample size",
+                "effect size",
+                "alpha"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bayesian A\/B testing & sequential analysis",
+            "aliases": [
+                "Bayesian experimentation",
+                "sequential testing",
+                "continuous monitoring of experiments"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Using Bayesian methods and sequential analysis for online experiments, including posterior estimation, credible intervals, and principled optional stopping strategies.",
+            "parent_skill": "Experiment tracking & A\/B testing",
+            "related_skills": [
+                "A\/B test design",
+                "Uplift modeling & heterogeneous treatment effects",
+                "Experimentation metrics definition & KPI selection"
+            ],
+            "keywords": [
+                "Bayesian inference",
+                "posterior",
+                "credible interval",
+                "sequential analysis",
+                "optional stopping"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Uplift modeling & heterogeneous treatment effects",
+            "aliases": [
+                "treatment effect heterogeneity",
+                "heterogeneous treatment effects (HTE)",
+                "uplift analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Modeling and estimating differential effects of treatments across user segments using uplift models, causal forests, or stratified analysis to inform personalization and targeting.",
+            "parent_skill": "Experiment tracking & A\/B testing",
+            "related_skills": [
+                "Causal inference for experimentation",
+                "Experimentation metrics definition & KPI selection",
+                "Experiment instrumentation & telemetry"
+            ],
+            "keywords": [
+                "uplift",
+                "heterogeneity",
+                "causal forest",
+                "personalization",
+                "subgroup analysis"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Experiment instrumentation & telemetry",
+            "aliases": [
+                "event tracking for experiments",
+                "metric instrumentation",
+                "telemetry for A\/B tests"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing reliable event logging, signal capture, metrics pipelines, and ID consistency required to power experiment analysis and metric computation.",
+            "parent_skill": "Experiment tracking & A\/B testing",
+            "related_skills": [
+                "Experimentation metrics definition & KPI selection",
+                "Feature flagging & experimentation platforms",
+                "Experiment tracking & metadata management"
+            ],
+            "keywords": [
+                "event schema",
+                "telemetry",
+                "logging",
+                "data pipeline",
+                "id consistency"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Feature flagging & experimentation platforms",
+            "aliases": [
+                "feature flag platforms",
+                "experiment platforms",
+                "feature toggle systems"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using feature-flag and experimentation infrastructure to deliver variants, control rollouts, and route users to experiment arms in production systems.",
+            "parent_skill": "Experiment tracking & A\/B testing",
+            "related_skills": [
+                "Experiment instrumentation & telemetry",
+                "Feature rollout & progressive delivery",
+                "Experiment tracking & metadata management"
+            ],
+            "keywords": [
+                "feature flag",
+                "toggle",
+                "variant delivery",
+                "rollout control",
+                "traffic allocation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Experiment tracking & metadata management",
+            "aliases": [
+                "experiment registry",
+                "experiment tracking",
+                "experiment metadata catalog"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintaining experiment registries and metadata (hypotheses, start\/end dates, ownership, metrics, variant code links) to ensure reproducibility, discoverability, and auditability of experiments.",
+            "parent_skill": "Experiment tracking & A\/B testing",
+            "related_skills": [
+                "A\/B test design",
+                "Feature flagging & experimentation platforms",
+                "Experiment governance & ethical considerations"
+            ],
+            "keywords": [
+                "experiment registry",
+                "metadata",
+                "reproducibility",
+                "audit trail",
+                "experiment lifecycle"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Experiment governance & ethical considerations",
+            "aliases": [
+                "experiment governance",
+                "ethical experimentation",
+                "experiment risk assessment"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Establishing policies, review processes, privacy safeguards, and ethical guardrails for experiments to manage user risk, regulatory constraints, and organizational standards.",
+            "parent_skill": "Experiment tracking & A\/B testing",
+            "related_skills": [
+                "Experiment tracking & metadata management",
+                "Experiment instrumentation & telemetry",
+                "Feature rollout & progressive delivery"
+            ],
+            "keywords": [
+                "governance",
+                "privacy",
+                "ethical review",
+                "risk assessment",
+                "data handling"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

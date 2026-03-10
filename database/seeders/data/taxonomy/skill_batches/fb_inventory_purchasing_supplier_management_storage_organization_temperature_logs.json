@@ -1,0 +1,310 @@
+{
+    "domain": "F&B",
+    "category": "Inventory, Purchasing & Supplier Management",
+    "subcategory": "Storage organization & temperature logs",
+    "skills": [
+        {
+            "canonical_name": "Cold chain management",
+            "aliases": [
+                "cold chain",
+                "temperature-controlled logistics",
+                "temperature-controlled storage"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing end-to-end temperature-controlled storage and transport processes to preserve food safety, quality and regulatory compliance.",
+            "parent_skill": "Storage organization & temperature logs",
+            "related_skills": [
+                "Temperature monitoring and logging",
+                "Refrigeration unit maintenance basics",
+                "Electronic temperature monitoring systems",
+                "Cold storage space planning",
+                "HACCP storage control"
+            ],
+            "keywords": [
+                "cold_chain",
+                "temperature_control",
+                "refrigerated_storage",
+                "chilled_logistics"
+            ],
+            "common_roles": [
+                "Warehouse supervisor",
+                "Logistics coordinator",
+                "Food safety manager",
+                "Inventory manager",
+                "Operations manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Temperature monitoring and logging",
+            "aliases": [
+                "temperature logging",
+                "temperature logs",
+                "temp monitoring"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Recording, reviewing and maintaining temperature records for storage and transport according to procedures and retention requirements.",
+            "parent_skill": "Storage organization & temperature logs",
+            "related_skills": [
+                "Electronic temperature monitoring systems",
+                "Temperature probe calibration",
+                "HACCP storage control",
+                "Cold chain management"
+            ],
+            "keywords": [
+                "temperature_logs",
+                "temp_monitoring",
+                "log_review",
+                "temperature_records"
+            ],
+            "common_roles": [
+                "Inventory clerk",
+                "Kitchen manager",
+                "Quality assurance technician",
+                "Storekeeper"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Electronic temperature monitoring systems",
+            "aliases": [
+                "temperature data loggers",
+                "IoT temperature monitoring",
+                "automated temperature monitoring systems"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Selecting, configuring and operating electronic devices and software (data loggers, sensors, cloud platforms) for continuous temperature tracking and alerting.",
+            "parent_skill": "Storage organization & temperature logs",
+            "related_skills": [
+                "Temperature monitoring and logging",
+                "Temperature probe calibration",
+                "Cold chain management"
+            ],
+            "keywords": [
+                "data_logger",
+                "iot_sensor",
+                "remote_monitoring",
+                "automated_alerts"
+            ],
+            "common_roles": [
+                "Facilities manager",
+                "Quality assurance technician",
+                "Inventory manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Temperature probe calibration",
+            "aliases": [
+                "thermometer calibration",
+                "probe validation",
+                "temperature sensor calibration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Calibrating and validating thermometers and temperature probes against traceable references to ensure accurate readings and compliance.",
+            "parent_skill": "Storage organization & temperature logs",
+            "related_skills": [
+                "Electronic temperature monitoring systems",
+                "Temperature monitoring and logging",
+                "Refrigeration unit maintenance basics",
+                "HACCP storage control"
+            ],
+            "keywords": [
+                "calibration",
+                "thermometer_check",
+                "probe_validation",
+                "reference_standard"
+            ],
+            "common_roles": [
+                "Quality assurance technician",
+                "Maintenance technician",
+                "Food safety manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "FIFO inventory rotation",
+            "aliases": [
+                "first-in-first-out",
+                "product rotation",
+                "stock rotation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying first-in-first-out procedures to rotate perishable inventory so older stock is used before newer stock, reducing waste and spoilage.",
+            "parent_skill": "Storage organization & temperature logs",
+            "related_skills": [
+                "Shelf-life and expiry date management",
+                "Cold storage space planning",
+                "Ambient storage optimization"
+            ],
+            "keywords": [
+                "FIFO",
+                "stock_rotation",
+                "rotation_policy",
+                "first_in_first_out"
+            ],
+            "common_roles": [
+                "Storekeeper",
+                "Kitchen manager",
+                "Inventory manager",
+                "Receiving clerk"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Shelf-life and expiry date management",
+            "aliases": [
+                "expiry tracking",
+                "best-before management",
+                "shelf life monitoring"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Tracking product expiration and best-before dates, assessing usability, and executing removal, discounting or disposal actions to protect safety and quality.",
+            "parent_skill": "Storage organization & temperature logs",
+            "related_skills": [
+                "FIFO inventory rotation",
+                "Ambient storage optimization",
+                "Cold chain management",
+                "HACCP storage control"
+            ],
+            "keywords": [
+                "expiry_dates",
+                "shelf_life",
+                "best_before",
+                "date_tracking"
+            ],
+            "common_roles": [
+                "Inventory clerk",
+                "Quality assurance technician",
+                "Purchasing manager",
+                "Store supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Refrigeration unit maintenance basics",
+            "aliases": [
+                "refrigeration maintenance",
+                "walk-in cooler maintenance",
+                "cold room basic maintenance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Performing routine checks and basic troubleshooting on refrigeration equipment (cleaning coils, checking seals, defrosting) to maintain temperature stability and uptime.",
+            "parent_skill": "Storage organization & temperature logs",
+            "related_skills": [
+                "Cold chain management",
+                "Temperature probe calibration",
+                "Electronic temperature monitoring systems",
+                "Cold storage space planning"
+            ],
+            "keywords": [
+                "condenser_cleaning",
+                "gasket_check",
+                "defrosting",
+                "equipment_checks"
+            ],
+            "common_roles": [
+                "Maintenance technician",
+                "Facilities manager",
+                "Kitchen supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ambient storage optimization",
+            "aliases": [
+                "dry storage organization",
+                "pantry optimization",
+                "humidity control for dry goods"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Organizing non-refrigerated storage to maximize product shelf life and accessibility through layout, humidity control, pest prevention and segregation.",
+            "parent_skill": "Storage organization & temperature logs",
+            "related_skills": [
+                "Cold storage space planning",
+                "Shelf-life and expiry date management",
+                "FIFO inventory rotation"
+            ],
+            "keywords": [
+                "dry_storage",
+                "humidity_control",
+                "storage_layout",
+                "pest_prevention"
+            ],
+            "common_roles": [
+                "Storekeeper",
+                "Inventory manager",
+                "Kitchen manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cold storage space planning",
+            "aliases": [
+                "cold room layout planning",
+                "refrigerated space planning",
+                "storage capacity planning"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Designing and allocating refrigerated storage space for optimal flow, temperature zoning and capacity utilization to support operations and minimize waste.",
+            "parent_skill": "Storage organization & temperature logs",
+            "related_skills": [
+                "Cold chain management",
+                "Ambient storage optimization",
+                "FIFO inventory rotation",
+                "Refrigeration unit maintenance basics"
+            ],
+            "keywords": [
+                "capacity_planning",
+                "layout_design",
+                "temperature_zoning",
+                "space_utilization"
+            ],
+            "common_roles": [
+                "Operations manager",
+                "Warehouse planner",
+                "Inventory manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "HACCP storage control",
+            "aliases": [
+                "HACCP storage procedures",
+                "storage CCP monitoring",
+                "hazard analysis storage control"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Implementing HACCP-based storage controls including identifying storage CCPs, monitoring temperature\/records, and executing corrective actions for deviations.",
+            "parent_skill": "Storage organization & temperature logs",
+            "related_skills": [
+                "Temperature monitoring and logging",
+                "Cold chain management",
+                "Shelf-life and expiry date management",
+                "Temperature probe calibration"
+            ],
+            "keywords": [
+                "HACCP",
+                "CCP",
+                "corrective_actions",
+                "storage_control"
+            ],
+            "common_roles": [
+                "Food safety manager",
+                "Quality assurance technician",
+                "Kitchen manager"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

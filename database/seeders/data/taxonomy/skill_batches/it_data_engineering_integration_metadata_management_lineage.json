@@ -1,0 +1,294 @@
+{
+    "domain": "IT",
+    "category": "Data Engineering & Integration",
+    "subcategory": "Metadata management & lineage",
+    "skills": [
+        {
+            "canonical_name": "Metadata modeling",
+            "aliases": [
+                "Metadata model design",
+                "Logical metadata modeling",
+                "Metadata schema design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing structured metadata schemas, taxonomies and ontologies to represent data assets, relationships and attributes across systems.",
+            "parent_skill": "Metadata management & lineage",
+            "related_skills": [
+                "Data modeling",
+                "Semantic layer design",
+                "Business glossary management"
+            ],
+            "keywords": [
+                "schema",
+                "ontology",
+                "taxonomy",
+                "entities",
+                "attributes"
+            ],
+            "common_roles": [
+                "Data Architect",
+                "Metadata Engineer",
+                "Data Modeler"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data lineage architecture",
+            "aliases": [
+                "Lineage architecture",
+                "End-to-end lineage design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing architectures and patterns to capture, store and visualize end-to-end data lineage across pipelines, platforms and runtimes.",
+            "parent_skill": "Metadata management & lineage",
+            "related_skills": [
+                "Metadata architecture",
+                "Automated lineage extraction",
+                "Orchestration design"
+            ],
+            "keywords": [
+                "end-to-end lineage",
+                "graph",
+                "dependencies",
+                "topology"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Metadata Architect",
+                "Data Architect"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated lineage extraction",
+            "aliases": [
+                "Lineage harvesting",
+                "Automated lineage capture",
+                "Lineage extraction"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implementing processes and tooling to automatically extract lineage from code, ETL jobs, SQL, and runtime telemetry rather than relying on manual annotation.",
+            "parent_skill": "Metadata management & lineage",
+            "related_skills": [
+                "Static code analysis",
+                "Runtime instrumentation",
+                "OpenLineage standards"
+            ],
+            "keywords": [
+                "parser",
+                "instrumentation",
+                "job hooks",
+                "scanners"
+            ],
+            "common_roles": [
+                "Metadata Engineer",
+                "Data Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Metadata catalog implementation",
+            "aliases": [
+                "Data catalog implementation",
+                "Metadata catalog deployment",
+                "Catalog implementation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Deploying and configuring metadata catalog platforms to ingest, index, and serve searchable metadata across data sources and teams.",
+            "parent_skill": "Metadata management & lineage",
+            "related_skills": [
+                "Metadata ingestion",
+                "Apache Atlas",
+                "Collibra",
+                "Alation"
+            ],
+            "keywords": [
+                "catalog",
+                "ingestion",
+                "indexing",
+                "search"
+            ],
+            "common_roles": [
+                "Metadata Engineer",
+                "Data Platform Engineer",
+                "Data Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Business glossary management",
+            "aliases": [
+                "Business glossary development",
+                "Glossary governance",
+                "Term management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Creating and maintaining a domain-aligned business glossary mapping business terms to technical metadata, owners and lineage.",
+            "parent_skill": "Metadata management & lineage",
+            "related_skills": [
+                "Metadata governance",
+                "Semantic layer design",
+                "Data stewardship"
+            ],
+            "keywords": [
+                "terms",
+                "definitions",
+                "stewards",
+                "semantic"
+            ],
+            "common_roles": [
+                "Data Steward",
+                "Metadata Manager",
+                "Business Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Metadata governance and policy definition",
+            "aliases": [
+                "Metadata governance",
+                "Metadata policy management"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Defining policies, ownership, access controls and stewardship processes that govern metadata lifecycle, quality and compliance.",
+            "parent_skill": "Metadata management & lineage",
+            "related_skills": [
+                "Data governance",
+                "Access controls",
+                "Data quality management"
+            ],
+            "keywords": [
+                "policy",
+                "stewardship",
+                "ownership",
+                "compliance"
+            ],
+            "common_roles": [
+                "Data Governance Lead",
+                "Metadata Manager",
+                "Compliance Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Column-level lineage analysis",
+            "aliases": [
+                "Field-level lineage",
+                "Fine-grained lineage analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing and tracing lineage at the column\/field level to support impact analysis, debugging and regulatory reporting with fine granularity.",
+            "parent_skill": "Metadata management & lineage",
+            "related_skills": [
+                "Data provenance",
+                "Impact analysis",
+                "Automated lineage extraction"
+            ],
+            "keywords": [
+                "column lineage",
+                "field mapping",
+                "granular lineage",
+                "impact"
+            ],
+            "common_roles": [
+                "Data Analyst",
+                "Metadata Engineer",
+                "Data Steward"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Lineage standards and interoperability",
+            "aliases": [
+                "OpenLineage knowledge",
+                "W3C PROV knowledge",
+                "Lineage formats and specs"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Knowledge of provenance and lineage specifications (e.g., OpenLineage, W3C PROV) and best practices for interoperable lineage exchange between tools.",
+            "parent_skill": "Metadata management & lineage",
+            "related_skills": [
+                "Automated lineage extraction",
+                "Metadata schemas",
+                "Marquez"
+            ],
+            "keywords": [
+                "OpenLineage",
+                "W3C PROV",
+                "interoperability",
+                "spec"
+            ],
+            "common_roles": [
+                "Metadata Engineer",
+                "Data Platform Engineer",
+                "Standards Architect"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Metadata APIs and query interfaces",
+            "aliases": [
+                "Metadata API development",
+                "Metadata query interfaces",
+                "Metadata REST\/GraphQL APIs"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing APIs and query interfaces (REST, GraphQL, SQL) to expose, search and manipulate metadata programmatically.",
+            "parent_skill": "Metadata management & lineage",
+            "related_skills": [
+                "Metadata catalog implementation",
+                "Metadata ingestion",
+                "API design"
+            ],
+            "keywords": [
+                "REST",
+                "GraphQL",
+                "metadata endpoints",
+                "query"
+            ],
+            "common_roles": [
+                "Backend Engineer",
+                "Metadata Engineer",
+                "Integration Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Apache Atlas",
+            "aliases": [
+                "Atlas"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Experience deploying, configuring and extending Apache Atlas for metadata management, classification, lineage capture and governance in Hadoop and multi-platform environments.",
+            "parent_skill": "Metadata management & lineage",
+            "related_skills": [
+                "Metadata catalog implementation",
+                "Hive hooks",
+                "Ranger integration"
+            ],
+            "keywords": [
+                "Apache Atlas",
+                "classification",
+                "lineage",
+                "tagging"
+            ],
+            "common_roles": [
+                "Metadata Engineer",
+                "Platform Engineer",
+                "Data Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

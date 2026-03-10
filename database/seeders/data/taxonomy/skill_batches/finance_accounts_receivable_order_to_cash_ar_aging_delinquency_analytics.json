@@ -1,0 +1,262 @@
+{
+    "domain": "Finance",
+    "category": "Accounts Receivable & Order-to-Cash",
+    "subcategory": "AR aging & delinquency analytics",
+    "skills": [
+        {
+            "canonical_name": "Receivables aging analysis",
+            "aliases": [
+                "AR aging analysis",
+                "Aging report analysis",
+                "Accounts receivable aging analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing the age distribution of outstanding invoices using aging buckets to identify overdue balances, concentration, and collection priorities.",
+            "parent_skill": "AR aging & delinquency analytics",
+            "related_skills": [
+                "DSO analysis and optimization",
+                "Collections segmentation and prioritization",
+                "Receivables KPI definition and dashboarding",
+                "SQL for AR analytics"
+            ],
+            "keywords": [
+                "aging buckets",
+                "past due",
+                "overdue invoices",
+                "aging report",
+                "days outstanding"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "DSO analysis and optimization",
+            "aliases": [
+                "Days Sales Outstanding analysis",
+                "DSO optimization"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculating, interpreting and benchmarking Days Sales Outstanding trends and implementing process or policy changes to lower receivables days.",
+            "parent_skill": "AR aging & delinquency analytics",
+            "related_skills": [
+                "Receivables aging analysis",
+                "Cash flow forecasting from receivables",
+                "Receivables KPI definition and dashboarding"
+            ],
+            "keywords": [
+                "DSO",
+                "days sales outstanding",
+                "turnover",
+                "benchmarking",
+                "collections effectiveness"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Predictive modeling for late payments",
+            "aliases": [
+                "Late payment prediction",
+                "Delinquency predictive modeling",
+                "Payment default modeling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Developing statistical or machine learning models to predict probability and timing of late payments or defaults using historical payment behavior and account features.",
+            "parent_skill": "AR aging & delinquency analytics",
+            "related_skills": [
+                "SQL for AR analytics",
+                "Collections segmentation and prioritization",
+                "Credit assessment for receivables"
+            ],
+            "keywords": [
+                "logistic regression",
+                "classification",
+                "feature engineering",
+                "random forest",
+                "predictive scoring"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Collections segmentation and prioritization",
+            "aliases": [
+                "Customer segmentation for collections",
+                "Prioritization of collection cases"
+            ],
+            "skill_type": "process_skill",
+            "description": "Segmenting delinquent accounts by risk, balance, and recovery likelihood to prioritize collection workflows and allocate collector resources.",
+            "parent_skill": "AR aging & delinquency analytics",
+            "related_skills": [
+                "Receivables aging analysis",
+                "Predictive modeling for late payments",
+                "Dispute and deduction analytics"
+            ],
+            "keywords": [
+                "segmentation",
+                "risk-based prioritization",
+                "collector routing",
+                "contact strategy",
+                "segmentation rules"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash flow forecasting from receivables",
+            "aliases": [
+                "Receivables cash flow forecasting",
+                "AR-driven cash forecasting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Forecasting expected cash inflows from outstanding receivables using historical payment patterns, aging buckets, and collection plans to support liquidity planning.",
+            "parent_skill": "AR aging & delinquency analytics",
+            "related_skills": [
+                "DSO analysis and optimization",
+                "Predictive modeling for late payments",
+                "Write-off and bad debt analysis"
+            ],
+            "keywords": [
+                "cash forecast",
+                "inflow projection",
+                "rolling forecast",
+                "payment timing",
+                "liquidity"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Receivables KPI definition and dashboarding",
+            "aliases": [
+                "AR KPI development",
+                "AR dashboarding",
+                "AR reporting and dashboards"
+            ],
+            "skill_type": "process_skill",
+            "description": "Defining key AR metrics (e.g., DSO, aging buckets, collection effectiveness) and building reports\/dashboards to visualize performance for stakeholders.",
+            "parent_skill": "AR aging & delinquency analytics",
+            "related_skills": [
+                "Receivables aging analysis",
+                "DSO analysis and optimization",
+                "SQL for AR analytics"
+            ],
+            "keywords": [
+                "KPIs",
+                "dashboards",
+                "reporting",
+                "visualization",
+                "performance metrics"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dispute and deduction analytics",
+            "aliases": [
+                "Deduction analysis",
+                "Invoice dispute analytics"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing patterns, root causes and financial impact of invoice disputes and customer deductions to reduce dispute rates and recover receivables.",
+            "parent_skill": "AR aging & delinquency analytics",
+            "related_skills": [
+                "Write-off and bad debt analysis",
+                "Collections segmentation and prioritization",
+                "Receivables KPI definition and dashboarding"
+            ],
+            "keywords": [
+                "dispute root cause",
+                "deductions",
+                "chargebacks",
+                "recovery rate",
+                "dispute cycle time"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Credit assessment for receivables",
+            "aliases": [
+                "Customer credit assessment for AR",
+                "Receivables credit evaluation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluating customer creditworthiness, exposure and payment capacity to set credit limits, terms and mitigate receivable risk.",
+            "parent_skill": "AR aging & delinquency analytics",
+            "related_skills": [
+                "Predictive modeling for late payments",
+                "Collections segmentation and prioritization",
+                "Write-off and bad debt analysis"
+            ],
+            "keywords": [
+                "credit limits",
+                "exposure",
+                "payment terms",
+                "financial statement review",
+                "risk grading"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Write-off and bad debt analysis",
+            "aliases": [
+                "Bad debt analysis",
+                "Receivables write-off analysis"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Analyzing drivers and timing of write-offs, estimating provisions, identifying recovery opportunities and recommending process changes to reduce bad debt.",
+            "parent_skill": "AR aging & delinquency analytics",
+            "related_skills": [
+                "Dispute and deduction analytics",
+                "Credit assessment for receivables",
+                "Cash flow forecasting from receivables"
+            ],
+            "keywords": [
+                "provisioning",
+                "write-offs",
+                "bad debt recovery",
+                "charge-off analysis",
+                "reserves"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SQL for AR analytics",
+            "aliases": [
+                "SQL for accounts receivable",
+                "T-SQL for AR",
+                "SQL querying for AR reporting"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using SQL to extract, transform and query accounts receivable datasets for aging analysis, KPI calculation, dashboards and model inputs.",
+            "parent_skill": "AR aging & delinquency analytics",
+            "related_skills": [
+                "Receivables aging analysis",
+                "Receivables KPI definition and dashboarding",
+                "Predictive modeling for late payments"
+            ],
+            "keywords": [
+                "SQL",
+                "joins",
+                "window functions",
+                "ETL",
+                "query optimization"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

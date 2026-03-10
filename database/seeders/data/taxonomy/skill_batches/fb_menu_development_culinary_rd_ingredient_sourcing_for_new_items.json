@@ -1,0 +1,314 @@
+{
+    "domain": "F&B",
+    "category": "Menu Development & Culinary R&D",
+    "subcategory": "Ingredient sourcing for new items",
+    "skills": [
+        {
+            "canonical_name": "Supplier sourcing & qualification",
+            "aliases": [
+                "supplier sourcing",
+                "vendor qualification",
+                "supplier vetting",
+                "vendor sourcing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Identify, evaluate and onboard ingredient suppliers against quality, capacity, food-safety, cost and delivery criteria.",
+            "parent_skill": "Ingredient sourcing for new items",
+            "related_skills": [
+                "Ingredient specification development",
+                "Vendor negotiation for ingredient contracts",
+                "Supply chain risk assessment for ingredients",
+                "Ingredient traceability & provenance documentation"
+            ],
+            "keywords": [
+                "supplier audit",
+                "vendor assessment",
+                "onboarding",
+                "capability assessment",
+                "quality assurance"
+            ],
+            "common_roles": [
+                "Ingredient Sourcing Manager",
+                "Procurement Specialist",
+                "Culinary R&D Manager",
+                "Product Development Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ingredient cost modeling & pricing analysis",
+            "aliases": [
+                "ingredient cost modeling",
+                "ingredient cost analysis",
+                "recipe cost modeling",
+                "cost-to-plate analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Build and analyze cost models for ingredients and recipes to estimate unit costs, margin impact and price sensitivity.",
+            "parent_skill": "Ingredient sourcing for new items",
+            "related_skills": [
+                "Commodity market monitoring & procurement strategy",
+                "Supplier sourcing & qualification",
+                "Vendor negotiation for ingredient contracts",
+                "Seasonal ingredient planning & availability forecasting"
+            ],
+            "keywords": [
+                "cost per unit",
+                "margin analysis",
+                "bill of materials",
+                "sensitivity analysis",
+                "price modeling"
+            ],
+            "common_roles": [
+                "Cost Analyst",
+                "Procurement Manager",
+                "Culinary Development Analyst",
+                "Product Development Scientist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor negotiation for ingredient contracts",
+            "aliases": [
+                "ingredient contract negotiation",
+                "supplier negotiation",
+                "vendor price negotiation"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Negotiate pricing, lead-times, minimums, payment terms and service-levels with ingredient suppliers to secure favorable commercial terms.",
+            "parent_skill": "Ingredient sourcing for new items",
+            "related_skills": [
+                "Supplier sourcing & qualification",
+                "Ingredient cost modeling & pricing analysis",
+                "Commodity market monitoring & procurement strategy"
+            ],
+            "keywords": [
+                "terms negotiation",
+                "pricing strategy",
+                "contract terms",
+                "service level agreements",
+                "purchase agreements"
+            ],
+            "common_roles": [
+                "Procurement Manager",
+                "Ingredient Sourcing Manager",
+                "Supply Chain Buyer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sustainable & ethical ingredient sourcing",
+            "aliases": [
+                "sustainable sourcing",
+                "ethical sourcing",
+                "responsible sourcing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Assess and select ingredients and suppliers based on environmental impact, social responsibility, certifications and traceability criteria.",
+            "parent_skill": "Ingredient sourcing for new items",
+            "related_skills": [
+                "Ingredient traceability & provenance documentation",
+                "Supplier sourcing & qualification",
+                "Allergen & regulatory compliance for ingredients"
+            ],
+            "keywords": [
+                "sustainability criteria",
+                "sustainable supply chain",
+                "ethical procurement",
+                "environmental impact",
+                "social compliance"
+            ],
+            "common_roles": [
+                "Sustainability Manager",
+                "Procurement Specialist",
+                "Culinary R&D Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Supply chain risk assessment for ingredients",
+            "aliases": [
+                "ingredient supply risk assessment",
+                "supplier risk analysis",
+                "supply risk mapping"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Identify and evaluate operational, geopolitical, climate and single-source risks in ingredient supply chains and design mitigation strategies.",
+            "parent_skill": "Ingredient sourcing for new items",
+            "related_skills": [
+                "Seasonal ingredient planning & availability forecasting",
+                "Supplier sourcing & qualification",
+                "Ingredient traceability & provenance documentation"
+            ],
+            "keywords": [
+                "single-source risk",
+                "disruption analysis",
+                "contingency planning",
+                "risk mitigation",
+                "geopolitical risk"
+            ],
+            "common_roles": [
+                "Supply Chain Analyst",
+                "Procurement Manager",
+                "Ingredient Sourcing Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ingredient traceability & provenance documentation",
+            "aliases": [
+                "ingredient traceability",
+                "provenance tracking",
+                "source traceability",
+                "lot tracking"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Establish and maintain documentation and systems that record ingredient origin, lot numbers and chain-of-custody for safety, recalls and transparency.",
+            "parent_skill": "Ingredient sourcing for new items",
+            "related_skills": [
+                "Supplier sourcing & qualification",
+                "Allergen & regulatory compliance for ingredients",
+                "Sustainable & ethical ingredient sourcing"
+            ],
+            "keywords": [
+                "lot traceability",
+                "chain of custody",
+                "recall readiness",
+                "traceability systems",
+                "blockchain (for provenance)"
+            ],
+            "common_roles": [
+                "Quality Assurance Manager",
+                "Traceability Specialist",
+                "Ingredient Sourcing Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen & regulatory compliance for ingredients",
+            "aliases": [
+                "allergen management",
+                "ingredient regulatory compliance",
+                "food labeling compliance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Identify allergen risks and regulatory labeling requirements for ingredients, and implement controls to prevent cross-contact and ensure accurate consumer information.",
+            "parent_skill": "Ingredient sourcing for new items",
+            "related_skills": [
+                "Ingredient traceability & provenance documentation",
+                "Ingredient specification development",
+                "Supplier sourcing & qualification"
+            ],
+            "keywords": [
+                "allergen control",
+                "labeling requirements",
+                "cross-contact prevention",
+                "regulatory review",
+                "ingredient declarations"
+            ],
+            "common_roles": [
+                "Regulatory Affairs Specialist",
+                "Quality Assurance Manager",
+                "Product Development Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Seasonal ingredient planning & availability forecasting",
+            "aliases": [
+                "seasonal sourcing",
+                "availability forecasting",
+                "harvest planning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Plan ingredient sourcing around seasonality, harvest windows and regional availability, including alternative sources and lead-time management.",
+            "parent_skill": "Ingredient sourcing for new items",
+            "related_skills": [
+                "Supply chain risk assessment for ingredients",
+                "Supplier sourcing & qualification",
+                "Ingredient cost modeling & pricing analysis"
+            ],
+            "keywords": [
+                "seasonality",
+                "harvest windows",
+                "lead times",
+                "substitution planning",
+                "crop cycles"
+            ],
+            "common_roles": [
+                "Procurement Planner",
+                "Culinary R&D Chef",
+                "Ingredient Sourcing Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sensory & functional ingredient evaluation",
+            "aliases": [
+                "ingredient sensory evaluation",
+                "functional performance testing",
+                "ingredient functionality assessment"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Assess ingredients for flavor, texture, stability and functional performance in target recipes through bench testing and sensory panels.",
+            "parent_skill": "Ingredient sourcing for new items",
+            "related_skills": [
+                "Ingredient specification development",
+                "Supplier sourcing & qualification",
+                "Ingredient cost modeling & pricing analysis"
+            ],
+            "keywords": [
+                "sensory testing",
+                "texture analysis",
+                "stability testing",
+                "bench trials",
+                "formulation testing"
+            ],
+            "common_roles": [
+                "Culinary R&D Chef",
+                "Product Development Scientist",
+                "Sensory Scientist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ingredient specification development",
+            "aliases": [
+                "ingredient specs",
+                "technical specification development",
+                "spec writing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Create and maintain technical ingredient specifications including physical, chemical, microbiological, packaging, storage and handling requirements.",
+            "parent_skill": "Ingredient sourcing for new items",
+            "related_skills": [
+                "Ingredient traceability & provenance documentation",
+                "Allergen & regulatory compliance for ingredients",
+                "Sensory & functional ingredient evaluation"
+            ],
+            "keywords": [
+                "technical spec",
+                "microbiological limits",
+                "physical properties",
+                "storage conditions",
+                "packaging requirements"
+            ],
+            "common_roles": [
+                "Quality Assurance Specialist",
+                "Product Development Manager",
+                "Ingredient Sourcing Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

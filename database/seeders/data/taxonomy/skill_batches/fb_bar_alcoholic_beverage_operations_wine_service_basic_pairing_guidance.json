@@ -1,0 +1,302 @@
+{
+    "domain": "F&B",
+    "category": "Bar & Alcoholic Beverage Operations",
+    "subcategory": "Wine service & basic pairing guidance",
+    "skills": [
+        {
+            "canonical_name": "Wine varietal and region knowledge",
+            "aliases": [
+                "grape variety knowledge",
+                "varietals and appellations",
+                "wine grape knowledge",
+                "regional wine knowledge"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Familiarity with major grape varieties, appellations and wine-producing regions, including typical flavor profiles and stylistic differences useful for selection and recommendation.",
+            "parent_skill": "Wine service & basic pairing guidance",
+            "related_skills": [
+                "Wine tasting and sensory evaluation",
+                "Basic food and wine pairing principles",
+                "Wine list development and menu mapping"
+            ],
+            "keywords": [
+                "Cabernet Sauvignon",
+                "Chardonnay",
+                "Bordeaux",
+                "Rioja",
+                "Terroir",
+                "Appellation"
+            ],
+            "common_roles": [
+                "Sommelier",
+                "Wine Steward",
+                "Bartender",
+                "Server",
+                "Beverage Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Wine tasting and sensory evaluation",
+            "aliases": [
+                "wine sensory analysis",
+                "tasting notes",
+                "organoleptic evaluation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Ability to assess wine appearance, aroma, palate and structure, articulate tasting notes, and evaluate quality, ripeness and balance for service and pairing decisions.",
+            "parent_skill": "Wine service & basic pairing guidance",
+            "related_skills": [
+                "Wine varietal and region knowledge",
+                "Wine faults identification",
+                "Basic food and wine pairing principles"
+            ],
+            "keywords": [
+                "aroma",
+                "acidity",
+                "tannin",
+                "finish",
+                "balance"
+            ],
+            "common_roles": [
+                "Sommelier",
+                "Wine Steward",
+                "Beverage Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Table-side wine service and decanting",
+            "aliases": [
+                "decanting",
+                "table-side decanting",
+                "wine presentation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Practical techniques for presentational and technical table-side service including bottle presentation, opening, decanting (when appropriate), and guest interaction during service.",
+            "parent_skill": "Wine service & basic pairing guidance",
+            "related_skills": [
+                "Glassware selection and pour sizing",
+                "Responsible alcohol service and regulatory awareness"
+            ],
+            "keywords": [
+                "decant",
+                "cork extraction",
+                "presentation",
+                "table-side"
+            ],
+            "common_roles": [
+                "Sommelier",
+                "Server",
+                "Wine Steward"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Basic food and wine pairing principles",
+            "aliases": [
+                "pairing basics",
+                "pairing frameworks",
+                "food-wine compatibility"
+            ],
+            "skill_type": "process_skill",
+            "description": "Understanding foundational pairing rules and frameworks (weight\/intensity matching, acidity\/sweetness balance, complementary\/contrasting flavors) to recommend appropriate wine-food matches.",
+            "parent_skill": "Wine service & basic pairing guidance",
+            "related_skills": [
+                "Wine varietal and region knowledge",
+                "Wine tasting and sensory evaluation",
+                "Wine list development and menu mapping"
+            ],
+            "keywords": [
+                "acidity",
+                "body",
+                "intensity",
+                "complement",
+                "contrast"
+            ],
+            "common_roles": [
+                "Sommelier",
+                "Server",
+                "Chef",
+                "Wine Steward"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Wine faults identification",
+            "aliases": [
+                "detecting wine faults",
+                "cork taint detection",
+                "TCA recognition"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Recognizing common wine faults (e.g., cork taint, oxidation, volatile acidity) and determining appropriate remedial service actions such as replacement or comping.",
+            "parent_skill": "Wine service & basic pairing guidance",
+            "related_skills": [
+                "Wine tasting and sensory evaluation",
+                "Responsible alcohol service and regulatory awareness"
+            ],
+            "keywords": [
+                "TCA",
+                "oxidation",
+                "sulphur",
+                "volatile acidity"
+            ],
+            "common_roles": [
+                "Sommelier",
+                "Wine Steward",
+                "Server"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Wine storage and temperature control",
+            "aliases": [
+                "cellar management",
+                "wine preservation",
+                "storage temperature control"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Practices for proper short- and long-term storage, temperature and humidity control, and handling to preserve wine quality and manage inventory turnover.",
+            "parent_skill": "Wine service & basic pairing guidance",
+            "related_skills": [
+                "Wine list development and menu mapping",
+                "Glassware selection and pour sizing"
+            ],
+            "keywords": [
+                "cellaring",
+                "humidity",
+                "temperature",
+                "storage"
+            ],
+            "common_roles": [
+                "Beverage Manager",
+                "Wine Steward",
+                "Cellar Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Glassware selection and pour sizing",
+            "aliases": [
+                "selecting wine glasses",
+                "proper pour sizes",
+                "glass selection"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Knowledge of appropriate glass shapes and sizes for different wine styles and consistent pour sizing practices to optimize aroma delivery, presentation and cost control.",
+            "parent_skill": "Wine service & basic pairing guidance",
+            "related_skills": [
+                "Table-side wine service and decanting",
+                "Wine storage and temperature control"
+            ],
+            "keywords": [
+                "Riedel",
+                "glass shape",
+                "standard pour",
+                "tasting pour"
+            ],
+            "common_roles": [
+                "Server",
+                "Sommelier",
+                "Bartender"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Wine list development and menu mapping",
+            "aliases": [
+                "wine list curation",
+                "menu-wine mapping",
+                "beverage menu development"
+            ],
+            "skill_type": "process_skill",
+            "description": "Curating a balanced wine list aligned to concept, pricing strategy and menu offerings, including sourcing, pricing, category mix and seasonal rotations.",
+            "parent_skill": "Wine service & basic pairing guidance",
+            "related_skills": [
+                "Wine varietal and region knowledge",
+                "Wine storage and temperature control",
+                "Basic food and wine pairing principles"
+            ],
+            "keywords": [
+                "pricing",
+                "category mix",
+                "menu pairing",
+                "rotation"
+            ],
+            "common_roles": [
+                "Beverage Manager",
+                "Wine Director",
+                "Sommelier"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Selling and recommending wine",
+            "aliases": [
+                "wine upselling",
+                "suggestive selling",
+                "wine recommendation"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Customer-facing skill to assess guest preferences and recommend or upsell wines using approachable language, tasting descriptors and value-based suggestions.",
+            "parent_skill": "Wine service & basic pairing guidance",
+            "related_skills": [
+                "Basic food and wine pairing principles",
+                "Wine varietal and region knowledge",
+                "Table-side wine service and decanting"
+            ],
+            "keywords": [
+                "upsell",
+                "guest preference",
+                "recommendation",
+                "value sell"
+            ],
+            "common_roles": [
+                "Server",
+                "Bartender",
+                "Sommelier",
+                "Wine Steward"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Responsible alcohol service and regulatory awareness",
+            "aliases": [
+                "alcohol service compliance",
+                "ABV and labeling awareness",
+                "responsible service"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Understanding of responsible service practices and common legal\/regulatory considerations (age verification, intoxication prevention, ABV awareness, allergen labeling) relevant to serving wine.",
+            "parent_skill": "Wine service & basic pairing guidance",
+            "related_skills": [
+                "Wine faults identification",
+                "Table-side wine service and decanting"
+            ],
+            "keywords": [
+                "age verification",
+                "intoxication",
+                "ABV",
+                "allergens",
+                "liquor laws"
+            ],
+            "common_roles": [
+                "Server",
+                "Bartender",
+                "Beverage Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

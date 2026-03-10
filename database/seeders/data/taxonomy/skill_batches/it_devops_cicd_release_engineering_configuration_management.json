@@ -1,0 +1,311 @@
+{
+    "domain": "IT",
+    "category": "DevOps, CI\/CD & Release Engineering",
+    "subcategory": "Configuration management",
+    "skills": [
+        {
+            "canonical_name": "Infrastructure as Code (IaC)",
+            "aliases": [
+                "IaC",
+                "Infrastructure-as-Code"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and managing infrastructure through declarative code so environments are versioned, reproducible and automatable.",
+            "parent_skill": "Configuration management",
+            "related_skills": [
+                "Terraform",
+                "Ansible",
+                "GitOps",
+                "Immutable infrastructure",
+                "Configuration testing & validation"
+            ],
+            "keywords": [
+                "infrastructure as code",
+                "declarative",
+                "provisioning",
+                "automation",
+                "versioned infrastructure"
+            ],
+            "common_roles": [
+                "DevOps Engineer",
+                "Cloud Engineer",
+                "Site Reliability Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ansible",
+            "aliases": [
+                "Ansible Playbooks",
+                "Ansible Automation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Ansible to define and apply idempotent configuration via playbooks, roles and inventories for orchestration and configuration management.",
+            "parent_skill": "Configuration management",
+            "related_skills": [
+                "Infrastructure as Code (IaC)",
+                "Idempotent configuration",
+                "Configuration testing & validation",
+                "GitOps"
+            ],
+            "keywords": [
+                "playbook",
+                "role",
+                "YAML",
+                "SSH",
+                "idempotent"
+            ],
+            "common_roles": [
+                "DevOps Engineer",
+                "Infrastructure Engineer",
+                "Site Reliability Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Terraform",
+            "aliases": [
+                "HashiCorp Terraform"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Authoring, managing and versioning infrastructure using Terraform (HCL), including state management, modules and lifecycle operations for cloud resources.",
+            "parent_skill": "Configuration management",
+            "related_skills": [
+                "Infrastructure as Code (IaC)",
+                "GitOps",
+                "Configuration drift detection & remediation",
+                "Immutable infrastructure"
+            ],
+            "keywords": [
+                "HCL",
+                "state",
+                "modules",
+                "provisioning",
+                "infrastructure"
+            ],
+            "common_roles": [
+                "Cloud Engineer",
+                "DevOps Engineer",
+                "Platform Engineer",
+                "Site Reliability Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Chef",
+            "aliases": [
+                "Chef Infra",
+                "Chef Cookbooks",
+                "Chef recipes"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Implementing configuration management using Chef's recipes and cookbooks (Ruby DSL) for automated, repeatable system configuration and compliance.",
+            "parent_skill": "Configuration management",
+            "related_skills": [
+                "Idempotent configuration",
+                "Configuration testing & validation",
+                "Infrastructure as Code (IaC)"
+            ],
+            "keywords": [
+                "cookbook",
+                "recipe",
+                "Ruby DSL",
+                "Ohai",
+                "configuration"
+            ],
+            "common_roles": [
+                "DevOps Engineer",
+                "Infrastructure Engineer",
+                "Release Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SaltStack",
+            "aliases": [
+                "Salt",
+                "SaltStack Salt"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using SaltStack for remote execution, event-driven orchestration and state-based configuration management across large fleets.",
+            "parent_skill": "Configuration management",
+            "related_skills": [
+                "Idempotent configuration",
+                "Infrastructure as Code (IaC)",
+                "Configuration drift detection & remediation"
+            ],
+            "keywords": [
+                "salt minion",
+                "pillar",
+                "states",
+                "orchestration",
+                "remote execution"
+            ],
+            "common_roles": [
+                "Platform Engineer",
+                "DevOps Engineer",
+                "Site Reliability Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Idempotent configuration",
+            "aliases": [
+                "Idempotency in configuration",
+                "Idempotent deployments"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing configuration changes so applying them multiple times yields the same system state without unintended side effects.",
+            "parent_skill": "Configuration management",
+            "related_skills": [
+                "Ansible",
+                "Terraform",
+                "Chef",
+                "Infrastructure as Code (IaC)"
+            ],
+            "keywords": [
+                "idempotent",
+                "repeatable",
+                "safe apply",
+                "declarative"
+            ],
+            "common_roles": [
+                "DevOps Engineer",
+                "Release Engineer",
+                "Site Reliability Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "GitOps",
+            "aliases": [
+                "GitOps workflows",
+                "Git-based deployment"
+            ],
+            "skill_type": "process_skill",
+            "description": "Operating deployments and configuration by treating Git as the single source of truth, enabling automated reconciliation between repo state and running systems.",
+            "parent_skill": "Configuration management",
+            "related_skills": [
+                "Infrastructure as Code (IaC)",
+                "Terraform",
+                "Argo CD",
+                "Flux",
+                "CI\/CD pipelines"
+            ],
+            "keywords": [
+                "git",
+                "reconciliation",
+                "declarative",
+                "automation",
+                "pull-based"
+            ],
+            "common_roles": [
+                "Platform Engineer",
+                "DevOps Engineer",
+                "Site Reliability Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Configuration drift detection & remediation",
+            "aliases": [
+                "drift detection",
+                "drift remediation",
+                "configuration drift management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Detecting divergence between desired and actual configuration and automating or orchestrating remediation to restore the intended state.",
+            "parent_skill": "Configuration management",
+            "related_skills": [
+                "Terraform",
+                "Configuration testing & validation",
+                "CMDB",
+                "Idempotent configuration"
+            ],
+            "keywords": [
+                "drift",
+                "remediation",
+                "state reconciliation",
+                "monitoring",
+                "automation"
+            ],
+            "common_roles": [
+                "Site Reliability Engineer",
+                "Platform Engineer",
+                "Operations Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Helm (Kubernetes package management)",
+            "aliases": [
+                "Helm charts",
+                "Chart templating"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Creating and managing Helm charts to templatize, package and deploy Kubernetes application configurations consistently across environments.",
+            "parent_skill": "Configuration management",
+            "related_skills": [
+                "Kustomize",
+                "Kubernetes configuration management",
+                "GitOps",
+                "CI\/CD pipelines"
+            ],
+            "keywords": [
+                "helm",
+                "chart",
+                "templating",
+                "values.yaml",
+                "packaging"
+            ],
+            "common_roles": [
+                "Kubernetes Engineer",
+                "Platform Engineer",
+                "DevOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Configuration testing & validation",
+            "aliases": [
+                "Infrastructure testing",
+                "Test-driven infrastructure",
+                "Config validation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and executing automated tests for configuration (unit, integration and compliance) using tools and frameworks to ensure correctness before deployment.",
+            "parent_skill": "Configuration management",
+            "related_skills": [
+                "Molecule",
+                "Testinfra",
+                "InSpec",
+                "CI\/CD pipelines",
+                "Infrastructure as Code (IaC)"
+            ],
+            "keywords": [
+                "test-driven",
+                "validation",
+                "molecule",
+                "testinfra",
+                "compliance"
+            ],
+            "common_roles": [
+                "DevOps Engineer",
+                "Release Engineer",
+                "Site Reliability Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

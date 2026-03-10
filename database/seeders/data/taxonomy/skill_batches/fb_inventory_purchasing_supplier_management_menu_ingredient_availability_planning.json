@@ -1,0 +1,267 @@
+{
+    "domain": "F&B",
+    "category": "Inventory, Purchasing & Supplier Management",
+    "subcategory": "Menu ingredient availability planning",
+    "skills": [
+        {
+            "canonical_name": "Menu ingredient demand forecasting",
+            "aliases": [
+                "ingredient demand forecasting",
+                "forecasting ingredient usage",
+                "ingredient demand planning"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Developing quantitative forecasts of ingredient needs for menu items using historical sales\/POS, seasonality, promos and menu mix to predict consumption and reduce stockouts or waste.",
+            "parent_skill": "Menu ingredient availability planning",
+            "related_skills": [
+                "Safety stock calculation for perishable ingredients",
+                "Procurement scheduling and order cadence optimization",
+                "Recipe and cross-utilization ingredient optimization",
+                "Seasonal and promotional menu availability planning"
+            ],
+            "keywords": [
+                "forecast",
+                "demand planning",
+                "POS analysis",
+                "consumption forecasting",
+                "sales projections"
+            ],
+            "common_roles": [],
+            "language": "English",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Par level and stock rotation planning",
+            "aliases": [
+                "par-level management",
+                "par stock planning",
+                "stock rotation (FIFO\/LIFO) for ingredients"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Setting and managing per-SKU par levels and rotation practices (FIFO\/LIFO) to maintain continuous availability while minimizing spoilage and overstock.",
+            "parent_skill": "Menu ingredient availability planning",
+            "related_skills": [
+                "Safety stock calculation for perishable ingredients",
+                "Batch yield and conversion factor management",
+                "Inventory replenishment system configuration for menu items"
+            ],
+            "keywords": [
+                "par levels",
+                "stock rotation",
+                "FIFO",
+                "reorder point",
+                "shelf life"
+            ],
+            "common_roles": [],
+            "language": "English",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Safety stock calculation for perishable ingredients",
+            "aliases": [
+                "perishable safety stock calculation",
+                "safety stock for perishables",
+                "buffer stock calculation (perishables)"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculating buffer quantities for perishable SKUs based on demand variability, lead times, and spoilage risk to minimize stockouts without excessive waste.",
+            "parent_skill": "Menu ingredient availability planning",
+            "related_skills": [
+                "Menu ingredient demand forecasting",
+                "Par level and stock rotation planning",
+                "Supplier lead-time and delivery coordination"
+            ],
+            "keywords": [
+                "safety stock",
+                "buffer calculation",
+                "demand variability",
+                "lead time variability",
+                "perishability"
+            ],
+            "common_roles": [],
+            "language": "English",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Supplier lead-time and delivery coordination",
+            "aliases": [
+                "lead-time coordination",
+                "supplier delivery scheduling",
+                "vendor delivery coordination"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Coordinating with suppliers to understand, shorten and align lead times and delivery windows with menu demand and kitchen receiving capacity.",
+            "parent_skill": "Menu ingredient availability planning",
+            "related_skills": [
+                "Procurement scheduling and order cadence optimization",
+                "Safety stock calculation for perishable ingredients",
+                "Ingredient substitution and contingency planning"
+            ],
+            "keywords": [
+                "lead time",
+                "delivery schedule",
+                "vendor coordination",
+                "just-in-time deliveries",
+                "order timing"
+            ],
+            "common_roles": [],
+            "language": "English",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Recipe and cross-utilization ingredient optimization",
+            "aliases": [
+                "ingredient cross-utilization",
+                "recipe-level SKU optimization",
+                "menu ingredient rationalization"
+            ],
+            "skill_type": "process_skill",
+            "description": "Analyzing menu recipes to maximize shared ingredient use across dishes, reduce SKU variety, and simplify procurement while preserving menu variety and margins.",
+            "parent_skill": "Menu ingredient availability planning",
+            "related_skills": [
+                "Batch yield and conversion factor management",
+                "Menu ingredient demand forecasting",
+                "Seasonal and promotional menu availability planning"
+            ],
+            "keywords": [
+                "cross-utilization",
+                "recipe analysis",
+                "SKU rationalization",
+                "menu optimization",
+                "standardized recipes"
+            ],
+            "common_roles": [],
+            "language": "English",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Batch yield and conversion factor management",
+            "aliases": [
+                "yield management",
+                "conversion factor calculation",
+                "recipe yield adjustments"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Measuring and applying yield and conversion factors (trim loss, shrink, cook-off) at recipe and batch levels to translate menu requirements into accurate purchase quantities.",
+            "parent_skill": "Menu ingredient availability planning",
+            "related_skills": [
+                "Recipe and cross-utilization ingredient optimization",
+                "Par level and stock rotation planning",
+                "Menu ingredient demand forecasting"
+            ],
+            "keywords": [
+                "yield",
+                "conversion factor",
+                "shrinkage",
+                "trim loss",
+                "cook-off"
+            ],
+            "common_roles": [],
+            "language": "English",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Seasonal and promotional menu availability planning",
+            "aliases": [
+                "seasonal menu planning",
+                "promotional availability planning",
+                "seasonality planning for ingredients"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Planning ingredient sourcing, inventory and procurement strategies around seasonal supply fluctuations and time-limited promotions to ensure menu availability and margin control.",
+            "parent_skill": "Menu ingredient availability planning",
+            "related_skills": [
+                "Menu ingredient demand forecasting",
+                "Procurement scheduling and order cadence optimization",
+                "Ingredient substitution and contingency planning"
+            ],
+            "keywords": [
+                "seasonality",
+                "promotions",
+                "menu windows",
+                "seasonal suppliers",
+                "availability planning"
+            ],
+            "common_roles": [],
+            "language": "English",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Procurement scheduling and order cadence optimization",
+            "aliases": [
+                "order cadence optimization",
+                "procurement scheduling",
+                "purchase order cadence planning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing optimal ordering frequencies, order quantities and cut-off schedules to align purchases with demand patterns, supplier constraints and kitchen capacity.",
+            "parent_skill": "Menu ingredient availability planning",
+            "related_skills": [
+                "Supplier lead-time and delivery coordination",
+                "Menu ingredient demand forecasting",
+                "Inventory replenishment system configuration for menu items"
+            ],
+            "keywords": [
+                "order cadence",
+                "EOQ",
+                "ordering frequency",
+                "purchase schedule",
+                "cut-off times"
+            ],
+            "common_roles": [],
+            "language": "English",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ingredient substitution and contingency planning",
+            "aliases": [
+                "substitution planning",
+                "alternative ingredient planning",
+                "contingency sourcing for ingredients"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Defining approved substitutions, fallback recipes and sourcing options to maintain menu continuity during shortages, supplier failures or sudden demand spikes.",
+            "parent_skill": "Menu ingredient availability planning",
+            "related_skills": [
+                "Supplier lead-time and delivery coordination",
+                "Seasonal and promotional menu availability planning",
+                "Allergen and ingredient regulatory compliance planning"
+            ],
+            "keywords": [
+                "substitutes",
+                "contingency",
+                "alternate suppliers",
+                "fallback recipes",
+                "shortage response"
+            ],
+            "common_roles": [],
+            "language": "English",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen and ingredient regulatory compliance planning",
+            "aliases": [
+                "allergen compliance planning",
+                "ingredient labeling planning",
+                "food ingredient regulatory planning"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Planning ingredient sourcing and menu availability to meet allergen labeling, regulatory and provenance requirements, including approved documentation and substitution rules.",
+            "parent_skill": "Menu ingredient availability planning",
+            "related_skills": [
+                "Ingredient substitution and contingency planning",
+                "Recipe and cross-utilization ingredient optimization"
+            ],
+            "keywords": [
+                "allergen labeling",
+                "ingredient provenance",
+                "regulatory compliance",
+                "labeling requirements",
+                "food safety regulations"
+            ],
+            "common_roles": [],
+            "language": "English",
+            "status": "active"
+        }
+    ]
+}

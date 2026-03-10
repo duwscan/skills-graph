@@ -1,0 +1,269 @@
+{
+    "domain": "Finance",
+    "category": "Financial Planning & Analysis (FP&A)",
+    "subcategory": "Management reporting & variance analysis",
+    "skills": [
+        {
+            "canonical_name": "Management reporting",
+            "aliases": [
+                "Management reporting pack",
+                "Management reports",
+                "Management reporting dashboards"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, producing and distributing periodic management reports and dashboards that present financial performance, KPIs and narrative for leadership decision-making.",
+            "parent_skill": "Management reporting & variance analysis",
+            "related_skills": [
+                "Variance analysis",
+                "KPI design & monitoring",
+                "Financial reporting automation",
+                "Ad-hoc financial analysis"
+            ],
+            "keywords": [
+                "management pack",
+                "monthly reporting",
+                "board pack",
+                "dashboard",
+                "executive reporting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Variance analysis",
+            "aliases": [
+                "Budget vs actual analysis",
+                "Actuals vs budget analysis",
+                "Actual vs plan variance analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Investigating and quantifying differences between actual results and budget\/forecast\/plan, segmenting variances by driver and magnitude to inform actions.",
+            "parent_skill": "Management reporting & variance analysis",
+            "related_skills": [
+                "Management reporting",
+                "Root cause analysis (financial variances)",
+                "Profitability analysis",
+                "Ad-hoc financial analysis"
+            ],
+            "keywords": [
+                "variance",
+                "budget variance",
+                "forecast variance",
+                "drivers analysis",
+                "delta analysis"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Rolling forecasting",
+            "aliases": [
+                "Rolling forecast",
+                "Continuous forecasting",
+                "Reforecasting"
+            ],
+            "skill_type": "process_skill",
+            "description": "Maintaining and updating a continuous forward-looking forecast (rolling horizon), incorporating latest actuals, drivers and scenario inputs to refresh outlooks.",
+            "parent_skill": "Management reporting & variance analysis",
+            "related_skills": [
+                "Variance analysis",
+                "KPI design & monitoring",
+                "Financial reporting automation"
+            ],
+            "keywords": [
+                "rolling forecast",
+                "reforecast",
+                "forecast horizon",
+                "driver-based forecasting",
+                "what-if"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "KPI design & monitoring",
+            "aliases": [
+                "KPI design",
+                "Performance indicator monitoring",
+                "Scorecard design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Defining meaningful financial and operational KPIs, setting targets and implementing monitoring frameworks to track performance against strategic objectives.",
+            "parent_skill": "Management reporting & variance analysis",
+            "related_skills": [
+                "Management reporting",
+                "Rolling forecasting",
+                "Profitability analysis"
+            ],
+            "keywords": [
+                "KPI",
+                "scorecard",
+                "target setting",
+                "benchmarking",
+                "performance metrics"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Profitability analysis",
+            "aliases": [
+                "Product profitability analysis",
+                "Customer profitability analysis",
+                "Margin analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing revenue, costs and allocation drivers to determine profitability by product, customer, channel or segment and identify margin improvement opportunities.",
+            "parent_skill": "Management reporting & variance analysis",
+            "related_skills": [
+                "Variance analysis",
+                "KPI design & monitoring",
+                "Ad-hoc financial analysis"
+            ],
+            "keywords": [
+                "gross margin",
+                "contribution margin",
+                "P&L by product",
+                "segment profitability",
+                "cost-to-serve"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ad-hoc financial analysis",
+            "aliases": [
+                "Ad-hoc reporting",
+                "One-off financial analysis",
+                "Management ad-hoc requests"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Rapidly preparing one-off analyses and reports in response to management queries, investigations or business needs, often combining multiple data sources.",
+            "parent_skill": "Management reporting & variance analysis",
+            "related_skills": [
+                "Management reporting",
+                "Variance analysis",
+                "Financial reporting automation"
+            ],
+            "keywords": [
+                "ad-hoc",
+                "deep-dive",
+                "analysis request",
+                "financial query",
+                "quick-turnaround"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial reporting automation",
+            "aliases": [
+                "Report automation",
+                "Automated financial reporting",
+                "Reporting workflow automation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and implementing automated processes to extract, transform and publish financial reports and packs, reducing manual effort and improving timeliness and accuracy.",
+            "parent_skill": "Management reporting & variance analysis",
+            "related_skills": [
+                "Management reporting",
+                "Power BI for financial reporting",
+                "Excel for financial analysis"
+            ],
+            "keywords": [
+                "automation",
+                "ETL",
+                "scheduled reporting",
+                "report pipelines",
+                "data refresh"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Power BI for financial reporting",
+            "aliases": [
+                "Microsoft Power BI",
+                "PowerBI financial reporting",
+                "Power BI dashboards"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Power BI to model financial data, build interactive dashboards and distribute management reports with data refreshes and role-based views.",
+            "parent_skill": "Management reporting & variance analysis",
+            "related_skills": [
+                "Financial reporting automation",
+                "Management reporting",
+                "KPI design & monitoring"
+            ],
+            "keywords": [
+                "Power BI",
+                "DAX",
+                "data model",
+                "visualization",
+                "dashboard"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Excel for financial analysis",
+            "aliases": [
+                "Advanced Excel",
+                "Excel financial modeling",
+                "Pivot tables and VBA"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Applying advanced Excel capabilities—pivot tables, Power Query, formulas and macros—to prepare, reconcile and analyze financial reports and variances.",
+            "parent_skill": "Management reporting & variance analysis",
+            "related_skills": [
+                "Financial reporting automation",
+                "Ad-hoc financial analysis",
+                "Variance analysis"
+            ],
+            "keywords": [
+                "Excel",
+                "pivot",
+                "Power Query",
+                "VLOOKUP",
+                "macros"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Root cause analysis (financial variances)",
+            "aliases": [
+                "Root cause analysis",
+                "Cause analysis for variances",
+                "DRILL-DOWN variance investigation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Systematically identifying underlying operational, accounting or timing causes for financial variances and linking findings to corrective actions or forecasts.",
+            "parent_skill": "Management reporting & variance analysis",
+            "related_skills": [
+                "Variance analysis",
+                "Ad-hoc financial analysis",
+                "Profitability analysis"
+            ],
+            "keywords": [
+                "root cause",
+                "drill-down",
+                "issue tracing",
+                "variance drivers",
+                "corrective action"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

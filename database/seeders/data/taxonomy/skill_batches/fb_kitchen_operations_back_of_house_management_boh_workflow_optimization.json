@@ -1,0 +1,298 @@
+{
+    "domain": "F&B",
+    "category": "Kitchen Operations & Back-of-House Management",
+    "subcategory": "BOH workflow optimization",
+    "skills": [
+        {
+            "canonical_name": "Kitchen workflow mapping",
+            "aliases": [
+                "BOH process mapping",
+                "kitchen process flowcharting",
+                "process mapping"
+            ],
+            "skill_type": "process_skill",
+            "description": "Documenting, visualizing and analyzing back-of-house processes (stations, handoffs, ticket flows) to identify bottlenecks and standardize procedures.",
+            "parent_skill": "BOH workflow optimization",
+            "related_skills": [
+                "Order-ticket and POS flow optimization",
+                "Mise en place workflow design",
+                "Throughput and takt time optimization"
+            ],
+            "keywords": [
+                "process map",
+                "value stream",
+                "flowchart",
+                "bottleneck analysis"
+            ],
+            "common_roles": [
+                "kitchen manager",
+                "operations manager",
+                "process improvement specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Mise en place workflow design",
+            "aliases": [
+                "mise en place optimization",
+                "prep station workflow",
+                "station layout optimization"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing prep sequences, station assignments and physical layouts to ensure timely mise en place and efficient in-service support.",
+            "parent_skill": "BOH workflow optimization",
+            "related_skills": [
+                "Prep batching and par-level planning",
+                "Kitchen workflow mapping",
+                "Cross-training program design for BOH"
+            ],
+            "keywords": [
+                "stationing",
+                "prep flow",
+                "setup",
+                "ergonomics"
+            ],
+            "common_roles": [
+                "sous chef",
+                "line cook",
+                "kitchen manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Labor forecasting and shift rostering",
+            "aliases": [
+                "staffing forecast",
+                "shift scheduling",
+                "roster planning"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Forecasting labor demand from covers and historical data and building optimized shift rosters to meet service requirements and labor targets.",
+            "parent_skill": "BOH workflow optimization",
+            "related_skills": [
+                "Throughput and takt time optimization",
+                "Cross-training program design for BOH",
+                "Prep batching and par-level planning"
+            ],
+            "keywords": [
+                "forecasting",
+                "roster",
+                "labor cost",
+                "demand planning"
+            ],
+            "common_roles": [
+                "kitchen manager",
+                "operations manager",
+                "scheduling coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Prep batching and par-level planning",
+            "aliases": [
+                "batch cooking planning",
+                "par level planning",
+                "par management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Setting batch sizes, production runs and par levels for prep and holding to balance freshness, speed of service and waste.",
+            "parent_skill": "BOH workflow optimization",
+            "related_skills": [
+                "Inventory cycle counting and reconciliation",
+                "Mise en place workflow design",
+                "Food waste reduction and yield optimization"
+            ],
+            "keywords": [
+                "par",
+                "batching",
+                "prep schedule",
+                "holding time"
+            ],
+            "common_roles": [
+                "prep cook",
+                "sous chef",
+                "kitchen manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inventory cycle counting and reconciliation",
+            "aliases": [
+                "cycle counting",
+                "inventory reconciliation",
+                "stocktake process"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Establishing and executing regular inventory counts, variance analysis and reconciliation processes to maintain accurate stock records.",
+            "parent_skill": "BOH workflow optimization",
+            "related_skills": [
+                "Prep batching and par-level planning",
+                "Food waste reduction and yield optimization",
+                "Order-ticket and POS flow optimization"
+            ],
+            "keywords": [
+                "inventory",
+                "variance",
+                "count sheets",
+                "reconciliation"
+            ],
+            "common_roles": [
+                "inventory clerk",
+                "kitchen manager",
+                "purchasing coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Order-ticket and POS flow optimization",
+            "aliases": [
+                "ticket flow optimization",
+                "POS-to-kitchen integration",
+                "KDS optimization",
+                "kitchen display system workflow"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and optimizing order routing, kitchen display systems and POS workflows to reduce ticket errors, clarify priorities and speed service.",
+            "parent_skill": "BOH workflow optimization",
+            "related_skills": [
+                "Kitchen workflow mapping",
+                "Throughput and takt time optimization",
+                "Inventory cycle counting and reconciliation"
+            ],
+            "keywords": [
+                "POS",
+                "KDS",
+                "order routing",
+                "ticketing"
+            ],
+            "common_roles": [
+                "expediter",
+                "kitchen manager",
+                "ops manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Throughput and takt time optimization",
+            "aliases": [
+                "kitchen takt time",
+                "throughput analysis",
+                "service tempo optimization"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Measuring service cadence and station cycle times and redesigning workflows to meet takt time targets and improve throughput.",
+            "parent_skill": "BOH workflow optimization",
+            "related_skills": [
+                "Kitchen workflow mapping",
+                "Labor forecasting and shift rostering",
+                "Mise en place workflow design"
+            ],
+            "keywords": [
+                "cycle time",
+                "takt time",
+                "throughput",
+                "process capacity"
+            ],
+            "common_roles": [
+                "operations manager",
+                "kitchen manager",
+                "continuous improvement specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-training program design for BOH",
+            "aliases": [
+                "cross-training",
+                "station rotation planning",
+                "skill rotation program"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing structured cross-training curricula and rotation schedules so staff can cover multiple stations, improving flexibility and resilience during service.",
+            "parent_skill": "BOH workflow optimization",
+            "related_skills": [
+                "Labor forecasting and shift rostering",
+                "Mise en place workflow design",
+                "Prep batching and par-level planning"
+            ],
+            "keywords": [
+                "skill matrix",
+                "rotation",
+                "multi-skilling",
+                "training schedule"
+            ],
+            "common_roles": [
+                "training coordinator",
+                "kitchen manager",
+                "sous chef"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food waste reduction and yield optimization",
+            "aliases": [
+                "waste minimization",
+                "yield management",
+                "portion control optimization"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing yields, portioning and waste streams; implementing portion control, reuse and inventory strategies to lower food cost and waste.",
+            "parent_skill": "BOH workflow optimization",
+            "related_skills": [
+                "Inventory cycle counting and reconciliation",
+                "Prep batching and par-level planning",
+                "HACCP workflow integration and SOP compliance"
+            ],
+            "keywords": [
+                "yield",
+                "food cost",
+                "portioning",
+                "waste audit"
+            ],
+            "common_roles": [
+                "sous chef",
+                "kitchen manager",
+                "procurement specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "HACCP workflow integration and SOP compliance",
+            "aliases": [
+                "HACCP workflow",
+                "food safety SOP integration",
+                "SOP compliance for BOH"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Integrating HACCP principles and written standard operating procedures into daily BOH workflows to ensure food safety, traceability and regulatory compliance.",
+            "parent_skill": "BOH workflow optimization",
+            "related_skills": [
+                "Food waste reduction and yield optimization",
+                "Inventory cycle counting and reconciliation",
+                "Kitchen workflow mapping"
+            ],
+            "keywords": [
+                "HACCP",
+                "SOP",
+                "food safety",
+                "compliance"
+            ],
+            "common_roles": [
+                "food safety manager",
+                "kitchen manager",
+                "quality assurance specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

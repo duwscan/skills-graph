@@ -1,0 +1,326 @@
+{
+    "domain": "IT",
+    "category": "Software Engineering & Application Development",
+    "subcategory": "Backend development",
+    "skills": [
+        {
+            "canonical_name": "RESTful API design",
+            "aliases": [
+                "REST API design",
+                "HTTP API design",
+                "Representational State Transfer API design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing resource-oriented HTTP APIs following REST principles, including URI design, versioning, status codes, pagination, hypermedia, and idempotency.",
+            "parent_skill": "Backend development",
+            "related_skills": [
+                "Microservices architecture",
+                "CI\/CD for backend services",
+                "Application security (backend)",
+                "Message queuing & stream processing"
+            ],
+            "keywords": [
+                "REST",
+                "HTTP",
+                "API versioning",
+                "idempotent",
+                "status codes",
+                "pagination"
+            ],
+            "common_roles": [
+                "Backend Developer",
+                "API Developer",
+                "Software Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Microservices architecture",
+            "aliases": [
+                "Microservice architecture",
+                "Distributed services architecture"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and structuring applications as a set of independently deployable services, including service boundaries, inter-service communication, data management patterns, and service discovery.",
+            "parent_skill": "Backend development",
+            "related_skills": [
+                "RESTful API design",
+                "Message queuing & stream processing",
+                "CI\/CD for backend services",
+                "Backend performance optimization"
+            ],
+            "keywords": [
+                "service boundaries",
+                "domain-driven design",
+                "service discovery",
+                "scalability",
+                "bounded context"
+            ],
+            "common_roles": [
+                "Backend Developer",
+                "Platform Engineer",
+                "Systems Architect"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Relational databases (SQL)",
+            "aliases": [
+                "SQL databases",
+                "RDBMS",
+                "PostgreSQL",
+                "MySQL",
+                "MariaDB",
+                "Oracle DB"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Designing, querying and operating relational database management systems using SQL, including schema design, indexing, transactions, joins and query optimization.",
+            "parent_skill": "Backend development",
+            "related_skills": [
+                "Database schema design & normalization",
+                "Backend performance optimization",
+                "CI\/CD for backend services"
+            ],
+            "keywords": [
+                "SQL",
+                "ACID",
+                "indexes",
+                "joins",
+                "transactions",
+                "query optimization"
+            ],
+            "common_roles": [
+                "Backend Developer",
+                "Data Engineer",
+                "Database Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "NoSQL databases",
+            "aliases": [
+                "Document databases",
+                "Key-value stores",
+                "Column-family stores",
+                "MongoDB",
+                "Cassandra",
+                "Redis"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using non-relational database patterns (document, key-value, wide-column, graph) to model, store and retrieve data, including trade-offs in consistency, partitioning, and querying.",
+            "parent_skill": "Backend development",
+            "related_skills": [
+                "Microservices architecture",
+                "Backend performance optimization",
+                "Message queuing & stream processing"
+            ],
+            "keywords": [
+                "NoSQL",
+                "document store",
+                "key-value",
+                "eventual consistency",
+                "sharding",
+                "replication"
+            ],
+            "common_roles": [
+                "Backend Developer",
+                "Data Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Database schema design & normalization",
+            "aliases": [
+                "Database modelling",
+                "Schema design",
+                "Normalization"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing data requirements and designing normalized and denormalized schemas, entity relationships and constraints to meet performance, maintainability and integrity goals.",
+            "parent_skill": "Backend development",
+            "related_skills": [
+                "Relational databases (SQL)",
+                "NoSQL databases",
+                "Backend performance optimization"
+            ],
+            "keywords": [
+                "ER model",
+                "normal forms",
+                "denormalization",
+                "foreign keys",
+                "constraints"
+            ],
+            "common_roles": [
+                "Backend Developer",
+                "Data Modeler",
+                "Database Designer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Java (backend)",
+            "aliases": [
+                "JVM backend development",
+                "Java backend development",
+                "Spring Boot (alias context)"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Developing server-side applications using Java and the JVM ecosystem, including common backend libraries and frameworks for REST, dependency injection, concurrency and persistence.",
+            "parent_skill": "Backend development",
+            "related_skills": [
+                "RESTful API design",
+                "Relational databases (SQL)",
+                "Microservices architecture"
+            ],
+            "keywords": [
+                "Java",
+                "JVM",
+                "Spring",
+                "Spring Boot",
+                "JPA",
+                "concurrency"
+            ],
+            "common_roles": [
+                "Backend Developer",
+                "Software Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Message queuing & stream processing",
+            "aliases": [
+                "Message queues",
+                "Event streaming",
+                "Kafka",
+                "RabbitMQ",
+                "Pub\/Sub"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Designing and implementing asynchronous communication and event-driven patterns using message brokers and streaming platforms for decoupling, buffering and real-time processing.",
+            "parent_skill": "Backend development",
+            "related_skills": [
+                "Microservices architecture",
+                "NoSQL databases",
+                "Backend performance optimization"
+            ],
+            "keywords": [
+                "message broker",
+                "event-driven",
+                "stream processing",
+                "Kafka",
+                "RabbitMQ",
+                "pub\/sub"
+            ],
+            "common_roles": [
+                "Backend Developer",
+                "Streaming Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Backend performance optimization",
+            "aliases": [
+                "Server-side performance tuning",
+                "Backend profiling",
+                "scalability tuning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Identifying and resolving performance bottlenecks in backend systems through profiling, caching strategies, query optimization, concurrency tuning and capacity planning.",
+            "parent_skill": "Backend development",
+            "related_skills": [
+                "Relational databases (SQL)",
+                "NoSQL databases",
+                "Message queuing & stream processing"
+            ],
+            "keywords": [
+                "profiling",
+                "caching",
+                "latency",
+                "throughput",
+                "load testing",
+                "capacity planning"
+            ],
+            "common_roles": [
+                "Backend Developer",
+                "Performance Engineer",
+                "Site Reliability Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "CI\/CD for backend services",
+            "aliases": [
+                "Continuous integration",
+                "Continuous delivery",
+                "Continuous deployment",
+                "CI\/CD pipelines"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and operating CI\/CD pipelines for building, testing and deploying backend applications, including automated testing, build orchestration, artifact management and deployment strategies.",
+            "parent_skill": "Backend development",
+            "related_skills": [
+                "Microservices architecture",
+                "RESTful API design",
+                "Backend performance optimization"
+            ],
+            "keywords": [
+                "CI",
+                "CD",
+                "automation",
+                "pipelines",
+                "build",
+                "deployment"
+            ],
+            "common_roles": [
+                "Backend Developer",
+                "DevOps Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Application security (backend)",
+            "aliases": [
+                "Backend security",
+                "API security",
+                "OAuth",
+                "JWT"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying security practices for backend systems including authentication, authorization, secure communication, input validation, secrets management and threat mitigation.",
+            "parent_skill": "Backend development",
+            "related_skills": [
+                "RESTful API design",
+                "CI\/CD for backend services",
+                "Microservices architecture"
+            ],
+            "keywords": [
+                "authentication",
+                "authorization",
+                "OAuth",
+                "JWT",
+                "encryption",
+                "secure coding"
+            ],
+            "common_roles": [
+                "Backend Developer",
+                "Security Engineer",
+                "Application Security Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

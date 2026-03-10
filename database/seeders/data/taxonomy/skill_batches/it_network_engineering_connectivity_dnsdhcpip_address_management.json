@@ -1,0 +1,305 @@
+{
+    "domain": "IT",
+    "category": "Network Engineering & Connectivity",
+    "subcategory": "DNS\/DHCP\/IP address management",
+    "skills": [
+        {
+            "canonical_name": "IP subnetting and CIDR planning",
+            "aliases": [
+                "subnetting",
+                "CIDR planning",
+                "VLSM"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Designing and calculating subnets using CIDR and VLSM to allocate address space efficiently and meet network segmentation requirements.",
+            "parent_skill": "DNS\/DHCP\/IP address management",
+            "related_skills": [
+                "IP address lifecycle management (planning & allocation)",
+                "IPv4-to-IPv6 transition and dual-stack addressing"
+            ],
+            "keywords": [
+                "CIDR",
+                "VLSM",
+                "subnet mask",
+                "address planning",
+                "prefix"
+            ],
+            "common_roles": [
+                "Network Engineer",
+                "Network Architect",
+                "Network Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "IP address lifecycle management (planning & allocation)",
+            "aliases": [
+                "IP address planning",
+                "address allocation",
+                "IP allocation strategy"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operational processes for assigning, reserving, tracking, reclaiming and documenting IPv4\/IPv6 addresses across the organization.",
+            "parent_skill": "DNS\/DHCP\/IP address management",
+            "related_skills": [
+                "IP Address Management (IPAM) platforms",
+                "IP address reconciliation and audit"
+            ],
+            "keywords": [
+                "address allocation",
+                "address pools",
+                "lifecycle",
+                "reservation",
+                "decommissioning"
+            ],
+            "common_roles": [
+                "IPAM Administrator",
+                "Network Operations Engineer",
+                "Network Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "IP Address Management (IPAM) platforms",
+            "aliases": [
+                "IPAM",
+                "Infoblox",
+                "BlueCat",
+                "phpIPAM",
+                "SolarWinds IPAM",
+                "Microsoft IPAM"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use and administration of IPAM systems to centralize IP inventory, DHCP\/DNS integration, automated provisioning and address reconciliation.",
+            "parent_skill": "DNS\/DHCP\/IP address management",
+            "related_skills": [
+                "IP address lifecycle management (planning & allocation)",
+                "DNS zone and resource record management",
+                "DHCP server configuration and management"
+            ],
+            "keywords": [
+                "IPAM",
+                "address inventory",
+                "IP reconciliation",
+                "DNS integration",
+                "DHCP integration"
+            ],
+            "common_roles": [
+                "Network Engineer",
+                "IPAM Administrator",
+                "Network Operations Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "DHCP server configuration and management",
+            "aliases": [
+                "DHCP configuration",
+                "ISC DHCP",
+                "Microsoft DHCP Server",
+                "Cisco DHCP"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Installing, configuring and maintaining DHCP servers and scopes, including reservations, options, exclusions and scope hierarchy across platforms.",
+            "parent_skill": "DNS\/DHCP\/IP address management",
+            "related_skills": [
+                "DHCP troubleshooting and lease management",
+                "IP Address Management (IPAM) platforms"
+            ],
+            "keywords": [
+                "DHCP scope",
+                "reservations",
+                "DHCP options",
+                "lease time",
+                "DHCP relay"
+            ],
+            "common_roles": [
+                "Network Administrator",
+                "Systems Administrator",
+                "Network Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "DHCP troubleshooting and lease management",
+            "aliases": [
+                "DHCP lease troubleshooting",
+                "DHCP scope management",
+                "DHCP lease recovery"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operational diagnosis and remediation of DHCP issues (lease conflicts, exhaustion, relay failures) and processes for reclaiming or reallocating addresses.",
+            "parent_skill": "DNS\/DHCP\/IP address management",
+            "related_skills": [
+                "DHCP server configuration and management",
+                "IP address lifecycle management (planning & allocation)"
+            ],
+            "keywords": [
+                "lease conflict",
+                "exhaustion",
+                "DHCP relay",
+                "debug logs",
+                "binding"
+            ],
+            "common_roles": [
+                "Network Operations Engineer",
+                "Help Desk Technician",
+                "Network Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "DNS zone and resource record management",
+            "aliases": [
+                "DNS zone management",
+                "BIND zone files",
+                "DNS record management",
+                "A\/AAAA\/CNAME\/MX\/SRV management"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Creating, editing and publishing DNS zones and resource records (A, AAAA, CNAME, MX, SRV, TXT) and managing zone transfers and replication.",
+            "parent_skill": "DNS\/DHCP\/IP address management",
+            "related_skills": [
+                "DNSSEC implementation and key management",
+                "Split-horizon DNS \/ views configuration",
+                "Reverse DNS and PTR record management"
+            ],
+            "keywords": [
+                "zone file",
+                "record types",
+                "zone transfer",
+                "DNS replication",
+                "TTL"
+            ],
+            "common_roles": [
+                "DNS Administrator",
+                "Network Engineer",
+                "Systems Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "DNSSEC implementation and key management",
+            "aliases": [
+                "DNSSEC",
+                "DNSSEC signing",
+                "DNS key rollover"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and operating DNS Security Extensions: zone signing, key generation\/rollover, chain of trust and validation troubleshooting to protect DNS integrity.",
+            "parent_skill": "DNS\/DHCP\/IP address management",
+            "related_skills": [
+                "DNS zone and resource record management",
+                "Split-horizon DNS \/ views configuration"
+            ],
+            "keywords": [
+                "zone signing",
+                "DS records",
+                "ZSK",
+                "KSK",
+                "DNSSEC validation"
+            ],
+            "common_roles": [
+                "Security Engineer",
+                "DNS Administrator",
+                "Network Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Reverse DNS and PTR record management",
+            "aliases": [
+                "rDNS",
+                "PTR record configuration",
+                "reverse DNS"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Configuring reverse DNS zones and PTR records for IP-to-hostname mapping, including delegation to service providers and integration with mail or security workflows.",
+            "parent_skill": "DNS\/DHCP\/IP address management",
+            "related_skills": [
+                "DNS zone and resource record management",
+                "IP address lifecycle management (planning & allocation)"
+            ],
+            "keywords": [
+                "PTR",
+                "in-addr.arpa",
+                "ip6.arpa",
+                "reverse zone",
+                "rdns"
+            ],
+            "common_roles": [
+                "Network Administrator",
+                "DNS Administrator",
+                "Email Deliverability Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Split-horizon DNS \/ views configuration",
+            "aliases": [
+                "split-horizon DNS",
+                "DNS views",
+                "split-brain DNS"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Implementing and managing DNS configurations that serve different records based on source (internal vs external) using views, ACLs or DNS policies.",
+            "parent_skill": "DNS\/DHCP\/IP address management",
+            "related_skills": [
+                "DNS zone and resource record management",
+                "DNSSEC implementation and key management"
+            ],
+            "keywords": [
+                "views",
+                "ACL",
+                "internal DNS",
+                "external DNS",
+                "policy-based DNS"
+            ],
+            "common_roles": [
+                "Network Engineer",
+                "DNS Administrator",
+                "IT Infrastructure Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "IPv4-to-IPv6 transition and dual-stack addressing",
+            "aliases": [
+                "IPv6 transition",
+                "dual-stack deployment",
+                "IPv6 subnetting"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Planning and implementing IPv6 addressing alongside IPv4 (dual-stack), migration strategies, address translation techniques and IPv6-specific DNS\/DHCP considerations.",
+            "parent_skill": "DNS\/DHCP\/IP address management",
+            "related_skills": [
+                "IP subnetting and CIDR planning",
+                "IP address lifecycle management (planning & allocation)",
+                "DNS zone and resource record management"
+            ],
+            "keywords": [
+                "IPv6",
+                "dual stack",
+                "NAT64",
+                "address planning",
+                "AAAA records"
+            ],
+            "common_roles": [
+                "Network Engineer",
+                "Infrastructure Engineer",
+                "Network Architect"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,323 @@
+{
+    "domain": "IT",
+    "category": "Cybersecurity Operations & Engineering",
+    "subcategory": "Penetration testing & red teaming",
+    "skills": [
+        {
+            "canonical_name": "Web application penetration testing",
+            "aliases": [
+                "web app penetration testing",
+                "web application pentesting",
+                "web pentest",
+                "OWASP testing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Assessment of web applications and APIs to identify and exploit vulnerabilities across authentication, access control, input validation, session management, and business logic.",
+            "parent_skill": "Penetration testing & red teaming",
+            "related_skills": [
+                "Pentest scripting & automation",
+                "Exploit development & binary reverse engineering",
+                "Red team operations & adversary emulation",
+                "Network penetration testing"
+            ],
+            "keywords": [
+                "web",
+                "API",
+                "OWASP",
+                "SQLi",
+                "XSS",
+                "authentication",
+                "session"
+            ],
+            "common_roles": [
+                "Penetration Tester",
+                "Application Security Tester",
+                "Security Consultant"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Network penetration testing",
+            "aliases": [
+                "network pentesting",
+                "internal network testing",
+                "external network testing",
+                "infrastructure pentest"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Testing network infrastructure, hosts, services, and protocols to discover and exploit misconfigurations and network-level vulnerabilities for initial access and privilege escalation.",
+            "parent_skill": "Penetration testing & red teaming",
+            "related_skills": [
+                "Wireless network penetration testing",
+                "Active Directory exploitation",
+                "Post-exploitation & lateral movement techniques",
+                "Red team operations & adversary emulation"
+            ],
+            "keywords": [
+                "TCP\/IP",
+                "ports",
+                "services",
+                "routers",
+                "firewalls",
+                "scanning",
+                "Nmap"
+            ],
+            "common_roles": [
+                "Penetration Tester",
+                "Offensive Security Engineer",
+                "Security Consultant"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Active Directory exploitation",
+            "aliases": [
+                "AD exploitation",
+                "Active Directory attack techniques",
+                "Windows domain exploitation",
+                "Kerberos attacks"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Techniques for compromising Windows Active Directory environments, including credential harvesting, Kerberos-related attacks, privilege escalation, delegation abuse, and persistence in domain environments.",
+            "parent_skill": "Penetration testing & red teaming",
+            "related_skills": [
+                "Post-exploitation & lateral movement techniques",
+                "Network penetration testing",
+                "Red team operations & adversary emulation",
+                "Cloud infrastructure penetration testing"
+            ],
+            "keywords": [
+                "AD",
+                "Kerberos",
+                "NTLM",
+                "credential dumping",
+                "domain",
+                "group policy"
+            ],
+            "common_roles": [
+                "Penetration Tester",
+                "Red Team Operator",
+                "Offensive Security Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Social engineering & phishing simulation",
+            "aliases": [
+                "phishing simulation",
+                "social engineering campaigns",
+                "human-targeted testing",
+                "human exploitation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and executing social-engineering engagements and simulated phishing campaigns to test human factors, elicit credentials or access, and measure organizational awareness and response.",
+            "parent_skill": "Penetration testing & red teaming",
+            "related_skills": [
+                "Red team operations & adversary emulation",
+                "MITRE ATT&CK mapping & TTP analysis"
+            ],
+            "keywords": [
+                "phishing",
+                "spearphishing",
+                "pretexting",
+                "awareness testing",
+                "social tactics"
+            ],
+            "common_roles": [
+                "Red Team Operator",
+                "Penetration Tester",
+                "Security Awareness Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Red team operations & adversary emulation",
+            "aliases": [
+                "red teaming",
+                "adversary emulation",
+                "full-scope offensive operations"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning and executing sustained, multi-stage campaigns that emulate realistic adversaries by combining technical exploitation, social engineering, and operational tradecraft to test detection and response capabilities.",
+            "parent_skill": "Penetration testing & red teaming",
+            "related_skills": [
+                "MITRE ATT&CK mapping & TTP analysis",
+                "Social engineering & phishing simulation",
+                "Post-exploitation & lateral movement techniques",
+                "Cloud infrastructure penetration testing"
+            ],
+            "keywords": [
+                "adversary emulation",
+                "purple team",
+                "campaign planning",
+                "opsec",
+                "detection testing"
+            ],
+            "common_roles": [
+                "Red Team Operator",
+                "Offensive Security Engineer",
+                "Penetration Tester"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Exploit development & binary reverse engineering",
+            "aliases": [
+                "exploit development",
+                "binary exploitation",
+                "reverse engineering"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Analyzing binaries, identifying memory corruption or logic flaws, and developing or adapting exploits to achieve code execution or privilege escalation against native applications and services.",
+            "parent_skill": "Penetration testing & red teaming",
+            "related_skills": [
+                "Pentest scripting & automation",
+                "Web application penetration testing",
+                "Network penetration testing"
+            ],
+            "keywords": [
+                "reverse engineering",
+                "ROP",
+                "buffer overflow",
+                "disassembler",
+                "IDA Pro",
+                "GDB"
+            ],
+            "common_roles": [
+                "Exploit Developer",
+                "Offensive Security Engineer",
+                "Penetration Tester"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cloud infrastructure penetration testing",
+            "aliases": [
+                "cloud penetration testing",
+                "cloud pentesting",
+                "AWS\/Azure\/GCP penetration testing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Assessing cloud service configurations, identity and access management, networking, storage, serverless functions, and application deployments to identify misconfigurations and exploitable weaknesses in cloud environments.",
+            "parent_skill": "Penetration testing & red teaming",
+            "related_skills": [
+                "Pentest scripting & automation",
+                "Active Directory exploitation",
+                "Red team operations & adversary emulation"
+            ],
+            "keywords": [
+                "IAM",
+                "S3",
+                "buckets",
+                "cloud storage",
+                "serverless",
+                "VPC"
+            ],
+            "common_roles": [
+                "Cloud Security Tester",
+                "Penetration Tester",
+                "Offensive Security Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Post-exploitation & lateral movement techniques",
+            "aliases": [
+                "post-exploitation",
+                "lateral movement",
+                "pivoting",
+                "credential harvesting"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Techniques used after initial compromise to escalate privileges, harvest credentials, move laterally, establish persistence, and expand access across a target environment while avoiding detection.",
+            "parent_skill": "Penetration testing & red teaming",
+            "related_skills": [
+                "Active Directory exploitation",
+                "Network penetration testing",
+                "Red team operations & adversary emulation"
+            ],
+            "keywords": [
+                "pivoting",
+                "credential dumping",
+                "persistence",
+                "wmiexec",
+                "PsExec"
+            ],
+            "common_roles": [
+                "Penetration Tester",
+                "Red Team Operator",
+                "Offensive Security Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Pentest scripting & automation",
+            "aliases": [
+                "pentest automation",
+                "offensive scripting",
+                "pentest tool development"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using scripting and automation (for example Python, PowerShell, Bash, Go) to create custom tooling, automate reconnaissance and exploitation workflows, and streamline offensive testing and reporting.",
+            "parent_skill": "Penetration testing & red teaming",
+            "related_skills": [
+                "Web application penetration testing",
+                "Exploit development & binary reverse engineering",
+                "Cloud infrastructure penetration testing"
+            ],
+            "keywords": [
+                "python",
+                "powershell",
+                "bash",
+                "go",
+                "automation",
+                "scripting"
+            ],
+            "common_roles": [
+                "Penetration Tester",
+                "Offensive Security Engineer",
+                "Security Automation Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "MITRE ATT&CK mapping & TTP analysis",
+            "aliases": [
+                "ATT&CK mapping",
+                "TTP analysis",
+                "adversary emulation planning"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Mapping observed techniques and planned activities to the MITRE ATT&CK framework to design adversary emulation, measure detection coverage, and analyze attacker tactics, techniques, and procedures (TTPs).",
+            "parent_skill": "Penetration testing & red teaming",
+            "related_skills": [
+                "Red team operations & adversary emulation",
+                "Post-exploitation & lateral movement techniques",
+                "Social engineering & phishing simulation"
+            ],
+            "keywords": [
+                "MITRE ATT&CK",
+                "TTP",
+                "detection coverage",
+                "mapping",
+                "adversary model"
+            ],
+            "common_roles": [
+                "Red Team Operator",
+                "Threat Analyst",
+                "Security Architect"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

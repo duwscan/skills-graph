@@ -1,0 +1,298 @@
+{
+    "domain": "Finance",
+    "category": "Treasury & Cash Management",
+    "subcategory": "Working capital optimization",
+    "skills": [
+        {
+            "canonical_name": "Cash flow forecasting",
+            "aliases": [
+                "cash forecasting",
+                "cash flow projection",
+                "short-term cash forecasting",
+                "rolling cash forecast"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Creating short-, medium- and long-term cash forecasts using historicals, timing assumptions and business drivers to predict liquidity needs and surpluses.",
+            "parent_skill": "Working capital optimization",
+            "related_skills": [
+                "Liquidity management",
+                "Working capital metrics & KPI reporting",
+                "Cash conversion cycle optimization",
+                "Treasury Management Systems (TMS)"
+            ],
+            "keywords": [
+                "forecast",
+                "rolling forecast",
+                "inflows",
+                "outflows",
+                "scenario analysis"
+            ],
+            "common_roles": [
+                "Treasury \/ Cash Management",
+                "Finance Planning & Analysis"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Liquidity management",
+            "aliases": [
+                "liquidity planning",
+                "short-term liquidity management",
+                "liquidity optimization"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operational practices and policies to ensure the business has sufficient cash or lines to meet obligations while minimizing idle cash.",
+            "parent_skill": "Working capital optimization",
+            "related_skills": [
+                "Cash flow forecasting",
+                "Cash pooling & concentration structures",
+                "Short-term investment management",
+                "Bank relationship management & fee negotiation"
+            ],
+            "keywords": [
+                "liquidity",
+                "cash buffers",
+                "overdraft",
+                "lines of credit",
+                "intraday liquidity"
+            ],
+            "common_roles": [
+                "Treasury \/ Cash Management"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Accounts receivable optimization",
+            "aliases": [
+                "AR optimization",
+                "receivables management",
+                "credit-to-cash optimization",
+                "collections optimization"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Techniques and processes to accelerate collections, reduce DSO, improve cash realization and optimize credit terms.",
+            "parent_skill": "Working capital optimization",
+            "related_skills": [
+                "Cash conversion cycle optimization",
+                "Supply chain finance program structuring",
+                "Working capital metrics & KPI reporting"
+            ],
+            "keywords": [
+                "DSO",
+                "collections",
+                "invoicing",
+                "cash application",
+                "credit terms"
+            ],
+            "common_roles": [
+                "Treasury \/ Cash Management",
+                "Order-to-Cash Operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Accounts payable optimization",
+            "aliases": [
+                "AP optimization",
+                "payables management",
+                "supplier payment scheduling",
+                "payables financing optimization"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing payment timing, discount capture and supplier terms to preserve cash while maintaining supplier relationships.",
+            "parent_skill": "Working capital optimization",
+            "related_skills": [
+                "Cash conversion cycle optimization",
+                "Bank relationship management & fee negotiation",
+                "Supply chain finance program structuring"
+            ],
+            "keywords": [
+                "DPO",
+                "early payment discounts",
+                "payment runs",
+                "vendor terms",
+                "net terms"
+            ],
+            "common_roles": [
+                "Treasury \/ Cash Management",
+                "Procure-to-Pay Operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash conversion cycle optimization",
+            "aliases": [
+                "CCC optimization",
+                "cash cycle optimization",
+                "working capital cycle management"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Measuring and improving the cash conversion cycle (DSO + DIO - DPO) through cross-functional levers across receivables, inventory and payables.",
+            "parent_skill": "Working capital optimization",
+            "related_skills": [
+                "Accounts receivable optimization",
+                "Accounts payable optimization",
+                "Inventory management (inventory not included in this taxonomy)"
+            ],
+            "keywords": [
+                "CCC",
+                "DSO",
+                "DPO",
+                "DIO",
+                "working capital ratio"
+            ],
+            "common_roles": [
+                "Treasury \/ Cash Management",
+                "Working Capital Program Teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Working capital metrics & KPI reporting",
+            "aliases": [
+                "working capital reporting",
+                "cash KPI reporting",
+                "working capital dashboarding"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and maintaining KPIs, dashboards and reports to monitor working capital performance and support decision making.",
+            "parent_skill": "Working capital optimization",
+            "related_skills": [
+                "Cash flow forecasting",
+                "Cash conversion cycle optimization",
+                "Treasury Management Systems (TMS)"
+            ],
+            "keywords": [
+                "KPI",
+                "dashboard",
+                "reporting",
+                "DSO",
+                "DPO"
+            ],
+            "common_roles": [
+                "Treasury \/ Cash Management",
+                "Finance Analytics"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Short-term investment management",
+            "aliases": [
+                "short-term portfolio management",
+                "treasury placements",
+                "money market management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Selecting and managing low-risk short-duration instruments and placement strategies to earn returns on excess cash while preserving liquidity.",
+            "parent_skill": "Working capital optimization",
+            "related_skills": [
+                "Liquidity management",
+                "Treasury Management Systems (TMS)",
+                "Bank relationship management & fee negotiation"
+            ],
+            "keywords": [
+                "treasury investments",
+                "money market",
+                "commercial paper",
+                "T-bills",
+                "overnight placements"
+            ],
+            "common_roles": [
+                "Treasury \/ Cash Management"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash pooling & concentration structures",
+            "aliases": [
+                "cash concentration",
+                "notional pooling",
+                "physical pooling",
+                "zero balancing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and operating cash pooling and concentration arrangements to centralize balances, reduce external borrowing and optimize intra-group liquidity.",
+            "parent_skill": "Working capital optimization",
+            "related_skills": [
+                "Liquidity management",
+                "Bank relationship management & fee negotiation",
+                "Treasury Management Systems (TMS)"
+            ],
+            "keywords": [
+                "pooling",
+                "notional pool",
+                "zero balance account",
+                "balance sweeping"
+            ],
+            "common_roles": [
+                "Treasury \/ Cash Management"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bank relationship management & fee negotiation",
+            "aliases": [
+                "bank relationship management",
+                "bank fee negotiation",
+                "bank services procurement"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Managing relationships with banking partners, negotiating pricing and service levels, and optimizing bank account structures and fees.",
+            "parent_skill": "Working capital optimization",
+            "related_skills": [
+                "Liquidity management",
+                "Cash pooling & concentration structures",
+                "Treasury Management Systems (TMS)"
+            ],
+            "keywords": [
+                "bank fees",
+                "RFP",
+                "service levels",
+                "correspondent banking",
+                "account structure"
+            ],
+            "common_roles": [
+                "Treasury \/ Cash Management"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Treasury Management Systems (TMS)",
+            "aliases": [
+                "treasury management system",
+                "Kyriba\/GTreasury\/SAP Treasury (generic)",
+                "TMS implementation and configuration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using and configuring enterprise treasury management systems to automate cash forecasting, payments, bank connectivity and working capital reporting.",
+            "parent_skill": "Working capital optimization",
+            "related_skills": [
+                "Cash flow forecasting",
+                "Working capital metrics & KPI reporting",
+                "Cash pooling & concentration structures"
+            ],
+            "keywords": [
+                "TMS",
+                "bank connectivity",
+                "SWIFT",
+                "APIs",
+                "payment factory"
+            ],
+            "common_roles": [
+                "Treasury \/ Cash Management",
+                "Treasury Systems & Operations"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

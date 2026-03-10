@@ -1,0 +1,275 @@
+{
+    "domain": "IT",
+    "category": "AI\/ML Engineering & Applied Data Science",
+    "subcategory": "Model deployment & serving",
+    "skills": [
+        {
+            "canonical_name": "Model serving frameworks",
+            "aliases": [
+                "TF Serving",
+                "TensorFlow Serving",
+                "TorchServe",
+                "BentoML",
+                "Seldon Core"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing, configuring and operating frameworks and runtimes that expose trained models as production endpoints for inference.",
+            "parent_skill": "Model deployment & serving",
+            "related_skills": [
+                "Model API design (REST\/gRPC)",
+                "Model monitoring & observability",
+                "Containerization with Docker",
+                "Kubernetes"
+            ],
+            "keywords": [
+                "model server",
+                "inference endpoint",
+                "servable",
+                "predict",
+                "tensorRT",
+                "bento"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Kubernetes",
+            "aliases": [
+                "k8s",
+                "K8s"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Kubernetes for container orchestration to deploy, scale and manage model-serving workloads and related services in production.",
+            "parent_skill": "Model deployment & serving",
+            "related_skills": [
+                "Containerization with Docker",
+                "Model serving frameworks",
+                "ML model CI\/CD pipelines (MLOps)"
+            ],
+            "keywords": [
+                "pods",
+                "deployments",
+                "helm",
+                "operators",
+                "autoscaling"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Docker",
+            "aliases": [
+                "containerization",
+                "docker containers"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Packaging models and inference code into Docker containers for consistent deployment across environments.",
+            "parent_skill": "Model deployment & serving",
+            "related_skills": [
+                "Kubernetes",
+                "Model serving frameworks",
+                "ML model CI\/CD pipelines (MLOps)"
+            ],
+            "keywords": [
+                "images",
+                "containers",
+                "Dockerfile",
+                "container image",
+                "registry"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ML model CI\/CD pipelines (MLOps)",
+            "aliases": [
+                "model CI\/CD",
+                "MLOps pipelines",
+                "continuous delivery for models"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and implementing automated build, test, and deployment pipelines for models and supporting artifacts (data, features, infra).",
+            "parent_skill": "Model deployment & serving",
+            "related_skills": [
+                "Model versioning & model registry",
+                "Containerization with Docker",
+                "Kubernetes",
+                "Model monitoring & observability"
+            ],
+            "keywords": [
+                "CI\/CD",
+                "automation",
+                "pipeline",
+                "gitops",
+                "model testing",
+                "deployment automation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Model monitoring & observability",
+            "aliases": [
+                "model monitoring",
+                "model observability",
+                "production model monitoring"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing telemetry, metrics, logging and alerting to track model performance, data drift, latency, and business impact in production.",
+            "parent_skill": "Model deployment & serving",
+            "related_skills": [
+                "Model serving frameworks",
+                "Model inference optimization (quantization, batching, pruning)",
+                "Feature & data validation for serving"
+            ],
+            "keywords": [
+                "data drift",
+                "concept drift",
+                "latency",
+                "throughput",
+                "prometheus",
+                "observability"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Model versioning & model registry",
+            "aliases": [
+                "model registry",
+                "model versioning",
+                "MLflow model registry",
+                "DVC model management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing model artifacts, versions, metadata and lineage using registries to enable reproducible deployments and rollbacks.",
+            "parent_skill": "Model deployment & serving",
+            "related_skills": [
+                "ML model CI\/CD pipelines (MLOps)",
+                "Model serving frameworks",
+                "Model monitoring & observability"
+            ],
+            "keywords": [
+                "artifact store",
+                "lineage",
+                "versioning",
+                "registry",
+                "reproducibility"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Model inference optimization (quantization, batching, pruning)",
+            "aliases": [
+                "inference optimization",
+                "model quantization",
+                "batching",
+                "model pruning"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Techniques to reduce latency, memory use and compute cost of model inference including quantization, batching, pruning and use of optimized runtimes.",
+            "parent_skill": "Model deployment & serving",
+            "related_skills": [
+                "Model serving frameworks",
+                "Edge and on-device model deployment",
+                "Model monitoring & observability"
+            ],
+            "keywords": [
+                "quantization",
+                "pruning",
+                "batch inference",
+                "TensorRT",
+                "ONNX runtime",
+                "latency optimization"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Feature & data validation for serving",
+            "aliases": [
+                "data validation",
+                "feature validation",
+                "runtime data checks"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing runtime checks and validation for input features and data pipelines to prevent invalid inputs and detect upstream issues affecting served models.",
+            "parent_skill": "Model deployment & serving",
+            "related_skills": [
+                "Model monitoring & observability",
+                "Model versioning & model registry"
+            ],
+            "keywords": [
+                "schema validation",
+                "data quality",
+                "feature checks",
+                "expectations",
+                "great_expectations"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Model API design (REST\/gRPC)",
+            "aliases": [
+                "model API",
+                "RESTful model endpoints",
+                "gRPC inference endpoints"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing robust, versioned and performant APIs (REST, gRPC) for exposing model inference to clients with considerations for batching, authentication and throttling.",
+            "parent_skill": "Model deployment & serving",
+            "related_skills": [
+                "Model serving frameworks",
+                "Containerization with Docker",
+                "ML model CI\/CD pipelines (MLOps)"
+            ],
+            "keywords": [
+                "REST",
+                "gRPC",
+                "openapi",
+                "endpoint",
+                "rate limiting",
+                "authentication"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Edge and on-device model deployment",
+            "aliases": [
+                "on-device inference",
+                "edge deployment",
+                "mobile model deployment"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Deploying and optimizing models to run on edge devices or mobile platforms, including model compression, hardware acceleration and cross-compilation.",
+            "parent_skill": "Model deployment & serving",
+            "related_skills": [
+                "Model inference optimization (quantization, batching, pruning)",
+                "Model serving frameworks"
+            ],
+            "keywords": [
+                "edge inference",
+                "mobile",
+                "ARM",
+                "TensorFlow Lite",
+                "Core ML",
+                "ONNX"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

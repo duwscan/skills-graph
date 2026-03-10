@@ -1,0 +1,309 @@
+{
+    "domain": "IT",
+    "category": "Enterprise Applications & Platforms",
+    "subcategory": "IT service management platforms",
+    "skills": [
+        {
+            "canonical_name": "ServiceNow platform administration",
+            "aliases": [
+                "ServiceNow administration",
+                "ServiceNow admin",
+                "SNOW platform administration",
+                "ServiceNow instance administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configure, maintain and administer ServiceNow instances including user roles, tables, forms, workflows, patching and upgrades.",
+            "parent_skill": "IT service management platforms",
+            "related_skills": [
+                "ITSM automation & orchestration",
+                "CMDB modeling and configuration",
+                "Service Catalog design and implementation",
+                "ITSM integrations and APIs"
+            ],
+            "keywords": [
+                "ServiceNow",
+                "instance admin",
+                "roles and ACL",
+                "update sets",
+                "workflow"
+            ],
+            "common_roles": [
+                "ITSM platform administrator",
+                "Platform engineer",
+                "IT operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Jira Service Management administration",
+            "aliases": [
+                "Jira Service Desk administration",
+                "JSM administration",
+                "Jira ITSM admin"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Administer Jira Service Management projects and queues, configure request types, SLAs, automation rules, workflows and integrations.",
+            "parent_skill": "IT service management platforms",
+            "related_skills": [
+                "ITSM integrations and APIs",
+                "Service Catalog design and implementation",
+                "ITSM reporting and analytics"
+            ],
+            "keywords": [
+                "JSM",
+                "Jira Service Desk",
+                "SLA configuration",
+                "automation rules",
+                "request types"
+            ],
+            "common_roles": [
+                "ITSM platform administrator",
+                "Service desk operations",
+                "Product operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Incident management (ITSM)",
+            "aliases": [
+                "ITSM incident management",
+                "incident response process",
+                "service incident handling"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and executing processes for logging, triage, escalation and resolution of service incidents to restore normal service operation.",
+            "parent_skill": "IT service management platforms",
+            "related_skills": [
+                "Problem management (ITSM)",
+                "ITSM reporting and analytics",
+                "Service desk operations"
+            ],
+            "keywords": [
+                "incident lifecycle",
+                "triage",
+                "escalation",
+                "mean time to restore",
+                "incident SLA"
+            ],
+            "common_roles": [
+                "Service desk operations",
+                "IT operations",
+                "Incident manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Change management (ITSM)",
+            "aliases": [
+                "ITSM change management",
+                "change control process",
+                "RFC management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implementing controlled change processes including request for change (RFC) handling, CAB coordination, risk assessment and deployment planning within ITSM platforms.",
+            "parent_skill": "IT service management platforms",
+            "related_skills": [
+                "Release management (ITSM)",
+                "CMDB modeling and configuration",
+                "ITSM automation & orchestration"
+            ],
+            "keywords": [
+                "CAB",
+                "RFC",
+                "change advisory board",
+                "risk assessment",
+                "change calendar"
+            ],
+            "common_roles": [
+                "Change manager",
+                "IT operations",
+                "Release coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "CMDB modeling and configuration",
+            "aliases": [
+                "Configuration Management Database modeling",
+                "CMDB design",
+                "CMDB configuration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and maintaining the CMDB schema, CI relationships and data governance to ensure accurate configuration item records and dependency mapping.",
+            "parent_skill": "IT service management platforms",
+            "related_skills": [
+                "ServiceNow platform administration",
+                "ITSM integrations and APIs",
+                "Change management (ITSM)"
+            ],
+            "keywords": [
+                "CMDB",
+                "configuration items",
+                "CI relationships",
+                "discovery",
+                "data reconciliation"
+            ],
+            "common_roles": [
+                "CMDB administrator",
+                "IT operations",
+                "Configuration manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service Catalog design and implementation",
+            "aliases": [
+                "IT service catalog design",
+                "catalog implementation",
+                "service catalog configuration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating and configuring service catalog items, request fulfillment workflows, approvals and user-facing request forms to enable self-service delivery.",
+            "parent_skill": "IT service management platforms",
+            "related_skills": [
+                "ServiceNow platform administration",
+                "ITSM automation & orchestration",
+                "SLA and OLA configuration"
+            ],
+            "keywords": [
+                "service catalog",
+                "service requests",
+                "self-service",
+                "request fulfillment",
+                "request forms"
+            ],
+            "common_roles": [
+                "Service management",
+                "Service desk operations",
+                "Service catalog owner"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ITSM automation & orchestration",
+            "aliases": [
+                "ITSM workflow automation",
+                "orchestration in ITSM",
+                "ITSM process automation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing automated workflows and orchestration runbooks to automate incident resolution, change tasks, approvals and routine operational tasks in ITSM platforms.",
+            "parent_skill": "IT service management platforms",
+            "related_skills": [
+                "ServiceNow platform administration",
+                "Jira Service Management administration",
+                "ITSM integrations and APIs"
+            ],
+            "keywords": [
+                "workflow automation",
+                "orchestration",
+                "flow designer",
+                "automation rules",
+                "runbook"
+            ],
+            "common_roles": [
+                "Automation engineer",
+                "IT operations",
+                "Platform developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ITSM integrations and APIs",
+            "aliases": [
+                "ITSM API integration",
+                "ITSM connector development",
+                "integration between ITSM and monitoring"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Building and maintaining integrations between ITSM platforms and external systems (monitoring, identity, CMDB, CI\/CD) using REST\/SOAP APIs, webhooks and middleware.",
+            "parent_skill": "IT service management platforms",
+            "related_skills": [
+                "ServiceNow platform administration",
+                "Jira Service Management administration",
+                "CMDB modeling and configuration"
+            ],
+            "keywords": [
+                "API",
+                "REST",
+                "webhooks",
+                "connectors",
+                "integration"
+            ],
+            "common_roles": [
+                "Integration engineer",
+                "Platform engineer",
+                "DevOps"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ITSM reporting and analytics",
+            "aliases": [
+                "ITSM metrics and reporting",
+                "SLA reporting",
+                "service performance analytics"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Defining and producing ITSM KPIs, dashboards and reports (incidents, changes, SLAs, MTTR) to measure service performance and drive continuous improvement.",
+            "parent_skill": "IT service management platforms",
+            "related_skills": [
+                "Incident management (ITSM)",
+                "Change management (ITSM)",
+                "Service Catalog design and implementation"
+            ],
+            "keywords": [
+                "KPI",
+                "dashboard",
+                "SLA",
+                "MTTR",
+                "metrics"
+            ],
+            "common_roles": [
+                "Service analytics",
+                "IT operations",
+                "Service manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Knowledge management (ITSM)",
+            "aliases": [
+                "IT knowledge base management",
+                "KB management",
+                "knowledge article lifecycle"
+            ],
+            "skill_type": "process_skill",
+            "description": "Establishing and operating knowledge management processes within ITSM: authoring, publishing, curating and linking knowledge articles to incidents and requests.",
+            "parent_skill": "IT service management platforms",
+            "related_skills": [
+                "Incident management (ITSM)",
+                "Service Catalog design and implementation",
+                "ITSM reporting and analytics"
+            ],
+            "keywords": [
+                "knowledge base",
+                "KB articles",
+                "knowledge lifecycle",
+                "self-help",
+                "article linking"
+            ],
+            "common_roles": [
+                "Knowledge manager",
+                "Service desk operations",
+                "Service management"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

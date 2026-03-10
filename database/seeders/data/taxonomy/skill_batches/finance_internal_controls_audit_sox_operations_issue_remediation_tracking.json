@@ -1,0 +1,254 @@
+{
+    "domain": "Finance",
+    "category": "Internal Controls, Audit & SOX Operations",
+    "subcategory": "Issue remediation tracking",
+    "skills": [
+        {
+            "canonical_name": "Control deficiency remediation tracking",
+            "aliases": [
+                "remediation tracking",
+                "deficiency remediation tracking",
+                "issue remediation tracking"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintain and monitor the lifecycle of identified control deficiencies from identification through remediation and closure, including status updates, deadlines, and owners.",
+            "parent_skill": "Issue remediation tracking",
+            "related_skills": [
+                "Remediation status reporting and dashboarding",
+                "Remediation project planning and coordination",
+                "Remediation evidence collection and documentation"
+            ],
+            "keywords": [
+                "deficiency lifecycle",
+                "remediation owner",
+                "closure tracking",
+                "issue log"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Remediation project planning and coordination",
+            "aliases": [
+                "remediation project management",
+                "remediation coordination",
+                "remediation planning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Plan, sequence and coordinate remediation activities across teams, set milestones, allocate resources and manage timelines to achieve timely closure of control issues.",
+            "parent_skill": "Issue remediation tracking",
+            "related_skills": [
+                "Control deficiency remediation tracking",
+                "Remediation workflow and process design",
+                "Stakeholder engagement for remediation"
+            ],
+            "keywords": [
+                "milestones",
+                "resource allocation",
+                "timelines",
+                "action plan"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Root cause analysis for control failures",
+            "aliases": [
+                "RCA for control deficiencies",
+                "root cause analysis (RCA)"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Apply structured analysis techniques to identify underlying causes of control failures and quantify contributing factors to prevent recurrence.",
+            "parent_skill": "Issue remediation tracking",
+            "related_skills": [
+                "Remediation prioritization (risk-based)",
+                "Remediation workflow and process design",
+                "Remediation testing and validation"
+            ],
+            "keywords": [
+                "5 whys",
+                "fishbone",
+                "causal analysis",
+                "deficiency cause"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Remediation testing and validation",
+            "aliases": [
+                "remediation verification",
+                "retesting remediated controls",
+                "validation of remediation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and execute tests to confirm that remediation actions effectively addressed control deficiencies and that controls operate as intended post-remediation.",
+            "parent_skill": "Issue remediation tracking",
+            "related_skills": [
+                "Control deficiency remediation tracking",
+                "Remediation evidence collection and documentation",
+                "Root cause analysis for control failures"
+            ],
+            "keywords": [
+                "retesting",
+                "validation testing",
+                "test scripts",
+                "control effectiveness"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Remediation prioritization (risk-based)",
+            "aliases": [
+                "risk-based remediation prioritization",
+                "priority setting for remediation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Assess and prioritize remediation activities using risk criteria (impact, likelihood, compensating controls) to focus resources on highest-risk issues first.",
+            "parent_skill": "Issue remediation tracking",
+            "related_skills": [
+                "Root cause analysis for control failures",
+                "Control deficiency remediation tracking",
+                "Remediation project planning and coordination"
+            ],
+            "keywords": [
+                "risk assessment",
+                "impact-likelihood",
+                "prioritization matrix",
+                "residual risk"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Remediation evidence collection and documentation",
+            "aliases": [
+                "remediation evidence management",
+                "evidence collection for remediation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Gather, organize and retain auditable evidence that remediation steps were completed and controls are operating effectively, ensuring compliance with audit and SOX requirements.",
+            "parent_skill": "Issue remediation tracking",
+            "related_skills": [
+                "Remediation testing and validation",
+                "Control deficiency remediation tracking",
+                "Remediation status reporting and dashboarding"
+            ],
+            "keywords": [
+                "audit evidence",
+                "supporting documentation",
+                "workpapers",
+                "evidence retention"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Remediation status reporting and dashboarding",
+            "aliases": [
+                "remediation reporting",
+                "remediation dashboards",
+                "issue status reporting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Create and maintain clear, timely reports and dashboards that communicate remediation status, aging, owners, and risk exposure to stakeholders and audit committees.",
+            "parent_skill": "Issue remediation tracking",
+            "related_skills": [
+                "Control deficiency remediation tracking",
+                "Remediation tracking tools",
+                "Stakeholder engagement for remediation"
+            ],
+            "keywords": [
+                "dashboards",
+                "status metrics",
+                "aging report",
+                "KPI"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Remediation workflow and process design",
+            "aliases": [
+                "remediation process design",
+                "remediation workflow configuration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and optimize end-to-end remediation workflows, including handoffs, escalation paths, SLAs and control owner responsibilities to improve closure efficiency and compliance.",
+            "parent_skill": "Issue remediation tracking",
+            "related_skills": [
+                "Remediation project planning and coordination",
+                "Remediation tracking tools",
+                "Remediation prioritization (risk-based)"
+            ],
+            "keywords": [
+                "SLA",
+                "escalation",
+                "hand-off",
+                "process mapping"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Stakeholder engagement for remediation",
+            "aliases": [
+                "remediation stakeholder communication",
+                "remediation escalation and communication"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Communicate remediation plans, status, risks and requirements to control owners, business stakeholders and auditors, and manage escalations to ensure timely action.",
+            "parent_skill": "Issue remediation tracking",
+            "related_skills": [
+                "Remediation status reporting and dashboarding",
+                "Remediation project planning and coordination",
+                "Control deficiency remediation tracking"
+            ],
+            "keywords": [
+                "escalation",
+                "status updates",
+                "stakeholder alignment",
+                "communication plan"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Remediation tracking tools",
+            "aliases": [
+                "remediation tracking systems",
+                "issue tracking tools",
+                "ServiceNow",
+                "Jira",
+                "TeamMate"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use and configure issue\/remediation tracking platforms to log deficiencies, assign owners, manage workflows, track statuses and generate reports to support remediation activities.",
+            "parent_skill": "Issue remediation tracking",
+            "related_skills": [
+                "Remediation workflow and process design",
+                "Remediation status reporting and dashboarding",
+                "Control deficiency remediation tracking"
+            ],
+            "keywords": [
+                "issue tracker",
+                "ticketing",
+                "workflow engine",
+                "integration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

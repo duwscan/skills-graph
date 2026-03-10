@@ -1,0 +1,264 @@
+{
+    "domain": "Finance",
+    "category": "Internal Controls, Audit & SOX Operations",
+    "subcategory": "Policy compliance monitoring",
+    "skills": [
+        {
+            "canonical_name": "Policy compliance monitoring program design",
+            "aliases": [
+                "compliance monitoring program design",
+                "monitoring program design for policies"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing the structure, governance, metrics and processes for ongoing monitoring of policy adherence across finance operations.",
+            "parent_skill": "Policy compliance monitoring",
+            "related_skills": [
+                "Continuous control monitoring implementation",
+                "Key control KPI development and monitoring",
+                "GRC platform configuration and monitoring"
+            ],
+            "keywords": [
+                "program design",
+                "monitoring framework",
+                "governance",
+                "metrics",
+                "escalation paths"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Risk and control self-assessment (RCSA) facilitation",
+            "aliases": [
+                "RCSA facilitation",
+                "risk and control self assessment"
+            ],
+            "skill_type": "process_skill",
+            "description": "Leading and facilitating periodic RCSAs to identify, document and evaluate risks and the effectiveness of corresponding controls.",
+            "parent_skill": "Policy compliance monitoring",
+            "related_skills": [
+                "Control testing and sampling methodology",
+                "Key control KPI development and monitoring",
+                "Regulatory change impact assessment"
+            ],
+            "keywords": [
+                "RCSA",
+                "risk assessment",
+                "control effectiveness",
+                "workshops",
+                "assessments"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control testing and sampling methodology",
+            "aliases": [
+                "control testing methodology",
+                "statistical sampling for control testing",
+                "control sample design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and executing control tests, including sampling approaches, test procedures, and evidence collection for compliance validation.",
+            "parent_skill": "Policy compliance monitoring",
+            "related_skills": [
+                "Risk and control self-assessment (RCSA) facilitation",
+                "Continuous control monitoring implementation",
+                "Exception tracking and remediation management"
+            ],
+            "keywords": [
+                "control testing",
+                "sampling",
+                "test plan",
+                "evidence",
+                "test procedures"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Exception tracking and remediation management",
+            "aliases": [
+                "issue remediation management",
+                "compliance exception tracking",
+                "remediation tracking"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing identification, logging, prioritization, remediation tracking and closure of policy exceptions and control deficiencies.",
+            "parent_skill": "Policy compliance monitoring",
+            "related_skills": [
+                "Policy compliance monitoring program design",
+                "Control testing and sampling methodology",
+                "GRC platform configuration and monitoring"
+            ],
+            "keywords": [
+                "remediation",
+                "issue log",
+                "deficiency closure",
+                "root cause",
+                "action plans"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory change impact assessment",
+            "aliases": [
+                "regulatory change monitoring and assessment",
+                "impact assessment for regulatory change"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Monitoring regulatory developments and assessing their impact on internal policies, controls and compliance monitoring activities.",
+            "parent_skill": "Policy compliance monitoring",
+            "related_skills": [
+                "Policy compliance monitoring program design",
+                "Risk and control self-assessment (RCSA) facilitation",
+                "Compliance reporting and dashboarding"
+            ],
+            "keywords": [
+                "regulatory change",
+                "impact assessment",
+                "policy update",
+                "gap analysis",
+                "regulatory horizon scanning"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "GRC platform configuration and monitoring",
+            "aliases": [
+                "GRC platform administration",
+                "governance risk and compliance tool configuration",
+                "GRC monitoring configuration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and maintaining Governance, Risk & Compliance platforms to automate monitoring, issue tracking, workflows and reporting for policy compliance.",
+            "parent_skill": "Policy compliance monitoring",
+            "related_skills": [
+                "Exception tracking and remediation management",
+                "Continuous control monitoring implementation",
+                "Compliance reporting and dashboarding"
+            ],
+            "keywords": [
+                "GRC",
+                "platform configuration",
+                "workflow automation",
+                "tool administration",
+                "integrations"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Continuous control monitoring implementation",
+            "aliases": [
+                "continuous monitoring implementation",
+                "CCM implementation",
+                "continuous control monitoring"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implementing automated, ongoing control checks (real-time or scheduled) to detect control deviations and reduce manual testing frequency.",
+            "parent_skill": "Policy compliance monitoring",
+            "related_skills": [
+                "GRC platform configuration and monitoring",
+                "Control testing and sampling methodology",
+                "Compliance data analysis and visualization"
+            ],
+            "keywords": [
+                "CCM",
+                "automation",
+                "continuous monitoring",
+                "real-time checks",
+                "control metrics"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Key control KPI development and monitoring",
+            "aliases": [
+                "control KPI development",
+                "key control performance indicator monitoring",
+                "KPI for controls"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Defining, measuring and analyzing key performance indicators for critical controls to evaluate ongoing control effectiveness and trends.",
+            "parent_skill": "Policy compliance monitoring",
+            "related_skills": [
+                "Policy compliance monitoring program design",
+                "Compliance reporting and dashboarding",
+                "Compliance data analysis and visualization"
+            ],
+            "keywords": [
+                "KPI",
+                "control metrics",
+                "trend analysis",
+                "performance indicators",
+                "thresholds"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Compliance data analysis and visualization",
+            "aliases": [
+                "compliance analytics",
+                "data analysis for compliance monitoring",
+                "visualization for compliance monitoring"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing compliance-related datasets, deriving insights, and building visualizations to support monitoring, investigations and reporting.",
+            "parent_skill": "Policy compliance monitoring",
+            "related_skills": [
+                "Key control KPI development and monitoring",
+                "Continuous control monitoring implementation",
+                "Compliance reporting and dashboarding"
+            ],
+            "keywords": [
+                "data analysis",
+                "visualization",
+                "dashboards",
+                "querying",
+                "anomaly detection"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Compliance reporting and dashboarding",
+            "aliases": [
+                "compliance dashboards",
+                "monitoring reports for compliance",
+                "reporting for policy compliance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Preparing recurring and ad-hoc compliance reports and dashboards for stakeholders, including escalation summaries, trend analysis and remediation status.",
+            "parent_skill": "Policy compliance monitoring",
+            "related_skills": [
+                "Key control KPI development and monitoring",
+                "GRC platform configuration and monitoring",
+                "Regulatory change impact assessment"
+            ],
+            "keywords": [
+                "reporting",
+                "dashboards",
+                "stakeholder reporting",
+                "trend reports",
+                "management information"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

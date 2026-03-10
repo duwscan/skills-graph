@@ -1,0 +1,250 @@
+{
+    "domain": "F&B",
+    "category": "Food Safety, Hygiene & Regulatory Compliance",
+    "subcategory": "Personal hygiene & cross-contamination prevention",
+    "skills": [
+        {
+            "canonical_name": "Hand hygiene for food handlers",
+            "aliases": [
+                "handwashing",
+                "proper hand hygiene",
+                "hand washing for food service"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Correct procedures and timing for washing, drying, and sanitizing hands to prevent microbial contamination during food preparation and service.",
+            "parent_skill": "Personal hygiene & cross-contamination prevention",
+            "related_skills": [
+                "Use of personal protective equipment (PPE) in food handling",
+                "Glove use and change protocols",
+                "Cross-contamination risk assessment"
+            ],
+            "keywords": [
+                "hand wash",
+                "soap and water",
+                "hand sanitizer",
+                "food handler hygiene",
+                "bare-hand contact"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Use of personal protective equipment (PPE) in food handling",
+            "aliases": [
+                "PPE use in food service",
+                "protective clothing for food handlers"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Correct selection, donning, doffing, and maintenance of PPE (aprons, gloves, masks, hairnets) to reduce contamination risk in food environments.",
+            "parent_skill": "Personal hygiene & cross-contamination prevention",
+            "related_skills": [
+                "Hand hygiene for food handlers",
+                "Glove use and change protocols",
+                "Hair and beard restraint compliance"
+            ],
+            "keywords": [
+                "gloves",
+                "hairnet",
+                "apron",
+                "mask",
+                "protective wear"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Glove use and change protocols",
+            "aliases": [
+                "glove hygiene",
+                "glove change procedures"
+            ],
+            "skill_type": "process_skill",
+            "description": "Knowing when and how to wear, change, and dispose of gloves to prevent cross-contamination between tasks, foods, and customers.",
+            "parent_skill": "Personal hygiene & cross-contamination prevention",
+            "related_skills": [
+                "Hand hygiene for food handlers",
+                "Allergen cross-contact prevention",
+                "Use of personal protective equipment (PPE) in food handling"
+            ],
+            "keywords": [
+                "single-use gloves",
+                "glove change",
+                "cross-contamination",
+                "glove disposal"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen cross-contact prevention",
+            "aliases": [
+                "preventing allergen cross-contact",
+                "allergen control practices"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Practices to prevent accidental transfer of allergens between foods, including segregation, dedicated utensils, labeling, and cleaning procedures aligned with regulatory expectations.",
+            "parent_skill": "Personal hygiene & cross-contamination prevention",
+            "related_skills": [
+                "Separation of raw and ready-to-eat foods",
+                "Cleaning and sanitizing personal workstations",
+                "Cross-contamination risk assessment"
+            ],
+            "keywords": [
+                "allergen control",
+                "cross-contact",
+                "gluten-free handling",
+                "nut-free procedures",
+                "labeling"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Separation of raw and ready-to-eat foods",
+            "aliases": [
+                "raw\/ready-to-eat segregation",
+                "preventing raw to ready-to-eat cross-contamination"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implementing physical and procedural separation (time, space, equipment) between raw ingredients and ready-to-eat products to prevent pathogen transfer.",
+            "parent_skill": "Personal hygiene & cross-contamination prevention",
+            "related_skills": [
+                "Cross-contamination risk assessment",
+                "Cleaning and sanitizing personal workstations",
+                "Storage and labeling for contamination control"
+            ],
+            "keywords": [
+                "raw vs ready-to-eat",
+                "segregation",
+                "separate equipment",
+                "contamination barrier"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cleaning and sanitizing personal workstations",
+            "aliases": [
+                "workstation cleaning",
+                "sanitizing prep areas"
+            ],
+            "skill_type": "process_skill",
+            "description": "Routine and task-based cleaning and sanitizing of counters, cutting boards, utensils and small equipment to remove food residues and reduce microbial load.",
+            "parent_skill": "Personal hygiene & cross-contamination prevention",
+            "related_skills": [
+                "Use of personal protective equipment (PPE) in food handling",
+                "Safe handling of cleaning chemicals",
+                "Separation of raw and ready-to-eat foods"
+            ],
+            "keywords": [
+                "sanitizer",
+                "cleaning schedule",
+                "food contact surfaces",
+                "cross-contamination control"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Hair and beard restraint compliance",
+            "aliases": [
+                "hair restraint",
+                "beard net use",
+                "hairnet and cap compliance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Proper use and enforcement of hairnets, caps, beard nets and related controls to prevent physical contamination from hair and personal grooming in food areas.",
+            "parent_skill": "Personal hygiene & cross-contamination prevention",
+            "related_skills": [
+                "Use of personal protective equipment (PPE) in food handling",
+                "Control of personal items in food areas"
+            ],
+            "keywords": [
+                "hairnet",
+                "beard net",
+                "grooming controls",
+                "physical contamination"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control of personal items in food areas",
+            "aliases": [
+                "personal item management",
+                "no personal items in prep areas"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Policies and practices to manage personal items (phones, bags, jewelry) to prevent contamination and ensure adherence to hygiene rules in food-handling zones.",
+            "parent_skill": "Personal hygiene & cross-contamination prevention",
+            "related_skills": [
+                "Hair and beard restraint compliance",
+                "Hand hygiene for food handlers"
+            ],
+            "keywords": [
+                "personal items",
+                "jewelry control",
+                "storage of personal belongings",
+                "mobile phone policy"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Respiratory etiquette and cough\/sneeze control",
+            "aliases": [
+                "cough etiquette",
+                "sneeze control in food service",
+                "respiratory hygiene"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Practical behaviors and controls (covering coughs\/sneezes, mask use when symptomatic) to minimize droplet contamination of food and surfaces.",
+            "parent_skill": "Personal hygiene & cross-contamination prevention",
+            "related_skills": [
+                "Use of personal protective equipment (PPE) in food handling",
+                "Hand hygiene for food handlers"
+            ],
+            "keywords": [
+                "cover cough",
+                "face mask",
+                "respiratory control",
+                "illness exclusion"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-contamination risk assessment during food handling",
+            "aliases": [
+                "contamination risk assessment",
+                "cross contamination hazard identification"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Identifying and evaluating activities, surfaces, and practices that create cross-contamination hazards and recommending controls to mitigate risk in food operations.",
+            "parent_skill": "Personal hygiene & cross-contamination prevention",
+            "related_skills": [
+                "Separation of raw and ready-to-eat foods",
+                "Allergen cross-contact prevention",
+                "Cleaning and sanitizing personal workstations"
+            ],
+            "keywords": [
+                "hazard identification",
+                "risk mitigation",
+                "food safety assessment",
+                "preventive controls"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

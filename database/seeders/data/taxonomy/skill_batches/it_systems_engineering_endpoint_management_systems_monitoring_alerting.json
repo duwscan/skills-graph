@@ -1,0 +1,302 @@
+{
+    "domain": "IT",
+    "category": "Systems Engineering & Endpoint Management",
+    "subcategory": "Systems monitoring & alerting",
+    "skills": [
+        {
+            "canonical_name": "Monitoring system architecture",
+            "aliases": [
+                "observability architecture",
+                "monitoring architecture design",
+                "monitoring platform design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing scalable, reliable monitoring and observability platforms including data flow (metrics, logs, traces), retention, multi-tenancy, and integration points with instrumentation and alerting.",
+            "parent_skill": "Systems monitoring & alerting",
+            "related_skills": [
+                "Metrics instrumentation & exposition",
+                "Log aggregation & centralized logging",
+                "Distributed tracing",
+                "Prometheus",
+                "Grafana dashboards"
+            ],
+            "keywords": [
+                "architecture",
+                "observability",
+                "scalability",
+                "multi-tenant monitoring",
+                "data pipeline"
+            ],
+            "common_roles": [
+                "Platform engineering",
+                "Infrastructure operations",
+                "Observability teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Alerting strategy & escalation",
+            "aliases": [
+                "alert strategy",
+                "escalation policy design",
+                "alert fatigue mitigation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Defining alerting policies, severity levels, suppression and deduplication rules, escalation paths and on-call rotation policies to reduce noise and ensure meaningful alerts reach the right responders.",
+            "parent_skill": "Systems monitoring & alerting",
+            "related_skills": [
+                "Alert routing & incident notification workflows",
+                "SLO & SLI definition and monitoring",
+                "Monitoring system architecture"
+            ],
+            "keywords": [
+                "escalation",
+                "severity",
+                "on-call",
+                "alerting policy",
+                "noise reduction"
+            ],
+            "common_roles": [
+                "Operational engineering",
+                "Site reliability practice",
+                "IT operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Metrics instrumentation & exposition",
+            "aliases": [
+                "application metrics instrumentation",
+                "exporter configuration",
+                "metrics collection"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Implementing and exposing application and system metrics (counters, gauges, histograms), choosing cardinality strategies, and integrating with collectors\/exporters for scraping or push-based ingestion.",
+            "parent_skill": "Systems monitoring & alerting",
+            "related_skills": [
+                "Prometheus",
+                "Monitoring system architecture",
+                "SLO & SLI definition and monitoring",
+                "OpenTelemetry"
+            ],
+            "keywords": [
+                "metrics",
+                "instrumentation",
+                "exporter",
+                "cardinality",
+                "observability"
+            ],
+            "common_roles": [
+                "Platform engineering",
+                "Application reliability teams",
+                "DevOps practices"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Log aggregation & centralized logging",
+            "aliases": [
+                "centralized logging",
+                "log collection",
+                "log pipeline"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Collecting, parsing, indexing, and storing logs from distributed systems; designing retention, structured logging practices, and alerting based on log patterns or anomalies.",
+            "parent_skill": "Systems monitoring & alerting",
+            "related_skills": [
+                "Distributed tracing",
+                "Monitoring system architecture",
+                "Alerting strategy & escalation"
+            ],
+            "keywords": [
+                "logs",
+                "ELK",
+                "indexing",
+                "parsing",
+                "log retention"
+            ],
+            "common_roles": [
+                "Infrastructure operations",
+                "Observability teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Distributed tracing",
+            "aliases": [
+                "request tracing",
+                "end-to-end tracing",
+                "trace instrumentation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Instrumenting services to produce distributed traces, understanding trace context propagation, sampling strategies and using tracing data to diagnose latency and causal relationships across services.",
+            "parent_skill": "Systems monitoring & alerting",
+            "related_skills": [
+                "OpenTelemetry",
+                "Log aggregation & centralized logging",
+                "Metrics instrumentation & exposition"
+            ],
+            "keywords": [
+                "tracing",
+                "latency",
+                "trace context",
+                "sampling",
+                "causality"
+            ],
+            "common_roles": [
+                "Application reliability teams",
+                "Platform engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Prometheus",
+            "aliases": [
+                "Prometheus monitoring",
+                "Prometheus server"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Deploying and operating Prometheus-based metric collection: scrape configuration, service discovery, exporters, remote write, federation, and tuning for scale and reliability.",
+            "parent_skill": "Systems monitoring & alerting",
+            "related_skills": [
+                "Metrics instrumentation & exposition",
+                "Grafana dashboards",
+                "Monitoring system architecture"
+            ],
+            "keywords": [
+                "prometheus",
+                "scrape",
+                "exporter",
+                "remote_write",
+                "federation"
+            ],
+            "common_roles": [
+                "Platform engineering",
+                "Monitoring operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Grafana dashboards",
+            "aliases": [
+                "Grafana",
+                "dashboarding",
+                "visualization dashboards"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Creating and maintaining dashboards, panels and visualizations to surface key metrics and alerts; managing templating, variables, annotations and data source integrations for observability.",
+            "parent_skill": "Systems monitoring & alerting",
+            "related_skills": [
+                "Prometheus",
+                "Monitoring system architecture",
+                "SLO & SLI definition and monitoring"
+            ],
+            "keywords": [
+                "dashboards",
+                "visualization",
+                "panels",
+                "templating",
+                "annotations"
+            ],
+            "common_roles": [
+                "Observability teams",
+                "Platform engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Synthetic monitoring & uptime checks",
+            "aliases": [
+                "synthetic testing",
+                "uptime monitoring",
+                "synthetic transactions"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and running synthetic tests and probes (HTTP\/ping\/transactional checks) to monitor availability and functional correctness from multiple locations and alert on degradation.",
+            "parent_skill": "Systems monitoring & alerting",
+            "related_skills": [
+                "Alerting strategy & escalation",
+                "Monitoring system architecture",
+                "Grafana dashboards"
+            ],
+            "keywords": [
+                "synthetic",
+                "uptime",
+                "heartbeat",
+                "availability",
+                "external monitoring"
+            ],
+            "common_roles": [
+                "Platform engineering",
+                "Availability engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SLO & SLI definition and monitoring",
+            "aliases": [
+                "service level objectives",
+                "service level indicators",
+                "SLO\/SLI definition"
+            ],
+            "skill_type": "process_skill",
+            "description": "Defining measurable SLIs and target SLOs, mapping them to business requirements, instrumenting SLI measurement and creating alerting and reporting based on SLO burn rates.",
+            "parent_skill": "Systems monitoring & alerting",
+            "related_skills": [
+                "Metrics instrumentation & exposition",
+                "Alerting strategy & escalation",
+                "Grafana dashboards"
+            ],
+            "keywords": [
+                "SLO",
+                "SLI",
+                "service level",
+                "burn rate",
+                "error budget"
+            ],
+            "common_roles": [
+                "Reliability engineering",
+                "Platform engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Alert routing & incident notification workflows",
+            "aliases": [
+                "alert routing",
+                "incident notification",
+                "notification workflows"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Configuring and operating alert routing, notification channels and incident workflows to ensure timely delivery of alerts, orchestration of responders, and integration with runbooks and incident management tools.",
+            "parent_skill": "Systems monitoring & alerting",
+            "related_skills": [
+                "Alerting strategy & escalation",
+                "Monitoring system architecture",
+                "SLO & SLI definition and monitoring"
+            ],
+            "keywords": [
+                "notification",
+                "routing",
+                "incident workflow",
+                "runbook",
+                "on-call"
+            ],
+            "common_roles": [
+                "Operational engineering",
+                "Incident response teams"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

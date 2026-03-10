@@ -1,0 +1,265 @@
+{
+    "domain": "IT",
+    "category": "Analytics, BI & Reporting",
+    "subcategory": "Reporting automation",
+    "skills": [
+        {
+            "canonical_name": "Report scheduling and distribution",
+            "aliases": [
+                "Scheduled report delivery",
+                "Automated report distribution",
+                "Report subscription management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Configuring recurring report generation and automated delivery channels (email, portal, FTP, S3), managing recipients, formats, retention and delivery rules.",
+            "parent_skill": "Reporting automation",
+            "related_skills": [
+                "Automated report export and format conversion",
+                "Automated dataset refresh and incremental refresh",
+                "BI platform API integration for automation"
+            ],
+            "keywords": [
+                "scheduling",
+                "delivery",
+                "subscriptions",
+                "email",
+                "FTP",
+                "S3"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Report parameterization and dynamic filters",
+            "aliases": [
+                "Parameterized reports",
+                "Dynamic report filters",
+                "Report runtime parameters"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing runtime parameters and dynamic filters that enable user-driven slicing, conditional content and runtime configuration of automated reports.",
+            "parent_skill": "Reporting automation",
+            "related_skills": [
+                "Report templating and reusable components",
+                "Report automation scripting"
+            ],
+            "keywords": [
+                "parameters",
+                "filters",
+                "runtime",
+                "dynamic"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated ETL pipelines for reporting",
+            "aliases": [
+                "Reporting ETL automation",
+                "Data pipeline automation for reports",
+                "Scheduled ETL for reports"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, scheduling and operating automated extract-transform-load pipelines that prepare, aggregate and publish data specifically to support reporting and dashboards.",
+            "parent_skill": "Reporting automation",
+            "related_skills": [
+                "Automated dataset refresh and incremental refresh",
+                "Report CI\/CD and deployment automation",
+                "Automated report testing and validation"
+            ],
+            "keywords": [
+                "ETL",
+                "data pipelines",
+                "scheduling",
+                "aggregation",
+                "data prep"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Report automation scripting",
+            "aliases": [
+                "Python report automation",
+                "PowerShell report automation",
+                "SQL script automation for reports"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Writing scripts to orchestrate report generation, exports, scheduling, orchestration and integration tasks using languages and scripting tools (e.g., Python, PowerShell, SQL).",
+            "parent_skill": "Reporting automation",
+            "related_skills": [
+                "BI platform API integration for automation",
+                "Report scheduling and distribution",
+                "Automated report export and format conversion"
+            ],
+            "keywords": [
+                "scripting",
+                "python",
+                "powershell",
+                "sql",
+                "orchestration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "BI platform API integration for automation",
+            "aliases": [
+                "BI REST API automation",
+                "Report API integration",
+                "Programmatic BI automation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using BI platform APIs and SDKs to programmatically automate dataset refreshes, exports, permission changes, report lifecycle operations and metadata management.",
+            "parent_skill": "Reporting automation",
+            "related_skills": [
+                "Automated dataset refresh and incremental refresh",
+                "Report automation scripting",
+                "Report scheduling and distribution"
+            ],
+            "keywords": [
+                "API",
+                "REST",
+                "SDK",
+                "automation",
+                "BI platforms"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated dataset refresh and incremental refresh",
+            "aliases": [
+                "Dataset refresh automation",
+                "Incremental refresh configuration",
+                "Scheduled data refresh"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Configuring and managing automated full and incremental dataset refresh processes, refresh windows, partitioning strategies, and failure\/retry handling to keep reports up-to-date.",
+            "parent_skill": "Reporting automation",
+            "related_skills": [
+                "Automated ETL pipelines for reporting",
+                "BI platform API integration for automation",
+                "Report CI\/CD and deployment automation"
+            ],
+            "keywords": [
+                "refresh",
+                "incremental",
+                "partitions",
+                "scheduling",
+                "retry"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated report testing and validation",
+            "aliases": [
+                "Report QA automation",
+                "Automated report validation",
+                "Regression testing for reports"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating automated tests and validation checks (data reconciliation, schema checks, visual regression) to verify accuracy and stability of reports and detect regressions after changes.",
+            "parent_skill": "Reporting automation",
+            "related_skills": [
+                "Report CI\/CD and deployment automation",
+                "Automated ETL pipelines for reporting",
+                "Report templating and reusable components"
+            ],
+            "keywords": [
+                "testing",
+                "validation",
+                "regression",
+                "data reconciliation",
+                "QA"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Report templating and reusable components",
+            "aliases": [
+                "Report templates",
+                "Reusable report components",
+                "Parameterized report templates"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and maintaining reusable templates, layout components and modular report elements to standardize automated report production and speed development.",
+            "parent_skill": "Reporting automation",
+            "related_skills": [
+                "Report parameterization and dynamic filters",
+                "Automated report testing and validation",
+                "Report CI\/CD and deployment automation"
+            ],
+            "keywords": [
+                "templates",
+                "components",
+                "reusability",
+                "standardization"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Report CI\/CD and deployment automation",
+            "aliases": [
+                "Report deployment pipelines",
+                "CI\/CD for reports",
+                "Automated report releases"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing continuous integration and deployment workflows for report artifacts, including automated builds, tests, versioning, environment promotion and rollback procedures.",
+            "parent_skill": "Reporting automation",
+            "related_skills": [
+                "Automated report testing and validation",
+                "Automated ETL pipelines for reporting",
+                "Automated dataset refresh and incremental refresh"
+            ],
+            "keywords": [
+                "CI\/CD",
+                "deployment",
+                "pipelines",
+                "versioning",
+                "automation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated report export and format conversion",
+            "aliases": [
+                "Automated export to PDF\/Excel\/CSV",
+                "Report file generation",
+                "Format conversion for automated reports"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Automating export of reports into target file formats (PDF, Excel, CSV), handling layout, pagination, styling, and preparing files for delivery or downstream processing.",
+            "parent_skill": "Reporting automation",
+            "related_skills": [
+                "Report scheduling and distribution",
+                "Report automation scripting",
+                "BI platform API integration for automation"
+            ],
+            "keywords": [
+                "export",
+                "PDF",
+                "Excel",
+                "CSV",
+                "formatting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

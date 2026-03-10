@@ -1,0 +1,268 @@
+{
+    "domain": "IT",
+    "category": "Cloud Platforms & Infrastructure",
+    "subcategory": "Container platforms in cloud",
+    "skills": [
+        {
+            "canonical_name": "Kubernetes cluster administration",
+            "aliases": [
+                "K8s administration",
+                "Kubernetes operations",
+                "cluster administration for Kubernetes"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operational tasks involved in deploying, scaling, upgrading, and maintaining Kubernetes clusters, including control plane and node lifecycle management.",
+            "parent_skill": "Container platforms in cloud",
+            "related_skills": [
+                "Managed Kubernetes operations",
+                "Helm chart development",
+                "Kubernetes networking (CNI) configuration",
+                "Kubernetes security and RBAC"
+            ],
+            "keywords": [
+                "k8s",
+                "cluster lifecycle",
+                "kubectl",
+                "control plane",
+                "node management"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Kubernetes networking (CNI) configuration",
+            "aliases": [
+                "Kubernetes CNI configuration",
+                "K8s network policies",
+                "CNI plugin configuration"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and configuring Kubernetes networking components, including CNI plugins, network policies, service networking, and load balancing within clusters.",
+            "parent_skill": "Container platforms in cloud",
+            "related_skills": [
+                "Service mesh implementation",
+                "Kubernetes cluster administration",
+                "Kubernetes security and RBAC"
+            ],
+            "keywords": [
+                "CNI",
+                "network policy",
+                "service mesh",
+                "ingress",
+                "load balancer"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Helm chart development",
+            "aliases": [
+                "Helm chart authoring",
+                "Helm packaging",
+                "Helm charts"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Authoring, templating, versioning and managing Helm charts to package Kubernetes applications and manage releases across environments.",
+            "parent_skill": "Container platforms in cloud",
+            "related_skills": [
+                "CI\/CD pipelines for containerized applications",
+                "Kubernetes cluster administration",
+                "Container image management and registries"
+            ],
+            "keywords": [
+                "Helm",
+                "charts",
+                "templates",
+                "values.yaml",
+                "releases"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Kubernetes security and RBAC",
+            "aliases": [
+                "K8s security hardening",
+                "Kubernetes RBAC",
+                "Pod security and admission controls"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Implementing access controls, role-based access control (RBAC), admission controls and security hardening for Kubernetes clusters and workloads.",
+            "parent_skill": "Container platforms in cloud",
+            "related_skills": [
+                "Container image management and registries",
+                "Kubernetes networking (CNI) configuration",
+                "Container runtime configuration"
+            ],
+            "keywords": [
+                "RBAC",
+                "security policies",
+                "admission controller",
+                "least privilege",
+                "pod security"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Container image management and registries",
+            "aliases": [
+                "Container registry management",
+                "OCI image management",
+                "Docker image management"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Creating, versioning, storing, and securing container images in registries, including tagging strategy, immutability, and registry lifecycle management.",
+            "parent_skill": "Container platforms in cloud",
+            "related_skills": [
+                "CI\/CD pipelines for containerized applications",
+                "Kubernetes security and RBAC",
+                "Container image scanning"
+            ],
+            "keywords": [
+                "container image",
+                "registry",
+                "OCI",
+                "tagging",
+                "image pull"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "CI\/CD pipelines for containerized applications",
+            "aliases": [
+                "Container CI\/CD",
+                "Kubernetes continuous delivery pipelines",
+                "GitOps for containers"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and operating continuous integration and continuous delivery pipelines tailored for building, testing, and deploying containerized workloads to cloud container platforms.",
+            "parent_skill": "Container platforms in cloud",
+            "related_skills": [
+                "Helm chart development",
+                "Container image management and registries",
+                "Managed Kubernetes operations"
+            ],
+            "keywords": [
+                "CI\/CD",
+                "pipeline",
+                "GitOps",
+                "build automation",
+                "deployments"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service mesh implementation",
+            "aliases": [
+                "Service mesh deployment",
+                "Istio implementation",
+                "Linkerd implementation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Deploying and configuring service mesh solutions to provide service-to-service traffic management, observability, security (mTLS) and resiliency in containerized environments.",
+            "parent_skill": "Container platforms in cloud",
+            "related_skills": [
+                "Kubernetes networking (CNI) configuration",
+                "Container observability and monitoring",
+                "CI\/CD pipelines for containerized applications"
+            ],
+            "keywords": [
+                "service mesh",
+                "mTLS",
+                "traffic routing",
+                "circuit breaking",
+                "sidecar"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Container observability and monitoring",
+            "aliases": [
+                "Kubernetes monitoring",
+                "container metrics and logging",
+                "observability for containers"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing monitoring, logging, and tracing for container platforms to collect metrics, logs and traces for performance, troubleshooting and SLO measurement.",
+            "parent_skill": "Container platforms in cloud",
+            "related_skills": [
+                "Service mesh implementation",
+                "CI\/CD pipelines for containerized applications",
+                "Container runtime configuration"
+            ],
+            "keywords": [
+                "Prometheus",
+                "Grafana",
+                "logging",
+                "tracing",
+                "SLO"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Container runtime configuration",
+            "aliases": [
+                "containerd configuration",
+                "CRI-O configuration",
+                "runc configuration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and managing container runtimes and CRI implementations (containerd, CRI-O, runc), including runtime settings, security primitives and integration with orchestration layers.",
+            "parent_skill": "Container platforms in cloud",
+            "related_skills": [
+                "Kubernetes security and RBAC",
+                "Kubernetes cluster administration",
+                "Container observability and monitoring"
+            ],
+            "keywords": [
+                "container runtime",
+                "containerd",
+                "CRI-O",
+                "runc",
+                "runtimeconfig"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Managed Kubernetes operations",
+            "aliases": [
+                "Managed K8s operations",
+                "cloud managed Kubernetes operations",
+                "managed cluster administration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operating and integrating managed Kubernetes services in cloud providers, including cluster provisioning, upgrades, networking integration, and cost\/resource quota management for managed clusters.",
+            "parent_skill": "Container platforms in cloud",
+            "related_skills": [
+                "Kubernetes cluster administration",
+                "CI\/CD pipelines for containerized applications",
+                "Container image management and registries"
+            ],
+            "keywords": [
+                "managed k8s",
+                "cluster provisioning",
+                "autoscaling",
+                "resource quotas",
+                "cost optimization"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

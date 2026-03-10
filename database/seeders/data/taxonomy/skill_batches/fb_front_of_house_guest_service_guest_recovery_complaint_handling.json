@@ -1,0 +1,298 @@
+{
+    "domain": "F&B",
+    "category": "Front-of-House Guest Service",
+    "subcategory": "Guest recovery & complaint handling",
+    "skills": [
+        {
+            "canonical_name": "De-escalation & conflict resolution",
+            "aliases": [
+                "conflict resolution",
+                "de-escalation techniques",
+                "diffusing upset guests"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Verbal and non-verbal techniques to calm agitated guests, resolve conflict safely, and restore a constructive interaction.",
+            "parent_skill": "Guest recovery & complaint handling",
+            "related_skills": [
+                "Active listening for complaints",
+                "Empathetic communication",
+                "Complaint escalation & priority management"
+            ],
+            "keywords": [
+                "calm techniques",
+                "diffuse",
+                "anger management",
+                "verbal de-escalation"
+            ],
+            "common_roles": [
+                "Restaurant Manager",
+                "Server\/Waitstaff",
+                "Host\/Hostess",
+                "Guest Relations Agent",
+                "Concierge"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Active listening for complaints",
+            "aliases": [
+                "reflective listening",
+                "complaint listening",
+                "listening and paraphrasing"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Techniques for attentive listening, paraphrasing, clarifying and summarizing a guest's concern to ensure accurate understanding.",
+            "parent_skill": "Guest recovery & complaint handling",
+            "related_skills": [
+                "De-escalation & conflict resolution",
+                "Empathetic communication",
+                "Complaint investigation"
+            ],
+            "keywords": [
+                "paraphrase",
+                "clarify",
+                "open questions",
+                "summarise"
+            ],
+            "common_roles": [
+                "Server\/Waitstaff",
+                "Guest Relations Agent",
+                "Host\/Hostess",
+                "Concierge"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Empathetic communication",
+            "aliases": [
+                "empathy in guest service",
+                "compassionate communication",
+                "empathic response"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Using language, tone and body language to convey understanding and concern for the guest’s feelings and experience.",
+            "parent_skill": "Guest recovery & complaint handling",
+            "related_skills": [
+                "Active listening for complaints",
+                "De-escalation & conflict resolution",
+                "Service recovery techniques"
+            ],
+            "keywords": [
+                "acknowledge feelings",
+                "validate guest",
+                "tone management"
+            ],
+            "common_roles": [
+                "Server\/Waitstaff",
+                "Guest Relations Agent",
+                "Front Desk Staff",
+                "Concierge"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Complaint investigation",
+            "aliases": [
+                "incident investigation",
+                "complaint fact-finding",
+                "incident review"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Gathering and verifying facts about a guest complaint, including timelines, staff statements, receipts and any available evidence.",
+            "parent_skill": "Guest recovery & complaint handling",
+            "related_skills": [
+                "Incident documentation & reporting",
+                "Root cause analysis (hospitality)",
+                "Complaint escalation & priority management"
+            ],
+            "keywords": [
+                "fact-finding",
+                "timeline",
+                "witness statements",
+                "evidence review"
+            ],
+            "common_roles": [
+                "Restaurant Manager",
+                "Duty Manager",
+                "Guest Relations Agent"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service recovery techniques",
+            "aliases": [
+                "service recovery",
+                "recovery strategies",
+                "remedial guest service"
+            ],
+            "skill_type": "process_skill",
+            "description": "Structured methods and best-practice steps to remedy a guest's negative experience and regain satisfaction and loyalty.",
+            "parent_skill": "Guest recovery & complaint handling",
+            "related_skills": [
+                "Compensation & goodwill gesture management",
+                "Recovery follow-up & guest retention",
+                "Empathetic communication"
+            ],
+            "keywords": [
+                "make it right",
+                "apology protocol",
+                "service recovery flow"
+            ],
+            "common_roles": [
+                "Restaurant Manager",
+                "Guest Relations Agent",
+                "Server\/Waitstaff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Compensation & goodwill gesture management",
+            "aliases": [
+                "guest compensation",
+                "goodwill gestures",
+                "voucher and refund handling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Assessing, authorizing and issuing appropriate compensations (refunds, discounts, complimentary items) within policy and budget limits.",
+            "parent_skill": "Guest recovery & complaint handling",
+            "related_skills": [
+                "Service recovery techniques",
+                "POS\/refund processing",
+                "Complaint escalation & priority management"
+            ],
+            "keywords": [
+                "refund",
+                "voucher",
+                "complimentary",
+                "make-good"
+            ],
+            "common_roles": [
+                "Restaurant Manager",
+                "Duty Manager",
+                "Server\/Waitstaff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Complaint escalation & priority management",
+            "aliases": [
+                "escalation management",
+                "complaint triage",
+                "issue prioritization"
+            ],
+            "skill_type": "process_skill",
+            "description": "Deciding when and how to escalate complaints based on severity, VIP status or operational risk and routing to the correct authority promptly.",
+            "parent_skill": "Guest recovery & complaint handling",
+            "related_skills": [
+                "Incident documentation & reporting",
+                "Service recovery techniques",
+                "Legal & regulatory complaint awareness"
+            ],
+            "keywords": [
+                "escalate",
+                "triage",
+                "priority",
+                "manager intervention"
+            ],
+            "common_roles": [
+                "Duty Manager",
+                "Restaurant Manager",
+                "Guest Relations Agent"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Incident documentation & reporting",
+            "aliases": [
+                "complaint reporting",
+                "incident logging",
+                "guest incident report"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Accurate, timely recording of complaints and outcomes using established formats or systems to ensure traceability and support analysis.",
+            "parent_skill": "Guest recovery & complaint handling",
+            "related_skills": [
+                "Complaint investigation",
+                "Complaint escalation & priority management",
+                "Legal & regulatory complaint awareness"
+            ],
+            "keywords": [
+                "log entry",
+                "reporting",
+                "audit trail",
+                "case notes"
+            ],
+            "common_roles": [
+                "Guest Relations Agent",
+                "Duty Manager",
+                "Front Desk Staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Recovery follow-up & guest retention",
+            "aliases": [
+                "post-complaint follow-up",
+                "guest recovery follow-up",
+                "retention after complaint"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Executing post-resolution activities—calls, emails, surveys or offers—to confirm satisfaction and reduce churn after a complaint is handled.",
+            "parent_skill": "Guest recovery & complaint handling",
+            "related_skills": [
+                "Service recovery techniques",
+                "Compensation & goodwill gesture management",
+                "Customer feedback management"
+            ],
+            "keywords": [
+                "follow-up call",
+                "satisfaction check",
+                "retention",
+                "NPS follow-up"
+            ],
+            "common_roles": [
+                "Guest Relations Agent",
+                "Restaurant Manager",
+                "Concierge"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Legal & regulatory complaint awareness",
+            "aliases": [
+                "regulatory complaint handling",
+                "consumer protection awareness",
+                "compliance awareness (complaints)"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Awareness of relevant consumer protection, food safety and privacy regulations that affect complaint handling, reporting obligations and evidence retention.",
+            "parent_skill": "Guest recovery & complaint handling",
+            "related_skills": [
+                "Incident documentation & reporting",
+                "Complaint escalation & priority management"
+            ],
+            "keywords": [
+                "consumer law",
+                "food safety reporting",
+                "data privacy",
+                "mandatory reporting"
+            ],
+            "common_roles": [
+                "Restaurant Manager",
+                "Duty Manager",
+                "Guest Relations Agent"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

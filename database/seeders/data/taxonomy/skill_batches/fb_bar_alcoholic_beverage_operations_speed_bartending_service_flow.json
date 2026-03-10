@@ -1,0 +1,258 @@
+{
+    "domain": "F&B",
+    "category": "Bar & Alcoholic Beverage Operations",
+    "subcategory": "Speed bartending & service flow",
+    "skills": [
+        {
+            "canonical_name": "High-volume cocktail service",
+            "aliases": [
+                "speed bartending",
+                "peak service bartending",
+                "high-volume bar service"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Efficiently producing and delivering large numbers of cocktails during peak periods while maintaining quality and accuracy.",
+            "parent_skill": "Speed bartending & service flow",
+            "related_skills": [
+                "Free pouring (speed pouring)",
+                "Bar mise en place (preparation & pre-batching)",
+                "Order batching & routing",
+                "Tray carrying & multi-drink service"
+            ],
+            "keywords": [
+                "rush service",
+                "peak hours",
+                "throughput",
+                "speed"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Free pouring (speed pouring)",
+            "aliases": [
+                "speed pour",
+                "free-pour technique",
+                "rapid pouring"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Accurate, repeatable free-pour technique for quickly measuring spirit volumes without using jiggers to maintain pace and consistency.",
+            "parent_skill": "Speed bartending & service flow",
+            "related_skills": [
+                "High-volume cocktail service",
+                "Bar mise en place (preparation & pre-batching)",
+                "Drink assembly (expedient build)"
+            ],
+            "keywords": [
+                "free pour",
+                "pour control",
+                "measure accuracy",
+                "speed"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bar mise en place (preparation & pre-batching)",
+            "aliases": [
+                "bar mise en place",
+                "pre-batching",
+                "prep station setup"
+            ],
+            "skill_type": "process_skill",
+            "description": "Organizing and preparing ingredients, garnishes, glassware and pre-batched components before service to minimize build time during peak periods.",
+            "parent_skill": "Speed bartending & service flow",
+            "related_skills": [
+                "Batch cocktail production",
+                "High-volume cocktail service",
+                "Glassware rotation & rapid restocking"
+            ],
+            "keywords": [
+                "prep",
+                "setup",
+                "garnish station",
+                "line prep"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Batch cocktail production",
+            "aliases": [
+                "pre-batched cocktails",
+                "large-batch cocktail prep",
+                "batch mixing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating larger-volume cocktail mixes or pre-mixed portions for rapid service while controlling taste consistency and shelf-life.",
+            "parent_skill": "Speed bartending & service flow",
+            "related_skills": [
+                "Bar mise en place (preparation & pre-batching)",
+                "Service flow analysis & optimization",
+                "Inventory quick-checks for batch components"
+            ],
+            "keywords": [
+                "batching",
+                "pre-mix",
+                "consistency",
+                "scaling recipes"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tray carrying & multi-drink service",
+            "aliases": [
+                "tray service",
+                "multi-drink carry",
+                "stable tray handling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Safely transporting multiple drinks to guests or servers using trays or hands while minimizing spills and maintaining speed.",
+            "parent_skill": "Speed bartending & service flow",
+            "related_skills": [
+                "High-volume cocktail service",
+                "Order batching & routing",
+                "Guest-facing rapid order taking & communication"
+            ],
+            "keywords": [
+                "crowd service",
+                "delivery",
+                "manual dexterity",
+                "stability"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "POS order entry & ticket management (bar)",
+            "aliases": [
+                "bar POS operation",
+                "order punching",
+                "ticket management"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Rapid and accurate entry of drink orders into point-of-sale systems and managing ticket flow to coordinate bar output with service staff.",
+            "parent_skill": "Speed bartending & service flow",
+            "related_skills": [
+                "Order batching & routing",
+                "High-volume cocktail service",
+                "Cash handling & checkout coordination"
+            ],
+            "keywords": [
+                "POS",
+                "order flow",
+                "ticketing",
+                "system navigation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Glassware rotation & rapid restocking",
+            "aliases": [
+                "glass rotation",
+                "front-of-bar restock",
+                "rapid glass turnaround"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintaining an optimal supply of clean glassware and bar stock in front-of-house to prevent service bottlenecks during busy periods.",
+            "parent_skill": "Speed bartending & service flow",
+            "related_skills": [
+                "Bar mise en place (preparation & pre-batching)",
+                "High-volume cocktail service",
+                "Inventory quick-checks for batch components"
+            ],
+            "keywords": [
+                "turnaround",
+                "restock",
+                "glasswasher coordination",
+                "stock flow"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Order batching & routing",
+            "aliases": [
+                "batching orders",
+                "grouping drink orders",
+                "expedite routing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Grouping and sequencing drink orders to minimize movements and build time, and routing completed orders efficiently to servers or guests.",
+            "parent_skill": "Speed bartending & service flow",
+            "related_skills": [
+                "High-volume cocktail service",
+                "Tray carrying & multi-drink service",
+                "Service flow analysis & optimization"
+            ],
+            "keywords": [
+                "expedite",
+                "sequence",
+                "grouping",
+                "delivery"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service flow analysis & optimization",
+            "aliases": [
+                "service flow optimization",
+                "time-and-motion for bar",
+                "bar throughput optimization"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing bar layout, staff tasks and sequence of operations to identify and implement changes that reduce cycle time and increase throughput.",
+            "parent_skill": "Speed bartending & service flow",
+            "related_skills": [
+                "Order batching & routing",
+                "Bar mise en place (preparation & pre-batching)",
+                "High-volume cocktail service"
+            ],
+            "keywords": [
+                "workflow",
+                "throughput analysis",
+                "layout optimization",
+                "time-motion study"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Guest-facing rapid order taking & communication",
+            "aliases": [
+                "rapid order taking",
+                "speedy guest communication",
+                "concise order communication"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Quickly capturing drink orders from guests or servers with clarity and minimal back-and-forth while managing upsell and specials during busy service.",
+            "parent_skill": "Speed bartending & service flow",
+            "related_skills": [
+                "Tray carrying & multi-drink service",
+                "POS order entry & ticket management (bar)",
+                "High-volume cocktail service"
+            ],
+            "keywords": [
+                "order clarity",
+                "upsell",
+                "verbal accuracy",
+                "guest interaction"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,288 @@
+{
+    "domain": "Finance",
+    "category": "Risk, Compliance & Financial Crime (Finance-Side)",
+    "subcategory": "Compliance monitoring & reporting",
+    "skills": [
+        {
+            "canonical_name": "Compliance monitoring program design",
+            "aliases": [
+                "Compliance monitoring framework design",
+                "Monitoring program design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing governance, control frameworks, sampling strategies and escalation paths for ongoing compliance monitoring programs.",
+            "parent_skill": "Compliance monitoring & reporting",
+            "related_skills": [
+                "Compliance management information (MI) and KPI reporting",
+                "Audit readiness and control testing",
+                "Regulatory change impact assessment"
+            ],
+            "keywords": [
+                "monitoring framework",
+                "control design",
+                "sampling strategy",
+                "escalation",
+                "governance"
+            ],
+            "common_roles": [
+                "Compliance function",
+                "Risk & compliance operations",
+                "Regulatory reporting team"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory reporting",
+            "aliases": [
+                "Regulatory submissions",
+                "Regulator reporting"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Preparing, validating and submitting periodic and ad-hoc regulatory returns and reports to supervisory authorities, ensuring timeliness and accuracy.",
+            "parent_skill": "Compliance monitoring & reporting",
+            "related_skills": [
+                "Compliance management information (MI) and KPI reporting",
+                "Compliance data quality management",
+                "Regulatory change impact assessment"
+            ],
+            "keywords": [
+                "regulatory returns",
+                "submissions",
+                "regulator",
+                "reporting timelines",
+                "data validation"
+            ],
+            "common_roles": [
+                "Regulatory reporting team",
+                "Risk & compliance operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Transaction monitoring systems (TMS) administration",
+            "aliases": [
+                "TMS administration",
+                "Transaction monitoring platform administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring, maintaining and administering transaction\/AML monitoring platforms, including integrations, performance tuning and user access management.",
+            "parent_skill": "Compliance monitoring & reporting",
+            "related_skills": [
+                "AML rule configuration and tuning",
+                "Investigations case management",
+                "Compliance data quality management"
+            ],
+            "keywords": [
+                "TMS",
+                "platform administration",
+                "integration",
+                "performance",
+                "user access"
+            ],
+            "common_roles": [
+                "Risk & compliance operations",
+                "Monitoring platform support function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "AML rule configuration and tuning",
+            "aliases": [
+                "Alert rule tuning",
+                "Scenario configuration for transaction monitoring"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Developing, testing and optimizing detection rules and scenarios in transaction monitoring systems to improve detection rates and reduce false positives.",
+            "parent_skill": "Compliance monitoring & reporting",
+            "related_skills": [
+                "Transaction monitoring systems (TMS) administration",
+                "Compliance data quality management",
+                "Compliance data analytics"
+            ],
+            "keywords": [
+                "rule tuning",
+                "scenario design",
+                "false positives",
+                "detection logic",
+                "testing"
+            ],
+            "common_roles": [
+                "Risk & compliance operations",
+                "Monitoring analysts"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ongoing KYC\/CDD monitoring",
+            "aliases": [
+                "Customer due diligence monitoring",
+                "KYC ongoing monitoring"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Continuous monitoring of customer profiles, risk attributes and behavior to identify risk changes requiring remediation or escalation under KYC\/CDD policies.",
+            "parent_skill": "Compliance monitoring & reporting",
+            "related_skills": [
+                "Investigations case management",
+                "Compliance data quality management",
+                "AML rule configuration and tuning"
+            ],
+            "keywords": [
+                "KYC",
+                "CDD",
+                "risk profiling",
+                "trigger monitoring",
+                "remediation"
+            ],
+            "common_roles": [
+                "Customer risk operations",
+                "KYC monitoring teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Suspicious Activity Report (SAR) preparation and filing",
+            "aliases": [
+                "SAR reporting",
+                "Suspicious transaction reporting"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Compiling, documenting and filing suspicious activity reports with appropriate regulators, including narrative preparation, evidence collation and meeting filing deadlines.",
+            "parent_skill": "Compliance monitoring & reporting",
+            "related_skills": [
+                "Investigations case management",
+                "Regulatory reporting",
+                "Compliance monitoring program design"
+            ],
+            "keywords": [
+                "SAR",
+                "suspicious activity",
+                "report filing",
+                "narrative",
+                "evidence"
+            ],
+            "common_roles": [
+                "Risk & compliance operations",
+                "Financial crime investigation teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Compliance management information (MI) and KPI reporting",
+            "aliases": [
+                "Compliance MI reporting",
+                "Compliance KPI reporting"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and producing management information, dashboards and KPIs to track compliance performance, trends and regulatory metrics for stakeholders.",
+            "parent_skill": "Compliance monitoring & reporting",
+            "related_skills": [
+                "Regulatory reporting",
+                "Compliance data quality management",
+                "Compliance data analytics"
+            ],
+            "keywords": [
+                "MI",
+                "KPI",
+                "dashboarding",
+                "trend analysis",
+                "stakeholder reporting"
+            ],
+            "common_roles": [
+                "Risk & compliance reporting teams",
+                "Compliance analytics function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Compliance data quality management",
+            "aliases": [
+                "Regulatory data quality",
+                "Compliance data reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Ensuring accuracy, completeness and reconciliation of data used in monitoring and reporting, including root-cause analysis and remediation of data issues.",
+            "parent_skill": "Compliance monitoring & reporting",
+            "related_skills": [
+                "Transaction monitoring systems (TMS) administration",
+                "Compliance management information (MI) and KPI reporting",
+                "AML rule configuration and tuning"
+            ],
+            "keywords": [
+                "data quality",
+                "reconciliation",
+                "data validation",
+                "root cause",
+                "remediation"
+            ],
+            "common_roles": [
+                "Data quality teams",
+                "Risk & compliance operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Investigations case management",
+            "aliases": [
+                "Compliance case management",
+                "Investigation workflow management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing the end-to-end lifecycle of compliance investigations, including triage, evidence collection, documentation, escalation and closure within case management workflows.",
+            "parent_skill": "Compliance monitoring & reporting",
+            "related_skills": [
+                "Suspicious Activity Report (SAR) preparation and filing",
+                "Transaction monitoring systems (TMS) administration",
+                "Ongoing KYC\/CDD monitoring"
+            ],
+            "keywords": [
+                "case lifecycle",
+                "triage",
+                "evidence collection",
+                "escalation",
+                "case closure"
+            ],
+            "common_roles": [
+                "Financial crime investigation teams",
+                "Risk & compliance operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory change impact assessment",
+            "aliases": [
+                "Regulatory change assessment",
+                "Regulatory impact analysis"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Analyzing new or amended regulations to determine impacts on monitoring, reporting and control requirements and identifying necessary process, data and system changes.",
+            "parent_skill": "Compliance monitoring & reporting",
+            "related_skills": [
+                "Compliance monitoring program design",
+                "Regulatory reporting",
+                "Compliance management information (MI) and KPI reporting"
+            ],
+            "keywords": [
+                "regulatory change",
+                "impact analysis",
+                "requirement assessment",
+                "process updates",
+                "controls"
+            ],
+            "common_roles": [
+                "Regulatory change teams",
+                "Risk & compliance operations"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

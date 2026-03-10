@@ -1,0 +1,295 @@
+{
+    "domain": "Finance",
+    "category": "Tax Operations & Compliance",
+    "subcategory": "Tax provision support",
+    "skills": [
+        {
+            "canonical_name": "Income tax accounting (ASC 740 \/ IAS 12)",
+            "aliases": [
+                "Income tax accounting",
+                "ASC 740",
+                "IAS 12"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Knowledge of accounting for income taxes under GAAP and IFRS, including recognition, measurement, presentation and derecognition of current and deferred tax items.",
+            "parent_skill": "Tax provision support",
+            "related_skills": [
+                "Deferred tax assets and liabilities accounting",
+                "Valuation allowance analysis",
+                "Effective tax rate (ETR) reconciliation and analysis",
+                "Tax disclosure and financial statement reporting"
+            ],
+            "keywords": [
+                "income tax",
+                "deferred tax",
+                "current tax",
+                "temporary differences"
+            ],
+            "common_roles": [
+                "Tax Provision Analyst",
+                "Tax Manager",
+                "Financial Reporting Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax provision calculation and rollforward",
+            "aliases": [
+                "Provision calculation",
+                "Deferred tax rollforward",
+                "Tax provision rollforward"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Preparing period-end tax provision computations and maintaining rollforwards of deferred tax and related balances across reporting periods.",
+            "parent_skill": "Tax provision support",
+            "related_skills": [
+                "Provision journal entries and consolidation",
+                "Book-to-tax reconciliation",
+                "Tax provision software"
+            ],
+            "keywords": [
+                "rollforward",
+                "period-end close",
+                "deferred tax balance",
+                "provision calc"
+            ],
+            "common_roles": [
+                "Tax Provision Analyst",
+                "Senior Accountant",
+                "Financial Reporting Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Book-to-tax reconciliation",
+            "aliases": [
+                "Book to tax",
+                "Book-to-tax adjustments",
+                "BTT reconciliation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Process of reconciling GAAP\/financial statement income to taxable income, identifying permanent and temporary differences and quantifying adjustments.",
+            "parent_skill": "Tax provision support",
+            "related_skills": [
+                "Tax provision calculation and rollforward",
+                "Income tax accounting (ASC 740 \/ IAS 12)",
+                "Effective tax rate (ETR) reconciliation and analysis"
+            ],
+            "keywords": [
+                "permanent differences",
+                "temporary differences",
+                "taxable income",
+                "adjustments"
+            ],
+            "common_roles": [
+                "Tax Analyst",
+                "Tax Provision Analyst",
+                "Corporate Tax Accountant"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Deferred tax assets and liabilities accounting",
+            "aliases": [
+                "Deferred tax accounting",
+                "DTA\/DTL accounting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Identification, measurement and classification of deferred tax assets and liabilities arising from temporary differences, tax loss carryforwards and tax credits.",
+            "parent_skill": "Tax provision support",
+            "related_skills": [
+                "Income tax accounting (ASC 740 \/ IAS 12)",
+                "Valuation allowance analysis",
+                "Tax provision calculation and rollforward"
+            ],
+            "keywords": [
+                "DTA",
+                "DTL",
+                "temporary differences",
+                "tax credits"
+            ],
+            "common_roles": [
+                "Tax Manager",
+                "Tax Provision Analyst",
+                "Financial Reporting Accountant"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Valuation allowance analysis",
+            "aliases": [
+                "DTA valuation allowance",
+                "Valuation allowance assessment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Assessing the need for and measuring valuation allowances against deferred tax assets based on historical results, forecasts and tax planning strategies.",
+            "parent_skill": "Tax provision support",
+            "related_skills": [
+                "Deferred tax assets and liabilities accounting",
+                "Income tax accounting (ASC 740 \/ IAS 12)",
+                "Effective tax rate (ETR) reconciliation and analysis"
+            ],
+            "keywords": [
+                "valuation allowance",
+                "deferred tax asset recoverability",
+                "taxable income forecast"
+            ],
+            "common_roles": [
+                "Tax Provision Analyst",
+                "Tax Manager",
+                "Financial Reporting Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Provision journal entries and consolidation",
+            "aliases": [
+                "Tax provision journal entries",
+                "Provision postings and consolidation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Preparing and posting tax provision journal entries, ensuring correct general ledger impact and consolidation across entities and reporting packages.",
+            "parent_skill": "Tax provision support",
+            "related_skills": [
+                "Tax provision calculation and rollforward",
+                "Tax provision software",
+                "Tax provision internal controls and SOX compliance"
+            ],
+            "keywords": [
+                "journal entries",
+                "GL posting",
+                "intercompany elimination",
+                "consolidation"
+            ],
+            "common_roles": [
+                "Senior Accountant",
+                "Tax Provision Accountant",
+                "Consolidation Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Effective tax rate (ETR) reconciliation and analysis",
+            "aliases": [
+                "ETR reconciliation",
+                "Effective tax rate analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Reconciling statutory tax rates to the company's effective tax rate, analyzing drivers (permanent items, jurisdictional mix, valuation allowances) and explaining period-over-period movements.",
+            "parent_skill": "Tax provision support",
+            "related_skills": [
+                "Book-to-tax reconciliation",
+                "Valuation allowance analysis",
+                "Income tax accounting (ASC 740 \/ IAS 12)"
+            ],
+            "keywords": [
+                "ETR",
+                "rate reconciliation",
+                "tax rate drivers",
+                "jurisdictional mix"
+            ],
+            "common_roles": [
+                "Tax Analyst",
+                "Tax Provision Analyst",
+                "Financial Reporting Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax provision software",
+            "aliases": [
+                "Tax provisioning systems",
+                "OneSource Tax Provision",
+                "CCH Tax Provision",
+                "Corptax",
+                "Tax provision tools"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use and configuration of dedicated tax provision systems and modules to calculate provisions, manage rollforwards and produce reporting outputs.",
+            "parent_skill": "Tax provision support",
+            "related_skills": [
+                "Tax provision calculation and rollforward",
+                "Provision journal entries and consolidation",
+                "Tax provision internal controls and SOX compliance"
+            ],
+            "keywords": [
+                "tax software",
+                "provisioning tools",
+                "system configuration",
+                "automation"
+            ],
+            "common_roles": [
+                "Tax Provision Analyst",
+                "Tax Systems Analyst",
+                "Financial Systems Accountant"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax provision internal controls and SOX compliance",
+            "aliases": [
+                "Provision internal controls",
+                "SOX controls for tax provision",
+                "Tax provision audit support"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Designing, documenting and testing internal controls related to tax provision processes to meet SOX and external audit requirements, including control remediation and evidence support.",
+            "parent_skill": "Tax provision support",
+            "related_skills": [
+                "Provision journal entries and consolidation",
+                "Tax provision software",
+                "Tax disclosure and financial statement reporting"
+            ],
+            "keywords": [
+                "internal controls",
+                "SOX",
+                "audit support",
+                "control testing"
+            ],
+            "common_roles": [
+                "Tax Manager",
+                "Internal Controls Analyst",
+                "External Audit Liaison"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax disclosure and financial statement reporting",
+            "aliases": [
+                "Tax footnote preparation",
+                "Tax note drafting",
+                "Tax disclosures"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Preparing tax-related disclosures and notes for financial statements, ensuring compliance with applicable accounting standards and audit requirements and providing supporting analyses.",
+            "parent_skill": "Tax provision support",
+            "related_skills": [
+                "Income tax accounting (ASC 740 \/ IAS 12)",
+                "Effective tax rate (ETR) reconciliation and analysis",
+                "Tax provision internal controls and SOX compliance"
+            ],
+            "keywords": [
+                "disclosures",
+                "financial statements",
+                "tax footnote",
+                "audit documentation"
+            ],
+            "common_roles": [
+                "Financial Reporting Manager",
+                "Tax Provision Analyst",
+                "Corporate Tax Accountant"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,309 @@
+{
+    "domain": "Finance",
+    "category": "Financial Reporting & External Disclosure",
+    "subcategory": "Audit coordination & PBC management",
+    "skills": [
+        {
+            "canonical_name": "PBC list preparation & management",
+            "aliases": [
+                "prepared-by-client list preparation",
+                "PBC preparation",
+                "PBC management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Create and maintain the provided‑by‑client (PBC) list, including defining deliverables, owners, due dates, and file naming conventions for audit requests.",
+            "parent_skill": "Audit coordination & PBC management",
+            "related_skills": [
+                "Audit request tracking & follow-up",
+                "Audit evidence collection & validation",
+                "Audit scheduling & coordination"
+            ],
+            "keywords": [
+                "PBC list",
+                "deliverables",
+                "request owners",
+                "due dates",
+                "file naming"
+            ],
+            "common_roles": [
+                "External Audit Coordinator",
+                "Financial Reporting Manager",
+                "Accounting Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Audit scheduling & coordination",
+            "aliases": [
+                "audit calendar management",
+                "audit timeline coordination",
+                "audit meeting scheduling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Plan and coordinate audit timelines, meetings, fieldwork windows and resource availability between external auditors and internal stakeholders.",
+            "parent_skill": "Audit coordination & PBC management",
+            "related_skills": [
+                "PBC list preparation & management",
+                "Auditor liaison & communication",
+                "Audit readiness assessment"
+            ],
+            "keywords": [
+                "audit calendar",
+                "fieldwork",
+                "timeline",
+                "kickoff",
+                "status meetings"
+            ],
+            "common_roles": [
+                "External Audit Coordinator",
+                "Finance Business Partner",
+                "Financial Controller"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Audit request tracking & follow-up",
+            "aliases": [
+                "PBC tracking",
+                "audit request tracking",
+                "request status tracking"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Monitor the status of audit requests, issue reminders and escalations, update owners on outstanding items, and maintain a centralized status log.",
+            "parent_skill": "Audit coordination & PBC management",
+            "related_skills": [
+                "PBC list preparation & management",
+                "Audit remediation tracking & issue management",
+                "Audit evidence collection & validation"
+            ],
+            "keywords": [
+                "status log",
+                "reminders",
+                "escalation",
+                "SLAs",
+                "open items"
+            ],
+            "common_roles": [
+                "External Audit Coordinator",
+                "Accounting Manager",
+                "SOX \/ Compliance Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Audit evidence collection & validation",
+            "aliases": [
+                "audit evidence management",
+                "supporting document collection",
+                "document validation for audit"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Collect, organize and perform preliminary validation of supporting documents and schedules to ensure they meet auditor requirements for completeness and accuracy.",
+            "parent_skill": "Audit coordination & PBC management",
+            "related_skills": [
+                "PBC list preparation & management",
+                "Working paper organization & documentation",
+                "Internal control documentation for external audit"
+            ],
+            "keywords": [
+                "supporting schedules",
+                "source documentation",
+                "validation",
+                "completeness",
+                "reconciliation"
+            ],
+            "common_roles": [
+                "Accounting Manager",
+                "Financial Reporting Analyst",
+                "External Audit Coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Working paper organization & documentation",
+            "aliases": [
+                "audit working paper management",
+                "workpaper indexing",
+                "audit file documentation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Maintain audit working papers including indexing, cross-references, version control, sign‑offs and retention rules to support audit trail and reviewer navigation.",
+            "parent_skill": "Audit coordination & PBC management",
+            "related_skills": [
+                "Audit evidence collection & validation",
+                "Audit management software",
+                "Audit request tracking & follow-up"
+            ],
+            "keywords": [
+                "working papers",
+                "indexing",
+                "version control",
+                "audit file",
+                "signoffs"
+            ],
+            "common_roles": [
+                "External Audit Coordinator",
+                "Internal Audit Manager",
+                "Financial Reporting Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Auditor liaison & communication",
+            "aliases": [
+                "external auditor liaison",
+                "audit communication",
+                "auditor coordination"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Act as the primary point of contact for external auditors, coordinate inquiries, provide status updates and facilitate information flow between auditors and internal teams.",
+            "parent_skill": "Audit coordination & PBC management",
+            "related_skills": [
+                "Audit scheduling & coordination",
+                "Audit request tracking & follow-up",
+                "Audit evidence collection & validation"
+            ],
+            "keywords": [
+                "stakeholder communication",
+                "inquiry response",
+                "status updates",
+                "point of contact",
+                "escalation"
+            ],
+            "common_roles": [
+                "External Audit Coordinator",
+                "Finance Business Partner",
+                "Financial Controller"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Internal control documentation for external audit",
+            "aliases": [
+                "control narratives for audit",
+                "ICFR documentation",
+                "control documentation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Document internal control descriptions, control objectives, procedures and ownership to support external auditor testing and compliance reporting.",
+            "parent_skill": "Audit coordination & PBC management",
+            "related_skills": [
+                "Audit readiness assessment",
+                "Audit remediation tracking & issue management",
+                "Audit evidence collection & validation"
+            ],
+            "keywords": [
+                "control narrative",
+                "control owner",
+                "ICFR",
+                "control procedures",
+                "control objective"
+            ],
+            "common_roles": [
+                "SOX \/ Compliance Analyst",
+                "Internal Audit Manager",
+                "Financial Reporting Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Audit readiness assessment",
+            "aliases": [
+                "audit pre‑readiness review",
+                "pre‑audit readiness assessment",
+                "readiness checklist"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluate preparedness for external audit fieldwork by performing gap assessments on documentation, processes and controls and recommending remediation prior to auditor arrival.",
+            "parent_skill": "Audit coordination & PBC management",
+            "related_skills": [
+                "Internal control documentation for external audit",
+                "PBC list preparation & management",
+                "Audit remediation tracking & issue management"
+            ],
+            "keywords": [
+                "gap analysis",
+                "readiness checklist",
+                "pre‑audit review",
+                "findings",
+                "risk assessment"
+            ],
+            "common_roles": [
+                "Financial Reporting Manager",
+                "Internal Audit Manager",
+                "SOX \/ Compliance Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Audit remediation tracking & issue management",
+            "aliases": [
+                "audit issue tracking",
+                "finding remediation management",
+                "remediation tracking"
+            ],
+            "skill_type": "process_skill",
+            "description": "Track audit findings, coordinate root‑cause analysis, maintain remediation plans with owners and timelines, and verify completion and testing of corrective actions.",
+            "parent_skill": "Audit coordination & PBC management",
+            "related_skills": [
+                "Audit request tracking & follow-up",
+                "Internal control documentation for external audit",
+                "Audit readiness assessment"
+            ],
+            "keywords": [
+                "findings",
+                "remediation plan",
+                "root cause",
+                "closure evidence",
+                "corrective actions"
+            ],
+            "common_roles": [
+                "Internal Audit Manager",
+                "SOX \/ Compliance Analyst",
+                "External Audit Coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Audit management software",
+            "aliases": [
+                "audit management platforms",
+                "TeamMate",
+                "Workiva",
+                "AuditBoard",
+                "CaseWare"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use audit management and workflow tools to coordinate requests, store working papers, track issues and report audit status; includes setup of templates and user access.",
+            "parent_skill": "Audit coordination & PBC management",
+            "related_skills": [
+                "Working paper organization & documentation",
+                "Audit request tracking & follow-up",
+                "Audit scheduling & coordination"
+            ],
+            "keywords": [
+                "audit tool",
+                "workflow",
+                "issue tracker",
+                "working paper repository",
+                "audit platform"
+            ],
+            "common_roles": [
+                "External Audit Coordinator",
+                "Internal Audit Manager",
+                "Financial Reporting Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

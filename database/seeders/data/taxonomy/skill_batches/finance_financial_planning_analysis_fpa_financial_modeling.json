@@ -1,0 +1,256 @@
+{
+    "domain": "Finance",
+    "category": "Financial Planning & Analysis (FP&A)",
+    "subcategory": "Financial modeling",
+    "skills": [
+        {
+            "canonical_name": "Three-statement financial modeling",
+            "aliases": [
+                "3-statement model",
+                "three statement model",
+                "3 statement financial model"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Designing and linking income statement, balance sheet and cash flow statement into an integrated forward-looking model.",
+            "parent_skill": "Financial modeling",
+            "related_skills": [
+                "Cash flow forecasting",
+                "Discounted cash flow (DCF) modeling",
+                "Multi-entity consolidation modeling",
+                "Model auditing and validation"
+            ],
+            "keywords": [
+                "income statement",
+                "balance sheet",
+                "cash flow",
+                "integration",
+                "reconciliation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Driver-based financial modeling",
+            "aliases": [
+                "driver-based modeling",
+                "activity-based financial model",
+                "driver model"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Building models that use operational and business drivers (e.g., units, churn, pricing) to project financial outcomes and link assumptions to outputs.",
+            "parent_skill": "Financial modeling",
+            "related_skills": [
+                "Scenario and sensitivity analysis",
+                "Three-statement financial modeling",
+                "Cash flow forecasting"
+            ],
+            "keywords": [
+                "drivers",
+                "assumption mapping",
+                "operational metrics",
+                "forecast drivers"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Discounted cash flow (DCF) modeling",
+            "aliases": [
+                "DCF valuation modeling",
+                "discounted cash flow analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Constructing valuation models that project free cash flows and apply discount rates to estimate present value.",
+            "parent_skill": "Financial modeling",
+            "related_skills": [
+                "Three-statement financial modeling",
+                "Scenario and sensitivity analysis"
+            ],
+            "keywords": [
+                "WACC",
+                "terminal value",
+                "free cash flow",
+                "present value",
+                "valuation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Scenario and sensitivity analysis",
+            "aliases": [
+                "what-if analysis",
+                "sensitivity testing",
+                "scenario planning (models)"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and executing scenario runs and sensitivity tests to quantify impact of assumption changes on model outputs.",
+            "parent_skill": "Financial modeling",
+            "related_skills": [
+                "Driver-based financial modeling",
+                "Monte Carlo simulation for financial risk",
+                "Three-statement financial modeling"
+            ],
+            "keywords": [
+                "data tables",
+                "tornado chart",
+                "what-if",
+                "stress testing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash flow forecasting",
+            "aliases": [
+                "cash flow projection",
+                "cash forecasting",
+                "liquidity forecasting"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Projecting short- and medium-term cash inflows and outflows to manage liquidity and working capital requirements.",
+            "parent_skill": "Financial modeling",
+            "related_skills": [
+                "Three-statement financial modeling",
+                "Driver-based financial modeling",
+                "Model automation and data integration"
+            ],
+            "keywords": [
+                "working capital",
+                "collections",
+                "payments",
+                "cash runway"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Multi-entity consolidation modeling",
+            "aliases": [
+                "group consolidation modeling",
+                "multi-entity financial consolidation",
+                "intercompany consolidation model"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Building models that consolidate multiple legal entities or business units, handling intercompany eliminations, currency translation and reporting hierarchies.",
+            "parent_skill": "Financial modeling",
+            "related_skills": [
+                "Three-statement financial modeling",
+                "Model auditing and validation"
+            ],
+            "keywords": [
+                "intercompany",
+                "currency translation",
+                "eliminations",
+                "reporting hierarchy"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial model auditing and validation",
+            "aliases": [
+                "model review",
+                "model testing",
+                "financial model quality assurance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Applying structured checks, reconciliation procedures and documentation to identify errors, logic flaws and ensure model transparency and robustness.",
+            "parent_skill": "Financial modeling",
+            "related_skills": [
+                "Three-statement financial modeling",
+                "Multi-entity consolidation modeling",
+                "Advanced Excel for financial modeling"
+            ],
+            "keywords": [
+                "reconciliation",
+                "error checks",
+                "audit trail",
+                "assertions"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Advanced Excel for financial modeling",
+            "aliases": [
+                "Excel modeling",
+                "Excel for FP&A",
+                "Excel financial modeling"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using advanced Excel functionality (formulas, pivot tables, Power Query, structured references and model design best practices) to build maintainable financial models.",
+            "parent_skill": "Financial modeling",
+            "related_skills": [
+                "Financial model auditing and validation",
+                "Model automation and data integration"
+            ],
+            "keywords": [
+                "VLOOKUP",
+                "INDEX MATCH",
+                "Power Query",
+                "pivot table",
+                "named ranges"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Monte Carlo simulation for financial risk",
+            "aliases": [
+                "stochastic simulation",
+                "probabilistic financial modeling"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying Monte Carlo and other probabilistic methods to model uncertainty and produce probabilistic outcome distributions for financial forecasts and valuations.",
+            "parent_skill": "Financial modeling",
+            "related_skills": [
+                "Scenario and sensitivity analysis",
+                "Discounted cash flow (DCF) modeling"
+            ],
+            "keywords": [
+                "probability distributions",
+                "random sampling",
+                "risk analysis",
+                "simulation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Model automation and data integration",
+            "aliases": [
+                "model automation",
+                "ETL for financial models",
+                "data integration for FP&A models"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Automating model refreshes and linking models to source systems or BI tools using ETL, Power Query, APIs or scripting to ensure timely, auditable inputs.",
+            "parent_skill": "Financial modeling",
+            "related_skills": [
+                "Advanced Excel for financial modeling",
+                "Cash flow forecasting",
+                "Financial model auditing and validation"
+            ],
+            "keywords": [
+                "ETL",
+                "API",
+                "Power Query",
+                "automation",
+                "data pipeline"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

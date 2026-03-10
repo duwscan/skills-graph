@@ -1,0 +1,301 @@
+{
+    "domain": "Finance",
+    "category": "Risk, Compliance & Financial Crime (Finance-Side)",
+    "subcategory": "Policy & procedure maintenance",
+    "skills": [
+        {
+            "canonical_name": "Policy drafting and documentation",
+            "aliases": [
+                "policy drafting",
+                "policy writing",
+                "policy authoring",
+                "policy documentation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating clear, structured policy documents that reflect regulatory requirements and internal standards, including purpose, scope, roles, controls and escalation paths.",
+            "parent_skill": "Policy & procedure maintenance",
+            "related_skills": [
+                "SOP development and maintenance",
+                "Policy review and update cycles",
+                "Document control and versioning",
+                "Stakeholder engagement for policy governance"
+            ],
+            "keywords": [
+                "policy",
+                "writing",
+                "documentation",
+                "scope",
+                "controls"
+            ],
+            "common_roles": [
+                "compliance professionals",
+                "policy owners",
+                "risk professionals"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Policy review and update cycles",
+            "aliases": [
+                "policy lifecycle management",
+                "policy review",
+                "policy maintenance"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and executing recurring review schedules and update processes to ensure policies remain current, including triggers for ad-hoc reviews after regulatory or business changes.",
+            "parent_skill": "Policy & procedure maintenance",
+            "related_skills": [
+                "Policy drafting and documentation",
+                "Regulatory gap analysis",
+                "Document control and versioning",
+                "Policy compliance monitoring and testing"
+            ],
+            "keywords": [
+                "review cycle",
+                "policy update",
+                "lifecycle",
+                "revision schedule"
+            ],
+            "common_roles": [
+                "policy owners",
+                "compliance professionals",
+                "risk professionals"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory gap analysis",
+            "aliases": [
+                "regulatory gap assessment",
+                "regulatory mapping",
+                "compliance gap analysis"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Assessing existing policies and procedures against laws, regulations and supervisory expectations to identify gaps, required changes and remediation priorities.",
+            "parent_skill": "Policy & procedure maintenance",
+            "related_skills": [
+                "Policy review and update cycles",
+                "Policy impact and risk assessment",
+                "Policy compliance monitoring and testing"
+            ],
+            "keywords": [
+                "gap analysis",
+                "regulatory mapping",
+                "compliance gaps",
+                "remediation"
+            ],
+            "common_roles": [
+                "compliance professionals",
+                "legal & regulatory teams",
+                "risk professionals"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SOP development and maintenance",
+            "aliases": [
+                "SOP development",
+                "standard operating procedure development",
+                "SOP writing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Translating policy requirements into actionable standard operating procedures and maintaining SOPs so that frontline teams can consistently apply controls and follow processes.",
+            "parent_skill": "Policy & procedure maintenance",
+            "related_skills": [
+                "Policy drafting and documentation",
+                "Document control and versioning",
+                "Policy change management and communications"
+            ],
+            "keywords": [
+                "SOP",
+                "procedures",
+                "work instructions",
+                "process documentation"
+            ],
+            "common_roles": [
+                "operations teams",
+                "policy owners",
+                "compliance professionals"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Document control and versioning",
+            "aliases": [
+                "policy version control",
+                "document management",
+                "records management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing policy documents through version control, change logs, access permissions and retention policies to ensure a single source of truth and auditability.",
+            "parent_skill": "Policy & procedure maintenance",
+            "related_skills": [
+                "Policy review and update cycles",
+                "Policy management system administration",
+                "Policy drafting and documentation"
+            ],
+            "keywords": [
+                "version control",
+                "document control",
+                "records",
+                "audit trail"
+            ],
+            "common_roles": [
+                "policy owners",
+                "compliance professionals",
+                "operations teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Policy impact and risk assessment",
+            "aliases": [
+                "policy impact assessment",
+                "policy risk assessment",
+                "impact analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluating how proposed or existing policy changes affect operational risk, compliance exposure, customer outcomes and business processes to prioritize action and controls.",
+            "parent_skill": "Policy & procedure maintenance",
+            "related_skills": [
+                "Regulatory gap analysis",
+                "Policy compliance monitoring and testing",
+                "Policy change management and communications"
+            ],
+            "keywords": [
+                "impact assessment",
+                "risk assessment",
+                "operational risk",
+                "control effectiveness"
+            ],
+            "common_roles": [
+                "risk professionals",
+                "compliance professionals",
+                "policy owners"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Stakeholder engagement for policy governance",
+            "aliases": [
+                "policy stakeholder engagement",
+                "policy governance engagement",
+                "cross-functional policy coordination"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Coordinating and communicating with business owners, legal, compliance and operations to obtain input, approvals and buy-in for policies and to support governance forums.",
+            "parent_skill": "Policy & procedure maintenance",
+            "related_skills": [
+                "Policy drafting and documentation",
+                "Policy review and update cycles",
+                "Policy change management and communications"
+            ],
+            "keywords": [
+                "stakeholder management",
+                "governance",
+                "cross-functional",
+                "approvals"
+            ],
+            "common_roles": [
+                "policy owners",
+                "compliance professionals",
+                "operations teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Policy compliance monitoring and testing",
+            "aliases": [
+                "policy monitoring",
+                "policy testing",
+                "control testing"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Designing and running monitoring programs and tests to verify that policies are implemented effectively and that controls operate as intended, including sampling and remediation tracking.",
+            "parent_skill": "Policy & procedure maintenance",
+            "related_skills": [
+                "Policy impact and risk assessment",
+                "Regulatory gap analysis",
+                "Policy review and update cycles"
+            ],
+            "keywords": [
+                "monitoring",
+                "testing",
+                "control testing",
+                "assurance"
+            ],
+            "common_roles": [
+                "internal audit teams",
+                "compliance professionals",
+                "risk professionals"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Policy change management and communications",
+            "aliases": [
+                "policy change management",
+                "policy communications",
+                "policy rollout"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Planning and executing the operational rollout of policy changes, including communication plans, training coordination, readiness checks and feedback loops.",
+            "parent_skill": "Policy & procedure maintenance",
+            "related_skills": [
+                "SOP development and maintenance",
+                "Stakeholder engagement for policy governance",
+                "Policy management system administration"
+            ],
+            "keywords": [
+                "change management",
+                "communications",
+                "rollout",
+                "training"
+            ],
+            "common_roles": [
+                "policy owners",
+                "operations teams",
+                "compliance professionals"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Policy management system administration",
+            "aliases": [
+                "policy management system administration",
+                "policy lifecycle system administration",
+                "policy management software administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and administering policy and document management platforms (workflows, user roles, review cycles and reporting) to support centralized control of policies and procedures.",
+            "parent_skill": "Policy & procedure maintenance",
+            "related_skills": [
+                "Document control and versioning",
+                "Policy review and update cycles",
+                "Policy change management and communications"
+            ],
+            "keywords": [
+                "policy system",
+                "tool administration",
+                "workflow",
+                "policy platform"
+            ],
+            "common_roles": [
+                "policy owners",
+                "compliance professionals",
+                "operations teams"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,307 @@
+{
+    "domain": "F&B",
+    "category": "Food Safety, Hygiene & Regulatory Compliance",
+    "subcategory": "Incident reporting (illness\/contamination)",
+    "skills": [
+        {
+            "canonical_name": "Foodborne illness outbreak reporting",
+            "aliases": [
+                "foodborne outbreak reporting",
+                "illness outbreak notification",
+                "outbreak reporting to authorities"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Identifying and reporting suspected or confirmed foodborne illness outbreaks to internal stakeholders and public health authorities according to regulatory thresholds and timelines.",
+            "parent_skill": "Incident reporting (illness\/contamination)",
+            "related_skills": [
+                "Regulatory notification to public health authorities",
+                "Incident triage and escalation procedures",
+                "Incident report writing and record-keeping"
+            ],
+            "keywords": [
+                "outbreak",
+                "foodborne illness",
+                "reporting threshold",
+                "public health",
+                "timelines"
+            ],
+            "common_roles": [
+                "Quality & compliance teams",
+                "Operations management",
+                "Frontline foodservice staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Contamination incident documentation",
+            "aliases": [
+                "contamination incident logging",
+                "contamination report documentation",
+                "incident log for contamination"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Creating and maintaining a detailed, time-stamped record of contamination incidents including what occurred, affected products, personnel involved, actions taken and supporting evidence.",
+            "parent_skill": "Incident reporting (illness\/contamination)",
+            "related_skills": [
+                "Incident report writing and record-keeping",
+                "Sample collection and chain of custody for food incidents",
+                "Use of electronic incident management systems"
+            ],
+            "keywords": [
+                "incident log",
+                "documentation",
+                "evidence",
+                "timestamp",
+                "affected lot"
+            ],
+            "common_roles": [
+                "Quality & compliance teams",
+                "Operations management",
+                "Supply chain\/logistics teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Incident triage and escalation procedures",
+            "aliases": [
+                "incident triage",
+                "escalation procedures for food incidents",
+                "escalation protocol"
+            ],
+            "skill_type": "process_skill",
+            "description": "Assessing the severity and scope of an illness or contamination event, determining immediate actions, and escalating to appropriate internal or external stakeholders based on predefined criteria.",
+            "parent_skill": "Incident reporting (illness\/contamination)",
+            "related_skills": [
+                "Foodborne illness outbreak reporting",
+                "Regulatory notification to public health authorities",
+                "Corrective and preventive action (CAPA) implementation for contamination"
+            ],
+            "keywords": [
+                "triage",
+                "severity assessment",
+                "escalation",
+                "response protocol",
+                "thresholds"
+            ],
+            "common_roles": [
+                "Operations management",
+                "Quality & compliance teams",
+                "Crisis response teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory notification to public health authorities",
+            "aliases": [
+                "health department notification",
+                "local authority reporting",
+                "regulatory incident notification"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Preparing and submitting required notifications and reports to local, regional or national public health and food safety authorities in compliance with applicable laws and reporting requirements.",
+            "parent_skill": "Incident reporting (illness\/contamination)",
+            "related_skills": [
+                "Foodborne illness outbreak reporting",
+                "Incident report writing and record-keeping",
+                "Use of electronic incident management systems"
+            ],
+            "keywords": [
+                "regulatory notification",
+                "public health",
+                "compliance",
+                "report submission",
+                "legal timelines"
+            ],
+            "common_roles": [
+                "Quality & compliance teams",
+                "Regulatory affairs functions",
+                "Operations management"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Root cause analysis for contamination events",
+            "aliases": [
+                "root cause investigation",
+                "RCA for contamination",
+                "cause analysis for contamination"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying systematic investigation techniques to identify underlying causes of contamination events, using data collection, process mapping and analysis methods to prevent recurrence.",
+            "parent_skill": "Incident reporting (illness\/contamination)",
+            "related_skills": [
+                "Sample collection and chain of custody for food incidents",
+                "Corrective and preventive action (CAPA) implementation for contamination",
+                "Contamination incident documentation"
+            ],
+            "keywords": [
+                "RCA",
+                "fishbone",
+                "5 whys",
+                "process mapping",
+                "investigation"
+            ],
+            "common_roles": [
+                "Quality & compliance teams",
+                "Operations improvement functions",
+                "Production supervisors"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Product traceability and lot tracking",
+            "aliases": [
+                "lot traceability",
+                "product trace-back and trace-forward",
+                "traceability for recalls"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Using traceability procedures and records to identify affected batches, trace product flow through the supply chain, and support targeted recalls or consumer notifications.",
+            "parent_skill": "Incident reporting (illness\/contamination)",
+            "related_skills": [
+                "Use of electronic incident management systems",
+                "Contamination incident documentation",
+                "Regulatory notification to public health authorities"
+            ],
+            "keywords": [
+                "traceability",
+                "lot code",
+                "batch tracking",
+                "recall support",
+                "supply chain"
+            ],
+            "common_roles": [
+                "Supply chain\/logistics teams",
+                "Quality & compliance teams",
+                "Operations management"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sample collection and chain of custody for food incidents",
+            "aliases": [
+                "evidence sample collection",
+                "chain of custody procedures",
+                "sample handling for contamination investigations"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Collecting, labeling, storing and documenting food and environmental samples using aseptic techniques and chain-of-custody procedures to preserve evidence integrity for testing and regulatory review.",
+            "parent_skill": "Incident reporting (illness\/contamination)",
+            "related_skills": [
+                "Contamination incident documentation",
+                "Root cause analysis for contamination events",
+                "Use of electronic incident management systems"
+            ],
+            "keywords": [
+                "sampling",
+                "chain of custody",
+                "aseptic technique",
+                "evidence preservation",
+                "laboratory submission"
+            ],
+            "common_roles": [
+                "Quality & compliance teams",
+                "Laboratory liaisons",
+                "Production supervisors"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Corrective and preventive action (CAPA) implementation for contamination",
+            "aliases": [
+                "CAPA for food safety",
+                "corrective action planning",
+                "preventive action implementation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, implementing and monitoring corrective and preventive actions to address root causes of contamination and ensure effectiveness through verification and follow-up.",
+            "parent_skill": "Incident reporting (illness\/contamination)",
+            "related_skills": [
+                "Root cause analysis for contamination events",
+                "Contamination incident documentation",
+                "Product traceability and lot tracking"
+            ],
+            "keywords": [
+                "CAPA",
+                "corrective action",
+                "preventive measures",
+                "verification",
+                "follow-up"
+            ],
+            "common_roles": [
+                "Quality & compliance teams",
+                "Operations improvement functions",
+                "Supply chain\/logistics teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Incident report writing and record-keeping",
+            "aliases": [
+                "incident reporting writing",
+                "incident records management",
+                "report drafting for food incidents"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Producing clear, accurate incident reports and maintaining compliant records that summarize findings, actions taken, timelines and responsibilities for internal review and external audits.",
+            "parent_skill": "Incident reporting (illness\/contamination)",
+            "related_skills": [
+                "Contamination incident documentation",
+                "Regulatory notification to public health authorities",
+                "Use of electronic incident management systems"
+            ],
+            "keywords": [
+                "report writing",
+                "record retention",
+                "audit trail",
+                "documentation standards",
+                "clarity"
+            ],
+            "common_roles": [
+                "Quality & compliance teams",
+                "Operations management",
+                "Audit functions"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Use of electronic incident management systems",
+            "aliases": [
+                "incident management system (IMS)",
+                "electronic incident reporting software",
+                "recall management software"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operating digital incident\/recall management platforms to log events, attach evidence, manage corrective actions, generate reports and communicate with stakeholders.",
+            "parent_skill": "Incident reporting (illness\/contamination)",
+            "related_skills": [
+                "Contamination incident documentation",
+                "Product traceability and lot tracking",
+                "Incident report writing and record-keeping"
+            ],
+            "keywords": [
+                "IMS",
+                "incident software",
+                "recall management",
+                "digital logging",
+                "report generation"
+            ],
+            "common_roles": [
+                "Quality & compliance teams",
+                "Operations management",
+                "Supply chain\/logistics teams"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

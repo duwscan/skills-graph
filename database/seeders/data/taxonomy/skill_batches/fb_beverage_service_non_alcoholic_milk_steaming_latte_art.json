@@ -1,0 +1,257 @@
+{
+    "domain": "F&B",
+    "category": "Beverage Service (Non-Alcoholic)",
+    "subcategory": "Milk steaming & latte art",
+    "skills": [
+        {
+            "canonical_name": "Milk steaming",
+            "aliases": [
+                "steaming milk",
+                "milk frothing",
+                "steam milk"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Operate steam wand and pitchers to heat and texture milk to target temperature and consistency for espresso-based beverages.",
+            "parent_skill": "Milk steaming & latte art",
+            "related_skills": [
+                "Microfoam creation",
+                "Milk temperature control",
+                "High-volume milk steaming"
+            ],
+            "keywords": [
+                "steam wand",
+                "pitcher",
+                "frothing",
+                "temperature",
+                "milk"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Microfoam creation",
+            "aliases": [
+                "microfoam",
+                "creating microfoam",
+                "milk texturing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Introduce and incorporate small, uniform air bubbles to produce smooth, velvety milk texture suitable for latte art and mouthfeel.",
+            "parent_skill": "Milk steaming & latte art",
+            "related_skills": [
+                "Milk steaming",
+                "Latte art pouring",
+                "Milk foam stability and troubleshooting"
+            ],
+            "keywords": [
+                "micro-foam",
+                "texture",
+                "velvety foam",
+                "aeration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Latte art pouring",
+            "aliases": [
+                "latte art pouring techniques",
+                "free-pour latte art",
+                "pouring latte designs"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Control pour speed, height, angle and position to form common latte art patterns (e.g., heart, rosette, tulip) using textured milk.",
+            "parent_skill": "Milk steaming & latte art",
+            "related_skills": [
+                "Microfoam creation",
+                "Latte art evaluation and correction"
+            ],
+            "keywords": [
+                "pouring",
+                "free pour",
+                "heart",
+                "rosette",
+                "tulip"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Latte art etching & tool use",
+            "aliases": [
+                "etching",
+                "latte art pen",
+                "latte art tool use",
+                "stamping latte art"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use etching tools, pens, syrups, and stamps to create or refine latte art designs beyond free-pour techniques.",
+            "parent_skill": "Milk steaming & latte art",
+            "related_skills": [
+                "Latte art pouring",
+                "Latte art evaluation and correction"
+            ],
+            "keywords": [
+                "etching tool",
+                "latte pen",
+                "syrup",
+                "stencil",
+                "stamp"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Plant-based milk steaming",
+            "aliases": [
+                "non-dairy milk steaming",
+                "oat milk frothing",
+                "soy milk steaming",
+                "almond milk frothing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Adjust steaming technique (aeration, temperature, stretching) to achieve desirable texture and stability with plant-based milks.",
+            "parent_skill": "Milk steaming & latte art",
+            "related_skills": [
+                "Milk steaming",
+                "Milk foam stability and troubleshooting"
+            ],
+            "keywords": [
+                "oat milk",
+                "soy milk",
+                "almond milk",
+                "plant-based",
+                "non-dairy"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Milk temperature control",
+            "aliases": [
+                "milk thermometer use",
+                "optimal milk temperature",
+                "temperature control for milk"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Monitor and manage milk heating to reach target temperatures for taste, safety and texture while avoiding scalding.",
+            "parent_skill": "Milk steaming & latte art",
+            "related_skills": [
+                "Milk steaming",
+                "Steam wand cleaning and sanitation"
+            ],
+            "keywords": [
+                "thermometer",
+                "temperature",
+                "scalding",
+                "food safety"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Steam wand cleaning and sanitation",
+            "aliases": [
+                "steam wand sanitation",
+                "purging steam wand",
+                "steam wand hygiene"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Perform cleaning, purging and routine maintenance of steam wand and milk-handling equipment to meet hygiene standards and prevent contamination.",
+            "parent_skill": "Milk steaming & latte art",
+            "related_skills": [
+                "Milk temperature control",
+                "High-volume milk steaming"
+            ],
+            "keywords": [
+                "sanitation",
+                "cleaning",
+                "purge",
+                "food safety",
+                "HACCP"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Milk foam stability and troubleshooting",
+            "aliases": [
+                "foam troubleshooting",
+                "preventing large bubbles",
+                "foam retention"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Identify causes of unstable foam (e.g., over\/under aeration, temperature, milk type) and apply corrective adjustments to improve longevity and texture.",
+            "parent_skill": "Milk steaming & latte art",
+            "related_skills": [
+                "Microfoam creation",
+                "Plant-based milk steaming"
+            ],
+            "keywords": [
+                "stability",
+                "bubble size",
+                "longevity",
+                "troubleshoot"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "High-volume milk steaming",
+            "aliases": [
+                "multi-drink steaming",
+                "batch steaming",
+                "efficient milk steaming"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Manage steaming workflow and timing to prepare multiple milk-based drinks quickly while maintaining consistent texture and temperature.",
+            "parent_skill": "Milk steaming & latte art",
+            "related_skills": [
+                "Milk steaming",
+                "Steam wand cleaning and sanitation"
+            ],
+            "keywords": [
+                "throughput",
+                "speed",
+                "workflow",
+                "efficiency"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Latte art evaluation and correction",
+            "aliases": [
+                "latte art quality assessment",
+                "latte art troubleshooting",
+                "art correction"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Visually assess latte art finish (contrast, symmetry, texture) and diagnose technique or preparation issues to guide corrective action.",
+            "parent_skill": "Milk steaming & latte art",
+            "related_skills": [
+                "Latte art pouring",
+                "Latte art etching & tool use",
+                "Milk foam stability and troubleshooting"
+            ],
+            "keywords": [
+                "quality control",
+                "visual assessment",
+                "troubleshooting",
+                "contrast"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,298 @@
+{
+    "domain": "IT",
+    "category": "Network Engineering & Connectivity",
+    "subcategory": "Data center networking",
+    "skills": [
+        {
+            "canonical_name": "Data center network design",
+            "aliases": [
+                "Data center network architecture",
+                "DC network design",
+                "Data center network planning"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing scalable, resilient data center network architectures including topology selection, capacity planning, redundancy, and low-latency requirements.",
+            "parent_skill": "",
+            "related_skills": [
+                "Spine-leaf architecture",
+                "Layer 3 routing (data center)",
+                "EVPN-VXLAN"
+            ],
+            "keywords": [
+                "topology",
+                "capacity planning",
+                "redundancy",
+                "latency",
+                "scalability"
+            ],
+            "common_roles": [
+                "Network engineering",
+                "Infrastructure operations",
+                "Cloud networking"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Spine-leaf architecture",
+            "aliases": [
+                "Leaf-spine",
+                "Two-tier data center fabric",
+                "spine leaf"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Implementing and operating two-tier spine-leaf topologies for predictable east-west traffic, including capacity planning, ECMP, and oversubscription tuning.",
+            "parent_skill": "Data center network design",
+            "related_skills": [
+                "EVPN-VXLAN",
+                "Layer 3 routing (data center)",
+                "Data center network segmentation & microsegmentation"
+            ],
+            "keywords": [
+                "spine",
+                "leaf",
+                "ECMP",
+                "east-west",
+                "oversubscription"
+            ],
+            "common_roles": [
+                "Network engineering",
+                "Infrastructure operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "EVPN-VXLAN",
+            "aliases": [
+                "EVPN VXLAN",
+                "VXLAN EVPN",
+                "VXLAN fabric"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Deploying and operating EVPN control-plane with VXLAN dataplane for scalable L2\/L3 overlays, multi-tenancy, and workload mobility in data centers.",
+            "parent_skill": "",
+            "related_skills": [
+                "Spine-leaf architecture",
+                "Data center network design",
+                "Layer 2 switching (data center)"
+            ],
+            "keywords": [
+                "VXLAN",
+                "EVPN",
+                "overlay",
+                "multi-tenancy",
+                "VTEP"
+            ],
+            "common_roles": [
+                "Network engineering",
+                "Cloud networking"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Layer 3 routing (data center)",
+            "aliases": [
+                "Data center routing",
+                "L3 routing",
+                "IP routing (data center)"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and operating L3 routing in data centers, including BGP\/OSPF concepts, route scaling, prefix planning, and traffic engineering for east-west and north-south flows.",
+            "parent_skill": "Data center network design",
+            "related_skills": [
+                "BGP for data centers",
+                "Spine-leaf architecture",
+                "Network telemetry & monitoring"
+            ],
+            "keywords": [
+                "BGP",
+                "OSPF",
+                "routing",
+                "prefix planning",
+                "traffic engineering"
+            ],
+            "common_roles": [
+                "Network engineering",
+                "Cloud networking"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "BGP for data centers",
+            "aliases": [
+                "iBGP\/eBGP (data center)",
+                "BGP EVPN",
+                "BGP routing (DC)"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Configuring and troubleshooting BGP in data center environments for route distribution, EVPN control-plane, peering, route reflection, and path selection policies.",
+            "parent_skill": "Layer 3 routing (data center)",
+            "related_skills": [
+                "EVPN-VXLAN",
+                "Layer 3 routing (data center)"
+            ],
+            "keywords": [
+                "BGP",
+                "route reflection",
+                "peering",
+                "path selection",
+                "EVPN"
+            ],
+            "common_roles": [
+                "Network engineering",
+                "Cloud networking"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Layer 2 switching (data center)",
+            "aliases": [
+                "Data center switching",
+                "VLAN configuration",
+                "STP and L2 protocols"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Planning, configuring, and operating L2 switching in data centers including VLAN design, STP\/RSTP\/MST, port-channeling, and VPC\/MLAG patterns used in high-availability fabrics.",
+            "parent_skill": "",
+            "related_skills": [
+                "EVPN-VXLAN",
+                "Data center network segmentation & microsegmentation",
+                "Spine-leaf architecture"
+            ],
+            "keywords": [
+                "VLAN",
+                "STP",
+                "MLAG",
+                "port-channel",
+                "L2"
+            ],
+            "common_roles": [
+                "Network engineering",
+                "Infrastructure operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Network automation for data centers",
+            "aliases": [
+                "Data center network automation",
+                "Network infrastructure as code",
+                "IaC for networking"
+            ],
+            "skill_type": "process_skill",
+            "description": "Automating configuration, deployment, and lifecycle management of data center network devices and fabrics using IaC, orchestration tools, templating, and CI\/CD practices.",
+            "parent_skill": "",
+            "related_skills": [
+                "EVPN-VXLAN",
+                "SDN for data centers",
+                "Network telemetry & monitoring"
+            ],
+            "keywords": [
+                "automation",
+                "IaC",
+                "orchestration",
+                "CI\/CD",
+                "templating"
+            ],
+            "common_roles": [
+                "Infrastructure operations",
+                "Network engineering",
+                "Cloud networking"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SDN for data centers",
+            "aliases": [
+                "Software-defined networking (data center)",
+                "Controller-based data center networking"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying SDN principles and controller platforms to centralize control plane functions, automate policy, and manage overlays\/underlays in data center environments.",
+            "parent_skill": "",
+            "related_skills": [
+                "Network automation for data centers",
+                "EVPN-VXLAN",
+                "Network telemetry & monitoring"
+            ],
+            "keywords": [
+                "SDN",
+                "controller",
+                "policy",
+                "northbound API",
+                "southbound"
+            ],
+            "common_roles": [
+                "Network engineering",
+                "Cloud networking"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Network telemetry & monitoring (data center)",
+            "aliases": [
+                "Network observability",
+                "Telemetry for networks",
+                "DC network monitoring"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing telemetry, metrics, flow monitoring and observability pipelines (SNMP, sFlow, NetFlow, gNMI\/gnmi telemetry, streaming) to monitor performance, health, and capacity of data center networks.",
+            "parent_skill": "",
+            "related_skills": [
+                "Network automation for data centers",
+                "Data center network troubleshooting",
+                "Layer 3 routing (data center)"
+            ],
+            "keywords": [
+                "telemetry",
+                "netflow",
+                "sflow",
+                "observability",
+                "monitoring"
+            ],
+            "common_roles": [
+                "Infrastructure operations",
+                "Network engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data center network segmentation & microsegmentation",
+            "aliases": [
+                "Network segmentation (DC)",
+                "Microsegmentation",
+                "East-west segmentation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing segmentation strategies (VLANs, VRFs, ACLs, distributed firewalls, microsegmentation) to isolate workloads, enforce policies and reduce lateral risk inside data centers.",
+            "parent_skill": "",
+            "related_skills": [
+                "Layer 2 switching (data center)",
+                "EVPN-VXLAN",
+                "Network telemetry & monitoring"
+            ],
+            "keywords": [
+                "microsegmentation",
+                "ACL",
+                "VRF",
+                "segmentation",
+                "east-west"
+            ],
+            "common_roles": [
+                "Network engineering",
+                "Infrastructure operations",
+                "Cloud networking"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

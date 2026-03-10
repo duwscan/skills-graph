@@ -1,0 +1,270 @@
+{
+    "domain": "IT",
+    "category": "IT Governance, Risk & Compliance",
+    "subcategory": "Business continuity planning",
+    "skills": [
+        {
+            "canonical_name": "Business continuity plan development",
+            "aliases": [
+                "BCP development",
+                "business continuity plan authoring",
+                "continuity plan development"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and documenting an organization's business continuity plan, including objectives, scope, roles, processes, recovery strategies and step‑by‑step playbooks for disruption scenarios.",
+            "parent_skill": "Business continuity planning",
+            "related_skills": [
+                "Business impact analysis",
+                "Continuity plan maintenance and governance",
+                "Business continuity testing and exercises",
+                "Crisis communication and stakeholder coordination"
+            ],
+            "keywords": [
+                "business continuity plan",
+                "BCP",
+                "playbook",
+                "continuity documentation",
+                "recovery strategy"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Business impact analysis",
+            "aliases": [
+                "BIA",
+                "business impact assessment",
+                "impact analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Assessing and quantifying the operational and financial impacts of disruptions to processes, systems and services to identify critical functions and recovery priorities.",
+            "parent_skill": "Business continuity planning",
+            "related_skills": [
+                "Business continuity plan development",
+                "RTO and RPO definition and SLA alignment",
+                "Continuity metrics, reporting and KPI monitoring"
+            ],
+            "keywords": [
+                "impact assessment",
+                "critical functions",
+                "loss quantification",
+                "recovery priority",
+                "downtime cost"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "RTO and RPO definition and SLA alignment",
+            "aliases": [
+                "RTO\/RPO planning",
+                "recovery time objective planning",
+                "recovery point objective planning",
+                "SLA alignment for recovery"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Defining recovery time objectives (RTO) and recovery point objectives (RPO) for systems and services and aligning these with service‑level agreements and business expectations.",
+            "parent_skill": "Business continuity planning",
+            "related_skills": [
+                "Business impact analysis",
+                "IT disaster recovery planning",
+                "Continuity metrics, reporting and KPI monitoring"
+            ],
+            "keywords": [
+                "RTO",
+                "RPO",
+                "SLA",
+                "service levels",
+                "recovery objectives"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "IT disaster recovery planning",
+            "aliases": [
+                "IT DR planning",
+                "disaster recovery plan for IT",
+                "infrastructure disaster recovery planning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating and maintaining IT‑centric disaster recovery plans focused on restoring infrastructure, applications, data and network services after a disruptive incident.",
+            "parent_skill": "Business continuity planning",
+            "related_skills": [
+                "RTO and RPO definition and SLA alignment",
+                "Alternate site and failover strategy planning",
+                "Business continuity testing and exercises"
+            ],
+            "keywords": [
+                "disaster recovery",
+                "DR plan",
+                "application recovery",
+                "data restore",
+                "infrastructure failback"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Business continuity testing and exercises",
+            "aliases": [
+                "BCP testing",
+                "tabletop exercises",
+                "continuity simulation exercises",
+                "disaster recovery testing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and executing tests and exercises (tabletop, simulation, technical failover and full‑scale) to validate continuity plans, identify gaps and improve response procedures.",
+            "parent_skill": "Business continuity planning",
+            "related_skills": [
+                "Business continuity plan development",
+                "IT disaster recovery planning",
+                "Continuity plan maintenance and governance"
+            ],
+            "keywords": [
+                "tabletop",
+                "simulation",
+                "exercise plan",
+                "after action review",
+                "test scenarios"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Crisis communication and stakeholder coordination",
+            "aliases": [
+                "crisis communications",
+                "emergency communication planning",
+                "stakeholder coordination during incidents"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Developing and executing communication strategies and protocols for internal and external stakeholders during disruptions, including escalation paths, messaging templates and media handling.",
+            "parent_skill": "Business continuity planning",
+            "related_skills": [
+                "Business continuity plan development",
+                "Business continuity testing and exercises",
+                "Continuity plan maintenance and governance"
+            ],
+            "keywords": [
+                "crisis comms",
+                "incident communications",
+                "stakeholder updates",
+                "messaging templates",
+                "escalation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor and third‑party resilience assessment",
+            "aliases": [
+                "third‑party continuity assessment",
+                "supplier resilience assessment",
+                "vendor continuity risk assessment"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Evaluating suppliers' and third parties' continuity capabilities, contractual SLAs and risk exposures to ensure supply‑chain resilience and compliance with continuity requirements.",
+            "parent_skill": "Business continuity planning",
+            "related_skills": [
+                "Business impact analysis",
+                "RTO and RPO definition and SLA alignment",
+                "Continuity plan maintenance and governance"
+            ],
+            "keywords": [
+                "third party risk",
+                "supplier assessment",
+                "vendor SLAs",
+                "supply chain resilience",
+                "outsourced continuity"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Continuity plan maintenance and governance",
+            "aliases": [
+                "BCP governance",
+                "plan maintenance and review",
+                "continuity lifecycle management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Establishing governance, version control, review cycles, roles and responsibilities to keep continuity plans current, actionable and aligned with organizational change.",
+            "parent_skill": "Business continuity planning",
+            "related_skills": [
+                "Business continuity plan development",
+                "Business continuity testing and exercises",
+                "Vendor and third‑party resilience assessment"
+            ],
+            "keywords": [
+                "governance",
+                "version control",
+                "review cycle",
+                "policy alignment",
+                "document control"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Alternate site and failover strategy planning",
+            "aliases": [
+                "failover planning",
+                "alternate site planning",
+                "hot\/warm\/cold site strategy"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing strategies for site redundancy and automated or manual failover (including cloud failover), capacity planning for alternate sites and orchestration of service relocation.",
+            "parent_skill": "Business continuity planning",
+            "related_skills": [
+                "IT disaster recovery planning",
+                "RTO and RPO definition and SLA alignment",
+                "Business continuity testing and exercises"
+            ],
+            "keywords": [
+                "failover",
+                "alternate site",
+                "site redundancy",
+                "cloud failover",
+                "capacity planning"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Continuity metrics, reporting and KPI monitoring",
+            "aliases": [
+                "BCP metrics",
+                "continuity KPIs",
+                "continuity reporting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Defining, collecting and reporting key performance indicators and metrics to measure continuity readiness, test outcomes, recovery performance and ongoing improvements.",
+            "parent_skill": "Business continuity planning",
+            "related_skills": [
+                "Business impact analysis",
+                "RTO and RPO definition and SLA alignment",
+                "Business continuity testing and exercises"
+            ],
+            "keywords": [
+                "KPIs",
+                "metrics",
+                "readiness score",
+                "test results",
+                "performance reporting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

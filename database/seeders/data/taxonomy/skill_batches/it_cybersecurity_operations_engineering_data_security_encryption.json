@@ -1,0 +1,270 @@
+{
+    "domain": "IT",
+    "category": "Cybersecurity Operations & Engineering",
+    "subcategory": "Data security & encryption",
+    "skills": [
+        {
+            "canonical_name": "Data encryption architecture",
+            "aliases": [
+                "Encryption architecture",
+                "Enterprise encryption strategy",
+                "Designing encryption for applications"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and specifying encryption controls across systems and data flows, including at-rest, in-transit and application-layer encryption, to meet security and performance requirements.",
+            "parent_skill": "Data security & encryption",
+            "related_skills": [
+                "Key management (KMS) design and operations",
+                "Cryptographic algorithm selection",
+                "Database encryption (TDE & column-level encryption)",
+                "Transport layer encryption (TLS\/SSL) configuration and troubleshooting",
+                "Data classification and protection policy implementation"
+            ],
+            "keywords": [
+                "encryption design",
+                "data at-rest",
+                "data in-transit",
+                "application-layer encryption",
+                "enterprise encryption"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cryptographic algorithm selection",
+            "aliases": [
+                "Cipher selection",
+                "Algorithm selection (AES, RSA, ECC, ChaCha20)"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Evaluating and choosing appropriate cryptographic primitives and modes (symmetric\/asymmetric\/hashes\/AEAD) based on security, performance, interoperability, and compliance constraints.",
+            "parent_skill": "Data security & encryption",
+            "related_skills": [
+                "Data encryption architecture",
+                "Transport layer encryption (TLS\/SSL) configuration and troubleshooting",
+                "Public Key Infrastructure (PKI) management",
+                "Homomorphic encryption and privacy-preserving techniques"
+            ],
+            "keywords": [
+                "AES",
+                "RSA",
+                "ECC",
+                "ChaCha20",
+                "HMAC",
+                "cipher suites"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Key management (KMS) design and operations",
+            "aliases": [
+                "Key lifecycle management",
+                "KMS implementation",
+                "Encryption key management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and operating key management processes and systems, including key generation, storage, rotation, archival, recovery and secure distribution (on-prem and cloud KMS\/HSM integrations).",
+            "parent_skill": "Data security & encryption",
+            "related_skills": [
+                "Data encryption architecture",
+                "Public Key Infrastructure (PKI) management",
+                "Secrets management",
+                "Database encryption (TDE & column-level encryption)"
+            ],
+            "keywords": [
+                "key rotation",
+                "key vault",
+                "HSM",
+                "KMS",
+                "key lifecycle"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Public Key Infrastructure (PKI) management",
+            "aliases": [
+                "Certificate lifecycle management",
+                "Digital certificate management",
+                "PKI operations"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing certificates, CAs, enrollment, revocation and trust chains for organizational identities and services, including automation and integration with systems and devices.",
+            "parent_skill": "Data security & encryption",
+            "related_skills": [
+                "Transport layer encryption (TLS\/SSL) configuration and troubleshooting",
+                "Key management (KMS) design and operations",
+                "Cryptographic algorithm selection"
+            ],
+            "keywords": [
+                "X.509",
+                "certificate authority",
+                "OCSP",
+                "CRL",
+                "certificate provisioning"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Secrets management",
+            "aliases": [
+                "Secret rotation",
+                "Vault management",
+                "Credential storage"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing and operating secure storage, retrieval and rotation of secrets (API keys, credentials, tokens) using vaults or secure stores and integrating secrets handling into CI\/CD and runtime environments.",
+            "parent_skill": "Data security & encryption",
+            "related_skills": [
+                "Key management (KMS) design and operations",
+                "DevSecOps integration",
+                "Data encryption architecture"
+            ],
+            "keywords": [
+                "secret rotation",
+                "vault",
+                "credential management",
+                "secure store",
+                "secrets injection"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Transport layer encryption (TLS\/SSL) configuration and troubleshooting",
+            "aliases": [
+                "TLS configuration",
+                "SSL management",
+                "HTTPS\/TLS troubleshooting"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Configuring and debugging TLS\/SSL on servers, load balancers and clients, including certificate installation, cipher-suite tuning, protocol versioning and mitigation of protocol-related vulnerabilities.",
+            "parent_skill": "Data security & encryption",
+            "related_skills": [
+                "Public Key Infrastructure (PKI) management",
+                "Cryptographic algorithm selection",
+                "Web application security"
+            ],
+            "keywords": [
+                "TLS",
+                "SSL",
+                "cipher suites",
+                "OCSP stapling",
+                "TLS handshake"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Database encryption (TDE & column-level encryption)",
+            "aliases": [
+                "Transparent Data Encryption",
+                "Column-level encryption",
+                "Database encryption implementation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Implementing and managing encryption solutions for databases, including TDE, column-level\/field encryption, and integrating with key management systems while balancing performance and queryability.",
+            "parent_skill": "Data security & encryption",
+            "related_skills": [
+                "Key management (KMS) design and operations",
+                "Data encryption architecture",
+                "Tokenization for sensitive data protection"
+            ],
+            "keywords": [
+                "TDE",
+                "column encryption",
+                "database encryption",
+                "transparent data encryption",
+                "database keys"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tokenization for sensitive data protection",
+            "aliases": [
+                "Data tokenization",
+                "Payment tokenization",
+                "Token-based masking"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing tokenization solutions to replace sensitive data (e.g., PANs, PII) with tokens to reduce data exposure and scope for systems and compliance frameworks.",
+            "parent_skill": "Data security & encryption",
+            "related_skills": [
+                "Database encryption (TDE & column-level encryption)",
+                "Data classification and protection policy implementation",
+                "Data loss prevention (DLP) deployment and tuning"
+            ],
+            "keywords": [
+                "tokenization",
+                "data masking",
+                "PAN tokenization",
+                "PCI scope reduction",
+                "format-preserving token"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data loss prevention (DLP) deployment and tuning",
+            "aliases": [
+                "DLP configuration",
+                "Data leakage prevention"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Deploying and tuning DLP systems and policies to detect, block or quarantine unauthorized movement or exposure of sensitive data across endpoints, networks and cloud services.",
+            "parent_skill": "Data security & encryption",
+            "related_skills": [
+                "Data classification and protection policy implementation",
+                "Tokenization for sensitive data protection",
+                "Secrets management"
+            ],
+            "keywords": [
+                "DLP",
+                "data exfiltration",
+                "policy tuning",
+                "content inspection",
+                "endpoint DLP"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data classification and protection policy implementation",
+            "aliases": [
+                "Data classification",
+                "Data protection policy enforcement",
+                "Information classification"
+            ],
+            "skill_type": "process_skill",
+            "description": "Defining and operationalizing data classification schemes and protection policies (labels, handling rules, retention) that drive encryption, access control, DLP and compliance controls across systems.",
+            "parent_skill": "Data security & encryption",
+            "related_skills": [
+                "Data loss prevention (DLP) deployment and tuning",
+                "Data encryption architecture",
+                "Tokenization for sensitive data protection"
+            ],
+            "keywords": [
+                "data classification",
+                "data labeling",
+                "data handling",
+                "data protection policy",
+                "information lifecycle"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

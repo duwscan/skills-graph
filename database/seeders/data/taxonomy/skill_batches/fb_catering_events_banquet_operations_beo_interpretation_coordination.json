@@ -1,0 +1,263 @@
+{
+    "domain": "F&B",
+    "category": "Catering, Events & Banquet Operations",
+    "subcategory": "BEO interpretation & coordination",
+    "skills": [
+        {
+            "canonical_name": "Banquet Event Order (BEO) interpretation",
+            "aliases": [
+                "BEO reading",
+                "Banquet Event Order review",
+                "Banquet order interpretation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Understand and extract actionable requirements from Banquet Event Orders, including guest counts, menu items, service style, timelines, room setups, and special requests.",
+            "parent_skill": "Banquet operations",
+            "related_skills": [
+                "BEO drafting and amendment management",
+                "Event timeline and run sheet development",
+                "Service specification and plating instruction interpretation"
+            ],
+            "keywords": [
+                "BEO",
+                "banquet order",
+                "guest count",
+                "menu items",
+                "room setup"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "BEO drafting and amendment management",
+            "aliases": [
+                "BEO creation",
+                "BEO change order management",
+                "Banquet Event Order updates"
+            ],
+            "skill_type": "process_skill",
+            "description": "Produce, update and track Banquet Event Orders and formalize client change requests, ensuring version control and stakeholder sign-off on amendments.",
+            "parent_skill": "Banquet operations",
+            "related_skills": [
+                "Banquet Event Order (BEO) interpretation",
+                "Cross-functional event coordination",
+                "Vendor and supplier coordination for events"
+            ],
+            "keywords": [
+                "BEO drafting",
+                "change order",
+                "version control",
+                "amendment"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Event timeline and run sheet development",
+            "aliases": [
+                "Event run sheet creation",
+                "Event schedule development",
+                "Event timing plan"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design detailed event timelines and run sheets that sequence setup, service, breaks, entertainment, and teardown aligned to the BEO and client expectations.",
+            "parent_skill": "Event operations",
+            "related_skills": [
+                "Banquet Event Order (BEO) interpretation",
+                "Service timing and pacing coordination",
+                "On-site event execution coordination"
+            ],
+            "keywords": [
+                "run sheet",
+                "timeline",
+                "schedule",
+                "sequence",
+                "cue sheet"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-functional event coordination",
+            "aliases": [
+                "Interdepartmental event coordination",
+                "Stakeholder coordination for events",
+                "Internal event liaison"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Coordinate and communicate requirements between kitchen, service, AV, housekeeping, security and external vendors to align execution with the BEO.",
+            "parent_skill": "Event operations",
+            "related_skills": [
+                "Vendor and supplier coordination for events",
+                "BEO drafting and amendment management",
+                "On-site event execution coordination"
+            ],
+            "keywords": [
+                "stakeholder communication",
+                "kitchen liaison",
+                "AV coordination",
+                "cross-functional"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Catering logistics planning",
+            "aliases": [
+                "Catering logistics management",
+                "Event supply and equipment planning",
+                "Catering operations planning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Plan and allocate resources for food production, transport, storage, equipment, staffing and service flow to meet event requirements and BEO specifications.",
+            "parent_skill": "Catering operations",
+            "related_skills": [
+                "Vendor and supplier coordination for events",
+                "Banquet floor plan and seating layout planning",
+                "BEO drafting and amendment management"
+            ],
+            "keywords": [
+                "logistics",
+                "transport",
+                "equipment",
+                "cold chain",
+                "staffing plan"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Banquet floor plan and seating layout planning",
+            "aliases": [
+                "Seating chart planning",
+                "Floorplan setup for events",
+                "Room layout planning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Design and specify room layouts, table configurations, traffic flow and seating assignments to satisfy BEO room setup, accessibility and capacity requirements.",
+            "parent_skill": "Banquet operations",
+            "related_skills": [
+                "Banquet Event Order (BEO) interpretation",
+                "Event timeline and run sheet development",
+                "On-site event execution coordination"
+            ],
+            "keywords": [
+                "floor plan",
+                "seating plan",
+                "room layout",
+                "capacity",
+                "table configuration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service specification and plating instruction interpretation",
+            "aliases": [
+                "Plating instruction interpretation",
+                "Service spec translation",
+                "Menu-to-service instruction mapping"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Translate menu items and BEO service notes into specific kitchen and service instructions including portioning, plating, service order and special dietary handling.",
+            "parent_skill": "Culinary operations",
+            "related_skills": [
+                "Banquet Event Order (BEO) interpretation",
+                "Catering logistics planning",
+                "Service timing and pacing coordination"
+            ],
+            "keywords": [
+                "plating",
+                "portioning",
+                "service order",
+                "dietary requirements",
+                "menu specs"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "On-site event execution coordination",
+            "aliases": [
+                "On-site event management",
+                "Event floor management",
+                "Day-of-event coordination"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Manage and coordinate on-site activities during the event, overseeing setup, service delivery, schedule adherence, immediate problem resolution and post-event teardown per the BEO.",
+            "parent_skill": "Event operations",
+            "related_skills": [
+                "Event timeline and run sheet development",
+                "Cross-functional event coordination",
+                "Banquet floor plan and seating layout planning"
+            ],
+            "keywords": [
+                "day-of coordination",
+                "floor manager",
+                "issue resolution",
+                "setup",
+                "teardown"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor and supplier coordination for events",
+            "aliases": [
+                "External vendor coordination",
+                "Supplier liaison for events",
+                "Third-party vendor management (events)"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Manage communication, scheduling, delivery requirements and contractual details with external vendors (AV, rentals, florists, entertainers) to ensure timely fulfillment of the BEO.",
+            "parent_skill": "Catering operations",
+            "related_skills": [
+                "Catering logistics planning",
+                "BEO drafting and amendment management",
+                "Cross-functional event coordination"
+            ],
+            "keywords": [
+                "vendor scheduling",
+                "deliveries",
+                "rental coordination",
+                "service-levels"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service timing and pacing coordination",
+            "aliases": [
+                "Service pacing",
+                "Course timing coordination",
+                "Timing of service"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Plan and control timing for courses, beverage service and breaks to maintain consistent guest experience and synchronization between kitchen and front-of-house teams per the BEO.",
+            "parent_skill": "Banquet operations",
+            "related_skills": [
+                "Event timeline and run sheet development",
+                "Service specification and plating instruction interpretation",
+                "On-site event execution coordination"
+            ],
+            "keywords": [
+                "pacing",
+                "service timing",
+                "course timing",
+                "synchronization"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

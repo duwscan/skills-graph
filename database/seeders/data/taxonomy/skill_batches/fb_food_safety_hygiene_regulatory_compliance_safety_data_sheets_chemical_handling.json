@@ -1,0 +1,249 @@
+{
+    "domain": "F&B",
+    "category": "Food Safety, Hygiene & Regulatory Compliance",
+    "subcategory": "Safety data sheets & chemical handling",
+    "skills": [
+        {
+            "canonical_name": "Safety Data Sheet (SDS) interpretation",
+            "aliases": [
+                "MSDS interpretation",
+                "SDS reading",
+                "Hazard data sheet interpretation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Read and extract hazards, composition, handling, emergency measures and regulatory guidance from Safety Data Sheets (SDS).",
+            "parent_skill": "Safety data sheets & chemical handling",
+            "related_skills": [
+                "SDS authoring and updating",
+                "Hazard Communication (HazCom) program implementation",
+                "Personal protective equipment (PPE) selection for chemical hazards"
+            ],
+            "keywords": [
+                "SDS",
+                "MSDS",
+                "hazard information",
+                "emergency measures"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SDS authoring and updating",
+            "aliases": [
+                "Safety Data Sheet authoring",
+                "MSDS writing",
+                "SDS preparation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Create and revise SDS documents to reflect accurate hazard classification, composition, safe handling, and emergency response information in line with GHS and local requirements.",
+            "parent_skill": "Safety data sheets & chemical handling",
+            "related_skills": [
+                "SDS interpretation",
+                "GHS labeling and chemical pictograms",
+                "Use of electronic SDS management systems"
+            ],
+            "keywords": [
+                "SDS authoring",
+                "hazard classification",
+                "document update"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Hazard Communication (HazCom) program implementation",
+            "aliases": [
+                "HazCom implementation",
+                "Hazard communication program management"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Design, deploy and maintain workplace hazard communication programs including labeling, SDS accessibility, employee training and recordkeeping to meet regulatory obligations.",
+            "parent_skill": "Safety data sheets & chemical handling",
+            "related_skills": [
+                "SDS interpretation",
+                "GHS labeling and chemical pictograms",
+                "Chemical inventory management"
+            ],
+            "keywords": [
+                "HazCom",
+                "training",
+                "labeling",
+                "SDS access"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "GHS labeling and chemical pictograms",
+            "aliases": [
+                "GHS label application",
+                "chemical pictogram application",
+                "Globally Harmonized System labeling"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Apply GHS-compliant labels, hazard statements and pictograms to chemical containers and signage consistent with global and local labeling standards.",
+            "parent_skill": "Safety data sheets & chemical handling",
+            "related_skills": [
+                "Hazard Communication (HazCom) program implementation",
+                "Chemical storage compatibility assessment",
+                "SDS interpretation"
+            ],
+            "keywords": [
+                "GHS",
+                "labels",
+                "pictograms",
+                "hazard statements"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Chemical inventory management",
+            "aliases": [
+                "chemical tracking",
+                "chemical register management",
+                "chemical stock control"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintain accurate records of chemicals, quantities, locations, SDS links and shelf life to support safety, procurement and regulatory reporting.",
+            "parent_skill": "Safety data sheets & chemical handling",
+            "related_skills": [
+                "Use of electronic SDS management systems",
+                "Chemical waste classification and disposal compliance",
+                "Chemical storage compatibility assessment"
+            ],
+            "keywords": [
+                "inventory",
+                "chemical register",
+                "stock control"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Chemical storage compatibility assessment",
+            "aliases": [
+                "chemical segregation assessment",
+                "storage compatibility evaluation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Assess chemical properties and reactivity to determine safe segregation, storage conditions, ventilation and secondary containment to prevent hazardous reactions and exposures.",
+            "parent_skill": "Safety data sheets & chemical handling",
+            "related_skills": [
+                "GHS labeling and chemical pictograms",
+                "Chemical inventory management",
+                "Spill response, containment and clean-up procedures"
+            ],
+            "keywords": [
+                "segregation",
+                "incompatibility",
+                "storage",
+                "containment"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Spill response, containment and clean-up procedures",
+            "aliases": [
+                "chemical spill response",
+                "spill containment procedures",
+                "hazardous spill clean-up"
+            ],
+            "skill_type": "process_skill",
+            "description": "Execute containment, emergency shutdown, decontamination and clean-up actions for chemical spills in accordance with SDS guidance and internal emergency procedures.",
+            "parent_skill": "Safety data sheets & chemical handling",
+            "related_skills": [
+                "PPE selection for chemical hazards",
+                "Hazardous incident reporting and investigation",
+                "Chemical waste classification and disposal compliance"
+            ],
+            "keywords": [
+                "spill kit",
+                "containment",
+                "decontamination",
+                "emergency response"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Personal protective equipment (PPE) selection for chemical hazards",
+            "aliases": [
+                "chemical PPE selection",
+                "PPE selection for chemicals"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Identify and select appropriate PPE (gloves, goggles, respirators, aprons) based on routes of exposure, chemical hazards and SDS recommendations.",
+            "parent_skill": "Safety data sheets & chemical handling",
+            "related_skills": [
+                "SDS interpretation",
+                "Spill response, containment and clean-up procedures"
+            ],
+            "keywords": [
+                "PPE",
+                "respirator",
+                "gloves",
+                "eye protection"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Chemical waste classification and disposal compliance",
+            "aliases": [
+                "hazardous waste classification",
+                "chemical disposal compliance",
+                "regulated chemical waste management"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Classify chemical wastes and manage their storage, transport and disposal or treatment to comply with environmental and hazardous waste regulations.",
+            "parent_skill": "Safety data sheets & chemical handling",
+            "related_skills": [
+                "Chemical inventory management",
+                "Hazard Communication (HazCom) program implementation"
+            ],
+            "keywords": [
+                "waste code",
+                "disposal",
+                "hazardous waste",
+                "regulatory compliance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Use of electronic SDS management systems",
+            "aliases": [
+                "electronic SDS software",
+                "SDS management software",
+                "chemical safety database systems"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use and configure digital SDS repositories and chemical inventory platforms to store, search, update and distribute safety data sheets and chemical records.",
+            "parent_skill": "Safety data sheets & chemical handling",
+            "related_skills": [
+                "Chemical inventory management",
+                "SDS authoring and updating"
+            ],
+            "keywords": [
+                "SDS database",
+                "chemical software",
+                "electronic SDS",
+                "safety data repository"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

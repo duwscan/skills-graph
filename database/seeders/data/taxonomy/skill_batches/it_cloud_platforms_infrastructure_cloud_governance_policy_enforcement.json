@@ -1,0 +1,336 @@
+{
+    "domain": "IT",
+    "category": "Cloud Platforms & Infrastructure",
+    "subcategory": "Cloud governance & policy enforcement",
+    "skills": [
+        {
+            "canonical_name": "Cloud governance framework design",
+            "aliases": [
+                "Cloud governance strategy",
+                "Governance framework for cloud"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing organizational governance models, roles, policies, and control domains for cloud usage to align with business objectives and risk appetite.",
+            "parent_skill": "Cloud governance & policy enforcement",
+            "related_skills": [
+                "Policy as Code implementation",
+                "Access & identity governance for cloud",
+                "Cloud cost governance (FinOps controls)",
+                "Resource tagging and metadata governance"
+            ],
+            "keywords": [
+                "framework",
+                "governance model",
+                "roles and responsibilities",
+                "cloud strategy",
+                "control domains"
+            ],
+            "common_roles": [
+                "Cloud Architect",
+                "Platform Engineer",
+                "IT Governance Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Policy as Code implementation",
+            "aliases": [
+                "Policy-as-code",
+                "PaC",
+                "Policy as code implementation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Encoding governance rules as executable code integrated into CI\/CD and infrastructure pipelines to validate and enforce policies automatically.",
+            "parent_skill": "Cloud governance & policy enforcement",
+            "related_skills": [
+                "Cloud-native policy automation",
+                "Infrastructure compliance scanning (CSPM)",
+                "Policy compliance monitoring & reporting"
+            ],
+            "keywords": [
+                "policy-as-code",
+                "CI\/CD",
+                "infrastructure as code",
+                "automated enforcement",
+                "pre-deployment checks"
+            ],
+            "common_roles": [
+                "DevOps Engineer",
+                "Cloud Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Access & identity governance for cloud",
+            "aliases": [
+                "Cloud IAM governance",
+                "Identity governance for cloud",
+                "Cloud access governance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and operating identity, authentication, authorization, and entitlement lifecycle controls in cloud environments to ensure least privilege and separation of duties.",
+            "parent_skill": "Cloud governance & policy enforcement",
+            "related_skills": [
+                "Policy as Code implementation",
+                "Cloud security policy enforcement",
+                "Policy compliance monitoring & reporting"
+            ],
+            "keywords": [
+                "IAM",
+                "RBAC",
+                "ABAC",
+                "entitlement reviews",
+                "least privilege"
+            ],
+            "common_roles": [
+                "Cloud Security Engineer",
+                "Identity Access Manager",
+                "Site Reliability Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cloud cost governance (FinOps controls)",
+            "aliases": [
+                "Cloud cost controls",
+                "FinOps governance",
+                "Cloud financial controls"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Establishing policies, budgets, chargeback\/showback models, and guardrails to control cloud spending and optimize resource economics across the organization.",
+            "parent_skill": "Cloud governance & policy enforcement",
+            "related_skills": [
+                "Resource tagging and metadata governance",
+                "Policy compliance monitoring & reporting",
+                "Cloud governance framework design"
+            ],
+            "keywords": [
+                "FinOps",
+                "cost allocation",
+                "budgets",
+                "chargeback",
+                "cost optimization"
+            ],
+            "common_roles": [
+                "FinOps Analyst",
+                "Cloud Financial Manager",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Resource tagging and metadata governance",
+            "aliases": [
+                "Tagging strategy",
+                "Resource metadata policy",
+                "Cloud resource tagging governance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Defining and enforcing standardized tagging conventions, required metadata, and automation to enable cost allocation, access control, and lifecycle management.",
+            "parent_skill": "Cloud governance & policy enforcement",
+            "related_skills": [
+                "Cloud cost governance (FinOps controls)",
+                "Policy as Code implementation",
+                "Policy compliance monitoring & reporting"
+            ],
+            "keywords": [
+                "tags",
+                "naming conventions",
+                "metadata",
+                "automation",
+                "resource categorization"
+            ],
+            "common_roles": [
+                "Cloud Engineer",
+                "Platform Engineer",
+                "FinOps Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cloud-native policy automation",
+            "aliases": [
+                "Cloud provider policy automation",
+                "Azure Policy\/AWS Organizations\/GCP Org Policy (examples)"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using cloud-provider native policy engines and automation features to implement, deploy, and enforce governance rules at organization, subscription, or project scope.",
+            "parent_skill": "Cloud governance & policy enforcement",
+            "related_skills": [
+                "Policy as Code implementation",
+                "Policy compliance monitoring & reporting",
+                "Infrastructure compliance scanning (CSPM)"
+            ],
+            "keywords": [
+                "Azure Policy",
+                "AWS Organizations",
+                "GCP Org Policy",
+                "policy engine",
+                "automated remediation"
+            ],
+            "common_roles": [
+                "Cloud Engineer",
+                "Platform Engineer",
+                "Cloud Architect"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cloud security policy enforcement",
+            "aliases": [
+                "Cloud security controls enforcement",
+                "Cloud security posture management",
+                "CSPM practices"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Implementing and operationalizing technical security controls, guardrails, and remediation to maintain a secure cloud posture consistent with organizational policies.",
+            "parent_skill": "Cloud governance & policy enforcement",
+            "related_skills": [
+                "Infrastructure compliance scanning (CSPM)",
+                "Access & identity governance for cloud",
+                "Policy as Code implementation"
+            ],
+            "keywords": [
+                "security controls",
+                "guardrails",
+                "remediation",
+                "posture management",
+                "vulnerability management"
+            ],
+            "common_roles": [
+                "Cloud Security Engineer",
+                "Security Operations Engineer",
+                "Site Reliability Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Infrastructure compliance scanning (CSPM)",
+            "aliases": [
+                "Cloud configuration scanning",
+                "CSPM",
+                "Cloud posture scanning"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using automated tools to scan cloud resources and configurations for policy violations, misconfigurations, and compliance gaps across accounts and projects.",
+            "parent_skill": "Cloud governance & policy enforcement",
+            "related_skills": [
+                "Cloud security policy enforcement",
+                "Policy compliance monitoring & reporting",
+                "Policy as Code implementation"
+            ],
+            "keywords": [
+                "compliance scanning",
+                "misconfiguration",
+                "CSPM tools",
+                "automated discovery",
+                "baseline checks"
+            ],
+            "common_roles": [
+                "Cloud Security Engineer",
+                "DevOps Engineer",
+                "Cloud Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Compliance mapping and regulatory control implementation for cloud",
+            "aliases": [
+                "Regulatory control mapping",
+                "Cloud compliance mapping (GDPR\/PCI\/SOC)",
+                "Regulatory control implementation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Translating external regulatory requirements and internal control frameworks into cloud-specific controls, evidence requirements, and implementation plans.",
+            "parent_skill": "Cloud governance & policy enforcement",
+            "related_skills": [
+                "Policy compliance monitoring & reporting",
+                "Cloud security policy enforcement",
+                "Cloud governance framework design"
+            ],
+            "keywords": [
+                "compliance mapping",
+                "regulatory requirements",
+                "control implementation",
+                "audit evidence",
+                "data protection"
+            ],
+            "common_roles": [
+                "IT Compliance Analyst",
+                "Cloud Security Engineer",
+                "Risk and Compliance Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Policy compliance monitoring & reporting",
+            "aliases": [
+                "Continuous compliance monitoring",
+                "Cloud compliance reporting",
+                "Audit logging and compliance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Establishing monitoring, alerting, dashboards, and evidence collection to demonstrate ongoing compliance with governance policies and support audits.",
+            "parent_skill": "Cloud governance & policy enforcement",
+            "related_skills": [
+                "Infrastructure compliance scanning (CSPM)",
+                "Policy as Code implementation",
+                "Compliance mapping and regulatory control implementation for cloud"
+            ],
+            "keywords": [
+                "monitoring",
+                "dashboards",
+                "alerts",
+                "audit evidence",
+                "continuous compliance"
+            ],
+            "common_roles": [
+                "Cloud Engineer",
+                "IT Compliance Analyst",
+                "Security Operations Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Governance exception and risk acceptance management",
+            "aliases": [
+                "Policy exception handling",
+                "Risk acceptance process for cloud",
+                "Governance exception workflow"
+            ],
+            "skill_type": "process_skill",
+            "description": "Defining and operating formal processes to evaluate, approve, document, and periodically review exceptions to governance policies and accepted residual risks.",
+            "parent_skill": "Cloud governance & policy enforcement",
+            "related_skills": [
+                "Cloud governance framework design",
+                "Policy compliance monitoring & reporting",
+                "Compliance mapping and regulatory control implementation for cloud"
+            ],
+            "keywords": [
+                "exception workflow",
+                "risk acceptance",
+                "policy waiver",
+                "periodic review",
+                "compensating controls"
+            ],
+            "common_roles": [
+                "Cloud Architect",
+                "Risk and Compliance Manager",
+                "IT Governance Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

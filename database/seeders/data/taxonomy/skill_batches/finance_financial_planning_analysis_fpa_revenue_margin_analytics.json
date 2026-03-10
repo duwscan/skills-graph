@@ -1,0 +1,259 @@
+{
+    "domain": "Finance",
+    "category": "Financial Planning & Analysis (FP&A)",
+    "subcategory": "Revenue & margin analytics",
+    "skills": [
+        {
+            "canonical_name": "Revenue forecasting",
+            "aliases": [
+                "Top-line forecasting",
+                "Sales forecasting",
+                "Revenue projection"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and running recurring processes to predict future revenue using business drivers, sales inputs, and demand signals for planning cycles.",
+            "parent_skill": "Revenue & margin analytics",
+            "related_skills": [
+                "Time series forecasting for revenue",
+                "Revenue variance analysis",
+                "Financial modeling (revenue & margin)"
+            ],
+            "keywords": [
+                "forecast",
+                "plan",
+                "driver-based",
+                "monthly forecasting",
+                "quarterly forecast"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Time series forecasting for revenue",
+            "aliases": [
+                "ARIMA\/ETS revenue forecasting",
+                "Seasonal revenue forecasting",
+                "Demand time-series modeling"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Applying statistical and machine-learning time-series techniques (e.g., ARIMA, exponential smoothing, Prophet) to model and predict revenue patterns and seasonality.",
+            "parent_skill": "Revenue & margin analytics",
+            "related_skills": [
+                "Revenue forecasting",
+                "Cohort & retention revenue analysis",
+                "Financial modeling (revenue & margin)"
+            ],
+            "keywords": [
+                "ARIMA",
+                "ETS",
+                "seasonality",
+                "prophet",
+                "forecast accuracy"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Revenue variance analysis",
+            "aliases": [
+                "Revenue vs. plan analysis",
+                "Top-line variance analysis",
+                "Actual vs forecast revenue analysis"
+            ],
+            "skill_type": "process_skill",
+            "description": "Investigating and explaining differences between actual and expected revenue (by driver, product, channel, geography) and quantifying root causes for stakeholders.",
+            "parent_skill": "Revenue & margin analytics",
+            "related_skills": [
+                "Revenue forecasting",
+                "Gross margin analysis",
+                "Product & customer profitability analysis"
+            ],
+            "keywords": [
+                "variance",
+                "root cause",
+                "driver analysis",
+                "month-to-month",
+                "explain-outs"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Contribution margin analysis",
+            "aliases": [
+                "Contribution margin modeling",
+                "CM analysis",
+                "Unit contribution analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculating and interpreting contribution margin by product, service, or customer to assess incremental profitability and support pricing and mix decisions.",
+            "parent_skill": "Revenue & margin analytics",
+            "related_skills": [
+                "Product & customer profitability analysis",
+                "Gross margin analysis",
+                "Financial modeling (revenue & margin)"
+            ],
+            "keywords": [
+                "contribution",
+                "variable costs",
+                "unit economics",
+                "break-even"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Gross margin analysis",
+            "aliases": [
+                "Gross margin reporting",
+                "Margin optimization analysis",
+                "Cost of goods sold analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing gross margin drivers (revenue mix, COGS components, discounts) and identifying opportunities to improve product-level and aggregated margins.",
+            "parent_skill": "Revenue & margin analytics",
+            "related_skills": [
+                "Contribution margin analysis",
+                "Product & customer profitability analysis",
+                "Pricing analytics & price elasticity modeling"
+            ],
+            "keywords": [
+                "gross margin",
+                "COGS",
+                "margin drivers",
+                "pricing impact"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Product & customer profitability analysis",
+            "aliases": [
+                "SKU profitability analysis",
+                "Customer-level P&L analysis",
+                "Segment profitability analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Allocating revenue and cost to products, SKUs, and customer segments to compute profitability and inform portfolio, pricing, and go-to-market decisions.",
+            "parent_skill": "Revenue & margin analytics",
+            "related_skills": [
+                "Contribution margin analysis",
+                "Gross margin analysis",
+                "Revenue variance analysis"
+            ],
+            "keywords": [
+                "product P&L",
+                "customer margin",
+                "full-cost allocation",
+                "segment analysis"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Pricing analytics & price elasticity modeling",
+            "aliases": [
+                "Price elasticity analysis",
+                "Pricing optimization",
+                "Demand-price sensitivity modeling"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Quantifying price–demand relationships and running experiments or models to set optimal prices, discounting strategies, and promotional impacts on revenue and margins.",
+            "parent_skill": "Revenue & margin analytics",
+            "related_skills": [
+                "Gross margin analysis",
+                "Product & customer profitability analysis",
+                "Revenue forecasting"
+            ],
+            "keywords": [
+                "elasticity",
+                "price testing",
+                "A\/B pricing",
+                "promo impact"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Revenue recognition (GAAP\/IFRS) for FP&A",
+            "aliases": [
+                "Revenue recognition rules",
+                "Revenue accounting treatment",
+                "Revenue cut-off and deferral analysis"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Understanding revenue recognition principles and their impact on reported revenue and timing (e.g., performance obligations, contract accounting) to align forecasts and variance explanations with accounting rules.",
+            "parent_skill": "Revenue & margin analytics",
+            "related_skills": [
+                "Revenue variance analysis",
+                "Financial modeling (revenue & margin)"
+            ],
+            "keywords": [
+                "recognition",
+                "deferred revenue",
+                "cut-off",
+                "contract accounting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial modeling (revenue & margin)",
+            "aliases": [
+                "Revenue & margin modeling",
+                "Driver-based financial modeling",
+                "FP&A revenue model"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Building and maintaining driver-based financial models that link revenue assumptions, cost drivers, and margin calculations for planning, scenario analysis, and decision support.",
+            "parent_skill": "Revenue & margin analytics",
+            "related_skills": [
+                "Revenue forecasting",
+                "Contribution margin analysis",
+                "Advanced Excel for FP&A"
+            ],
+            "keywords": [
+                "driver-based model",
+                "scenario analysis",
+                "sensitivity",
+                "model governance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Advanced Excel for FP&A",
+            "aliases": [
+                "Excel modeling for FP&A",
+                "Advanced spreadsheet modeling",
+                "Excel for revenue analytics"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Advanced use of Excel for FP&A tasks including complex formulas, pivot tables, Power Query, Power Pivot (DAX), model structuring and spreadsheet controls for revenue and margin analysis.",
+            "parent_skill": "Revenue & margin analytics",
+            "related_skills": [
+                "Financial modeling (revenue & margin)",
+                "Revenue variance analysis"
+            ],
+            "keywords": [
+                "pivot",
+                "power query",
+                "power pivot",
+                "dax",
+                "modeling"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

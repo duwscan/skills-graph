@@ -1,0 +1,305 @@
+{
+    "domain": "F&B",
+    "category": "Kitchen Operations & Back-of-House Management",
+    "subcategory": "Line checks & quality control",
+    "skills": [
+        {
+            "canonical_name": "Food temperature monitoring",
+            "aliases": [
+                "temperature control",
+                "hot-holding checks",
+                "cold-holding checks",
+                "temperature logging"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Monitoring and recording temperatures of cooked, held and refrigerated foods to ensure food-safety compliance and product quality.",
+            "parent_skill": "Line checks & quality control",
+            "related_skills": [
+                "Thermometer operation and calibration",
+                "Holding time management",
+                "Corrective action documentation and deviation reporting"
+            ],
+            "keywords": [
+                "temperature",
+                "hot-hold",
+                "cold-hold",
+                "log",
+                "probe"
+            ],
+            "common_roles": [
+                "kitchen line staff",
+                "back-of-house supervisory staff",
+                "food safety staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Thermometer operation and calibration",
+            "aliases": [
+                "thermometer use",
+                "probe thermometer calibration",
+                "temperature probe operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using, calibrating and maintaining food thermometers and probes (including ice-point and calibration checks) and interpreting readings accurately.",
+            "parent_skill": "Line checks & quality control",
+            "related_skills": [
+                "Food temperature monitoring",
+                "Cleaning verification and sanitation checks"
+            ],
+            "keywords": [
+                "thermometer",
+                "probe",
+                "calibration",
+                "ice-point",
+                "readings"
+            ],
+            "common_roles": [
+                "kitchen line staff",
+                "back-of-house supervisory staff",
+                "maintenance support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Line setup and station checks",
+            "aliases": [
+                "station setup checklist",
+                "line pre-shift checks",
+                "mise en place verification"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Conducting pre-shift inspections to verify stations are stocked, equipment functions, workflows established and mise en place meets service requirements.",
+            "parent_skill": "Line checks & quality control",
+            "related_skills": [
+                "Portion control and yield management",
+                "Cleaning verification and sanitation checks",
+                "Product quality inspection"
+            ],
+            "keywords": [
+                "pre-shift",
+                "station",
+                "mise en place",
+                "checklist",
+                "setup"
+            ],
+            "common_roles": [
+                "kitchen line staff",
+                "back-of-house supervisory staff",
+                "prep staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Portion control and yield management",
+            "aliases": [
+                "portioning consistency",
+                "yield optimization",
+                "food portion control"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Measuring and controlling portion sizes and yields to ensure consistent product quality, customer experience and cost control.",
+            "parent_skill": "Line checks & quality control",
+            "related_skills": [
+                "Line setup and station checks",
+                "Product quality inspection",
+                "Sensory evaluation (taste, aroma, appearance)"
+            ],
+            "keywords": [
+                "portion",
+                "yield",
+                "consistency",
+                "serving size",
+                "cost control"
+            ],
+            "common_roles": [
+                "kitchen line staff",
+                "back-of-house supervisory staff",
+                "inventory coordinators"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Product quality inspection",
+            "aliases": [
+                "food quality inspection",
+                "visual quality checks",
+                "QC checks"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Assessing finished menu items for adherence to recipe specifications, temperature, appearance, texture and overall quality before service.",
+            "parent_skill": "Line checks & quality control",
+            "related_skills": [
+                "Sensory evaluation (taste, aroma, appearance)",
+                "Portion control and yield management",
+                "Holding time management"
+            ],
+            "keywords": [
+                "quality",
+                "inspection",
+                "visual",
+                "recipe adherence",
+                "consistency"
+            ],
+            "common_roles": [
+                "kitchen line staff",
+                "quality control staff",
+                "back-of-house supervisory staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Holding time management",
+            "aliases": [
+                "holding time tracking",
+                "time-temperature control",
+                "hot-hold time management"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Tracking and enforcing maximum holding times, performing time checks and logging to prevent use of food beyond safe time limits.",
+            "parent_skill": "Line checks & quality control",
+            "related_skills": [
+                "Food temperature monitoring",
+                "Corrective action documentation and deviation reporting",
+                "Product quality inspection"
+            ],
+            "keywords": [
+                "holding time",
+                "time log",
+                "hot-hold",
+                "time-temperature",
+                "shelf life"
+            ],
+            "common_roles": [
+                "kitchen line staff",
+                "back-of-house supervisory staff",
+                "food safety staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen control and segregation",
+            "aliases": [
+                "allergen management",
+                "cross-contact prevention",
+                "allergen segregation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Identifying allergens, preventing cross-contact through segregation and procedures, and ensuring accurate handling and communication for allergen-sensitive customers.",
+            "parent_skill": "Line checks & quality control",
+            "related_skills": [
+                "Cleaning verification and sanitation checks",
+                "Line setup and station checks"
+            ],
+            "keywords": [
+                "allergens",
+                "cross-contact",
+                "segregation",
+                "labels",
+                "special requests"
+            ],
+            "common_roles": [
+                "kitchen line staff",
+                "back-of-house supervisory staff",
+                "food safety staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cleaning verification and sanitation checks",
+            "aliases": [
+                "sanitation verification",
+                "post-shift sanitation checks",
+                "surface cleanliness checks"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Verifying cleanliness of equipment, utensils and work surfaces against sanitation standards and checklists prior to and during service.",
+            "parent_skill": "Line checks & quality control",
+            "related_skills": [
+                "Allergen control and segregation",
+                "Thermometer operation and calibration",
+                "Line setup and station checks"
+            ],
+            "keywords": [
+                "sanitation",
+                "cleaning",
+                "verification",
+                "surfaces",
+                "utensils"
+            ],
+            "common_roles": [
+                "back-of-house supervisory staff",
+                "kitchen line staff",
+                "sanitation staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Corrective action documentation and deviation reporting",
+            "aliases": [
+                "incident logging",
+                "non-conformance reporting",
+                "deviation documentation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Documenting quality and safety deviations, recording corrective actions taken, and tracking follow-up verification to close issues found during line checks.",
+            "parent_skill": "Line checks & quality control",
+            "related_skills": [
+                "Food temperature monitoring",
+                "Holding time management",
+                "Product quality inspection"
+            ],
+            "keywords": [
+                "deviation",
+                "non-conformance",
+                "corrective action",
+                "log",
+                "report"
+            ],
+            "common_roles": [
+                "back-of-house supervisory staff",
+                "quality control staff",
+                "food safety staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sensory evaluation (taste, aroma, appearance)",
+            "aliases": [
+                "sensory assessment",
+                "organoleptic evaluation",
+                "taste testing"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Using sensory criteria—taste, aroma, texture and appearance—to evaluate product quality, consistency and consumer acceptability during line checks.",
+            "parent_skill": "Line checks & quality control",
+            "related_skills": [
+                "Product quality inspection",
+                "Portion control and yield management"
+            ],
+            "keywords": [
+                "taste",
+                "aroma",
+                "texture",
+                "appearance",
+                "sensory"
+            ],
+            "common_roles": [
+                "kitchen line staff",
+                "quality control staff",
+                "back-of-house supervisory staff"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,258 @@
+{
+    "domain": "Finance",
+    "category": "Accounting Operations (Record-to-Report)",
+    "subcategory": "Intercompany accounting",
+    "skills": [
+        {
+            "canonical_name": "Intercompany reconciliation",
+            "aliases": [
+                "Intercompany reconciliations",
+                "ICR",
+                "Intercompany balance reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Performing periodic reconciliation of intercompany receivables, payables and balance sheet accounts to identify, investigate and clear intra‑group mismatches.",
+            "parent_skill": "Intercompany accounting",
+            "related_skills": [
+                "Intercompany journal entry preparation and automation",
+                "Intercompany dispute resolution and counterparty coordination",
+                "Intercompany eliminations and consolidation adjustments"
+            ],
+            "keywords": [
+                "reconciliation",
+                "ICR",
+                "receivables",
+                "payables",
+                "matching"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intercompany eliminations and consolidation adjustments",
+            "aliases": [
+                "Intercompany eliminations",
+                "Consolidation eliminations",
+                "Elimination entries"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Preparing and posting elimination entries and consolidation adjustments to remove intra‑group transactions and balances for group financial statements.",
+            "parent_skill": "Intercompany accounting",
+            "related_skills": [
+                "Intercompany journal entry preparation and automation",
+                "Intercompany reconciliation",
+                "Accounting for intercompany loans and financing"
+            ],
+            "keywords": [
+                "eliminations",
+                "consolidation",
+                "adjusting entries",
+                "intragroup"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intercompany billing and invoicing",
+            "aliases": [
+                "Intercompany billing",
+                "Intercompany invoicing",
+                "Intra‑group billing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing the creation, validation and processing of invoices for intra‑group sales and services, including pricing, VAT\/sales tax considerations and accounting impacts.",
+            "parent_skill": "Intercompany accounting",
+            "related_skills": [
+                "Intercompany reconciliation",
+                "Intercompany policy, governance and controls",
+                "Intercompany dispute resolution and counterparty coordination"
+            ],
+            "keywords": [
+                "invoicing",
+                "billing",
+                "intra‑group",
+                "tax"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intercompany netting and cash pooling",
+            "aliases": [
+                "Intercompany netting",
+                "Netting and pooling",
+                "Cash pooling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and executing netting and cash‑pooling processes to settle intercompany exposures, optimize group cash flows and reduce transactional volume.",
+            "parent_skill": "Intercompany accounting",
+            "related_skills": [
+                "Intercompany reconciliation",
+                "Intercompany cash management",
+                "Accounting for intercompany loans and financing"
+            ],
+            "keywords": [
+                "netting",
+                "cash pooling",
+                "settlement",
+                "liquidity"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intercompany journal entry preparation and automation",
+            "aliases": [
+                "Intercompany journal entries",
+                "Automated intercompany journals",
+                "IC journal automation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating, validating and automating journal entries for intercompany transactions and eliminations using workflows, templates or reconciliation systems to improve accuracy and cycle time.",
+            "parent_skill": "Intercompany accounting",
+            "related_skills": [
+                "Intercompany eliminations and consolidation adjustments",
+                "Intercompany reconciliation",
+                "Intercompany accounting systems configuration and tools"
+            ],
+            "keywords": [
+                "journal entries",
+                "automation",
+                "workflows",
+                "templates"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Accounting for intercompany loans and financing",
+            "aliases": [
+                "Intercompany loan accounting",
+                "Intra‑group financing accounting"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying accounting treatments for intercompany loans, advances and financing arrangements, including interest accruals, amortization, reclassifications and disclosures.",
+            "parent_skill": "Intercompany accounting",
+            "related_skills": [
+                "Foreign currency remeasurement — intercompany balances",
+                "Intercompany netting and cash pooling",
+                "Intercompany eliminations and consolidation adjustments"
+            ],
+            "keywords": [
+                "intercompany loans",
+                "interest accrual",
+                "intragroup financing",
+                "debt accounting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Foreign currency remeasurement — intercompany balances",
+            "aliases": [
+                "FX remeasurement intercompany",
+                "Foreign currency translation — intercompany",
+                "Currency translation for intercompany"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Applying remeasurement and translation rules for intercompany monetary and non‑monetary balances and recording related foreign exchange gains or losses for reporting and elimination purposes.",
+            "parent_skill": "Intercompany accounting",
+            "related_skills": [
+                "Intercompany reconciliation",
+                "Accounting for intercompany loans and financing",
+                "Intercompany eliminations and consolidation adjustments"
+            ],
+            "keywords": [
+                "foreign exchange",
+                "translation",
+                "remeasurement",
+                "FX gains\/losses"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intercompany policy, governance and controls",
+            "aliases": [
+                "Intercompany policy",
+                "Intercompany governance",
+                "Intercompany accounting controls",
+                "IC controls"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Developing, documenting and enforcing policies, roles and internal controls (including SOX or internal‑control frameworks) specific to intercompany transactions and reporting.",
+            "parent_skill": "Intercompany accounting",
+            "related_skills": [
+                "Intercompany reconciliation",
+                "Intercompany billing and invoicing",
+                "Intercompany dispute resolution and counterparty coordination"
+            ],
+            "keywords": [
+                "policy",
+                "governance",
+                "controls",
+                "SOX"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intercompany dispute resolution and counterparty coordination",
+            "aliases": [
+                "Intercompany reconciliation dispute resolution",
+                "IC counterparty coordination",
+                "Intercompany investigations"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Investigating mismatches, negotiating resolutions with counterparties across entities, and coordinating stakeholders to drive timely clearance of intercompany differences.",
+            "parent_skill": "Intercompany accounting",
+            "related_skills": [
+                "Intercompany reconciliation",
+                "Intercompany billing and invoicing",
+                "Intercompany policy, governance and controls"
+            ],
+            "keywords": [
+                "dispute resolution",
+                "stakeholder coordination",
+                "investigation",
+                "escalation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intercompany accounting systems configuration and tools",
+            "aliases": [
+                "Intercompany reconciliation tools",
+                "Intercompany systems configuration",
+                "ICR tools"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and operating reconciliation, netting and ERP intercompany modules or 3rd‑party tools to support automated matching, workflows, eliminations and reporting.",
+            "parent_skill": "Intercompany accounting",
+            "related_skills": [
+                "Intercompany journal entry preparation and automation",
+                "Intercompany reconciliation",
+                "Intercompany netting and cash pooling"
+            ],
+            "keywords": [
+                "ERP",
+                "reconciliation tools",
+                "configuration",
+                "automation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

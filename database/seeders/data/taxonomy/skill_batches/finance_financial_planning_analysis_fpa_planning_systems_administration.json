@@ -1,0 +1,298 @@
+{
+    "domain": "Finance",
+    "category": "Financial Planning & Analysis (FP&A)",
+    "subcategory": "Planning systems administration",
+    "skills": [
+        {
+            "canonical_name": "Planning system configuration",
+            "aliases": [
+                "planning system setup",
+                "EPM configuration",
+                "planning application configuration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Configuring and maintaining planning\/FP&A software settings, modules, hierarchies, and application parameters to meet business requirements.",
+            "parent_skill": "Planning systems administration",
+            "related_skills": [
+                "Metadata and master data management",
+                "Planning model design",
+                "Data integration for planning systems",
+                "Planning system security and access control"
+            ],
+            "keywords": [
+                "setup",
+                "application settings",
+                "hierarchies",
+                "module configuration",
+                "system parameters"
+            ],
+            "common_roles": [
+                "finance systems administration",
+                "planning systems support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Planning model design",
+            "aliases": [
+                "forecast model design",
+                "budget model design",
+                "planning model development"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and maintaining budgeting, forecasting and driver-based planning models, including logic, dimensions, calculations and aggregation rules.",
+            "parent_skill": "Planning systems administration",
+            "related_skills": [
+                "Planning system configuration",
+                "Change management and version control for planning models",
+                "Metadata and master data management"
+            ],
+            "keywords": [
+                "model logic",
+                "drivers",
+                "dimensions",
+                "calculations",
+                "aggregation"
+            ],
+            "common_roles": [
+                "planning model maintenance",
+                "financial modeling support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Planning system security and access control",
+            "aliases": [
+                "role-based access control (RBAC) for planning systems",
+                "user provisioning for planning applications",
+                "planning system permissions management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing, implementing and managing user roles, permissions, segregation of duties and authentication for planning platforms to secure data and workflows.",
+            "parent_skill": "Planning systems administration",
+            "related_skills": [
+                "Compliance and audit for planning systems",
+                "Planning system configuration",
+                "Data integration for planning systems"
+            ],
+            "keywords": [
+                "RBAC",
+                "roles",
+                "permissions",
+                "user groups",
+                "authentication"
+            ],
+            "common_roles": [
+                "access control management",
+                "security administration for planning"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data integration for planning systems",
+            "aliases": [
+                "ETL for planning",
+                "planning data loads",
+                "data pipelines for FP&A systems"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing, implementing and troubleshooting data extraction, transformation and load processes to populate planning applications from source systems and data warehouses.",
+            "parent_skill": "Planning systems administration",
+            "related_skills": [
+                "SQL for planning data",
+                "Metadata and master data management",
+                "Automation scripting for planning systems"
+            ],
+            "keywords": [
+                "ETL",
+                "data mapping",
+                "data pipelines",
+                "data load jobs",
+                "reconciliation"
+            ],
+            "common_roles": [
+                "data integration support",
+                "planning data operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automation scripting for planning systems",
+            "aliases": [
+                "planning APIs and scripting",
+                "automation via REST API",
+                "scripting for planning workflows"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Developing scripts and API integrations (e.g., REST, SOAP, Python, PowerShell) to automate data loads, model updates, and routine administration tasks in planning platforms.",
+            "parent_skill": "Planning systems administration",
+            "related_skills": [
+                "Data integration for planning systems",
+                "Job scheduling and workflow orchestration",
+                "Performance tuning and capacity planning"
+            ],
+            "keywords": [
+                "API",
+                "REST",
+                "Python",
+                "PowerShell",
+                "automation"
+            ],
+            "common_roles": [
+                "planning automation developer",
+                "systems automation support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Performance tuning and capacity planning for planning systems",
+            "aliases": [
+                "planning system optimization",
+                "capacity management for planning applications",
+                "system performance optimization"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Monitoring and optimizing planning application performance, memory and compute usage, query\/calc performance, and planning for capacity increases to meet business SLAs.",
+            "parent_skill": "Planning systems administration",
+            "related_skills": [
+                "Backup, recovery, and high availability for planning systems",
+                "Automation scripting for planning systems",
+                "Job scheduling and workflow orchestration"
+            ],
+            "keywords": [
+                "tuning",
+                "capacity planning",
+                "performance monitoring",
+                "query optimization",
+                "scaling"
+            ],
+            "common_roles": [
+                "performance analyst for planning systems",
+                "infrastructure liaison for FP&A systems"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Metadata and master data management for planning systems",
+            "aliases": [
+                "planning master data management",
+                "dimension management",
+                "hierarchy and metadata governance"
+            ],
+            "skill_type": "process_skill",
+            "description": "Managing dimensions, hierarchies, codes, aliases and master data governance processes to ensure consistent, reconciled reference data across planning applications.",
+            "parent_skill": "Planning systems administration",
+            "related_skills": [
+                "Data integration for planning systems",
+                "Planning model design",
+                "Change management and version control for planning models"
+            ],
+            "keywords": [
+                "dimensions",
+                "hierarchies",
+                "master data",
+                "data governance",
+                "reference data"
+            ],
+            "common_roles": [
+                "master data steward for planning",
+                "metadata management support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Job scheduling and workflow orchestration",
+            "aliases": [
+                "batch scheduling for planning",
+                "workflow orchestration for FP&A",
+                "job orchestration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and operating schedules, batch jobs and orchestration flows that run data loads, consolidations and model calculations in planning environments.",
+            "parent_skill": "Planning systems administration",
+            "related_skills": [
+                "Automation scripting for planning systems",
+                "Performance tuning and capacity planning",
+                "Backup, recovery, and high availability for planning systems"
+            ],
+            "keywords": [
+                "scheduling",
+                "cron",
+                "orchestration",
+                "batch jobs",
+                "dependencies"
+            ],
+            "common_roles": [
+                "workflow operations for planning systems",
+                "schedule management"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Backup, recovery, and high availability for planning systems",
+            "aliases": [
+                "disaster recovery for planning applications",
+                "planning system backup and restore",
+                "HA for FP&A systems"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing backup, restore, disaster recovery and high-availability measures to ensure planning application continuity and data protection.",
+            "parent_skill": "Planning systems administration",
+            "related_skills": [
+                "Performance tuning and capacity planning",
+                "Job scheduling and workflow orchestration",
+                "Change management and version control for planning models"
+            ],
+            "keywords": [
+                "backup",
+                "restore",
+                "disaster recovery",
+                "high availability",
+                "replication"
+            ],
+            "common_roles": [
+                "system reliability support for planning",
+                "continuity planning operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Change management and version control for planning models",
+            "aliases": [
+                "model versioning",
+                "release management for planning models",
+                "planning model deployment"
+            ],
+            "skill_type": "process_skill",
+            "description": "Managing version control, testing, deployment, rollback and audit trails for planning models and application changes to minimize business disruption.",
+            "parent_skill": "Planning systems administration",
+            "related_skills": [
+                "Planning model design",
+                "Planning system configuration",
+                "Backup, recovery, and high availability for planning systems"
+            ],
+            "keywords": [
+                "version control",
+                "release",
+                "deployment",
+                "rollback",
+                "change control"
+            ],
+            "common_roles": [
+                "release coordinator for planning systems",
+                "model deployment support"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,254 @@
+{
+    "domain": "IT",
+    "category": "IT Service Management & Support Operations",
+    "subcategory": "Incident management",
+    "skills": [
+        {
+            "canonical_name": "Incident management",
+            "aliases": [
+                "incident lifecycle management",
+                "incident handling"
+            ],
+            "skill_type": "process_skill",
+            "description": "Manage the end-to-end lifecycle of incidents including detection, logging, coordination, remediation, and closure to restore normal service operation.",
+            "parent_skill": "Incident management",
+            "related_skills": [
+                "Incident triage and prioritization",
+                "Escalation management",
+                "Post-incident review and continuous improvement",
+                "Major incident management",
+                "Monitoring and alert analysis"
+            ],
+            "keywords": [
+                "incident lifecycle",
+                "incident logging",
+                "ticket management",
+                "restore service"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Incident triage and prioritization",
+            "aliases": [
+                "incident triage",
+                "severity classification",
+                "priority assignment"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Assess incoming incidents quickly to determine impact and urgency, assign severity\/priority levels, and route to appropriate resources for resolution.",
+            "parent_skill": "Incident management",
+            "related_skills": [
+                "Monitoring and alert analysis",
+                "Incident management",
+                "Escalation management",
+                "Service level and SLA management"
+            ],
+            "keywords": [
+                "impact assessment",
+                "urgency",
+                "priority",
+                "severity"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Incident escalation management",
+            "aliases": [
+                "escalation coordination",
+                "escalation procedures"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Define and execute escalation paths, coordinate handoffs across support tiers and engineering teams, and ensure timely involvement of appropriate stakeholders.",
+            "parent_skill": "Incident management",
+            "related_skills": [
+                "Incident triage and prioritization",
+                "Major incident management",
+                "On-call management and scheduling",
+                "Incident communication and stakeholder coordination"
+            ],
+            "keywords": [
+                "escalation path",
+                "handoff",
+                "tiered support",
+                "incident routing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Root cause analysis (RCA)",
+            "aliases": [
+                "root cause investigation",
+                "fault analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Investigate incidents to identify underlying root causes using technical analysis, logs, and data correlation to prevent recurrence.",
+            "parent_skill": "Incident management",
+            "related_skills": [
+                "Post-incident review and continuous improvement",
+                "Monitoring and alert analysis",
+                "Problem management integration"
+            ],
+            "keywords": [
+                "RCA",
+                "cause analysis",
+                "log analysis",
+                "fault isolation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Major incident management",
+            "aliases": [
+                "critical incident handling",
+                "major outage coordination"
+            ],
+            "skill_type": "process_skill",
+            "description": "Coordinate rapid, cross-functional response for high-impact outages including incident commander duties, warroom facilitation, and prioritized remediation.",
+            "parent_skill": "Incident management",
+            "related_skills": [
+                "Incident escalation management",
+                "Incident communication and stakeholder coordination",
+                "Runbook automation and orchestration",
+                "Service level and SLA management"
+            ],
+            "keywords": [
+                "major incident",
+                "war room",
+                "incident commander",
+                "outage response"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Incident communication and stakeholder coordination",
+            "aliases": [
+                "incident communications",
+                "stakeholder updates"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Craft and deliver clear, timely incident status updates to technical and non-technical stakeholders, manage expectations, and maintain communication cadence during incidents.",
+            "parent_skill": "Incident management",
+            "related_skills": [
+                "Major incident management",
+                "Post-incident review and continuous improvement",
+                "Incident escalation management"
+            ],
+            "keywords": [
+                "status updates",
+                "stakeholder management",
+                "incident messaging",
+                "communication cadence"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Post-incident review and continuous improvement",
+            "aliases": [
+                "postmortem facilitation",
+                "incident retrospective"
+            ],
+            "skill_type": "process_skill",
+            "description": "Facilitate post-incident reviews to document timelines, identify lessons learned, recommend corrective actions, and track remediation to reduce recurrence.",
+            "parent_skill": "Incident management",
+            "related_skills": [
+                "Root cause analysis (RCA)",
+                "Problem management integration",
+                "Incident management"
+            ],
+            "keywords": [
+                "postmortem",
+                "retrospective",
+                "lessons learned",
+                "action items"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Monitoring and alert analysis",
+            "aliases": [
+                "alert triage",
+                "monitoring analysis"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Interpret monitoring signals and alerts from observability systems to identify real incidents, reduce noise, and trigger appropriate response actions.",
+            "parent_skill": "Incident management",
+            "related_skills": [
+                "Incident triage and prioritization",
+                "Root cause analysis (RCA)",
+                "Runbook automation and orchestration"
+            ],
+            "keywords": [
+                "alerts",
+                "observability",
+                "anomaly detection",
+                "alert fatigue"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Runbook automation and orchestration",
+            "aliases": [
+                "incident automation",
+                "automated runbooks",
+                "playbook orchestration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Design and operate automated runbooks and orchestration workflows to accelerate incident detection, remediation, and standardize repeatable response actions.",
+            "parent_skill": "Incident management",
+            "related_skills": [
+                "Monitoring and alert analysis",
+                "Major incident management",
+                "Incident management"
+            ],
+            "keywords": [
+                "runbook",
+                "automation",
+                "playbooks",
+                "orchestration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service level and incident SLA management",
+            "aliases": [
+                "SLA management",
+                "service level monitoring"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Define, monitor, and enforce incident-related service level objectives and SLAs; measure compliance and take corrective actions when targets are not met.",
+            "parent_skill": "Incident management",
+            "related_skills": [
+                "Incident triage and prioritization",
+                "Major incident management",
+                "Incident management"
+            ],
+            "keywords": [
+                "SLA",
+                "SLO",
+                "service availability",
+                "incident metrics"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

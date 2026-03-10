@@ -1,0 +1,267 @@
+{
+    "domain": "IT",
+    "category": "Analytics, BI & Reporting",
+    "subcategory": "Data visualization standards",
+    "skills": [
+        {
+            "canonical_name": "Data visualization principles",
+            "aliases": [
+                "visualization principles",
+                "principles of data visualization",
+                "data viz principles"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Core principles guiding the design of accurate, interpretable and effective visual representations of data (e.g., clarity, accuracy, context, and simplicity).",
+            "parent_skill": "Data visualization standards",
+            "related_skills": [
+                "Visual encoding principles",
+                "Chart and graph selection",
+                "Data storytelling",
+                "Gestalt design principles"
+            ],
+            "keywords": [
+                "clarity",
+                "accuracy",
+                "simplicity",
+                "context",
+                "data-viz-principles"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Chart and graph selection",
+            "aliases": [
+                "chart selection guidelines",
+                "choosing charts",
+                "graph selection"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying rules and heuristics to select the most appropriate chart type for a given data shape and analytical question (e.g., when to use bar, line, scatter, map, or table).",
+            "parent_skill": "Data visualization standards",
+            "related_skills": [
+                "Data visualization principles",
+                "Visual encoding principles",
+                "Dashboard layout and composition"
+            ],
+            "keywords": [
+                "chart-type",
+                "chart-selection",
+                "visual-mapping",
+                "best-practices"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Visual encoding principles",
+            "aliases": [
+                "visual encoding",
+                "perceptual encoding principles",
+                "encoding data to visual channels"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Knowledge of how to map data variables to visual channels (position, length, color, size, shape, motion) based on perceptual effectiveness and accuracy. ",
+            "parent_skill": "Data visualization standards",
+            "related_skills": [
+                "Data visualization principles",
+                "Color theory for data visualization",
+                "Gestalt design principles"
+            ],
+            "keywords": [
+                "position",
+                "color",
+                "size",
+                "shape",
+                "perception",
+                "visual-channels"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Color theory for data visualization",
+            "aliases": [
+                "data visualization color theory",
+                "color palettes for visualization",
+                "color semantics"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying color principles (palette selection, contrast, colorblind-safe schemes, sequential\/diverging semantics) to ensure legible and meaningful charts.",
+            "parent_skill": "Data visualization standards",
+            "related_skills": [
+                "Accessibility standards for visualizations",
+                "Visual encoding principles",
+                "Brand color consistency"
+            ],
+            "keywords": [
+                "palette",
+                "contrast",
+                "colorblind",
+                "sequential",
+                "diverging"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Accessibility standards for visualizations",
+            "aliases": [
+                "visualization accessibility",
+                "WCAG for charts",
+                "accessible charts"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Designing charts and dashboards to comply with accessibility guidelines (e.g., WCAG\/ARIA considerations, keyboard navigation, color contrast, screen-reader support) so visuals are usable by people with disabilities.",
+            "parent_skill": "Data visualization standards",
+            "related_skills": [
+                "Color theory for data visualization",
+                "Annotation and labeling standards",
+                "Data visualization governance and style guides"
+            ],
+            "keywords": [
+                "WCAG",
+                "contrast-ratio",
+                "screen-reader",
+                "aria",
+                "accessible-viz"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Typography and labeling for visualizations",
+            "aliases": [
+                "chart typography",
+                "axis labeling standards",
+                "annotation standards"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Standards for use of type, numeric formatting, axis ticks, legends and annotations to make labels accurate, scannable and unambiguous in visual outputs.",
+            "parent_skill": "Data visualization standards",
+            "related_skills": [
+                "Accessibility standards for visualizations",
+                "Data formatting and units",
+                "Data visualization principles"
+            ],
+            "keywords": [
+                "labels",
+                "axis-ticks",
+                "font-size",
+                "numeric-format",
+                "annotations"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Responsive and mobile visualization design",
+            "aliases": [
+                "responsive visualizations",
+                "mobile-friendly charts",
+                "adaptive dashboard design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing visualizations and dashboards that adapt layout, interaction patterns and levels of detail across screen sizes and devices for consistent usability.",
+            "parent_skill": "Data visualization standards",
+            "related_skills": [
+                "Interaction design for visual analytics",
+                "Dashboard layout and composition",
+                "Chart performance and optimization"
+            ],
+            "keywords": [
+                "responsive",
+                "mobile",
+                "adaptive-layout",
+                "progressive-disclosure"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data visualization governance and style guides",
+            "aliases": [
+                "visualization style guide",
+                "viz governance",
+                "dashboard standards"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Establishing and maintaining organization-level standards, templates, metadata, and review processes to ensure consistency, reuse and quality of visual outputs.",
+            "parent_skill": "Data visualization standards",
+            "related_skills": [
+                "Accessibility standards for visualizations",
+                "Data cataloging and metadata",
+                "Versioning and review processes"
+            ],
+            "keywords": [
+                "style-guide",
+                "governance",
+                "templates",
+                "consistency",
+                "standards"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Interaction design for visual analytics",
+            "aliases": [
+                "interactive visualization design",
+                "visual analytics interactions",
+                "chart interaction patterns"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and standardizing interaction behaviors (filtering, zooming, brushing, tooltips, selection) to support exploratory analysis and clear user workflows in analytical visuals.",
+            "parent_skill": "Data visualization standards",
+            "related_skills": [
+                "Responsive and mobile visualization design",
+                "Dashboard usability testing",
+                "Data storytelling"
+            ],
+            "keywords": [
+                "filters",
+                "tooltips",
+                "brushing",
+                "zoom",
+                "interaction-patterns"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Chart performance and optimization",
+            "aliases": [
+                "visualization performance tuning",
+                "chart optimization",
+                "high-performance visualization"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Techniques and standards for ensuring visualizations render efficiently with large or streaming datasets (e.g., aggregation strategies, progressive rendering, client vs server rendering tradeoffs).",
+            "parent_skill": "Data visualization standards",
+            "related_skills": [
+                "Responsive and mobile visualization design",
+                "Data engineering for analytics",
+                "Caching and aggregation strategies"
+            ],
+            "keywords": [
+                "performance",
+                "rendering",
+                "aggregation",
+                "progressive-rendering",
+                "large-datasets"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

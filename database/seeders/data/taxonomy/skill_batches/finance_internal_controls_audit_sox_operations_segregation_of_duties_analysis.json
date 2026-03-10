@@ -1,0 +1,307 @@
+{
+    "domain": "Finance",
+    "category": "Internal Controls, Audit & SOX Operations",
+    "subcategory": "Segregation of duties analysis",
+    "skills": [
+        {
+            "canonical_name": "Segregation of duties (SoD) analysis",
+            "aliases": [
+                "SOD analysis",
+                "SoD review",
+                "segregation of duties assessment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Performing risk-focused reviews to identify, evaluate and document conflicts of duties across systems and processes to ensure appropriate separation of responsibilities.",
+            "parent_skill": "Internal controls analysis",
+            "related_skills": [
+                "Incompatible duties identification",
+                "SoD matrix design and maintenance",
+                "Business process mapping for SoD impact analysis",
+                "SoD remediation planning"
+            ],
+            "keywords": [
+                "SoD",
+                "segregation",
+                "duty conflicts",
+                "access risk assessment",
+                "control assessment"
+            ],
+            "common_roles": [
+                "Internal Auditor",
+                "SOX Analyst",
+                "GRC Analyst",
+                "Risk & Controls Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SoD matrix design and maintenance",
+            "aliases": [
+                "SoD matrix development",
+                "access matrix maintenance",
+                "conflict matrix management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating and updating a matrix that maps business transactions and roles to incompatible duties, supporting systematic identification and remediation of SoD conflicts.",
+            "parent_skill": "Segregation of duties (SoD) analysis",
+            "related_skills": [
+                "Segregation of duties (SoD) analysis",
+                "Incompatible duties identification",
+                "Role-based access control (RBAC) design"
+            ],
+            "keywords": [
+                "SoD matrix",
+                "role-permission mapping",
+                "conflict matrix",
+                "control mapping"
+            ],
+            "common_roles": [
+                "Controls Analyst",
+                "GRC Analyst",
+                "IT Auditor",
+                "Access Control Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Incompatible duties identification",
+            "aliases": [
+                "duty conflict identification",
+                "SoD conflict identification",
+                "separation of duties conflict analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing processes, roles and transactions to pinpoint duty combinations that create inappropriate control or fraud risk, often using transaction logs and role\/permission data.",
+            "parent_skill": "Segregation of duties (SoD) analysis",
+            "related_skills": [
+                "Segregation of duties (SoD) analysis",
+                "SoD matrix design and maintenance",
+                "Business process mapping for SoD impact analysis"
+            ],
+            "keywords": [
+                "incompatible duties",
+                "conflict rules",
+                "transaction analysis",
+                "role-permission review"
+            ],
+            "common_roles": [
+                "Internal Auditor",
+                "IT Auditor",
+                "GRC Analyst",
+                "Fraud Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SoD rule configuration in GRC platforms",
+            "aliases": [
+                "SoD rule setup",
+                "access conflict rule configuration",
+                "GRC rule tuning"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Defining and tuning SoD conflict rules and risk scoring within governance, risk and compliance (GRC) platforms to automate detection of incompatible activities.",
+            "parent_skill": "Segregation of duties (SoD) analysis",
+            "related_skills": [
+                "Automated SoD monitoring and alerting",
+                "SoD matrix design and maintenance",
+                "User access review (access certification)"
+            ],
+            "keywords": [
+                "GRC configuration",
+                "conflict rules",
+                "rule tuning",
+                "risk scoring"
+            ],
+            "common_roles": [
+                "GRC Analyst",
+                "Access Control Analyst",
+                "IT Controls Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "User access review (access certification)",
+            "aliases": [
+                "access review",
+                "access certification",
+                "periodic user entitlement review"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Planning and executing periodic reviews of user systems access, entitlements and roles to validate appropriateness and identify SoD violations for remediation.",
+            "parent_skill": "Operational controls for access",
+            "related_skills": [
+                "Automated SoD monitoring and alerting",
+                "SoD remediation planning",
+                "Role-based access control (RBAC) design"
+            ],
+            "keywords": [
+                "access certification",
+                "entitlement review",
+                "user recertification",
+                "access attestation"
+            ],
+            "common_roles": [
+                "Access Control Analyst",
+                "IT Auditor",
+                "SOX Analyst",
+                "IAM Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Role-based access control (RBAC) design",
+            "aliases": [
+                "RBAC design",
+                "role engineering",
+                "role model design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing role and permission structures that align business functions with least-privilege principles to minimize SoD conflicts and operational friction.",
+            "parent_skill": "Identity and access management",
+            "related_skills": [
+                "SoD matrix design and maintenance",
+                "User access review (access certification)",
+                "Incompatible duties identification"
+            ],
+            "keywords": [
+                "RBAC",
+                "role engineering",
+                "least privilege",
+                "permission modeling"
+            ],
+            "common_roles": [
+                "IAM Specialist",
+                "Access Control Analyst",
+                "Security Architect",
+                "IT Controls Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SoD exception management and approvals",
+            "aliases": [
+                "SoD exceptions",
+                "access exception workflow",
+                "temporary access approvals"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing documented exceptions to SoD rules including approval workflows, compensating controls tracking and periodic exception reviews to limit residual risk.",
+            "parent_skill": "Segregation of duties (SoD) analysis",
+            "related_skills": [
+                "User access review (access certification)",
+                "SoD remediation planning",
+                "Automated SoD monitoring and alerting"
+            ],
+            "keywords": [
+                "exceptions",
+                "compensating controls",
+                "approval workflow",
+                "temporary access"
+            ],
+            "common_roles": [
+                "GRC Analyst",
+                "Compliance Manager",
+                "Access Control Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated SoD monitoring and alerting",
+            "aliases": [
+                "continuous SoD monitoring",
+                "SoD alerting",
+                "continuous controls monitoring (CCM) for SoD"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Implementing and operating automation to continuously detect, alert and report SoD violations using logs, entitlement data and integration with GRC\/IAM tooling.",
+            "parent_skill": "SoD rule configuration in GRC platforms",
+            "related_skills": [
+                "SoD rule configuration in GRC platforms",
+                "User access review (access certification)",
+                "SoD exception management and approvals"
+            ],
+            "keywords": [
+                "continuous monitoring",
+                "CCM",
+                "alerts",
+                "real-time detection"
+            ],
+            "common_roles": [
+                "GRC Analyst",
+                "IAM Specialist",
+                "Security Operations Analyst",
+                "Controls Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SoD remediation planning",
+            "aliases": [
+                "remediation planning for SoD conflicts",
+                "SoD conflict remediation",
+                "access remediation planning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Developing, prioritizing and tracking remediation actions to resolve identified SoD conflicts, including timelines, owners, and verification of implemented controls.",
+            "parent_skill": "Segregation of duties (SoD) analysis",
+            "related_skills": [
+                "Incompatible duties identification",
+                "SoD exception management and approvals",
+                "User access review (access certification)"
+            ],
+            "keywords": [
+                "remediation",
+                "action plan",
+                "ticketing",
+                "control implementation"
+            ],
+            "common_roles": [
+                "Controls Analyst",
+                "SOX Remediation Lead",
+                "GRC Analyst",
+                "IT Controls Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Business process mapping for SoD impact analysis",
+            "aliases": [
+                "process mapping for SoD",
+                "process-to-role mapping",
+                "business process analysis for SoD"
+            ],
+            "skill_type": "process_skill",
+            "description": "Mapping end-to-end business processes to roles, tasks and systems to understand where SoD risks arise and how changes to workflows affect controls.",
+            "parent_skill": "Segregation of duties (SoD) analysis",
+            "related_skills": [
+                "Incompatible duties identification",
+                "SoD matrix design and maintenance",
+                "Role-based access control (RBAC) design"
+            ],
+            "keywords": [
+                "process mapping",
+                "process flows",
+                "task-role mapping",
+                "impact analysis"
+            ],
+            "common_roles": [
+                "Business Analyst",
+                "Process Owner",
+                "Internal Auditor",
+                "GRC Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

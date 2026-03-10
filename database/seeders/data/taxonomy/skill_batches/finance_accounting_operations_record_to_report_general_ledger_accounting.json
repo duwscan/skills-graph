@@ -1,0 +1,259 @@
+{
+    "domain": "Finance",
+    "category": "Accounting Operations (Record-to-Report)",
+    "subcategory": "General ledger accounting",
+    "skills": [
+        {
+            "canonical_name": "Journal entry preparation and posting",
+            "aliases": [
+                "Journal entries",
+                "JE preparation",
+                "JE posting"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Creating, classifying, and recording journal entries in the general ledger, including supporting documentation and review for accuracy and compliance.",
+            "parent_skill": "General ledger accounting",
+            "related_skills": [
+                "Month-end close management",
+                "General ledger reconciliations",
+                "Accruals and prepayments accounting",
+                "ERP general ledger systems"
+            ],
+            "keywords": [
+                "journal entry",
+                "JE",
+                "posting",
+                "ledger",
+                "supporting documentation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Month-end close management",
+            "aliases": [
+                "Month end close",
+                "Close cycle management",
+                "Period close"
+            ],
+            "skill_type": "process_skill",
+            "description": "Coordinating and executing period-end close activities to produce timely, accurate interim financial results, including task sequencing and close checklists.",
+            "parent_skill": "General ledger accounting",
+            "related_skills": [
+                "Journal entry preparation and posting",
+                "General ledger reconciliations",
+                "Account analysis and variance reporting"
+            ],
+            "keywords": [
+                "close process",
+                "period end",
+                "close checklist",
+                "timely reporting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "General ledger reconciliations",
+            "aliases": [
+                "GL reconciliations",
+                "Account reconciliation",
+                "Bank reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Reconciling GL accounts (including bank accounts) to source records, identifying reconciling items, and documenting resolution steps and supporting evidence.",
+            "parent_skill": "General ledger accounting",
+            "related_skills": [
+                "Journal entry preparation and posting",
+                "Month-end close management",
+                "Account analysis and variance reporting"
+            ],
+            "keywords": [
+                "reconciliation",
+                "bank rec",
+                "reconciling items",
+                "supporting evidence"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intercompany accounting and eliminations",
+            "aliases": [
+                "Intercompany reconciliations",
+                "Interco accounting",
+                "Intercompany eliminations"
+            ],
+            "skill_type": "process_skill",
+            "description": "Managing transactions and balances between legal entities, performing intercompany reconciliations, and preparing elimination entries for consolidation.",
+            "parent_skill": "General ledger accounting",
+            "related_skills": [
+                "Journal entry preparation and posting",
+                "ERP general ledger systems",
+                "Month-end close management"
+            ],
+            "keywords": [
+                "intercompany",
+                "interco",
+                "eliminations",
+                "intercompany reconciliations"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Fixed asset accounting and depreciation",
+            "aliases": [
+                "FA accounting",
+                "Fixed assets ledger",
+                "Depreciation accounting"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Recording fixed asset acquisitions, disposals and transfers; calculating and posting depreciation, impairment and disposal entries according to policy.",
+            "parent_skill": "General ledger accounting",
+            "related_skills": [
+                "Journal entry preparation and posting",
+                "ERP general ledger systems",
+                "Account analysis and variance reporting"
+            ],
+            "keywords": [
+                "fixed assets",
+                "depreciation",
+                "asset register",
+                "impairment"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Accruals and prepayments accounting",
+            "aliases": [
+                "Accrual accounting",
+                "Prepayments accounting",
+                "Accruals management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Identifying, calculating and posting accruals and prepayments each period to match expenses\/revenues to the correct accounting period and reverse appropriately.",
+            "parent_skill": "General ledger accounting",
+            "related_skills": [
+                "Journal entry preparation and posting",
+                "Month-end close management",
+                "Account analysis and variance reporting"
+            ],
+            "keywords": [
+                "accruals",
+                "prepayments",
+                "period matching",
+                "reversing entries"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Account analysis and variance reporting",
+            "aliases": [
+                "GL account analysis",
+                "Variance analysis",
+                "Budget vs actual analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing ledger balances and fluctuations, investigating variances versus prior periods or budgets, and preparing explanatory schedules for stakeholders.",
+            "parent_skill": "General ledger accounting",
+            "related_skills": [
+                "General ledger reconciliations",
+                "Month-end close management",
+                "Accruals and prepayments accounting"
+            ],
+            "keywords": [
+                "variance analysis",
+                "trend analysis",
+                "account investigation",
+                "explanatory schedules"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Chart of accounts design and maintenance",
+            "aliases": [
+                "CoA management",
+                "Chart of accounts maintenance",
+                "Chart of accounts design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, structuring and maintaining the chart of accounts to ensure consistent account usage, proper reporting rollups and scalability for business changes.",
+            "parent_skill": "General ledger accounting",
+            "related_skills": [
+                "ERP general ledger systems",
+                "Account analysis and variance reporting",
+                "Journal entry preparation and posting"
+            ],
+            "keywords": [
+                "chart of accounts",
+                "CoA",
+                "account structure",
+                "account coding"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ERP general ledger systems",
+            "aliases": [
+                "ERP GL",
+                "General ledger systems",
+                "GL module (ERP)"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using and configuring ERP general ledger modules (e.g., SAP, Oracle, NetSuite) to record transactions, run reconciliations, and support close processes and reporting.",
+            "parent_skill": "General ledger accounting",
+            "related_skills": [
+                "Journal entry preparation and posting",
+                "Month-end close management",
+                "Chart of accounts design and maintenance"
+            ],
+            "keywords": [
+                "SAP FI-GL",
+                "Oracle GL",
+                "NetSuite",
+                "ERP ledger"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Foreign currency revaluation and translation",
+            "aliases": [
+                "FX revaluation",
+                "Foreign currency translation",
+                "Currency revaluation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying exchange rates to revalue foreign-currency denominated balances and performing translation adjustments for consolidated financial statements per accounting standards.",
+            "parent_skill": "General ledger accounting",
+            "related_skills": [
+                "Journal entry preparation and posting",
+                "Account analysis and variance reporting",
+                "ERP general ledger systems"
+            ],
+            "keywords": [
+                "FX",
+                "revaluation",
+                "translation",
+                "exchange rates"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

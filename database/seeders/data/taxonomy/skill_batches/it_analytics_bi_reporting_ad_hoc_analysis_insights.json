@@ -1,0 +1,299 @@
+{
+    "domain": "IT",
+    "category": "Analytics, BI & Reporting",
+    "subcategory": "Ad hoc analysis & insights",
+    "skills": [
+        {
+            "canonical_name": "Exploratory data analysis (EDA)",
+            "aliases": [
+                "exploratory analysis",
+                "data exploration",
+                "EDA"
+            ],
+            "skill_type": "process_skill",
+            "description": "Systematic initial investigation of datasets to discover patterns, anomalies, distributions, and relationships that inform further ad hoc analysis.",
+            "parent_skill": "Ad hoc analysis & insights",
+            "related_skills": [
+                "Ad hoc SQL querying",
+                "Data wrangling",
+                "Ad hoc data visualization",
+                "Statistical hypothesis testing"
+            ],
+            "keywords": [
+                "summary statistics",
+                "outliers",
+                "distributions",
+                "correlation"
+            ],
+            "common_roles": [
+                "analytics teams",
+                "business stakeholders",
+                "data teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ad hoc SQL querying",
+            "aliases": [
+                "SQL querying",
+                "ad-hoc queries",
+                "interactive SQL"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Composing and executing SQL queries on relational or analytical databases to extract, filter and aggregate data for one-off analyses and investigations.",
+            "parent_skill": "Ad hoc analysis & insights",
+            "related_skills": [
+                "Exploratory data analysis (EDA)",
+                "Query optimization for ad hoc queries",
+                "Data wrangling"
+            ],
+            "keywords": [
+                "SELECT",
+                "joins",
+                "GROUP BY",
+                "aggregation",
+                "WHERE"
+            ],
+            "common_roles": [
+                "analytics teams",
+                "data teams",
+                "business stakeholders"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data wrangling",
+            "aliases": [
+                "data cleaning",
+                "data preprocessing",
+                "data munging"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Transforming, cleaning and reshaping raw data from multiple sources into analysis-ready formats for ad hoc queries and insight generation.",
+            "parent_skill": "Ad hoc analysis & insights",
+            "related_skills": [
+                "Ad hoc SQL querying",
+                "Exploratory data analysis (EDA)",
+                "Ad hoc data visualization"
+            ],
+            "keywords": [
+                "ETL",
+                "normalization",
+                "missing data",
+                "data types"
+            ],
+            "common_roles": [
+                "data teams",
+                "analytics teams",
+                "operations teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Pivot table analysis",
+            "aliases": [
+                "pivot tables",
+                "Excel pivot analysis",
+                "spreadsheet pivoting"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using pivot tables or equivalent BI features to quickly aggregate, slice and summarize data for ad hoc insight generation and exploration.",
+            "parent_skill": "Ad hoc analysis & insights",
+            "related_skills": [
+                "Ad hoc data visualization",
+                "Ad hoc SQL querying",
+                "Rapid dashboard prototyping"
+            ],
+            "keywords": [
+                "aggregation",
+                "slicing",
+                "cross-tab",
+                "Excel"
+            ],
+            "common_roles": [
+                "analytics teams",
+                "business stakeholders",
+                "finance and operations functions"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Statistical hypothesis testing",
+            "aliases": [
+                "A\/B test analysis",
+                "significance testing",
+                "inferential statistics"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Applying statistical tests and confidence estimation methods to determine whether observed effects or differences in data are likely to be real and relevant.",
+            "parent_skill": "Ad hoc analysis & insights",
+            "related_skills": [
+                "Exploratory data analysis (EDA)",
+                "Time series exploratory analysis",
+                "Root cause analysis"
+            ],
+            "keywords": [
+                "p-value",
+                "t-test",
+                "chi-square",
+                "confidence interval"
+            ],
+            "common_roles": [
+                "analytics teams",
+                "product and marketing stakeholders",
+                "data teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Rapid dashboard prototyping",
+            "aliases": [
+                "quick dashboarding",
+                "dashboard prototyping",
+                "ad hoc dashboard creation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Fast iteration of dashboards or visual reports to validate hypotheses and present immediate insights to stakeholders using BI tools or spreadsheets.",
+            "parent_skill": "Ad hoc analysis & insights",
+            "related_skills": [
+                "Ad hoc data visualization",
+                "Pivot table analysis",
+                "Insight storytelling & presentation"
+            ],
+            "keywords": [
+                "wireframe",
+                "mockup",
+                "iterate",
+                "visual layout"
+            ],
+            "common_roles": [
+                "analytics teams",
+                "business stakeholders",
+                "product teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Insight storytelling & presentation",
+            "aliases": [
+                "data storytelling",
+                "insight communication",
+                "presenting analysis"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Translating analytical findings into clear narratives, visuals and recommendations tailored to non-technical stakeholders to drive decisions and actions.",
+            "parent_skill": "Ad hoc analysis & insights",
+            "related_skills": [
+                "Rapid dashboard prototyping",
+                "Ad hoc data visualization",
+                "Root cause analysis"
+            ],
+            "keywords": [
+                "narrative",
+                "visualization",
+                "recommendation",
+                "slides"
+            ],
+            "common_roles": [
+                "business stakeholders",
+                "analytics teams",
+                "executive audiences"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Root cause analysis",
+            "aliases": [
+                "RCA",
+                "incident root cause analysis",
+                "problem diagnosis"
+            ],
+            "skill_type": "process_skill",
+            "description": "Structured investigative techniques to identify underlying causes of anomalies or failures using data-driven methods and iterative testing.",
+            "parent_skill": "Ad hoc analysis & insights",
+            "related_skills": [
+                "Exploratory data analysis (EDA)",
+                "Statistical hypothesis testing",
+                "Ad hoc SQL querying"
+            ],
+            "keywords": [
+                "5 Whys",
+                "fault isolation",
+                "drill-down",
+                "causal analysis"
+            ],
+            "common_roles": [
+                "operations teams",
+                "analytics teams",
+                "product teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Time series exploratory analysis",
+            "aliases": [
+                "time series exploration",
+                "trend and seasonality analysis",
+                "temporal data analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Examining temporal datasets to detect trends, seasonality, anomalies and autocorrelation for short-term insights and hypothesis generation.",
+            "parent_skill": "Ad hoc analysis & insights",
+            "related_skills": [
+                "Exploratory data analysis (EDA)",
+                "Statistical hypothesis testing",
+                "Ad hoc data visualization"
+            ],
+            "keywords": [
+                "seasonality",
+                "trend",
+                "lag",
+                "autocorrelation"
+            ],
+            "common_roles": [
+                "analytics teams",
+                "operations teams",
+                "product teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ad hoc data visualization",
+            "aliases": [
+                "quick charting",
+                "ad-hoc visuals",
+                "exploratory visualization"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Creating rapid charts and visual summaries (plots, histograms, heatmaps) to reveal patterns and support immediate analytic conclusions during ad hoc work.",
+            "parent_skill": "Ad hoc analysis & insights",
+            "related_skills": [
+                "Exploratory data analysis (EDA)",
+                "Pivot table analysis",
+                "Insight storytelling & presentation"
+            ],
+            "keywords": [
+                "charts",
+                "histogram",
+                "scatterplot",
+                "heatmap"
+            ],
+            "common_roles": [
+                "analytics teams",
+                "business stakeholders",
+                "data teams"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

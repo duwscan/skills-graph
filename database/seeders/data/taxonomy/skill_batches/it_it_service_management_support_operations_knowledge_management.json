@@ -1,0 +1,257 @@
+{
+    "domain": "IT",
+    "category": "IT Service Management & Support Operations",
+    "subcategory": "Knowledge management",
+    "skills": [
+        {
+            "canonical_name": "Knowledge Base Management",
+            "aliases": [
+                "knowledge base administration",
+                "KB management",
+                "knowledge base maintenance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operate and maintain an organization's knowledge base: publish and retire articles, enforce quality standards, manage review cycles, and maintain SLAs for content currency and accuracy.",
+            "parent_skill": "",
+            "related_skills": [
+                "Content Lifecycle Management",
+                "Knowledge Management Platform Administration",
+                "Knowledge Analytics & Reporting"
+            ],
+            "keywords": [
+                "KB",
+                "article lifecycle",
+                "content governance",
+                "content QA"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Knowledge Management Platform Administration",
+            "aliases": [
+                "KM platform administration",
+                "knowledge base platform admin",
+                "KB platform configuration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configure, administer, and integrate knowledge management platforms (instance configuration, access controls, workflows, templates and connector setup) to support KM processes and search.",
+            "parent_skill": "",
+            "related_skills": [
+                "Knowledge Base Management",
+                "Search Relevance Optimization for Knowledge Bases",
+                "Metadata Strategy & Tagging"
+            ],
+            "keywords": [
+                "platform config",
+                "access controls",
+                "workflow automation",
+                "integrations"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Knowledge-Centered Service (KCS) Implementation",
+            "aliases": [
+                "KCS implementation",
+                "KCS methodology",
+                "Knowledge-Centered Service adoption"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implement and operationalize KCS practices: capture, structure, reuse and improve knowledge as part of incident and problem workflows, including coach-led adoption and process alignment.",
+            "parent_skill": "",
+            "related_skills": [
+                "Knowledge Base Management",
+                "Community of Practice & Knowledge Sharing Facilitation",
+                "Knowledge Governance & Compliance"
+            ],
+            "keywords": [
+                "KCS",
+                "capture and reuse",
+                "process adoption",
+                "knowledge workflows"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Knowledge Architecture & Taxonomy Design",
+            "aliases": [
+                "taxonomy design",
+                "information architecture for KM",
+                "knowledge taxonomy"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Design hierarchical and faceted taxonomies, navigation models and information architecture to make knowledge discoverable and to support tagging, search and governance strategies.",
+            "parent_skill": "",
+            "related_skills": [
+                "Metadata Strategy & Tagging",
+                "Search Relevance Optimization for Knowledge Bases",
+                "Knowledge Base Management"
+            ],
+            "keywords": [
+                "taxonomy",
+                "information architecture",
+                "faceted navigation",
+                "category model"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Knowledge Article Authoring & Technical Writing",
+            "aliases": [
+                "knowledge article writing",
+                "KB article authoring",
+                "technical writing for support content"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Create clear, searchable, and standardized knowledge articles and how-to guides using templates, structured content, and language tailored for troubleshooting and end-user resolution.",
+            "parent_skill": "",
+            "related_skills": [
+                "Knowledge Base Management",
+                "Content Lifecycle Management",
+                "Search Relevance Optimization for Knowledge Bases"
+            ],
+            "keywords": [
+                "article templates",
+                "structured content",
+                "step-by-step guides",
+                "audience-focused writing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Metadata Strategy & Tagging",
+            "aliases": [
+                "tagging strategy",
+                "metadata modeling",
+                "content tagging for KM"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Define metadata schemas, controlled vocabularies and tagging conventions to support search, filtering, governance and analytics across the knowledge corpus.",
+            "parent_skill": "",
+            "related_skills": [
+                "Knowledge Architecture & Taxonomy Design",
+                "Knowledge Management Platform Administration",
+                "Search Relevance Optimization for Knowledge Bases"
+            ],
+            "keywords": [
+                "metadata schema",
+                "controlled vocabulary",
+                "tags",
+                "content attributes"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Search Relevance Optimization for Knowledge Bases",
+            "aliases": [
+                "knowledge search tuning",
+                "KM search optimization",
+                "search relevance tuning"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Improve search recall and precision by tuning search algorithms, implementing synonyms, boosting rules, relevance signals and query parsing tailored to the knowledge corpus and user intents.",
+            "parent_skill": "",
+            "related_skills": [
+                "Knowledge Management Platform Administration",
+                "Metadata Strategy & Tagging",
+                "Knowledge Architecture & Taxonomy Design"
+            ],
+            "keywords": [
+                "relevance tuning",
+                "query expansion",
+                "search analytics",
+                "synonyms"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Knowledge Analytics & Reporting",
+            "aliases": [
+                "knowledge base metrics",
+                "KB analytics",
+                "KM reporting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Define and monitor KPIs (article usage, deflection, resolution impact, findability), run analytics to identify gaps and prioritize content improvements, and produce actionable reports for stakeholders.",
+            "parent_skill": "",
+            "related_skills": [
+                "Knowledge Base Management",
+                "Search Relevance Optimization for Knowledge Bases",
+                "Knowledge Governance & Compliance"
+            ],
+            "keywords": [
+                "KPIs",
+                "deflection rate",
+                "usage analytics",
+                "content gap analysis"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Knowledge Governance & Compliance",
+            "aliases": [
+                "KM governance",
+                "knowledge policy management",
+                "content compliance for KM"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Establish policies, roles and controls for ownership, retention, privacy and regulatory compliance of knowledge content, including review cycles, access rules and auditability.",
+            "parent_skill": "",
+            "related_skills": [
+                "Knowledge Base Management",
+                "Knowledge Analytics & Reporting",
+                "Metadata Strategy & Tagging"
+            ],
+            "keywords": [
+                "retention policy",
+                "content ownership",
+                "access controls",
+                "audit trails"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Community of Practice & Knowledge Sharing Facilitation",
+            "aliases": [
+                "CoP facilitation",
+                "knowledge sharing enablement",
+                "internal knowledge transfer facilitation"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Design and run communities of practice, coaching, and enablement programs that encourage subject-matter experts to capture and share knowledge, and sustain continuous improvement culture.",
+            "parent_skill": "",
+            "related_skills": [
+                "KCS Implementation",
+                "Knowledge Base Management",
+                "Knowledge Governance & Compliance"
+            ],
+            "keywords": [
+                "communities of practice",
+                "enablement",
+                "coaching",
+                "knowledge transfer"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

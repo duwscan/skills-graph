@@ -1,0 +1,305 @@
+{
+    "domain": "Finance",
+    "category": "Cost Accounting & Operational Finance",
+    "subcategory": "Margin analysis by product\/customer",
+    "skills": [
+        {
+            "canonical_name": "Product margin analysis",
+            "aliases": [
+                "product profitability analysis",
+                "product-level margin analysis",
+                "product P&L analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyze and report gross and contribution margins at the product level, identify margin drivers and trends, and produce actionable insights for product portfolio decisions.",
+            "parent_skill": "Margin analysis by product\/customer",
+            "related_skills": [
+                "SKU-level profitability analysis",
+                "Contribution margin analysis",
+                "Product cost allocation",
+                "Financial modeling for margin scenarios"
+            ],
+            "keywords": [
+                "product margin",
+                "product profitability",
+                "unit margin",
+                "gross margin"
+            ],
+            "common_roles": [
+                "Financial Analyst",
+                "Cost Accountant",
+                "Commercial Finance Analyst",
+                "FP&A Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Customer profitability analysis",
+            "aliases": [
+                "customer margin analysis",
+                "customer-level profitability",
+                "customer P&L analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Measure and interpret profitability by customer or customer segment by allocating revenues and full costs, identifying high- and low-value customers and margin opportunities.",
+            "parent_skill": "Margin analysis by product\/customer",
+            "related_skills": [
+                "Cost-to-serve analysis",
+                "Segment profitability analysis",
+                "Product margin analysis"
+            ],
+            "keywords": [
+                "customer margin",
+                "customer P&L",
+                "customer segmentation",
+                "profitability by customer"
+            ],
+            "common_roles": [
+                "Commercial Finance Analyst",
+                "Pricing Analyst",
+                "Customer Finance Manager",
+                "FP&A Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Contribution margin analysis",
+            "aliases": [
+                "contribution margin calculation",
+                "unit contribution analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculate contribution margins by product, SKU, or customer (sales price minus variable cost) to inform pricing, product mix and break-even decisions.",
+            "parent_skill": "Margin analysis by product\/customer",
+            "related_skills": [
+                "Product margin analysis",
+                "Break-even analysis",
+                "Price elasticity and margin sensitivity analysis"
+            ],
+            "keywords": [
+                "contribution margin",
+                "variable cost",
+                "unit economics",
+                "CM"
+            ],
+            "common_roles": [
+                "Cost Accountant",
+                "Financial Analyst",
+                "FP&A Analyst",
+                "Commercial Finance Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cost-to-serve analysis",
+            "aliases": [
+                "C2S analysis",
+                "cost-to-serve modeling"
+            ],
+            "skill_type": "process_skill",
+            "description": "Model and allocate the full end-to-end costs of serving customers (distribution, order management, returns, customer service) to identify customer margin impacts and inefficiencies.",
+            "parent_skill": "Margin analysis by product\/customer",
+            "related_skills": [
+                "Customer profitability analysis",
+                "Activity-based costing (ABC)",
+                "Product cost allocation"
+            ],
+            "keywords": [
+                "cost to serve",
+                "logistics cost",
+                "order-to-cash cost",
+                "service cost allocation"
+            ],
+            "common_roles": [
+                "Cost Accountant",
+                "Supply Chain Finance Analyst",
+                "Commercial Finance Analyst",
+                "Customer Finance Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Activity-based costing (ABC)",
+            "aliases": [
+                "ABC costing",
+                "activity based costing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Use activity-based costing methods to allocate overheads and indirect costs to products or customers based on actual activities and drivers for more accurate margin attribution.",
+            "parent_skill": "Margin analysis by product\/customer",
+            "related_skills": [
+                "Product cost allocation",
+                "Cost-to-serve analysis",
+                "Product margin analysis"
+            ],
+            "keywords": [
+                "ABC",
+                "cost drivers",
+                "overhead allocation",
+                "activity drivers"
+            ],
+            "common_roles": [
+                "Cost Accountant",
+                "Manager, Costing",
+                "Financial Analyst",
+                "Manufacturing Finance Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SKU-level profitability analysis",
+            "aliases": [
+                "SKU margin analysis",
+                "unit-level profitability analysis",
+                "SKU P&L analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Assess profitability at the SKU or unit level considering unit costs, selling price, promotions, and inventory impacts to support assortment and SKU rationalization decisions.",
+            "parent_skill": "Margin analysis by product\/customer",
+            "related_skills": [
+                "Product margin analysis",
+                "Inventory costing",
+                "Product lifecycle margin analysis"
+            ],
+            "keywords": [
+                "SKU profitability",
+                "unit economics",
+                "assortment optimization",
+                "SKU P&L"
+            ],
+            "common_roles": [
+                "Commercial Finance Analyst",
+                "Category Finance Manager",
+                "Financial Analyst",
+                "Demand Planning Finance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Price elasticity and margin sensitivity analysis",
+            "aliases": [
+                "price elasticity analysis",
+                "margin sensitivity modeling",
+                "price sensitivity analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Quantify how changes in price affect volume and margin, model sensitivity scenarios, and estimate revenue and margin impacts to guide pricing and promotion decisions.",
+            "parent_skill": "Margin analysis by product\/customer",
+            "related_skills": [
+                "Pricing analysis",
+                "Financial modeling for margin scenarios",
+                "Contribution margin analysis"
+            ],
+            "keywords": [
+                "price elasticity",
+                "price sensitivity",
+                "demand elasticity",
+                "price-volume tradeoff"
+            ],
+            "common_roles": [
+                "Pricing Analyst",
+                "Commercial Finance Analyst",
+                "Revenue Manager",
+                "FP&A Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial modeling for margin scenarios",
+            "aliases": [
+                "scenario modeling for margins",
+                "margin scenario analysis",
+                "P&L scenario modeling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Build and maintain financial models and scenario analyses that forecast margin outcomes under different assumptions (price, mix, cost, volume, promotions).",
+            "parent_skill": "Margin analysis by product\/customer",
+            "related_skills": [
+                "Excel for profitability modeling",
+                "Price elasticity and margin sensitivity analysis",
+                "Product margin analysis"
+            ],
+            "keywords": [
+                "scenario modeling",
+                "sensitivity analysis",
+                "margin forecasting",
+                "P&L modeling"
+            ],
+            "common_roles": [
+                "FP&A Analyst",
+                "Financial Analyst",
+                "Commercial Finance Manager",
+                "Strategy Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Excel for profitability modeling",
+            "aliases": [
+                "Excel financial modeling",
+                "advanced Excel for margins",
+                "Excel P&L modeling"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use Microsoft Excel (including formulas, pivot tables, Power Query, Data Tables and VBA where applicable) to build, automate and validate profitability and margin models.",
+            "parent_skill": "Margin analysis by product\/customer",
+            "related_skills": [
+                "Financial modeling for margin scenarios",
+                "SQL for margin analysis",
+                "Power BI \/ profitability dashboards"
+            ],
+            "keywords": [
+                "Excel",
+                "pivot tables",
+                "Power Query",
+                "VBA"
+            ],
+            "common_roles": [
+                "Financial Analyst",
+                "FP&A Analyst",
+                "Cost Accountant",
+                "Commercial Finance Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SQL for margin analysis",
+            "aliases": [
+                "SQL querying for financial analysis",
+                "T-SQL for profitability analysis",
+                "SQL for profitability"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Extract, join and transform transactional and cost data using SQL to prepare datasets for margin calculations, SKU\/customer roll-ups and downstream reporting.",
+            "parent_skill": "Margin analysis by product\/customer",
+            "related_skills": [
+                "Excel for profitability modeling",
+                "Power BI \/ profitability dashboards",
+                "ETL and data transformation"
+            ],
+            "keywords": [
+                "SQL",
+                "queries",
+                "data extraction",
+                "joins"
+            ],
+            "common_roles": [
+                "Financial Analyst",
+                "Data Analyst (Finance)",
+                "FP&A Analyst",
+                "Commercial Finance Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

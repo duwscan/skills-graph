@@ -1,0 +1,247 @@
+{
+    "domain": "F&B",
+    "category": "Catering, Events & Banquet Operations",
+    "subcategory": "Buffet setup & replenishment",
+    "skills": [
+        {
+            "canonical_name": "Buffet layout and flow planning",
+            "aliases": [
+                "buffet layout design",
+                "buffet flow planning",
+                "station layout planning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing the physical arrangement of buffet stations and guest flow to optimize throughput, accessibility, safety and service efficiency.",
+            "parent_skill": "",
+            "related_skills": [
+                "Guest service and queue management at buffet",
+                "Buffet setup and breakdown"
+            ],
+            "keywords": [
+                "station placement",
+                "guest circulation",
+                "service points",
+                "accessibility"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Buffet setup and breakdown",
+            "aliases": [
+                "buffet setup",
+                "buffet takedown",
+                "banquet buffet setup"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Hands-on assembly and disassembly of buffet stations including tables, linens, signage, serviceware and immediate cleaning tasks.",
+            "parent_skill": "",
+            "related_skills": [
+                "Buffet equipment operation and maintenance",
+                "Buffet layout and flow planning"
+            ],
+            "keywords": [
+                "set up",
+                "tear down",
+                "table dressing",
+                "station assembly"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food presentation and garnishing (buffet)",
+            "aliases": [
+                "buffet plating",
+                "buffet presentation",
+                "buffet garnishing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Arranging and finishing food on buffet displays to maintain visual appeal and portion clarity while enabling self-service.",
+            "parent_skill": "",
+            "related_skills": [
+                "Portion control and serving size management",
+                "Buffet layout and flow planning"
+            ],
+            "keywords": [
+                "plating",
+                "garnish",
+                "display aesthetics",
+                "visual merchandising"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Portion control and serving size management",
+            "aliases": [
+                "portion control",
+                "serving size estimation",
+                "standardized portions"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Applying standardized portion sizes and serving techniques to control food costs, consistency and waste during buffet service.",
+            "parent_skill": "",
+            "related_skills": [
+                "Food presentation and garnishing (buffet)",
+                "Waste minimization and consumption forecasting for buffets"
+            ],
+            "keywords": [
+                "standard portions",
+                "portioning tools",
+                "cost control",
+                "spoon\/ladle counts"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Hot and cold holding temperature control (food safety)",
+            "aliases": [
+                "temperature monitoring",
+                "hot-holding control",
+                "cold-holding control"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Monitoring and maintaining required hot and cold holding temperatures, documenting readings and taking corrective actions to meet food-safety regulations.",
+            "parent_skill": "",
+            "related_skills": [
+                "Allergen segregation, labeling and cross-contact prevention",
+                "Buffet equipment operation and maintenance"
+            ],
+            "keywords": [
+                "thermometer checks",
+                "temperature logs",
+                "holding times",
+                "corrective action"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen segregation, labeling and cross-contact prevention",
+            "aliases": [
+                "allergen management (buffet)",
+                "allergen labeling",
+                "cross-contact prevention"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Implementing practices to prevent allergen cross-contact at buffet stations, correctly labeling menu items and communicating allergen information to guests and staff.",
+            "parent_skill": "",
+            "related_skills": [
+                "Buffet layout and flow planning",
+                "Food presentation and garnishing (buffet)"
+            ],
+            "keywords": [
+                "allergen labeling",
+                "separate utensils",
+                "cross-contact controls",
+                "guest notification"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Buffet replenishment scheduling and FIFO inventory rotation",
+            "aliases": [
+                "replenishment scheduling",
+                "FIFO rotation",
+                "stock rotation for buffet"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning and executing timely replenishment cycles and first-in, first-out inventory rotation to ensure freshness, availability and minimal waste during service.",
+            "parent_skill": "",
+            "related_skills": [
+                "Portion control and serving size management",
+                "Waste minimization and consumption forecasting for buffets"
+            ],
+            "keywords": [
+                "replenishment timing",
+                "inventory rotation",
+                "stock checks",
+                "restock cadence"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Buffet equipment operation and maintenance",
+            "aliases": [
+                "chafing dish operation",
+                "bain-marie operation",
+                "buffet warming equipment handling"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Safe setup, operation, basic troubleshooting and routine cleaning of buffet equipment such as chafing dishes, bain-maries, heat lamps and sneeze guards.",
+            "parent_skill": "",
+            "related_skills": [
+                "Hot and cold holding temperature control (food safety)",
+                "Buffet setup and breakdown"
+            ],
+            "keywords": [
+                "equipment setup",
+                "fuel handling",
+                "electric warming",
+                "preventive cleaning"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Guest service and queue management at buffet",
+            "aliases": [
+                "buffet customer service",
+                "buffet queue control",
+                "guest flow management"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Managing guest interactions, directing queues, answering questions about dishes and coordinating with back-of-house to maintain smooth customer experience at self-service stations.",
+            "parent_skill": "",
+            "related_skills": [
+                "Buffet layout and flow planning",
+                "Allergen segregation, labeling and cross-contact prevention"
+            ],
+            "keywords": [
+                "guest interaction",
+                "queue control",
+                "signage communication",
+                "service coordination"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Waste minimization and consumption forecasting for buffets",
+            "aliases": [
+                "buffet waste reduction",
+                "demand forecasting for buffet",
+                "consumption analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing historical consumption patterns and event factors to forecast demand, set production quantities and apply waste-reduction strategies for buffet service.",
+            "parent_skill": "",
+            "related_skills": [
+                "Portion control and serving size management",
+                "Buffet replenishment scheduling and FIFO inventory rotation"
+            ],
+            "keywords": [
+                "forecasting",
+                "consumption trends",
+                "waste tracking",
+                "production planning"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

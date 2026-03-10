@@ -1,0 +1,293 @@
+{
+    "domain": "Finance",
+    "category": "Accounts Payable & Procure-to-Pay",
+    "subcategory": "Invoice processing & matching",
+    "skills": [
+        {
+            "canonical_name": "Invoice matching (two-way & three-way)",
+            "aliases": [
+                "two-way matching",
+                "three-way matching",
+                "PO-invoice matching"
+            ],
+            "skill_type": "process_skill",
+            "description": "Reconciles invoices against purchase orders and goods receipts (two-way and three-way matching) to validate payable amounts before approval or payment.",
+            "parent_skill": "Invoice processing & matching",
+            "related_skills": [
+                "Invoice validation (tax, regulatory & policy checks)",
+                "Invoice exception management",
+                "Purchase order management"
+            ],
+            "keywords": [
+                "PO matching",
+                "GRN",
+                "quantity\/price match"
+            ],
+            "common_roles": [
+                "Accounts Payable teams",
+                "Procure-to-Pay operations",
+                "Finance shared services"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Invoice OCR and data capture",
+            "aliases": [
+                "optical character recognition for invoices",
+                "invoice data extraction",
+                "invoice scanning"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Uses OCR and intelligent data capture tools to extract invoice fields (vendor, amounts, dates, line items) for downstream validation and posting.",
+            "parent_skill": "Invoice processing & matching",
+            "related_skills": [
+                "AP workflow automation (RPA & rules-based)",
+                "Invoice validation (tax, regulatory & policy checks)",
+                "Invoice exception management"
+            ],
+            "keywords": [
+                "OCR",
+                "ICR",
+                "data capture",
+                "document parsing"
+            ],
+            "common_roles": [
+                "Accounts Payable teams",
+                "Finance operations",
+                "Shared services centers"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Invoice coding and GL account assignment",
+            "aliases": [
+                "GL coding",
+                "invoice coding",
+                "account coding"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Assigns invoices to the correct general ledger accounts, cost centers and accounting segments to ensure accurate financial reporting and posting.",
+            "parent_skill": "Invoice processing & matching",
+            "related_skills": [
+                "Invoice validation (tax, regulatory & policy checks)",
+                "ERP posting and AP ledger maintenance",
+                "Accruals and month-end close support"
+            ],
+            "keywords": [
+                "GL",
+                "chart of accounts",
+                "cost center",
+                "account assignment"
+            ],
+            "common_roles": [
+                "Accounts Payable teams",
+                "Finance operations",
+                "Shared services centers"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Invoice exception management",
+            "aliases": [
+                "dispute resolution for invoices",
+                "invoice query handling",
+                "exceptions handling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Identifies, investigates and resolves invoice discrepancies and supplier disputes, including escalation and coordination with procurement and suppliers.",
+            "parent_skill": "Invoice processing & matching",
+            "related_skills": [
+                "Invoice matching (two-way & three-way)",
+                "Supplier statement reconciliation",
+                "Invoice exception analysis & root-cause identification"
+            ],
+            "keywords": [
+                "dispute",
+                "shortage",
+                "price variance",
+                "credit note"
+            ],
+            "common_roles": [
+                "Accounts Payable teams",
+                "Supplier relationship managers",
+                "Procure-to-Pay support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Supplier statement reconciliation",
+            "aliases": [
+                "vendor statement reconciliation",
+                "supplier account reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Compares supplier statements to ledger and invoice records to identify missing invoices, unapplied payments, and outstanding balances for reconciliation.",
+            "parent_skill": "Invoice processing & matching",
+            "related_skills": [
+                "Invoice exception management",
+                "Payment processing and remittance",
+                "AP system reconciliation & audit trail maintenance"
+            ],
+            "keywords": [
+                "vendor reconciliation",
+                "open items",
+                "aging"
+            ],
+            "common_roles": [
+                "Accounts Payable teams",
+                "Finance shared services",
+                "Treasury & payments support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Invoice validation (tax, regulatory & policy checks)",
+            "aliases": [
+                "invoice compliance checks",
+                "tax validation for invoices",
+                "policy validation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Performs mandatory compliance checks on invoices, including VAT\/GST validation, withholding tax, supplier details, and internal policy adherence prior to posting or payment.",
+            "parent_skill": "Invoice processing & matching",
+            "related_skills": [
+                "Invoice coding and GL account assignment",
+                "AP system reconciliation & audit trail maintenance",
+                "Invoice exception management"
+            ],
+            "keywords": [
+                "VAT",
+                "GST",
+                "withholding tax",
+                "compliance"
+            ],
+            "common_roles": [
+                "Accounts Payable teams",
+                "Compliance and tax support",
+                "Shared services operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Invoice batching and payment scheduling",
+            "aliases": [
+                "payment batching",
+                "payment scheduling",
+                "run scheduling for payments"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Groups approved invoices into payment batches and schedules payments according to cash management priorities, payment terms and cutoff deadlines.",
+            "parent_skill": "Invoice processing & matching",
+            "related_skills": [
+                "Payment processing and remittance",
+                "Cash flow optimization",
+                "Supplier payment terms negotiation"
+            ],
+            "keywords": [
+                "batching",
+                "cutoff",
+                "payment run",
+                "due dates"
+            ],
+            "common_roles": [
+                "Accounts Payable teams",
+                "Treasury & payments",
+                "Finance operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "AP workflow automation (RPA & rules-based)",
+            "aliases": [
+                "accounts payable automation",
+                "RPA for AP",
+                "rules-based AP workflows"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designs or configures automated workflows and RPA bots to route invoices, validate fields, match documents and trigger payments to reduce manual effort and errors.",
+            "parent_skill": "Invoice processing & matching",
+            "related_skills": [
+                "Invoice OCR and data capture",
+                "Invoice matching (two-way & three-way)",
+                "Invoice exception analysis & root-cause identification"
+            ],
+            "keywords": [
+                "automation",
+                "RPA",
+                "workflow engine",
+                "straight-through processing"
+            ],
+            "common_roles": [
+                "Finance transformation",
+                "Accounts Payable teams",
+                "Shared services automation"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Invoice exception analysis & root-cause identification",
+            "aliases": [
+                "exception analytics",
+                "root-cause analysis for invoice issues"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzes recurring invoice exceptions and operational bottlenecks using data to identify root causes and recommend process or control improvements.",
+            "parent_skill": "Invoice processing & matching",
+            "related_skills": [
+                "Invoice exception management",
+                "AP workflow automation (RPA & rules-based)",
+                "Supplier statement reconciliation"
+            ],
+            "keywords": [
+                "root cause",
+                "data analysis",
+                "KPIs",
+                "continuous improvement"
+            ],
+            "common_roles": [
+                "Accounts Payable teams",
+                "Finance analytics",
+                "Process improvement teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "AP system reconciliation and audit trail maintenance",
+            "aliases": [
+                "accounts payable reconciliation",
+                "audit trail maintenance for AP",
+                "AP ledger reconciliation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Maintains reconciled AP records and verifiable audit trails between invoices, payments and general ledger entries to support audits and financial controls.",
+            "parent_skill": "Invoice processing & matching",
+            "related_skills": [
+                "Supplier statement reconciliation",
+                "Invoice validation (tax, regulatory & policy checks)",
+                "Invoice coding and GL account assignment"
+            ],
+            "keywords": [
+                "audit trail",
+                "reconciliation",
+                "SOX controls",
+                "posting"
+            ],
+            "common_roles": [
+                "Accounts Payable teams",
+                "Internal audit support",
+                "Finance shared services"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

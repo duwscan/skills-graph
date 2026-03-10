@@ -1,0 +1,298 @@
+{
+    "domain": "IT",
+    "category": "IT Service Management & Support Operations",
+    "subcategory": "IT asset management",
+    "skills": [
+        {
+            "canonical_name": "IT asset inventory management",
+            "aliases": [
+                "asset inventory management",
+                "hardware and software inventory",
+                "asset inventory tracking"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintaining an accurate, consolidated inventory of hardware, software, cloud resources and related attributes across the enterprise.",
+            "parent_skill": "IT asset management",
+            "related_skills": [
+                "Asset reconciliation and audit",
+                "CMDB administration",
+                "ITAM tool configuration"
+            ],
+            "keywords": [
+                "inventory",
+                "asset records",
+                "discovery",
+                "inventory reconciliation"
+            ],
+            "common_roles": [
+                "IT Asset Manager",
+                "ITSM Analyst",
+                "Service Desk Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Software license management",
+            "aliases": [
+                "license management",
+                "software license tracking",
+                "license compliance management"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Tracking, allocating and ensuring compliance of software licenses, entitlements and subscriptions to minimize legal and financial risk.",
+            "parent_skill": "IT asset management",
+            "related_skills": [
+                "IT asset cost allocation and chargeback",
+                "ITAM tool configuration",
+                "Asset reconciliation and audit"
+            ],
+            "keywords": [
+                "license compliance",
+                "entitlements",
+                "software metering",
+                "SaaS license management"
+            ],
+            "common_roles": [
+                "IT Asset Manager",
+                "Procurement Specialist",
+                "Compliance Officer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "CMDB administration",
+            "aliases": [
+                "configuration management database administration",
+                "CMDB management",
+                "CMDB maintenance"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Designing, maintaining and validating the configuration management database to ensure accurate relationships between assets, services and configuration items.",
+            "parent_skill": "IT asset management",
+            "related_skills": [
+                "IT asset inventory management",
+                "Asset reconciliation and audit",
+                "ITAM tool configuration"
+            ],
+            "keywords": [
+                "CI relationships",
+                "service mapping",
+                "configuration items",
+                "CMDB data quality"
+            ],
+            "common_roles": [
+                "ITSM Analyst",
+                "Configuration Manager",
+                "Service Operations Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "IT asset lifecycle management",
+            "aliases": [
+                "asset lifecycle management",
+                "asset lifecycle planning",
+                "lifecycle tracking"
+            ],
+            "skill_type": "process_skill",
+            "description": "Defining and executing policies and processes for asset acquisition, deployment, maintenance, refresh and retirement across the asset lifecycle.",
+            "parent_skill": "IT asset management",
+            "related_skills": [
+                "IT asset procurement and vendor coordination",
+                "Secure IT asset disposal and data sanitization",
+                "Asset reconciliation and audit"
+            ],
+            "keywords": [
+                "procurement",
+                "deployment",
+                "refresh planning",
+                "retirement"
+            ],
+            "common_roles": [
+                "IT Asset Manager",
+                "Operations Manager",
+                "Procurement Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "IT asset procurement and vendor coordination",
+            "aliases": [
+                "asset procurement",
+                "vendor coordination for assets",
+                "IT procurement coordination"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Coordinating purchase requests, vendor relationships, receiving, and asset onboarding processes to ensure timely provisioning and record accuracy.",
+            "parent_skill": "IT asset management",
+            "related_skills": [
+                "IT asset lifecycle management",
+                "IT asset cost allocation and chargeback",
+                "ITAM tool configuration"
+            ],
+            "keywords": [
+                "purchase orders",
+                "vendor management",
+                "receiving",
+                "onboarding"
+            ],
+            "common_roles": [
+                "Procurement Specialist",
+                "IT Asset Manager",
+                "Vendor Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Secure IT asset disposal and data sanitization",
+            "aliases": [
+                "asset disposal",
+                "secure disposal",
+                "data sanitization for assets",
+                "secure wiping"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Implementing secure disposal workflows and data removal techniques (e.g., data erasure, cryptographic wipe, physical destruction) to meet data protection and environmental requirements.",
+            "parent_skill": "IT asset management",
+            "related_skills": [
+                "IT asset lifecycle management",
+                "Asset reconciliation and audit",
+                "Compliance and regulatory knowledge"
+            ],
+            "keywords": [
+                "data erasure",
+                "secure wipe",
+                "e-waste",
+                "end-of-life"
+            ],
+            "common_roles": [
+                "IT Asset Manager",
+                "Security Analyst",
+                "Facilities Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Asset reconciliation and audit",
+            "aliases": [
+                "asset reconciliation",
+                "asset auditing",
+                "inventory reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Performing periodic reconciliations and audits between physical assets, discovered inventory and financial records to detect discrepancies and maintain data integrity.",
+            "parent_skill": "IT asset management",
+            "related_skills": [
+                "IT asset inventory management",
+                "Software license management",
+                "CMDB administration"
+            ],
+            "keywords": [
+                "reconciliation",
+                "audit trail",
+                "variance analysis",
+                "physical audit"
+            ],
+            "common_roles": [
+                "IT Asset Auditor",
+                "ITSM Analyst",
+                "Finance Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Physical asset tagging and RFID\/barcode labeling",
+            "aliases": [
+                "asset tagging",
+                "RFID asset tagging",
+                "barcode labeling for assets"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Applying and managing physical identification methods (barcode, QR, RFID tags) and associated workflows for tracking, scanning and lifecycle updates of hardware assets.",
+            "parent_skill": "IT asset management",
+            "related_skills": [
+                "IT asset inventory management",
+                "Asset reconciliation and audit",
+                "ITAM tool configuration"
+            ],
+            "keywords": [
+                "barcode",
+                "RFID",
+                "asset tags",
+                "labeling"
+            ],
+            "common_roles": [
+                "IT Asset Coordinator",
+                "Field Technician",
+                "Inventory Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ITAM tool configuration",
+            "aliases": [
+                "IT asset management tool configuration",
+                "ITAM platform configuration",
+                "asset management system configuration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and customizing ITAM\/ITSM platforms (workflows, fields, discovery integration and reporting) to support asset data capture, processes and governance.",
+            "parent_skill": "IT asset management",
+            "related_skills": [
+                "CMDB administration",
+                "IT asset inventory management",
+                "Software license management"
+            ],
+            "keywords": [
+                "tool configuration",
+                "workflows",
+                "integrations",
+                "discovery"
+            ],
+            "common_roles": [
+                "ITSM Administrator",
+                "IT Asset Manager",
+                "Tooling Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "IT asset cost allocation and chargeback",
+            "aliases": [
+                "asset chargeback",
+                "cost allocation for IT assets",
+                "TCO analysis for IT assets"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Modeling and allocating IT asset costs (purchase, maintenance, depreciation) to business units, creating chargeback\/showback reports and informing budgeting decisions.",
+            "parent_skill": "IT asset management",
+            "related_skills": [
+                "Software license management",
+                "IT asset procurement and vendor coordination",
+                "Asset reconciliation and audit"
+            ],
+            "keywords": [
+                "chargeback",
+                "cost allocation",
+                "TCO",
+                "depreciation"
+            ],
+            "common_roles": [
+                "Finance Analyst",
+                "IT Asset Manager",
+                "FinOps Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

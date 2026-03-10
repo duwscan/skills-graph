@@ -1,0 +1,283 @@
+{
+    "domain": "Finance",
+    "category": "Corporate Finance & Capital Structure",
+    "subcategory": "Capital budgeting & investment appraisal",
+    "skills": [
+        {
+            "canonical_name": "Discounted Cash Flow (DCF) modeling",
+            "aliases": [
+                "Discounted cash flow analysis",
+                "DCF valuation",
+                "DCF model"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Constructing multi-period discounted cash flow models to value projects or investments by forecasting cash flows and discounting them to present value.",
+            "parent_skill": "Capital budgeting & investment appraisal",
+            "related_skills": [
+                "Net Present Value (NPV) analysis",
+                "Internal Rate of Return (IRR) analysis",
+                "Weighted Average Cost of Capital (WACC) estimation",
+                "Project cash flow forecasting"
+            ],
+            "keywords": [
+                "discount rate",
+                "terminal value",
+                "free cash flow",
+                "present value",
+                "forecasting"
+            ],
+            "common_roles": [
+                "Financial analyst",
+                "Corporate finance analyst",
+                "FP&A analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Net Present Value (NPV) analysis",
+            "aliases": [
+                "NPV calculation",
+                "Net present value"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Calculating the net present value of a project by discounting expected future cash flows and comparing to initial investment to assess value creation.",
+            "parent_skill": "Capital budgeting & investment appraisal",
+            "related_skills": [
+                "Discounted Cash Flow (DCF) modeling",
+                "Internal Rate of Return (IRR) analysis",
+                "Payback period analysis"
+            ],
+            "keywords": [
+                "NPV",
+                "discount rate",
+                "cash flows",
+                "investment appraisal"
+            ],
+            "common_roles": [
+                "Corporate finance analyst",
+                "Investment analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Internal Rate of Return (IRR) analysis",
+            "aliases": [
+                "IRR calculation",
+                "Internal rate of return"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Determining the discount rate at which a project's net present value equals zero and interpreting IRR relative to hurdle rates for investment decisions.",
+            "parent_skill": "Capital budgeting & investment appraisal",
+            "related_skills": [
+                "Net Present Value (NPV) analysis",
+                "Discounted Cash Flow (DCF) modeling",
+                "Payback period analysis"
+            ],
+            "keywords": [
+                "IRR",
+                "hurdle rate",
+                "cash flows",
+                "rate of return"
+            ],
+            "common_roles": [
+                "Financial analyst",
+                "Project finance analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Weighted Average Cost of Capital (WACC) estimation",
+            "aliases": [
+                "Cost of capital estimation",
+                "WACC calculation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Estimating a firm's blended cost of debt and equity used as the discount rate for project valuation and capital budgeting decisions.",
+            "parent_skill": "Capital budgeting & investment appraisal",
+            "related_skills": [
+                "Discounted Cash Flow (DCF) modeling",
+                "Net Present Value (NPV) analysis",
+                "Real options valuation"
+            ],
+            "keywords": [
+                "cost of equity",
+                "cost of debt",
+                "beta",
+                "capital structure",
+                "discount rate"
+            ],
+            "common_roles": [
+                "Treasury analyst",
+                "Corporate finance manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Project cash flow forecasting",
+            "aliases": [
+                "Project cashflow projection",
+                "Project cash flow modeling",
+                "Cash flow forecasting for projects"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Building detailed forecasts of project-level revenues, operating costs, capital expenditures, working capital changes and timing to support valuation.",
+            "parent_skill": "Capital budgeting & investment appraisal",
+            "related_skills": [
+                "Discounted Cash Flow (DCF) modeling",
+                "Sensitivity analysis for capital projects",
+                "Scenario analysis and stress testing"
+            ],
+            "keywords": [
+                "revenues",
+                "capex",
+                "opex",
+                "working capital",
+                "timing"
+            ],
+            "common_roles": [
+                "FP&A analyst",
+                "Project finance analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sensitivity analysis for capital projects",
+            "aliases": [
+                "What-if analysis",
+                "Sensitivity testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Testing how changes in key assumptions (sales, costs, discount rates) affect project valuation metrics to identify value drivers and risks.",
+            "parent_skill": "Capital budgeting & investment appraisal",
+            "related_skills": [
+                "Scenario analysis and stress testing",
+                "Monte Carlo simulation for investment appraisal",
+                "Project cash flow forecasting"
+            ],
+            "keywords": [
+                "what-if",
+                "key drivers",
+                "break-even",
+                "assumption testing"
+            ],
+            "common_roles": [
+                "Risk analyst",
+                "Financial analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Scenario analysis and stress testing",
+            "aliases": [
+                "Scenario planning",
+                "Stress testing for projects"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating and evaluating multiple coherent future scenarios (base, upside, downside) and stressed cases to assess project resilience and downside risk.",
+            "parent_skill": "Capital budgeting & investment appraisal",
+            "related_skills": [
+                "Sensitivity analysis for capital projects",
+                "Monte Carlo simulation for investment appraisal",
+                "Project cash flow forecasting"
+            ],
+            "keywords": [
+                "scenarios",
+                "stress cases",
+                "downside risk",
+                "resilience"
+            ],
+            "common_roles": [
+                "Risk manager",
+                "Corporate finance analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Real options valuation",
+            "aliases": [
+                "Real options analysis",
+                "Option-based project valuation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Applying option-pricing and decision-tree frameworks to value managerial flexibility in projects (e.g., delay, expand, abandon) beyond static NPV.",
+            "parent_skill": "Capital budgeting & investment appraisal",
+            "related_skills": [
+                "Discounted Cash Flow (DCF) modeling",
+                "Monte Carlo simulation for investment appraisal",
+                "Weighted Average Cost of Capital (WACC) estimation"
+            ],
+            "keywords": [
+                "option pricing",
+                "decision tree",
+                "flexibility",
+                "managerial options"
+            ],
+            "common_roles": [
+                "Strategic finance analyst",
+                "Investment analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Monte Carlo simulation for investment appraisal",
+            "aliases": [
+                "Probabilistic simulation",
+                "Stochastic modeling for projects"
+            ],
+            "skill_type": "process_skill",
+            "description": "Using Monte Carlo and other probabilistic simulations to model distributions of project outcomes and quantify probabilistic risk measures (e.g., P(NPV>0)).",
+            "parent_skill": "Capital budgeting & investment appraisal",
+            "related_skills": [
+                "Sensitivity analysis for capital projects",
+                "Scenario analysis and stress testing",
+                "Real options valuation"
+            ],
+            "keywords": [
+                "Monte Carlo",
+                "probability distributions",
+                "risk simulation",
+                "stochastic"
+            ],
+            "common_roles": [
+                "Risk analyst",
+                "Quantitative analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Payback period analysis",
+            "aliases": [
+                "Payback analysis",
+                "Discounted payback period"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Calculating the time required for cumulative project cash flows to recover the initial investment (simple and discounted variants) and interpreting its limitations.",
+            "parent_skill": "Capital budgeting & investment appraisal",
+            "related_skills": [
+                "Net Present Value (NPV) analysis",
+                "Internal Rate of Return (IRR) analysis"
+            ],
+            "keywords": [
+                "payback",
+                "discounted payback",
+                "investment recovery",
+                "liquidity"
+            ],
+            "common_roles": [
+                "Project finance analyst",
+                "Financial analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

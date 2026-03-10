@@ -1,0 +1,293 @@
+{
+    "domain": "F&B",
+    "category": "F&B Cost Control & Revenue Operations",
+    "subcategory": "Waste logging & reduction programs",
+    "skills": [
+        {
+            "canonical_name": "Food waste auditing",
+            "aliases": [
+                "waste auditing",
+                "waste audit",
+                "waste log auditing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Systematic measurement and recording of food waste volumes, categories and sources across operations to identify loss points and track reduction over time.",
+            "parent_skill": "Waste logging & reduction programs",
+            "related_skills": [
+                "Waste tracking system administration",
+                "Waste data analysis & KPI reporting",
+                "Root cause analysis for waste"
+            ],
+            "keywords": [
+                "waste audit",
+                "weigh-and-record",
+                "waste categories",
+                "loss points"
+            ],
+            "common_roles": [
+                "Kitchen operations",
+                "Cost control teams",
+                "Sustainability programs",
+                "Quality assurance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Waste tracking system administration",
+            "aliases": [
+                "waste tracking",
+                "digital waste tracking",
+                "waste log software administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring, maintaining and administering digital systems and tools used to log, categorize and integrate waste data (including sensor inputs and POS\/inventory integrations).",
+            "parent_skill": "Waste logging & reduction programs",
+            "related_skills": [
+                "Food waste auditing",
+                "Waste data analysis & KPI reporting",
+                "Inventory reconciliation & shrink control"
+            ],
+            "keywords": [
+                "waste log",
+                "POS integration",
+                "sensor data",
+                "system configuration"
+            ],
+            "common_roles": [
+                "Inventory control",
+                "Operations analytics",
+                "Facilities operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Waste data analysis & KPI reporting",
+            "aliases": [
+                "waste analytics",
+                "waste KPI tracking",
+                "waste reporting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing waste logs and operational data to calculate KPIs (waste %, cost of waste, cost per portion), produce dashboards and reports to inform decisions and measure program impact.",
+            "parent_skill": "Waste logging & reduction programs",
+            "related_skills": [
+                "Waste tracking system administration",
+                "Demand forecasting for perishable inventory",
+                "Inventory reconciliation & shrink control"
+            ],
+            "keywords": [
+                "waste percentage",
+                "cost of waste",
+                "dashboard",
+                "reporting"
+            ],
+            "common_roles": [
+                "Cost control teams",
+                "Operations analytics",
+                "Procurement & planning"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Waste reduction program design & implementation",
+            "aliases": [
+                "waste reduction program management",
+                "waste reduction initiative design",
+                "waste reduction implementation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, piloting and scaling interventions (targets, standard work, pilots, staff training and measurement routines) to reduce food waste across front- and back-of-house operations.",
+            "parent_skill": "Waste logging & reduction programs",
+            "related_skills": [
+                "Food waste auditing",
+                "Root cause analysis for waste",
+                "Compost & recycling program coordination"
+            ],
+            "keywords": [
+                "pilot",
+                "intervention",
+                "standard work",
+                "program rollout"
+            ],
+            "common_roles": [
+                "Operations improvement",
+                "Sustainability programs",
+                "Kitchen operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Portion control & standardized recipe enforcement",
+            "aliases": [
+                "portion control",
+                "standardized recipe adherence",
+                "recipe yield control"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing and monitoring portioning standards and adherence to standardized recipes to reduce overproduction and plate-level waste while ensuring consistent food cost and quality.",
+            "parent_skill": "Waste logging & reduction programs",
+            "related_skills": [
+                "Inventory reconciliation & shrink control",
+                "Waste data analysis & KPI reporting"
+            ],
+            "keywords": [
+                "portioning",
+                "recipe cards",
+                "yield",
+                "scoop counts"
+            ],
+            "common_roles": [
+                "Kitchen operations",
+                "Quality assurance",
+                "Procurement & planning"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inventory reconciliation & shrink control",
+            "aliases": [
+                "inventory reconciliation",
+                "shrink management",
+                "stock variance control"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Reconciling physical inventory, waste logs and POS to identify shrink sources (spoilage, theft, overproduction), adjust par levels and implement controls to minimize loss.",
+            "parent_skill": "Waste logging & reduction programs",
+            "related_skills": [
+                "Waste tracking system administration",
+                "Waste data analysis & KPI reporting",
+                "Portion control & standardized recipe enforcement"
+            ],
+            "keywords": [
+                "cycle counts",
+                "variance",
+                "shrink",
+                "reconciliation"
+            ],
+            "common_roles": [
+                "Inventory control",
+                "Cost control teams",
+                "Procurement & planning"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Root cause analysis for waste",
+            "aliases": [
+                "waste root cause analysis",
+                "5 Whys for waste",
+                "cause analysis for waste"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying structured problem-solving techniques (e.g., 5 Whys, fishbone) to identify actionable causes of waste such as overproduction, process gaps or handling errors and define corrective actions.",
+            "parent_skill": "Waste logging & reduction programs",
+            "related_skills": [
+                "Food waste auditing",
+                "Waste reduction program design & implementation",
+                "Waste data analysis & KPI reporting"
+            ],
+            "keywords": [
+                "RCA",
+                "5 Whys",
+                "fishbone",
+                "corrective actions"
+            ],
+            "common_roles": [
+                "Continuous improvement",
+                "Operations analytics",
+                "Kitchen operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Compost & recycling program coordination",
+            "aliases": [
+                "composting program management",
+                "recycling coordination",
+                "organic waste diversion programs"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Organizing on-site separation, collection logistics and external vendor coordination for composting and recycling to divert organic and recyclable waste and track diversion rates.",
+            "parent_skill": "Waste logging & reduction programs",
+            "related_skills": [
+                "Food safety & waste segregation compliance",
+                "Waste reduction program design & implementation"
+            ],
+            "keywords": [
+                "diversion",
+                "organics",
+                "separation",
+                "hauler coordination"
+            ],
+            "common_roles": [
+                "Sustainability programs",
+                "Facilities operations",
+                "Kitchen operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Demand forecasting for perishable inventory",
+            "aliases": [
+                "perishable demand forecasting",
+                "demand planning for perishables"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Short-term demand forecasting and production planning for perishable goods using historical sales, seasonality and promotions to align purchasing and production and reduce spoilage.",
+            "parent_skill": "Waste logging & reduction programs",
+            "related_skills": [
+                "Waste data analysis & KPI reporting",
+                "Inventory reconciliation & shrink control",
+                "Portion control & standardized recipe enforcement"
+            ],
+            "keywords": [
+                "forecasting",
+                "perishables",
+                "demand planning",
+                "sales history"
+            ],
+            "common_roles": [
+                "Procurement & planning",
+                "Operations analytics",
+                "Cost control teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food safety & waste segregation compliance",
+            "aliases": [
+                "waste segregation compliance",
+                "food safety compliant waste handling"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Understanding and applying health-code and regulatory requirements for safe segregation, storage and disposal of food waste to meet legal, safety and sanitation standards.",
+            "parent_skill": "Waste logging & reduction programs",
+            "related_skills": [
+                "Compost & recycling program coordination",
+                "Food waste auditing"
+            ],
+            "keywords": [
+                "health code",
+                "segregation",
+                "regulatory",
+                "sanitation"
+            ],
+            "common_roles": [
+                "Quality assurance",
+                "Compliance & safety",
+                "Sustainability programs"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

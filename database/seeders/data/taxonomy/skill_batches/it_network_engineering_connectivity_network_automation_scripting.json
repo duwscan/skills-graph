@@ -1,0 +1,276 @@
+{
+    "domain": "IT",
+    "category": "Network Engineering & Connectivity",
+    "subcategory": "Network automation & scripting",
+    "skills": [
+        {
+            "canonical_name": "Python for network automation",
+            "aliases": [
+                "Network Python scripting",
+                "Python scripting (network automation)",
+                "Python network automation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Developing Python scripts to automate network device configuration, data collection, parsing, and orchestration using libraries and APIs common in networking environments.",
+            "parent_skill": "Network automation & scripting",
+            "related_skills": [
+                "Ansible for network automation",
+                "NAPALM",
+                "RESTful APIs for network devices",
+                "Network test automation and validation",
+                "Git for version control of network automation code\/configs"
+            ],
+            "keywords": [
+                "python",
+                "scripting",
+                "automation",
+                "paramiko",
+                "netmiko",
+                "napalm",
+                "requests"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ansible for network automation",
+            "aliases": [
+                "Ansible network automation",
+                "Ansible playbooks (network)",
+                "Ansible network modules"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Ansible playbooks, inventories and network-specific modules to perform idempotent device configuration, orchestration and bulk changes across multi-vendor environments.",
+            "parent_skill": "Network automation & scripting",
+            "related_skills": [
+                "Python for network automation",
+                "Git for version control of network automation code\/configs",
+                "CI\/CD for network automation (pipelines, testing)",
+                "NAPALM"
+            ],
+            "keywords": [
+                "ansible",
+                "playbook",
+                "idempotent",
+                "ios_config",
+                "eos_config",
+                "automation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "NAPALM",
+            "aliases": [
+                "NAPALM library",
+                "Network Automation and Programmability Abstraction Layer"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using the NAPALM library to provide a vendor-agnostic API for retrieving device state and applying configuration changes across multiple network OSes.",
+            "parent_skill": "Network automation & scripting",
+            "related_skills": [
+                "Python for network automation",
+                "Ansible for network automation",
+                "NETCONF\/RESTCONF and YANG data modeling"
+            ],
+            "keywords": [
+                "napalm",
+                "vendor-agnostic",
+                "device abstraction",
+                "state retrieval",
+                "automation library"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "NETCONF\/RESTCONF and YANG data modeling",
+            "aliases": [
+                "YANG modeling",
+                "NETCONF RESTCONF",
+                "Model-driven network programmability"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying NETCONF\/RESTCONF protocols and designing or consuming YANG data models for model-driven configuration, state retrieval and telemetry on network devices.",
+            "parent_skill": "Network automation & scripting",
+            "related_skills": [
+                "RESTful APIs for network devices",
+                "Streaming telemetry and model-driven telemetry",
+                "NAPALM"
+            ],
+            "keywords": [
+                "netconf",
+                "restconf",
+                "yang",
+                "model-driven",
+                "data-modeling",
+                "schema"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "RESTful APIs for network devices",
+            "aliases": [
+                "Network device APIs",
+                "REST API network automation",
+                "Device API integration"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing, consuming and integrating REST\/JSON (and other) APIs exposed by network devices and controllers for automation, telemetry ingestion and orchestration workflows.",
+            "parent_skill": "Network automation & scripting",
+            "related_skills": [
+                "NETCONF\/RESTCONF and YANG data modeling",
+                "Python for network automation",
+                "Streaming telemetry and model-driven telemetry"
+            ],
+            "keywords": [
+                "rest",
+                "api",
+                "json",
+                "http",
+                "automation",
+                "integration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Terraform for network infrastructure as code",
+            "aliases": [
+                "Terraform networking",
+                "Infrastructure as Code (network)"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Terraform to provision, manage and version network infrastructure and cloud networking resources with modules, state management and provider integrations.",
+            "parent_skill": "Network automation & scripting",
+            "related_skills": [
+                "Git for version control of network automation code\/configs",
+                "CI\/CD for network automation (pipelines, testing)",
+                "Ansible for network automation"
+            ],
+            "keywords": [
+                "terraform",
+                "iac",
+                "modules",
+                "state",
+                "provider"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Git for version control of network automation code\/configs",
+            "aliases": [
+                "Git version control",
+                "Git workflows for network automation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Applying Git version control, branching and merge-request workflows to manage automation code, configuration templates and infrastructure-as-code artifacts for networks.",
+            "parent_skill": "Network automation & scripting",
+            "related_skills": [
+                "CI\/CD for network automation (pipelines, testing)",
+                "Python for network automation",
+                "Ansible for network automation",
+                "Terraform for network infrastructure as code"
+            ],
+            "keywords": [
+                "git",
+                "version control",
+                "branching",
+                "pull request",
+                "repo"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "CI\/CD for network automation (pipelines, testing)",
+            "aliases": [
+                "Network automation pipelines",
+                "Continuous integration and delivery for network configs"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and operating CI\/CD pipelines to test, validate and deploy network configurations and automation code, including automated linting, unit\/integration tests and staged rollouts.",
+            "parent_skill": "Network automation & scripting",
+            "related_skills": [
+                "Git for version control of network automation code\/configs",
+                "Network test automation and validation",
+                "Ansible for network automation",
+                "Terraform for network infrastructure as code"
+            ],
+            "keywords": [
+                "ci",
+                "cd",
+                "pipeline",
+                "automated testing",
+                "validation",
+                "staged rollout"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Streaming telemetry and model-driven telemetry",
+            "aliases": [
+                "gNMI telemetry",
+                "Streaming network telemetry",
+                "Model-driven telemetry"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Collecting, parsing and analyzing real-time streaming telemetry from network devices (gNMI, sFlow, streaming NETCONF) and using telemetry data to drive automation and monitoring.",
+            "parent_skill": "Network automation & scripting",
+            "related_skills": [
+                "NETCONF\/RESTCONF and YANG data modeling",
+                "RESTful APIs for network devices",
+                "Python for network automation"
+            ],
+            "keywords": [
+                "telemetry",
+                "gNMI",
+                "sflow",
+                "streaming",
+                "monitoring",
+                "real-time"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Network test automation and validation",
+            "aliases": [
+                "Network validation automation",
+                "Automated network testing",
+                "Pre\/post-deploy network validation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Creating automated test suites, topology emulation and validation frameworks to verify network changes, perform pre-deployment checks and validate post-deployment behavior.",
+            "parent_skill": "Network automation & scripting",
+            "related_skills": [
+                "CI\/CD for network automation (pipelines, testing)",
+                "Python for network automation",
+                "Streaming telemetry and model-driven telemetry"
+            ],
+            "keywords": [
+                "testing",
+                "validation",
+                "emulation",
+                "automated tests",
+                "pre-deploy",
+                "post-deploy"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

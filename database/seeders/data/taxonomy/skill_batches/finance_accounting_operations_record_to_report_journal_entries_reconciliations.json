@@ -1,0 +1,258 @@
+{
+    "domain": "Finance",
+    "category": "Accounting Operations (Record-to-Report)",
+    "subcategory": "Journal entries & reconciliations",
+    "skills": [
+        {
+            "canonical_name": "General ledger accounting",
+            "aliases": [
+                "GL accounting",
+                "general ledger maintenance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintaining and validating the general ledger, managing chart of accounts, ledger postings and trial balance integrity.",
+            "parent_skill": "Journal entries & reconciliations",
+            "related_skills": [
+                "Journal entry preparation & posting",
+                "Month-End\/Period-End Close",
+                "Account reconciliations"
+            ],
+            "keywords": [
+                "general ledger",
+                "chart of accounts",
+                "trial balance",
+                "ledger",
+                "posting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Journal entry preparation & posting",
+            "aliases": [
+                "journal entries",
+                "JE preparation",
+                "journal posting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Creating, validating and posting manual and recurring journal entries, ensuring correct account coding, documentation and supporting detail.",
+            "parent_skill": "Journal entries & reconciliations",
+            "related_skills": [
+                "General ledger accounting",
+                "Accruals & prepayments accounting",
+                "ERP journal management (posting)"
+            ],
+            "keywords": [
+                "manual journal",
+                "recurring entries",
+                "supporting documentation",
+                "account coding"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Month-End\/Period-End Close",
+            "aliases": [
+                "monthly close",
+                "period close",
+                "close cycle management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Coordinating and executing tasks required to close accounting periods, meet deadlines, and produce accurate financial statements.",
+            "parent_skill": "Journal entries & reconciliations",
+            "related_skills": [
+                "Journal entry preparation & posting",
+                "Account reconciliations",
+                "Reconciliation controls & SOX compliance"
+            ],
+            "keywords": [
+                "close checklist",
+                "period close",
+                "close timetable",
+                "financial statements"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Account reconciliations",
+            "aliases": [
+                "balance sheet reconciliations",
+                "account reconciling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Reconciling ledger account balances to supporting records, identifying and resolving reconciling items, and documenting reconciliation packages.",
+            "parent_skill": "Journal entries & reconciliations",
+            "related_skills": [
+                "Bank reconciliations",
+                "Intercompany reconciliation & settlement",
+                "Reconciliation automation tools"
+            ],
+            "keywords": [
+                "reconciliation",
+                "reconciling items",
+                "supporting schedules",
+                "balance verification"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bank reconciliations",
+            "aliases": [
+                "cash reconciliations",
+                "bank statement reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Matching bank statement transactions to ledger cash accounts, investigating discrepancies, posting adjustments, and tracking outstanding items.",
+            "parent_skill": "Journal entries & reconciliations",
+            "related_skills": [
+                "Account reconciliations",
+                "General ledger accounting",
+                "ERP journal management (posting)"
+            ],
+            "keywords": [
+                "bank statement",
+                "cash account",
+                "float",
+                "uncleared items"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intercompany reconciliation & settlement",
+            "aliases": [
+                "intercompany reconciling",
+                "intercompany clearing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Reconciling intercompany balances and transactions across entities, coordinating settlements, and resolving mismatches and netting differences.",
+            "parent_skill": "Journal entries & reconciliations",
+            "related_skills": [
+                "Account reconciliations",
+                "ERP journal management (posting)",
+                "Reconciliation automation tools"
+            ],
+            "keywords": [
+                "intercompany",
+                "due to\/due from",
+                "netting",
+                "cross-entity reconciliation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Accruals & prepayments accounting",
+            "aliases": [
+                "accrual accounting",
+                "prepayment accounting",
+                "accrual journal entries"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Calculating, recording and reversing accruals and prepayments, ensuring timing and amounts reflect the correct accounting period.",
+            "parent_skill": "Journal entries & reconciliations",
+            "related_skills": [
+                "Journal entry preparation & posting",
+                "Month-End\/Period-End Close",
+                "General ledger accounting"
+            ],
+            "keywords": [
+                "accruals",
+                "prepayments",
+                "cut-off",
+                "expense recognition"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Reconciliation controls & SOX compliance",
+            "aliases": [
+                "reconciliation controls",
+                "SOX reconciliations",
+                "internal controls for reconciliations"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Designing and executing reconciliation controls, supporting Sarbanes-Oxley (SOX) requirements, maintaining audit trails and documentation for control testing.",
+            "parent_skill": "Journal entries & reconciliations",
+            "related_skills": [
+                "Month-End\/Period-End Close",
+                "Account reconciliations",
+                "Reconciliation automation tools"
+            ],
+            "keywords": [
+                "SOX",
+                "internal control",
+                "audit documentation",
+                "control testing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Reconciliation automation tools",
+            "aliases": [
+                "BlackLine",
+                "Trintech",
+                "FloQast",
+                "reconciliation software",
+                "reconciliation platforms"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using reconciliation and close automation platforms to standardize reconciliation workflows, automate matching, and maintain audit trails.",
+            "parent_skill": "Journal entries & reconciliations",
+            "related_skills": [
+                "Account reconciliations",
+                "Reconciliation controls & SOX compliance",
+                "Intercompany reconciliation & settlement"
+            ],
+            "keywords": [
+                "automation",
+                "reconciliation software",
+                "matching algorithms",
+                "close management tools"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ERP journal management (SAP, Oracle, NetSuite)",
+            "aliases": [
+                "ERP journal posting",
+                "SAP FI journal posting",
+                "Oracle EBS journal entries",
+                "NetSuite journal management"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Creating, posting and managing journal entries within enterprise resource planning (ERP) systems and using ERP features for reconciliations and audits.",
+            "parent_skill": "Journal entries & reconciliations",
+            "related_skills": [
+                "Journal entry preparation & posting",
+                "Bank reconciliations",
+                "Intercompany reconciliation & settlement"
+            ],
+            "keywords": [
+                "ERP",
+                "SAP FI\/CO",
+                "Oracle EBS",
+                "NetSuite",
+                "journal posting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

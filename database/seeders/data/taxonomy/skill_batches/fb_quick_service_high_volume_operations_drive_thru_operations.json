@@ -1,0 +1,299 @@
+{
+    "domain": "F&B",
+    "category": "Quick Service & High-Volume Operations",
+    "subcategory": "Drive-thru operations",
+    "skills": [
+        {
+            "canonical_name": "Drive-thru Order Taking",
+            "aliases": [
+                "drive-through order taking",
+                "drive-thru order entry",
+                "speaker order taking"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Accurately capturing customer orders via drive-thru speaker\/intercom, including modifiers, special requests, upsells and confirmations.",
+            "parent_skill": "Drive-thru operations",
+            "related_skills": [
+                "Drive-thru Headset Operation & Clear Verbal Communication",
+                "Point-of-Sale (POS) Terminal Operation",
+                "Order Accuracy Verification (Drive-thru)",
+                "Third-Party & Mobile Order Integration"
+            ],
+            "keywords": [
+                "order taking",
+                "speaker",
+                "modifiers",
+                "upsell",
+                "confirmation"
+            ],
+            "common_roles": [
+                "front-line drive-thru staff",
+                "customer-facing quick-service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Point-of-Sale (POS) Terminal Operation",
+            "aliases": [
+                "POS operation",
+                "register operation",
+                "cash register operation",
+                "point of sale system use"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operating POS hardware and software to enter orders, apply discounts\/promotions, process payments and print receipts accurately and quickly.",
+            "parent_skill": "Drive-thru operations",
+            "related_skills": [
+                "Drive-thru Order Taking",
+                "Cash Handling and Reconciliation",
+                "Third-Party & Mobile Order Integration",
+                "Order Accuracy Verification (Drive-thru)"
+            ],
+            "keywords": [
+                "POS",
+                "register",
+                "transaction",
+                "discount",
+                "receipt"
+            ],
+            "common_roles": [
+                "front-line drive-thru staff",
+                "shift supervisors"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash Handling and Reconciliation",
+            "aliases": [
+                "cash reconciliation",
+                "drawer balancing",
+                "till reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing cash and cash-equivalent transactions, providing correct change, securing cash and reconciling the till at shift changes per store procedures.",
+            "parent_skill": "Drive-thru operations",
+            "related_skills": [
+                "Point-of-Sale (POS) Terminal Operation",
+                "Order Accuracy Verification (Drive-thru)"
+            ],
+            "keywords": [
+                "cash drawer",
+                "reconciliation",
+                "till",
+                "balancing",
+                "cash procedures"
+            ],
+            "common_roles": [
+                "front-line drive-thru staff",
+                "shift supervisors"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Drive-thru Headset Operation & Clear Verbal Communication",
+            "aliases": [
+                "headset communication",
+                "intercom operation",
+                "drive-through intercom communication"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Using drive-thru headsets and intercoms to communicate clearly with customers and teammates, employing concise phrasing, confirmation readbacks and proper headset etiquette.",
+            "parent_skill": "Drive-thru operations",
+            "related_skills": [
+                "Drive-thru Order Taking",
+                "Order Accuracy Verification (Drive-thru)",
+                "Speed-of-Service Optimization (Drive-thru Throughput)"
+            ],
+            "keywords": [
+                "headset",
+                "intercom",
+                "readback",
+                "clarity",
+                "etiquette"
+            ],
+            "common_roles": [
+                "front-line drive-thru staff",
+                "shift leads"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Order Accuracy Verification (Drive-thru)",
+            "aliases": [
+                "order checking",
+                "order verification",
+                "ticket check"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Verifying completed orders prior to hand-off by checking items, customizations, packaging and receipts to reduce errors and customer returns.",
+            "parent_skill": "Drive-thru operations",
+            "related_skills": [
+                "Food Assembly & Expedite for Drive-thru",
+                "Drive-thru Headset Operation & Clear Verbal Communication",
+                "Point-of-Sale (POS) Terminal Operation",
+                "Food Safety & Temperature Control (Drive-thru Order Holding)"
+            ],
+            "keywords": [
+                "order check",
+                "accuracy",
+                "verification",
+                "ticket",
+                "quality control"
+            ],
+            "common_roles": [
+                "expeditor",
+                "front-line drive-thru staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food Assembly & Expedite for Drive-thru",
+            "aliases": [
+                "drive-thru assembly",
+                "order assembly",
+                "drive-thru expediting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Quickly and accurately assembling completed orders for drive-thru pickup, coordinating packaging, condiments and hand-off sequencing to support throughput and quality.",
+            "parent_skill": "Drive-thru operations",
+            "related_skills": [
+                "Order Accuracy Verification (Drive-thru)",
+                "Speed-of-Service Optimization (Drive-thru Throughput)",
+                "Food Safety & Temperature Control (Drive-thru Order Holding)"
+            ],
+            "keywords": [
+                "assembly",
+                "packing",
+                "expedite",
+                "hand-off",
+                "condiments"
+            ],
+            "common_roles": [
+                "expeditor",
+                "front-line drive-thru staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Speed-of-Service Optimization (Drive-thru Throughput)",
+            "aliases": [
+                "drive-thru throughput management",
+                "speed of service management",
+                "service time optimization"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying processes, layout adjustments and time-management techniques to minimize order cycle time and maximize drive-thru throughput while maintaining order quality.",
+            "parent_skill": "Drive-thru operations",
+            "related_skills": [
+                "Drive-thru Headset Operation & Clear Verbal Communication",
+                "Food Assembly & Expedite for Drive-thru",
+                "Vehicle Flow and Safety Management (Drive-thru Traffic Control)"
+            ],
+            "keywords": [
+                "throughput",
+                "cycle time",
+                "service speed",
+                "KPIs",
+                "process improvement"
+            ],
+            "common_roles": [
+                "operations leads",
+                "shift supervisors"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vehicle Flow and Safety Management (Drive-thru Traffic Control)",
+            "aliases": [
+                "drive-thru traffic management",
+                "vehicle queue control",
+                "drive-through lane management"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Managing vehicle queues and lane flow to prevent congestion and safety hazards, applying site procedures and local regulations to maintain safe drive-thru operations.",
+            "parent_skill": "Drive-thru operations",
+            "related_skills": [
+                "Speed-of-Service Optimization (Drive-thru Throughput)",
+                "Food Assembly & Expedite for Drive-thru"
+            ],
+            "keywords": [
+                "traffic flow",
+                "queue management",
+                "lane control",
+                "safety",
+                "congestion"
+            ],
+            "common_roles": [
+                "front-line drive-thru staff",
+                "store management"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Third-Party & Mobile Order Integration",
+            "aliases": [
+                "mobile order handling",
+                "third-party delivery order processing",
+                "online order integration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Receiving, reconciling and fulfilling orders from mobile apps and third-party platforms using POS and partner workflows; managing partner-specific packaging, labeling and timing requirements.",
+            "parent_skill": "Drive-thru operations",
+            "related_skills": [
+                "Point-of-Sale (POS) Terminal Operation",
+                "Order Accuracy Verification (Drive-thru)",
+                "Food Assembly & Expedite for Drive-thru"
+            ],
+            "keywords": [
+                "mobile orders",
+                "delivery platforms",
+                "order integration",
+                "partner workflows",
+                "online orders"
+            ],
+            "common_roles": [
+                "front-line drive-thru staff",
+                "shift supervisors"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food Safety & Temperature Control (Drive-thru Order Holding)",
+            "aliases": [
+                "temperature control for drive-thru",
+                "hot-hold and cold-hold procedures",
+                "drive-thru food safety"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Maintaining proper food temperatures and safe holding practices for drive-thru orders during short waits, following food-safety protocols and site-specific holding procedures.",
+            "parent_skill": "Drive-thru operations",
+            "related_skills": [
+                "Food Assembly & Expedite for Drive-thru",
+                "Order Accuracy Verification (Drive-thru)",
+                "Speed-of-Service Optimization (Drive-thru Throughput)"
+            ],
+            "keywords": [
+                "food safety",
+                "temperature control",
+                "hot hold",
+                "cold hold",
+                "holding time"
+            ],
+            "common_roles": [
+                "food handlers",
+                "front-line drive-thru staff"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

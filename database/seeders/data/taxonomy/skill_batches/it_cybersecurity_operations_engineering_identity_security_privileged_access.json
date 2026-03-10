@@ -1,0 +1,288 @@
+{
+    "domain": "IT",
+    "category": "Cybersecurity Operations & Engineering",
+    "subcategory": "Identity security & privileged access",
+    "skills": [
+        {
+            "canonical_name": "Privileged Access Management (PAM)",
+            "aliases": [
+                "PAM",
+                "Privileged Account Management"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing, deploying and operating solutions that provision, broker and centrally control elevated accounts and credentials across systems and applications.",
+            "parent_skill": "Identity security & privileged access",
+            "related_skills": [
+                "Privileged Account Lifecycle Management",
+                "Privileged Session Management",
+                "Secrets Management and Rotation",
+                "Role-Based Access Control (RBAC) design and implementation"
+            ],
+            "keywords": [
+                "privileged accounts",
+                "credential vault",
+                "access brokering",
+                "elevation"
+            ],
+            "common_roles": [
+                "IAM\/access management practitioners",
+                "privileged access teams",
+                "security operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Privileged Session Management",
+            "aliases": [
+                "Privileged session monitoring",
+                "Session recording for privileged users"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Capturing, monitoring and controlling interactive sessions of privileged users including recording, command control and real‑time termination to reduce misuse risk.",
+            "parent_skill": "Identity security & privileged access",
+            "related_skills": [
+                "Privileged Access Management (PAM)",
+                "Privileged Access Monitoring and Forensics",
+                "Access Reviews and Recertification"
+            ],
+            "keywords": [
+                "session recording",
+                "session isolation",
+                "command monitoring",
+                "session audit"
+            ],
+            "common_roles": [
+                "security operations teams",
+                "privileged access operators"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Privileged Account Lifecycle Management",
+            "aliases": [
+                "Privileged account provisioning",
+                "Privileged credential lifecycle"
+            ],
+            "skill_type": "process_skill",
+            "description": "Operational processes and workflows for onboarding, modifying, disabling and deprovisioning privileged identities and credentials across their lifecycle.",
+            "parent_skill": "Identity security & privileged access",
+            "related_skills": [
+                "Privileged Access Management (PAM)",
+                "Access Reviews and Recertification",
+                "Least Privilege Access implementation"
+            ],
+            "keywords": [
+                "provisioning",
+                "deprovisioning",
+                "on\/offboarding",
+                "lifecycle management"
+            ],
+            "common_roles": [
+                "IAM\/process owners",
+                "access governance teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Role-Based Access Control (RBAC) design and implementation",
+            "aliases": [
+                "RBAC design",
+                "role engineering"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing role models, role hierarchies and implementing role assignment and entitlements to manage access at scale and reduce ad hoc permissions.",
+            "parent_skill": "Identity security & privileged access",
+            "related_skills": [
+                "Identity Governance and Administration (IGA) processes",
+                "Least Privilege Access implementation",
+                "Access Reviews and Recertification"
+            ],
+            "keywords": [
+                "role model",
+                "entitlement catalog",
+                "separation of duties",
+                "role mining"
+            ],
+            "common_roles": [
+                "access management practitioners",
+                "IAM architects"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Federated Identity & SSO integration (SAML\/OAuth\/OIDC)",
+            "aliases": [
+                "SAML integration",
+                "OAuth integration",
+                "OIDC integration",
+                "Federated SSO"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Implementing and troubleshooting federated authentication and single sign‑on flows using protocols such as SAML, OAuth2 and OpenID Connect across cloud and on‑prem systems.",
+            "parent_skill": "Identity security & privileged access",
+            "related_skills": [
+                "Identity Governance and Administration (IGA) processes",
+                "Least Privilege Access implementation",
+                "Secrets Management and Rotation"
+            ],
+            "keywords": [
+                "SAML",
+                "OAuth2",
+                "OIDC",
+                "federation",
+                "SSO"
+            ],
+            "common_roles": [
+                "identity integration teams",
+                "application security teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Identity Governance and Administration (IGA) processes",
+            "aliases": [
+                "IGA",
+                "Identity governance",
+                "Access governance"
+            ],
+            "skill_type": "process_skill",
+            "description": "Establishing governance workflows for entitlement lifecycle, policy enforcement, automated provisioning, certification campaigns and segregation of duties.",
+            "parent_skill": "Identity security & privileged access",
+            "related_skills": [
+                "Access Reviews and Recertification",
+                "Role-Based Access Control (RBAC) design and implementation",
+                "Privileged Account Lifecycle Management"
+            ],
+            "keywords": [
+                "governance",
+                "entitlement management",
+                "provisioning",
+                "certification"
+            ],
+            "common_roles": [
+                "access governance practitioners",
+                "compliance teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Secrets Management and Rotation",
+            "aliases": [
+                "Secret management",
+                "Credential rotation",
+                "Vaulting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operating secure secret stores, automated credential rotation, API key management and integration of secret retrieval into applications and automation pipelines.",
+            "parent_skill": "Identity security & privileged access",
+            "related_skills": [
+                "Privileged Access Management (PAM)",
+                "Federated Identity & SSO integration (SAML\/OAuth\/OIDC)",
+                "Least Privilege Access implementation"
+            ],
+            "keywords": [
+                "secrets",
+                "vault",
+                "credential rotation",
+                "API keys",
+                "secret retrieval"
+            ],
+            "common_roles": [
+                "cloud platform teams",
+                "devops\/security automation teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Least Privilege Access implementation",
+            "aliases": [
+                "Least privilege",
+                "Privilege minimization",
+                "Zero standing privileges"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Applying policies, role\/permission changes and technical controls to ensure users and services operate with the minimum necessary privileges.",
+            "parent_skill": "Identity security & privileged access",
+            "related_skills": [
+                "Role-Based Access Control (RBAC) design and implementation",
+                "Privileged Account Lifecycle Management",
+                "Secrets Management and Rotation"
+            ],
+            "keywords": [
+                "least privilege",
+                "privilege reduction",
+                "permission auditing",
+                "just-in-time access"
+            ],
+            "common_roles": [
+                "security engineering teams",
+                "access management practitioners"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Access Reviews and Recertification (attestation)",
+            "aliases": [
+                "Access recertification",
+                "Entitlement attestation",
+                "Access certification"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Planning and executing periodic access review campaigns, documenting attestation decisions and remediating excessive or stale entitlements to meet governance requirements.",
+            "parent_skill": "Identity security & privileged access",
+            "related_skills": [
+                "Identity Governance and Administration (IGA) processes",
+                "Role-Based Access Control (RBAC) design and implementation",
+                "Privileged Account Lifecycle Management"
+            ],
+            "keywords": [
+                "recertification",
+                "attestation",
+                "access review",
+                "remediation"
+            ],
+            "common_roles": [
+                "access governance teams",
+                "compliance practitioners"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Privileged Access Monitoring and Forensics",
+            "aliases": [
+                "Privileged access auditing",
+                "Session forensics",
+                "Privileged account forensics"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing logs, session recordings and audit trails for anomalous privileged activity, conducting investigations and supporting incident response and post‑incident forensics.",
+            "parent_skill": "Identity security & privileged access",
+            "related_skills": [
+                "Privileged Session Management",
+                "Privileged Access Management (PAM)",
+                "Access Reviews and Recertification"
+            ],
+            "keywords": [
+                "forensics",
+                "audit logs",
+                "anomaly detection",
+                "incident investigation"
+            ],
+            "common_roles": [
+                "security operations and forensics teams",
+                "incident response practitioners"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

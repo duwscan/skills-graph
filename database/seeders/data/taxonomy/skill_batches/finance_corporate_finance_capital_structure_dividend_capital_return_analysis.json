@@ -1,0 +1,249 @@
+{
+    "domain": "Finance",
+    "category": "Corporate Finance & Capital Structure",
+    "subcategory": "Dividend & capital return analysis",
+    "skills": [
+        {
+            "canonical_name": "Dividend policy analysis",
+            "aliases": [
+                "Payout policy analysis",
+                "Dividend policy assessment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluate company dividend\/payout strategies, trade-offs between dividends and buybacks, and the impact on shareholder value and capital structure.",
+            "parent_skill": "Dividend & capital return analysis",
+            "related_skills": [
+                "Capital allocation optimization",
+                "Dividend forecasting",
+                "Dividend smoothing policy design",
+                "Share repurchase modeling"
+            ],
+            "keywords": [
+                "payout ratio",
+                "residual dividend",
+                "target payout",
+                "shareholder distributions"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Share repurchase modeling",
+            "aliases": [
+                "Buyback modeling",
+                "Share buyback modeling",
+                "Repurchase program modeling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Build and maintain financial models that quantify the financial, per-share, and capital-structure effects of share repurchase programs under alternative assumptions.",
+            "parent_skill": "Dividend & capital return analysis",
+            "related_skills": [
+                "Free cash flow to equity forecasting",
+                "Equity valuation for capital return decisions",
+                "Treasury management for dividend payments"
+            ],
+            "keywords": [
+                "EPS accretion\/dilution",
+                "share count",
+                "open-market repurchases",
+                "tender offer"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Free cash flow to equity (FCFE) forecasting",
+            "aliases": [
+                "FCFE forecasting",
+                "cash available for equity forecasting"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Project cash flows available for distribution to equity holders after operating needs, investments, and debt servicing to inform dividend and buyback capacity.",
+            "parent_skill": "Dividend & capital return analysis",
+            "related_skills": [
+                "Dividend forecasting",
+                "Capital allocation optimization",
+                "Scenario & stress testing for dividend sustainability"
+            ],
+            "keywords": [
+                "capex",
+                "working capital",
+                "debt repayments",
+                "cash flow projection"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dividend forecasting",
+            "aliases": [
+                "Dividend payment forecasting",
+                "Dividend run-rate projection"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Forecast timing and amounts of future dividend payments using company financials, policy rules, and scenario analysis to support planning and communications.",
+            "parent_skill": "Dividend & capital return analysis",
+            "related_skills": [
+                "Dividend policy analysis",
+                "Free cash flow to equity forecasting",
+                "Dividend sustainability stress testing"
+            ],
+            "keywords": [
+                "dividend per share",
+                "payout schedule",
+                "interim dividends",
+                "final dividend"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Capital allocation optimization",
+            "aliases": [
+                "Capital allocation analysis",
+                "Distribution vs reinvestment optimization"
+            ],
+            "skill_type": "process_skill",
+            "description": "Apply frameworks and quantitative analysis to prioritize use of capital across reinvestment, M&A, debt reduction, dividends, and buybacks to maximize shareholder value.",
+            "parent_skill": "Dividend & capital return analysis",
+            "related_skills": [
+                "Dividend policy analysis",
+                "Equity valuation for capital return decisions",
+                "Scenario & stress testing for dividend sustainability"
+            ],
+            "keywords": [
+                "return on invested capital",
+                "investment hurdle rates",
+                "capital budgeting",
+                "opportunity cost"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax and regulatory implications for dividends and buybacks",
+            "aliases": [
+                "Dividend tax planning",
+                "Buyback regulatory impact analysis"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Identify and assess domestic and cross-border tax treatments, securities rules, disclosure requirements, and filing obligations affecting dividend and repurchase decisions.",
+            "parent_skill": "Dividend & capital return analysis",
+            "related_skills": [
+                "Share repurchase modeling",
+                "Dividend reinvestment plan (DRIP) program structuring",
+                "Treasury management for dividend payments"
+            ],
+            "keywords": [
+                "withholding tax",
+                "disclosure obligations",
+                "insider trading rules",
+                "repurchase safe harbor"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dividend reinvestment plan (DRIP) program structuring",
+            "aliases": [
+                "DRIP structuring",
+                "Dividend reinvestment program design"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Design and operationalize dividend reinvestment programs, including plan rules, pricing, recordkeeping, shareholder enrollment, and settlement flows.",
+            "parent_skill": "Dividend & capital return analysis",
+            "related_skills": [
+                "Treasury management for dividend payments",
+                "Tax and regulatory implications for dividends and buybacks",
+                "Shareholder communication for capital return announcements"
+            ],
+            "keywords": [
+                "automatic reinvestment",
+                "plan enrollment",
+                "share issuance",
+                "agent bank"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Treasury management for dividend payments",
+            "aliases": [
+                "Dividend payment processing",
+                "Cash management for distributions"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Manage liquidity planning, payment mechanics, custodian\/transfer agent coordination, and settlement processes required to execute dividend and buyback distributions.",
+            "parent_skill": "Dividend & capital return analysis",
+            "related_skills": [
+                "Dividend reinvestment plan (DRIP) program structuring",
+                "Share repurchase modeling",
+                "Tax and regulatory implications for dividends and buybacks"
+            ],
+            "keywords": [
+                "liquidity forecast",
+                "transfer agent",
+                "settlement",
+                "payment cycle"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Shareholder communication for capital return announcements",
+            "aliases": [
+                "Dividend announcement communication",
+                "Buyback investor communications"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Prepare clear, compliant communications and disclosures to investors and stakeholders regarding dividend policies, payment dates, buyback programs, and rationale.",
+            "parent_skill": "Dividend & capital return analysis",
+            "related_skills": [
+                "Dividend policy analysis",
+                "Tax and regulatory implications for dividends and buybacks",
+                "Dividend forecasting"
+            ],
+            "keywords": [
+                "investor relations",
+                "shareholder notice",
+                "press release",
+                "regulatory filing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Scenario & stress testing for dividend sustainability",
+            "aliases": [
+                "Dividend stress testing",
+                "Scenario analysis for dividend sustainability"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and run scenario and sensitivity analyses to test dividend and buyback sustainability under macroeconomic, operational, and balance-sheet shock scenarios.",
+            "parent_skill": "Dividend & capital return analysis",
+            "related_skills": [
+                "Free cash flow to equity forecasting",
+                "Capital allocation optimization",
+                "Dividend policy analysis"
+            ],
+            "keywords": [
+                "sensitivity analysis",
+                "stress scenarios",
+                "coverage ratios",
+                "shock testing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

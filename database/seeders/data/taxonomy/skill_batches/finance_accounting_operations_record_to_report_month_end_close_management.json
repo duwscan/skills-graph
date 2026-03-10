@@ -1,0 +1,289 @@
+{
+    "domain": "Finance",
+    "category": "Accounting Operations (Record-to-Report)",
+    "subcategory": "Month-end close management",
+    "skills": [
+        {
+            "canonical_name": "Month-end close scheduling and coordination",
+            "aliases": [
+                "close calendar management",
+                "close schedule management",
+                "period close coordination"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Plan, sequence and coordinate tasks, deadlines and stakeholders to ensure timely completion of month-end close activities.",
+            "parent_skill": "Month-end close management",
+            "related_skills": [
+                "Journal entry preparation and posting",
+                "Account reconciliation",
+                "Close automation tools (ERP & Close software)"
+            ],
+            "keywords": [
+                "close calendar",
+                "close schedule",
+                "task sequencing",
+                "deadline management"
+            ],
+            "common_roles": [
+                "Accounting operations",
+                "Record-to-Report function",
+                "Financial close team"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Journal entry preparation and posting",
+            "aliases": [
+                "JE preparation",
+                "recurring journal entries",
+                "manual journal posting"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Create, review and post adjusting, recurring and manual journal entries to the general ledger with appropriate supporting documentation.",
+            "parent_skill": "Month-end close management",
+            "related_skills": [
+                "Account reconciliation",
+                "Accruals and prepayments accounting",
+                "Subledger-to-ledger reconciliation"
+            ],
+            "keywords": [
+                "journal entries",
+                "adjusting entries",
+                "GL posting",
+                "supporting schedules"
+            ],
+            "common_roles": [
+                "Accounting operations",
+                "Record-to-Report function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Account reconciliation",
+            "aliases": [
+                "balance sheet reconciliation",
+                "month-end reconciliations",
+                "account reconciles"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Perform and document reconciliations of balance sheet and control accounts, investigate reconciling items and clear or disclose outstanding items.",
+            "parent_skill": "Month-end close management",
+            "related_skills": [
+                "Subledger-to-ledger reconciliation",
+                "Intercompany reconciliation and settlement",
+                "Close automation tools (ERP & Close software)"
+            ],
+            "keywords": [
+                "reconciliations",
+                "clearing items",
+                "recon schedules",
+                "supporting documentation"
+            ],
+            "common_roles": [
+                "Accounting operations",
+                "Record-to-Report function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Accruals and prepayments accounting",
+            "aliases": [
+                "accrual accounting",
+                "expense accruals",
+                "prepaid expense accounting"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Estimate, calculate and record period-end accruals and amortize prepayments to match expenses and revenues to the correct reporting period.",
+            "parent_skill": "Month-end close management",
+            "related_skills": [
+                "Journal entry preparation and posting",
+                "Variance analysis and month-end financial reporting"
+            ],
+            "keywords": [
+                "accruals",
+                "prepayments",
+                "cut-off",
+                "period matching"
+            ],
+            "common_roles": [
+                "Accounting operations",
+                "Record-to-Report function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intercompany reconciliation and settlement",
+            "aliases": [
+                "intercompany reconciliations",
+                "intercompany matching",
+                "intracompany settlement"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Match and reconcile intercompany balances, resolve differences, and coordinate settlements or eliminations between legal entities during close.",
+            "parent_skill": "Month-end close management",
+            "related_skills": [
+                "Financial consolidation and eliminations (month-end)",
+                "Account reconciliation",
+                "Close automation tools (ERP & Close software)"
+            ],
+            "keywords": [
+                "intercompany",
+                "IC reconciliation",
+                "intercompany settlement",
+                "matching"
+            ],
+            "common_roles": [
+                "Accounting operations",
+                "Record-to-Report function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Subledger-to-ledger reconciliation",
+            "aliases": [
+                "subledger reconciliation",
+                "AP to GL reconciliation",
+                "AR to GL reconciliation",
+                "sub-ledger to GL matching"
+            ],
+            "skill_type": "process_skill",
+            "description": "Reconcile subsidiary ledgers (e.g., AP, AR, Fixed Assets) to the general ledger, identify timing or posting differences and ensure completeness of balances.",
+            "parent_skill": "Month-end close management",
+            "related_skills": [
+                "Account reconciliation",
+                "Journal entry preparation and posting",
+                "Close automation tools (ERP & Close software)"
+            ],
+            "keywords": [
+                "subledger",
+                "AP reconciliation",
+                "AR reconciliation",
+                "fixed assets reconciliation"
+            ],
+            "common_roles": [
+                "Accounting operations",
+                "Record-to-Report function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial consolidation and eliminations (month-end)",
+            "aliases": [
+                "group consolidation",
+                "consolidation close",
+                "intercompany eliminations"
+            ],
+            "skill_type": "process_skill",
+            "description": "Perform group-level consolidation tasks, apply elimination entries, translate and roll-up subsidiary financials to produce consolidated financial statements for the period close.",
+            "parent_skill": "Month-end close management",
+            "related_skills": [
+                "Intercompany reconciliation and settlement",
+                "Variance analysis and month-end financial reporting"
+            ],
+            "keywords": [
+                "consolidation",
+                "eliminations",
+                "roll-up",
+                "translation"
+            ],
+            "common_roles": [
+                "Accounting operations",
+                "Record-to-Report function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Variance analysis and month-end financial reporting",
+            "aliases": [
+                "month-end variance analysis",
+                "P&L variance analysis",
+                "financial close reporting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyze variances between actuals and budgets\/forecasts\/prior periods, prepare explanations and supporting schedules for management and reporting packs.",
+            "parent_skill": "Month-end close management",
+            "related_skills": [
+                "Accruals and prepayments accounting",
+                "Journal entry preparation and posting",
+                "Financial consolidation and eliminations (month-end)"
+            ],
+            "keywords": [
+                "variance analysis",
+                "management reporting",
+                "explanatory notes",
+                "supporting schedules"
+            ],
+            "common_roles": [
+                "Accounting operations",
+                "Record-to-Report function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SOX controls and compliance for period close",
+            "aliases": [
+                "SOX month-end controls",
+                "ICFR close controls",
+                "Sarbanes-Oxley close controls"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Design, execute and document period-close internal controls (preventive and detective) required for SOX\/ICFR compliance and audit readiness during month-end activities.",
+            "parent_skill": "Month-end close management",
+            "related_skills": [
+                "Account reconciliation",
+                "Journal entry preparation and posting",
+                "Month-end close scheduling and coordination"
+            ],
+            "keywords": [
+                "SOX",
+                "ICFR",
+                "internal controls",
+                "audit readiness"
+            ],
+            "common_roles": [
+                "Accounting operations",
+                "Record-to-Report function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Close automation tools (ERP & Close software)",
+            "aliases": [
+                "BlackLine",
+                "FloQast",
+                "Trintech",
+                "close management software",
+                "reconciliation automation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use and configure close and reconciliation automation tools and relevant ERP modules to streamline month-end tasks, workflow, reconciliations and control evidence capture.",
+            "parent_skill": "Month-end close management",
+            "related_skills": [
+                "Account reconciliation",
+                "Subledger-to-ledger reconciliation",
+                "Month-end close scheduling and coordination"
+            ],
+            "keywords": [
+                "close software",
+                "reconciliation tools",
+                "ERP month-end",
+                "automation"
+            ],
+            "common_roles": [
+                "Accounting operations",
+                "Record-to-Report function"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

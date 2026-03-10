@@ -1,0 +1,307 @@
+{
+    "domain": "Finance",
+    "category": "Accounting Operations (Record-to-Report)",
+    "subcategory": "Close process controls & checklists",
+    "skills": [
+        {
+            "canonical_name": "Month-end close checklist management",
+            "aliases": [
+                "month-end close checklist",
+                "close checklist management",
+                "period close checklist"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing, maintaining and executing standardized checklists to ensure all close tasks are completed accurately and on schedule for each reporting period.",
+            "parent_skill": "",
+            "related_skills": [
+                "Close schedule governance",
+                "Journal entry review & approval controls",
+                "Account reconciliation controls"
+            ],
+            "keywords": [
+                "checklist",
+                "close tasks",
+                "month-end",
+                "controls",
+                "standard operating procedures"
+            ],
+            "common_roles": [
+                "Financial Close Manager",
+                "Accounting Manager",
+                "Record-to-Report Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Account reconciliation controls",
+            "aliases": [
+                "reconciliation controls",
+                "general ledger reconciliations",
+                "account reconciliations"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Establishing and operating controls and procedures to reconcile sub-ledgers and supporting records to GL balances, including sign-offs and exception handling.",
+            "parent_skill": "",
+            "related_skills": [
+                "Balance sheet substantiation & supporting schedules",
+                "Sub-ledger to GL reconciliation",
+                "Control testing & remediation during close"
+            ],
+            "keywords": [
+                "reconciliations",
+                "GL",
+                "exceptions",
+                "supporting documentation",
+                "sign-off"
+            ],
+            "common_roles": [
+                "Reconciliation Analyst",
+                "Staff Accountant",
+                "Close Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Journal entry review & approval controls",
+            "aliases": [
+                "journal entry controls",
+                "JE review and approval",
+                "manual journal approval controls"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Defining and executing review, authorization and documentation requirements for manual and adjusting journal entries during the close process.",
+            "parent_skill": "",
+            "related_skills": [
+                "Month-end close checklist management",
+                "Control testing & remediation during close",
+                "Segregation of duties design for close processes"
+            ],
+            "keywords": [
+                "journal entries",
+                "approvals",
+                "authorization",
+                "audit trail",
+                "supporting schedules"
+            ],
+            "common_roles": [
+                "Senior Accountant",
+                "Accounting Supervisor",
+                "Record-to-Report Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intercompany reconciliation & settlement controls",
+            "aliases": [
+                "intercompany reconciliation",
+                "IC reconciliation controls",
+                "intercompany settlement controls"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Processes and controls to reconcile intercompany balances, resolve mismatches, and ensure timely settlement and elimination for consolidated reporting.",
+            "parent_skill": "",
+            "related_skills": [
+                "Account reconciliation controls",
+                "Close schedule governance",
+                "Financial close automation platform administration"
+            ],
+            "keywords": [
+                "intercompany",
+                "IC",
+                "elimination",
+                "matching",
+                "settlement"
+            ],
+            "common_roles": [
+                "Intercompany Accountant",
+                "Consolidation Analyst",
+                "R2R Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cutoff procedures & transaction timing controls",
+            "aliases": [
+                "cutoff controls",
+                "period cutoff procedures",
+                "transaction timing controls"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Controls and testing to ensure transactions are recorded in the correct accounting period, including cut-off testing and shipment\/receipt validation.",
+            "parent_skill": "",
+            "related_skills": [
+                "Account reconciliation controls",
+                "Journal entry review & approval controls",
+                "Balance sheet substantiation & supporting schedules"
+            ],
+            "keywords": [
+                "cutoff",
+                "period close",
+                "timing",
+                "cut-off testing",
+                "revenue recognition timing"
+            ],
+            "common_roles": [
+                "Staff Accountant",
+                "Close Analyst",
+                "Inventory Accountant"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Balance sheet substantiation & supporting schedules",
+            "aliases": [
+                "balance sheet substantiation",
+                "supporting schedule preparation",
+                "BS substantiation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Preparing and maintaining narrative and schedule-level support for balance sheet accounts to justify balances presented in financial statements.",
+            "parent_skill": "",
+            "related_skills": [
+                "Account reconciliation controls",
+                "Variance analysis during close",
+                "Control testing & remediation during close"
+            ],
+            "keywords": [
+                "supporting schedules",
+                "documentation",
+                "analysis",
+                "account support",
+                "reconciliations"
+            ],
+            "common_roles": [
+                "Financial Reporting Analyst",
+                "Staff Accountant",
+                "Record-to-Report Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Close schedule governance",
+            "aliases": [
+                "close calendar management",
+                "close schedule coordination",
+                "period close cadence governance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing the close timeline, task owners, SLAs and escalation paths to ensure consistent, repeatable close cycles and on-time reporting.",
+            "parent_skill": "",
+            "related_skills": [
+                "Month-end close checklist management",
+                "Intercompany reconciliation & settlement controls",
+                "Financial close automation platform administration"
+            ],
+            "keywords": [
+                "close calendar",
+                "timeline",
+                "SLAs",
+                "escalation",
+                "task ownership"
+            ],
+            "common_roles": [
+                "Close Manager",
+                "R2R Lead",
+                "Accounting Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial close automation platform administration",
+            "aliases": [
+                "financial close automation",
+                "close management systems",
+                "BlackLine\/Trintech administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and administering enterprise close automation tools (e.g., BlackLine, Trintech, Oracle close modules) to automate reconciliations, task lists and controls.",
+            "parent_skill": "",
+            "related_skills": [
+                "Account reconciliation controls",
+                "Close schedule governance",
+                "Intercompany reconciliation & settlement controls"
+            ],
+            "keywords": [
+                "automation",
+                "close software",
+                "reconciliation tools",
+                "task management",
+                "workflow"
+            ],
+            "common_roles": [
+                "Systems Accountant",
+                "Close Automation Administrator",
+                "Finance Systems Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control testing & remediation during close",
+            "aliases": [
+                "control testing",
+                "remediation management",
+                "close period control testing"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Executing periodic testing of close-related controls, documenting exceptions and managing remediation plans to mitigate control gaps before reporting.",
+            "parent_skill": "",
+            "related_skills": [
+                "Journal entry review & approval controls",
+                "Account reconciliation controls",
+                "Segregation of duties design for close processes"
+            ],
+            "keywords": [
+                "testing",
+                "remediation",
+                "exceptions",
+                "evidence",
+                "control effectiveness"
+            ],
+            "common_roles": [
+                "Internal Controls Analyst",
+                "SOX Analyst",
+                "Internal Audit Liaison"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Segregation of duties design for close processes",
+            "aliases": [
+                "SoD design for close",
+                "segregation of duties controls",
+                "role separation for close activities"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Designing and enforcing role-based controls and task segregation in close activities to reduce error and fraud risk and meet regulatory requirements.",
+            "parent_skill": "",
+            "related_skills": [
+                "Journal entry review & approval controls",
+                "Control testing & remediation during close",
+                "Financial close automation platform administration"
+            ],
+            "keywords": [
+                "SoD",
+                "role design",
+                "access controls",
+                "fraud prevention",
+                "authorization"
+            ],
+            "common_roles": [
+                "Internal Controls Manager",
+                "Risk & Compliance Analyst",
+                "Access Control Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

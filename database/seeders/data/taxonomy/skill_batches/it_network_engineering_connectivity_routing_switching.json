@@ -1,0 +1,308 @@
+{
+    "domain": "IT",
+    "category": "Network Engineering & Connectivity",
+    "subcategory": "Routing & switching",
+    "skills": [
+        {
+            "canonical_name": "Layer 2 Switching and VLAN Design",
+            "aliases": [
+                "L2 switching",
+                "VLAN configuration",
+                "VLAN design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing Ethernet switching fabrics including VLAN segmentation, trunking, port modes, and switch port configuration for enterprise networks.",
+            "parent_skill": "Routing & switching",
+            "related_skills": [
+                "Spanning Tree Protocol (STP) tuning and troubleshooting",
+                "Inter-VLAN routing and Layer 3 switching",
+                "EtherChannel \/ Link Aggregation"
+            ],
+            "keywords": [
+                "VLAN",
+                "trunking",
+                "switchport",
+                "access port",
+                "native VLAN"
+            ],
+            "common_roles": [
+                "Network Engineer",
+                "Network Administrator",
+                "Infrastructure Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Spanning Tree Protocol (STP) tuning and troubleshooting",
+            "aliases": [
+                "STP",
+                "Rapid Spanning Tree (RSTP)",
+                "Multiple Spanning Tree (MST)"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Configuring, optimizing and troubleshooting STP variants to prevent switching loops and ensure predictable topology convergence in Ethernet networks.",
+            "parent_skill": "Routing & switching",
+            "related_skills": [
+                "Layer 2 Switching and VLAN Design",
+                "EtherChannel \/ Link Aggregation",
+                "High-availability routing and redundancy protocols (HSRP\/VRRP\/GLBP)"
+            ],
+            "keywords": [
+                "loop prevention",
+                "BPDU",
+                "root bridge",
+                "portfast",
+                "bridge priority"
+            ],
+            "common_roles": [
+                "Network Engineer",
+                "Switching Specialist",
+                "Data Center Network Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inter-VLAN Routing and Layer 3 Switching",
+            "aliases": [
+                "Layer 3 switching",
+                "SVI configuration",
+                "router-on-a-stick"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Implementing routing between VLANs using layer-3 switches or routers, including SVI\/IRB, subinterfaces, route redistribution, and performance considerations.",
+            "parent_skill": "Routing & switching",
+            "related_skills": [
+                "Layer 2 Switching and VLAN Design",
+                "Network address planning and IP subnetting (IPv4 & IPv6)",
+                "Quality of Service (QoS) configuration for enterprise networks"
+            ],
+            "keywords": [
+                "SVI",
+                "inter-vlan",
+                "subinterface",
+                "gateway",
+                "routing instance"
+            ],
+            "common_roles": [
+                "Network Engineer",
+                "Infrastructure Engineer",
+                "Systems Network Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Border Gateway Protocol (BGP) configuration and troubleshooting",
+            "aliases": [
+                "BGP",
+                "External BGP",
+                "eBGP and iBGP operations"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing, configuring and troubleshooting BGP for enterprise and edge routing, including peering, path selection, route filtering and policy implementation.",
+            "parent_skill": "Routing & switching",
+            "related_skills": [
+                "OSPF configuration and area design",
+                "Network address planning and IP subnetting (IPv4 & IPv6)",
+                "High-availability routing and redundancy protocols (HSRP\/VRRP\/GLBP)"
+            ],
+            "keywords": [
+                "AS_PATH",
+                "route reflector",
+                "prefix filtering",
+                "BGP attributes",
+                "peering"
+            ],
+            "common_roles": [
+                "Network Engineer",
+                "Routing Engineer",
+                "Edge Network Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "OSPF configuration and area design",
+            "aliases": [
+                "OSPF",
+                "Open Shortest Path First",
+                "OSPFv2 and OSPFv3"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Implementing OSPF for intra-domain routing, including area topology design, neighbor formation, LSAs, SPF tuning and route summarization.",
+            "parent_skill": "Routing & switching",
+            "related_skills": [
+                "Border Gateway Protocol (BGP) configuration and troubleshooting",
+                "Network address planning and IP subnetting (IPv4 & IPv6)",
+                "Inter-VLAN routing and Layer 3 switching"
+            ],
+            "keywords": [
+                "area",
+                "LSA",
+                "SPF",
+                "cost",
+                "adjacency"
+            ],
+            "common_roles": [
+                "Network Engineer",
+                "Routing Engineer",
+                "Enterprise Network Architect"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "High-availability routing and redundancy protocols (HSRP\/VRRP\/GLBP)",
+            "aliases": [
+                "HSRP",
+                "VRRP",
+                "GLBP",
+                "gateway redundancy"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Configuring and maintaining router\/switch redundancy and gateway failover mechanisms to provide continuous IP-layer availability for networks.",
+            "parent_skill": "Routing & switching",
+            "related_skills": [
+                "Spanning Tree Protocol (STP) tuning and troubleshooting",
+                "Border Gateway Protocol (BGP) configuration and troubleshooting",
+                "Inter-VLAN routing and Layer 3 switching"
+            ],
+            "keywords": [
+                "failover",
+                "virtual IP",
+                "active-standby",
+                "priority",
+                "preempt"
+            ],
+            "common_roles": [
+                "Network Engineer",
+                "Infrastructure Reliability Engineer",
+                "Data Center Network Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Network address planning and IP subnetting (IPv4 & IPv6)",
+            "aliases": [
+                "IP addressing",
+                "subnet planning",
+                "IPv6 addressing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and assigning IPv4 and IPv6 addressing schemes, subnetting, summarization, and address plan documentation for scalable network architectures.",
+            "parent_skill": "Routing & switching",
+            "related_skills": [
+                "OSPF configuration and area design",
+                "Border Gateway Protocol (BGP) configuration and troubleshooting",
+                "Inter-VLAN routing and Layer 3 switching"
+            ],
+            "keywords": [
+                "CIDR",
+                "prefix",
+                "address planning",
+                "aggregation",
+                "IPv6"
+            ],
+            "common_roles": [
+                "Network Engineer",
+                "IP Planner",
+                "Infrastructure Architect"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Quality of Service (QoS) configuration for enterprise networks",
+            "aliases": [
+                "QoS",
+                "traffic shaping",
+                "traffic policing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Implementing QoS policies on routers and switches to prioritize, shape and police traffic for performance-sensitive applications across enterprise networks.",
+            "parent_skill": "Routing & switching",
+            "related_skills": [
+                "Inter-VLAN routing and Layer 3 switching",
+                "Packet capture and analysis (Wireshark)",
+                "Network address planning and IP subnetting (IPv4 & IPv6)"
+            ],
+            "keywords": [
+                "classification",
+                "marking",
+                "DSCP",
+                "queuing",
+                "bandwidth reservation"
+            ],
+            "common_roles": [
+                "Network Engineer",
+                "Voice\/Data Network Engineer",
+                "Performance Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Packet Capture and Analysis",
+            "aliases": [
+                "packet analysis",
+                "Wireshark analysis",
+                "pcap troubleshooting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Using packet capture tools and protocol analysis techniques to diagnose connectivity, performance and protocol-level issues on routed and switched networks.",
+            "parent_skill": "Routing & switching",
+            "related_skills": [
+                "Quality of Service (QoS) configuration for enterprise networks",
+                "Network troubleshooting",
+                "Layer 2 Switching and VLAN Design"
+            ],
+            "keywords": [
+                "Wireshark",
+                "tcpdump",
+                "pcap",
+                "protocol decode",
+                "latency analysis"
+            ],
+            "common_roles": [
+                "Network Engineer",
+                "Support Engineer",
+                "NOC Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Network Automation for Routing and Switching",
+            "aliases": [
+                "network automation",
+                "Ansible for networks",
+                "network scripting (Python)"
+            ],
+            "skill_type": "process_skill",
+            "description": "Automating configuration, provisioning and validation of routers and switches using infrastructure-as-code, scripts and orchestration tools (e.g., Ansible, Python).",
+            "parent_skill": "Routing & switching",
+            "related_skills": [
+                "Packet Capture and Analysis",
+                "Layer 2 Switching and VLAN Design",
+                "Border Gateway Protocol (BGP) configuration and troubleshooting"
+            ],
+            "keywords": [
+                "Ansible",
+                "netmiko",
+                "Nornir",
+                "Python",
+                "idempotent configuration"
+            ],
+            "common_roles": [
+                "Network Automation Engineer",
+                "Network Engineer",
+                "DevNet Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

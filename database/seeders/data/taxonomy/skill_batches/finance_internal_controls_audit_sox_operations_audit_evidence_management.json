@@ -1,0 +1,260 @@
+{
+    "domain": "Finance",
+    "category": "Internal Controls, Audit & SOX Operations",
+    "subcategory": "Audit evidence management",
+    "skills": [
+        {
+            "canonical_name": "Audit working papers preparation",
+            "aliases": [
+                "working papers preparation",
+                "audit file preparation",
+                "audit documentation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating, organizing, and indexing audit working papers to document procedures performed, evidence examined, findings, conclusions, cross-references, and reviewer sign-offs.",
+            "parent_skill": "Audit evidence management",
+            "related_skills": [
+                "Audit evidence collection",
+                "Metadata tagging and version control for audit evidence",
+                "Audit evidence quality assessment"
+            ],
+            "keywords": [
+                "working papers",
+                "audit file",
+                "documentation",
+                "indexing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Audit evidence collection",
+            "aliases": [
+                "evidence gathering",
+                "evidence acquisition",
+                "document collection"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Executing planned procedures to collect physical, electronic and testimonial evidence in accordance with the audit program and scope.",
+            "parent_skill": "Audit evidence management",
+            "related_skills": [
+                "Digital evidence acquisition",
+                "Chain of custody management",
+                "Statistical and judgmental sampling for audit evidence"
+            ],
+            "keywords": [
+                "collection",
+                "evidence",
+                "procedures",
+                "documentation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Digital evidence acquisition",
+            "aliases": [
+                "electronic evidence collection",
+                "log collection",
+                "forensic imaging",
+                "e-evidence collection"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using digital collection techniques and tools to capture electronic evidence (system logs, emails, images, databases) while preserving integrity and metadata.",
+            "parent_skill": "Audit evidence management",
+            "related_skills": [
+                "Chain of custody management",
+                "Metadata tagging and version control for audit evidence",
+                "Data analytics for audit evidence"
+            ],
+            "keywords": [
+                "digital forensics",
+                "log collection",
+                "imaging",
+                "electronic evidence"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Chain of custody management",
+            "aliases": [
+                "evidence custody tracking",
+                "custody documentation",
+                "chain-of-custody control"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Documenting and controlling the movement, handling, access and custody of evidence to preserve its integrity, provenance and admissibility.",
+            "parent_skill": "Audit evidence management",
+            "related_skills": [
+                "Digital evidence acquisition",
+                "Evidence retention and records management",
+                "Audit working papers preparation"
+            ],
+            "keywords": [
+                "custody",
+                "preservation",
+                "provenance",
+                "access control"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Audit evidence quality assessment",
+            "aliases": [
+                "evidence sufficiency assessment",
+                "evidence reliability evaluation",
+                "assessing evidence quality"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluating collected evidence for relevance, sufficiency, reliability and persuasiveness against audit objectives and risk assessments.",
+            "parent_skill": "Audit evidence management",
+            "related_skills": [
+                "Statistical and judgmental sampling for audit evidence",
+                "Evidence corroboration and reconciliation",
+                "Audit working papers preparation"
+            ],
+            "keywords": [
+                "sufficiency",
+                "reliability",
+                "relevance",
+                "assessment"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Statistical and judgmental sampling for audit evidence",
+            "aliases": [
+                "audit sampling",
+                "attribute sampling",
+                "monetary unit sampling",
+                "judgmental sampling"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and applying statistical and non-statistical sampling methods to select representative audit items and draw conclusions about populations.",
+            "parent_skill": "Audit evidence management",
+            "related_skills": [
+                "Audit evidence quality assessment",
+                "Data analytics for audit evidence",
+                "Evidence corroboration and reconciliation"
+            ],
+            "keywords": [
+                "sampling",
+                "MUS",
+                "attribute sampling",
+                "sample size"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Evidence corroboration and reconciliation",
+            "aliases": [
+                "evidence reconciliation",
+                "cross-source corroboration",
+                "supporting evidence corroboration"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Comparing and reconciling information from multiple evidence sources to confirm consistency, resolve discrepancies, and strengthen audit conclusions.",
+            "parent_skill": "Audit evidence management",
+            "related_skills": [
+                "Audit evidence quality assessment",
+                "Data analytics for audit evidence",
+                "Audit working papers preparation"
+            ],
+            "keywords": [
+                "reconciliation",
+                "corroboration",
+                "cross-checks",
+                "discrepancies"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Metadata tagging and version control for audit evidence",
+            "aliases": [
+                "evidence metadata management",
+                "audit evidence versioning",
+                "document version control"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Applying metadata standards and version-control practices to label, track, and manage evidence file versions, access rights and change history.",
+            "parent_skill": "Audit evidence management",
+            "related_skills": [
+                "Digital evidence acquisition",
+                "Audit working papers preparation",
+                "Evidence retention and records management"
+            ],
+            "keywords": [
+                "metadata",
+                "version control",
+                "tagging",
+                "audit trail"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Evidence retention and records management",
+            "aliases": [
+                "audit record retention",
+                "document retention management",
+                "records lifecycle management"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Implementing retention schedules, secure storage, access controls and disposal procedures to meet regulatory, legal and organizational requirements for audit records.",
+            "parent_skill": "Audit evidence management",
+            "related_skills": [
+                "Chain of custody management",
+                "Metadata tagging and version control for audit evidence",
+                "Audit working papers preparation"
+            ],
+            "keywords": [
+                "retention",
+                "records management",
+                "storage",
+                "disposition"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data analytics for audit evidence",
+            "aliases": [
+                "audit data analysis",
+                "analytical procedures for evidence",
+                "Computer-Assisted Audit Techniques",
+                "CAATs"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying data analysis techniques (queries, trend analysis, exception testing, visualization) to generate, test and corroborate audit evidence from large datasets.",
+            "parent_skill": "Audit evidence management",
+            "related_skills": [
+                "Digital evidence acquisition",
+                "Statistical and judgmental sampling for audit evidence",
+                "Evidence corroboration and reconciliation"
+            ],
+            "keywords": [
+                "analytics",
+                "queries",
+                "exception testing",
+                "visualization"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

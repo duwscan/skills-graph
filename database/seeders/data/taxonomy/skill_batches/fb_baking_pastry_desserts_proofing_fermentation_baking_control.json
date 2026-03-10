@@ -1,0 +1,308 @@
+{
+    "domain": "F&B",
+    "category": "Baking, Pastry & Desserts",
+    "subcategory": "Proofing, fermentation & baking control",
+    "skills": [
+        {
+            "canonical_name": "Proofing chamber operation",
+            "aliases": [
+                "proofer operation",
+                "proofing cabinet control",
+                "proofing cabinet operation",
+                "commercial proofer use"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operating and configuring commercial proofing cabinets\/proofers, including temperature\/humidity setpoints, loading patterns and cycle timing for consistent dough proof.",
+            "parent_skill": "Proofing, fermentation & baking control",
+            "related_skills": [
+                "Proofing humidity management",
+                "Retarder fermentation management",
+                "Desired dough temperature (DDT) management"
+            ],
+            "keywords": [
+                "proofer",
+                "proofing cabinet",
+                "temperature control",
+                "humidity control",
+                "cycle timing"
+            ],
+            "common_roles": [
+                "Bakery production",
+                "Artisanal bread production",
+                "Industrial bakery operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Retarder fermentation management",
+            "aliases": [
+                "cold retardation management",
+                "retarder-proofer control",
+                "cold fermentation control"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Managing refrigerated retarders and cold fermentation processes to slow yeast activity, develop flavor, and schedule production while maintaining dough quality.",
+            "parent_skill": "Proofing, fermentation & baking control",
+            "related_skills": [
+                "Proofing chamber operation",
+                "Fermentation schedule development",
+                "Desired dough temperature (DDT) management"
+            ],
+            "keywords": [
+                "retarder",
+                "cold fermentation",
+                "scheduling",
+                "temperature hold",
+                "flavor development"
+            ],
+            "common_roles": [
+                "Bakery production",
+                "Artisanal bread production",
+                "Industrial bakery operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sourdough starter maintenance",
+            "aliases": [
+                "starter culture maintenance",
+                "levain management",
+                "sourdough culture care"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Maintaining, feeding and refreshing sourdough starters (levain), including hydration control, feeding schedules, propagation techniques and contamination prevention.",
+            "parent_skill": "Proofing, fermentation & baking control",
+            "related_skills": [
+                "Fermentation quality control",
+                "Yeast handling and dosage control",
+                "Fermentation schedule development"
+            ],
+            "keywords": [
+                "levain",
+                "starter feeding",
+                "hydration",
+                "propagation",
+                "microbial balance"
+            ],
+            "common_roles": [
+                "Artisanal bread production",
+                "Bakery production",
+                "Specialty pastry production"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Fermentation schedule development",
+            "aliases": [
+                "fermentation planning",
+                "proofing timetable creation",
+                "dough fermentation scheduling"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and adjusting fermentation timelines (bulk fermentation, bench rest, proof) to align production flow, dough characteristics and target product quality.",
+            "parent_skill": "Proofing, fermentation & baking control",
+            "related_skills": [
+                "Retarder fermentation management",
+                "Desired dough temperature (DDT) management",
+                "Proofing chamber operation"
+            ],
+            "keywords": [
+                "scheduling",
+                "bulk fermentation",
+                "bench rest",
+                "proof timing",
+                "production planning"
+            ],
+            "common_roles": [
+                "Bakery production",
+                "Industrial bakery operations",
+                "Artisanal bread production"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Yeast handling and dosage control",
+            "aliases": [
+                "yeast dosing",
+                "yeast rehydration",
+                "baker's yeast management"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Selecting, preparing and dosing different yeast forms (fresh, active dry, instant), including rehydration techniques, activity checks and dosage calculations for consistent fermentation.",
+            "parent_skill": "Proofing, fermentation & baking control",
+            "related_skills": [
+                "Sourdough starter maintenance",
+                "Fermentation quality control",
+                "Desired dough temperature (DDT) management"
+            ],
+            "keywords": [
+                "yeast",
+                "dosing",
+                "rehydration",
+                "active dry yeast",
+                "instant yeast"
+            ],
+            "common_roles": [
+                "Bakery production",
+                "Artisanal bread production",
+                "Industrial bakery operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Desired dough temperature (DDT) management",
+            "aliases": [
+                "DDT calculation",
+                "dough temperature control",
+                "final dough temperature management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Calculating and adjusting inputs (ingredient temperatures, mixing friction, room temp) to achieve target dough temperature for predictable fermentation and consistent product outcomes.",
+            "parent_skill": "Proofing, fermentation & baking control",
+            "related_skills": [
+                "Yeast handling and dosage control",
+                "Proofing chamber operation",
+                "Fermentation schedule development"
+            ],
+            "keywords": [
+                "DDT",
+                "mixing friction",
+                "temperature calculation",
+                "ingredient temp",
+                "process control"
+            ],
+            "common_roles": [
+                "Bakery production",
+                "Industrial bakery operations",
+                "Artisanal bread production"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dough rheology assessment",
+            "aliases": [
+                "dough handling assessment",
+                "gluten development testing",
+                "rheology testing (dough)"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluating dough properties (elasticity, extensibility, stickiness, windowpane) using tactile tests and basic instruments to determine readiness and adjust mixing\/fermentation.",
+            "parent_skill": "Proofing, fermentation & baking control",
+            "related_skills": [
+                "Desired dough temperature (DDT) management",
+                "Fermentation quality control",
+                "Oven profiling and steam management"
+            ],
+            "keywords": [
+                "elasticity",
+                "extensibility",
+                "windowpane",
+                "mixing tolerance",
+                "dough test"
+            ],
+            "common_roles": [
+                "Bakery production",
+                "Artisanal bread production",
+                "Quality control in bakery"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Oven profiling and steam management",
+            "aliases": [
+                "oven profiling",
+                "steam injection control",
+                "baking cycle control"
+            ],
+            "skill_type": "process_skill",
+            "description": "Configuring oven temperature curves, loading patterns and steam injection to control oven spring, crust formation and final crumb characteristics across product runs.",
+            "parent_skill": "Proofing, fermentation & baking control",
+            "related_skills": [
+                "Proofing chamber operation",
+                "Dough rheology assessment",
+                "Fermentation schedule development"
+            ],
+            "keywords": [
+                "oven profile",
+                "steam",
+                "baking curve",
+                "oven spring",
+                "crust formation"
+            ],
+            "common_roles": [
+                "Bakery production",
+                "Industrial bakery operations",
+                "Artisanal bread production"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Fermentation quality control",
+            "aliases": [
+                "fermentation QC",
+                "fermentative quality assessment",
+                "proof quality inspection"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Monitoring fermentation outcomes using measures such as pH, loaf volume, aroma, texture and sensory checks to detect under\/over-fermentation and microbial issues.",
+            "parent_skill": "Proofing, fermentation & baking control",
+            "related_skills": [
+                "Dough rheology assessment",
+                "Sourdough starter maintenance",
+                "Yeast handling and dosage control"
+            ],
+            "keywords": [
+                "pH",
+                "loaf volume",
+                "aroma",
+                "sensory",
+                "microbial spoilage"
+            ],
+            "common_roles": [
+                "Quality control in bakery",
+                "Bakery production",
+                "Artisanal bread production"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Proofing humidity management",
+            "aliases": [
+                "proof humidity control",
+                "relative humidity control in proofing",
+                "moisture control during proof"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Controlling and adjusting relative humidity during proofing to influence skin formation, crust characteristics and oven spring, using humidification\/dehumidification methods.",
+            "parent_skill": "Proofing, fermentation & baking control",
+            "related_skills": [
+                "Proofing chamber operation",
+                "Oven profiling and steam management",
+                "Retarder fermentation management"
+            ],
+            "keywords": [
+                "humidity",
+                "RH",
+                "skin formation",
+                "oven spring",
+                "humidification"
+            ],
+            "common_roles": [
+                "Bakery production",
+                "Artisanal bread production",
+                "Industrial bakery operations"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

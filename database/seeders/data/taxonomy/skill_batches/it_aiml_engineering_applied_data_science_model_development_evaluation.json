@@ -1,0 +1,313 @@
+{
+    "domain": "IT",
+    "category": "AI\/ML Engineering & Applied Data Science",
+    "subcategory": "Model development & evaluation",
+    "skills": [
+        {
+            "canonical_name": "Hyperparameter optimization",
+            "aliases": [
+                "Hyperparameter tuning",
+                "HPO",
+                "Grid search",
+                "Random search",
+                "Bayesian optimization (HPO)"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and executing strategies to search and select optimal hyperparameter values for ML models (e.g., grid\/random search, Bayesian optimization, population-based methods).",
+            "parent_skill": "Model development & evaluation",
+            "related_skills": [
+                "Model selection",
+                "Cross-validation",
+                "Model performance profiling & optimization"
+            ],
+            "keywords": [
+                "bayesian optimization",
+                "grid search",
+                "random search",
+                "optuna",
+                "ray tune",
+                "hyperopt"
+            ],
+            "common_roles": [
+                "Machine Learning Engineer",
+                "Applied Data Scientist",
+                "MLOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-validation",
+            "aliases": [
+                "K-fold cross validation",
+                "CV",
+                "Stratified cross-validation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying resampling techniques (e.g., k-fold, stratified, time-series split) to estimate model generalization performance and reduce overfitting risk during development.",
+            "parent_skill": "Model development & evaluation",
+            "related_skills": [
+                "Model evaluation metrics",
+                "Hyperparameter optimization",
+                "Model selection"
+            ],
+            "keywords": [
+                "k-fold",
+                "stratified",
+                "time-series CV",
+                "out-of-fold",
+                "validation split"
+            ],
+            "common_roles": [
+                "Data Scientist",
+                "Applied Data Scientist",
+                "Machine Learning Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Model evaluation metrics",
+            "aliases": [
+                "Evaluation metrics",
+                "Performance metrics",
+                "Model scoring metrics"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Selecting, computing, and interpreting quantitative metrics (e.g., accuracy, precision, recall, F1, ROC AUC, logloss, RMSE, MAE) appropriate to problem type and business objectives.",
+            "parent_skill": "Model development & evaluation",
+            "related_skills": [
+                "Cross-validation",
+                "Model calibration",
+                "Model selection"
+            ],
+            "keywords": [
+                "precision",
+                "recall",
+                "F1",
+                "AUC",
+                "RMSE",
+                "logloss",
+                "MAE"
+            ],
+            "common_roles": [
+                "Data Scientist",
+                "Machine Learning Engineer",
+                "Applied ML Scientist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Model selection",
+            "aliases": [
+                "Algorithm selection",
+                "Model comparison",
+                "Model benchmarking"
+            ],
+            "skill_type": "process_skill",
+            "description": "Comparing candidate algorithms and model variants using validation strategies, metrics, and business constraints to choose the best model for deployment.",
+            "parent_skill": "Model development & evaluation",
+            "related_skills": [
+                "Model evaluation metrics",
+                "Cross-validation",
+                "Hyperparameter optimization"
+            ],
+            "keywords": [
+                "model benchmarking",
+                "preferred model",
+                "algorithm comparison",
+                "baseline models"
+            ],
+            "common_roles": [
+                "Applied Data Scientist",
+                "Machine Learning Engineer",
+                "ML Researcher"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Feature engineering",
+            "aliases": [
+                "Feature construction",
+                "Feature extraction",
+                "Feature transformation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Creating, transforming, and selecting features from raw data (including encoding, normalization, aggregation, domain-derived features and embeddings) to improve model performance.",
+            "parent_skill": "Model development & evaluation",
+            "related_skills": [
+                "Feature selection",
+                "Model selection",
+                "Model performance profiling & optimization"
+            ],
+            "keywords": [
+                "scaling",
+                "one-hot encoding",
+                "target encoding",
+                "feature crosses",
+                "embeddings",
+                "missing value imputation"
+            ],
+            "common_roles": [
+                "Data Scientist",
+                "Feature Engineer",
+                "Machine Learning Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Model interpretability and explainability",
+            "aliases": [
+                "Model explainability",
+                "Interpretability",
+                "SHAP\/LIME analysis"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying techniques to explain model predictions at global and local levels (e.g., SHAP, LIME, partial dependence, feature importance) and communicating explanations to stakeholders.",
+            "parent_skill": "Model development & evaluation",
+            "related_skills": [
+                "Model fairness and bias mitigation",
+                "Model calibration",
+                "Model evaluation metrics"
+            ],
+            "keywords": [
+                "SHAP",
+                "LIME",
+                "feature importance",
+                "partial dependence",
+                "counterfactuals"
+            ],
+            "common_roles": [
+                "Explainable AI Specialist",
+                "Data Scientist",
+                "Applied ML Scientist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "A\/B testing and online experiment design",
+            "aliases": [
+                "Online experimentation",
+                "Randomized controlled trials (online)",
+                "Experimentation design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, implementing, and analyzing randomized online experiments to measure model impact in production (metric selection, power analysis, significance testing, ramp strategies).",
+            "parent_skill": "Model development & evaluation",
+            "related_skills": [
+                "Model evaluation metrics",
+                "Bias detection and fairness evaluation",
+                "Performance benchmarking"
+            ],
+            "keywords": [
+                "A\/B test",
+                "statistical significance",
+                "power analysis",
+                "treatment\/control",
+                "ramp"
+            ],
+            "common_roles": [
+                "Experimentation Engineer",
+                "Data Scientist",
+                "Product Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Model fairness and bias mitigation",
+            "aliases": [
+                "Fairness evaluation",
+                "Bias detection",
+                "Algorithmic fairness"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Identifying and measuring disparate impacts and bias in models, applying mitigation strategies (pre-, in-, post-processing), and ensuring models meet ethical and regulatory fairness requirements.",
+            "parent_skill": "Model development & evaluation",
+            "related_skills": [
+                "Model interpretability and explainability",
+                "A\/B testing and online experiment design",
+                "Model evaluation metrics"
+            ],
+            "keywords": [
+                "demographic parity",
+                "equal opportunity",
+                "disparate impact",
+                "bias mitigation",
+                "fairness metrics"
+            ],
+            "common_roles": [
+                "Responsible AI Engineer",
+                "Data Scientist",
+                "Ethics & Compliance Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Model performance profiling & optimization",
+            "aliases": [
+                "Model profiling",
+                "Performance optimization",
+                "Latency and throughput tuning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Measuring and improving runtime performance of models (inference latency, throughput, memory), including model compression, quantization, batching, and hardware-aware optimization for production.",
+            "parent_skill": "Model development & evaluation",
+            "related_skills": [
+                "Hyperparameter optimization",
+                "Feature engineering",
+                "Model calibration"
+            ],
+            "keywords": [
+                "latency",
+                "throughput",
+                "quantization",
+                "pruning",
+                "ONNX",
+                "profiling tools"
+            ],
+            "common_roles": [
+                "MLOps Engineer",
+                "Machine Learning Engineer",
+                "Inference Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Model calibration",
+            "aliases": [
+                "Probability calibration",
+                "Platt scaling",
+                "Isotonic regression"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Assessing and adjusting predicted probabilities to better reflect true likelihoods (e.g., Platt scaling, isotonic regression) and evaluating calibration using reliability diagrams and Brier score.",
+            "parent_skill": "Model development & evaluation",
+            "related_skills": [
+                "Model evaluation metrics",
+                "Model interpretability and explainability",
+                "A\/B testing and online experiment design"
+            ],
+            "keywords": [
+                "calibration curve",
+                "Brier score",
+                "Platt scaling",
+                "isotonic",
+                "reliability diagram"
+            ],
+            "common_roles": [
+                "Applied Data Scientist",
+                "Machine Learning Engineer",
+                "ML Researcher"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

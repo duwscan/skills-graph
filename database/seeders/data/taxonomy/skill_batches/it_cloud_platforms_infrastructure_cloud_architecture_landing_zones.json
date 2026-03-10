@@ -1,0 +1,268 @@
+{
+    "domain": "IT",
+    "category": "Cloud Platforms & Infrastructure",
+    "subcategory": "Cloud architecture & landing zones",
+    "skills": [
+        {
+            "canonical_name": "Cloud landing zone design",
+            "aliases": [
+                "landing zone design",
+                "cloud landing-zone architecture"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing foundational cloud environments (accounts\/subscriptions, network, identity, security and governance) to enable secure, scalable tenant onboarding.",
+            "parent_skill": "Cloud architecture & landing zones",
+            "related_skills": [
+                "Multi-account\/subscription architecture",
+                "Identity and Access Management (IAM) architecture",
+                "Network and hybrid connectivity design",
+                "Infrastructure as Code for landing zones",
+                "Policy-as-code & governance automation",
+                "Cloud security baseline & controls implementation",
+                "Resource organization & tagging strategy"
+            ],
+            "keywords": [
+                "landing zone",
+                "foundational architecture",
+                "cloud baseline",
+                "tenant onboarding"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Multi-account\/subscription architecture",
+            "aliases": [
+                "multi-account strategy",
+                "multi-subscription architecture",
+                "tenant partitioning"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing account, subscription or project boundaries and trust models for isolation, scalability, billing and governance in cloud environments.",
+            "parent_skill": "Cloud architecture & landing zones",
+            "related_skills": [
+                "Cloud landing zone design",
+                "Resource organization & tagging strategy",
+                "Cloud cost management (FinOps) for landing zones",
+                "Identity and Access Management (IAM) architecture"
+            ],
+            "keywords": [
+                "account strategy",
+                "subscription design",
+                "isolation",
+                "tenant model"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Identity and Access Management (IAM) architecture",
+            "aliases": [
+                "cloud IAM design",
+                "access management architecture",
+                "role-based access design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing identity models, role\/permission structures, cross-account access patterns and privileged access controls for cloud platforms.",
+            "parent_skill": "Cloud architecture & landing zones",
+            "related_skills": [
+                "Cloud landing zone design",
+                "Policy-as-code & governance automation",
+                "Multi-account\/subscription architecture",
+                "Cloud security baseline & controls implementation"
+            ],
+            "keywords": [
+                "IAM",
+                "RBAC",
+                "least privilege",
+                "cross-account access"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Network and hybrid connectivity design",
+            "aliases": [
+                "cloud network architecture",
+                "VPC\/VNet design",
+                "hybrid connectivity design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing virtual networks, subnet strategies, routing, security zones and hybrid connectivity (VPN\/Direct Connect\/ExpressRoute) to on‑premises and other clouds.",
+            "parent_skill": "Cloud architecture & landing zones",
+            "related_skills": [
+                "Cloud landing zone design",
+                "Infrastructure as Code for landing zones",
+                "Cloud security baseline & controls implementation"
+            ],
+            "keywords": [
+                "VPC",
+                "VNet",
+                "hybrid network",
+                "connectivity",
+                "routing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Infrastructure as Code for landing zones",
+            "aliases": [
+                "IaC for landing zones",
+                "landing zone IaC",
+                "infrastructure-as-code for cloud foundation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying declarative IaC patterns and modules to provision and maintain landing-zone components (accounts, network, identity, policies) reliably and repeatably.",
+            "parent_skill": "Cloud architecture & landing zones",
+            "related_skills": [
+                "Terraform",
+                "Policy-as-code & governance automation",
+                "Landing zone automation and CI\/CD",
+                "Cloud landing zone design"
+            ],
+            "keywords": [
+                "IaC",
+                "declarative templates",
+                "reusable modules",
+                "provisioning"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Terraform",
+            "aliases": [
+                "HashiCorp Terraform",
+                "terraforming"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Terraform to author, test and manage reusable infrastructure modules and state for cloud landing zones across providers.",
+            "parent_skill": "Infrastructure as Code for landing zones",
+            "related_skills": [
+                "Infrastructure as Code for landing zones",
+                "Landing zone automation and CI\/CD",
+                "Policy-as-code & governance automation"
+            ],
+            "keywords": [
+                "terraform",
+                "HCL",
+                "state management",
+                "modules"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Policy-as-code & governance automation",
+            "aliases": [
+                "policy as code",
+                "governance automation",
+                "automated cloud governance"
+            ],
+            "skill_type": "process_skill",
+            "description": "Encoding governance rules (security, compliance, resource controls) as automated policies and integrating enforcement into provisioning pipelines.",
+            "parent_skill": "Cloud architecture & landing zones",
+            "related_skills": [
+                "Infrastructure as Code for landing zones",
+                "Identity and Access Management (IAM) architecture",
+                "Cloud landing zone design",
+                "Terraform"
+            ],
+            "keywords": [
+                "policy-as-code",
+                "governance",
+                "automated enforcement",
+                "policy engine"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cloud security baseline & controls implementation",
+            "aliases": [
+                "cloud security baseline",
+                "security controls for landing zones",
+                "security foundational controls"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing core security controls for landing zones including network segmentation, encryption, secrets management, logging, and incident detection basics.",
+            "parent_skill": "Cloud architecture & landing zones",
+            "related_skills": [
+                "Cloud landing zone design",
+                "Identity and Access Management (IAM) architecture",
+                "Centralized logging, monitoring & observability architecture",
+                "Policy-as-code & governance automation"
+            ],
+            "keywords": [
+                "security baseline",
+                "encryption",
+                "secrets",
+                "segmentation",
+                "controls"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cloud cost management (FinOps) for landing zones",
+            "aliases": [
+                "cloud cost governance",
+                "FinOps for landing zones",
+                "cost optimization for cloud foundation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Establishing budgeting, tagging-driven chargeback\/showback, cost controls and reporting practices aimed at controlling spend across landing zone constructs and accounts.",
+            "parent_skill": "Cloud architecture & landing zones",
+            "related_skills": [
+                "Resource organization & tagging strategy",
+                "Multi-account\/subscription architecture",
+                "Cloud landing zone design"
+            ],
+            "keywords": [
+                "FinOps",
+                "cost allocation",
+                "tagging",
+                "budgeting",
+                "showback"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Centralized logging, monitoring & observability architecture",
+            "aliases": [
+                "logging and monitoring architecture",
+                "observability for landing zones",
+                "centralized telemetry design"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing centralized telemetry pipelines, retention and alerting for logs, metrics and traces to support security, operations and compliance across landing zones.",
+            "parent_skill": "Cloud architecture & landing zones",
+            "related_skills": [
+                "Cloud security baseline & controls implementation",
+                "Cloud landing zone design",
+                "Infrastructure as Code for landing zones"
+            ],
+            "keywords": [
+                "logging",
+                "monitoring",
+                "observability",
+                "SIEM",
+                "telemetry"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

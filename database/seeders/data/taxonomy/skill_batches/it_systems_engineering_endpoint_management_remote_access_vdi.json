@@ -1,0 +1,307 @@
+{
+    "domain": "IT",
+    "category": "Systems Engineering & Endpoint Management",
+    "subcategory": "Remote access & VDI",
+    "skills": [
+        {
+            "canonical_name": "VDI architecture and design",
+            "aliases": [
+                "Virtual Desktop Infrastructure design",
+                "VDI design",
+                "VDI architecture"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and architecting virtual desktop environments, including host sizing, storage, networking, high availability, and placement for desktop virtualization deployments.",
+            "parent_skill": "Remote access & VDI",
+            "related_skills": [
+                "VMware Horizon administration",
+                "Citrix Virtual Apps and Desktops administration",
+                "VDI session brokering and load balancing",
+                "Monitoring, performance tuning, and capacity planning for VDI",
+                "VDI user profile and persona management"
+            ],
+            "keywords": [
+                "VDI",
+                "architecture",
+                "capacity planning",
+                "desktop virtualization",
+                "design"
+            ],
+            "common_roles": [
+                "Infrastructure engineering",
+                "Workspace operations",
+                "Endpoint architecture"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "VMware Horizon administration",
+            "aliases": [
+                "Horizon administration",
+                "VMware Horizon View administration",
+                "Horizon management"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Deploying, configuring and maintaining VMware Horizon components including Connection Servers, Composer (if used), Unified Access Gateway, and Horizon Agents for virtual desktop and published application delivery.",
+            "parent_skill": "Remote access & VDI",
+            "related_skills": [
+                "VDI architecture and design",
+                "Monitoring, performance tuning, and capacity planning for VDI",
+                "VDI session brokering and load balancing",
+                "VDI user profile and persona management"
+            ],
+            "keywords": [
+                "VMware",
+                "Horizon",
+                "Connection Server",
+                "UAG",
+                "virtual desktops"
+            ],
+            "common_roles": [
+                "Workspace operations",
+                "Infrastructure engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Citrix Virtual Apps and Desktops administration",
+            "aliases": [
+                "Citrix Virtual Apps admin",
+                "Citrix Virtual Desktops administration",
+                "XenApp\/XenDesktop administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Installing, configuring and operating Citrix delivery infrastructure (Delivery Controllers, StoreFront, NetScaler\/ADC integration, Virtual Apps\/Desktops), managing application and desktop publishing policies.",
+            "parent_skill": "Remote access & VDI",
+            "related_skills": [
+                "VDI architecture and design",
+                "Monitoring, performance tuning, and capacity planning for VDI",
+                "VDI session brokering and load balancing",
+                "VDI user profile and persona management"
+            ],
+            "keywords": [
+                "Citrix",
+                "Virtual Apps",
+                "Virtual Desktops",
+                "Delivery Controller",
+                "application publishing"
+            ],
+            "common_roles": [
+                "Workspace operations",
+                "Endpoint management"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Microsoft Remote Desktop Services (RDS) administration",
+            "aliases": [
+                "RDS administration",
+                "Remote Desktop Services admin",
+                "Windows RDS management"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Deploying and managing Microsoft Remote Desktop Services components including Session Hosts, Connection Broker, Remote Desktop Gateway, and RemoteApp publishing for multi-session Windows desktops.",
+            "parent_skill": "Remote access & VDI",
+            "related_skills": [
+                "VDI architecture and design",
+                "Monitoring, performance tuning, and capacity planning for VDI",
+                "VDI session brokering and load balancing",
+                "VDI user profile and persona management"
+            ],
+            "keywords": [
+                "RDS",
+                "Remote Desktop Services",
+                "Session Host",
+                "RemoteApp",
+                "RD Gateway"
+            ],
+            "common_roles": [
+                "Workspace operations",
+                "Endpoint management"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Remote access VPN configuration and management",
+            "aliases": [
+                "VPN configuration",
+                "remote VPN management",
+                "SSL VPN management"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing, configuring and operating remote access VPNs (SSL\/IPsec\/DTLS) and related gateway infrastructure to provide secure connectivity for remote users to enterprise resources.",
+            "parent_skill": "Remote access & VDI",
+            "related_skills": [
+                "Zero Trust Network Access (ZTNA) implementation",
+                "Thin client provisioning and management",
+                "VDI architecture and design",
+                "Monitoring, performance tuning, and capacity planning for VDI"
+            ],
+            "keywords": [
+                "VPN",
+                "SSL VPN",
+                "IPsec",
+                "remote access",
+                "gateway"
+            ],
+            "common_roles": [
+                "Network and access operations",
+                "Endpoint connectivity management"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Zero Trust Network Access (ZTNA) implementation",
+            "aliases": [
+                "zero trust access",
+                "ZTNA deployment",
+                "zero-trust remote access"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning and implementing Zero Trust access models and tooling to restrict remote access based on continuous authentication, device posture, least privilege, and application-level policies.",
+            "parent_skill": "Remote access & VDI",
+            "related_skills": [
+                "Remote access VPN configuration and management",
+                "VDI architecture and design",
+                "Monitoring, performance tuning, and capacity planning for VDI"
+            ],
+            "keywords": [
+                "zero trust",
+                "ZTNA",
+                "least privilege",
+                "device posture",
+                "access policy"
+            ],
+            "common_roles": [
+                "Security operations",
+                "Access architecture"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "VDI user profile and persona management",
+            "aliases": [
+                "user profile management for VDI",
+                "persistent profile management",
+                "roaming profiles for VDI"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and operating user profile and persona strategies for virtual desktops, including profile persistence, redirection, containerization, and application personalization to optimize login times and user experience.",
+            "parent_skill": "Remote access & VDI",
+            "related_skills": [
+                "VDI architecture and design",
+                "Monitoring, performance tuning, and capacity planning for VDI",
+                "VMware Horizon administration",
+                "Citrix Virtual Apps and Desktops administration"
+            ],
+            "keywords": [
+                "user profiles",
+                "personas",
+                "profile redirection",
+                "persistent profiles",
+                "login optimization"
+            ],
+            "common_roles": [
+                "Workspace operations",
+                "Endpoint support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "VDI session brokering and load balancing",
+            "aliases": [
+                "session brokering",
+                "VDI load balancing",
+                "desktop session brokering"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Configuring and tuning session brokering and load balancing mechanisms to distribute user sessions across hosts, ensure availability, optimize resource utilization, and implement session affinity\/interrupt recovery.",
+            "parent_skill": "Remote access & VDI",
+            "related_skills": [
+                "VDI architecture and design",
+                "VMware Horizon administration",
+                "Citrix Virtual Apps and Desktops administration",
+                "Monitoring, performance tuning, and capacity planning for VDI"
+            ],
+            "keywords": [
+                "session broker",
+                "load balancing",
+                "session affinity",
+                "high availability",
+                "resource distribution"
+            ],
+            "common_roles": [
+                "Workspace operations",
+                "Infrastructure engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Thin client provisioning and management",
+            "aliases": [
+                "thin client management",
+                "thin client provisioning",
+                "thin endpoint administration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Provisioning, updating, and managing thin client devices and OS images used to access virtual desktops and published applications, including firmware management and peripheral configuration.",
+            "parent_skill": "Remote access & VDI",
+            "related_skills": [
+                "VDI architecture and design",
+                "Remote access VPN configuration and management",
+                "Monitoring, performance tuning, and capacity planning for VDI"
+            ],
+            "keywords": [
+                "thin client",
+                "provisioning",
+                "firmware",
+                "endpoint image",
+                "peripherals"
+            ],
+            "common_roles": [
+                "Endpoint management",
+                "Workspace operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Monitoring, performance tuning, and capacity planning for VDI",
+            "aliases": [
+                "VDI monitoring",
+                "VDI performance tuning",
+                "capacity planning for virtual desktops"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Implementing monitoring, telemetry collection, performance analysis, and capacity planning for VDI environments to identify bottlenecks, optimize resource allocation, and forecast growth needs.",
+            "parent_skill": "Remote access & VDI",
+            "related_skills": [
+                "VDI architecture and design",
+                "VMware Horizon administration",
+                "Citrix Virtual Apps and Desktops administration",
+                "VDI user profile and persona management"
+            ],
+            "keywords": [
+                "monitoring",
+                "performance",
+                "capacity planning",
+                "telemetry",
+                "bottleneck analysis"
+            ],
+            "common_roles": [
+                "Workspace operations",
+                "Capacity planning"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

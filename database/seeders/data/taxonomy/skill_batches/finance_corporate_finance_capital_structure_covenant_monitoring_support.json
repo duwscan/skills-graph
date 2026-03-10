@@ -1,0 +1,286 @@
+{
+    "domain": "Finance",
+    "category": "Corporate Finance & Capital Structure",
+    "subcategory": "Covenant monitoring support",
+    "skills": [
+        {
+            "canonical_name": "Covenant monitoring framework design",
+            "aliases": [
+                "covenant monitoring process design",
+                "covenant governance framework"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing policies, workflows, roles and controls for ongoing monitoring of loan and bond covenants across reporting periods and borrowers.",
+            "parent_skill": "Covenant monitoring support",
+            "related_skills": [
+                "Covenant data extraction and reconciliation",
+                "Covenant reporting and dashboarding",
+                "Compliance calendar management"
+            ],
+            "keywords": [
+                "framework",
+                "controls",
+                "workflows",
+                "governance"
+            ],
+            "common_roles": [
+                "corporate finance professionals",
+                "loan operations professionals"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial covenant calculation and testing",
+            "aliases": [
+                "covenant calculation",
+                "covenant testing",
+                "DSCR\/Leverage ratio testing"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Computing and validating covenant metrics (e.g., leverage, interest coverage, DSCR) from financial statements and management accounts to assess compliance.",
+            "parent_skill": "Covenant monitoring support",
+            "related_skills": [
+                "Financial statement analysis",
+                "Covenant data extraction and reconciliation",
+                "Automated covenant testing using SQL\/ETL"
+            ],
+            "keywords": [
+                "DSCR",
+                "leverage ratio",
+                "interest coverage",
+                "financial metrics"
+            ],
+            "common_roles": [
+                "credit risk professionals",
+                "corporate finance professionals"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Covenant data extraction and reconciliation",
+            "aliases": [
+                "covenant data gathering",
+                "financials reconciliation for covenants",
+                "data collection for covenant testing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Extracting required inputs from trial balances, P&L, balance sheets and management reports, and reconciling them to source accounting records for covenant tests.",
+            "parent_skill": "Covenant monitoring support",
+            "related_skills": [
+                "Financial statement analysis",
+                "Covenant calculation and testing",
+                "Automated covenant testing using SQL\/ETL"
+            ],
+            "keywords": [
+                "reconciliation",
+                "trial balance",
+                "source data",
+                "journal entries"
+            ],
+            "common_roles": [
+                "loan servicing professionals",
+                "corporate finance professionals"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Covenant breach detection and escalation",
+            "aliases": [
+                "covenant breach identification",
+                "breach escalation procedures",
+                "non-compliance notification"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Identifying covenant breaches, assessing materiality, and executing escalation workflows including internal reporting and triggering lender notification requirements.",
+            "parent_skill": "Covenant monitoring support",
+            "related_skills": [
+                "Covenant waiver and amendment support",
+                "Covenant reporting and dashboarding",
+                "Regulatory covenant compliance and audit support"
+            ],
+            "keywords": [
+                "breach",
+                "escalation",
+                "notification",
+                "materiality"
+            ],
+            "common_roles": [
+                "credit risk professionals",
+                "loan operations professionals"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Covenant reporting and dashboarding",
+            "aliases": [
+                "covenant dashboards",
+                "covenant reporting",
+                "covenant status reporting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Preparing periodic covenant reports and interactive dashboards that summarize compliance status, trends, covenant calculations and exceptions for stakeholders.",
+            "parent_skill": "Covenant monitoring support",
+            "related_skills": [
+                "Business intelligence for finance",
+                "Covenant calculation and testing",
+                "Stakeholder communication for covenant issues"
+            ],
+            "keywords": [
+                "dashboards",
+                "reporting pack",
+                "visualization",
+                "status"
+            ],
+            "common_roles": [
+                "treasury professionals",
+                "corporate finance professionals"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Covenant documentation review and interpretation",
+            "aliases": [
+                "loan agreement covenant interpretation",
+                "intercreditor covenant interpretation",
+                "legal covenant reading"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Reviewing loan agreements, indentures and security documents to interpret covenant definitions, calculation methodologies, exceptions and covenant testing dates.",
+            "parent_skill": "Covenant monitoring support",
+            "related_skills": [
+                "Covenant monitoring framework design",
+                "Covenant breach detection and escalation",
+                "Covenant waiver and amendment support"
+            ],
+            "keywords": [
+                "loan agreement",
+                "definitions",
+                "calculation clauses",
+                "testing dates"
+            ],
+            "common_roles": [
+                "legal support teams",
+                "credit risk professionals"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Covenant waiver and amendment support",
+            "aliases": [
+                "waiver preparation for covenants",
+                "covenant amendment coordination",
+                "forbearance support"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Preparing documentation, financial exhibits and internal analyses to support lender waiver or amendment requests and coordinating negotiations with creditors and counsel.",
+            "parent_skill": "Covenant monitoring support",
+            "related_skills": [
+                "Covenant documentation review and interpretation",
+                "Stakeholder communication for covenant issues",
+                "Covenant breach detection and escalation"
+            ],
+            "keywords": [
+                "waiver",
+                "amendment",
+                "negotiation support",
+                "creditor coordination"
+            ],
+            "common_roles": [
+                "corporate finance professionals",
+                "treasury professionals"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated covenant testing using SQL\/ETL",
+            "aliases": [
+                "covenant test automation",
+                "automated covenant checks",
+                "ETL for covenant testing"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Designing and maintaining automated data pipelines and SQL-based tests that pull accounting and subledger data to compute and validate covenant metrics.",
+            "parent_skill": "Covenant monitoring support",
+            "related_skills": [
+                "Covenant data extraction and reconciliation",
+                "Business intelligence for finance",
+                "Financial data engineering"
+            ],
+            "keywords": [
+                "SQL",
+                "ETL",
+                "automation",
+                "data pipelines"
+            ],
+            "common_roles": [
+                "financial data engineers",
+                "corporate finance professionals"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Loan covenant tracking system administration",
+            "aliases": [
+                "covenant tracker administration",
+                "loan system covenant maintenance",
+                "loan management system covenants"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and maintaining covenant schedules, test parameters and user access in covenant tracking or loan management systems and ensuring data integrity.",
+            "parent_skill": "Covenant monitoring support",
+            "related_skills": [
+                "Covenant reporting and dashboarding",
+                "Covenant monitoring framework design",
+                "Automated covenant testing using SQL\/ETL"
+            ],
+            "keywords": [
+                "loan system",
+                "configuration",
+                "data integrity",
+                "tracking"
+            ],
+            "common_roles": [
+                "loan operations professionals",
+                "treasury professionals"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory covenant compliance and audit support",
+            "aliases": [
+                "covenant audit support",
+                "regulatory covenant compliance",
+                "audit preparation for covenants"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Supporting internal and external audits of covenant monitoring processes, producing supporting evidence and ensuring monitoring meets regulatory and lender requirements.",
+            "parent_skill": "Covenant monitoring support",
+            "related_skills": [
+                "Covenant monitoring framework design",
+                "Covenant breach detection and escalation",
+                "Covenant documentation review and interpretation"
+            ],
+            "keywords": [
+                "audit",
+                "regulatory",
+                "evidence",
+                "controls"
+            ],
+            "common_roles": [
+                "compliance professionals",
+                "internal audit professionals"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,295 @@
+{
+    "domain": "IT",
+    "category": "IT Governance, Risk & Compliance",
+    "subcategory": "Security & IT compliance reporting",
+    "skills": [
+        {
+            "canonical_name": "IT security compliance reporting",
+            "aliases": [
+                "security compliance reporting",
+                "IT compliance reporting",
+                "security & IT compliance reporting"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Producing, validating and distributing reports that demonstrate an IT environment's adherence to security policies, internal controls and regulatory obligations.",
+            "parent_skill": "Security & IT compliance reporting",
+            "related_skills": [
+                "Security metrics and KPI definition",
+                "Control testing and ITGC reporting",
+                "GRC platform reporting",
+                "Audit evidence collection and documentation"
+            ],
+            "keywords": [
+                "compliance report",
+                "control evidence",
+                "regulatory reporting",
+                "compliance dashboard"
+            ],
+            "common_roles": [
+                "GRC\/compliance teams",
+                "IT audit teams",
+                "Risk management teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Security metrics and KPI definition",
+            "aliases": [
+                "security KPIs",
+                "security metrics development",
+                "security performance metrics"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Designing, selecting and validating quantitative measures to track security posture, control effectiveness and compliance performance for reporting and decision-making.",
+            "parent_skill": "Security & IT compliance reporting",
+            "related_skills": [
+                "IT security compliance reporting",
+                "Report design for auditors and executive stakeholders",
+                "Continuous control monitoring"
+            ],
+            "keywords": [
+                "KPI",
+                "metric design",
+                "baseline",
+                "thresholds"
+            ],
+            "common_roles": [
+                "Security analytics teams",
+                "GRC\/compliance teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control testing and ITGC reporting",
+            "aliases": [
+                "ITGC reporting",
+                "IT general controls reporting",
+                "control testing for IT"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Planning, executing and reporting results of testing IT general controls and other technical controls to support compliance audits and external reporting requirements.",
+            "parent_skill": "Security & IT compliance reporting",
+            "related_skills": [
+                "Audit evidence collection and documentation",
+                "IT change and access control reporting",
+                "SOX-related IT reporting"
+            ],
+            "keywords": [
+                "control testing",
+                "ITGC",
+                "walkthroughs",
+                "remediation tracking"
+            ],
+            "common_roles": [
+                "IT audit teams",
+                "GRC\/compliance teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Audit evidence collection and documentation",
+            "aliases": [
+                "audit evidence collection",
+                "audit documentation for IT",
+                "evidence management for audits"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Collecting, preserving and organizing artifacts, logs and documentation required to demonstrate control operation and to support internal and external audits.",
+            "parent_skill": "Security & IT compliance reporting",
+            "related_skills": [
+                "Control testing and ITGC reporting",
+                "GRC platform reporting",
+                "Log aggregation and security event reporting"
+            ],
+            "keywords": [
+                "evidence collection",
+                "audit trails",
+                "documentation",
+                "chain of custody"
+            ],
+            "common_roles": [
+                "IT audit teams",
+                "Compliance operations teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Compliance report automation with BI and scripting",
+            "aliases": [
+                "report automation",
+                "security report automation",
+                "BI-based compliance reporting"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Automating preparation and distribution of compliance reports using BI platforms, SQL, scripting (Python\/PowerShell) and ETL processes to pull and transform security data.",
+            "parent_skill": "Security & IT compliance reporting",
+            "related_skills": [
+                "GRC platform reporting",
+                "Report design for auditors and executive stakeholders",
+                "Log aggregation and security event reporting"
+            ],
+            "keywords": [
+                "Power BI",
+                "Tableau",
+                "SQL",
+                "Python",
+                "ETL",
+                "automation"
+            ],
+            "common_roles": [
+                "Security analytics teams",
+                "Compliance automation teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "GRC platform reporting",
+            "aliases": [
+                "GRC reporting",
+                "governance risk and compliance platform reporting",
+                "GRC tool-based reporting"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and producing compliance and risk reports from GRC platforms (e.g., enterprise GRC solutions), including report templates, workflows and control status dashboards.",
+            "parent_skill": "Security & IT compliance reporting",
+            "related_skills": [
+                "Control testing and ITGC reporting",
+                "Compliance report automation with BI and scripting",
+                "Audit evidence collection and documentation"
+            ],
+            "keywords": [
+                "GRC",
+                "dashboards",
+                "control status",
+                "risk register"
+            ],
+            "common_roles": [
+                "GRC\/compliance teams",
+                "Risk management teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Log aggregation and SIEM-based reporting",
+            "aliases": [
+                "SIEM reporting",
+                "log-based compliance reporting",
+                "security event reporting"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Creating compliance-focused reports and dashboards from log aggregation and SIEM systems that summarize security events, alert trends and control exceptions for auditors and stakeholders.",
+            "parent_skill": "Security & IT compliance reporting",
+            "related_skills": [
+                "Incident reporting and post-incident compliance reporting",
+                "Audit evidence collection and documentation",
+                "Security metrics and KPI definition"
+            ],
+            "keywords": [
+                "SIEM",
+                "log aggregation",
+                "alerts",
+                "event correlation",
+                "dashboards"
+            ],
+            "common_roles": [
+                "Security operations (SOC)",
+                "Compliance analytics teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Incident reporting and post-incident compliance reporting",
+            "aliases": [
+                "security incident reporting",
+                "post-incident reporting",
+                "incident compliance reporting"
+            ],
+            "skill_type": "process_skill",
+            "description": "Documenting security incidents, producing required compliance notifications and constructing post-incident reports that capture root cause, impact, remediation and lessons learned.",
+            "parent_skill": "Security & IT compliance reporting",
+            "related_skills": [
+                "Log aggregation and SIEM-based reporting",
+                "IT security compliance reporting",
+                "Report design for auditors and executive stakeholders"
+            ],
+            "keywords": [
+                "incident report",
+                "root cause",
+                "post-mortem",
+                "remediation"
+            ],
+            "common_roles": [
+                "Incident response teams",
+                "Security operations (SOC)",
+                "Compliance response teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory reporting for data protection and privacy",
+            "aliases": [
+                "data protection reporting",
+                "privacy compliance reporting",
+                "privacy regulatory reporting"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Preparing reports and notifications required by data protection and privacy laws, including breach reporting, DPIA summaries and compliance status for personal data processing.",
+            "parent_skill": "Security & IT compliance reporting",
+            "related_skills": [
+                "IT security compliance reporting",
+                "Incident reporting and post-incident compliance reporting",
+                "Audit evidence collection and documentation"
+            ],
+            "keywords": [
+                "privacy report",
+                "data breach notification",
+                "DPIA",
+                "personal data"
+            ],
+            "common_roles": [
+                "Data privacy teams",
+                "Compliance teams",
+                "Legal & risk coordination teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Report design for auditors and executive stakeholders",
+            "aliases": [
+                "auditor-facing reporting",
+                "executive security reporting",
+                "stakeholder-tailored compliance reporting"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Structuring, visualizing and tailoring compliance and security reports to meet the needs of auditors, board\/executive leadership and operational teams, including narrative, visuals and appendix evidence.",
+            "parent_skill": "Security & IT compliance reporting",
+            "related_skills": [
+                "Security metrics and KPI definition",
+                "Compliance report automation with BI and scripting",
+                "IT security compliance reporting"
+            ],
+            "keywords": [
+                "executive summary",
+                "visualization",
+                "auditor format",
+                "stakeholder communication"
+            ],
+            "common_roles": [
+                "GRC\/compliance teams",
+                "Executive leadership support teams",
+                "IT audit liaison teams"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,311 @@
+{
+    "domain": "F&B",
+    "category": "Kitchen Operations & Back-of-House Management",
+    "subcategory": "Communication during service (expo)",
+    "skills": [
+        {
+            "canonical_name": "Expedite ticket communication",
+            "aliases": [
+                "ticket calling",
+                "expediting orders",
+                "expo ticket management",
+                "order ticket communication"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Communicating order ticket status, modifications, and completion at the pass to ensure correct, timely plating and delivery.",
+            "parent_skill": "Communication during service (expo)",
+            "related_skills": [
+                "Ticket verification and quality check at pass",
+                "Order prioritization and sequencing",
+                "Verbal callouts and handoffs"
+            ],
+            "keywords": [
+                "tickets",
+                "expedite",
+                "order status",
+                "mods",
+                "check",
+                "pass"
+            ],
+            "common_roles": [
+                "back-of-house staff",
+                "kitchen leadership",
+                "service supervisors"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Verbal callouts and handoffs",
+            "aliases": [
+                "kitchen callouts",
+                "verbal pass",
+                "corner\/behind callouts",
+                "call-out protocol"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Using concise standardized verbal phrases and timing to announce dishes, passes, and movement in the kitchen to prevent collisions and ensure coordinated service.",
+            "parent_skill": "Communication during service (expo)",
+            "related_skills": [
+                "Nonverbal plate-pass signaling",
+                "Hot\/Cold dish temperature reporting",
+                "Cross-station coordination"
+            ],
+            "keywords": [
+                "callout",
+                "behind",
+                "corner",
+                "coming through",
+                "ready",
+                "pass"
+            ],
+            "common_roles": [
+                "back-of-house staff",
+                "front-of-house staff",
+                "service supervisors"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Nonverbal plate-pass signaling",
+            "aliases": [
+                "hand signals at pass",
+                "plate pass cues",
+                "visual pass signals"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Using standardized nonverbal cues (hand movements, plate placement, pass arrangement) to communicate readiness, order status, and special handling without interrupting workflow.",
+            "parent_skill": "Communication during service (expo)",
+            "related_skills": [
+                "Verbal callouts and handoffs",
+                "Ticket verification and quality check at pass"
+            ],
+            "keywords": [
+                "hand signal",
+                "visual cue",
+                "plate placement",
+                "pass layout",
+                "signal"
+            ],
+            "common_roles": [
+                "back-of-house staff",
+                "front-of-house staff",
+                "banquet operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergy and allergen alert communication",
+            "aliases": [
+                "allergy calls",
+                "allergen alerts",
+                "dietary restriction communication"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Communicating allergen and dietary restriction requirements clearly and reliably between service, kitchen stations, and servers to ensure safe meal preparation and delivery.",
+            "parent_skill": "Communication during service (expo)",
+            "related_skills": [
+                "Ticket verification and quality check at pass",
+                "Order prioritization and sequencing"
+            ],
+            "keywords": [
+                "allergy",
+                "allergen",
+                "gluten-free",
+                "nut-free",
+                "dietary",
+                "special"
+            ],
+            "common_roles": [
+                "back-of-house staff",
+                "front-of-house staff",
+                "catering teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Order prioritization and sequencing",
+            "aliases": [
+                "order sequencing",
+                "prioritizing tickets",
+                "service sequencing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Deciding and communicating the execution order of dishes and tickets during service to optimize flow, minimize ticket times, and meet guest expectations.",
+            "parent_skill": "Communication during service (expo)",
+            "related_skills": [
+                "Expedite ticket communication",
+                "Rush-period coordination",
+                "Ticket verification and quality check at pass"
+            ],
+            "keywords": [
+                "priority",
+                "sequence",
+                "timing",
+                "first\/last",
+                "flow"
+            ],
+            "common_roles": [
+                "back-of-house staff",
+                "kitchen leadership",
+                "banquet operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Rush-period coordination",
+            "aliases": [
+                "peak service coordination",
+                "service rush coordination",
+                "high-volume communication"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Coordinating communication patterns, trade-offs, and role focus during high-volume (rush) periods to maintain throughput and quality under pressure.",
+            "parent_skill": "Communication during service (expo)",
+            "related_skills": [
+                "Order prioritization and sequencing",
+                "Cross-station coordination",
+                "Escalation protocols during service"
+            ],
+            "keywords": [
+                "rush",
+                "peak",
+                "high-volume",
+                "throughput",
+                "service pace"
+            ],
+            "common_roles": [
+                "back-of-house staff",
+                "service supervisors",
+                "catering teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ticket verification and quality check at pass",
+            "aliases": [
+                "ticket check",
+                "order verification at pass",
+                "pass quality control",
+                "final plate check"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Inspecting plated dishes against the ticket for accuracy, presentation, temperature, and modification compliance before release to front-of-house.",
+            "parent_skill": "Communication during service (expo)",
+            "related_skills": [
+                "Expedite ticket communication",
+                "Allergy and allergen alert communication",
+                "Hot\/Cold dish temperature reporting"
+            ],
+            "keywords": [
+                "quality check",
+                "inspection",
+                "ticket match",
+                "plate check",
+                "presentation"
+            ],
+            "common_roles": [
+                "back-of-house staff",
+                "front-of-house staff",
+                "banquet operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Hot\/Cold dish temperature reporting",
+            "aliases": [
+                "temperature callouts",
+                "hot plate alerts",
+                "cold holding communication"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Communicating temperature-related information (hot, hot–handle with care, chilled) at handoff to maintain food safety, service timing, and guest experience.",
+            "parent_skill": "Communication during service (expo)",
+            "related_skills": [
+                "Ticket verification and quality check at pass",
+                "Verbal callouts and handoffs",
+                "Allergy and allergen alert communication"
+            ],
+            "keywords": [
+                "hot",
+                "cold",
+                "temperature",
+                "hand-off",
+                "hold"
+            ],
+            "common_roles": [
+                "back-of-house staff",
+                "front-of-house staff",
+                "catering teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-station coordination",
+            "aliases": [
+                "inter-station communication",
+                "station coordination",
+                "station hand-off coordination"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Coordinating timing, dependencies, and handoffs between different kitchen stations (grill, sauté, pastry, etc.) to deliver complete tickets cohesively.",
+            "parent_skill": "Communication during service (expo)",
+            "related_skills": [
+                "Order prioritization and sequencing",
+                "Verbal callouts and handoffs",
+                "Rush-period coordination"
+            ],
+            "keywords": [
+                "stations",
+                "handoff",
+                "timing",
+                "synchronization",
+                "coordination"
+            ],
+            "common_roles": [
+                "back-of-house staff",
+                "kitchen leadership",
+                "banquet operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Escalation protocols during service",
+            "aliases": [
+                "service escalation",
+                "kitchen escalation procedures",
+                "issue escalation at pass"
+            ],
+            "skill_type": "process_skill",
+            "description": "Using predefined channels and language to escalate food quality, safety, or service issues during service to the appropriate leadership or support functions promptly.",
+            "parent_skill": "Communication during service (expo)",
+            "related_skills": [
+                "Rush-period coordination",
+                "Allergy and allergen alert communication",
+                "Ticket verification and quality check at pass"
+            ],
+            "keywords": [
+                "escalate",
+                "issue",
+                "problem report",
+                "lead notification",
+                "protocol"
+            ],
+            "common_roles": [
+                "back-of-house staff",
+                "kitchen leadership",
+                "service supervisors"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

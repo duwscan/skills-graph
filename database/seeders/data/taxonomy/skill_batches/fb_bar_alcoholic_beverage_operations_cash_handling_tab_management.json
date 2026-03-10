@@ -1,0 +1,249 @@
+{
+    "domain": "F&B",
+    "category": "Bar & Alcoholic Beverage Operations",
+    "subcategory": "Cash handling & tab management",
+    "skills": [
+        {
+            "canonical_name": "Point-of-sale (POS) system operation",
+            "aliases": [
+                "POS operation",
+                "electronic point-of-sale",
+                "POS terminal operation",
+                "till operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operate electronic POS to enter orders, apply modifiers\/discounts, open\/close tabs, process payments, and generate sales reports.",
+            "parent_skill": "Cash handling & tab management",
+            "related_skills": [
+                "Credit card\/payment terminal operation",
+                "Tab management",
+                "End-of-day cash-out and shift close",
+                "Cash reconciliation"
+            ],
+            "keywords": [
+                "POS",
+                "register",
+                "order entry",
+                "sales batch"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Credit card and payment terminal operation",
+            "aliases": [
+                "card terminal operation",
+                "chip-and-pin terminal",
+                "EMV terminal operation",
+                "contactless payment processing"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Process card and contactless payments securely, handle manual entry, perform pre-authorizations, and complete settlements.",
+            "parent_skill": "Cash handling & tab management",
+            "related_skills": [
+                "Point-of-sale (POS) system operation",
+                "End-of-day cash-out and shift close",
+                "Refunds, voids and chargeback processing"
+            ],
+            "keywords": [
+                "EMV",
+                "NFC",
+                "payments",
+                "terminal"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash reconciliation",
+            "aliases": [
+                "cash count reconciliation",
+                "register reconciliation",
+                "takings reconciliation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Compare recorded sales and receipts to physical cash\/card totals, identify and document variances, and prepare reconciliation reports.",
+            "parent_skill": "Cash handling & tab management",
+            "related_skills": [
+                "Drawer balancing",
+                "End-of-day cash-out and shift close",
+                "Cash drop and safe management"
+            ],
+            "keywords": [
+                "reconcile",
+                "over\/short",
+                "variance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Drawer balancing",
+            "aliases": [
+                "till balancing",
+                "register balancing",
+                "balancing drawers"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Count and verify till contents against expected float and sales, record over\/short amounts, and reset drawer floats for service.",
+            "parent_skill": "Cash handling & tab management",
+            "related_skills": [
+                "Cash reconciliation",
+                "Change-making & currency handling",
+                "End-of-day cash-out and shift close"
+            ],
+            "keywords": [
+                "till",
+                "float",
+                "over short"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tab management",
+            "aliases": [
+                "bar tab management",
+                "open tab handling",
+                "running tabs"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Open and maintain customer tabs, track itemized charges, handle transfers or consolidations of tabs, and finalize settlements.",
+            "parent_skill": "Cash handling & tab management",
+            "related_skills": [
+                "Point-of-sale (POS) system operation",
+                "Split billing and check splitting",
+                "Credit card and payment terminal operation"
+            ],
+            "keywords": [
+                "open tab",
+                "running tab",
+                "tab settle"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "End-of-day cash-out and shift close",
+            "aliases": [
+                "shift close cash-out",
+                "end of shift reconciliation",
+                "daily close procedures"
+            ],
+            "skill_type": "process_skill",
+            "description": "Perform end-of-shift or end-of-day closing tasks: batch and settle card payments, reconcile cash, generate reports, and secure takings.",
+            "parent_skill": "Cash handling & tab management",
+            "related_skills": [
+                "Cash reconciliation",
+                "Cash drop and safe management",
+                "Point-of-sale (POS) system operation"
+            ],
+            "keywords": [
+                "closeout",
+                "batching",
+                "night close"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash drop and safe management",
+            "aliases": [
+                "cash drops",
+                "safe drop procedures",
+                "drop safe handling"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Follow security procedures for making cash drops, logging chain-of-custody, managing safe access, and preparing deposits in accordance with policy.",
+            "parent_skill": "Cash handling & tab management",
+            "related_skills": [
+                "Cash reconciliation",
+                "End-of-day cash-out and shift close",
+                "Cash security & theft prevention"
+            ],
+            "keywords": [
+                "drop safe",
+                "deposit prep",
+                "chain of custody"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Change-making and currency handling",
+            "aliases": [
+                "making change",
+                "cash change management",
+                "coin handling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Accurately provide change, count and sort currency and coins, prepare coin rolls, and manage denominations for efficient service.",
+            "parent_skill": "Cash handling & tab management",
+            "related_skills": [
+                "Drawer balancing",
+                "Cash reconciliation"
+            ],
+            "keywords": [
+                "change",
+                "coins",
+                "currency"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Refunds, voids and chargeback processing",
+            "aliases": [
+                "transaction voids",
+                "refund processing",
+                "chargeback handling"
+            ],
+            "skill_type": "process_skill",
+            "description": "Process refunds and voids correctly, document reasons, follow dispute procedures, and support chargeback investigations with required evidence.",
+            "parent_skill": "Cash handling & tab management",
+            "related_skills": [
+                "Credit card and payment terminal operation",
+                "Point-of-sale (POS) system operation"
+            ],
+            "keywords": [
+                "refund",
+                "void",
+                "dispute"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tip pooling and distribution compliance",
+            "aliases": [
+                "tip pooling",
+                "tip-out management",
+                "tip distribution"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Manage allocation and distribution of tips in accordance with labor laws and venue policy, calculate tip-outs, and document disbursements.",
+            "parent_skill": "Cash handling & tab management",
+            "related_skills": [
+                "Cash reconciliation",
+                "End-of-day cash-out and shift close"
+            ],
+            "keywords": [
+                "tips",
+                "tip-out",
+                "distribution"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

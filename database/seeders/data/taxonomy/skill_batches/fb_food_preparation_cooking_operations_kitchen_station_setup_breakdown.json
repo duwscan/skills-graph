@@ -1,0 +1,285 @@
+{
+    "domain": "F&B",
+    "category": "Food Preparation & Cooking Operations",
+    "subcategory": "Kitchen station setup & breakdown",
+    "skills": [
+        {
+            "canonical_name": "Mise en place (station setup)",
+            "aliases": [
+                "mise en place",
+                "station prep",
+                "station setup",
+                "prep setup"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Organizing and preparing all ingredients, tools, and equipment at a kitchen station before service to enable efficient cooking and assembly.",
+            "parent_skill": "Kitchen station setup & breakdown",
+            "related_skills": [
+                "Station stocking & replenishment",
+                "Knife sharpening & maintenance",
+                "Food temperature monitoring & recording"
+            ],
+            "keywords": [
+                "prep",
+                "ingredient prep",
+                "station organization"
+            ],
+            "common_roles": [
+                "Line Cook",
+                "Prep Cook",
+                "Sous Chef"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Station closing procedures (breakdown & close-out)",
+            "aliases": [
+                "station breakdown",
+                "closing station",
+                "end-of-shift closeout",
+                "station cleanup procedures"
+            ],
+            "skill_type": "process_skill",
+            "description": "Standardized sequence of tasks performed at shift end to clean, restock, document, and secure a station for the next service period.",
+            "parent_skill": "Kitchen station setup & breakdown",
+            "related_skills": [
+                "Equipment cleaning & sanitization",
+                "Shift handover & station communication",
+                "Waste segregation & disposal"
+            ],
+            "keywords": [
+                "closeout",
+                "end of shift",
+                "checklist"
+            ],
+            "common_roles": [
+                "Line Cook",
+                "Prep Cook",
+                "Kitchen Porter"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Equipment cleaning and sanitization",
+            "aliases": [
+                "equipment cleaning",
+                "sanitize equipment",
+                "cleaning equipment",
+                "sanitizing surfaces"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Cleaning, sanitizing, and maintaining kitchen equipment, utensils, and station surfaces according to food safety standards and manufacturer's guidance.",
+            "parent_skill": "Kitchen station setup & breakdown",
+            "related_skills": [
+                "Chemical sanitizer dilution & safety",
+                "Food temperature monitoring & recording",
+                "Station closing procedures"
+            ],
+            "keywords": [
+                "sanitization",
+                "cleaning agents",
+                "HACCP"
+            ],
+            "common_roles": [
+                "Kitchen Porter",
+                "Line Cook",
+                "Dishwasher"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Knife sharpening and maintenance",
+            "aliases": [
+                "knife honing",
+                "sharpening knives",
+                "knife care",
+                "blade maintenance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintaining kitchen knives including honing, sharpening, cleaning, and safe storage to ensure consistent cutting performance and safety.",
+            "parent_skill": "Kitchen station setup & breakdown",
+            "related_skills": [
+                "Mise en place (station setup)",
+                "Station stocking & replenishment"
+            ],
+            "keywords": [
+                "honing steel",
+                "whetstone",
+                "blade care"
+            ],
+            "common_roles": [
+                "Line Cook",
+                "Prep Cook",
+                "Butcher"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "First-in, first-out (FIFO) inventory rotation",
+            "aliases": [
+                "FIFO rotation",
+                "inventory rotation",
+                "stock rotation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Organizing and rotating perishable stock so older inventory is used before newer supplies to control spoilage and ensure food safety compliance.",
+            "parent_skill": "Kitchen station setup & breakdown",
+            "related_skills": [
+                "Station stocking & replenishment",
+                "Food temperature monitoring & recording"
+            ],
+            "keywords": [
+                "stock rotation",
+                "expiry management",
+                "inventory control"
+            ],
+            "common_roles": [
+                "Kitchen Manager",
+                "Prep Cook",
+                "Line Cook"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Station stocking and replenishment",
+            "aliases": [
+                "restocking station",
+                "replenish station",
+                "supply replenishment"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Refilling ingredients, garnishes, disposables, and smallwares at a station during or between services to maintain continuous operation and reduce service interruptions.",
+            "parent_skill": "Kitchen station setup & breakdown",
+            "related_skills": [
+                "Mise en place (station setup)",
+                "FIFO inventory rotation"
+            ],
+            "keywords": [
+                "restock",
+                "par levels",
+                "line supply"
+            ],
+            "common_roles": [
+                "Prep Cook",
+                "Line Cook",
+                "Kitchen Porter"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food temperature monitoring and recording",
+            "aliases": [
+                "temperature logging",
+                "temp monitoring",
+                "recording food temperatures"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Measuring, logging, and interpreting hot and cold food temperatures at key control points to ensure safety, quality, and regulatory compliance.",
+            "parent_skill": "Kitchen station setup & breakdown",
+            "related_skills": [
+                "Equipment cleaning and sanitization",
+                "FIFO inventory rotation"
+            ],
+            "keywords": [
+                "temperature log",
+                "thermometer",
+                "critical control point"
+            ],
+            "common_roles": [
+                "Line Cook",
+                "Sous Chef",
+                "Kitchen Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Waste segregation and disposal",
+            "aliases": [
+                "waste management",
+                "trash segregation",
+                "disposal of kitchen waste",
+                "recycling food waste"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Separating organic, recyclable, and hazardous kitchen waste, and disposing of or storing waste according to local regulations and restaurant policies to maintain hygiene and reduce costs.",
+            "parent_skill": "Kitchen station setup & breakdown",
+            "related_skills": [
+                "Chemical sanitizer dilution & safety",
+                "Station closing procedures"
+            ],
+            "keywords": [
+                "organic waste",
+                "recycling",
+                "compost"
+            ],
+            "common_roles": [
+                "Kitchen Porter",
+                "Dishwasher",
+                "Line Cook"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Chemical sanitizer dilution and safety",
+            "aliases": [
+                "sanitizer dilution",
+                "cleaning chemical handling",
+                "chemical safety"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Preparing and using cleaning chemicals at correct concentrations, following manufacturer instructions and safety procedures (PPE, storage, MSDS) to ensure effective sanitization and worker safety.",
+            "parent_skill": "Kitchen station setup & breakdown",
+            "related_skills": [
+                "Equipment cleaning and sanitization",
+                "Waste segregation and disposal"
+            ],
+            "keywords": [
+                "PPE",
+                "MSDS",
+                "dilution ratio"
+            ],
+            "common_roles": [
+                "Kitchen Porter",
+                "Dishwasher",
+                "Line Cook"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Shift handover and station communication",
+            "aliases": [
+                "shift handover",
+                "station handoff",
+                "service handover communication"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Communicating station status, pending tasks, inventory needs, and safety issues clearly between shifts or team members to ensure continuity of service and reduce errors.",
+            "parent_skill": "Kitchen station setup & breakdown",
+            "related_skills": [
+                "Station closing procedures",
+                "Station stocking and replenishment"
+            ],
+            "keywords": [
+                "handoff",
+                "communication",
+                "shift report"
+            ],
+            "common_roles": [
+                "Line Cook",
+                "Sous Chef",
+                "Kitchen Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

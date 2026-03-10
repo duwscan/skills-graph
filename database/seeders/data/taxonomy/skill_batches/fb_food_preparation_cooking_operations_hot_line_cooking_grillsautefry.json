@@ -1,0 +1,267 @@
+{
+    "domain": "F&B",
+    "category": "Food Preparation & Cooking Operations",
+    "subcategory": "Hot line cooking (grill\/saute\/fry)",
+    "skills": [
+        {
+            "canonical_name": "Sautéing (high-heat)",
+            "aliases": [
+                "Sautéing",
+                "Pan-searing",
+                "High-heat sauté"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Technique for quickly cooking small pieces of food in a hot pan with fat to develop a browned exterior and even internal doneness.",
+            "parent_skill": "Hot line cooking (grill\/saute\/fry)",
+            "related_skills": [
+                "Temperature control & doneness assessment",
+                "Deglazing and pan sauce preparation",
+                "Hot line station setup & mise en place",
+                "Breading and battering"
+            ],
+            "keywords": [
+                "sauté",
+                "sear",
+                "Maillard",
+                "high-heat",
+                "pan"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Grill cooking (charbroiling & direct heat)",
+            "aliases": [
+                "Charbroiling",
+                "Chargrilling",
+                "Direct-heat grilling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Cooking on a grill\/charbroiler using direct radiant heat, including managing flare-ups, grill marks, and heat zones for even cooking.",
+            "parent_skill": "Hot line cooking (grill\/saute\/fry)",
+            "related_skills": [
+                "Temperature control & doneness assessment",
+                "Hot line station setup & mise en place",
+                "Hot line sanitation & cross-contamination prevention"
+            ],
+            "keywords": [
+                "grill",
+                "charbroiler",
+                "direct heat",
+                "grill marks",
+                "flame management"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Pan-frying (shallow frying)",
+            "aliases": [
+                "Pan-frying",
+                "Shallow frying"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Cooking method using a moderate amount of fat in a pan to crisp exterior surfaces while cooking through proteins or vegetables.",
+            "parent_skill": "Hot line cooking (grill\/saute\/fry)",
+            "related_skills": [
+                "Breading and battering",
+                "Oil management & filtration",
+                "Temperature control & doneness assessment"
+            ],
+            "keywords": [
+                "pan-fry",
+                "shallow fry",
+                "crispy",
+                "fat management"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Deep frying (commercial fryer operation)",
+            "aliases": [
+                "Deep-frying",
+                "Commercial fryer operation",
+                "Batch frying"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operating and managing commercial deep fryers: oil temperature control, load\/timing, safety procedures, and basic fryer troubleshooting.",
+            "parent_skill": "Hot line cooking (grill\/saute\/fry)",
+            "related_skills": [
+                "Oil management & filtration",
+                "Breading and battering",
+                "Temperature control & doneness assessment",
+                "Hot line sanitation & cross-contamination prevention"
+            ],
+            "keywords": [
+                "deep fryer",
+                "fryer",
+                "oil temp",
+                "fryer baskets",
+                "batching"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Breading and battering",
+            "aliases": [
+                "Breading",
+                "Battering",
+                "Coating for frying"
+            ],
+            "skill_type": "process_skill",
+            "description": "Preparing and applying dry breadings and wet batters to proteins and vegetables to achieve consistent coating, texture, and frying performance.",
+            "parent_skill": "Hot line cooking (grill\/saute\/fry)",
+            "related_skills": [
+                "Deep frying (commercial fryer operation)",
+                "Pan-frying (shallow frying)",
+                "Oil management & filtration"
+            ],
+            "keywords": [
+                "breading",
+                "batter",
+                "coating",
+                "crumb",
+                "dredge"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Deglazing and pan sauce preparation",
+            "aliases": [
+                "Deglazing",
+                "Pan sauce making",
+                "Pan reductions"
+            ],
+            "skill_type": "process_skill",
+            "description": "Using liquids to dissolve browned fond from pans and build pan sauces or reductions to finish sautéed or grilled items.",
+            "parent_skill": "Hot line cooking (grill\/saute\/fry)",
+            "related_skills": [
+                "Sautéing (high-heat)",
+                "Temperature control & doneness assessment",
+                "Mise en place for hot line"
+            ],
+            "keywords": [
+                "deglaze",
+                "fond",
+                "pan sauce",
+                "reduction",
+                "jus"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Temperature control & doneness assessment",
+            "aliases": [
+                "Doneness assessment",
+                "Internal temperature monitoring",
+                "Thermometry"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Monitoring and interpreting cooking temperatures and visual cues to determine safe and desired doneness levels for various proteins and preparations.",
+            "parent_skill": "Hot line cooking (grill\/saute\/fry)",
+            "related_skills": [
+                "Grill cooking (charbroiling & direct heat)",
+                "Deep frying (commercial fryer operation)",
+                "Sautéing (high-heat)"
+            ],
+            "keywords": [
+                "thermometer",
+                "internal temp",
+                "doneness",
+                "carryover cooking",
+                "temp probe"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Oil management & filtration",
+            "aliases": [
+                "Oil filtration",
+                "Fryer oil maintenance",
+                "Oil turnover management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintaining oil quality through filtration, topping, disposal, and monitoring to ensure food quality, safety, and cost control in frying operations.",
+            "parent_skill": "Hot line cooking (grill\/saute\/fry)",
+            "related_skills": [
+                "Deep frying (commercial fryer operation)",
+                "Pan-frying (shallow frying)",
+                "Hot line sanitation & cross-contamination prevention"
+            ],
+            "keywords": [
+                "filter",
+                "oil life",
+                "oil disposal",
+                "turnover",
+                "clarifier"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Hot line station setup & mise en place",
+            "aliases": [
+                "Mise en place (hot line)",
+                "Station setup",
+                "Line prep"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Organizing and stocking a hot line station with prepped ingredients, tools, and timing plans to enable efficient cooking and consistent output during service.",
+            "parent_skill": "Hot line cooking (grill\/saute\/fry)",
+            "related_skills": [
+                "Sautéing (high-heat)",
+                "Grill cooking (charbroiling & direct heat)",
+                "Temperature control & doneness assessment"
+            ],
+            "keywords": [
+                "mise en place",
+                "station",
+                "prep",
+                "expedite",
+                "setup"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Hot line sanitation & cross-contamination prevention",
+            "aliases": [
+                "Cross-contamination prevention",
+                "Hot line sanitation",
+                "Allergen segregation (operational)"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Implementing cleaning, sanitizing, allergen controls, and segregation practices on the hot line to prevent contamination and meet food safety requirements.",
+            "parent_skill": "Hot line cooking (grill\/saute\/fry)",
+            "related_skills": [
+                "Oil management & filtration",
+                "Hot line station setup & mise en place",
+                "Deep frying (commercial fryer operation)"
+            ],
+            "keywords": [
+                "sanitation",
+                "cross-contamination",
+                "allergens",
+                "cleaning schedule",
+                "segregation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

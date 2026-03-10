@@ -1,0 +1,248 @@
+{
+    "domain": "IT",
+    "category": "IT Service Management & Support Operations",
+    "subcategory": "Change enablement",
+    "skills": [
+        {
+            "canonical_name": "Change management (ITSM)",
+            "aliases": [
+                "IT change management",
+                "change control",
+                "change process management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, operating and governing the end-to-end process for requesting, assessing, approving, scheduling and implementing changes in IT services following ITSM principles.",
+            "parent_skill": "Change enablement",
+            "related_skills": [
+                "Change approval workflow design",
+                "Change advisory board coordination",
+                "Change metrics, reporting, and continuous improvement"
+            ],
+            "keywords": [
+                "change request",
+                "RFC",
+                "change lifecycle",
+                "ITSM"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Release and deployment management",
+            "aliases": [
+                "release management",
+                "deployment coordination",
+                "release orchestration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning, scheduling and controlling the build, test and deployment of releases to deliver new or changed services while minimizing risk to production environments.",
+            "parent_skill": "Change enablement",
+            "related_skills": [
+                "Change testing and validation coordination",
+                "Change scheduling and blackout window coordination"
+            ],
+            "keywords": [
+                "release pipeline",
+                "deployment",
+                "rollout",
+                "rollback"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Change impact analysis",
+            "aliases": [
+                "impact assessment",
+                "change impact assessment",
+                "impact analysis for changes"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluating technical, business and user impacts of proposed changes including dependencies, affected configuration items and downstream effects on services.",
+            "parent_skill": "Change enablement",
+            "related_skills": [
+                "CMDB and asset impact mapping",
+                "Change risk assessment and mitigation"
+            ],
+            "keywords": [
+                "dependency mapping",
+                "service impact",
+                "affected CIs",
+                "impact matrix"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Change risk assessment and mitigation",
+            "aliases": [
+                "change risk analysis",
+                "risk mitigation for changes",
+                "change risk management"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Identifying and evaluating the likelihood and severity of risks introduced by a change and defining mitigations, fallback plans and risk acceptance criteria.",
+            "parent_skill": "Change enablement",
+            "related_skills": [
+                "Change impact analysis",
+                "Emergency\/expedited change handling"
+            ],
+            "keywords": [
+                "risk register",
+                "mitigation plan",
+                "probability impact",
+                "fallback"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Change advisory board (CAB) coordination",
+            "aliases": [
+                "CAB facilitation",
+                "CAB management",
+                "change advisory board coordination"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Organizing and facilitating CAB meetings, preparing agendas and materials, documenting decisions and ensuring CAB recommendations are reflected in change activities.",
+            "parent_skill": "Change enablement",
+            "related_skills": [
+                "Change approval workflow design",
+                "Change communication and stakeholder engagement"
+            ],
+            "keywords": [
+                "CAB",
+                "meeting facilitation",
+                "agenda",
+                "change decision"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Emergency and expedited change handling",
+            "aliases": [
+                "emergency change process",
+                "expedited change handling",
+                "fast-track change management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Processes and controls for assessing, authorizing and implementing urgent or emergency changes with minimized approval latency while managing risk and documentation.",
+            "parent_skill": "Change enablement",
+            "related_skills": [
+                "Change risk assessment and mitigation",
+                "Change approval workflow design"
+            ],
+            "keywords": [
+                "emergency RFC",
+                "incident workaround",
+                "fast-track approval",
+                "post-implementation review"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Change scheduling and blackout window coordination",
+            "aliases": [
+                "change scheduling",
+                "blackout window coordination",
+                "maintenance window planning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Coordinating timing of changes across environments to avoid conflicts, respect blackout periods and align with maintenance windows and business calendars.",
+            "parent_skill": "Change enablement",
+            "related_skills": [
+                "Release and deployment management",
+                "Change communication and stakeholder engagement"
+            ],
+            "keywords": [
+                "maintenance window",
+                "schedule conflict",
+                "calendar management",
+                "blackout"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Change approval workflow design",
+            "aliases": [
+                "approval workflow design",
+                "change gating",
+                "change approval process design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing role-based approval paths, automated gates and decision criteria for change authorization, including integration with ITSM tooling and escalation rules.",
+            "parent_skill": "Change enablement",
+            "related_skills": [
+                "Change management (ITSM)",
+                "Change advisory board coordination"
+            ],
+            "keywords": [
+                "approval matrix",
+                "gates",
+                "escalation",
+                "workflow automation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Change communication and stakeholder engagement",
+            "aliases": [
+                "change communications",
+                "stakeholder communication for change",
+                "user communication for changes"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Planning and executing targeted communications, notifications and engagement activities to ensure stakeholders understand the scope, timing and impact of changes.",
+            "parent_skill": "Change enablement",
+            "related_skills": [
+                "Change scheduling and blackout window coordination",
+                "Change advisory board coordination"
+            ],
+            "keywords": [
+                "stakeholder update",
+                "notification",
+                "communication plan",
+                "engagement"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Change metrics, reporting, and continuous improvement",
+            "aliases": [
+                "change metrics",
+                "change KPIs",
+                "change analytics and reporting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Defining and reporting KPIs (e.g., change success rate, failed change rate, lead time) and using metrics to drive process improvements and reduce change-related incidents.",
+            "parent_skill": "Change enablement",
+            "related_skills": [
+                "Change management (ITSM)",
+                "Change impact analysis"
+            ],
+            "keywords": [
+                "KPI",
+                "change success rate",
+                "post-implementation review",
+                "continuous improvement"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

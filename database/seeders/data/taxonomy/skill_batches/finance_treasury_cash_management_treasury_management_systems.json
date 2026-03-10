@@ -1,0 +1,298 @@
+{
+    "domain": "Finance",
+    "category": "Treasury & Cash Management",
+    "subcategory": "Treasury management systems",
+    "skills": [
+        {
+            "canonical_name": "Treasury management system implementation",
+            "aliases": [
+                "TMS implementation",
+                "TMS rollout",
+                "Treasury system deployment"
+            ],
+            "skill_type": "process_skill",
+            "description": "Manage the end-to-end project lifecycle to deploy a treasury management system, including requirements gathering, solution design, configuration oversight, testing, cutover and hypercare.",
+            "parent_skill": "Treasury management systems",
+            "related_skills": [
+                "TMS configuration and parameterization",
+                "TMS data migration and cleansing",
+                "TMS integration (ERP & bank connectivity)",
+                "TMS security and role-based access control"
+            ],
+            "keywords": [
+                "implementation",
+                "rollout",
+                "go-live",
+                "requirements",
+                "testing"
+            ],
+            "common_roles": [
+                "TMS Implementation Consultant",
+                "Treasury Systems Analyst",
+                "Project Manager",
+                "Treasury Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "TMS configuration and parameterization",
+            "aliases": [
+                "TMS setup",
+                "system parameterization",
+                "treasury system configuration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Configure TMS modules and system parameters such as bank accounts, cash positions, accounting rules, limits, workflows and approval hierarchies to meet business requirements.",
+            "parent_skill": "Treasury management systems",
+            "related_skills": [
+                "Treasury management system implementation",
+                "Payment processing and bank file generation in TMS",
+                "TMS security and role-based access control"
+            ],
+            "keywords": [
+                "configuration",
+                "parameterization",
+                "workflows",
+                "accounting rules"
+            ],
+            "common_roles": [
+                "Treasury Systems Analyst",
+                "TMS Administrator",
+                "Treasury Operations Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "TMS integration (ERP & bank connectivity)",
+            "aliases": [
+                "TMS-ERP integration",
+                "bank connectivity",
+                "host-to-host integration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design, build and maintain interfaces between the TMS and ERPs, banks and third-party systems using APIs, SFTP, SWIFT, host-to-host feeds and file-format mappings.",
+            "parent_skill": "Treasury management systems",
+            "related_skills": [
+                "TMS implementation",
+                "TMS data migration and cleansing",
+                "Payment processing and bank file generation in TMS"
+            ],
+            "keywords": [
+                "API",
+                "SWIFT",
+                "host-to-host",
+                "file mapping",
+                "ERP integration"
+            ],
+            "common_roles": [
+                "Integration Engineer",
+                "TMS Integration Specialist",
+                "Treasury Systems Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash forecasting using TMS",
+            "aliases": [
+                "TMS cash forecasting",
+                "cash flow forecasting in TMS",
+                "liquidity forecasting in TMS"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Create and maintain short-, medium- and long-term cash forecasts in a TMS using transactional data, AR\/AP inputs, scenario modelling and rolling forecast techniques.",
+            "parent_skill": "Treasury management systems",
+            "related_skills": [
+                "Treasury reporting and analytics in TMS",
+                "TMS configuration and parameterization"
+            ],
+            "keywords": [
+                "cash forecast",
+                "rolling forecast",
+                "scenario modelling",
+                "liquidity"
+            ],
+            "common_roles": [
+                "Treasury Analyst",
+                "Cash Manager",
+                "Treasury Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Payment processing and bank file generation in TMS",
+            "aliases": [
+                "TMS payment processing",
+                "payment file generation",
+                "payment engine configuration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Configure and operate TMS payment engines, create and validate payment files in required bank formats, manage payment approval workflows and execute payment runs.",
+            "parent_skill": "Treasury management systems",
+            "related_skills": [
+                "TMS integration (ERP & bank connectivity)",
+                "TMS configuration and parameterization",
+                "Bank statement import and reconciliation in TMS"
+            ],
+            "keywords": [
+                "payment file",
+                "SEPA",
+                "ACH",
+                "approval workflow",
+                "payment run"
+            ],
+            "common_roles": [
+                "Payments Operations Analyst",
+                "Treasury Operations Analyst",
+                "TMS Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bank statement import and reconciliation in TMS",
+            "aliases": [
+                "TMS reconciliation",
+                "bank statement processing",
+                "MT940 import",
+                "camt.053 processing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Import electronic bank statements into the TMS (e.g., MT940\/CAMT), configure automated matching and reconciliation rules, investigate exceptions and maintain reconciliation controls.",
+            "parent_skill": "Treasury management systems",
+            "related_skills": [
+                "TMS configuration and parameterization",
+                "Payment processing and bank file generation in TMS"
+            ],
+            "keywords": [
+                "reconciliation",
+                "bank statements",
+                "MT940",
+                "camt.053",
+                "exception handling"
+            ],
+            "common_roles": [
+                "Treasury Reconciliation Specialist",
+                "Treasury Operations Analyst",
+                "TMS Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "TMS security and role-based access control",
+            "aliases": [
+                "TMS RBAC",
+                "treasury system security",
+                "access control for TMS"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Design and administer user roles, segregation of duties, permission sets, audit logs and access provisioning processes within a TMS to ensure operational security and auditability.",
+            "parent_skill": "Treasury management systems",
+            "related_skills": [
+                "TMS configuration and parameterization",
+                "Treasury management system implementation"
+            ],
+            "keywords": [
+                "RBAC",
+                "segregation of duties",
+                "access provisioning",
+                "audit trail"
+            ],
+            "common_roles": [
+                "TMS Administrator",
+                "Treasury Systems Analyst",
+                "IT Security Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "TMS data migration and cleansing",
+            "aliases": [
+                "TMS data conversion",
+                "data migration to TMS",
+                "treasury data cleansing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Plan and execute extraction, transformation and loading of master data and historical transactions into a TMS, including data profiling, cleansing, validation and reconciliation.",
+            "parent_skill": "Treasury management systems",
+            "related_skills": [
+                "Treasury management system implementation",
+                "TMS integration (ERP & bank connectivity)"
+            ],
+            "keywords": [
+                "ETL",
+                "data conversion",
+                "data validation",
+                "master data"
+            ],
+            "common_roles": [
+                "Data Migration Specialist",
+                "TMS Implementation Consultant",
+                "Treasury Systems Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Treasury reporting and analytics in TMS",
+            "aliases": [
+                "TMS reporting",
+                "treasury dashboards",
+                "liquidity reporting in TMS"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Develop and maintain standard and ad-hoc reports, dashboards and KPIs within the TMS to support liquidity management, cash visibility and executive reporting.",
+            "parent_skill": "Treasury management systems",
+            "related_skills": [
+                "Cash forecasting using TMS",
+                "TMS configuration and parameterization"
+            ],
+            "keywords": [
+                "reporting",
+                "dashboards",
+                "KPIs",
+                "liquidity reporting",
+                "ad-hoc analysis"
+            ],
+            "common_roles": [
+                "Treasury Analyst",
+                "Business Intelligence Analyst",
+                "Treasury Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Kyriba",
+            "aliases": [
+                "Kyriba TMS"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Hands-on experience configuring and operating Kyriba treasury management system modules such as cash management, payments, bank connectivity and risk functions.",
+            "parent_skill": "Treasury management systems",
+            "related_skills": [
+                "TMS configuration and parameterization",
+                "Payment processing and bank file generation in TMS",
+                "Bank statement import and reconciliation in TMS"
+            ],
+            "keywords": [
+                "Kyriba",
+                "TMS",
+                "cash management",
+                "bank connectivity"
+            ],
+            "common_roles": [
+                "Treasury Systems Analyst",
+                "TMS Administrator",
+                "Treasury Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

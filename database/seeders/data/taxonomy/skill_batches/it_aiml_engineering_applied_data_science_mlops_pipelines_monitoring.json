@@ -1,0 +1,318 @@
+{
+    "domain": "IT",
+    "category": "AI\/ML Engineering & Applied Data Science",
+    "subcategory": "MLOps pipelines & monitoring",
+    "skills": [
+        {
+            "canonical_name": "MLOps CI\/CD pipeline design",
+            "aliases": [
+                "CI\/CD for ML",
+                "ML CI\/CD pipelines",
+                "continuous integration and delivery for models"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and implement automated pipelines that build, test, validate, package and deploy ML models and associated data\/artifacts across development, staging and production environments.",
+            "parent_skill": "MLOps pipelines & monitoring",
+            "related_skills": [
+                "Data and model version control",
+                "Containerization with Docker",
+                "Kubernetes for ML model serving",
+                "Automated model retraining and continuous training",
+                "Infrastructure-as-Code for MLOps"
+            ],
+            "keywords": [
+                "pipeline",
+                "CI",
+                "CD",
+                "automation",
+                "testing",
+                "deployment",
+                "ML pipeline"
+            ],
+            "common_roles": [
+                "ML Engineer",
+                "MLOps Engineer",
+                "Data Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Containerization with Docker",
+            "aliases": [
+                "Docker containers",
+                "container-based deployment",
+                "container image management"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Package ML models, dependencies and runtime into container images, manage image lifecycle, and optimize containers for reproducible training and serving.",
+            "parent_skill": "MLOps pipelines & monitoring",
+            "related_skills": [
+                "MLOps CI\/CD pipeline design",
+                "Kubernetes for ML model serving",
+                "Model serving frameworks"
+            ],
+            "keywords": [
+                "Dockerfile",
+                "image",
+                "container",
+                "OCI",
+                "container registry"
+            ],
+            "common_roles": [
+                "ML Engineer",
+                "MLOps Engineer",
+                "Site Reliability Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Kubernetes for ML model serving",
+            "aliases": [
+                "K8s for ML",
+                "Kubernetes deployment for models",
+                "Kubernetes-based serving"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use Kubernetes to deploy, scale, and manage containerized model inference services, including orchestration primitives (Deployments, Services), autoscaling, and Helm charts.",
+            "parent_skill": "MLOps pipelines & monitoring",
+            "related_skills": [
+                "Containerization with Docker",
+                "Model serving frameworks",
+                "Infrastructure-as-Code for MLOps",
+                "MLOps CI\/CD pipeline design"
+            ],
+            "keywords": [
+                "k8s",
+                "helm",
+                "autoscaling",
+                "kubectl",
+                "ingress"
+            ],
+            "common_roles": [
+                "MLOps Engineer",
+                "ML Engineer",
+                "SRE"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Model serving frameworks",
+            "aliases": [
+                "TensorFlow Serving",
+                "TorchServe",
+                "BentoML",
+                "Seldon Core",
+                "KFServing"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Implement and manage inference endpoints using model serving frameworks to host models, handle batching, routing, serialization, and scale inference workloads.",
+            "parent_skill": "MLOps pipelines & monitoring",
+            "related_skills": [
+                "Kubernetes for ML model serving",
+                "Containerization with Docker",
+                "Model monitoring and observability"
+            ],
+            "keywords": [
+                "inference",
+                "REST API",
+                "gRPC",
+                "model endpoint",
+                "batching"
+            ],
+            "common_roles": [
+                "ML Engineer",
+                "MLOps Engineer",
+                "Data Scientist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Model monitoring and observability",
+            "aliases": [
+                "ML observability",
+                "inference monitoring",
+                "production model monitoring"
+            ],
+            "skill_type": "process_skill",
+            "description": "Monitor production model behavior and system health by tracking metrics (latency, throughput), prediction distributions, logs and traces; build dashboards and alerts to surface issues.",
+            "parent_skill": "MLOps pipelines & monitoring",
+            "related_skills": [
+                "Model performance & drift detection (statistical monitoring)",
+                "Model serving frameworks",
+                "MLOps CI\/CD pipeline design"
+            ],
+            "keywords": [
+                "observability",
+                "metrics",
+                "logging",
+                "tracing",
+                "dashboard",
+                "Prometheus",
+                "Grafana"
+            ],
+            "common_roles": [
+                "MLOps Engineer",
+                "SRE",
+                "ML Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data and model version control",
+            "aliases": [
+                "DVC",
+                "artifact versioning",
+                "dataset versioning",
+                "model registry practices"
+            ],
+            "skill_type": "process_skill",
+            "description": "Manage and track versions of training datasets, feature sets, model artifacts and metadata to ensure reproducibility, traceability and safe rollbacks of ML experiments and deployments.",
+            "parent_skill": "MLOps pipelines & monitoring",
+            "related_skills": [
+                "MLOps CI\/CD pipeline design",
+                "Feature store design and management",
+                "Model serving frameworks"
+            ],
+            "keywords": [
+                "versioning",
+                "artifacts",
+                "reproducibility",
+                "metadata",
+                "model registry"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "ML Engineer",
+                "MLOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Feature store design and management",
+            "aliases": [
+                "feature registry",
+                "online\/offline feature store",
+                "feature engineering pipelines"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Design, implement and operate feature stores that enable consistent, low-latency access to curated features for training and production inference with correct joins and freshness guarantees.",
+            "parent_skill": "MLOps pipelines & monitoring",
+            "related_skills": [
+                "Data and model version control",
+                "Automated model retraining and continuous training",
+                "Model performance & drift detection (statistical monitoring)"
+            ],
+            "keywords": [
+                "feature registry",
+                "feature engineering",
+                "online features",
+                "batch features",
+                "feature freshness"
+            ],
+            "common_roles": [
+                "Feature Engineer",
+                "Data Engineer",
+                "MLOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated model retraining and continuous training",
+            "aliases": [
+                "continuous training",
+                "automated retraining pipelines",
+                "model refresh automation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implement automated workflows that retrain and validate models on new data or when triggers (drift, schedule, or performance thresholds) indicate degradation, including safe rollout strategies.",
+            "parent_skill": "MLOps pipelines & monitoring",
+            "related_skills": [
+                "Model performance & drift detection (statistical monitoring)",
+                "MLOps CI\/CD pipeline design",
+                "Feature store design and management"
+            ],
+            "keywords": [
+                "retraining",
+                "pipeline automation",
+                "A\/B testing",
+                "canary rollout",
+                "model lifecycle"
+            ],
+            "common_roles": [
+                "MLOps Engineer",
+                "ML Engineer",
+                "Data Scientist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Model performance & drift detection (statistical monitoring)",
+            "aliases": [
+                "concept drift detection",
+                "data drift monitoring",
+                "statistical model monitoring"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Apply statistical and ML techniques to detect distributional changes, label\/feature drift, and performance degradation; compute relevant metrics and thresholds for triggering remediation.",
+            "parent_skill": "MLOps pipelines & monitoring",
+            "related_skills": [
+                "Model monitoring and observability",
+                "Automated model retraining and continuous training",
+                "Feature store design and management"
+            ],
+            "keywords": [
+                "drift",
+                "KL divergence",
+                "population stability index",
+                "performance metrics",
+                "alerting"
+            ],
+            "common_roles": [
+                "Data Scientist",
+                "ML Engineer",
+                "MLOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Infrastructure-as-Code for MLOps",
+            "aliases": [
+                "IaC for ML",
+                "Terraform for MLOps",
+                "CloudFormation for ML infrastructure",
+                "Declarative infra for ML"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use Infrastructure-as-Code tools to declaratively provision and manage cloud or on-prem resources (compute, storage, networking, managed services) required for reproducible ML training and serving environments.",
+            "parent_skill": "MLOps pipelines & monitoring",
+            "related_skills": [
+                "Kubernetes for ML model serving",
+                "MLOps CI\/CD pipeline design",
+                "Containerization with Docker"
+            ],
+            "keywords": [
+                "IaC",
+                "terraform",
+                "pulumi",
+                "cloudformation",
+                "helm"
+            ],
+            "common_roles": [
+                "MLOps Engineer",
+                "DevOps Engineer",
+                "SRE"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

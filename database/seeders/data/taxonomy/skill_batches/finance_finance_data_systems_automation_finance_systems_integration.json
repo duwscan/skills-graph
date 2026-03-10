@@ -1,0 +1,293 @@
+{
+    "domain": "Finance",
+    "category": "Finance Data, Systems & Automation",
+    "subcategory": "Finance systems integration",
+    "skills": [
+        {
+            "canonical_name": "Finance systems integration architecture",
+            "aliases": [
+                "Financial systems integration architecture",
+                "Integration architecture for finance",
+                "Finance integration architecture"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Designing architecture and integration patterns that connect finance applications, data flows, APIs, and middleware to meet performance, security, scalability, and compliance requirements.",
+            "parent_skill": "Finance systems integration",
+            "related_skills": [
+                "API design and management (REST\/SOAP)",
+                "iPaaS implementation and orchestration",
+                "Real-time data integration and event streaming",
+                "Integration change and release management for finance systems"
+            ],
+            "keywords": [
+                "integration architecture",
+                "system design",
+                "integration patterns",
+                "finance architecture",
+                "middleware design"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "API design and management (REST\/SOAP)",
+            "aliases": [
+                "REST API design",
+                "SOAP API integration",
+                "OpenAPI design",
+                "API governance"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Designing, documenting, securing and governing RESTful and SOAP APIs for finance systems, including versioning, authentication\/authorization (e.g., OAuth), rate limiting and OpenAPI specifications.",
+            "parent_skill": "Finance systems integration",
+            "related_skills": [
+                "Finance systems integration architecture",
+                "ETL\/ELT development for financial data",
+                "iPaaS implementation and orchestration",
+                "Real-time data integration and event streaming"
+            ],
+            "keywords": [
+                "REST",
+                "SOAP",
+                "OpenAPI",
+                "API management",
+                "OAuth",
+                "API gateway"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ETL\/ELT development for financial data",
+            "aliases": [
+                "ETL development",
+                "ELT pipelines",
+                "data pipeline development",
+                "financial ETL"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Building, testing and maintaining ETL\/ELT processes and data pipelines that extract, transform and load financial transactions and master data between operational systems, data warehouses and reporting stores.",
+            "parent_skill": "Finance systems integration",
+            "related_skills": [
+                "Financial data mapping and transformation",
+                "API design and management (REST\/SOAP)",
+                "Real-time data integration and event streaming",
+                "Master Data Management (MDM) for finance"
+            ],
+            "keywords": [
+                "ETL",
+                "ELT",
+                "data pipelines",
+                "data warehouse",
+                "SQL",
+                "batch processing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "iPaaS implementation and orchestration",
+            "aliases": [
+                "Integration Platform as a Service",
+                "iPaaS",
+                "MuleSoft",
+                "Dell Boomi",
+                "Informatica Cloud",
+                "Celigo"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Implementing, configuring and managing cloud integration platforms (iPaaS) to orchestrate connectors, mappings, workflows and error handling between finance applications and data endpoints.",
+            "parent_skill": "Finance systems integration",
+            "related_skills": [
+                "API design and management (REST\/SOAP)",
+                "ETL\/ELT development for financial data",
+                "Finance systems integration architecture",
+                "Integration change and release management for finance systems"
+            ],
+            "keywords": [
+                "iPaaS",
+                "integration platform",
+                "connectors",
+                "workflow orchestration",
+                "cloud integration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial data mapping and transformation",
+            "aliases": [
+                "Data mapping",
+                "schema mapping",
+                "XSLT transformation",
+                "JSON transformation",
+                "mapping specification"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Defining and implementing data mapping specifications and transformation logic to reconcile differing schemas, data types and financial models across source and target systems.",
+            "parent_skill": "Finance systems integration",
+            "related_skills": [
+                "ETL\/ELT development for financial data",
+                "iPaaS implementation and orchestration",
+                "Master Data Management (MDM) for finance",
+                "Automated reconciliation and bank-feed integration"
+            ],
+            "keywords": [
+                "data mapping",
+                "transformations",
+                "schema mapping",
+                "XSLT",
+                "JSON",
+                "field mapping"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Master Data Management (MDM) for finance",
+            "aliases": [
+                "Financial MDM",
+                "chart of accounts harmonization",
+                "party data management",
+                "master data governance"
+            ],
+            "skill_type": "process_skill",
+            "description": "Establishing governance, processes and systems for maintaining consistent master financial entities (chart of accounts, customers, vendors, cost centers) and ensuring data quality across integrated systems.",
+            "parent_skill": "Finance systems integration",
+            "related_skills": [
+                "Financial data mapping and transformation",
+                "ETL\/ELT development for financial data",
+                "Finance systems integration architecture",
+                "Integration change and release management for finance systems"
+            ],
+            "keywords": [
+                "MDM",
+                "master data",
+                "data governance",
+                "chart of accounts",
+                "data stewardship"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated reconciliation and bank-feed integration",
+            "aliases": [
+                "Bank feed integration",
+                "auto-reconciliation",
+                "account reconciliation automation",
+                "feed ingestion"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Integrating bank feeds and financial transaction sources and implementing automated reconciliation rules and matching engines to streamline account reconciliation and exception handling.",
+            "parent_skill": "Finance systems integration",
+            "related_skills": [
+                "Financial data mapping and transformation",
+                "ETL\/ELT development for financial data",
+                "Robotic Process Automation (RPA) for finance",
+                "Master Data Management (MDM) for finance"
+            ],
+            "keywords": [
+                "bank feeds",
+                "reconciliation",
+                "account matching",
+                "feed ingestion",
+                "exception management"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Robotic Process Automation (RPA) for finance",
+            "aliases": [
+                "RPA implementation",
+                "UiPath",
+                "Automation Anywhere",
+                "Blue Prism",
+                "finance RPA"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Designing, developing and operating RPA bots and workflows to automate repetitive finance tasks such as invoice processing, payments posting, data extraction and validation from integrated systems.",
+            "parent_skill": "Finance systems integration",
+            "related_skills": [
+                "Automated reconciliation and bank-feed integration",
+                "ETL\/ELT development for financial data",
+                "Integration change and release management for finance systems"
+            ],
+            "keywords": [
+                "RPA",
+                "robotic automation",
+                "UiPath",
+                "Automation Anywhere",
+                "process automation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Real-time data integration and event streaming",
+            "aliases": [
+                "Event-driven integration",
+                "streaming integration",
+                "change data capture",
+                "CDC",
+                "Kafka integration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Implementing low-latency data synchronization across finance applications using event streaming, message brokers and change-data-capture to enable near real-time reporting and operational workflows.",
+            "parent_skill": "Finance systems integration",
+            "related_skills": [
+                "API design and management (REST\/SOAP)",
+                "ETL\/ELT development for financial data",
+                "Finance systems integration architecture",
+                "iPaaS implementation and orchestration"
+            ],
+            "keywords": [
+                "event streaming",
+                "Kafka",
+                "CDC",
+                "message broker",
+                "real-time integration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Integration change and release management for finance systems",
+            "aliases": [
+                "Integration release management",
+                "CI\/CD for integrations",
+                "integration deployment orchestration",
+                "integration regression testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Managing versioning, testing, deployment and rollback for integration components and interfaces, including CI\/CD pipelines, automated integration tests and coordination with finance change controls.",
+            "parent_skill": "Finance systems integration",
+            "related_skills": [
+                "Finance systems integration architecture",
+                "iPaaS implementation and orchestration",
+                "Robotic Process Automation (RPA) for finance",
+                "Master Data Management (MDM) for finance"
+            ],
+            "keywords": [
+                "CI\/CD",
+                "release management",
+                "integration testing",
+                "deployment",
+                "change control"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

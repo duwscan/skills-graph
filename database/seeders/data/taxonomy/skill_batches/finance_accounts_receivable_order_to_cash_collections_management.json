@@ -1,0 +1,255 @@
+{
+    "domain": "Finance",
+    "category": "Accounts Receivable & Order-to-Cash",
+    "subcategory": "Collections management",
+    "skills": [
+        {
+            "canonical_name": "Collections strategy and prioritization",
+            "aliases": [
+                "collection segmentation",
+                "account prioritization",
+                "risk-based collections strategy"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and applying rules to prioritize accounts for collection activity based on risk, balance, age, customer value and expected recovery.",
+            "parent_skill": "Collections management",
+            "related_skills": [
+                "Accounts receivable aging analysis",
+                "Collections analytics and KPI reporting",
+                "Payment negotiation and customer communication"
+            ],
+            "keywords": [
+                "segmentation",
+                "prioritization",
+                "risk scoring",
+                "triage"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Accounts receivable aging analysis",
+            "aliases": [
+                "AR aging analysis",
+                "aging report analysis",
+                "days outstanding analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing aged receivables to identify delinquent accounts, trends in days sales outstanding (DSO) and prioritize collection actions.",
+            "parent_skill": "Collections management",
+            "related_skills": [
+                "Collections analytics and KPI reporting",
+                "Collections strategy and prioritization",
+                "Invoice dispute resolution"
+            ],
+            "keywords": [
+                "aging",
+                "DSO",
+                "past due buckets",
+                "trend analysis"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Invoice dispute resolution",
+            "aliases": [
+                "billing dispute management",
+                "dispute handling",
+                "AR dispute resolution"
+            ],
+            "skill_type": "process_skill",
+            "description": "Managing and resolving customer disputes related to invoices, including root-cause analysis, chargebacks, credit memos and reconciliation with billing\/operations.",
+            "parent_skill": "Collections management",
+            "related_skills": [
+                "Invoice reconciliation",
+                "Customer communication for collections",
+                "Accounts receivable aging analysis"
+            ],
+            "keywords": [
+                "dispute lifecycle",
+                "credit memo",
+                "billing issue",
+                "resolution"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash application and payment posting",
+            "aliases": [
+                "payment allocation",
+                "remittance processing",
+                "payment matching"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Applying customer payments to invoices accurately and timely, handling unapplied cash, reconciling remittances and maintaining AR ledgers.",
+            "parent_skill": "Collections management",
+            "related_skills": [
+                "Invoice reconciliation",
+                "Accounts receivable automation platforms",
+                "Collections analytics and KPI reporting"
+            ],
+            "keywords": [
+                "remittance",
+                "unapplied cash",
+                "posting",
+                "reconciliation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dunning process management",
+            "aliases": [
+                "dunning management",
+                "dunning cycles",
+                "automated reminders"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and executing dunning communications and cadence (letters, emails, calls, escalations) to collect overdue receivables while preserving customer relationships.",
+            "parent_skill": "Collections management",
+            "related_skills": [
+                "Collections strategy and prioritization",
+                "Payment negotiation and customer communication",
+                "Accounts receivable automation platforms"
+            ],
+            "keywords": [
+                "dunning letters",
+                "escalation",
+                "reminder cadence",
+                "collection workflows"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Payment negotiation and customer communication",
+            "aliases": [
+                "collection calls",
+                "payment plan negotiation",
+                "customer outreach for collections"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Negotiating payment terms, installment plans or settlements with customers and conducting professional collection communications across phone, email and portal channels.",
+            "parent_skill": "Collections management",
+            "related_skills": [
+                "Dunning process management",
+                "Collections strategy and prioritization",
+                "Skip tracing and third-party collections coordination"
+            ],
+            "keywords": [
+                "negotiation",
+                "payment arrangement",
+                "customer contact",
+                "call scripting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Skip tracing and third-party collections coordination",
+            "aliases": [
+                "asset tracing",
+                "third-party collector management",
+                "skip trace investigations"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Locating contact information or assets for hard-to-reach debtors and coordinating with external collection agencies, legal counsel or repossession partners when appropriate.",
+            "parent_skill": "Collections management",
+            "related_skills": [
+                "Collections compliance and regulatory knowledge",
+                "Payment negotiation and customer communication"
+            ],
+            "keywords": [
+                "skip trace",
+                "external agency",
+                "collector coordination",
+                "investigation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Collections analytics and KPI reporting",
+            "aliases": [
+                "collection metrics reporting",
+                "AR performance reporting",
+                "collections BI"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Building and interpreting dashboards and reports (DSO, days delinquent, promise-to-pay rate, recovery rate) to measure collections effectiveness and inform decisions.",
+            "parent_skill": "Collections management",
+            "related_skills": [
+                "Accounts receivable aging analysis",
+                "Accounts receivable automation platforms",
+                "Collections strategy and prioritization"
+            ],
+            "keywords": [
+                "DSO",
+                "KPI",
+                "recovery",
+                "dashboard"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Accounts receivable automation platforms",
+            "aliases": [
+                "AR automation",
+                "collections software",
+                "order-to-cash automation platforms"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using and configuring software platforms that automate invoicing, dunning, cash application, dispute workflows and collections analytics to improve AR efficiency.",
+            "parent_skill": "Collections management",
+            "related_skills": [
+                "Cash application and payment posting",
+                "Dunning process management",
+                "Collections analytics and KPI reporting"
+            ],
+            "keywords": [
+                "automation",
+                "collections system",
+                "RPA",
+                "workflow engine"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Collections compliance and regulatory knowledge",
+            "aliases": [
+                "debt collection compliance",
+                "collections regulatory requirements",
+                "collections legal compliance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Understanding legal and regulatory constraints for collections activity (consumer and commercial), privacy considerations and required disclosures to ensure compliant practices.",
+            "parent_skill": "Collections management",
+            "related_skills": [
+                "Skip tracing and third-party collections coordination",
+                "Invoice dispute resolution"
+            ],
+            "keywords": [
+                "regulatory",
+                "compliance",
+                "privacy",
+                "consumer protection"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

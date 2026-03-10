@@ -1,0 +1,309 @@
+{
+    "domain": "F&B",
+    "category": "Food Safety, Hygiene & Regulatory Compliance",
+    "subcategory": "Time\/temperature monitoring",
+    "skills": [
+        {
+            "canonical_name": "Temperature monitoring and logging",
+            "aliases": [
+                "temperature monitoring",
+                "temperature logging",
+                "temp monitoring",
+                "T\/T monitoring",
+                "temperature record keeping"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Routine measurement and recording of temperatures across food preparation, storage and transport processes to ensure food safety and regulatory compliance.",
+            "parent_skill": "Time\/temperature monitoring",
+            "related_skills": [
+                "Probe and digital thermometer operation",
+                "Temperature data logger operation",
+                "Temperature record audit and reporting",
+                "Time\/temperature deviation corrective actions and reporting"
+            ],
+            "keywords": [
+                "temperature log",
+                "monitoring schedule",
+                "checklist",
+                "T\/T records"
+            ],
+            "common_roles": [
+                "Quality assurance",
+                "Production operations",
+                "Warehouse operations",
+                "Food safety operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Probe and digital thermometer operation",
+            "aliases": [
+                "probe thermometer use",
+                "instant-read thermometer operation",
+                "digital food thermometer use",
+                "thermometer operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Correct use, placement and reading of probe, instant-read and surface thermometers for verifying internal and environmental temperatures of food and equipment.",
+            "parent_skill": "Time\/temperature monitoring",
+            "related_skills": [
+                "Temperature monitoring and logging",
+                "Calibration and verification of temperature measurement devices",
+                "Temperature data logger operation"
+            ],
+            "keywords": [
+                "probe thermometer",
+                "instant-read",
+                "temperature check",
+                "insertion depth"
+            ],
+            "common_roles": [
+                "Production operations",
+                "Quality assurance",
+                "Kitchen operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Temperature data logger operation",
+            "aliases": [
+                "data logger operation",
+                "temperature logger use",
+                "environmental data logger operation",
+                "datalogger use"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Deployment, configuration, download and basic troubleshooting of temperature data loggers used for continuous recording in storage, transport and processing environments.",
+            "parent_skill": "Time\/temperature monitoring",
+            "related_skills": [
+                "Temperature mapping for storage and transport units",
+                "Temperature alarm and monitoring system configuration and management",
+                "Temperature monitoring and logging"
+            ],
+            "keywords": [
+                "datalogger",
+                "continuous monitoring",
+                "download logs",
+                "probe placement"
+            ],
+            "common_roles": [
+                "Cold chain logistics",
+                "Quality assurance",
+                "Warehouse operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Calibration and verification of temperature measurement devices",
+            "aliases": [
+                "thermometer calibration",
+                "device verification",
+                "calibration checks",
+                "verification of measurement devices"
+            ],
+            "skill_type": "process_skill",
+            "description": "Procedures for verifying accuracy and performing or coordinating calibration checks of thermometers, probes and data loggers to ensure measurement reliability.",
+            "parent_skill": "Time\/temperature monitoring",
+            "related_skills": [
+                "Probe and digital thermometer operation",
+                "Temperature data logger operation",
+                "Temperature record audit and reporting"
+            ],
+            "keywords": [
+                "calibration",
+                "verification",
+                "reference standard",
+                "accuracy check"
+            ],
+            "common_roles": [
+                "Quality assurance",
+                "Maintenance operations",
+                "Food safety operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cold chain management (storage and transport)",
+            "aliases": [
+                "cold chain monitoring",
+                "refrigerated logistics",
+                "cold chain control",
+                "temperature-controlled logistics"
+            ],
+            "skill_type": "process_skill",
+            "description": "End-to-end procedures and controls for maintaining required temperatures during storage and transportation of perishable food items to protect product safety and quality.",
+            "parent_skill": "Time\/temperature monitoring",
+            "related_skills": [
+                "Temperature monitoring and logging",
+                "Temperature mapping for storage and transport units",
+                "Temperature alarm and monitoring system configuration and management"
+            ],
+            "keywords": [
+                "cold chain",
+                "refrigerated transport",
+                "temperature integrity",
+                "perishable logistics"
+            ],
+            "common_roles": [
+                "Cold chain logistics",
+                "Warehouse operations",
+                "Supply chain operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Hot-holding and cold-holding temperature control",
+            "aliases": [
+                "hot holding control",
+                "cold holding procedures",
+                "holding temperature control",
+                "service temperature management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operational controls for maintaining safe temperatures during holding, display and service of food (hot-holding and cold-holding) including timing and equipment practices.",
+            "parent_skill": "Time\/temperature monitoring",
+            "related_skills": [
+                "Temperature monitoring and logging",
+                "Time\/temperature deviation corrective actions and reporting"
+            ],
+            "keywords": [
+                "holding temp",
+                "service temp",
+                "display cases",
+                "time\/temperature control"
+            ],
+            "common_roles": [
+                "Kitchen operations",
+                "Food service operations",
+                "Quality assurance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Temperature mapping for storage and transport units",
+            "aliases": [
+                "temperature mapping studies",
+                "mapping of cold rooms",
+                "storage unit temperature mapping",
+                "environmental mapping"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Designing and executing temperature mapping studies to identify hot\/cold spots and validate uniformity of temperature distribution in refrigerators, freezers, cold rooms and transport vehicles.",
+            "parent_skill": "Time\/temperature monitoring",
+            "related_skills": [
+                "Temperature data logger operation",
+                "Cold chain management (storage and transport)",
+                "Temperature alarm and monitoring system configuration and management"
+            ],
+            "keywords": [
+                "mapping",
+                "hot spots",
+                "spatial analysis",
+                "validation"
+            ],
+            "common_roles": [
+                "Quality assurance",
+                "Cold chain logistics",
+                "Facilities management"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Temperature alarm and monitoring system configuration and management",
+            "aliases": [
+                "temperature alarm management",
+                "monitoring system configuration",
+                "remote temperature monitoring",
+                "environmental monitoring systems"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Setting up, configuring thresholds, managing alerts and performing basic maintenance on centralized temperature monitoring and alarm systems used for compliance and rapid response.",
+            "parent_skill": "Time\/temperature monitoring",
+            "related_skills": [
+                "Temperature data logger operation",
+                "Cold chain management (storage and transport)",
+                "Time\/temperature deviation corrective actions and reporting"
+            ],
+            "keywords": [
+                "alarms",
+                "thresholds",
+                "remote monitoring",
+                "system configuration"
+            ],
+            "common_roles": [
+                "Facilities management",
+                "Quality assurance",
+                "Cold chain logistics"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Time\/temperature deviation corrective actions and reporting",
+            "aliases": [
+                "corrective action for temp deviations",
+                "T\/T deviation handling",
+                "disposition and corrective action",
+                "temperature incident reporting"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Assessing time\/temperature excursions, determining product disposition, documenting incidents and executing corrective actions to maintain regulatory compliance and product safety.",
+            "parent_skill": "Time\/temperature monitoring",
+            "related_skills": [
+                "Temperature monitoring and logging",
+                "Calibration and verification of temperature measurement devices",
+                "Temperature record audit and reporting"
+            ],
+            "keywords": [
+                "corrective action",
+                "deviation report",
+                "product disposition",
+                "incident documentation"
+            ],
+            "common_roles": [
+                "Food safety operations",
+                "Quality assurance",
+                "Production operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Thermal process monitoring for pasteurization and canning",
+            "aliases": [
+                "thermal processing monitoring",
+                "pasteurization monitoring",
+                "retort monitoring",
+                "thermal process control"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Monitoring and recording time and temperature parameters specific to thermal processes (pasteurization, retort\/canning) to ensure lethality targets and regulatory compliance during processing.",
+            "parent_skill": "Time\/temperature monitoring",
+            "related_skills": [
+                "Temperature monitoring and logging",
+                "Calibration and verification of temperature measurement devices",
+                "Time\/temperature deviation corrective actions and reporting"
+            ],
+            "keywords": [
+                "pasteurization",
+                "retort",
+                "lethality",
+                "F0 value"
+            ],
+            "common_roles": [
+                "Production operations",
+                "Quality assurance",
+                "Process engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

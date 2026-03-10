@@ -1,0 +1,277 @@
+{
+    "domain": "Finance",
+    "category": "Tax Operations & Compliance",
+    "subcategory": "Indirect tax (VAT\/GST\/sales tax) operations",
+    "skills": [
+        {
+            "canonical_name": "VAT\/GST return preparation and filing",
+            "aliases": [
+                "VAT return preparation",
+                "GST return filing",
+                "sales tax return preparation",
+                "indirect tax filing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Prepare, validate and file periodic indirect tax returns across jurisdictions, ensuring accuracy of reported figures, correct tax codes, and timely submission according to local rules and deadlines.",
+            "parent_skill": "Indirect tax (VAT\/GST\/sales tax) operations",
+            "related_skills": [
+                "Tax data reconciliation and reporting automation",
+                "Indirect tax accounting and journal entries",
+                "E-invoicing and digital reporting compliance"
+            ],
+            "keywords": [
+                "VAT return",
+                "GST filing",
+                "sales tax return",
+                "periodic filing",
+                "tax deadlines"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Indirect tax accounting and journal entries",
+            "aliases": [
+                "VAT accounting",
+                "GST journal entries",
+                "sales tax accounting",
+                "indirect tax ledger entries"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Record and reconcile indirect tax-related accounting entries, prepare supporting schedules, and align tax balances with general ledger and financial statements.",
+            "parent_skill": "Indirect tax (VAT\/GST\/sales tax) operations",
+            "related_skills": [
+                "VAT\/GST return preparation and filing",
+                "Tax data reconciliation and reporting automation",
+                "Indirect tax process mapping, internal controls and SOX compliance"
+            ],
+            "keywords": [
+                "tax journal entries",
+                "ledger reconciliation",
+                "tax balances",
+                "general ledger",
+                "accounting entries"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "VAT\/GST recovery and input tax credit management",
+            "aliases": [
+                "input tax recovery",
+                "VAT reclaim",
+                "GST credit management",
+                "sales tax credit recovery"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Manage identification, validation and claiming of input tax credits or recoverable VAT\/GST, including documentation control, apportionment, blocked credits and jurisdiction-specific recovery rules.",
+            "parent_skill": "Indirect tax (VAT\/GST\/sales tax) operations",
+            "related_skills": [
+                "Cross-border VAT\/GST and place-of-supply rules",
+                "E-invoicing and digital reporting compliance",
+                "Indirect tax audits, disputes and controversy management"
+            ],
+            "keywords": [
+                "input tax",
+                "VAT recovery",
+                "GST reclaim",
+                "blocked credits",
+                "apportionment"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-border VAT\/GST and place-of-supply rules",
+            "aliases": [
+                "place of supply rules",
+                "international VAT rules",
+                "cross-border GST compliance",
+                "import VAT and reverse charge rules"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Interpret and apply cross-border indirect tax rules to determine tax jurisdiction, place of supply, reverse charge applicability and import\/export VAT treatments for B2B and B2C transactions.",
+            "parent_skill": "Indirect tax (VAT\/GST\/sales tax) operations",
+            "related_skills": [
+                "Sales tax nexus determination and registration",
+                "E-invoicing and digital reporting compliance",
+                "VAT\/GST recovery and input tax credit management"
+            ],
+            "keywords": [
+                "place of supply",
+                "reverse charge",
+                "import VAT",
+                "cross-border VAT",
+                "international GST"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sales tax nexus determination and registration",
+            "aliases": [
+                "nexus determination",
+                "economic nexus analysis",
+                "sales tax registration",
+                "state nexus analysis"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Assess physical and economic presence to determine sales tax nexus across jurisdictions, track thresholds, and manage registration and compliance obligations for affected legal entities.",
+            "parent_skill": "Indirect tax (VAT\/GST\/sales tax) operations",
+            "related_skills": [
+                "Cross-border VAT\/GST and place-of-supply rules",
+                "VAT\/GST return preparation and filing",
+                "Indirect tax process mapping, internal controls and SOX compliance"
+            ],
+            "keywords": [
+                "nexus",
+                "economic nexus",
+                "sales tax registration",
+                "thresholds",
+                "state tax"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "E-invoicing and digital transaction reporting compliance",
+            "aliases": [
+                "e-invoicing mandates",
+                "continuous transaction controls (CTC) compliance",
+                "SAF-T\/JPK\/SII reporting",
+                "electronic invoice compliance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Implement and maintain compliance with electronic invoicing and real-time\/digital tax reporting mandates, including message formats, schemas, submission APIs and mandated audit trails.",
+            "parent_skill": "Indirect tax (VAT\/GST\/sales tax) operations",
+            "related_skills": [
+                "Tax engine configuration and integration",
+                "Tax data reconciliation and reporting automation",
+                "Cross-border VAT\/GST and place-of-supply rules"
+            ],
+            "keywords": [
+                "e-invoicing",
+                "digital reporting",
+                "CTC",
+                "SAF-T",
+                "tax XML schemas"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Indirect tax audits, disputes and controversy management",
+            "aliases": [
+                "VAT audit defense",
+                "GST dispute management",
+                "sales tax controversy management",
+                "tax authority audit handling"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Manage tax authority examinations and disputes for indirect taxes: prepare audit packs, respond to enquiries, negotiate settlements, and coordinate remediation and appeals.",
+            "parent_skill": "Indirect tax (VAT\/GST\/sales tax) operations",
+            "related_skills": [
+                "VAT\/GST recovery and input tax credit management",
+                "Indirect tax accounting and journal entries",
+                "Cross-border VAT\/GST and place-of-supply rules"
+            ],
+            "keywords": [
+                "tax audit",
+                "audit defense",
+                "dispute resolution",
+                "tax authority",
+                "appeals"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax data reconciliation and reporting automation",
+            "aliases": [
+                "transactional tax reconciliation",
+                "tax reporting automation",
+                "tax data ETL and reconciliation",
+                "tax return reconciliation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and execute reconciliation processes between transactional systems and tax returns, automate data extraction\/transformation\/loading, and implement validations to ensure reporting accuracy.",
+            "parent_skill": "Indirect tax (VAT\/GST\/sales tax) operations",
+            "related_skills": [
+                "Tax engine configuration and integration",
+                "Indirect tax accounting and journal entries",
+                "VAT\/GST return preparation and filing"
+            ],
+            "keywords": [
+                "reconciliation",
+                "ETL",
+                "data validation",
+                "tax reporting automation",
+                "dataset mapping"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax engine configuration and integration",
+            "aliases": [
+                "indirect tax engine setup",
+                "Avalara\/Vertex\/Sovos configuration",
+                "tax determination configuration",
+                "tax code mapping"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configure and integrate tax determination engines and tax automation platforms (rate maintenance, tax code mapping, exemption logic, APIs) with ERP\/commerce systems to enable accurate tax calculation.",
+            "parent_skill": "Indirect tax (VAT\/GST\/sales tax) operations",
+            "related_skills": [
+                "Tax data reconciliation and reporting automation",
+                "E-invoicing and digital transaction reporting compliance",
+                "VAT\/GST return preparation and filing"
+            ],
+            "keywords": [
+                "tax engine",
+                "tax determination",
+                "rate maintenance",
+                "API integration",
+                "tax mapping"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Indirect tax process mapping, internal controls and SOX compliance",
+            "aliases": [
+                "tax process mapping",
+                "indirect tax controls design",
+                "SOX controls for indirect tax",
+                "tax internal controls"
+            ],
+            "skill_type": "process_skill",
+            "description": "Map end-to-end indirect tax processes, design and test internal controls to mitigate tax risk and support SOX\/internal control frameworks, including segregation of duties and control documentation.",
+            "parent_skill": "Indirect tax (VAT\/GST\/sales tax) operations",
+            "related_skills": [
+                "Indirect tax accounting and journal entries",
+                "Tax data reconciliation and reporting automation",
+                "Sales tax nexus determination and registration"
+            ],
+            "keywords": [
+                "process mapping",
+                "internal controls",
+                "SOX",
+                "segregation of duties",
+                "control testing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

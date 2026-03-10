@@ -1,0 +1,299 @@
+{
+    "domain": "IT",
+    "category": "Enterprise Applications & Platforms",
+    "subcategory": "Low-code\/no-code application development",
+    "skills": [
+        {
+            "canonical_name": "Low-code application design",
+            "aliases": [
+                "low code app design",
+                "low-code app architecture",
+                "low code application architecture"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing application structure, user flows, data models and UI\/UX specifically for low-code platforms to meet functional requirements and scalability constraints.",
+            "parent_skill": "Low-code\/no-code application development",
+            "related_skills": [
+                "Low-code data modeling",
+                "Workflow automation design",
+                "No-code platform configuration",
+                "Low-code platform security & access control"
+            ],
+            "keywords": [
+                "architecture",
+                "user flows",
+                "UI\/UX",
+                "scalability",
+                "requirements"
+            ],
+            "common_roles": [
+                "Application developer",
+                "Solution designer",
+                "Business analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "No-code platform configuration",
+            "aliases": [
+                "no code configuration",
+                "no-code app configuration",
+                "visual app builder configuration"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Configuring no-code\/visual builders and platform settings to implement business logic, forms, dashboards and simple integrations without custom code.",
+            "parent_skill": "Low-code\/no-code application development",
+            "related_skills": [
+                "Low-code application design",
+                "Workflow automation design",
+                "Microsoft Power Apps",
+                "Google AppSheet"
+            ],
+            "keywords": [
+                "visual builder",
+                "form design",
+                "dashboards",
+                "business logic",
+                "configuration"
+            ],
+            "common_roles": [
+                "Citizen developer",
+                "Business analyst",
+                "Solution implementer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Low-code data modeling",
+            "aliases": [
+                "low-code data design",
+                "data modeling for low-code",
+                "entity modeling (low-code)"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Defining entities, relationships, data schemas and storage strategies within low-code platforms and mapping platform data to enterprise data sources.",
+            "parent_skill": "Low-code\/no-code application development",
+            "related_skills": [
+                "Low-code application design",
+                "API & connector integration for low-code platforms",
+                "Low-code platform security & access control"
+            ],
+            "keywords": [
+                "entities",
+                "schemas",
+                "relationships",
+                "data mapping",
+                "data model"
+            ],
+            "common_roles": [
+                "Data modeler",
+                "Solution designer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Workflow automation design",
+            "aliases": [
+                "workflow automation",
+                "process automation (low-code)",
+                "business process automation design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing automated business processes, conditional logic, approvals and background jobs in low-code\/no-code platforms to streamline workflows.",
+            "parent_skill": "Low-code\/no-code application development",
+            "related_skills": [
+                "No-code platform configuration",
+                "API & connector integration for low-code platforms",
+                "Low-code testing and quality assurance"
+            ],
+            "keywords": [
+                "BPM",
+                "approvals",
+                "conditional logic",
+                "orchestration",
+                "scheduled jobs"
+            ],
+            "common_roles": [
+                "Process analyst",
+                "Automation specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "API & connector integration for low-code platforms",
+            "aliases": [
+                "low-code integrations",
+                "connector configuration",
+                "API integration (low-code)"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Connecting low-code\/no-code applications to external systems via pre-built connectors, REST\/SOAP APIs, webhooks and middleware to exchange data and trigger actions.",
+            "parent_skill": "Low-code\/no-code application development",
+            "related_skills": [
+                "Low-code data modeling",
+                "Workflow automation design",
+                "Deployment & lifecycle management for low-code apps"
+            ],
+            "keywords": [
+                "REST",
+                "webhooks",
+                "connectors",
+                "middleware",
+                "API"
+            ],
+            "common_roles": [
+                "Integration specialist",
+                "Platform engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Low-code testing and quality assurance",
+            "aliases": [
+                "low-code QA",
+                "testing low-code applications",
+                "no-code testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Testing strategies and practices for low-code apps including unit\/functional testing, automated test scripts where supported, UAT coordination and defect triage.",
+            "parent_skill": "Low-code\/no-code application development",
+            "related_skills": [
+                "Workflow automation design",
+                "Deployment & lifecycle management for low-code apps",
+                "Low-code application design"
+            ],
+            "keywords": [
+                "UAT",
+                "functional testing",
+                "test scripts",
+                "defect management",
+                "automation"
+            ],
+            "common_roles": [
+                "QA analyst",
+                "Test engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Citizen development governance and control",
+            "aliases": [
+                "citizen developer governance",
+                "low-code governance",
+                "platform governance policies"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Establishing policies, guardrails, approval workflows and monitoring for business-led (citizen) development to manage risk, compliance and platform sprawl.",
+            "parent_skill": "Low-code\/no-code application development",
+            "related_skills": [
+                "Low-code platform security & access control",
+                "Deployment & lifecycle management for low-code apps"
+            ],
+            "keywords": [
+                "governance",
+                "guardrails",
+                "approval policies",
+                "risk management",
+                "citizen dev"
+            ],
+            "common_roles": [
+                "Governance lead",
+                "Platform administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Low-code platform security & access control",
+            "aliases": [
+                "security for low-code",
+                "access control (low-code platforms)",
+                "platform security"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Implementing authentication, authorization, data protection, role-based access, and compliance controls specific to low-code\/no-code platforms.",
+            "parent_skill": "Low-code\/no-code application development",
+            "related_skills": [
+                "Citizen development governance and control",
+                "Low-code data modeling",
+                "API & connector integration for low-code platforms"
+            ],
+            "keywords": [
+                "RBAC",
+                "encryption",
+                "authentication",
+                "data protection",
+                "access control"
+            ],
+            "common_roles": [
+                "Security analyst",
+                "Platform administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Microsoft Power Apps",
+            "aliases": [
+                "Power Apps",
+                "Microsoft PowerApps",
+                "MS Power Apps"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Building canvas and model-driven applications, flows and portals on the Microsoft Power Platform (Power Apps) including use of connectors, Dataverse and Power Automate integration.",
+            "parent_skill": "Low-code\/no-code application development",
+            "related_skills": [
+                "API & connector integration for low-code platforms",
+                "Low-code data modeling",
+                "Workflow automation design"
+            ],
+            "keywords": [
+                "Power Platform",
+                "Dataverse",
+                "canvas apps",
+                "model-driven apps",
+                "Power Automate"
+            ],
+            "common_roles": [
+                "Platform developer",
+                "Citizen developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Mendix",
+            "aliases": [
+                "Mendix platform",
+                "Mendix low-code"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Developing, configuring and deploying enterprise applications on the Mendix low-code platform including domain modeling, microflows, widgets and environment management.",
+            "parent_skill": "Low-code\/no-code application development",
+            "related_skills": [
+                "Low-code application design",
+                "Low-code testing and quality assurance",
+                "Deployment & lifecycle management for low-code apps"
+            ],
+            "keywords": [
+                "microflows",
+                "domain model",
+                "widgets",
+                "deployment",
+                "Mendix Studio"
+            ],
+            "common_roles": [
+                "Platform developer",
+                "Solution architect"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

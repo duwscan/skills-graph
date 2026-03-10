@@ -1,0 +1,310 @@
+{
+    "domain": "F&B",
+    "category": "F&B Cost Control & Revenue Operations",
+    "subcategory": "Sales mix & menu performance analysis",
+    "skills": [
+        {
+            "canonical_name": "Menu engineering",
+            "aliases": [
+                "menu mix optimization",
+                "menu analysis"
+            ],
+            "skill_type": "process_skill",
+            "description": "Systematic evaluation and restructuring of a menu using item profitability and popularity to improve revenue and margins.",
+            "parent_skill": "Sales mix & menu performance analysis",
+            "related_skills": [
+                "Contribution margin analysis",
+                "Menu item profitability modeling",
+                "Price elasticity analysis",
+                "Menu optimization using A\/B testing"
+            ],
+            "keywords": [
+                "menu design",
+                "menu mix",
+                "popularity",
+                "profitability",
+                "menu matrix"
+            ],
+            "common_roles": [
+                "Revenue operations",
+                "Menu development",
+                "F&B analytics"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Contribution margin analysis",
+            "aliases": [
+                "item-level contribution margin analysis",
+                "CM analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculating item-level contribution margins (price minus variable costs) to assess each menu item's incremental profitability.",
+            "parent_skill": "Sales mix & menu performance analysis",
+            "related_skills": [
+                "Menu engineering",
+                "Food cost per dish calculation",
+                "Menu item profitability modeling",
+                "Gross margin analysis"
+            ],
+            "keywords": [
+                "contribution margin",
+                "variable cost",
+                "item profitability",
+                "food cost",
+                "pricing"
+            ],
+            "common_roles": [
+                "Revenue operations",
+                "Cost control",
+                "F&B analytics"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Price elasticity analysis",
+            "aliases": [
+                "demand elasticity analysis",
+                "price sensitivity analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Measuring how changes in item price affect sales volume to inform pricing, promotions, and revenue optimization decisions.",
+            "parent_skill": "Sales mix & menu performance analysis",
+            "related_skills": [
+                "Menu optimization using A\/B testing",
+                "SKU-level sales forecasting",
+                "Promotional lift analysis",
+                "Pricing strategy"
+            ],
+            "keywords": [
+                "elasticity",
+                "price sensitivity",
+                "demand response",
+                "own-price elasticity",
+                "cross-price elasticity"
+            ],
+            "common_roles": [
+                "Revenue operations",
+                "Pricing strategy",
+                "F&B analytics"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Menu item profitability modeling",
+            "aliases": [
+                "menu profitability modeling",
+                "item-level P&L modeling"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Building financial models that combine sales mix, costs (food, labor, overhead) and pricing to project item-level profit contribution and scenarios.",
+            "parent_skill": "Sales mix & menu performance analysis",
+            "related_skills": [
+                "Contribution margin analysis",
+                "Food cost per dish calculation",
+                "SKU-level sales forecasting",
+                "Menu engineering"
+            ],
+            "keywords": [
+                "profitability modeling",
+                "P&L",
+                "scenario analysis",
+                "what-if modeling",
+                "cost drivers"
+            ],
+            "common_roles": [
+                "F&B analytics",
+                "Cost control",
+                "Finance operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "POS data extraction and cleansing",
+            "aliases": [
+                "POS data ETL",
+                "POS data extraction",
+                "sales data cleansing"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Extracting, transforming and cleaning point-of-sale transaction data to prepare accurate inputs for sales mix and menu performance analysis.",
+            "parent_skill": "Sales mix & menu performance analysis",
+            "related_skills": [
+                "SQL querying",
+                "BI dashboarding for menu performance",
+                "SKU-level sales forecasting",
+                "Basket analysis \/ item affinity"
+            ],
+            "keywords": [
+                "POS",
+                "ETL",
+                "data cleansing",
+                "transaction data",
+                "data pipeline"
+            ],
+            "common_roles": [
+                "F&B analytics",
+                "Revenue operations",
+                "Data operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SKU-level sales forecasting",
+            "aliases": [
+                "item-level demand forecasting",
+                "menu item sales forecasting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Forecasting future sales volumes at the menu item (SKU) level using historical data, seasonality and promotional inputs to inform stocking and pricing.",
+            "parent_skill": "Sales mix & menu performance analysis",
+            "related_skills": [
+                "POS data extraction and cleansing",
+                "Inventory planning",
+                "Price elasticity analysis",
+                "Menu item profitability modeling"
+            ],
+            "keywords": [
+                "forecasting",
+                "demand planning",
+                "time series",
+                "SKU forecast",
+                "seasonality"
+            ],
+            "common_roles": [
+                "Demand planning",
+                "F&B analytics",
+                "Operations planning"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Menu optimization using A\/B testing",
+            "aliases": [
+                "menu A\/B testing",
+                "test-and-learn for menu optimization"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and running controlled experiments (A\/B tests) on menu layout, item descriptions, placement or pricing to measure impact on sales mix and revenue.",
+            "parent_skill": "Sales mix & menu performance analysis",
+            "related_skills": [
+                "Price elasticity analysis",
+                "Promotional lift analysis",
+                "Menu engineering",
+                "BI dashboarding for menu performance"
+            ],
+            "keywords": [
+                "A\/B test",
+                "experiment design",
+                "statistical significance",
+                "split test",
+                "test-and-learn"
+            ],
+            "common_roles": [
+                "Revenue operations",
+                "F&B analytics",
+                "Marketing operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Basket analysis \/ item affinity",
+            "aliases": [
+                "market basket analysis",
+                "affinity analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing transaction-level item co-occurrence to identify commonly purchased item combinations and inform bundling, upsell and menu placement strategies.",
+            "parent_skill": "Sales mix & menu performance analysis",
+            "related_skills": [
+                "POS data extraction and cleansing",
+                "Menu engineering",
+                "Promotions analysis",
+                "Cross-sell strategy"
+            ],
+            "keywords": [
+                "basket analysis",
+                "affinity",
+                "association rules",
+                "lift",
+                "co-occurrence"
+            ],
+            "common_roles": [
+                "F&B analytics",
+                "Merchandising",
+                "Revenue operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food cost per dish calculation",
+            "aliases": [
+                "recipe costing",
+                "dish-level food cost calculation",
+                "portion cost calculation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Calculating the food cost of each menu item using standardized recipes, portion sizes and ingredient costs to support pricing and margin management.",
+            "parent_skill": "Sales mix & menu performance analysis",
+            "related_skills": [
+                "Inventory management",
+                "Contribution margin analysis",
+                "Menu item profitability modeling",
+                "Waste tracking"
+            ],
+            "keywords": [
+                "food cost",
+                "recipe costing",
+                "portion costing",
+                "ingredient cost",
+                "cost per plate"
+            ],
+            "common_roles": [
+                "Cost control",
+                "Kitchen operations",
+                "F&B analytics"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "BI dashboarding for menu performance",
+            "aliases": [
+                "menu performance dashboarding",
+                "F&B BI dashboarding",
+                "menu KPIs reporting"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Designing and developing interactive business intelligence dashboards (e.g., Power BI, Tableau) to visualize sales mix, item profitability and menu KPIs for stakeholders.",
+            "parent_skill": "Sales mix & menu performance analysis",
+            "related_skills": [
+                "POS data extraction and cleansing",
+                "SQL querying",
+                "Menu engineering",
+                "SKU-level sales forecasting"
+            ],
+            "keywords": [
+                "dashboard",
+                "KPI",
+                "visualization",
+                "Power BI",
+                "Tableau"
+            ],
+            "common_roles": [
+                "F&B analytics",
+                "Revenue operations",
+                "Business intelligence"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

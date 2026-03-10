@@ -1,0 +1,306 @@
+{
+    "domain": "F&B",
+    "category": "Beverage Service (Non-Alcoholic)",
+    "subcategory": "Speed of service for beverages",
+    "skills": [
+        {
+            "canonical_name": "High-volume beverage preparation",
+            "aliases": [
+                "rapid beverage preparation",
+                "high-throughput drink making",
+                "speed-focused beverage production"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Prepare large quantities of non-alcoholic beverages quickly while maintaining consistent quality and correct portions to minimize customer wait time.",
+            "parent_skill": "Speed of service for beverages",
+            "related_skills": [
+                "Beverage station setup and mise en place",
+                "Batch brewing and hot\/cold holding management",
+                "Standardized recipe and portion control",
+                "Time management during peak service",
+                "Drink prioritization and ticket sequence management"
+            ],
+            "keywords": [
+                "throughput",
+                "speed",
+                "high-volume",
+                "beverages",
+                "consistency"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Cafe staff",
+                "Quick-service restaurant staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Order batching and grouping",
+            "aliases": [
+                "batch ordering",
+                "grouping orders",
+                "batch prepare orders"
+            ],
+            "skill_type": "process_skill",
+            "description": "Combine and schedule multiple beverage orders to prepare items in efficient batches, reducing repeated steps and overall cycle time.",
+            "parent_skill": "Speed of service for beverages",
+            "related_skills": [
+                "High-volume beverage preparation",
+                "POS order routing and management",
+                "Batch brewing and hot\/cold holding management",
+                "Drink prioritization and ticket sequence management"
+            ],
+            "keywords": [
+                "batching",
+                "grouping",
+                "cycle time",
+                "efficiency"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Cafe staff",
+                "Quick-service restaurant staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Beverage station setup and mise en place",
+            "aliases": [
+                "drink mise en place",
+                "station setup",
+                "prep station organization"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Organize ingredients, cups, tools and disposables at the beverage station before service to minimize motion, handoffs, and preparation time.",
+            "parent_skill": "Speed of service for beverages",
+            "related_skills": [
+                "Beverage station layout optimization",
+                "High-volume beverage preparation",
+                "Standardized recipe and portion control",
+                "Time management during peak service"
+            ],
+            "keywords": [
+                "mise en place",
+                "setup",
+                "organization",
+                "ergonomics"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Cafe staff",
+                "Quick-service restaurant staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "POS order routing and management",
+            "aliases": [
+                "POS routing",
+                "order management system routing",
+                "kitchen display routing",
+                "KDS order routing"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use point-of-sale and order-display systems to route, prioritize and manage beverage orders efficiently to the correct station or team member.",
+            "parent_skill": "Speed of service for beverages",
+            "related_skills": [
+                "Order batching and grouping",
+                "Drink prioritization and ticket sequence management",
+                "Real-time throughput monitoring and adjustment"
+            ],
+            "keywords": [
+                "POS",
+                "KDS",
+                "order routing",
+                "order management",
+                "priority"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Cafe staff",
+                "Quick-service restaurant staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Drink prioritization and ticket sequence management",
+            "aliases": [
+                "order prioritization",
+                "ticket sequencing",
+                "FIFO drink handling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Assess incoming tickets and sequence preparation to minimize total customer wait time and prevent cold\/overstayed items, balancing speed and service fairness.",
+            "parent_skill": "Speed of service for beverages",
+            "related_skills": [
+                "POS order routing and management",
+                "Order batching and grouping",
+                "Expedite station coordination",
+                "Real-time throughput monitoring and adjustment"
+            ],
+            "keywords": [
+                "prioritization",
+                "ticketing",
+                "sequence",
+                "wait time"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Cafe staff",
+                "Quick-service restaurant staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Expedite station coordination",
+            "aliases": [
+                "expedite coordination",
+                "pass-out coordination",
+                "pickup station management"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Coordinate the final assembly and handoff area for completed beverages, communicating with preparers and runners to ensure fast, accurate customer pickups.",
+            "parent_skill": "Speed of service for beverages",
+            "related_skills": [
+                "Beverage station setup and mise en place",
+                "Drink prioritization and ticket sequence management",
+                "POS order routing and management"
+            ],
+            "keywords": [
+                "expedite",
+                "handoff",
+                "communication",
+                "pickup"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Cafe staff",
+                "Quick-service restaurant staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Batch brewing and hot\/cold holding management",
+            "aliases": [
+                "batch brewing",
+                "holding brewed beverages",
+                "hot-hold management",
+                "cold-hold management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Plan and manage brewing or batch preparation and holding procedures to meet demand without degrading beverage quality, reducing remakes and wait times.",
+            "parent_skill": "Speed of service for beverages",
+            "related_skills": [
+                "High-volume beverage preparation",
+                "Order batching and grouping",
+                "Standardized recipe and portion control"
+            ],
+            "keywords": [
+                "batch brew",
+                "holding",
+                "temperature control",
+                "capacity planning"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Cafe staff",
+                "Quick-service restaurant staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Standardized recipe and portion control",
+            "aliases": [
+                "recipe standardization",
+                "portion control adherence",
+                "drink recipe compliance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Follow and enforce standardized beverage recipes and portion measures so preparation is predictable, reduces remake rates and supports faster throughput.",
+            "parent_skill": "Speed of service for beverages",
+            "related_skills": [
+                "High-volume beverage preparation",
+                "Beverage station setup and mise en place",
+                "Batch brewing and hot\/cold holding management"
+            ],
+            "keywords": [
+                "recipe",
+                "portion control",
+                "consistency",
+                "standards"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Cafe staff",
+                "Quick-service restaurant staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Beverage station layout optimization",
+            "aliases": [
+                "station ergonomics",
+                "workflow layout for drinks",
+                "layout optimization"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design or adjust beverage station layouts and ingredient placement to minimize travel distance, handoffs and task switching for faster service.",
+            "parent_skill": "Speed of service for beverages",
+            "related_skills": [
+                "Beverage station setup and mise en place",
+                "High-volume beverage preparation",
+                "Expedite station coordination"
+            ],
+            "keywords": [
+                "layout",
+                "ergonomics",
+                "workflow",
+                "station design"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Cafe staff",
+                "Quick-service restaurant staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Real-time throughput monitoring and adjustment",
+            "aliases": [
+                "throughput monitoring",
+                "service time tracking",
+                "cycle time analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Monitor live service metrics (tickets per minute, average make time) and make rapid staffing or process adjustments to maintain target speed of service.",
+            "parent_skill": "Speed of service for beverages",
+            "related_skills": [
+                "POS order routing and management",
+                "Drink prioritization and ticket sequence management",
+                "High-volume beverage preparation"
+            ],
+            "keywords": [
+                "throughput",
+                "metrics",
+                "service time",
+                "adjustment"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Cafe staff",
+                "Quick-service restaurant staff"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

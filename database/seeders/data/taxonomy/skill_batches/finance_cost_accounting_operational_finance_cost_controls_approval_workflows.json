@@ -1,0 +1,307 @@
+{
+    "domain": "Finance",
+    "category": "Cost Accounting & Operational Finance",
+    "subcategory": "Cost controls & approval workflows",
+    "skills": [
+        {
+            "canonical_name": "Approval workflow design",
+            "aliases": [
+                "approval process design",
+                "approval routing design",
+                "approval flow mapping"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing end-to-end approval flows, decision gates, and routing rules to ensure purchases and expenses follow policy and operational requirements.",
+            "parent_skill": "Cost controls & approval workflows",
+            "related_skills": [
+                "Purchase order approval workflows",
+                "Delegation of authority (DOA) implementation",
+                "Workflow automation for approvals"
+            ],
+            "keywords": [
+                "routing",
+                "decision nodes",
+                "approval matrix",
+                "flow mapping",
+                "escalation rules"
+            ],
+            "common_roles": [
+                "Finance operations teams",
+                "Procurement functions",
+                "Accounts payable teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Purchase order approval workflows",
+            "aliases": [
+                "PO approval routing",
+                "purchase order approval",
+                "PO approval process"
+            ],
+            "skill_type": "process_skill",
+            "description": "Configuring and managing approval steps, thresholds, and controls specific to purchase orders to prevent unauthorized or unnecessary spend.",
+            "parent_skill": "Cost controls & approval workflows",
+            "related_skills": [
+                "Approval workflow design",
+                "Delegation of authority (DOA) implementation",
+                "Invoice validation & three-way matching"
+            ],
+            "keywords": [
+                "purchase order",
+                "PO routing",
+                "authorization",
+                "procure-to-pay",
+                "PO thresholds"
+            ],
+            "common_roles": [
+                "Procurement functions",
+                "Finance operations teams",
+                "Accounts payable teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Invoice validation and three-way matching",
+            "aliases": [
+                "three-way match",
+                "invoice matching",
+                "PO-invoice-receipt reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operational process of validating supplier invoices against purchase orders and goods receipts to ensure accuracy prior to payment.",
+            "parent_skill": "Cost controls & approval workflows",
+            "related_skills": [
+                "Purchase order approval workflows",
+                "Workflow automation for approvals",
+                "Supplier invoice dispute resolution"
+            ],
+            "keywords": [
+                "invoice validation",
+                "goods receipt",
+                "PO match",
+                "exceptions",
+                "accounts payable"
+            ],
+            "common_roles": [
+                "Accounts payable teams",
+                "Finance operations teams",
+                "Procurement functions"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Delegation of authority (DOA) implementation",
+            "aliases": [
+                "delegation of authority matrix",
+                "DOA policy implementation",
+                "authorization matrix setup"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Implementing and maintaining DOA policies and matrices that define who can approve spend at various thresholds and transaction types.",
+            "parent_skill": "Cost controls & approval workflows",
+            "related_skills": [
+                "Approval workflow design",
+                "Purchase order approval workflows",
+                "Controls testing and remediation for approval processes"
+            ],
+            "keywords": [
+                "DOA",
+                "authorization limits",
+                "approval authority",
+                "policy enforcement",
+                "segregation of duties"
+            ],
+            "common_roles": [
+                "Finance operations teams",
+                "Internal audit\/compliance functions",
+                "Procurement functions"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Spend threshold configuration and monitoring",
+            "aliases": [
+                "spend thresholds",
+                "threshold monitoring",
+                "approval limit configuration"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Defining, configuring and monitoring monetary thresholds that trigger approvals, reviews, or escalations to control spend and enforce policy.",
+            "parent_skill": "Cost controls & approval workflows",
+            "related_skills": [
+                "Delegation of authority (DOA) implementation",
+                "Approval workflow design",
+                "Controls testing and remediation for approval processes"
+            ],
+            "keywords": [
+                "thresholds",
+                "spend limits",
+                "monitoring",
+                "alerts",
+                "escalations"
+            ],
+            "common_roles": [
+                "Finance operations teams",
+                "Cost accounting functions",
+                "Procurement functions"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Workflow automation for approvals",
+            "aliases": [
+                "approval automation",
+                "workflow automation configuration",
+                "automated approval routing"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring automated approval engines and workflow automation features to enforce routing, notifications, and audit trails for approval processes.",
+            "parent_skill": "Cost controls & approval workflows",
+            "related_skills": [
+                "Approval workflow design",
+                "Invoice validation and three-way matching",
+                "Spend threshold configuration and monitoring"
+            ],
+            "keywords": [
+                "automation",
+                "workflow engine",
+                "notifications",
+                "audit trail",
+                "integration"
+            ],
+            "common_roles": [
+                "Finance operations teams",
+                "Accounts payable teams",
+                "Procurement functions"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cost center spend controls",
+            "aliases": [
+                "cost center controls",
+                "spend control by cost center",
+                "budgetary controls by cost center"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Establishing and enforcing spend controls, approval requirements and reporting at the cost center level to manage budgets and prevent overspend.",
+            "parent_skill": "Cost controls & approval workflows",
+            "related_skills": [
+                "Spend threshold configuration and monitoring",
+                "Approval workflow design",
+                "Policy exception management and approval gating"
+            ],
+            "keywords": [
+                "cost center",
+                "budget control",
+                "allocation",
+                "spend governance",
+                "variance monitoring"
+            ],
+            "common_roles": [
+                "Cost accounting functions",
+                "Finance operations teams",
+                "Budget management functions"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Controls testing and remediation for approval processes",
+            "aliases": [
+                "controls testing",
+                "approval process audits",
+                "control remediation planning"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Designing and executing control tests on approval workflows, identifying gaps or failures, and planning\/remediating issues to restore compliance and reduce risk.",
+            "parent_skill": "Cost controls & approval workflows",
+            "related_skills": [
+                "Delegation of authority (DOA) implementation",
+                "Spend threshold configuration and monitoring",
+                "Workflow automation for approvals"
+            ],
+            "keywords": [
+                "control testing",
+                "audit",
+                "remediation",
+                "risk assessment",
+                "test plans"
+            ],
+            "common_roles": [
+                "Internal audit\/compliance functions",
+                "Finance operations teams",
+                "Risk management functions"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Supplier invoice dispute resolution",
+            "aliases": [
+                "invoice dispute resolution",
+                "supplier dispute management",
+                "invoice exceptions handling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing exceptions and disputes with suppliers over invoices, coordinating investigation, communication, adjustments, and approval of payments or credits.",
+            "parent_skill": "Cost controls & approval workflows",
+            "related_skills": [
+                "Invoice validation and three-way matching",
+                "Policy exception management and approval gating",
+                "Workflow automation for approvals"
+            ],
+            "keywords": [
+                "dispute",
+                "exceptions",
+                "supplier communication",
+                "credit memo",
+                "investigation"
+            ],
+            "common_roles": [
+                "Accounts payable teams",
+                "Procurement functions",
+                "Finance operations teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Policy exception management and approval gating",
+            "aliases": [
+                "exception handling",
+                "policy override workflow",
+                "exception approval process"
+            ],
+            "skill_type": "process_skill",
+            "description": "Defining and operating controlled processes for requesting, approving, documenting, and tracking exceptions to cost-control policies and approval rules.",
+            "parent_skill": "Cost controls & approval workflows",
+            "related_skills": [
+                "Approval workflow design",
+                "Controls testing and remediation for approval processes",
+                "Supplier invoice dispute resolution"
+            ],
+            "keywords": [
+                "exceptions",
+                "override",
+                "gating",
+                "ad-hoc approvals",
+                "audit trail"
+            ],
+            "common_roles": [
+                "Finance operations teams",
+                "Accounts payable teams",
+                "Internal audit\/compliance functions"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

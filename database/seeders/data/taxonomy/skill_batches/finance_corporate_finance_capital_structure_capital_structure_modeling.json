@@ -1,0 +1,257 @@
+{
+    "domain": "Finance",
+    "category": "Corporate Finance & Capital Structure",
+    "subcategory": "Capital structure modeling",
+    "skills": [
+        {
+            "canonical_name": "Capital structure optimization modeling",
+            "aliases": [
+                "capital structure optimization",
+                "optimal capital structure modeling",
+                "capital structure optimization analysis"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Build and evaluate quantitative models to determine an optimal mix of debt, equity, and hybrid instruments given cost, risk, tax, and strategic constraints.",
+            "parent_skill": "Capital structure modeling",
+            "related_skills": [
+                "Weighted average cost of capital (WACC) calculation",
+                "Debt capacity and interest coverage analysis",
+                "Scenario and sensitivity analysis"
+            ],
+            "keywords": [
+                "optimal leverage",
+                "debt–equity mix",
+                "capital mix optimization",
+                "trade-off analysis"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Leveraged buyout (LBO) financial modeling",
+            "aliases": [
+                "LBO modeling",
+                "leveraged buyout model",
+                "buyout financial model"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Construct multi-period LBO models to project cash flows, debt paydown, sponsor returns, and exit metrics under different financing structures.",
+            "parent_skill": "Capital structure modeling",
+            "related_skills": [
+                "Debt schedule and amortization modeling",
+                "Scenario and sensitivity analysis",
+                "Financial statement integration in dynamic models"
+            ],
+            "keywords": [
+                "sponsor IRR",
+                "debt pushdown",
+                "exit multiple",
+                "debt sizing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Debt schedule and amortization modeling",
+            "aliases": [
+                "debt amortization schedule",
+                "debt waterfall modeling",
+                "loan schedule modeling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Create detailed debt schedules that model principal amortization, interest accrual, rollovers, refinancing, and cash sweep mechanics over time.",
+            "parent_skill": "Capital structure modeling",
+            "related_skills": [
+                "Debt covenant modeling and compliance analysis",
+                "LBO financial modeling",
+                "Financial statement integration in dynamic models"
+            ],
+            "keywords": [
+                "interest accrual",
+                "principal repayment",
+                "amortization",
+                "balloon payment"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Debt covenant modeling and compliance analysis",
+            "aliases": [
+                "covenant modeling",
+                "loan covenant analysis",
+                "debt covenant testing"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Model financial covenants (e.g., leverage, interest coverage, minimum liquidity), simulate covenant tests, and assess covenant breach probabilities and remediation options.",
+            "parent_skill": "Capital structure modeling",
+            "related_skills": [
+                "Debt schedule and amortization modeling",
+                "Scenario and sensitivity analysis",
+                "Model governance, documentation, and auditability"
+            ],
+            "keywords": [
+                "financial covenants",
+                "incurrence tests",
+                "maintenance covenants",
+                "covenant breach"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Weighted average cost of capital (WACC) calculation",
+            "aliases": [
+                "WACC calculation",
+                "cost of capital estimation",
+                "weighted cost of capital"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Estimate and justify a company's WACC by deriving the cost of equity, cost of debt (post-tax), and appropriate capital structure weights for valuation and optimization models.",
+            "parent_skill": "Capital structure modeling",
+            "related_skills": [
+                "Capital structure optimization modeling",
+                "Discounted cash flow (DCF) modeling",
+                "Monte Carlo simulation for capital structure risk"
+            ],
+            "keywords": [
+                "cost of equity",
+                "beta",
+                "tax shield",
+                "market value weights"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Scenario and sensitivity analysis",
+            "aliases": [
+                "sensitivity testing",
+                "scenario modeling",
+                "what-if analysis"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and run structured scenario and sensitivity tests on capital structure models to quantify impacts of macro, operational, and financing variable changes on outcomes.",
+            "parent_skill": "Capital structure modeling",
+            "related_skills": [
+                "Monte Carlo simulation for capital structure risk",
+                "Capital structure optimization modeling",
+                "LBO financial modeling"
+            ],
+            "keywords": [
+                "stress testing",
+                "what-if",
+                "tornado charts",
+                "scenario trees"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Monte Carlo simulation for capital structure risk",
+            "aliases": [
+                "stochastic simulation",
+                "probabilistic capital structure modeling",
+                "Monte Carlo modeling"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Apply Monte Carlo or other stochastic simulation techniques to model distributional outcomes for leverage, default probability, and valuation under uncertain inputs.",
+            "parent_skill": "Capital structure modeling",
+            "related_skills": [
+                "Scenario and sensitivity analysis",
+                "Weighted average cost of capital (WACC) calculation",
+                "Debt covenant modeling and compliance analysis"
+            ],
+            "keywords": [
+                "stochastic modeling",
+                "random sampling",
+                "default probability",
+                "risk distributions"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial statement integration in dynamic models",
+            "aliases": [
+                "three-statement integration",
+                "integrated financial modeling",
+                "dynamic P&L-balance sheet-cash flow linking"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Link income statement, balance sheet, and cash flow forecasts dynamically so capital structure changes flow through to reported metrics, ratios, and covenant tests.",
+            "parent_skill": "Capital structure modeling",
+            "related_skills": [
+                "Debt schedule and amortization modeling",
+                "LBO financial modeling",
+                "Financial modeling in Excel"
+            ],
+            "keywords": [
+                "three-statement model",
+                "linkages",
+                "intercompany eliminations",
+                "working capital dynamics"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial modeling in Excel",
+            "aliases": [
+                "Excel financial modeling",
+                "spreadsheet financial modeling",
+                "Excel modeling"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Build robust, auditable capital structure and valuation models in Excel using best practices (structured layout, assumptions block, consistent formulas, named ranges, and error checks).",
+            "parent_skill": "Capital structure modeling",
+            "related_skills": [
+                "VBA\/macros for financial modeling",
+                "Financial statement integration in dynamic models",
+                "Model governance, documentation, and auditability"
+            ],
+            "keywords": [
+                "Excel",
+                "spreadsheets",
+                "model best practices",
+                "sensitivity tables"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Model governance, documentation, and auditability",
+            "aliases": [
+                "model governance",
+                "model documentation",
+                "model auditability"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implement version control, documentation standards, unit checks, and review processes to ensure capital structure models are auditable, reproducible, and meet internal control requirements.",
+            "parent_skill": "Capital structure modeling",
+            "related_skills": [
+                "Financial modeling in Excel",
+                "Debt covenant modeling and compliance analysis",
+                "Scenario and sensitivity analysis"
+            ],
+            "keywords": [
+                "version control",
+                "model validation",
+                "assumption logs",
+                "audit trail"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

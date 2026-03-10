@@ -1,0 +1,299 @@
+{
+    "domain": "F&B",
+    "category": "Front-of-House Guest Service",
+    "subcategory": "Reservation & waitlist management",
+    "skills": [
+        {
+            "canonical_name": "Reservation platform operation",
+            "aliases": [
+                "OpenTable operation",
+                "Resy operation",
+                "Tock operation",
+                "SaaS reservation system operation",
+                "booking system operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operate and maintain online and on-premise reservation platforms to create, modify and manage bookings, blocks, and seating assignments.",
+            "parent_skill": "Reservation & waitlist management",
+            "related_skills": [
+                "Cross-channel reservation coordination",
+                "Reservation data analysis & reporting",
+                "Seating optimization"
+            ],
+            "keywords": [
+                "OpenTable",
+                "Resy",
+                "Tock",
+                "booking",
+                "reservation software",
+                "platform administration"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Guest services staff",
+                "Reservation desk staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Waitlist management",
+            "aliases": [
+                "standby list management",
+                "host stand-by management",
+                "on-demand waitlist handling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Manage guest waitlists, estimate wait times, coordinate notifications and seat guests efficiently while minimizing perceived wait.",
+            "parent_skill": "Reservation & waitlist management",
+            "related_skills": [
+                "Reservation confirmation & guest communication",
+                "Seating optimization",
+                "No-show mitigation"
+            ],
+            "keywords": [
+                "waitlist",
+                "ETA",
+                "text notifications",
+                "standby",
+                "seat assignment"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Host stand",
+                "Guest services staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Reservation confirmation & guest communication",
+            "aliases": [
+                "reservation confirmations",
+                "booking reminders",
+                "SMS\/email reservation communication",
+                "pre-service guest outreach"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Communicate with guests about bookings through phone, SMS, email or in-app messages to confirm details, manage expectations, and reduce no-shows.",
+            "parent_skill": "Reservation & waitlist management",
+            "related_skills": [
+                "Waitlist management",
+                "No-show mitigation",
+                "Guest preference capture & profiles"
+            ],
+            "keywords": [
+                "confirmation",
+                "reminder",
+                "sms",
+                "email",
+                "phone call",
+                "messaging"
+            ],
+            "common_roles": [
+                "Guest services staff",
+                "Front-of-house staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "No-show mitigation",
+            "aliases": [
+                "no-show reduction",
+                "no show policy enforcement",
+                "booking abandonment reduction"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and execute processes to reduce no-shows, including reminder cadence, deposits or card holds, overbooking strategies, and waitlist filling tactics.",
+            "parent_skill": "Reservation & waitlist management",
+            "related_skills": [
+                "Reservation confirmation & guest communication",
+                "Deposit and cancellation policy enforcement",
+                "Reservation data analysis & reporting"
+            ],
+            "keywords": [
+                "no-show",
+                "deposit",
+                "reminder cadence",
+                "overbooking",
+                "cancellation fee"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Guest services staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Seating optimization",
+            "aliases": [
+                "table allocation",
+                "table management",
+                "table turnover optimization"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Assign and rotate tables to balance service efficiency, party size, guest experience and revenue per seating while respecting reservations and walk-ins.",
+            "parent_skill": "Reservation & waitlist management",
+            "related_skills": [
+                "Waitlist management",
+                "Reservation platform operation",
+                "Group booking coordination"
+            ],
+            "keywords": [
+                "table turn",
+                "table mix",
+                "seat rotation",
+                "layout optimization"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Host station staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-channel reservation coordination",
+            "aliases": [
+                "phone and online bookings reconciliation",
+                "multi-source booking coordination",
+                "walk-in and online integration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Coordinate and reconcile bookings across channels (phone, in-person, third-party platforms) to prevent double bookings and maintain an accurate availability view.",
+            "parent_skill": "Reservation & waitlist management",
+            "related_skills": [
+                "Reservation platform operation",
+                "Reservation data analysis & reporting",
+                "Seating optimization"
+            ],
+            "keywords": [
+                "channel reconciliation",
+                "third-party bookings",
+                "phone reservations",
+                "walk-ins"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Guest services staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Guest preference capture & profiles",
+            "aliases": [
+                "guest notes management",
+                "guest profile management",
+                "preference capture"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Record, update and use guest preferences, dietary restrictions and occasion notes to personalize service and inform future reservation handling.",
+            "parent_skill": "Reservation & waitlist management",
+            "related_skills": [
+                "Reservation confirmation & guest communication",
+                "Reservation data analysis & reporting"
+            ],
+            "keywords": [
+                "guest profile",
+                "preferences",
+                "allergies",
+                "special occasion"
+            ],
+            "common_roles": [
+                "Guest services staff",
+                "Front-of-house staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Group booking coordination",
+            "aliases": [
+                "large party booking management",
+                "event reservation coordination",
+                "block seating coordination"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Manage reservations for large parties or events including space allocation, menu coordination, deposits, timing and special logistical needs.",
+            "parent_skill": "Reservation & waitlist management",
+            "related_skills": [
+                "Seating optimization",
+                "Deposit and cancellation policy enforcement",
+                "Reservation platform operation"
+            ],
+            "keywords": [
+                "large party",
+                "event booking",
+                "block booking",
+                "banquet coordination"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Guest services staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Reservation data analysis & reporting",
+            "aliases": [
+                "booking metrics analysis",
+                "reservation KPIs",
+                "booking analytics"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Collect and analyze reservation and waitlist data (lead times, no-shows, peak times) to inform staffing, seating and revenue decisions.",
+            "parent_skill": "Reservation & waitlist management",
+            "related_skills": [
+                "No-show mitigation",
+                "Reservation platform operation",
+                "Seating optimization"
+            ],
+            "keywords": [
+                "KPI",
+                "no-show rate",
+                "lead time",
+                "peak analysis",
+                "reporting"
+            ],
+            "common_roles": [
+                "Front-of-house supervisors",
+                "Guest services staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Deposit and cancellation policy enforcement",
+            "aliases": [
+                "cancellation policy enforcement",
+                "reservation deposit handling",
+                "prepayment handling"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Apply and enforce deposit, cancellation and refund policies consistently, process prepayments or card holds and manage disputes in line with legal and company guidelines.",
+            "parent_skill": "Reservation & waitlist management",
+            "related_skills": [
+                "No-show mitigation",
+                "Reservation platform operation",
+                "Group booking coordination"
+            ],
+            "keywords": [
+                "deposit",
+                "cancellation fee",
+                "chargeback",
+                "refund",
+                "policy enforcement"
+            ],
+            "common_roles": [
+                "Front-of-house staff",
+                "Guest services staff"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

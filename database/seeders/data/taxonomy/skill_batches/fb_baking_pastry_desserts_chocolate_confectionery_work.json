@@ -1,0 +1,301 @@
+{
+    "domain": "F&B",
+    "category": "Baking, Pastry & Desserts",
+    "subcategory": "Chocolate & confectionery work",
+    "skills": [
+        {
+            "canonical_name": "Chocolate tempering",
+            "aliases": [
+                "tempering chocolate",
+                "tempering by seeding",
+                "tabling tempering"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Controlling chocolate crystallization through temperature management and agitation to produce stable, glossy chocolate with correct snap and mouthfeel.",
+            "parent_skill": "Chocolate & confectionery work",
+            "related_skills": [
+                "Tempering machine operation",
+                "Couverture chocolate selection & quality assessment",
+                "Chocolate molding and de-moulding",
+                "Enrobing"
+            ],
+            "keywords": [
+                "crystallization",
+                "cocoa butter",
+                "temperature curve",
+                "seed method",
+                "tabling"
+            ],
+            "common_roles": [
+                "Chocolatier",
+                "Pastry Chef",
+                "Confectioner"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tempering machine operation",
+            "aliases": [
+                "automatic tempering machine use",
+                "au bain-marie tempering equipment operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Setting up, operating and troubleshooting commercial chocolate tempering equipment to maintain target temperatures, viscosity and temper state for large-scale production.",
+            "parent_skill": "Chocolate & confectionery work",
+            "related_skills": [
+                "Chocolate tempering",
+                "Enrobing machine operation",
+                "Chocolate molding and de-moulding"
+            ],
+            "keywords": [
+                "tempering machine",
+                "continuous temperer",
+                "viscosity control",
+                "temperature control"
+            ],
+            "common_roles": [
+                "Chocolate Production Operator",
+                "Confectioner",
+                "Pastry Cook"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ganache preparation",
+            "aliases": [
+                "making ganache",
+                "ganache filling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Formulating and preparing ganaches with appropriate chocolate:cream ratios, emulsification and flavoring to achieve targeted textures for fillings, coatings and truffles.",
+            "parent_skill": "Chocolate & confectionery work",
+            "related_skills": [
+                "Truffle production",
+                "Chocolate glazing and finishing",
+                "Chocolate tempering"
+            ],
+            "keywords": [
+                "ratio",
+                "emulsification",
+                "cream",
+                "infusion",
+                "consistency"
+            ],
+            "common_roles": [
+                "Pastry Chef",
+                "Chocolatier",
+                "Confectioner"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Truffle production",
+            "aliases": [
+                "chocolate truffle making",
+                "truffle enrobing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "End-to-end production of chocolate truffles including ganache portioning, chilling, shaping, coating, decorating and packaging to meet quality and throughput targets.",
+            "parent_skill": "Chocolate & confectionery work",
+            "related_skills": [
+                "Ganache preparation",
+                "Enrobing",
+                "Chocolate molding and de-moulding"
+            ],
+            "keywords": [
+                "portioning",
+                "shaping",
+                "coating",
+                "production line",
+                "packaging"
+            ],
+            "common_roles": [
+                "Confectioner",
+                "Production Pastry Cook",
+                "Chocolatier"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Chocolate molding and de-moulding",
+            "aliases": [
+                "chocolate casting",
+                "molding chocolates",
+                "de-molding chocolates"
+            ],
+            "skill_type": "process_skill",
+            "description": "Preparing molds, filling\/casting techniques, vibration\/degassing, cooling control and safe de-moulding to produce consistent shapes and surface finish.",
+            "parent_skill": "Chocolate & confectionery work",
+            "related_skills": [
+                "Chocolate tempering",
+                "Polishing and finishing",
+                "Tempering machine operation"
+            ],
+            "keywords": [
+                "polycarbonate molds",
+                "vibration",
+                "cooling tunnel",
+                "release",
+                "shiny finish"
+            ],
+            "common_roles": [
+                "Chocolatier",
+                "Confectioner",
+                "Pastry Cook"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Enrobing",
+            "aliases": [
+                "enrobing chocolates",
+                "coating with chocolate"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying an even chocolate coating to centers or confections by hand or machine, controlling flow, drip-off, and finish for consistent coverage and appearance.",
+            "parent_skill": "Chocolate & confectionery work",
+            "related_skills": [
+                "Enrobing machine operation",
+                "Chocolate tempering",
+                "Chocolate glazing and finishing"
+            ],
+            "keywords": [
+                "coating",
+                "drip-off",
+                "coverage",
+                "hand enrobing",
+                "flow control"
+            ],
+            "common_roles": [
+                "Confectioner",
+                "Chocolatier",
+                "Production Pastry Cook"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Praline and nut caramelization",
+            "aliases": [
+                "praline paste production",
+                "nut caramelizing",
+                "praliné"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Preparing praline pastes and caramelizing nuts to precise stages, grinding to specified textures and balancing sugar-to-nut ratios for fillings, creams and decorations.",
+            "parent_skill": "Chocolate & confectionery work",
+            "related_skills": [
+                "Gianduja production",
+                "Chocolate fillings",
+                "Sugar & caramel confectionery techniques"
+            ],
+            "keywords": [
+                "praline",
+                "caramelization",
+                "nut paste",
+                "roasting",
+                "texture"
+            ],
+            "common_roles": [
+                "Chocolatier",
+                "Pastry Chef",
+                "Confectioner"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sugar and caramel confectionery techniques",
+            "aliases": [
+                "sugar work",
+                "pulled sugar",
+                "caramel making",
+                "brittle and fondant production"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Making and manipulating sugar-based confections (caramels, pulled\/blown sugar, brittles, fondants) including temperature-stage control, humidity considerations and finishing techniques.",
+            "parent_skill": "Chocolate & confectionery work",
+            "related_skills": [
+                "Praline and nut caramelization",
+                "Chocolate decoration and finishing"
+            ],
+            "keywords": [
+                "soft ball",
+                "hard crack",
+                "inversion",
+                "humidity control",
+                "pulled sugar"
+            ],
+            "common_roles": [
+                "Confectioner",
+                "Pastry Chef",
+                "Sugar Artist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Couverture chocolate selection & quality assessment",
+            "aliases": [
+                "chocolate quality evaluation",
+                "selecting couverture chocolate"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluating chocolate by cocoa percentages, fat content, viscosity, bloom susceptibility and flavor profile to select appropriate couvertures for specific applications.",
+            "parent_skill": "Chocolate & confectionery work",
+            "related_skills": [
+                "Chocolate tempering",
+                "Ganache preparation",
+                "Shelf-life, storage & allergen control for chocolate"
+            ],
+            "keywords": [
+                "couverture",
+                "viscosity",
+                "fat content",
+                "bloom",
+                "flavor profile"
+            ],
+            "common_roles": [
+                "R&D Pastry Chef",
+                "Chocolatier",
+                "Procurement Specialist (F&B)"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Shelf-life, storage & allergen control for chocolate",
+            "aliases": [
+                "chocolate storage best practices",
+                "shelf-life management for confectionery",
+                "allergen management in chocolate production"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Managing temperature\/humidity-controlled storage, FIFO, shelf-life testing and allergen segregation\/labeling practices to ensure product safety and regulatory compliance.",
+            "parent_skill": "Chocolate & confectionery work",
+            "related_skills": [
+                "Couverture chocolate selection & quality assessment",
+                "HACCP for pastry production"
+            ],
+            "keywords": [
+                "temperature control",
+                "humidity",
+                "FIFO",
+                "allergen segregation",
+                "shelf-life"
+            ],
+            "common_roles": [
+                "Production Supervisor (F&B)",
+                "Quality Assurance (Food)",
+                "Confectioner"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

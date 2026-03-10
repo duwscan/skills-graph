@@ -1,0 +1,266 @@
+{
+    "domain": "Finance",
+    "category": "Internal Controls, Audit & SOX Operations",
+    "subcategory": "Control design & documentation",
+    "skills": [
+        {
+            "canonical_name": "SOX control design",
+            "aliases": [
+                "Sarbanes-Oxley control design",
+                "SOX control architecture"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Designing and specifying internal controls to meet Sarbanes‑Oxley (Section 302\/404) requirements, including control objectives, control activities, segregation of duties, and evidence capture.",
+            "parent_skill": "Control design & documentation",
+            "related_skills": [
+                "COSO framework mapping",
+                "Control risk assessment",
+                "Control test plan design",
+                "Control remediation planning & tracking"
+            ],
+            "keywords": [
+                "SOX",
+                "Section 404",
+                "control objective",
+                "segregation of duties",
+                "evidence"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "COSO framework mapping",
+            "aliases": [
+                "COSO mapping",
+                "COSO control alignment"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Mapping business processes and controls to the COSO internal control framework components and principles to demonstrate framework alignment and coverage.",
+            "parent_skill": "Control design & documentation",
+            "related_skills": [
+                "SOX control design",
+                "Internal control documentation",
+                "Control risk assessment"
+            ],
+            "keywords": [
+                "COSO",
+                "control framework",
+                "mapping",
+                "control objectives",
+                "components"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Internal control documentation",
+            "aliases": [
+                "Control documentation",
+                "Control workbook preparation",
+                "Control library maintenance"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating and maintaining formal documentation for controls (policies, procedures, control matrices, narratives, evidence logs) to support testing, SOX compliance, and audits.",
+            "parent_skill": "Control design & documentation",
+            "related_skills": [
+                "Control narrative writing & process flowcharting",
+                "GRC platform documentation and configuration",
+                "ITGC and application control documentation"
+            ],
+            "keywords": [
+                "control matrix",
+                "procedures",
+                "evidence log",
+                "control library",
+                "documentation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control narrative writing & process flowcharting",
+            "aliases": [
+                "Control narratives",
+                "Process flowcharting for controls",
+                "Narrative and flowchart documentation"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Authoring clear control narratives and process flowcharts that describe process steps, control points, data flows, and control owner responsibilities for reviewers and auditors.",
+            "parent_skill": "Control design & documentation",
+            "related_skills": [
+                "Internal control documentation",
+                "Control test plan design",
+                "Control automation assessment and continuous monitoring design"
+            ],
+            "keywords": [
+                "flowchart",
+                "swimlane",
+                "process map",
+                "narrative",
+                "control point"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control risk assessment",
+            "aliases": [
+                "Control-level risk assessment",
+                "Risk assessment for controls",
+                "Residual risk assessment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluating process and control-level risks, likelihood and impact, inherent vs residual risk, and using findings to prioritize control design and remediation.",
+            "parent_skill": "Control design & documentation",
+            "related_skills": [
+                "COSO framework mapping",
+                "Key control identification and KPI\/KRI definition",
+                "SOX control design"
+            ],
+            "keywords": [
+                "inherent risk",
+                "residual risk",
+                "likelihood",
+                "impact",
+                "risk rating"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Key control identification and KPI\/KRI definition",
+            "aliases": [
+                "Key control identification",
+                "KPI definition for controls",
+                "KRI development"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Identifying which controls are key to financial reporting or process integrity and defining measurable key performance\/ risk indicators (KPIs\/KRIs) to monitor control effectiveness.",
+            "parent_skill": "Control design & documentation",
+            "related_skills": [
+                "Control risk assessment",
+                "Control automation assessment and continuous monitoring design",
+                "Control test plan design"
+            ],
+            "keywords": [
+                "key control",
+                "KPI",
+                "KRI",
+                "materiality",
+                "control effectiveness"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control test plan design",
+            "aliases": [
+                "Test plan development for controls",
+                "Control testing strategy design",
+                "Control testing design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing test plans and sampling approaches for control testing, including test objectives, procedures, evidence requirements, and frequency to validate control operating effectiveness.",
+            "parent_skill": "Control design & documentation",
+            "related_skills": [
+                "SOX control design",
+                "Internal control documentation",
+                "Control remediation planning & tracking"
+            ],
+            "keywords": [
+                "test plan",
+                "sampling",
+                "test procedure",
+                "evidence",
+                "operating effectiveness"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control remediation planning & tracking",
+            "aliases": [
+                "Control remediation management",
+                "Remediation plan development",
+                "Remediation tracking and closure"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Developing, prioritizing and tracking remediation plans for control deficiencies, coordinating owners, deadlines, remediation testing, and closure evidence.",
+            "parent_skill": "Control design & documentation",
+            "related_skills": [
+                "Control test plan design",
+                "GRC platform documentation and configuration",
+                "Internal control documentation"
+            ],
+            "keywords": [
+                "remediation",
+                "deficiency",
+                "root cause",
+                "closure",
+                "action plan"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ITGC and application control documentation",
+            "aliases": [
+                "ITGC documentation",
+                "Application control documentation",
+                "IT control narratives"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Documenting IT general controls (access, change management, operations) and application-level controls, including control descriptions, control owners, and evidence required for audits.",
+            "parent_skill": "Control design & documentation",
+            "related_skills": [
+                "Control narrative writing & process flowcharting",
+                "GRC platform documentation and configuration",
+                "Control test plan design"
+            ],
+            "keywords": [
+                "ITGC",
+                "access controls",
+                "change management",
+                "application controls",
+                "system controls"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "GRC platform documentation and configuration",
+            "aliases": [
+                "GRC documentation",
+                "GRC platform configuration",
+                "Governance, Risk and Compliance tool usage"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using and configuring Governance, Risk and Compliance (GRC) platforms to record controls, map frameworks, manage evidence, run workflows, and produce control documentation and reporting.",
+            "parent_skill": "Control design & documentation",
+            "related_skills": [
+                "Internal control documentation",
+                "Control remediation planning & tracking",
+                "Control test plan design"
+            ],
+            "keywords": [
+                "GRC",
+                "control repository",
+                "workflow",
+                "evidence upload",
+                "control mapping"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

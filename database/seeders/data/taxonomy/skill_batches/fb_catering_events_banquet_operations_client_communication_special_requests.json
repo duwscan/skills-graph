@@ -1,0 +1,297 @@
+{
+    "domain": "F&B",
+    "category": "Catering, Events & Banquet Operations",
+    "subcategory": "Client communication & special requests",
+    "skills": [
+        {
+            "canonical_name": "Event client consultation",
+            "aliases": [
+                "Client consultation",
+                "Pre-event consultation",
+                "Sales consultation for events",
+                "Discovery meeting"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Conducting structured discussions with clients to elicit event objectives, guest profile, budget, timeline, priorities and special requirements.",
+            "parent_skill": "Client communication & special requests",
+            "related_skills": [
+                "Pre-event client communication and confirmation",
+                "Guest preference profiling",
+                "Quoting and pricing for special requests"
+            ],
+            "keywords": [
+                "client briefing",
+                "requirements gathering",
+                "event discovery",
+                "stakeholder interview"
+            ],
+            "common_roles": [
+                "Event Planner",
+                "Catering Sales Representative",
+                "Banquet Manager",
+                "Client Services Coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Pre-event client communication and confirmation",
+            "aliases": [
+                "Pre-event confirmation",
+                "Event confirmation emails",
+                "Final client reconfirmation"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Confirming final event details with clients (timing, menu, guest counts, access, logistics) and distributing itineraries, checklists and contact points prior to the event date.",
+            "parent_skill": "Client communication & special requests",
+            "related_skills": [
+                "Event client consultation",
+                "Event timeline communication",
+                "Change order and scope management"
+            ],
+            "keywords": [
+                "confirmation",
+                "recon",
+                "itinerary",
+                "final guest count"
+            ],
+            "common_roles": [
+                "Banquet Coordinator",
+                "Event Manager",
+                "Catering Coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Menu customization for dietary needs",
+            "aliases": [
+                "Dietary menu customization",
+                "Special diet menu planning",
+                "Custom menu modifications"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and adapting menus to meet client-requested dietary requirements (vegetarian, vegan, gluten-free, low-sodium, etc.), taste preferences and event themes while maintaining service feasibility.",
+            "parent_skill": "Client communication & special requests",
+            "related_skills": [
+                "Allergen management and compliance",
+                "Cultural and religious dietary accommodations",
+                "Quoting and pricing for special requests"
+            ],
+            "keywords": [
+                "menu adaptation",
+                "dietary restrictions",
+                "special diet",
+                "menu substitution"
+            ],
+            "common_roles": [
+                "Executive Chef",
+                "Catering Manager",
+                "Menu Planner"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen management and compliance",
+            "aliases": [
+                "Food allergen management",
+                "Allergen handling procedures",
+                "Cross-contact controls"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Identifying, documenting and controlling food allergens and preventing cross-contact through labeling, segregation, staff training and operational protocols to meet regulatory and client safety expectations.",
+            "parent_skill": "Client communication & special requests",
+            "related_skills": [
+                "Menu customization for dietary needs",
+                "Cultural and religious dietary accommodations"
+            ],
+            "keywords": [
+                "allergen labeling",
+                "cross-contamination",
+                "ingredient tracing",
+                "food safety"
+            ],
+            "common_roles": [
+                "Food Safety Manager",
+                "Catering Supervisor",
+                "Kitchen Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cultural and religious dietary accommodations",
+            "aliases": [
+                "Religious dietary accommodations",
+                "Kosher\/Halal event catering",
+                "Cultural menu adaptations"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing culturally or religiously specific food practices (sourcing, preparation, certification awareness and service protocols) and advising clients on viable menu options and logistics.",
+            "parent_skill": "Client communication & special requests",
+            "related_skills": [
+                "Menu customization for dietary needs",
+                "Allergen management and compliance",
+                "Event client consultation"
+            ],
+            "keywords": [
+                "kosher",
+                "halal",
+                "ritual requirements",
+                "cultural sensitivity"
+            ],
+            "common_roles": [
+                "Catering Manager",
+                "Event Chef",
+                "Client Services Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Special requests coordination across vendors",
+            "aliases": [
+                "Vendor coordination for special requests",
+                "Third-party coordination",
+                "Cross-vendor fulfilment"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing client-specified bespoke items or services (equipment, décor, entertainment, AV) by coordinating requirements, timelines and responsibilities with internal teams and external vendors to ensure delivery.",
+            "parent_skill": "Client communication & special requests",
+            "related_skills": [
+                "Change order and scope management",
+                "Pre-event client communication and confirmation",
+                "Event day on-site liaison"
+            ],
+            "keywords": [
+                "vendor management",
+                "supply coordination",
+                "logistics",
+                "third-party"
+            ],
+            "common_roles": [
+                "Event Coordinator",
+                "Operations Manager",
+                "Production Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Change order and scope management",
+            "aliases": [
+                "Event change-order handling",
+                "Scope change management",
+                "Amendment processing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Processing and documenting client-initiated changes to event scope, updating estimates and schedules, communicating impacts to teams and securing approvals to control cost and operational risk.",
+            "parent_skill": "Client communication & special requests",
+            "related_skills": [
+                "Quoting and pricing for special requests",
+                "Pre-event client communication and confirmation",
+                "Special requests coordination across vendors"
+            ],
+            "keywords": [
+                "change request",
+                "amendment",
+                "scope control",
+                "impact assessment"
+            ],
+            "common_roles": [
+                "Banquet Manager",
+                "Event Producer",
+                "Account Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "VIP and high-touch client servicing",
+            "aliases": [
+                "VIP guest management",
+                "High-touch client service",
+                "Concierge event service"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Delivering discreet, personalized service and proactively managing special needs, access, security and preferences for VIPs and high-profile guests during events.",
+            "parent_skill": "Client communication & special requests",
+            "related_skills": [
+                "Guest preference profiling",
+                "Event day on-site liaison"
+            ],
+            "keywords": [
+                "white-glove service",
+                "discreet handling",
+                "personalization",
+                "VIP logistics"
+            ],
+            "common_roles": [
+                "Guest Relations Manager",
+                "Event Manager",
+                "Concierge"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Guest preference profiling",
+            "aliases": [
+                "Guest profiling",
+                "Guest preference tracking",
+                "Attendee preference management"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Collecting, organizing and maintaining guest-level data (dietary restrictions, seating needs, accessibility, preferences) to enable personalized service and accurate operational planning.",
+            "parent_skill": "Client communication & special requests",
+            "related_skills": [
+                "Menu customization for dietary needs",
+                "VIP and high-touch client servicing",
+                "Pre-event client communication and confirmation"
+            ],
+            "keywords": [
+                "attendee data",
+                "preference capture",
+                "seating requirements",
+                "accessibility needs"
+            ],
+            "common_roles": [
+                "Event Planner",
+                "Catering Coordinator",
+                "CRM Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Quoting and pricing for special requests",
+            "aliases": [
+                "Special requests costing",
+                "Custom request pricing",
+                "Bespoke service quoting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Estimating costs, preparing itemized quotes and applying appropriate markups for bespoke menu items, equipment rentals, staffing changes and other client-requested services.",
+            "parent_skill": "Client communication & special requests",
+            "related_skills": [
+                "Event client consultation",
+                "Change order and scope management",
+                "Menu customization for dietary needs"
+            ],
+            "keywords": [
+                "cost estimation",
+                "itemized quote",
+                "pricing",
+                "markup"
+            ],
+            "common_roles": [
+                "Catering Sales",
+                "Account Manager",
+                "Estimating Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

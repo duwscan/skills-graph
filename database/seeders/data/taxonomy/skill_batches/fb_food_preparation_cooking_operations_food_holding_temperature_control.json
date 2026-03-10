@@ -1,0 +1,298 @@
+{
+    "domain": "F&B",
+    "category": "Food Preparation & Cooking Operations",
+    "subcategory": "Food holding & temperature control",
+    "skills": [
+        {
+            "canonical_name": "Cold chain management",
+            "aliases": [
+                "cold chain control",
+                "refrigerated chain management",
+                "temperature-controlled logistics"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing end-to-end temperature control for perishable foods across storage, handling and transport to preserve safety and quality.",
+            "parent_skill": "Food holding & temperature control",
+            "related_skills": [
+                "Food temperature monitoring",
+                "FIFO inventory rotation for perishable goods",
+                "Temperature recordkeeping and digital logging",
+                "Cooling and chilling methods"
+            ],
+            "keywords": [
+                "cold chain",
+                "refrigeration",
+                "transport",
+                "perishables"
+            ],
+            "common_roles": [
+                "kitchen operations",
+                "food production",
+                "catering operations",
+                "institutional foodservice"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Hot holding techniques",
+            "aliases": [
+                "hot holding",
+                "maintaining hot-hold temperatures",
+                "steam table management"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Techniques and practices to maintain safe hot-hold temperatures and food quality using appropriate equipment and controls.",
+            "parent_skill": "Food holding & temperature control",
+            "related_skills": [
+                "Holding cabinet operation and maintenance",
+                "Food temperature monitoring",
+                "Temperature recordkeeping and digital logging"
+            ],
+            "keywords": [
+                "hot hold",
+                "steam table",
+                "bain-marie",
+                "service temperature"
+            ],
+            "common_roles": [
+                "kitchen operations",
+                "food production",
+                "catering operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cooling and chilling methods",
+            "aliases": [
+                "rapid cooling",
+                "food chilling procedures",
+                "two-stage cooling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Practical methods to rapidly and safely cool cooked foods (e.g., ice baths, blast chilling) to prevent bacterial growth and maintain quality.",
+            "parent_skill": "Food holding & temperature control",
+            "related_skills": [
+                "Blast chiller operation",
+                "Time-temperature control for safety",
+                "Food temperature monitoring"
+            ],
+            "keywords": [
+                "cooling",
+                "chilling",
+                "rapid chill",
+                "temperature reduction"
+            ],
+            "common_roles": [
+                "food production",
+                "catering operations",
+                "institutional foodservice"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Time-temperature control for safety (TCS)",
+            "aliases": [
+                "time-temperature control",
+                "TCS food management",
+                "time\/temperature abuse prevention"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Understanding and applying regulatory and best-practice limits for time and temperature combinations to prevent pathogen growth in potentially hazardous foods.",
+            "parent_skill": "Food holding & temperature control",
+            "related_skills": [
+                "Temperature recordkeeping and digital logging",
+                "Food temperature monitoring",
+                "HACCP principles"
+            ],
+            "keywords": [
+                "time-temperature",
+                "TCS",
+                "food safety",
+                "temperature abuse"
+            ],
+            "common_roles": [
+                "food safety management",
+                "kitchen operations",
+                "institutional foodservice"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food temperature monitoring",
+            "aliases": [
+                "probe thermometer use",
+                "taking food temperatures",
+                "temperature checking"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using thermometers and temperature probes (digital\/analog) correctly to measure internal product and holding temperatures and interpret readings for safety.",
+            "parent_skill": "Food holding & temperature control",
+            "related_skills": [
+                "Calibration of temperature measuring devices",
+                "Temperature recordkeeping and digital logging",
+                "Time-temperature control for safety (TCS)"
+            ],
+            "keywords": [
+                "thermometer",
+                "probe",
+                "temperature check",
+                "reading"
+            ],
+            "common_roles": [
+                "kitchen operations",
+                "food production",
+                "catering operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Calibration of temperature measuring devices",
+            "aliases": [
+                "thermometer calibration",
+                "sensor calibration",
+                "calibrating probes"
+            ],
+            "skill_type": "process_skill",
+            "description": "Procedures and schedules for verifying and calibrating thermometers and sensors to ensure accurate temperature measurements and regulatory compliance.",
+            "parent_skill": "Food holding & temperature control",
+            "related_skills": [
+                "Food temperature monitoring",
+                "Temperature recordkeeping and digital logging",
+                "Blast chiller operation"
+            ],
+            "keywords": [
+                "calibration",
+                "thermometer check",
+                "accuracy",
+                "ice-point test"
+            ],
+            "common_roles": [
+                "kitchen operations",
+                "food safety management",
+                "institutional foodservice"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Blast chiller operation",
+            "aliases": [
+                "rapid chiller operation",
+                "blast chiller use"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operating and setting blast chillers and rapid-cooling equipment to quickly lower product temperatures in line with safety and quality protocols.",
+            "parent_skill": "Food holding & temperature control",
+            "related_skills": [
+                "Cooling and chilling methods",
+                "Calibration of temperature measuring devices",
+                "Food temperature monitoring"
+            ],
+            "keywords": [
+                "blast chiller",
+                "rapid chill",
+                "equipment operation",
+                "cool-down"
+            ],
+            "common_roles": [
+                "food production",
+                "catering operations",
+                "institutional foodservice"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "FIFO inventory rotation for perishable goods",
+            "aliases": [
+                "first in first out",
+                "stock rotation",
+                "perishable rotation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implementing first-in, first-out stock rotation procedures for perishable items to minimize spoilage and ensure items are used within safe time\/temperature windows.",
+            "parent_skill": "Food holding & temperature control",
+            "related_skills": [
+                "Cold chain management",
+                "Temperature recordkeeping and digital logging",
+                "Inventory control"
+            ],
+            "keywords": [
+                "FIFO",
+                "stock rotation",
+                "perishables",
+                "expiration management"
+            ],
+            "common_roles": [
+                "kitchen operations",
+                "food production",
+                "catering operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Holding cabinet operation and maintenance",
+            "aliases": [
+                "hot-holding cabinet operation",
+                "bain-marie maintenance",
+                "food warmer operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operation, basic troubleshooting and routine maintenance of hot-holding cabinets, food warmers and steam tables to maintain safe temperatures and reliable service.",
+            "parent_skill": "Food holding & temperature control",
+            "related_skills": [
+                "Hot holding techniques",
+                "Food temperature monitoring",
+                "Calibration of temperature measuring devices"
+            ],
+            "keywords": [
+                "holding cabinet",
+                "food warmer",
+                "maintenance",
+                "equipment operation"
+            ],
+            "common_roles": [
+                "kitchen operations",
+                "catering operations",
+                "food production"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Temperature recordkeeping and digital logging",
+            "aliases": [
+                "temperature logs",
+                "digital temperature monitoring",
+                "temperature record management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Maintaining accurate temperature logs and using digital monitoring systems to record, retrieve and report holding, cooling and storage temperatures for safety and audits.",
+            "parent_skill": "Food holding & temperature control",
+            "related_skills": [
+                "Food temperature monitoring",
+                "Time-temperature control for safety (TCS)",
+                "Cold chain management"
+            ],
+            "keywords": [
+                "logbook",
+                "digital log",
+                "temperature records",
+                "monitoring system"
+            ],
+            "common_roles": [
+                "food safety management",
+                "kitchen operations",
+                "institutional foodservice"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

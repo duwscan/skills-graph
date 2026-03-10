@@ -1,0 +1,319 @@
+{
+    "domain": "F&B",
+    "category": "Inventory, Purchasing & Supplier Management",
+    "subcategory": "Cost tracking & price change management",
+    "skills": [
+        {
+            "canonical_name": "Food cost calculation",
+            "aliases": [
+                "food cost percentage",
+                "food cost %",
+                "calculate food cost",
+                "food cost analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Compute and interpret food cost as a percentage of sales and by ingredient or recipe to support margin control and pricing decisions.",
+            "parent_skill": "Cost tracking & price change management",
+            "related_skills": [
+                "Menu costing and pricing",
+                "Cost forecasting and budgeting",
+                "Cost variance reporting and dashboarding"
+            ],
+            "keywords": [
+                "food cost",
+                "cost %",
+                "ingredient cost",
+                "recipe costing",
+                "margin calculation"
+            ],
+            "common_roles": [
+                "Inventory Manager",
+                "Cost Controller",
+                "Food and Beverage Manager",
+                "Restaurant Manager",
+                "Procurement Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Menu costing and pricing",
+            "aliases": [
+                "menu engineering",
+                "menu costing",
+                "menu price setting",
+                "recipe costing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Determine individual menu item costs and set selling prices to achieve target food cost and profitability, including contribution margin analysis.",
+            "parent_skill": "Cost tracking & price change management",
+            "related_skills": [
+                "Food cost calculation",
+                "Price change impact analysis",
+                "Cost forecasting and budgeting"
+            ],
+            "keywords": [
+                "menu price",
+                "menu engineering",
+                "contribution margin",
+                "selling price",
+                "recipe cost"
+            ],
+            "common_roles": [
+                "Food and Beverage Manager",
+                "Menu Developer",
+                "Cost Controller",
+                "Restaurant Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Purchase price variance (PPV) analysis",
+            "aliases": [
+                "PPV analysis",
+                "purchase price variance calculation",
+                "purchase price variance"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyze differences between expected and actual purchase prices to quantify impacts on costs and identify root causes.",
+            "parent_skill": "Cost tracking & price change management",
+            "related_skills": [
+                "Invoice reconciliation and purchase matching",
+                "Cost variance reporting and dashboarding",
+                "Supplier price change management"
+            ],
+            "keywords": [
+                "PPV",
+                "purchase variance",
+                "price variance",
+                "cost variance",
+                "supplier price"
+            ],
+            "common_roles": [
+                "Procurement Analyst",
+                "Cost Controller",
+                "Purchasing Manager",
+                "Inventory Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Supplier price change management",
+            "aliases": [
+                "vendor price change management",
+                "supplier price adjustment process",
+                "price change process"
+            ],
+            "skill_type": "process_skill",
+            "description": "Establish and operate processes to capture, validate, communicate, and implement supplier price changes across purchasing and pricing systems.",
+            "parent_skill": "Cost tracking & price change management",
+            "related_skills": [
+                "Supplier price negotiation",
+                "Invoice reconciliation and purchase matching",
+                "Price change impact analysis"
+            ],
+            "keywords": [
+                "price change",
+                "supplier update",
+                "vendor pricing",
+                "price notifications",
+                "change control"
+            ],
+            "common_roles": [
+                "Purchasing Manager",
+                "Procurement Analyst",
+                "Inventory Manager",
+                "Cost Controller"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Supplier price negotiation",
+            "aliases": [
+                "vendor negotiation",
+                "price negotiation with suppliers",
+                "supplier negotiation"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Negotiate supplier terms and prices to secure favorable purchase costs, discounts, and contract conditions that reduce food cost exposure.",
+            "parent_skill": "Cost tracking & price change management",
+            "related_skills": [
+                "Supplier price change management",
+                "Purchase price variance (PPV) analysis"
+            ],
+            "keywords": [
+                "negotiation",
+                "vendor terms",
+                "supplier discount",
+                "cost reduction",
+                "contract pricing"
+            ],
+            "common_roles": [
+                "Purchasing Manager",
+                "Procurement Analyst",
+                "Category Manager",
+                "Food and Beverage Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Invoice reconciliation and purchase matching",
+            "aliases": [
+                "invoice matching",
+                "PO invoice reconciliation",
+                "three-way match",
+                "invoice reconciliation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Match supplier invoices to purchase orders and receiving records to verify billed prices and quantities, identify discrepancies, and ensure correct cost posting.",
+            "parent_skill": "Cost tracking & price change management",
+            "related_skills": [
+                "Purchase price variance (PPV) analysis",
+                "Supplier price change management"
+            ],
+            "keywords": [
+                "invoice match",
+                "PO matching",
+                "three-way match",
+                "billing reconciliation",
+                "accounts payable"
+            ],
+            "common_roles": [
+                "Accounts Payable Specialist",
+                "Purchasing Coordinator",
+                "Procurement Analyst",
+                "Inventory Controller"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cost forecasting and budgeting",
+            "aliases": [
+                "cost forecasting",
+                "food cost forecasting",
+                "cost budgeting",
+                "cost projection"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Develop short- and long-term forecasts and budgets for food and beverage costs using historical data, seasonality, and supplier trends to support planning.",
+            "parent_skill": "Cost tracking & price change management",
+            "related_skills": [
+                "Food cost calculation",
+                "Price change impact analysis",
+                "Cost variance reporting and dashboarding"
+            ],
+            "keywords": [
+                "forecast",
+                "budget",
+                "projection",
+                "seasonality",
+                "cost plan"
+            ],
+            "common_roles": [
+                "Finance Analyst",
+                "Cost Controller",
+                "Procurement Analyst",
+                "Food and Beverage Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Price change impact analysis",
+            "aliases": [
+                "price impact analysis",
+                "price change modeling",
+                "sensitivity analysis for price changes"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Model and quantify how supplier price changes influence product margins, menu profitability, and overall food cost, including scenario and sensitivity analysis.",
+            "parent_skill": "Cost tracking & price change management",
+            "related_skills": [
+                "Menu costing and pricing",
+                "Cost forecasting and budgeting",
+                "Supplier price change management"
+            ],
+            "keywords": [
+                "impact analysis",
+                "sensitivity",
+                "margin impact",
+                "scenario modeling",
+                "price sensitivity"
+            ],
+            "common_roles": [
+                "Cost Controller",
+                "Procurement Analyst",
+                "Finance Analyst",
+                "Food and Beverage Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inventory valuation methods",
+            "aliases": [
+                "FIFO valuation",
+                "weighted average inventory valuation",
+                "inventory valuation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Apply and interpret inventory valuation methods (e.g., FIFO, weighted average) to accurately value stock and reflect cost of goods sold in financials and cost tracking.",
+            "parent_skill": "Cost tracking & price change management",
+            "related_skills": [
+                "Food cost calculation",
+                "Cost variance reporting and dashboarding"
+            ],
+            "keywords": [
+                "FIFO",
+                "weighted average",
+                "inventory valuation",
+                "COGS",
+                "stock valuation"
+            ],
+            "common_roles": [
+                "Inventory Manager",
+                "Finance Analyst",
+                "Cost Controller",
+                "Warehouse Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cost variance reporting and dashboarding",
+            "aliases": [
+                "cost variance reporting",
+                "variance dashboarding",
+                "cost variance analysis reporting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Design and produce regular variance reports and dashboards that surface deviations between actual and budgeted costs, support root-cause analysis, and drive corrective actions.",
+            "parent_skill": "Cost tracking & price change management",
+            "related_skills": [
+                "Purchase price variance (PPV) analysis",
+                "Cost forecasting and budgeting",
+                "Food cost calculation"
+            ],
+            "keywords": [
+                "variance report",
+                "dashboard",
+                "KPI reporting",
+                "cost tracking",
+                "performance metrics"
+            ],
+            "common_roles": [
+                "Cost Controller",
+                "Finance Analyst",
+                "Inventory Manager",
+                "Operations Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

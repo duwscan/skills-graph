@@ -1,0 +1,277 @@
+{
+    "domain": "IT",
+    "category": "Enterprise Applications & Platforms",
+    "subcategory": "ERP configuration & integration",
+    "skills": [
+        {
+            "canonical_name": "ERP module configuration",
+            "aliases": [
+                "ERP configuration",
+                "Module configuration (ERP)",
+                "Functional configuration"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Configuring core ERP modules (finance, procurement, inventory, sales) including master data, parameters, workflows and business rules to meet business requirements.",
+            "parent_skill": "ERP configuration & integration",
+            "related_skills": [
+                "ERP business process mapping and requirements",
+                "ERP testing & QA",
+                "Master Data Management (ERP)",
+                "ERP security and role-based access control (RBAC)"
+            ],
+            "keywords": [
+                "financal configuration",
+                "procurement",
+                "inventory setup",
+                "module parameters",
+                "business rules"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ERP API integration (REST\/SOAP)",
+            "aliases": [
+                "API-based ERP integration",
+                "REST API integration for ERP",
+                "SOAP integration for ERP"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing integrations between ERP systems and external applications using RESTful and SOAP APIs, including authentication, payload transformations, and error handling.",
+            "parent_skill": "ERP configuration & integration",
+            "related_skills": [
+                "iPaaS and middleware configuration",
+                "Real-time and event-driven ERP integration",
+                "ERP data migration and ETL"
+            ],
+            "keywords": [
+                "API",
+                "REST",
+                "SOAP",
+                "OAuth",
+                "JSON",
+                "XML",
+                "web services"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "iPaaS and middleware configuration",
+            "aliases": [
+                "Integration Platform configuration",
+                "middleware configuration",
+                "ESB\/iPaaS setup"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring integration platforms and middleware (iPaaS\/ESB) to orchestrate data flows between ERP and other systems, including mapping, routing, adapters and monitoring.",
+            "parent_skill": "ERP configuration & integration",
+            "related_skills": [
+                "ERP API integration (REST\/SOAP)",
+                "EDI implementation for ERP",
+                "Real-time and event-driven ERP integration"
+            ],
+            "keywords": [
+                "iPaaS",
+                "MuleSoft",
+                "Dell Boomi",
+                "Azure Logic Apps",
+                "SAP PI\/PO",
+                "integration runtime"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "EDI implementation for ERP",
+            "aliases": [
+                "EDI integration",
+                "X12\/EDIFACT mapping",
+                "EDI mapping for ERP"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Implementing Electronic Data Interchange (EDI) with ERP systems including document mapping (e.g., PO, ASN, invoice), communication protocols, and partner onboarding.",
+            "parent_skill": "ERP configuration & integration",
+            "related_skills": [
+                "iPaaS and middleware configuration",
+                "ERP API integration (REST\/SOAP)",
+                "ERP data migration and ETL"
+            ],
+            "keywords": [
+                "EDI",
+                "X12",
+                "EDIFACT",
+                "AS2",
+                "mapping",
+                "purchase order",
+                "invoice"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ERP data migration and ETL",
+            "aliases": [
+                "ERP data migration",
+                "ETL for ERP",
+                "data conversion for ERP implementations"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning and executing extraction, transformation and loading of legacy data into ERP systems, including data profiling, cleansing, reconciliation and cutover planning.",
+            "parent_skill": "ERP configuration & integration",
+            "related_skills": [
+                "Master Data Management (ERP)",
+                "ERP testing & QA",
+                "ERP module configuration"
+            ],
+            "keywords": [
+                "ETL",
+                "data mapping",
+                "data cleansing",
+                "cutover",
+                "data validation",
+                "migration scripts"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Master Data Management (ERP)",
+            "aliases": [
+                "ERP MDM",
+                "master data governance for ERP",
+                "product and supplier master management"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Defining and governing master data models and processes for ERP (customers, suppliers, products, chart of accounts), including data quality rules, deduplication and lifecycle management.",
+            "parent_skill": "ERP configuration & integration",
+            "related_skills": [
+                "ERP data migration and ETL",
+                "ERP module configuration",
+                "ERP business process mapping and requirements"
+            ],
+            "keywords": [
+                "MDM",
+                "data governance",
+                "data quality",
+                "master data modeling",
+                "deduplication"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ERP security and role-based access control (RBAC)",
+            "aliases": [
+                "ERP access control",
+                "role design for ERP",
+                "authorization and segregation of duties (SoD) for ERP"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Designing and implementing ERP security models including RBAC, segregation of duties controls, authorization objects, user provisioning and compliance checks.",
+            "parent_skill": "ERP configuration & integration",
+            "related_skills": [
+                "ERP module configuration",
+                "ERP testing & QA",
+                "ERP business process mapping and requirements"
+            ],
+            "keywords": [
+                "RBAC",
+                "SoD",
+                "authorization",
+                "user roles",
+                "security configuration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ERP testing & QA",
+            "aliases": [
+                "ERP testing",
+                "UAT and integration testing for ERP",
+                "ERP test scripting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Developing and executing test plans for ERP implementations including unit, integration, regression and user acceptance testing, defect tracking and test automation where applicable.",
+            "parent_skill": "ERP configuration & integration",
+            "related_skills": [
+                "ERP module configuration",
+                "ERP data migration and ETL",
+                "ERP business process mapping and requirements"
+            ],
+            "keywords": [
+                "UAT",
+                "integration testing",
+                "test cases",
+                "regression",
+                "defect management",
+                "test automation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Real-time and event-driven ERP integration",
+            "aliases": [
+                "event-driven ERP integration",
+                "webhooks and message queue integration for ERP",
+                "streaming integration for ERP"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Implementing real-time integrations between ERP and other systems using messaging, event streaming, webhooks or pub\/sub patterns to enable near-instant data synchronization and process triggers.",
+            "parent_skill": "ERP configuration & integration",
+            "related_skills": [
+                "ERP API integration (REST\/SOAP)",
+                "iPaaS and middleware configuration",
+                "ERP data migration and ETL"
+            ],
+            "keywords": [
+                "webhooks",
+                "Kafka",
+                "RabbitMQ",
+                "pub\/sub",
+                "event-driven",
+                "streaming"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ERP business process mapping and requirements",
+            "aliases": [
+                "business process mapping for ERP",
+                "ERP requirements gathering",
+                "process modeling for ERP implementations"
+            ],
+            "skill_type": "process_skill",
+            "description": "Capturing current and target-state business processes, documenting functional requirements and translating them into ERP configuration and integration specifications.",
+            "parent_skill": "ERP configuration & integration",
+            "related_skills": [
+                "ERP module configuration",
+                "Master Data Management (ERP)",
+                "ERP testing & QA"
+            ],
+            "keywords": [
+                "process mapping",
+                "AS-IS",
+                "TO-BE",
+                "requirements elicitation",
+                "process modeling",
+                "BPMN"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,280 @@
+{
+    "domain": "F&B",
+    "category": "Menu Development & Culinary R&D",
+    "subcategory": "Recipe development & testing",
+    "skills": [
+        {
+            "canonical_name": "Recipe formulation",
+            "aliases": [
+                "formulating recipes",
+                "recipe development",
+                "recipe design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing ingredient lists, proportions and stepwise procedures to achieve target flavor, texture, appearance and portioning for a recipe.",
+            "parent_skill": "Recipe development & testing",
+            "related_skills": [
+                "Food cost & yield calculation",
+                "Texture & mouthfeel optimization",
+                "Ingredient functionality & substitution",
+                "Recipe scaling & pilot kitchen execution",
+                "Shelf-life & stability testing"
+            ],
+            "keywords": [
+                "ingredients",
+                "proportions",
+                "method",
+                "portions",
+                "formulation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food cost & yield calculation",
+            "aliases": [
+                "food cost optimization",
+                "ingredient costing",
+                "yield calculation",
+                "cost-per-portion"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculating ingredient costs, yields and portion costs (EP\/AP, %yield) to optimize recipe economics and pricing.",
+            "parent_skill": "Recipe development & testing",
+            "related_skills": [
+                "Recipe formulation",
+                "Recipe scaling & pilot kitchen execution",
+                "Nutrition analysis & labeling",
+                "Shelf-life & stability testing"
+            ],
+            "keywords": [
+                "costing",
+                "yield",
+                "EP\/AP",
+                "portion cost",
+                "food cost %"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sensory evaluation design & implementation",
+            "aliases": [
+                "sensory testing",
+                "taste testing",
+                "organoleptic testing",
+                "sensory panel management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing sensory test protocols, recruiting and managing panels, conducting tests and analyzing sensory data for flavor, aroma, texture and acceptability.",
+            "parent_skill": "Recipe development & testing",
+            "related_skills": [
+                "Texture & mouthfeel optimization",
+                "Recipe formulation",
+                "Test protocol development & documentation",
+                "Ingredient functionality & substitution"
+            ],
+            "keywords": [
+                "triangle test",
+                "hedonic scaling",
+                "descriptive analysis",
+                "panel",
+                "sensory metrics"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ingredient functionality & substitution",
+            "aliases": [
+                "functional ingredient knowledge",
+                "ingredient substitution",
+                "ingredient functionality"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Understanding physicochemical and functional properties of ingredients (e.g., emulsification, hydration, gelling) to select suitable ingredients and substitutions in formulations.",
+            "parent_skill": "Recipe development & testing",
+            "related_skills": [
+                "Recipe formulation",
+                "Texture & mouthfeel optimization",
+                "Shelf-life & stability testing",
+                "Allergen management & dietary accommodation"
+            ],
+            "keywords": [
+                "emulsifier",
+                "stabilizer",
+                "binders",
+                "hydration",
+                "substitution"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Shelf-life & stability testing",
+            "aliases": [
+                "shelf life testing",
+                "product stability testing",
+                "accelerated shelf-life testing",
+                "stability studies"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning and executing physical, chemical and microbial tests (including accelerated studies) to determine product shelf life, storage conditions and packaging impacts.",
+            "parent_skill": "Recipe development & testing",
+            "related_skills": [
+                "Recipe formulation",
+                "Ingredient functionality & substitution",
+                "Nutrition analysis & labeling",
+                "Allergen management & dietary accommodation"
+            ],
+            "keywords": [
+                "shelf life",
+                "microbial testing",
+                "oxidation",
+                "accelerated testing",
+                "stability"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen management & dietary accommodation",
+            "aliases": [
+                "allergen-aware recipe development",
+                "special-diet recipe formulation",
+                "allergen control in recipes",
+                "dietary restrictions adaptation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Developing recipes and processes that identify, avoid, control or declare allergens and meet dietary requirements (e.g., gluten-free, vegan, halal) in line with regulatory and labeling requirements.",
+            "parent_skill": "Recipe development & testing",
+            "related_skills": [
+                "Nutrition analysis & labeling",
+                "Ingredient functionality & substitution",
+                "Shelf-life & stability testing"
+            ],
+            "keywords": [
+                "allergens",
+                "cross-contact",
+                "gluten-free",
+                "vegan",
+                "declaration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Recipe scaling & pilot kitchen execution",
+            "aliases": [
+                "scaling recipes",
+                "pilot testing",
+                "batch scaling",
+                "scale-up execution"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Translating bench prototypes to pilot and production scale, adjusting ingredient proportions, equipment parameters and processes to maintain quality, yield and safety.",
+            "parent_skill": "Recipe development & testing",
+            "related_skills": [
+                "Recipe formulation",
+                "Food cost & yield calculation",
+                "Shelf-life & stability testing",
+                "Test protocol development & documentation"
+            ],
+            "keywords": [
+                "scale-up",
+                "pilot kitchen",
+                "batch size",
+                "process parameters",
+                "equipment"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Nutrition analysis & labeling",
+            "aliases": [
+                "nutrition calculation",
+                "nutrition labeling",
+                "nutritional analysis"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Calculating macronutrient and micronutrient content for recipes and preparing nutrition information compliant with regional labeling regulations and consumer claims.",
+            "parent_skill": "Recipe development & testing",
+            "related_skills": [
+                "Food cost & yield calculation",
+                "Allergen management & dietary accommodation",
+                "Shelf-life & stability testing"
+            ],
+            "keywords": [
+                "calories",
+                "macronutrients",
+                "labeling",
+                "nutrient database",
+                "nutrition facts"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Texture & mouthfeel optimization",
+            "aliases": [
+                "texture optimization",
+                "mouthfeel engineering",
+                "textural development"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and adjusting formulations and processing to achieve specific texture attributes (e.g., creaminess, crunch, chewiness, viscosity) and consistent sensory performance.",
+            "parent_skill": "Recipe development & testing",
+            "related_skills": [
+                "Ingredient functionality & substitution",
+                "Sensory evaluation design & implementation",
+                "Recipe formulation"
+            ],
+            "keywords": [
+                "viscosity",
+                "creaminess",
+                "crispness",
+                "gelation",
+                "mouthfeel"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Test protocol development & documentation",
+            "aliases": [
+                "test protocol documentation",
+                "recipe testing protocols",
+                "R&D documentation",
+                "standardized test plans"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating standardized test methods, recording procedures and results, and maintaining documentation to ensure reproducibility, traceability and knowledge transfer.",
+            "parent_skill": "Recipe development & testing",
+            "related_skills": [
+                "Sensory evaluation design & implementation",
+                "Shelf-life & stability testing",
+                "Recipe scaling & pilot kitchen execution"
+            ],
+            "keywords": [
+                "SOP",
+                "protocol",
+                "documentation",
+                "reproducibility",
+                "test plan"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

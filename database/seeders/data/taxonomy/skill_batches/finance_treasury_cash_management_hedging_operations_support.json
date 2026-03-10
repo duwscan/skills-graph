@@ -1,0 +1,289 @@
+{
+    "domain": "Finance",
+    "category": "Treasury & Cash Management",
+    "subcategory": "Hedging operations support",
+    "skills": [
+        {
+            "canonical_name": "Derivatives trade lifecycle processing",
+            "aliases": [
+                "trade lifecycle management",
+                "derivative lifecycle processing",
+                "trade lifecycle operations"
+            ],
+            "skill_type": "process_skill",
+            "description": "Execute and manage all operational stages of OTC and listed derivative trades from trade capture through confirmation, settlement and termination.",
+            "parent_skill": "Hedging operations support",
+            "related_skills": [
+                "Trade capture and booking",
+                "Confirmations and settlement management",
+                "Exception management for hedging operations"
+            ],
+            "keywords": [
+                "trade lifecycle",
+                "OTC processing",
+                "trade enrichment",
+                "trade novation"
+            ],
+            "common_roles": [
+                "Derivatives Operations Analyst",
+                "Treasury Operations Analyst",
+                "Middle Office Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Trade capture and booking",
+            "aliases": [
+                "trade booking",
+                "trade entry",
+                "trade capture in TMS\/OMS"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Accurately capture, validate and book hedging trades into trading, treasury or position management systems following pre-defined booking conventions.",
+            "parent_skill": "Hedging operations support",
+            "related_skills": [
+                "Derivatives trade lifecycle processing",
+                "Trade capture & position management systems"
+            ],
+            "keywords": [
+                "trade capture",
+                "booking conventions",
+                "position entry",
+                "TMS booking"
+            ],
+            "common_roles": [
+                "Trade Operations Specialist",
+                "Treasury Analyst",
+                "Middle Office Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Confirmations and settlement management",
+            "aliases": [
+                "trade confirmations",
+                "settlement coordination",
+                "confirmation matching"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Manage trade confirmations, affirmation\/matching processes and settlement instructions to ensure timely and accurate exchange of terms and cash\/asset settlement.",
+            "parent_skill": "Hedging operations support",
+            "related_skills": [
+                "Counterparty communication and settlement coordination",
+                "Reconciliation of hedging positions"
+            ],
+            "keywords": [
+                "confirmations",
+                "matching",
+                "settlement instructions",
+                "DTCC\/CTM workflows"
+            ],
+            "common_roles": [
+                "Confirmations Specialist",
+                "Settlement Analyst",
+                "Treasury Operations Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Margin and collateral management",
+            "aliases": [
+                "collateral operations",
+                "margin calls processing",
+                "collateral settlement"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Calculate, call, receive and settle initial and variation margin; manage collateral eligibility, substitution and disputes for cleared and bilateral hedges.",
+            "parent_skill": "Hedging operations support",
+            "related_skills": [
+                "OTC clearing and collateralization operations",
+                "Exception management for hedging operations"
+            ],
+            "keywords": [
+                "variation margin",
+                "initial margin",
+                "collateral optimization",
+                "margin calls"
+            ],
+            "common_roles": [
+                "Collateral Operations Analyst",
+                "Clearing Operations Specialist",
+                "Treasury Collateral Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Reconciliation of hedging positions",
+            "aliases": [
+                "position reconciliation",
+                "cash and position reconcile",
+                "trade-to-ledger reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Reconcile trades, positions and cash flows across front-office systems, middle-office ledgers and general ledger to identify and resolve discrepancies.",
+            "parent_skill": "Hedging operations support",
+            "related_skills": [
+                "Trade capture and booking",
+                "Confirmations and settlement management",
+                "Valuation and P&L attribution support"
+            ],
+            "keywords": [
+                "reconciliation",
+                "trade blotter",
+                "GL reconciliation",
+                "position mismatches"
+            ],
+            "common_roles": [
+                "Reconciliation Analyst",
+                "Middle Office Analyst",
+                "Treasury Accountant"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "OTC clearing and collateralization operations",
+            "aliases": [
+                "clearing operations",
+                "cleared derivatives operations",
+                "central counterparty operations"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Support operational interactions with clearing houses and central counterparties, including novation, margining, default fund contributions and settlement through clearing members.",
+            "parent_skill": "Hedging operations support",
+            "related_skills": [
+                "Margin and collateral management",
+                "Trade capture and booking"
+            ],
+            "keywords": [
+                "CCP",
+                "clearing member",
+                "novation",
+                "cleared swaps"
+            ],
+            "common_roles": [
+                "Clearing Operations Specialist",
+                "Derivatives Operations Analyst",
+                "Collateral Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Counterparty communication and settlement coordination",
+            "aliases": [
+                "counterparty liaison",
+                "settlement coordination",
+                "broker and bank communication"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Coordinate with brokers, counterparties, custodians and internal stakeholders to resolve confirmation, settlement and collateral issues and ensure timely execution of instructions.",
+            "parent_skill": "Hedging operations support",
+            "related_skills": [
+                "Confirmations and settlement management",
+                "OTC clearing and collateralization operations"
+            ],
+            "keywords": [
+                "counterparty communication",
+                "broker liaison",
+                "settlement queries",
+                "affirmations"
+            ],
+            "common_roles": [
+                "Settlement Analyst",
+                "Client Operations Specialist",
+                "Treasury Operations Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Exception management for hedging operations",
+            "aliases": [
+                "operational exception handling",
+                "trade break resolution",
+                "escalation & exception management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Detect, triage and resolve breaks, failed settlements, margin disputes and other operational exceptions; escalate unresolved issues according to SLAs and root-cause analysis.",
+            "parent_skill": "Hedging operations support",
+            "related_skills": [
+                "Reconciliation of hedging positions",
+                "Margin and collateral management"
+            ],
+            "keywords": [
+                "break management",
+                "failed settlement",
+                "SLA escalation",
+                "root cause analysis"
+            ],
+            "common_roles": [
+                "Operations Analyst",
+                "Exception Management Specialist",
+                "Middle Office Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Hedge accounting support and documentation",
+            "aliases": [
+                "hedge accounting operations",
+                "accounting support for hedges",
+                "hedge documentation support"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Prepare and maintain hedge documentation, assist with effectiveness testing inputs and provide operational evidence required for hedge accounting under applicable accounting standards.",
+            "parent_skill": "Hedging operations support",
+            "related_skills": [
+                "Reconciliation of hedging positions",
+                "Valuation and P&L attribution support"
+            ],
+            "keywords": [
+                "hedge documentation",
+                "effectiveness testing",
+                "hedge designation",
+                "accounting support"
+            ],
+            "common_roles": [
+                "Hedge Accounting Specialist",
+                "Treasury Analyst",
+                "Finance Operations Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Valuation and P&L attribution support for hedging instruments",
+            "aliases": [
+                "valuation support",
+                "P&L explain for derivatives",
+                "mark-to-market support"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Provide support for daily valuation, pricing checks and P&L attribution for hedging instruments; prepare inputs for front-office valuations and investigate valuation variances.",
+            "parent_skill": "Hedging operations support",
+            "related_skills": [
+                "Reconciliation of hedging positions",
+                "Hedge accounting support and documentation"
+            ],
+            "keywords": [
+                "valuation",
+                "mark-to-market",
+                "P&L explain",
+                "pricing models"
+            ],
+            "common_roles": [
+                "Valuation Analyst",
+                "Risk Operations Analyst",
+                "Middle Office Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

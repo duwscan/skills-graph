@@ -1,0 +1,250 @@
+{
+    "domain": "Finance",
+    "category": "Cost Accounting & Operational Finance",
+    "subcategory": "Manufacturing variance analysis",
+    "skills": [
+        {
+            "canonical_name": "Standard costing",
+            "aliases": [
+                "standard cost accounting",
+                "standard cost system",
+                "setting standard costs"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, maintaining and applying standard cost rates and quantities for materials, labor and overhead to support variance measurement and product costing.",
+            "parent_skill": "Manufacturing variance analysis",
+            "related_skills": [
+                "Material price variance analysis",
+                "Labor variance analysis (rate & efficiency)",
+                "Overhead variance analysis (fixed & variable)"
+            ],
+            "keywords": [
+                "standard cost",
+                "standard rates",
+                "cost standards",
+                "variance baseline"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Material price variance analysis",
+            "aliases": [
+                "raw material price variance",
+                "MPV analysis",
+                "purchase price variance analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculating and interpreting variances between actual and standard purchase prices for materials, isolating supplier, purchase timing and currency effects.",
+            "parent_skill": "Manufacturing variance analysis",
+            "related_skills": [
+                "Material usage variance analysis",
+                "Inventory valuation adjustments for variances"
+            ],
+            "keywords": [
+                "material price variance",
+                "purchase price variance",
+                "MPV",
+                "supplier variance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Material usage (quantity) variance analysis",
+            "aliases": [
+                "material quantity variance",
+                "material yield variance",
+                "MQV analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing differences between standard and actual material quantities used in production to identify waste, yield, scrap and process issues.",
+            "parent_skill": "Manufacturing variance analysis",
+            "related_skills": [
+                "Material price variance analysis",
+                "Bill of Materials cost roll-up"
+            ],
+            "keywords": [
+                "material usage",
+                "quantity variance",
+                "yield",
+                "scrap analysis"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Labor variance analysis (rate & efficiency)",
+            "aliases": [
+                "labor rate variance",
+                "labor efficiency variance",
+                "labor usage variance"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Measuring and interpreting labor rate and efficiency variances by comparing actual wage costs and productive hours to standards, accounting for overtime, mix and productivity.",
+            "parent_skill": "Manufacturing variance analysis",
+            "related_skills": [
+                "Standard costing",
+                "Capacity variance analysis"
+            ],
+            "keywords": [
+                "labor variance",
+                "LRV",
+                "LEV",
+                "wage variance",
+                "productivity variance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Overhead variance analysis (fixed & variable)",
+            "aliases": [
+                "overhead variance analysis",
+                "variable overhead variance",
+                "fixed overhead volume variance"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluating variances in manufacturing overhead by separating fixed and variable components, analyzing spending, efficiency and volume effects relative to standards or flexible budgets.",
+            "parent_skill": "Manufacturing variance analysis",
+            "related_skills": [
+                "Flexible budget and volume variance analysis",
+                "Standard costing"
+            ],
+            "keywords": [
+                "overhead variance",
+                "fixed overhead",
+                "variable overhead",
+                "FOH variance",
+                "VOH variance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Flexible budget and volume variance analysis",
+            "aliases": [
+                "flexible budget variance",
+                "sales-volume variance",
+                "production volume variance analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Using flexible budgets to separate activity\/volume effects from price and efficiency variances, and measuring the impact of production volume changes on costs per unit.",
+            "parent_skill": "Manufacturing variance analysis",
+            "related_skills": [
+                "Overhead variance analysis (fixed & variable)",
+                "Capacity variance analysis"
+            ],
+            "keywords": [
+                "flexible budget",
+                "volume variance",
+                "budget reallocation",
+                "activity variance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Capacity variance analysis",
+            "aliases": [
+                "production capacity variance",
+                "idle capacity cost analysis",
+                "throughput variance analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Assessing variances caused by under- or over-utilization of production capacity, including fixed cost absorption, idle time and throughput impacts on unit costs.",
+            "parent_skill": "Manufacturing variance analysis",
+            "related_skills": [
+                "Flexible budget and volume variance analysis",
+                "Overhead variance analysis (fixed & variable)"
+            ],
+            "keywords": [
+                "capacity variance",
+                "idle capacity",
+                "absorption",
+                "utilization"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Variance reporting and KPI dashboarding",
+            "aliases": [
+                "variance reporting",
+                "variance dashboards",
+                "manufacturing variance KPIs"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and producing variance reports and dashboards (e.g., in Excel, Power BI) that highlight key cost drivers, trends and exceptions for operational and finance stakeholders.",
+            "parent_skill": "Manufacturing variance analysis",
+            "related_skills": [
+                "Root cause variance investigation",
+                "Standard costing"
+            ],
+            "keywords": [
+                "variance report",
+                "KPI dashboard",
+                "visualization",
+                "exception reporting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Root-cause variance investigation",
+            "aliases": [
+                "variance RCA",
+                "variance investigation",
+                "causal analysis for variances"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Performing structured root-cause analysis to trace variances to operational sources (process, supplier, planning, quality) and recommending corrective actions to reduce future variances.",
+            "parent_skill": "Manufacturing variance analysis",
+            "related_skills": [
+                "Material usage (quantity) variance analysis",
+                "Labor variance analysis (rate & efficiency)"
+            ],
+            "keywords": [
+                "root cause analysis",
+                "5 whys",
+                "fishbone",
+                "corrective action"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bill of Materials (BOM) cost roll-up and variance attribution",
+            "aliases": [
+                "BOM cost roll-up",
+                "product cost roll-up",
+                "component-level variance attribution"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Aggregating component costs through the BOM to calculate standard and actual product costs, and attributing variances to specific materials, operations or components.",
+            "parent_skill": "Manufacturing variance analysis",
+            "related_skills": [
+                "Material usage (quantity) variance analysis",
+                "Standard costing"
+            ],
+            "keywords": [
+                "BOM costing",
+                "cost roll-up",
+                "component variance",
+                "product costing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

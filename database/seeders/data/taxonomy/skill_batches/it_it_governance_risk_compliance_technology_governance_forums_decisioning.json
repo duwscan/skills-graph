@@ -1,0 +1,306 @@
+{
+    "domain": "IT",
+    "category": "IT Governance, Risk & Compliance",
+    "subcategory": "Technology governance forums & decisioning",
+    "skills": [
+        {
+            "canonical_name": "Technology governance framework design",
+            "aliases": [
+                "governance framework design",
+                "IT governance framework design",
+                "governance model design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Define and design governance structures, decision forums, policies, roles and processes that control technology decisions across the organization.",
+            "parent_skill": "Technology governance forums & decisioning",
+            "related_skills": [
+                "Decision rights & accountability modeling",
+                "IT steering committee facilitation",
+                "Governance KPIs & reporting for technology",
+                "Technology portfolio management"
+            ],
+            "keywords": [
+                "governance model",
+                "decision forum",
+                "policy design",
+                "roles and responsibilities",
+                "operating model"
+            ],
+            "common_roles": [
+                "governance forum members",
+                "portfolio oversight teams",
+                "enterprise architecture participants"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "IT steering committee facilitation",
+            "aliases": [
+                "steering committee facilitation",
+                "IT steering meeting facilitation",
+                "governance committee facilitation"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Plan, run and facilitate executive or senior governance committee meetings to surface decisions, prioritize issues and drive accountable actions.",
+            "parent_skill": "Technology governance forums & decisioning",
+            "related_skills": [
+                "Technology governance framework design",
+                "Stakeholder engagement & governance communication",
+                "IT investment prioritization & business case evaluation"
+            ],
+            "keywords": [
+                "meeting facilitation",
+                "agenda management",
+                "decision escalation",
+                "action tracking"
+            ],
+            "common_roles": [
+                "committee chairs",
+                "governance secretariat",
+                "senior IT stakeholders"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Technology portfolio management",
+            "aliases": [
+                "IT portfolio management",
+                "technology portfolio governance",
+                "portfolio oversight"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Maintain and govern the catalog of technology investments (applications, infrastructure, projects) including lifecycle, dependency, capacity and strategic alignment.",
+            "parent_skill": "Technology governance forums & decisioning",
+            "related_skills": [
+                "IT investment prioritization & business case evaluation",
+                "Governance KPIs & reporting for technology",
+                "Vendor governance & contract decisioning"
+            ],
+            "keywords": [
+                "portfolio",
+                "application rationalization",
+                "investment lifecycle",
+                "capacity planning",
+                "dependency mapping"
+            ],
+            "common_roles": [
+                "portfolio oversight teams",
+                "investment review panels",
+                "architecture review participants"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "IT investment prioritization & business case evaluation",
+            "aliases": [
+                "IT investment prioritization",
+                "business case analysis for IT",
+                "project prioritization"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluate and prioritize technology investments using financial, strategic and risk criteria including ROI, TCO, strategic fit and interdependencies.",
+            "parent_skill": "Technology governance forums & decisioning",
+            "related_skills": [
+                "Technology portfolio management",
+                "Governance KPIs & reporting for technology",
+                "Stakeholder engagement & governance communication"
+            ],
+            "keywords": [
+                "ROI",
+                "TCO",
+                "cost benefit",
+                "prioritization",
+                "investment criteria"
+            ],
+            "common_roles": [
+                "investment review panels",
+                "business finance partners",
+                "project intake teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Architecture review board operations",
+            "aliases": [
+                "architecture governance board operations",
+                "ARB operations",
+                "architecture review coordination"
+            ],
+            "skill_type": "process_skill",
+            "description": "Operate architecture review boards: intake submissions, enforce architecture standards, conduct reviews, document decisions and manage exceptions.",
+            "parent_skill": "Technology governance forums & decisioning",
+            "related_skills": [
+                "Technology governance framework design",
+                "Decision rights & accountability modeling",
+                "IT risk escalation & exception governance"
+            ],
+            "keywords": [
+                "architecture review",
+                "standards enforcement",
+                "technical governance",
+                "exception handling"
+            ],
+            "common_roles": [
+                "architecture review participants",
+                "enterprise architects",
+                "solution design leads"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Decision rights & accountability modeling",
+            "aliases": [
+                "decision rights modeling",
+                "RACI modeling",
+                "accountability matrix design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design clear decision-rights frameworks and accountability matrices (e.g., RACI) that specify who can decide, who advises and who implements for technology decisions.",
+            "parent_skill": "Technology governance forums & decisioning",
+            "related_skills": [
+                "Technology governance framework design",
+                "IT steering committee facilitation",
+                "IT investment prioritization & business case evaluation"
+            ],
+            "keywords": [
+                "decision matrix",
+                "RACI",
+                "accountability",
+                "roles and responsibilities",
+                "delegation"
+            ],
+            "common_roles": [
+                "governance designers",
+                "decision forum participants",
+                "process owners"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Governance KPIs & reporting for technology",
+            "aliases": [
+                "technology governance metrics",
+                "IT governance reporting",
+                "governance dashboards"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Define, collect and report governance metrics (e.g., decision timeliness, investment outcomes, compliance status) and produce dashboards for governance forums and executives.",
+            "parent_skill": "Technology governance forums & decisioning",
+            "related_skills": [
+                "Technology portfolio management",
+                "IT investment prioritization & business case evaluation",
+                "IT risk escalation & exception governance"
+            ],
+            "keywords": [
+                "KPIs",
+                "dashboards",
+                "metrics",
+                "reporting",
+                "executive reporting"
+            ],
+            "common_roles": [
+                "governance reporting teams",
+                "portfolio managers",
+                "governance committee secretariat"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Change Advisory Board (CAB) coordination",
+            "aliases": [
+                "CAB coordination",
+                "change advisory board operations",
+                "change board coordination"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Coordinate the operational processes of Change Advisory Boards: change intake, impact assessment scheduling, meeting administration and post-change governance tracking.",
+            "parent_skill": "Technology governance forums & decisioning",
+            "related_skills": [
+                "IT risk escalation & exception governance",
+                "Architecture review board operations",
+                "Governance KPIs & reporting for technology"
+            ],
+            "keywords": [
+                "change management",
+                "CAB",
+                "change approvals",
+                "impact assessment",
+                "change window coordination"
+            ],
+            "common_roles": [
+                "change coordinators",
+                "operational change teams",
+                "release managers"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "IT risk escalation & exception governance",
+            "aliases": [
+                "risk escalation process",
+                "exception governance",
+                "IT exception handling process"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Define and manage processes for escalating technology risks and handling governance exceptions, including approvals, documentation and time-bound mitigations.",
+            "parent_skill": "Technology governance forums & decisioning",
+            "related_skills": [
+                "Architecture review board operations",
+                "Governance KPIs & reporting for technology",
+                "Decision rights & accountability modeling"
+            ],
+            "keywords": [
+                "risk escalation",
+                "exception approval",
+                "mitigation plan",
+                "compliance",
+                "risk committee"
+            ],
+            "common_roles": [
+                "risk owners",
+                "governance escalations teams",
+                "compliance liaisons"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Stakeholder engagement & governance communication",
+            "aliases": [
+                "governance stakeholder engagement",
+                "stakeholder communication for governance",
+                "executive governance communication"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Develop and execute communication strategies to engage stakeholders, surface governance decisions, clarify impacts and secure timely approvals across business and IT audiences.",
+            "parent_skill": "Technology governance forums & decisioning",
+            "related_skills": [
+                "IT steering committee facilitation",
+                "IT investment prioritization & business case evaluation",
+                "Governance KPIs & reporting for technology"
+            ],
+            "keywords": [
+                "stakeholder mapping",
+                "communication plan",
+                "engagement",
+                "executive briefings",
+                "change communications"
+            ],
+            "common_roles": [
+                "governance communicators",
+                "stakeholder managers",
+                "portfolio leads"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

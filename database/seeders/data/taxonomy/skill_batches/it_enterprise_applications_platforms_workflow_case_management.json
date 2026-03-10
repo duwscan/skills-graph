@@ -1,0 +1,269 @@
+{
+    "domain": "IT",
+    "category": "Enterprise Applications & Platforms",
+    "subcategory": "Workflow & case management",
+    "skills": [
+        {
+            "canonical_name": "Business Process Modeling (BPMN)",
+            "aliases": [
+                "BPMN",
+                "Business Process Model and Notation",
+                "process modeling (BPMN)"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, documenting and communicating business processes using BPMN notation to enable workflow automation and handoffs.",
+            "parent_skill": "Workflow & case management",
+            "related_skills": [
+                "Case Management Solution Design",
+                "Business Rules & Decision Modeling (DMN)",
+                "Workflow Automation Development",
+                "Workflow Monitoring & Process Mining"
+            ],
+            "keywords": [
+                "BPMN",
+                "process model",
+                "swimlane",
+                "process diagram",
+                "process mapping"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Case Management Solution Design",
+            "aliases": [
+                "case management design",
+                "case lifecycle design",
+                "case-based process design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Defining data models, case lifecycles, states, milestones, and user interactions to support ad-hoc and structured case handling in enterprise systems.",
+            "parent_skill": "Workflow & case management",
+            "related_skills": [
+                "Business Process Modeling (BPMN)",
+                "SLA and Escalation Management for Casework",
+                "Workflow Automation Development",
+                "Workflow Testing & Quality Assurance"
+            ],
+            "keywords": [
+                "case lifecycle",
+                "case state",
+                "ad-hoc workflow",
+                "case routing",
+                "case data model"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Workflow Automation Development",
+            "aliases": [
+                "workflow automation",
+                "process automation development",
+                "automated workflow development"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Implementing automated workflows, tasks and orchestration using platform flow designers, scripts or automation engines to replace manual processes.",
+            "parent_skill": "Workflow & case management",
+            "related_skills": [
+                "API Integration for Workflow Systems",
+                "Low-code\/No-code Workflow Development",
+                "Business Rules & Decision Modeling (DMN)"
+            ],
+            "keywords": [
+                "automation",
+                "orchestration",
+                "flow designer",
+                "task automation",
+                "automation scripting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "API Integration for Workflow Systems",
+            "aliases": [
+                "workflow API integration",
+                "REST integration for workflows",
+                "system integration for workflows"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and building integrations between workflow\/case platforms and external systems using REST\/SOAP APIs, webhooks, queues and message brokers.",
+            "parent_skill": "Workflow & case management",
+            "related_skills": [
+                "Workflow Automation Development",
+                "Pega Platform",
+                "Workflow Monitoring & Process Mining"
+            ],
+            "keywords": [
+                "API",
+                "REST",
+                "webhook",
+                "integration",
+                "message queue"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Business Rules & Decision Modeling (DMN)",
+            "aliases": [
+                "business rules management",
+                "BRMS",
+                "decision modeling (DMN)"
+            ],
+            "skill_type": "process_skill",
+            "description": "Capturing, modeling and implementing business rules and decision logic (often via DMN\/BRMS) to separate policy from workflow orchestration.",
+            "parent_skill": "Workflow & case management",
+            "related_skills": [
+                "Business Process Modeling (BPMN)",
+                "Workflow Automation Development",
+                "Low-code\/No-code Workflow Development"
+            ],
+            "keywords": [
+                "DMN",
+                "BRMS",
+                "decision table",
+                "rules engine",
+                "policy"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Low-code\/No-code Workflow Development",
+            "aliases": [
+                "low-code workflow",
+                "no-code workflow development",
+                "citizen developer workflow"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Using low-code\/no-code platforms and visual designers to rapidly build, configure and deploy workflow and case applications with minimal hand-coding.",
+            "parent_skill": "Workflow & case management",
+            "related_skills": [
+                "Workflow Automation Development",
+                "Business Process Modeling (BPMN)",
+                "Workflow Testing & Quality Assurance"
+            ],
+            "keywords": [
+                "low-code",
+                "no-code",
+                "visual builder",
+                "drag-and-drop",
+                "rapid application development"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Workflow Testing & Quality Assurance",
+            "aliases": [
+                "workflow QA",
+                "process testing",
+                "case management testing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Creating and executing test plans, regression tests and user acceptance tests for workflows and case processes to validate logic, routing and integrations.",
+            "parent_skill": "Workflow & case management",
+            "related_skills": [
+                "Workflow Automation Development",
+                "API Integration for Workflow Systems",
+                "Low-code\/No-code Workflow Development"
+            ],
+            "keywords": [
+                "UAT",
+                "regression testing",
+                "test case",
+                "end-to-end testing",
+                "automation testing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Workflow Monitoring & Process Mining",
+            "aliases": [
+                "process mining",
+                "workflow analytics",
+                "process performance monitoring"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Collecting workflow telemetry and applying process mining and analytics to identify bottlenecks, compliance gaps and optimization opportunities.",
+            "parent_skill": "Workflow & case management",
+            "related_skills": [
+                "Business Process Modeling (BPMN)",
+                "API Integration for Workflow Systems",
+                "SLA and Escalation Management for Casework"
+            ],
+            "keywords": [
+                "process mining",
+                "KPI",
+                "throughput",
+                "cycle time",
+                "process analytics"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SLA and Escalation Management for Casework",
+            "aliases": [
+                "SLA management",
+                "escalation policy design",
+                "service level management for cases"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Defining, enforcing and monitoring service-level agreements, escalation rules and notifications for case lifecycle stages to meet business response and resolution targets.",
+            "parent_skill": "Workflow & case management",
+            "related_skills": [
+                "Case Management Solution Design",
+                "Workflow Monitoring & Process Mining",
+                "Workflow Automation Development"
+            ],
+            "keywords": [
+                "SLA",
+                "escalation",
+                "routing rules",
+                "timers",
+                "notifications"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Pega Platform",
+            "aliases": [
+                "Pega BPM",
+                "Pegasystems",
+                "Pega Case Management"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Implementing and configuring Pega BPM platform solutions for workflow orchestration, case management, business rules and decisioning.",
+            "parent_skill": "Workflow & case management",
+            "related_skills": [
+                "Business Rules & Decision Modeling (DMN)",
+                "API Integration for Workflow Systems",
+                "Workflow Automation Development"
+            ],
+            "keywords": [
+                "Pega",
+                "PRPC",
+                "case management platform",
+                "Pega rules",
+                "Pega flows"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

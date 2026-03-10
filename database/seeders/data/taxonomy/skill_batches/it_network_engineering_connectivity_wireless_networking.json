@@ -1,0 +1,300 @@
+{
+    "domain": "IT",
+    "category": "Network Engineering & Connectivity",
+    "subcategory": "Wireless networking",
+    "skills": [
+        {
+            "canonical_name": "Wi‑Fi (802.11) Standards",
+            "aliases": [
+                "IEEE 802.11",
+                "WiFi standards",
+                "802.11ac",
+                "802.11ax",
+                "802.11n"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Knowledge of IEEE 802.11 family standards, PHY\/MAC layers, channelization, MCS rates and features across Wi‑Fi generations for design and interoperability.",
+            "parent_skill": "Wireless networking",
+            "related_skills": [
+                "Wireless Network Troubleshooting",
+                "WLAN Security and Authentication",
+                "Wireless Site Survey and RF Planning"
+            ],
+            "keywords": [
+                "802.11ax",
+                "802.11ac",
+                "MIMO",
+                "OFDM",
+                "channel bonding"
+            ],
+            "common_roles": [
+                "network operations",
+                "IT infrastructure"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Wireless Site Survey and RF Planning",
+            "aliases": [
+                "RF site survey",
+                "Wi‑Fi site survey",
+                "coverage planning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Conducting on‑site or predictive surveys to map coverage, capacity, interference and AP placement, and producing RF plans and heatmaps.",
+            "parent_skill": "Wireless networking",
+            "related_skills": [
+                "RF Propagation and Link Budget Analysis",
+                "Antenna Selection and Installation",
+                "Wireless Network Monitoring and Analytics"
+            ],
+            "keywords": [
+                "heatmap",
+                "coverage map",
+                "predictive modeling",
+                "AP placement",
+                "spectrum scan"
+            ],
+            "common_roles": [
+                "field deployment",
+                "network planning"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "RF Propagation and Link Budget Analysis",
+            "aliases": [
+                "RF propagation modeling",
+                "link budget calculation",
+                "path loss analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Modeling radio propagation, calculating link budgets, path loss, fading and SNR to predict coverage, capacity and link performance.",
+            "parent_skill": "Wireless networking",
+            "related_skills": [
+                "Wireless Site Survey and RF Planning",
+                "Antenna Selection and Installation",
+                "Cellular RAN Fundamentals (4G\/5G)"
+            ],
+            "keywords": [
+                "link budget",
+                "free space path loss",
+                "Fresnel zone",
+                "coverage prediction",
+                "SNR"
+            ],
+            "common_roles": [
+                "network planning",
+                "engineering analysis"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Wireless Network Troubleshooting",
+            "aliases": [
+                "Wi‑Fi troubleshooting",
+                "RF troubleshooting",
+                "wireless fault diagnosis"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Systematic diagnosis and resolution of wireless issues including connectivity, interference, roaming, throughput and client compatibility problems.",
+            "parent_skill": "Wireless networking",
+            "related_skills": [
+                "Wireless Network Monitoring and Analytics",
+                "Wi‑Fi (802.11) Standards",
+                "WLAN Security and Authentication"
+            ],
+            "keywords": [
+                "packet capture",
+                "interference analysis",
+                "roaming issues",
+                "latency",
+                "throughput"
+            ],
+            "common_roles": [
+                "network operations",
+                "technical support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "WLAN Security and Authentication",
+            "aliases": [
+                "Wi‑Fi security",
+                "802.1X",
+                "WPA2\/WPA3 configuration"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Understanding and implementing WLAN security controls and authentication methods including WPA2\/WPA3, 802.1X\/EAP, PSK management and encryption best practices.",
+            "parent_skill": "Wireless networking",
+            "related_skills": [
+                "Wireless Network Troubleshooting",
+                "Compliance: Spectrum Management and Regulatory",
+                "Wi‑Fi (802.11) Standards"
+            ],
+            "keywords": [
+                "WPA3",
+                "802.1X",
+                "EAP",
+                "PSK",
+                "RADIUS"
+            ],
+            "common_roles": [
+                "IT infrastructure",
+                "network operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Antenna Selection and Installation",
+            "aliases": [
+                "antenna placement",
+                "antenna orientation",
+                "antenna tuning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Selecting appropriate antenna types, orientations and mounts, and performing correct installation practices to achieve desired coverage and gain while minimizing interference.",
+            "parent_skill": "Wireless networking",
+            "related_skills": [
+                "RF Propagation and Link Budget Analysis",
+                "Wireless Site Survey and RF Planning",
+                "Wireless Network Troubleshooting"
+            ],
+            "keywords": [
+                "omnidirectional",
+                "directional antenna",
+                "gain",
+                "azimuth",
+                "tilt"
+            ],
+            "common_roles": [
+                "field deployment",
+                "site installation"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Wireless Mesh Networking",
+            "aliases": [
+                "mesh Wi‑Fi",
+                "wireless meshing",
+                "distributed WLAN architectures"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing, deploying and managing mesh and distributed wireless architectures, including backhaul planning, self‑healing behaviors and topology optimization.",
+            "parent_skill": "Wireless networking",
+            "related_skills": [
+                "Wi‑Fi (802.11) Standards",
+                "Wireless Network Monitoring and Analytics",
+                "Wireless Site Survey and RF Planning"
+            ],
+            "keywords": [
+                "mesh backhaul",
+                "self‑healing",
+                "multi‑hop",
+                "distributed APs",
+                "backhaul capacity"
+            ],
+            "common_roles": [
+                "network planning",
+                "field deployment"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cellular RAN Fundamentals (4G\/5G)",
+            "aliases": [
+                "4G LTE fundamentals",
+                "5G NR basics",
+                "cellular radio fundamentals"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Core concepts of radio access networks for LTE and NR including cell structure, scheduling, handover, carrier aggregation and basic RAN performance metrics.",
+            "parent_skill": "Wireless networking",
+            "related_skills": [
+                "RF Propagation and Link Budget Analysis",
+                "Wireless Network Monitoring and Analytics",
+                "Spectrum Management and Regulatory Compliance"
+            ],
+            "keywords": [
+                "LTE",
+                "5G NR",
+                "handover",
+                "carrier aggregation",
+                "eNodeB\/gNodeB"
+            ],
+            "common_roles": [
+                "network engineering",
+                "radio planning"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bluetooth Low Energy (BLE) and IoT Radio Protocols",
+            "aliases": [
+                "BLE",
+                "Zigbee",
+                "Thread",
+                "IoT wireless protocols"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Knowledge of short‑range IoT wireless protocols (BLE, Zigbee, Thread) including pairing, mesh behavior, power optimization and coexistence with Wi‑Fi.",
+            "parent_skill": "Wireless networking",
+            "related_skills": [
+                "Wireless Network Troubleshooting",
+                "Wireless Site Survey and RF Planning",
+                "Antenna Selection and Installation"
+            ],
+            "keywords": [
+                "BLE",
+                "Zigbee",
+                "IoT mesh",
+                "low power",
+                "advertising interval"
+            ],
+            "common_roles": [
+                "IoT deployment",
+                "product integration"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Spectrum Management and Regulatory Compliance",
+            "aliases": [
+                "spectrum planning",
+                "regulatory spectrum rules",
+                "frequency allocation compliance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Understanding national and regional spectrum allocation, licensing requirements, power limits and regulatory constraints for deploying wireless systems compliantly.",
+            "parent_skill": "Wireless networking",
+            "related_skills": [
+                "Wi‑Fi (802.11) Standards",
+                "Cellular RAN Fundamentals (4G\/5G)",
+                "Wireless Site Survey and RF Planning"
+            ],
+            "keywords": [
+                "spectrum allocation",
+                "FCC rules",
+                "ITU",
+                "power limits",
+                "licensed vs unlicensed"
+            ],
+            "common_roles": [
+                "regulatory affairs",
+                "network planning"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

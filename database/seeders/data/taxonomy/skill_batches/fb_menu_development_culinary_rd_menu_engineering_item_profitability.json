@@ -1,0 +1,292 @@
+{
+    "domain": "F&B",
+    "category": "Menu Development & Culinary R&D",
+    "subcategory": "Menu engineering & item profitability",
+    "skills": [
+        {
+            "canonical_name": "Menu engineering",
+            "aliases": [
+                "menu analysis",
+                "menu optimization"
+            ],
+            "skill_type": "process_skill",
+            "description": "Systematic evaluation and structuring of a menu to maximize profitability and balance sales mix, using item classification, pricing, and placement techniques.",
+            "parent_skill": "Menu engineering & item profitability",
+            "related_skills": [
+                "Menu mix optimization",
+                "Menu pricing strategy",
+                "Menu performance reporting & KPI analysis"
+            ],
+            "keywords": [
+                "matrix",
+                "stars",
+                "puzzles",
+                "plowhorses",
+                "dogs",
+                "menu placement"
+            ],
+            "common_roles": [
+                "Menu Developer",
+                "Executive Chef",
+                "Culinary R&D Manager",
+                "Food & Beverage Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Recipe costing",
+            "aliases": [
+                "recipe cost calculation",
+                "standard recipe costing",
+                "food cost calculation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Detailed calculation of per-portion ingredient costs and yield-adjusted costs based on standardized recipes and production yields.",
+            "parent_skill": "Menu engineering & item profitability",
+            "related_skills": [
+                "Portion control & standardization",
+                "Food cost analysis",
+                "POS sales data analysis"
+            ],
+            "keywords": [
+                "ingredient cost",
+                "yield",
+                "portion cost",
+                "standard recipe"
+            ],
+            "common_roles": [
+                "Chef de Cuisine",
+                "Menu Development Specialist",
+                "Culinary Cost Controller"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food cost analysis",
+            "aliases": [
+                "food cost control",
+                "food cost percentage analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analysis of food costs at item and overall outlet level, tracking food cost percentage, variances, and drivers to inform purchasing and pricing decisions.",
+            "parent_skill": "Menu engineering & item profitability",
+            "related_skills": [
+                "Recipe costing",
+                "Contribution margin analysis",
+                "Supplier cost management"
+            ],
+            "keywords": [
+                "food cost %",
+                "cost variance",
+                "cost drivers",
+                "AP vs usage"
+            ],
+            "common_roles": [
+                "Food & Beverage Manager",
+                "Cost Controller",
+                "Executive Chef"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Contribution margin analysis",
+            "aliases": [
+                "item contribution analysis",
+                "per-item margin analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculation and interpretation of contribution margin per menu item (price minus variable cost) to prioritize items that drive profitability.",
+            "parent_skill": "Menu engineering & item profitability",
+            "related_skills": [
+                "Menu pricing strategy",
+                "Menu mix optimization",
+                "Food cost analysis"
+            ],
+            "keywords": [
+                "contribution margin",
+                "variable cost",
+                "profitability per item"
+            ],
+            "common_roles": [
+                "Revenue\/Pricing Analyst",
+                "Menu Developer",
+                "Culinary R&D Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Menu pricing strategy",
+            "aliases": [
+                "menu price setting",
+                "price positioning"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Designing pricing approaches for menu items using cost-plus, value-based, competitive, and psychological pricing methods to optimize revenue and margin.",
+            "parent_skill": "Menu engineering & item profitability",
+            "related_skills": [
+                "Price elasticity & promotional analysis",
+                "Contribution margin analysis",
+                "A\/B testing & menu experimentation"
+            ],
+            "keywords": [
+                "psychological pricing",
+                "cost-plus",
+                "value pricing",
+                "price positioning"
+            ],
+            "common_roles": [
+                "Revenue Manager",
+                "Menu Developer",
+                "Food & Beverage Director"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Menu mix optimization",
+            "aliases": [
+                "sales mix optimization",
+                "item portfolio optimization"
+            ],
+            "skill_type": "process_skill",
+            "description": "Techniques to adjust menu item assortment, prices, and promotion mix to improve overall sales distribution and profitability across the menu.",
+            "parent_skill": "Menu engineering & item profitability",
+            "related_skills": [
+                "Menu engineering",
+                "Demand forecasting for menu items",
+                "A\/B testing & menu experimentation"
+            ],
+            "keywords": [
+                "assortment",
+                "sales mix",
+                "promotional mix",
+                "item cannibalization"
+            ],
+            "common_roles": [
+                "Menu Developer",
+                "Culinary R&D Manager",
+                "Commercial Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Portion control & standardization",
+            "aliases": [
+                "portioning",
+                "standard portion control"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operational practices and standards to ensure consistent portion sizes, yields, and plating that protect food cost, quality and customer experience.",
+            "parent_skill": "Menu engineering & item profitability",
+            "related_skills": [
+                "Recipe costing",
+                "Food cost analysis",
+                "Menu performance reporting & KPI analysis"
+            ],
+            "keywords": [
+                "scoop counts",
+                "portion guides",
+                "yield control",
+                "PLU"
+            ],
+            "common_roles": [
+                "Kitchen Manager",
+                "Executive Chef",
+                "Operations Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Demand forecasting for menu items",
+            "aliases": [
+                "menu item forecasting",
+                "sales forecasting (menu)"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Forecasting short- and long-term sales volumes for menu items using historical POS data, seasonality, events and promotion signals to inform inventory and menu decisions.",
+            "parent_skill": "Menu engineering & item profitability",
+            "related_skills": [
+                "POS sales data analysis",
+                "Menu mix optimization",
+                "Menu performance reporting & KPI analysis"
+            ],
+            "keywords": [
+                "sales forecast",
+                "seasonality",
+                "time series",
+                "demand planning"
+            ],
+            "common_roles": [
+                "Demand Planner",
+                "Revenue Analyst",
+                "Culinary R&D Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "POS sales data analysis",
+            "aliases": [
+                "POS analytics",
+                "point-of-sale data analysis",
+                "sales mix reporting"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Extraction, cleaning and analysis of point-of-sale transaction data to derive item-level sales, ticket trends, average check, and actionable insights for menu decisions.",
+            "parent_skill": "Menu engineering & item profitability",
+            "related_skills": [
+                "Demand forecasting for menu items",
+                "Menu performance reporting & KPI analysis",
+                "Recipe costing"
+            ],
+            "keywords": [
+                "transactions",
+                "ticket mix",
+                "item sales",
+                "sales velocity"
+            ],
+            "common_roles": [
+                "Business Analyst (F&B)",
+                "Revenue Analyst",
+                "Operations Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "A\/B testing & menu experimentation",
+            "aliases": [
+                "menu testing",
+                "controlled menu experiments",
+                "split testing (menu)"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and executing controlled experiments (A\/B or holdout tests) to measure impact of menu changes — pricing, placement, descriptions or recipes — on sales and profitability.",
+            "parent_skill": "Menu engineering & item profitability",
+            "related_skills": [
+                "Menu pricing strategy",
+                "Menu mix optimization",
+                "POS sales data analysis"
+            ],
+            "keywords": [
+                "A\/B test",
+                "holdout",
+                "lift analysis",
+                "statistical significance"
+            ],
+            "common_roles": [
+                "Culinary R&D Manager",
+                "Menu Developer",
+                "Revenue\/Pricing Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,249 @@
+{
+    "domain": "Finance",
+    "category": "Financial Reporting & External Disclosure",
+    "subcategory": "Statutory financial statements",
+    "skills": [
+        {
+            "canonical_name": "Statutory financial statement preparation",
+            "aliases": [
+                "Preparation of statutory financial statements",
+                "Statutory accounts preparation",
+                "Preparation of statutory accounts"
+            ],
+            "skill_type": "operational_skill",
+            "description": "End-to-end preparation of year-end statutory financial statements in accordance with applicable accounting standards and local filing requirements, including primary statements and notes.",
+            "parent_skill": "Statutory financial statements",
+            "related_skills": [
+                "Financial statement disclosure drafting (IFRS\/US GAAP)",
+                "Statutory filing and regulatory submission compliance",
+                "Financial close management"
+            ],
+            "keywords": [
+                "statutory accounts",
+                "year-end statements",
+                "primary statements",
+                "notes"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Consolidation and group financial reporting",
+            "aliases": [
+                "Group consolidation",
+                "Consolidated financial statements",
+                "Consolidation accounting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Preparing consolidated financial statements for a group, including aggregation of subsidiaries, application of non-controlling interest, elimination entries and consolidation adjustments.",
+            "parent_skill": "Statutory financial statements",
+            "related_skills": [
+                "Intercompany reconciliations and eliminations",
+                "Business combinations and acquisition accounting",
+                "Financial close management"
+            ],
+            "keywords": [
+                "group reporting",
+                "consolidation",
+                "NCI",
+                "eliminations"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intercompany reconciliations and eliminations",
+            "aliases": [
+                "Intercompany reconciliation",
+                "Intercompany elimination entries",
+                "Intercompany matching"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Reconciling intercompany balances, identifying and preparing elimination journal entries, and resolving cross-entity differences for accurate consolidated reporting.",
+            "parent_skill": "Statutory financial statements",
+            "related_skills": [
+                "Consolidation and group financial reporting",
+                "Statutory audit liaison and audit schedule preparation"
+            ],
+            "keywords": [
+                "intercompany",
+                "reconciliations",
+                "eliminations",
+                "matching"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial statement disclosure drafting (IFRS\/US GAAP)",
+            "aliases": [
+                "Note disclosure drafting",
+                "Disclosure preparation",
+                "Financial statement notes drafting"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Drafting and structuring note disclosures in statutory financial statements to satisfy IFRS or US GAAP requirements, including accounting policy notes and required explanatory information.",
+            "parent_skill": "Statutory financial statements",
+            "related_skills": [
+                "Accounting policy application and documentation",
+                "Statutory financial statement preparation"
+            ],
+            "keywords": [
+                "disclosures",
+                "notes",
+                "IFRS disclosures",
+                "US GAAP disclosures"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Accounting policy application and documentation",
+            "aliases": [
+                "Accounting policy documentation",
+                "Accounting policy development",
+                "Accounting policy interpretation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluating, selecting and documenting appropriate accounting policies for recognition, measurement and presentation; ensuring consistent application and disclosure in statutory financial statements.",
+            "parent_skill": "Statutory financial statements",
+            "related_skills": [
+                "Financial statement disclosure drafting (IFRS\/US GAAP)",
+                "Business combinations and acquisition accounting"
+            ],
+            "keywords": [
+                "accounting policies",
+                "policy memorandum",
+                "judgements",
+                "estimates"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Business combinations and acquisition accounting",
+            "aliases": [
+                "M&A accounting",
+                "Acquisition accounting",
+                "IFRS 3 \/ ASC 805 accounting"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Accounting for acquisitions including purchase price allocation, recognition of goodwill and identifiable assets\/liabilities, and related disclosure and reporting requirements.",
+            "parent_skill": "Statutory financial statements",
+            "related_skills": [
+                "Consolidation and group financial reporting",
+                "Goodwill and impairment testing"
+            ],
+            "keywords": [
+                "purchase price allocation",
+                "PPA",
+                "business combination",
+                "goodwill"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Goodwill and impairment testing",
+            "aliases": [
+                "Goodwill impairment testing",
+                "Impairment analysis",
+                "Impairment testing"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Performing impairment assessments for goodwill and other intangible assets, including cash-generating unit (CGU) identification, discounted cash flow models and sensitivity analysis for statutory reporting.",
+            "parent_skill": "Statutory financial statements",
+            "related_skills": [
+                "Business combinations and acquisition accounting",
+                "Accounting policy application and documentation"
+            ],
+            "keywords": [
+                "impairment",
+                "CGU",
+                "DCF",
+                "sensitivity"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "XBRL tagging and electronic financial reporting",
+            "aliases": [
+                "iXBRL tagging",
+                "XBRL filing",
+                "Electronic financial reporting (XBRL)"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Applying XBRL\/iXBRL taxonomies to statutory financial statements, tagging elements, validating instance documents and preparing electronic submissions to regulators.",
+            "parent_skill": "Statutory financial statements",
+            "related_skills": [
+                "Statutory filing and regulatory submission compliance",
+                "Statutory financial statement preparation"
+            ],
+            "keywords": [
+                "XBRL",
+                "iXBRL",
+                "tagging",
+                "electronic filing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Statutory audit liaison and audit schedule preparation",
+            "aliases": [
+                "Statutory audit support",
+                "Audit pack preparation",
+                "Audit schedule preparation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Preparing audit schedules, supporting evidence and reconciliations; coordinating with external auditors and addressing statutory audit queries related to financial statements.",
+            "parent_skill": "Statutory financial statements",
+            "related_skills": [
+                "Intercompany reconciliations and eliminations",
+                "Statutory financial statement preparation"
+            ],
+            "keywords": [
+                "audit pack",
+                "audit schedules",
+                "external audit",
+                "audit queries"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Statutory filing and regulatory submission compliance",
+            "aliases": [
+                "Statutory filings",
+                "Regulatory financial reporting submissions",
+                "Filing statutory accounts"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Managing local statutory filing obligations and regulatory submissions (e.g., company registrars, tax authorities, securities regulators), ensuring deadlines, formats and compliance requirements are met.",
+            "parent_skill": "Statutory financial statements",
+            "related_skills": [
+                "XBRL tagging and electronic financial reporting",
+                "Statutory financial statement preparation"
+            ],
+            "keywords": [
+                "filings",
+                "regulatory submissions",
+                "deadlines",
+                "compliance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

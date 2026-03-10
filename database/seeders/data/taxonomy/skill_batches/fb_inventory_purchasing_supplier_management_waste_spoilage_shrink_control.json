@@ -1,0 +1,303 @@
+{
+    "domain": "F&B",
+    "category": "Inventory, Purchasing & Supplier Management",
+    "subcategory": "Waste, spoilage & shrink control",
+    "skills": [
+        {
+            "canonical_name": "Cold chain management",
+            "aliases": [
+                "cold chain control",
+                "temperature-controlled supply chain",
+                "refrigerated logistics"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and maintaining temperature-controlled storage and transport processes to preserve perishable food quality and safety.",
+            "parent_skill": "Waste, spoilage & shrink control",
+            "related_skills": [
+                "Stock rotation (FIFO\/LIFO)",
+                "Shelf-life extension techniques",
+                "Supplier quality & shelf-life management",
+                "Food waste auditing"
+            ],
+            "keywords": [
+                "temperature control",
+                "refrigeration",
+                "perishables",
+                "transport monitoring",
+                "cold chain"
+            ],
+            "common_roles": [
+                "procurement",
+                "inventory control",
+                "kitchen operations",
+                "supply chain"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Stock rotation (FIFO\/LIFO)",
+            "aliases": [
+                "FIFO rotation",
+                "first-in first-out inventory",
+                "first in first out",
+                "LIFO rotation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implementing and enforcing stock rotation methods (e.g., FIFO) to minimize expiry-related waste and ensure older stock is used first.",
+            "parent_skill": "Waste, spoilage & shrink control",
+            "related_skills": [
+                "Cold chain management",
+                "Inventory accuracy & cycle counting",
+                "Food waste auditing",
+                "Shelf-life extension techniques"
+            ],
+            "keywords": [
+                "FIFO",
+                "stock rotation",
+                "expiry control",
+                "shelf-life",
+                "inventory rotation"
+            ],
+            "common_roles": [
+                "inventory control",
+                "warehouse operations",
+                "kitchen operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Portion control",
+            "aliases": [
+                "portion sizing",
+                "standard portioning",
+                "serving control"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Defining and enforcing standardized serving sizes and dispense procedures to reduce over-serving and food waste while controlling costs.",
+            "parent_skill": "Waste, spoilage & shrink control",
+            "related_skills": [
+                "Recipe yield optimization",
+                "Food waste auditing",
+                "Shrinkage tracking & reconciliation"
+            ],
+            "keywords": [
+                "portion size",
+                "serving standards",
+                "cost control",
+                "waste reduction"
+            ],
+            "common_roles": [
+                "kitchen operations",
+                "foodservice operations",
+                "procurement"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food waste auditing",
+            "aliases": [
+                "waste audit",
+                "kitchen waste measurement",
+                "food loss assessment"
+            ],
+            "skill_type": "process_skill",
+            "description": "Measuring and categorizing waste streams (prep, plate, spoilage, packaging) to quantify losses and identify reduction opportunities.",
+            "parent_skill": "Waste, spoilage & shrink control",
+            "related_skills": [
+                "Shrinkage tracking & reconciliation",
+                "Spoilage root cause analysis",
+                "Waste diversion & byproduct valorization"
+            ],
+            "keywords": [
+                "waste measurement",
+                "audit",
+                "waste categories",
+                "food loss"
+            ],
+            "common_roles": [
+                "operations management",
+                "inventory control",
+                "sustainability"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Spoilage root cause analysis",
+            "aliases": [
+                "spoilage investigation",
+                "root cause analysis for spoilage",
+                "food spoilage troubleshooting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Investigating instances of spoilage to identify underlying causes (handling, storage, supplier quality, packaging) and recommend corrective actions.",
+            "parent_skill": "Waste, spoilage & shrink control",
+            "related_skills": [
+                "Cold chain management",
+                "Supplier quality & shelf-life management",
+                "Food waste auditing"
+            ],
+            "keywords": [
+                "root cause",
+                "spoilage",
+                "investigation",
+                "corrective action"
+            ],
+            "common_roles": [
+                "quality assurance",
+                "operations management",
+                "procurement"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Shrinkage tracking & reconciliation",
+            "aliases": [
+                "inventory shrink tracking",
+                "shrink analysis",
+                "stock loss reconciliation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Monitoring, quantifying and reconciling inventory shrinkage (theft, loss, spoilage, administrative error) against records to identify trends and control losses.",
+            "parent_skill": "Waste, spoilage & shrink control",
+            "related_skills": [
+                "Inventory accuracy & cycle counting",
+                "Food waste auditing",
+                "Supplier quality & shelf-life management"
+            ],
+            "keywords": [
+                "shrinkage",
+                "inventory loss",
+                "reconciliation",
+                "stock variance"
+            ],
+            "common_roles": [
+                "inventory control",
+                "finance operations",
+                "supply chain"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Supplier quality & shelf-life management",
+            "aliases": [
+                "vendor shelf-life management",
+                "supplier quality control for perishables",
+                "vendor freshness management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Setting and managing supplier requirements (specifications, shelf-life guarantees, sampling) to ensure incoming goods meet freshness and usability expectations.",
+            "parent_skill": "Waste, spoilage & shrink control",
+            "related_skills": [
+                "Cold chain management",
+                "Spoilage root cause analysis",
+                "Shrinkage tracking & reconciliation"
+            ],
+            "keywords": [
+                "supplier standards",
+                "shelf-life",
+                "incoming quality",
+                "vendor management"
+            ],
+            "common_roles": [
+                "procurement",
+                "quality assurance",
+                "supply chain"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Recipe yield optimization",
+            "aliases": [
+                "yield optimization",
+                "batch yield management",
+                "food cross-utilization planning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Analyzing recipes and production processes to maximize usable yield, reduce trim loss, and identify cross-utilization opportunities to minimize waste.",
+            "parent_skill": "Waste, spoilage & shrink control",
+            "related_skills": [
+                "Portion control",
+                "Shelf-life extension techniques",
+                "Food waste auditing"
+            ],
+            "keywords": [
+                "yield",
+                "recipe costing",
+                "cross-utilization",
+                "trim reduction"
+            ],
+            "common_roles": [
+                "kitchen operations",
+                "culinary management",
+                "procurement"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Shelf-life extension techniques",
+            "aliases": [
+                "shelf life extension",
+                "preservation techniques",
+                "packaging for shelf-life"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying technical methods (packaging, controlled atmosphere, handling) and best practices to extend product shelf-life and reduce spoilage.",
+            "parent_skill": "Waste, spoilage & shrink control",
+            "related_skills": [
+                "Cold chain management",
+                "Stock rotation (FIFO\/LIFO)",
+                "Supplier quality & shelf-life management"
+            ],
+            "keywords": [
+                "preservation",
+                "MAP",
+                "packaging",
+                "shelf-life"
+            ],
+            "common_roles": [
+                "procurement",
+                "quality assurance",
+                "R&D"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Waste diversion & byproduct valorization",
+            "aliases": [
+                "waste diversion",
+                "byproduct repurposing",
+                "food recovery & valorization"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and operating programs to divert food waste from disposal (composting, donation, upcycling into new products) and recover value from byproducts.",
+            "parent_skill": "Waste, spoilage & shrink control",
+            "related_skills": [
+                "Food waste auditing",
+                "Recipe yield optimization",
+                "Shrinkage tracking & reconciliation"
+            ],
+            "keywords": [
+                "composting",
+                "donation",
+                "upcycling",
+                "circularity"
+            ],
+            "common_roles": [
+                "sustainability",
+                "operations management",
+                "procurement"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

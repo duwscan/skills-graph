@@ -1,0 +1,297 @@
+{
+    "domain": "F&B",
+    "category": "Catering, Events & Banquet Operations",
+    "subcategory": "Staff briefing & role assignment",
+    "skills": [
+        {
+            "canonical_name": "Pre-service staff briefing",
+            "aliases": [
+                "pre-event briefing",
+                "pre-shift briefing",
+                "pre-service huddle"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Deliver concise briefings before service to communicate roles, timings, guest requirements, menu changes, service standards and immediate priorities.",
+            "parent_skill": "Staff briefing & role assignment",
+            "related_skills": [
+                "Run-sheet & service sequence communication",
+                "Task delegation",
+                "Safety & compliance briefing"
+            ],
+            "keywords": [
+                "pre-shift",
+                "huddle",
+                "briefing",
+                "service start"
+            ],
+            "common_roles": [
+                "event operations",
+                "front-of-house teams",
+                "banquet service teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Role assignment & shift rostering",
+            "aliases": [
+                "role assignment",
+                "shift allocation",
+                "rostering"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Assign staff to specific roles and create shift rosters based on skills, availability and event requirements while balancing service quality and labor cost.",
+            "parent_skill": "Staff briefing & role assignment",
+            "related_skills": [
+                "Use of staff scheduling software",
+                "Contingency staffing & backup planning",
+                "Cross-training & role flexibility planning"
+            ],
+            "keywords": [
+                "roster",
+                "shift planning",
+                "allocation",
+                "coverage"
+            ],
+            "common_roles": [
+                "event operations",
+                "banquet service teams",
+                "catering staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Task delegation",
+            "aliases": [
+                "assign tasks",
+                "allocate duties",
+                "duty assignment"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Clearly assign specific tasks and responsibilities to individuals or teams, set expectations and ensure handover and accountability for service execution.",
+            "parent_skill": "Staff briefing & role assignment",
+            "related_skills": [
+                "Pre-service staff briefing",
+                "Performance monitoring",
+                "Accountability tracking"
+            ],
+            "keywords": [
+                "delegate",
+                "responsibility",
+                "handover",
+                "duties"
+            ],
+            "common_roles": [
+                "front-of-house teams",
+                "event operations",
+                "banquet service teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Last-minute staff reallocation",
+            "aliases": [
+                "on-the-fly scheduling",
+                "emergency staffing",
+                "day-of reallocation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Reactively reassign staff and adjust rosters in response to no-shows, sudden demand changes or incidents to maintain service levels.",
+            "parent_skill": "Staff briefing & role assignment",
+            "related_skills": [
+                "Contingency staffing & backup planning",
+                "Use of staff scheduling software",
+                "Shift rostering"
+            ],
+            "keywords": [
+                "no-show",
+                "reassignment",
+                "coverage",
+                "call-in"
+            ],
+            "common_roles": [
+                "event operations",
+                "catering staff",
+                "banquet service teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Safety & compliance briefing",
+            "aliases": [
+                "H&S briefing",
+                "allergen briefing",
+                "compliance briefing"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Communicate health & safety, allergen handling and relevant licensing or regulatory requirements to staff prior to service.",
+            "parent_skill": "Staff briefing & role assignment",
+            "related_skills": [
+                "Pre-service staff briefing",
+                "Run-sheet & service sequence communication",
+                "Incident response coordination"
+            ],
+            "keywords": [
+                "health and safety",
+                "allergens",
+                "licensing",
+                "regulations"
+            ],
+            "common_roles": [
+                "front-of-house teams",
+                "event operations",
+                "kitchen support staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Run-sheet & service sequence communication",
+            "aliases": [
+                "run-sheet briefing",
+                "service timing communication",
+                "event sequence briefing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Explain the event run-sheet, service timeline, cues and handoffs so all staff understand timing, sequence and coordination points.",
+            "parent_skill": "Staff briefing & role assignment",
+            "related_skills": [
+                "Pre-service staff briefing",
+                "Task delegation",
+                "Back-of-house coordination"
+            ],
+            "keywords": [
+                "run-sheet",
+                "timings",
+                "cues",
+                "sequence"
+            ],
+            "common_roles": [
+                "event operations",
+                "banquet service teams",
+                "front-of-house teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-training & role flexibility planning",
+            "aliases": [
+                "cross-skilling",
+                "multi-skilling",
+                "flexible staffing planning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Plan and implement cross-training so staff can cover multiple roles, improving resilience to absences and variable event demands.",
+            "parent_skill": "Staff briefing & role assignment",
+            "related_skills": [
+                "Role assignment & shift rostering",
+                "Contingency staffing & backup planning",
+                "Performance monitoring"
+            ],
+            "keywords": [
+                "cross-train",
+                "multi-role",
+                "flexibility",
+                "skill matrix"
+            ],
+            "common_roles": [
+                "event operations",
+                "catering staff",
+                "banquet service teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Quick orientation for temporary staff",
+            "aliases": [
+                "temp orientation",
+                "agency staff quick-brief",
+                "temporary staff induction"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Provide succinct orientation to temporary or agency staff covering venue layout, basic service standards, emergency procedures and immediate duties.",
+            "parent_skill": "Staff briefing & role assignment",
+            "related_skills": [
+                "Pre-service staff briefing",
+                "Safety & compliance briefing",
+                "Use of staff scheduling software"
+            ],
+            "keywords": [
+                "temporary staff",
+                "orientation",
+                "induction",
+                "agency"
+            ],
+            "common_roles": [
+                "catering staff",
+                "event operations",
+                "banquet service teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Use of staff scheduling software",
+            "aliases": [
+                "rostering software",
+                "digital scheduling tools",
+                "shift planning platforms"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operate digital scheduling and rostering platforms to create and publish rosters, manage availability, process shift trades and track time-off.",
+            "parent_skill": "Staff briefing & role assignment",
+            "related_skills": [
+                "Role assignment & shift rostering",
+                "Last-minute staff reallocation",
+                "Time & attendance tracking"
+            ],
+            "keywords": [
+                "scheduling",
+                "rostering",
+                "digital tools",
+                "shift management"
+            ],
+            "common_roles": [
+                "event operations",
+                "operations coordinators",
+                "catering management"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Contingency staffing & backup planning",
+            "aliases": [
+                "staffing contingency planning",
+                "backup staffing",
+                "float staff planning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Develop contingency plans including call-lists, float roles and overtime strategies to maintain service continuity during disruptions.",
+            "parent_skill": "Staff briefing & role assignment",
+            "related_skills": [
+                "Last-minute staff reallocation",
+                "Cross-training & role flexibility planning",
+                "Role assignment & shift rostering"
+            ],
+            "keywords": [
+                "contingency",
+                "backup",
+                "float staff",
+                "call-list"
+            ],
+            "common_roles": [
+                "event operations",
+                "banquet service teams",
+                "catering staff"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

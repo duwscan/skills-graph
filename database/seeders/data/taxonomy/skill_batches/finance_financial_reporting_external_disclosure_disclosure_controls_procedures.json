@@ -1,0 +1,252 @@
+{
+    "domain": "Finance",
+    "category": "Financial Reporting & External Disclosure",
+    "subcategory": "Disclosure controls & procedures",
+    "skills": [
+        {
+            "canonical_name": "Financial reporting internal control design",
+            "aliases": [
+                "Internal control design for financial reporting",
+                "FR internal control design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and implementing internal controls mapped to financial statement assertions to ensure accuracy, completeness and reliability of financial reporting and external disclosures.",
+            "parent_skill": "Disclosure controls & procedures",
+            "related_skills": [
+                "Control documentation & mapping",
+                "Key control identification & KRI integration",
+                "Sarbanes-Oxley (SOX) compliance testing"
+            ],
+            "keywords": [
+                "internal controls",
+                "control design",
+                "financial assertions",
+                "control framework"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sarbanes-Oxley (SOX) compliance testing",
+            "aliases": [
+                "SOX testing",
+                "SOX control testing"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Planning and executing control testing required under Sarbanes-Oxley, including test design, sampling, evidence evaluation, deficiency classification and reporting.",
+            "parent_skill": "Disclosure controls & procedures",
+            "related_skills": [
+                "Audit walkthroughs & evidence collection for external audits",
+                "Control remediation management",
+                "Control documentation & mapping"
+            ],
+            "keywords": [
+                "SOX",
+                "control testing",
+                "test scripts",
+                "deficiency"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control documentation & mapping",
+            "aliases": [
+                "Control mapping",
+                "Process-to-control mapping",
+                "Control matrix documentation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Documenting process flows and control activities, mapping controls to processes and financial statement line items, and maintaining control matrices and process narratives.",
+            "parent_skill": "Disclosure controls & procedures",
+            "related_skills": [
+                "Financial reporting internal control design",
+                "Sarbanes-Oxley (SOX) compliance testing",
+                "Audit walkthroughs & evidence collection for external audits"
+            ],
+            "keywords": [
+                "control matrix",
+                "process documentation",
+                "flowcharts",
+                "control mapping"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control remediation management",
+            "aliases": [
+                "Remediation tracking",
+                "Control remediation coordination"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Coordinating identification, root-cause analysis, remediation planning, tracking and verification of control deficiencies to closure within agreed timelines.",
+            "parent_skill": "Disclosure controls & procedures",
+            "related_skills": [
+                "Sarbanes-Oxley (SOX) compliance testing",
+                "Control documentation & mapping",
+                "Disclosure committee coordination & external disclosure procedures"
+            ],
+            "keywords": [
+                "remediation plan",
+                "deficiency closure",
+                "root cause",
+                "action tracking"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Audit walkthroughs & evidence collection for external audits",
+            "aliases": [
+                "Audit walkthroughs",
+                "Audit evidence collection",
+                "External audit support"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Leading process walkthroughs with external auditors, preparing and organizing supporting documentation, and collecting evidentiary artifacts to support control testing and reporting.",
+            "parent_skill": "Disclosure controls & procedures",
+            "related_skills": [
+                "Control documentation & mapping",
+                "Sarbanes-Oxley (SOX) compliance testing",
+                "Control remediation management"
+            ],
+            "keywords": [
+                "walkthrough",
+                "audit evidence",
+                "supporting schedules",
+                "external audit"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control self-assessment (CSA) facilitation",
+            "aliases": [
+                "Control self-assessments",
+                "CSA facilitation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and facilitating periodic control self-assessments with process owners to evaluate control design and operating effectiveness and to capture owner attestations.",
+            "parent_skill": "Disclosure controls & procedures",
+            "related_skills": [
+                "Continuous controls monitoring (CCM) implementation",
+                "Control documentation & mapping",
+                "Control remediation management"
+            ],
+            "keywords": [
+                "self-assessment",
+                "owner attestation",
+                "control effectiveness",
+                "risk assessment"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Segregation of duties (SoD) analysis",
+            "aliases": [
+                "SoD analysis",
+                "Segregation of duties assessment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing role assignments, system permissions and process flows to identify segregation of duties conflicts and recommend preventive or detective mitigating controls.",
+            "parent_skill": "Disclosure controls & procedures",
+            "related_skills": [
+                "Continuous controls monitoring (CCM) implementation",
+                "Financial reporting internal control design",
+                "Key control identification & KRI integration"
+            ],
+            "keywords": [
+                "SoD",
+                "access review",
+                "permission analysis",
+                "conflict detection"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Continuous controls monitoring (CCM) implementation",
+            "aliases": [
+                "Continuous monitoring",
+                "CCM implementation",
+                "Continuous control monitoring"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implementing automated or semi-automated monitoring programs that use rules and data analytics to detect control exceptions, trends and outliers on a recurring basis.",
+            "parent_skill": "Disclosure controls & procedures",
+            "related_skills": [
+                "Control self-assessment (CSA) facilitation",
+                "Segregation of duties (SoD) analysis",
+                "Key control identification & KRI integration"
+            ],
+            "keywords": [
+                "automated monitoring",
+                "data analytics",
+                "exception reporting",
+                "controls dashboard"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Key control identification & KRI integration",
+            "aliases": [
+                "Key control identification",
+                "KRI integration",
+                "Key risk indicator integration"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Identifying controls that are critical to preventing material misstatement and integrating key risk indicators (KRIs) to monitor control performance and emerging risks tied to financial reporting.",
+            "parent_skill": "Disclosure controls & procedures",
+            "related_skills": [
+                "Financial reporting internal control design",
+                "Continuous controls monitoring (CCM) implementation",
+                "Segregation of duties (SoD) analysis"
+            ],
+            "keywords": [
+                "key controls",
+                "KRIs",
+                "material misstatement",
+                "risk metrics"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Disclosure committee coordination & external disclosure procedures",
+            "aliases": [
+                "Disclosure committee coordination",
+                "Disclosure controls coordination",
+                "External disclosure procedures"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Coordinating cross-functional disclosure committee activities, preparing disclosure controls and procedures documentation and managing review, approval and timing of external financial disclosures.",
+            "parent_skill": "Disclosure controls & procedures",
+            "related_skills": [
+                "Control remediation management",
+                "Control documentation & mapping",
+                "Audit walkthroughs & evidence collection for external audits"
+            ],
+            "keywords": [
+                "disclosure committee",
+                "disclosure controls",
+                "external reporting",
+                "review and approval"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

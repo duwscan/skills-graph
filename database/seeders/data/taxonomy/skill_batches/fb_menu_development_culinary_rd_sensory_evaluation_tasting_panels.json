@@ -1,0 +1,258 @@
+{
+    "domain": "F&B",
+    "category": "Menu Development & Culinary R&D",
+    "subcategory": "Sensory evaluation & tasting panels",
+    "skills": [
+        {
+            "canonical_name": "Sensory panel design",
+            "aliases": [
+                "panel design",
+                "sensory study design",
+                "panel study design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing sensory studies including selecting panel type (trained vs consumer), sample size, test format, blocking and randomization to meet study objectives.",
+            "parent_skill": "Sensory evaluation & tasting panels",
+            "related_skills": [
+                "Panelist recruitment & management",
+                "Sensory protocol development",
+                "Sample preparation, coding & randomization"
+            ],
+            "keywords": [
+                "sample size",
+                "randomization",
+                "blocking",
+                "test format"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Consumer sensory testing",
+            "aliases": [
+                "consumer testing",
+                "hedonic consumer tests",
+                "home-use test (HUT)"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Planning and executing large-scale consumer acceptance tests including recruitment, field logistics, questionnaire design and data collection.",
+            "parent_skill": "Sensory evaluation & tasting panels",
+            "related_skills": [
+                "Panelist recruitment & management",
+                "Sensory data collection software",
+                "Sensory data analysis & statistics"
+            ],
+            "keywords": [
+                "hedonic scale",
+                "acceptance testing",
+                "consumer panel",
+                "home use test"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Descriptive analysis (QDA)",
+            "aliases": [
+                "Quantitative Descriptive Analysis",
+                "QDA",
+                "descriptive sensory analysis"
+            ],
+            "skill_type": "process_skill",
+            "description": "Using trained panels to generate quantitative profiles of product attributes through standardized descriptive methods such as QDA.",
+            "parent_skill": "Sensory evaluation & tasting panels",
+            "related_skills": [
+                "Sensory lexicon & attribute development",
+                "Panel moderation & facilitation",
+                "Sensory data analysis & statistics"
+            ],
+            "keywords": [
+                "attributes",
+                "intensity scaling",
+                "trained panel",
+                "profile"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Discrimination testing (triangle, duo-trio)",
+            "aliases": [
+                "discrimination tests",
+                "triangle test",
+                "duo-trio test"
+            ],
+            "skill_type": "process_skill",
+            "description": "Running and interpreting discrimination tests (e.g., triangle, duo-trio) to determine whether perceptible differences exist between samples.",
+            "parent_skill": "Sensory evaluation & tasting panels",
+            "related_skills": [
+                "Sensory panel design",
+                "Sample preparation, coding & randomization",
+                "Sensory data analysis & statistics"
+            ],
+            "keywords": [
+                "triangle",
+                "duo-trio",
+                "difference testing",
+                "statistical significance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sensory data analysis & statistics",
+            "aliases": [
+                "sensory statistics",
+                "ANOVA for sensory",
+                "multivariate sensory analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing sensory data using univariate and multivariate statistical methods (ANOVA, post-hoc tests, PCA, clustering) and interpreting results for product decisions.",
+            "parent_skill": "Sensory evaluation & tasting panels",
+            "related_skills": [
+                "Descriptive analysis (QDA)",
+                "Discrimination testing (triangle, duo-trio)",
+                "Sensory data collection software"
+            ],
+            "keywords": [
+                "ANOVA",
+                "PCA",
+                "Tukey",
+                "multivariate"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sensory lexicon & attribute development",
+            "aliases": [
+                "attribute definition",
+                "sensory lexicon development",
+                "terminology development"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Creating standardized attribute lists, definitions and reference anchors to ensure consistent scoring across panels and studies.",
+            "parent_skill": "Sensory evaluation & tasting panels",
+            "related_skills": [
+                "Descriptive analysis (QDA)",
+                "Panelist recruitment & management",
+                "Panel moderation & facilitation"
+            ],
+            "keywords": [
+                "reference standards",
+                "attribute definitions",
+                "anchor scaling",
+                "terminology"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Panelist recruitment & management",
+            "aliases": [
+                "panel recruitment",
+                "panel maintenance",
+                "sensory panel management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Recruiting, screening, training and scheduling panelists, tracking performance and maintaining panelist databases and compliance.",
+            "parent_skill": "Sensory evaluation & tasting panels",
+            "related_skills": [
+                "Sensory panel design",
+                "Panel moderation & facilitation",
+                "Sensory lexicon & attribute development"
+            ],
+            "keywords": [
+                "screening",
+                "training",
+                "performance monitoring",
+                "scheduling"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sample preparation, coding & randomization",
+            "aliases": [
+                "sample prep",
+                "blind coding",
+                "sample randomization"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Preparing, labeling\/coding and randomizing sensory samples and implementing blinding procedures to control biases during tests.",
+            "parent_skill": "Sensory evaluation & tasting panels",
+            "related_skills": [
+                "Sensory panel design",
+                "Discrimination testing (triangle, duo-trio)",
+                "Sensory protocol development"
+            ],
+            "keywords": [
+                "blinding",
+                "coding",
+                "randomization",
+                "sample handling"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Panel moderation & facilitation",
+            "aliases": [
+                "moderating tasting panels",
+                "panel facilitation",
+                "sensory moderation"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Leading sensory sessions, instructing panelists, controlling session conditions, probing for clarifications and ensuring consistent administration of tests.",
+            "parent_skill": "Sensory evaluation & tasting panels",
+            "related_skills": [
+                "Panelist recruitment & management",
+                "Descriptive analysis (QDA)",
+                "Sensory lexicon & attribute development"
+            ],
+            "keywords": [
+                "moderation",
+                "facilitation",
+                "instructions",
+                "session control"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sensory data collection software",
+            "aliases": [
+                "Compusense",
+                "FIZZ",
+                "EyeQuestion",
+                "sensory software"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using electronic sensory\/data-collection platforms and tablets to present tests, capture panel responses and export data for analysis.",
+            "parent_skill": "Sensory evaluation & tasting panels",
+            "related_skills": [
+                "Sensory data analysis & statistics",
+                "Consumer sensory testing",
+                "Descriptive analysis (QDA)"
+            ],
+            "keywords": [
+                "data capture",
+                "electronic questionnaires",
+                "tablet testing",
+                "export"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,259 @@
+{
+    "domain": "IT",
+    "category": "IT Governance, Risk & Compliance",
+    "subcategory": "Access reviews & recertification",
+    "skills": [
+        {
+            "canonical_name": "Access review planning",
+            "aliases": [
+                "recertification planning",
+                "access certification planning",
+                "review campaign planning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and scheduling access review\/certification campaigns, defining scope, frequency, owners, and success criteria to ensure timely recertification.",
+            "parent_skill": "Access reviews & recertification",
+            "related_skills": [
+                "Access Certification Execution",
+                "Access Recertification Automation",
+                "Audit & Compliance Reporting for Access Certifications"
+            ],
+            "keywords": [
+                "scope definition",
+                "campaign schedule",
+                "review cadence",
+                "campaign owners",
+                "recertification calendar"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Access Certification Execution",
+            "aliases": [
+                "access review execution",
+                "recertification execution",
+                "certification campaign execution"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Running access review campaigns: assigning review tasks, monitoring reviewer progress, validating attestations, and ensuring closure of review items.",
+            "parent_skill": "Access reviews & recertification",
+            "related_skills": [
+                "Access review planning",
+                "Access Review Exception Management",
+                "Audit & Compliance Reporting for Access Certifications"
+            ],
+            "keywords": [
+                "attestation",
+                "review tasks",
+                "campaign monitoring",
+                "review closure"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Identity governance (IGA) domain knowledge",
+            "aliases": [
+                "IGA domain knowledge",
+                "identity governance concepts",
+                "identity governance & administration knowledge"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Understanding identity governance principles, including lifecycle management, entitlement models, recertification, and policy-driven access controls.",
+            "parent_skill": "Access reviews & recertification",
+            "related_skills": [
+                "Entitlement Management",
+                "Role-Based Access Control (RBAC) Design",
+                "Identity lifecycle management"
+            ],
+            "keywords": [
+                "lifecycle management",
+                "entitlements",
+                "policy-based access",
+                "attestation",
+                "role management"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Entitlement management",
+            "aliases": [
+                "entitlement cataloging",
+                "access entitlement management",
+                "entitlement lifecycle"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Inventorying, classifying and maintaining user entitlements (permissions) across systems to support accurate review and recertification processes.",
+            "parent_skill": "Access reviews & recertification",
+            "related_skills": [
+                "Identity governance (IGA) domain knowledge",
+                "Role-Based Access Control (RBAC) Design",
+                "Access Review Exception Management"
+            ],
+            "keywords": [
+                "entitlement inventory",
+                "permission mapping",
+                "access mapping",
+                "entitlement lifecycle"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Role-Based Access Control (RBAC) design",
+            "aliases": [
+                "RBAC design",
+                "role design",
+                "role engineering"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing role models and role hierarchies, mapping permissions to roles, and minimizing direct user entitlements to streamline recertification.",
+            "parent_skill": "Access reviews & recertification",
+            "related_skills": [
+                "Entitlement management",
+                "Identity governance (IGA) domain knowledge",
+                "Segregation of Duties (SoD) Analysis"
+            ],
+            "keywords": [
+                "role modeling",
+                "role mining",
+                "permission-to-role mapping",
+                "role hierarchy"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Segregation of Duties (SoD) analysis for access reviews",
+            "aliases": [
+                "SoD analysis",
+                "segregation of duties analysis",
+                "conflict matrix analysis"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Identifying and evaluating SoD conflicts during access reviews, applying risk scoring, and recommending compensating controls or remediation.",
+            "parent_skill": "Access reviews & recertification",
+            "related_skills": [
+                "Access Certification Execution",
+                "Audit & Compliance Reporting for Access Certifications",
+                "Privileged Access Review"
+            ],
+            "keywords": [
+                "conflict detection",
+                "SoD conflicts",
+                "risk scoring",
+                "compensating controls"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Privileged access review",
+            "aliases": [
+                "privileged account review",
+                "PAM review",
+                "privileged user recertification"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Reviewing and recertifying privileged accounts and elevated permissions, ensuring least-privilege enforcement and detection of excessive privileges.",
+            "parent_skill": "Access reviews & recertification",
+            "related_skills": [
+                "Entitlement management",
+                "Access Certification Execution",
+                "Access Recertification Automation"
+            ],
+            "keywords": [
+                "privileged accounts",
+                "elevated permissions",
+                "least privilege",
+                "privileged recertification"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Access recertification automation",
+            "aliases": [
+                "recertification automation",
+                "automated access reviews",
+                "attestation automation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and implementing automated workflows for access review campaigns, including auto-assignment, notification, remediation orchestration, and integration with identity systems.",
+            "parent_skill": "Access reviews & recertification",
+            "related_skills": [
+                "Access Review Planning",
+                "Access Certification Execution",
+                "IGA tool configuration"
+            ],
+            "keywords": [
+                "workflow automation",
+                "attestation workflows",
+                "remediation orchestration",
+                "integration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Audit & compliance reporting for access certifications",
+            "aliases": [
+                "access certification reporting",
+                "attestation audit reporting",
+                "recertification audit"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Preparing and producing audit-ready evidence and reports from access review activities, including reviewer attestations, exception records, and remediation histories.",
+            "parent_skill": "Access reviews & recertification",
+            "related_skills": [
+                "Access Certification Execution",
+                "Segregation of Duties (SoD) Analysis for access reviews",
+                "Access Review Exception Management"
+            ],
+            "keywords": [
+                "audit evidence",
+                "attestation logs",
+                "compliance reporting",
+                "audit readiness"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Access review exception management",
+            "aliases": [
+                "exception handling for access reviews",
+                "recertification exception workflow",
+                "attestation exception management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing exceptions uncovered during access reviews: documenting justifications, tracking temporary access, implementing compensating controls, and driving remediation to closure.",
+            "parent_skill": "Access reviews & recertification",
+            "related_skills": [
+                "Privileged access review",
+                "Entitlement management",
+                "Audit & Compliance Reporting for Access Certifications"
+            ],
+            "keywords": [
+                "exception tracking",
+                "temporary access",
+                "compensating controls",
+                "remediation tracking"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

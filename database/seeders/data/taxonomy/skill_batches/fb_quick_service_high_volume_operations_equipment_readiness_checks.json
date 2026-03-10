@@ -1,0 +1,281 @@
+{
+    "domain": "F&B",
+    "category": "Quick Service & High-Volume Operations",
+    "subcategory": "Equipment readiness checks",
+    "skills": [
+        {
+            "canonical_name": "Equipment readiness checklist execution",
+            "aliases": [
+                "pre-shift equipment checklist",
+                "start-of-shift equipment checks",
+                "opening equipment checklist"
+            ],
+            "skill_type": "process_skill",
+            "description": "Perform structured start-of-shift checklists to confirm operational status, safety and service readiness of kitchen and front-of-house equipment before service.",
+            "parent_skill": "Equipment readiness checks",
+            "related_skills": [
+                "Pre-shift equipment safety inspection (electrical\/gas)",
+                "Refrigeration temperature monitoring and alarm testing",
+                "POS and payment terminal readiness testing"
+            ],
+            "keywords": [
+                "pre-shift",
+                "checklist",
+                "start-of-shift",
+                "readiness"
+            ],
+            "common_roles": [
+                "frontline foodservice staff",
+                "operations leads",
+                "safety\/maintenance personnel"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Equipment sanitation (food-contact surfaces)",
+            "aliases": [
+                "equipment cleaning",
+                "food-contact surface sanitization",
+                "sanitization of equipment"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Clean and sanitize food-contact equipment surfaces according to sanitation protocols and regulatory expectations to prevent contamination.",
+            "parent_skill": "Equipment readiness checks",
+            "related_skills": [
+                "Food thermometer calibration and validation",
+                "Smallwares and utensil readiness inspection"
+            ],
+            "keywords": [
+                "sanitization",
+                "cleaning",
+                "food safety",
+                "HACCP"
+            ],
+            "common_roles": [
+                "frontline foodservice staff",
+                "safety\/maintenance personnel"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Fryer operation checks and oil management",
+            "aliases": [
+                "fryer oil checks",
+                "fryer maintenance",
+                "fryer pre-shift check"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Inspect fryers for correct oil level and quality, filter and basket condition, temperature settings and safe operation prior to service.",
+            "parent_skill": "Equipment readiness checks",
+            "related_skills": [
+                "Equipment preventive maintenance logging and scheduling",
+                "Equipment sanitation (food-contact surfaces)"
+            ],
+            "keywords": [
+                "fryer",
+                "oil",
+                "filter",
+                "temperature"
+            ],
+            "common_roles": [
+                "frontline foodservice staff",
+                "kitchen supervisors"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Refrigeration temperature monitoring and alarm testing",
+            "aliases": [
+                "walk-in fridge temperature check",
+                "fridge alarm test",
+                "cold storage temperature verification"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Verify refrigeration and freezer temperatures, test and confirm alarm and monitoring devices, and document deviations to maintain cold-chain integrity.",
+            "parent_skill": "Equipment readiness checks",
+            "related_skills": [
+                "Food thermometer calibration and validation",
+                "Equipment readiness checklist execution"
+            ],
+            "keywords": [
+                "temperature",
+                "refrigeration",
+                "alarm",
+                "cold chain"
+            ],
+            "common_roles": [
+                "frontline foodservice staff",
+                "safety\/maintenance personnel"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food thermometer calibration and validation",
+            "aliases": [
+                "thermometer calibration",
+                "probe calibration",
+                "thermometer validation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Calibrate and validate handheld thermometers and probe sensors using reference standards, and document calibration results for accuracy in temperature checks.",
+            "parent_skill": "Equipment readiness checks",
+            "related_skills": [
+                "Refrigeration temperature monitoring and alarm testing",
+                "Equipment preventive maintenance logging and scheduling"
+            ],
+            "keywords": [
+                "calibration",
+                "thermometer",
+                "probe",
+                "validation"
+            ],
+            "common_roles": [
+                "frontline foodservice staff",
+                "safety\/maintenance personnel"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Pre-shift equipment safety inspection (electrical\/gas)",
+            "aliases": [
+                "pre-shift safety check",
+                "gas and electrical equipment inspection",
+                "safety inspection (electrical\/gas)"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Inspect electrical and gas connections, visible wiring, gas fittings, safety guards and emergency stops for hazards or leaks before service to mitigate safety risks.",
+            "parent_skill": "Equipment readiness checks",
+            "related_skills": [
+                "Exhaust hood and ventilation readiness inspection",
+                "Equipment readiness checklist execution"
+            ],
+            "keywords": [
+                "safety",
+                "gas",
+                "electrical",
+                "inspection"
+            ],
+            "common_roles": [
+                "safety\/maintenance personnel",
+                "operations leads"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Smallwares and utensil readiness inspection",
+            "aliases": [
+                "utensil inventory checks",
+                "smallware condition inspection",
+                "tool readiness check"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Check availability, cleanliness and functionality of pots, pans, utensils, portioning tools and service ware required for planned service periods.",
+            "parent_skill": "Equipment readiness checks",
+            "related_skills": [
+                "Equipment sanitation (food-contact surfaces)",
+                "Equipment readiness checklist execution"
+            ],
+            "keywords": [
+                "smallwares",
+                "utensils",
+                "inventory",
+                "readiness"
+            ],
+            "common_roles": [
+                "frontline foodservice staff",
+                "operations leads"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Equipment preventive maintenance logging and scheduling",
+            "aliases": [
+                "maintenance logging",
+                "preventive maintenance scheduling",
+                "PM scheduling"
+            ],
+            "skill_type": "process_skill",
+            "description": "Record routine maintenance activities, schedule preventive service tasks and track equipment service history to reduce unplanned downtime and extend asset life.",
+            "parent_skill": "Equipment readiness checks",
+            "related_skills": [
+                "Fryer operation checks and oil management",
+                "Food thermometer calibration and validation"
+            ],
+            "keywords": [
+                "preventive maintenance",
+                "PM",
+                "log",
+                "schedule"
+            ],
+            "common_roles": [
+                "safety\/maintenance personnel",
+                "operations leads"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "POS and payment terminal readiness testing",
+            "aliases": [
+                "POS startup check",
+                "payment terminal readiness",
+                "register and printer checks"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Verify point-of-sale systems, receipt printers, cash handling equipment and payment terminals are powered, networked and functioning correctly for service.",
+            "parent_skill": "Equipment readiness checks",
+            "related_skills": [
+                "Equipment readiness checklist execution",
+                "Smallwares and utensil readiness inspection"
+            ],
+            "keywords": [
+                "POS",
+                "payment",
+                "terminal",
+                "printer",
+                "connectivity"
+            ],
+            "common_roles": [
+                "frontline foodservice staff",
+                "operations leads"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Exhaust hood and ventilation readiness inspection",
+            "aliases": [
+                "hood airflow check",
+                "ventilation system inspection",
+                "hood filter check"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Perform visual and basic airflow checks on exhaust hoods, filters and fans, confirm fire-suppression readiness and log issues affecting kitchen ventilation and fire safety.",
+            "parent_skill": "Equipment readiness checks",
+            "related_skills": [
+                "Pre-shift equipment safety inspection (electrical\/gas)",
+                "Equipment preventive maintenance logging and scheduling"
+            ],
+            "keywords": [
+                "ventilation",
+                "hood",
+                "airflow",
+                "filters",
+                "fire suppression"
+            ],
+            "common_roles": [
+                "safety\/maintenance personnel",
+                "operations leads"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

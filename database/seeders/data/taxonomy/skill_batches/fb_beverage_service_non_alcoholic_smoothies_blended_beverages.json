@@ -1,0 +1,280 @@
+{
+    "domain": "F&B",
+    "category": "Beverage Service (Non-Alcoholic)",
+    "subcategory": "Smoothies & blended beverages",
+    "skills": [
+        {
+            "canonical_name": "Smoothie recipe development",
+            "aliases": [
+                "smoothie formulation",
+                "blended beverage recipe design",
+                "drink recipe development"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and testing smoothie and blended-beverage recipes, selecting ingredient combinations, proportions, textures, and sweeteners to achieve consistent taste and quality.",
+            "parent_skill": "Smoothies & blended beverages",
+            "related_skills": [
+                "Flavor balancing and sensory evaluation",
+                "Portion control & yield management",
+                "Nutritional calculation & menu labeling"
+            ],
+            "keywords": [
+                "recipe",
+                "formulation",
+                "ingredients",
+                "ratios"
+            ],
+            "common_roles": [
+                "Beverage service personnel",
+                "Café staff",
+                "Foodservice operators"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Commercial blender operation and maintenance",
+            "aliases": [
+                "industrial blender operation",
+                "blender maintenance",
+                "high-volume blender use"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operating commercial\/high-capacity blenders safely and efficiently, performing routine maintenance, basic troubleshooting, blade replacement, and cleaning procedures.",
+            "parent_skill": "Smoothies & blended beverages",
+            "related_skills": [
+                "Beverage equipment sanitation & cleaning",
+                "Cold chain & refrigerated storage management"
+            ],
+            "keywords": [
+                "blender",
+                "maintenance",
+                "operation",
+                "troubleshooting"
+            ],
+            "common_roles": [
+                "Beverage service personnel",
+                "Café staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Portion control & yield management",
+            "aliases": [
+                "ingredient portioning",
+                "serve size control",
+                "yield optimization"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Measuring and controlling ingredient quantities and serving sizes to ensure consistency, manage food cost, and optimize yield in smoothie production.",
+            "parent_skill": "Smoothies & blended beverages",
+            "related_skills": [
+                "Smoothie recipe development",
+                "Beverage batching & scaling",
+                "Costing and menu pricing"
+            ],
+            "keywords": [
+                "portioning",
+                "measuring",
+                "yield",
+                "consistency"
+            ],
+            "common_roles": [
+                "Foodservice operators",
+                "Counter service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen cross-contact prevention",
+            "aliases": [
+                "allergen management",
+                "preventing cross-contact",
+                "allergen control in beverages"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Practices to prevent allergen cross-contact in smoothie preparation, including ingredient segregation, tool cleaning, labeling, and communication with customers.",
+            "parent_skill": "Smoothies & blended beverages",
+            "related_skills": [
+                "Beverage equipment sanitation & cleaning",
+                "Nutritional calculation & menu labeling"
+            ],
+            "keywords": [
+                "allergens",
+                "cross-contact",
+                "segregation",
+                "labeling"
+            ],
+            "common_roles": [
+                "Beverage service personnel",
+                "Foodservice operators"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cold chain & refrigerated storage management",
+            "aliases": [
+                "cold storage management",
+                "refrigeration control",
+                "temperature-controlled storage"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing refrigerated storage for perishable smoothie ingredients, monitoring temperatures, stock rotation (FIFO), and minimizing spoilage.",
+            "parent_skill": "Smoothies & blended beverages",
+            "related_skills": [
+                "Beverage equipment sanitation & cleaning",
+                "Ingredient sourcing and inventory control"
+            ],
+            "keywords": [
+                "cold chain",
+                "refrigeration",
+                "temperature monitoring",
+                "FIFO"
+            ],
+            "common_roles": [
+                "Café staff",
+                "Foodservice operators"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Beverage batching & scaling",
+            "aliases": [
+                "batch production",
+                "scaling recipes",
+                "high-volume smoothie batching"
+            ],
+            "skill_type": "process_skill",
+            "description": "Converting single-serve recipes into batch quantities, adjusting ingredient ratios, timing, and workflow to maintain quality during high-volume service.",
+            "parent_skill": "Smoothies & blended beverages",
+            "related_skills": [
+                "Portion control & yield management",
+                "Commercial blender operation and maintenance"
+            ],
+            "keywords": [
+                "batching",
+                "scaling",
+                "high-volume",
+                "production"
+            ],
+            "common_roles": [
+                "Foodservice operators",
+                "Beverage service personnel"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Flavor balancing and sensory evaluation",
+            "aliases": [
+                "taste testing",
+                "flavor profiling",
+                "sensory assessment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluating sweetness, acidity, mouthfeel, and texture of smoothies; making adjustments to ingredient proportions to achieve target flavor profiles.",
+            "parent_skill": "Smoothies & blended beverages",
+            "related_skills": [
+                "Smoothie recipe development",
+                "Nutritional calculation & menu labeling"
+            ],
+            "keywords": [
+                "flavor",
+                "texture",
+                "acidity",
+                "sweetness"
+            ],
+            "common_roles": [
+                "Beverage service personnel",
+                "Café staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Nutritional calculation & menu labeling",
+            "aliases": [
+                "nutrition calculation",
+                "calorie and macro calculation",
+                "menu nutrition labeling"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Calculating calories, macronutrients, and allergen information for smoothie menu items and preparing compliant menu labels and information for customers.",
+            "parent_skill": "Smoothies & blended beverages",
+            "related_skills": [
+                "Smoothie recipe development",
+                "Allergen cross-contact prevention"
+            ],
+            "keywords": [
+                "nutrition",
+                "calories",
+                "labeling",
+                "macros"
+            ],
+            "common_roles": [
+                "Foodservice operators",
+                "Beverage service personnel"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Smoothie garnish and presentation",
+            "aliases": [
+                "garnishing techniques",
+                "beverage presentation",
+                "topping and layering"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying garnishes, toppings, layering, and plating techniques to enhance visual appeal and perceived quality of smoothies and blended beverages.",
+            "parent_skill": "Smoothies & blended beverages",
+            "related_skills": [
+                "Smoothie recipe development",
+                "Flavor balancing and sensory evaluation"
+            ],
+            "keywords": [
+                "garnish",
+                "presentation",
+                "toppings",
+                "layering"
+            ],
+            "common_roles": [
+                "Café staff",
+                "Beverage service personnel"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Beverage equipment sanitation & cleaning",
+            "aliases": [
+                "equipment cleaning",
+                "sanitization procedures",
+                "cleaning of blenders and utensils"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Cleaning and sanitizing blenders, pitchers, utensils, and work surfaces according to food safety standards to prevent contamination and maintain hygiene.",
+            "parent_skill": "Smoothies & blended beverages",
+            "related_skills": [
+                "Commercial blender operation and maintenance",
+                "Allergen cross-contact prevention"
+            ],
+            "keywords": [
+                "sanitation",
+                "cleaning",
+                "food safety",
+                "HACCP"
+            ],
+            "common_roles": [
+                "Foodservice operators",
+                "Café staff"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

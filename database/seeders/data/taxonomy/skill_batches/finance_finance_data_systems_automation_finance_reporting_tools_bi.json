@@ -1,0 +1,308 @@
+{
+    "domain": "Finance",
+    "category": "Finance Data, Systems & Automation",
+    "subcategory": "Finance reporting tools & BI",
+    "skills": [
+        {
+            "canonical_name": "Microsoft Power BI",
+            "aliases": [
+                "Power BI",
+                "MS Power BI",
+                "PowerBI"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Designing, building and maintaining interactive financial reports and dashboards using Microsoft Power BI (Desktop\/Service) including data model optimization, visuals, and report deployment.",
+            "parent_skill": "Finance reporting tools & BI",
+            "related_skills": [
+                "DAX (Data Analysis Expressions)",
+                "Financial dashboard design & visualization",
+                "Report automation & scheduled distribution",
+                "Data governance for financial reporting",
+                "SQL for finance reporting"
+            ],
+            "keywords": [
+                "powerbi",
+                "pbix",
+                "power bi service",
+                "power query"
+            ],
+            "common_roles": [
+                "BI developer",
+                "Finance analytics professional",
+                "FP&A analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tableau",
+            "aliases": [
+                "Tableau Desktop",
+                "Tableau Server",
+                "Tableau Online"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Creating and publishing interactive financial visualizations and dashboards with Tableau, including data connections, calculated fields, parameterization, and performance tuning for finance use cases.",
+            "parent_skill": "Finance reporting tools & BI",
+            "related_skills": [
+                "Financial dashboard design & visualization",
+                "ETL and data pipeline development (finance)",
+                "Data governance for financial reporting",
+                "SQL for finance reporting"
+            ],
+            "keywords": [
+                "tableau",
+                "workbook",
+                "viz",
+                "tableau server"
+            ],
+            "common_roles": [
+                "BI developer",
+                "Finance analytics professional",
+                "Reporting analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Looker",
+            "aliases": [
+                "Looker Studio",
+                "LookML",
+                "Google Looker"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Building governed, reusable financial models and dashboards in Looker using LookML, persistent derived tables, Explores and embedded analytics for finance reporting.",
+            "parent_skill": "Finance reporting tools & BI",
+            "related_skills": [
+                "ETL and data pipeline development (finance)",
+                "Financial data modeling",
+                "Data governance for financial reporting",
+                "SQL for finance reporting"
+            ],
+            "keywords": [
+                "looker",
+                "lookml",
+                "explore",
+                "looker studio"
+            ],
+            "common_roles": [
+                "BI developer",
+                "Finance analytics professional",
+                "Analytics engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SQL for finance reporting",
+            "aliases": [
+                "Finance SQL",
+                "T-SQL (finance)",
+                "SQL querying for reports"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Writing and optimizing SQL queries to extract, transform and aggregate financial data for reporting, including joins, window functions, aggregations and performance tuning on analytics databases.",
+            "parent_skill": "Finance reporting tools & BI",
+            "related_skills": [
+                "ETL and data pipeline development (finance)",
+                "Financial data modeling",
+                "Microsoft Power BI",
+                "Tableau"
+            ],
+            "keywords": [
+                "sql",
+                "queries",
+                "joins",
+                "window functions"
+            ],
+            "common_roles": [
+                "Finance analytics professional",
+                "Reporting analyst",
+                "Analytics engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "DAX (Data Analysis Expressions)",
+            "aliases": [
+                "DAX",
+                "Power BI DAX",
+                "Tabular DAX"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using DAX language to create advanced calculations, measures and time-intelligence functions in Power BI and Analysis Services for finance-centric metrics and KPIs.",
+            "parent_skill": "Finance reporting tools & BI",
+            "related_skills": [
+                "Microsoft Power BI",
+                "Financial dashboard design & visualization",
+                "SQL for finance reporting"
+            ],
+            "keywords": [
+                "dax",
+                "measures",
+                "calculated columns",
+                "time intelligence"
+            ],
+            "common_roles": [
+                "BI developer",
+                "Finance analytics professional",
+                "FP&A analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ETL and data pipeline development (finance)",
+            "aliases": [
+                "Finance ETL",
+                "Data pipeline engineering for finance",
+                "Extract Transform Load (finance)"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and building ETL pipelines to ingest, clean, transform and load financial data from source systems into reporting platforms or data warehouses, ensuring accuracy and freshness for reports.",
+            "parent_skill": "Finance reporting tools & BI",
+            "related_skills": [
+                "SQL for finance reporting",
+                "Looker",
+                "Tableau",
+                "Microsoft Power BI",
+                "Data governance for financial reporting"
+            ],
+            "keywords": [
+                "etl",
+                "data pipeline",
+                "ingestion",
+                "data warehouse"
+            ],
+            "common_roles": [
+                "Analytics engineer",
+                "Data engineer",
+                "Finance analytics professional"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial data modeling",
+            "aliases": [
+                "Finance data model design",
+                "Dimensional modeling for finance",
+                "Star schema for finance"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing logical and physical data models tailored for financial reporting (dimensional models, hierarchies, fact and dimension tables) to support reliable, performant analytics and reconciliation.",
+            "parent_skill": "Finance reporting tools & BI",
+            "related_skills": [
+                "ETL and data pipeline development (finance)",
+                "SQL for finance reporting",
+                "Data governance for financial reporting",
+                "Microsoft Power BI"
+            ],
+            "keywords": [
+                "data model",
+                "dimensional model",
+                "star schema",
+                "facts and dimensions"
+            ],
+            "common_roles": [
+                "Analytics engineer",
+                "Finance data modeler",
+                "Finance analytics professional"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial dashboard design & visualization",
+            "aliases": [
+                "Finance dashboard design",
+                "KPI visualization for finance",
+                "Data visualization (finance)"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Applying visual design principles and financial domain knowledge to create clear, actionable dashboards and visualizations that communicate financial performance, trends, and KPIs to stakeholders.",
+            "parent_skill": "Finance reporting tools & BI",
+            "related_skills": [
+                "Microsoft Power BI",
+                "Tableau",
+                "DAX (Data Analysis Expressions)",
+                "Report automation & scheduled distribution"
+            ],
+            "keywords": [
+                "dashboard",
+                "visualization",
+                "kpi",
+                "financial metrics"
+            ],
+            "common_roles": [
+                "Finance analytics professional",
+                "Reporting analyst",
+                "FP&A practitioner"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Report automation & scheduled distribution",
+            "aliases": [
+                "Report scheduling",
+                "Automated report delivery",
+                "Scheduled BI reports"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing automated refresh schedules, subscriptions and distribution mechanisms for financial reports (email, portals, APIs) and ensuring version control, access and auditability.",
+            "parent_skill": "Finance reporting tools & BI",
+            "related_skills": [
+                "Microsoft Power BI",
+                "Tableau",
+                "ETL and data pipeline development (finance)",
+                "Data governance for financial reporting"
+            ],
+            "keywords": [
+                "automation",
+                "scheduling",
+                "subscriptions",
+                "report delivery"
+            ],
+            "common_roles": [
+                "Reporting operations",
+                "Finance analytics professional",
+                "BI operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data governance for financial reporting",
+            "aliases": [
+                "Finance data governance",
+                "Reporting data quality",
+                "Financial report controls"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Establishing controls, lineage, access policies, reconciliation processes and quality checks specific to financial reporting to ensure accuracy, auditability and regulatory compliance of reported figures.",
+            "parent_skill": "Finance reporting tools & BI",
+            "related_skills": [
+                "Financial data modeling",
+                "ETL and data pipeline development (finance)",
+                "Report automation & scheduled distribution",
+                "Microsoft Power BI"
+            ],
+            "keywords": [
+                "data governance",
+                "data lineage",
+                "data quality",
+                "reconciliation"
+            ],
+            "common_roles": [
+                "Finance controls",
+                "Data governance lead",
+                "Finance analytics professional"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

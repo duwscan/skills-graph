@@ -1,0 +1,255 @@
+{
+    "domain": "Finance",
+    "category": "Risk, Compliance & Financial Crime (Finance-Side)",
+    "subcategory": "Operational risk reporting support",
+    "skills": [
+        {
+            "canonical_name": "Operational risk reporting",
+            "aliases": [
+                "ops risk reporting",
+                "operational risk reports",
+                "operational risk report production"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Preparation, consolidation and distribution of operational risk reports covering loss events, control issues, KRIs and trends to support decision-making and oversight.",
+            "parent_skill": "Operational risk management",
+            "related_skills": [
+                "Loss event data capture & analysis",
+                "KRI design and monitoring",
+                "Risk reporting dashboarding",
+                "Risk data aggregation & reconciliation"
+            ],
+            "keywords": [
+                "operational risk report",
+                "loss trends",
+                "risk metrics",
+                "reporting cadence"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "KRI design and monitoring",
+            "aliases": [
+                "key risk indicator development",
+                "KRI design",
+                "KRI monitoring"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, defining thresholds and monitoring Key Risk Indicators to detect changes in operational risk exposures and trigger escalation or control actions.",
+            "parent_skill": "Operational risk reporting",
+            "related_skills": [
+                "Operational risk reporting",
+                "Risk reporting dashboarding",
+                "Data quality controls for risk data"
+            ],
+            "keywords": [
+                "KRI",
+                "thresholds",
+                "early warning indicators",
+                "indicator tuning"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Risk data aggregation & reconciliation",
+            "aliases": [
+                "risk data aggregation",
+                "data reconciliation for risk reporting",
+                "consolidating risk data"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Collecting, aggregating and reconciling risk datasets from multiple sources to ensure completeness and consistency for reporting and analysis.",
+            "parent_skill": "Operational risk reporting",
+            "related_skills": [
+                "Data quality controls for risk data",
+                "SQL for risk reporting",
+                "Report automation & ETL for risk reporting"
+            ],
+            "keywords": [
+                "data aggregation",
+                "reconciliation",
+                "data mapping",
+                "source reconciliation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Loss event data capture & analysis",
+            "aliases": [
+                "operational loss data analysis",
+                "loss event reporting",
+                "loss data capture"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Capturing operational loss events, categorising root causes and analysing frequency\/severity trends to inform reporting and remediation activities.",
+            "parent_skill": "Operational risk reporting",
+            "related_skills": [
+                "Operational risk reporting",
+                "Incident and near-miss reporting",
+                "KRI design and monitoring"
+            ],
+            "keywords": [
+                "loss events",
+                "severity analysis",
+                "root cause",
+                "loss database"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Incident and near-miss reporting",
+            "aliases": [
+                "incident reporting",
+                "near-miss reporting",
+                "operational incident reporting"
+            ],
+            "skill_type": "process_skill",
+            "description": "Documenting, escalating and reporting operational incidents and near-misses, including impact assessment, timelines and control effectiveness for oversight.",
+            "parent_skill": "Operational risk reporting",
+            "related_skills": [
+                "Loss event data capture & analysis",
+                "Report governance & documentation for operational risk"
+            ],
+            "keywords": [
+                "incident log",
+                "near-miss",
+                "escalation",
+                "impact assessment"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Risk reporting dashboarding",
+            "aliases": [
+                "risk dashboards",
+                "operational risk dashboards",
+                "KPI dashboarding for risk"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and building interactive dashboards and visualisations that present operational risk metrics, KRIs and loss trends for stakeholders.",
+            "parent_skill": "Operational risk reporting",
+            "related_skills": [
+                "Operational risk reporting",
+                "KRI design and monitoring",
+                "Business intelligence for risk reporting"
+            ],
+            "keywords": [
+                "dashboard",
+                "visualisation",
+                "KPI charts",
+                "interactive reports"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SQL for risk reporting",
+            "aliases": [
+                "risk reporting SQL",
+                "SQL querying for risk data",
+                "SQL for risk analytics"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Writing SQL queries to extract, transform and validate risk datasets from relational databases to support reporting and analysis.",
+            "parent_skill": "Risk data aggregation & reconciliation",
+            "related_skills": [
+                "Report automation & ETL for risk reporting",
+                "Data quality controls for risk data"
+            ],
+            "keywords": [
+                "SQL",
+                "queries",
+                "joins",
+                "data extraction"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Advanced Excel for risk reporting",
+            "aliases": [
+                "Excel for risk reporting",
+                "pivot tables for risk reporting",
+                "Excel macros for reporting"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using advanced Excel features (pivot tables, Power Query, formulas, macros) to manipulate, reconcile and present operational risk data for reports.",
+            "parent_skill": "Operational risk reporting",
+            "related_skills": [
+                "Risk data aggregation & reconciliation",
+                "Data quality controls for risk data"
+            ],
+            "keywords": [
+                "pivot tables",
+                "Power Query",
+                "VLOOKUP",
+                "VBA\/macros"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data quality controls for risk data",
+            "aliases": [
+                "risk data validation",
+                "data lineage checks for risk reporting",
+                "risk data quality assurance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing validation rules, completeness checks and lineage tracking to ensure risk data accuracy and reliability for reporting and regulatory use.",
+            "parent_skill": "Risk data aggregation & reconciliation",
+            "related_skills": [
+                "Risk data aggregation & reconciliation",
+                "SQL for risk reporting",
+                "Report governance & documentation for operational risk"
+            ],
+            "keywords": [
+                "data validation",
+                "completeness",
+                "lineage",
+                "quality rules"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Report automation & ETL for risk reporting",
+            "aliases": [
+                "risk report automation",
+                "ETL for risk reporting",
+                "automated risk reporting pipelines"
+            ],
+            "skill_type": "process_skill",
+            "description": "Automating extraction, transformation and load (ETL) processes and report generation to increase efficiency and reduce manual errors in operational risk reporting.",
+            "parent_skill": "Operational risk reporting",
+            "related_skills": [
+                "SQL for risk reporting",
+                "Business intelligence for risk reporting",
+                "Data quality controls for risk data"
+            ],
+            "keywords": [
+                "ETL",
+                "automation",
+                "pipeline",
+                "scheduled reports"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

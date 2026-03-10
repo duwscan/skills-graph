@@ -1,0 +1,296 @@
+{
+    "domain": "Finance",
+    "category": "Accounting Operations (Record-to-Report)",
+    "subcategory": "Financial statement preparation",
+    "skills": [
+        {
+            "canonical_name": "Consolidated financial statements preparation",
+            "aliases": [
+                "Consolidation accounting",
+                "Preparation of consolidated financial statements"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Assembling group-level balance sheet, income statement and equity movements by combining subsidiary accounts, applying consolidation adjustments and presenting non-controlling interests.",
+            "parent_skill": "Financial statement preparation",
+            "related_skills": [
+                "Intercompany eliminations and consolidation adjustments",
+                "Adjusting and closing journal entries",
+                "Trial balance compilation and review",
+                "Chart of accounts mapping and account classification"
+            ],
+            "keywords": [
+                "consolidation",
+                "group reporting",
+                "non-controlling interest",
+                "minority interest",
+                "subsidiary roll-up"
+            ],
+            "common_roles": [
+                "Record-to-Report",
+                "Financial close",
+                "External reporting"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Adjusting and closing journal entries",
+            "aliases": [
+                "Adjusting entries",
+                "Period-end journal entries",
+                "Close journal entries"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Preparing and posting journal entries required to record accruals, deferrals, reclassifications and other period-end adjustments to arrive at accurate financial statements.",
+            "parent_skill": "Financial statement preparation",
+            "related_skills": [
+                "Trial balance compilation and review",
+                "Account reconciliations",
+                "Consolidated financial statements preparation"
+            ],
+            "keywords": [
+                "accruals",
+                "prepayments",
+                "reclassifications",
+                "period close",
+                "adjusting entries"
+            ],
+            "common_roles": [
+                "Record-to-Report",
+                "Financial close"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Trial balance compilation and review",
+            "aliases": [
+                "Trial balance preparation",
+                "TB compilation",
+                "Trial balance review"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Assembling and validating the trial balance from subsidiary ledgers, ensuring debits equal credits and identifying accounts requiring adjustments prior to financial statement production.",
+            "parent_skill": "Financial statement preparation",
+            "related_skills": [
+                "Adjusting and closing journal entries",
+                "Account reconciliations",
+                "Consolidated financial statements preparation"
+            ],
+            "keywords": [
+                "trial balance",
+                "debits",
+                "credits",
+                "account validation",
+                "period close checklist"
+            ],
+            "common_roles": [
+                "Financial close",
+                "Record-to-Report"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Account reconciliations",
+            "aliases": [
+                "Reconciliations",
+                "Account recs",
+                "Balance sheet reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Reconciling ledger balances to supporting records (bank statements, sub-ledgers, intercompany ledgers) to confirm accuracy of balance sheet accounts for reporting.",
+            "parent_skill": "Financial statement preparation",
+            "related_skills": [
+                "Trial balance compilation and review",
+                "Intercompany eliminations and consolidation adjustments",
+                "Adjusting and closing journal entries"
+            ],
+            "keywords": [
+                "bank reconciliations",
+                "intercompany reconciliations",
+                "subsidiary ledger",
+                "variance analysis",
+                "supporting schedules"
+            ],
+            "common_roles": [
+                "Record-to-Report",
+                "Financial close"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Statement of cash flows preparation",
+            "aliases": [
+                "Cash flow statement preparation",
+                "Cash flow statement compilation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Constructing the statement of cash flows (direct or indirect method) by classifying operating, investing and financing cash flows and reconciling to cash balances.",
+            "parent_skill": "Financial statement preparation",
+            "related_skills": [
+                "Trial balance compilation and review",
+                "Account reconciliations",
+                "Financial statement variance analysis and management reporting"
+            ],
+            "keywords": [
+                "cash flows",
+                "operating activities",
+                "investing activities",
+                "financing activities",
+                "cash reconciliation"
+            ],
+            "common_roles": [
+                "External reporting",
+                "Record-to-Report"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial statement footnotes and disclosures drafting",
+            "aliases": [
+                "Notes to financial statements",
+                "Footnote preparation",
+                "Financial disclosures drafting"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Preparing explanatory notes and required disclosures that accompany financial statements, including accounting policies, significant estimates and segment information to meet reporting standards.",
+            "parent_skill": "Financial statement preparation",
+            "related_skills": [
+                "Consolidated financial statements preparation",
+                "Intercompany eliminations and consolidation adjustments",
+                "Chart of accounts mapping and account classification"
+            ],
+            "keywords": [
+                "disclosures",
+                "notes",
+                "accounting policies",
+                "significant estimates",
+                "segment reporting"
+            ],
+            "common_roles": [
+                "External reporting",
+                "Regulatory reporting"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intercompany eliminations and consolidation adjustments",
+            "aliases": [
+                "Intercompany eliminations",
+                "Consolidation adjustments",
+                "Interco eliminations"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Identifying and eliminating intercompany transactions and balances, and applying consolidation-specific adjustments (e.g., unrealized profit elimination, minority interest adjustments) for group reporting.",
+            "parent_skill": "Financial statement preparation",
+            "related_skills": [
+                "Consolidated financial statements preparation",
+                "Account reconciliations",
+                "Chart of accounts mapping and account classification"
+            ],
+            "keywords": [
+                "intercompany",
+                "eliminations",
+                "intercompany reconciliation",
+                "unrealized profit",
+                "intra-group transactions"
+            ],
+            "common_roles": [
+                "Consolidation",
+                "Record-to-Report"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "XBRL tagging and electronic financial filing",
+            "aliases": [
+                "XBRL tagging",
+                "iXBRL tagging",
+                "Electronic filing (XBRL)"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Applying XBRL tags to financial statement line items and disclosures and preparing electronic filings for regulatory submission, ensuring taxonomy compliance and accurate tag mapping.",
+            "parent_skill": "Financial statement preparation",
+            "related_skills": [
+                "Financial statement footnotes and disclosures drafting",
+                "Consolidated financial statements preparation"
+            ],
+            "keywords": [
+                "XBRL",
+                "iXBRL",
+                "taxonomy mapping",
+                "electronic filing",
+                "tagging"
+            ],
+            "common_roles": [
+                "External reporting",
+                "Financial close"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Chart of accounts mapping and account classification",
+            "aliases": [
+                "Chart of accounts (COA) mapping",
+                "Account mapping",
+                "COA classification"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and mapping general ledger accounts to a standardized chart of accounts, ensuring consistent classification for reporting and consolidation across entities.",
+            "parent_skill": "Financial statement preparation",
+            "related_skills": [
+                "Consolidated financial statements preparation",
+                "Intercompany eliminations and consolidation adjustments",
+                "Trial balance compilation and review"
+            ],
+            "keywords": [
+                "chart of accounts",
+                "account classification",
+                "GL mapping",
+                "standard chart",
+                "account harmonization"
+            ],
+            "common_roles": [
+                "Record-to-Report",
+                "Transformation and consolidation"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial statement variance analysis and management reporting",
+            "aliases": [
+                "Variance analysis",
+                "Management reporting analysis",
+                "Actual vs budget variance analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing movements in financial statement line items versus prior periods and budgets, explaining drivers of variance and preparing management reporting commentary and dashboards.",
+            "parent_skill": "Financial statement preparation",
+            "related_skills": [
+                "Statement of cash flows preparation",
+                "Trial balance compilation and review",
+                "Account reconciliations"
+            ],
+            "keywords": [
+                "variance analysis",
+                "budget vs actual",
+                "trend analysis",
+                "management commentary",
+                "financial dashboards"
+            ],
+            "common_roles": [
+                "Management reporting",
+                "Record-to-Report"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

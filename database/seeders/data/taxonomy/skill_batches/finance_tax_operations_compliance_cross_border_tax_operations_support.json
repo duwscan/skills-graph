@@ -1,0 +1,259 @@
+{
+    "domain": "Finance",
+    "category": "Tax Operations & Compliance",
+    "subcategory": "Cross-border tax operations support",
+    "skills": [
+        {
+            "canonical_name": "Cross-border VAT\/GST compliance",
+            "aliases": [
+                "Cross border VAT compliance",
+                "International VAT compliance",
+                "Cross-border GST compliance",
+                "VAT\/GST for international transactions"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Managing VAT\/GST registration, taxability assessments, invoicing rules, returns and remittance for transactions that cross tax jurisdictions.",
+            "parent_skill": "Cross-border tax operations support",
+            "related_skills": [
+                "Withholding tax calculation and reporting",
+                "Cross-border tax filings coordination and stakeholder management",
+                "Cross-border tax data mapping and validation"
+            ],
+            "keywords": [
+                "VAT",
+                "GST",
+                "indirect tax",
+                "cross-border supplies",
+                "place of supply"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Withholding tax calculation and reporting",
+            "aliases": [
+                "WHT calculation",
+                "Withholding tax compliance",
+                "Withholding tax reporting"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Calculating, documenting and reporting withholding tax obligations on cross-border payments (royalties, interest, dividends, services) and managing payment\/filing requirements.",
+            "parent_skill": "Cross-border tax operations support",
+            "related_skills": [
+                "Tax treaty interpretation for cross-border transactions",
+                "Foreign tax credit and double tax relief computation",
+                "Cross-border tax filings coordination and stakeholder management"
+            ],
+            "keywords": [
+                "withholding tax",
+                "WHT",
+                "payee withholding",
+                "cross-border payments"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Transfer pricing documentation support",
+            "aliases": [
+                "TP documentation support",
+                "Transfer pricing support",
+                "TP file preparation assistance"
+            ],
+            "skill_type": "process_skill",
+            "description": "Preparing and assembling transfer pricing documentation (functional analysis, comparables, local files) and supporting evidence to operationalize intercompany pricing for compliance and audits.",
+            "parent_skill": "Cross-border tax operations support",
+            "related_skills": [
+                "Intercompany pricing and tax provisioning",
+                "Permanent establishment analysis",
+                "Cross-border tax data mapping and validation"
+            ],
+            "keywords": [
+                "transfer pricing",
+                "local file",
+                "master file",
+                "comparables"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Permanent establishment analysis",
+            "aliases": [
+                "PE analysis",
+                "Permanent establishment determination",
+                "PE risk assessment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Assessing facts and activities across jurisdictions to determine if a taxable permanent establishment exists and estimating potential tax and compliance consequences.",
+            "parent_skill": "Cross-border tax operations support",
+            "related_skills": [
+                "Tax treaty interpretation for cross-border transactions",
+                "Withholding tax calculation and reporting",
+                "Cross-border payroll tax compliance"
+            ],
+            "keywords": [
+                "permanent establishment",
+                "PE",
+                "nexus",
+                "business presence"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax treaty interpretation for cross-border transactions",
+            "aliases": [
+                "International tax treaty interpretation",
+                "Treaty analysis",
+                "DTA interpretation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Analyzing bilateral tax treaties to determine withholding tax relief, permanent establishment thresholds, and residency conflicts for cross-border transactions.",
+            "parent_skill": "Cross-border tax operations support",
+            "related_skills": [
+                "Withholding tax calculation and reporting",
+                "Permanent establishment analysis",
+                "Foreign tax credit and double tax relief computation"
+            ],
+            "keywords": [
+                "tax treaty",
+                "DTA",
+                "double taxation agreement",
+                "residency"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Foreign tax credit and double tax relief computation",
+            "aliases": [
+                "FTC calculation",
+                "Double tax relief computation",
+                "Foreign tax offset calculation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Computing foreign tax credits, exemptions or reliefs to avoid double taxation and reconciling credits with domestic tax liabilities and documentation requirements.",
+            "parent_skill": "Cross-border tax operations support",
+            "related_skills": [
+                "Withholding tax calculation and reporting",
+                "Tax treaty interpretation for cross-border transactions",
+                "Cross-border tax filings coordination and stakeholder management"
+            ],
+            "keywords": [
+                "foreign tax credit",
+                "FTC",
+                "double taxation",
+                "tax relief"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-border payroll tax compliance",
+            "aliases": [
+                "International payroll tax compliance",
+                "Global payroll tax",
+                "Cross-border payroll withholding"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Ensuring payroll withholding, social security, tax filings and reporting obligations are met for employees working across borders, secondments and expatriate assignments.",
+            "parent_skill": "Cross-border tax operations support",
+            "related_skills": [
+                "Permanent establishment analysis",
+                "Cross-border VAT\/GST compliance",
+                "Cross-border tax filings coordination and stakeholder management"
+            ],
+            "keywords": [
+                "payroll tax",
+                "expatriate tax",
+                "social security",
+                "tax withholding"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intercompany pricing and tax provisioning",
+            "aliases": [
+                "Intercompany pricing",
+                "Intercompany tax provisioning",
+                "IC pricing and provisioning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing intercompany billing policies, calculating tax provisions for related-party transactions and ensuring accounting entries align with tax positions across jurisdictions.",
+            "parent_skill": "Cross-border tax operations support",
+            "related_skills": [
+                "Transfer pricing documentation support",
+                "Cross-border tax data mapping and validation",
+                "Foreign tax credit and double tax relief computation"
+            ],
+            "keywords": [
+                "intercompany",
+                "provisioning",
+                "related-party pricing",
+                "IC billing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-border tax data mapping and validation",
+            "aliases": [
+                "Tax data mapping",
+                "Cross-border tax reconciliation",
+                "International tax data validation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Mapping transactional and master-data fields to tax reporting requirements, validating tax calculations across systems and preparing reconciliations for cross-border filings and audits.",
+            "parent_skill": "Cross-border tax operations support",
+            "related_skills": [
+                "Cross-border VAT\/GST compliance",
+                "Intercompany pricing and tax provisioning",
+                "Transfer pricing documentation support"
+            ],
+            "keywords": [
+                "data mapping",
+                "tax reconciliation",
+                "data validation",
+                "tax reporting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-border tax filings coordination and stakeholder management",
+            "aliases": [
+                "International tax filings coordination",
+                "Cross-border filing coordination",
+                "Tax stakeholder coordination"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Coordinating the preparation, review and submission of cross-border tax returns with internal teams, external advisors, custodians and local tax authorities while managing timelines and information flows.",
+            "parent_skill": "Cross-border tax operations support",
+            "related_skills": [
+                "Cross-border VAT\/GST compliance",
+                "Withholding tax calculation and reporting",
+                "Cross-border payroll tax compliance"
+            ],
+            "keywords": [
+                "coordination",
+                "filings",
+                "stakeholder management",
+                "tax authorities"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

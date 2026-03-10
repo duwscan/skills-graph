@@ -1,0 +1,306 @@
+{
+    "domain": "IT",
+    "category": "Data Engineering & Integration",
+    "subcategory": "Data modeling & schema design",
+    "skills": [
+        {
+            "canonical_name": "Dimensional modeling",
+            "aliases": [
+                "dimension modeling",
+                "star-and-snowflake modeling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Design of fact and dimension structures (star\/snowflake schemas) to support analytical queries, aggregations and BI use cases.",
+            "parent_skill": "Data modeling & schema design",
+            "related_skills": [
+                "Analytical\/columnar schema design",
+                "Metadata model & data dictionary design",
+                "Relational normalization (3NF\/BCNF)"
+            ],
+            "keywords": [
+                "fact table",
+                "dimension table",
+                "slowly changing dimension",
+                "SCD",
+                "grain",
+                "conformed dimensions"
+            ],
+            "common_roles": [
+                "Data Architect",
+                "Data Engineer",
+                "BI Developer",
+                "Data Modeler"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Entity-relationship modeling",
+            "aliases": [
+                "ER modeling",
+                "ER diagram design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Creating conceptual and logical ER diagrams that define entities, attributes, primary\/foreign keys and relationships for relational data design.",
+            "parent_skill": "Data modeling & schema design",
+            "related_skills": [
+                "Relational normalization (3NF\/BCNF)",
+                "Physical data modeling and indexing",
+                "Metadata model & data dictionary design"
+            ],
+            "keywords": [
+                "entity",
+                "relationship",
+                "cardinality",
+                "foreign key",
+                "ERD"
+            ],
+            "common_roles": [
+                "Data Modeler",
+                "Database Designer",
+                "Data Architect"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Relational normalization (3NF\/BCNF)",
+            "aliases": [
+                "data normalization",
+                "3NF normalization",
+                "BCNF normalization"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying normalization principles (1NF–BCNF) to eliminate redundancy and maintain data integrity in transactional relational schemas.",
+            "parent_skill": "Data modeling & schema design",
+            "related_skills": [
+                "OLTP schema design (normalized transactional schemas)",
+                "Entity-relationship modeling",
+                "Physical data modeling and indexing"
+            ],
+            "keywords": [
+                "1NF",
+                "2NF",
+                "3NF",
+                "BCNF",
+                "functional dependency"
+            ],
+            "common_roles": [
+                "Database Designer",
+                "Data Engineer",
+                "Data Architect"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "OLTP schema design (normalized transactional schemas)",
+            "aliases": [
+                "transactional schema design",
+                "normalized OLTP modeling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing normalized schemas optimized for transactional systems, concurrency, write performance and data integrity.",
+            "parent_skill": "Data modeling & schema design",
+            "related_skills": [
+                "Relational normalization (3NF\/BCNF)",
+                "Physical data modeling and indexing",
+                "Entity-relationship modeling"
+            ],
+            "keywords": [
+                "ACID",
+                "transactional",
+                "concurrency",
+                "normalization",
+                "row-level operations"
+            ],
+            "common_roles": [
+                "Database Administrator",
+                "Backend Engineer",
+                "Data Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Analytical\/columnar schema design",
+            "aliases": [
+                "columnar schema design",
+                "OLAP schema design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing schemas and table layouts optimized for analytical workloads on columnar stores (e.g., compression, partitioning, denormalization).",
+            "parent_skill": "Data modeling & schema design",
+            "related_skills": [
+                "Dimensional modeling",
+                "Physical data modeling and indexing",
+                "Schema-on-read modeling for data lakes"
+            ],
+            "keywords": [
+                "columnar",
+                "compression",
+                "partitioning",
+                "denormalization",
+                "query performance"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Analytics Engineer",
+                "Data Architect"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Physical data modeling and indexing",
+            "aliases": [
+                "index design",
+                "table partitioning design",
+                "physical schema design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Translating logical models into physical schemas including column types, partitioning, clustering and index strategies for performance and storage efficiency.",
+            "parent_skill": "Data modeling & schema design",
+            "related_skills": [
+                "OLTP schema design (normalized transactional schemas)",
+                "Analytical\/columnar schema design",
+                "Schema evolution & versioning"
+            ],
+            "keywords": [
+                "index",
+                "B-tree",
+                "hash index",
+                "partitioning",
+                "clustering"
+            ],
+            "common_roles": [
+                "Database Administrator",
+                "Data Engineer",
+                "Performance Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Schema evolution & versioning",
+            "aliases": [
+                "schema migration strategies",
+                "schema change management",
+                "backward-compatible schema changes"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and managing safe schema changes over time (migrations, rollbacks, compatibility) across databases, data lakes and streaming systems.",
+            "parent_skill": "Data modeling & schema design",
+            "related_skills": [
+                "Schema-on-read modeling for data lakes",
+                "Physical data modeling and indexing",
+                "Metadata model & data dictionary design"
+            ],
+            "keywords": [
+                "migration",
+                "backward compatibility",
+                "forward compatibility",
+                "schema registry",
+                "change management"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Platform Engineer",
+                "Data Architect"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Schema-on-read modeling for data lakes",
+            "aliases": [
+                "data lake modeling",
+                "schema-on-read",
+                "lakehouse schema design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Modeling data structures and partitioning strategies for schema-on-read systems (data lakes\/lakehouses) using formats like Parquet\/Delta with emphasis on discoverability and queryability.",
+            "parent_skill": "Data modeling & schema design",
+            "related_skills": [
+                "Analytical\/columnar schema design",
+                "Schema evolution & versioning",
+                "Metadata model & data dictionary design"
+            ],
+            "keywords": [
+                "Parquet",
+                "Delta Lake",
+                "partitioning",
+                "schema inference",
+                "lakehouse"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Analytics Engineer",
+                "Data Architect"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Graph data modeling",
+            "aliases": [
+                "property graph modeling",
+                "RDF\/schema modeling",
+                "graph schema design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing node\/edge models and property schemas for graph databases and knowledge graphs to represent relationships and perform graph queries efficiently.",
+            "parent_skill": "Data modeling & schema design",
+            "related_skills": [
+                "Metadata model & data dictionary design",
+                "Schema evolution & versioning",
+                "Entity-relationship modeling"
+            ],
+            "keywords": [
+                "nodes",
+                "edges",
+                "properties",
+                "traversal",
+                "adjacency"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Knowledge Engineer",
+                "Data Architect"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Metadata model & data dictionary design",
+            "aliases": [
+                "metadata modeling",
+                "data catalog modeling",
+                "data dictionary design"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Defining metadata schemas, business glossaries and data dictionaries to ensure discoverability, governance and consistent interpretation of data assets.",
+            "parent_skill": "Data modeling & schema design",
+            "related_skills": [
+                "Schema evolution & versioning",
+                "Dimensional modeling",
+                "Entity-relationship modeling"
+            ],
+            "keywords": [
+                "metadata",
+                "data catalog",
+                "business glossary",
+                "data lineage",
+                "stewardship"
+            ],
+            "common_roles": [
+                "Data Governance Lead",
+                "Data Architect",
+                "Data Steward",
+                "Data Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

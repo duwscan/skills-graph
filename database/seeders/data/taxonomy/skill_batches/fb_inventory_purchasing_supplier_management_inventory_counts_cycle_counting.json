@@ -1,0 +1,280 @@
+{
+    "domain": "F&B",
+    "category": "Inventory, Purchasing & Supplier Management",
+    "subcategory": "Inventory counts & cycle counting",
+    "skills": [
+        {
+            "canonical_name": "Cycle counting",
+            "aliases": [
+                "cycle count",
+                "cyclic counting"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planned, recurring counting of subsets of inventory to maintain ongoing accuracy without full physical inventories.",
+            "parent_skill": "Inventory counts & cycle counting",
+            "related_skills": [
+                "Cycle count scheduling and prioritization",
+                "Physical inventory counting",
+                "Inventory reconciliation",
+                "Perpetual inventory control"
+            ],
+            "keywords": [
+                "cycle count",
+                "continuous inventory",
+                "rotational counting",
+                "ABC cycle counting"
+            ],
+            "common_roles": [
+                "inventory operations staff",
+                "warehouse operations",
+                "store operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Physical inventory counting",
+            "aliases": [
+                "stocktaking",
+                "stock count",
+                "physical stocktaking"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Hands-on counting and verification of physical stock levels during full or partial inventories.",
+            "parent_skill": "Inventory counts & cycle counting",
+            "related_skills": [
+                "Blind counting",
+                "Inventory reconciliation",
+                "Barcode scanner operation"
+            ],
+            "keywords": [
+                "physical count",
+                "stocktake",
+                "end-of-period inventory"
+            ],
+            "common_roles": [
+                "inventory operations staff",
+                "warehouse operations",
+                "store operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Blind counting",
+            "aliases": [
+                "blind count",
+                "blind cycle count"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Conducting counts without access to system quantities to prevent bias and improve accuracy in discrepancy detection.",
+            "parent_skill": "Inventory counts & cycle counting",
+            "related_skills": [
+                "Physical inventory counting",
+                "Spot checking (inventory)",
+                "Inventory variance investigation"
+            ],
+            "keywords": [
+                "blind stocktake",
+                "blind audit",
+                "unbiased counting"
+            ],
+            "common_roles": [
+                "inventory operations staff",
+                "quality control operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Spot checking (inventory)",
+            "aliases": [
+                "spot check",
+                "spot counts",
+                "random inventory checks"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Targeted, ad-hoc counts of specific SKUs or locations to validate accuracy between scheduled counts and actual stock.",
+            "parent_skill": "Inventory counts & cycle counting",
+            "related_skills": [
+                "Cycle counting",
+                "Inventory variance investigation",
+                "Inventory count audit & quality control"
+            ],
+            "keywords": [
+                "random count",
+                "ad-hoc inventory check",
+                "targeted stock check"
+            ],
+            "common_roles": [
+                "inventory operations staff",
+                "store operations",
+                "loss prevention teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inventory variance investigation",
+            "aliases": [
+                "variance analysis",
+                "discrepancy investigation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing and diagnosing causes of differences between physical counts and system records, including shrinkage, data errors, and process gaps.",
+            "parent_skill": "Inventory counts & cycle counting",
+            "related_skills": [
+                "Inventory reconciliation",
+                "Spot checking (inventory)",
+                "Perpetual inventory control"
+            ],
+            "keywords": [
+                "variance root cause",
+                "inventory discrepancy analysis",
+                "shrinkage analysis"
+            ],
+            "common_roles": [
+                "inventory control analysts",
+                "operations analysts",
+                "procurement operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inventory reconciliation",
+            "aliases": [
+                "stock reconciliation",
+                "system vs physical reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Reconciling physical count results with inventory management systems and creating adjustment entries or follow-up actions.",
+            "parent_skill": "Inventory counts & cycle counting",
+            "related_skills": [
+                "Inventory variance investigation",
+                "Physical inventory counting",
+                "Perpetual inventory control"
+            ],
+            "keywords": [
+                "reconcile inventory",
+                "inventory adjustments",
+                "count variance correction"
+            ],
+            "common_roles": [
+                "inventory operations staff",
+                "store operations",
+                "warehouse operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Barcode scanner operation",
+            "aliases": [
+                "handheld scanner operation",
+                "barcode scanning"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using handheld or fixed barcode scanners and mobile devices to capture SKU and quantity data during counts and stock movements.",
+            "parent_skill": "Inventory counts & cycle counting",
+            "related_skills": [
+                "Physical inventory counting",
+                "RFID inventory counting",
+                "Perpetual inventory control"
+            ],
+            "keywords": [
+                "scanner",
+                "mobile data collection",
+                "SKU scanning"
+            ],
+            "common_roles": [
+                "inventory operations staff",
+                "warehouse operations",
+                "store operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "RFID inventory counting",
+            "aliases": [
+                "RFID scanning",
+                "RFID tag inventory"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using RFID readers and tags to perform rapid, contactless inventory counts and location reconciliation.",
+            "parent_skill": "Inventory counts & cycle counting",
+            "related_skills": [
+                "Barcode scanner operation",
+                "Physical inventory counting",
+                "Perpetual inventory control"
+            ],
+            "keywords": [
+                "radio frequency identification",
+                "RFID reader",
+                "tag scanning"
+            ],
+            "common_roles": [
+                "inventory operations staff",
+                "warehouse operations",
+                "technology-enabled inventory teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cycle count scheduling and prioritization",
+            "aliases": [
+                "count scheduling",
+                "prioritizing cycle counts"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning frequency and priority of cycle counts by SKU velocity, value, risk, or ABC classification to optimize accuracy and resource use.",
+            "parent_skill": "Inventory counts & cycle counting",
+            "related_skills": [
+                "Cycle counting",
+                "Perpetual inventory control",
+                "Inventory variance investigation"
+            ],
+            "keywords": [
+                "schedule cycle counts",
+                "ABC classification",
+                "count frequency planning"
+            ],
+            "common_roles": [
+                "inventory operations planners",
+                "warehouse operations",
+                "store operations planning"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Perpetual inventory control",
+            "aliases": [
+                "perpetual inventory management",
+                "ongoing inventory tracking"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintaining continuous, system-based inventory records through transactions, counts, and reconciliations to minimize the need for full physical inventories.",
+            "parent_skill": "Inventory counts & cycle counting",
+            "related_skills": [
+                "Cycle counting",
+                "Inventory reconciliation",
+                "Barcode scanner operation"
+            ],
+            "keywords": [
+                "perpetual system",
+                "ongoing stock control",
+                "real-time inventory"
+            ],
+            "common_roles": [
+                "inventory operations staff",
+                "warehouse operations",
+                "store operations"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

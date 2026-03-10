@@ -1,0 +1,308 @@
+{
+    "domain": "IT",
+    "category": "Analytics, BI & Reporting",
+    "subcategory": "Semantic layer & data marts",
+    "skills": [
+        {
+            "canonical_name": "Dimensional modeling",
+            "aliases": [
+                "star schema design",
+                "fact and dimension modeling",
+                "dimensional data modeling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing fact and dimension tables, grains, slowly changing dimensions and conformed dimensions to support analytical queries and reporting.",
+            "parent_skill": "Semantic layer & data marts",
+            "related_skills": [
+                "Data mart design",
+                "OLAP cube design",
+                "Analytical query performance tuning",
+                "SQL for analytics"
+            ],
+            "keywords": [
+                "star schema",
+                "snowflake schema",
+                "fact table",
+                "dimension table",
+                "SCD"
+            ],
+            "common_roles": [
+                "Analytics engineering",
+                "BI development",
+                "Data platform teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data mart design",
+            "aliases": [
+                "departmental data mart design",
+                "subject-area data mart architecture"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Architecting and implementing subject-oriented data stores (data marts) optimized for reporting and business domain consumption.",
+            "parent_skill": "Semantic layer & data marts",
+            "related_skills": [
+                "Dimensional modeling",
+                "Semantic layer development",
+                "ETL\/ELT design",
+                "Data partitioning and retention"
+            ],
+            "keywords": [
+                "departmental mart",
+                "subject area",
+                "marts",
+                "data segregation"
+            ],
+            "common_roles": [
+                "Analytics engineering",
+                "BI development",
+                "Data platform teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Semantic layer development",
+            "aliases": [
+                "semantic modeling",
+                "business semantic layer development",
+                "metric layer development"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Translating technical data schemas into business-friendly models and metrics that support self-service analytics and consistent reporting.",
+            "parent_skill": "Semantic layer & data marts",
+            "related_skills": [
+                "Metric definition and governance",
+                "LookML (Looker) modeling",
+                "dbt (data modeling)",
+                "Metadata management"
+            ],
+            "keywords": [
+                "business glossary",
+                "semantic model",
+                "logical model",
+                "metric layer"
+            ],
+            "common_roles": [
+                "BI development",
+                "Analytics engineering",
+                "Reporting teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Metric definition and governance",
+            "aliases": [
+                "metric modeling",
+                "business metric definitions",
+                "metric governance"
+            ],
+            "skill_type": "process_skill",
+            "description": "Establishing canonical metric definitions, ownership, reconciliation procedures and versioning to ensure consistent business metrics across reports and tools.",
+            "parent_skill": "Semantic layer & data marts",
+            "related_skills": [
+                "Semantic layer development",
+                "Metadata management",
+                "Data governance",
+                "Semantic layer testing and validation"
+            ],
+            "keywords": [
+                "single source of truth",
+                "metric reconciliation",
+                "business definitions",
+                "metrics catalog"
+            ],
+            "common_roles": [
+                "BI development",
+                "Analytics engineering",
+                "Data platform teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "LookML (Looker) modeling",
+            "aliases": [
+                "Looker modeling",
+                "LookML development"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Building LookML models, Explores and views to expose a governed semantic layer for Looker-based analytics and self-service reporting.",
+            "parent_skill": "Semantic layer & data marts",
+            "related_skills": [
+                "Semantic layer development",
+                "Metric definition and governance",
+                "SQL for analytics"
+            ],
+            "keywords": [
+                "LookML",
+                "Looker",
+                "Explores",
+                "views",
+                "persistent derived table"
+            ],
+            "common_roles": [
+                "BI development",
+                "Analytics engineering",
+                "Reporting teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "dbt (data modeling)",
+            "aliases": [
+                "dbt modeling",
+                "dbt development",
+                "dbt models"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Developing, testing and documenting transformation models and semantic artifacts using dbt to produce reusable, version-controlled analytical models.",
+            "parent_skill": "Semantic layer & data marts",
+            "related_skills": [
+                "Semantic layer development",
+                "Metric definition and governance",
+                "ETL\/ELT design",
+                "CI\/CD for analytics"
+            ],
+            "keywords": [
+                "dbt",
+                "dbt models",
+                "materializations",
+                "macros",
+                "dbt semantic layer"
+            ],
+            "common_roles": [
+                "Analytics engineering",
+                "Data platform teams",
+                "BI development"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "OLAP cube design",
+            "aliases": [
+                "multidimensional modeling",
+                "cube development"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing OLAP cubes and dimensions to support pre-aggregated analytical queries and hierarchical drill-downs.",
+            "parent_skill": "Semantic layer & data marts",
+            "related_skills": [
+                "Dimensional modeling",
+                "Analytical query performance tuning",
+                "MDX\/DAX querying"
+            ],
+            "keywords": [
+                "cubes",
+                "dimensions",
+                "measures",
+                "hierarchies",
+                "aggregation"
+            ],
+            "common_roles": [
+                "BI development",
+                "Reporting teams",
+                "Data platform teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Analytical query performance tuning",
+            "aliases": [
+                "aggregation design",
+                "materialized view design",
+                "query optimization for analytics"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Optimizing analytical queries and semantic layer artifacts through indexing, partitioning, materialized views and aggregate strategies to meet SLA and concurrency needs.",
+            "parent_skill": "Semantic layer & data marts",
+            "related_skills": [
+                "Dimensional modeling",
+                "OLAP cube design",
+                "Columnar database tuning",
+                "Data partitioning and retention"
+            ],
+            "keywords": [
+                "query performance",
+                "materialized views",
+                "indexes",
+                "partitioning",
+                "aggregation tables"
+            ],
+            "common_roles": [
+                "Data platform teams",
+                "Analytics engineering",
+                "BI development"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data virtualization for semantic layers",
+            "aliases": [
+                "semantic federation",
+                "data virtualization modeling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Using virtualization techniques to create a logical semantic layer that federates across multiple data sources without physically copying data.",
+            "parent_skill": "Semantic layer & data marts",
+            "related_skills": [
+                "Semantic layer development",
+                "Metadata management",
+                "Query federation",
+                "Data integration"
+            ],
+            "keywords": [
+                "virtualization",
+                "federation",
+                "logical layer",
+                "data fabrics",
+                "query abstraction"
+            ],
+            "common_roles": [
+                "Data platform teams",
+                "BI development",
+                "Analytics engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Semantic layer testing and validation",
+            "aliases": [
+                "semantic layer QA",
+                "metric reconciliation testing",
+                "semantic model validation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing tests, reconciliations and validation processes to ensure semantic models, metrics and reports are accurate and reflect source-system lineage.",
+            "parent_skill": "Semantic layer & data marts",
+            "related_skills": [
+                "Metric definition and governance",
+                "dbt (data modeling)",
+                "Metadata management",
+                "Data quality testing"
+            ],
+            "keywords": [
+                "testing",
+                "reconciliation",
+                "QA",
+                "data validation",
+                "test automation"
+            ],
+            "common_roles": [
+                "BI development",
+                "Analytics engineering",
+                "Data platform teams"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

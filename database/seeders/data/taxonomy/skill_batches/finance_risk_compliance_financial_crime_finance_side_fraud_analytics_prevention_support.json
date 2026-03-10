@@ -1,0 +1,302 @@
+{
+    "domain": "Finance",
+    "category": "Risk, Compliance & Financial Crime (Finance-Side)",
+    "subcategory": "Fraud analytics & prevention support",
+    "skills": [
+        {
+            "canonical_name": "Real-time transaction monitoring",
+            "aliases": [
+                "transaction monitoring",
+                "real time transaction monitoring",
+                "real-time monitoring",
+                "RTTM"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, operating and tuning continuous monitoring systems that analyze transactions\/events in real time to detect potentially fraudulent activity and generate alerts.",
+            "parent_skill": "Fraud analytics & prevention support",
+            "related_skills": [
+                "Rules engine management",
+                "Anomaly detection techniques",
+                "SQL for fraud analytics"
+            ],
+            "keywords": [
+                "real-time",
+                "streaming",
+                "transactions",
+                "alerts",
+                "monitoring"
+            ],
+            "common_roles": [
+                "fraud operations",
+                "payments risk",
+                "financial crime compliance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Fraud detection modeling (machine learning)",
+            "aliases": [
+                "fraud detection modeling",
+                "fraud modeling",
+                "machine learning for fraud detection",
+                "ML for fraud"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Developing, training and validating supervised and semi-supervised machine learning models to predict fraudulent behavior on transactional and behavioral data.",
+            "parent_skill": "Fraud analytics & prevention support",
+            "related_skills": [
+                "Anomaly detection techniques",
+                "Python for fraud analytics",
+                "SQL for fraud analytics",
+                "Link analysis \/ graph analytics for fraud"
+            ],
+            "keywords": [
+                "supervised learning",
+                "model validation",
+                "feature engineering",
+                "precision\/recall",
+                "scoring"
+            ],
+            "common_roles": [
+                "fraud analytics",
+                "risk analytics",
+                "financial crime analytics"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Rules engine management (rule authoring & tuning)",
+            "aliases": [
+                "rules engine tuning",
+                "rule authoring",
+                "fraud rule management",
+                "ruleset management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating, implementing and maintaining deterministic business rules and score thresholds in rules engines; tuning rules to balance detection and false positives.",
+            "parent_skill": "Fraud analytics & prevention support",
+            "related_skills": [
+                "Real-time transaction monitoring",
+                "False positive reduction",
+                "Case management & investigation workflow"
+            ],
+            "keywords": [
+                "business rules",
+                "thresholds",
+                "ruleset",
+                "tuning",
+                "alerting"
+            ],
+            "common_roles": [
+                "fraud operations",
+                "risk operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Anomaly detection techniques",
+            "aliases": [
+                "statistical anomaly detection",
+                "unsupervised anomaly detection",
+                "outlier detection"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Applying statistical and unsupervised methods (clustering, density estimation, isolation forests, change point detection) to identify atypical patterns that may indicate fraud.",
+            "parent_skill": "Fraud analytics & prevention support",
+            "related_skills": [
+                "Fraud detection modeling (machine learning)",
+                "Real-time transaction monitoring",
+                "Link analysis \/ graph analytics for fraud"
+            ],
+            "keywords": [
+                "outliers",
+                "unsupervised",
+                "z-score",
+                "isolation forest",
+                "density"
+            ],
+            "common_roles": [
+                "fraud analytics",
+                "data analytics"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Link analysis \/ graph analytics for fraud",
+            "aliases": [
+                "link analysis",
+                "graph analytics",
+                "network analysis for fraud"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Using graph- and network-based methods to identify relationships, shared attributes and organized fraud rings across entities (accounts, devices, identities).",
+            "parent_skill": "Fraud analytics & prevention support",
+            "related_skills": [
+                "Anomaly detection techniques",
+                "Fraud detection modeling (machine learning)",
+                "Python for fraud analytics"
+            ],
+            "keywords": [
+                "graph",
+                "networks",
+                "connections",
+                "entity resolution",
+                "community detection"
+            ],
+            "common_roles": [
+                "fraud analytics",
+                "financial crime investigations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Fraud case management & investigation workflow",
+            "aliases": [
+                "case management",
+                "investigation workflow",
+                "fraud investigations process"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing end-to-end investigative workflows: triage, case enrichment, evidence collection, dispositioning and escalation using case management platforms.",
+            "parent_skill": "Fraud analytics & prevention support",
+            "related_skills": [
+                "Chargeback & dispute resolution management",
+                "Rules engine management",
+                "Real-time transaction monitoring"
+            ],
+            "keywords": [
+                "case lifecycle",
+                "triage",
+                "evidence",
+                "disposition",
+                "escalation"
+            ],
+            "common_roles": [
+                "fraud operations",
+                "investigations operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Chargeback & dispute resolution management",
+            "aliases": [
+                "chargeback management",
+                "dispute management",
+                "chargeback handling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Handling card-not-present and card-present disputes, managing chargeback workflows, merchant communication and recovery processes to minimize financial loss and operational cost.",
+            "parent_skill": "Fraud analytics & prevention support",
+            "related_skills": [
+                "Case management & investigation workflow",
+                "Real-time transaction monitoring"
+            ],
+            "keywords": [
+                "chargebacks",
+                "disputes",
+                "representment",
+                "recovery",
+                "card networks"
+            ],
+            "common_roles": [
+                "payments risk",
+                "fraud operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Identity verification & KYC screening",
+            "aliases": [
+                "identity verification",
+                "KYC screening",
+                "customer due diligence",
+                "identity authentication"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Applying identity verification methods and Know-Your-Customer screening to confirm customer identity, detect synthetic\/duplicated identities and satisfy regulatory due diligence in onboarding and monitoring.",
+            "parent_skill": "Fraud analytics & prevention support",
+            "related_skills": [
+                "Fraud detection modeling (machine learning)",
+                "Case management & investigation workflow"
+            ],
+            "keywords": [
+                "KYC",
+                "identity proofing",
+                "CDD",
+                "biometrics",
+                "document verification"
+            ],
+            "common_roles": [
+                "financial crime compliance",
+                "onboarding operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SQL for fraud analytics",
+            "aliases": [
+                "SQL",
+                "structured query language",
+                "database querying for fraud analytics"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using SQL to extract, transform and aggregate transactional and customer datasets for exploratory data analysis, alert generation and model feature engineering in fraud investigations.",
+            "parent_skill": "Fraud analytics & prevention support",
+            "related_skills": [
+                "Python for fraud analytics",
+                "Real-time transaction monitoring",
+                "Fraud detection modeling (machine learning)"
+            ],
+            "keywords": [
+                "queries",
+                "joins",
+                "aggregations",
+                "window functions",
+                "ETL"
+            ],
+            "common_roles": [
+                "fraud analytics",
+                "data analytics"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Python for fraud analytics",
+            "aliases": [
+                "Python",
+                "pandas for fraud analytics",
+                "scikit-learn for fraud"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Python and its ecosystem (pandas, scikit-learn, networkx, PySpark) for data cleaning, feature engineering, model development, and prototype automation in fraud detection workflows.",
+            "parent_skill": "Fraud analytics & prevention support",
+            "related_skills": [
+                "Fraud detection modeling (machine learning)",
+                "Link analysis \/ graph analytics for fraud",
+                "SQL for fraud analytics"
+            ],
+            "keywords": [
+                "pandas",
+                "scikit-learn",
+                "feature engineering",
+                "automation",
+                "scripting"
+            ],
+            "common_roles": [
+                "fraud analytics",
+                "data science"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

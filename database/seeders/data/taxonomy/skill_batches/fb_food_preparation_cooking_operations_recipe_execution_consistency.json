@@ -1,0 +1,301 @@
+{
+    "domain": "F&B",
+    "category": "Food Preparation & Cooking Operations",
+    "subcategory": "Recipe execution & consistency",
+    "skills": [
+        {
+            "canonical_name": "Standardized recipe execution",
+            "aliases": [
+                "recipe standardization",
+                "standard recipe preparation",
+                "consistent recipe execution"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Execute recipes precisely to standardized specifications (weights, measures, technique and timing) to ensure consistent product quality across cooks and shifts.",
+            "parent_skill": "Recipe execution & consistency",
+            "related_skills": [
+                "Portion control",
+                "Recipe documentation and revision control",
+                "Batch scaling and recipe conversion",
+                "Sensory evaluation and consistency checks"
+            ],
+            "keywords": [
+                "recipe cards",
+                "SOP",
+                "measurements",
+                "mise en place",
+                "consistency"
+            ],
+            "common_roles": [
+                "Culinary team",
+                "Kitchen staff",
+                "Food production staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Portion control",
+            "aliases": [
+                "portioning",
+                "serving size control",
+                "standard portioning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Measure and dispense standardized portion sizes using scales, scoops or portioning tools to control cost, nutrition and presentation consistency.",
+            "parent_skill": "Recipe execution & consistency",
+            "related_skills": [
+                "Yield calculation and cost-per-portion analysis",
+                "Standardized recipe execution",
+                "Sensory evaluation and consistency checks"
+            ],
+            "keywords": [
+                "scales",
+                "grams",
+                "ounces",
+                "serving size",
+                "portion scoop"
+            ],
+            "common_roles": [
+                "Culinary team",
+                "Kitchen staff",
+                "Food production staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Yield calculation and cost-per-portion analysis",
+            "aliases": [
+                "yield management",
+                "food cost per portion",
+                "yield analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculate usable yield from raw ingredients (AP\/EP), account for trim and shrinkage, and determine cost per portion to support pricing and consistency decisions.",
+            "parent_skill": "Recipe execution & consistency",
+            "related_skills": [
+                "Portion control",
+                "Recipe scaling and batch conversion",
+                "Ingredient specification and quality control"
+            ],
+            "keywords": [
+                "AP\/EP",
+                "shrinkage",
+                "food cost",
+                "yield percentage",
+                "costing"
+            ],
+            "common_roles": [
+                "Kitchen management",
+                "Food production staff",
+                "Operations teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Recipe scaling and batch conversion",
+            "aliases": [
+                "scaling recipes",
+                "batch cooking scaling",
+                "recipe conversion for volume"
+            ],
+            "skill_type": "process_skill",
+            "description": "Adjust ingredient quantities, cooking times and process steps to scale recipes up or down while maintaining sensory and safety characteristics.",
+            "parent_skill": "Recipe execution & consistency",
+            "related_skills": [
+                "Yield calculation and cost-per-portion analysis",
+                "Temperature control during cooking",
+                "Ingredient substitution and equivalency"
+            ],
+            "keywords": [
+                "scaling",
+                "batch size",
+                "volume production",
+                "conversion factors"
+            ],
+            "common_roles": [
+                "Culinary team",
+                "Food production staff",
+                "Catering production"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cooking temperature control and monitoring",
+            "aliases": [
+                "temperature monitoring",
+                "cooking temps",
+                "thermal control during cooking"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintain and monitor cooking and holding temperatures (via probes, thermometers and equipment settings) to achieve consistent doneness, texture and food safety outcomes.",
+            "parent_skill": "Recipe execution & consistency",
+            "related_skills": [
+                "Standardized recipe execution",
+                "Batch scaling and recipe conversion",
+                "Recipe documentation and revision control"
+            ],
+            "keywords": [
+                "thermometer",
+                "hold temps",
+                "core temperature",
+                "temperature logs"
+            ],
+            "common_roles": [
+                "Kitchen staff",
+                "Food production staff",
+                "Culinary team"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Recipe documentation and revision control",
+            "aliases": [
+                "recipe documentation",
+                "recipe version control",
+                "recipe records management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Create, maintain and control recipe records and SOPs, track revisions, and ensure teams use the current approved recipe versions.",
+            "parent_skill": "Recipe execution & consistency",
+            "related_skills": [
+                "Standardized recipe execution",
+                "Allergen and dietary specification management",
+                "Ingredient specification and quality control"
+            ],
+            "keywords": [
+                "version control",
+                "SOP",
+                "recipe cards",
+                "change log"
+            ],
+            "common_roles": [
+                "Kitchen management",
+                "Quality assurance",
+                "Culinary team"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ingredient specification and quality control",
+            "aliases": [
+                "ingredient specifications",
+                "ingredient quality checks",
+                "specification management"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Define and verify ingredient attributes (cut, grade, freshness, supplier specs) to ensure incoming materials meet recipe requirements and consistency targets.",
+            "parent_skill": "Recipe execution & consistency",
+            "related_skills": [
+                "Recipe documentation and revision control",
+                "Yield calculation and cost-per-portion analysis",
+                "Allergen and dietary specification management"
+            ],
+            "keywords": [
+                "specs",
+                "quality checks",
+                "acceptance criteria",
+                "supplier standards"
+            ],
+            "common_roles": [
+                "Quality assurance",
+                "Procurement teams",
+                "Food production staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Recipe allergen and dietary specification management",
+            "aliases": [
+                "allergen management in recipes",
+                "dietary labeling for recipes",
+                "special-diet recipe adaptation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Identify, document and manage allergens and dietary attributes (e.g., gluten-free, vegan) in recipes and preparation processes to meet safety and labeling requirements.",
+            "parent_skill": "Recipe execution & consistency",
+            "related_skills": [
+                "Recipe documentation and revision control",
+                "Ingredient specification and quality control",
+                "Ingredient substitution and equivalency"
+            ],
+            "keywords": [
+                "allergens",
+                "cross-contact",
+                "dietary labeling",
+                "special diets"
+            ],
+            "common_roles": [
+                "Quality assurance",
+                "Kitchen management",
+                "Food safety teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ingredient substitution and equivalency",
+            "aliases": [
+                "ingredient swaps",
+                "substitution equivalents",
+                "ingredient conversions"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Select appropriate ingredient substitutes and calculate equivalent quantities (weight\/volume) while preserving sensory, textural and functional properties of recipes.",
+            "parent_skill": "Recipe execution & consistency",
+            "related_skills": [
+                "Recipe scaling and batch conversion",
+                "Ingredient specification and quality control",
+                "Recipe allergen and dietary specification management"
+            ],
+            "keywords": [
+                "equivalency",
+                "substitutions",
+                "conversion factors",
+                "functional properties"
+            ],
+            "common_roles": [
+                "Culinary team",
+                "Kitchen staff",
+                "Food production staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sensory evaluation and consistency checks",
+            "aliases": [
+                "sensory quality control",
+                "taste testing",
+                "quality tasting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Perform structured sensory assessments (taste, texture, aroma, appearance) and routine quality checks to confirm that prepared items meet defined recipe standards.",
+            "parent_skill": "Recipe execution & consistency",
+            "related_skills": [
+                "Standardized recipe execution",
+                "Portion control",
+                "Ingredient specification and quality control"
+            ],
+            "keywords": [
+                "taste test",
+                "texture",
+                "appearance",
+                "quality check"
+            ],
+            "common_roles": [
+                "Quality assurance",
+                "Culinary team",
+                "Food production staff"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,308 @@
+{
+    "domain": "IT",
+    "category": "Systems Engineering & Endpoint Management",
+    "subcategory": "Storage administration",
+    "skills": [
+        {
+            "canonical_name": "SAN storage administration",
+            "aliases": [
+                "Storage Area Network administration",
+                "Fibre Channel SAN administration",
+                "iSCSI SAN administration"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Design, provision, manage and troubleshoot Storage Area Network infrastructure and array-level configuration for block storage connectivity.",
+            "parent_skill": "Storage administration",
+            "related_skills": [
+                "Block storage management",
+                "Storage performance tuning",
+                "Fibre Channel zoning",
+                "Host bus adapter (HBA) configuration"
+            ],
+            "keywords": [
+                "SAN",
+                "Fibre Channel",
+                "iSCSI",
+                "LUN",
+                "zoning",
+                "multipathing"
+            ],
+            "common_roles": [
+                "infrastructure operations",
+                "platform engineering",
+                "systems engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "NAS administration",
+            "aliases": [
+                "Network Attached Storage administration",
+                "NAS storage management"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Configure, manage and secure network file storage systems (NFS\/SMB) including shares, exports, quotas and file-level permissions.",
+            "parent_skill": "Storage administration",
+            "related_skills": [
+                "File storage management",
+                "Access control and ACLs",
+                "SMB\/CIFS",
+                "NFS exports"
+            ],
+            "keywords": [
+                "NAS",
+                "NFS",
+                "SMB",
+                "CIFS",
+                "file shares",
+                "quotas"
+            ],
+            "common_roles": [
+                "infrastructure operations",
+                "platform engineering",
+                "application support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Block storage management",
+            "aliases": [
+                "LUN and volume management",
+                "Volume provisioning"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Provision and manage block-level storage objects (LUNs, volumes), including mapping to hosts, thin\/thick provisioning and multipath configuration.",
+            "parent_skill": "Storage administration",
+            "related_skills": [
+                "SAN storage administration",
+                "Hypervisor storage integration",
+                "Logical volume management"
+            ],
+            "keywords": [
+                "LUN",
+                "volume",
+                "provisioning",
+                "thin provisioning",
+                "multipath"
+            ],
+            "common_roles": [
+                "infrastructure operations",
+                "platform engineering",
+                "systems engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "File storage management",
+            "aliases": [
+                "File share administration",
+                "File system management"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Manage file systems and shared file resources, including exports, mount management, data retention, file system integrity and permissions.",
+            "parent_skill": "Storage administration",
+            "related_skills": [
+                "NAS administration",
+                "Backup and recovery",
+                "Permissions and ACL management"
+            ],
+            "keywords": [
+                "file system",
+                "mounts",
+                "shares",
+                "ACL",
+                "exports"
+            ],
+            "common_roles": [
+                "application support",
+                "infrastructure operations",
+                "platform engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Object storage administration",
+            "aliases": [
+                "S3-compatible storage administration",
+                "Object store management"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Operate and configure object storage platforms and S3-compatible APIs, manage buckets\/containers, lifecycle policies, and access controls.",
+            "parent_skill": "Storage administration",
+            "related_skills": [
+                "Cloud storage services",
+                "Data lifecycle management",
+                "Storage encryption"
+            ],
+            "keywords": [
+                "object storage",
+                "S3",
+                "buckets",
+                "lifecycle",
+                "egress",
+                "access policies"
+            ],
+            "common_roles": [
+                "cloud operations",
+                "platform engineering",
+                "data engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Storage replication and disaster recovery",
+            "aliases": [
+                "Storage replication",
+                "DR for storage"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and operate replication, snapshot and failover strategies to meet RPO\/RTO objectives, including asynchronous\/synchronous replication and cross-site recovery playbooks.",
+            "parent_skill": "Storage administration",
+            "related_skills": [
+                "Backup and recovery",
+                "Disaster recovery planning",
+                "Storage snapshots"
+            ],
+            "keywords": [
+                "replication",
+                "RPO",
+                "RTO",
+                "synchronous replication",
+                "asynchronous replication",
+                "failover"
+            ],
+            "common_roles": [
+                "infrastructure operations",
+                "business continuity teams",
+                "platform engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Storage backup and recovery",
+            "aliases": [
+                "Backup operations",
+                "Data restore procedures"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implement and operate backup solutions and restore procedures, including snapshot management, retention policies, restore testing and integration with backup software.",
+            "parent_skill": "Storage administration",
+            "related_skills": [
+                "Storage replication and disaster recovery",
+                "Snapshot management",
+                "Archive and retention"
+            ],
+            "keywords": [
+                "backup",
+                "restore",
+                "snapshots",
+                "retention",
+                "deduplication",
+                "backup software"
+            ],
+            "common_roles": [
+                "infrastructure operations",
+                "platform engineering",
+                "data protection teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Storage performance tuning",
+            "aliases": [
+                "Storage I\/O performance optimization",
+                "Storage latency optimization"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyze storage I\/O patterns and tune arrays, caching, tiering, QoS and host configurations to optimize throughput, IOPS and latency for workloads.",
+            "parent_skill": "Storage administration",
+            "related_skills": [
+                "Monitoring and metrics for storage",
+                "Capacity planning",
+                "SAN storage administration"
+            ],
+            "keywords": [
+                "IOPS",
+                "throughput",
+                "latency",
+                "QoS",
+                "caching",
+                "tiering"
+            ],
+            "common_roles": [
+                "performance engineering",
+                "platform engineering",
+                "systems engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Storage capacity planning",
+            "aliases": [
+                "Storage growth forecasting",
+                "Capacity forecasting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Forecast storage growth, plan procurement and lifecycle, manage allocation, and implement tiering and reclamation to meet business needs and cost targets.",
+            "parent_skill": "Storage administration",
+            "related_skills": [
+                "Cost optimization for storage",
+                "Storage performance tuning",
+                "Data lifecycle management"
+            ],
+            "keywords": [
+                "capacity planning",
+                "forecasting",
+                "storage growth",
+                "tiering",
+                "reclamation"
+            ],
+            "common_roles": [
+                "capacity management",
+                "infrastructure operations",
+                "platform engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Storage automation and orchestration",
+            "aliases": [
+                "Storage automation",
+                "Storage orchestration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Automate storage provisioning and management using APIs, scripting and orchestration tools to enable repeatable, policy-driven operations and self-service consumption.",
+            "parent_skill": "Storage administration",
+            "related_skills": [
+                "Infrastructure as Code",
+                "Ansible for storage",
+                "Storage REST APIs",
+                "CI\/CD for infrastructure"
+            ],
+            "keywords": [
+                "automation",
+                "orchestration",
+                "APIs",
+                "scripting",
+                "IaC",
+                "self-service"
+            ],
+            "common_roles": [
+                "platform engineering",
+                "DevOps practices",
+                "infrastructure automation"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

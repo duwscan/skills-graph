@@ -1,0 +1,307 @@
+{
+    "domain": "F&B",
+    "category": "Food Preparation & Cooking Operations",
+    "subcategory": "Batch cooking & production planning",
+    "skills": [
+        {
+            "canonical_name": "Recipe scaling and standardization",
+            "aliases": [
+                "Batch recipe scaling",
+                "Recipe standardisation",
+                "Standardized recipe development",
+                "Bulk recipe conversion"
+            ],
+            "skill_type": "process_skill",
+            "description": "Convert and adapt recipes for large-volume production while preserving yield, flavor, texture and plating specifications; produce standardized recipe cards and SOPs for repeatable output.",
+            "parent_skill": "Batch cooking & production planning",
+            "related_skills": [
+                "Yield calculation and portion control",
+                "Menu costing and food cost optimization",
+                "Batch quality control and sensory evaluation"
+            ],
+            "keywords": [
+                "scaling",
+                "standardized recipes",
+                "recipe card",
+                "SOP",
+                "batch yields"
+            ],
+            "common_roles": [
+                "Food production teams",
+                "Large-scale catering operations",
+                "Institutional and commercial kitchens"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Production scheduling and shift coordination",
+            "aliases": [
+                "Production scheduling",
+                "Batch production scheduling",
+                "Shift coordination for production"
+            ],
+            "skill_type": "process_skill",
+            "description": "Create and manage production timetables, assign tasks across shifts, sequence operations to meet service windows and minimize downtime and overtime.",
+            "parent_skill": "Batch cooking & production planning",
+            "related_skills": [
+                "Line balancing and production flow optimization",
+                "Demand forecasting for production planning",
+                "Inventory management for high-volume production"
+            ],
+            "keywords": [
+                "scheduling",
+                "shift planning",
+                "production timetable",
+                "service window",
+                "labor planning"
+            ],
+            "common_roles": [
+                "Food production teams",
+                "Catering operations",
+                "Institutional kitchens"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Yield calculation and portion control",
+            "aliases": [
+                "Yield management",
+                "Portion yield calculation",
+                "Edible yield analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculate edible yields, trim and cook losses, and portion sizes to inform purchasing, costing and consistent plate portions in bulk production.",
+            "parent_skill": "Batch cooking & production planning",
+            "related_skills": [
+                "Recipe scaling and standardization",
+                "Menu costing and food cost optimization",
+                "Inventory management for high-volume production"
+            ],
+            "keywords": [
+                "yield",
+                "portion control",
+                "edible yield",
+                "waste",
+                "trim loss"
+            ],
+            "common_roles": [
+                "Food production teams",
+                "Large-scale catering operations",
+                "Institutional kitchens"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Menu costing and food cost optimization",
+            "aliases": [
+                "Menu costing",
+                "Food cost analysis",
+                "Cost optimization for batch menus"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Determine ingredient costs, margin per dish for large-volume menus, identify opportunities to reduce food cost through substitution, yield improvement and waste reduction.",
+            "parent_skill": "Batch cooking & production planning",
+            "related_skills": [
+                "Yield calculation and portion control",
+                "Inventory management for high-volume production",
+                "Demand forecasting for production planning"
+            ],
+            "keywords": [
+                "costing",
+                "food cost",
+                "margin",
+                "cost control",
+                "menu engineering"
+            ],
+            "common_roles": [
+                "Food production teams",
+                "Large-scale catering operations",
+                "Institutional kitchens"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inventory management for high-volume production",
+            "aliases": [
+                "Bulk inventory control",
+                "Par-level management",
+                "High-volume stock control"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Manage raw material and ingredient inventory in bulk environments using par levels, FIFO rotation, cycle counts and ordering practices to support uninterrupted production.",
+            "parent_skill": "Batch cooking & production planning",
+            "related_skills": [
+                "Production scheduling and shift coordination",
+                "Menu costing and food cost optimization",
+                "Cold chain and bulk temperature control"
+            ],
+            "keywords": [
+                "inventory",
+                "par levels",
+                "FIFO",
+                "cycle count",
+                "ordering"
+            ],
+            "common_roles": [
+                "Food production teams",
+                "Large-scale catering operations",
+                "Institutional kitchens"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Batch quality control and sensory evaluation",
+            "aliases": [
+                "Bulk product quality control",
+                "Sensory QC for batch production",
+                "Quality assurance (batch food)"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implement checks for appearance, texture, flavor and consistency across batches; design sampling plans and corrective actions to maintain product standards at scale.",
+            "parent_skill": "Batch cooking & production planning",
+            "related_skills": [
+                "Recipe scaling and standardization",
+                "HACCP critical control planning for batch production",
+                "Cold chain and bulk temperature control"
+            ],
+            "keywords": [
+                "quality control",
+                "sensory evaluation",
+                "sampling",
+                "corrective action",
+                "consistency"
+            ],
+            "common_roles": [
+                "Food production teams",
+                "Large-scale catering operations",
+                "Institutional kitchens"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "HACCP critical control planning for batch production",
+            "aliases": [
+                "HACCP planning (batch)",
+                "Critical control point planning",
+                "Batch HACCP hazard analysis"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Identify hazards and establish critical control points, monitoring procedures and corrective actions specific to large-batch cooking and bulk handling to ensure food safety compliance.",
+            "parent_skill": "Batch cooking & production planning",
+            "related_skills": [
+                "Cold chain and bulk temperature control",
+                "Batch quality control and sensory evaluation"
+            ],
+            "keywords": [
+                "HACCP",
+                "critical control points",
+                "hazard analysis",
+                "food safety",
+                "monitoring"
+            ],
+            "common_roles": [
+                "Food production teams",
+                "Large-scale catering operations",
+                "Institutional kitchens"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cold chain and bulk temperature control",
+            "aliases": [
+                "Bulk temperature management",
+                "Cold chain management (food production)",
+                "Temperature control for bulk products"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintain appropriate temperature profiles through storage, transport and holding for large quantities of perishable products, including monitoring, documentation and corrective actions.",
+            "parent_skill": "Batch cooking & production planning",
+            "related_skills": [
+                "HACCP critical control planning for batch production",
+                "Inventory management for high-volume production",
+                "Batch quality control and sensory evaluation"
+            ],
+            "keywords": [
+                "cold chain",
+                "temperature monitoring",
+                "holding temps",
+                "refrigeration",
+                "thermal control"
+            ],
+            "common_roles": [
+                "Food production teams",
+                "Large-scale catering operations",
+                "Institutional kitchens"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Line balancing and production flow optimization",
+            "aliases": [
+                "Production line balancing",
+                "Kitchen flow optimization",
+                "Sequencing and takt time management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and adjust workstation tasks, equipment placement and process sequence to minimize bottlenecks, reduce lead time and maximize throughput in batch kitchens.",
+            "parent_skill": "Batch cooking & production planning",
+            "related_skills": [
+                "Production scheduling and shift coordination",
+                "Inventory management for high-volume production",
+                "Recipe scaling and standardization"
+            ],
+            "keywords": [
+                "line balancing",
+                "flow",
+                "bottleneck",
+                "takt time",
+                "throughput"
+            ],
+            "common_roles": [
+                "Food production teams",
+                "Large-scale catering operations",
+                "Institutional kitchens"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Demand forecasting for production planning",
+            "aliases": [
+                "Production demand forecasting",
+                "Sales-driven production planning",
+                "Forecasting for batch production"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Use historical sales, seasonality and promotional inputs to forecast demand and determine production volumes, reducing waste and preventing stockouts in high-volume kitchens.",
+            "parent_skill": "Batch cooking & production planning",
+            "related_skills": [
+                "Production scheduling and shift coordination",
+                "Menu costing and food cost optimization",
+                "Inventory management for high-volume production"
+            ],
+            "keywords": [
+                "forecasting",
+                "demand planning",
+                "sales history",
+                "seasonality",
+                "production volumes"
+            ],
+            "common_roles": [
+                "Food production teams",
+                "Large-scale catering operations",
+                "Institutional kitchens"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

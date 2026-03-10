@@ -1,0 +1,291 @@
+{
+    "domain": "Finance",
+    "category": "Cost Accounting & Operational Finance",
+    "subcategory": "Bill of materials cost rollups",
+    "skills": [
+        {
+            "canonical_name": "BOM Cost Rollup",
+            "aliases": [
+                "Bill of Materials cost rollup",
+                "BOM roll-up",
+                "cost roll-up"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Aggregating costs from components, operations, and overhead through a bill of materials to compute per-item and per-assembly cost totals.",
+            "parent_skill": "Bill of materials cost rollups",
+            "related_skills": [
+                "Component Cost Estimation",
+                "Cost Rollup Reconciliation & Variance Analysis",
+                "Costed BOM (cBOM) Management",
+                "ERP Cost Rollup Configuration"
+            ],
+            "keywords": [
+                "rollup",
+                "BOM",
+                "assembly cost",
+                "cost aggregation"
+            ],
+            "common_roles": [
+                "Cost accounting functions",
+                "Product costing functions",
+                "Operational finance teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Component Cost Estimation",
+            "aliases": [
+                "component-level costing",
+                "part cost estimation",
+                "piece-part costing"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Estimating material, purchased part, and unit-level labor and overhead costs used as inputs to BOM rollups.",
+            "parent_skill": "Bill of materials cost rollups",
+            "related_skills": [
+                "BOM Cost Rollup",
+                "Cost Propagation and Cascade Calculations",
+                "Spreadsheet Modeling & Automation for Cost Rollups"
+            ],
+            "keywords": [
+                "part cost",
+                "material cost",
+                "cost build-up",
+                "estimation"
+            ],
+            "common_roles": [
+                "Product costing functions",
+                "Supplier cost analytics"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Standard Costing Implementation",
+            "aliases": [
+                "standard cost rollup",
+                "standard cost setup",
+                "standard costing configuration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and running processes to establish, roll up, and maintain standard costs across BOMs and product families.",
+            "parent_skill": "Bill of materials cost rollups",
+            "related_skills": [
+                "ERP Cost Rollup Configuration",
+                "Cost Rollup Reconciliation & Variance Analysis",
+                "Costed BOM (cBOM) Management"
+            ],
+            "keywords": [
+                "standard cost",
+                "cost setup",
+                "periodic rollup",
+                "standardization"
+            ],
+            "common_roles": [
+                "Cost accounting functions",
+                "Operational finance teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Costed BOM (cBOM) Management",
+            "aliases": [
+                "costed BOM management",
+                "cBOM maintenance",
+                "costed bill of materials management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Creating, maintaining and publishing costed BOMs (cBOMs), including revisions, approvals, and distribution to planning and costing systems.",
+            "parent_skill": "Bill of materials cost rollups",
+            "related_skills": [
+                "BOM Cost Rollup",
+                "Engineering Change Order (ECO) Cost Impact Analysis",
+                "ERP Cost Rollup Configuration"
+            ],
+            "keywords": [
+                "cBOM",
+                "BOM maintenance",
+                "cost publishing",
+                "revision control"
+            ],
+            "common_roles": [
+                "Product costing functions",
+                "Manufacturing finance operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ERP Cost Rollup Configuration",
+            "aliases": [
+                "ERP product costing",
+                "ERP cost configuration",
+                "SAP Product Costing (CO-PC)",
+                "Oracle Cost Management",
+                "NetSuite cost rollup"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring ERP costing modules and master data (routing, BOMs, cost elements) to execute automated cost rollups and produce costed items in the ERP.",
+            "parent_skill": "Bill of materials cost rollups",
+            "related_skills": [
+                "BOM Cost Rollup",
+                "Standard Costing Implementation",
+                "Costed BOM (cBOM) Management"
+            ],
+            "keywords": [
+                "ERP",
+                "product costing",
+                "master data",
+                "cost module"
+            ],
+            "common_roles": [
+                "Operational finance teams",
+                "ERP implementation functions"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cost Propagation and Cascade Calculations",
+            "aliases": [
+                "cost propagation",
+                "cascade calculations",
+                "rolled-up cost propagation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Calculating how cost changes at component levels cascade through assemblies, including indirect cost allocation and multi-level rollups.",
+            "parent_skill": "Bill of materials cost rollups",
+            "related_skills": [
+                "BOM Cost Rollup",
+                "Component Cost Estimation",
+                "Cost Rollup Reconciliation & Variance Analysis"
+            ],
+            "keywords": [
+                "propagation",
+                "cascade",
+                "multi-level rollup",
+                "indirect allocation"
+            ],
+            "common_roles": [
+                "Product costing functions",
+                "Operational finance teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cost Rollup Reconciliation & Variance Analysis",
+            "aliases": [
+                "cost reconciliation",
+                "cost variance analysis",
+                "rollup reconciliation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Comparing rolled-up costs to actuals and prior standards, identifying variances, root-cause analysis, and preparing reconciliation journal entries or corrective actions.",
+            "parent_skill": "Bill of materials cost rollups",
+            "related_skills": [
+                "Standard Costing Implementation",
+                "Inventory Valuation Methods (FIFO\/Weighted Average)",
+                "Spreadsheet Modeling & Automation for Cost Rollups"
+            ],
+            "keywords": [
+                "variance",
+                "reconciliation",
+                "root cause",
+                "cost to actual"
+            ],
+            "common_roles": [
+                "Cost accounting functions",
+                "Operational finance teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Engineering Change Order (ECO) Cost Impact Analysis",
+            "aliases": [
+                "ECO cost impact",
+                "change impact analysis",
+                "engineering change cost assessment"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Assessing cost implications of engineering changes to BOMs and routings, estimating delta costs, and updating costed BOMs and forecasts.",
+            "parent_skill": "Bill of materials cost rollups",
+            "related_skills": [
+                "Costed BOM (cBOM) Management",
+                "Component Cost Estimation",
+                "Cost Propagation and Cascade Calculations"
+            ],
+            "keywords": [
+                "ECO",
+                "change order",
+                "cost delta",
+                "impact assessment"
+            ],
+            "common_roles": [
+                "Product costing functions",
+                "Manufacturing finance operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Spreadsheet Modeling & Automation for Cost Rollups",
+            "aliases": [
+                "Excel modeling for cost rollup",
+                "VBA\/Python cost rollup automation",
+                "spreadsheet cost build-up"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using spreadsheets and light scripting (Excel formulas, VBA, Python) to model cost rollups, perform reconciliations, and automate data prep for ERP loads.",
+            "parent_skill": "Bill of materials cost rollups",
+            "related_skills": [
+                "Component Cost Estimation",
+                "Cost Rollup Reconciliation & Variance Analysis",
+                "ERP Cost Rollup Configuration"
+            ],
+            "keywords": [
+                "Excel",
+                "VBA",
+                "Python",
+                "automation",
+                "modeling"
+            ],
+            "common_roles": [
+                "Operational finance teams",
+                "Product costing functions"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inventory Valuation Methods (FIFO\/Weighted Average)",
+            "aliases": [
+                "inventory valuation",
+                "FIFO valuation",
+                "weighted average cost"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Knowledge of inventory valuation methods (FIFO, weighted average) and how they affect BOM cost rollups, margins, and financial reporting.",
+            "parent_skill": "Bill of materials cost rollups",
+            "related_skills": [
+                "Cost Rollup Reconciliation & Variance Analysis",
+                "Standard Costing Implementation"
+            ],
+            "keywords": [
+                "FIFO",
+                "weighted average",
+                "inventory valuation",
+                "financial reporting"
+            ],
+            "common_roles": [
+                "Cost accounting functions",
+                "Financial reporting functions"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

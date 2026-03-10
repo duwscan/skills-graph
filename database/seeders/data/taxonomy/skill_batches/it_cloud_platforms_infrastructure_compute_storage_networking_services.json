@@ -1,0 +1,291 @@
+{
+    "domain": "IT",
+    "category": "Cloud Platforms & Infrastructure",
+    "subcategory": "Compute, storage & networking services",
+    "skills": [
+        {
+            "canonical_name": "Infrastructure as Code (IaC)",
+            "aliases": [
+                "IaC",
+                "Infrastructure automation",
+                "Declarative infrastructure"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, authoring, testing and managing infrastructure through declarative, version-controlled templates and pipelines to provision compute, storage and networking.",
+            "parent_skill": "Compute, storage & networking services",
+            "related_skills": [
+                "Terraform",
+                "Configuration management",
+                "CI\/CD",
+                "Cloud resource provisioning"
+            ],
+            "keywords": [
+                "declarative",
+                "templates",
+                "versioning",
+                "automation"
+            ],
+            "common_roles": [
+                "Platform engineering teams",
+                "DevOps teams",
+                "Cloud operations teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Terraform",
+            "aliases": [
+                "HashiCorp Terraform",
+                "terraform"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Terraform to define, provision and manage cloud compute, storage and networking resources via HCL, state management, modules and workspaces.",
+            "parent_skill": "Compute, storage & networking services",
+            "related_skills": [
+                "Infrastructure as Code (IaC)",
+                "Cloud resource provisioning",
+                "State management"
+            ],
+            "keywords": [
+                "HCL",
+                "modules",
+                "state",
+                "provisioning"
+            ],
+            "common_roles": [
+                "Platform engineering teams",
+                "DevOps teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Kubernetes",
+            "aliases": [
+                "k8s",
+                "Kubernetes orchestration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Deploying, operating and troubleshooting containerized workloads and services on Kubernetes clusters including pods, services, ingress, scheduling and cluster lifecycle.",
+            "parent_skill": "Compute, storage & networking services",
+            "related_skills": [
+                "Container orchestration",
+                "Helm",
+                "Service mesh",
+                "CI\/CD"
+            ],
+            "keywords": [
+                "pods",
+                "ingress",
+                "deployments",
+                "operators"
+            ],
+            "common_roles": [
+                "Platform engineering teams",
+                "Site reliability engineering teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Virtual machine provisioning and management",
+            "aliases": [
+                "VM lifecycle management",
+                "virtual machine administration",
+                "VM provisioning"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Provisioning, configuring, scaling, patching and imaging virtual machines and instances in cloud environments, including automation of lifecycle tasks.",
+            "parent_skill": "Compute, storage & networking services",
+            "related_skills": [
+                "Autoscaling",
+                "Image management",
+                "Infrastructure as Code (IaC)",
+                "Cloud cost optimization for compute & storage"
+            ],
+            "keywords": [
+                "instance",
+                "image",
+                "scaling",
+                "patching"
+            ],
+            "common_roles": [
+                "Cloud operations teams",
+                "Platform engineering teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cloud networking and hybrid connectivity",
+            "aliases": [
+                "cloud networking",
+                "VPC design",
+                "hybrid connectivity",
+                "VPN\/Direct Connect"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing cloud network topologies, VPCs\/subnets, routing, peering, VPNs and dedicated connections for hybrid cloud integration.",
+            "parent_skill": "Compute, storage & networking services",
+            "related_skills": [
+                "Software-defined networking (SDN)",
+                "Load balancing & traffic management",
+                "Network security configuration"
+            ],
+            "keywords": [
+                "VPC",
+                "subnet",
+                "peering",
+                "VPN"
+            ],
+            "common_roles": [
+                "Network and cloud infrastructure teams",
+                "Platform engineering teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Load balancing and traffic management",
+            "aliases": [
+                "application load balancing",
+                "traffic distribution",
+                "reverse proxy configuration"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Configuring cloud load balancers, reverse proxies and routing rules to distribute traffic, enforce health checks, manage session affinity and implement traffic policies.",
+            "parent_skill": "Compute, storage & networking services",
+            "related_skills": [
+                "CDN configuration and optimization",
+                "DNS management",
+                "Autoscaling",
+                "Kubernetes Ingress"
+            ],
+            "keywords": [
+                "load balancer",
+                "health check",
+                "routing",
+                "session affinity"
+            ],
+            "common_roles": [
+                "Platform engineering teams",
+                "Cloud operations teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Object and block storage management",
+            "aliases": [
+                "object storage",
+                "block storage",
+                "S3-like storage management"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Provisioning and managing object and block storage resources, lifecycle policies, access controls, performance profiles and consistency\/replication settings for cloud workloads.",
+            "parent_skill": "Compute, storage & networking services",
+            "related_skills": [
+                "Storage performance tuning",
+                "Backup, snapshotting & disaster recovery",
+                "Data lifecycle management"
+            ],
+            "keywords": [
+                "S3",
+                "EBS",
+                "buckets",
+                "volumes"
+            ],
+            "common_roles": [
+                "Cloud storage teams",
+                "Platform engineering teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cloud backup, snapshotting and disaster recovery",
+            "aliases": [
+                "backup and DR",
+                "snapshot management",
+                "disaster recovery planning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and operating backup strategies, snapshot schedules, replication, failover and recovery processes to meet defined RPO\/RTO for cloud compute and storage.",
+            "parent_skill": "Compute, storage & networking services",
+            "related_skills": [
+                "Object and block storage management",
+                "Replication",
+                "High availability design"
+            ],
+            "keywords": [
+                "snapshots",
+                "replication",
+                "RTO",
+                "RPO"
+            ],
+            "common_roles": [
+                "Cloud operations teams",
+                "Platform engineering teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Serverless functions and FaaS deployment",
+            "aliases": [
+                "serverless compute",
+                "FaaS deployment",
+                "Functions-as-a-Service"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing, deploying and operating serverless functions including event integrations, deployment models, monitoring, cold-start considerations and scaling behavior.",
+            "parent_skill": "Compute, storage & networking services",
+            "related_skills": [
+                "API Gateway",
+                "Event-driven architecture",
+                "Cloud cost optimization for compute & storage"
+            ],
+            "keywords": [
+                "functions",
+                "FaaS",
+                "event sources",
+                "cold start"
+            ],
+            "common_roles": [
+                "Cloud application teams",
+                "Platform engineering teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cloud cost optimization for compute and storage",
+            "aliases": [
+                "cloud cost management",
+                "cost optimization",
+                "cloud cost analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing and optimizing cloud spend for compute, storage and networking through rightsizing, purchasing models, lifecycle policies and tagging\/billing analysis.",
+            "parent_skill": "Compute, storage & networking services",
+            "related_skills": [
+                "Virtual machine provisioning and management",
+                "Object and block storage management",
+                "Infrastructure as Code (IaC)"
+            ],
+            "keywords": [
+                "cost",
+                "rightsizing",
+                "tagging",
+                "billing"
+            ],
+            "common_roles": [
+                "Cloud finance and operations teams",
+                "Platform engineering teams"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

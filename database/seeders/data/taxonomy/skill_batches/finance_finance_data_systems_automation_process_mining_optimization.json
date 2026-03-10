@@ -1,0 +1,315 @@
+{
+    "domain": "Finance",
+    "category": "Finance Data, Systems & Automation",
+    "subcategory": "Process mining & optimization",
+    "skills": [
+        {
+            "canonical_name": "Process Mining",
+            "aliases": [
+                "process discovery",
+                "event-log mining",
+                "process mining analysis"
+            ],
+            "skill_type": "process_skill",
+            "description": "Techniques for discovering, visualizing and analyzing end-to-end business processes from event logs to identify actual process flows, bottlenecks and deviations.",
+            "parent_skill": "Process mining & optimization",
+            "related_skills": [
+                "Event Log Extraction & Preprocessing",
+                "Conformance Checking & Compliance Analysis",
+                "Process Variant Analysis",
+                "Process Performance Measurement & KPI Definition",
+                "Process Mining Platform: Celonis"
+            ],
+            "keywords": [
+                "process discovery",
+                "event logs",
+                "process model",
+                "process dashboard",
+                "process analytics"
+            ],
+            "common_roles": [
+                "Process Analyst",
+                "Business Process Analyst",
+                "Process Mining Consultant"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Event Log Extraction & Preprocessing",
+            "aliases": [
+                "event log extraction",
+                "log preprocessing",
+                "ERP event export"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Extraction, transformation and cleansing of transactional and event data (ERP, CRM, DBs) into structured event logs suitable for process mining and analytics.",
+            "parent_skill": "Process mining & optimization",
+            "related_skills": [
+                "Process Mining",
+                "Process Mining Integration (ERP\/DB & APIs)",
+                "Process Performance Measurement & KPI Definition"
+            ],
+            "keywords": [
+                "ETL",
+                "event timestamp",
+                "case id",
+                "data cleansing",
+                "SAP event logs",
+                "SQL"
+            ],
+            "common_roles": [
+                "Data Engineer (Finance)",
+                "Process Mining Analyst",
+                "Business Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Conformance Checking & Compliance Analysis",
+            "aliases": [
+                "conformance analysis",
+                "process compliance checking",
+                "deviation analysis"
+            ],
+            "skill_type": "process_skill",
+            "description": "Comparing discovered process behavior against reference models or regulatory rules to detect deviations, non-compliance and rule violations.",
+            "parent_skill": "Process mining & optimization",
+            "related_skills": [
+                "Process Mining",
+                "Event Log Extraction & Preprocessing",
+                "Process Performance Measurement & KPI Definition",
+                "Process Mining Integration (ERP\/DB & APIs)"
+            ],
+            "keywords": [
+                "conformance checking",
+                "compliance",
+                "audit",
+                "deviation detection",
+                "rule violation"
+            ],
+            "common_roles": [
+                "Compliance Analyst",
+                "Process Auditor",
+                "Process Mining Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Process Variant Analysis",
+            "aliases": [
+                "variant clustering",
+                "process variant mining",
+                "variant analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Identifying, clustering and analyzing different execution variants of the same process to understand frequency, cost, risk and root causes of variants.",
+            "parent_skill": "Process mining & optimization",
+            "related_skills": [
+                "Process Mining",
+                "Event Log Extraction & Preprocessing",
+                "Root Cause Analysis for Processes",
+                "Process Performance Measurement & KPI Definition"
+            ],
+            "keywords": [
+                "variant clustering",
+                "sequence analysis",
+                "process families",
+                "frequency analysis",
+                "path variants"
+            ],
+            "common_roles": [
+                "Business Process Analyst",
+                "Process Mining Analyst",
+                "Operational Excellence Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Process Performance Measurement & KPI Definition",
+            "aliases": [
+                "process KPIs",
+                "process metrics definition",
+                "performance measurement"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Designing meaningful KPIs and metrics for financial processes (cycle time, throughput, cost, error rates) and implementing monitoring for continuous visibility.",
+            "parent_skill": "Process mining & optimization",
+            "related_skills": [
+                "Process Mining",
+                "Event Log Extraction & Preprocessing",
+                "Process Optimization & Continuous Improvement",
+                "Conformance Checking & Compliance Analysis"
+            ],
+            "keywords": [
+                "cycle time",
+                "throughput",
+                "process metrics",
+                "SLAs",
+                "dashboarding"
+            ],
+            "common_roles": [
+                "Finance Analyst",
+                "Process Performance Manager",
+                "Business Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automation Opportunity Assessment (RPA & Hyperautomation)",
+            "aliases": [
+                "automation opportunity identification",
+                "RPA feasibility assessment",
+                "automation scoping"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Evaluating process steps and variants to identify high-value automation candidates, estimate effort\/ROI, and prioritize RPA or hyperautomation initiatives in finance processes.",
+            "parent_skill": "Process mining & optimization",
+            "related_skills": [
+                "Process Mining",
+                "Process Variant Analysis",
+                "Process Optimization & Continuous Improvement",
+                "Process Mining Integration (ERP\/DB & APIs)"
+            ],
+            "keywords": [
+                "RPA",
+                "automation ROI",
+                "candidate identification",
+                "hyperautomation",
+                "use case prioritization"
+            ],
+            "common_roles": [
+                "RPA Analyst",
+                "Automation Consultant",
+                "Process Improvement Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Business Process Modeling (BPMN)",
+            "aliases": [
+                "BPMN modeling",
+                "process mapping",
+                "process flow modeling"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and documenting process models using BPMN notation and other modeling techniques to create reference models used in mining, conformance checking and redesign.",
+            "parent_skill": "Process mining & optimization",
+            "related_skills": [
+                "Process Mining",
+                "Conformance Checking & Compliance Analysis",
+                "Process Optimization & Continuous Improvement"
+            ],
+            "keywords": [
+                "BPMN",
+                "process map",
+                "swimlane",
+                "as-is model",
+                "to-be model"
+            ],
+            "common_roles": [
+                "Business Process Analyst",
+                "Process Architect",
+                "Solution Designer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Process Mining Platform: Celonis",
+            "aliases": [
+                "Celonis",
+                "Celonis EMS",
+                "Celonis Process Mining"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Celonis platform capabilities (data model, process explorer, conformance checks, action engine) to implement process mining and optimization solutions in finance.",
+            "parent_skill": "Process mining & optimization",
+            "related_skills": [
+                "Process Mining",
+                "Event Log Extraction & Preprocessing",
+                "Process Performance Measurement & KPI Definition"
+            ],
+            "keywords": [
+                "Celonis",
+                "process explorer",
+                "action engine",
+                "data model",
+                "process analytics platform"
+            ],
+            "common_roles": [
+                "Process Mining Consultant",
+                "Process Analyst",
+                "Finance Transformation Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Process Mining Integration (ERP\/DB & APIs)",
+            "aliases": [
+                "process mining integration",
+                "ERP integration for process mining",
+                "API event integration"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Implementing technical integrations between process mining platforms and source systems (SAP, Oracle, databases, APIs), including data mapping, scheduling and secure connectivity.",
+            "parent_skill": "Process mining & optimization",
+            "related_skills": [
+                "Event Log Extraction & Preprocessing",
+                "Process Mining Platform: Celonis",
+                "Automation Opportunity Assessment (RPA & Hyperautomation)"
+            ],
+            "keywords": [
+                "SAP integration",
+                "API",
+                "database connector",
+                "ETL",
+                "secure data transfer"
+            ],
+            "common_roles": [
+                "Integration Engineer",
+                "Data Engineer (Finance)",
+                "Process Mining Implementer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Process Optimization & Continuous Improvement",
+            "aliases": [
+                "process redesign",
+                "continuous improvement",
+                "operational optimization"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying structured improvement methods (value stream mapping, root cause analysis, iterative redesign) to reduce cost, cycle times and defects in financial processes informed by mining insights.",
+            "parent_skill": "Process mining & optimization",
+            "related_skills": [
+                "Process Performance Measurement & KPI Definition",
+                "Process Mining",
+                "Automation Opportunity Assessment (RPA & Hyperautomation)",
+                "Business Process Modeling (BPMN)"
+            ],
+            "keywords": [
+                "value stream",
+                "root cause",
+                "Kaizen",
+                "continuous improvement",
+                "process redesign"
+            ],
+            "common_roles": [
+                "Process Improvement Manager",
+                "Operational Excellence Analyst",
+                "Business Process Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

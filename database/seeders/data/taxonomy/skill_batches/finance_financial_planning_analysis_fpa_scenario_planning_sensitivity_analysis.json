@@ -1,0 +1,298 @@
+{
+    "domain": "Finance",
+    "category": "Financial Planning & Analysis (FP&A)",
+    "subcategory": "Scenario planning & sensitivity analysis",
+    "skills": [
+        {
+            "canonical_name": "Driver-based scenario modeling",
+            "aliases": [
+                "driver-driven scenario modeling",
+                "driver-based forecasting",
+                "driver-driven forecasting"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Building financial scenarios that link business drivers (e.g., volume, price, conversion rates) to forecasts and P&L\/balance sheet outcomes for planning and decision support.",
+            "parent_skill": "Scenario planning & sensitivity analysis",
+            "related_skills": [
+                "Sensitivity analysis",
+                "Probability-weighted scenario analysis",
+                "Scenario aggregation & consolidation",
+                "Advanced Excel scenario tools (Scenario Manager & Data Tables)"
+            ],
+            "keywords": [
+                "driver model",
+                "driver-based forecast",
+                "assumption mapping",
+                "financial drivers"
+            ],
+            "common_roles": [
+                "FP&A analyst",
+                "Financial planning manager",
+                "Corporate finance analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sensitivity analysis",
+            "aliases": [
+                "sensitivity testing",
+                "input-output sensitivity analysis",
+                "tornado analysis"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Evaluating how changes in individual input variables affect model outputs to identify key value drivers and quantify outcome ranges.",
+            "parent_skill": "Scenario planning & sensitivity analysis",
+            "related_skills": [
+                "Driver-based scenario modeling",
+                "Scenario sensitivity visualization & reporting",
+                "Advanced Excel scenario tools (Scenario Manager & Data Tables)"
+            ],
+            "keywords": [
+                "one-way sensitivity",
+                "multi-way sensitivity",
+                "tornado chart",
+                "sensitivity table"
+            ],
+            "common_roles": [
+                "FP&A analyst",
+                "Forecasting analyst",
+                "Business analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Monte Carlo simulation for financial forecasting",
+            "aliases": [
+                "stochastic simulation",
+                "probabilistic simulation",
+                "MC simulation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Using randomized simulation techniques to model distributions of possible financial outcomes given probabilistic inputs and correlations.",
+            "parent_skill": "Scenario planning & sensitivity analysis",
+            "related_skills": [
+                "Probability-weighted scenario analysis",
+                "Stress testing (financial)",
+                "Advanced Excel scenario tools (Scenario Manager & Data Tables)"
+            ],
+            "keywords": [
+                "random sampling",
+                "stochastic modeling",
+                "distribution fitting",
+                "simulation"
+            ],
+            "common_roles": [
+                "Quantitative analyst",
+                "FP&A analyst",
+                "Risk analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Scenario design & narrative development",
+            "aliases": [
+                "scenario storytelling",
+                "scenario framing",
+                "scenario archetype design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Defining plausible future states, articulating assumptions and narratives for each scenario, and aligning scenarios to strategic questions and decision criteria.",
+            "parent_skill": "Scenario planning & sensitivity analysis",
+            "related_skills": [
+                "Driver-based scenario modeling",
+                "Probability-weighted scenario analysis",
+                "Scenario governance & version control"
+            ],
+            "keywords": [
+                "scenario narrative",
+                "assumption documentation",
+                "strategic scenarios",
+                "scenario framing"
+            ],
+            "common_roles": [
+                "FP&A manager",
+                "Strategic planning analyst",
+                "Business planning manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Scenario governance & version control",
+            "aliases": [
+                "scenario model governance",
+                "scenario versioning",
+                "scenario workflow management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Establishing processes, ownership, change control and audit trails for scenario models, assumptions, and published forecasts to ensure consistency and reproducibility.",
+            "parent_skill": "Scenario planning & sensitivity analysis",
+            "related_skills": [
+                "Scenario aggregation & consolidation",
+                "Scenario design & narrative development",
+                "Advanced Excel scenario tools (Scenario Manager & Data Tables)"
+            ],
+            "keywords": [
+                "version control",
+                "change management",
+                "model audit",
+                "assumption sign-off"
+            ],
+            "common_roles": [
+                "Finance operations manager",
+                "FP&A lead",
+                "Financial controller"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Scenario aggregation & consolidation",
+            "aliases": [
+                "roll-up of scenarios",
+                "consolidated scenario reporting",
+                "scenario roll-up"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Combining scenarios and assumptions across business units, regions, or legal entities into consistent consolidated forecasts and management reports.",
+            "parent_skill": "Scenario planning & sensitivity analysis",
+            "related_skills": [
+                "Driver-based scenario modeling",
+                "Scenario governance & version control",
+                "Advanced Excel scenario tools (Scenario Manager & Data Tables)"
+            ],
+            "keywords": [
+                "roll-up",
+                "intercompany adjustments",
+                "consolidation",
+                "aggregated forecast"
+            ],
+            "common_roles": [
+                "Consolidation analyst",
+                "FP&A analyst",
+                "Financial reporting analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Probability-weighted scenario analysis",
+            "aliases": [
+                "probability-weighted forecasting",
+                "expected value scenario analysis",
+                "scenario weighting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Assigning probabilities to scenarios and calculating weighted expected outcomes to inform planning, valuation and capital allocation decisions.",
+            "parent_skill": "Scenario planning & sensitivity analysis",
+            "related_skills": [
+                "Monte Carlo simulation for financial forecasting",
+                "Driver-based scenario modeling",
+                "Scenario design & narrative development"
+            ],
+            "keywords": [
+                "expected value",
+                "scenario probabilities",
+                "weighted forecast",
+                "decision weighting"
+            ],
+            "common_roles": [
+                "FP&A analyst",
+                "Valuation analyst",
+                "Strategic planning analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Advanced Excel scenario tools (Scenario Manager & Data Tables)",
+            "aliases": [
+                "Excel Scenario Manager",
+                "Excel Data Table modeling",
+                "Excel what-if tools"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Excel built-in scenario and what-if tools (Scenario Manager, one\/two-variable data tables, Goal Seek) to create, compare and present alternative financial outcomes.",
+            "parent_skill": "Scenario planning & sensitivity analysis",
+            "related_skills": [
+                "Sensitivity analysis",
+                "Driver-based scenario modeling",
+                "Scenario sensitivity visualization & reporting"
+            ],
+            "keywords": [
+                "Excel",
+                "Scenario Manager",
+                "Data Table",
+                "Goal Seek"
+            ],
+            "common_roles": [
+                "FP&A analyst",
+                "Financial analyst",
+                "Business analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Scenario sensitivity visualization & reporting",
+            "aliases": [
+                "sensitivity visualization",
+                "scenario reporting",
+                "tornado chart creation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing visualizations and reports (e.g., tornado charts, fan charts, scenario dashboards) that communicate scenario ranges, sensitivities and key drivers to stakeholders.",
+            "parent_skill": "Scenario planning & sensitivity analysis",
+            "related_skills": [
+                "Sensitivity analysis",
+                "Advanced Excel scenario tools (Scenario Manager & Data Tables)",
+                "Scenario design & narrative development"
+            ],
+            "keywords": [
+                "tornado chart",
+                "fan chart",
+                "scenario dashboard",
+                "data visualization"
+            ],
+            "common_roles": [
+                "FP&A analyst",
+                "Financial reporting analyst",
+                "Business intelligence analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Stress testing (financial)",
+            "aliases": [
+                "scenario-based stress testing",
+                "adverse scenario testing",
+                "macro stress testing for planning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and executing extreme but plausible scenario tests (macro shocks, demand collapse, supply disruption) to evaluate resilience of forecasts, liquidity and capital under stress.",
+            "parent_skill": "Scenario planning & sensitivity analysis",
+            "related_skills": [
+                "Monte Carlo simulation for financial forecasting",
+                "Probability-weighted scenario analysis",
+                "Scenario governance & version control"
+            ],
+            "keywords": [
+                "adverse scenarios",
+                "reverse stress test",
+                "liquidity stress",
+                "capital adequacy"
+            ],
+            "common_roles": [
+                "Risk analyst",
+                "FP&A manager",
+                "Treasury analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,302 @@
+{
+    "domain": "F&B",
+    "category": "Kitchen Operations & Back-of-House Management",
+    "subcategory": "Waste tracking & yield management",
+    "skills": [
+        {
+            "canonical_name": "Menu item costing",
+            "aliases": [
+                "food costing",
+                "recipe costing",
+                "cost-per-dish",
+                "menu costing"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculating the total cost of individual menu items by aggregating ingredient costs, labor allocation, overhead allocation and portion yields to determine food cost and pricing decisions.",
+            "parent_skill": "Waste tracking & yield management",
+            "related_skills": [
+                "Yield testing",
+                "Standardized recipe management",
+                "Demand forecasting for production"
+            ],
+            "keywords": [
+                "food cost",
+                "costing",
+                "ingredient cost",
+                "portion cost",
+                "menu engineering"
+            ],
+            "common_roles": [
+                "kitchen management",
+                "back-of-house finance\/support",
+                "procurement teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Yield testing",
+            "aliases": [
+                "yield analysis",
+                "trim yield testing",
+                "ingredient yield testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Measuring and analyzing the usable output from raw ingredients (e.g., after trimming, peeling, cooking losses) to determine edible yield percentages and inform ordering, costing and recipe adjustments.",
+            "parent_skill": "Waste tracking & yield management",
+            "related_skills": [
+                "Menu item costing",
+                "Portion control systems",
+                "Yield optimization through byproduct utilization"
+            ],
+            "keywords": [
+                "yield%",
+                "edible yield",
+                "trim loss",
+                "cooking loss",
+                "butcher yield"
+            ],
+            "common_roles": [
+                "kitchen management",
+                "procurement teams",
+                "culinary operations staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Portion control systems",
+            "aliases": [
+                "portioning",
+                "portion control procedures",
+                "standard portioning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and enforcing portioning methods (tools, training, plating standards) to ensure consistent serving sizes that control food cost and reduce waste.",
+            "parent_skill": "Waste tracking & yield management",
+            "related_skills": [
+                "Menu item costing",
+                "Standardized recipe management",
+                "Plate waste measurement"
+            ],
+            "keywords": [
+                "portion size",
+                "scoops and ladles",
+                "portion scales",
+                "portion guideline"
+            ],
+            "common_roles": [
+                "kitchen management",
+                "front-line culinary staff",
+                "quality control teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Plate waste measurement",
+            "aliases": [
+                "plate waste tracking",
+                "customer waste measurement",
+                "plate-level waste auditing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Collecting and analyzing data on uneaten food returned from customers or disposed after service to identify menu or portion issues and opportunities for waste reduction.",
+            "parent_skill": "Waste tracking & yield management",
+            "related_skills": [
+                "Waste audits",
+                "Portion control systems",
+                "Demand forecasting for production"
+            ],
+            "keywords": [
+                "plate scrap",
+                "customer leftovers",
+                "waste sampling",
+                "food returned"
+            ],
+            "common_roles": [
+                "kitchen management",
+                "quality control teams",
+                "sustainability teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Waste audits",
+            "aliases": [
+                "waste stream audits",
+                "waste assessment",
+                "kitchen waste audit"
+            ],
+            "skill_type": "process_skill",
+            "description": "Conducting systematic audits of waste streams (food, packaging, recyclable, compostable) including categorization, weighing, and root-cause analysis to quantify waste and identify reduction opportunities.",
+            "parent_skill": "Waste tracking & yield management",
+            "related_skills": [
+                "Waste weighing and data logging",
+                "Food waste diversion & composting operations",
+                "Food waste regulatory reporting"
+            ],
+            "keywords": [
+                "waste stream",
+                "waste composition",
+                "waste categorization",
+                "waste baseline"
+            ],
+            "common_roles": [
+                "sustainability teams",
+                "back-of-house management",
+                "operations improvement teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Waste weighing and data logging",
+            "aliases": [
+                "weight-based waste tracking",
+                "waste scale operation",
+                "waste data capture"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using scales, sensors and digital logs to record weights and attributes of discarded materials; ensuring accurate data capture for waste reporting, audits and analytics.",
+            "parent_skill": "Waste tracking & yield management",
+            "related_skills": [
+                "Waste audits",
+                "Waste tracking system integration",
+                "Food waste regulatory reporting"
+            ],
+            "keywords": [
+                "scales",
+                "data logging",
+                "weight capture",
+                "IoT scales",
+                "digital logs"
+            ],
+            "common_roles": [
+                "back-of-house staff",
+                "sustainability teams",
+                "operations analysts"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "First-in-first-out (FIFO) inventory rotation",
+            "aliases": [
+                "FIFO rotation",
+                "stock rotation",
+                "date coding"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Applying inventory rotation and date-coding procedures to minimize spoilage and shrink by ensuring older stock is used before newer deliveries.",
+            "parent_skill": "Waste tracking & yield management",
+            "related_skills": [
+                "Inventory shrinkage analysis",
+                "Standardized recipe management",
+                "Menu item costing"
+            ],
+            "keywords": [
+                "date code",
+                "stock rotation",
+                "shelf life management",
+                "expiry control"
+            ],
+            "common_roles": [
+                "back-of-house management",
+                "inventory control teams",
+                "procurement\/logistics staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Standardized recipe management",
+            "aliases": [
+                "recipe management",
+                "food specification management",
+                "spec management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating, maintaining and enforcing standardized recipes and specifications to ensure consistent yields, portion sizes and ingredient usage across service and locations.",
+            "parent_skill": "Waste tracking & yield management",
+            "related_skills": [
+                "Yield testing",
+                "Menu item costing",
+                "Portion control systems"
+            ],
+            "keywords": [
+                "recipe spec",
+                "prep guide",
+                "portion specs",
+                "yield standard"
+            ],
+            "common_roles": [
+                "culinary operations",
+                "quality control teams",
+                "kitchen management"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food waste diversion & composting operations",
+            "aliases": [
+                "composting operations",
+                "organic waste diversion",
+                "food diversion programs"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing and managing programs to divert organic waste from landfill (composting, anaerobic digestion, donation logistics) including sorting, storage and vendor coordination.",
+            "parent_skill": "Waste tracking & yield management",
+            "related_skills": [
+                "Waste audits",
+                "Waste weighing and data logging",
+                "Food waste regulatory reporting"
+            ],
+            "keywords": [
+                "composting",
+                "diversion",
+                "organic waste",
+                "donation logistics",
+                "anaerobic digestion"
+            ],
+            "common_roles": [
+                "sustainability teams",
+                "operations teams",
+                "back-of-house management"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food waste regulatory reporting",
+            "aliases": [
+                "waste reporting",
+                "food waste compliance reporting",
+                "regulatory waste reporting"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Preparing and submitting required food waste reports to regulators or corporate sustainability programs, ensuring data accuracy, traceability and compliance with local waste diversion laws and reporting standards.",
+            "parent_skill": "Waste tracking & yield management",
+            "related_skills": [
+                "Waste audits",
+                "Waste weighing and data logging",
+                "Food waste diversion & composting operations"
+            ],
+            "keywords": [
+                "regulatory reporting",
+                "waste compliance",
+                "mandatory reporting",
+                "sustainability reporting"
+            ],
+            "common_roles": [
+                "compliance teams",
+                "sustainability teams",
+                "operations management"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

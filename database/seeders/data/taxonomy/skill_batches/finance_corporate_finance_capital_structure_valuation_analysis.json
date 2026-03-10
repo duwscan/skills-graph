@@ -1,0 +1,302 @@
+{
+    "domain": "Finance",
+    "category": "Corporate Finance & Capital Structure",
+    "subcategory": "Valuation analysis",
+    "skills": [
+        {
+            "canonical_name": "Discounted Cash Flow (DCF) Modeling",
+            "aliases": [
+                "DCF valuation",
+                "discounted cash flow analysis",
+                "discounted cash flows modeling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Build, populate and audit DCF models by forecasting unlevered free cash flows, selecting discount rates, computing terminal value, and deriving enterprise and equity value.",
+            "parent_skill": "Valuation analysis",
+            "related_skills": [
+                "Weighted Average Cost of Capital (WACC) Calculation",
+                "Cash Flow Forecasting for Valuation",
+                "Terminal Value Estimation",
+                "Scenario and Sensitivity Analysis (Valuation)"
+            ],
+            "keywords": [
+                "DCF",
+                "free cash flow",
+                "enterprise value",
+                "discount rate",
+                "terminal value"
+            ],
+            "common_roles": [
+                "Valuation Analyst",
+                "Corporate Finance Analyst",
+                "Investment Banking Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Comparable Company (Comps) Analysis",
+            "aliases": [
+                "relative valuation",
+                "market multiples analysis",
+                "peer group multiples"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Select appropriate peer companies, compute and normalize valuation multiples (e.g., EV\/EBITDA, P\/E) and apply them to a target to derive implied valuation ranges.",
+            "parent_skill": "Valuation analysis",
+            "related_skills": [
+                "Precedent Transactions Analysis",
+                "Financial Statement Analysis for Valuation",
+                "Terminal Value Estimation"
+            ],
+            "keywords": [
+                "multiples",
+                "EV\/EBITDA",
+                "P\/E",
+                "peer group",
+                "comparables"
+            ],
+            "common_roles": [
+                "Valuation Analyst",
+                "Equity Research Analyst",
+                "Corporate Development Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Precedent Transactions Analysis",
+            "aliases": [
+                "transaction comps",
+                "precedent deals analysis",
+                "deal multiples analysis"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Analyze historical M&A transactions to extract transaction multiples, premiums and deal terms and apply them to estimate the value of a target company.",
+            "parent_skill": "Valuation analysis",
+            "related_skills": [
+                "Comparable Company (Comps) Analysis",
+                "Leveraged Buyout (LBO) Modeling",
+                "Minority Discount and Control Premium Analysis"
+            ],
+            "keywords": [
+                "transaction multiples",
+                "acquisition premiums",
+                "deal comps",
+                "precedent deals"
+            ],
+            "common_roles": [
+                "M&A Analyst",
+                "Investment Banking Analyst",
+                "Corporate Development Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Weighted Average Cost of Capital (WACC) Calculation",
+            "aliases": [
+                "cost of capital estimation",
+                "WACC estimation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Compute the weighted average cost of capital by estimating cost of equity and cost of debt, determining capital structure weights, and applying tax and market data adjustments.",
+            "parent_skill": "Valuation analysis",
+            "related_skills": [
+                "Discounted Cash Flow (DCF) Modeling",
+                "Cash Flow Forecasting for Valuation",
+                "Terminal Value Estimation"
+            ],
+            "keywords": [
+                "WACC",
+                "cost of equity",
+                "cost of debt",
+                "beta",
+                "capital structure"
+            ],
+            "common_roles": [
+                "Corporate Finance Analyst",
+                "Valuation Specialist",
+                "Treasury Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash Flow Forecasting for Valuation",
+            "aliases": [
+                "financial forecasting",
+                "cash flow projection",
+                "operating cash flow forecasting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Prepare revenue, expense, working capital and capital expenditure projections to derive free cash flows used in valuation models and scenario analysis.",
+            "parent_skill": "Valuation analysis",
+            "related_skills": [
+                "Discounted Cash Flow (DCF) Modeling",
+                "Financial Statement Analysis for Valuation",
+                "Scenario and Sensitivity Analysis (Valuation)"
+            ],
+            "keywords": [
+                "projections",
+                "working capital",
+                "capex",
+                "revenue forecast",
+                "opex"
+            ],
+            "common_roles": [
+                "FP&A Analyst",
+                "Valuation Analyst",
+                "Corporate Development Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Terminal Value Estimation",
+            "aliases": [
+                "perpetuity growth valuation",
+                "exit multiple estimation",
+                "terminal value calculation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Select and justify a terminal value method (perpetuity growth or exit multiple), determine appropriate inputs and integrate the terminal value into overall valuation models.",
+            "parent_skill": "Valuation analysis",
+            "related_skills": [
+                "Discounted Cash Flow (DCF) Modeling",
+                "Comparable Company (Comps) Analysis",
+                "Weighted Average Cost of Capital (WACC) Calculation"
+            ],
+            "keywords": [
+                "terminal value",
+                "perpetuity growth",
+                "exit multiple",
+                "g-rate"
+            ],
+            "common_roles": [
+                "Valuation Analyst",
+                "Corporate Finance Analyst",
+                "Investment Banking Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Scenario and Sensitivity Analysis (Valuation)",
+            "aliases": [
+                "sensitivity testing",
+                "valuation scenario analysis",
+                "stress testing valuation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and run sensitivity matrices and scenario tests (including Monte Carlo where applicable) to quantify how valuation outcomes change with variations in key assumptions.",
+            "parent_skill": "Valuation analysis",
+            "related_skills": [
+                "Discounted Cash Flow (DCF) Modeling",
+                "Cash Flow Forecasting for Valuation",
+                "Terminal Value Estimation"
+            ],
+            "keywords": [
+                "sensitivity analysis",
+                "scenario analysis",
+                "tornado chart",
+                "Monte Carlo"
+            ],
+            "common_roles": [
+                "Risk Analyst",
+                "Valuation Analyst",
+                "Corporate Development Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Leveraged Buyout (LBO) Modeling",
+            "aliases": [
+                "LBO valuation",
+                "leveraged buyout analysis"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Build LBO models including sources & uses, debt schedules, covenant and amortization mechanics, and compute investor returns (IRR, MOIC) and exit scenarios.",
+            "parent_skill": "Valuation analysis",
+            "related_skills": [
+                "Precedent Transactions Analysis",
+                "Cash Flow Forecasting for Valuation",
+                "Scenario and Sensitivity Analysis (Valuation)"
+            ],
+            "keywords": [
+                "LBO",
+                "debt schedule",
+                "IRR",
+                "MOIC",
+                "sources and uses"
+            ],
+            "common_roles": [
+                "Private Equity Analyst",
+                "M&A Analyst",
+                "Leveraged Finance Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial Statement Analysis for Valuation",
+            "aliases": [
+                "financial statement modeling",
+                "account normalization for valuation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyze and normalize historical income statements, balance sheets and cash flow statements, reconcile non-recurring items and prepare supporting schedules for valuation inputs.",
+            "parent_skill": "Valuation analysis",
+            "related_skills": [
+                "Cash Flow Forecasting for Valuation",
+                "Comparable Company (Comps) Analysis",
+                "Discounted Cash Flow (DCF) Modeling"
+            ],
+            "keywords": [
+                "normalization",
+                "reconciliations",
+                "ratios",
+                "one-offs",
+                "financial metrics"
+            ],
+            "common_roles": [
+                "Valuation Analyst",
+                "Corporate Finance Analyst",
+                "Forensic Accountant"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Minority Discount and Control Premium Analysis",
+            "aliases": [
+                "control premium analysis",
+                "discount for lack of control (DLOC)",
+                "discount for lack of marketability (DLOM)"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Quantify control premiums and minority\/marketability discounts using market evidence, empirical studies and deal context to adjust equity valuations appropriately.",
+            "parent_skill": "Valuation analysis",
+            "related_skills": [
+                "Precedent Transactions Analysis",
+                "Comparable Company (Comps) Analysis",
+                "Financial Statement Analysis for Valuation"
+            ],
+            "keywords": [
+                "control premium",
+                "minority discount",
+                "DLOM",
+                "DLOC",
+                "marketability"
+            ],
+            "common_roles": [
+                "Valuation Specialist",
+                "Forensic Valuation Analyst",
+                "M&A Advisor"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,290 @@
+{
+    "domain": "F&B",
+    "category": "Menu Development & Culinary R&D",
+    "subcategory": "Seasonal menu planning",
+    "skills": [
+        {
+            "canonical_name": "Seasonal ingredient sourcing",
+            "aliases": [
+                "seasonal sourcing",
+                "in-season ingredient procurement",
+                "local seasonal sourcing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Identify, evaluate and procure in-season ingredients from local producers and distributors, balancing availability, lead time, quality and cost for seasonal menu items.",
+            "parent_skill": "Seasonal menu planning",
+            "related_skills": [
+                "Supplier relationship management for seasonal procurement",
+                "Inventory planning for seasonal menu rollouts",
+                "Sustainability and local sourcing strategies"
+            ],
+            "keywords": [
+                "seasonal sourcing",
+                "in-season produce",
+                "local produce",
+                "supplier selection"
+            ],
+            "common_roles": [
+                "Culinary R&D function",
+                "Procurement function",
+                "Menu development function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inventory planning for seasonal menu rollouts",
+            "aliases": [
+                "seasonal inventory planning",
+                "inventory forecasting for seasonal menus"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Forecast ingredient needs, set par levels and coordinate ordering cadence to support limited-time and seasonal items while minimizing stockouts and waste.",
+            "parent_skill": "Seasonal menu planning",
+            "related_skills": [
+                "Demand forecasting for seasonal offerings",
+                "Seasonal ingredient sourcing",
+                "Seasonal menu costing and price optimization"
+            ],
+            "keywords": [
+                "inventory planning",
+                "par levels",
+                "ordering cadence",
+                "waste reduction"
+            ],
+            "common_roles": [
+                "Kitchen operations function",
+                "Culinary R&D function",
+                "Procurement function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Demand forecasting for seasonal offerings",
+            "aliases": [
+                "seasonal demand forecasting",
+                "sales forecasting for seasonal menus"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Use historical sales, market trends, promotional calendars and external signals to predict customer demand for seasonal dishes and plan production accordingly.",
+            "parent_skill": "Seasonal menu planning",
+            "related_skills": [
+                "Inventory planning for seasonal menu rollouts",
+                "Seasonal menu costing and price optimization",
+                "Seasonal menu testing and sensory evaluation"
+            ],
+            "keywords": [
+                "forecasting",
+                "historical sales analysis",
+                "trend analysis",
+                "demand planning"
+            ],
+            "common_roles": [
+                "Menu development function",
+                "Culinary R&D function",
+                "Revenue management function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Seasonal menu costing and price optimization",
+            "aliases": [
+                "seasonal menu costing",
+                "price optimization for seasonal menus"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculate food costs, perform margin and contribution analyses, and set pricing strategies for seasonal items to meet profitability targets and market positioning.",
+            "parent_skill": "Seasonal menu planning",
+            "related_skills": [
+                "Menu engineering for seasonal menus",
+                "Demand forecasting for seasonal offerings",
+                "Inventory planning for seasonal menu rollouts"
+            ],
+            "keywords": [
+                "food cost",
+                "contribution margin",
+                "pricing strategy",
+                "cost modeling"
+            ],
+            "common_roles": [
+                "Menu development function",
+                "Culinary R&D function",
+                "Cost control function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Menu engineering for seasonal menus",
+            "aliases": [
+                "seasonal menu engineering",
+                "menu architecture for seasonal items"
+            ],
+            "skill_type": "process_skill",
+            "description": "Apply menu engineering principles—item placement, psychological pricing, mix analysis and layout—specifically to maximize sales and profitability of seasonal offerings.",
+            "parent_skill": "Seasonal menu planning",
+            "related_skills": [
+                "Seasonal menu costing and price optimization",
+                "Seasonal menu testing and sensory evaluation",
+                "Flavor pairing and recipe adaptation with seasonal ingredients"
+            ],
+            "keywords": [
+                "menu placement",
+                "item mix",
+                "contribution margin",
+                "menu layout"
+            ],
+            "common_roles": [
+                "Menu development function",
+                "Culinary R&D function",
+                "Marketing function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Preservation and season-extension techniques",
+            "aliases": [
+                "season extension techniques",
+                "food preservation (pickling, curing, freezing)"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Culinary preservation methods—pickling, fermenting, curing, canning, freezing and other techniques—used to extend availability and maintain quality of seasonal ingredients.",
+            "parent_skill": "Seasonal menu planning",
+            "related_skills": [
+                "Seasonal ingredient sourcing",
+                "Flavor pairing and recipe adaptation with seasonal ingredients",
+                "Regulatory compliance for seasonal ingredients"
+            ],
+            "keywords": [
+                "pickling",
+                "fermenting",
+                "curing",
+                "freezing",
+                "canning"
+            ],
+            "common_roles": [
+                "Culinary R&D function",
+                "Product development function",
+                "Food processing function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Flavor pairing and recipe adaptation with seasonal ingredients",
+            "aliases": [
+                "seasonal flavor pairing",
+                "recipe adaptation for in-season produce"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Develop and adapt recipes to showcase in-season flavors and textures, make ingredient substitutions, and maintain consistency, cost, and portion control.",
+            "parent_skill": "Seasonal menu planning",
+            "related_skills": [
+                "Preservation and season-extension techniques",
+                "Seasonal menu testing and sensory evaluation",
+                "Menu engineering for seasonal menus"
+            ],
+            "keywords": [
+                "flavor pairing",
+                "ingredient substitution",
+                "recipe scaling",
+                "seasonal recipes"
+            ],
+            "common_roles": [
+                "Culinary R&D function",
+                "Menu development function",
+                "Culinary teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Supplier relationship management for seasonal procurement",
+            "aliases": [
+                "seasonal supplier management",
+                "vendor management for seasonal produce"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Establish and manage relationships with farmers, co-ops and distributors to secure reliable seasonal supply, negotiate terms and coordinate logistics for peak availability.",
+            "parent_skill": "Seasonal menu planning",
+            "related_skills": [
+                "Seasonal ingredient sourcing",
+                "Inventory planning for seasonal menu rollouts",
+                "Regulatory compliance for seasonal ingredients"
+            ],
+            "keywords": [
+                "vendor relationships",
+                "supplier sourcing",
+                "delivery coordination",
+                "contract terms"
+            ],
+            "common_roles": [
+                "Procurement function",
+                "Culinary R&D function",
+                "Operations function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory compliance for seasonal ingredients",
+            "aliases": [
+                "seasonal ingredient compliance",
+                "food safety and labeling for seasonal produce"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Knowledge of food safety, traceability, labeling, import\/export restrictions and local foraging regulations applicable to sourcing, preparing and marketing seasonal ingredients.",
+            "parent_skill": "Seasonal menu planning",
+            "related_skills": [
+                "Preservation and season-extension techniques",
+                "Supplier relationship management for seasonal procurement",
+                "Seasonal menu testing and sensory evaluation"
+            ],
+            "keywords": [
+                "food safety",
+                "traceability",
+                "labeling",
+                "foraging regulations"
+            ],
+            "common_roles": [
+                "Quality assurance function",
+                "Culinary R&D function",
+                "Regulatory affairs function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Seasonal menu testing and sensory evaluation",
+            "aliases": [
+                "sensory testing for seasonal menus",
+                "seasonal recipe testing",
+                "pilot service testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and run taste panels, pilot services and controlled experiments to assess acceptability, portion size, consistency and operational feasibility of seasonal menu items.",
+            "parent_skill": "Seasonal menu planning",
+            "related_skills": [
+                "Flavor pairing and recipe adaptation with seasonal ingredients",
+                "Demand forecasting for seasonal offerings",
+                "Menu engineering for seasonal menus"
+            ],
+            "keywords": [
+                "sensory evaluation",
+                "taste testing",
+                "pilot service",
+                "A\/B testing"
+            ],
+            "common_roles": [
+                "Culinary R&D function",
+                "Menu development function",
+                "Quality assurance function"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

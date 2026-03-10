@@ -1,0 +1,294 @@
+{
+    "domain": "F&B",
+    "category": "Quick Service & High-Volume Operations",
+    "subcategory": "Counter service & queue management",
+    "skills": [
+        {
+            "canonical_name": "Point-of-Sale (POS) operation",
+            "aliases": [
+                "POS system operation",
+                "POS terminal operation",
+                "register operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operate point-of-sale terminals and software to enter orders, process payments, issue refunds, and perform routine transaction functions.",
+            "parent_skill": "Counter service & queue management",
+            "related_skills": [
+                "Cash handling and reconciliation",
+                "Contactless and mobile payment processing",
+                "In-person order taking"
+            ],
+            "keywords": [
+                "POS",
+                "point of sale",
+                "register",
+                "transaction processing"
+            ],
+            "common_roles": [
+                "Cashier",
+                "Counter staff",
+                "Shift supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash handling and reconciliation",
+            "aliases": [
+                "till reconciliation",
+                "register balancing",
+                "cash management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Collect, count, secure, and reconcile cash transactions; manage tills, provide accurate change, and prepare end-of-shift cash reports.",
+            "parent_skill": "Counter service & queue management",
+            "related_skills": [
+                "Point-of-Sale (POS) operation",
+                "Contactless and mobile payment processing"
+            ],
+            "keywords": [
+                "cash drawer",
+                "till",
+                "float",
+                "cash reconciliation"
+            ],
+            "common_roles": [
+                "Cashier",
+                "Counter staff",
+                "Shift supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "In-person order taking",
+            "aliases": [
+                "counter order taking",
+                "face-to-face order entry",
+                "order entry"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Capture customer orders at the counter accurately, confirm modifiers and special requests, and enter orders into the ordering system.",
+            "parent_skill": "Counter service & queue management",
+            "related_skills": [
+                "Point-of-Sale (POS) operation",
+                "Suggestive selling and upselling (counter)",
+                "Queue management and line control"
+            ],
+            "keywords": [
+                "order taking",
+                "order entry",
+                "modifiers",
+                "special requests"
+            ],
+            "common_roles": [
+                "Counter staff",
+                "Cashier",
+                "Front-of-house staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Queue management and line control",
+            "aliases": [
+                "line management",
+                "queue control",
+                "customer flow management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Organize and control customer queues and waiting areas to minimize wait times and maintain orderly flow during peak periods.",
+            "parent_skill": "Counter service & queue management",
+            "related_skills": [
+                "In-person order taking",
+                "Drive-thru operations",
+                "Speed of service monitoring"
+            ],
+            "keywords": [
+                "queuing",
+                "line control",
+                "customer flow",
+                "peak management"
+            ],
+            "common_roles": [
+                "Floor manager",
+                "Counter staff",
+                "Shift supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Drive-thru operations",
+            "aliases": [
+                "drive-through operations",
+                "drive-thru order taking",
+                "drive-thru management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Coordinate and process drive-thru orders including customer communication, order timing, handoff procedures, and accuracy under time pressure.",
+            "parent_skill": "Counter service & queue management",
+            "related_skills": [
+                "Point-of-Sale (POS) operation",
+                "Queue management and line control",
+                "Contactless and mobile payment processing"
+            ],
+            "keywords": [
+                "drive-thru",
+                "window service",
+                "car orders",
+                "order handoff"
+            ],
+            "common_roles": [
+                "Drive-thru operator",
+                "Counter staff",
+                "Shift supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Speed of service monitoring",
+            "aliases": [
+                "service time monitoring",
+                "time-to-service tracking",
+                "throughput monitoring"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Monitor, record, and act on service time and throughput metrics (order-to-fulfillment) to meet speed targets and optimize staffing and workflow.",
+            "parent_skill": "Counter service & queue management",
+            "related_skills": [
+                "Queue management and line control",
+                "Drive-thru operations",
+                "In-person order taking"
+            ],
+            "keywords": [
+                "throughput",
+                "service time",
+                "KPI",
+                "cycle time"
+            ],
+            "common_roles": [
+                "Shift supervisor",
+                "Operations manager",
+                "Counter staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Customer complaint handling (front-of-house)",
+            "aliases": [
+                "service recovery",
+                "front-of-house complaint resolution",
+                "customer grievance handling"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Receive, de-escalate, and resolve customer complaints at the counter or drive-thru using service recovery procedures and appropriate escalation.",
+            "parent_skill": "Counter service & queue management",
+            "related_skills": [
+                "In-person order taking",
+                "Suggestive selling and upselling (counter)",
+                "Front-of-house food safety & allergen awareness"
+            ],
+            "keywords": [
+                "de-escalation",
+                "complaint resolution",
+                "service recovery",
+                "customer feedback"
+            ],
+            "common_roles": [
+                "Counter staff",
+                "Shift supervisor",
+                "Customer service representative"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Suggestive selling and upselling (counter)",
+            "aliases": [
+                "upselling at counter",
+                "suggestive selling",
+                "add-on selling"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Recommend additional items, upgrades, or promotions during the ordering process to increase average check while maintaining a positive customer experience.",
+            "parent_skill": "Counter service & queue management",
+            "related_skills": [
+                "In-person order taking",
+                "Point-of-Sale (POS) operation",
+                "Customer complaint handling (front-of-house)"
+            ],
+            "keywords": [
+                "upsell",
+                "suggestive sell",
+                "average check",
+                "add-ons"
+            ],
+            "common_roles": [
+                "Counter staff",
+                "Cashier",
+                "Shift supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Contactless and mobile payment processing",
+            "aliases": [
+                "tap-to-pay processing",
+                "mobile wallet processing",
+                "contactless transactions"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Process NFC and mobile wallet payments (e.g., Apple Pay, Google Pay), contactless card transactions, and troubleshoot common payment errors securely.",
+            "parent_skill": "Counter service & queue management",
+            "related_skills": [
+                "Point-of-Sale (POS) operation",
+                "Cash handling and reconciliation"
+            ],
+            "keywords": [
+                "contactless",
+                "NFC",
+                "mobile wallet",
+                "tap-to-pay"
+            ],
+            "common_roles": [
+                "Cashier",
+                "Drive-thru operator",
+                "Counter staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Front-of-house food safety & allergen awareness",
+            "aliases": [
+                "allergen awareness (front-of-house)",
+                "front-of-house food safety",
+                "customer-facing allergen handling"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Apply front-of-house food safety practices and allergen protocols to prevent cross-contact, communicate allergen information to customers, and follow service-side hygiene rules.",
+            "parent_skill": "Counter service & queue management",
+            "related_skills": [
+                "In-person order taking",
+                "Customer complaint handling (front-of-house)"
+            ],
+            "keywords": [
+                "allergen",
+                "cross-contact",
+                "food safety",
+                "service hygiene"
+            ],
+            "common_roles": [
+                "Counter staff",
+                "Shift supervisor",
+                "Front-of-house staff"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

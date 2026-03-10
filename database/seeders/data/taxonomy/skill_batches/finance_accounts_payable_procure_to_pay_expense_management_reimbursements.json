@@ -1,0 +1,264 @@
+{
+    "domain": "Finance",
+    "category": "Accounts Payable & Procure-to-Pay",
+    "subcategory": "Expense management & reimbursements",
+    "skills": [
+        {
+            "canonical_name": "Expense report processing",
+            "aliases": [
+                "expense report review",
+                "expense submission processing",
+                "employee expense processing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "End-to-end operational handling of employee expense reports including validation, coding, approvals, and payment routing.",
+            "parent_skill": "Expense management & reimbursements",
+            "related_skills": [
+                "Corporate card reconciliation",
+                "T&E system administration",
+                "Expense auditing & fraud detection"
+            ],
+            "keywords": [
+                "expense reports",
+                "validation",
+                "coding",
+                "approval workflow",
+                "reimbursement"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Corporate card reconciliation",
+            "aliases": [
+                "corporate card reconciliation and matching",
+                "p-card reconciliation",
+                "company card reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Reconciling corporate (p‑card) transactions to expense reports or GL accounts, resolving mismatches and preparing month‑end card reconciliations.",
+            "parent_skill": "Expense management & reimbursements",
+            "related_skills": [
+                "Expense report processing",
+                "Multi-currency expense handling",
+                "Expense analytics & reporting"
+            ],
+            "keywords": [
+                "p-card",
+                "reconciliation",
+                "chargeback",
+                "statement matching"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Mileage reimbursement calculation",
+            "aliases": [
+                "mileage claims processing",
+                "kilometer reimbursement calculation",
+                "mile\/km reimbursement"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Calculating mileage reimbursements and per diem entitlements based on policy rates, distance records and local rules.",
+            "parent_skill": "Expense management & reimbursements",
+            "related_skills": [
+                "Expense report processing",
+                "Travel & expense policy compliance"
+            ],
+            "keywords": [
+                "mileage",
+                "per diem",
+                "distance calculation",
+                "rate tables"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Travel & expense (T&E) policy compliance",
+            "aliases": [
+                "T&E policy enforcement",
+                "expense policy compliance",
+                "travel policy adherence"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Applying and enforcing corporate travel and expense policies, interpreting policy rules and adjudicating exceptions.",
+            "parent_skill": "Expense management & reimbursements",
+            "related_skills": [
+                "Expense report processing",
+                "Expense auditing & fraud detection",
+                "VAT\/GST reclaim & indirect tax on expenses"
+            ],
+            "keywords": [
+                "policy enforcement",
+                "exceptions",
+                "eligibility",
+                "approvals"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "T&E system administration",
+            "aliases": [
+                "Concur administration",
+                "Chrome River administration",
+                "Expensify administration",
+                "Certify administration",
+                "T&E software administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and administering travel & expense management platforms (user setup, workflows, policy configuration, integrations and support).",
+            "parent_skill": "Expense management & reimbursements",
+            "related_skills": [
+                "Expense automation & OCR integration",
+                "Expense report processing",
+                "Expense analytics & reporting"
+            ],
+            "keywords": [
+                "Concur",
+                "Chrome River",
+                "Expensify",
+                "workflow configuration",
+                "integrations"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Expense auditing & fraud detection",
+            "aliases": [
+                "expense audit",
+                "T&E fraud detection",
+                "reimbursement fraud prevention"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Identifying anomalies, policy violations, and potential fraud in expense data using rules-based checks and investigative techniques.",
+            "parent_skill": "Expense management & reimbursements",
+            "related_skills": [
+                "Travel & expense (T&E) policy compliance",
+                "Expense automation & OCR integration",
+                "Expense analytics & reporting"
+            ],
+            "keywords": [
+                "anomaly detection",
+                "duplicate expense",
+                "policy violation",
+                "investigation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Expense automation & OCR integration",
+            "aliases": [
+                "automated expense processing",
+                "OCR expense processing",
+                "receipt OCR integration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implementing and operating automation for expense capture (OCR receipt extraction), routing, and integration with finance systems to reduce manual processing.",
+            "parent_skill": "Expense management & reimbursements",
+            "related_skills": [
+                "T&E system administration",
+                "Expense report processing",
+                "Expense analytics & reporting"
+            ],
+            "keywords": [
+                "OCR",
+                "RPA",
+                "automation",
+                "receipt capture",
+                "integration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "VAT\/GST reclaim & indirect tax on expenses",
+            "aliases": [
+                "VAT reclaim on expenses",
+                "GST recovery on employee expenses",
+                "indirect tax on T&E"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Applying rules for reclaiming indirect taxes (VAT\/GST) on business expenses, maintaining supporting documentation and managing country-specific requirements.",
+            "parent_skill": "Expense management & reimbursements",
+            "related_skills": [
+                "Travel & expense (T&E) policy compliance",
+                "Expense report processing",
+                "Expense analytics & reporting"
+            ],
+            "keywords": [
+                "VAT",
+                "GST",
+                "tax reclaim",
+                "supporting documentation",
+                "cross-border"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Multi-currency expense handling",
+            "aliases": [
+                "foreign currency expense processing",
+                "FX expense revaluation",
+                "multi-currency reimbursements"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Processing expenses incurred in multiple currencies including conversion, FX gain\/loss handling and correct GL posting according to company rules.",
+            "parent_skill": "Expense management & reimbursements",
+            "related_skills": [
+                "Expense report processing",
+                "Expense analytics & reporting",
+                "VAT\/GST reclaim & indirect tax on expenses"
+            ],
+            "keywords": [
+                "multi-currency",
+                "FX",
+                "revaluation",
+                "conversion rates"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Expense analytics & reporting",
+            "aliases": [
+                "T&E reporting",
+                "expense spend analysis",
+                "reimbursement reporting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Designing and producing reports and dashboards on expense spend, KPIs, policy exception trends and forecasting to inform cost control decisions.",
+            "parent_skill": "Expense management & reimbursements",
+            "related_skills": [
+                "Corporate card reconciliation",
+                "Expense automation & OCR integration",
+                "Expense auditing & fraud detection"
+            ],
+            "keywords": [
+                "dashboards",
+                "KPIs",
+                "spend analysis",
+                "reporting",
+                "Power BI",
+                "Excel"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,249 @@
+{
+    "domain": "Finance",
+    "category": "Accounting Operations (Record-to-Report)",
+    "subcategory": "Consolidations & eliminations",
+    "skills": [
+        {
+            "canonical_name": "Consolidation accounting",
+            "aliases": [
+                "Group consolidation",
+                "Consolidated accounting"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Preparation and aggregation of subsidiary financials into a single set of consolidated financial statements, including elimination of intra-group balances and combining like items.",
+            "parent_skill": "Consolidations & eliminations",
+            "related_skills": [
+                "Intercompany eliminations",
+                "Consolidated financial statement preparation and disclosures",
+                "Foreign currency translation",
+                "Consolidation journal entries & adjustments"
+            ],
+            "keywords": [
+                "consolidation",
+                "group accounts",
+                "aggregation",
+                "eliminations"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intercompany eliminations",
+            "aliases": [
+                "Intracompany eliminations",
+                "Intercompany reconciliations"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Identification, reconciliation and elimination of intercompany transactions, balances and unrealised profits to prevent double-counting in consolidated financial statements.",
+            "parent_skill": "Consolidations & eliminations",
+            "related_skills": [
+                "Consolidation reconciliations and roll-forwards",
+                "Consolidation accounting",
+                "Consolidation journal entries & adjustments"
+            ],
+            "keywords": [
+                "intercompany",
+                "elimination entries",
+                "intercompany reconciliations",
+                "intracompany"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Foreign currency translation for consolidation",
+            "aliases": [
+                "FX translation",
+                "Foreign currency consolidation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Applying appropriate exchange rates and translation methods to convert subsidiary financial statements into the group reporting currency, including translation adjustments in equity.",
+            "parent_skill": "Consolidations & eliminations",
+            "related_skills": [
+                "Consolidation accounting",
+                "Goodwill allocation and impairment",
+                "IFRS and US GAAP consolidation standards (IFRS 10, ASC 810)"
+            ],
+            "keywords": [
+                "FX",
+                "translation reserve",
+                "functional currency",
+                "re-measurement"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Non-controlling interest (NCI) accounting",
+            "aliases": [
+                "Minority interest accounting",
+                "NCI calculation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Calculating and presenting the portion of net assets and profit\/loss attributable to non-controlling shareholders in consolidated financial statements.",
+            "parent_skill": "Consolidations & eliminations",
+            "related_skills": [
+                "Consolidation accounting",
+                "Equity method accounting",
+                "Consolidated financial statement preparation and disclosures"
+            ],
+            "keywords": [
+                "NCI",
+                "minority interest",
+                "attributable profit",
+                "non-controlling"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Equity method accounting",
+            "aliases": [
+                "Investment in associates accounting",
+                "Associate accounting"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Accounting for investments in associates and joint ventures using the equity method, recognising the investor's share of profit\/loss and adjusting the carrying value of the investment.",
+            "parent_skill": "Consolidations & eliminations",
+            "related_skills": [
+                "Non-controlling interest (NCI) accounting",
+                "Consolidation accounting",
+                "Goodwill allocation and impairment"
+            ],
+            "keywords": [
+                "equity method",
+                "associate",
+                "joint venture",
+                "investment accounting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Consolidation journal entries & adjustments",
+            "aliases": [
+                "Consolidation adjusting entries",
+                "Consolidation JE preparation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Creating and posting consolidation-specific journal entries such as eliminations, reclassifications, translation adjustments and other consolidation adjustments during period close.",
+            "parent_skill": "Consolidations & eliminations",
+            "related_skills": [
+                "Intercompany eliminations",
+                "Consolidation reconciliations and roll-forwards",
+                "Consolidation accounting"
+            ],
+            "keywords": [
+                "journal entries",
+                "adjusting entries",
+                "consolidation JE",
+                "period close"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Goodwill allocation and impairment",
+            "aliases": [
+                "Goodwill impairment testing",
+                "Purchase price allocation (consolidation)"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Allocating goodwill to cash-generating units or reporting units and performing impairment testing, including measurement of goodwill arising on acquisition during consolidation.",
+            "parent_skill": "Consolidations & eliminations",
+            "related_skills": [
+                "Consolidation accounting",
+                "Equity method accounting",
+                "IFRS and US GAAP consolidation standards (IFRS 10, ASC 810)"
+            ],
+            "keywords": [
+                "goodwill",
+                "impairment",
+                "PPA",
+                "CGU"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial consolidation software configuration",
+            "aliases": [
+                "Consolidation system configuration",
+                "OneStream\/Oracle FCCS\/Hyperion configuration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and maintaining enterprise consolidation and close platforms (e.g., OneStream, Oracle FCCS, Hyperion, CCH Tagetik) including metadata mapping, consolidation rules, and automated eliminations.",
+            "parent_skill": "Consolidations & eliminations",
+            "related_skills": [
+                "Consolidation journal entries & adjustments",
+                "Consolidation reconciliations and roll-forwards",
+                "Consolidation accounting"
+            ],
+            "keywords": [
+                "consolidation software",
+                "FCCS",
+                "OneStream",
+                "Hyperion",
+                "Tagetik"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Consolidation reconciliations and roll-forwards",
+            "aliases": [
+                "Group reconciliations",
+                "Roll-forward reconciliations"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Performing reconciliations and roll-forward schedules to validate opening-to-closing balances across group ledgers, intercompany accounts and elimination entries during the close process.",
+            "parent_skill": "Consolidations & eliminations",
+            "related_skills": [
+                "Intercompany eliminations",
+                "Consolidation journal entries & adjustments",
+                "Financial consolidation software configuration"
+            ],
+            "keywords": [
+                "reconciliations",
+                "roll-forward",
+                "close checklist",
+                "validation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "IFRS and US GAAP consolidation standards (IFRS 10, ASC 810)",
+            "aliases": [
+                "Consolidation accounting standards",
+                "ASC 810 and IFRS 10 knowledge"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Knowledge of consolidation and reporting requirements under major accounting frameworks (e.g., IFRS 10, ASC 810), including control assessment, consolidation exemptions and disclosure obligations.",
+            "parent_skill": "Consolidations & eliminations",
+            "related_skills": [
+                "Consolidation accounting",
+                "Non-controlling interest (NCI) accounting",
+                "Financial consolidation software configuration"
+            ],
+            "keywords": [
+                "IFRS 10",
+                "ASC 810",
+                "consolidation standards",
+                "control assessment"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

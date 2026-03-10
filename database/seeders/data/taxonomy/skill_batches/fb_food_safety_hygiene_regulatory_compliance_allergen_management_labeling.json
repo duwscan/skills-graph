@@ -1,0 +1,302 @@
+{
+    "domain": "F&B",
+    "category": "Food Safety, Hygiene & Regulatory Compliance",
+    "subcategory": "Allergen management & labeling",
+    "skills": [
+        {
+            "canonical_name": "Allergen control plan development",
+            "aliases": [
+                "allergen management plan",
+                "allergen control program",
+                "food allergen control plan"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and documenting site-specific programs that identify allergen hazards, control measures, responsibilities, monitoring and corrective actions.",
+            "parent_skill": "Allergen management & labeling",
+            "related_skills": [
+                "Allergen risk assessment",
+                "Sanitation validation for allergen control",
+                "Allergen cross-contact prevention",
+                "Allergen labeling compliance"
+            ],
+            "keywords": [
+                "plan",
+                "program",
+                "control measures",
+                "SOP",
+                "monitoring"
+            ],
+            "common_roles": [
+                "Quality Assurance Manager",
+                "Food Safety Specialist",
+                "Quality Systems Lead"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen cross-contact prevention",
+            "aliases": [
+                "cross-contact control",
+                "allergen cross contamination prevention",
+                "preventing allergen cross-contact"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operational practices and line controls to prevent unintended transfer of allergenic material between products, including scheduling, product flow and dedicated equipment.",
+            "parent_skill": "Allergen management & labeling",
+            "related_skills": [
+                "Sanitation validation for allergen control",
+                "Allergen segregation & storage controls",
+                "Allergen control plan development"
+            ],
+            "keywords": [
+                "cross-contact",
+                "dedicated lines",
+                "changeover",
+                "production scheduling"
+            ],
+            "common_roles": [
+                "Production Supervisor",
+                "Quality Technician",
+                "Operations Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen risk assessment",
+            "aliases": [
+                "allergen hazard analysis",
+                "allergen risk analysis",
+                "allergen HACCP analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluating product formulations, processes and supply chains to identify allergen hazards, estimate exposure likelihood and prioritize controls based on severity and probability.",
+            "parent_skill": "Allergen management & labeling",
+            "related_skills": [
+                "Allergen control plan development",
+                "Allergen testing & result interpretation",
+                "Allergen labeling compliance"
+            ],
+            "keywords": [
+                "risk assessment",
+                "hazard analysis",
+                "exposure assessment",
+                "severity scoring"
+            ],
+            "common_roles": [
+                "Food Safety Specialist",
+                "R&D Food Technologist",
+                "Quality Assurance Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen labeling compliance",
+            "aliases": [
+                "allergen label compliance",
+                "allergen labeling regulations",
+                "food allergen labeling compliance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Applying domestic and international regulatory requirements to ingredient lists, allergen statements, country-specific mandatory declarations and label formatting for allergen information.",
+            "parent_skill": "Allergen management & labeling",
+            "related_skills": [
+                "Ingredient allergen declaration",
+                "Precautionary allergen labeling (PAL) policy implementation",
+                "Global allergen regulatory knowledge"
+            ],
+            "keywords": [
+                "labeling",
+                "declared allergens",
+                "legal requirement",
+                "mandatory declaration"
+            ],
+            "common_roles": [
+                "Regulatory Affairs Specialist",
+                "Labeling Coordinator",
+                "Quality Assurance Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ingredient allergen declaration",
+            "aliases": [
+                "ingredient statement preparation",
+                "allergen ingredient listing",
+                "ingredient allergen coding"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Preparing and verifying accurate ingredient statements and allergen declarations on packaging, including grouping, emphasis and parenthesis statements according to requirements.",
+            "parent_skill": "Allergen management & labeling",
+            "related_skills": [
+                "Allergen labeling compliance",
+                "Supplier allergen assurance & specification management"
+            ],
+            "keywords": [
+                "ingredient list",
+                "declaration",
+                "contains",
+                "contains traces",
+                "label text"
+            ],
+            "common_roles": [
+                "Labeling Coordinator",
+                "Product Developer",
+                "Quality Assurance Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sanitation validation for allergen control",
+            "aliases": [
+                "allergen cleaning validation",
+                "cleaning verification for allergens",
+                "allergen sanitation validation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and executing validation protocols to demonstrate that cleaning procedures effectively remove allergenic residues to defined acceptance criteria between product runs.",
+            "parent_skill": "Allergen management & labeling",
+            "related_skills": [
+                "Allergen testing & result interpretation",
+                "Allergen cross-contact prevention",
+                "Allergen control plan development"
+            ],
+            "keywords": [
+                "validation",
+                "swab testing",
+                "acceptance criteria",
+                "cleaning procedures"
+            ],
+            "common_roles": [
+                "Quality Assurance Technician",
+                "Sanitation Supervisor",
+                "Food Safety Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen testing & result interpretation",
+            "aliases": [
+                "allergen analytical testing",
+                "allergen test result interpretation",
+                "allergen verification testing"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Selecting, overseeing or interpreting laboratory-based allergen tests and rapid assays to verify presence\/absence or quantify allergenic protein residues and support release or corrective actions.",
+            "parent_skill": "Allergen management & labeling",
+            "related_skills": [
+                "Sanitation validation for allergen control",
+                "Allergen risk assessment",
+                "Supplier allergen assurance & specification management"
+            ],
+            "keywords": [
+                "ELISA",
+                "rapid test",
+                "quantification",
+                "detection limit",
+                "swab analysis"
+            ],
+            "common_roles": [
+                "Laboratory Analyst",
+                "Quality Assurance Analyst",
+                "Food Safety Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen segregation & storage controls",
+            "aliases": [
+                "allergen storage management",
+                "segregation controls for allergens",
+                "storage controls to prevent cross-contact"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing and monitoring physical segregation, storage labeling, handling procedures and inventory controls to minimize allergen exposure in warehouses and production areas.",
+            "parent_skill": "Allergen management & labeling",
+            "related_skills": [
+                "Allergen cross-contact prevention",
+                "Supplier allergen assurance & specification management"
+            ],
+            "keywords": [
+                "segregation",
+                "storage",
+                "FIFO",
+                "bin labeling",
+                "co-pack"
+            ],
+            "common_roles": [
+                "Warehouse Manager",
+                "Inventory Controller",
+                "Production Supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Precautionary allergen labeling (PAL) policy implementation",
+            "aliases": [
+                "precautionary labeling policy",
+                "may contain policy implementation",
+                "PAL decision-making"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Defining and applying company criteria and decision-making processes for use of precautionary statements (e.g., 'may contain') based on risk assessment, testing and regulatory guidance.",
+            "parent_skill": "Allergen management & labeling",
+            "related_skills": [
+                "Allergen risk assessment",
+                "Allergen labeling compliance",
+                "Allergen testing & result interpretation"
+            ],
+            "keywords": [
+                "PAL",
+                "may contain",
+                "precautionary",
+                "threshold",
+                "risk-based decision"
+            ],
+            "common_roles": [
+                "Regulatory Affairs Specialist",
+                "Quality Assurance Manager",
+                "Product Safety Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Supplier allergen assurance & specification management",
+            "aliases": [
+                "supplier allergen management",
+                "allergen supplier declarations",
+                "supplier specification for allergens"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Managing supplier information, ingredient specifications and declarations of allergen status, conducting supplier risk assessments and integrating supplier controls into company allergen programs.",
+            "parent_skill": "Allergen management & labeling",
+            "related_skills": [
+                "Ingredient allergen declaration",
+                "Allergen testing & result interpretation",
+                "Allergen segregation & storage controls"
+            ],
+            "keywords": [
+                "supplier declaration",
+                "specification",
+                "incoming inspection",
+                "supplier audit",
+                "traceability"
+            ],
+            "common_roles": [
+                "Supply Chain Manager",
+                "Procurement Specialist",
+                "Quality Assurance Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,328 @@
+{
+    "domain": "IT",
+    "category": "AI\/ML Engineering & Applied Data Science",
+    "subcategory": "Time series forecasting",
+    "skills": [
+        {
+            "canonical_name": "Statistical time series modeling (ARIMA, ETS)",
+            "aliases": [
+                "ARIMA modeling",
+                "SARIMA",
+                "Seasonal ARIMA",
+                "Exponential smoothing",
+                "ETS modeling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and fitting classical statistical forecasting models such as ARIMA\/SARIMA and exponential smoothing (ETS) to model autocorrelation, trend and seasonality in time series.",
+            "parent_skill": "Time series forecasting",
+            "related_skills": [
+                "Seasonal decomposition & trend analysis",
+                "Time series feature engineering",
+                "State space models and Kalman filtering",
+                "Time series forecast evaluation metrics (MAPE, SMAPE, MASE)"
+            ],
+            "keywords": [
+                "ARIMA",
+                "SARIMA",
+                "ETS",
+                "Box-Jenkins",
+                "autocorrelation"
+            ],
+            "common_roles": [
+                "Data Scientist",
+                "Time Series Analyst",
+                "Quantitative Analyst",
+                "Applied Data Scientist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Deep learning sequence models for forecasting (LSTM, GRU, Transformer)",
+            "aliases": [
+                "LSTM forecasting",
+                "GRU forecasting",
+                "Transformer forecasting",
+                "Seq2Seq forecasting"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying recurrent and attention-based neural architectures (LSTM, GRU, Transformer, Seq2Seq) to model complex temporal dependencies and multivariate time series for forecasting.",
+            "parent_skill": "Time series forecasting",
+            "related_skills": [
+                "Time series feature engineering",
+                "Probabilistic forecasting and uncertainty quantification",
+                "Forecasting model deployment and monitoring",
+                "Time series cross-validation and backtesting"
+            ],
+            "keywords": [
+                "LSTM",
+                "GRU",
+                "Transformer",
+                "attention",
+                "sequence modeling"
+            ],
+            "common_roles": [
+                "ML Engineer",
+                "Deep Learning Engineer",
+                "Data Scientist",
+                "Applied Data Scientist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Time series feature engineering",
+            "aliases": [
+                "lag\/rolling features",
+                "window features",
+                "temporal feature engineering",
+                "calendar feature engineering"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Creating predictive inputs for time series models including lags, rolling statistics, seasonal indicators, calendar features, and frequency-aware transformations.",
+            "parent_skill": "Time series forecasting",
+            "related_skills": [
+                "Statistical time series modeling (ARIMA, ETS)",
+                "Deep learning sequence models for forecasting (LSTM, GRU, Transformer)",
+                "Time series cross-validation and backtesting",
+                "Seasonal decomposition & trend analysis"
+            ],
+            "keywords": [
+                "lags",
+                "rolling mean",
+                "windowing",
+                "Fourier terms",
+                "holiday features"
+            ],
+            "common_roles": [
+                "Data Scientist",
+                "Feature Engineer",
+                "ML Engineer",
+                "Forecasting Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Time series cross-validation and backtesting",
+            "aliases": [
+                "walk-forward validation",
+                "rolling-origin evaluation",
+                "time-based cross validation",
+                "backtesting"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and performing temporally-aware validation strategies (walk-forward, rolling-origin) and backtests to estimate out-of-sample forecast performance and avoid lookahead bias.",
+            "parent_skill": "Time series forecasting",
+            "related_skills": [
+                "Time series feature engineering",
+                "Deep learning sequence models for forecasting (LSTM, GRU, Transformer)",
+                "Time series forecast evaluation metrics (MAPE, SMAPE, MASE)"
+            ],
+            "keywords": [
+                "walk-forward",
+                "rolling origin",
+                "backtest",
+                "out-of-sample",
+                "validation"
+            ],
+            "common_roles": [
+                "Data Scientist",
+                "ML Engineer",
+                "Forecasting Analyst",
+                "Quantitative Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Probabilistic forecasting and uncertainty quantification",
+            "aliases": [
+                "quantile forecasting",
+                "prediction intervals",
+                "probabilistic time series",
+                "uncertainty estimation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Producing and evaluating probabilistic forecasts (e.g., predictive intervals, quantile outputs, full predictive distributions) and characterizing forecast uncertainty for decision-making.",
+            "parent_skill": "Time series forecasting",
+            "related_skills": [
+                "Time series forecast evaluation metrics (MAPE, SMAPE, MASE)",
+                "Deep learning sequence models for forecasting (LSTM, GRU, Transformer)",
+                "Statistical time series modeling (ARIMA, ETS)"
+            ],
+            "keywords": [
+                "quantiles",
+                "prediction interval",
+                "CRPS",
+                "probabilistic models",
+                "uncertainty"
+            ],
+            "common_roles": [
+                "Data Scientist",
+                "Applied Data Scientist",
+                "Quantitative Analyst",
+                "Demand Forecaster"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Forecasting model deployment and monitoring (productionization)",
+            "aliases": [
+                "model serving for forecasts",
+                "forecast monitoring",
+                "MLOps for forecasting",
+                "production forecasting pipelines"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Building production pipelines for scheduled forecast generation, model serving, drift monitoring, and alerting; integrating forecasts into downstream business systems.",
+            "parent_skill": "Time series forecasting",
+            "related_skills": [
+                "Time series cross-validation and backtesting",
+                "Time series feature engineering",
+                "Probabilistic forecasting and uncertainty quantification"
+            ],
+            "keywords": [
+                "model serving",
+                "monitoring",
+                "data pipeline",
+                "drift detection",
+                "scheduling"
+            ],
+            "common_roles": [
+                "ML Engineer",
+                "Forecasting Engineer",
+                "Data Engineer",
+                "MLOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Time series anomaly detection",
+            "aliases": [
+                "time series anomaly detection",
+                "outlier detection in time series",
+                "change point detection",
+                "event detection"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Detecting, classifying and diagnosing anomalous behavior and structural changes in time series using statistical tests, ML models, and hybrid approaches.",
+            "parent_skill": "Time series forecasting",
+            "related_skills": [
+                "Time series feature engineering",
+                "State space models and Kalman filtering",
+                "Forecasting model deployment and monitoring"
+            ],
+            "keywords": [
+                "anomaly detection",
+                "change point",
+                "outlier",
+                "seasonal anomalies"
+            ],
+            "common_roles": [
+                "Data Scientist",
+                "Anomaly Detection Engineer",
+                "SRE",
+                "Applied Data Scientist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "State space models and Kalman filtering",
+            "aliases": [
+                "state-space modeling",
+                "Kalman filter",
+                "structural time series",
+                "dynamic linear models"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Formulating and estimating state-space representations (including Kalman filtering\/smoothing) and structural time series to model latent states, irregular sampling, and measurement noise.",
+            "parent_skill": "Time series forecasting",
+            "related_skills": [
+                "Statistical time series modeling (ARIMA, ETS)",
+                "Probabilistic forecasting and uncertainty quantification",
+                "Time series anomaly detection"
+            ],
+            "keywords": [
+                "Kalman",
+                "state space",
+                "DLM",
+                "smoothing",
+                "latent state"
+            ],
+            "common_roles": [
+                "Quantitative Analyst",
+                "Data Scientist",
+                "Research Scientist",
+                "Applied Data Scientist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Time series forecast evaluation metrics (MAPE, SMAPE, MASE)",
+            "aliases": [
+                "forecast accuracy metrics",
+                "MAPE",
+                "SMAPE",
+                "MASE"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Selecting, computing and interpreting forecast evaluation metrics (absolute, relative and scale-free) and diagnostic statistics to compare models and guide model selection.",
+            "parent_skill": "Time series forecasting",
+            "related_skills": [
+                "Time series cross-validation and backtesting",
+                "Probabilistic forecasting and uncertainty quantification",
+                "Statistical time series modeling (ARIMA, ETS)"
+            ],
+            "keywords": [
+                "MAPE",
+                "SMAPE",
+                "MASE",
+                "RMSE",
+                "MAE"
+            ],
+            "common_roles": [
+                "Data Scientist",
+                "Forecasting Analyst",
+                "Quantitative Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Forecasting with Prophet and NeuralProphet",
+            "aliases": [
+                "Facebook Prophet",
+                "NeuralProphet",
+                "prophet forecasting",
+                "prophet model"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Prophet\/NeuralProphet libraries for rapid, interpretable forecasting with trend\/seasonality decomposition, holiday effects, and easy handling of missing data and changepoints.",
+            "parent_skill": "Time series forecasting",
+            "related_skills": [
+                "Seasonal decomposition & trend analysis",
+                "Time series feature engineering",
+                "Forecasting model deployment and monitoring"
+            ],
+            "keywords": [
+                "Prophet",
+                "NeuralProphet",
+                "trend changepoint",
+                "seasonality",
+                "holidays"
+            ],
+            "common_roles": [
+                "Data Scientist",
+                "Forecasting Analyst",
+                "Applied Data Scientist"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

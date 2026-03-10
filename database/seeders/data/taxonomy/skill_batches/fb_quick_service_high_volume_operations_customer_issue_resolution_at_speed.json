@@ -1,0 +1,300 @@
+{
+    "domain": "F&B",
+    "category": "Quick Service & High-Volume Operations",
+    "subcategory": "Customer issue resolution at speed",
+    "skills": [
+        {
+            "canonical_name": "Fast complaint triage",
+            "aliases": [
+                "complaint triage",
+                "rapid issue assessment",
+                "quick complaint assessment"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Rapidly assess and prioritize incoming customer issues to determine urgency, appropriate resolution path, and whether escalation is needed.",
+            "parent_skill": "Customer issue resolution at speed",
+            "related_skills": [
+                "De-escalation and conflict resolution",
+                "Rapid policy-compliant decision making",
+                "Real-time incident logging and feedback capture"
+            ],
+            "keywords": [
+                "prioritization",
+                "triage",
+                "urgency assessment"
+            ],
+            "common_roles": [
+                "cashier",
+                "shift supervisor",
+                "store manager",
+                "customer service associate"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "De-escalation and conflict resolution",
+            "aliases": [
+                "de-escalation",
+                "conflict de-escalation",
+                "calming techniques"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Use verbal and nonverbal techniques to calm upset customers, reduce tension, and move interaction toward a productive resolution.",
+            "parent_skill": "Customer issue resolution at speed",
+            "related_skills": [
+                "Active listening under pressure",
+                "Service recovery & on-the-spot compensation",
+                "Fast complaint triage"
+            ],
+            "keywords": [
+                "calm",
+                "conflict resolution",
+                "diffuse",
+                "verbal techniques"
+            ],
+            "common_roles": [
+                "cashier",
+                "customer service associate",
+                "shift supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service recovery & on-the-spot compensation",
+            "aliases": [
+                "service recovery",
+                "immediate compensation",
+                "on‑the‑spot refund\/replacement decisioning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Decide and deliver appropriate immediate remedies (refund, replacement, discount, voucher) within company guidelines to restore customer satisfaction quickly.",
+            "parent_skill": "Customer issue resolution at speed",
+            "related_skills": [
+                "POS refund\/void transaction processing",
+                "Rapid policy-compliant decision making",
+                "De-escalation and conflict resolution"
+            ],
+            "keywords": [
+                "refund",
+                "replacement",
+                "compensation",
+                "service recovery"
+            ],
+            "common_roles": [
+                "cashier",
+                "shift supervisor",
+                "store manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "POS refund and void transaction processing",
+            "aliases": [
+                "POS refunds",
+                "transaction voids",
+                "refund processing"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Execute refunds, voids, discounts and payment reversals accurately and securely in point-of-sale systems while maintaining transaction audit trails.",
+            "parent_skill": "Customer issue resolution at speed",
+            "related_skills": [
+                "Service recovery & on-the-spot compensation",
+                "Cash handling adjustments",
+                "Real-time incident logging and feedback capture"
+            ],
+            "keywords": [
+                "POS",
+                "refund",
+                "void",
+                "payment reversal",
+                "transaction audit"
+            ],
+            "common_roles": [
+                "cashier",
+                "shift supervisor",
+                "store manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Quick order remake coordination",
+            "aliases": [
+                "order remake coordination",
+                "rush remake management",
+                "expedited remake coordination"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Coordinate with kitchen and floor staff to prioritize and expedite remakes or corrections so customers receive corrected orders with minimal delay.",
+            "parent_skill": "Customer issue resolution at speed",
+            "related_skills": [
+                "Third-party delivery\/order correction",
+                "Fast complaint triage",
+                "Service recovery & on-the-spot compensation"
+            ],
+            "keywords": [
+                "remake",
+                "expedite",
+                "kitchen coordination",
+                "order correction"
+            ],
+            "common_roles": [
+                "line cook",
+                "expediter",
+                "shift supervisor",
+                "floor staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Active listening under pressure",
+            "aliases": [
+                "active listening",
+                "focused listening in fast service"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Listen attentively and paraphrase customer concerns quickly during busy interactions to ensure accurate understanding and faster resolution.",
+            "parent_skill": "Customer issue resolution at speed",
+            "related_skills": [
+                "De-escalation and conflict resolution",
+                "Fast complaint triage",
+                "Real-time incident logging and feedback capture"
+            ],
+            "keywords": [
+                "paraphrasing",
+                "clarification",
+                "listening",
+                "communication under pressure"
+            ],
+            "common_roles": [
+                "cashier",
+                "customer service associate",
+                "shift supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Rapid policy-compliant decision making",
+            "aliases": [
+                "fast policy compliance decisions",
+                "quick policy adjudication"
+            ],
+            "skill_type": "process_skill",
+            "description": "Apply company policies, refund rules, and safety guidelines quickly and accurately to make resolution decisions that balance customer satisfaction and risk\/compliance.",
+            "parent_skill": "Customer issue resolution at speed",
+            "related_skills": [
+                "Service recovery & on-the-spot compensation",
+                "Handling food safety and allergen complaints",
+                "POS refund and void transaction processing"
+            ],
+            "keywords": [
+                "policy",
+                "compliance",
+                "decision making",
+                "adjudication"
+            ],
+            "common_roles": [
+                "shift supervisor",
+                "store manager",
+                "customer service lead"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Handling food safety and allergen complaints",
+            "aliases": [
+                "allergen complaint handling",
+                "food safety complaint response"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Respond to food safety, contamination or allergen-related incidents quickly and in accordance with health regulations and company escalation procedures.",
+            "parent_skill": "Customer issue resolution at speed",
+            "related_skills": [
+                "Rapid policy-compliant decision making",
+                "Real-time incident logging and feedback capture",
+                "De-escalation and conflict resolution"
+            ],
+            "keywords": [
+                "allergen",
+                "food safety",
+                "contamination",
+                "health code",
+                "escalation"
+            ],
+            "common_roles": [
+                "shift supervisor",
+                "store manager",
+                "food safety coordinator",
+                "kitchen staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Third-party delivery and order correction",
+            "aliases": [
+                "delivery order correction",
+                "third-party order adjustment",
+                "platform order correction"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Identify and correct order issues that occurred on delivery platforms or third-party apps, coordinate with partners, and provide timely customer communication.",
+            "parent_skill": "Customer issue resolution at speed",
+            "related_skills": [
+                "Quick order remake coordination",
+                "Fast complaint triage",
+                "Real-time incident logging and feedback capture"
+            ],
+            "keywords": [
+                "delivery",
+                "third-party",
+                "order correction",
+                "platform coordination"
+            ],
+            "common_roles": [
+                "store manager",
+                "shift supervisor",
+                "customer service associate"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Real-time incident logging and feedback capture",
+            "aliases": [
+                "incident logging",
+                "customer feedback capture",
+                "ticket entry"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Record customer incidents, remediation actions and feedback immediately in POS\/CRM\/feedback tools to enable follow-up, reporting and continuous improvement.",
+            "parent_skill": "Customer issue resolution at speed",
+            "related_skills": [
+                "POS refund and void transaction processing",
+                "Fast complaint triage",
+                "Handling food safety and allergen complaints"
+            ],
+            "keywords": [
+                "incident log",
+                "CRM",
+                "feedback",
+                "documentation",
+                "reporting"
+            ],
+            "common_roles": [
+                "cashier",
+                "shift supervisor",
+                "store manager",
+                "customer service associate"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,309 @@
+{
+    "domain": "IT",
+    "category": "Software Engineering & Application Development",
+    "subcategory": "Performance optimization & profiling",
+    "skills": [
+        {
+            "canonical_name": "Application performance profiling",
+            "aliases": [
+                "performance profiling",
+                "app profiling",
+                "runtime profiling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Collecting and analyzing runtime metrics (CPU, memory, I\/O, latency) across an application to identify performance hotspots and bottlenecks.",
+            "parent_skill": "Performance optimization & profiling",
+            "related_skills": [
+                "CPU and thread profiling",
+                "Memory profiling and leak detection",
+                "Application Performance Monitoring (APM) tools",
+                "Performance regression testing & CI integration"
+            ],
+            "keywords": [
+                "hotspot analysis",
+                "profilers",
+                "sampling",
+                "instrumentation",
+                "latency"
+            ],
+            "common_roles": [
+                "Performance Engineer",
+                "Backend Engineer",
+                "Site Reliability Engineer",
+                "DevOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "CPU and thread profiling",
+            "aliases": [
+                "CPU profiling",
+                "thread profiling",
+                "sampling profiler"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Measuring CPU utilization, call stacks, and thread behavior to locate expensive functions, contention, and inefficient loops in native or managed environments.",
+            "parent_skill": "Performance optimization & profiling",
+            "related_skills": [
+                "Application performance profiling",
+                "System-level performance tracing (perf\/eBPF)",
+                "Concurrency optimization"
+            ],
+            "keywords": [
+                "hotspots",
+                "call stacks",
+                "context switch",
+                "sampling",
+                "flamegraph"
+            ],
+            "common_roles": [
+                "Backend Engineer",
+                "Performance Engineer",
+                "Systems Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Memory profiling and leak detection",
+            "aliases": [
+                "heap profiling",
+                "memory leak detection",
+                "heap analysis"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Analyzing application memory allocation, retention, and garbage collection patterns to find leaks, excessive allocations, and fragmentation affecting performance.",
+            "parent_skill": "Performance optimization & profiling",
+            "related_skills": [
+                "JVM performance tuning and garbage collection optimization",
+                "Application performance profiling",
+                "Database query optimization (SQL)"
+            ],
+            "keywords": [
+                "heap",
+                "allocation",
+                "retention",
+                "leak",
+                "heapdump"
+            ],
+            "common_roles": [
+                "Backend Engineer",
+                "Performance Engineer",
+                "Site Reliability Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "JVM performance tuning and garbage collection optimization",
+            "aliases": [
+                "JVM tuning",
+                "GC tuning",
+                "Java performance tuning"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Adjusting JVM parameters, selecting GC algorithms, and tuning heap\/permgen\/metaspace to reduce pause times, throughput issues, and memory overhead in Java applications.",
+            "parent_skill": "Performance optimization & profiling",
+            "related_skills": [
+                "Memory profiling and leak detection",
+                "Application performance profiling",
+                "Application Performance Monitoring (APM) tools"
+            ],
+            "keywords": [
+                "JVM",
+                "garbage collection",
+                "GC pause",
+                "heap sizing",
+                "JIT"
+            ],
+            "common_roles": [
+                "Backend Engineer",
+                "Java Developer",
+                "Performance Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Database query optimization (SQL)",
+            "aliases": [
+                "SQL tuning",
+                "query optimization",
+                "query performance tuning"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Improving database performance by analyzing query plans, rewriting SQL, adding appropriate indexes, and optimizing joins and data access patterns.",
+            "parent_skill": "Performance optimization & profiling",
+            "related_skills": [
+                "Database indexing and optimization",
+                "Caching and cache tuning",
+                "Application performance profiling"
+            ],
+            "keywords": [
+                "EXPLAIN",
+                "index",
+                "query plan",
+                "joins",
+                "slow query"
+            ],
+            "common_roles": [
+                "Database Administrator",
+                "Backend Engineer",
+                "Data Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Frontend web performance optimization",
+            "aliases": [
+                "web performance optimization",
+                "browser performance tuning",
+                "client-side performance"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Reducing page load time and runtime latency in web applications via resource optimization, critical rendering path tuning, code-splitting, lazy loading, and minimizing main-thread work.",
+            "parent_skill": "Performance optimization & profiling",
+            "related_skills": [
+                "Application Performance Monitoring (APM) tools",
+                "Caching and cache tuning",
+                "Performance regression testing & CI integration"
+            ],
+            "keywords": [
+                "TTFB",
+                "First Contentful Paint",
+                "LCP",
+                "bundle splitting",
+                "lazy loading"
+            ],
+            "common_roles": [
+                "Frontend Engineer",
+                "Web Developer",
+                "Performance Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Load testing and benchmarking",
+            "aliases": [
+                "performance testing",
+                "stress testing",
+                "benchmarking"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and executing load, stress, and benchmark tests to validate system scalability, measure throughput\/latency under load, and identify breaking points.",
+            "parent_skill": "Performance optimization & profiling",
+            "related_skills": [
+                "Performance regression testing & CI integration",
+                "Application Performance Monitoring (APM) tools",
+                "Caching and cache tuning"
+            ],
+            "keywords": [
+                "VUs",
+                "TPS",
+                "throughput",
+                "latency",
+                "stress test"
+            ],
+            "common_roles": [
+                "Performance Engineer",
+                "QA Engineer",
+                "Site Reliability Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Application Performance Monitoring (APM) tools",
+            "aliases": [
+                "APM tools",
+                "application monitoring (New Relic, Datadog, AppDynamics)",
+                "observability tools"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using APM and observability platforms to collect traces, metrics, and logs for real-time performance monitoring, root-cause analysis, and alerting across services.",
+            "parent_skill": "Performance optimization & profiling",
+            "related_skills": [
+                "Application performance profiling",
+                "Load testing and benchmarking",
+                "Performance regression testing & CI integration"
+            ],
+            "keywords": [
+                "tracing",
+                "metrics",
+                "logs",
+                "distributed tracing",
+                "alerts"
+            ],
+            "common_roles": [
+                "Site Reliability Engineer",
+                "DevOps Engineer",
+                "Performance Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Performance regression testing & CI integration",
+            "aliases": [
+                "performance CI",
+                "regression performance testing",
+                "automated performance tests"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Embedding performance tests into CI\/CD pipelines to detect regressions early, validate fixes, and enforce performance budgets during development and deployment.",
+            "parent_skill": "Performance optimization & profiling",
+            "related_skills": [
+                "Load testing and benchmarking",
+                "Application Performance Monitoring (APM) tools",
+                "Frontend web performance optimization"
+            ],
+            "keywords": [
+                "CI\/CD",
+                "performance budget",
+                "automation",
+                "regression",
+                "baseline"
+            ],
+            "common_roles": [
+                "DevOps Engineer",
+                "Performance Engineer",
+                "QA Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "System-level performance tracing (perf\/eBPF\/ftrace)",
+            "aliases": [
+                "system tracing",
+                "eBPF tracing",
+                "Linux perf"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using OS-level tracing and observability tools (perf, eBPF, ftrace) to capture kernel and system-call behavior, I\/O, interrupts, and low-level bottlenecks affecting application performance.",
+            "parent_skill": "Performance optimization & profiling",
+            "related_skills": [
+                "CPU and thread profiling",
+                "Application performance profiling",
+                "Load testing and benchmarking"
+            ],
+            "keywords": [
+                "eBPF",
+                "perf",
+                "ftrace",
+                "syscalls",
+                "latency"
+            ],
+            "common_roles": [
+                "Systems Engineer",
+                "Performance Engineer",
+                "Site Reliability Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

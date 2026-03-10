@@ -1,0 +1,255 @@
+{
+    "domain": "IT",
+    "category": "DevOps, CI\/CD & Release Engineering",
+    "subcategory": "CI\/CD pipeline design",
+    "skills": [
+        {
+            "canonical_name": "CI\/CD pipeline architecture",
+            "aliases": [
+                "pipeline architecture",
+                "CI\/CD architecture",
+                "pipeline design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing end-to-end CI\/CD pipeline structures, stages, and integrations to meet reliability, scalability and delivery requirements.",
+            "parent_skill": "CI\/CD pipeline design",
+            "related_skills": [
+                "Pipeline as Code (PaC)",
+                "Release orchestration",
+                "CI\/CD pipeline observability and rollback"
+            ],
+            "keywords": [
+                "pipeline stages",
+                "architecture",
+                "scalability",
+                "resilience",
+                "modularity"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Pipeline as Code (PaC)",
+            "aliases": [
+                "pipeline-as-code",
+                "PaC",
+                "pipeline configuration as code"
+            ],
+            "skill_type": "process_skill",
+            "description": "Defining CI\/CD pipelines declaratively in version-controlled code (scripts\/templates) to enable reproducibility, review and automation.",
+            "parent_skill": "CI\/CD pipeline design",
+            "related_skills": [
+                "CI\/CD pipeline architecture",
+                "Build automation",
+                "IaC integration in CI\/CD pipelines"
+            ],
+            "keywords": [
+                "Jenkinsfile (concept)",
+                "YAML pipelines",
+                "declarative pipeline",
+                "version-controlled pipeline"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Build automation",
+            "aliases": [
+                "reproducible builds",
+                "build pipelines",
+                "automated builds"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Creating automated, repeatable build processes that produce deterministic artifacts suitable for downstream testing and deployment.",
+            "parent_skill": "CI\/CD pipeline design",
+            "related_skills": [
+                "Artifact management and versioning",
+                "Test automation integration"
+            ],
+            "keywords": [
+                "compile",
+                "artifact",
+                "incremental build",
+                "deterministic build",
+                "dependency management"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Test automation integration",
+            "aliases": [
+                "automated testing in pipelines",
+                "pipeline test integration",
+                "CI test automation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Integrating unit, integration, functional and end-to-end automated tests into CI\/CD pipelines with appropriate gating and feedback loops.",
+            "parent_skill": "CI\/CD pipeline design",
+            "related_skills": [
+                "Build automation",
+                "CI\/CD pipeline observability and rollback"
+            ],
+            "keywords": [
+                "unit tests",
+                "integration tests",
+                "e2e",
+                "test parallelization",
+                "test flakiness handling"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Progressive deployment strategies",
+            "aliases": [
+                "blue-green deployments",
+                "canary deployments",
+                "rolling updates"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing deployment patterns (blue\/green, canary, rolling) and traffic-shifting approaches to minimize user impact and enable safe rollouts.",
+            "parent_skill": "CI\/CD pipeline design",
+            "related_skills": [
+                "Release orchestration",
+                "CI\/CD pipeline observability and rollback"
+            ],
+            "keywords": [
+                "traffic shifting",
+                "feature flags",
+                "deployment window",
+                "rollback strategy"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Release orchestration",
+            "aliases": [
+                "release workflow modeling",
+                "release pipeline orchestration",
+                "release coordination"
+            ],
+            "skill_type": "process_skill",
+            "description": "Modeling and automating multi-service release workflows, approvals, gating, and sequencing across environments and teams.",
+            "parent_skill": "CI\/CD pipeline design",
+            "related_skills": [
+                "CI\/CD pipeline architecture",
+                "Progressive deployment strategies"
+            ],
+            "keywords": [
+                "staging",
+                "promotion",
+                "gating",
+                "approval workflows",
+                "release plan"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Artifact management and versioning",
+            "aliases": [
+                "artifact repository management",
+                "versioned artifacts",
+                "binary versioning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing artifact storage, naming, semantic versioning and promotion policies to ensure traceability and reproducible deployments.",
+            "parent_skill": "CI\/CD pipeline design",
+            "related_skills": [
+                "Build automation",
+                "Release orchestration"
+            ],
+            "keywords": [
+                "artifact repository",
+                "semantic versioning",
+                "immutability",
+                "promotion"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "IaC integration in CI\/CD pipelines",
+            "aliases": [
+                "Infrastructure as Code in pipelines",
+                "IaC pipeline integration",
+                "provisioning in CI\/CD"
+            ],
+            "skill_type": "process_skill",
+            "description": "Incorporating Infrastructure-as-Code workflows (provisioning, configuration) into CI\/CD pipelines for environment lifecycle automation and consistency.",
+            "parent_skill": "CI\/CD pipeline design",
+            "related_skills": [
+                "CI\/CD pipeline architecture",
+                "Pipeline as Code (PaC)"
+            ],
+            "keywords": [
+                "provisioning",
+                "environment lifecycle",
+                "idempotent deployments",
+                "drift prevention"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "CI\/CD pipeline security (DevSecOps)",
+            "aliases": [
+                "pipeline security",
+                "software supply chain security",
+                "secure CI\/CD"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing security controls in pipelines including secret management, artifact signing, dependency scanning and supply-chain protections.",
+            "parent_skill": "CI\/CD pipeline design",
+            "related_skills": [
+                "Test automation integration",
+                "Artifact management and versioning"
+            ],
+            "keywords": [
+                "secret scanning",
+                "SBOM",
+                "dependency scanning",
+                "artifact signing",
+                "access controls"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "CI\/CD pipeline observability and rollback",
+            "aliases": [
+                "pipeline monitoring",
+                "pipeline metrics and alerting",
+                "automated rollback"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Defining metrics, logging, tracing, alerts and automated rollback conditions to detect failures and restore services reliably during releases.",
+            "parent_skill": "CI\/CD pipeline design",
+            "related_skills": [
+                "Progressive deployment strategies",
+                "CI\/CD pipeline security (DevSecOps)"
+            ],
+            "keywords": [
+                "SLO",
+                "error budget",
+                "rollback automation",
+                "traceability",
+                "deployment metrics"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

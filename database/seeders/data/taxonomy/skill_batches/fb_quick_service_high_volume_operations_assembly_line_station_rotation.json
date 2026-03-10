@@ -1,0 +1,308 @@
+{
+    "domain": "F&B",
+    "category": "Quick Service & High-Volume Operations",
+    "subcategory": "Assembly line & station rotation",
+    "skills": [
+        {
+            "canonical_name": "Order assembly",
+            "aliases": [
+                "order fulfillment",
+                "bagging and packing",
+                "order packing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Assembling customer orders quickly and accurately to ticket\/modifier specifications, including packaging and verification before handoff.",
+            "parent_skill": "Assembly line & station rotation",
+            "related_skills": [
+                "Portion control & measuring",
+                "Station setup and mise en place",
+                "Station-to-station communication and handoffs"
+            ],
+            "keywords": [
+                "order",
+                "assembly",
+                "packing",
+                "accuracy",
+                "ticket",
+                "modifiers"
+            ],
+            "common_roles": [
+                "front-line food service staff",
+                "order fulfillment crew",
+                "kitchen production staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Station rotation & cross-training",
+            "aliases": [
+                "cross-training",
+                "station rotation",
+                "multi-station operation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Ability to perform multiple station tasks and rotate across positions with minimal ramp-up, maintaining consistent quality and speed.",
+            "parent_skill": "Assembly line & station rotation",
+            "related_skills": [
+                "Station setup and mise en place",
+                "Order assembly",
+                "Commercial kitchen equipment operation"
+            ],
+            "keywords": [
+                "cross-train",
+                "flexibility",
+                "multi-skill",
+                "rotation",
+                "coverage"
+            ],
+            "common_roles": [
+                "kitchen production staff",
+                "shift line workers",
+                "front-line food service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Portion control & measuring",
+            "aliases": [
+                "portioning",
+                "serving-size consistency",
+                "measured portioning"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Consistently measuring and dispensing food components to specified portion sizes to control cost, nutrition and product consistency.",
+            "parent_skill": "Assembly line & station rotation",
+            "related_skills": [
+                "Order assembly",
+                "Throughput and speed-of-service optimization",
+                "Food safety and hygiene (front-line)"
+            ],
+            "keywords": [
+                "portion",
+                "measure",
+                "weighing",
+                "scoop counts",
+                "consistency"
+            ],
+            "common_roles": [
+                "kitchen production staff",
+                "food prep operators",
+                "front-line food service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Station setup and mise en place",
+            "aliases": [
+                "mise en place",
+                "station prep",
+                "prep and restock"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Preparing and stocking station ingredients, tools and packaging to ensure continuous flow during service and reduce downtime.",
+            "parent_skill": "Assembly line & station rotation",
+            "related_skills": [
+                "FIFO inventory rotation",
+                "Order assembly",
+                "Commercial kitchen equipment operation"
+            ],
+            "keywords": [
+                "prep",
+                "restock",
+                "setup",
+                "workstation",
+                "ingredients"
+            ],
+            "common_roles": [
+                "kitchen production staff",
+                "food prep operators",
+                "assembly line staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Rapid product changeover",
+            "aliases": [
+                "line changeover",
+                "menu changeover",
+                "batch changeover"
+            ],
+            "skill_type": "process_skill",
+            "description": "Executing quick, repeatable procedures to switch production from one menu item or batch to another while minimizing downtime and waste.",
+            "parent_skill": "Assembly line & station rotation",
+            "related_skills": [
+                "Station setup and mise en place",
+                "Throughput and speed-of-service optimization",
+                "Commercial kitchen equipment operation"
+            ],
+            "keywords": [
+                "changeover",
+                "setup time",
+                "downtime reduction",
+                "quick transition"
+            ],
+            "common_roles": [
+                "assembly line staff",
+                "kitchen production staff",
+                "shift line workers"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food safety and hygiene (front-line)",
+            "aliases": [
+                "safe food handling",
+                "frontline food safety",
+                "handwashing and sanitation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Applying frontline food safety practices including personal hygiene, temperature control, allergen management and contamination prevention.",
+            "parent_skill": "Assembly line & station rotation",
+            "related_skills": [
+                "FIFO inventory rotation",
+                "Portion control & measuring",
+                "Station setup and mise en place"
+            ],
+            "keywords": [
+                "food safety",
+                "sanitation",
+                "allergens",
+                "temperature control",
+                "cross-contamination"
+            ],
+            "common_roles": [
+                "front-line food service staff",
+                "kitchen production staff",
+                "food prep operators"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "FIFO inventory rotation",
+            "aliases": [
+                "first-in-first-out",
+                "stock rotation",
+                "inventory rotation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying FIFO principles to inventory handling to minimize spoilage and ensure product freshness at high throughput operations.",
+            "parent_skill": "Assembly line & station rotation",
+            "related_skills": [
+                "Station setup and mise en place",
+                "Food safety and hygiene (front-line)",
+                "Portion control & measuring"
+            ],
+            "keywords": [
+                "FIFO",
+                "rotation",
+                "shelf life",
+                "stock control",
+                "expiry"
+            ],
+            "common_roles": [
+                "kitchen production staff",
+                "inventory handling staff",
+                "front-line food service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Commercial kitchen equipment operation",
+            "aliases": [
+                "fryer\/grill\/warmer operation",
+                "commercial equipment operation",
+                "kitchen equipment handling"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operating, performing basic troubleshooting and executing safe practices for common high-volume equipment such as fryers, grills, ovens and holding units.",
+            "parent_skill": "Assembly line & station rotation",
+            "related_skills": [
+                "Station rotation & cross-training",
+                "Rapid product changeover",
+                "Food safety and hygiene (front-line)"
+            ],
+            "keywords": [
+                "fryer",
+                "grill",
+                "oven",
+                "equipment",
+                "operation",
+                "troubleshooting"
+            ],
+            "common_roles": [
+                "kitchen production staff",
+                "assembly line staff",
+                "food prep operators"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Throughput and speed-of-service optimization",
+            "aliases": [
+                "throughput management",
+                "takt time optimization",
+                "speed of service improvement"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Using metrics (e.g., takt time, cycle time, ticket times) and observation to identify bottlenecks and implement small continuous improvements to increase service speed.",
+            "parent_skill": "Assembly line & station rotation",
+            "related_skills": [
+                "Portion control & measuring",
+                "Rapid product changeover",
+                "Order assembly"
+            ],
+            "keywords": [
+                "throughput",
+                "takt time",
+                "cycle time",
+                "bottleneck",
+                "metrics"
+            ],
+            "common_roles": [
+                "front-line food service staff",
+                "kitchen production staff",
+                "process improvement contributors"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Station-to-station communication and handoffs",
+            "aliases": [
+                "handoff communication",
+                "shift handover communication",
+                "on-line communication"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Clear, concise verbal and non-verbal communication practices for passing items, alerts and status between stations to maintain flow and reduce errors.",
+            "parent_skill": "Assembly line & station rotation",
+            "related_skills": [
+                "Order assembly",
+                "Station rotation & cross-training",
+                "Throughput and speed-of-service optimization"
+            ],
+            "keywords": [
+                "handoff",
+                "communication",
+                "alerts",
+                "coordination",
+                "on-line"
+            ],
+            "common_roles": [
+                "front-line food service staff",
+                "assembly line staff",
+                "kitchen production staff"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

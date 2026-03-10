@@ -1,0 +1,299 @@
+{
+    "domain": "Finance",
+    "category": "Accounts Receivable & Order-to-Cash",
+    "subcategory": "Revenue-related operational controls",
+    "skills": [
+        {
+            "canonical_name": "Revenue recognition controls (ASC 606 \/ IFRS 15)",
+            "aliases": [
+                "Revenue recognition controls",
+                "ASC 606 controls",
+                "IFRS 15 controls",
+                "Revenue cut-off controls"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Designing, implementing and testing controls that ensure revenue is recognized in accordance with accounting standards (e.g., ASC 606 \/ IFRS 15), including contract identification, transaction price allocation, and cut-off procedures.",
+            "parent_skill": "Revenue-related operational controls",
+            "related_skills": [
+                "Order-to-cash control design and walkthroughs",
+                "Billing-to-ledger reconciliation",
+                "Revenue close and cut-off procedures"
+            ],
+            "keywords": [
+                "ASC 606",
+                "IFRS 15",
+                "revenue cut-off",
+                "contract accounting",
+                "performance obligations"
+            ],
+            "common_roles": [
+                "Revenue operations",
+                "Finance controls specialists",
+                "External\/internal audit teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Accounts receivable reconciliation",
+            "aliases": [
+                "AR reconciliation",
+                "Receivables-to-ledger reconciliation",
+                "A\/R aging reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Reconciling accounts receivable sub-ledgers, customer balances and aging reports to the general ledger and investigating\/resolving discrepancies.",
+            "parent_skill": "Revenue-related operational controls",
+            "related_skills": [
+                "Billing-to-ledger reconciliation",
+                "Cash application controls",
+                "Controls monitoring and KPI reporting"
+            ],
+            "keywords": [
+                "AR ledger",
+                "aging",
+                "reconciliation",
+                "variance analysis",
+                "journal entries"
+            ],
+            "common_roles": [
+                "Accounts receivable & O2C practitioners",
+                "Finance operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash application controls",
+            "aliases": [
+                "Payment application controls",
+                "Cash posting controls",
+                "Remittance application controls"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Controls and processes to ensure customer payments are applied accurately and timely to invoices, including lockbox controls, exception routing, and short-pay handling.",
+            "parent_skill": "Revenue-related operational controls",
+            "related_skills": [
+                "Accounts receivable reconciliation",
+                "Invoice validation and exception handling",
+                "Billing-to-ledger reconciliation"
+            ],
+            "keywords": [
+                "cash posting",
+                "remittance",
+                "short pays",
+                "lockbox",
+                "payment matching"
+            ],
+            "common_roles": [
+                "O2C practitioners",
+                "Treasury\/receivables operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Invoice validation and exception handling",
+            "aliases": [
+                "Invoice verification",
+                "Billing exception management",
+                "Invoice dispute triage"
+            ],
+            "skill_type": "process_skill",
+            "description": "Establishing automated and manual checks to validate invoices (pricing, quantities, customer terms) and managing exceptions\/disputes through resolution workflows.",
+            "parent_skill": "Revenue-related operational controls",
+            "related_skills": [
+                "Cash application controls",
+                "Credit and collections controls",
+                "Billing-to-ledger reconciliation"
+            ],
+            "keywords": [
+                "invoice validation",
+                "billing exceptions",
+                "dispute resolution",
+                "pricing checks",
+                "workflow"
+            ],
+            "common_roles": [
+                "Order-to-cash operations",
+                "Customer dispute teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Credit and collections controls",
+            "aliases": [
+                "Credit limit controls",
+                "Collections process controls",
+                "Customer credit risk controls"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Controls governing customer credit evaluation, credit limit management, collections segmentation and escalation to minimize credit losses and ensure consistent treatment of receivables.",
+            "parent_skill": "Revenue-related operational controls",
+            "related_skills": [
+                "Accounts receivable reconciliation",
+                "Invoice validation and exception handling",
+                "Revenue leakage detection and prevention"
+            ],
+            "keywords": [
+                "credit limits",
+                "collections strategy",
+                "dunning",
+                "credit risk",
+                "escalation"
+            ],
+            "common_roles": [
+                "Receivables and collections professionals",
+                "Credit risk operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Order-to-cash control design and walkthroughs",
+            "aliases": [
+                "O2C control design",
+                "Order-to-cash walkthroughs",
+                "O2C control testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Mapping O2C end-to-end processes, designing control activities, and performing walkthroughs\/testing to validate control design and operating effectiveness.",
+            "parent_skill": "Revenue-related operational controls",
+            "related_skills": [
+                "Revenue recognition controls (ASC 606 \/ IFRS 15)",
+                "Segregation of duties for revenue processes",
+                "Controls monitoring and KPI reporting"
+            ],
+            "keywords": [
+                "process mapping",
+                "walkthrough",
+                "control design",
+                "O2C",
+                "testing"
+            ],
+            "common_roles": [
+                "Finance controls specialists",
+                "O2C process owners"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Revenue leakage detection and prevention",
+            "aliases": [
+                "Revenue leakage analysis",
+                "Lost revenue prevention",
+                "Revenue variance detection"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Detecting, analyzing and remediating sources of unbilled, underbilled or uncollected revenue through data analysis, exception reporting and process controls.",
+            "parent_skill": "Revenue-related operational controls",
+            "related_skills": [
+                "Billing-to-ledger reconciliation",
+                "Invoice validation and exception handling",
+                "Controls monitoring and KPI reporting"
+            ],
+            "keywords": [
+                "revenue leakage",
+                "data analytics",
+                "exception reporting",
+                "billing gaps",
+                "gap analysis"
+            ],
+            "common_roles": [
+                "Revenue operations analysts",
+                "Finance analytics"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Segregation of duties for revenue processes",
+            "aliases": [
+                "SoD for order-to-cash",
+                "Segregation of duties (revenue)",
+                "Access segregation in AR"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Designing and enforcing segregation of duties (SoD) and role-based access controls across O2C functions to mitigate fraud and errors in revenue processing.",
+            "parent_skill": "Revenue-related operational controls",
+            "related_skills": [
+                "Order-to-cash control design and walkthroughs",
+                "Cash application controls",
+                "Billing-to-ledger reconciliation"
+            ],
+            "keywords": [
+                "SoD",
+                "role-based access",
+                "access controls",
+                "fraud prevention",
+                "authorization"
+            ],
+            "common_roles": [
+                "Finance controls",
+                "Internal audit"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Billing-to-ledger reconciliation",
+            "aliases": [
+                "Billing system reconciliation",
+                "Billing-to-revenue reconciliation",
+                "Invoicing to GL reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Reconciling billing and invoicing system outputs to revenue accounts and the general ledger to ensure billings are captured and recorded accurately in financial statements.",
+            "parent_skill": "Revenue-related operational controls",
+            "related_skills": [
+                "Accounts receivable reconciliation",
+                "Revenue recognition controls (ASC 606 \/ IFRS 15)",
+                "Cash application controls"
+            ],
+            "keywords": [
+                "billing reconciliation",
+                "billing system",
+                "invoice-to-GL",
+                "revenue posting",
+                "ERP reconciliation"
+            ],
+            "common_roles": [
+                "Billing operations",
+                "Finance reconciliation teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Controls monitoring and KPI reporting for revenue operations",
+            "aliases": [
+                "Revenue controls monitoring",
+                "O2C KPI reporting",
+                "AR controls dashboarding"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Defining, tracking and reporting key control metrics and KPIs (e.g., days sales outstanding, dispute aging, exception rates) and operating dashboards for continuous monitoring of revenue controls effectiveness.",
+            "parent_skill": "Revenue-related operational controls",
+            "related_skills": [
+                "Accounts receivable reconciliation",
+                "Revenue leakage detection and prevention",
+                "Order-to-cash control design and walkthroughs"
+            ],
+            "keywords": [
+                "DSO",
+                "KPI",
+                "dashboards",
+                "controls monitoring",
+                "exception metrics"
+            ],
+            "common_roles": [
+                "Finance analytics",
+                "O2C performance teams"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

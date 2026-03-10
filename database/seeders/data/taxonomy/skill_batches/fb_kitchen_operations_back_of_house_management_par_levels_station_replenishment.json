@@ -1,0 +1,243 @@
+{
+    "domain": "F&B",
+    "category": "Kitchen Operations & Back-of-House Management",
+    "subcategory": "Par levels & station replenishment",
+    "skills": [
+        {
+            "canonical_name": "Par level calculation",
+            "aliases": [
+                "Par level setting",
+                "Set par levels"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Determine ideal on-hand quantities for ingredients and supplies per station or shift based on historical usage, lead times, and safety buffers.",
+            "parent_skill": "Par levels & station replenishment",
+            "related_skills": [
+                "Reorder point calculation",
+                "Par level forecasting",
+                "Inventory turnover analysis"
+            ],
+            "keywords": [
+                "par",
+                "safety stock",
+                "on-hand"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Reorder point calculation",
+            "aliases": [
+                "Reorder point setting",
+                "ROP calculation",
+                "Order trigger calculation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculate reorder thresholds that trigger purchase or requisition actions by factoring consumption rates, supplier lead times, and desired service levels.",
+            "parent_skill": "Par levels & station replenishment",
+            "related_skills": [
+                "Par level calculation",
+                "Inventory management software (IMS) usage",
+                "Vendor order scheduling"
+            ],
+            "keywords": [
+                "reorder point",
+                "lead time",
+                "order trigger"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Station replenishment procedures",
+            "aliases": [
+                "Station restocking",
+                "Replenishment workflows"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Execute and standardize the steps to restock line and prep stations during service to maintain flow and minimize interruptions.",
+            "parent_skill": "Par levels & station replenishment",
+            "related_skills": [
+                "Mise en place management",
+                "Expediter coordination",
+                "Cycle counting and physical inventory"
+            ],
+            "keywords": [
+                "restock",
+                "service flow",
+                "workflow"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Mise en place management",
+            "aliases": [
+                "Mise en place",
+                "Prep station setup",
+                "Line setup"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Organize and stage ingredients, tools, and equipment at stations to ensure readiness for service and efficient replenishment.",
+            "parent_skill": "Par levels & station replenishment",
+            "related_skills": [
+                "Station replenishment procedures",
+                "Ingredient portioning and batching",
+                "FIFO stock rotation"
+            ],
+            "keywords": [
+                "setup",
+                "prep",
+                "station"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ingredient portioning and batching",
+            "aliases": [
+                "Portion control",
+                "Batch prepping"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Measure, divide, and batch ingredients to recipe specifications and service cycles to ensure consistency, cost control, and efficient replenishment.",
+            "parent_skill": "Par levels & station replenishment",
+            "related_skills": [
+                "Mise en place management",
+                "Recipe scaling and yield management",
+                "Waste tracking and shrinkage control"
+            ],
+            "keywords": [
+                "portioning",
+                "batching",
+                "consistency"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cycle counting and physical inventory",
+            "aliases": [
+                "Spot counts",
+                "Physical stock counts",
+                "Regular inventory counts"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Perform scheduled and ad-hoc physical counts of inventory to reconcile records, identify variances, and inform par and reorder adjustments.",
+            "parent_skill": "Par levels & station replenishment",
+            "related_skills": [
+                "Inventory management software (IMS) usage",
+                "Par level calculation",
+                "Waste tracking and shrinkage control"
+            ],
+            "keywords": [
+                "cycle count",
+                "physical inventory",
+                "reconciliation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "FIFO stock rotation",
+            "aliases": [
+                "First-in-first-out rotation",
+                "Stock rotation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Apply first-in-first-out principles to rotate perishable and non-perishable stock to minimize spoilage and ensure food quality.",
+            "parent_skill": "Par levels & station replenishment",
+            "related_skills": [
+                "Cold chain and temperature-sensitive stock control",
+                "Mise en place management",
+                "Waste tracking and shrinkage control"
+            ],
+            "keywords": [
+                "FIFO",
+                "rotation",
+                "shelf life"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Waste tracking and shrinkage control",
+            "aliases": [
+                "Waste monitoring",
+                "Shrinkage tracking",
+                "Loss tracking"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Record, analyze, and act on food waste and inventory shrinkage data to reduce loss, adjust par levels, and improve profitability.",
+            "parent_skill": "Par levels & station replenishment",
+            "related_skills": [
+                "Cycle counting and physical inventory",
+                "Ingredient portioning and batching",
+                "Par level calculation"
+            ],
+            "keywords": [
+                "waste",
+                "shrinkage",
+                "loss prevention"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inventory management software (IMS) usage",
+            "aliases": [
+                "Inventory system usage",
+                "Kitchen inventory software usage",
+                "IMS"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operate digital inventory systems to track on-hand quantities, manage purchase orders, update par levels, and integrate counts with POS or procurement workflows.",
+            "parent_skill": "Par levels & station replenishment",
+            "related_skills": [
+                "Cycle counting and physical inventory",
+                "Reorder point calculation",
+                "Vendor order scheduling"
+            ],
+            "keywords": [
+                "inventory software",
+                "PO",
+                "barcode"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cold chain and temperature-sensitive stock control",
+            "aliases": [
+                "Temperature control procedures",
+                "Cold storage management",
+                "Perishable stock control"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Monitor and manage storage temperatures, holding times, and handling practices for perishable ingredients to maintain safety, quality, and regulatory compliance.",
+            "parent_skill": "Par levels & station replenishment",
+            "related_skills": [
+                "FIFO stock rotation",
+                "Waste tracking and shrinkage control",
+                "Food safety procedures"
+            ],
+            "keywords": [
+                "temperature",
+                "cold chain",
+                "perishables"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

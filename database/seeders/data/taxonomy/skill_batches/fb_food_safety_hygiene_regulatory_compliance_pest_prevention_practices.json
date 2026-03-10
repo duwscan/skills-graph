@@ -1,0 +1,253 @@
+{
+    "domain": "F&B",
+    "category": "Food Safety, Hygiene & Regulatory Compliance",
+    "subcategory": "Pest prevention practices",
+    "skills": [
+        {
+            "canonical_name": "Integrated Pest Management (IPM) program development",
+            "aliases": [
+                "IPM program design",
+                "integrated pest management planning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and implementing a site-specific IPM program that integrates monitoring, prevention, and control strategies to minimize pest risk and pesticide use.",
+            "parent_skill": "Pest prevention practices",
+            "related_skills": [
+                "Pest monitoring and inspection",
+                "Pest control documentation and recordkeeping",
+                "Safe pesticide handling and storage"
+            ],
+            "keywords": [
+                "IPM",
+                "program design",
+                "pest strategy",
+                "prevention plan"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Pest species identification and biology",
+            "aliases": [
+                "pest identification",
+                "rodent and insect ID",
+                "pest biology knowledge"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Recognizing common pest species (rodents, stored‑product insects, flies, birds) and understanding their life cycles, behavior and attraction factors relevant to food facilities.",
+            "parent_skill": "Pest prevention practices",
+            "related_skills": [
+                "Pest monitoring and inspection",
+                "Rodent control techniques",
+                "Insect control techniques"
+            ],
+            "keywords": [
+                "identification",
+                "taxonomy",
+                "life cycle",
+                "behavior"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Pest monitoring and inspection",
+            "aliases": [
+                "pest surveillance",
+                "routine pest inspections",
+                "pest monitoring rounds"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Conducting scheduled and ad‑hoc inspections of premises, identifying signs of infestation, interpreting monitoring data and adjusting controls accordingly.",
+            "parent_skill": "Pest prevention practices",
+            "related_skills": [
+                "Pest species identification and biology",
+                "Use and maintenance of pest monitoring tools",
+                "Pest control documentation and recordkeeping"
+            ],
+            "keywords": [
+                "inspections",
+                "monitoring",
+                "activity logs",
+                "thresholds"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Use and maintenance of pest monitoring tools",
+            "aliases": [
+                "trap placement and management",
+                "bait station management",
+                "glue board handling"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Selecting, placing, servicing and interpreting results from monitoring devices such as snap traps, bait stations, pheromone traps and glue boards to detect pest activity.",
+            "parent_skill": "Pest prevention practices",
+            "related_skills": [
+                "Pest monitoring and inspection",
+                "Rodent control techniques",
+                "Pest control documentation and recordkeeping"
+            ],
+            "keywords": [
+                "traps",
+                "bait stations",
+                "pheromone traps",
+                "maintenance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Safe pesticide handling, mixing and storage",
+            "aliases": [
+                "chemical handling safety",
+                "pesticide storage procedures",
+                "label-compliant pesticide use"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Applying regulatory and manufacturer requirements for safe handling, dilution, application, containment and storage of pesticides and control products in food environments.",
+            "parent_skill": "Pest prevention practices",
+            "related_skills": [
+                "Integrated Pest Management (IPM) program development",
+                "Pest control documentation and recordkeeping"
+            ],
+            "keywords": [
+                "label instructions",
+                "MSDS",
+                "storage",
+                "mixing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Rodent control techniques",
+            "aliases": [
+                "rodent baiting and trapping",
+                "rodent exclusion practices"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing control measures specific to rodents, including strategic baiting, trapping, habitat modification and exclusion to eliminate infestations and prevent recurrence.",
+            "parent_skill": "Pest prevention practices",
+            "related_skills": [
+                "Pest species identification and biology",
+                "Use and maintenance of pest monitoring tools",
+                "Structural pest exclusion and facility maintenance"
+            ],
+            "keywords": [
+                "rodent control",
+                "baiting",
+                "trapping",
+                "exclusion"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Insect control techniques",
+            "aliases": [
+                "fly control",
+                "stored-product pest control",
+                "residual insect treatment"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Applying appropriate insect management approaches for flying and stored‑product pests, including non-chemical options, residual treatments and targeted interventions to protect food safety.",
+            "parent_skill": "Pest prevention practices",
+            "related_skills": [
+                "Pest species identification and biology",
+                "Pest monitoring and inspection",
+                "Safe pesticide handling, mixing and storage"
+            ],
+            "keywords": [
+                "insect control",
+                "flies",
+                "stored-product insects",
+                "residuals"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sanitation and waste management for pest prevention",
+            "aliases": [
+                "sanitation practices for pest control",
+                "waste handling to prevent pests",
+                "cleaning protocols for pest reduction"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and enforcing cleaning, waste handling and food storage practices that remove pest attractants and reduce breeding sites within food facilities.",
+            "parent_skill": "Pest prevention practices",
+            "related_skills": [
+                "Integrated Pest Management (IPM) program development",
+                "Structural pest exclusion and facility maintenance"
+            ],
+            "keywords": [
+                "sanitation",
+                "waste management",
+                "cleaning schedules",
+                "attractant removal"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Structural pest exclusion and facility maintenance",
+            "aliases": [
+                "building sealing for pests",
+                "entry point exclusion",
+                "facility maintenance for pest control"
+            ],
+            "skill_type": "process_skill",
+            "description": "Identifying and correcting structural vulnerabilities (gaps, drains, screens, doors) and maintaining facilities to physically prevent pest ingress and harborages.",
+            "parent_skill": "Pest prevention practices",
+            "related_skills": [
+                "Rodent control techniques",
+                "Sanitation and waste management for pest prevention",
+                "Pest monitoring and inspection"
+            ],
+            "keywords": [
+                "exclusion",
+                "sealing",
+                "maintenance",
+                "drain management"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Pest control documentation and recordkeeping",
+            "aliases": [
+                "pest logs and reporting",
+                "pest activity records",
+                "pest control reporting"
+            ],
+            "skill_type": "process_skill",
+            "description": "Maintaining accurate records of monitoring results, treatments, corrective actions and communications required for internal audits and regulatory compliance.",
+            "parent_skill": "Pest prevention practices",
+            "related_skills": [
+                "Pest monitoring and inspection",
+                "Safe pesticide handling, mixing and storage",
+                "Integrated Pest Management (IPM) program development"
+            ],
+            "keywords": [
+                "records",
+                "logs",
+                "reporting",
+                "audit trail"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

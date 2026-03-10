@@ -1,0 +1,297 @@
+{
+    "domain": "IT",
+    "category": "IT Governance, Risk & Compliance",
+    "subcategory": "Policy & standards management",
+    "skills": [
+        {
+            "canonical_name": "Policy development",
+            "aliases": [
+                "policy writing",
+                "policy drafting",
+                "policy authoring"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating clear, actionable IT policies that define requirements, responsibilities, scope, and enforcement mechanisms aligned with business objectives and legal requirements.",
+            "parent_skill": "Policy & standards management",
+            "related_skills": [
+                "Standards lifecycle management",
+                "Regulatory and standards alignment",
+                "Policy communication & training"
+            ],
+            "keywords": [
+                "policy draft",
+                "policy wording",
+                "policy scope",
+                "policy requirements"
+            ],
+            "common_roles": [
+                "Policy & standards management function",
+                "IT governance programs",
+                "Risk & compliance operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Standards lifecycle management",
+            "aliases": [
+                "standards lifecycle",
+                "policy lifecycle management",
+                "standards version lifecycle"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing the full lifecycle of policies and standards, including creation, review cycles, approvals, publishing, versioning, and retirement.",
+            "parent_skill": "Policy & standards management",
+            "related_skills": [
+                "Document control & versioning",
+                "Policy development",
+                "Policy exception management"
+            ],
+            "keywords": [
+                "review cycle",
+                "version control",
+                "retirement",
+                "approval workflow"
+            ],
+            "common_roles": [
+                "Policy & standards management function",
+                "IT governance programs",
+                "Operational compliance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Policy-to-control mapping",
+            "aliases": [
+                "control mapping",
+                "policy control mapping",
+                "control alignment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Mapping policies to specific technical, administrative, and physical controls to demonstrate how policy requirements are implemented and tested.",
+            "parent_skill": "Policy & standards management",
+            "related_skills": [
+                "Policy compliance monitoring",
+                "Policy gap analysis",
+                "Regulatory and standards alignment"
+            ],
+            "keywords": [
+                "control matrix",
+                "control mapping",
+                "policy controls",
+                "control traceability"
+            ],
+            "common_roles": [
+                "Risk & compliance operations",
+                "IT control assurance",
+                "Audit support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Policy compliance monitoring",
+            "aliases": [
+                "policy monitoring",
+                "compliance monitoring",
+                "policy adherence monitoring"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Ongoing measurement and monitoring of adherence to policies using metrics, audits, evidence collection, and reporting to identify nonconformance.",
+            "parent_skill": "Policy & standards management",
+            "related_skills": [
+                "Policy-to-control mapping",
+                "Metrics and KPI reporting for policies",
+                "Policy exception management"
+            ],
+            "keywords": [
+                "compliance metrics",
+                "audit evidence",
+                "nonconformance",
+                "continuous monitoring"
+            ],
+            "common_roles": [
+                "Compliance operations",
+                "IT governance programs",
+                "Regulatory reporting"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Policy gap analysis",
+            "aliases": [
+                "policy gap assessment",
+                "gap assessment",
+                "policy assessment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Assessing current policies and controls to identify gaps against desired standards, regulatory requirements, or industry best practices and recommending remediation.",
+            "parent_skill": "Policy & standards management",
+            "related_skills": [
+                "Regulatory and standards alignment",
+                "Policy-to-control mapping",
+                "Remediation planning"
+            ],
+            "keywords": [
+                "gap analysis",
+                "baseline assessment",
+                "remediation recommendation",
+                "delta analysis"
+            ],
+            "common_roles": [
+                "Risk assessment functions",
+                "Policy review teams",
+                "Compliance improvement initiatives"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Policy exception management",
+            "aliases": [
+                "exception handling",
+                "policy waiver management",
+                "policy deviation processing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Establishing and executing a controlled process for requesting, evaluating, approving, documenting, and periodically reviewing exceptions to policy requirements.",
+            "parent_skill": "Policy & standards management",
+            "related_skills": [
+                "Standards lifecycle management",
+                "Policy compliance monitoring",
+                "Risk acceptance"
+            ],
+            "keywords": [
+                "exception request",
+                "waiver",
+                "approval workflow",
+                "timed exception"
+            ],
+            "common_roles": [
+                "Policy administration",
+                "Risk & compliance operations",
+                "Change governance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Policy communication & training",
+            "aliases": [
+                "policy awareness training",
+                "policy dissemination",
+                "policy communication"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Designing and delivering communications, training, and awareness programs that ensure staff understand policy requirements, responsibilities, and practical compliance steps.",
+            "parent_skill": "Policy & standards management",
+            "related_skills": [
+                "Policy development",
+                "Change management",
+                "Policy compliance monitoring"
+            ],
+            "keywords": [
+                "training material",
+                "awareness campaign",
+                "staff briefing",
+                "learning modules"
+            ],
+            "common_roles": [
+                "Training & awareness programs",
+                "Policy roll-out initiatives",
+                "Behavioral compliance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Document control & versioning for policies",
+            "aliases": [
+                "policy document control",
+                "policy versioning",
+                "policy document management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Applying document control practices to policy artifacts including naming conventions, version history, access controls, archival, and single source of truth maintenance.",
+            "parent_skill": "Policy & standards management",
+            "related_skills": [
+                "Standards lifecycle management",
+                "Configuration management",
+                "Policy communication & training"
+            ],
+            "keywords": [
+                "version history",
+                "access control",
+                "document repository",
+                "naming convention"
+            ],
+            "common_roles": [
+                "Policy administration",
+                "Documentation management",
+                "Governance operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Policy governance framework design",
+            "aliases": [
+                "governance framework design",
+                "policy governance model design",
+                "policy governance structuring"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing governance structures, roles, decision rights, escalation paths, and committees to oversee policy approval, enforcement, and continuous improvement.",
+            "parent_skill": "Policy & standards management",
+            "related_skills": [
+                "Policy development",
+                "Standards lifecycle management",
+                "Stakeholder engagement for policies"
+            ],
+            "keywords": [
+                "decision rights",
+                "escalation path",
+                "governance model",
+                "committee charter"
+            ],
+            "common_roles": [
+                "Governance program design",
+                "Policy steering functions",
+                "Enterprise governance initiatives"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory and standards alignment",
+            "aliases": [
+                "standards alignment",
+                "regulatory alignment",
+                "policy alignment with regulations"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Interpreting applicable laws, regulations, and industry standards and aligning organizational policies and standards to meet those obligations and best practices.",
+            "parent_skill": "Policy & standards management",
+            "related_skills": [
+                "Policy gap analysis",
+                "Policy development",
+                "Policy-to-control mapping"
+            ],
+            "keywords": [
+                "regulatory mapping",
+                "standards adoption",
+                "legal alignment",
+                "compliance obligations"
+            ],
+            "common_roles": [
+                "Regulatory compliance operations",
+                "Standards adoption programs",
+                "GRC alignment projects"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

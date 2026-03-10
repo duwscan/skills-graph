@@ -1,0 +1,303 @@
+{
+    "domain": "IT",
+    "category": "Data Engineering & Integration",
+    "subcategory": "Data lake & lakehouse engineering",
+    "skills": [
+        {
+            "canonical_name": "Lakehouse architecture design",
+            "aliases": [
+                "data lakehouse architecture",
+                "lakehouse design",
+                "unified lakehouse architecture"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing unified data architectures that combine data lake storage with data warehouse capabilities for analytics and ML workloads.",
+            "parent_skill": "Data lake & lakehouse engineering",
+            "related_skills": [
+                "Delta Lake",
+                "Apache Iceberg",
+                "Metadata management & cataloging",
+                "Schema evolution & enforcement",
+                "Query performance tuning for lakehouses"
+            ],
+            "keywords": [
+                "lakehouse",
+                "architecture",
+                "unified storage",
+                "analytics platform"
+            ],
+            "common_roles": [
+                "Data Architect",
+                "Data Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Delta Lake",
+            "aliases": [
+                "Databricks Delta",
+                "delta-lake"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Delta Lake table format and transaction log features (ACID, time travel, compaction) to build reliable lakehouse tables.",
+            "parent_skill": "Data lake & lakehouse engineering",
+            "related_skills": [
+                "Schema evolution & enforcement",
+                "Incremental ingestion & change data capture",
+                "Data partitioning & file-layout optimization",
+                "Metadata management & cataloging"
+            ],
+            "keywords": [
+                "ACID",
+                "transaction log",
+                "time travel",
+                "compaction"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Databricks Engineer",
+                "Lakehouse Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Apache Iceberg",
+            "aliases": [
+                "Iceberg table format"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Implementing Iceberg table format for scalable, versioned analytic tables on object storage with snapshot\/rollback capabilities.",
+            "parent_skill": "Data lake & lakehouse engineering",
+            "related_skills": [
+                "Metadata management & cataloging",
+                "Query performance tuning for lakehouses",
+                "Data partitioning & file-layout optimization",
+                "Schema evolution & enforcement"
+            ],
+            "keywords": [
+                "table format",
+                "snapshot",
+                "manifest",
+                "partition evolution"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Big Data Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Apache Hudi",
+            "aliases": [
+                "Hudi",
+                "Apache Hudi table format"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Applying Hudi for upserts, incremental ingestion and near-real-time data management on object storage for lakehouses.",
+            "parent_skill": "Data lake & lakehouse engineering",
+            "related_skills": [
+                "Incremental ingestion & change data capture",
+                "Data partitioning & file-layout optimization",
+                "Metadata management & cataloging"
+            ],
+            "keywords": [
+                "upsert",
+                "incremental",
+                "CDC",
+                "compaction"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Streaming Engineer",
+                "Lakehouse Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Incremental ingestion & change data capture (CDC)",
+            "aliases": [
+                "CDC ingestion",
+                "incremental ETL",
+                "streaming ingestion"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and operating pipelines that capture and apply incremental data changes (logs\/CDC) into lakehouse storage with correctness and low latency.",
+            "parent_skill": "Data lake & lakehouse engineering",
+            "related_skills": [
+                "Apache Hudi",
+                "Delta Lake",
+                "Kafka",
+                "Schema evolution & enforcement",
+                "Metadata management & cataloging"
+            ],
+            "keywords": [
+                "CDC",
+                "incremental load",
+                "upsert",
+                "watermarks"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "ETL Developer",
+                "Streaming Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Schema evolution & enforcement",
+            "aliases": [
+                "schema evolution",
+                "schema enforcement",
+                "schema management"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Managing schema changes, compatibility rules, and runtime schema validation for tables and ingestion pipelines in lakehouses.",
+            "parent_skill": "Data lake & lakehouse engineering",
+            "related_skills": [
+                "Delta Lake",
+                "Apache Iceberg",
+                "Metadata management & cataloging",
+                "Incremental ingestion & change data capture"
+            ],
+            "keywords": [
+                "schema-on-read",
+                "schema-on-write",
+                "compatibility",
+                "validation"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Data Architect",
+                "ETL Developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data partitioning & file-layout optimization",
+            "aliases": [
+                "partitioning strategies",
+                "file sizing",
+                "compaction strategies",
+                "data clustering"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing partition keys, file sizing, clustering and compaction approaches to minimize I\/O, improve query performance and control storage costs on object stores.",
+            "parent_skill": "Data lake & lakehouse engineering",
+            "related_skills": [
+                "Query performance tuning for lakehouses",
+                "Delta Lake",
+                "Apache Iceberg",
+                "Apache Hudi"
+            ],
+            "keywords": [
+                "partition key",
+                "file size",
+                "compaction",
+                "clustering"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Big Data Engineer",
+                "Performance Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Metadata management & cataloging",
+            "aliases": [
+                "data catalog management",
+                "lakehouse metadata",
+                "table catalog"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operating and integrating metadata catalogs (Hive Metastore, AWS Glue, Unity Catalog) for discovery, access, and consistent table metadata across compute engines.",
+            "parent_skill": "Data lake & lakehouse engineering",
+            "related_skills": [
+                "Data governance for lakehouses",
+                "Schema evolution & enforcement",
+                "Lakehouse architecture design"
+            ],
+            "keywords": [
+                "metastore",
+                "catalog",
+                "table metadata",
+                "discovery"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Data Platform Engineer",
+                "Data Steward"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data governance for lakehouses",
+            "aliases": [
+                "lakehouse governance",
+                "access control for data lakes",
+                "lakehouse compliance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Implementing access controls, masking, lineage, auditing and policy enforcement tailored to lakehouse platforms to meet security and regulatory requirements.",
+            "parent_skill": "Data lake & lakehouse engineering",
+            "related_skills": [
+                "Metadata management & cataloging",
+                "Access control",
+                "Encryption",
+                "Compliance frameworks"
+            ],
+            "keywords": [
+                "RBAC",
+                "data masking",
+                "lineage",
+                "audit logs"
+            ],
+            "common_roles": [
+                "Data Governance Manager",
+                "Data Steward",
+                "Security Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Query performance tuning for lakehouses",
+            "aliases": [
+                "query optimization for lakehouse",
+                "analytics query tuning",
+                "performance tuning for lakehouse queries"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Optimizing analytical query performance across engines (Spark, Presto\/Trino, Snowflake-like engines) by tuning file layout, statistics, caching, predicate pushdown and engine-specific configuration.",
+            "parent_skill": "Data lake & lakehouse engineering",
+            "related_skills": [
+                "Data partitioning & file-layout optimization",
+                "Metadata management & cataloging",
+                "Lakehouse architecture design"
+            ],
+            "keywords": [
+                "predicate pushdown",
+                "data skipping",
+                "statistics",
+                "caching"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Query Performance Engineer",
+                "Analytics Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

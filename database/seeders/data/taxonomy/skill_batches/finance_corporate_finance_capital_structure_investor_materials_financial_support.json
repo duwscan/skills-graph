@@ -1,0 +1,294 @@
+{
+    "domain": "Finance",
+    "category": "Corporate Finance & Capital Structure",
+    "subcategory": "Investor materials financial support",
+    "skills": [
+        {
+            "canonical_name": "Investor presentation development",
+            "aliases": [
+                "Investor deck creation",
+                "Investor presentation design",
+                "Pitchbook development"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Assembling narrative-driven slide decks and visual collateral tailored to investor audiences, including financial summaries, strategy, and key metrics.",
+            "parent_skill": "Investor materials financial support",
+            "related_skills": [
+                "Financial data visualization for investor materials",
+                "PowerPoint presentation production",
+                "Investor Q&A and diligence response management"
+            ],
+            "keywords": [
+                "deck",
+                "pitchbook",
+                "investor deck",
+                "presentation",
+                "slides"
+            ],
+            "common_roles": [
+                "Investor relations",
+                "Corporate finance",
+                "Financial communications"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Investor-focused financial modeling",
+            "aliases": [
+                "Investor model build",
+                "Presentation financial modeling",
+                "Modeling for investor decks"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Building financial models (operating, revenue, expense, cash flow) structured to support investor materials, forecasts, and narrative testing.",
+            "parent_skill": "Investor materials financial support",
+            "related_skills": [
+                "Valuation analysis for investor materials",
+                "Sensitivity and scenario analysis for investor materials",
+                "Cap table modeling and ownership analysis"
+            ],
+            "keywords": [
+                "financial model",
+                "projections",
+                "forecasting",
+                "cash flow model"
+            ],
+            "common_roles": [
+                "Corporate finance",
+                "FP&A",
+                "Investor relations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Non-GAAP metric reconciliation",
+            "aliases": [
+                "Adjusted metric reconciliation",
+                "Adjusted EBITDA reconciliation",
+                "Pro forma metric reconciliation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Preparing reconciliations between GAAP results and non-GAAP metrics (e.g., adjusted EBITDA), including supporting schedules and disclosures for investor materials.",
+            "parent_skill": "Investor materials financial support",
+            "related_skills": [
+                "Investor materials regulatory disclosure review",
+                "Earnings release financial preparation"
+            ],
+            "keywords": [
+                "non-GAAP",
+                "reconciliation",
+                "adjusted EBITDA",
+                "pro forma"
+            ],
+            "common_roles": [
+                "Investor relations",
+                "Corporate accounting",
+                "Financial reporting"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Earnings release financial preparation",
+            "aliases": [
+                "Earnings announcement support",
+                "Quarterly release financials",
+                "Earnings release close support"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Coordinating and preparing the financial content, schedules, and summaries for earnings releases and related investor communications.",
+            "parent_skill": "Investor materials financial support",
+            "related_skills": [
+                "Non-GAAP metric reconciliation",
+                "Investor Q&A and diligence response management",
+                "Investor materials regulatory disclosure review"
+            ],
+            "keywords": [
+                "earnings",
+                "quarterly results",
+                "press release",
+                "financial summary"
+            ],
+            "common_roles": [
+                "Investor relations",
+                "Corporate finance",
+                "Financial reporting"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Investor Q&A and diligence response management",
+            "aliases": [
+                "Investor Q&A support",
+                "DDQ response management",
+                "Due diligence Q&A coordination"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Drafting, coordinating, and maintaining consistent responses to investor questions and diligence requests, including Q&A trackers and FAQ documents.",
+            "parent_skill": "Investor materials financial support",
+            "related_skills": [
+                "Investor presentation development",
+                "Data room management for investors",
+                "Earnings release financial preparation"
+            ],
+            "keywords": [
+                "Q&A",
+                "diligence",
+                "DDQ",
+                "investor questions"
+            ],
+            "common_roles": [
+                "Investor relations",
+                "Corporate finance",
+                "IR communications"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Valuation analysis for investor materials",
+            "aliases": [
+                "Investment valuation analysis",
+                "DCF and comparable valuation for investors",
+                "Valuation support for presentations"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Performing valuation analyses (DCF, precedent transactions, comparables) and summarizing valuation drivers and sensitivities for investor-facing materials.",
+            "parent_skill": "Investor materials financial support",
+            "related_skills": [
+                "Investor-focused financial modeling",
+                "Sensitivity and scenario analysis for investor materials",
+                "Cap table modeling and ownership analysis"
+            ],
+            "keywords": [
+                "valuation",
+                "DCF",
+                "comps",
+                "precedent transactions"
+            ],
+            "common_roles": [
+                "Corporate finance",
+                "M&A advisory",
+                "Investor relations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cap table modeling and ownership analysis",
+            "aliases": [
+                "Cap table modeling",
+                "Equity ownership modeling",
+                "Dilution analysis"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Modeling capitalization tables, equity ownership scenarios, option pools, and financing impacts to illustrate investor ownership and dilution outcomes.",
+            "parent_skill": "Investor materials financial support",
+            "related_skills": [
+                "Investor-focused financial modeling",
+                "Valuation analysis for investor materials"
+            ],
+            "keywords": [
+                "cap table",
+                "dilution",
+                "equity",
+                "ownership"
+            ],
+            "common_roles": [
+                "Corporate finance",
+                "Treasury",
+                "Investor relations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sensitivity and scenario analysis for investor materials",
+            "aliases": [
+                "Scenario planning for investor materials",
+                "What-if analysis for investor presentations",
+                "Sensitivity testing"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Building sensitivity tables and scenario runs to test and present how key assumptions and market conditions impact financial outcomes for investors.",
+            "parent_skill": "Investor materials financial support",
+            "related_skills": [
+                "Investor-focused financial modeling",
+                "Valuation analysis for investor materials"
+            ],
+            "keywords": [
+                "sensitivity",
+                "scenario",
+                "what-if",
+                "stress test"
+            ],
+            "common_roles": [
+                "FP&A",
+                "Corporate finance",
+                "Investor relations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial data visualization for investor materials",
+            "aliases": [
+                "Investor charts and graphics",
+                "Financial storytelling charts",
+                "Investor visual analytics"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Designing clear charts, graphs, and visual summaries that communicate financial trends, KPIs, and drivers effectively to investor audiences.",
+            "parent_skill": "Investor materials financial support",
+            "related_skills": [
+                "Investor presentation development",
+                "PowerPoint presentation production",
+                "Investor-focused financial modeling"
+            ],
+            "keywords": [
+                "visualization",
+                "charts",
+                "graphs",
+                "data storytelling"
+            ],
+            "common_roles": [
+                "Investor relations",
+                "Financial communications",
+                "Corporate finance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Investor materials regulatory disclosure review",
+            "aliases": [
+                "Disclosure review for investor materials",
+                "SEC disclosure review",
+                "Prospectus and statutory disclosure review"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Reviewing investor-facing materials for regulatory and disclosure compliance, coordinating legal and accounting inputs to ensure accurate public disclosures.",
+            "parent_skill": "Investor materials financial support",
+            "related_skills": [
+                "Non-GAAP metric reconciliation",
+                "Earnings release financial preparation"
+            ],
+            "keywords": [
+                "disclosure",
+                "regulatory review",
+                "SEC",
+                "prospectus"
+            ],
+            "common_roles": [
+                "Investor relations",
+                "Legal counsel coordination",
+                "Financial reporting"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

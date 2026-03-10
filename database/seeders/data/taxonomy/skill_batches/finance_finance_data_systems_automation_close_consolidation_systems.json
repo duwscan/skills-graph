@@ -1,0 +1,305 @@
+{
+    "domain": "Finance",
+    "category": "Finance Data, Systems & Automation",
+    "subcategory": "Close & consolidation systems",
+    "skills": [
+        {
+            "canonical_name": "Financial close management",
+            "aliases": [
+                "Period close management",
+                "Month-end close management",
+                "Close management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Plan, coordinate and optimize the end-of-period close lifecycle including schedules, control checkpoints, reconciliations and delivery of financial close outputs.",
+            "parent_skill": "Close & consolidation systems",
+            "related_skills": [
+                "Close workflow automation",
+                "Account reconciliation automation",
+                "Financial consolidation"
+            ],
+            "keywords": [
+                "period close",
+                "month-end",
+                "close calendar",
+                "close controls",
+                "close checklist"
+            ],
+            "common_roles": [
+                "Finance operations professional",
+                "Accounting professional",
+                "Financial reporting professional"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial consolidation",
+            "aliases": [
+                "Group consolidation",
+                "Consolidated financial reporting",
+                "Consolidation and reporting"
+            ],
+            "skill_type": "process_skill",
+            "description": "Aggregate and translate subsidiary financials into consolidated statements, apply currency translation, minority interests, and prepare consolidation packs for reporting.",
+            "parent_skill": "Close & consolidation systems",
+            "related_skills": [
+                "Intercompany eliminations",
+                "Automated journal entry processing",
+                "Oracle Financial Consolidation and Close Cloud (FCCS)",
+                "OneStream Platform"
+            ],
+            "keywords": [
+                "consolidation",
+                "group reporting",
+                "currency translation",
+                "non-controlling interest",
+                "consolidated statements"
+            ],
+            "common_roles": [
+                "Finance operations professional",
+                "Accounting professional",
+                "Financial reporting professional"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intercompany reconciliation",
+            "aliases": [
+                "Intercompany matching",
+                "Intercompany reconciliation and settlement",
+                "IC reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Match, reconcile and resolve intercompany transactions and balances across legal entities to support clean consolidation and settlement.",
+            "parent_skill": "Close & consolidation systems",
+            "related_skills": [
+                "Intercompany eliminations",
+                "Account reconciliation automation",
+                "BlackLine"
+            ],
+            "keywords": [
+                "intercompany",
+                "IC matching",
+                "intercompany balances",
+                "netting",
+                "reconciliation"
+            ],
+            "common_roles": [
+                "Finance operations professional",
+                "Accounting professional",
+                "Financial systems analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intercompany eliminations",
+            "aliases": [
+                "Consolidation eliminations",
+                "Elimination entries",
+                "Intercompany elimination entries"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Identify and record elimination entries for intercompany revenues, expenses, receivables and payables to remove intra-group effects from consolidated financial statements.",
+            "parent_skill": "Close & consolidation systems",
+            "related_skills": [
+                "Financial consolidation",
+                "Intercompany reconciliation",
+                "Automated journal entry processing"
+            ],
+            "keywords": [
+                "eliminations",
+                "intra-group",
+                "elimination entries",
+                "consolidation adjustments"
+            ],
+            "common_roles": [
+                "Finance operations professional",
+                "Accounting professional",
+                "Financial reporting professional"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Account reconciliation automation",
+            "aliases": [
+                "Reconciliation automation",
+                "Automated account reconciliation",
+                "Recon automation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Design, configure and maintain automated account reconciliation processes and matching rules to reduce manual effort and increase control over balance validation.",
+            "parent_skill": "Close & consolidation systems",
+            "related_skills": [
+                "BlackLine",
+                "Intercompany reconciliation",
+                "Close workflow automation"
+            ],
+            "keywords": [
+                "account reconciliation",
+                "automation",
+                "matching rules",
+                "recon rules",
+                "control automation"
+            ],
+            "common_roles": [
+                "Financial systems analyst",
+                "Finance operations professional",
+                "Accounting professional"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Close workflow automation",
+            "aliases": [
+                "Close process automation",
+                "Close task orchestration",
+                "Period close orchestration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Automate and orchestrate close-related tasks, approvals and checklists across teams to enforce sequence, ownership and visibility during the close cycle.",
+            "parent_skill": "Close & consolidation systems",
+            "related_skills": [
+                "Financial close management",
+                "Account reconciliation automation",
+                "BlackLine"
+            ],
+            "keywords": [
+                "workflow",
+                "task orchestration",
+                "automation",
+                "close checklist",
+                "task management"
+            ],
+            "common_roles": [
+                "Financial systems analyst",
+                "Finance operations professional",
+                "Accounting professional"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated journal entry processing",
+            "aliases": [
+                "Journal entry automation",
+                "Automated JE processing",
+                "Mass journal automation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Develop and operate automated processes for generating, validating and posting journal entries (including mass and recurring JEs) as part of the close and consolidation cycles.",
+            "parent_skill": "Close & consolidation systems",
+            "related_skills": [
+                "Financial consolidation",
+                "Intercompany eliminations",
+                "OneStream Platform",
+                "Oracle Financial Consolidation and Close Cloud (FCCS)"
+            ],
+            "keywords": [
+                "journal entries",
+                "automation",
+                "mass journals",
+                "recurring entries",
+                "posting automation"
+            ],
+            "common_roles": [
+                "Finance operations professional",
+                "Financial systems analyst",
+                "Accounting professional"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "BlackLine",
+            "aliases": [
+                "BlackLine close automation",
+                "BlackLine account reconciliation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configure and use BlackLine for account reconciliation, task management, journal entry automation and close governance to support a controlled period close.",
+            "parent_skill": "Close & consolidation systems",
+            "related_skills": [
+                "Account reconciliation automation",
+                "Close workflow automation",
+                "Intercompany reconciliation"
+            ],
+            "keywords": [
+                "BlackLine",
+                "reconciliation",
+                "task management",
+                "journal automation",
+                "close automation"
+            ],
+            "common_roles": [
+                "Financial systems analyst",
+                "Finance operations professional",
+                "Accounting professional"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "OneStream Platform",
+            "aliases": [
+                "OneStream XF",
+                "OneStream consolidation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Implement and operate the OneStream platform for financial consolidation, reporting, data integration and automated close activities.",
+            "parent_skill": "Close & consolidation systems",
+            "related_skills": [
+                "Financial consolidation",
+                "Automated journal entry processing",
+                "Intercompany eliminations"
+            ],
+            "keywords": [
+                "OneStream",
+                "consolidation",
+                "financial reporting",
+                "data integration",
+                "platform"
+            ],
+            "common_roles": [
+                "Financial systems analyst",
+                "Finance operations professional",
+                "Accounting professional"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Oracle Financial Consolidation and Close Cloud (FCCS)",
+            "aliases": [
+                "Oracle FCCS",
+                "FCCS"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configure and use Oracle FCCS for cloud-based financial consolidation, close management, intercompany eliminations and reporting processes.",
+            "parent_skill": "Close & consolidation systems",
+            "related_skills": [
+                "Financial consolidation",
+                "Automated journal entry processing",
+                "Intercompany eliminations"
+            ],
+            "keywords": [
+                "Oracle FCCS",
+                "financial consolidation",
+                "cloud consolidation",
+                "intercompany",
+                "close"
+            ],
+            "common_roles": [
+                "Financial systems analyst",
+                "Finance operations professional",
+                "Accounting professional"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,297 @@
+{
+    "domain": "F&B",
+    "category": "F&B Cost Control & Revenue Operations",
+    "subcategory": "Labor cost monitoring (operational)",
+    "skills": [
+        {
+            "canonical_name": "Labor cost forecasting",
+            "aliases": [
+                "labor forecasting",
+                "staffing cost forecasting",
+                "labor expense forecasting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Projecting future labor costs based on sales forecasts, seasonality, scheduled hours and historical labor patterns to inform budgets and staffing plans.",
+            "parent_skill": "Labor cost monitoring (operational)",
+            "related_skills": [
+                "Labor variance analysis",
+                "Shift scheduling optimization",
+                "Labor productivity measurement"
+            ],
+            "keywords": [
+                "forecast",
+                "budgeting",
+                "headcount planning",
+                "seasonality"
+            ],
+            "common_roles": [
+                "Operations Manager",
+                "Labor Cost Analyst",
+                "Restaurant Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Shift scheduling optimization",
+            "aliases": [
+                "optimized scheduling",
+                "demand-based scheduling",
+                "schedule optimization"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing staff schedules that match labor supply to forecasted demand while minimizing cost and preserving service levels.",
+            "parent_skill": "Labor cost monitoring (operational)",
+            "related_skills": [
+                "Labor cost forecasting",
+                "Roster planning and shift-bidding administration",
+                "Labor productivity measurement"
+            ],
+            "keywords": [
+                "scheduling",
+                "demand forecast",
+                "coverage",
+                "efficiency"
+            ],
+            "common_roles": [
+                "Scheduling Coordinator",
+                "Floor Manager",
+                "Operations Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Time and attendance system administration",
+            "aliases": [
+                "timekeeping system administration",
+                "time & attendance management",
+                "timecard system administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and maintaining electronic timekeeping systems, managing punches, schedules and integrations with payroll\/time-off systems.",
+            "parent_skill": "Labor cost monitoring (operational)",
+            "related_skills": [
+                "Payroll and timecard reconciliation",
+                "Timekeeping data validation",
+                "Overtime management and control"
+            ],
+            "keywords": [
+                "timeclock",
+                "punches",
+                "roster integration",
+                "system configuration"
+            ],
+            "common_roles": [
+                "HR Manager",
+                "Payroll Specialist",
+                "Operations Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Payroll and timecard reconciliation",
+            "aliases": [
+                "payroll reconciliation",
+                "timecard reconciliation",
+                "wage reconciliation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Comparing time and attendance records with payroll data to identify discrepancies, adjust pay and ensure accurate labor cost reporting.",
+            "parent_skill": "Labor cost monitoring (operational)",
+            "related_skills": [
+                "Time and attendance system administration",
+                "Labor variance analysis",
+                "Overtime management and control"
+            ],
+            "keywords": [
+                "reconciliation",
+                "wage errors",
+                "payroll audit",
+                "timecard"
+            ],
+            "common_roles": [
+                "Payroll Specialist",
+                "Labor Cost Analyst",
+                "HR Coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Overtime management and control",
+            "aliases": [
+                "overtime control",
+                "overtime reduction",
+                "overtime monitoring"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing policies and tactics to monitor, approve and reduce unplanned overtime while meeting operational needs.",
+            "parent_skill": "Labor cost monitoring (operational)",
+            "related_skills": [
+                "Time and attendance system administration",
+                "Payroll and timecard reconciliation",
+                "Shift scheduling optimization"
+            ],
+            "keywords": [
+                "OT",
+                "approval workflows",
+                "cost control",
+                "shift swaps"
+            ],
+            "common_roles": [
+                "Shift Supervisor",
+                "Operations Manager",
+                "Scheduling Coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Labor variance analysis",
+            "aliases": [
+                "labor cost variance analysis",
+                "labor variance reporting",
+                "schedule-to-actual variance analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing differences between budgeted\/forecasted labor and actual labor spend to identify causes and corrective actions.",
+            "parent_skill": "Labor cost monitoring (operational)",
+            "related_skills": [
+                "Labor cost forecasting",
+                "Payroll and timecard reconciliation",
+                "Labor productivity measurement"
+            ],
+            "keywords": [
+                "variance",
+                "actual vs budget",
+                "root cause",
+                "reporting"
+            ],
+            "common_roles": [
+                "Labor Cost Analyst",
+                "Operations Manager",
+                "Finance Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Labor productivity measurement",
+            "aliases": [
+                "hours per cover analysis",
+                "labor per cover",
+                "labor productivity metrics"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Defining and tracking productivity KPIs (e.g., labor hours per cover, revenue per labor hour) to assess staffing efficiency.",
+            "parent_skill": "Labor cost monitoring (operational)",
+            "related_skills": [
+                "Labor variance analysis",
+                "Shift scheduling optimization",
+                "Labor cost forecasting"
+            ],
+            "keywords": [
+                "KPIs",
+                "hours per cover",
+                "rev per labor hour",
+                "efficiency"
+            ],
+            "common_roles": [
+                "Operations Manager",
+                "Restaurant Manager",
+                "Labor Cost Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Break and shift compliance monitoring",
+            "aliases": [
+                "break compliance monitoring",
+                "shift compliance monitoring",
+                "meal and rest break compliance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Monitoring schedules and time records to ensure adherence to labor laws and internal policies for breaks, rest periods and maximum shift lengths.",
+            "parent_skill": "Labor cost monitoring (operational)",
+            "related_skills": [
+                "Time and attendance system administration",
+                "Payroll and timecard reconciliation",
+                "Overtime management and control"
+            ],
+            "keywords": [
+                "meal breaks",
+                "rest periods",
+                "labor law",
+                "compliance"
+            ],
+            "common_roles": [
+                "HR Manager",
+                "Operations Manager",
+                "Compliance Officer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Roster planning and shift-bidding administration",
+            "aliases": [
+                "roster planning",
+                "shift bidding administration",
+                "panel rostering"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Creating and administering rosters and shift-bidding processes that balance employee preferences, contractual rules and operational coverage.",
+            "parent_skill": "Labor cost monitoring (operational)",
+            "related_skills": [
+                "Shift scheduling optimization",
+                "Contingent labor coordination",
+                "Break and shift compliance monitoring"
+            ],
+            "keywords": [
+                "roster",
+                "shift bid",
+                "employee preferences",
+                "coverage planning"
+            ],
+            "common_roles": [
+                "Scheduling Coordinator",
+                "HR Coordinator",
+                "Operations Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Contingent labor coordination",
+            "aliases": [
+                "temporary staffing coordination",
+                "flex labor coordination",
+                "casual workforce coordination"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Sourcing, scheduling and integrating temporary or flexible staff to cover demand peaks while controlling incremental labor cost.",
+            "parent_skill": "Labor cost monitoring (operational)",
+            "related_skills": [
+                "Roster planning and shift-bidding administration",
+                "Shift scheduling optimization",
+                "Overtime management and control"
+            ],
+            "keywords": [
+                "temp staff",
+                "agency coordination",
+                "flex labor",
+                "on-call"
+            ],
+            "common_roles": [
+                "Operations Manager",
+                "Scheduling Coordinator",
+                "Labor Cost Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

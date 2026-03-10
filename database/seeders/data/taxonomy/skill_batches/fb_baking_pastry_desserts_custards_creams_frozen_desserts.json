@@ -1,0 +1,266 @@
+{
+    "domain": "F&B",
+    "category": "Baking, Pastry & Desserts",
+    "subcategory": "Custards, creams & frozen desserts",
+    "skills": [
+        {
+            "canonical_name": "Stovetop and baked custard preparation",
+            "aliases": [
+                "custard making",
+                "stovetop custard",
+                "baked custard",
+                "flan preparation",
+                "crème anglaise (stovetop)"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Prepare egg-based custards using stovetop and oven techniques, controlling protein coagulation, texture, and tempering to achieve desired consistency and stability.",
+            "parent_skill": "Custards, creams & frozen desserts",
+            "related_skills": [
+                "Pastry cream (crème pâtissière) preparation and stabilization",
+                "Crème anglaise & custard sauces",
+                "Temperature and heat control for egg proteins"
+            ],
+            "keywords": [
+                "egg custard",
+                "coagulation",
+                "tempering",
+                "bain-marie",
+                "curdling prevention"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Pastry cream (crème pâtissière) preparation and stabilization",
+            "aliases": [
+                "crème pâtissière",
+                "pastry cream making",
+                "custard cream formulation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Formulate and cook starch- and egg-thickened pastry creams, manage gelatinization and stabilizer addition for filling, piping and holding stability in pastries.",
+            "parent_skill": "Custards, creams & frozen desserts",
+            "related_skills": [
+                "Stovetop and baked custard preparation",
+                "Mousse and stabilized cream techniques",
+                "Use and dosing of stabilizers and emulsifiers in frozen desserts"
+            ],
+            "keywords": [
+                "starch gelatinization",
+                "thickening",
+                "stabilization",
+                "piping consistency"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Mousse and stabilized cream techniques",
+            "aliases": [
+                "mousse preparation",
+                "stabilized mousse",
+                "aerated cream preparation",
+                "nitrous oxide cream (siphon) techniques"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Create aerated desserts and mousses using mechanical and chemical stabilizers (gelatin, agar, emulsifiers), controlling texture, stability and mouthfeel for service and storage.",
+            "parent_skill": "Custards, creams & frozen desserts",
+            "related_skills": [
+                "Use and dosing of stabilizers and emulsifiers in frozen desserts",
+                "Stovetop and baked custard preparation",
+                "Cold chain and temperature control for frozen desserts"
+            ],
+            "keywords": [
+                "aeration",
+                "stabilizers",
+                "gelatin",
+                "siphon",
+                "texture control"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ice cream and churned frozen dessert production",
+            "aliases": [
+                "ice cream production",
+                "churned frozen dessert formulation",
+                "ice cream mix preparation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Formulate dairy and non-dairy ice cream mixes, manage pasteurization, aging, flavor inclusion and freezing processes to produce stable, palatable churned frozen desserts.",
+            "parent_skill": "Custards, creams & frozen desserts",
+            "related_skills": [
+                "Gelato production and texture optimization",
+                "Operation of batch and continuous ice cream freezers",
+                "Dairy dessert food safety and pasteurization compliance"
+            ],
+            "keywords": [
+                "mix formulation",
+                "pasteurization",
+                "aging",
+                "inclusions",
+                "freezing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Gelato production and texture optimization",
+            "aliases": [
+                "gelato making",
+                "gelato formulation",
+                "Italian-style ice cream production"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Produce gelato with target density and mouthfeel through specific mix formulations, lower overrun, temperature profiling and agitation control distinct from standard ice cream.",
+            "parent_skill": "Custards, creams & frozen desserts",
+            "related_skills": [
+                "Ice cream and churned frozen dessert production",
+                "Overrun control and air incorporation measurement",
+                "Cold chain and temperature control for frozen desserts"
+            ],
+            "keywords": [
+                "low overrun",
+                "texture",
+                "density",
+                "temperature profiling",
+                "agitation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Operation of batch and continuous ice cream freezers",
+            "aliases": [
+                "batch freezer operation",
+                "continuous freezer operation",
+                "ice cream machine operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operate and perform routine maintenance on batch and continuous ice cream freezers, including setup, sanitation, troubleshooting, and basic mechanical adjustments for consistent product quality.",
+            "parent_skill": "Custards, creams & frozen desserts",
+            "related_skills": [
+                "Ice cream and churned frozen dessert production",
+                "Overrun control and air incorporation measurement",
+                "Cold chain and temperature control for frozen desserts"
+            ],
+            "keywords": [
+                "freezer operation",
+                "equipment sanitation",
+                "machine calibration",
+                "troubleshooting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Overrun control and air incorporation measurement",
+            "aliases": [
+                "overrun control",
+                "air incorporation control",
+                "measuring overrun"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Control and measure the amount of air incorporated into churned frozen desserts (overrun) to achieve specified texture, yield and mouthfeel using process adjustments and instrumentation.",
+            "parent_skill": "Custards, creams & frozen desserts",
+            "related_skills": [
+                "Operation of batch and continuous ice cream freezers",
+                "Gelato production and texture optimization",
+                "Ice cream and churned frozen dessert production"
+            ],
+            "keywords": [
+                "overrun",
+                "air incorporation",
+                "yield control",
+                "texture specification"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Use and dosing of stabilizers and emulsifiers in frozen desserts",
+            "aliases": [
+                "stabilizer dosing",
+                "emulsifier selection",
+                "hydrocolloid usage in frozen desserts"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Select and dose hydrocolloids, emulsifiers and proteins to control freeze\/thaw stability, texture, meltdown rate and shelf life in ice cream, gelato and mousse formulations.",
+            "parent_skill": "Custards, creams & frozen desserts",
+            "related_skills": [
+                "Mousse and stabilized cream techniques",
+                "Ice cream and churned frozen dessert production",
+                "Cold chain and temperature control for frozen desserts"
+            ],
+            "keywords": [
+                "stabilizers",
+                "emulsifiers",
+                "hydrocolloids",
+                "dosing",
+                "shelf life"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cold chain and temperature control for frozen desserts",
+            "aliases": [
+                "frozen dessert cold chain",
+                "blast chilling and tempering",
+                "temperature management for frozen goods"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Manage storage, blast freezing, tempering and transport temperatures to preserve texture and safety of frozen desserts, including monitoring systems and corrective actions for excursions.",
+            "parent_skill": "Custards, creams & frozen desserts",
+            "related_skills": [
+                "Operation of batch and continuous ice cream freezers",
+                "Use and dosing of stabilizers and emulsifiers in frozen desserts",
+                "Dairy dessert food safety and pasteurization compliance"
+            ],
+            "keywords": [
+                "cold chain",
+                "blast freezing",
+                "tempering",
+                "temperature monitoring"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dairy dessert food safety and pasteurization compliance",
+            "aliases": [
+                "dairy pasteurization",
+                "food safety for dairy desserts",
+                "HACCP for frozen desserts"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Apply regulatory and food-safety practices specific to dairy-based custards and frozen desserts, including pasteurization parameters, HACCP controls, allergen segregation and sanitation protocols.",
+            "parent_skill": "Custards, creams & frozen desserts",
+            "related_skills": [
+                "Ice cream and churned frozen dessert production",
+                "Cold chain and temperature control for frozen desserts",
+                "Use and dosing of stabilizers and emulsifiers in frozen desserts"
+            ],
+            "keywords": [
+                "pasteurization",
+                "HACCP",
+                "allergen control",
+                "sanitation",
+                "regulatory compliance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

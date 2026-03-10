@@ -1,0 +1,286 @@
+{
+    "domain": "IT",
+    "category": "IT Governance, Risk & Compliance",
+    "subcategory": "Data privacy operations",
+    "skills": [
+        {
+            "canonical_name": "Data Subject Access Request (DSAR) Handling",
+            "aliases": [
+                "DSAR management",
+                "Data subject request processing",
+                "Access request handling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operational processes and controls required to intake, validate, fulfill, and document requests from data subjects for access, correction, deletion, or portability of their personal data within regulatory timeframes.",
+            "parent_skill": "Data privacy operations",
+            "related_skills": [
+                "Record of Processing Activities (ROPA) Maintenance",
+                "Data mapping & inventory for privacy",
+                "Privacy incident response & breach management"
+            ],
+            "keywords": [
+                "DSAR",
+                "data subject request",
+                "access request",
+                "SAR"
+            ],
+            "common_roles": [
+                "Privacy Operations Specialist",
+                "Data Privacy Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Privacy Incident Response & Breach Management",
+            "aliases": [
+                "privacy breach response",
+                "data breach handling",
+                "incident response for privacy"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Detection, triage, containment, investigation, remediation, notification, and post-incident review processes specific to personal data breaches and privacy incidents.",
+            "parent_skill": "Data privacy operations",
+            "related_skills": [
+                "Data Subject Access Request (DSAR) Handling",
+                "Privacy monitoring & metrics",
+                "Cross-border data transfer management"
+            ],
+            "keywords": [
+                "breach notification",
+                "incident response",
+                "privacy incident",
+                "breach management"
+            ],
+            "common_roles": [
+                "Incident Response Analyst",
+                "Privacy Operations Lead"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data Protection Impact Assessment (DPIA) Execution",
+            "aliases": [
+                "DPIA implementation",
+                "privacy impact assessment (PIA) execution",
+                "conducting DPIAs"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Planning, conducting, documenting, and reviewing DPIAs to assess and mitigate privacy risks for systems, projects, or processing activities in accordance with legal requirements and organisational policy.",
+            "parent_skill": "Data privacy operations",
+            "related_skills": [
+                "Privacy by design implementation",
+                "Anonymization & pseudonymization techniques",
+                "Record of Processing Activities (ROPA) Maintenance"
+            ],
+            "keywords": [
+                "DPIA",
+                "PIA",
+                "privacy impact assessment",
+                "risk assessment"
+            ],
+            "common_roles": [
+                "Privacy Analyst",
+                "Compliance Officer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data Mapping & Inventory for Privacy",
+            "aliases": [
+                "privacy data mapping",
+                "data inventory for compliance",
+                "mapping personal data flows"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Discovery, classification and documentation of personal data stores, data flows, processing activities and systems to support compliance, DPIAs, ROPA, and operational controls.",
+            "parent_skill": "Data privacy operations",
+            "related_skills": [
+                "Record of Processing Activities (ROPA) Maintenance",
+                "Cross-border data transfer management",
+                "Privacy monitoring & metrics"
+            ],
+            "keywords": [
+                "data mapping",
+                "data inventory",
+                "data flows",
+                "personal data mapping"
+            ],
+            "common_roles": [
+                "Data Steward",
+                "Privacy Operations Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Record of Processing Activities (ROPA) Maintenance",
+            "aliases": [
+                "processing register maintenance",
+                "ROPA management",
+                "maintain processing activities register"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Creation and ongoing upkeep of the Record\/Registry of Processing Activities documenting purposes, categories, legal bases, retention, transfers and safeguards for processing personal data.",
+            "parent_skill": "Data privacy operations",
+            "related_skills": [
+                "Data Mapping & Inventory for Privacy",
+                "DPIA Execution",
+                "Data retention & deletion enforcement"
+            ],
+            "keywords": [
+                "ROPA",
+                "processing activities register",
+                "processing record"
+            ],
+            "common_roles": [
+                "Privacy Analyst",
+                "Data Protection Officer Support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Anonymization & Pseudonymization Techniques",
+            "aliases": [
+                "data anonymization",
+                "pseudonymisation techniques",
+                "de-identification methods"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Technical and statistical methods to irreversibly or reversibly reduce identifiability of personal data, including k-anonymity, differential privacy, tokenization and hashing, applied to protect privacy while retaining utility.",
+            "parent_skill": "Data privacy operations",
+            "related_skills": [
+                "Data minimization practices",
+                "Privacy by design implementation",
+                "Data mapping & inventory for privacy"
+            ],
+            "keywords": [
+                "anonymization",
+                "pseudonymization",
+                "de-identification",
+                "differential privacy"
+            ],
+            "common_roles": [
+                "Data Engineer",
+                "Privacy Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-Border Data Transfer Management",
+            "aliases": [
+                "international data transfer management",
+                "cross border transfer controls",
+                "data transfer risk management"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Assessment and implementation of lawful mechanisms and operational controls for transferring personal data across jurisdictions, including risk assessment, safeguards and documentation of transfer paths.",
+            "parent_skill": "Data privacy operations",
+            "related_skills": [
+                "Record of Processing Activities (ROPA) Maintenance",
+                "Privacy incident response & breach management",
+                "Vendor privacy risk assessment"
+            ],
+            "keywords": [
+                "data transfer",
+                "international transfer",
+                "SCCs",
+                "data export"
+            ],
+            "common_roles": [
+                "Privacy Compliance Analyst",
+                "Data Transfer Coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Consent Lifecycle Management & Tracking",
+            "aliases": [
+                "consent management",
+                "consent tracking",
+                "consent lifecycle operations"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Design and operation of processes and systems to capture, store, track, refresh, and honor user consents and preferences for personal data processing across channels and systems.",
+            "parent_skill": "Data privacy operations",
+            "related_skills": [
+                "Privacy notices & policy management",
+                "Data mapping & inventory for privacy",
+                "Privacy monitoring & metrics"
+            ],
+            "keywords": [
+                "consent",
+                "consent management platform",
+                "preference center",
+                "consent lifecycle"
+            ],
+            "common_roles": [
+                "Privacy Product Manager",
+                "Consent Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Privacy by Design Implementation",
+            "aliases": [
+                "privacy-by-design",
+                "privacy by design principles implementation",
+                "secure-by-design privacy"
+            ],
+            "skill_type": "process_skill",
+            "description": "Embedding privacy requirements into system and product lifecycles through requirements, architecture decisions, data minimization, default settings and controls during design and development.",
+            "parent_skill": "Data privacy operations",
+            "related_skills": [
+                "DPIA Execution",
+                "Anonymization & Pseudonymization Techniques",
+                "Data minimization practices"
+            ],
+            "keywords": [
+                "privacy by design",
+                "PbD",
+                "privacy engineering",
+                "privacy requirements"
+            ],
+            "common_roles": [
+                "Privacy Engineer",
+                "Solution Architect"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor \/ Third-Party Privacy Risk Assessment",
+            "aliases": [
+                "third-party privacy assessment",
+                "vendor privacy due diligence",
+                "supplier privacy risk assessment"
+            ],
+            "skill_type": "process_skill",
+            "description": "Assessing privacy posture, contractual obligations, data flows, controls and risks associated with third-party vendors and suppliers, and managing remediation and contract controls lifecycle.",
+            "parent_skill": "Data privacy operations",
+            "related_skills": [
+                "Cross-Border Data Transfer Management",
+                "Record of Processing Activities (ROPA) Maintenance",
+                "Privacy monitoring & metrics"
+            ],
+            "keywords": [
+                "vendor assessment",
+                "third-party risk",
+                "privacy due diligence",
+                "supplier assessment"
+            ],
+            "common_roles": [
+                "Vendor Risk Analyst",
+                "Privacy Operations Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

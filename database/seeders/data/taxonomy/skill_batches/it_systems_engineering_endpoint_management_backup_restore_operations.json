@@ -1,0 +1,308 @@
+{
+    "domain": "IT",
+    "category": "Systems Engineering & Endpoint Management",
+    "subcategory": "Backup & restore operations",
+    "skills": [
+        {
+            "canonical_name": "Backup strategy design",
+            "aliases": [
+                "backup strategy",
+                "backup planning",
+                "backup policy design",
+                "RPO\/RTO planning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing backup policies and schedules, defining recovery objectives (RPO\/RTO), retention tiers, and lifecycle rules to meet business requirements.",
+            "parent_skill": "Backup & restore operations",
+            "related_skills": [
+                "Disaster recovery planning",
+                "Backup capacity planning and performance tuning",
+                "Backup operations and monitoring"
+            ],
+            "keywords": [
+                "RPO",
+                "RTO",
+                "retention",
+                "backup policy",
+                "data lifecycle"
+            ],
+            "common_roles": [
+                "Systems Administrator",
+                "Backup Administrator",
+                "IT Operations Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Backup operations and monitoring",
+            "aliases": [
+                "backup administration",
+                "backup monitoring",
+                "backup job management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Day-to-day administration of backup jobs and schedules, monitoring job success\/failure, alerting, and routine maintenance of backup infrastructure.",
+            "parent_skill": "Backup & restore operations",
+            "related_skills": [
+                "Data restore and recovery",
+                "Backup automation and scripting",
+                "Backup strategy design"
+            ],
+            "keywords": [
+                "job scheduling",
+                "job monitoring",
+                "alerts",
+                "backup logs",
+                "maintenance"
+            ],
+            "common_roles": [
+                "Backup Administrator",
+                "Systems Administrator",
+                "IT Operations Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data restore and recovery",
+            "aliases": [
+                "restore operations",
+                "data recovery procedures",
+                "file-level restore",
+                "system restore"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Executing and validating restores at file, application, system or full-site levels, including recovery verification, point-in-time restores, and rollback procedures.",
+            "parent_skill": "Backup & restore operations",
+            "related_skills": [
+                "Backup operations and monitoring",
+                "Disaster recovery planning",
+                "Backup encryption and integrity verification"
+            ],
+            "keywords": [
+                "point-in-time",
+                "restore validation",
+                "bare-metal restore",
+                "application-consistent restore"
+            ],
+            "common_roles": [
+                "Systems Administrator",
+                "Disaster Recovery Manager",
+                "Site Reliability Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Disaster recovery planning",
+            "aliases": [
+                "DR planning",
+                "business continuity planning for backups",
+                "site recovery planning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating and maintaining disaster recovery plans that coordinate backups, failover procedures, recovery time objectives, and roles\/responsibilities for major outage scenarios.",
+            "parent_skill": "Backup & restore operations",
+            "related_skills": [
+                "Backup strategy design",
+                "Data restore and recovery",
+                "Backup capacity planning and performance tuning"
+            ],
+            "keywords": [
+                "DR plan",
+                "failover",
+                "business continuity",
+                "RTO planning",
+                "test drills"
+            ],
+            "common_roles": [
+                "Disaster Recovery Manager",
+                "IT Operations Engineer",
+                "Site Reliability Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Backup automation and scripting",
+            "aliases": [
+                "backup scripting",
+                "backup automation",
+                "automated backup workflows"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Automating backup tasks, orchestration of backup\/restore workflows, and scripting integrations using languages and automation tools (e.g., PowerShell, Bash, Python, automation frameworks).",
+            "parent_skill": "Backup & restore operations",
+            "related_skills": [
+                "Backup operations and monitoring",
+                "Cloud backup services",
+                "Snapshot management"
+            ],
+            "keywords": [
+                "PowerShell",
+                "Bash",
+                "Python",
+                "automation",
+                "orchestration"
+            ],
+            "common_roles": [
+                "Systems Administrator",
+                "Site Reliability Engineer",
+                "Backup Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cloud backup services",
+            "aliases": [
+                "cloud-native backup",
+                "cloud backup",
+                "backup-as-a-service"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using and configuring cloud provider backup services and architectures for object, block, and VM backups in public clouds (design, retention, lifecycle, and restore operations).",
+            "parent_skill": "Backup & restore operations",
+            "related_skills": [
+                "Backup automation and scripting",
+                "Backup encryption and integrity verification",
+                "Backup strategy design"
+            ],
+            "keywords": [
+                "cloud backup",
+                "BaaS",
+                "object storage",
+                "snapshot-based backup",
+                "cloud restore"
+            ],
+            "common_roles": [
+                "Cloud Engineer",
+                "Systems Administrator",
+                "Site Reliability Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Snapshot management",
+            "aliases": [
+                "snapshot lifecycle management",
+                "volume snapshot management",
+                "snapshot scheduling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Managing point-in-time snapshots for file systems, block volumes, or virtual machines including creation, retention, consolidation, and impact on performance and storage consumption.",
+            "parent_skill": "Backup & restore operations",
+            "related_skills": [
+                "Storage replication",
+                "Backup operations and monitoring",
+                "Backup capacity planning and performance tuning"
+            ],
+            "keywords": [
+                "snapshots",
+                "consistency",
+                "snapshot retention",
+                "COW",
+                "crash-consistent"
+            ],
+            "common_roles": [
+                "Storage Engineer",
+                "Systems Administrator",
+                "Virtualization Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Storage replication",
+            "aliases": [
+                "data replication",
+                "asynchronous replication",
+                "synchronous replication"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Configuring and operating storage-level replication for high availability and backup offsite copies, including synchronous\/asynchronous replication and replication topology design.",
+            "parent_skill": "Backup & restore operations",
+            "related_skills": [
+                "Snapshot management",
+                "Disaster recovery planning",
+                "Backup strategy design"
+            ],
+            "keywords": [
+                "replication",
+                "RPO",
+                "replication topology",
+                "asynchronous",
+                "synchronous"
+            ],
+            "common_roles": [
+                "Storage Engineer",
+                "Systems Administrator",
+                "Site Reliability Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Backup encryption and integrity verification",
+            "aliases": [
+                "backup encryption",
+                "data integrity verification",
+                "checksum validation for backups"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Applying encryption for backups (at-rest and in-transit), implementing integrity checks and verification processes to ensure backup data confidentiality and recoverability meet security and compliance requirements.",
+            "parent_skill": "Backup & restore operations",
+            "related_skills": [
+                "Cloud backup services",
+                "Data restore and recovery",
+                "Backup strategy design"
+            ],
+            "keywords": [
+                "encryption",
+                "at-rest",
+                "in-transit",
+                "checksums",
+                "integrity"
+            ],
+            "common_roles": [
+                "Security Engineer",
+                "Backup Administrator",
+                "Compliance Officer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Backup capacity planning and performance tuning",
+            "aliases": [
+                "backup sizing",
+                "backup performance optimization",
+                "storage capacity planning for backups"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Estimating storage and network requirements for backup workloads, tuning backup window performance, deduplication and compression settings, and forecasting growth for retention requirements.",
+            "parent_skill": "Backup & restore operations",
+            "related_skills": [
+                "Backup strategy design",
+                "Snapshot management",
+                "Storage replication"
+            ],
+            "keywords": [
+                "capacity planning",
+                "deduplication",
+                "compression",
+                "backup window",
+                "throughput"
+            ],
+            "common_roles": [
+                "Storage Engineer",
+                "Systems Administrator",
+                "Capacity Planner"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

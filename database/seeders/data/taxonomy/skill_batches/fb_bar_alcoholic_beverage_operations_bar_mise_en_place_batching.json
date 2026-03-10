@@ -1,0 +1,311 @@
+{
+    "domain": "F&B",
+    "category": "Bar & Alcoholic Beverage Operations",
+    "subcategory": "Bar mise en place & batching",
+    "skills": [
+        {
+            "canonical_name": "Bar mise en place setup",
+            "aliases": [
+                "bar mise en place",
+                "bar prep",
+                "bar set-up",
+                "service mise en place"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Planning, organizing and staging ingredients, tools, glassware and stations before service to ensure efficient bar operations.",
+            "parent_skill": "Bar mise en place & batching",
+            "related_skills": [
+                "Garnish preparation and staging",
+                "Cocktail batching and scaling",
+                "Glassware staging and polishing",
+                "Ice management and production"
+            ],
+            "keywords": [
+                "mise en place",
+                "prep",
+                "station setup",
+                "service readiness"
+            ],
+            "common_roles": [
+                "Bartender",
+                "Barback",
+                "Head Bartender",
+                "Beverage Manager"
+            ],
+            "language": "English",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cocktail batching and scaling",
+            "aliases": [
+                "batch cocktail production",
+                "batching cocktails",
+                "scaling cocktail recipes"
+            ],
+            "skill_type": "process_skill",
+            "description": "Formulating and producing cocktails in large batches while preserving intended flavor balance, consistency and alcohol-by-volume (ABV) across scaled yields.",
+            "parent_skill": "Bar mise en place & batching",
+            "related_skills": [
+                "Recipe standardization and yield calculation",
+                "Portion control and measuring (alcohol)",
+                "Labeling, storage and FIFO compliance",
+                "Syrup, cordial and pre-mix production"
+            ],
+            "keywords": [
+                "batch cocktails",
+                "scaling",
+                "batch production",
+                "large format cocktails"
+            ],
+            "common_roles": [
+                "Bartender",
+                "Head Bartender",
+                "Bar Manager",
+                "Event Bartender"
+            ],
+            "language": "English",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Recipe standardization and yield calculation",
+            "aliases": [
+                "standardizing cocktail recipes",
+                "recipe scaling",
+                "yield calculation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Converting recipes to standardized formats, calculating ingredient quantities, yields, costs and ABV for consistent batch production and costing.",
+            "parent_skill": "Bar mise en place & batching",
+            "related_skills": [
+                "Cocktail batching and scaling",
+                "Inventory forecasting and prep",
+                "Portion control and measuring (alcohol)"
+            ],
+            "keywords": [
+                "recipe standardization",
+                "yield",
+                "ABV calculation",
+                "cost per serve"
+            ],
+            "common_roles": [
+                "Bar Manager",
+                "Beverage Manager",
+                "Head Bartender"
+            ],
+            "language": "English",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Syrup, cordial and pre-mix production",
+            "aliases": [
+                "syrup preparation",
+                "cordial making",
+                "simple syrup production",
+                "house syrups"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Preparing flavored syrups, cordials, infusions and concentrated pre-mixes in batches using infusion, steeping and preservation techniques suitable for bar service.",
+            "parent_skill": "Bar mise en place & batching",
+            "related_skills": [
+                "Cocktail batching and scaling",
+                "Labeling, storage and FIFO compliance",
+                "Bar batching sanitation and cross-contamination prevention"
+            ],
+            "keywords": [
+                "syrup",
+                "cordial",
+                "infusion",
+                "pre-mix"
+            ],
+            "common_roles": [
+                "Bartender",
+                "Barback",
+                "Bar Chef",
+                "Head Bartender"
+            ],
+            "language": "English",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Garnish preparation and staging",
+            "aliases": [
+                "garnish prep",
+                "garnish station setup",
+                "zesting and twisting",
+                "prepped garnishes"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Preparing, portioning and staging garnishes (fruit, herbs, peels, bitters drops) for quick, consistent finishing of drinks during service.",
+            "parent_skill": "Bar mise en place & batching",
+            "related_skills": [
+                "Bar mise en place setup",
+                "Glassware staging and polishing",
+                "Ice management and production"
+            ],
+            "keywords": [
+                "garnish",
+                "zest",
+                "twist",
+                "staging"
+            ],
+            "common_roles": [
+                "Bartender",
+                "Barback",
+                "Cocktail Server"
+            ],
+            "language": "English",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ice management and production",
+            "aliases": [
+                "ice prep",
+                "ice inventory",
+                "ice production",
+                "ice handling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Producing, selecting, shaping, storing and rotating different ice types (cubes, spheres, crushed) while maintaining supply levels and sanitation for efficient service.",
+            "parent_skill": "Bar mise en place & batching",
+            "related_skills": [
+                "Bar mise en place setup",
+                "Cocktail batching and scaling",
+                "Bar batching sanitation and cross-contamination prevention"
+            ],
+            "keywords": [
+                "ice",
+                "ice production",
+                "ice storage",
+                "ice shaping"
+            ],
+            "common_roles": [
+                "Barback",
+                "Bartender",
+                "Head Bartender"
+            ],
+            "language": "English",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Portion control and measuring (alcohol)",
+            "aliases": [
+                "spirit pour control",
+                "jigger use",
+                "measured pours",
+                "alcohol portioning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Measuring spirits, liqueurs and other ingredients accurately using jiggers, measured dispensers or scaled recipes to ensure consistency, cost control and legal compliance.",
+            "parent_skill": "Bar mise en place & batching",
+            "related_skills": [
+                "Recipe standardization and yield calculation",
+                "Cocktail batching and scaling",
+                "Inventory forecasting and prep"
+            ],
+            "keywords": [
+                "portion control",
+                "jigger",
+                "measured pour",
+                "cost control"
+            ],
+            "common_roles": [
+                "Bartender",
+                "Bar Manager",
+                "Head Bartender"
+            ],
+            "language": "English",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Labeling, storage and FIFO compliance",
+            "aliases": [
+                "batch labeling",
+                "storage labeling",
+                "FIFO inventory",
+                "label and date batches"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Applying clear labeling (date, batch number, ABV, allergens), storing prepared batches correctly and managing stock rotation using FIFO to meet safety and regulatory expectations.",
+            "parent_skill": "Bar mise en place & batching",
+            "related_skills": [
+                "Syrup, cordial and pre-mix production",
+                "Cocktail batching and scaling",
+                "Bar batching sanitation and cross-contamination prevention"
+            ],
+            "keywords": [
+                "labeling",
+                "FIFO",
+                "storage",
+                "allergen labeling"
+            ],
+            "common_roles": [
+                "Bar Manager",
+                "Head Bartender",
+                "Barback"
+            ],
+            "language": "English",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Large-format cocktail and punch preparation",
+            "aliases": [
+                "punch batching",
+                "large format cocktails",
+                "party punch preparation",
+                "batch punch"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing, producing and staging punch bowls, sangrias and other large-format cocktails for events, including dilution control, garnish integration and service logistics.",
+            "parent_skill": "Bar mise en place & batching",
+            "related_skills": [
+                "Cocktail batching and scaling",
+                "Labeling, storage and FIFO compliance",
+                "Bar mise en place setup"
+            ],
+            "keywords": [
+                "punch",
+                "large format",
+                "event batching",
+                "dilution control"
+            ],
+            "common_roles": [
+                "Event Bartender",
+                "Bartender",
+                "Head Bartender",
+                "Beverage Manager"
+            ],
+            "language": "English",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bar batching sanitation and cross-contamination prevention",
+            "aliases": [
+                "batch sanitation",
+                "prep area sanitation",
+                "cross-contamination control",
+                "sanitation for batching"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Cleaning and sanitizing batching equipment, tools and prep surfaces; implementing procedures to prevent allergen and microbial cross-contamination during batch production.",
+            "parent_skill": "Bar mise en place & batching",
+            "related_skills": [
+                "Syrup, cordial and pre-mix production",
+                "Ice management and production",
+                "Labeling, storage and FIFO compliance"
+            ],
+            "keywords": [
+                "sanitation",
+                "cleaning",
+                "cross-contamination",
+                "allergen control"
+            ],
+            "common_roles": [
+                "Bar Manager",
+                "Head Bartender",
+                "Barback"
+            ],
+            "language": "English",
+            "status": "active"
+        }
+    ]
+}

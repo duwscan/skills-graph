@@ -1,0 +1,306 @@
+{
+    "domain": "IT",
+    "category": "Analytics, BI & Reporting",
+    "subcategory": "Dashboard development",
+    "skills": [
+        {
+            "canonical_name": "Dashboard design",
+            "aliases": [
+                "Dashboard layout design",
+                "Report design",
+                "Dashboard wireframing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Structuring dashboard content, visual hierarchy, and information flow to present insights clearly and support decision-making.",
+            "parent_skill": "Dashboard development",
+            "related_skills": [
+                "Dashboard UX & interaction design",
+                "Data visualization principles",
+                "KPI definition and metrics governance",
+                "Power BI",
+                "Tableau"
+            ],
+            "keywords": [
+                "layout",
+                "visual hierarchy",
+                "storytelling",
+                "wireframe",
+                "report layout"
+            ],
+            "common_roles": [
+                "BI teams",
+                "analytics teams",
+                "business stakeholders"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data visualization principles",
+            "aliases": [
+                "Information visualization",
+                "Visualization principles",
+                "Viz best practices"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Applying perceptual and design principles (e.g., chart selection, color use, visual encoding) to translate data into accurate, interpretable visuals.",
+            "parent_skill": "Dashboard development",
+            "related_skills": [
+                "Dashboard design",
+                "Dashboard UX & interaction design",
+                "KPI definition and metrics governance"
+            ],
+            "keywords": [
+                "chart selection",
+                "color theory",
+                "data-ink ratio",
+                "visual encoding"
+            ],
+            "common_roles": [
+                "analytics teams",
+                "business stakeholders",
+                "reporting teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data modeling for reporting",
+            "aliases": [
+                "Reporting data modeling",
+                "Dimensional modeling for BI",
+                "Star schema design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing data structures (facts, dimensions, aggregates) optimized for fast, accurate reporting and dashboard queries.",
+            "parent_skill": "Dashboard development",
+            "related_skills": [
+                "SQL for reporting",
+                "KPI definition and metrics governance",
+                "Dashboard performance optimization"
+            ],
+            "keywords": [
+                "star schema",
+                "denormalization",
+                "dimensions",
+                "facts",
+                "aggregates"
+            ],
+            "common_roles": [
+                "data teams",
+                "analytics teams",
+                "reporting teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dashboard performance optimization",
+            "aliases": [
+                "Dashboard tuning",
+                "Report performance tuning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Techniques to improve dashboard load times and interactivity, including query optimization, caching, aggregation, and front-end rendering improvements.",
+            "parent_skill": "Dashboard development",
+            "related_skills": [
+                "Data modeling for reporting",
+                "SQL for reporting",
+                "Power BI",
+                "Tableau"
+            ],
+            "keywords": [
+                "caching",
+                "query optimization",
+                "aggregates",
+                "rendering",
+                "latency"
+            ],
+            "common_roles": [
+                "BI operations",
+                "data platform teams",
+                "self-service analytics users"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dashboard UX & interaction design",
+            "aliases": [
+                "Interactive dashboard design",
+                "Dashboard user experience design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing interactive controls, drilldowns, filters, and navigation patterns that enable efficient exploration and insight discovery for target users.",
+            "parent_skill": "Dashboard development",
+            "related_skills": [
+                "Dashboard design",
+                "Data visualization principles",
+                "Dashboard testing & validation"
+            ],
+            "keywords": [
+                "interactivity",
+                "filters",
+                "drilldown",
+                "user flows",
+                "tooltips"
+            ],
+            "common_roles": [
+                "product analytics teams",
+                "business stakeholders",
+                "self-service analytics users"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "KPI definition and metrics governance",
+            "aliases": [
+                "KPI definition",
+                "Metrics governance",
+                "Metric taxonomy design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Establishing, standardizing, and documenting key performance indicators, metric definitions, calculation rules, and ownership to ensure consistency across dashboards.",
+            "parent_skill": "Dashboard development",
+            "related_skills": [
+                "Data modeling for reporting",
+                "Data visualization principles",
+                "Dashboard testing & validation"
+            ],
+            "keywords": [
+                "metric definitions",
+                "business rules",
+                "calculation logic",
+                "metric ownership"
+            ],
+            "common_roles": [
+                "analytics governance",
+                "business stakeholders",
+                "reporting teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dashboard testing & validation",
+            "aliases": [
+                "Report validation",
+                "Dashboard QA",
+                "Dashboard testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Methods and test cases for validating dashboard correctness, data lineage, aggregation accuracy, edge cases, and user acceptance before release.",
+            "parent_skill": "Dashboard development",
+            "related_skills": [
+                "KPI definition and metrics governance",
+                "Data modeling for reporting",
+                "Dashboard performance optimization"
+            ],
+            "keywords": [
+                "data validation",
+                "QA",
+                "unit tests",
+                "acceptance testing",
+                "edge cases"
+            ],
+            "common_roles": [
+                "BI teams",
+                "data quality teams",
+                "business stakeholders"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Power BI",
+            "aliases": [
+                "Microsoft Power BI",
+                "PowerBI",
+                "Power BI Desktop"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Power BI platform features (data connectors, Power Query, data model, DAX, visualizations, and deployment) to build and publish interactive dashboards.",
+            "parent_skill": "Dashboard development",
+            "related_skills": [
+                "SQL for reporting",
+                "Dashboard design",
+                "Dashboard performance optimization"
+            ],
+            "keywords": [
+                "Power Query",
+                "DAX",
+                "Power BI Service",
+                "visuals",
+                "dataflows"
+            ],
+            "common_roles": [
+                "BI teams",
+                "analytics teams",
+                "self-service analytics users"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tableau",
+            "aliases": [
+                "Tableau Desktop",
+                "Tableau Server",
+                "Tableau Online"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Building interactive dashboards and visualizations using Tableau's authoring, data-extraction, and publishing capabilities to deliver analytics to users.",
+            "parent_skill": "Dashboard development",
+            "related_skills": [
+                "Data visualization principles",
+                "Data modeling for reporting",
+                "Dashboard performance optimization"
+            ],
+            "keywords": [
+                "Tableau Prep",
+                "workbooks",
+                "extracts",
+                "Tableau Server",
+                "visualization"
+            ],
+            "common_roles": [
+                "analytics teams",
+                "BI teams",
+                "business stakeholders"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SQL for reporting",
+            "aliases": [
+                "Reporting SQL",
+                "Analytics SQL",
+                "SQL for dashboards"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Writing efficient SQL queries for dashboard data retrieval, aggregation, and transformation, including window functions, joins, and performance-aware query patterns.",
+            "parent_skill": "Dashboard development",
+            "related_skills": [
+                "Data modeling for reporting",
+                "Dashboard performance optimization",
+                "Power BI"
+            ],
+            "keywords": [
+                "joins",
+                "aggregation",
+                "window functions",
+                "CTEs",
+                "query tuning"
+            ],
+            "common_roles": [
+                "data teams",
+                "analytics teams",
+                "reporting teams"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

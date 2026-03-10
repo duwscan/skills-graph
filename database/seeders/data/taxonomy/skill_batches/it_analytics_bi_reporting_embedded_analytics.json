@@ -1,0 +1,257 @@
+{
+    "domain": "IT",
+    "category": "Analytics, BI & Reporting",
+    "subcategory": "Embedded analytics",
+    "skills": [
+        {
+            "canonical_name": "Embedded analytics architecture",
+            "aliases": [
+                "embedded BI architecture",
+                "embedded analytics system design",
+                "analytics embedding architecture"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Designing scalable, secure architectures and data flow patterns for embedding analytics into applications (including multi-tenant, data model and infrastructure considerations).",
+            "parent_skill": "Embedded analytics",
+            "related_skills": [
+                "Multi-tenant analytics design",
+                "Data\/API integration for embedded analytics",
+                "Performance optimization for embedded analytics"
+            ],
+            "keywords": [
+                "scalability",
+                "multi-tenant",
+                "data modeling",
+                "integration patterns"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Embedded dashboard design",
+            "aliases": [
+                "in-app dashboard design",
+                "embedded visualization design",
+                "dashboard UX for embedded analytics"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing dashboards and visualizations optimized for embedding contexts, including responsive layouts, contextual filters, and compact UX for application users.",
+            "parent_skill": "Embedded analytics",
+            "related_skills": [
+                "Front-end embedding patterns",
+                "White-labeling & UI theming for embedded analytics",
+                "Instrumentation & product analytics for embedded features"
+            ],
+            "keywords": [
+                "dashboard UX",
+                "visualization",
+                "responsive",
+                "contextual insights"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Analytics SDK integration",
+            "aliases": [
+                "embedding analytics SDKs",
+                "dashboard SDK integration",
+                "analytics client SDK integration"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Integrating vendor or open-source analytics SDKs into applications using provided APIs, hooks and embedding primitives to surface reports and visualizations.",
+            "parent_skill": "Embedded analytics",
+            "related_skills": [
+                "Front-end embedding patterns",
+                "Data\/API integration for embedded analytics",
+                "Row-level security & tenant isolation for embedded analytics"
+            ],
+            "keywords": [
+                "SDK",
+                "integration",
+                "embed",
+                "client-side"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data\/API integration for embedded analytics",
+            "aliases": [
+                "analytics API integration",
+                "data integration for embedded BI",
+                "data connectors for embedded analytics"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing data delivery layers (REST\/GraphQL\/streaming) and connectors to feed embedded analytics with fresh, reliable data.",
+            "parent_skill": "Embedded analytics",
+            "related_skills": [
+                "Embedded analytics architecture",
+                "Performance optimization for embedded analytics",
+                "Analytics SDK integration"
+            ],
+            "keywords": [
+                "API",
+                "ETL",
+                "connectors",
+                "data pipelines"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Row-level security & tenant isolation for embedded analytics",
+            "aliases": [
+                "RLS for embedded analytics",
+                "tenant isolation for embedded BI",
+                "fine-grained access control for analytics"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing and operating fine-grained access controls (row-level security, attribute-based access) and tenant isolation mechanisms for embedded analytics deployments.",
+            "parent_skill": "Embedded analytics",
+            "related_skills": [
+                "Embedded analytics architecture",
+                "Analytics SDK integration",
+                "Compliance & data governance for analytics"
+            ],
+            "keywords": [
+                "RLS",
+                "access control",
+                "multi-tenant",
+                "authorization"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Performance optimization for embedded analytics",
+            "aliases": [
+                "embedded analytics performance tuning",
+                "BI query optimization for embedded use",
+                "caching and pre-aggregation for embedded BI"
+            ],
+            "skill_type": "process_skill",
+            "description": "Optimizing responsiveness and scalability of embedded analytics via query tuning, caching, pre-aggregation, data partitioning and resource sizing.",
+            "parent_skill": "Embedded analytics",
+            "related_skills": [
+                "Embedded analytics architecture",
+                "Data\/API integration for embedded analytics",
+                "Instrumentation & product analytics for embedded features"
+            ],
+            "keywords": [
+                "query tuning",
+                "caching",
+                "pre-aggregation",
+                "latency"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Instrumentation & product analytics for embedded features",
+            "aliases": [
+                "analytics usage instrumentation",
+                "embedded feature telemetry",
+                "usage tracking for embedded analytics"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Instrumenting embedded analytics features to capture usage, adoption and performance metrics for product and business analysis (events, funnels, retention).",
+            "parent_skill": "Embedded analytics",
+            "related_skills": [
+                "Embedded dashboard design",
+                "Performance optimization for embedded analytics",
+                "Productizing embedded analytics"
+            ],
+            "keywords": [
+                "telemetry",
+                "events",
+                "usage analytics",
+                "product metrics"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "White-labeling & UI theming for embedded analytics",
+            "aliases": [
+                "analytics white-labeling",
+                "embedded UI theming",
+                "branding for embedded dashboards"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Customizing embedded analytics appearance and behavior to match host applications via theming, branding, CSS\/JS customization and configurable UI components.",
+            "parent_skill": "Embedded analytics",
+            "related_skills": [
+                "Embedded dashboard design",
+                "Front-end embedding patterns",
+                "Analytics SDK integration"
+            ],
+            "keywords": [
+                "theming",
+                "branding",
+                "UI customization",
+                "CSS"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Front-end embedding patterns",
+            "aliases": [
+                "iframe and JS embed patterns",
+                "React\/Angular embedding for analytics",
+                "client-side embedding techniques"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Implementing front-end integration patterns for embedding analytics (iframe, JavaScript SDKs, single-page app integration and component-based embedding).",
+            "parent_skill": "Embedded analytics",
+            "related_skills": [
+                "Analytics SDK integration",
+                "White-labeling & UI theming for embedded analytics",
+                "Embedded dashboard design"
+            ],
+            "keywords": [
+                "iframe",
+                "JavaScript SDK",
+                "SPA",
+                "component embedding"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Productizing embedded analytics",
+            "aliases": [
+                "embedded analytics productization",
+                "monetizing embedded BI",
+                "embedded analytics go-to-market"
+            ],
+            "skill_type": "process_skill",
+            "description": "Defining product, pricing, access and operational models to offer embedded analytics as a product feature (feature gating, SLAs, billing, usage limits).",
+            "parent_skill": "Embedded analytics",
+            "related_skills": [
+                "Instrumentation & product analytics for embedded features",
+                "Embedded analytics architecture",
+                "White-labeling & UI theming for embedded analytics"
+            ],
+            "keywords": [
+                "pricing",
+                "SLA",
+                "feature gating",
+                "billing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

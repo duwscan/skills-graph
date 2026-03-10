@@ -1,0 +1,272 @@
+{
+    "domain": "IT",
+    "category": "Enterprise Applications & Platforms",
+    "subcategory": "Business process automation platforms",
+    "skills": [
+        {
+            "canonical_name": "Robotic Process Automation (RPA) development",
+            "aliases": [
+                "RPA development",
+                "bot development",
+                "robotic process automation scripting"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing, building and deploying software robots (attended or unattended) to automate repetitive, rule-based tasks using RPA platforms and scripting languages.",
+            "parent_skill": "Business process automation platforms",
+            "related_skills": [
+                "UiPath development",
+                "Automation Anywhere development",
+                "BPMN process modeling",
+                "API integration for automation",
+                "Automation workflow testing and debugging",
+                "Automation solution architecture"
+            ],
+            "keywords": [
+                "RPA",
+                "bots",
+                "automation scripts",
+                "attended",
+                "unattended"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "UiPath development",
+            "aliases": [
+                "UiPath Studio",
+                "UiPath Orchestrator",
+                "UiPath RPA development"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Developing automation workflows, activities and orchestrations specifically using the UiPath platform (Studio, Orchestrator, Robots) and associated extensions.",
+            "parent_skill": "Business process automation platforms",
+            "related_skills": [
+                "Robotic Process Automation (RPA) development",
+                "API integration for automation",
+                "Automation workflow testing and debugging",
+                "Automation solution architecture"
+            ],
+            "keywords": [
+                "UiPath",
+                "Studio",
+                "Orchestrator",
+                "XAML"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automation Anywhere development",
+            "aliases": [
+                "Automation Anywhere",
+                "Automation Anywhere A2019",
+                "AA development"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Creating and managing bots, scripts and control-room processes using the Automation Anywhere platform and its cloud\/on-prem components.",
+            "parent_skill": "Business process automation platforms",
+            "related_skills": [
+                "Robotic Process Automation (RPA) development",
+                "API integration for automation",
+                "Automation workflow testing and debugging",
+                "Automation solution architecture"
+            ],
+            "keywords": [
+                "Automation Anywhere",
+                "A2019",
+                "bot creator",
+                "control room"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "BPMN process modeling",
+            "aliases": [
+                "Business Process Model and Notation",
+                "BPMN 2.0 modeling",
+                "process modeling"
+            ],
+            "skill_type": "process_skill",
+            "description": "Using BPMN notation to model end-to-end business processes, decision points and workflow sequences to support automation design and handoffs to development.",
+            "parent_skill": "Business process automation platforms",
+            "related_skills": [
+                "Business process analysis for automation",
+                "Robotic Process Automation (RPA) development",
+                "Process mining and discovery",
+                "Automation solution architecture"
+            ],
+            "keywords": [
+                "BPMN",
+                "process diagrams",
+                "swimlanes",
+                "gateway"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Process mining and discovery",
+            "aliases": [
+                "process discovery",
+                "process analytics",
+                "process mining tools"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing event logs and transactional data to discover actual process flows, bottlenecks and automation candidates using process mining techniques and tools.",
+            "parent_skill": "Business process automation platforms",
+            "related_skills": [
+                "Business process analysis for automation",
+                "BPMN process modeling",
+                "Robotic Process Automation (RPA) development"
+            ],
+            "keywords": [
+                "process mining",
+                "event logs",
+                "process discovery",
+                "Celonis"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "API integration for automation",
+            "aliases": [
+                "REST API integration",
+                "web services integration",
+                "SOAP integration"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing API-based integrations (REST\/SOAP, OAuth, JSON\/XML) to connect automation workflows with enterprise systems and data sources.",
+            "parent_skill": "Business process automation platforms",
+            "related_skills": [
+                "Robotic Process Automation (RPA) development",
+                "UiPath development",
+                "Integration Platform-as-a-Service (iPaaS) implementation",
+                "Automation solution architecture"
+            ],
+            "keywords": [
+                "API",
+                "REST",
+                "SOAP",
+                "JSON",
+                "OAuth"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Integration Platform-as-a-Service (iPaaS) implementation",
+            "aliases": [
+                "iPaaS implementation",
+                "MuleSoft integration",
+                "Dell Boomi implementation",
+                "Workato integration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Implementing integrations and orchestrations using iPaaS solutions to connect cloud and on-prem systems as part of automation architectures.",
+            "parent_skill": "Business process automation platforms",
+            "related_skills": [
+                "API integration for automation",
+                "Automation solution architecture",
+                "Robotic Process Automation (RPA) development"
+            ],
+            "keywords": [
+                "iPaaS",
+                "MuleSoft",
+                "Dell Boomi",
+                "Workato",
+                "integration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automation solution architecture",
+            "aliases": [
+                "automation architecture",
+                "end-to-end automation design",
+                "automation systems architecture"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Defining end-to-end automation architectures that combine RPA, BPM, APIs, iPaaS and orchestration while addressing scalability, security and maintainability.",
+            "parent_skill": "Business process automation platforms",
+            "related_skills": [
+                "Robotic Process Automation (RPA) development",
+                "API integration for automation",
+                "Integration Platform-as-a-Service (iPaaS) implementation",
+                "BPMN process modeling"
+            ],
+            "keywords": [
+                "architecture",
+                "scalability",
+                "orchestration",
+                "integration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automation workflow testing and debugging",
+            "aliases": [
+                "automation testing",
+                "bot testing",
+                "automation QA",
+                "automation debugging"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Creating and executing test plans, unit tests and end-to-end validation for automated workflows plus diagnosing and resolving runtime failures and edge-case errors.",
+            "parent_skill": "Business process automation platforms",
+            "related_skills": [
+                "Robotic Process Automation (RPA) development",
+                "UiPath development",
+                "Automation Anywhere development",
+                "Automation solution architecture"
+            ],
+            "keywords": [
+                "testing",
+                "debugging",
+                "unit tests",
+                "end-to-end"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Business process analysis for automation",
+            "aliases": [
+                "process analysis for automation",
+                "automation opportunity assessment",
+                "process re-engineering for automation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluating business processes to identify automation opportunities, quantify ROI, map current-state workflows and define prioritized automation backlogs.",
+            "parent_skill": "Business process automation platforms",
+            "related_skills": [
+                "Process mining and discovery",
+                "BPMN process modeling",
+                "Robotic Process Automation (RPA) development",
+                "Automation solution architecture"
+            ],
+            "keywords": [
+                "process analysis",
+                "opportunity assessment",
+                "ROI",
+                "process mapping"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

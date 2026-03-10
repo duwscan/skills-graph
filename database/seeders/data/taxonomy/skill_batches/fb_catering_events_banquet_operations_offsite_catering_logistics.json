@@ -1,0 +1,297 @@
+{
+    "domain": "F&B",
+    "category": "Catering, Events & Banquet Operations",
+    "subcategory": "Offsite catering logistics",
+    "skills": [
+        {
+            "canonical_name": "Offsite event site assessment",
+            "aliases": [
+                "site survey for catering",
+                "venue assessment",
+                "event site walkthrough"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Evaluate venue constraints and resources (access, power, water, layout, loading zones, parking, service routes) to plan safe, efficient offsite catering operations.",
+            "parent_skill": "Offsite catering logistics",
+            "related_skills": [
+                "Equipment load planning and staging",
+                "Route planning and delivery scheduling",
+                "Permits and local regulatory compliance for offsite catering"
+            ],
+            "keywords": [
+                "site inspection",
+                "venue logistics",
+                "load-in",
+                "access assessment"
+            ],
+            "common_roles": [
+                "Catering operations",
+                "Event logistics",
+                "Banquet operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Offsite menu logistics planning",
+            "aliases": [
+                "menu transport planning",
+                "menu execution planning for events",
+                "offsite menu coordination"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design practical menu execution plans for offsite events including portioning, packaging, hold times, reheating or finishing onsite, and staging to preserve quality and service flow.",
+            "parent_skill": "Offsite catering logistics",
+            "related_skills": [
+                "Food safety and hygiene for offsite catering",
+                "Temperature-controlled transport and cold chain management",
+                "Equipment load planning and staging"
+            ],
+            "keywords": [
+                "menu execution",
+                "portioning",
+                "onsite finishing",
+                "packaging"
+            ],
+            "common_roles": [
+                "Catering operations",
+                "Food operations management",
+                "Event production"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Temperature-controlled transport and cold chain management",
+            "aliases": [
+                "cold chain management",
+                "temperature-controlled logistics",
+                "refrigerated transport for catering"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Manage storage and transport conditions (refrigeration, insulated containers, monitoring) to maintain food safety and quality from kitchen to event site.",
+            "parent_skill": "Offsite catering logistics",
+            "related_skills": [
+                "Food safety and hygiene for offsite catering",
+                "Cold chain monitoring and documentation",
+                "Route planning and delivery scheduling"
+            ],
+            "keywords": [
+                "refrigerated vehicles",
+                "insulated carriers",
+                "temperature control",
+                "perishable transport"
+            ],
+            "common_roles": [
+                "Food transport teams",
+                "Catering operations",
+                "Logistics coordination"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Equipment load planning and staging",
+            "aliases": [
+                "load planning",
+                "staging plan for catering equipment",
+                "equipment staging and inventory"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Plan and sequence loading, securement, and on-site placement of cooking, service, and support equipment to optimize safety, space, and setup\/teardown speed.",
+            "parent_skill": "Offsite catering logistics",
+            "related_skills": [
+                "Offsite event site assessment",
+                "Inventory management systems (IMS) for events",
+                "Contingency planning and on-site problem resolution"
+            ],
+            "keywords": [
+                "load sequencing",
+                "equipment staging",
+                "securement",
+                "setup plan"
+            ],
+            "common_roles": [
+                "Event logistics",
+                "Catering operations",
+                "Venue operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Route planning and delivery scheduling",
+            "aliases": [
+                "delivery routing",
+                "delivery scheduling",
+                "logistics route planning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Create efficient delivery routes and time windows that account for traffic, site access, service times, and temperature-hold requirements to meet event schedules.",
+            "parent_skill": "Offsite catering logistics",
+            "related_skills": [
+                "Temperature-controlled transport and cold chain management",
+                "Offsite event site assessment",
+                "Inventory management systems (IMS) for events"
+            ],
+            "keywords": [
+                "routing",
+                "delivery windows",
+                "timed arrivals",
+                "logistics scheduling"
+            ],
+            "common_roles": [
+                "Event logistics",
+                "Catering operations",
+                "Distribution coordination"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Inventory management systems (IMS) for events",
+            "aliases": [
+                "event inventory systems",
+                "asset tracking for catering",
+                "IMS for catering"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use inventory and asset-tracking systems to manage equipment, consumables, and perishables for offsite events including check-in\/check-out, counts, and reconciliation.",
+            "parent_skill": "Offsite catering logistics",
+            "related_skills": [
+                "Equipment load planning and staging",
+                "Route planning and delivery scheduling",
+                "Vendor and supplier coordination for offsite catering"
+            ],
+            "keywords": [
+                "asset tracking",
+                "stock reconciliation",
+                "barcoding",
+                "mobile inventory"
+            ],
+            "common_roles": [
+                "Inventory control teams",
+                "Catering operations",
+                "Event logistics"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor and supplier coordination for offsite catering",
+            "aliases": [
+                "supplier coordination",
+                "vendor management for events",
+                "third-party vendor coordination"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Coordinate schedules, deliveries, equipment loans, and service expectations with external vendors (rentals, florists, AV, rental kitchens) to ensure seamless offsite event execution.",
+            "parent_skill": "Offsite catering logistics",
+            "related_skills": [
+                "Offsite event site assessment",
+                "Permits and local regulatory compliance for offsite catering",
+                "Inventory management systems (IMS) for events"
+            ],
+            "keywords": [
+                "vendor scheduling",
+                "supplier communication",
+                "third-party logistics",
+                "coordination"
+            ],
+            "common_roles": [
+                "Vendor coordination teams",
+                "Catering operations",
+                "Event production"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Permits and local regulatory compliance for offsite catering",
+            "aliases": [
+                "event permits for catering",
+                "local compliance for outdoor events",
+                "regulatory permits for food service"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Identify and obtain required permits, licenses, and approvals (health permits, fire safety, road closures) and ensure vendor\/site compliance with local regulations for offsite events.",
+            "parent_skill": "Offsite catering logistics",
+            "related_skills": [
+                "Offsite event site assessment",
+                "Food safety and hygiene for offsite catering",
+                "Contingency planning and on-site problem resolution"
+            ],
+            "keywords": [
+                "permits",
+                "health department",
+                "event licensing",
+                "local regulations"
+            ],
+            "common_roles": [
+                "Event compliance",
+                "Catering operations",
+                "Venue operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Contingency planning and on-site problem resolution",
+            "aliases": [
+                "risk mitigation for catering",
+                "on-site troubleshooting",
+                "event contingency planning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Develop and execute backup plans for common offsite issues (equipment failure, transport delays, power loss, weather) and make rapid operational decisions during events to minimize impact.",
+            "parent_skill": "Offsite catering logistics",
+            "related_skills": [
+                "Temperature-controlled transport and cold chain management",
+                "Equipment load planning and staging",
+                "Permits and local regulatory compliance for offsite catering"
+            ],
+            "keywords": [
+                "backup plans",
+                "troubleshooting",
+                "risk mitigation",
+                "operational resilience"
+            ],
+            "common_roles": [
+                "Catering operations",
+                "Event logistics",
+                "Facilities response teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food safety and hygiene for offsite catering",
+            "aliases": [
+                "offsite food safety",
+                "catering hygiene",
+                "HACCP practices for catering"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Apply food safety practices specific to offsite operations, including safe handling, cross-contamination prevention, temperature control, documentation, and staff hygiene during transport and service.",
+            "parent_skill": "Offsite catering logistics",
+            "related_skills": [
+                "Temperature-controlled transport and cold chain management",
+                "Permits and local regulatory compliance for offsite catering",
+                "Offsite menu logistics planning"
+            ],
+            "keywords": [
+                "food handling",
+                "cross-contamination",
+                "temperature logs",
+                "personal hygiene"
+            ],
+            "common_roles": [
+                "Food safety teams",
+                "Catering operations",
+                "Event production"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

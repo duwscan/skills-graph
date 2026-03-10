@@ -1,0 +1,313 @@
+{
+    "domain": "IT",
+    "category": "Network Engineering & Connectivity",
+    "subcategory": "Voice\/UC networking",
+    "skills": [
+        {
+            "canonical_name": "Session Initiation Protocol (SIP) signaling",
+            "aliases": [
+                "SIP",
+                "SIP signaling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Understanding and working knowledge of SIP call setup, teardown, forking, redirects, headers, and message flows used in VoIP and UC environments.",
+            "parent_skill": "Voice\/UC networking",
+            "related_skills": [
+                "SIP trunking design and provisioning",
+                "VoIP troubleshooting and diagnostics",
+                "VoIP security and encryption (SRTP\/TLS)",
+                "Voice codecs and media negotiation"
+            ],
+            "keywords": [
+                "INVITE",
+                "ACK",
+                "BYE",
+                "REGISTER",
+                "SIP methods",
+                "SIP responses"
+            ],
+            "common_roles": [
+                "Voice\/VoIP Engineer",
+                "UC Engineer",
+                "Network Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SIP trunking design and provisioning",
+            "aliases": [
+                "SIP trunks",
+                "SIP trunk provisioning",
+                "SIP carrier integration"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing, configuring and provisioning SIP trunks and carrier connections for PSTN access, capacity planning, and routing policies.",
+            "parent_skill": "Voice\/UC networking",
+            "related_skills": [
+                "Session Initiation Protocol (SIP) signaling",
+                "Session Border Controller (SBC) configuration",
+                "Microsoft Teams Direct Routing and PSTN integration",
+                "VoIP troubleshooting and diagnostics"
+            ],
+            "keywords": [
+                "trunking",
+                "PSTN interconnect",
+                "SIP provider",
+                "dial-peers",
+                "route groups"
+            ],
+            "common_roles": [
+                "Voice Engineer",
+                "Telephony Engineer",
+                "Network Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Session Border Controller (SBC) configuration",
+            "aliases": [
+                "SBC management",
+                "SBC deployment",
+                "session border controller administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and managing Session Border Controllers for SIP routing, NAT traversal, interconnect security, media anchoring and protocol normalization.",
+            "parent_skill": "Voice\/UC networking",
+            "related_skills": [
+                "SIP trunking design and provisioning",
+                "VoIP security and encryption (SRTP\/TLS)",
+                "VoIP troubleshooting and diagnostics"
+            ],
+            "keywords": [
+                "NAT traversal",
+                "media anchoring",
+                "topology hiding",
+                "SIP normalization",
+                "interconnect policies"
+            ],
+            "common_roles": [
+                "UC Engineer",
+                "Voice\/VoIP Engineer",
+                "Network Security Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "VoIP troubleshooting and diagnostics",
+            "aliases": [
+                "voice troubleshooting",
+                "VoIP diagnostics",
+                "voice call troubleshooting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operational techniques and tools for isolating and resolving voice quality, connectivity and signaling issues across SIP, RTP and UC components.",
+            "parent_skill": "Voice\/UC networking",
+            "related_skills": [
+                "Session Initiation Protocol (SIP) signaling",
+                "Voice codecs and media negotiation",
+                "VoIP QoS and traffic prioritization",
+                "Session Border Controller (SBC) configuration"
+            ],
+            "keywords": [
+                "packet captures",
+                "Wireshark",
+                "MOS",
+                "jitter",
+                "latency",
+                "one-way audio"
+            ],
+            "common_roles": [
+                "Support Engineer",
+                "Voice Engineer",
+                "Network Operations Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "VoIP QoS and traffic prioritization",
+            "aliases": [
+                "QoS for voice",
+                "DSCP for VoIP",
+                "traffic shaping for voice"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and applying Quality of Service policies and traffic engineering to prioritize real-time voice and media traffic across converged networks.",
+            "parent_skill": "Voice\/UC networking",
+            "related_skills": [
+                "VoIP troubleshooting and diagnostics",
+                "Unified Communications architecture and deployment",
+                "Voice codecs and media negotiation"
+            ],
+            "keywords": [
+                "DiffServ",
+                "DSCP",
+                "queueing",
+                "policing",
+                "shaping",
+                "LLQ"
+            ],
+            "common_roles": [
+                "Network Engineer",
+                "Voice Engineer",
+                "UC Architect"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Voice codecs and media negotiation",
+            "aliases": [
+                "voice codecs",
+                "media negotiation",
+                "RTP\/RTCP negotiation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Knowledge of audio codecs (e.g., G.711, G.729, Opus), RTP\/RTCP behavior, payload negotiation, transcoding and the impact on bandwidth and quality.",
+            "parent_skill": "Voice\/UC networking",
+            "related_skills": [
+                "VoIP troubleshooting and diagnostics",
+                "VoIP QoS and traffic prioritization",
+                "SBC configuration"
+            ],
+            "keywords": [
+                "G.711",
+                "G.729",
+                "Opus",
+                "transcoding",
+                "RTP",
+                "RTCP"
+            ],
+            "common_roles": [
+                "Voice Engineer",
+                "UC Engineer",
+                "Telecom Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Unified Communications architecture and deployment",
+            "aliases": [
+                "UC architecture",
+                "Unified Communications design",
+                "UC deployment"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing end-to-end Unified Communications solutions including telephony, conferencing, messaging, presence, and integration with network and security infrastructure.",
+            "parent_skill": "Voice\/UC networking",
+            "related_skills": [
+                "Cisco Unified Communications Manager (CUCM) administration",
+                "Microsoft Teams Direct Routing and PSTN integration",
+                "VoIP QoS and traffic prioritization"
+            ],
+            "keywords": [
+                "telephony design",
+                "conferencing",
+                "presence",
+                "UC integration",
+                "hybrid deployment"
+            ],
+            "common_roles": [
+                "UC Architect",
+                "Voice Engineer",
+                "Solutions Architect"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cisco Unified Communications Manager (CUCM) administration",
+            "aliases": [
+                "Cisco CUCM",
+                "Cisco Unified CM administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Administration and operation of Cisco CUCM for call control, device\/user management, dial-plan configuration, route patterns and system maintenance.",
+            "parent_skill": "Voice\/UC networking",
+            "related_skills": [
+                "Unified Communications architecture and deployment",
+                "SIP trunking design and provisioning",
+                "VoIP troubleshooting and diagnostics"
+            ],
+            "keywords": [
+                "dial-plan",
+                "route pattern",
+                "device pools",
+                "call routing",
+                "call admission control"
+            ],
+            "common_roles": [
+                "UC Engineer",
+                "Cisco Voice Engineer",
+                "Telecom Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Microsoft Teams Direct Routing and PSTN integration",
+            "aliases": [
+                "Teams Direct Routing",
+                "Teams phone system integration",
+                "Microsoft Teams telephony"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Implementing Direct Routing for Microsoft Teams including SBC interconnect, dial-plan mapping, PSTN routing and hybrid\/voice coexistence scenarios.",
+            "parent_skill": "Voice\/UC networking",
+            "related_skills": [
+                "SIP trunking design and provisioning",
+                "Session Border Controller (SBC) configuration",
+                "Unified Communications architecture and deployment"
+            ],
+            "keywords": [
+                "Direct Routing",
+                "Teams Phone",
+                "SBC",
+                "PSTN",
+                "dial-plan mapping"
+            ],
+            "common_roles": [
+                "UC Engineer",
+                "Microsoft Teams Engineer",
+                "Voice Integration Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "VoIP security and encryption (SRTP\/TLS)",
+            "aliases": [
+                "VoIP security",
+                "SRTP",
+                "TLS for SIP",
+                "secure SIP"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Securing voice communications using SRTP, TLS, secure SIP practices, authentication, signaling\/media encryption, and mitigation of VoIP-specific threats.",
+            "parent_skill": "Voice\/UC networking",
+            "related_skills": [
+                "Session Border Controller (SBC) configuration",
+                "Session Initiation Protocol (SIP) signaling",
+                "VoIP troubleshooting and diagnostics"
+            ],
+            "keywords": [
+                "SRTP",
+                "TLS",
+                "SIP over TLS",
+                "media encryption",
+                "call fraud mitigation"
+            ],
+            "common_roles": [
+                "Security Engineer",
+                "Voice\/VoIP Engineer",
+                "UC Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

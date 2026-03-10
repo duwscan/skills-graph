@@ -1,0 +1,289 @@
+{
+    "domain": "F&B",
+    "category": "Food Safety, Hygiene & Regulatory Compliance",
+    "subcategory": "Receiving inspections & temperature checks",
+    "skills": [
+        {
+            "canonical_name": "Incoming temperature measurement",
+            "aliases": [
+                "receiving temperature checks",
+                "delivery temperature check",
+                "incoming goods temperature monitoring"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Performing temperature measurements of delivered food products on receipt to verify they meet specified temperature criteria.",
+            "parent_skill": "Receiving inspections & temperature checks",
+            "related_skills": [
+                "Probe thermometer operation",
+                "Infrared thermometer operation",
+                "Temperature data logger operation",
+                "Cold chain receiving and segregation",
+                "Temperature excursion response and corrective actions"
+            ],
+            "keywords": [
+                "temp check",
+                "arrival temperature",
+                "perishable temp"
+            ],
+            "common_roles": [
+                "receiving staff",
+                "warehouse\/stock personnel",
+                "kitchen receiving staff",
+                "quality control staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Probe thermometer operation",
+            "aliases": [
+                "digital probe thermometer use",
+                "instant-read probe thermometer",
+                "sanitary probe thermometer operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Correct use of calibrated probe\/instant-read thermometers, including proper insertion technique, sanitation, and reading interpretation.",
+            "parent_skill": "Receiving inspections & temperature checks",
+            "related_skills": [
+                "Incoming temperature measurement",
+                "Thermometer calibration and verification",
+                "Temperature data logger operation"
+            ],
+            "keywords": [
+                "probe",
+                "instant-read",
+                "core temperature"
+            ],
+            "common_roles": [
+                "quality control staff",
+                "kitchen staff",
+                "receiving staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Infrared thermometer operation",
+            "aliases": [
+                "non-contact IR thermometer use",
+                "laser thermometer operation",
+                "infra-red temperature measurement"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using non-contact infrared thermometers for surface temperature checks, including emissivity considerations, distance-to-spot awareness, and limits of use.",
+            "parent_skill": "Receiving inspections & temperature checks",
+            "related_skills": [
+                "Incoming temperature measurement",
+                "Probe thermometer operation",
+                "Temperature data logger operation"
+            ],
+            "keywords": [
+                "IR",
+                "non-contact",
+                "surface temp"
+            ],
+            "common_roles": [
+                "receiving staff",
+                "warehouse staff",
+                "maintenance staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Temperature data logger operation",
+            "aliases": [
+                "temperature recorder use",
+                "data logger monitoring",
+                "continuous temperature logging"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Setting up, downloading, and interpreting temperature data loggers and recorders used in shipments and storage to document cold chain performance.",
+            "parent_skill": "Receiving inspections & temperature checks",
+            "related_skills": [
+                "Incoming temperature measurement",
+                "Cold chain receiving and segregation",
+                "Temperature excursion response and corrective actions"
+            ],
+            "keywords": [
+                "data logger",
+                "temperature chart",
+                "download logger"
+            ],
+            "common_roles": [
+                "quality control staff",
+                "logistics\/warehouse staff",
+                "supply chain operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cold chain receiving and segregation",
+            "aliases": [
+                "cold chain verification",
+                "temperature-sensitive goods segregation",
+                "perishable goods routing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Processes for inspecting, accepting, and routing refrigerated\/frozen deliveries to the correct storage area to maintain required temperatures and prevent cross-contamination.",
+            "parent_skill": "Receiving inspections & temperature checks",
+            "related_skills": [
+                "Incoming temperature measurement",
+                "Temperature data logger operation",
+                "Non-conforming shipment identification and disposition"
+            ],
+            "keywords": [
+                "cold chain",
+                "segregation",
+                "perishables"
+            ],
+            "common_roles": [
+                "warehouse staff",
+                "receiving staff",
+                "kitchen supervisors"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Receiving documentation verification and recordkeeping",
+            "aliases": [
+                "delivery paperwork verification",
+                "temperature record review on receipt",
+                "receiving logs maintenance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Reviewing delivery documents (temperature reports, packing lists) and accurately recording receiving data to meet food safety and traceability requirements.",
+            "parent_skill": "Receiving inspections & temperature checks",
+            "related_skills": [
+                "Temperature data logger operation",
+                "Non-conforming shipment identification and disposition",
+                "HACCP receiving controls knowledge"
+            ],
+            "keywords": [
+                "paperwork",
+                "receiving log",
+                "traceability"
+            ],
+            "common_roles": [
+                "receiving staff",
+                "quality assurance staff",
+                "inventory control staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Visual inspection for packaging integrity and contamination",
+            "aliases": [
+                "packaging inspection on receipt",
+                "contamination\/soiling inspection",
+                "visual quality check on delivery"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Inspecting incoming shipments for damaged packaging, signs of contamination, pest activity, and other visible defects that may affect food safety.",
+            "parent_skill": "Receiving inspections & temperature checks",
+            "related_skills": [
+                "Non-conforming shipment identification and disposition",
+                "Receiving documentation verification and recordkeeping"
+            ],
+            "keywords": [
+                "packaging",
+                "contamination",
+                "pest evidence"
+            ],
+            "common_roles": [
+                "receiving staff",
+                "quality control staff",
+                "warehouse staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Non-conforming shipment identification and disposition",
+            "aliases": [
+                "quarantine spoiled deliveries",
+                "rejecting non-compliant shipments",
+                "hold and disposition of rejected goods"
+            ],
+            "skill_type": "process_skill",
+            "description": "Identifying shipments that fail inspection or temperature requirements and executing disposition steps (quarantine, return, reject, or corrective action) per company procedures.",
+            "parent_skill": "Receiving inspections & temperature checks",
+            "related_skills": [
+                "Visual inspection for packaging integrity and contamination",
+                "Receiving documentation verification and recordkeeping",
+                "Temperature excursion response and corrective actions"
+            ],
+            "keywords": [
+                "quarantine",
+                "reject",
+                "disposition"
+            ],
+            "common_roles": [
+                "quality control staff",
+                "receiving staff",
+                "operations staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Temperature excursion response and corrective actions",
+            "aliases": [
+                "temperature deviation response",
+                "cold chain corrective action",
+                "temperature excursion handling"
+            ],
+            "skill_type": "process_skill",
+            "description": "Responding to and documenting temperature excursions for received goods, including root-cause assessment, corrective actions, and follow-up monitoring to prevent recurrence.",
+            "parent_skill": "Receiving inspections & temperature checks",
+            "related_skills": [
+                "Temperature data logger operation",
+                "Non-conforming shipment identification and disposition",
+                "HACCP receiving controls knowledge"
+            ],
+            "keywords": [
+                "excursion",
+                "corrective action",
+                "root cause"
+            ],
+            "common_roles": [
+                "quality assurance staff",
+                "warehouse\/receiving supervisors",
+                "operations staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "HACCP receiving controls knowledge",
+            "aliases": [
+                "HACCP controls for receiving",
+                "critical control point checks on receipt",
+                "HACCP-based receiving procedures"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Understanding HACCP principles as applied to the receiving stage, including identification of receiving critical control points, monitoring requirements, and corrective actions.",
+            "parent_skill": "Receiving inspections & temperature checks",
+            "related_skills": [
+                "Incoming temperature measurement",
+                "Receiving documentation verification and recordkeeping",
+                "Temperature excursion response and corrective actions"
+            ],
+            "keywords": [
+                "HACCP",
+                "CCP",
+                "receiving controls"
+            ],
+            "common_roles": [
+                "quality assurance staff",
+                "food safety coordinators",
+                "operations supervisors"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

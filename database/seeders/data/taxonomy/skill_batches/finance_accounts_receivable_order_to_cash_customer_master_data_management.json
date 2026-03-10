@@ -1,0 +1,321 @@
+{
+    "domain": "Finance",
+    "category": "Accounts Receivable & Order-to-Cash",
+    "subcategory": "Customer master data management",
+    "skills": [
+        {
+            "canonical_name": "Customer master data governance",
+            "aliases": [
+                "Customer data governance",
+                "Master data governance",
+                "MDG (master data governance)"
+            ],
+            "skill_type": "process_skill",
+            "description": "Define and enforce policies, stewardship, ownership, standards and change-control workflows for customer master records.",
+            "parent_skill": "Customer master data management",
+            "related_skills": [
+                "Customer data quality management",
+                "MDM platform configuration and administration",
+                "Customer data privacy & regulatory compliance",
+                "Customer master data onboarding & enrichment"
+            ],
+            "keywords": [
+                "stewardship",
+                "data policies",
+                "ownership",
+                "change control",
+                "standards"
+            ],
+            "common_roles": [
+                "Master Data Manager",
+                "Data Governance Specialist",
+                "Order-to-Cash Manager",
+                "Customer Data Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Customer data quality management",
+            "aliases": [
+                "Customer record quality",
+                "Customer data profiling",
+                "Data cleansing for customer records"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Profile, validate, cleanse, standardize and monitor customer records to maintain accuracy and integrity of the master file.",
+            "parent_skill": "Customer master data management",
+            "related_skills": [
+                "Customer master data governance",
+                "Duplicate detection & record survivorship for customer data",
+                "Customer master data onboarding & enrichment",
+                "Customer master data modeling & reference data design"
+            ],
+            "keywords": [
+                "profiling",
+                "validation",
+                "standardization",
+                "deduplication",
+                "data monitoring"
+            ],
+            "common_roles": [
+                "Data Quality Analyst",
+                "Customer Data Analyst",
+                "Order-to-Cash Analyst",
+                "Accounts Receivable Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Customer master data onboarding & enrichment",
+            "aliases": [
+                "Customer onboarding (master data)",
+                "Customer data enrichment",
+                "New customer data intake"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Intake, validate and enrich new customer records from sales\/CRM and external sources, including address standardization and supplemental attribute enrichment.",
+            "parent_skill": "Customer master data management",
+            "related_skills": [
+                "Customer data quality management",
+                "Customer data integration & ETL (API & batch)",
+                "MDM platform configuration and administration"
+            ],
+            "keywords": [
+                "onboarding",
+                "enrichment",
+                "address standardization",
+                "third-party enrichment",
+                "validation"
+            ],
+            "common_roles": [
+                "Customer Onboarding Specialist",
+                "Master Data Coordinator",
+                "Order-to-Cash Analyst",
+                "Customer Data Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Duplicate detection & record survivorship for customer data",
+            "aliases": [
+                "Customer deduplication",
+                "Record survivorship rules",
+                "Merge and survivorship for customer records"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Design and apply matching algorithms, rules-based and probabilistic deduplication processes, and survivorship\/merge rules to create a single authoritative customer record.",
+            "parent_skill": "Customer master data management",
+            "related_skills": [
+                "Customer data quality management",
+                "MDM platform configuration and administration",
+                "Customer master data governance"
+            ],
+            "keywords": [
+                "deduplication",
+                "match keys",
+                "survivorship",
+                "merge rules",
+                "fuzzy matching"
+            ],
+            "common_roles": [
+                "Master Data Specialist",
+                "Data Quality Analyst",
+                "Order-to-Cash Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Customer master reconciliation with AR and billing systems",
+            "aliases": [
+                "Customer data reconciliation (AR\/billing)",
+                "Master data vs billing reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Reconcile and align customer master records with accounts receivable, billing and invoicing systems to prevent mismatches that impact billing, collections and cash application.",
+            "parent_skill": "Customer master data management",
+            "related_skills": [
+                "Customer master data onboarding & enrichment",
+                "Customer data integration & ETL (API & batch)",
+                "Customer data quality management"
+            ],
+            "keywords": [
+                "reconciliation",
+                "billing alignment",
+                "accounts receivable",
+                "cash application",
+                "master-billing sync"
+            ],
+            "common_roles": [
+                "Accounts Receivable Analyst",
+                "Order-to-Cash Analyst",
+                "Billing Specialist",
+                "Master Data Coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Customer data privacy & regulatory compliance",
+            "aliases": [
+                "Customer data GDPR\/CCPA compliance",
+                "Privacy controls for customer master data",
+                "Data subject request handling (customer data)"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Apply privacy laws and regulatory requirements (e.g., GDPR, CCPA) to customer master data through consent management, data subject request processes, retention, masking and lawful processing controls.",
+            "parent_skill": "Customer master data management",
+            "related_skills": [
+                "Customer master data governance",
+                "MDM platform configuration and administration",
+                "Customer data quality management"
+            ],
+            "keywords": [
+                "GDPR",
+                "CCPA",
+                "consent",
+                "data subject requests",
+                "data retention",
+                "masking"
+            ],
+            "common_roles": [
+                "Privacy Officer",
+                "Data Governance Specialist",
+                "Master Data Manager",
+                "Compliance Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "MDM platform configuration and administration",
+            "aliases": [
+                "MDM administration",
+                "MDM platform management",
+                "Informatica MDM \/ SAP MDG \/ Reltio administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configure, administer and maintain Master Data Management (MDM) platforms and hubs, including data models, workflows, matching engines, survivorship rules and integration endpoints.",
+            "parent_skill": "Customer master data management",
+            "related_skills": [
+                "Customer master data governance",
+                "Duplicate detection & record survivorship for customer data",
+                "Customer data integration & ETL (API & batch)"
+            ],
+            "keywords": [
+                "Informatica MDM",
+                "SAP MDG",
+                "Reltio",
+                "MDM hub",
+                "workflow configuration",
+                "matching engine"
+            ],
+            "common_roles": [
+                "MDM Administrator",
+                "Master Data Manager",
+                "Data Platform Engineer",
+                "Master Data Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SQL for master data management",
+            "aliases": [
+                "SQL querying for master data",
+                "T-SQL for master data",
+                "PL\/SQL for master data"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Write and optimize SQL queries, joins, updates and stored procedures to extract, transform, validate and maintain customer master tables in relational databases.",
+            "parent_skill": "Customer master data management",
+            "related_skills": [
+                "Customer data quality management",
+                "Customer master data onboarding & enrichment",
+                "Customer master reconciliation with AR and billing systems"
+            ],
+            "keywords": [
+                "SQL",
+                "T-SQL",
+                "PL\/SQL",
+                "queries",
+                "stored procedures",
+                "data manipulation"
+            ],
+            "common_roles": [
+                "Data Analyst",
+                "Master Data Specialist",
+                "Database Developer",
+                "Order-to-Cash Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Customer data integration & ETL (API & batch)",
+            "aliases": [
+                "Customer data ETL",
+                "API-based customer data integration",
+                "Data pipelines for customer master"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design, build and operate integration pipelines (APIs, middleware, batch ETL) to ingest, transform and synchronize customer master data across CRM, ERP, billing and third-party systems.",
+            "parent_skill": "Customer master data management",
+            "related_skills": [
+                "MDM platform configuration and administration",
+                "Customer master data onboarding & enrichment",
+                "Customer master reconciliation with AR and billing systems"
+            ],
+            "keywords": [
+                "ETL",
+                "API",
+                "integration",
+                "middleware",
+                "data pipelines",
+                "synchronization"
+            ],
+            "common_roles": [
+                "Integration Developer",
+                "ETL Developer",
+                "Data Engineer",
+                "Order-to-Cash Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Customer master data modeling & reference data design",
+            "aliases": [
+                "Customer data modeling",
+                "Reference data design (customer)",
+                "Customer entity modeling"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Design customer master data models, attribute sets, hierarchies and reference data taxonomies to support AR, billing, reporting and analytics requirements.",
+            "parent_skill": "Customer master data management",
+            "related_skills": [
+                "Customer data quality management",
+                "MDM platform configuration and administration",
+                "Customer master data governance"
+            ],
+            "keywords": [
+                "data model",
+                "entity-relationship",
+                "reference data",
+                "hierarchies",
+                "attributes"
+            ],
+            "common_roles": [
+                "Data Architect",
+                "Master Data Manager",
+                "Customer Data Analyst",
+                "Order-to-Cash Architect"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

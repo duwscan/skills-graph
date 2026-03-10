@@ -1,0 +1,303 @@
+{
+    "domain": "F&B",
+    "category": "Beverage Service (Non-Alcoholic)",
+    "subcategory": "Tea preparation & service",
+    "skills": [
+        {
+            "canonical_name": "Tea brewing & steeping control",
+            "aliases": [
+                "Tea brewing",
+                "Steeping control",
+                "Tea infusion control"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Controlling tea-to-water ratio, water temperature, and steeping time to achieve consistent extraction and desired flavor profile.",
+            "parent_skill": "Tea preparation & service",
+            "related_skills": [
+                "Tea sensory evaluation",
+                "Tea blending & formulation",
+                "Iced & cold-brew tea preparation & batching"
+            ],
+            "keywords": [
+                "steeping time",
+                "brew temperature",
+                "tea-to-water ratio",
+                "infusion",
+                "extraction"
+            ],
+            "common_roles": [
+                "Cafe staff",
+                "Front-of-house",
+                "Beverage service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tea blending & formulation",
+            "aliases": [
+                "Tea blending",
+                "Blend formulation",
+                "Custom tea blends"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and balancing tea blends and ingredient ratios (leaf teas, herbs, spices) for retail or beverage menus to achieve target flavors and consistency.",
+            "parent_skill": "Tea preparation & service",
+            "related_skills": [
+                "Tea sensory evaluation",
+                "Tea menu development & recipe standardization"
+            ],
+            "keywords": [
+                "blend ratios",
+                "flavor balancing",
+                "base teas",
+                "herbal blends",
+                "formulation"
+            ],
+            "common_roles": [
+                "Retail staff",
+                "Beverage product developer",
+                "Cafe staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tea menu development & recipe standardization",
+            "aliases": [
+                "Tea menu design",
+                "Recipe standardization",
+                "Tea beverage recipe writing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating standardized recipes, portion controls, SOPs and menu descriptions for tea beverages to ensure consistency, cost control and trainability.",
+            "parent_skill": "Tea preparation & service",
+            "related_skills": [
+                "Tea brewing & steeping control",
+                "Iced & cold-brew tea preparation & batching",
+                "Tea inventory & stock rotation"
+            ],
+            "keywords": [
+                "SOP",
+                "recipe card",
+                "portion control",
+                "menu engineering",
+                "costing"
+            ],
+            "common_roles": [
+                "Beverage service staff",
+                "Cafe staff",
+                "Operational supervisors"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tea sensory evaluation",
+            "aliases": [
+                "Tea cupping",
+                "Sensory tasting",
+                "Tea tasting evaluation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Assessing tea by aroma, flavor, mouthfeel and aftertaste to identify quality, faults and flavor characteristics for quality control or product development.",
+            "parent_skill": "Tea preparation & service",
+            "related_skills": [
+                "Tea blending & formulation",
+                "Tea brewing & steeping control"
+            ],
+            "keywords": [
+                "cupping",
+                "aroma",
+                "flavor profile",
+                "off-flavors",
+                "sensory analysis"
+            ],
+            "common_roles": [
+                "Retail staff",
+                "Product development teams",
+                "Quality control staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Milk texturing for tea drinks",
+            "aliases": [
+                "Milk steaming for tea",
+                "Milk frothing for tea",
+                "Milk texturing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Steaming and frothing dairy and plant-based milks to produce appropriate temperature, microfoam and texture for milk-based tea beverages (e.g., chai lattes, milk teas).",
+            "parent_skill": "Tea preparation & service",
+            "related_skills": [
+                "Tea brewing & steeping control",
+                "Tea menu development & recipe standardization"
+            ],
+            "keywords": [
+                "microfoam",
+                "steam wand",
+                "milk alternatives",
+                "temperature control",
+                "frothing"
+            ],
+            "common_roles": [
+                "Cafe staff",
+                "Beverage service staff",
+                "Front-of-house"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Iced & cold-brew tea preparation & batching",
+            "aliases": [
+                "Iced tea preparation",
+                "Cold brew tea batching",
+                "Batch brewing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Preparing large-format iced and cold-brew teas, including concentration\/dilution calculations, cold extraction times, chilling, holding and service best practices for volume service.",
+            "parent_skill": "Tea preparation & service",
+            "related_skills": [
+                "Tea brewing & steeping control",
+                "Tea menu development & recipe standardization",
+                "Tea inventory & stock rotation"
+            ],
+            "keywords": [
+                "batch brewing",
+                "cold extraction",
+                "concentrate",
+                "holding times",
+                "iced tea"
+            ],
+            "common_roles": [
+                "Beverage service staff",
+                "Cafe staff",
+                "Catering staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tea service etiquette & customer recommendations",
+            "aliases": [
+                "Tea service etiquette",
+                "Tea pairing & recommendations",
+                "Customer tea recommendations"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Delivering polished table-side tea service, advising customers on tea choices, pairing teas with food, and explaining brewing\/serving options clearly and courteously.",
+            "parent_skill": "Tea preparation & service",
+            "related_skills": [
+                "Tea sensory evaluation",
+                "Tea menu development & recipe standardization"
+            ],
+            "keywords": [
+                "pairing",
+                "service sequence",
+                "customer advice",
+                "presentation",
+                "service etiquette"
+            ],
+            "common_roles": [
+                "Front-of-house",
+                "Cafe staff",
+                "Retail staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tea equipment operation & maintenance",
+            "aliases": [
+                "Kettle operation",
+                "Tea brewer maintenance",
+                "Tea equipment cleaning"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operating, cleaning and maintaining tea-specific equipment (kettles, brewers, infusers, steam wands, water heaters) including routine descaling and safety checks.",
+            "parent_skill": "Tea preparation & service",
+            "related_skills": [
+                "Milk texturing for tea drinks",
+                "Iced & cold-brew tea preparation & batching",
+                "Tea safety, hygiene & allergen management"
+            ],
+            "keywords": [
+                "descaling",
+                "steam wand maintenance",
+                "infuser",
+                "electric kettle",
+                "equipment cleaning"
+            ],
+            "common_roles": [
+                "Cafe staff",
+                "Beverage service staff",
+                "Kitchen staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tea inventory & stock rotation",
+            "aliases": [
+                "Tea stock management",
+                "Tea inventory control",
+                "FIFO for tea"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing tea and ingredient inventories, controlling par levels, rotating stock (FIFO), and storing leaves and perishable components under appropriate conditions to preserve quality.",
+            "parent_skill": "Tea preparation & service",
+            "related_skills": [
+                "Tea menu development & recipe standardization",
+                "Tea equipment operation & maintenance",
+                "Tea safety, hygiene & allergen management"
+            ],
+            "keywords": [
+                "par levels",
+                "FIFO",
+                "storage conditions",
+                "ordering",
+                "waste reduction"
+            ],
+            "common_roles": [
+                "Cafe staff",
+                "Back-of-house",
+                "Beverage service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tea safety, hygiene & allergen management",
+            "aliases": [
+                "Tea hygiene",
+                "Allergen handling for beverages",
+                "Sanitation for tea service"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Applying food-safety and sanitation practices specific to tea service, preventing cross-contamination, managing allergen information and maintaining safe storage\/serving conditions.",
+            "parent_skill": "Tea preparation & service",
+            "related_skills": [
+                "Tea equipment operation & maintenance",
+                "Tea inventory & stock rotation",
+                "Milk texturing for tea drinks"
+            ],
+            "keywords": [
+                "sanitation",
+                "cross-contamination",
+                "allergen control",
+                "food safety",
+                "cleaning protocols"
+            ],
+            "common_roles": [
+                "Cafe staff",
+                "Beverage service staff",
+                "Back-of-house"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

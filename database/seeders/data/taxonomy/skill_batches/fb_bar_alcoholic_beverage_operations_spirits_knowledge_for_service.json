@@ -1,0 +1,310 @@
+{
+    "domain": "F&B",
+    "category": "Bar & Alcoholic Beverage Operations",
+    "subcategory": "Spirits knowledge for service",
+    "skills": [
+        {
+            "canonical_name": "Spirits sensory evaluation",
+            "aliases": [
+                "spirit tasting",
+                "sensory evaluation of spirits",
+                "organoleptic assessment of spirits",
+                "spirits tasting and profiling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Ability to assess spirits' aroma, flavor, mouthfeel, texture and finish, identify tasting notes and detect common faults to inform service and recommendations.",
+            "parent_skill": "Spirits knowledge for service",
+            "related_skills": [
+                "Spirits classification and regional styles",
+                "Distillation and maturation fundamentals",
+                "Guest education and tasting room presentation",
+                "Spirits selection for cocktails"
+            ],
+            "keywords": [
+                "aroma",
+                "palate",
+                "finish",
+                "body",
+                "fault detection"
+            ],
+            "common_roles": [
+                "bar staff",
+                "beverage team",
+                "hospitality service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Distillation and maturation fundamentals",
+            "aliases": [
+                "spirit production basics",
+                "distillation fundamentals",
+                "maturation and cask influence"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Understanding core production processes (fermentation, distillation, cuts) and maturation factors (cask type, age, climate) that shape spirit flavor and quality.",
+            "parent_skill": "Spirits knowledge for service",
+            "related_skills": [
+                "Spirits sensory evaluation",
+                "Spirits classification and regional styles",
+                "Spirit inventory and cask\/sample management"
+            ],
+            "keywords": [
+                "distillation",
+                "fermentation",
+                "cask",
+                "aging",
+                "angel's share"
+            ],
+            "common_roles": [
+                "beverage team",
+                "bar staff",
+                "hospitality product specialists"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Spirits classification and regional styles",
+            "aliases": [
+                "spirit categories",
+                "regional spirit styles",
+                "whisky\/rum\/tequila\/gin\/brandy knowledge"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Knowledge of major spirits categories, sub-styles and geographic\/regional typicity (e.g., scotch vs bourbon, mezcal vs tequila) to support accurate recommendations and menu curation.",
+            "parent_skill": "Spirits knowledge for service",
+            "related_skills": [
+                "Spirits sensory evaluation",
+                "Distillation and maturation fundamentals",
+                "Spirits selection for cocktails"
+            ],
+            "keywords": [
+                "whisky",
+                "rum",
+                "tequila",
+                "gin",
+                "brandy",
+                "regional typicity"
+            ],
+            "common_roles": [
+                "bar staff",
+                "beverage team",
+                "menu development staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Spirits service and pouring techniques",
+            "aliases": [
+                "neat and on-the-rocks service",
+                "spirit decanting and warming",
+                "proper spirit pour"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Practical techniques for serving spirits (neat, with ice, diluted, warmed, decanted), measuring accurate pours and presenting spirits to guests according to style and service context.",
+            "parent_skill": "Spirits knowledge for service",
+            "related_skills": [
+                "Spirit glassware selection and presentation",
+                "Guest education and tasting room presentation",
+                "Responsible alcohol service and local compliance"
+            ],
+            "keywords": [
+                "neat",
+                "rocks",
+                "jigger",
+                "decanting",
+                "presentation"
+            ],
+            "common_roles": [
+                "bar staff",
+                "beverage team",
+                "hospitality service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Spirits selection for cocktails",
+            "aliases": [
+                "spirit selection for mixes",
+                "ingredient pairing for cocktails",
+                "choosing base spirits"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Ability to choose appropriate spirits and spirit expressions for cocktails based on flavor profile, strength, and interaction with other ingredients to achieve intended balance.",
+            "parent_skill": "Spirits knowledge for service",
+            "related_skills": [
+                "Spirits sensory evaluation",
+                "Spirits classification and regional styles",
+                "Food and spirits pairing"
+            ],
+            "keywords": [
+                "base spirit",
+                "balance",
+                "botanicals",
+                "strength",
+                "mixology"
+            ],
+            "common_roles": [
+                "bar staff",
+                "beverage team",
+                "menu development staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food and spirits pairing",
+            "aliases": [
+                "pairing spirits with food",
+                "menu pairing with spirits",
+                "culinary-spirit pairing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Knowledge and techniques for pairing spirits with dishes, considering flavor weight, texture and aromatic compatibility to enhance guest dining experiences.",
+            "parent_skill": "Spirits knowledge for service",
+            "related_skills": [
+                "Spirits sensory evaluation",
+                "Spirits selection for cocktails",
+                "Spirits classification and regional styles"
+            ],
+            "keywords": [
+                "pairing",
+                "flavor matching",
+                "mouthfeel",
+                "umami",
+                "balance"
+            ],
+            "common_roles": [
+                "beverage team",
+                "menu development staff",
+                "hospitality service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Guest education and tasting room presentation",
+            "aliases": [
+                "presenting tasting notes",
+                "spirit flight presentation",
+                "guest-facing tasting education"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Communicating tasting notes, provenance and production stories to guests clearly and engagingly; conducting guided tastings and spirit flights in a service setting.",
+            "parent_skill": "Spirits knowledge for service",
+            "related_skills": [
+                "Spirits sensory evaluation",
+                "Spirits classification and regional styles",
+                "Spirits service and pouring techniques"
+            ],
+            "keywords": [
+                "tasting flight",
+                "storytelling",
+                "guest engagement",
+                "education",
+                "presentation"
+            ],
+            "common_roles": [
+                "bar staff",
+                "beverage team",
+                "hospitality service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Responsible alcohol service and local compliance",
+            "aliases": [
+                "alcohol service regulations",
+                "age verification and refusal",
+                "responsible beverage service"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Knowledge of legal requirements and best practices for safe alcohol service, including age verification, identifying intoxication, refusal protocols and record-keeping relevant to local jurisdictions.",
+            "parent_skill": "Spirits knowledge for service",
+            "related_skills": [
+                "Spirits service and pouring techniques",
+                "Guest education and tasting room presentation",
+                "Spirit inventory and cask\/sample management"
+            ],
+            "keywords": [
+                "ID check",
+                "refusal",
+                "intoxication",
+                "local law",
+                "duty of care"
+            ],
+            "common_roles": [
+                "bar staff",
+                "beverage team",
+                "hospitality service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Spirit inventory and cask\/sample management",
+            "aliases": [
+                "spirits stock control",
+                "cask sample handling",
+                "bottle rotation and stocktaking"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operational practices for ordering, receiving, storing, rotating and tracking bottles and cask samples, including portion control, theft reduction and sample provenance management.",
+            "parent_skill": "Spirits knowledge for service",
+            "related_skills": [
+                "Distillation and maturation fundamentals",
+                "Responsible alcohol service and local compliance",
+                "Spirits service and pouring techniques"
+            ],
+            "keywords": [
+                "stocktake",
+                "FIFO",
+                "portion control",
+                "cask sample",
+                "inventory"
+            ],
+            "common_roles": [
+                "beverage team",
+                "bar staff",
+                "back-of-house beverage staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Spirit glassware selection and presentation",
+            "aliases": [
+                "glassware for spirits",
+                "serving presentation for spirits",
+                "tasting glass selection"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Selecting appropriate glassware and presentation techniques for different spirits and service contexts to optimize aroma delivery, appearance and guest experience.",
+            "parent_skill": "Spirits knowledge for service",
+            "related_skills": [
+                "Spirits service and pouring techniques",
+                "Guest education and tasting room presentation",
+                "Spirits sensory evaluation"
+            ],
+            "keywords": [
+                "snifter",
+                "tulip glass",
+                "glencairn",
+                "presentation",
+                "aeration"
+            ],
+            "common_roles": [
+                "bar staff",
+                "beverage team",
+                "hospitality service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

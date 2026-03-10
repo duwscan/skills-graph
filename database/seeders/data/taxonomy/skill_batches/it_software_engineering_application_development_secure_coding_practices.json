@@ -1,0 +1,325 @@
+{
+    "domain": "IT",
+    "category": "Software Engineering & Application Development",
+    "subcategory": "Secure coding practices",
+    "skills": [
+        {
+            "canonical_name": "Input validation and output encoding",
+            "aliases": [
+                "input sanitization",
+                "output escaping",
+                "data validation and encoding",
+                "validate inputs",
+                "escape outputs"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing robust validation, canonicalization, and output encoding to prevent injection and data integrity vulnerabilities.",
+            "parent_skill": "Secure coding practices",
+            "related_skills": [
+                "OWASP Top 10 mitigation",
+                "Secure error handling and logging",
+                "Static application security testing (SAST)"
+            ],
+            "keywords": [
+                "input validation",
+                "sanitization",
+                "escape",
+                "injection prevention",
+                "encoding"
+            ],
+            "common_roles": [
+                "Software Developer",
+                "Frontend Developer",
+                "Backend Engineer",
+                "Full Stack Developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Authentication and session management security",
+            "aliases": [
+                "secure authentication",
+                "session handling security",
+                "secure login implementation",
+                "token management"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Implementing secure authentication flows, session lifecycle management, token handling, multi-factor considerations, and protection against session-related attacks.",
+            "parent_skill": "Secure coding practices",
+            "related_skills": [
+                "Secure API design",
+                "Secure use of cryptography",
+                "OWASP Top 10 mitigation"
+            ],
+            "keywords": [
+                "authentication",
+                "session management",
+                "JWT",
+                "cookies",
+                "session fixation",
+                "MFA"
+            ],
+            "common_roles": [
+                "Software Developer",
+                "Backend Engineer",
+                "Application Security Engineer",
+                "DevSecOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Secure error handling and logging",
+            "aliases": [
+                "secure logging",
+                "error sanitization",
+                "exception handling security",
+                "secure audit logging"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Writing error handling and logging that avoid leaking sensitive data, provide useful diagnostics, and support secure monitoring and forensics without exposing attack surface.",
+            "parent_skill": "Secure coding practices",
+            "related_skills": [
+                "Runtime application protection & monitoring",
+                "Dependency & software supply chain security",
+                "Static application security testing (SAST)"
+            ],
+            "keywords": [
+                "error handling",
+                "logging",
+                "sensitive data redaction",
+                "audit trails",
+                "exception management"
+            ],
+            "common_roles": [
+                "Software Developer",
+                "Site Reliability Engineer",
+                "Security Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Secure use of cryptography",
+            "aliases": [
+                "cryptography for developers",
+                "application cryptography",
+                "secure encryption usage",
+                "proper use of crypto primitives"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying cryptographic primitives correctly (encryption, signing, hashing), managing keys securely, and avoiding common misuses of cryptography in application code.",
+            "parent_skill": "Secure coding practices",
+            "related_skills": [
+                "Dependency & software supply chain security",
+                "Authentication & session management security",
+                "Compliance and data protection"
+            ],
+            "keywords": [
+                "encryption",
+                "hashing",
+                "HMAC",
+                "key management",
+                "TLS",
+                "crypto misuse"
+            ],
+            "common_roles": [
+                "Software Developer",
+                "Backend Engineer",
+                "Security Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Threat modeling",
+            "aliases": [
+                "attack surface analysis",
+                "threat analysis",
+                "STRIDE modeling",
+                "misuse case analysis"
+            ],
+            "skill_type": "process_skill",
+            "description": "Systematically identifying assets, attack surfaces, threat actors, and mitigation strategies to prioritize secure design and development decisions.",
+            "parent_skill": "Secure coding practices",
+            "related_skills": [
+                "OWASP Top 10 mitigation",
+                "Secure API design",
+                "Security-focused code review"
+            ],
+            "keywords": [
+                "threat model",
+                "attack surface",
+                "risk assessment",
+                "STRIDE",
+                "DREAD"
+            ],
+            "common_roles": [
+                "Security Architect",
+                "Application Security Engineer",
+                "Software Architect",
+                "DevSecOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dependency and software supply chain security",
+            "aliases": [
+                "third-party dependency management",
+                "software bill of materials (SBOM) practices",
+                "vulnerability patching and triage"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing third-party libraries and build artifacts, tracking vulnerabilities, applying patches, and maintaining SBOMs to reduce supply-chain risk.",
+            "parent_skill": "Secure coding practices",
+            "related_skills": [
+                "Static application security testing (SAST)",
+                "Runtime application protection & monitoring",
+                "Secure use of cryptography"
+            ],
+            "keywords": [
+                "dependency management",
+                "SBOM",
+                "software supply chain",
+                "vulnerability scanning",
+                "patch management"
+            ],
+            "common_roles": [
+                "DevOps Engineer",
+                "DevSecOps Engineer",
+                "Software Developer",
+                "Release Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Static application security testing (SAST)",
+            "aliases": [
+                "static code analysis",
+                "SAST tools usage",
+                "code scanning"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using static analysis tools and techniques to identify security flaws in source code, interpreting results, and integrating scans into CI pipelines for early detection.",
+            "parent_skill": "Secure coding practices",
+            "related_skills": [
+                "Security-focused code review",
+                "Dependency & software supply chain security",
+                "OWASP Top 10 mitigation"
+            ],
+            "keywords": [
+                "SAST",
+                "static analysis",
+                "code scan",
+                "CI integration",
+                "false positive triage"
+            ],
+            "common_roles": [
+                "Application Security Engineer",
+                "Software Developer",
+                "QA Engineer",
+                "DevSecOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Secure API design",
+            "aliases": [
+                "API security",
+                "secure REST API development",
+                "secure GraphQL design",
+                "API authentication and authorization"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing APIs with secure authentication\/authorization, input validation, rate limiting, safe error handling, and least-privilege access patterns.",
+            "parent_skill": "Secure coding practices",
+            "related_skills": [
+                "Authentication & session management security",
+                "Threat modeling",
+                "OWASP Top 10 mitigation"
+            ],
+            "keywords": [
+                "API security",
+                "OAuth",
+                "rate limiting",
+                "input validation",
+                "API gateway"
+            ],
+            "common_roles": [
+                "Backend Engineer",
+                "API Developer",
+                "Security Engineer",
+                "Full Stack Developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Security-focused code review",
+            "aliases": [
+                "security code review",
+                "vulnerability triage",
+                "secure peer review"
+            ],
+            "skill_type": "process_skill",
+            "description": "Conducting manual and tool-assisted code reviews with a security lens to identify logic flaws, insecure patterns, and design issues, and guiding remediation.",
+            "parent_skill": "Secure coding practices",
+            "related_skills": [
+                "Static application security testing (SAST)",
+                "Threat modeling",
+                "Secure error handling and logging"
+            ],
+            "keywords": [
+                "code review",
+                "vulnerability triage",
+                "manual review",
+                "secure patterns",
+                "remediation guidance"
+            ],
+            "common_roles": [
+                "Software Developer",
+                "Application Security Engineer",
+                "Tech Lead",
+                "Security Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Runtime application protection and monitoring",
+            "aliases": [
+                "RASP",
+                "runtime security monitoring",
+                "application runtime defense",
+                "security observability"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing runtime protection, detection, and monitoring (including RASP, telemetry and alerts) to detect and mitigate attacks in production and support incident response.",
+            "parent_skill": "Secure coding practices",
+            "related_skills": [
+                "Secure error handling and logging",
+                "Dependency & software supply chain security",
+                "Static application security testing (SAST)"
+            ],
+            "keywords": [
+                "runtime protection",
+                "RASP",
+                "observability",
+                "telemetry",
+                "anomaly detection"
+            ],
+            "common_roles": [
+                "Site Reliability Engineer",
+                "DevSecOps Engineer",
+                "Security Operations Engineer",
+                "Application Security Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

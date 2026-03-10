@@ -1,0 +1,302 @@
+{
+    "domain": "Finance",
+    "category": "Risk, Compliance & Financial Crime (Finance-Side)",
+    "subcategory": "Financial risk analytics support",
+    "skills": [
+        {
+            "canonical_name": "Risk data extraction and ETL",
+            "aliases": [
+                "Risk data ETL",
+                "Data extraction for risk analytics",
+                "Risk ETL"
+            ],
+            "skill_type": "process_skill",
+            "description": "Extracting, transforming and loading datasets for financial risk analytics workflows, including pipelining, basic cleansing and integration from multiple sources.",
+            "parent_skill": "Financial risk analytics support",
+            "related_skills": [
+                "SQL for risk data querying",
+                "Python for risk analytics",
+                "Data quality validation for risk datasets"
+            ],
+            "keywords": [
+                "ETL",
+                "data pipeline",
+                "ingestion",
+                "data integration",
+                "extraction"
+            ],
+            "common_roles": [
+                "Risk Data Analyst",
+                "Risk Data Engineer",
+                "Credit Risk Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SQL for risk data querying",
+            "aliases": [
+                "SQL querying for risk",
+                "Risk SQL",
+                "T-SQL for risk data"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Writing SQL queries to extract, join, aggregate and transform risk datasets from relational databases for analysis, reconciliation and reporting.",
+            "parent_skill": "Financial risk analytics support",
+            "related_skills": [
+                "Risk data extraction and ETL",
+                "Data quality validation for risk datasets",
+                "Risk reporting automation"
+            ],
+            "keywords": [
+                "SQL",
+                "queries",
+                "joins",
+                "aggregation",
+                "stored procedures"
+            ],
+            "common_roles": [
+                "Risk Data Analyst",
+                "Risk Reporting Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Python for risk analytics",
+            "aliases": [
+                "Python for risk modeling",
+                "Pandas for risk analytics",
+                "Python scripting for risk"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Python and common libraries (pandas, numpy, scipy, scikit-learn) to clean, analyze, prototype models and compute risk metrics and simulations.",
+            "parent_skill": "Financial risk analytics support",
+            "related_skills": [
+                "SQL for risk data querying",
+                "Value-at-Risk (VaR) calculation",
+                "Model backtesting and performance testing",
+                "Risk dashboarding and visualization"
+            ],
+            "keywords": [
+                "python",
+                "pandas",
+                "numpy",
+                "scripting",
+                "automation"
+            ],
+            "common_roles": [
+                "Quantitative Analyst",
+                "Risk Analyst",
+                "Model Risk Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data quality validation for risk datasets",
+            "aliases": [
+                "Risk data validation",
+                "Data reconciliation for risk",
+                "Risk dataset QA"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and executing validation checks, reconciliations and exception handling to ensure completeness, accuracy and lineage of risk data.",
+            "parent_skill": "Financial risk analytics support",
+            "related_skills": [
+                "Risk data extraction and ETL",
+                "SQL for risk data querying",
+                "Regulatory reporting support",
+                "Exposure and collateral calculation support"
+            ],
+            "keywords": [
+                "data validation",
+                "reconciliation",
+                "QA",
+                "data completeness",
+                "error checking"
+            ],
+            "common_roles": [
+                "Risk Data Analyst",
+                "Model Validation Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Model backtesting and performance testing",
+            "aliases": [
+                "Backtesting of risk models",
+                "Model performance testing",
+                "Backtest risk models"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Conducting backtests and statistical performance assessments to evaluate predictive accuracy, calibration and stability of risk models over time.",
+            "parent_skill": "Financial risk analytics support",
+            "related_skills": [
+                "Value-at-Risk (VaR) calculation",
+                "Python for risk analytics",
+                "Data quality validation for risk datasets"
+            ],
+            "keywords": [
+                "backtest",
+                "out-of-sample",
+                "model performance",
+                "p-value",
+                "validation"
+            ],
+            "common_roles": [
+                "Model Validation Analyst",
+                "Quantitative Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Value-at-Risk (VaR) calculation",
+            "aliases": [
+                "VaR computation",
+                "Value at Risk calculation",
+                "VaR modeling"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Computing Value-at-Risk for portfolios using parametric, historical and Monte Carlo methods to quantify market risk exposures.",
+            "parent_skill": "Financial risk analytics support",
+            "related_skills": [
+                "Model backtesting and performance testing",
+                "Python for risk analytics",
+                "Risk dashboarding and visualization"
+            ],
+            "keywords": [
+                "VaR",
+                "Monte Carlo",
+                "historical simulation",
+                "parametric VaR",
+                "confidence interval"
+            ],
+            "common_roles": [
+                "Risk Analyst",
+                "Quantitative Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Scenario and stress testing data preparation",
+            "aliases": [
+                "Stress test data prep",
+                "Scenario analysis data preparation",
+                "Stress testing data mapping"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Preparing, mapping and transforming exposures, macro variables and shock parameters required for scenario and stress testing exercises.",
+            "parent_skill": "Financial risk analytics support",
+            "related_skills": [
+                "Exposure and collateral calculation support",
+                "Risk data extraction and ETL",
+                "Regulatory reporting support"
+            ],
+            "keywords": [
+                "stress testing",
+                "scenario analysis",
+                "data mapping",
+                "macro shocks",
+                "scenario inputs"
+            ],
+            "common_roles": [
+                "Stress Testing Analyst",
+                "Risk Reporting Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Exposure and collateral calculation support",
+            "aliases": [
+                "EAD calculation support",
+                "Exposure at default calculation",
+                "Collateral valuation support"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculating exposure metrics (EAD), collateral valuations, netting and adjustments to quantify credit and counterparty exposures for risk measurement.",
+            "parent_skill": "Financial risk analytics support",
+            "related_skills": [
+                "Data quality validation for risk datasets",
+                "Scenario and stress testing data preparation",
+                "Value-at-Risk (VaR) calculation"
+            ],
+            "keywords": [
+                "EAD",
+                "exposure",
+                "collateral",
+                "netting",
+                "counterparty exposure"
+            ],
+            "common_roles": [
+                "Credit Risk Analyst",
+                "Counterparty Risk Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Risk reporting automation",
+            "aliases": [
+                "Automated risk reporting",
+                "Risk report generation automation",
+                "Scheduled risk reporting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Automating the generation, refresh and distribution of risk reports and scorecards using templates, scheduling and integration with data sources.",
+            "parent_skill": "Financial risk analytics support",
+            "related_skills": [
+                "SQL for risk data querying",
+                "Risk data extraction and ETL",
+                "Risk dashboarding and visualization"
+            ],
+            "keywords": [
+                "automation",
+                "reporting",
+                "scheduling",
+                "templating",
+                "distribution"
+            ],
+            "common_roles": [
+                "Risk Reporting Analyst",
+                "Risk Data Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Risk dashboarding and visualization",
+            "aliases": [
+                "Risk visualization",
+                "Dashboarding for risk analytics",
+                "Risk dashboards (Tableau\/Power BI)"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing interactive dashboards and visualizations to present risk metrics, trends, exposures and exceptions to stakeholders for insight and decision-making.",
+            "parent_skill": "Financial risk analytics support",
+            "related_skills": [
+                "Python for risk analytics",
+                "Risk reporting automation",
+                "Value-at-Risk (VaR) calculation"
+            ],
+            "keywords": [
+                "dashboard",
+                "visualization",
+                "Tableau",
+                "Power BI",
+                "charts"
+            ],
+            "common_roles": [
+                "Risk Reporting Analyst",
+                "BI Analyst",
+                "Risk Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

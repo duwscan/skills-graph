@@ -1,0 +1,297 @@
+{
+    "domain": "F&B",
+    "category": "Bar & Alcoholic Beverage Operations",
+    "subcategory": "Responsible alcohol service compliance",
+    "skills": [
+        {
+            "canonical_name": "Age verification and ID checking",
+            "aliases": [
+                "ID verification",
+                "age checking",
+                "checking IDs",
+                "verify legal drinking age",
+                "DOB verification"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Accurately verify patrons' legal drinking age by inspecting government-issued IDs, recognizing valid formats, and identifying common signs of forged or altered identification.",
+            "parent_skill": "Responsible alcohol service compliance",
+            "related_skills": [
+                "Electronic ID scanner operation",
+                "Recognizing signs of intoxication",
+                "Local alcohol laws and licensing compliance"
+            ],
+            "keywords": [
+                "ID",
+                "driver's license",
+                "passport",
+                "fake ID",
+                "age limit"
+            ],
+            "common_roles": [
+                "front-of-house staff",
+                "bar staff",
+                "service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Electronic ID scanner operation",
+            "aliases": [
+                "ID scanner use",
+                "ID scanning system operation",
+                "age-verification system operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operate electronic ID scanning hardware and software to capture, validate and log identity and age data in accordance with privacy and local legal requirements.",
+            "parent_skill": "Responsible alcohol service compliance",
+            "related_skills": [
+                "Age verification and ID checking",
+                "Incident documentation and reporting"
+            ],
+            "keywords": [
+                "ID scanner",
+                "barcode reader",
+                "age-verification device",
+                "POS integration"
+            ],
+            "common_roles": [
+                "front-of-house staff",
+                "bar staff",
+                "hospitality supervisors"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Recognizing signs of intoxication",
+            "aliases": [
+                "identify intoxication",
+                "spotting drunkenness",
+                "detecting impairment"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Observe and interpret behavioral and physiological indicators of alcohol impairment (e.g., speech, coordination, aggression, motor skills) to inform safe service decisions.",
+            "parent_skill": "Responsible alcohol service compliance",
+            "related_skills": [
+                "Refusal of service and de-escalation",
+                "Over-service prevention protocols",
+                "Alcohol and medication interaction awareness"
+            ],
+            "keywords": [
+                "slurred speech",
+                "coordination",
+                "behavioral cues",
+                "intoxication signs"
+            ],
+            "common_roles": [
+                "front-of-house staff",
+                "bar staff",
+                "security personnel"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Refusal of service and de-escalation",
+            "aliases": [
+                "refusing service",
+                "service denial",
+                "conflict de-escalation",
+                "de-escalation techniques"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Apply verbal and non-verbal communication techniques and firm but polite procedures to refuse alcohol service, reduce conflict, and safely manage confrontational patrons.",
+            "parent_skill": "Responsible alcohol service compliance",
+            "related_skills": [
+                "Recognizing signs of intoxication",
+                "Incident documentation and reporting",
+                "Facilitating safe transport and alternative service coordination"
+            ],
+            "keywords": [
+                "de-escalation",
+                "refusal",
+                "customer communication",
+                "conflict management"
+            ],
+            "common_roles": [
+                "front-of-house staff",
+                "service staff",
+                "hospitality supervisors"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Standard drink pour control",
+            "aliases": [
+                "standard pour",
+                "drink measurement",
+                "portion control (alcohol)"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Measure and serve alcoholic beverages to standardized portion sizes (standard drinks) using jiggers, pour spouts, and calibrated equipment to ensure consistency and compliance with serving limits.",
+            "parent_skill": "Responsible alcohol service compliance",
+            "related_skills": [
+                "Over-service prevention protocols",
+                "Recognizing signs of intoxication"
+            ],
+            "keywords": [
+                "jigger",
+                "measured pour",
+                "standard drink",
+                "portion control"
+            ],
+            "common_roles": [
+                "bar staff",
+                "front-of-house staff",
+                "service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Over-service prevention protocols",
+            "aliases": [
+                "over-service prevention",
+                "service cutoff procedures",
+                "drink limit policies"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and implement operational procedures (e.g., drink limits, last-call policies, staggered service) to minimize the risk of over-serving patrons and ensure adherence to responsible service standards.",
+            "parent_skill": "Responsible alcohol service compliance",
+            "related_skills": [
+                "Standard drink pour control",
+                "Recognizing signs of intoxication",
+                "Refusal of service and de-escalation"
+            ],
+            "keywords": [
+                "last call",
+                "service limits",
+                "cutoff policy",
+                "responsible service"
+            ],
+            "common_roles": [
+                "bar management",
+                "hospitality supervisors",
+                "front-of-house staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Local alcohol laws and licensing compliance",
+            "aliases": [
+                "local liquor law knowledge",
+                "licensing compliance",
+                "alcohol regulation awareness"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Understand and apply local, regional and national alcohol regulations and licensing requirements (hours of sale, minors, permitted activities) to daily operations and incident handling.",
+            "parent_skill": "Responsible alcohol service compliance",
+            "related_skills": [
+                "Age verification and ID checking",
+                "Incident documentation and reporting",
+                "Over-service prevention protocols"
+            ],
+            "keywords": [
+                "liquor laws",
+                "licensing",
+                "hours of sale",
+                "regulatory compliance"
+            ],
+            "common_roles": [
+                "bar management",
+                "hospitality supervisors",
+                "front-of-house staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Incident documentation and reporting",
+            "aliases": [
+                "alcohol incident reporting",
+                "incident log writing",
+                "event documentation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Prepare accurate written records and reports for alcohol-related incidents (over-service, refusals, ejections) including timelines, witness statements and data needed for internal review or regulatory inquiries.",
+            "parent_skill": "Responsible alcohol service compliance",
+            "related_skills": [
+                "Refusal of service and de-escalation",
+                "Electronic ID scanner operation",
+                "Local alcohol laws and licensing compliance"
+            ],
+            "keywords": [
+                "incident report",
+                "logbook",
+                "witness statement",
+                "paperwork"
+            ],
+            "common_roles": [
+                "hospitality supervisors",
+                "bar management",
+                "front-of-house staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Alcohol and medication interaction awareness",
+            "aliases": [
+                "alcohol-medication interaction",
+                "drug-alcohol safety awareness",
+                "medication-related impairment awareness"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Recognize common interactions between alcohol and prescription or over-the-counter medications that increase impairment or health risk, and incorporate that awareness when assessing patron safety and service decisions.",
+            "parent_skill": "Responsible alcohol service compliance",
+            "related_skills": [
+                "Recognizing signs of intoxication",
+                "Refusal of service and de-escalation"
+            ],
+            "keywords": [
+                "drug interactions",
+                "medication",
+                "health risk",
+                "impairment"
+            ],
+            "common_roles": [
+                "front-of-house staff",
+                "bar staff",
+                "service staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Facilitating safe transport and alternative service coordination",
+            "aliases": [
+                "safe ride coordination",
+                "designated driver facilitation",
+                "arranging alternative transport"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Coordinate or offer safe alternatives for intoxicated patrons (call taxis\/rideshares, arrange designated driver options, provide non-alcoholic beverages) to reduce risk and support refusal-of-service outcomes.",
+            "parent_skill": "Responsible alcohol service compliance",
+            "related_skills": [
+                "Refusal of service and de-escalation",
+                "Over-service prevention protocols"
+            ],
+            "keywords": [
+                "taxi",
+                "rideshare",
+                "designated driver",
+                "non-alcoholic options"
+            ],
+            "common_roles": [
+                "front-of-house staff",
+                "bar staff",
+                "hospitality supervisors"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

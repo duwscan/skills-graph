@@ -1,0 +1,248 @@
+{
+    "domain": "Finance",
+    "category": "Accounts Receivable & Order-to-Cash",
+    "subcategory": "Credit management & risk assessment",
+    "skills": [
+        {
+            "canonical_name": "Credit risk assessment",
+            "aliases": [
+                "credit risk analysis",
+                "counterparty risk assessment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluate a customer's ability and likelihood to meet payment obligations by analyzing financial, behavioral, trade and external data to estimate default probability and loss exposure.",
+            "parent_skill": "Credit management & risk assessment",
+            "related_skills": [
+                "Financial statement analysis for credit",
+                "Credit scoring model development",
+                "Credit limit setting and exposure management",
+                "Bad debt provisioning and credit loss forecasting"
+            ],
+            "keywords": [
+                "creditworthiness",
+                "default probability",
+                "counterparty risk",
+                "credit analysis"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Credit scoring model development",
+            "aliases": [
+                "credit scoring",
+                "scorecard development"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Design, build and validate statistical or machine-learning scorecards and predictive models used to quantify customer credit risk and inform automated or manual decisions.",
+            "parent_skill": "Credit management & risk assessment",
+            "related_skills": [
+                "Credit risk assessment",
+                "Credit risk monitoring and reporting",
+                "Bad debt provisioning and credit loss forecasting"
+            ],
+            "keywords": [
+                "scorecard",
+                "predictive modeling",
+                "model validation",
+                "feature engineering"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial statement analysis for credit",
+            "aliases": [
+                "financial analysis for credit",
+                "ratio analysis for credit"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Interpret balance sheets, income statements and cash flows to assess liquidity, leverage, coverage and profitability metrics that determine a counterparty's capacity to pay.",
+            "parent_skill": "Credit management & risk assessment",
+            "related_skills": [
+                "Credit risk assessment",
+                "Credit limit setting and exposure management",
+                "Collateral and credit security management"
+            ],
+            "keywords": [
+                "liquidity ratios",
+                "debt coverage",
+                "cash flow analysis",
+                "financial ratios"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Credit policy development",
+            "aliases": [
+                "credit policy design",
+                "credit terms policy"
+            ],
+            "skill_type": "process_skill",
+            "description": "Define, document and maintain organizational credit rules, approval authorities, risk appetite, payment terms and escalation paths to standardize decision-making and control exposure.",
+            "parent_skill": "Credit management & risk assessment",
+            "related_skills": [
+                "Credit limit setting and exposure management",
+                "Credit risk monitoring and reporting",
+                "Collections strategy and dispute management"
+            ],
+            "keywords": [
+                "credit terms",
+                "approval matrix",
+                "risk appetite",
+                "policy governance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Credit limit setting and exposure management",
+            "aliases": [
+                "credit limit setting",
+                "exposure management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Establish, review and adjust customer credit limits and exposure thresholds using risk indicators, concentration limits and business objectives to control receivables risk.",
+            "parent_skill": "Credit management & risk assessment",
+            "related_skills": [
+                "Credit risk assessment",
+                "Credit policy development",
+                "Collateral and credit security management"
+            ],
+            "keywords": [
+                "credit limits",
+                "exposure",
+                "concentration limit",
+                "utilization"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Accounts receivable aging analysis",
+            "aliases": [
+                "AR aging analysis",
+                "receivables aging"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Produce and interpret aging reports that bucket outstanding invoices by delinquency to identify trends, prioritize collections and estimate past-due exposure for provisioning.",
+            "parent_skill": "Credit management & risk assessment",
+            "related_skills": [
+                "Collections strategy and dispute management",
+                "Bad debt provisioning and credit loss forecasting",
+                "Credit risk monitoring and reporting"
+            ],
+            "keywords": [
+                "aging buckets",
+                "days sales outstanding",
+                "past due",
+                "receivables aging report"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Collections strategy and dispute management",
+            "aliases": [
+                "collections strategy",
+                "dispute resolution and deduction management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and execute account prioritization, outreach tactics, payment arrangements and dispute resolution workflows to maximize recoveries, shorten days sales outstanding and reduce write-offs.",
+            "parent_skill": "Credit management & risk assessment",
+            "related_skills": [
+                "Accounts receivable aging analysis",
+                "Credit policy development",
+                "Communication and negotiation"
+            ],
+            "keywords": [
+                "collections",
+                "dispute resolution",
+                "payment plans",
+                "deductions management"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Credit risk monitoring and reporting",
+            "aliases": [
+                "credit monitoring",
+                "risk reporting for receivables"
+            ],
+            "skill_type": "process_skill",
+            "description": "Continuously track credit exposures, early-warning indicators, covenant breaches and portfolio metrics and produce dashboards\/reports for stakeholders to enable timely intervention.",
+            "parent_skill": "Credit management & risk assessment",
+            "related_skills": [
+                "Credit scoring model development",
+                "Accounts receivable aging analysis",
+                "Credit limit setting and exposure management"
+            ],
+            "keywords": [
+                "risk dashboards",
+                "early warning",
+                "covenant monitoring",
+                "portfolio reporting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bad debt provisioning and credit loss forecasting",
+            "aliases": [
+                "credit loss provisioning",
+                "allowance for doubtful accounts estimation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Estimate expected credit losses and calculate appropriate allowances using historical loss experience, aging analyses and forward-looking adjustments to reflect probable write-offs.",
+            "parent_skill": "Credit management & risk assessment",
+            "related_skills": [
+                "Accounts receivable aging analysis",
+                "Credit scoring model development",
+                "Credit risk assessment"
+            ],
+            "keywords": [
+                "allowance",
+                "expected credit loss",
+                "loss rates",
+                "provisioning"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Collateral and credit security management",
+            "aliases": [
+                "collateral management for credit",
+                "security interest management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Structure, document, value and monitor collateral, guarantees and security interests to mitigate counterparty exposure and support recovery actions where necessary.",
+            "parent_skill": "Credit management & risk assessment",
+            "related_skills": [
+                "Financial statement analysis for credit",
+                "Credit limit setting and exposure management",
+                "Credit policy development"
+            ],
+            "keywords": [
+                "collateral valuation",
+                "security documentation",
+                "guarantees",
+                "lien"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

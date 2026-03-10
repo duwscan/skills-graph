@@ -1,0 +1,267 @@
+{
+    "domain": "IT",
+    "category": "Software Engineering & Application Development",
+    "subcategory": "Legacy application modernization",
+    "skills": [
+        {
+            "canonical_name": "Legacy codebase refactoring",
+            "aliases": [
+                "code refactoring",
+                "legacy refactor",
+                "refactoring legacy systems"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Analyzing and rewriting legacy source code to improve structure, readability, performance, and maintainability while preserving existing functionality.",
+            "parent_skill": "Legacy application modernization",
+            "related_skills": [
+                "Automated regression testing for modernization",
+                "Monolith decomposition to microservices",
+                "API façade and adapter design for legacy systems"
+            ],
+            "keywords": [
+                "refactor",
+                "technical debt",
+                "code smells",
+                "legacy code",
+                "modernize code"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Monolith decomposition to microservices",
+            "aliases": [
+                "monolith-to-microservices",
+                "microservices decomposition",
+                "domain-driven decomposition"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and executing the decomposition of a monolithic application into smaller, independently deployable services, including boundary definition and service interaction patterns.",
+            "parent_skill": "Legacy application modernization",
+            "related_skills": [
+                "Application containerization",
+                "API façade and adapter design for legacy systems",
+                "Strangler Fig pattern application"
+            ],
+            "keywords": [
+                "decomposition",
+                "microservices",
+                "bounded context",
+                "service decomposition",
+                "decoupling"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "API façade and adapter design for legacy systems",
+            "aliases": [
+                "API facade",
+                "adapter pattern for legacy systems",
+                "legacy API gateway"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing API facades, adapters, or gateway layers to expose legacy functionality via modern interfaces without invasive changes to the underlying system.",
+            "parent_skill": "Legacy application modernization",
+            "related_skills": [
+                "Monolith decomposition to microservices",
+                "Cloud migration strategy for legacy applications",
+                "Legacy codebase refactoring"
+            ],
+            "keywords": [
+                "adapter",
+                "facade",
+                "API gateway",
+                "wrapping legacy",
+                "integration layer"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data migration and ETL for legacy modernization",
+            "aliases": [
+                "data migration",
+                "ETL for legacy systems",
+                "database migration"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Planning and executing extraction, transformation and load (ETL) processes and schema\/data migrations to move data from legacy stores to modern data platforms with integrity and minimal downtime.",
+            "parent_skill": "Legacy application modernization",
+            "related_skills": [
+                "Cloud migration strategy for legacy applications",
+                "Automated regression testing for modernization",
+                "Mainframe modernization"
+            ],
+            "keywords": [
+                "ETL",
+                "data transformation",
+                "schema migration",
+                "data mapping",
+                "data migration strategy"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Strangler Fig pattern application",
+            "aliases": [
+                "strangler fig",
+                "strangler pattern",
+                "incremental replacement pattern"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying the Strangler Fig pattern to incrementally replace legacy functionality by adding new components around the old system and routing traffic gradually to the new implementation.",
+            "parent_skill": "Legacy application modernization",
+            "related_skills": [
+                "Monolith decomposition to microservices",
+                "API façade and adapter design for legacy systems",
+                "Legacy codebase refactoring"
+            ],
+            "keywords": [
+                "incremental migration",
+                "phased replacement",
+                "wrap and replace",
+                "traffic routing",
+                "coexistence strategy"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Application containerization",
+            "aliases": [
+                "containerization",
+                "dockerization",
+                "containerizing legacy apps"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Packaging legacy applications into containers and configuring container runtimes and orchestration (e.g., Docker, Kubernetes) to enable consistent deployments and easier modernization paths.",
+            "parent_skill": "Legacy application modernization",
+            "related_skills": [
+                "Monolith decomposition to microservices",
+                "Cloud migration strategy for legacy applications",
+                "Automated regression testing for modernization"
+            ],
+            "keywords": [
+                "containers",
+                "Docker",
+                "Kubernetes",
+                "orchestration",
+                "image creation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Mainframe modernization",
+            "aliases": [
+                "mainframe modernization",
+                "COBOL modernization",
+                "legacy mainframe migration"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Techniques and practices for migrating or interfacing mainframe applications and data (often COBOL, JCL, DB2) to modern platforms or re-hosting approaches with minimal business disruption.",
+            "parent_skill": "Legacy application modernization",
+            "related_skills": [
+                "Data migration and ETL for legacy modernization",
+                "API façade and adapter design for legacy systems",
+                "Strangler Fig pattern application"
+            ],
+            "keywords": [
+                "COBOL",
+                "re-hosting",
+                "mainframe migration",
+                "z\/OS",
+                "legacy data migration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated regression testing for modernization",
+            "aliases": [
+                "automated regression testing",
+                "regression test automation",
+                "legacy regression testing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and running automated regression test suites to verify that modernization activities (refactoring, migration, decomposition) preserve expected functionality and performance.",
+            "parent_skill": "Legacy application modernization",
+            "related_skills": [
+                "Legacy codebase refactoring",
+                "Data migration and ETL for legacy modernization",
+                "Application containerization"
+            ],
+            "keywords": [
+                "test automation",
+                "regression suites",
+                "CI\/CD testing",
+                "functional testing",
+                "test coverage"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cloud migration strategy for legacy applications",
+            "aliases": [
+                "cloud migration strategy",
+                "lift-and-shift",
+                "rehost\/replatform strategy"
+            ],
+            "skill_type": "process_skill",
+            "description": "Assessing legacy applications and defining migration strategies (rehost, replatform, refactor, replace) for moving workloads to cloud environments while balancing cost, risk and business continuity.",
+            "parent_skill": "Legacy application modernization",
+            "related_skills": [
+                "Application containerization",
+                "Data migration and ETL for legacy modernization",
+                "Security and compliance for legacy modernization"
+            ],
+            "keywords": [
+                "cloud migration",
+                "rehost",
+                "replatform",
+                "lift-and-shift",
+                "migration planning"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Security and compliance for legacy modernization",
+            "aliases": [
+                "legacy system security",
+                "security for modernization",
+                "compliance in modernization"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Identifying and mitigating security risks and regulatory compliance requirements when modernizing legacy systems, including data protection, access controls, logging, and auditability.",
+            "parent_skill": "Legacy application modernization",
+            "related_skills": [
+                "Cloud migration strategy for legacy applications",
+                "Data migration and ETL for legacy modernization",
+                "Automated regression testing for modernization"
+            ],
+            "keywords": [
+                "security",
+                "compliance",
+                "data protection",
+                "access control",
+                "audit"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

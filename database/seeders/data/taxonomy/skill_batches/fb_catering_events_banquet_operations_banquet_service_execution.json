@@ -1,0 +1,308 @@
+{
+    "domain": "F&B",
+    "category": "Catering, Events & Banquet Operations",
+    "subcategory": "Banquet service execution",
+    "skills": [
+        {
+            "canonical_name": "Banquet room setup",
+            "aliases": [
+                "event room setup",
+                "function room setup",
+                "banquet layout",
+                "room turnover setup"
+            ],
+            "skill_type": "process_skill",
+            "description": "Plan and execute physical arrangement of a function room according to floor plans and safety requirements, including tables, chairs, staging, dance floors, signage and access\/egress.",
+            "parent_skill": "Banquet service execution",
+            "related_skills": [
+                "Table setting & linen presentation",
+                "Buffet & self-service setup and replenishment",
+                "Event run sheet & service timing"
+            ],
+            "keywords": [
+                "floor plan",
+                "room layout",
+                "seating plan",
+                "accessibility",
+                "turnover"
+            ],
+            "common_roles": [
+                "Banquet Setup Staff",
+                "Event Supervisor",
+                "Banquet Captain",
+                "Catering Coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Table setting & linen presentation",
+            "aliases": [
+                "place setting",
+                "table presentation",
+                "tableware placement",
+                "linen presentation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Accurate placement and presentation of flatware, glassware, crockery, napkins, table linens and centerpieces to specified service standards and styles.",
+            "parent_skill": "Banquet service execution",
+            "related_skills": [
+                "Banquet room setup",
+                "Plated service execution",
+                "Silver service \/ formal service techniques"
+            ],
+            "keywords": [
+                "place setting",
+                "napkin fold",
+                "centerpiece",
+                "table styling",
+                "cover setup"
+            ],
+            "common_roles": [
+                "Banquet Server",
+                "Banquet Captain",
+                "Event Waitstaff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Plated service execution",
+            "aliases": [
+                "plate service",
+                "table-side plated service",
+                "courses service"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Coordinated delivery and clearing of individual plated courses, timing of service between courses, portion control and presentation maintenance at table level.",
+            "parent_skill": "Banquet service execution",
+            "related_skills": [
+                "Table setting & linen presentation",
+                "Event run sheet & service timing",
+                "Guest communication & complaint resolution"
+            ],
+            "keywords": [
+                "course timing",
+                "portion control",
+                "food presentation",
+                "plating",
+                "plate clearing"
+            ],
+            "common_roles": [
+                "Banquet Server",
+                "Banquet Captain",
+                "Event Waitstaff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Buffet & self-service setup and replenishment",
+            "aliases": [
+                "buffet setup",
+                "chafing dish operation",
+                "replenishment service",
+                "service line management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Prepare, position and maintain buffet stations or service lines, including chafing dishes, sneeze guards, hot-holding\/cold-holding, refill procedures and guest flow management.",
+            "parent_skill": "Banquet service execution",
+            "related_skills": [
+                "Banquet room setup",
+                "Food safety & hygiene (banquet events)",
+                "Event run sheet & service timing"
+            ],
+            "keywords": [
+                "buffet",
+                "service line",
+                "hot-holding",
+                "cold-holding",
+                "refill"
+            ],
+            "common_roles": [
+                "Banquet Server",
+                "Catering Supervisor",
+                "Banquet Setup Staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Silver service \/ formal service techniques",
+            "aliases": [
+                "silver service",
+                "formal table service",
+                "platter service"
+            ],
+            "skill_type": "process_skill",
+            "description": "Specialized formal service method using service implements from platters or salvers (two-person or two-handed service), emphasizing sequence, presentation and guest-facing etiquette.",
+            "parent_skill": "Banquet service execution",
+            "related_skills": [
+                "Table setting & linen presentation",
+                "Plated service execution",
+                "Guest communication & complaint resolution"
+            ],
+            "keywords": [
+                "butler service",
+                "platter service",
+                "guest etiquette",
+                "service sequence",
+                "salver"
+            ],
+            "common_roles": [
+                "Fine Dining Server",
+                "Banquet Captain",
+                "Event Waitstaff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Wine service & decanting",
+            "aliases": [
+                "wine service",
+                "decanting",
+                "table-side wine presentation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Appropriate presentation, opening, pouring, tasting and decanting of wines at events, including glass selection, serving temperatures and basic pairing awareness.",
+            "parent_skill": "Banquet service execution",
+            "related_skills": [
+                "Guest communication & complaint resolution",
+                "Table setting & linen presentation"
+            ],
+            "keywords": [
+                "decant",
+                "wine opener",
+                "tasting pour",
+                "serving temperature",
+                "wine pairing"
+            ],
+            "common_roles": [
+                "Sommelier",
+                "Banquet Server",
+                "Banquet Captain"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Guest communication & complaint resolution",
+            "aliases": [
+                "guest complaint handling",
+                "guest relations",
+                "front-of-house communication"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Professional verbal and non-verbal communication with guests, proactive service recovery, de-escalation and resolution of complaints during events to preserve experience and brand standards.",
+            "parent_skill": "Banquet service execution",
+            "related_skills": [
+                "Plated service execution",
+                "Silver service \/ formal service techniques",
+                "Event run sheet & service timing"
+            ],
+            "keywords": [
+                "de-escalation",
+                "service recovery",
+                "active listening",
+                "guest feedback",
+                "problem resolution"
+            ],
+            "common_roles": [
+                "Banquet Server",
+                "Banquet Captain",
+                "Event Supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Point-of-sale (POS) operation for events",
+            "aliases": [
+                "POS operation",
+                "event POS",
+                "electronic order entry"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operation of point-of-sale hardware\/software used during events for order entry, billing, table tracking and payment processing, including splitting checks and event-item modifiers.",
+            "parent_skill": "Banquet service execution",
+            "related_skills": [
+                "Banquet event order (BEO) execution & coordination",
+                "Guest communication & complaint resolution"
+            ],
+            "keywords": [
+                "POS",
+                "billing",
+                "payment processing",
+                "order modifiers",
+                "check splitting"
+            ],
+            "common_roles": [
+                "Banquet Server",
+                "Banquet Captain",
+                "Event Bartender"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food safety & hygiene (banquet events)",
+            "aliases": [
+                "food handling",
+                "event hygiene",
+                "HACCP basics"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Apply food-safety principles for events, including temperature control, cross-contamination prevention, personal hygiene, allergen awareness and safe transport\/holding of food items.",
+            "parent_skill": "Banquet service execution",
+            "related_skills": [
+                "Buffet & self-service setup and replenishment",
+                "Banquet room setup"
+            ],
+            "keywords": [
+                "temperature control",
+                "allergen management",
+                "cross-contamination",
+                "personal hygiene",
+                "safe holding"
+            ],
+            "common_roles": [
+                "Banquet Server",
+                "Catering Supervisor",
+                "Food Safety Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Event run sheet & service timing",
+            "aliases": [
+                "run sheet management",
+                "service timing",
+                "event timing coordination"
+            ],
+            "skill_type": "process_skill",
+            "description": "Create and follow a detailed run sheet or timeline that sequences food service, speeches, toasts, entertainment and room transitions to ensure coordinated execution across teams.",
+            "parent_skill": "Banquet service execution",
+            "related_skills": [
+                "Banquet room setup",
+                "Plated service execution",
+                "Guest communication & complaint resolution"
+            ],
+            "keywords": [
+                "run sheet",
+                "timeline",
+                "cueing",
+                "coordination",
+                "service schedule"
+            ],
+            "common_roles": [
+                "Event Supervisor",
+                "Banquet Captain",
+                "Catering Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

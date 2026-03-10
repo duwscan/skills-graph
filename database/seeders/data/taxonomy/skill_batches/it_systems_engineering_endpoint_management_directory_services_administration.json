@@ -1,0 +1,253 @@
+{
+    "domain": "IT",
+    "category": "Systems Engineering & Endpoint Management",
+    "subcategory": "Directory services administration",
+    "skills": [
+        {
+            "canonical_name": "Active Directory administration",
+            "aliases": [
+                "AD administration",
+                "Microsoft Active Directory",
+                "AD DS administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Manage on-premises Active Directory Domain Services (AD DS) including domains, OUs, users, groups, trusts, domain controllers, replication scope and configuration.",
+            "parent_skill": "Directory services administration",
+            "related_skills": [
+                "LDAP administration",
+                "Group Policy management (GPO)",
+                "Active Directory replication and domain controller troubleshooting",
+                "Hybrid identity synchronization (Azure AD Connect)"
+            ],
+            "keywords": [
+                "Active Directory",
+                "AD",
+                "AD DS",
+                "domain controller",
+                "OU"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "LDAP administration",
+            "aliases": [
+                "Lightweight Directory Access Protocol (LDAP) administration",
+                "OpenLDAP administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Administer LDAP-based directory services: schema management, directory entries, DN structure, ACLs, LDAP queries, replication and performance tuning.",
+            "parent_skill": "Directory services administration",
+            "related_skills": [
+                "Active Directory administration",
+                "Directory schema design and extension"
+            ],
+            "keywords": [
+                "LDAP",
+                "OpenLDAP",
+                "LDAP query",
+                "slapd",
+                "directory server"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Group Policy management (GPO)",
+            "aliases": [
+                "GPO management",
+                "Group Policy administration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Design, deploy and troubleshoot Group Policy Objects to enforce configuration, security settings, scripts and preferences across Windows domain-joined endpoints.",
+            "parent_skill": "Directory services administration",
+            "related_skills": [
+                "Active Directory administration",
+                "Active Directory replication and domain controller troubleshooting"
+            ],
+            "keywords": [
+                "GPO",
+                "Group Policy",
+                "Windows policies",
+                "registry settings",
+                "policies"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Active Directory replication and domain controller troubleshooting",
+            "aliases": [
+                "AD replication troubleshooting",
+                "domain controller troubleshooting",
+                "DC troubleshooting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Diagnose and resolve replication, topology and domain controller issues (FSMO roles, SYSVOL\/NTFRS\/DFS-R, DNS integration, replication latency and conflict resolution).",
+            "parent_skill": "Directory services administration",
+            "related_skills": [
+                "Active Directory administration",
+                "Group Policy management (GPO)",
+                "Directory services backup and disaster recovery"
+            ],
+            "keywords": [
+                "replication",
+                "FSMO",
+                "SYSVOL",
+                "DFS-R",
+                "NTDS"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Directory schema design and extension",
+            "aliases": [
+                "Directory schema management",
+                "LDAP schema design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Design and extend directory schemas including objectClasses and attribute definitions; assess impact of schema changes on applications, replication and interoperability.",
+            "parent_skill": "Directory services administration",
+            "related_skills": [
+                "LDAP administration",
+                "Active Directory administration"
+            ],
+            "keywords": [
+                "schema",
+                "objectClass",
+                "attribute",
+                "LDAP schema",
+                "schema extension"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Identity provisioning and deprovisioning",
+            "aliases": [
+                "user provisioning",
+                "account lifecycle management",
+                "automated provisioning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implement and operate processes and automation for account creation, modification and revocation; manage entitlements, group membership and lifecycle workflows tied to directory accounts.",
+            "parent_skill": "Directory services administration",
+            "related_skills": [
+                "Hybrid identity synchronization (Azure AD Connect)",
+                "Directory security and access control management"
+            ],
+            "keywords": [
+                "provisioning",
+                "deprovisioning",
+                "onboarding",
+                "offboarding",
+                "account lifecycle"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Kerberos administration",
+            "aliases": [
+                "Kerberos authentication administration",
+                "Kerberos troubleshooting"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configure and troubleshoot Kerberos authentication infrastructure: KDCs, realms, service principals (SPNs), tickets, delegation and clock-skew or ticket-expiry issues in a directory environment.",
+            "parent_skill": "Directory services administration",
+            "related_skills": [
+                "Active Directory administration",
+                "Group Policy management (GPO)"
+            ],
+            "keywords": [
+                "Kerberos",
+                "KDC",
+                "SPN",
+                "TGT",
+                "authentication"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Hybrid identity synchronization (Azure AD Connect)",
+            "aliases": [
+                "Azure AD Connect",
+                "hybrid identity synchronization"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configure and manage synchronization between on-premises directories and cloud identity providers: attribute mapping, filtering, password\/hash sync, writeback and federation integration.",
+            "parent_skill": "Directory services administration",
+            "related_skills": [
+                "Active Directory administration",
+                "Identity provisioning and deprovisioning"
+            ],
+            "keywords": [
+                "Azure AD Connect",
+                "directory synchronization",
+                "hybrid identity",
+                "sync rules"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Directory security and access control management",
+            "aliases": [
+                "Directory ACL management",
+                "directory permissions auditing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implement and maintain directory access controls, ACLs and delegation models; perform permission audits, change monitoring and apply least-privilege principles to directory objects and administrative roles.",
+            "parent_skill": "Directory services administration",
+            "related_skills": [
+                "Active Directory administration",
+                "Identity provisioning and deprovisioning",
+                "Directory services backup and disaster recovery"
+            ],
+            "keywords": [
+                "ACL",
+                "access control",
+                "permissions",
+                "auditing",
+                "least privilege"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Directory services backup and disaster recovery",
+            "aliases": [
+                "AD backup and recovery",
+                "directory disaster recovery"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Plan and execute backups, authoritative and non-authoritative restores, domain controller recovery and disaster recovery procedures for directory services to minimize downtime and data loss.",
+            "parent_skill": "Directory services administration",
+            "related_skills": [
+                "Active Directory replication and domain controller troubleshooting",
+                "Directory security and access control management"
+            ],
+            "keywords": [
+                "backup",
+                "recovery",
+                "authoritative restore",
+                "system state",
+                "disaster recovery"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

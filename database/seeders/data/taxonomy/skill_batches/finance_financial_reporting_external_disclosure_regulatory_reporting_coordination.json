@@ -1,0 +1,327 @@
+{
+    "domain": "Finance",
+    "category": "Financial Reporting & External Disclosure",
+    "subcategory": "Regulatory reporting coordination",
+    "skills": [
+        {
+            "canonical_name": "Regulatory reporting calendar management",
+            "aliases": [
+                "reporting calendar management",
+                "regulatory submission calendar",
+                "reporting deadline coordination"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Establishing and maintaining a consolidated schedule of regulatory filing deadlines, milestones and dependencies across jurisdictions and business units.",
+            "parent_skill": "Regulatory reporting coordination",
+            "related_skills": [
+                "Regulatory filing preparation",
+                "Regulatory submission review & approval governance",
+                "Regulatory data collection & consolidation"
+            ],
+            "keywords": [
+                "deadlines",
+                "submission schedule",
+                "milestones",
+                "calendar",
+                "timeline"
+            ],
+            "common_roles": [
+                "financial reporting teams",
+                "regulatory reporting teams",
+                "reporting operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory filing preparation",
+            "aliases": [
+                "regulatory submission preparation",
+                "filing assembly",
+                "preparation of regulatory reports"
+            ],
+            "skill_type": "process_skill",
+            "description": "Compiling, formatting and validating the content and supporting schedules required for regulatory filings in accordance with regulatory formats and internal policies.",
+            "parent_skill": "Regulatory reporting coordination",
+            "related_skills": [
+                "XBRL tagging and electronic filing coordination",
+                "Regulatory data collection & consolidation",
+                "Regulatory reporting reconciliation & variance analysis"
+            ],
+            "keywords": [
+                "filing",
+                "submission",
+                "schedules",
+                "formatting",
+                "validation"
+            ],
+            "common_roles": [
+                "financial reporting teams",
+                "external disclosure coordinators"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory data collection & consolidation",
+            "aliases": [
+                "regulatory data aggregation",
+                "data consolidation for reporting",
+                "reporting data collection"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Gathering, harmonizing and consolidating financial and non-financial data from multiple source systems and business units to produce regulatory reports.",
+            "parent_skill": "Regulatory reporting coordination",
+            "related_skills": [
+                "Regulatory filing preparation",
+                "Regulatory reporting system configuration",
+                "Regulatory reporting reconciliation & variance analysis"
+            ],
+            "keywords": [
+                "data aggregation",
+                "ETL",
+                "source systems",
+                "data harmonization",
+                "consolidation"
+            ],
+            "common_roles": [
+                "financial reporting operations",
+                "regulatory data teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory reporting reconciliation & variance analysis",
+            "aliases": [
+                "reporting reconciliation",
+                "variance analysis for regulatory reports",
+                "reconciliation of regulatory statements"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Reconciling regulatory report figures to accounting records and performing variance analysis to explain differences and ensure accuracy of submissions.",
+            "parent_skill": "Regulatory reporting coordination",
+            "related_skills": [
+                "Regulatory filing preparation",
+                "Regulatory reporting quality assurance & controls",
+                "Regulatory data collection & consolidation"
+            ],
+            "keywords": [
+                "reconciliation",
+                "variance",
+                "root cause analysis",
+                "account mapping",
+                "ledger tie-out"
+            ],
+            "common_roles": [
+                "financial reporting analysts",
+                "regulatory reporting review teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory reporting quality assurance & controls",
+            "aliases": [
+                "reporting QA",
+                "controls for regulatory reporting",
+                "regulatory report validation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Designing and executing quality checks, control frameworks and remediation processes to ensure regulatory reports are accurate, complete and compliant.",
+            "parent_skill": "Regulatory reporting coordination",
+            "related_skills": [
+                "Regulatory reporting reconciliation & variance analysis",
+                "Regulatory submission review & approval governance",
+                "Regulatory data collection & consolidation"
+            ],
+            "keywords": [
+                "controls",
+                "QA",
+                "validation",
+                "compliance",
+                "testing"
+            ],
+            "common_roles": [
+                "internal control functions",
+                "financial reporting quality teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory submission review & approval governance",
+            "aliases": [
+                "submission governance",
+                "report approval workflows",
+                "regulatory approval process"
+            ],
+            "skill_type": "process_skill",
+            "description": "Establishing and managing review cycles, approval gates and escalation paths for regulatory filings to ensure accountability and auditability of approvals.",
+            "parent_skill": "Regulatory reporting coordination",
+            "related_skills": [
+                "Regulatory reporting calendar management",
+                "Regulatory reporting quality assurance & controls",
+                "Regulatory stakeholder coordination & communications"
+            ],
+            "keywords": [
+                "workflow",
+                "approval",
+                "governance",
+                "escalation",
+                "audit trail"
+            ],
+            "common_roles": [
+                "reporting governance teams",
+                "compliance review functions"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory stakeholder coordination & communications",
+            "aliases": [
+                "stakeholder liaison for regulatory reporting",
+                "cross-functional reporting coordination",
+                "communications with business units and auditors"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Coordinating information exchange, timelines and responses between finance, business units, external auditors and regulators to support regulatory reporting.",
+            "parent_skill": "Regulatory reporting coordination",
+            "related_skills": [
+                "Regulatory reporting calendar management",
+                "Regulator query and audit response management",
+                "Regulatory submission review & approval governance"
+            ],
+            "keywords": [
+                "stakeholder management",
+                "communication",
+                "liaison",
+                "cross-functional",
+                "auditor coordination"
+            ],
+            "common_roles": [
+                "cross-functional reporting teams",
+                "external disclosure coordinators"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory interpretation & rule impact assessment",
+            "aliases": [
+                "regulatory rule interpretation",
+                "impact assessment of regulatory changes",
+                "regulatory guidance analysis"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Analyzing new or changed regulations to determine reporting obligations, required disclosures and the operational impact on existing reporting processes.",
+            "parent_skill": "Regulatory reporting coordination",
+            "related_skills": [
+                "Regulatory reporting quality assurance & controls",
+                "Regulatory filing preparation",
+                "Regulatory stakeholder coordination & communications"
+            ],
+            "keywords": [
+                "regulatory change",
+                "impact assessment",
+                "interpretation",
+                "guidance",
+                "obligations"
+            ],
+            "common_roles": [
+                "regulatory change teams",
+                "financial reporting policy teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulator query and audit response management",
+            "aliases": [
+                "regulatory inquiry response",
+                "audit query handling",
+                "responding to regulator requests"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Managing and preparing timely, documented responses to regulator questions, data requests and audit findings related to regulatory filings.",
+            "parent_skill": "Regulatory reporting coordination",
+            "related_skills": [
+                "Regulatory stakeholder coordination & communications",
+                "Regulatory filing preparation",
+                "Regulatory reporting quality assurance & controls"
+            ],
+            "keywords": [
+                "regulator response",
+                "audit response",
+                "inquiry",
+                "documentation",
+                "incident management"
+            ],
+            "common_roles": [
+                "regulatory response teams",
+                "compliance liaison functions"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "XBRL tagging and electronic filing coordination",
+            "aliases": [
+                "XBRL tagging",
+                "electronic regulatory filing coordination",
+                "inline XBRL coordination"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying XBRL\/inline XBRL taxonomies to financial statements, validating instance documents and coordinating electronic submissions to regulator portals.",
+            "parent_skill": "Regulatory reporting coordination",
+            "related_skills": [
+                "Regulatory filing preparation",
+                "Regulatory reporting system configuration",
+                "Regulatory reporting quality assurance & controls"
+            ],
+            "keywords": [
+                "XBRL",
+                "iXBRL",
+                "taxonomy",
+                "instance document",
+                "electronic filing"
+            ],
+            "common_roles": [
+                "electronic filing specialists",
+                "financial reporting technical teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory reporting system configuration",
+            "aliases": [
+                "reporting system setup",
+                "regulatory reporting tool configuration",
+                "reporting platform integration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and integrating reporting platforms and disclosure tools (data mapping, templates, security and workflow) to support regulatory submission processes.",
+            "parent_skill": "Regulatory reporting coordination",
+            "related_skills": [
+                "Regulatory data collection & consolidation",
+                "XBRL tagging and electronic filing coordination",
+                "Regulatory submission review & approval governance"
+            ],
+            "keywords": [
+                "system configuration",
+                "integration",
+                "templates",
+                "data mapping",
+                "reporting platform"
+            ],
+            "common_roles": [
+                "reporting systems teams",
+                "finance IT liaisons"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,266 @@
+{
+    "domain": "Finance",
+    "category": "Accounts Payable & Procure-to-Pay",
+    "subcategory": "Payment processing & controls",
+    "skills": [
+        {
+            "canonical_name": "Accounts Payable Invoice Processing",
+            "aliases": [
+                "AP invoice processing",
+                "invoice capture",
+                "invoice validation",
+                "invoice coding"
+            ],
+            "skill_type": "operational_skill",
+            "description": "End-to-end operational handling of supplier invoices including capture, validation, coding, approval routing and posting to the general ledger.",
+            "parent_skill": "Payment processing & controls",
+            "related_skills": [
+                "Invoice Matching and Three-Way Matching",
+                "Payment Batch Processing & Scheduling",
+                "Vendor\/Supplier Master Data Management"
+            ],
+            "keywords": [
+                "invoice capture",
+                "coding",
+                "approval workflow",
+                "GL posting",
+                "AP automation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Invoice Matching and Three-Way Matching",
+            "aliases": [
+                "PO matching",
+                "two-way matching",
+                "three-way match"
+            ],
+            "skill_type": "process_skill",
+            "description": "Process of matching invoices to purchase orders and receiving receipts (two-way\/three-way) to validate quantities, prices and authorize payment.",
+            "parent_skill": "Payment processing & controls",
+            "related_skills": [
+                "Accounts Payable Invoice Processing",
+                "Payment Controls & Segregation of Duties"
+            ],
+            "keywords": [
+                "PO match",
+                "GRN",
+                "receipt matching",
+                "match exceptions"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Electronic Funds Transfer (EFT) & ACH Payment Processing",
+            "aliases": [
+                "EFT processing",
+                "ACH processing",
+                "electronic payments"
+            ],
+            "skill_type": "process_skill",
+            "description": "Execution and monitoring of electronic domestic payment methods (ACH\/EFT), including payment file preparation, bank submission and settlement monitoring.",
+            "parent_skill": "Payment processing & controls",
+            "related_skills": [
+                "Payment Batch Processing & Scheduling",
+                "Payment Reconciliation & Clearing",
+                "Payment Controls & Segregation of Duties"
+            ],
+            "keywords": [
+                "ACH",
+                "EFT",
+                "payment files",
+                "bank submission",
+                "payment settlement"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-Border Payments & Foreign Exchange (FX) Settlement",
+            "aliases": [
+                "international payments",
+                "FX payments",
+                "cross-border payment processing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Handling of international payment flows including currency conversion, correspondent bank instructions, FX settlement and associated compliance checks.",
+            "parent_skill": "Payment processing & controls",
+            "related_skills": [
+                "Electronic Funds Transfer (EFT) & ACH Payment Processing",
+                "Payment Controls & Segregation of Duties",
+                "Payment Reconciliation & Clearing"
+            ],
+            "keywords": [
+                "FX",
+                "currency conversion",
+                "international wires",
+                "correspondent banking",
+                "payment routing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Payment Reconciliation & Clearing",
+            "aliases": [
+                "payment reconciliation",
+                "remittance reconciliation",
+                "clearing reconciliation"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Reconciling payments issued with bank statements, clearing reports and AP ledger entries; investigating discrepancies and clearing outstanding items.",
+            "parent_skill": "Payment processing & controls",
+            "related_skills": [
+                "Bank Reconciliation",
+                "Electronic Funds Transfer (EFT) & ACH Payment Processing",
+                "Payment Exception Handling & Dispute Resolution"
+            ],
+            "keywords": [
+                "bank feed",
+                "clearing",
+                "reconcile",
+                "remittance advice",
+                "investigation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor\/Supplier Master Data Management",
+            "aliases": [
+                "vendor master data",
+                "supplier master management",
+                "vendor onboarding"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing supplier master records including bank\/account details, tax IDs, payment terms, change controls and onboarding\/maintenance processes to ensure accurate payments.",
+            "parent_skill": "Payment processing & controls",
+            "related_skills": [
+                "Accounts Payable Invoice Processing",
+                "Payment Controls & Segregation of Duties",
+                "Payment Exception Handling & Dispute Resolution"
+            ],
+            "keywords": [
+                "vendor setup",
+                "supplier data",
+                "bank details",
+                "tax information",
+                "change control"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Payment Controls & Segregation of Duties",
+            "aliases": [
+                "payment control framework",
+                "segregation of duties (SoD) for payments",
+                "AP control testing"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Designing, implementing and monitoring internal controls over payment authorization, approval workflows and segregation of duties to prevent errors and fraud and meet regulatory requirements.",
+            "parent_skill": "Payment processing & controls",
+            "related_skills": [
+                "Invoice Matching and Three-Way Matching",
+                "Payment Reconciliation & Clearing",
+                "Payment Fraud Detection & Anti-Fraud Controls"
+            ],
+            "keywords": [
+                "internal controls",
+                "SoD",
+                "approval matrix",
+                "control testing",
+                "compliance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Payment Exception Handling & Dispute Resolution",
+            "aliases": [
+                "payment dispute resolution",
+                "exception management",
+                "vendor payment inquiries"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing exceptions arising from payment processing such as failed payments, duplicate payments, vendor disputes and chargebacks, including investigation, remediation and vendor communication.",
+            "parent_skill": "Payment processing & controls",
+            "related_skills": [
+                "Payment Reconciliation & Clearing",
+                "Vendor\/Supplier Master Data Management",
+                "Payment Fraud Detection & Anti-Fraud Controls"
+            ],
+            "keywords": [
+                "failed payments",
+                "duplicate payment",
+                "chargebacks",
+                "vendor communication",
+                "investigation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Payment Batch Processing & Scheduling",
+            "aliases": [
+                "payment batching",
+                "payment runs",
+                "payment cut-off scheduling"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and executing payment batches and schedules, managing cut-off times, payment windows and holiday calendars to meet SLAs and banking requirements.",
+            "parent_skill": "Payment processing & controls",
+            "related_skills": [
+                "Electronic Funds Transfer (EFT) & ACH Payment Processing",
+                "Payment Systems Configuration & Workflow Design",
+                "Payment Reconciliation & Clearing"
+            ],
+            "keywords": [
+                "batch runs",
+                "cut-off",
+                "payment schedule",
+                "payment window",
+                "holiday calendar"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Payment Systems Configuration & Workflow Design",
+            "aliases": [
+                "payments module configuration",
+                "payment workflow configuration",
+                "AP workflow design"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring payment rules, approval routing, file formats and automation in payments modules\/ERP systems and designing workflows to enforce controls and streamline payment processing.",
+            "parent_skill": "Payment processing & controls",
+            "related_skills": [
+                "Payment Batch Processing & Scheduling",
+                "Payment Controls & Segregation of Duties",
+                "Accounts Payable Invoice Processing"
+            ],
+            "keywords": [
+                "workflow design",
+                "ERP payments",
+                "file format",
+                "automation",
+                "approver routing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

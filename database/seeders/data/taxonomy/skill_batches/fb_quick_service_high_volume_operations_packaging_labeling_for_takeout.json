@@ -1,0 +1,271 @@
+{
+    "domain": "F&B",
+    "category": "Quick Service & High-Volume Operations",
+    "subcategory": "Packaging & labeling for takeout",
+    "skills": [
+        {
+            "canonical_name": "Takeout packaging assembly",
+            "aliases": [
+                "to-go packaging assembly",
+                "container assembly",
+                "package assembly"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Rapidly and hygienically assemble takeout containers, lids, cutlery and condiments to meet order specifications and presentation standards.",
+            "parent_skill": "Packaging & labeling for takeout",
+            "related_skills": [
+                "Portioning and packing for to-go orders",
+                "Tamper-evident and secure packaging procedures",
+                "Order accuracy verification and labeling quality control"
+            ],
+            "keywords": [
+                "container prep",
+                "to-go assembly",
+                "packaging line"
+            ],
+            "common_roles": [
+                "frontline operations staff",
+                "kitchen staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Portioning and packing for to-go orders",
+            "aliases": [
+                "portion control for takeout",
+                "meal portioning",
+                "packaging portions"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Measuring and packing food items into appropriate containers according to recipes, nutritional\/portion guidelines and customer modifications to ensure consistency and cost control.",
+            "parent_skill": "Packaging & labeling for takeout",
+            "related_skills": [
+                "Takeout packaging assembly",
+                "Temperature-controlled packaging handling",
+                "Order accuracy verification and labeling quality control"
+            ],
+            "keywords": [
+                "portion control",
+                "weighing",
+                "serving size"
+            ],
+            "common_roles": [
+                "frontline operations staff",
+                "kitchen staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food labeling compliance (allergens & ingredients)",
+            "aliases": [
+                "allergen labeling",
+                "ingredient declaration compliance",
+                "takeout label compliance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Understanding and applying legal and company requirements for declaring allergens, ingredients, nutrition statements and other mandatory information on takeout labels and packaging.",
+            "parent_skill": "Packaging & labeling for takeout",
+            "related_skills": [
+                "Thermal\/label printer operation and maintenance",
+                "Order accuracy verification and labeling quality control"
+            ],
+            "keywords": [
+                "allergen declaration",
+                "ingredient labeling",
+                "food label law"
+            ],
+            "common_roles": [
+                "quality assurance staff",
+                "operations supervisors"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Thermal and label printer operation and maintenance",
+            "aliases": [
+                "thermal label printer operation",
+                "label printer maintenance",
+                "receipt\/label printer operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operating, troubleshooting and performing basic maintenance on thermal and label printers used for order labels, ingredient\/allergen tags, receipts and routing stickers.",
+            "parent_skill": "Packaging & labeling for takeout",
+            "related_skills": [
+                "Food labeling compliance (allergens & ingredients)",
+                "Order accuracy verification and labeling quality control"
+            ],
+            "keywords": [
+                "thermal printer",
+                "label printing",
+                "printer troubleshooting"
+            ],
+            "common_roles": [
+                "frontline operations staff",
+                "back-of-house support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tamper-evident and secure packaging procedures",
+            "aliases": [
+                "tamper-evident packaging",
+                "secure sealing procedures",
+                "package sealing best practices"
+            ],
+            "skill_type": "process_skill",
+            "description": "Procedures and controls for sealing, labeling and securing takeout orders to prevent tampering, contamination and incorrect deliveries while maintaining customer confidence.",
+            "parent_skill": "Packaging & labeling for takeout",
+            "related_skills": [
+                "Takeout packaging assembly",
+                "Food labeling compliance (allergens & ingredients)"
+            ],
+            "keywords": [
+                "seal integrity",
+                "tamper seal",
+                "secure packaging"
+            ],
+            "common_roles": [
+                "frontline operations staff",
+                "quality assurance staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Temperature-controlled packaging handling",
+            "aliases": [
+                "hot-holding packaging",
+                "cold-chain packaging for takeout",
+                "thermal packaging handling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Selecting, assembling and handling packaging that maintains hot or cold temperatures during transit and meets food safety time-temperature requirements.",
+            "parent_skill": "Packaging & labeling for takeout",
+            "related_skills": [
+                "Packaging materials selection for food safety",
+                "Portioning and packing for to-go orders"
+            ],
+            "keywords": [
+                "hot-hold",
+                "insulated packaging",
+                "cold-chain"
+            ],
+            "common_roles": [
+                "frontline operations staff",
+                "delivery support staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Packaging materials selection for food safety",
+            "aliases": [
+                "food-grade packaging selection",
+                "packaging material suitability",
+                "container material selection"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluating and choosing packaging materials based on grease resistance, heat tolerance, chemical safety, migration risk and suitability for reheating, storage and disposal.",
+            "parent_skill": "Packaging & labeling for takeout",
+            "related_skills": [
+                "Sustainable packaging practices for takeout",
+                "Temperature-controlled packaging handling"
+            ],
+            "keywords": [
+                "food-grade",
+                "material compatibility",
+                "heat tolerance"
+            ],
+            "common_roles": [
+                "procurement support",
+                "operations planners"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sustainable packaging practices for takeout",
+            "aliases": [
+                "eco-friendly takeout packaging",
+                "recyclable packaging practices",
+                "compostable packaging selection"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Applying strategies to reduce packaging waste, select recyclable or compostable materials, and implement reuse or waste-reduction workflows appropriate for high-volume takeout operations.",
+            "parent_skill": "Packaging & labeling for takeout",
+            "related_skills": [
+                "Packaging materials selection for food safety",
+                "High-volume packaging throughput optimization"
+            ],
+            "keywords": [
+                "recyclable",
+                "compostable",
+                "waste reduction"
+            ],
+            "common_roles": [
+                "operations planners",
+                "sustainability coordinators"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Order accuracy verification and labeling quality control",
+            "aliases": [
+                "label accuracy checks",
+                "packing accuracy verification",
+                "order verification"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Verifying that packed orders match tickets and labels, checking label legibility and correctness, and performing final quality checks before customer handoff or delivery.",
+            "parent_skill": "Packaging & labeling for takeout",
+            "related_skills": [
+                "Takeout packaging assembly",
+                "Thermal and label printer operation and maintenance",
+                "Food labeling compliance (allergens & ingredients)"
+            ],
+            "keywords": [
+                "quality control",
+                "final check",
+                "label verification"
+            ],
+            "common_roles": [
+                "frontline operations staff",
+                "quality assurance staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "High-volume packaging throughput optimization",
+            "aliases": [
+                "packaging line efficiency",
+                "to-go throughput optimization",
+                "batch packing optimization"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and implementing workflows, station layouts, batching and kitting methods to maximize speed and consistency in high-volume takeout packaging environments.",
+            "parent_skill": "Packaging & labeling for takeout",
+            "related_skills": [
+                "Takeout packaging assembly",
+                "Portioning and packing for to-go orders",
+                "Order accuracy verification and labeling quality control"
+            ],
+            "keywords": [
+                "workflow optimization",
+                "throughput",
+                "station layout"
+            ],
+            "common_roles": [
+                "operations planners",
+                "process improvement staff"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

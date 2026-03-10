@@ -1,0 +1,259 @@
+{
+    "domain": "IT",
+    "category": "DevOps, CI\/CD & Release Engineering",
+    "subcategory": "Site reliability practices (SLO\/SLI)",
+    "skills": [
+        {
+            "canonical_name": "Service Level Objective (SLO) design",
+            "aliases": [
+                "SLO design",
+                "SLO definition",
+                "defining SLOs"
+            ],
+            "skill_type": "process_skill",
+            "description": "Define measurable, user-focused reliability targets (objectives, target windows, target values) for services and features.",
+            "parent_skill": "Site reliability practices (SLO\/SLI)",
+            "related_skills": [
+                "Service Level Indicator (SLI) measurement and instrumentation",
+                "Error budget policy and governance",
+                "SLO-driven alerting and on-call policies",
+                "SLO reporting and reliability dashboards",
+                "SLO-driven capacity planning and scaling"
+            ],
+            "keywords": [
+                "SLO",
+                "objectives",
+                "targets",
+                "reliability targets"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service Level Indicator (SLI) measurement and instrumentation",
+            "aliases": [
+                "SLI instrumentation",
+                "SLI metrics collection",
+                "SLI measurement"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Implement, validate and collect precise user-centric metrics (e.g., latency percentiles, availability, error rate) that feed SLO calculations.",
+            "parent_skill": "Site reliability practices (SLO\/SLI)",
+            "related_skills": [
+                "Observability metric design for reliability",
+                "Automated SLO monitoring and pipeline integration",
+                "Service-level incident impact assessment"
+            ],
+            "keywords": [
+                "SLI",
+                "metrics",
+                "instrumentation",
+                "latency",
+                "availability",
+                "error rate"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Observability metric design for reliability",
+            "aliases": [
+                "reliability metrics design",
+                "observability design (reliability)"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Design metric schemas, aggregation methods and labels (e.g., histograms, p99, rolling windows) to accurately represent service behavior for reliability analysis.",
+            "parent_skill": "Site reliability practices (SLO\/SLI)",
+            "related_skills": [
+                "Service Level Indicator (SLI) measurement and instrumentation",
+                "SLO design",
+                "SLO-driven capacity planning and scaling"
+            ],
+            "keywords": [
+                "observability",
+                "metrics",
+                "p99",
+                "aggregation",
+                "histogram"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Error budget policy and governance",
+            "aliases": [
+                "error budget management",
+                "error budget policy"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Define, enforce and operationalize rules for consuming and replenishing error budgets, including escalation paths, release controls and exception handling.",
+            "parent_skill": "Site reliability practices (SLO\/SLI)",
+            "related_skills": [
+                "SLO-driven alerting and on-call policies",
+                "Service-level incident impact assessment",
+                "SLO design"
+            ],
+            "keywords": [
+                "error budget",
+                "governance",
+                "escalation",
+                "release policy"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SLO-driven alerting and on-call policies",
+            "aliases": [
+                "SLO-based alerting",
+                "SLO alerting",
+                "on-call SLO alerts"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Configure alerts and on-call procedures that prioritize incidents and notifications based on SLO thresholds and error budget state to reduce noise and focus remediation.",
+            "parent_skill": "Site reliability practices (SLO\/SLI)",
+            "related_skills": [
+                "Automated SLO monitoring and pipeline integration",
+                "Error budget policy and governance",
+                "Service-level incident impact assessment"
+            ],
+            "keywords": [
+                "alerting",
+                "on-call",
+                "SLO alerts",
+                "noise reduction"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated SLO monitoring and pipeline integration",
+            "aliases": [
+                "SLO monitoring automation",
+                "automated SLO calculation",
+                "SLO CI\/CD integration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Automate SLI aggregation, continuous SLO evaluation, alerting and reporting by integrating monitoring, dashboards and CI\/CD pipelines for reliable feedback loops.",
+            "parent_skill": "Site reliability practices (SLO\/SLI)",
+            "related_skills": [
+                "Service Level Indicator (SLI) measurement and instrumentation",
+                "SLO-driven alerting and on-call policies",
+                "SLO reporting and reliability dashboards"
+            ],
+            "keywords": [
+                "automation",
+                "monitoring",
+                "CI\/CD",
+                "pipeline integration",
+                "continuous evaluation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service-level incident impact assessment",
+            "aliases": [
+                "incident impact quantification",
+                "SLO impact assessment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Quantify incident effects on user-facing SLIs, calculate SLO breaches and error budget consumption for post-incident analysis and prioritization.",
+            "parent_skill": "Site reliability practices (SLO\/SLI)",
+            "related_skills": [
+                "Service Level Indicator (SLI) measurement and instrumentation",
+                "Error budget policy and governance",
+                "SLO reporting and reliability dashboards"
+            ],
+            "keywords": [
+                "incident analysis",
+                "impact quantification",
+                "SLO breach",
+                "error budget consumption"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SLO-driven capacity planning and scaling",
+            "aliases": [
+                "capacity planning based on SLOs",
+                "SLO-based scaling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Plan capacity, autoscaling and safety margins using SLO-informed demand forecasts and reliability targets to ensure service objectives are met under load.",
+            "parent_skill": "Site reliability practices (SLO\/SLI)",
+            "related_skills": [
+                "Observability metric design for reliability",
+                "SLO design",
+                "Automated SLO monitoring and pipeline integration"
+            ],
+            "keywords": [
+                "capacity planning",
+                "autoscaling",
+                "demand forecasting",
+                "safety margin"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Reliability reporting and dashboards",
+            "aliases": [
+                "SLO reporting",
+                "reliability dashboards",
+                "service reliability reporting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Design and maintain dashboards and reports that communicate SLO status, error budget consumption, trends and remediation actions to technical and business stakeholders.",
+            "parent_skill": "Site reliability practices (SLO\/SLI)",
+            "related_skills": [
+                "Automated SLO monitoring and pipeline integration",
+                "SLO design",
+                "Service-level incident impact assessment"
+            ],
+            "keywords": [
+                "dashboards",
+                "reporting",
+                "SLO status",
+                "visualization",
+                "trend analysis"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SLA compliance and contractual service-level management",
+            "aliases": [
+                "SLA management",
+                "contractual service-level management",
+                "service-level agreement compliance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Translate SLOs into contractual SLAs, manage compliance reporting, customer commitments and remedies or penalties tied to service-level contracts.",
+            "parent_skill": "Site reliability practices (SLO\/SLI)",
+            "related_skills": [
+                "SLO design",
+                "Reliability reporting and dashboards"
+            ],
+            "keywords": [
+                "SLA",
+                "compliance",
+                "contractual obligations",
+                "service commitments"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

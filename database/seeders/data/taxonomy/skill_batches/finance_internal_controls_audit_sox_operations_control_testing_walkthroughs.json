@@ -1,0 +1,283 @@
+{
+    "domain": "Finance",
+    "category": "Internal Controls, Audit & SOX Operations",
+    "subcategory": "Control testing & walkthroughs",
+    "skills": [
+        {
+            "canonical_name": "Control testing design",
+            "aliases": [
+                "controls test design",
+                "test plan design for controls"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing objective-aligned control test plans including control objectives, key controls, testing approach, sample sizes and expected evidence.",
+            "parent_skill": "Control testing & walkthroughs",
+            "related_skills": [
+                "Test of Controls (TOC) execution",
+                "Audit sampling",
+                "SOX control mapping"
+            ],
+            "keywords": [
+                "test plan",
+                "control objective",
+                "test design",
+                "sampling basis"
+            ],
+            "common_roles": [
+                "internal audit function",
+                "SOX compliance function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control walkthroughs",
+            "aliases": [
+                "process walkthroughs",
+                "walkthrough testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Performing end-to-end walkthroughs to trace transactions through processes, verify control design and confirm control owner responsibilities.",
+            "parent_skill": "Control testing & walkthroughs",
+            "related_skills": [
+                "Stakeholder interviewing & walkthrough facilitation",
+                "Control design evaluation",
+                "Audit evidence collection & documentation"
+            ],
+            "keywords": [
+                "walkthrough",
+                "process trace",
+                "control design review"
+            ],
+            "common_roles": [
+                "internal audit function",
+                "process control teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Test of Controls (TOC) execution",
+            "aliases": [
+                "TOC execution",
+                "execute tests of controls"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Executing specified tests of controls against defined criteria, recording results, exceptions and evidentiary support in line with audit methodology.",
+            "parent_skill": "Control testing & walkthroughs",
+            "related_skills": [
+                "Audit evidence collection & documentation",
+                "Audit sampling",
+                "Control deficiency identification & classification"
+            ],
+            "keywords": [
+                "test execution",
+                "test steps",
+                "evidence capture",
+                "exceptions"
+            ],
+            "common_roles": [
+                "internal audit function",
+                "SOX compliance function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Audit sampling",
+            "aliases": [
+                "statistical sampling",
+                "non-statistical sampling",
+                "audit sampling techniques"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Selecting and applying appropriate statistical or non-statistical sampling methods for control and substantive testing and justifying sampling risk and confidence levels.",
+            "parent_skill": "Control testing & walkthroughs",
+            "related_skills": [
+                "Control testing design",
+                "Test of Controls (TOC) execution",
+                "Audit data analytics tools"
+            ],
+            "keywords": [
+                "random sampling",
+                "monetary unit sampling",
+                "attribute sampling",
+                "sample size"
+            ],
+            "common_roles": [
+                "internal audit function",
+                "risk assessment teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Audit evidence collection & documentation",
+            "aliases": [
+                "evidence documentation",
+                "audit working papers",
+                "working paper documentation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Collecting, organizing and documenting audit evidence and working papers to support findings, testing conclusions and audit trail requirements.",
+            "parent_skill": "Control testing & walkthroughs",
+            "related_skills": [
+                "Test of Controls (TOC) execution",
+                "Control deficiency identification & classification",
+                "Control remediation retesting"
+            ],
+            "keywords": [
+                "working papers",
+                "evidence retention",
+                "documentation standards",
+                "audit trail"
+            ],
+            "common_roles": [
+                "internal audit function",
+                "external audit teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control deficiency identification & classification",
+            "aliases": [
+                "deficiency assessment",
+                "material weakness identification",
+                "significant deficiency classification"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Identifying control failures or gaps, assessing severity (e.g., deficiency, significant deficiency, material weakness) and documenting implications for financial reporting and compliance.",
+            "parent_skill": "Control testing & walkthroughs",
+            "related_skills": [
+                "Audit evidence collection & documentation",
+                "SOX control mapping",
+                "Control remediation retesting"
+            ],
+            "keywords": [
+                "deficiency",
+                "material weakness",
+                "significant deficiency",
+                "root cause"
+            ],
+            "common_roles": [
+                "SOX compliance function",
+                "internal control reviewers"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SOX control mapping",
+            "aliases": [
+                "control mapping",
+                "SOX mapping",
+                "control-to-risk mapping"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Linking financial statement risks and control objectives to specific controls and process owners for SOX compliance and testing scoping.",
+            "parent_skill": "Control testing & walkthroughs",
+            "related_skills": [
+                "Control testing design",
+                "Control deficiency identification & classification",
+                "Test of Controls (TOC) execution"
+            ],
+            "keywords": [
+                "mapping",
+                "control matrix",
+                "risk-to-control"
+            ],
+            "common_roles": [
+                "SOX compliance function",
+                "internal audit function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control remediation retesting",
+            "aliases": [
+                "retesting remediated controls",
+                "post-remediation testing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Planning and performing retesting of remediated controls to confirm effective remediation and to validate previously reported deficiencies are resolved.",
+            "parent_skill": "Control testing & walkthroughs",
+            "related_skills": [
+                "Control deficiency identification & classification",
+                "Test of Controls (TOC) execution",
+                "Audit evidence collection & documentation"
+            ],
+            "keywords": [
+                "retest",
+                "remediation validation",
+                "closure testing"
+            ],
+            "common_roles": [
+                "SOX compliance function",
+                "internal audit function"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Audit analytics software",
+            "aliases": [
+                "audit data analytics tools",
+                "ACL",
+                "IDEA",
+                "Alteryx",
+                "TeamMate Analytics"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using specialized analytics and audit tools to analyze large datasets, detect anomalies, test controls and automate sampling and reconciliation procedures.",
+            "parent_skill": "Control testing & walkthroughs",
+            "related_skills": [
+                "Audit sampling",
+                "Test of Controls (TOC) execution",
+                "Audit evidence collection & documentation"
+            ],
+            "keywords": [
+                "data analytics",
+                "IDEA",
+                "ACL",
+                "Alteryx",
+                "analytics scripts"
+            ],
+            "common_roles": [
+                "internal audit function",
+                "data analytics in audit"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Stakeholder interviewing & walkthrough facilitation",
+            "aliases": [
+                "control owner interviews",
+                "walkthrough facilitation",
+                "interviewing control owners"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Planning and conducting interviews with process owners and stakeholders to obtain confirmations, clarify control operation and facilitate walkthroughs.",
+            "parent_skill": "Control testing & walkthroughs",
+            "related_skills": [
+                "Control walkthroughs",
+                "Control design evaluation",
+                "Audit evidence collection & documentation"
+            ],
+            "keywords": [
+                "interviewing",
+                "facilitation",
+                "stakeholder engagement",
+                "control owner"
+            ],
+            "common_roles": [
+                "internal audit function",
+                "SOX compliance function"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

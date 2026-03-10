@@ -1,0 +1,306 @@
+{
+    "domain": "F&B",
+    "category": "Menu Development & Culinary R&D",
+    "subcategory": "Menu rollout training materials",
+    "skills": [
+        {
+            "canonical_name": "Instructional design for culinary training",
+            "aliases": [
+                "culinary instructional design",
+                "training curriculum design for menu rollout"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing structured learning curricula, modules, learning objectives and lesson plans specifically for culinary and menu rollout contexts.",
+            "parent_skill": "Menu rollout training materials",
+            "related_skills": [
+                "Assessment design for menu items",
+                "Multimedia training content production",
+                "SOP development for new menu items"
+            ],
+            "keywords": [
+                "learning objectives",
+                "curriculum",
+                "lesson plan",
+                "learning pathways",
+                "onboarding"
+            ],
+            "common_roles": [
+                "Culinary Trainer",
+                "Instructional Designer",
+                "Training Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Recipe documentation and standardization",
+            "aliases": [
+                "recipe standardization",
+                "standard recipe documentation",
+                "portion and plating specifications"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Creating consistent, replicable recipe documents including ingredient lists, portion sizes, yields, prep steps and plating specifications for training use.",
+            "parent_skill": "Menu rollout training materials",
+            "related_skills": [
+                "SOP development for new menu items",
+                "Hands-on kitchen training delivery",
+                "Quality control checklist creation"
+            ],
+            "keywords": [
+                "yield",
+                "portioning",
+                "plating guide",
+                "ingredient specs",
+                "costing inputs"
+            ],
+            "common_roles": [
+                "Culinary R&D Chef",
+                "Menu Development Specialist",
+                "Kitchen Supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Standard Operating Procedure (SOP) development for new menu items",
+            "aliases": [
+                "menu SOP writing",
+                "operational procedure development",
+                "kitchen SOP for new dishes"
+            ],
+            "skill_type": "process_skill",
+            "description": "Developing clear step-by-step operational procedures, safety and quality checks, and role responsibilities for executing new menu items at scale.",
+            "parent_skill": "Menu rollout training materials",
+            "related_skills": [
+                "Recipe documentation and standardization",
+                "Food safety and allergen training",
+                "Quality control checklist creation"
+            ],
+            "keywords": [
+                "SOP",
+                "work instructions",
+                "process map",
+                "handoff",
+                "checklists"
+            ],
+            "common_roles": [
+                "Operations Manager",
+                "Quality Assurance",
+                "Culinary Trainer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Train-the-trainer facilitation",
+            "aliases": [
+                "trainer facilitation",
+                "trainer coaching for menu rollout",
+                "train the trainer"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Coaching and equipping internal trainers with teaching techniques, demonstration skills and assessment methods to deliver menu rollout training consistently.",
+            "parent_skill": "Menu rollout training materials",
+            "related_skills": [
+                "Instructional design for culinary training",
+                "Hands-on kitchen training delivery",
+                "Assessment design for menu items"
+            ],
+            "keywords": [
+                "facilitation",
+                "coaching",
+                "trainers",
+                "demonstration",
+                "skill transfer"
+            ],
+            "common_roles": [
+                "Culinary Trainer",
+                "Training Manager",
+                "Lead Chef"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Hands-on kitchen training delivery",
+            "aliases": [
+                "practical kitchen training",
+                "on-the-line training delivery",
+                "operational training in kitchen"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Delivering in-kitchen practical instruction and demonstrations to front-line staff on preparation, assembly, timing and plating of new menu items.",
+            "parent_skill": "Menu rollout training materials",
+            "related_skills": [
+                "Recipe documentation and standardization",
+                "Train-the-trainer facilitation",
+                "SOP development for new menu items"
+            ],
+            "keywords": [
+                "demonstration",
+                "coaching",
+                "line training",
+                "timing",
+                "speed of service"
+            ],
+            "common_roles": [
+                "Kitchen Supervisor",
+                "Culinary Trainer",
+                "Line Chef"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Learning Management System (LMS) administration for menu training",
+            "aliases": [
+                "LMS administration",
+                "training platform administration",
+                "e-learning administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring courses, user enrollments, progress tracking, content upload and reporting in an LMS to support menu rollout training programs.",
+            "parent_skill": "Menu rollout training materials",
+            "related_skills": [
+                "Multimedia training content production",
+                "Training evaluation and metrics reporting",
+                "Instructional design for culinary training"
+            ],
+            "keywords": [
+                "LMS",
+                "course setup",
+                "user management",
+                "SCORM",
+                "reporting"
+            ],
+            "common_roles": [
+                "Training Administrator",
+                "Learning & Development",
+                "Training Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Multimedia training content production (video & photo)",
+            "aliases": [
+                "training video production",
+                "culinary photography for training",
+                "instructional video creation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Planning and producing visual training assets—how-to videos, step photos and short clips—optimized for staff training and e-learning modules.",
+            "parent_skill": "Menu rollout training materials",
+            "related_skills": [
+                "Instructional design for culinary training",
+                "LMS administration for menu training",
+                "Hands-on kitchen training delivery"
+            ],
+            "keywords": [
+                "video shooting",
+                "editing",
+                "storyboarding",
+                "close-up food photography",
+                "microlearning"
+            ],
+            "common_roles": [
+                "Content Producer",
+                "Culinary Trainer",
+                "Instructional Designer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Assessment design for menu items",
+            "aliases": [
+                "competency testing for menu items",
+                "skills assessment for new dishes",
+                "practical and theoretical assessment design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing practical and knowledge-based assessments, checklists and scoring rubrics to validate staff competency on new menu items.",
+            "parent_skill": "Menu rollout training materials",
+            "related_skills": [
+                "Train-the-trainer facilitation",
+                "Training evaluation and metrics reporting",
+                "Recipe documentation and standardization"
+            ],
+            "keywords": [
+                "rubric",
+                "practical test",
+                "knowledge test",
+                "competency",
+                "skills verification"
+            ],
+            "common_roles": [
+                "Culinary Trainer",
+                "Quality Assurance",
+                "Kitchen Supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food safety and allergen training for menu rollout",
+            "aliases": [
+                "allergen training",
+                "food safety training for new menu",
+                "menu-specific hygiene training"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Teaching food safety, cross-contact prevention, allergen protocols and hygiene practices as they specifically apply to new menu items and preparation flows.",
+            "parent_skill": "Menu rollout training materials",
+            "related_skills": [
+                "SOP development for new menu items",
+                "Recipe documentation and standardization",
+                "Assessment design for menu items"
+            ],
+            "keywords": [
+                "allergen control",
+                "cross-contact",
+                "hygiene",
+                "food handling",
+                "safety briefings"
+            ],
+            "common_roles": [
+                "Food Safety Officer",
+                "Quality Assurance",
+                "Kitchen Supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Training evaluation and metrics reporting",
+            "aliases": [
+                "training metrics",
+                "learning analytics for menu rollout",
+                "training impact measurement"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Collecting, analyzing and reporting KPIs and outcomes from training programs (e.g., competency pass rates, time-to-competence, quality incidents) to measure rollout effectiveness.",
+            "parent_skill": "Menu rollout training materials",
+            "related_skills": [
+                "LMS administration for menu training",
+                "Assessment design for menu items",
+                "Instructional design for culinary training"
+            ],
+            "keywords": [
+                "KPIs",
+                "learning analytics",
+                "pass rate",
+                "time-to-competence",
+                "training ROI"
+            ],
+            "common_roles": [
+                "Training Manager",
+                "Operations Analyst",
+                "Quality Assurance"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

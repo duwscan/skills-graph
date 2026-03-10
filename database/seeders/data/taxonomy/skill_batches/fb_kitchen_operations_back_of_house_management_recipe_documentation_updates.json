@@ -1,0 +1,307 @@
+{
+    "domain": "F&B",
+    "category": "Kitchen Operations & Back-of-House Management",
+    "subcategory": "Recipe documentation & updates",
+    "skills": [
+        {
+            "canonical_name": "Recipe documentation",
+            "aliases": [
+                "recipe writing",
+                "recipe authoring",
+                "documenting recipes"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Creating clear, step-by-step recipe records including ingredients, quantities, procedures, timing and plating instructions for use in production and training.",
+            "parent_skill": "Recipe documentation & updates",
+            "related_skills": [
+                "Recipe standardization",
+                "Recipe version control",
+                "Digital recipe management software",
+                "Sensory specification writing"
+            ],
+            "keywords": [
+                "recipe",
+                "procedure",
+                "ingredients",
+                "instructions",
+                "documentation"
+            ],
+            "common_roles": [
+                "culinary staff",
+                "kitchen management",
+                "culinary development",
+                "food technologists"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Recipe standardization",
+            "aliases": [
+                "standardized recipe formatting",
+                "recipe templating",
+                "recipe SOP formatting"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying consistent formats, units, terminology and measurement conventions to recipes to ensure reproducible results and ease of use across locations.",
+            "parent_skill": "Recipe documentation & updates",
+            "related_skills": [
+                "Recipe documentation",
+                "SOP integration for recipes",
+                "Recipe version control"
+            ],
+            "keywords": [
+                "standardization",
+                "templates",
+                "consistency",
+                "units",
+                "format"
+            ],
+            "common_roles": [
+                "kitchen management",
+                "culinary development",
+                "quality assurance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Recipe version control",
+            "aliases": [
+                "recipe revision tracking",
+                "recipe change management",
+                "recipe versioning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Managing, tracking and documenting changes to recipe files and specifications, including revision history, author, rationale and approval status.",
+            "parent_skill": "Recipe documentation & updates",
+            "related_skills": [
+                "Recipe documentation",
+                "Digital recipe management software",
+                "Recipe standardization"
+            ],
+            "keywords": [
+                "versioning",
+                "revision history",
+                "change log",
+                "approval"
+            ],
+            "common_roles": [
+                "culinary development",
+                "kitchen management",
+                "quality assurance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Recipe scaling and yield calculation",
+            "aliases": [
+                "recipe scaling",
+                "batch conversion",
+                "yield calculation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Adjusting ingredient quantities and process parameters to scale recipes up or down while maintaining yield, quality and cost targets for different batch sizes.",
+            "parent_skill": "Recipe documentation & updates",
+            "related_skills": [
+                "Portion control and serving size specification",
+                "Recipe costing and food cost analysis",
+                "Recipe documentation"
+            ],
+            "keywords": [
+                "scaling",
+                "batch size",
+                "yield",
+                "conversion",
+                "multipliers"
+            ],
+            "common_roles": [
+                "culinary staff",
+                "kitchen management",
+                "culinary development"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Portion control and serving size specification",
+            "aliases": [
+                "portion control",
+                "serving size specification",
+                "portioning guidelines"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Defining and documenting standard portion sizes, plating weights and portioning methods to ensure consistency, cost control and nutritional accuracy.",
+            "parent_skill": "Recipe documentation & updates",
+            "related_skills": [
+                "Recipe scaling and yield calculation",
+                "Recipe costing and food cost analysis",
+                "Sensory specification writing"
+            ],
+            "keywords": [
+                "portion",
+                "serving size",
+                "portions per batch",
+                "garnish",
+                "portioner"
+            ],
+            "common_roles": [
+                "culinary staff",
+                "kitchen management",
+                "quality assurance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Recipe costing and food cost analysis",
+            "aliases": [
+                "recipe cost calculation",
+                "food cost per plate",
+                "ingredient cost analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculating ingredient and production costs per recipe or menu item, including yield-adjusted costing, unit cost sourcing and cost-per-serving analysis for menu pricing and margin control.",
+            "parent_skill": "Recipe documentation & updates",
+            "related_skills": [
+                "Recipe scaling and yield calculation",
+                "Portion control and serving size specification",
+                "Digital recipe management software"
+            ],
+            "keywords": [
+                "costing",
+                "food cost",
+                "margin",
+                "unit cost",
+                "cost per portion"
+            ],
+            "common_roles": [
+                "kitchen management",
+                "culinary development",
+                "finance operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Nutritional analysis for recipes",
+            "aliases": [
+                "recipe nutrition analysis",
+                "calorie and macro calculation",
+                "nutritional labeling calculations"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Computing calories, macronutrients, vitamins\/minerals and other nutrition values for recipes using ingredient composition data, for labeling, menu planning and regulatory compliance.",
+            "parent_skill": "Recipe documentation & updates",
+            "related_skills": [
+                "Allergen and labeling compliance for recipes",
+                "Recipe documentation",
+                "Digital recipe management software"
+            ],
+            "keywords": [
+                "nutrition",
+                "calories",
+                "macros",
+                "nutrient analysis",
+                "labeling"
+            ],
+            "common_roles": [
+                "culinary development",
+                "food technologists",
+                "quality assurance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen and labeling compliance for recipes",
+            "aliases": [
+                "allergen labeling",
+                "ingredient allergen tracking",
+                "recipe labeling compliance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Identifying and documenting allergenic ingredients and relevant label information within recipes to meet food safety rules and consumer information requirements.",
+            "parent_skill": "Recipe documentation & updates",
+            "related_skills": [
+                "Nutritional analysis for recipes",
+                "Recipe documentation",
+                "Sensory specification writing"
+            ],
+            "keywords": [
+                "allergens",
+                "labeling",
+                "ingredient tracking",
+                "compliance",
+                "cross-contact"
+            ],
+            "common_roles": [
+                "quality assurance",
+                "culinary development",
+                "food safety teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sensory specification writing",
+            "aliases": [
+                "sensory profiling",
+                "flavor and texture specification",
+                "product quality specification"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Documenting expected sensory attributes (flavor, aroma, texture, appearance) and acceptance criteria for recipes to guide production quality and training.",
+            "parent_skill": "Recipe documentation & updates",
+            "related_skills": [
+                "Recipe documentation",
+                "Portion control and serving size specification",
+                "Allergen and labeling compliance for recipes"
+            ],
+            "keywords": [
+                "sensory",
+                "flavor",
+                "texture",
+                "appearance",
+                "quality spec"
+            ],
+            "common_roles": [
+                "culinary development",
+                "quality assurance",
+                "food technologists"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Digital recipe management software",
+            "aliases": [
+                "recipe management systems",
+                "digital recipe database",
+                "kitchen recipe software"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using dedicated digital platforms to store, organize, publish and share recipes, including features for costing, nutrition, versioning and multi-site distribution.",
+            "parent_skill": "Recipe documentation & updates",
+            "related_skills": [
+                "Recipe version control",
+                "Recipe costing and food cost analysis",
+                "Nutritional analysis for recipes"
+            ],
+            "keywords": [
+                "recipe software",
+                "CMS",
+                "digital database",
+                "kitchen management system"
+            ],
+            "common_roles": [
+                "kitchen management",
+                "culinary development",
+                "operations managers"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

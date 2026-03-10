@@ -1,0 +1,311 @@
+{
+    "domain": "IT",
+    "category": "Systems Engineering & Endpoint Management",
+    "subcategory": "Virtualization platforms",
+    "skills": [
+        {
+            "canonical_name": "VMware vSphere administration",
+            "aliases": [
+                "vSphere administration",
+                "VMware ESXi administration",
+                "vCenter management"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Administration of VMware vSphere platform components (ESXi hosts, vCenter, clusters, datastores) including HA\/DRS, vMotion, resource pools and baseline patching.",
+            "parent_skill": "Virtualization platforms",
+            "related_skills": [
+                "Virtual machine provisioning and lifecycle management",
+                "Live migration and VM mobility",
+                "Virtualization performance troubleshooting and tuning",
+                "Virtual storage and datastore management",
+                "Virtual networking and overlay networks"
+            ],
+            "keywords": [
+                "ESXi",
+                "vCenter",
+                "vMotion",
+                "DRS",
+                "HA",
+                "datastore"
+            ],
+            "common_roles": [
+                "Systems Administrator",
+                "Virtualization Engineer",
+                "Infrastructure Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Microsoft Hyper-V administration",
+            "aliases": [
+                "Hyper-V administration",
+                "Windows Server Hyper-V",
+                "Hyper-V cluster management"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Management of Microsoft Hyper-V hosts and clusters, guest VM lifecycle, failover clustering, replica\/replication and integration with Windows Server tooling.",
+            "parent_skill": "Virtualization platforms",
+            "related_skills": [
+                "Virtual machine provisioning and lifecycle management",
+                "Live migration and VM mobility",
+                "Virtualization performance troubleshooting and tuning",
+                "Virtual networking and overlay networks"
+            ],
+            "keywords": [
+                "Hyper-V",
+                "failover cluster",
+                "Live Migration",
+                "Replica"
+            ],
+            "common_roles": [
+                "Systems Administrator",
+                "Infrastructure Engineer",
+                "Cloud Operations Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "KVM\/QEMU virtualization administration",
+            "aliases": [
+                "KVM administration",
+                "QEMU\/libvirt administration",
+                "Linux virtualization (KVM)"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Administration of KVM\/QEMU-based virtualization on Linux, including libvirt\/virsh, host configuration, image management, networking and storage integration.",
+            "parent_skill": "Virtualization platforms",
+            "related_skills": [
+                "Virtual machine provisioning and lifecycle management",
+                "Virtualization automation and Infrastructure as Code",
+                "Virtual storage and datastore management",
+                "Virtualization performance troubleshooting and tuning"
+            ],
+            "keywords": [
+                "KVM",
+                "QEMU",
+                "libvirt",
+                "virsh",
+                "qcow2"
+            ],
+            "common_roles": [
+                "Linux Systems Administrator",
+                "Virtualization Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Virtual machine provisioning and lifecycle management",
+            "aliases": [
+                "VM provisioning",
+                "VM lifecycle management",
+                "Template and image management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Processes and best practices for creating, configuring, templating, snapshotting, updating and decommissioning virtual machines across platforms while enforcing configuration standards and security hardening.",
+            "parent_skill": "Virtualization platforms",
+            "related_skills": [
+                "Virtualization automation and Infrastructure as Code",
+                "VMware vSphere administration",
+                "KVM\/QEMU virtualization administration",
+                "Microsoft Hyper-V administration"
+            ],
+            "keywords": [
+                "templating",
+                "golden images",
+                "snapshots",
+                "provisioning workflows"
+            ],
+            "common_roles": [
+                "Cloud Engineer",
+                "Systems Administrator",
+                "DevOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Live migration and VM mobility",
+            "aliases": [
+                "VM live migration",
+                "vMotion",
+                "Live VM migration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Planning and executing live and cold migrations of VMs between hosts or datastores with minimal downtime, including cross-cluster\/zone moves and handling dependencies like storage and networking.",
+            "parent_skill": "Virtualization platforms",
+            "related_skills": [
+                "VMware vSphere administration",
+                "Microsoft Hyper-V administration",
+                "Virtual storage and datastore management",
+                "Virtual networking and overlay networks"
+            ],
+            "keywords": [
+                "live migration",
+                "cold migration",
+                "vMotion",
+                "storage migration"
+            ],
+            "common_roles": [
+                "Systems Administrator",
+                "Site Reliability Engineer",
+                "Infrastructure Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Virtual networking and overlay networks",
+            "aliases": [
+                "Virtual networking",
+                "VXLAN",
+                "virtual switches"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Design and configuration of virtual networking constructs used by hypervisors and virtualization platforms (vSwitch, VLAN, VXLAN, overlay networks), including network segmentation, security groups and integration with SDN solutions.",
+            "parent_skill": "Virtualization platforms",
+            "related_skills": [
+                "VMware vSphere administration",
+                "Microsoft Hyper-V administration",
+                "Virtualization performance troubleshooting and tuning",
+                "Live migration and VM mobility"
+            ],
+            "keywords": [
+                "vSwitch",
+                "VLAN",
+                "VXLAN",
+                "overlay",
+                "SDN"
+            ],
+            "common_roles": [
+                "Network Engineer",
+                "Virtualization Engineer",
+                "Cloud Network Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Virtual storage and datastore management",
+            "aliases": [
+                "Datastore management",
+                "virtual SAN management",
+                "storage for virtualization"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Provisioning and management of storage backends for VMs, including datastores, block\/file storage integration, thin provisioning, snapshots, replication and storage policy application.",
+            "parent_skill": "Virtualization platforms",
+            "related_skills": [
+                "VMware vSphere administration",
+                "KVM\/QEMU virtualization administration",
+                "Live migration and VM mobility",
+                "Hyperconverged infrastructure (HCI) deployment and management"
+            ],
+            "keywords": [
+                "datastore",
+                "iSCSI",
+                "NFS",
+                "thin provisioning",
+                "snapshots"
+            ],
+            "common_roles": [
+                "Storage Engineer",
+                "Infrastructure Engineer",
+                "Systems Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Virtualization performance troubleshooting and tuning",
+            "aliases": [
+                "VM performance tuning",
+                "hypervisor performance troubleshooting",
+                "resource contention analysis"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Diagnosing and resolving performance issues in virtualized environments, including CPU, memory, storage I\/O and network contention analysis, and tuning resource allocation policies.",
+            "parent_skill": "Virtualization platforms",
+            "related_skills": [
+                "VMware vSphere administration",
+                "KVM\/QEMU virtualization administration",
+                "Virtual storage and datastore management",
+                "Virtual networking and overlay networks"
+            ],
+            "keywords": [
+                "CPU ready",
+                "ballooning",
+                "I\/O latency",
+                "resource contention"
+            ],
+            "common_roles": [
+                "Performance Engineer",
+                "Systems Administrator",
+                "Site Reliability Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Virtualization automation and Infrastructure as Code",
+            "aliases": [
+                "Virtualization automation",
+                "IaC for virtualization",
+                "automated VM provisioning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Using automation and Infrastructure as Code approaches to provision, configure and manage virtual infrastructure (VM templates, automated lifecycle tasks, orchestration), integrating with tools and CI\/CD pipelines.",
+            "parent_skill": "Virtualization platforms",
+            "related_skills": [
+                "Virtual machine provisioning and lifecycle management",
+                "KVM\/QEMU virtualization administration",
+                "VMware vSphere administration"
+            ],
+            "keywords": [
+                "IaC",
+                "automation",
+                "orchestration",
+                "provisioning scripts"
+            ],
+            "common_roles": [
+                "DevOps Engineer",
+                "Cloud Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Hyperconverged infrastructure (HCI) deployment and management",
+            "aliases": [
+                "HCI deployment",
+                "hyperconverged systems management",
+                "HCI operations"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Deploying and operating hyperconverged infrastructure that integrates compute, storage and virtualization (node management, cluster scaling, data protection, upgrades and performance balancing).",
+            "parent_skill": "Virtualization platforms",
+            "related_skills": [
+                "Virtual storage and datastore management",
+                "VMware vSphere administration",
+                "Virtualization performance troubleshooting and tuning"
+            ],
+            "keywords": [
+                "HCI",
+                "cluster scaling",
+                "data protection",
+                "node management"
+            ],
+            "common_roles": [
+                "Infrastructure Engineer",
+                "Systems Administrator",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

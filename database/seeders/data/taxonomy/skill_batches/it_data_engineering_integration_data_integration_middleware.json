@@ -1,0 +1,269 @@
+{
+    "domain": "IT",
+    "category": "Data Engineering & Integration",
+    "subcategory": "Data integration & middleware",
+    "skills": [
+        {
+            "canonical_name": "ETL\/ELT pipeline design",
+            "aliases": [
+                "ETL pipeline design",
+                "ELT pipeline design",
+                "ETL\/ELT development",
+                "ETL development"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing extract-transform-load (ETL) or extract-load-transform (ELT) processes to move and transform data between sources and targets.",
+            "parent_skill": "Data integration & middleware",
+            "related_skills": [
+                "Data pipeline orchestration",
+                "Data modeling",
+                "SQL",
+                "dbt (tool)"
+            ],
+            "keywords": [
+                "ETL",
+                "ELT",
+                "data transformation",
+                "pipeline",
+                "batch ingestion"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Streaming data integration",
+            "aliases": [
+                "real-time data integration",
+                "stream integration",
+                "streaming ingestion"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Integrating and ingesting continuous data streams for real-time or near-real-time processing and delivery.",
+            "parent_skill": "Data integration & middleware",
+            "related_skills": [
+                "Apache Kafka (tool)",
+                "Stream processing",
+                "Change data capture (CDC) implementation"
+            ],
+            "keywords": [
+                "streaming",
+                "real-time",
+                "low-latency",
+                "event stream",
+                "Kafka"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Change data capture (CDC) implementation",
+            "aliases": [
+                "CDC implementation",
+                "incremental data replication",
+                "log-based replication"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Implementing change data capture techniques to capture and propagate record-level data changes from source systems to downstream systems.",
+            "parent_skill": "Data integration & middleware",
+            "related_skills": [
+                "Streaming data integration",
+                "ETL\/ELT pipeline design",
+                "Debezium (tool)"
+            ],
+            "keywords": [
+                "CDC",
+                "incremental load",
+                "replication",
+                "log-based"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Message-based integration (pub\/sub & message queues)",
+            "aliases": [
+                "message queue integration",
+                "pub\/sub integration",
+                "messaging integration"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and integrating systems using message-oriented middleware patterns such as pub\/sub, queues, and event-driven messaging.",
+            "parent_skill": "Data integration & middleware",
+            "related_skills": [
+                "Streaming data integration",
+                "Apache Kafka (tool)",
+                "RabbitMQ (tool)"
+            ],
+            "keywords": [
+                "messaging",
+                "pubsub",
+                "queue",
+                "event-driven",
+                "middleware"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "API-based data integration",
+            "aliases": [
+                "API integration",
+                "RESTful data ingestion",
+                "GraphQL data integration",
+                "webhook ingestion"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Integrating systems and ingesting data via APIs (REST, GraphQL, webhooks), including pagination, throttling, and authentication handling.",
+            "parent_skill": "Data integration & middleware",
+            "related_skills": [
+                "API design",
+                "OAuth",
+                "Data pipeline orchestration"
+            ],
+            "keywords": [
+                "API",
+                "REST",
+                "GraphQL",
+                "webhook",
+                "ingestion"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data pipeline orchestration",
+            "aliases": [
+                "workflow orchestration",
+                "pipeline scheduling",
+                "job orchestration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Defining, scheduling and managing end-to-end data workflows and dependency graphs for batch and streaming pipelines.",
+            "parent_skill": "Data integration & middleware",
+            "related_skills": [
+                "ETL\/ELT pipeline design",
+                "Airflow (tool)",
+                "Prefect (tool)"
+            ],
+            "keywords": [
+                "orchestration",
+                "scheduling",
+                "DAG",
+                "workflow",
+                "dependencies"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Enterprise Service Bus (ESB) integration patterns",
+            "aliases": [
+                "ESB integration",
+                "service bus patterns",
+                "enterprise bus integration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying ESB design patterns and integration techniques (routing, transformation, mediation) for enterprise application interoperability.",
+            "parent_skill": "Data integration & middleware",
+            "related_skills": [
+                "Message-based integration (pub\/sub & message queues)",
+                "API-based data integration"
+            ],
+            "keywords": [
+                "ESB",
+                "routing",
+                "mediation",
+                "transformation",
+                "integration patterns"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Integration data quality & validation",
+            "aliases": [
+                "data validation for integrations",
+                "integration data quality",
+                "ingestion validation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing checks, profiling and validation rules to ensure correctness, completeness and reliability of data flowing through integrations.",
+            "parent_skill": "Data integration & middleware",
+            "related_skills": [
+                "Data pipeline orchestration",
+                "Data quality testing",
+                "Great Expectations (tool)"
+            ],
+            "keywords": [
+                "data quality",
+                "validation",
+                "profiling",
+                "checks",
+                "consistency"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data lineage and metadata management for integrations",
+            "aliases": [
+                "data lineage",
+                "integration metadata management",
+                "data provenance"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Capturing and analyzing metadata and lineage to track data origin, transformations and downstream impact across integration workflows.",
+            "parent_skill": "Data integration & middleware",
+            "related_skills": [
+                "Metadata cataloging",
+                "Data governance",
+                "OpenLineage (spec)"
+            ],
+            "keywords": [
+                "lineage",
+                "provenance",
+                "metadata",
+                "catalog",
+                "traceability"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Integration security and governance",
+            "aliases": [
+                "secure integrations",
+                "integration governance",
+                "secure data transfer"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Applying security controls, access policies, encryption and governance practices specific to data integrations and middleware to ensure compliance and protect data.",
+            "parent_skill": "Data integration & middleware",
+            "related_skills": [
+                "API-based data integration",
+                "Data governance",
+                "IAM",
+                "encryption"
+            ],
+            "keywords": [
+                "security",
+                "governance",
+                "encryption",
+                "access control",
+                "compliance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

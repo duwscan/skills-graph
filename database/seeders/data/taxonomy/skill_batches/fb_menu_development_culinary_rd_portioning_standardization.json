@@ -1,0 +1,318 @@
+{
+    "domain": "F&B",
+    "category": "Menu Development & Culinary R&D",
+    "subcategory": "Portioning & standardization",
+    "skills": [
+        {
+            "canonical_name": "Standardized Recipe Development",
+            "aliases": [
+                "recipe standardization",
+                "standard recipe creation",
+                "recipe standardisation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Create reproducible recipe specifications (ingredient weights\/volumes, step-by-step procedures, yield and portion information) that ensure consistent product across cooks and sites.",
+            "parent_skill": "Portioning & standardization",
+            "related_skills": [
+                "Batch Scaling & Recipe Conversion",
+                "Yield Calculation & Shrinkage Analysis",
+                "Recipe & Menu Management Software (RMS) for Portioning",
+                "Cost-per-Portion Food Costing"
+            ],
+            "keywords": [
+                "recipe card",
+                "standard recipe",
+                "yield",
+                "procedure",
+                "ingredient spec",
+                "portion size"
+            ],
+            "common_roles": [
+                "Culinary R&D Chef",
+                "Recipe Developer",
+                "Menu Developer",
+                "Food Technologist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Portion Control Techniques",
+            "aliases": [
+                "portioning techniques",
+                "serving size control",
+                "portion control procedures"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Apply practical methods (spooning, scooping, measuring cups, molds, pre-portioning) and visual standards to deliver uniform serving sizes at point of service or production.",
+            "parent_skill": "Portioning & standardization",
+            "related_skills": [
+                "Portion Scales & Dosing Equipment Operation",
+                "Portion Consistency Auditing & Quality Control",
+                "Standardized Recipe Development"
+            ],
+            "keywords": [
+                "serving size",
+                "scooping",
+                "ladling",
+                "pre-portioning",
+                "visual portioning"
+            ],
+            "common_roles": [
+                "Head Chef",
+                "Kitchen Manager",
+                "Production Chef",
+                "Culinary Supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Batch Scaling & Recipe Conversion",
+            "aliases": [
+                "scaling recipes",
+                "recipe scaling",
+                "batch conversion"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Convert and scale recipes reliably across batch sizes and production volumes while maintaining ingredient ratios, cooking times, and sensory quality.",
+            "parent_skill": "Portioning & standardization",
+            "related_skills": [
+                "Yield Calculation & Shrinkage Analysis",
+                "Recipe & Menu Management Software (RMS) for Portioning",
+                "Standardized Recipe Development"
+            ],
+            "keywords": [
+                "scaling",
+                "conversion factor",
+                "batch size",
+                "multiplication",
+                "ratio adjustment"
+            ],
+            "common_roles": [
+                "Culinary R&D Chef",
+                "Production Planner",
+                "Food Technologist",
+                "Recipe Developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Yield Calculation & Shrinkage Analysis",
+            "aliases": [
+                "food yield calculation",
+                "shrinkage estimation",
+                "cook loss analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Quantify raw-to-finished yields, trim and cook losses, and usable edible weight to determine accurate ingredient requirements and per-portion yields.",
+            "parent_skill": "Portioning & standardization",
+            "related_skills": [
+                "Cost-per-Portion Food Costing",
+                "Batch Scaling & Recipe Conversion",
+                "Standardized Recipe Development"
+            ],
+            "keywords": [
+                "yield",
+                "shrinkage",
+                "trim loss",
+                "cook loss",
+                "usable yield"
+            ],
+            "common_roles": [
+                "Food Technologist",
+                "Culinary R&D Analyst",
+                "Production Chef",
+                "Quality Assurance Technician"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cost-per-Portion Food Costing",
+            "aliases": [
+                "portion cost calculation",
+                "costing per portion",
+                "food cost per serving"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculate the ingredient and allocated operational cost attributable to a single serving, incorporating yield, waste, packaging and basic labor allocations for pricing and margin analysis.",
+            "parent_skill": "Portioning & standardization",
+            "related_skills": [
+                "Yield Calculation & Shrinkage Analysis",
+                "Recipe & Menu Management Software (RMS) for Portioning",
+                "Standardized Recipe Development"
+            ],
+            "keywords": [
+                "food cost",
+                "costing",
+                "margin",
+                "portion price",
+                "cost per serving"
+            ],
+            "common_roles": [
+                "Menu Developer",
+                "Culinary R&D Chef",
+                "Cost Analyst",
+                "Foodservice Financial Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Portion Scales & Dosing Equipment Operation",
+            "aliases": [
+                "portion scale operation",
+                "dosing machine operation",
+                "portioning equipment operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operate, calibrate and maintain commercial portion scales, dosing pumps, depositor machines and portioning attachments to achieve accurate, repeatable weights or volumes.",
+            "parent_skill": "Portioning & standardization",
+            "related_skills": [
+                "Portion Control Techniques",
+                "Portioning Line Setup & Workflow Optimization",
+                "Portion Consistency Auditing & Quality Control"
+            ],
+            "keywords": [
+                "digital scale",
+                "depositor",
+                "dosing pump",
+                "calibration",
+                "portioning machine"
+            ],
+            "common_roles": [
+                "Production Chef",
+                "Kitchen Technician",
+                "Food Production Operator",
+                "Culinary Equipment Operator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Portioning Line Setup & Workflow Optimization",
+            "aliases": [
+                "portion line setup",
+                "line balancing for portioning",
+                "portion workflow design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and configure production or service line layouts, station sequencing and staffing to minimize handling, balance takt time and maximize portioning throughput and consistency.",
+            "parent_skill": "Portioning & standardization",
+            "related_skills": [
+                "Portion Scales & Dosing Equipment Operation",
+                "Portion Control Techniques",
+                "Portion Consistency Auditing & Quality Control"
+            ],
+            "keywords": [
+                "line setup",
+                "workflow",
+                "throughput",
+                "takt time",
+                "stationing"
+            ],
+            "common_roles": [
+                "Kitchen Manager",
+                "Production Planner",
+                "Culinary R&D Chef",
+                "Operations Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Portion Consistency Auditing & Quality Control",
+            "aliases": [
+                "portion audits",
+                "portion QC",
+                "serving consistency checks"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Establish sampling plans, measurement protocols and corrective action processes to monitor and maintain portion weight\/volume consistency and presentation standards.",
+            "parent_skill": "Portioning & standardization",
+            "related_skills": [
+                "Portion Control Techniques",
+                "Portion Scales & Dosing Equipment Operation",
+                "Cost-per-Portion Food Costing"
+            ],
+            "keywords": [
+                "audit",
+                "sampling",
+                "SOP",
+                "tolerance",
+                "corrective action"
+            ],
+            "common_roles": [
+                "Quality Assurance Manager",
+                "Culinary Supervisor",
+                "Head Chef",
+                "Food Safety Auditor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen & Nutritional Portion Labeling Alignment",
+            "aliases": [
+                "portion labeling compliance",
+                "nutritional labeling per serving",
+                "allergen labeling per portion"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Ensure declared portion sizes on menus and packaging align with nutritional analysis and allergen statements, and meet regulatory or retailer serving-size requirements.",
+            "parent_skill": "Portioning & standardization",
+            "related_skills": [
+                "Standardized Recipe Development",
+                "Recipe & Menu Management Software (RMS) for Portioning",
+                "Cost-per-Portion Food Costing"
+            ],
+            "keywords": [
+                "allergen labeling",
+                "nutrition per serving",
+                "serving size regulation",
+                "declaration"
+            ],
+            "common_roles": [
+                "Food Technologist",
+                "Regulatory Affairs Specialist",
+                "Menu Developer",
+                "Quality Assurance Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Recipe & Menu Management Software (RMS) for Portioning",
+            "aliases": [
+                "recipe management software",
+                "menu management system",
+                "RMS for portions"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use and configure recipe\/menu management platforms to store standardized recipes, automate scaling, calculate portion costs, manage nutrition\/allergen data and publish portion specifications to operations.",
+            "parent_skill": "Portioning & standardization",
+            "related_skills": [
+                "Standardized Recipe Development",
+                "Cost-per-Portion Food Costing",
+                "Batch Scaling & Recipe Conversion"
+            ],
+            "keywords": [
+                "RMS",
+                "recipe software",
+                "menu platform",
+                "nutritional database",
+                "portions"
+            ],
+            "common_roles": [
+                "Menu Developer",
+                "Culinary R&D Chef",
+                "Food Technologist",
+                "Operations Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

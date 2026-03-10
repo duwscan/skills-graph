@@ -1,0 +1,302 @@
+{
+    "domain": "Finance",
+    "category": "Accounts Payable & Procure-to-Pay",
+    "subcategory": "Indirect tax handling in AP",
+    "skills": [
+        {
+            "canonical_name": "VAT\/GST invoice validation",
+            "aliases": [
+                "VAT invoice validation",
+                "GST invoice validation",
+                "tax invoice validation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Verify supplier invoices for indirect tax compliance and accuracy (taxable amounts, invoice elements, supplier tax identifiers), ensure supporting documentation, and flag\/route non-compliant items for remediation.",
+            "parent_skill": "Indirect tax handling in AP",
+            "related_skills": [
+                "Tax invoice documentation management and audit support",
+                "Indirect tax code mapping and maintenance",
+                "VAT\/GST recovery and reclaim processing"
+            ],
+            "keywords": [
+                "invoice validation",
+                "tax amount check",
+                "supplier tax ID",
+                "invoice authenticity",
+                "AP controls"
+            ],
+            "common_roles": [
+                "Accounts Payable",
+                "Indirect Tax",
+                "Finance Operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Indirect tax code mapping and maintenance",
+            "aliases": [
+                "tax code mapping",
+                "VAT code maintenance",
+                "GST code maintenance",
+                "tax code matrix management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Define, maintain and apply the mapping between transaction types, GL accounts and indirect tax codes; manage tax code matrices and updates to reflect rate changes, exemptions and country-specific rules.",
+            "parent_skill": "Indirect tax handling in AP",
+            "related_skills": [
+                "ERP tax determination configuration",
+                "VAT\/GST invoice validation",
+                "Indirect tax accruals and reconciliation"
+            ],
+            "keywords": [
+                "tax codes",
+                "rate mapping",
+                "tax matrix",
+                "chart of accounts",
+                "tax mapping"
+            ],
+            "common_roles": [
+                "Accounts Payable",
+                "ERP Finance",
+                "Indirect Tax"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Reverse charge processing (AP)",
+            "aliases": [
+                "reverse charge handling",
+                "self-assessed VAT processing",
+                "reverse charge VAT"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Identify transactions subject to reverse charge\/self-assessment, post correct accounting entries in AP, ensure VAT self-assessment is recorded and reported correctly across jurisdictions.",
+            "parent_skill": "Indirect tax handling in AP",
+            "related_skills": [
+                "Cross-border VAT and import VAT handling in AP",
+                "Indirect tax reporting and statutory returns support (AP data)"
+            ],
+            "keywords": [
+                "reverse charge",
+                "self-assessment",
+                "VAT accounting",
+                "AP postings",
+                "cross-border VAT"
+            ],
+            "common_roles": [
+                "Indirect Tax",
+                "Accounts Payable",
+                "Tax Compliance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ERP tax determination configuration",
+            "aliases": [
+                "tax determination configuration",
+                "tax rule configuration",
+                "ERP tax rules setup"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configure and test tax determination logic and rule sets within ERP systems (e.g., tax condition tables, tax determination routines) to ensure invoices are assigned correct indirect tax rates and codes automatically.",
+            "parent_skill": "Indirect tax handling in AP",
+            "related_skills": [
+                "Indirect tax code mapping and maintenance",
+                "Indirect tax accruals and reconciliation"
+            ],
+            "keywords": [
+                "tax rules",
+                "ERP configuration",
+                "tax engine",
+                "automation",
+                "system testing"
+            ],
+            "common_roles": [
+                "ERP Finance",
+                "Accounts Payable",
+                "Finance Systems"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "VAT\/GST recovery and reclaim processing",
+            "aliases": [
+                "VAT reclaim",
+                "GST recovery",
+                "input VAT recovery"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Identify recoverable indirect taxes on purchases, prepare and submit reclaim documentation or internal reclaims, track reimbursements and ensure recoverability criteria are met and evidenced.",
+            "parent_skill": "Indirect tax handling in AP",
+            "related_skills": [
+                "VAT\/GST invoice validation",
+                "Tax invoice documentation management and audit support",
+                "Indirect tax reporting and statutory returns support (AP data)"
+            ],
+            "keywords": [
+                "VAT reclaim",
+                "input tax",
+                "recoverable VAT",
+                "reclaim submission",
+                "supporting documents"
+            ],
+            "common_roles": [
+                "Accounts Payable",
+                "Indirect Tax",
+                "Finance Operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Withholding tax processing in AP",
+            "aliases": [
+                "WHT processing",
+                "withholding tax calculation AP",
+                "supplier withholding tax"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Apply withholding tax rules at invoice processing (determine applicability, calculate amounts, post withholdings, issue statements to vendors and ensure timely remittance and reporting to tax authorities).",
+            "parent_skill": "Indirect tax handling in AP",
+            "related_skills": [
+                "Indirect tax code mapping and maintenance",
+                "Indirect tax reporting and statutory returns support (AP data)"
+            ],
+            "keywords": [
+                "withholding tax",
+                "WHT",
+                "tax remittance",
+                "vendor statements",
+                "tax rates"
+            ],
+            "common_roles": [
+                "Accounts Payable",
+                "Tax Compliance",
+                "Finance Operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-border VAT and import VAT handling in AP",
+            "aliases": [
+                "cross-border VAT",
+                "import VAT processing",
+                "international VAT in AP"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Manage AP treatment of international purchases including import VAT, customs duties, intra-community\/acquisitions rules and impact on recoverability and reporting across jurisdictions.",
+            "parent_skill": "Indirect tax handling in AP",
+            "related_skills": [
+                "Reverse charge processing (AP)",
+                "VAT\/GST recovery and reclaim processing"
+            ],
+            "keywords": [
+                "import VAT",
+                "customs duties",
+                "cross-border purchase",
+                "non-resident suppliers",
+                "international indirect tax"
+            ],
+            "common_roles": [
+                "Accounts Payable",
+                "Indirect Tax",
+                "Global Trade Compliance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Indirect tax accruals and reconciliation",
+            "aliases": [
+                "VAT accruals",
+                "indirect tax reconciliation",
+                "tax accruals and reversals"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculate period-end indirect tax accruals for AP, reconcile AP tax ledger balances to statutory and internal records, investigate variances and support month-end tax adjustments.",
+            "parent_skill": "Indirect tax handling in AP",
+            "related_skills": [
+                "Indirect tax code mapping and maintenance",
+                "ERP tax determination configuration"
+            ],
+            "keywords": [
+                "accruals",
+                "reconciliation",
+                "month-end close",
+                "tax ledger",
+                "variance analysis"
+            ],
+            "common_roles": [
+                "Accounts Payable",
+                "Financial Reporting",
+                "Indirect Tax"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Indirect tax reporting and statutory returns support (AP data)",
+            "aliases": [
+                "VAT\/GST reporting",
+                "indirect tax reporting",
+                "statutory VAT reporting AP"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Prepare and validate AP-derived data for statutory indirect tax filings and disclosures (e.g., VAT\/GST returns, EC Sales Lists, SAF-T), coordinate with tax teams and external advisors to meet filing requirements.",
+            "parent_skill": "Indirect tax handling in AP",
+            "related_skills": [
+                "Indirect tax accruals and reconciliation",
+                "VAT\/GST recovery and reclaim processing"
+            ],
+            "keywords": [
+                "statutory returns",
+                "VAT filing",
+                "GST returns",
+                "tax disclosures",
+                "reporting"
+            ],
+            "common_roles": [
+                "Indirect Tax",
+                "Accounts Payable",
+                "Tax Compliance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax invoice documentation management and audit support",
+            "aliases": [
+                "invoice documentation for tax audit",
+                "tax audit support AP",
+                "supporting documentation for VAT\/GST"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Maintain and retrieve AP supporting documents to substantiate indirect tax treatments, respond to tax authority audits, compile evidence for recoverability\/exemptions and manage document retention policies.",
+            "parent_skill": "Indirect tax handling in AP",
+            "related_skills": [
+                "VAT\/GST invoice validation",
+                "VAT\/GST recovery and reclaim processing",
+                "Indirect tax reporting and statutory returns support (AP data)"
+            ],
+            "keywords": [
+                "audit support",
+                "documentation retention",
+                "supporting invoices",
+                "tax authority requests",
+                "evidence management"
+            ],
+            "common_roles": [
+                "Accounts Payable",
+                "Indirect Tax",
+                "Internal Audit"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,254 @@
+{
+    "domain": "IT",
+    "category": "Software Engineering & Application Development",
+    "subcategory": "Software build & dependency management",
+    "skills": [
+        {
+            "canonical_name": "Build automation",
+            "aliases": [
+                "automated builds",
+                "automated build processes"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing automated build processes that compile, test, package, and produce artifacts from source code using build tools and scripts.",
+            "parent_skill": "Software build & dependency management",
+            "related_skills": [
+                "Continuous integration (CI) build pipelines",
+                "Apache Maven",
+                "Gradle",
+                "Build caching & incremental builds"
+            ],
+            "keywords": [
+                "build scripts",
+                "automation",
+                "make",
+                "msbuild",
+                "ant"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dependency management",
+            "aliases": [
+                "dependency resolution",
+                "dependency management systems"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Managing external libraries and modules required by a project, including version selection, transitive dependency resolution, conflict resolution, and dependency scope management.",
+            "parent_skill": "Software build & dependency management",
+            "related_skills": [
+                "Semantic versioning (SemVer)",
+                "Apache Maven",
+                "npm package management"
+            ],
+            "keywords": [
+                "transitive dependencies",
+                "dependency graph",
+                "version conflicts",
+                "lockfiles"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Apache Maven",
+            "aliases": [
+                "Maven",
+                "mvn"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Apache Maven for project build lifecycle management, dependency resolution, plugin configuration, multi-module builds, and publishing artifacts.",
+            "parent_skill": "Software build & dependency management",
+            "related_skills": [
+                "Build automation",
+                "Dependency management",
+                "Artifact repository management"
+            ],
+            "keywords": [
+                "pom.xml",
+                "maven plugin",
+                "maven coordinates",
+                "multi-module"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Gradle",
+            "aliases": [
+                "gradle build",
+                "Gradle Kotlin DSL",
+                "Gradle Groovy DSL"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and using Gradle for declarative and scriptable builds, dependency resolution, incremental builds, multi-project builds, and custom task\/plugin development.",
+            "parent_skill": "Software build & dependency management",
+            "related_skills": [
+                "Build automation",
+                "Build caching & incremental builds",
+                "Dependency management"
+            ],
+            "keywords": [
+                "build.gradle",
+                "settings.gradle",
+                "Gradle wrapper",
+                "task configuration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "npm package management",
+            "aliases": [
+                "npm",
+                "npm packages",
+                "Node package management"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using npm to manage JavaScript\/Node.js project packages: installing, publishing, semantic versioning policies, lockfile handling, and registry configuration.",
+            "parent_skill": "Software build & dependency management",
+            "related_skills": [
+                "Dependency management",
+                "Semantic versioning (SemVer)",
+                "Yarn"
+            ],
+            "keywords": [
+                "package.json",
+                "package-lock.json",
+                "npm registry",
+                "npm publish"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bazel",
+            "aliases": [
+                "bazel build",
+                "Bazel build system"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Bazel for fast, hermetic, and scalable builds with reproducible caching, remote execution support, and fine-grained dependency declaration across polyglot repositories.",
+            "parent_skill": "Software build & dependency management",
+            "related_skills": [
+                "Build caching & incremental builds",
+                "Build automation",
+                "Dependency management"
+            ],
+            "keywords": [
+                "BUILD files",
+                "remote cache",
+                "remote execution",
+                "hermetic builds"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Artifact repository management",
+            "aliases": [
+                "artifact repositories",
+                "binary repository management",
+                "artifact management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operating and integrating artifact repositories to store, promote, and secure build outputs (binaries, packages, containers), manage access, retention, and publishing workflows.",
+            "parent_skill": "Software build & dependency management",
+            "related_skills": [
+                "Apache Maven",
+                "npm package management",
+                "Continuous integration (CI) build pipelines"
+            ],
+            "keywords": [
+                "repository manager",
+                "artifact promotion",
+                "retention policies",
+                "repository hosting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Semantic versioning (SemVer)",
+            "aliases": [
+                "SemVer",
+                "semantic versioning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying semantic versioning principles to assign meaningful version numbers and define compatibility guarantees, release strategies, and dependency update policies.",
+            "parent_skill": "Software build & dependency management",
+            "related_skills": [
+                "Dependency management",
+                "npm package management",
+                "Artifact repository management"
+            ],
+            "keywords": [
+                "major.minor.patch",
+                "backwards compatibility",
+                "release policy",
+                "versioning strategy"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Build caching & incremental builds",
+            "aliases": [
+                "incremental build",
+                "build cache",
+                "cached builds"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Implementing and tuning build caching, incremental compilation, and task-level caching to reduce build times and optimize developer feedback loops.",
+            "parent_skill": "Software build & dependency management",
+            "related_skills": [
+                "Gradle",
+                "Bazel",
+                "Build automation"
+            ],
+            "keywords": [
+                "remote cache",
+                "local cache",
+                "incremental compilation",
+                "task outputs"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Continuous integration (CI) build pipelines",
+            "aliases": [
+                "CI build pipelines",
+                "continuous integration pipelines",
+                "automated CI builds"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and operating CI pipelines that run automated builds, tests, artifact publishing, and dependency checks as part of the code integration process.",
+            "parent_skill": "Software build & dependency management",
+            "related_skills": [
+                "Build automation",
+                "Artifact repository management",
+                "Dependency management"
+            ],
+            "keywords": [
+                "pipeline orchestration",
+                "build agents",
+                "pipeline stages",
+                "artifact publishing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,251 @@
+{
+    "domain": "Finance",
+    "category": "Financial Reporting & External Disclosure",
+    "subcategory": "Stakeholder reporting packs",
+    "skills": [
+        {
+            "canonical_name": "Stakeholder reporting pack preparation",
+            "aliases": [
+                "investor reporting pack preparation",
+                "board pack production",
+                "management reporting pack compilation",
+                "stakeholder pack assembly"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Assembling and delivering consolidated reporting packs for external and internal stakeholders, including financial schedules, narratives, visualisations and annexes; ensuring consistency, completeness and on-time delivery.",
+            "parent_skill": "Stakeholder reporting packs",
+            "related_skills": [
+                "Financial data reconciliation and validation for reporting packs",
+                "Reporting pack template and version control management",
+                "Investor presentation design and storytelling",
+                "Quarterly results and earnings release coordination"
+            ],
+            "keywords": [
+                "report pack",
+                "pack compilation",
+                "investor pack",
+                "board pack",
+                "reporting cycle"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial narrative and MD&A drafting",
+            "aliases": [
+                "MD&A drafting",
+                "management discussion and analysis writing",
+                "narrative reporting"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Writing clear, audit-ready financial narratives (e.g., MD&A) that explain performance, drivers, risks and outlook to stakeholders while aligning with financial data and disclosures.",
+            "parent_skill": "Stakeholder reporting packs",
+            "related_skills": [
+                "Stakeholder reporting pack preparation",
+                "Variance analysis and commentary",
+                "Regulatory disclosure coordination for external reports"
+            ],
+            "keywords": [
+                "MD&A",
+                "narrative",
+                "earnings commentary",
+                "financial story"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "KPI dashboard design for stakeholder reporting",
+            "aliases": [
+                "stakeholder KPI dashboard development",
+                "executive dashboard design"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Designing and building KPI dashboards targeted at investors, boards or management that surface relevant metrics, trends and visual insights aligned to stakeholder needs.",
+            "parent_skill": "Stakeholder reporting packs",
+            "related_skills": [
+                "Stakeholder reporting pack preparation",
+                "Investor presentation design and storytelling",
+                "Financial data reconciliation and validation for reporting packs"
+            ],
+            "keywords": [
+                "KPIs",
+                "dashboard",
+                "executive metrics",
+                "visualisation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial data reconciliation and validation for reporting packs",
+            "aliases": [
+                "report data reconciliation",
+                "report data validation",
+                "schedule reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Validating, reconciling and tracing figures used in reporting packs (e.g., P&L, balance sheet, cash flow and supporting schedules) to source systems and sub-ledgers to ensure accuracy.",
+            "parent_skill": "Stakeholder reporting packs",
+            "related_skills": [
+                "Stakeholder reporting pack preparation",
+                "Financial consolidation and intercompany elimination for reporting packs",
+                "Reporting pack template and version control management"
+            ],
+            "keywords": [
+                "reconciliation",
+                "validation",
+                "data integrity",
+                "traceability"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Quarterly results and earnings release coordination",
+            "aliases": [
+                "earnings release coordination",
+                "quarterly results pack coordination"
+            ],
+            "skill_type": "process_skill",
+            "description": "Managing the end-to-end process for quarterly or periodic earnings (timelines, stakeholder approvals, embargoes, regulatory filings and external communications) to align internal outputs with external disclosure deadlines.",
+            "parent_skill": "Stakeholder reporting packs",
+            "related_skills": [
+                "Regulatory disclosure coordination for external reports",
+                "Investor presentation design and storytelling",
+                "Stakeholder reporting pack preparation"
+            ],
+            "keywords": [
+                "earnings release",
+                "results timetable",
+                "disclosure process",
+                "investor calendar"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Investor presentation design and storytelling",
+            "aliases": [
+                "investor slide deck design",
+                "financial storytelling for investors",
+                "presentation design for stakeholders"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Creating persuasive, concise slide decks and verbal narratives for investors and boards that translate financial results and strategy into stakeholder-focused messages and visuals.",
+            "parent_skill": "Stakeholder reporting packs",
+            "related_skills": [
+                "KPI dashboard design for stakeholder reporting",
+                "Financial narrative and MD&A drafting",
+                "Quarterly results and earnings release coordination"
+            ],
+            "keywords": [
+                "presentation",
+                "storytelling",
+                "slide deck",
+                "investor relations"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Reporting pack template and version control management",
+            "aliases": [
+                "report template governance",
+                "report version control"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintaining standardised templates, master schedules and version control practices for reporting packs to ensure consistency, auditability and efficient updates across reporting cycles.",
+            "parent_skill": "Stakeholder reporting packs",
+            "related_skills": [
+                "Stakeholder reporting pack preparation",
+                "Financial data reconciliation and validation for reporting packs",
+                "Workiva (Wdesk) reporting platform"
+            ],
+            "keywords": [
+                "template management",
+                "versioning",
+                "governance",
+                "master schedule"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial consolidation and intercompany elimination for reporting packs",
+            "aliases": [
+                "consolidation for reporting packs",
+                "intercompany elimination for reporting"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Performing group consolidation, currency translation, minority interests and intercompany eliminations to produce consolidated financials used in stakeholder reporting packs.",
+            "parent_skill": "Stakeholder reporting packs",
+            "related_skills": [
+                "Financial data reconciliation and validation for reporting packs",
+                "Stakeholder reporting pack preparation"
+            ],
+            "keywords": [
+                "consolidation",
+                "intercompany",
+                "currency translation",
+                "group financials"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory disclosure coordination for external reports",
+            "aliases": [
+                "external disclosure coordination",
+                "statutory disclosure liaison"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Coordinating with legal, compliance and external advisors to ensure stakeholder reporting packs and earnings releases meet regulatory disclosure requirements and local filing obligations.",
+            "parent_skill": "Stakeholder reporting packs",
+            "related_skills": [
+                "Quarterly results and earnings release coordination",
+                "Financial narrative and MD&A drafting"
+            ],
+            "keywords": [
+                "disclosure",
+                "regulatory filings",
+                "compliance",
+                "statutory reporting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Workiva (Wdesk) reporting platform",
+            "aliases": [
+                "Workiva",
+                "Wdesk"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using the Workiva (Wdesk) platform to prepare, link and publish financial reports and stakeholder packs, leveraging its data linking, collaboration and audit trail features.",
+            "parent_skill": "Stakeholder reporting packs",
+            "related_skills": [
+                "Reporting pack template and version control management",
+                "Financial data reconciliation and validation for reporting packs"
+            ],
+            "keywords": [
+                "Workiva",
+                "Wdesk",
+                "reporting platform",
+                "linked reporting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,288 @@
+{
+    "domain": "Finance",
+    "category": "Tax Operations & Compliance",
+    "subcategory": "Tax audits support & evidence",
+    "skills": [
+        {
+            "canonical_name": "Tax audit evidence compilation",
+            "aliases": [
+                "audit evidence compilation",
+                "tax documentation assembly",
+                "supporting document preparation for tax audits"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Collecting, organizing, indexing and delivering supporting documents, schedules and exhibits required by tax auditors in a consistent, traceable format.",
+            "parent_skill": "Tax audits support & evidence",
+            "related_skills": [
+                "Tax audit working papers preparation",
+                "Electronic audit file management",
+                "Tax-accounting reconciliation"
+            ],
+            "keywords": [
+                "supporting schedules",
+                "source documents",
+                "indexing",
+                "evidence packet"
+            ],
+            "common_roles": [
+                "Tax Analyst",
+                "Tax Compliance Specialist",
+                "Tax Operations Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax-accounting reconciliation",
+            "aliases": [
+                "tax reconciliation",
+                "tax vs accounting reconciliation",
+                "reconcile tax provision to GL"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Reconciling tax returns, tax provisions and tax liabilities to the general ledger, statutory accounts and trial balance to ensure completeness and accuracy for audit review.",
+            "parent_skill": "Tax audits support & evidence",
+            "related_skills": [
+                "Tax audit evidence compilation",
+                "Tax data extraction and ETL",
+                "Tax positions documentation and UTP analysis"
+            ],
+            "keywords": [
+                "provision reconciliation",
+                "GL tie-out",
+                "variance analysis"
+            ],
+            "common_roles": [
+                "Tax Accountant",
+                "Tax Provision Analyst",
+                "Senior Tax Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax audit working papers preparation",
+            "aliases": [
+                "working paper preparation",
+                "tax working papers",
+                "audit file preparation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Creating auditor-ready working papers that document procedures performed, evidence obtained, conclusions reached and cross-references to source documentation.",
+            "parent_skill": "Tax audits support & evidence",
+            "related_skills": [
+                "Tax audit evidence compilation",
+                "Electronic audit file management",
+                "Audit evidence analytics and sampling"
+            ],
+            "keywords": [
+                "working papers",
+                "audit documentation",
+                "cross-reference"
+            ],
+            "common_roles": [
+                "Tax Associate",
+                "Tax Senior",
+                "Tax Audit Support Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Electronic audit file management",
+            "aliases": [
+                "e-audit file management",
+                "electronic documentation management for audits",
+                "audit file version control"
+            ],
+            "skill_type": "process_skill",
+            "description": "Managing electronic audit files and documentation systems including indexing, metadata tagging, secure storage, retention policies and version control for tax audits.",
+            "parent_skill": "Tax audits support & evidence",
+            "related_skills": [
+                "Tax audit working papers preparation",
+                "Tax audit evidence compilation",
+                "External auditor coordination for tax audits"
+            ],
+            "keywords": [
+                "EDMS",
+                "version control",
+                "metadata tagging"
+            ],
+            "common_roles": [
+                "Tax Operations Specialist",
+                "Tax Compliance Analyst",
+                "Document Control Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax data extraction and ETL",
+            "aliases": [
+                "tax data extraction",
+                "ETL for tax audits",
+                "data pull from ERP for tax"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Extracting, transforming and loading transactional and ledger-level data from ERP and accounting systems to produce audit-ready datasets using SQL, scripts or ETL tools.",
+            "parent_skill": "Tax audits support & evidence",
+            "related_skills": [
+                "Tax-accounting reconciliation",
+                "Audit evidence analytics and sampling",
+                "Tax audit evidence compilation"
+            ],
+            "keywords": [
+                "ERP extraction",
+                "SQL",
+                "data transformation"
+            ],
+            "common_roles": [
+                "Tax Data Analyst",
+                "Tax Technology Analyst",
+                "Tax Provision Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Audit evidence analytics and sampling",
+            "aliases": [
+                "tax audit analytics",
+                "statistical sampling for tax audits",
+                "data analytics for tax evidence"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Applying data analytics and sampling methodologies to test populations, detect anomalies and provide statistical support for audit conclusions and sampling plans.",
+            "parent_skill": "Tax audits support & evidence",
+            "related_skills": [
+                "Tax data extraction and ETL",
+                "Tax audit working papers preparation",
+                "Tax-accounting reconciliation"
+            ],
+            "keywords": [
+                "sampling",
+                "analytics",
+                "population testing"
+            ],
+            "common_roles": [
+                "Tax Data Analyst",
+                "Tax Audit Specialist",
+                "Tax Risk Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax authority inquiry response",
+            "aliases": [
+                "responding to tax audits",
+                "tax examination support",
+                "respond to tax authority requests"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Preparing clear, concise responses and supporting materials for information requests, rulings, notices and inquiries from tax authorities and auditors.",
+            "parent_skill": "Tax audits support & evidence",
+            "related_skills": [
+                "External auditor coordination for tax audits",
+                "Tax positions documentation and UTP analysis",
+                "Tax audit evidence compilation"
+            ],
+            "keywords": [
+                "tax inquiries",
+                "information requests",
+                "tax authority correspondence"
+            ],
+            "common_roles": [
+                "Tax Manager",
+                "Tax Compliance Specialist",
+                "Tax Advisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax positions documentation and UTP analysis",
+            "aliases": [
+                "UTP documentation",
+                "uncertain tax position documentation",
+                "documenting tax positions"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Documenting tax positions, judgments and uncertain tax positions (UTPs) with rationale, supporting evidence and risk assessments to support audit inquiries and financial reporting.",
+            "parent_skill": "Tax audits support & evidence",
+            "related_skills": [
+                "Tax-accounting reconciliation",
+                "Tax authority inquiry response",
+                "Internal controls testing for tax processes"
+            ],
+            "keywords": [
+                "UTP",
+                "tax position memo",
+                "tax risk assessment"
+            ],
+            "common_roles": [
+                "Tax Counsel",
+                "Senior Tax Analyst",
+                "Tax Provision Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Internal controls testing for tax processes",
+            "aliases": [
+                "tax process controls testing",
+                "controls testing for tax",
+                "testing tax process internal controls"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Designing and executing tests of internal controls over tax processes (e.g., calculation, approval, data integrity) and documenting results to support audit evidence and remediation tracking.",
+            "parent_skill": "Tax audits support & evidence",
+            "related_skills": [
+                "Tax positions documentation and UTP analysis",
+                "Audit evidence analytics and sampling",
+                "Tax-accounting reconciliation"
+            ],
+            "keywords": [
+                "ICFR",
+                "control testing",
+                "remediation"
+            ],
+            "common_roles": [
+                "Internal Audit Specialist",
+                "Tax Controls Analyst",
+                "SOX\/Tax Compliance Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "External auditor coordination for tax audits",
+            "aliases": [
+                "coordinating external auditors",
+                "liaison with external tax auditors",
+                "external audit coordination"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing timelines, requests, deliverable submissions and communications with external auditors to ensure efficient tax audit execution and timely provision of evidence.",
+            "parent_skill": "Tax audits support & evidence",
+            "related_skills": [
+                "Tax audit evidence compilation",
+                "Electronic audit file management",
+                "Tax authority inquiry response"
+            ],
+            "keywords": [
+                "audit timelines",
+                "deliverable coordination",
+                "auditor liaison"
+            ],
+            "common_roles": [
+                "Tax Manager",
+                "Tax Operations Lead",
+                "Audit Liaison"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

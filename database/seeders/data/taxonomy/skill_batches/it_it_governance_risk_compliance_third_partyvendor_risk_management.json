@@ -1,0 +1,267 @@
+{
+    "domain": "IT",
+    "category": "IT Governance, Risk & Compliance",
+    "subcategory": "Third-party\/vendor risk management",
+    "skills": [
+        {
+            "canonical_name": "Third-party risk assessment",
+            "aliases": [
+                "Vendor risk assessment",
+                "Third party risk assessment",
+                "TPRM assessment"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and executing systematic risk assessments of vendors to identify, evaluate and prioritize operational, security, financial and compliance risks introduced by third parties.",
+            "parent_skill": "Third-party\/vendor risk management",
+            "related_skills": [
+                "Vendor due diligence",
+                "Third-party cybersecurity assessment",
+                "Continuous vendor monitoring and risk telemetry"
+            ],
+            "keywords": [
+                "risk assessment",
+                "third-party assessment",
+                "vendor risk rating",
+                "risk scoring",
+                "TPRM assessment"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor due diligence",
+            "aliases": [
+                "Third-party due diligence",
+                "Vendor DD",
+                "TPRD"
+            ],
+            "skill_type": "process_skill",
+            "description": "Collecting and validating information about a vendor’s financial stability, controls, compliance posture and business practices prior to onboarding or contract renewal.",
+            "parent_skill": "Third-party\/vendor risk management",
+            "related_skills": [
+                "Third-party risk assessment",
+                "Third-party data privacy compliance",
+                "Contract risk management for vendors"
+            ],
+            "keywords": [
+                "due diligence",
+                "vendor background check",
+                "financial due diligence",
+                "vendor questionnaires",
+                "KYC for vendors"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Third-party cybersecurity assessment",
+            "aliases": [
+                "Vendor security assessment",
+                "Third-party security assessment",
+                "TPRM security assessment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluating a vendor’s technical security controls, architecture, vulnerabilities and incident response capabilities using threat modeling, penetration testing results, questionnaires and technical evidence.",
+            "parent_skill": "Third-party\/vendor risk management",
+            "related_skills": [
+                "Third-party risk assessment",
+                "Third-party audit and remediation management",
+                "Vendor risk management platforms"
+            ],
+            "keywords": [
+                "security assessment",
+                "vulnerability assessment",
+                "penetration testing review",
+                "security posture",
+                "cybersecurity due diligence"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Third-party data privacy compliance",
+            "aliases": [
+                "Vendor data protection compliance",
+                "Third-party privacy assessment",
+                "Vendor privacy compliance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Assessing and enforcing vendors’ compliance with data protection and privacy requirements relevant to the organization’s data flows and jurisdictions.",
+            "parent_skill": "Third-party\/vendor risk management",
+            "related_skills": [
+                "Vendor due diligence",
+                "Contract risk management for vendors",
+                "Third-party audit and remediation management"
+            ],
+            "keywords": [
+                "data privacy",
+                "privacy impact assessment",
+                "data processing agreements",
+                "data transfers",
+                "privacy compliance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Contract risk management for vendors",
+            "aliases": [
+                "Vendor contract risk management",
+                "Third-party contract risk",
+                "Contractual risk clauses management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Identifying, negotiating and managing contractual clauses that allocate, mitigate or transfer risk with vendors, including SLAs, indemnities, liability caps and data protection terms.",
+            "parent_skill": "Third-party\/vendor risk management",
+            "related_skills": [
+                "Vendor due diligence",
+                "SLA and performance metrics management",
+                "Third-party data privacy compliance"
+            ],
+            "keywords": [
+                "contract negotiation",
+                "service agreements",
+                "liability clauses",
+                "indemnity",
+                "data processing agreement"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SLA and performance metrics management",
+            "aliases": [
+                "Service level agreement management",
+                "Vendor performance management",
+                "SLA management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Defining, monitoring and enforcing service level agreements and key performance indicators for vendors to ensure contracted service quality and availability.",
+            "parent_skill": "Third-party\/vendor risk management",
+            "related_skills": [
+                "Contract risk management for vendors",
+                "Vendor performance monitoring and metrics",
+                "Vendor onboarding and offboarding"
+            ],
+            "keywords": [
+                "SLA",
+                "KPIs",
+                "performance metrics",
+                "service credits",
+                "escalation management"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor onboarding and offboarding processes",
+            "aliases": [
+                "Third-party onboarding",
+                "Vendor offboarding",
+                "Vendor lifecycle management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Establishing and executing standardized procedures for securely and compliantly bringing vendors into and removing them from the organization’s environment.",
+            "parent_skill": "Third-party\/vendor risk management",
+            "related_skills": [
+                "Vendor due diligence",
+                "SLA and performance metrics management",
+                "Continuous vendor monitoring and risk telemetry"
+            ],
+            "keywords": [
+                "onboarding",
+                "offboarding",
+                "access provisioning",
+                "deprovisioning",
+                "vendor lifecycle"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Third-party audit and remediation management",
+            "aliases": [
+                "Vendor audit coordination",
+                "Third-party remediation management",
+                "Vendor audit management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Coordinating audits and assessments of vendors, tracking findings, prioritizing remediation actions and validating corrective measures until closure.",
+            "parent_skill": "Third-party\/vendor risk management",
+            "related_skills": [
+                "Third-party cybersecurity assessment",
+                "Vendor due diligence",
+                "Continuous vendor monitoring and risk telemetry"
+            ],
+            "keywords": [
+                "audit coordination",
+                "remediation tracking",
+                "control testing",
+                "findings management",
+                "closure validation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Continuous vendor monitoring and risk telemetry",
+            "aliases": [
+                "Ongoing vendor monitoring",
+                "Vendor risk monitoring",
+                "Third-party risk monitoring"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing continuous monitoring programs to detect changes in vendor risk posture using indicators, alerts, financial signals and external threat intelligence.",
+            "parent_skill": "Third-party\/vendor risk management",
+            "related_skills": [
+                "Vendor risk management platforms",
+                "Third-party risk assessment",
+                "Third-party cybersecurity assessment"
+            ],
+            "keywords": [
+                "continuous monitoring",
+                "risk telemetry",
+                "vendor alerts",
+                "threat intelligence",
+                "risk indicators"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Third-party risk management platforms (TPRM tools)",
+            "aliases": [
+                "Vendor risk management platforms",
+                "TPRM tools",
+                "VRM platforms"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using and configuring software platforms designed to centralize vendor inventory, assessments, workflows, issue tracking and reporting for third-party risk management.",
+            "parent_skill": "Third-party\/vendor risk management",
+            "related_skills": [
+                "Continuous vendor monitoring and risk telemetry",
+                "Third-party audit and remediation management",
+                "Vendor due diligence"
+            ],
+            "keywords": [
+                "TPRM",
+                "VRM",
+                "vendor management tool",
+                "risk platform",
+                "third-party risk software"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

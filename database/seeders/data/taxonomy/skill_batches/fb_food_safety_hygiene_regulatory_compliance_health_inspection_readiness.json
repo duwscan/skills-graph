@@ -1,0 +1,298 @@
+{
+    "domain": "F&B",
+    "category": "Food Safety, Hygiene & Regulatory Compliance",
+    "subcategory": "Health inspection readiness",
+    "skills": [
+        {
+            "canonical_name": "Health inspection readiness planning",
+            "aliases": [
+                "inspection readiness planning",
+                "health department inspection preparation",
+                "inspection prep planning"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Developing and maintaining a structured plan to ensure a facility meets regulatory inspection requirements and can demonstrate compliance during health inspections.",
+            "parent_skill": "",
+            "related_skills": [
+                "Internal mock inspections and food safety audits",
+                "Regulatory inspection liaison",
+                "Recordkeeping for food safety and compliance",
+                "Corrective and preventive action (CAPA) implementation"
+            ],
+            "keywords": [
+                "inspection readiness",
+                "health department",
+                "inspection plan",
+                "compliance checklist"
+            ],
+            "common_roles": [
+                "food safety",
+                "quality assurance",
+                "operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Internal mock inspections and food safety audits",
+            "aliases": [
+                "mock inspections",
+                "internal audit for food safety",
+                "pre-inspection audits"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and conducting internal inspections and audits that simulate regulatory inspections to identify gaps and verify compliance with food safety standards.",
+            "parent_skill": "",
+            "related_skills": [
+                "Health inspection readiness planning",
+                "Corrective and preventive action (CAPA) implementation",
+                "Recordkeeping for food safety and compliance"
+            ],
+            "keywords": [
+                "internal audit",
+                "mock inspection",
+                "audit checklist",
+                "gap analysis"
+            ],
+            "common_roles": [
+                "food safety",
+                "quality assurance",
+                "operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Regulatory inspection liaison",
+            "aliases": [
+                "inspector liaison",
+                "health inspector coordination",
+                "regulatory inspector point of contact"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Managing communications and interactions with health inspectors and regulatory agencies during inspections, including presenting documentation and responding to questions.",
+            "parent_skill": "",
+            "related_skills": [
+                "Health inspection readiness planning",
+                "Recordkeeping for food safety and compliance",
+                "Corrective and preventive action (CAPA) implementation"
+            ],
+            "keywords": [
+                "inspector coordination",
+                "regulatory communication",
+                "inspection response",
+                "agency liaison"
+            ],
+            "common_roles": [
+                "food safety",
+                "operations",
+                "customer-facing compliance"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Corrective and preventive action (CAPA) implementation",
+            "aliases": [
+                "CAPA implementation",
+                "corrective action management",
+                "preventive action planning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Investigating non-conformances identified during inspections or audits, implementing corrective actions to resolve issues, and establishing preventive measures to avoid recurrence.",
+            "parent_skill": "",
+            "related_skills": [
+                "Internal mock inspections and food safety audits",
+                "Recordkeeping for food safety and compliance",
+                "Health inspection readiness planning"
+            ],
+            "keywords": [
+                "corrective action",
+                "root cause analysis",
+                "preventive measures",
+                "non-conformance"
+            ],
+            "common_roles": [
+                "quality assurance",
+                "food safety",
+                "operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sanitation Standard Operating Procedures (SSOP) implementation",
+            "aliases": [
+                "SSOP implementation",
+                "sanitation SOP execution",
+                "cleaning procedures implementation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Establishing, executing and validating facility cleaning and sanitation procedures to meet regulatory hygiene standards and support inspection readiness.",
+            "parent_skill": "",
+            "related_skills": [
+                "Health inspection readiness planning",
+                "Internal mock inspections and food safety audits",
+                "Recordkeeping for food safety and compliance"
+            ],
+            "keywords": [
+                "SSOP",
+                "sanitation",
+                "cleaning schedule",
+                "validation"
+            ],
+            "common_roles": [
+                "operations",
+                "food safety",
+                "facility management"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Recordkeeping for food safety and compliance",
+            "aliases": [
+                "food safety recordkeeping",
+                "compliance documentation management",
+                "inspection record management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintaining accurate, organized and audit-ready records of food safety activities (temperatures, cleaning logs, training, inspections) to demonstrate compliance during regulatory reviews.",
+            "parent_skill": "",
+            "related_skills": [
+                "Health inspection readiness planning",
+                "Regulatory inspection liaison",
+                "Traceability and recall readiness"
+            ],
+            "keywords": [
+                "logs",
+                "documentation",
+                "audit-ready records",
+                "traceability"
+            ],
+            "common_roles": [
+                "operations",
+                "quality assurance",
+                "food safety"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Temperature control monitoring and cold chain management",
+            "aliases": [
+                "temperature monitoring",
+                "cold chain monitoring",
+                "refrigeration monitoring"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Monitoring, documenting and controlling temperatures across storage and transport to ensure product safety, including use of logs, sensors and alerting processes required for inspections.",
+            "parent_skill": "",
+            "related_skills": [
+                "Recordkeeping for food safety and compliance",
+                "Traceability and recall readiness",
+                "Internal mock inspections and food safety audits"
+            ],
+            "keywords": [
+                "cold chain",
+                "temperature logs",
+                "refrigeration",
+                "thermal monitoring"
+            ],
+            "common_roles": [
+                "supply chain",
+                "operations",
+                "food safety"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Traceability and recall readiness",
+            "aliases": [
+                "product traceability",
+                "recall preparedness",
+                "trace-back and recall procedures"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Implementing systems and procedures to quickly trace products through the supply chain and execute recalls or notifications in response to food safety incidents or regulator requests.",
+            "parent_skill": "",
+            "related_skills": [
+                "Recordkeeping for food safety and compliance",
+                "Supplier verification and compliance monitoring",
+                "Temperature control monitoring and cold chain management"
+            ],
+            "keywords": [
+                "traceability",
+                "recall plan",
+                "lot tracking",
+                "product withdrawal"
+            ],
+            "common_roles": [
+                "supply chain",
+                "quality assurance",
+                "operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Hazard analysis and critical control point (HACCP) plan development and monitoring",
+            "aliases": [
+                "HACCP plan development",
+                "HACCP monitoring",
+                "hazard analysis and CCP monitoring"
+            ],
+            "skill_type": "methodology",
+            "description": "Creating and maintaining HACCP-based plans: identifying hazards, defining critical control points (CCPs), setting critical limits, and monitoring controls to meet regulatory expectations.",
+            "parent_skill": "",
+            "related_skills": [
+                "Internal mock inspections and food safety audits",
+                "Recordkeeping for food safety and compliance",
+                "Health inspection readiness planning"
+            ],
+            "keywords": [
+                "HACCP",
+                "critical control point",
+                "hazard analysis",
+                "critical limits"
+            ],
+            "common_roles": [
+                "food safety",
+                "quality assurance",
+                "operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Supplier verification and compliance monitoring",
+            "aliases": [
+                "supplier verification",
+                "vendor compliance monitoring",
+                "supplier audit management"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Assessing and monitoring suppliers to verify they meet food safety requirements, maintain documentation, and provide required evidence during inspections.",
+            "parent_skill": "",
+            "related_skills": [
+                "Traceability and recall readiness",
+                "Recordkeeping for food safety and compliance",
+                "Hazard analysis and critical control point (HACCP) plan development and monitoring"
+            ],
+            "keywords": [
+                "supplier audit",
+                "vendor compliance",
+                "supplier documentation",
+                "approved suppliers"
+            ],
+            "common_roles": [
+                "supply chain",
+                "procurement",
+                "quality assurance"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

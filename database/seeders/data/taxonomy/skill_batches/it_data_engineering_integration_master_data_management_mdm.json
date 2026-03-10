@@ -1,0 +1,303 @@
+{
+    "domain": "IT",
+    "category": "Data Engineering & Integration",
+    "subcategory": "Master data management (MDM)",
+    "skills": [
+        {
+            "canonical_name": "Master data modeling",
+            "aliases": [
+                "MDM data modeling",
+                "master-data modeling",
+                "domain data modeling for MDM"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing canonical data models, entity schemas and attributes for master data domains (e.g., customer, product) to support MDM systems and downstream consumers.",
+            "parent_skill": "Master data management (MDM)",
+            "related_skills": [
+                "Reference data management",
+                "Hierarchy management for master data",
+                "MDM solution architecture"
+            ],
+            "keywords": [
+                "entity model",
+                "schema",
+                "attribute design",
+                "domain model",
+                "canonical model"
+            ],
+            "common_roles": [
+                "Data Architect",
+                "Master Data Management Analyst",
+                "Data Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Record matching and deduplication",
+            "aliases": [
+                "match and merge",
+                "entity resolution",
+                "record linkage"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and tuning matching algorithms, fuzzy matching rules, similarity scoring and deduplication workflows to identify and merge duplicate master records.",
+            "parent_skill": "Master data management (MDM)",
+            "related_skills": [
+                "Survivorship and consolidation rules design",
+                "Data quality profiling for MDM",
+                "MDM integration patterns and real-time synchronization"
+            ],
+            "keywords": [
+                "fuzzy matching",
+                "probabilistic matching",
+                "deterministic matching",
+                "dedupe",
+                "linkage"
+            ],
+            "common_roles": [
+                "MDM Developer",
+                "Data Engineer",
+                "Data Quality Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Survivorship and consolidation rules design",
+            "aliases": [
+                "survivorship rules",
+                "consolidation logic design",
+                "attribute survivorship"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Defining business and technical rules that determine how conflicting attribute values from multiple sources are reconciled into a single ‘golden’ value.",
+            "parent_skill": "Master data management (MDM)",
+            "related_skills": [
+                "Golden record management",
+                "Record matching and deduplication",
+                "Master data modeling"
+            ],
+            "keywords": [
+                "survivorship",
+                "consolidation",
+                "rule engine",
+                "attribute precedence",
+                "conflict resolution"
+            ],
+            "common_roles": [
+                "MDM Analyst",
+                "Data Steward",
+                "Data Architect"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Golden record management",
+            "aliases": [
+                "golden record creation",
+                "single source of truth management",
+                "golden entity management"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Managing creation, validation, lifecycle and publication of the canonical golden records that represent the authoritative master data.",
+            "parent_skill": "Master data management (MDM)",
+            "related_skills": [
+                "Survivorship and consolidation rules design",
+                "Hierarchy management for master data",
+                "MDM data stewardship and operational governance"
+            ],
+            "keywords": [
+                "golden record",
+                "canonical record",
+                "authoritative source",
+                "record lifecycle"
+            ],
+            "common_roles": [
+                "Master Data Management Analyst",
+                "Data Steward",
+                "Data Governance Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Hierarchy management for master data",
+            "aliases": [
+                "master data hierarchies",
+                "relationship management for MDM",
+                "parent-child relationship management"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Modeling, validating and maintaining hierarchical relationships and networked relationships (e.g., product families, account hierarchies) within master data systems.",
+            "parent_skill": "Master data management (MDM)",
+            "related_skills": [
+                "Master data modeling",
+                "Golden record management",
+                "Reference data management"
+            ],
+            "keywords": [
+                "hierarchies",
+                "relationship modeling",
+                "tree management",
+                "aggregations",
+                "rollup"
+            ],
+            "common_roles": [
+                "Data Architect",
+                "MDM Developer",
+                "Data Steward"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Reference data management",
+            "aliases": [
+                "reference data governance",
+                "code list management"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Managing controlled vocabularies, code lists and reference datasets used by master and transactional systems, including versioning and distribution.",
+            "parent_skill": "Master data management (MDM)",
+            "related_skills": [
+                "Master data modeling",
+                "MDM data stewardship and operational governance",
+                "Data quality profiling for MDM"
+            ],
+            "keywords": [
+                "reference data",
+                "code list",
+                "vocabulary",
+                "controlled list",
+                "taxonomy management"
+            ],
+            "common_roles": [
+                "Data Steward",
+                "Data Governance Manager",
+                "MDM Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "MDM integration patterns and real-time synchronization",
+            "aliases": [
+                "MDM integration",
+                "MDM APIs and synchronization",
+                "MDM ETL\/ELT patterns"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and implementing integration patterns (batch, near‑real‑time, API-based) and synchronization strategies between MDM and upstream\/downstream systems.",
+            "parent_skill": "Master data management (MDM)",
+            "related_skills": [
+                "MDM solution architecture",
+                "Record matching and deduplication",
+                "Data quality profiling for MDM"
+            ],
+            "keywords": [
+                "API sync",
+                "change data capture",
+                "CDC",
+                "ETL",
+                "message-based integration"
+            ],
+            "common_roles": [
+                "Integration Engineer",
+                "Data Engineer",
+                "MDM Developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data quality profiling for MDM",
+            "aliases": [
+                "MDM data quality monitoring",
+                "data profiling for master data"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Profiling master data to identify completeness, consistency, accuracy and conformity issues and defining metrics and alerts for ongoing quality monitoring.",
+            "parent_skill": "Master data management (MDM)",
+            "related_skills": [
+                "Record matching and deduplication",
+                "Reference data management",
+                "MDM data stewardship and operational governance"
+            ],
+            "keywords": [
+                "profiling",
+                "quality rules",
+                "completeness",
+                "accuracy",
+                "DQ metrics"
+            ],
+            "common_roles": [
+                "Data Quality Analyst",
+                "Data Steward",
+                "MDM Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "MDM data stewardship and operational governance",
+            "aliases": [
+                "data stewarding for MDM",
+                "MDM operational processes",
+                "master data stewardship"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operational processes and responsibilities for stewards: change request handling, exception management, approvals, workflows and SLA-driven maintenance of master data.",
+            "parent_skill": "Master data management (MDM)",
+            "related_skills": [
+                "Golden record management",
+                "Reference data management",
+                "Data quality profiling for MDM"
+            ],
+            "keywords": [
+                "stewardship",
+                "workflow",
+                "change management",
+                "SLAs",
+                "issue resolution"
+            ],
+            "common_roles": [
+                "Data Steward",
+                "MDM Operations Lead",
+                "Data Governance Coordinator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Informatica MDM (Informatica Master Data Management)",
+            "aliases": [
+                "Informatica MDM",
+                "Informatica Master Data"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Hands‑on experience configuring and administering Informatica MDM solutions, including hub configuration, match\/merge settings, survivorship rules and data services integration.",
+            "parent_skill": "Master data management (MDM)",
+            "related_skills": [
+                "Record matching and deduplication",
+                "Survivorship and consolidation rules design",
+                "MDM integration patterns and real-time synchronization"
+            ],
+            "keywords": [
+                "Informatica",
+                "MDM Hub",
+                "Hub Console",
+                "match rules",
+                "survivorship"
+            ],
+            "common_roles": [
+                "MDM Developer",
+                "Informatica Administrator",
+                "Integration Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

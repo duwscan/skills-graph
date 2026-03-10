@@ -1,0 +1,253 @@
+{
+    "domain": "Finance",
+    "category": "Cost Accounting & Operational Finance",
+    "subcategory": "Capacity & utilization analytics",
+    "skills": [
+        {
+            "canonical_name": "Capacity planning",
+            "aliases": [
+                "long-term capacity planning",
+                "capacity planning process"
+            ],
+            "skill_type": "process_skill",
+            "description": "Developing and maintaining plans that align production or service capacity with expected demand, including resource sizing, buffer strategies, and investment timing.",
+            "parent_skill": "Capacity & utilization analytics",
+            "related_skills": [
+                "Capacity forecasting",
+                "Capacity-constrained production scheduling",
+                "Capacity cost allocation",
+                "Capacity scenario modeling and simulation"
+            ],
+            "keywords": [
+                "capacity plan",
+                "resource sizing",
+                "capacity strategy",
+                "demand-capacity alignment"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Capacity forecasting",
+            "aliases": [
+                "capacity demand forecasting",
+                "capacity projection"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Using historical data, statistical methods and demand signals to predict future capacity requirements across time horizons for budgeting and planning purposes.",
+            "parent_skill": "Capacity & utilization analytics",
+            "related_skills": [
+                "Capacity planning",
+                "Capacity scenario modeling and simulation",
+                "Resource utilization analysis"
+            ],
+            "keywords": [
+                "forecast",
+                "time-series",
+                "demand signal",
+                "capacity requirement"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Resource utilization analysis",
+            "aliases": [
+                "utilization analysis",
+                "utilization rate analysis",
+                "resource usage analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Measuring and interpreting resource utilization metrics (e.g., machine, labor, equipment) to assess efficiency, identify idle time, and quantify under- or over-utilization.",
+            "parent_skill": "Capacity & utilization analytics",
+            "related_skills": [
+                "Overall Equipment Effectiveness (OEE) analysis",
+                "Bottleneck and throughput analysis",
+                "Capacity & utilization KPI design and reporting",
+                "Capacity variance analysis"
+            ],
+            "keywords": [
+                "utilization rate",
+                "idle time",
+                "capacity utilization",
+                "resource efficiency"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Overall Equipment Effectiveness (OEE) analysis",
+            "aliases": [
+                "OEE analysis",
+                "equipment effectiveness analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculating and interpreting OEE components (availability, performance, quality) to quantify manufacturing productivity and identify improvement opportunities.",
+            "parent_skill": "Capacity & utilization analytics",
+            "related_skills": [
+                "Resource utilization analysis",
+                "Bottleneck and throughput analysis",
+                "Capacity & utilization KPI design and reporting"
+            ],
+            "keywords": [
+                "OEE",
+                "availability",
+                "performance",
+                "quality rate"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bottleneck and throughput analysis",
+            "aliases": [
+                "bottleneck identification",
+                "throughput analysis",
+                "constraint analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Identifying process constraints and measuring throughput to determine limiting resources and recommend capacity or process changes to increase flow.",
+            "parent_skill": "Capacity & utilization analytics",
+            "related_skills": [
+                "Resource utilization analysis",
+                "Capacity-constrained production scheduling",
+                "Capacity planning"
+            ],
+            "keywords": [
+                "bottleneck",
+                "throughput",
+                "constraint",
+                "flow"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Capacity cost allocation",
+            "aliases": [
+                "capacity-based cost allocation",
+                "capacity absorption costing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Allocating fixed and variable costs to capacity usage units (e.g., machine hours, labor hours) for accurate cost-per-unit metrics and capacity-driven profitability analysis.",
+            "parent_skill": "Capacity & utilization analytics",
+            "related_skills": [
+                "Capacity variance analysis",
+                "Capacity planning",
+                "Capacity & utilization KPI design and reporting"
+            ],
+            "keywords": [
+                "cost allocation",
+                "absorption",
+                "fixed overhead",
+                "capacity cost"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Capacity variance analysis",
+            "aliases": [
+                "capacity utilization variance",
+                "planned vs actual capacity analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing differences between budgeted\/planned capacity and actual utilization to explain variances, quantify financial impact, and recommend corrective actions.",
+            "parent_skill": "Capacity & utilization analytics",
+            "related_skills": [
+                "Capacity cost allocation",
+                "Resource utilization analysis",
+                "Capacity & utilization KPI design and reporting"
+            ],
+            "keywords": [
+                "variance",
+                "budget vs actual",
+                "capacity variance",
+                "utilization gap"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Capacity scenario modeling and simulation",
+            "aliases": [
+                "capacity simulation",
+                "scenario and sensitivity modeling",
+                "discrete-event simulation for capacity"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Building scenario and simulation models (e.g., discrete-event, Monte Carlo) to evaluate capacity options, sensitivity to demand changes, and the financial impacts of capacity decisions.",
+            "parent_skill": "Capacity & utilization analytics",
+            "related_skills": [
+                "Capacity forecasting",
+                "Capacity planning",
+                "Capacity-constrained production scheduling"
+            ],
+            "keywords": [
+                "simulation",
+                "scenario analysis",
+                "Monte Carlo",
+                "what-if"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Capacity-constrained production scheduling",
+            "aliases": [
+                "finite capacity scheduling",
+                "capacity-based scheduling",
+                "production scheduling under constraints"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Creating and managing production schedules that respect finite capacity limits, sequence-dependent setups, and prioritization to maximize throughput and meet demand.",
+            "parent_skill": "Capacity & utilization analytics",
+            "related_skills": [
+                "Bottleneck and throughput analysis",
+                "Capacity planning",
+                "Capacity scenario modeling and simulation"
+            ],
+            "keywords": [
+                "finite scheduling",
+                "shop floor scheduling",
+                "sequence optimization",
+                "resource leveling"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Capacity & utilization KPI design and reporting",
+            "aliases": [
+                "utilization KPI development",
+                "capacity reporting and dashboards"
+            ],
+            "skill_type": "process_skill",
+            "description": "Defining, implementing and maintaining KPIs and dashboards (e.g., utilization rate, OEE, throughput) to monitor capacity performance and inform finance and operations decisions.",
+            "parent_skill": "Capacity & utilization analytics",
+            "related_skills": [
+                "Overall Equipment Effectiveness (OEE) analysis",
+                "Resource utilization analysis",
+                "Capacity cost allocation"
+            ],
+            "keywords": [
+                "KPI",
+                "dashboard",
+                "reporting",
+                "performance metric"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

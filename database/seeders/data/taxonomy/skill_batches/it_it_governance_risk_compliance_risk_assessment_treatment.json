@@ -1,0 +1,263 @@
+{
+    "domain": "IT",
+    "category": "IT Governance, Risk & Compliance",
+    "subcategory": "Risk assessment & treatment",
+    "skills": [
+        {
+            "canonical_name": "Risk identification",
+            "aliases": [
+                "Risk ID",
+                "Hazard identification",
+                "Identify risks"
+            ],
+            "skill_type": "process_skill",
+            "description": "Systematic process for discovering, cataloging and describing potential events, threats, vulnerabilities or conditions that could affect objectives.",
+            "parent_skill": "Risk assessment & treatment",
+            "related_skills": [
+                "Risk register management",
+                "Threat modeling",
+                "Business impact analysis",
+                "Qualitative risk analysis"
+            ],
+            "keywords": [
+                "identify risks",
+                "risk sources",
+                "risk events",
+                "threat identification"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Risk register management",
+            "aliases": [
+                "Risk log management",
+                "Risk register maintenance",
+                "Maintain risk register"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintaining and governing a central risk inventory that records risk descriptions, owners, likelihood\/impact, controls, treatment actions and status.",
+            "parent_skill": "Risk assessment & treatment",
+            "related_skills": [
+                "Risk identification",
+                "Risk treatment planning",
+                "Residual risk assessment",
+                "Risk reporting & metrics"
+            ],
+            "keywords": [
+                "risk register",
+                "risk log",
+                "risk tracking",
+                "risk owner"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Qualitative risk analysis",
+            "aliases": [
+                "Qualitative risk assessment",
+                "Risk prioritization",
+                "Likelihood-impact analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Assessing and prioritizing risks using non-numeric criteria such as categorical likelihood and impact, heat maps and risk scoring frameworks.",
+            "parent_skill": "Risk assessment & treatment",
+            "related_skills": [
+                "Quantitative risk analysis",
+                "Risk identification",
+                "Business impact analysis",
+                "Risk treatment planning"
+            ],
+            "keywords": [
+                "heat map",
+                "risk scoring",
+                "likelihood",
+                "impact"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Quantitative risk analysis",
+            "aliases": [
+                "Quantitative risk assessment",
+                "Quantitative risk modeling",
+                "Numeric risk analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Using numeric and statistical techniques (e.g., probability distributions, expected monetary value, Monte Carlo simulation) to estimate risk exposure and likelihood.",
+            "parent_skill": "Risk assessment & treatment",
+            "related_skills": [
+                "Qualitative risk analysis",
+                "Risk appetite metrics",
+                "Residual risk assessment"
+            ],
+            "keywords": [
+                "expected monetary value",
+                "probability distribution",
+                "Monte Carlo",
+                "loss expectancy"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Threat modeling",
+            "aliases": [
+                "Attack surface analysis",
+                "Threat analysis",
+                "Threat modeling methodology"
+            ],
+            "skill_type": "process_skill",
+            "description": "Structured technique to identify potential attackers, attack vectors and threats to an application, system or architecture to inform controls and mitigations.",
+            "parent_skill": "Risk assessment & treatment",
+            "related_skills": [
+                "Vulnerability assessment",
+                "Secure architecture review",
+                "Risk identification",
+                "Control assessment"
+            ],
+            "keywords": [
+                "attack surface",
+                "threat scenarios",
+                "adversary",
+                "data flow"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Control assessment",
+            "aliases": [
+                "Control effectiveness assessment",
+                "Security control assessment",
+                "Control testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Evaluating the design and operating effectiveness of technical, administrative and physical controls to determine if they mitigate identified risks.",
+            "parent_skill": "Risk assessment & treatment",
+            "related_skills": [
+                "Vulnerability assessment",
+                "Residual risk assessment",
+                "Risk treatment planning",
+                "Compliance testing"
+            ],
+            "keywords": [
+                "control testing",
+                "control effectiveness",
+                "control gap",
+                "control design"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Risk treatment planning",
+            "aliases": [
+                "Risk mitigation planning",
+                "Risk response planning",
+                "Treatment strategy development"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, selecting and sequencing responses to risks (avoidance, mitigation, transfer, acceptance) and defining risk owners, actions, timelines and success criteria.",
+            "parent_skill": "Risk assessment & treatment",
+            "related_skills": [
+                "Risk register management",
+                "Control assessment",
+                "Residual risk assessment",
+                "Risk monitoring"
+            ],
+            "keywords": [
+                "mitigation plan",
+                "risk response",
+                "risk treatment",
+                "risk action plan"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Residual risk assessment",
+            "aliases": [
+                "Residual risk evaluation",
+                "Post-control risk assessment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Determining the level of risk remaining after controls and treatments are applied and evaluating whether residual exposure is acceptable against risk appetite.",
+            "parent_skill": "Risk assessment & treatment",
+            "related_skills": [
+                "Control assessment",
+                "Risk appetite definition",
+                "Risk reporting & metrics"
+            ],
+            "keywords": [
+                "residual exposure",
+                "post-mitigation risk",
+                "residual likelihood",
+                "residual impact"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Third-party risk assessment",
+            "aliases": [
+                "Vendor risk assessment",
+                "Supplier risk assessment",
+                "Third party risk evaluation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Assessing risks introduced by vendors and supply-chain relationships, including contractual, security, privacy and operational dependencies and remediation requirements.",
+            "parent_skill": "Risk assessment & treatment",
+            "related_skills": [
+                "Contract risk review",
+                "Due diligence",
+                "Control assessment",
+                "Business continuity assessment"
+            ],
+            "keywords": [
+                "vendor risk",
+                "supplier risk",
+                "third-party due diligence",
+                "supply chain"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Business impact analysis",
+            "aliases": [
+                "BIA",
+                "Business impact assessment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing the potential operational and financial impacts of disruptions to critical business processes to inform prioritization of recovery and risk treatment.",
+            "parent_skill": "Risk assessment & treatment",
+            "related_skills": [
+                "Risk identification",
+                "Qualitative risk analysis",
+                "Continuity planning",
+                "Risk register management"
+            ],
+            "keywords": [
+                "impact assessment",
+                "recovery time objective",
+                "maximum tolerable downtime",
+                "critical processes"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

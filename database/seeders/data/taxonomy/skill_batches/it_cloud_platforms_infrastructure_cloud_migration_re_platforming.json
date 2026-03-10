@@ -1,0 +1,273 @@
+{
+    "domain": "IT",
+    "category": "Cloud Platforms & Infrastructure",
+    "subcategory": "Cloud migration & re-platforming",
+    "skills": [
+        {
+            "canonical_name": "Cloud migration strategy & planning",
+            "aliases": [
+                "migration strategy",
+                "cloud migration planning",
+                "migration roadmap",
+                "TCO analysis for migration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Defining objectives, business case, migration approach, timelines, risk assessment and success criteria for moving workloads to the cloud.",
+            "parent_skill": "Cloud migration & re-platforming",
+            "related_skills": [
+                "Lift-and-shift migration",
+                "Application re-platforming",
+                "Cloud cost optimization for migrations",
+                "Application dependency mapping & discovery"
+            ],
+            "keywords": [
+                "assessment",
+                "business case",
+                "migration approach",
+                "timeline",
+                "risk assessment",
+                "migration roadmap"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Lift-and-shift migration",
+            "aliases": [
+                "rehosting",
+                "lift and shift"
+            ],
+            "skill_type": "process_skill",
+            "description": "Moving applications and infrastructure to the cloud with minimal changes to architecture or code, typically to accelerate migration timelines.",
+            "parent_skill": "Cloud migration & re-platforming",
+            "related_skills": [
+                "Cloud migration strategy & planning",
+                "Infrastructure as Code (IaC)",
+                "Hybrid cloud networking & connectivity",
+                "Migration automation & orchestration"
+            ],
+            "keywords": [
+                "rehost",
+                "VM migration",
+                "lift & shift",
+                "migration cutover"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Application re-platforming",
+            "aliases": [
+                "replatforming",
+                "partial refactor",
+                "platform modernization"
+            ],
+            "skill_type": "process_skill",
+            "description": "Modifying applications to take advantage of cloud-managed services or platform features without a full rewrite, e.g., replacing self-managed services with managed databases.",
+            "parent_skill": "Cloud migration & re-platforming",
+            "related_skills": [
+                "Cloud-native refactoring & microservices decomposition",
+                "Database migration & modernization",
+                "Infrastructure as Code (IaC)"
+            ],
+            "keywords": [
+                "replatform",
+                "managed services",
+                "service replacement",
+                "cloud platform features"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cloud-native refactoring & microservices decomposition",
+            "aliases": [
+                "microservices refactoring",
+                "cloud-native migration",
+                "application decomposition"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Redesigning and rewriting monolithic applications into cloud-native architectures such as microservices, including stateless design, API boundaries and containerization readiness.",
+            "parent_skill": "Cloud migration & re-platforming",
+            "related_skills": [
+                "Application re-platforming",
+                "Migration automation & orchestration",
+                "Infrastructure as Code (IaC)",
+                "Application dependency mapping & discovery"
+            ],
+            "keywords": [
+                "microservices",
+                "decomposition",
+                "stateless design",
+                "containers",
+                "domain-driven design"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Infrastructure as Code (IaC)",
+            "aliases": [
+                "IaC",
+                "Terraform",
+                "CloudFormation",
+                "ARM templates"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Defining, provisioning and managing cloud infrastructure through declarative code and templates to enable repeatable, version-controlled environment builds during migration.",
+            "parent_skill": "Cloud migration & re-platforming",
+            "related_skills": [
+                "Migration automation & orchestration",
+                "Lift-and-shift migration",
+                "Hybrid cloud networking & connectivity"
+            ],
+            "keywords": [
+                "declarative templates",
+                "provisioning",
+                "automation",
+                "state management"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Migration automation & orchestration",
+            "aliases": [
+                "migration CI\/CD",
+                "migration pipelines",
+                "migration orchestration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Automating discovery, build, test, deployment and cutover activities for migrated workloads using pipeline tooling and orchestration frameworks to reduce manual effort and risk.",
+            "parent_skill": "Cloud migration & re-platforming",
+            "related_skills": [
+                "Infrastructure as Code (IaC)",
+                "Cloud-native refactoring & microservices decomposition",
+                "Lift-and-shift migration"
+            ],
+            "keywords": [
+                "CI\/CD",
+                "pipeline",
+                "orchestration",
+                "automation",
+                "cutover"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data migration & replication (ETL\/CDC)",
+            "aliases": [
+                "data migration",
+                "ETL migration",
+                "CDC (change data capture)"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Transferring, transforming and synchronizing data between source and target systems during migration, including ETL\/ELT processes, CDC strategies and data validation.",
+            "parent_skill": "Cloud migration & re-platforming",
+            "related_skills": [
+                "Database migration & modernization",
+                "Migration automation & orchestration",
+                "Application dependency mapping & discovery"
+            ],
+            "keywords": [
+                "ETL",
+                "ELT",
+                "CDC",
+                "data synchronization",
+                "data validation",
+                "schema migration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Database migration & modernization",
+            "aliases": [
+                "DB migration",
+                "schema conversion",
+                "database modernization"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Moving and modernizing databases during cloud migration, including homogeneous and heterogeneous conversions, schema changes, performance tuning and managed database adoption.",
+            "parent_skill": "Cloud migration & re-platforming",
+            "related_skills": [
+                "Data migration & replication (ETL\/CDC)",
+                "Application re-platforming",
+                "Cloud cost optimization for migrations"
+            ],
+            "keywords": [
+                "schema conversion",
+                "homogeneous migration",
+                "heterogeneous migration",
+                "RDS migration",
+                "managed databases"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Application dependency mapping & discovery",
+            "aliases": [
+                "application discovery",
+                "dependency mapping",
+                "ADS"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Identifying, mapping and analyzing inter-application dependencies, network flows and infrastructure relationships to inform migration grouping, sequencing and risk mitigation.",
+            "parent_skill": "Cloud migration & re-platforming",
+            "related_skills": [
+                "Cloud migration strategy & planning",
+                "Lift-and-shift migration",
+                "Cloud-native refactoring & microservices decomposition"
+            ],
+            "keywords": [
+                "dependency mapping",
+                "application discovery",
+                "service map",
+                "network flows",
+                "migration grouping"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Hybrid cloud networking & connectivity",
+            "aliases": [
+                "hybrid connectivity",
+                "Direct Connect",
+                "ExpressRoute",
+                "site-to-site VPN",
+                "transit gateway"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing secure, high-availability network connectivity between on-premises data centers and cloud environments, including routing, VPNs, private links and bandwidth planning.",
+            "parent_skill": "Cloud migration & re-platforming",
+            "related_skills": [
+                "Lift-and-shift migration",
+                "Infrastructure as Code (IaC)",
+                "Application dependency mapping & discovery"
+            ],
+            "keywords": [
+                "VPN",
+                "private link",
+                "direct connect",
+                "routing",
+                "network design",
+                "bandwidth planning"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

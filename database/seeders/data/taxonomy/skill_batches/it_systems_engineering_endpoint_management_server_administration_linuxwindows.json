@@ -1,0 +1,347 @@
+{
+    "domain": "IT",
+    "category": "Systems Engineering & Endpoint Management",
+    "subcategory": "Server administration (Linux\/Windows)",
+    "skills": [
+        {
+            "canonical_name": "Linux system administration",
+            "aliases": [
+                "Unix system administration",
+                "Linux server administration",
+                "Linux sysadmin"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Administration and operational management of Linux servers, including user and process management, package management, systemd\/init, kernel parameter tuning, and routine maintenance tasks.",
+            "parent_skill": "Server administration (Linux\/Windows)",
+            "related_skills": [
+                "Bash \/ Shell scripting",
+                "Monitoring and observability for servers",
+                "Patch management and update orchestration",
+                "Filesystem and storage management",
+                "Configuration automation with Ansible",
+                "Server virtualization administration",
+                "Backup and disaster recovery for servers",
+                "Security hardening and baseline configuration for servers"
+            ],
+            "keywords": [
+                "Linux",
+                "sysadmin",
+                "systemd",
+                "package management",
+                "daemon",
+                "Ubuntu",
+                "RHEL",
+                "CentOS",
+                "Debian"
+            ],
+            "common_roles": [
+                "IT operations",
+                "Infrastructure engineering",
+                "Platform teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Windows Server administration",
+            "aliases": [
+                "Windows server management",
+                "Windows server ops",
+                "Windows Server administration (On-prem)"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Administration of Windows Server platforms including roles\/features, Group Policy, Windows Update servicing, server core management, event\/log analysis, and server lifecycle tasks.",
+            "parent_skill": "Server administration (Linux\/Windows)",
+            "related_skills": [
+                "Active Directory administration",
+                "PowerShell scripting",
+                "Patch management and update orchestration",
+                "Monitoring and observability for servers",
+                "Server virtualization administration",
+                "Backup and disaster recovery for servers",
+                "Security hardening and baseline configuration for servers"
+            ],
+            "keywords": [
+                "Windows Server",
+                "Windows Server 2016",
+                "Windows Server 2019",
+                "Windows Server 2022",
+                "Server Manager",
+                "Group Policy"
+            ],
+            "common_roles": [
+                "IT operations",
+                "Infrastructure engineering",
+                "Platform teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Active Directory administration",
+            "aliases": [
+                "AD administration",
+                "Active Directory management",
+                "AD DS administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Design, deployment and operational management of Active Directory Domain Services including user\/computer objects, OU design, group policy objects (GPO), DNS integration and replication monitoring.",
+            "parent_skill": "Server administration (Linux\/Windows)",
+            "related_skills": [
+                "Windows Server administration",
+                "PowerShell scripting",
+                "Security hardening and baseline configuration for servers",
+                "Backup and disaster recovery for servers"
+            ],
+            "keywords": [
+                "Active Directory",
+                "AD",
+                "GPO",
+                "LDAP",
+                "Kerberos",
+                "Domain controller"
+            ],
+            "common_roles": [
+                "IT operations",
+                "Platform teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "PowerShell scripting",
+            "aliases": [
+                "PowerShell automation",
+                "Windows PowerShell"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Developing scripts and automation using PowerShell to manage Windows servers, Active Directory, configuration tasks, orchestration, and administrative workflows.",
+            "parent_skill": "Server administration (Linux\/Windows)",
+            "related_skills": [
+                "Windows Server administration",
+                "Active Directory administration",
+                "Patch management and update orchestration",
+                "Configuration automation with Ansible",
+                "Monitoring and observability for servers",
+                "Backup and disaster recovery for servers"
+            ],
+            "keywords": [
+                "PowerShell",
+                "ps1",
+                "Desired State Configuration",
+                "WinRM",
+                "cmdlets",
+                "scripting"
+            ],
+            "common_roles": [
+                "IT operations",
+                "Infrastructure engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bash \/ Shell scripting",
+            "aliases": [
+                "Bash scripting",
+                "Shell scripting",
+                "POSIX shell scripting"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Writing and maintaining shell scripts (bash, sh, POSIX) for automation, system maintenance, log parsing, job scheduling and integration with system tools on Unix\/Linux servers.",
+            "parent_skill": "Server administration (Linux\/Windows)",
+            "related_skills": [
+                "Linux system administration",
+                "Configuration automation with Ansible",
+                "Monitoring and observability for servers",
+                "Patch management and update orchestration",
+                "Backup and disaster recovery for servers"
+            ],
+            "keywords": [
+                "bash",
+                "shell",
+                "sh",
+                "awk",
+                "sed",
+                "cron"
+            ],
+            "common_roles": [
+                "IT operations",
+                "Infrastructure engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Configuration automation with Ansible",
+            "aliases": [
+                "Ansible",
+                "Ansible automation",
+                "Infrastructure as Code with Ansible"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use of Ansible for configuration management, provisioning, and orchestration of servers including playbook development, roles, inventories, and integration with CI\/CD pipelines.",
+            "parent_skill": "Server administration (Linux\/Windows)",
+            "related_skills": [
+                "Linux system administration",
+                "Windows Server administration",
+                "Bash \/ Shell scripting",
+                "PowerShell scripting",
+                "Patch management and update orchestration",
+                "Server virtualization administration"
+            ],
+            "keywords": [
+                "Ansible",
+                "playbook",
+                "roles",
+                "inventory",
+                "YAML",
+                "automation"
+            ],
+            "common_roles": [
+                "Platform teams",
+                "Infrastructure engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Server virtualization administration",
+            "aliases": [
+                "VMware vSphere administration",
+                "Hyper-V administration",
+                "KVM administration",
+                "virtual machine administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Administration of server virtualization platforms and virtual machines including provisioning, resource allocation, storage\/network integration, snapshots, migration and host-level maintenance.",
+            "parent_skill": "Server administration (Linux\/Windows)",
+            "related_skills": [
+                "Linux system administration",
+                "Windows Server administration",
+                "Backup and disaster recovery for servers",
+                "Monitoring and observability for servers",
+                "Configuration automation with Ansible"
+            ],
+            "keywords": [
+                "VMware",
+                "vSphere",
+                "ESXi",
+                "Hyper-V",
+                "KVM",
+                "virtualization",
+                "vMotion"
+            ],
+            "common_roles": [
+                "Infrastructure engineering",
+                "Platform teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Patch management and update orchestration",
+            "aliases": [
+                "Patch management",
+                "OS update orchestration",
+                "Patch orchestration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Processes and tools for planning, testing, scheduling and deploying operating system and software updates across server fleets while minimizing downtime and maintaining compliance.",
+            "parent_skill": "Server administration (Linux\/Windows)",
+            "related_skills": [
+                "Linux system administration",
+                "Windows Server administration",
+                "Configuration automation with Ansible",
+                "Monitoring and observability for servers",
+                "Backup and disaster recovery for servers",
+                "Security hardening and baseline configuration for servers"
+            ],
+            "keywords": [
+                "patching",
+                "updates",
+                "WSUS",
+                "yum",
+                "apt",
+                "maintenance window",
+                "rolling updates"
+            ],
+            "common_roles": [
+                "IT operations",
+                "Infrastructure engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Monitoring and observability for servers",
+            "aliases": [
+                "Server monitoring",
+                "Infrastructure monitoring",
+                "Observability for servers"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implementing and operating monitoring and observability practices for servers, including metrics, logs, alerts, dashboards and incident response integration to ensure availability and performance.",
+            "parent_skill": "Server administration (Linux\/Windows)",
+            "related_skills": [
+                "Linux system administration",
+                "Windows Server administration",
+                "Bash \/ Shell scripting",
+                "PowerShell scripting",
+                "Server virtualization administration",
+                "Patch management and update orchestration",
+                "Backup and disaster recovery for servers"
+            ],
+            "keywords": [
+                "monitoring",
+                "observability",
+                "metrics",
+                "logs",
+                "Prometheus",
+                "Grafana",
+                "alerts",
+                "ELK"
+            ],
+            "common_roles": [
+                "IT operations",
+                "Platform teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Backup and disaster recovery for servers",
+            "aliases": [
+                "Server backup",
+                "Disaster recovery planning",
+                "DR for servers"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and operating backup and disaster recovery solutions for servers, including backup scheduling, retention, restore testing, recovery point\/time objectives and orchestration of failover processes.",
+            "parent_skill": "Server administration (Linux\/Windows)",
+            "related_skills": [
+                "Server virtualization administration",
+                "Linux system administration",
+                "Windows Server administration",
+                "Patch management and update orchestration",
+                "Monitoring and observability for servers",
+                "Filesystem and storage management"
+            ],
+            "keywords": [
+                "backup",
+                "restore",
+                "DR",
+                "RTO",
+                "RPO",
+                "replication",
+                "snapshot"
+            ],
+            "common_roles": [
+                "IT operations",
+                "Infrastructure engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

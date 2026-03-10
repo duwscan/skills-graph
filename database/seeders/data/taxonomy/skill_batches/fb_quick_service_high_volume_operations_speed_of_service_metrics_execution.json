@@ -1,0 +1,309 @@
+{
+    "domain": "F&B",
+    "category": "Quick Service & High-Volume Operations",
+    "subcategory": "Speed of service metrics execution",
+    "skills": [
+        {
+            "canonical_name": "Speed of service (SoS) KPI management",
+            "aliases": [
+                "SoS KPI management",
+                "speed of service KPIs",
+                "SoS metrics management",
+                "speed of service reporting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Define, measure, interpret, and act on speed-of-service key performance indicators (e.g., average ticket time, order-to-delivery time, throughput) to meet service targets.",
+            "parent_skill": "Speed of service metrics execution",
+            "related_skills": [
+                "Real-time speed-of-service monitoring (dashboards & alerts)",
+                "Order cycle time measurement",
+                "KPI reporting and root-cause analysis"
+            ],
+            "keywords": [
+                "SoS",
+                "KPIs",
+                "average ticket time",
+                "throughput",
+                "service targets"
+            ],
+            "common_roles": [
+                "Store Manager",
+                "Operations Manager",
+                "Shift Supervisor",
+                "Area Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Drive-thru time optimization",
+            "aliases": [
+                "drive thru optimization",
+                "drive-through speed optimization",
+                "drive-thru throughput improvement"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implement tactics and layout\/process changes specific to drive-thru operations to reduce order-to-delivery time and improve vehicle throughput.",
+            "parent_skill": "Speed of service metrics execution",
+            "related_skills": [
+                "Queue management and flow control",
+                "POS transaction optimization",
+                "Peak-period staffing optimization"
+            ],
+            "keywords": [
+                "drive-thru",
+                "car lane",
+                "order window",
+                "throughput",
+                "service time"
+            ],
+            "common_roles": [
+                "Shift Supervisor",
+                "Operations Manager",
+                "Restaurant Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Order cycle time measurement",
+            "aliases": [
+                "order-to-delivery time measurement",
+                "service cycle time measurement",
+                "ticket time measurement"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Measure and analyze the time elapsed from order placement to order delivery, including sub-intervals, to identify delays and improvement opportunities.",
+            "parent_skill": "Speed of service metrics execution",
+            "related_skills": [
+                "Time-and-motion study for service processes",
+                "KPI reporting and root-cause analysis",
+                "Real-time speed-of-service monitoring (dashboards & alerts)"
+            ],
+            "keywords": [
+                "cycle time",
+                "order time",
+                "ticket time",
+                "TAT",
+                "service intervals"
+            ],
+            "common_roles": [
+                "Operations Analyst",
+                "Store Manager",
+                "Area Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Queue management and flow control",
+            "aliases": [
+                "queue control",
+                "customer flow management",
+                "line management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and operate customer\/service queues and front-line workflows (including staging, routing and batching) to minimize wait times and smooth peak demand.",
+            "parent_skill": "Speed of service metrics execution",
+            "related_skills": [
+                "Drive-thru time optimization",
+                "Line balancing for throughput",
+                "Point-of-Sale (POS) transaction optimization"
+            ],
+            "keywords": [
+                "queues",
+                "wait time",
+                "flow",
+                "staging",
+                "routing"
+            ],
+            "common_roles": [
+                "Shift Supervisor",
+                "Floor Manager",
+                "Restaurant Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Peak-period staffing optimization",
+            "aliases": [
+                "peak staffing optimization",
+                "peak-hour scheduling",
+                "demand-based staffing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Forecast demand and allocate staff schedules and roles during peak periods to maintain speed-of-service targets while controlling labor costs.",
+            "parent_skill": "Speed of service metrics execution",
+            "related_skills": [
+                "Throughput forecasting",
+                "Queue management and flow control",
+                "Cross-training for flexible staffing"
+            ],
+            "keywords": [
+                "scheduling",
+                "staffing",
+                "peak hours",
+                "forecasting",
+                "labor optimization"
+            ],
+            "common_roles": [
+                "Workforce Planner",
+                "Store Manager",
+                "Area Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Point-of-Sale (POS) transaction optimization",
+            "aliases": [
+                "POS speed optimization",
+                "transaction time reduction",
+                "EPOS efficiency"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Optimize POS interactions, screen flows, tendering processes and hardware usage to shorten transaction times and reduce queue dwell.",
+            "parent_skill": "Speed of service metrics execution",
+            "related_skills": [
+                "Real-time speed-of-service monitoring (dashboards & alerts)",
+                "Order accuracy monitoring",
+                "Queue management and flow control"
+            ],
+            "keywords": [
+                "POS",
+                "transaction time",
+                "tendering",
+                "screen flow",
+                "checkout speed"
+            ],
+            "common_roles": [
+                "Crew Member",
+                "Shift Supervisor",
+                "Store Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Time-and-motion study for service processes",
+            "aliases": [
+                "time-motion study",
+                "work measurement",
+                "process timing analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Conduct structured observations and measurements of tasks and workflows to quantify cycle times, identify bottlenecks and validate improvement interventions.",
+            "parent_skill": "Speed of service metrics execution",
+            "related_skills": [
+                "Order cycle time measurement",
+                "Line balancing for throughput",
+                "KPI reporting and root-cause analysis"
+            ],
+            "keywords": [
+                "time study",
+                "process mapping",
+                "bottleneck analysis",
+                "standard time",
+                "work sampling"
+            ],
+            "common_roles": [
+                "Process Improvement Specialist",
+                "Operations Analyst",
+                "Store Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Line balancing for throughput",
+            "aliases": [
+                "kitchen line balancing",
+                "workstation balancing",
+                "throughput balancing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Allocate tasks and design kitchen\/production line layouts and sequences to evenly distribute work, maximize throughput and reduce order completion time.",
+            "parent_skill": "Speed of service metrics execution",
+            "related_skills": [
+                "Time-and-motion study for service processes",
+                "Batch cooking scheduling",
+                "Peak-period staffing optimization"
+            ],
+            "keywords": [
+                "line balance",
+                "workstations",
+                "throughput",
+                "cycle time",
+                "production flow"
+            ],
+            "common_roles": [
+                "Kitchen Supervisor",
+                "Production Manager",
+                "Operations Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Real-time speed-of-service monitoring (dashboards & alerts)",
+            "aliases": [
+                "SoS dashboards",
+                "real-time KPI dashboards",
+                "speed-of-service alerts"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configure and use live dashboards, alerts and monitoring tools to surface SoS deviations, enable rapid response and support continuous improvement.",
+            "parent_skill": "Speed of service metrics execution",
+            "related_skills": [
+                "Speed of service (SoS) KPI management",
+                "Point-of-Sale (POS) transaction optimization",
+                "KPI reporting and root-cause analysis"
+            ],
+            "keywords": [
+                "dashboards",
+                "alerts",
+                "real-time monitoring",
+                "operational visibility",
+                "BI"
+            ],
+            "common_roles": [
+                "Operations Analyst",
+                "Store Manager",
+                "Area Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Order accuracy monitoring",
+            "aliases": [
+                "order accuracy tracking",
+                "first-time-right rate monitoring",
+                "order correctness metrics"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Track and analyze order accuracy metrics and their effect on rework and speed-of-service; implement checks and feedback loops to reduce errors and delays.",
+            "parent_skill": "Speed of service metrics execution",
+            "related_skills": [
+                "Point-of-Sale (POS) transaction optimization",
+                "Time-and-motion study for service processes",
+                "KPI reporting and root-cause analysis"
+            ],
+            "keywords": [
+                "accuracy",
+                "errors",
+                "rework",
+                "first-time-right",
+                "customer complaints"
+            ],
+            "common_roles": [
+                "Quality Assurance Lead",
+                "Store Manager",
+                "Shift Supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

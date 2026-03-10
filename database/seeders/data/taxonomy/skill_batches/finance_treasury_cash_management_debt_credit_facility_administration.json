@@ -1,0 +1,305 @@
+{
+    "domain": "Finance",
+    "category": "Treasury & Cash Management",
+    "subcategory": "Debt & credit facility administration",
+    "skills": [
+        {
+            "canonical_name": "Credit facility administration",
+            "aliases": [
+                "loan facility administration",
+                "credit line administration",
+                "facility administration"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Manage end-to-end lifecycle of corporate credit facilities including drawdowns, repayments, amendments, fee processing, covenant tracking and lender reporting.",
+            "parent_skill": "Debt & credit facility administration",
+            "related_skills": [
+                "Facility drawdown and settlement",
+                "Debt servicing and payment scheduling",
+                "Loan documentation review",
+                "Covenant monitoring and testing",
+                "Syndicated loan administration"
+            ],
+            "keywords": [
+                "credit facility",
+                "facility agreement",
+                "drawdown",
+                "amendment",
+                "commitment fee"
+            ],
+            "common_roles": [
+                "Treasury Manager",
+                "Corporate Treasurer",
+                "Treasury Analyst",
+                "Credit Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Covenant monitoring and testing",
+            "aliases": [
+                "covenant compliance monitoring",
+                "loan covenant testing",
+                "financial covenant monitoring"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Establish and execute periodic tests of contractual covenants (financial and non-financial), calculate ratios and thresholds, and produce compliance reporting to lenders and internal stakeholders.",
+            "parent_skill": "Debt & credit facility administration",
+            "related_skills": [
+                "Loan documentation review",
+                "Covenant remediation and waiver negotiation",
+                "Financial ratio analysis",
+                "Credit facility administration"
+            ],
+            "keywords": [
+                "covenant test",
+                "leverage ratio",
+                "interest coverage",
+                "compliance reporting"
+            ],
+            "common_roles": [
+                "Treasury Analyst",
+                "Credit Risk Analyst",
+                "Treasury Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Facility drawdown and settlement",
+            "aliases": [
+                "loan drawdown processing",
+                "facility disbursement processing",
+                "drawdown settlement"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Execute and reconcile facility drawdowns and settlements, validate conditions precedent, coordinate with banks and internal payments teams, and ensure proper accounting treatment.",
+            "parent_skill": "Debt & credit facility administration",
+            "related_skills": [
+                "Credit facility administration",
+                "Debt servicing and payment scheduling",
+                "Loan documentation review",
+                "Syndicated loan administration"
+            ],
+            "keywords": [
+                "drawdown",
+                "conditions precedent",
+                "settlement",
+                "payment instruction"
+            ],
+            "common_roles": [
+                "Treasury Analyst",
+                "Payments Specialist",
+                "Corporate Treasurer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Loan documentation review",
+            "aliases": [
+                "facility agreement interpretation",
+                "credit agreement review",
+                "loan document analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Interpret and analyze facility and security documentation (agreements, schedules, definitions) to identify rights, obligations, conditions precedent, covenants and events of default.",
+            "parent_skill": "Debt & credit facility administration",
+            "related_skills": [
+                "Covenant monitoring and testing",
+                "Collateral and security management",
+                "Covenant remediation and waiver negotiation",
+                "Credit facility administration"
+            ],
+            "keywords": [
+                "facility agreement",
+                "definitions",
+                "conditions precedent",
+                "events of default"
+            ],
+            "common_roles": [
+                "Legal Operations Analyst",
+                "Treasury Analyst",
+                "Credit Risk Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Lender and syndicate relationship management",
+            "aliases": [
+                "bank relationship management",
+                "syndicate management",
+                "agent bank coordination"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Manage ongoing communications and negotiations with lenders and syndicate members, coordinate agent bank interactions, and maintain transparency on covenant status, drawdowns and amendments.",
+            "parent_skill": "Debt & credit facility administration",
+            "related_skills": [
+                "Syndicated loan administration",
+                "Credit facility administration",
+                "Covenant remediation and waiver negotiation",
+                "Facility drawdown and settlement"
+            ],
+            "keywords": [
+                "lender communication",
+                "syndicate",
+                "agent bank",
+                "negotiation"
+            ],
+            "common_roles": [
+                "Corporate Treasurer",
+                "Head of Treasury",
+                "Treasury Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Debt servicing and payment scheduling",
+            "aliases": [
+                "loan payment scheduling",
+                "debt repayment management",
+                "amortization scheduling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Plan and execute scheduled principal and interest payments, prepare amortization schedules, manage balloon\/term repayment mechanics and reconcile payment flows with accounting.",
+            "parent_skill": "Debt & credit facility administration",
+            "related_skills": [
+                "Interest, fee and amortization calculations",
+                "Facility drawdown and settlement",
+                "Credit facility administration"
+            ],
+            "keywords": [
+                "amortization",
+                "payment schedule",
+                "principal repayment",
+                "interest payment"
+            ],
+            "common_roles": [
+                "Treasury Analyst",
+                "Payments Specialist",
+                "Treasury Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Interest, fee and amortization calculations",
+            "aliases": [
+                "loan interest calculation",
+                "facility fee calculation",
+                "amortization schedule modeling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Accurately calculate interest accruals, commitment and facility fees, amortization schedules and day-count conventions across fixed and floating rate facilities.",
+            "parent_skill": "Debt & credit facility administration",
+            "related_skills": [
+                "Debt servicing and payment scheduling",
+                "Financial modeling",
+                "Covenant monitoring and testing"
+            ],
+            "keywords": [
+                "interest accrual",
+                "commitment fee",
+                "day count",
+                "amortization"
+            ],
+            "common_roles": [
+                "Treasury Analyst",
+                "Financial Analyst",
+                "Corporate Treasurer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Covenant remediation and waiver negotiation",
+            "aliases": [
+                "covenant waiver negotiation",
+                "remediation action planning",
+                "waiver & amendment negotiation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Develop remediation plans for covenant breaches, coordinate documentation and negotiation of waivers or amendments with lenders, and implement compliance actions to restore covenant standing.",
+            "parent_skill": "Debt & credit facility administration",
+            "related_skills": [
+                "Covenant monitoring and testing",
+                "Loan documentation review",
+                "Lender and syndicate relationship management"
+            ],
+            "keywords": [
+                "waiver",
+                "amendment",
+                "remediation plan",
+                "breach"
+            ],
+            "common_roles": [
+                "Treasury Manager",
+                "Corporate Treasurer",
+                "Credit Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Syndicated loan administration",
+            "aliases": [
+                "syndicated facility administration",
+                "syndicate loan servicing",
+                "multi-lender facility administration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Administer syndicated facilities by coordinating allocations, agent bank communications, receipt and disbursement of funds, participant reporting and waterfall mechanics across lenders.",
+            "parent_skill": "Debt & credit facility administration",
+            "related_skills": [
+                "Lender and syndicate relationship management",
+                "Facility drawdown and settlement",
+                "Credit facility administration"
+            ],
+            "keywords": [
+                "syndicated loan",
+                "agent bank",
+                "allocation",
+                "participant reporting"
+            ],
+            "common_roles": [
+                "Treasury Manager",
+                "Corporate Treasurer",
+                "Syndication Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Collateral and security management",
+            "aliases": [
+                "loan collateral management",
+                "security documentation management",
+                "collateral register management"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Manage collateral registers and security documentation, monitor perfection and valuation metrics, coordinate filings and releases, and ensure lender security interests are maintained per facility terms.",
+            "parent_skill": "Debt & credit facility administration",
+            "related_skills": [
+                "Loan documentation review",
+                "Credit facility administration",
+                "Covenant monitoring and testing"
+            ],
+            "keywords": [
+                "collateral",
+                "security",
+                "valuation",
+                "perfection"
+            ],
+            "common_roles": [
+                "Treasury Analyst",
+                "Collateral Manager",
+                "Legal Operations Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

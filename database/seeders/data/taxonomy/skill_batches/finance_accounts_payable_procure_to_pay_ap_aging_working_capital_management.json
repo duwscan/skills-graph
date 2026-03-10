@@ -1,0 +1,267 @@
+{
+    "domain": "Finance",
+    "category": "Accounts Payable & Procure-to-Pay",
+    "subcategory": "AP aging & working capital management",
+    "skills": [
+        {
+            "canonical_name": "AP aging analysis",
+            "aliases": [
+                "accounts payable aging analysis",
+                "aging report analysis",
+                "AP aging report"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing accounts payable aging reports to identify overdue balances, trends, concentration risk, and drivers of payable days.",
+            "parent_skill": "AP aging & working capital management",
+            "related_skills": [
+                "AP aging reporting & KPIs",
+                "Days Payable Outstanding (DPO) management",
+                "Accounts payable dispute & exception management"
+            ],
+            "keywords": [
+                "aging",
+                "aging report",
+                "overdue invoices",
+                "past due",
+                "collections risk"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Days Payable Outstanding (DPO) management",
+            "aliases": [
+                "DPO management",
+                "days payable outstanding optimization",
+                "DPO calculation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Measuring, monitoring and managing Days Payable Outstanding metrics and strategies to balance supplier relationships and working capital.",
+            "parent_skill": "AP aging & working capital management",
+            "related_skills": [
+                "AP aging analysis",
+                "Working capital optimization (payables)",
+                "Payment terms negotiation with suppliers"
+            ],
+            "keywords": [
+                "DPO",
+                "days payable outstanding",
+                "payable days",
+                "working capital metric"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Short-term cash flow forecasting (payables)",
+            "aliases": [
+                "payables cash flow forecasting",
+                "short-term cash forecasting for AP",
+                "payables cash forecast"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Projecting near-term cash outflows from accounts payable to support liquidity management and payment scheduling decisions.",
+            "parent_skill": "AP aging & working capital management",
+            "related_skills": [
+                "Working capital scenario modeling & sensitivity analysis",
+                "Vendor payment prioritization & scheduling",
+                "AP automation platforms & straight-through processing"
+            ],
+            "keywords": [
+                "cash forecast",
+                "liquidity",
+                "cash outflows",
+                "rolling forecast",
+                "payables forecast"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Working capital optimization (payables)",
+            "aliases": [
+                "working capital optimization",
+                "payables-driven working capital",
+                "WC optimization"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and executing strategies across payables (terms, timing, discounts, financing) to optimize net working capital and cash conversion cycle.",
+            "parent_skill": "AP aging & working capital management",
+            "related_skills": [
+                "Days Payable Outstanding (DPO) management",
+                "Payment terms negotiation with suppliers",
+                "Early payment discount optimization"
+            ],
+            "keywords": [
+                "working capital",
+                "cash conversion cycle",
+                "CCC",
+                "net working capital",
+                "optimization"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor payment prioritization & scheduling",
+            "aliases": [
+                "payment prioritization",
+                "payment scheduling",
+                "vendor payment scheduling"
+            ],
+            "skill_type": "process_skill",
+            "description": "Setting and executing rules and schedules that prioritize supplier payments based on risk, cash constraints, discounts and service agreements.",
+            "parent_skill": "AP aging & working capital management",
+            "related_skills": [
+                "Short-term cash flow forecasting (payables)",
+                "AP automation platforms & straight-through processing",
+                "Early payment discount optimization"
+            ],
+            "keywords": [
+                "payment run",
+                "priority pay",
+                "payment schedule",
+                "critical suppliers",
+                "payment windows"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Early payment discount optimization",
+            "aliases": [
+                "early payment discounts",
+                "cash discount optimization",
+                "2\/10 net 30 optimization"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Evaluating and executing early payment discount programs and financing alternatives to capture savings while managing cash impact.",
+            "parent_skill": "AP aging & working capital management",
+            "related_skills": [
+                "Working capital optimization (payables)",
+                "Vendor payment prioritization & scheduling",
+                "AP automation platforms & straight-through processing"
+            ],
+            "keywords": [
+                "discount capture",
+                "trade discounts",
+                "2\/10 net 30",
+                "pay early",
+                "supplier discounts"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Accounts payable dispute & exception management",
+            "aliases": [
+                "AP dispute resolution",
+                "invoice exception handling",
+                "supplier invoice dispute management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing invoice exceptions, supplier disputes and reconciliation issues to resolve holds, enable timely payments and reduce aged payables.",
+            "parent_skill": "AP aging & working capital management",
+            "related_skills": [
+                "Supplier reconciliation",
+                "AP aging analysis",
+                "AP automation platforms & straight-through processing"
+            ],
+            "keywords": [
+                "dispute",
+                "invoice exception",
+                "hold management",
+                "claim resolution",
+                "supplier dispute"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Payment terms negotiation with suppliers",
+            "aliases": [
+                "supplier payment terms negotiation",
+                "payment terms negotiation",
+                "supplier terms negotiation"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Negotiating supplier payment terms and conditions to improve cash flow, secure favorable terms and align supplier relationships with working capital objectives.",
+            "parent_skill": "AP aging & working capital management",
+            "related_skills": [
+                "Working capital optimization (payables)",
+                "Days Payable Outstanding (DPO) management",
+                "Early payment discount optimization"
+            ],
+            "keywords": [
+                "terms negotiation",
+                "net terms",
+                "payment terms",
+                "supplier negotiation",
+                "contract terms"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Working capital scenario modeling & sensitivity analysis",
+            "aliases": [
+                "working capital modeling",
+                "scenario modeling for payables",
+                "sensitivity analysis (working capital)"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Building scenario and sensitivity models to quantify the impact of payment timing, discounts, financing and supplier behaviors on working capital and cash metrics.",
+            "parent_skill": "AP aging & working capital management",
+            "related_skills": [
+                "Short-term cash flow forecasting (payables)",
+                "Working capital optimization (payables)",
+                "Days Payable Outstanding (DPO) management"
+            ],
+            "keywords": [
+                "scenario analysis",
+                "sensitivity",
+                "modeling",
+                "what-if",
+                "impact analysis"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "AP automation platforms & straight-through processing",
+            "aliases": [
+                "AP automation",
+                "invoice automation",
+                "straight-through processing (AP)",
+                "e-invoicing platforms"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Implementing and operating AP automation and straight-through processing solutions to reduce manual interventions, speed invoice-to-pay cycles and improve aging.",
+            "parent_skill": "AP aging & working capital management",
+            "related_skills": [
+                "Accounts payable dispute & exception management",
+                "Vendor payment prioritization & scheduling",
+                "AP aging reporting & KPIs"
+            ],
+            "keywords": [
+                "AP automation",
+                "STP",
+                "e-invoicing",
+                "OCR invoicing",
+                "robotic process automation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

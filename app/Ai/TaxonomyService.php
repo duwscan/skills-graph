@@ -294,7 +294,7 @@ class TaxonomyService
         }
 
         foreach (array_chunk($skillRows, 250) as $chunk) {
-            DB::table('skills')->insert($chunk);
+            DB::table(table: 'skills')->insert($chunk);
         }
 
         foreach (array_chunk($aliasRows, 500) as $chunk) {

@@ -1,0 +1,291 @@
+{
+    "domain": "Finance",
+    "category": "Tax Operations & Compliance",
+    "subcategory": "Tax data management & controls",
+    "skills": [
+        {
+            "canonical_name": "Tax data mapping and transformation",
+            "aliases": [
+                "tax data mapping",
+                "tax mapping",
+                "data transformation for tax"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and maintaining mappings and transformation rules that convert source ledger\/transaction data into tax reporting formats and tax engine inputs.",
+            "parent_skill": "Tax data management & controls",
+            "related_skills": [
+                "Tax ETL pipeline development",
+                "ERP tax data extraction and interfaces",
+                "Tax data lineage and traceability"
+            ],
+            "keywords": [
+                "mapping",
+                "transformation",
+                "field mapping",
+                "tax codes",
+                "data model"
+            ],
+            "common_roles": [
+                "Tax operations professionals",
+                "Finance data transformation teams",
+                "Tax reporting support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax data reconciliation",
+            "aliases": [
+                "tax reconciliations",
+                "tax account reconciliation",
+                "tax ledger reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Performing and automating reconciliations between source systems, sub-ledgers, tax engines and tax return positions to ensure completeness and accuracy of tax data.",
+            "parent_skill": "Tax data management & controls",
+            "related_skills": [
+                "Tax reporting data validation",
+                "Tax control design and testing",
+                "Tax data quality monitoring"
+            ],
+            "keywords": [
+                "reconciliation",
+                "variance analysis",
+                "control",
+                "subsidiary reconciliation"
+            ],
+            "common_roles": [
+                "Tax operations professionals",
+                "Financial close support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax data governance",
+            "aliases": [
+                "tax data policy",
+                "tax data stewardship",
+                "tax data ownership"
+            ],
+            "skill_type": "process_skill",
+            "description": "Establishing roles, policies, standards and procedures for managing tax data quality, access, retention and change control across systems and teams.",
+            "parent_skill": "Tax data management & controls",
+            "related_skills": [
+                "Tax data lineage and traceability",
+                "Tax data quality monitoring",
+                "ERP tax data extraction and interfaces"
+            ],
+            "keywords": [
+                "governance",
+                "data policy",
+                "data stewardship",
+                "access controls"
+            ],
+            "common_roles": [
+                "Tax data governance teams",
+                "Finance data management"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax data lineage and traceability",
+            "aliases": [
+                "tax data lineage",
+                "data traceability for tax",
+                "tax audit trail"
+            ],
+            "skill_type": "process_skill",
+            "description": "Documenting and maintaining end-to-end lineage from source transactions through transformations to tax reporting outputs to support audits, controls and root-cause analysis.",
+            "parent_skill": "Tax data management & controls",
+            "related_skills": [
+                "Tax data mapping and transformation",
+                "Tax data governance",
+                "Tax control design and testing"
+            ],
+            "keywords": [
+                "lineage",
+                "traceability",
+                "audit trail",
+                "provenance"
+            ],
+            "common_roles": [
+                "Tax compliance support",
+                "Finance data lineage analysts"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax data quality monitoring",
+            "aliases": [
+                "tax data quality",
+                "tax data validation monitoring",
+                "tax data KPIs"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Defining and monitoring quality metrics, exception rules and dashboards for tax datasets to detect anomalies, trends and data degradation over time.",
+            "parent_skill": "Tax data management & controls",
+            "related_skills": [
+                "Tax data reconciliation",
+                "Tax reporting data validation",
+                "Tax control design and testing"
+            ],
+            "keywords": [
+                "data quality",
+                "KPIs",
+                "dashboards",
+                "exception reporting"
+            ],
+            "common_roles": [
+                "Tax operations analysts",
+                "Finance analytics teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax control design and testing",
+            "aliases": [
+                "tax control testing",
+                "designing tax controls",
+                "SOX tax control testing"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Designing, documenting and testing preventive and detective controls over tax data and processes, and managing remediation for control failures and audit findings.",
+            "parent_skill": "Tax data management & controls",
+            "related_skills": [
+                "Tax data reconciliation",
+                "Tax data governance",
+                "Tax data lineage and traceability"
+            ],
+            "keywords": [
+                "controls",
+                "testing",
+                "remediation",
+                "audit"
+            ],
+            "common_roles": [
+                "Tax compliance teams",
+                "Internal control specialists"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ERP tax data extraction and interfaces",
+            "aliases": [
+                "ERP tax extraction",
+                "tax data interfaces",
+                "ERP tax integration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring, extracting and validating tax-relevant data from enterprise resource planning (ERP) systems and managing interfaces to tax engines and reporting systems.",
+            "parent_skill": "Tax data management & controls",
+            "related_skills": [
+                "Tax data mapping and transformation",
+                "Tax ETL pipeline development",
+                "Tax data governance"
+            ],
+            "keywords": [
+                "ERP",
+                "interfaces",
+                "data extraction",
+                "integration"
+            ],
+            "common_roles": [
+                "ERP finance support",
+                "Tax operations professionals"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax reporting data validation",
+            "aliases": [
+                "tax report validation",
+                "tax return data validation",
+                "tax output validation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Validating tax reporting outputs (returns, disclosures, statutory reports) against source data and reconciliations to ensure accuracy before filing and disclosure.",
+            "parent_skill": "Tax data management & controls",
+            "related_skills": [
+                "Tax data reconciliation",
+                "Tax data quality monitoring",
+                "Tax control design and testing"
+            ],
+            "keywords": [
+                "validation",
+                "reporting",
+                "returns",
+                "pre-filing checks"
+            ],
+            "common_roles": [
+                "Tax reporting teams",
+                "Financial close support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SQL for tax data analysis",
+            "aliases": [
+                "tax SQL",
+                "SQL for tax",
+                "database querying for tax"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using SQL to extract, aggregate and analyze transactional and ledger data for tax reconciliations, mappings, exception analysis and reporting.",
+            "parent_skill": "Tax data management & controls",
+            "related_skills": [
+                "Tax data reconciliation",
+                "Tax data quality monitoring",
+                "Tax ETL pipeline development"
+            ],
+            "keywords": [
+                "SQL",
+                "querying",
+                "joins",
+                "aggregation",
+                "data analysis"
+            ],
+            "common_roles": [
+                "Tax operations analysts",
+                "Financial data analysts"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Python for tax automation",
+            "aliases": [
+                "tax automation with Python",
+                "Python scripting for tax",
+                "tax automation scripting"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Developing scripts and small applications in Python to automate tax data extraction, transformation, validation, reconciliation and reporting tasks.",
+            "parent_skill": "Tax data management & controls",
+            "related_skills": [
+                "SQL for tax data analysis",
+                "Tax ETL pipeline development",
+                "Tax data quality monitoring"
+            ],
+            "keywords": [
+                "Python",
+                "automation",
+                "scripting",
+                "pandas",
+                "ETL"
+            ],
+            "common_roles": [
+                "Tax automation specialists",
+                "Finance analytics teams"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

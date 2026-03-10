@@ -1,0 +1,248 @@
+{
+    "domain": "F&B",
+    "category": "Beverage Service (Non-Alcoholic)",
+    "subcategory": "Juice & beverage batching",
+    "skills": [
+        {
+            "canonical_name": "Beverage batching (non-alcoholic)",
+            "aliases": [
+                "batch beverage preparation",
+                "batch production of non-alcoholic beverages"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning and preparing standardized production runs of non-alcoholic beverages according to recipes and production schedules.",
+            "parent_skill": "Juice & beverage batching",
+            "related_skills": [
+                "Recipe scaling for beverage batches",
+                "Syrup and concentrate formulation",
+                "Cold chain management for prepared beverages",
+                "Batch quality control and sensory evaluation"
+            ],
+            "keywords": [
+                "batching",
+                "production schedule",
+                "batch size",
+                "standardized recipe"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Recipe scaling for beverage batches",
+            "aliases": [
+                "batch recipe scaling",
+                "recipe scaling"
+            ],
+            "skill_type": "process_skill",
+            "description": "Adjusting ingredient quantities and process parameters to scale single-serve recipes up or down for consistent batch production.",
+            "parent_skill": "Juice & beverage batching",
+            "related_skills": [
+                "Beverage batching (non-alcoholic)",
+                "Brix measurement (refractometry)",
+                "pH monitoring and acidity control"
+            ],
+            "keywords": [
+                "scaling",
+                "yield calculation",
+                "ratio adjustment",
+                "formula conversion"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cold-press juice extraction",
+            "aliases": [
+                "cold-pressed juice production",
+                "cold press extraction"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operating cold-press equipment and processes to extract juice while minimizing heat and oxidation for fresh beverage batches.",
+            "parent_skill": "Juice & beverage batching",
+            "related_skills": [
+                "Brix measurement (refractometry)",
+                "Cold chain management for prepared beverages",
+                "Sanitation and cleaning of beverage equipment (CIP)"
+            ],
+            "keywords": [
+                "cold-press",
+                "hydraulic press",
+                "low-oxidation extraction",
+                "juicing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Syrup and concentrate formulation",
+            "aliases": [
+                "syrup preparation",
+                "concentrate preparation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Formulating and preparing flavored syrups and concentrates used as bases or ingredients in batch beverage production, including dilution and stabilization.",
+            "parent_skill": "Juice & beverage batching",
+            "related_skills": [
+                "Recipe scaling for beverage batches",
+                "Brix measurement (refractometry)",
+                "pH monitoring and acidity control"
+            ],
+            "keywords": [
+                "syrup",
+                "concentrate",
+                "flavor base",
+                "sweetener solution"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Brix measurement (refractometry)",
+            "aliases": [
+                "refractometer use",
+                "Brix testing"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using a refractometer to measure soluble solids (Brix) in juices and syrups to control sweetness, consistency and formulation for batches.",
+            "parent_skill": "Juice & beverage batching",
+            "related_skills": [
+                "Recipe scaling for beverage batches",
+                "Syrup and concentrate formulation",
+                "Batch quality control and sensory evaluation"
+            ],
+            "keywords": [
+                "Brix",
+                "refractometer",
+                "°Brix",
+                "sugar content"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "pH monitoring and acidity control",
+            "aliases": [
+                "pH testing",
+                "acidity adjustment"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Measuring and adjusting acidity levels in juices and beverages using pH meters and acid\/base additions to ensure flavor balance and microbial safety.",
+            "parent_skill": "Juice & beverage batching",
+            "related_skills": [
+                "Brix measurement (refractometry)",
+                "Pasteurization and hot-fill processes",
+                "Batch quality control and sensory evaluation"
+            ],
+            "keywords": [
+                "pH",
+                "acidity",
+                "pH meter",
+                "acidulant"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Pasteurization and hot-fill processes",
+            "aliases": [
+                "hot-fill process",
+                "juice pasteurization"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying thermal treatments and hot-fill techniques to extend shelf life and meet safety requirements for bottled or packaged beverage batches.",
+            "parent_skill": "Juice & beverage batching",
+            "related_skills": [
+                "pH monitoring and acidity control",
+                "Cold chain management for prepared beverages",
+                "Sanitation and cleaning of beverage equipment (CIP)"
+            ],
+            "keywords": [
+                "pasteurization",
+                "hot-fill",
+                "thermal processing",
+                "shelf life"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sanitation and cleaning of beverage equipment (CIP)",
+            "aliases": [
+                "CIP for beverage equipment",
+                "equipment sanitation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Implementing cleaning-in-place (CIP) and manual sanitation procedures for presses, tanks, lines and utensils to prevent contamination in beverage batches.",
+            "parent_skill": "Juice & beverage batching",
+            "related_skills": [
+                "Pasteurization and hot-fill processes",
+                "Cold-press juice extraction",
+                "Batch quality control and sensory evaluation"
+            ],
+            "keywords": [
+                "CIP",
+                "sanitation",
+                "cleaning procedures",
+                "HACCP hygiene"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cold chain management for prepared beverages",
+            "aliases": [
+                "refrigeration monitoring",
+                "temperature-controlled storage"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Monitoring and controlling refrigeration and storage temperatures throughout production, holding and distribution to preserve quality and safety of prepared beverages.",
+            "parent_skill": "Juice & beverage batching",
+            "related_skills": [
+                "Beverage batching (non-alcoholic)",
+                "Pasteurization and hot-fill processes",
+                "Sanitation and cleaning of beverage equipment (CIP)"
+            ],
+            "keywords": [
+                "cold chain",
+                "refrigeration",
+                "temperature logging",
+                "storage"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Batch quality control and sensory evaluation",
+            "aliases": [
+                "sensory evaluation",
+                "product QA for beverages"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Conducting visual, taste, aroma and physical tests and recording metrics to verify that batches meet quality, flavor and safety specifications.",
+            "parent_skill": "Juice & beverage batching",
+            "related_skills": [
+                "Brix measurement (refractometry)",
+                "pH monitoring and acidity control",
+                "Sanitation and cleaning of beverage equipment (CIP)"
+            ],
+            "keywords": [
+                "quality control",
+                "sensory testing",
+                "QA",
+                "microbiological checks"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

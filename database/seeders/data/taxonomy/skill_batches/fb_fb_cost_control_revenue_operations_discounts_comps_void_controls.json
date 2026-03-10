@@ -1,0 +1,300 @@
+{
+    "domain": "F&B",
+    "category": "F&B Cost Control & Revenue Operations",
+    "subcategory": "Discounts, comps & void controls",
+    "skills": [
+        {
+            "canonical_name": "POS comping controls",
+            "aliases": [
+                "point-of-sale comp controls",
+                "POS void controls",
+                "POS comp restrictions"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Configure and enforce point-of-sale settings and user permissions to limit unauthorized comps, discounts and voids at the transaction level.",
+            "parent_skill": "Discounts, comps & void controls",
+            "related_skills": [
+                "POS discount and promotion configuration",
+                "Daily comp\/void audit procedures",
+                "Comp\/Discount authorization workflow design"
+            ],
+            "keywords": [
+                "POS settings",
+                "user permissions",
+                "transaction controls",
+                "comp limits",
+                "void restrictions"
+            ],
+            "common_roles": [
+                "Restaurant Manager",
+                "Shift Supervisor",
+                "Operations Manager",
+                "Loss Prevention Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Void transaction investigation",
+            "aliases": [
+                "void analysis",
+                "void audit",
+                "investigate voided transactions"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Examine voided transactions to identify root causes, patterns of misuse, and exceptional cases requiring corrective actions or training.",
+            "parent_skill": "Discounts, comps & void controls",
+            "related_skills": [
+                "Comp\/void fraud detection and prevention",
+                "Daily comp\/void audit procedures",
+                "Comp and discount reconciliation"
+            ],
+            "keywords": [
+                "void trends",
+                "root cause analysis",
+                "transaction forensics",
+                "exception reporting"
+            ],
+            "common_roles": [
+                "Loss Prevention Analyst",
+                "Revenue Manager",
+                "Cost Controller",
+                "Accounting Clerk"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Comp and discount reconciliation",
+            "aliases": [
+                "comp reconciliation",
+                "discount reconciliation",
+                "reconcile comps and discounts"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Reconcile recorded comps and discounts against sales, cash deposits and accounting records to ensure accurate financial reporting and identify discrepancies.",
+            "parent_skill": "Discounts, comps & void controls",
+            "related_skills": [
+                "POS comping controls",
+                "Void transaction investigation",
+                "Comp cost attribution and margin impact analysis"
+            ],
+            "keywords": [
+                "daily reconciliation",
+                "till balancing",
+                "sales adjustments",
+                "variance analysis"
+            ],
+            "common_roles": [
+                "Accounting Clerk",
+                "Cost Controller",
+                "Revenue Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Comp and discount policy development",
+            "aliases": [
+                "comp policy creation",
+                "discount policy development",
+                "comp and discount guidelines"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design formal policies and approval matrices governing when and how comps, discounts and voids are issued, including eligibility, limits and documentation requirements.",
+            "parent_skill": "Discounts, comps & void controls",
+            "related_skills": [
+                "Comp\/Discount authorization workflow design",
+                "Daily comp\/void audit procedures",
+                "Guest recovery and comp communication"
+            ],
+            "keywords": [
+                "approval matrix",
+                "policy drafting",
+                "comp limits",
+                "eligibility criteria"
+            ],
+            "common_roles": [
+                "Operations Manager",
+                "Revenue Manager",
+                "Food & Beverage Director"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Comp\/Discount authorization workflow design",
+            "aliases": [
+                "comp authorization workflow",
+                "discount approval process",
+                "authorization matrix for comps"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and implement approval workflows and manager authorization steps (manual or system-based) to approve exceptions, high-value comps and discounts.",
+            "parent_skill": "Discounts, comps & void controls",
+            "related_skills": [
+                "POS comping controls",
+                "Comp and discount policy development",
+                "POS discount and promotion configuration"
+            ],
+            "keywords": [
+                "approval workflow",
+                "manager sign-off",
+                "exception handling",
+                "authorization limits"
+            ],
+            "common_roles": [
+                "Restaurant Manager",
+                "Assistant Manager",
+                "Revenue Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "POS discount and promotion configuration",
+            "aliases": [
+                "POS discount setup",
+                "promotion configuration in POS",
+                "menu price override configuration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Set up and maintain discounts, happy-hour pricing, coupons and promotional rules within POS or property management systems, ensuring correct application and reporting.",
+            "parent_skill": "Discounts, comps & void controls",
+            "related_skills": [
+                "POS comping controls",
+                "Comp and discount reconciliation",
+                "Promotional discount performance tracking"
+            ],
+            "keywords": [
+                "promo rules",
+                "discount codes",
+                "time-based pricing",
+                "POS setup"
+            ],
+            "common_roles": [
+                "POS Administrator",
+                "Revenue Manager",
+                "Operations Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Comp\/void fraud detection and prevention",
+            "aliases": [
+                "comp fraud detection",
+                "void fraud prevention",
+                "fraud analytics for comps"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Apply data analysis, rule-based monitoring and anomaly detection to identify suspicious comp\/void behavior and implement controls to reduce fraud risk.",
+            "parent_skill": "Discounts, comps & void controls",
+            "related_skills": [
+                "Void transaction investigation",
+                "Daily comp\/void audit procedures",
+                "POS comping controls"
+            ],
+            "keywords": [
+                "anomaly detection",
+                "fraud rules",
+                "loss prevention",
+                "suspicious patterns"
+            ],
+            "common_roles": [
+                "Loss Prevention Analyst",
+                "Revenue Manager",
+                "Business Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Comp cost attribution and margin impact analysis",
+            "aliases": [
+                "comp cost analysis",
+                "discount margin impact analysis",
+                "comp profitability analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Quantify the financial impact of comps and discounts on food & beverage margins, attributing costs to promotions or guest recovery to inform pricing and policy decisions.",
+            "parent_skill": "Discounts, comps & void controls",
+            "related_skills": [
+                "Promotional discount performance tracking",
+                "Comp and discount reconciliation",
+                "Comp\/Discount authorization workflow design"
+            ],
+            "keywords": [
+                "margin analysis",
+                "cost attribution",
+                "promotion ROI",
+                "financial impact"
+            ],
+            "common_roles": [
+                "Cost Controller",
+                "Revenue Manager",
+                "Finance Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Daily comp\/void audit procedures",
+            "aliases": [
+                "daily void audit",
+                "comp audit checklist",
+                "till comp verification"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Perform daily or shift-level audits of comps and voids, including exception reporting, log reviews and follow-up actions to maintain control and accountability.",
+            "parent_skill": "Discounts, comps & void controls",
+            "related_skills": [
+                "Void transaction investigation",
+                "Comp and discount reconciliation",
+                "Comp\/void fraud detection and prevention"
+            ],
+            "keywords": [
+                "shift audit",
+                "exception reporting",
+                "log review",
+                "follow-up actions"
+            ],
+            "common_roles": [
+                "Shift Supervisor",
+                "Restaurant Manager",
+                "Loss Prevention Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Guest recovery and comp communication",
+            "aliases": [
+                "guest recovery communication",
+                "comp customer communication",
+                "customer-facing comp handling"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Handle guest-facing comp and discount situations professionally, documenting reasons, communicating value to the guest and capturing required authorizations for audit trails.",
+            "parent_skill": "Discounts, comps & void controls",
+            "related_skills": [
+                "Comp and discount policy development",
+                "Daily comp\/void audit procedures",
+                "Comp\/Discount authorization workflow design"
+            ],
+            "keywords": [
+                "guest recovery",
+                "customer communication",
+                "documentation",
+                "service recovery"
+            ],
+            "common_roles": [
+                "Server",
+                "Host\/Hostess",
+                "Restaurant Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

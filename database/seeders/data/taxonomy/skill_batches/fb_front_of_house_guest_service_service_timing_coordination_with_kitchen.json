@@ -1,0 +1,291 @@
+{
+    "domain": "F&B",
+    "category": "Front-of-House Guest Service",
+    "subcategory": "Service timing coordination with kitchen",
+    "skills": [
+        {
+            "canonical_name": "Order sequencing and course pacing",
+            "aliases": [
+                "ticket sequencing",
+                "course pacing",
+                "plate timing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Planning and adjusting the sequence and timing of dishes to ensure courses arrive at appropriate intervals and the overall meal progresses smoothly.",
+            "parent_skill": "Service timing coordination with kitchen",
+            "related_skills": [
+                "Kitchen ticket monitoring",
+                "Multi-course table synchronization",
+                "Expediter coordination"
+            ],
+            "keywords": [
+                "sequence",
+                "pacing",
+                "courses",
+                "timing"
+            ],
+            "common_roles": [
+                "Server",
+                "Headwaiter",
+                "Floor Manager",
+                "Maitre d'"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Kitchen ticket monitoring",
+            "aliases": [
+                "ticket tracking",
+                "order status monitoring"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Continuously tracking kitchen tickets\/orders (paper, screen, or POS) to identify readiness, delays, and required follow-ups for timely delivery.",
+            "parent_skill": "Service timing coordination with kitchen",
+            "related_skills": [
+                "POS order management and routing",
+                "Expediter coordination",
+                "Service delay communication and expectation management"
+            ],
+            "keywords": [
+                "tickets",
+                "monitoring",
+                "order status",
+                "follow-up"
+            ],
+            "common_roles": [
+                "Expediter",
+                "Server",
+                "Food Runner",
+                "Floor Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "POS order management and routing",
+            "aliases": [
+                "point-of-sale order routing",
+                "POS order flow"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using point-of-sale systems to enter, edit, route and prioritize orders to the correct kitchen stations and printers\/screens for efficient preparation.",
+            "parent_skill": "Service timing coordination with kitchen",
+            "related_skills": [
+                "Kitchen ticket monitoring",
+                "Order sequencing and course pacing",
+                "Rush-order prioritization"
+            ],
+            "keywords": [
+                "POS",
+                "order entry",
+                "routing",
+                "screens"
+            ],
+            "common_roles": [
+                "Server",
+                "Host",
+                "Expo",
+                "Barback"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Expediter coordination",
+            "aliases": [
+                "expo coordination",
+                "food expediting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Coordinating between kitchen cooks and front-of-house staff to assemble, quality-check, and time plates for pickup and service.",
+            "parent_skill": "Service timing coordination with kitchen",
+            "related_skills": [
+                "Kitchen ticket monitoring",
+                "Food run timing and plating coordination",
+                "Order sequencing and course pacing"
+            ],
+            "keywords": [
+                "expedite",
+                "expo",
+                "assembly",
+                "quality check"
+            ],
+            "common_roles": [
+                "Expediter",
+                "Lead Server",
+                "Floor Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Rush-order prioritization",
+            "aliases": [
+                "rush management",
+                "priority order handling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Identifying and prioritizing high-urgency items (e.g., late courses, VIP orders) and rebalancing kitchen workflow and server expectations to minimize guest impact.",
+            "parent_skill": "Service timing coordination with kitchen",
+            "related_skills": [
+                "POS order management and routing",
+                "Order sequencing and course pacing",
+                "Service delay communication and expectation management"
+            ],
+            "keywords": [
+                "prioritization",
+                "rush",
+                "urgency",
+                "rebalancing"
+            ],
+            "common_roles": [
+                "Server",
+                "Floor Manager",
+                "Expediter"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Multi-course table synchronization",
+            "aliases": [
+                "synchronized table service",
+                "simultaneous course service"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Coordinating timing so all guests at a table receive the same course simultaneously, managing sending and holding of plates as needed.",
+            "parent_skill": "Service timing coordination with kitchen",
+            "related_skills": [
+                "Order sequencing and course pacing",
+                "Food run timing and plating coordination",
+                "Expediter coordination"
+            ],
+            "keywords": [
+                "synchronization",
+                "table",
+                "multi-course",
+                "simultaneous"
+            ],
+            "common_roles": [
+                "Server",
+                "Headwaiter",
+                "Expediter"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Special request and modification communication",
+            "aliases": [
+                "modifier communication",
+                "allergy\/mod request handling"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Accurately communicating guest modifications, dietary restrictions and allergy information to kitchen staff and confirming receipt and feasibility.",
+            "parent_skill": "Service timing coordination with kitchen",
+            "related_skills": [
+                "POS order management and routing",
+                "Kitchen ticket monitoring",
+                "Service delay communication and expectation management"
+            ],
+            "keywords": [
+                "modifiers",
+                "allergies",
+                "dietary",
+                "communication"
+            ],
+            "common_roles": [
+                "Server",
+                "Host",
+                "Expediter"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service delay communication and expectation management",
+            "aliases": [
+                "delay messaging",
+                "guest expectation communication"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Informing guests proactively and clearly about kitchen delays, revised arrival times, and compensation options while coordinating with kitchen to resolve issues.",
+            "parent_skill": "Service timing coordination with kitchen",
+            "related_skills": [
+                "Kitchen ticket monitoring",
+                "Rush-order prioritization",
+                "Special request and modification communication"
+            ],
+            "keywords": [
+                "delay",
+                "communication",
+                "expectations",
+                "guest messaging"
+            ],
+            "common_roles": [
+                "Server",
+                "Floor Manager",
+                "Host"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food run timing and plating coordination",
+            "aliases": [
+                "food running timing",
+                "plate delivery coordination"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Timing food runs and coordinating plating to maintain dish temperature, presentation and course order from pass to table.",
+            "parent_skill": "Service timing coordination with kitchen",
+            "related_skills": [
+                "Expediter coordination",
+                "Multi-course table synchronization",
+                "Order sequencing and course pacing"
+            ],
+            "keywords": [
+                "food run",
+                "plating",
+                "timing",
+                "pass"
+            ],
+            "common_roles": [
+                "Food Runner",
+                "Server",
+                "Expediter"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-station timing coordination",
+            "aliases": [
+                "station synchronization",
+                "inter-station timing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Coordinating preparation timelines across multiple kitchen stations (grill, sauté, pastry, garnish) so components of a dish finish together for prompt service.",
+            "parent_skill": "Service timing coordination with kitchen",
+            "related_skills": [
+                "POS order management and routing",
+                "Kitchen ticket monitoring",
+                "Expediter coordination"
+            ],
+            "keywords": [
+                "stations",
+                "synchronization",
+                "timelines",
+                "components"
+            ],
+            "common_roles": [
+                "Chef de Rang",
+                "Expediter",
+                "Floor Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

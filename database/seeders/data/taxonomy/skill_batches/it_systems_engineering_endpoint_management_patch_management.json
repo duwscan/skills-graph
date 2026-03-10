@@ -1,0 +1,305 @@
+{
+    "domain": "IT",
+    "category": "Systems Engineering & Endpoint Management",
+    "subcategory": "Patch management",
+    "skills": [
+        {
+            "canonical_name": "Patch management policy and governance",
+            "aliases": [
+                "patch policy",
+                "patch governance",
+                "patching policy"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and enforcing organizational policies, approval workflows, and governance processes that define patching cadence, risk acceptance, exceptions, and escalation paths.",
+            "parent_skill": "Patch management",
+            "related_skills": [
+                "Maintenance window scheduling and change coordination",
+                "Patch compliance reporting and audit",
+                "Patch deployment automation"
+            ],
+            "keywords": [
+                "policy",
+                "governance",
+                "patch windows",
+                "change control",
+                "exceptions"
+            ],
+            "common_roles": [
+                "Patch Manager",
+                "IT Operations Manager",
+                "Systems Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Patch deployment automation",
+            "aliases": [
+                "automated patch deployment",
+                "automated patching"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Implementing automated pipelines and workflows to deploy patches across endpoints and servers, including scheduling, orchestration, pre\/post tasks, and dependency handling.",
+            "parent_skill": "Patch management",
+            "related_skills": [
+                "Configuration management for patching",
+                "Microsoft Endpoint Configuration Manager (SCCM)",
+                "Microsoft Intune (Endpoint Manager)"
+            ],
+            "keywords": [
+                "automation",
+                "orchestration",
+                "scheduling",
+                "deployment pipeline"
+            ],
+            "common_roles": [
+                "Endpoint Engineer",
+                "Systems Administrator",
+                "Site Reliability Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Patch testing and validation",
+            "aliases": [
+                "patch QA",
+                "patch validation",
+                "patch staging"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and executing pre-production testing and validation of patches (functional, regression, compatibility) in lab\/staging environments before broad rollout.",
+            "parent_skill": "Patch management",
+            "related_skills": [
+                "Patch rollback and remediation",
+                "Patch deployment automation",
+                "Third-party application patching"
+            ],
+            "keywords": [
+                "staging",
+                "QA",
+                "validation",
+                "compatibility testing",
+                "regression"
+            ],
+            "common_roles": [
+                "QA Engineer",
+                "Systems Administrator",
+                "Endpoint Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Patch rollback and remediation",
+            "aliases": [
+                "patch rollback",
+                "roll-back procedures",
+                "patch remediation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Planning and executing safe rollback, remediation, and mitigation procedures for failed or problematic patches, including backups, restore procedures and hotfixing.",
+            "parent_skill": "Patch management",
+            "related_skills": [
+                "Patch testing and validation",
+                "Maintenance window scheduling and change coordination",
+                "Patch compliance reporting and audit"
+            ],
+            "keywords": [
+                "rollback",
+                "restore",
+                "mitigation",
+                "hotfix",
+                "backout plan"
+            ],
+            "common_roles": [
+                "Systems Administrator",
+                "Site Reliability Engineer",
+                "Incident Response Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vulnerability-to-patch prioritization",
+            "aliases": [
+                "patch prioritization",
+                "vulnerability-based patching",
+                "risk-based patching"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Assessing vulnerabilities and business risk to prioritize patch rollouts using CVSS, asset criticality, exploitability, and threat intelligence for effective remediation sequencing.",
+            "parent_skill": "Patch management",
+            "related_skills": [
+                "Vulnerability assessment integration",
+                "Patch compliance reporting and audit",
+                "Third-party application patching"
+            ],
+            "keywords": [
+                "CVSS",
+                "risk scoring",
+                "threat intel",
+                "asset criticality",
+                "prioritization"
+            ],
+            "common_roles": [
+                "Vulnerability Analyst",
+                "Security Engineer",
+                "Patch Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Microsoft Endpoint Configuration Manager (SCCM)",
+            "aliases": [
+                "SCCM",
+                "ConfigMgr",
+                "Microsoft System Center Configuration Manager"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Microsoft Endpoint Configuration Manager to inventory, package, deploy, and manage OS and application patches across Windows endpoints and servers.",
+            "parent_skill": "Patch management",
+            "related_skills": [
+                "Patch deployment automation",
+                "Patch testing and validation",
+                "Patch compliance reporting and audit"
+            ],
+            "keywords": [
+                "SCCM",
+                "ConfigMgr",
+                "patch deployment",
+                "software distribution",
+                "WSUS integration"
+            ],
+            "common_roles": [
+                "Desktop Engineer",
+                "Endpoint Engineer",
+                "Systems Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Microsoft Intune (Endpoint Manager) patching",
+            "aliases": [
+                "Intune patching",
+                "Endpoint Manager patch management",
+                "Microsoft Intune"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Managing updates and patch policies for Windows, macOS and mobile endpoints using Microsoft Intune (Endpoint Manager) including update rings, feature update deployments and compliance profiles.",
+            "parent_skill": "Patch management",
+            "related_skills": [
+                "Patch deployment automation",
+                "Maintenance window scheduling and change coordination",
+                "Third-party application patching"
+            ],
+            "keywords": [
+                "Intune",
+                "update rings",
+                "feature updates",
+                "endpoint compliance",
+                "Endpoint Manager"
+            ],
+            "common_roles": [
+                "Endpoint Engineer",
+                "Mobile Device Management Engineer",
+                "Systems Administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Linux system patch management (APT\/YUM\/Zypper)",
+            "aliases": [
+                "Linux patching",
+                "APT patch management",
+                "YUM patching",
+                "Zypper patching"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying and managing OS and package updates on Linux servers and endpoints using native package managers (apt, yum\/dnf, zypper) and lifecycle tools, including kernel and security patches.",
+            "parent_skill": "Patch management",
+            "related_skills": [
+                "Configuration management for patching",
+                "Patch testing and validation",
+                "Red Hat Satellite \/ SUSE Manager"
+            ],
+            "keywords": [
+                "apt",
+                "yum",
+                "dnf",
+                "zypper",
+                "kernel updates"
+            ],
+            "common_roles": [
+                "Linux Systems Administrator",
+                "Site Reliability Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Third-party application patching",
+            "aliases": [
+                "3rd-party patching",
+                "application patching"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing and deploying updates for third-party software (browsers, plugins, business applications), including packaging, testing, and coordination where vendor tooling is required.",
+            "parent_skill": "Patch management",
+            "related_skills": [
+                "Patch testing and validation",
+                "Patch deployment automation",
+                "Patch compliance reporting and audit"
+            ],
+            "keywords": [
+                "3rd-party",
+                "applications",
+                "patch packaging",
+                "vendor updates",
+                "browser updates"
+            ],
+            "common_roles": [
+                "Desktop Engineer",
+                "Application Support Engineer",
+                "Endpoint Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Patch compliance reporting and audit",
+            "aliases": [
+                "patch compliance",
+                "patch reporting",
+                "patch audit"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Generating, interpreting and maintaining patch compliance metrics and audit artifacts to demonstrate remediation status against SLAs, regulatory controls, and internal baselines.",
+            "parent_skill": "Patch management",
+            "related_skills": [
+                "Patch management policy and governance",
+                "Vulnerability-to-patch prioritization",
+                "Microsoft Endpoint Configuration Manager (SCCM)"
+            ],
+            "keywords": [
+                "compliance",
+                "reporting",
+                "SLAs",
+                "audit trails",
+                "metrics"
+            ],
+            "common_roles": [
+                "Compliance Analyst",
+                "Security Analyst",
+                "Patch Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

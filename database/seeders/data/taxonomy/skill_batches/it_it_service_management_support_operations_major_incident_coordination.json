@@ -1,0 +1,322 @@
+{
+    "domain": "IT",
+    "category": "IT Service Management & Support Operations",
+    "subcategory": "Major incident coordination",
+    "skills": [
+        {
+            "canonical_name": "Major incident management",
+            "aliases": [
+                "Major incident coordination",
+                "Critical incident management",
+                "Priority 1 incident management",
+                "P0\/P1 incident management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Manage the end-to-end lifecycle of major (P1\/P0) incidents including detection, response, mitigation, communication, and resolution.",
+            "parent_skill": "Major incident coordination",
+            "related_skills": [
+                "Incident triage and impact assessment",
+                "Incident command and control",
+                "Incident bridge facilitation",
+                "Post-incident review facilitation"
+            ],
+            "keywords": [
+                "P1",
+                "P0",
+                "incident lifecycle",
+                "mitigation",
+                "containment"
+            ],
+            "common_roles": [
+                "Incident Manager",
+                "Site Reliability Engineer",
+                "IT Operations Manager",
+                "Service Desk Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Incident command and control",
+            "aliases": [
+                "Incident command",
+                "Command and control during incidents",
+                "Incident control"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Establish and maintain a clear command structure during major incidents to coordinate decisions, assign roles, and direct response activities.",
+            "parent_skill": "Major incident coordination",
+            "related_skills": [
+                "Major incident management",
+                "Incident bridge facilitation",
+                "Incident escalation management and RACI coordination"
+            ],
+            "keywords": [
+                "incident commander",
+                "command structure",
+                "decision authority",
+                "incident ownership"
+            ],
+            "common_roles": [
+                "Incident Commander",
+                "Incident Manager",
+                "SRE Lead",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Incident triage and impact assessment",
+            "aliases": [
+                "Incident prioritization",
+                "Impact assessment",
+                "Severity classification"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Rapidly evaluate incidents to determine scope, affected services, severity, business impact, and initial remediation priorities.",
+            "parent_skill": "Major incident coordination",
+            "related_skills": [
+                "Major incident management",
+                "Incident escalation management and RACI coordination",
+                "Incident reporting, metrics, and dashboards"
+            ],
+            "keywords": [
+                "severity",
+                "scope",
+                "impact",
+                "service outage",
+                "prioritization"
+            ],
+            "common_roles": [
+                "Site Reliability Engineer",
+                "NOC Engineer",
+                "Service Desk Analyst",
+                "Technical Lead"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Stakeholder and executive communication during incidents",
+            "aliases": [
+                "Incident communications",
+                "Executive incident updates",
+                "Stakeholder incident communications",
+                "Status communications"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Prepare and deliver timely, structured updates to technical teams, business stakeholders, and executives during major incidents, including status, impact, and next steps.",
+            "parent_skill": "Major incident coordination",
+            "related_skills": [
+                "Major incident management",
+                "Incident bridge facilitation",
+                "Post-incident review facilitation"
+            ],
+            "keywords": [
+                "status update",
+                "business impact",
+                "executive briefing",
+                "stakeholder management"
+            ],
+            "common_roles": [
+                "Incident Manager",
+                "IT Operations Manager",
+                "Service Delivery Manager",
+                "Technical Program Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Incident bridge facilitation",
+            "aliases": [
+                "War room facilitation",
+                "Incident bridge management",
+                "Incident conference facilitation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Create and run incident bridges (virtual or physical), manage attendee roles, agendas, action tracking, and ensure timely decisions and follow-ups.",
+            "parent_skill": "Major incident coordination",
+            "related_skills": [
+                "Incident command and control",
+                "Stakeholder and executive communication during incidents",
+                "Runbook and playbook development"
+            ],
+            "keywords": [
+                "war room",
+                "bridge",
+                "action tracking",
+                "meeting facilitation",
+                "incident attendees"
+            ],
+            "common_roles": [
+                "Incident Manager",
+                "Service Desk Manager",
+                "SRE",
+                "NOC Lead"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Runbook and playbook development",
+            "aliases": [
+                "Incident playbook authoring",
+                "Runbook authoring",
+                "Playbook maintenance"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design, document, and maintain runbooks and playbooks for recurring incident types, including step-by-step remediation steps, verification, and escalation paths.",
+            "parent_skill": "Major incident coordination",
+            "related_skills": [
+                "Incident triage and impact assessment",
+                "Incident bridge facilitation",
+                "Post-incident review facilitation"
+            ],
+            "keywords": [
+                "runbook",
+                "playbook",
+                "standard operating procedure",
+                "knowledge base",
+                "runbook automation"
+            ],
+            "common_roles": [
+                "SRE",
+                "Platform Engineer",
+                "Operations Engineer",
+                "Runbook Author"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Post-incident review facilitation and root cause analysis",
+            "aliases": [
+                "Post-incident analysis",
+                "Postmortem facilitation",
+                "Root cause analysis coordination",
+                "RCA facilitation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Lead structured post-incident reviews to identify root causes, corrective actions, and preventive measures; ensure clear action items, owners, and timelines.",
+            "parent_skill": "Major incident coordination",
+            "related_skills": [
+                "Runbook and playbook development",
+                "Incident reporting, metrics, and dashboards",
+                "Stakeholder and executive communication during incidents"
+            ],
+            "keywords": [
+                "postmortem",
+                "RCA",
+                "lessons learned",
+                "action tracking",
+                "blameless review"
+            ],
+            "common_roles": [
+                "Incident Manager",
+                "SRE",
+                "Technical Program Manager",
+                "Continuous Improvement Lead"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Incident escalation management and RACI coordination",
+            "aliases": [
+                "Escalation procedures",
+                "Escalation coordination",
+                "RACI coordination for incidents"
+            ],
+            "skill_type": "process_skill",
+            "description": "Manage escalation paths and activate appropriate technical and business contacts per RACI matrices and escalation policies to ensure timely resolution.",
+            "parent_skill": "Major incident coordination",
+            "related_skills": [
+                "Incident triage and impact assessment",
+                "Incident command and control",
+                "Major incident management"
+            ],
+            "keywords": [
+                "escalation",
+                "on-call",
+                "RACI",
+                "escalation policy",
+                "contact activation"
+            ],
+            "common_roles": [
+                "Service Desk Manager",
+                "Incident Manager",
+                "IT Operations Manager",
+                "SRE"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Incident reporting, metrics, and dashboards",
+            "aliases": [
+                "Incident KPIs",
+                "Incident metrics",
+                "Major incident reporting",
+                "SLA tracking"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Define, collect, and present incident KPIs and dashboards (e.g., MTTD, MTTR, MTTA, SLA compliance) to monitor performance, identify trends, and support continuous improvement.",
+            "parent_skill": "Major incident coordination",
+            "related_skills": [
+                "Post-incident review facilitation and root cause analysis",
+                "Incident triage and impact assessment",
+                "Runbook and playbook development"
+            ],
+            "keywords": [
+                "MTTR",
+                "MTTD",
+                "dashboard",
+                "SLA",
+                "KPI"
+            ],
+            "common_roles": [
+                "SRE",
+                "Site Reliability Manager",
+                "IT Operations Manager",
+                "Service Delivery Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Incident management platforms",
+            "aliases": [
+                "Incident management tools",
+                "PagerDuty",
+                "ServiceNow Incident Management",
+                "Opsgenie",
+                "VictorOps"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use and configure incident management and on-call platforms to alert, route, annotate, and manage incident response workflows and on-call schedules.",
+            "parent_skill": "Major incident coordination",
+            "related_skills": [
+                "Incident bridge facilitation",
+                "Incident escalation management and RACI coordination",
+                "Incident reporting, metrics, and dashboards"
+            ],
+            "keywords": [
+                "on-call",
+                "alerting",
+                "incident routing",
+                "escalation policies",
+                "incident timeline"
+            ],
+            "common_roles": [
+                "SRE",
+                "NOC Engineer",
+                "Platform Engineer",
+                "Incident Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

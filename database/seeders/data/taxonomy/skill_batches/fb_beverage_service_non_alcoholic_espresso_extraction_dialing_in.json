@@ -1,0 +1,293 @@
+{
+    "domain": "F&B",
+    "category": "Beverage Service (Non-Alcoholic)",
+    "subcategory": "Espresso extraction & dialing-in",
+    "skills": [
+        {
+            "canonical_name": "Espresso extraction",
+            "aliases": [
+                "pulling espresso",
+                "espresso brewing",
+                "shot extraction"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Controlled preparation of espresso by forcing hot water through a coffee puck to produce a balanced shot with appropriate yield, crema, and sensory profile.",
+            "parent_skill": "Espresso extraction & dialing-in",
+            "related_skills": [
+                "Grind size adjustment for espresso",
+                "Brew ratio calculation and adjustment",
+                "Flow rate monitoring and shot timing",
+                "Espresso sensory evaluation and shot tasting"
+            ],
+            "keywords": [
+                "espresso",
+                "shot",
+                "extraction",
+                "crema",
+                "yield"
+            ],
+            "common_roles": [
+                "Front-of-house beverage preparation",
+                "Beverage quality control"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Grind size adjustment for espresso",
+            "aliases": [
+                "grind adjustment",
+                "grind calibration for espresso"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Adjusting grinder settings and particle distribution to achieve target flow rate, extraction time, and flavor balance for espresso.",
+            "parent_skill": "Espresso extraction & dialing-in",
+            "related_skills": [
+                "Dose measurement and scaling",
+                "Tamping and distribution techniques",
+                "Channeling and extraction fault diagnosis"
+            ],
+            "keywords": [
+                "grinder",
+                "grind size",
+                "grind setting",
+                "particle size"
+            ],
+            "common_roles": [
+                "Back-of-house coffee operations",
+                "Beverage preparation"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dose measurement and scaling",
+            "aliases": [
+                "dosing accuracy",
+                "weighing espresso dose",
+                "scale-based dosing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Using precision scales and dosing techniques to control input dose and output yield for consistent espresso shots and repeatable dialing-in.",
+            "parent_skill": "Espresso extraction & dialing-in",
+            "related_skills": [
+                "Brew ratio calculation and adjustment",
+                "Grind size adjustment for espresso",
+                "Espresso extraction"
+            ],
+            "keywords": [
+                "dose",
+                "grams",
+                "scale",
+                "yield",
+                "consistency"
+            ],
+            "common_roles": [
+                "Beverage preparation",
+                "Quality assurance in beverage service"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tamping and distribution techniques",
+            "aliases": [
+                "tamping technique",
+                "portafilter distribution",
+                "Weiss Distribution Technique (WDT)"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Preparing the coffee puck by distributing grounds evenly and applying consistent tamper pressure to minimize channeling and improve extraction uniformity.",
+            "parent_skill": "Espresso extraction & dialing-in",
+            "related_skills": [
+                "Channeling and extraction fault diagnosis",
+                "Grind size adjustment for espresso",
+                "Espresso extraction"
+            ],
+            "keywords": [
+                "tamp",
+                "distribution",
+                "level tamp",
+                "puck preparation"
+            ],
+            "common_roles": [
+                "Front-of-house beverage preparation",
+                "Training & onboarding for beverage staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Brew ratio calculation and adjustment",
+            "aliases": [
+                "dose:yield calculation",
+                "espresso yield ratio",
+                "brew ratio adjustment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculating and adjusting dose-to-yield ratios to achieve target strength, balance, and extraction percentages when dialing-in espresso recipes.",
+            "parent_skill": "Espresso extraction & dialing-in",
+            "related_skills": [
+                "Dose measurement and scaling",
+                "Espresso sensory evaluation and shot tasting",
+                "Grind size adjustment for espresso"
+            ],
+            "keywords": [
+                "ratio",
+                "dose:yield",
+                "extraction yield",
+                "TDS (when applicable)"
+            ],
+            "common_roles": [
+                "Beverage quality control",
+                "Recipe development for beverages"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Pressure and temperature profiling",
+            "aliases": [
+                "pressure profiling",
+                "temperature control for espresso",
+                "PID adjustment"
+            ],
+            "skill_type": "process_skill",
+            "description": "Modifying and monitoring machine pressure and water temperature (including PID settings) and applying pressure profiles to influence extraction dynamics and cup clarity.",
+            "parent_skill": "Espresso extraction & dialing-in",
+            "related_skills": [
+                "Espresso machine calibration and basic maintenance",
+                "Espresso extraction",
+                "Flow rate monitoring and shot timing"
+            ],
+            "keywords": [
+                "pressure",
+                "bar",
+                "temperature",
+                "PID",
+                "profile"
+            ],
+            "common_roles": [
+                "Equipment-focused coffee operations",
+                "Beverage recipe development"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Flow rate monitoring and shot timing",
+            "aliases": [
+                "shot timing",
+                "flow observation",
+                "extraction time monitoring"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Observing and measuring the espresso flow and total extraction time to inform adjustments to grind, dose, tamping, or machine settings for target shot parameters.",
+            "parent_skill": "Espresso extraction & dialing-in",
+            "related_skills": [
+                "Grind size adjustment for espresso",
+                "Brew ratio calculation and adjustment",
+                "Pressure and temperature profiling"
+            ],
+            "keywords": [
+                "seconds",
+                "flow",
+                "timing",
+                "extraction time"
+            ],
+            "common_roles": [
+                "Front-of-house beverage preparation",
+                "Quality control in beverage service"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Espresso sensory evaluation and shot tasting",
+            "aliases": [
+                "espresso cupping",
+                "shot tasting",
+                "sensory analysis of espresso"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Assessing espresso shots for aroma, acidity, sweetness, body, bitterness, and aftertaste to guide dialing-in decisions and quality control.",
+            "parent_skill": "Espresso extraction & dialing-in",
+            "related_skills": [
+                "Brew ratio calculation and adjustment",
+                "Espresso extraction",
+                "Channeling and extraction fault diagnosis"
+            ],
+            "keywords": [
+                "tasting",
+                "sensory",
+                "aroma",
+                "acidity",
+                "body"
+            ],
+            "common_roles": [
+                "Beverage quality control",
+                "Recipe development"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Channeling and extraction fault diagnosis",
+            "aliases": [
+                "channeling detection",
+                "extraction troubleshooting",
+                "shot fault diagnosis"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Identifying and resolving extraction faults such as channeling, under- or over-extraction, and uneven flow by analyzing puck prep, grind, dose, and machine factors.",
+            "parent_skill": "Espresso extraction & dialing-in",
+            "related_skills": [
+                "Tamping and distribution techniques",
+                "Grind size adjustment for espresso",
+                "Espresso machine calibration and basic maintenance"
+            ],
+            "keywords": [
+                "channeling",
+                "troubleshooting",
+                "under-extracted",
+                "over-extracted"
+            ],
+            "common_roles": [
+                "Beverage operations troubleshooting",
+                "Quality control in beverage service"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Espresso machine calibration and basic maintenance",
+            "aliases": [
+                "machine calibration",
+                "group head maintenance",
+                "basic espresso equipment maintenance",
+                "backflushing"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Performing routine calibration and basic maintenance on espresso machines and grinders (pressure checks, backflushing, dosing calibration, and simple adjustments) to ensure consistent performance.",
+            "parent_skill": "Espresso extraction & dialing-in",
+            "related_skills": [
+                "Pressure and temperature profiling",
+                "Grind size adjustment for espresso",
+                "Channeling and extraction fault diagnosis"
+            ],
+            "keywords": [
+                "calibration",
+                "maintenance",
+                "backflush",
+                "grinder maintenance",
+                "group head"
+            ],
+            "common_roles": [
+                "Equipment-focused coffee operations",
+                "Back-of-house coffee operations"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

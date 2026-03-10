@@ -1,0 +1,283 @@
+{
+    "domain": "IT",
+    "category": "Cybersecurity Operations & Engineering",
+    "subcategory": "Security architecture & controls design",
+    "skills": [
+        {
+            "canonical_name": "Threat modeling",
+            "aliases": [
+                "attack surface analysis",
+                "threat analysis",
+                "STRIDE threat modeling"
+            ],
+            "skill_type": "process_skill",
+            "description": "Systematic identification and analysis of potential threats, attack paths, and mitigations for a system or application during design or review.",
+            "parent_skill": "Security architecture & controls design",
+            "related_skills": [
+                "Security architecture review & risk assessment",
+                "Application security architecture",
+                "Network security architecture design"
+            ],
+            "keywords": [
+                "threat modeling",
+                "attack surface",
+                "attack tree",
+                "use case analysis"
+            ],
+            "common_roles": [
+                "security architecture teams",
+                "application development teams",
+                "risk assessment teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Network security architecture design",
+            "aliases": [
+                "network segmentation design",
+                "secure network architecture"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing network topology, segmentation, perimeter and internal controls to protect traffic flows and enforce security policies across on-premises and hybrid environments.",
+            "parent_skill": "Security architecture & controls design",
+            "related_skills": [
+                "Microsegmentation design",
+                "Security logging and monitoring architecture",
+                "Encryption and key management design"
+            ],
+            "keywords": [
+                "network architecture",
+                "segmentation",
+                "firewall placement",
+                "ACLs"
+            ],
+            "common_roles": [
+                "security architecture teams",
+                "network engineering teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cloud security architecture design",
+            "aliases": [
+                "cloud-native security architecture",
+                "secure cloud architecture"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing security controls, identity boundaries, network patterns, and data protection for cloud platforms and cloud-native applications.",
+            "parent_skill": "Security architecture & controls design",
+            "related_skills": [
+                "Identity and Access Management (IAM) architecture",
+                "Encryption and key management design",
+                "Security logging and monitoring architecture"
+            ],
+            "keywords": [
+                "cloud security",
+                "cloud architecture",
+                "secure cloud design",
+                "multi-cloud"
+            ],
+            "common_roles": [
+                "cloud infrastructure teams",
+                "security architecture teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Identity and Access Management (IAM) architecture",
+            "aliases": [
+                "access management architecture",
+                "identity architecture",
+                "IAM design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing authentication, authorization, provisioning, and lifecycle controls for identities, roles, and access paths across systems and services.",
+            "parent_skill": "Security architecture & controls design",
+            "related_skills": [
+                "Zero Trust architecture design",
+                "Security controls design and selection",
+                "Cloud security architecture design"
+            ],
+            "keywords": [
+                "IAM",
+                "RBAC",
+                "ABAC",
+                "identity lifecycle",
+                "SSO"
+            ],
+            "common_roles": [
+                "identity teams",
+                "security architecture teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Zero Trust architecture design",
+            "aliases": [
+                "zero-trust network architecture",
+                "ZTNA design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing architectures and controls that verify every access request, minimize implicit trust, and apply continuous authentication and authorization across resources.",
+            "parent_skill": "Security architecture & controls design",
+            "related_skills": [
+                "Identity and Access Management (IAM) architecture",
+                "Microsegmentation design",
+                "Network security architecture design"
+            ],
+            "keywords": [
+                "zero trust",
+                "ZTNA",
+                "least privilege",
+                "continuous authentication"
+            ],
+            "common_roles": [
+                "security architecture teams",
+                "cloud infrastructure teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Microsegmentation design",
+            "aliases": [
+                "workload segmentation design",
+                "east-west segmentation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing fine-grained network and host-level segmentation policies to restrict lateral movement between workloads and enforce least-privilege connectivity.",
+            "parent_skill": "Security architecture & controls design",
+            "related_skills": [
+                "Network security architecture design",
+                "Zero Trust architecture design",
+                "Security logging and monitoring architecture"
+            ],
+            "keywords": [
+                "microsegmentation",
+                "east-west traffic",
+                "software-defined segmentation"
+            ],
+            "common_roles": [
+                "security architecture teams",
+                "cloud infrastructure teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Encryption and key management design",
+            "aliases": [
+                "data encryption architecture",
+                "cryptographic key management"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing data protection architectures including encryption at rest\/in transit, key lifecycle management, hardware security modules (HSM) integration, and key rotation policies.",
+            "parent_skill": "Security architecture & controls design",
+            "related_skills": [
+                "Cloud security architecture design",
+                "Security controls design and selection",
+                "Application security architecture"
+            ],
+            "keywords": [
+                "encryption",
+                "KMS",
+                "HSM",
+                "key rotation",
+                "data protection"
+            ],
+            "common_roles": [
+                "security architecture teams",
+                "cloud infrastructure teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Security controls design and selection",
+            "aliases": [
+                "controls mapping",
+                "technical controls architecture"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Selecting, designing and justifying technical and administrative security controls to meet risk appetite and architectural requirements across systems.",
+            "parent_skill": "Security architecture & controls design",
+            "related_skills": [
+                "Security architecture review & risk assessment",
+                "Encryption and key management design",
+                "Security logging and monitoring architecture"
+            ],
+            "keywords": [
+                "control selection",
+                "controls design",
+                "mitigation design",
+                "control implementation"
+            ],
+            "common_roles": [
+                "security operations teams",
+                "security architecture teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Security logging and monitoring architecture",
+            "aliases": [
+                "SIEM architecture",
+                "security observability architecture",
+                "security telemetry design"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing centralized logging, telemetry collection, detection pipelines, alerting, and retention strategies to enable threat detection and incident investigation.",
+            "parent_skill": "Security architecture & controls design",
+            "related_skills": [
+                "Security controls design and selection",
+                "Network security architecture design",
+                "Security architecture review & risk assessment"
+            ],
+            "keywords": [
+                "logging architecture",
+                "SIEM",
+                "observability",
+                "telemetry",
+                "alerting"
+            ],
+            "common_roles": [
+                "security operations teams",
+                "observability teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Security architecture review & risk assessment",
+            "aliases": [
+                "architecture risk assessment",
+                "security architecture review"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluating system and solution architectures to identify security risks, gaps, and recommended mitigations aligned to business risk and compliance requirements.",
+            "parent_skill": "Security architecture & controls design",
+            "related_skills": [
+                "Threat modeling",
+                "Security controls design and selection",
+                "Security logging and monitoring architecture"
+            ],
+            "keywords": [
+                "architecture review",
+                "risk assessment",
+                "security gap analysis",
+                "threat assessment"
+            ],
+            "common_roles": [
+                "risk assessment teams",
+                "security architecture teams"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

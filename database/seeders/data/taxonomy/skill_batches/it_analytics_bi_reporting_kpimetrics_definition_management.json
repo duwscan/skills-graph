@@ -1,0 +1,269 @@
+{
+    "domain": "IT",
+    "category": "Analytics, BI & Reporting",
+    "subcategory": "KPI\/metrics definition & management",
+    "skills": [
+        {
+            "canonical_name": "KPI definition and scoping",
+            "aliases": [
+                "KPI scoping",
+                "metric definition",
+                "defining KPIs"
+            ],
+            "skill_type": "process_skill",
+            "description": "Formulating measurable key performance indicators by specifying purpose, scope, calculation rules, owner, frequency and targets to ensure metrics reflect business objectives.",
+            "parent_skill": "KPI\/metrics definition & management",
+            "related_skills": [
+                "Metric taxonomy design",
+                "KPI calculation and aggregation logic",
+                "Target setting and forecasting for KPIs",
+                "OKR-to-KPI alignment"
+            ],
+            "keywords": [
+                "objective",
+                "measure",
+                "scope",
+                "owner",
+                "frequency",
+                "target"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Metric taxonomy design",
+            "aliases": [
+                "KPI taxonomy design",
+                "metric classification",
+                "metric ontology"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating a consistent classification and naming scheme for metrics (dimensions, hierarchies, canonical IDs) to enable discoverability, reuse and consistent reporting across systems.",
+            "parent_skill": "KPI\/metrics definition & management",
+            "related_skills": [
+                "KPI definition and scoping",
+                "KPI governance and stewardship",
+                "KPI reporting and dashboarding"
+            ],
+            "keywords": [
+                "taxonomy",
+                "naming standard",
+                "metric catalog",
+                "ontology",
+                "metadata"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "KPI governance and stewardship",
+            "aliases": [
+                "metric governance",
+                "KPI stewardship",
+                "metrics policy management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Establishing policies, roles, approval workflows and change controls for metric definitions, ownership, versioning and publication to maintain consistency and trust in KPIs.",
+            "parent_skill": "KPI\/metrics definition & management",
+            "related_skills": [
+                "Metric taxonomy design",
+                "KPI data quality management",
+                "KPI definition and scoping"
+            ],
+            "keywords": [
+                "ownership",
+                "policy",
+                "change control",
+                "approval workflow",
+                "versioning"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "KPI data quality management",
+            "aliases": [
+                "metric data quality",
+                "KPI validity checks",
+                "metric reconciliation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Monitoring and enforcing data quality for KPIs through validation rules, lineage tracking, anomaly detection and reconciliation processes to ensure metrics are accurate and reliable.",
+            "parent_skill": "KPI\/metrics definition & management",
+            "related_skills": [
+                "KPI governance and stewardship",
+                "KPI calculation and aggregation logic",
+                "KPI monitoring and alerting"
+            ],
+            "keywords": [
+                "data quality",
+                "validation",
+                "lineage",
+                "anomaly detection",
+                "reconciliation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "KPI calculation and aggregation logic",
+            "aliases": [
+                "metric calculation",
+                "aggregation rules for KPIs",
+                "KPI formula design"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and documenting the exact formulas, filters, roll-ups and time-window logic used to compute KPIs from source data, including handling of edge cases and missing data.",
+            "parent_skill": "KPI\/metrics definition & management",
+            "related_skills": [
+                "KPI definition and scoping",
+                "KPI data quality management",
+                "KPI reporting and dashboarding"
+            ],
+            "keywords": [
+                "formula",
+                "aggregation",
+                "roll-up",
+                "time window",
+                "edge cases"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "KPI reporting and dashboarding",
+            "aliases": [
+                "KPI visualization",
+                "metric reporting",
+                "dashboarding for KPIs"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and operating KPI reports and dashboards (BI-agnostic) that present metric definitions, status, trends and context to stakeholders with appropriate filters, alerts and drill-downs.",
+            "parent_skill": "KPI\/metrics definition & management",
+            "related_skills": [
+                "KPI calculation and aggregation logic",
+                "Metric taxonomy design",
+                "KPI monitoring and alerting"
+            ],
+            "keywords": [
+                "dashboard",
+                "reporting",
+                "visualization",
+                "drill-down",
+                "filters"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SLA and SLO definition and KPI linking",
+            "aliases": [
+                "SLA definition",
+                "SLO management",
+                "service level KPI mapping"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Defining service-level agreements (SLAs) and objectives (SLOs), mapping them to measurable KPIs and establishing monitoring and escalation procedures to meet service commitments.",
+            "parent_skill": "KPI\/metrics definition & management",
+            "related_skills": [
+                "KPI definition and scoping",
+                "KPI governance and stewardship",
+                "KPI monitoring and alerting"
+            ],
+            "keywords": [
+                "SLA",
+                "SLO",
+                "service level",
+                "escalation",
+                "monitoring"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Target setting and forecasting for KPIs",
+            "aliases": [
+                "KPI target setting",
+                "metric forecasting",
+                "goal setting for KPIs"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Establishing realistic KPI targets and forecasting future metric trajectories using historical data, seasonality, statistical models and business assumptions to inform planning and incentives.",
+            "parent_skill": "KPI\/metrics definition & management",
+            "related_skills": [
+                "KPI definition and scoping",
+                "KPI benchmarking and trend analysis",
+                "OKR-to-KPI alignment"
+            ],
+            "keywords": [
+                "target",
+                "forecast",
+                "baseline",
+                "seasonality",
+                "statistical model"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "OKR-to-KPI alignment",
+            "aliases": [
+                "OKR alignment",
+                "objective-to-metric mapping",
+                "linking OKRs to KPIs"
+            ],
+            "skill_type": "process_skill",
+            "description": "Mapping organizational Objectives and Key Results (OKRs) to operational KPIs, ensuring metrics measure progress toward strategic goals and enabling cascading targets across teams.",
+            "parent_skill": "KPI\/metrics definition & management",
+            "related_skills": [
+                "KPI definition and scoping",
+                "Target setting and forecasting for KPIs",
+                "KPI governance and stewardship"
+            ],
+            "keywords": [
+                "OKR",
+                "alignment",
+                "mapping",
+                "strategic goal",
+                "cascading targets"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "KPI benchmarking and trend analysis",
+            "aliases": [
+                "metric benchmarking",
+                "trend analysis for KPIs",
+                "performance benchmarking"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Comparing KPI performance against historical baselines, industry benchmarks or peer groups and conducting trend analysis to identify performance drivers, seasonality and improvement opportunities.",
+            "parent_skill": "KPI\/metrics definition & management",
+            "related_skills": [
+                "Target setting and forecasting for KPIs",
+                "KPI reporting and dashboarding",
+                "KPI data quality management"
+            ],
+            "keywords": [
+                "benchmark",
+                "trend",
+                "time series",
+                "peer comparison",
+                "root cause"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

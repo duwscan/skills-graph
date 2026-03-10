@@ -1,0 +1,298 @@
+{
+    "domain": "F&B",
+    "category": "Bar & Alcoholic Beverage Operations",
+    "subcategory": "Bar sanitation & glassware handling",
+    "skills": [
+        {
+            "canonical_name": "Glassware inspection and quality control",
+            "aliases": [
+                "glass inspection",
+                "glassware QC",
+                "detecting chips and residue"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Systematic visual and tactile inspection of glassware to detect cracks, chips, clouding, residue or improper drying, and remove defective items from service.",
+            "parent_skill": "Bar sanitation & glassware handling",
+            "related_skills": [
+                "Manual glass washing and polishing",
+                "Sanitizer concentration testing",
+                "Glassware storage, stacking, and inventory management"
+            ],
+            "keywords": [
+                "chips",
+                "cracks",
+                "residue",
+                "breakage prevention",
+                "quality control"
+            ],
+            "common_roles": [
+                "front-of-house staff",
+                "back-of-house sanitation staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Manual glass washing and polishing",
+            "aliases": [
+                "hand-washing glassware",
+                "glass polishing",
+                "spotless glass finishing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Hand-washing, rinsing and polishing glassware using appropriate detergents, techniques and lint-free cloths to achieve clarity and hygienic standards.",
+            "parent_skill": "Bar sanitation & glassware handling",
+            "related_skills": [
+                "Glassware inspection and quality control",
+                "Chemical sanitizer preparation and dilution",
+                "Sanitizer concentration testing"
+            ],
+            "keywords": [
+                "hand wash",
+                "polish",
+                "lint-free",
+                "rinse",
+                "streak-free"
+            ],
+            "common_roles": [
+                "front-of-house staff",
+                "back-of-house sanitation staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Commercial glasswasher operation",
+            "aliases": [
+                "glasswasher use",
+                "bar glasswasher operation",
+                "PRO dishwasher operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operation of commercial glasswashing machines including correct loading, cycle selection, chemical dosing integration, and safe unloading to meet service turnaround and hygiene standards.",
+            "parent_skill": "Bar sanitation & glassware handling",
+            "related_skills": [
+                "Sanitizer concentration testing",
+                "Commercial dishwashing equipment maintenance and troubleshooting",
+                "Sanitation schedule management and recordkeeping"
+            ],
+            "keywords": [
+                "cycle selection",
+                "loading",
+                "chemical dosing",
+                "unloading",
+                "throughput"
+            ],
+            "common_roles": [
+                "back-of-house sanitation staff",
+                "front-of-house staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Chemical sanitizer preparation and dilution",
+            "aliases": [
+                "sanitizer mixing",
+                "chemical dilution for sanitation",
+                "sanitizer solution prep"
+            ],
+            "skill_type": "process_skill",
+            "description": "Preparing and diluting sanitizing solutions (chlorine, quats, peracetic acid etc.) to manufacturer and regulatory specifications, including safe handling and storage.",
+            "parent_skill": "Bar sanitation & glassware handling",
+            "related_skills": [
+                "Sanitizer concentration testing",
+                "HACCP principles for beverage service",
+                "Commercial glasswasher operation"
+            ],
+            "keywords": [
+                "dilution",
+                "concentration",
+                "mixing",
+                "chemical safety",
+                "MSDS"
+            ],
+            "common_roles": [
+                "back-of-house sanitation staff",
+                "sanitation coordinators"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sanitizer concentration testing",
+            "aliases": [
+                "test strip reading",
+                "sanitizer titration",
+                "ppm testing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Measuring and validating sanitizer concentrations using test strips, colorimeters or titration kits to ensure solutions meet required parts-per-million (ppm) or manufacturer levels.",
+            "parent_skill": "Bar sanitation & glassware handling",
+            "related_skills": [
+                "Chemical sanitizer preparation and dilution",
+                "Commercial glasswasher operation",
+                "HACCP principles for beverage service"
+            ],
+            "keywords": [
+                "ppm",
+                "test strips",
+                "colorimeter",
+                "validation",
+                "titration"
+            ],
+            "common_roles": [
+                "back-of-house sanitation staff",
+                "quality control staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "HACCP principles for beverage service",
+            "aliases": [
+                "HACCP for bars",
+                "hazard analysis beverage service",
+                "critical control points beverage"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Applying Hazard Analysis and Critical Control Point (HACCP) concepts to bar operations to identify hazards, set critical limits, monitor controls and maintain corrective actions for beverage safety.",
+            "parent_skill": "Bar sanitation & glassware handling",
+            "related_skills": [
+                "Sanitizer concentration testing",
+                "Cross-contamination prevention in bar service",
+                "Sanitation schedule management and recordkeeping"
+            ],
+            "keywords": [
+                "HACCP",
+                "critical control points",
+                "hazard analysis",
+                "monitoring",
+                "corrective action"
+            ],
+            "common_roles": [
+                "sanitation coordinators",
+                "quality assurance staff",
+                "operations supervisors"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-contamination prevention in bar service",
+            "aliases": [
+                "preventing cross-contamination",
+                "allergen and contamination controls",
+                "separate handling of glassware"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Practices and controls to prevent biological, chemical or allergen cross-contamination in drink preparation and glassware handling, including separation of tasks and equipment cleaning protocols.",
+            "parent_skill": "Bar sanitation & glassware handling",
+            "related_skills": [
+                "HACCP principles for beverage service",
+                "Manual glass washing and polishing",
+                "Glassware storage, stacking, and inventory management"
+            ],
+            "keywords": [
+                "allergen control",
+                "segregation",
+                "cleaning protocol",
+                "cross-contact",
+                "safe handling"
+            ],
+            "common_roles": [
+                "front-of-house staff",
+                "sanitation coordinators"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sanitation schedule management and recordkeeping",
+            "aliases": [
+                "cleaning schedule management",
+                "sanitation logs",
+                "cleaning record keeping"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating, executing and maintaining cleaning schedules, checklists and sanitation records to ensure consistent bar hygiene and regulatory compliance.",
+            "parent_skill": "Bar sanitation & glassware handling",
+            "related_skills": [
+                "HACCP principles for beverage service",
+                "Commercial glasswasher operation",
+                "Sanitizer concentration testing"
+            ],
+            "keywords": [
+                "checklists",
+                "logs",
+                "scheduling",
+                "compliance records",
+                "audits"
+            ],
+            "common_roles": [
+                "sanitation coordinators",
+                "operations supervisors"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Glassware storage, stacking, and inventory management",
+            "aliases": [
+                "glassware storage best practices",
+                "stacking and storing glassware",
+                "glass inventory control"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Proper storage and stacking techniques to prevent contamination and breakage, plus tracking and maintaining inventory levels to meet service demand.",
+            "parent_skill": "Bar sanitation & glassware handling",
+            "related_skills": [
+                "Glassware inspection and quality control",
+                "Sanitation schedule management and recordkeeping",
+                "Cross-contamination prevention in bar service"
+            ],
+            "keywords": [
+                "stacking",
+                "shelving",
+                "inventory",
+                "rotation",
+                "safe storage"
+            ],
+            "common_roles": [
+                "back-of-house sanitation staff",
+                "inventory support staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Commercial dishwashing equipment maintenance and troubleshooting",
+            "aliases": [
+                "dishwasher maintenance",
+                "glasswasher troubleshooting",
+                "commercial washer upkeep"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Routine maintenance, cleaning, and basic troubleshooting of commercial dishwashing and glasswashing equipment, including pump\/filter checks, temperature verification and chemical dosing system inspection.",
+            "parent_skill": "Bar sanitation & glassware handling",
+            "related_skills": [
+                "Commercial glasswasher operation",
+                "Sanitizer concentration testing",
+                "Sanitation schedule management and recordkeeping"
+            ],
+            "keywords": [
+                "maintenance",
+                "troubleshooting",
+                "filters",
+                "pumps",
+                "temperature"
+            ],
+            "common_roles": [
+                "back-of-house maintenance staff",
+                "stewardship staff"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

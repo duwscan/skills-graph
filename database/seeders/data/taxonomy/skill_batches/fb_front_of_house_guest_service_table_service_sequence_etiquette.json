@@ -1,0 +1,301 @@
+{
+    "domain": "F&B",
+    "category": "Front-of-House Guest Service",
+    "subcategory": "Table service sequence & etiquette",
+    "skills": [
+        {
+            "canonical_name": "Serving sequence and timing",
+            "aliases": [
+                "service sequencing",
+                "service pacing",
+                "timing service"
+            ],
+            "skill_type": "process_skill",
+            "description": "Plan and execute the order and delivery of courses and items to ensure appropriate pacing between courses, coordinate timing with kitchen and bar, and adapt flow to guest tempo.",
+            "parent_skill": "Table service sequence & etiquette",
+            "related_skills": [
+                "Table setting and etiquette",
+                "Order taking and suggestive selling",
+                "Clearing, bussing, and table reset",
+                "Presentation and plated service etiquette"
+            ],
+            "keywords": [
+                "pacing",
+                "course timing",
+                "kitchen coordination",
+                "flow"
+            ],
+            "common_roles": [
+                "Server",
+                "Captain",
+                "Head Waiter"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Table setting and etiquette",
+            "aliases": [
+                "table setup",
+                "cover setup",
+                "place setting etiquette"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Correctly arrange flatware, glassware, linens, and place settings according to service style and occasion while following visual and hygiene standards.",
+            "parent_skill": "Table service sequence & etiquette",
+            "related_skills": [
+                "Presentation and plated service etiquette",
+                "Clearing, bussing, and table reset",
+                "Serving sequence and timing"
+            ],
+            "keywords": [
+                "cover",
+                "place setting",
+                "flatware",
+                "table layout"
+            ],
+            "common_roles": [
+                "Server",
+                "Back Waitstaff",
+                "Banquet Server"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Order taking and suggestive selling",
+            "aliases": [
+                "order taking",
+                "upselling",
+                "suggestive selling",
+                "menu upsell"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Collect accurate guest orders, record modifications, and use targeted, polite language to suggest dishes, drinks, or upgrades that enhance guest experience and increase check value.",
+            "parent_skill": "Table service sequence & etiquette",
+            "related_skills": [
+                "Menu knowledge and dish recommendations",
+                "Serving sequence and timing",
+                "Check presentation and payment handling etiquette"
+            ],
+            "keywords": [
+                "upsell",
+                "order accuracy",
+                "suggestive language",
+                "sales"
+            ],
+            "common_roles": [
+                "Server",
+                "Bartender",
+                "Captain"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Menu knowledge and dish recommendations",
+            "aliases": [
+                "menu memorization",
+                "menu recommendation",
+                "dish knowledge"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Understand menu ingredients, preparation methods, portion sizes and flavors to make informed recommendations, answer guest questions, and identify appropriate pairings.",
+            "parent_skill": "Table service sequence & etiquette",
+            "related_skills": [
+                "Order taking and suggestive selling",
+                "Allergen awareness and dietary accommodation",
+                "Beverage service and wine etiquette"
+            ],
+            "keywords": [
+                "menu",
+                "ingredients",
+                "pairing",
+                "dish details"
+            ],
+            "common_roles": [
+                "Server",
+                "Sommelier",
+                "Captain"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Beverage service and wine etiquette",
+            "aliases": [
+                "wine service",
+                "beverage pouring",
+                "wine pouring etiquette",
+                "bar-to-table service"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Perform professional beverage service including correct glassware selection, opening and presenting bottles, decanting when appropriate, pouring technique, and serving non-alcoholic beverages with proper sequence.",
+            "parent_skill": "Table service sequence & etiquette",
+            "related_skills": [
+                "Menu knowledge and dish recommendations",
+                "Presentation and plated service etiquette",
+                "Order taking and suggestive selling"
+            ],
+            "keywords": [
+                "wine",
+                "decanting",
+                "glassware",
+                "pouring"
+            ],
+            "common_roles": [
+                "Server",
+                "Sommelier",
+                "Bartender"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen awareness and dietary accommodation",
+            "aliases": [
+                "allergen management",
+                "dietary restrictions handling",
+                "special diet accommodation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Recognize common allergens and dietary needs, accurately communicate guest restrictions to kitchen staff, and follow venue policies to minimize cross-contact and reduce risk of adverse reactions.",
+            "parent_skill": "Table service sequence & etiquette",
+            "related_skills": [
+                "Menu knowledge and dish recommendations",
+                "Order taking and suggestive selling",
+                "Check presentation and payment handling etiquette"
+            ],
+            "keywords": [
+                "allergens",
+                "gluten-free",
+                "cross-contact",
+                "dietary needs"
+            ],
+            "common_roles": [
+                "Server",
+                "Expo",
+                "Captain"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Clearing, bussing, and table reset",
+            "aliases": [
+                "table clearing",
+                "bussing",
+                "table reset protocol"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Efficiently clear plates, glassware and debris, buss tables between guests, and reset covers to acceptable standards while minimizing disruption to seated guests and maintaining safety.",
+            "parent_skill": "Table service sequence & etiquette",
+            "related_skills": [
+                "Table setting and etiquette",
+                "Serving sequence and timing",
+                "Presentation and plated service etiquette"
+            ],
+            "keywords": [
+                "bussing",
+                "clear plates",
+                "reset",
+                "turnover"
+            ],
+            "common_roles": [
+                "Busser",
+                "Server",
+                "Back Waitstaff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Presentation and plated service etiquette",
+            "aliases": [
+                "plating service",
+                "tableside plating",
+                "silver service"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Execute proper techniques for presenting dishes to guests, including tableside finishing, safe and attractive plating, and following service protocols for exposed or formal service styles.",
+            "parent_skill": "Table service sequence & etiquette",
+            "related_skills": [
+                "Table setting and etiquette",
+                "Beverage service and wine etiquette",
+                "Serving sequence and timing"
+            ],
+            "keywords": [
+                "tableside",
+                "plating",
+                "presentation",
+                "formal service"
+            ],
+            "common_roles": [
+                "Server",
+                "Captain",
+                "Fine Dining Server"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Guest greeting and seating protocol",
+            "aliases": [
+                "host greeting",
+                "seating protocol",
+                "welcome protocol"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Welcome guests courteously, confirm reservations or walk-ins, manage waitlists and seating flow, escort guests to tables following venue policies and accessibility considerations.",
+            "parent_skill": "Table service sequence & etiquette",
+            "related_skills": [
+                "Order taking and suggestive selling",
+                "Serving sequence and timing",
+                "Check presentation and payment handling etiquette"
+            ],
+            "keywords": [
+                "greeting",
+                "seating",
+                "host",
+                "waitlist"
+            ],
+            "common_roles": [
+                "Host\/Hostess",
+                "Server",
+                "Maître d'"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Check presentation and payment handling etiquette",
+            "aliases": [
+                "presenting bill",
+                "payment handling",
+                "check etiquette",
+                "closing service"
+            ],
+            "skill_type": "process_skill",
+            "description": "Present the bill discreetly, handle payment methods securely (cash, card, mobile payments), process split checks or payment requests, and conclude service with appropriate thank-you protocol.",
+            "parent_skill": "Table service sequence & etiquette",
+            "related_skills": [
+                "Order taking and suggestive selling",
+                "Guest greeting and seating protocol",
+                "Allergen awareness and dietary accommodation"
+            ],
+            "keywords": [
+                "bill",
+                "check",
+                "payment",
+                "closing"
+            ],
+            "common_roles": [
+                "Server",
+                "Host\/Hostess",
+                "Cashier"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

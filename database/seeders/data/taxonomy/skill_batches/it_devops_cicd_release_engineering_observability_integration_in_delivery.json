@@ -1,0 +1,266 @@
+{
+    "domain": "IT",
+    "category": "DevOps, CI\/CD & Release Engineering",
+    "subcategory": "Observability integration in delivery",
+    "skills": [
+        {
+            "canonical_name": "Observability integration in CI\/CD pipelines",
+            "aliases": [
+                "CI\/CD observability integration",
+                "Observability integration in delivery pipelines"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and implementing processes that embed telemetry collection, verification, and feedback loops into continuous integration and continuous delivery pipelines.",
+            "parent_skill": "Observability integration in delivery",
+            "related_skills": [
+                "Observability-as-Code (OaC)",
+                "Automated canary analysis and progressive delivery",
+                "Deployment-time verification and health checks",
+                "SLO definition and SLO-based deployment gates"
+            ],
+            "keywords": [
+                "CI\/CD",
+                "pipeline",
+                "telemetry",
+                "pre-deploy checks",
+                "post-deploy verification",
+                "feedback loop"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "OpenTelemetry instrumentation",
+            "aliases": [
+                "OTel instrumentation",
+                "OpenTelemetry SDK integration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using OpenTelemetry SDKs, agents and collectors to instrument applications and services for traces, metrics and logs and configuring exporters to telemetry backends.",
+            "parent_skill": "Observability integration in delivery",
+            "related_skills": [
+                "Distributed tracing implementation",
+                "Metrics instrumentation and export",
+                "Structured logging and log aggregation",
+                "Observability-as-Code (OaC)"
+            ],
+            "keywords": [
+                "OpenTelemetry",
+                "OTel",
+                "SDK",
+                "collector",
+                "exporter",
+                "instrumentation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Distributed tracing implementation",
+            "aliases": [
+                "Tracing implementation",
+                "Distributed trace instrumentation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Instrumenting services to generate and propagate distributed traces, designing span structure and context propagation to enable end-to-end transaction analysis.",
+            "parent_skill": "Observability integration in delivery",
+            "related_skills": [
+                "OpenTelemetry instrumentation",
+                "Structured logging and log aggregation",
+                "Automated canary analysis and progressive delivery"
+            ],
+            "keywords": [
+                "tracing",
+                "spans",
+                "context propagation",
+                "latency",
+                "transaction tracing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Metrics instrumentation and export",
+            "aliases": [
+                "Application metrics instrumentation",
+                "Telemetry metrics collection"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Implementing application and system metrics with appropriate cardinality, labels and aggregations, and configuring metric exporters to monitoring backends.",
+            "parent_skill": "Observability integration in delivery",
+            "related_skills": [
+                "OpenTelemetry instrumentation",
+                "SLO definition and SLO-based deployment gates",
+                "Observability data pipeline design and retention"
+            ],
+            "keywords": [
+                "metrics",
+                "Prometheus style metrics",
+                "labels",
+                "aggregation",
+                "exporter",
+                "cardinality"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Structured logging and log aggregation",
+            "aliases": [
+                "JSON logging",
+                "Centralized log aggregation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Producing structured, context-rich logs, correlating log entries with traces\/metrics, and configuring centralized log collection, indexing and retention policies.",
+            "parent_skill": "Observability integration in delivery",
+            "related_skills": [
+                "OpenTelemetry instrumentation",
+                "Distributed tracing implementation",
+                "Observability data pipeline design and retention"
+            ],
+            "keywords": [
+                "logs",
+                "structured logging",
+                "ELK",
+                "log aggregation",
+                "correlation",
+                "indexing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SLO definition and SLO-based deployment gates",
+            "aliases": [
+                "Service Level Objectives (SLO) definition",
+                "SLO-driven deployment gates"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Creating measurable SLOs and error budgets and integrating automated SLO checks as deployment gates to control releases based on reliability targets.",
+            "parent_skill": "Observability integration in delivery",
+            "related_skills": [
+                "Metrics instrumentation and export",
+                "Automated canary analysis and progressive delivery",
+                "Deployment-time verification and health checks"
+            ],
+            "keywords": [
+                "SLO",
+                "error budget",
+                "service level",
+                "deployment gate",
+                "reliability"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated canary analysis and progressive delivery",
+            "aliases": [
+                "Canary analysis automation",
+                "Progressive delivery telemetry"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implementing automated canary comparisons, traffic shifting and progressive rollouts that use telemetry signals to make automated or semi-automated rollout decisions.",
+            "parent_skill": "Observability integration in delivery",
+            "related_skills": [
+                "SLO definition and SLO-based deployment gates",
+                "Observability integration in CI\/CD pipelines",
+                "Deployment-time verification and health checks"
+            ],
+            "keywords": [
+                "canary",
+                "progressive delivery",
+                "traffic shifting",
+                "A\/B",
+                "rollout",
+                "comparative analysis"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Observability-as-Code (OaC)",
+            "aliases": [
+                "Observability as Code",
+                "OaC"
+            ],
+            "skill_type": "process_skill",
+            "description": "Managing observability configuration—dashboards, alerts, collectors, exporters and retention policies—as versioned code and applying infrastructure-as-code workflows to telemetry.",
+            "parent_skill": "Observability integration in delivery",
+            "related_skills": [
+                "Observability integration in CI\/CD pipelines",
+                "OpenTelemetry instrumentation",
+                "Observability data pipeline design and retention"
+            ],
+            "keywords": [
+                "observability as code",
+                "infrastructure as code",
+                "dashboards",
+                "alerts",
+                "configuration management",
+                "versioning"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Deployment-time verification and health checks",
+            "aliases": [
+                "Post-deploy verification",
+                "Pre\/post-deploy health checks"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and automating pre-deploy and post-deploy checks, synthetic tests and health probes that validate service behavior and telemetry after releases.",
+            "parent_skill": "Observability integration in delivery",
+            "related_skills": [
+                "Automated canary analysis and progressive delivery",
+                "Observability integration in CI\/CD pipelines",
+                "SLO definition and SLO-based deployment gates"
+            ],
+            "keywords": [
+                "health checks",
+                "post-deploy",
+                "synthetic testing",
+                "smoke tests",
+                "verification"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Observability data pipeline design and retention",
+            "aliases": [
+                "Telemetry pipeline design",
+                "Observability storage and retention planning"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Designing scalable telemetry ingestion, processing, sampling, storage and retention policies, balancing cost, query performance and long-term analysis needs.",
+            "parent_skill": "Observability integration in delivery",
+            "related_skills": [
+                "Metrics instrumentation and export",
+                "Structured logging and log aggregation",
+                "Observability-as-Code (OaC)"
+            ],
+            "keywords": [
+                "ingestion",
+                "sampling",
+                "retention",
+                "storage",
+                "indexing",
+                "cost optimization"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

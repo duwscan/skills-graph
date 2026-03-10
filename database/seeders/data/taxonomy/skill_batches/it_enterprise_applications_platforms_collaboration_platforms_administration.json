@@ -1,0 +1,290 @@
+{
+    "domain": "IT",
+    "category": "Enterprise Applications & Platforms",
+    "subcategory": "Collaboration platforms administration",
+    "skills": [
+        {
+            "canonical_name": "Microsoft Teams administration",
+            "aliases": [
+                "Teams administration",
+                "Microsoft Teams admin",
+                "MS Teams administration",
+                "Teams tenant administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configure and manage Microsoft Teams tenant settings, teams and channels, meeting and calling policies, telephony integration, Teams Rooms, security and compliance settings, and user lifecycle within the Teams service.",
+            "parent_skill": "Collaboration platforms administration",
+            "related_skills": [
+                "SharePoint Online administration",
+                "Collaboration platforms user provisioning & access management",
+                "Collaboration platform integration & automation",
+                "Monitoring, analytics and performance tuning for collaboration platforms",
+                "Compliance, eDiscovery and data retention for collaboration platforms"
+            ],
+            "keywords": [
+                "Teams",
+                "M365",
+                "meeting policies",
+                "telephony",
+                "tenant"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Slack administration",
+            "aliases": [
+                "Slack workspace administration",
+                "Slack admin",
+                "Slack Enterprise Grid administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Administer Slack workspaces and Enterprise Grid: manage channels, user and guest provisioning, workspace settings, security and compliance controls, app management, and workspace policies.",
+            "parent_skill": "Collaboration platforms administration",
+            "related_skills": [
+                "Collaboration platforms user provisioning & access management",
+                "Collaboration platform governance and policy design",
+                "Collaboration platform integration & automation",
+                "Compliance, eDiscovery and data retention for collaboration platforms",
+                "Monitoring, analytics and performance tuning for collaboration platforms"
+            ],
+            "keywords": [
+                "Slack",
+                "workspaces",
+                "channels",
+                "apps",
+                "Enterprise Grid"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Google Workspace administration",
+            "aliases": [
+                "G Suite administration",
+                "Google Workspace admin",
+                "G Suite admin"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Manage Google Workspace services including Gmail, Drive, Groups, Calendar, security and sharing settings, organizational units, user lifecycle, and administrative controls for collaboration and data access.",
+            "parent_skill": "Collaboration platforms administration",
+            "related_skills": [
+                "Collaboration platforms user provisioning & access management",
+                "Collaboration platform governance and policy design",
+                "Collaboration platform integration & automation",
+                "Compliance, eDiscovery and data retention for collaboration platforms",
+                "Monitoring, analytics and performance tuning for collaboration platforms"
+            ],
+            "keywords": [
+                "Google Workspace",
+                "Gmail",
+                "Drive",
+                "admin console",
+                "sharing settings"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SharePoint Online administration",
+            "aliases": [
+                "SharePoint administration",
+                "SharePoint Online admin",
+                "SharePoint site administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Administer SharePoint Online site collections and sites: manage permissions, site architecture, content types, search configuration, storage, records management, and integrations with collaboration services.",
+            "parent_skill": "Collaboration platforms administration",
+            "related_skills": [
+                "Microsoft Teams administration",
+                "Collaboration platform governance and policy design",
+                "Collaboration platform integration & automation",
+                "Compliance, eDiscovery and data retention for collaboration platforms",
+                "Monitoring, analytics and performance tuning for collaboration platforms"
+            ],
+            "keywords": [
+                "SharePoint",
+                "site collections",
+                "permissions",
+                "content management",
+                "search"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Collaboration platforms user provisioning & access management",
+            "aliases": [
+                "user provisioning for collaboration platforms",
+                "access management for collaboration tools",
+                "SCIM provisioning for collaboration platforms",
+                "IAM for collaboration platforms"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Design and operate user lifecycle and access processes for collaboration tools, including directory synchronization, SCIM provisioning, SSO integration, role-based access control, guest\/external access governance, and deprovisioning workflows.",
+            "parent_skill": "Collaboration platforms administration",
+            "related_skills": [
+                "Microsoft Teams administration",
+                "Slack administration",
+                "Google Workspace administration",
+                "Collaboration platform governance and policy design",
+                "Collaboration platform integration & automation"
+            ],
+            "keywords": [
+                "provisioning",
+                "SCIM",
+                "SSO",
+                "deprovisioning",
+                "RBAC"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Collaboration platform governance and policy design",
+            "aliases": [
+                "collaboration governance",
+                "platform governance for collaboration tools",
+                "governance and policy for collaboration platforms"
+            ],
+            "skill_type": "process_skill",
+            "description": "Define governance frameworks and policies for collaboration platforms: naming conventions, lifecycle management, external sharing rules, data retention and classification policies, acceptable use, and ownership models to reduce risk and support scale.",
+            "parent_skill": "Collaboration platforms administration",
+            "related_skills": [
+                "Collaboration platforms user provisioning & access management",
+                "Compliance, eDiscovery and data retention for collaboration platforms",
+                "Collaboration platform migration planning and execution",
+                "Microsoft Teams administration",
+                "Slack administration"
+            ],
+            "keywords": [
+                "governance",
+                "policy",
+                "naming conventions",
+                "lifecycle",
+                "external sharing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Collaboration platform integration & automation",
+            "aliases": [
+                "collaboration integrations",
+                "platform automation for collaboration tools",
+                "API integration for collaboration platforms",
+                "webhooks and bots for collaboration platforms"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Develop and maintain integrations, workflows and automations for collaboration platforms using APIs, connectors, webhooks, bots and automation tools (e.g., Power Automate, Workflows, custom apps) to streamline processes and extend functionality.",
+            "parent_skill": "Collaboration platforms administration",
+            "related_skills": [
+                "Microsoft Teams administration",
+                "Slack administration",
+                "Google Workspace administration",
+                "Collaboration platforms user provisioning & access management",
+                "Collaboration platform migration planning and execution"
+            ],
+            "keywords": [
+                "APIs",
+                "webhooks",
+                "bots",
+                "automation",
+                "connectors"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Compliance, eDiscovery and data retention for collaboration platforms",
+            "aliases": [
+                "collaboration eDiscovery",
+                "collaboration data retention",
+                "compliance for collaboration tools",
+                "legal hold for collaboration platforms"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Implement and manage compliance controls for collaboration systems: retention policies, eDiscovery and legal hold procedures, audit log configuration, data exports and chain-of-custody practices to meet regulatory and legal requirements.",
+            "parent_skill": "Collaboration platforms administration",
+            "related_skills": [
+                "Collaboration platform governance and policy design",
+                "Microsoft Teams administration",
+                "Google Workspace administration",
+                "SharePoint Online administration"
+            ],
+            "keywords": [
+                "eDiscovery",
+                "retention",
+                "legal hold",
+                "audit logs",
+                "data export"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Collaboration platform migration planning and execution",
+            "aliases": [
+                "platform migration for collaboration tools",
+                "migration to collaboration platforms",
+                "cloud collaboration migration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Plan and execute migrations between collaboration systems or tenants: discovery and inventory, data mapping and transformation, pilot and cutover planning, coexistence strategies, rollback planning, and post-migration validation and remediation.",
+            "parent_skill": "Collaboration platforms administration",
+            "related_skills": [
+                "Collaboration platform integration & automation",
+                "Collaboration platform governance and policy design",
+                "Collaboration platforms user provisioning & access management",
+                "Microsoft Teams administration",
+                "SharePoint Online administration"
+            ],
+            "keywords": [
+                "migration",
+                "cutover",
+                "data mapping",
+                "coexistence",
+                "pilot"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Monitoring, analytics and performance tuning for collaboration platforms",
+            "aliases": [
+                "collaboration monitoring",
+                "platform analytics for collaboration tools",
+                "performance tuning for collaboration platforms"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Monitor health, usage and performance of collaboration services; configure telemetry and alerts, analyze usage and call quality analytics, troubleshoot performance issues, capacity planning and optimize configurations for reliability and user experience.",
+            "parent_skill": "Collaboration platforms administration",
+            "related_skills": [
+                "Microsoft Teams administration",
+                "Slack administration",
+                "Google Workspace administration",
+                "Collaboration platform integration & automation",
+                "Compliance, eDiscovery and data retention for collaboration platforms"
+            ],
+            "keywords": [
+                "monitoring",
+                "analytics",
+                "call quality",
+                "telemetry",
+                "capacity planning"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

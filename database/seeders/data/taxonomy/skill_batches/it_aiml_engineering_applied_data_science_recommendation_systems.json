@@ -1,0 +1,271 @@
+{
+    "domain": "IT",
+    "category": "AI\/ML Engineering & Applied Data Science",
+    "subcategory": "Recommendation systems",
+    "skills": [
+        {
+            "canonical_name": "Collaborative filtering",
+            "aliases": [
+                "user-based collaborative filtering",
+                "item-based collaborative filtering",
+                "CF"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Predicting user preferences by leveraging patterns of behavior across users and\/or items (neighborhood methods, similarity computations).",
+            "parent_skill": "Recommendation systems",
+            "related_skills": [
+                "Matrix factorization & latent factor models",
+                "Feature engineering for recommendation",
+                "Recommender system evaluation & offline metrics"
+            ],
+            "keywords": [
+                "user-item matrix",
+                "similarity",
+                "cosine similarity",
+                "pearson correlation",
+                "neighborhood models"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Matrix factorization & latent factor models",
+            "aliases": [
+                "SVD-based recommender",
+                "ALS",
+                "latent factor models"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Techniques that learn latent user and item representations (e.g., SVD, ALS, probabilistic matrix factorization) to predict preferences and generate ranked recommendations.",
+            "parent_skill": "Recommendation systems",
+            "related_skills": [
+                "Collaborative filtering",
+                "Implicit feedback & preference modeling",
+                "Recommender system evaluation & offline metrics"
+            ],
+            "keywords": [
+                "SVD",
+                "ALS",
+                "latent factors",
+                "low-rank approximation",
+                "embedding"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Content-based recommendation",
+            "aliases": [
+                "content-based filtering",
+                "item profile matching"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Recommending items by matching item attributes and content features to user profiles or historically preferred content.",
+            "parent_skill": "Recommendation systems",
+            "related_skills": [
+                "Feature engineering for recommendation",
+                "Text embedding for recommendations",
+                "Recommender system evaluation & offline metrics"
+            ],
+            "keywords": [
+                "TF-IDF",
+                "item metadata",
+                "item profiles",
+                "cosine similarity",
+                "content features"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Learning-to-rank for recommender systems",
+            "aliases": [
+                "LTR",
+                "pairwise ranking",
+                "listwise ranking"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying pointwise\/pairwise\/listwise ranking algorithms and loss functions to optimize the ordering of recommended items for relevance or business objectives.",
+            "parent_skill": "Recommendation systems",
+            "related_skills": [
+                "Feature engineering for recommendation",
+                "Recommender system evaluation & offline metrics",
+                "Online experimentation & A\/B testing for recommendations"
+            ],
+            "keywords": [
+                "ranking loss",
+                "pairwise loss",
+                "listwise loss",
+                "LambdaRank",
+                "ranknet",
+                "xgboost ranking"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Approximate nearest neighbor (ANN) retrieval & vector search",
+            "aliases": [
+                "vector search",
+                " ANN",
+                "FAISS",
+                "Annoy",
+                "ScaNN",
+                "HNSW",
+                "Milvus"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Techniques and tools for efficient similarity search over high-dimensional embeddings used in candidate retrieval and nearest-neighbor recommendation pipelines.",
+            "parent_skill": "Recommendation systems",
+            "related_skills": [
+                "Feature engineering for recommendation",
+                "Real-time recommendation systems & online serving",
+                "Graph-based recommendation & knowledge-graph embeddings"
+            ],
+            "keywords": [
+                "nearest neighbor",
+                "approximate search",
+                "indexing",
+                "product quantization",
+                "HNSW",
+                "inverted file"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Recommender system evaluation & offline metrics",
+            "aliases": [
+                "offline evaluation metrics",
+                "recommendation metrics"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Designing and computing offline metrics (e.g., precision@k, recall@k, MAP, NDCG, hit rate) and validation protocols to assess recommender quality before deployment.",
+            "parent_skill": "Recommendation systems",
+            "related_skills": [
+                "Learning-to-rank for recommender systems",
+                "Online experimentation & A\/B testing for recommendations",
+                "Collaborative filtering"
+            ],
+            "keywords": [
+                "precision@k",
+                "recall@k",
+                "NDCG",
+                "MAP",
+                "holdout",
+                "cross-validation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Online experimentation & A\/B testing for recommendations",
+            "aliases": [
+                "online evaluation",
+                "A\/B testing",
+                "causal evaluation for recommenders"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and running online experiments (A\/B\/n tests), interpreting metrics and incremental impact, and managing rollout strategies specific to recommendation features.",
+            "parent_skill": "Recommendation systems",
+            "related_skills": [
+                "Recommender system evaluation & offline metrics",
+                "Real-time recommendation systems & online serving",
+                "Learning-to-rank for recommender systems"
+            ],
+            "keywords": [
+                "A\/B test design",
+                "hypothesis testing",
+                "treatment\/control",
+                "bucketing",
+                "online metrics"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Feature engineering for recommendation",
+            "aliases": [
+                "candidate feature engineering",
+                "user\/item feature engineering"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Creating and transforming behavioral, temporal, contextual, and content features for use in candidate generation, ranking, and personalization models.",
+            "parent_skill": "Recommendation systems",
+            "related_skills": [
+                "Collaborative filtering",
+                "Learning-to-rank for recommender systems",
+                "Approximate nearest neighbor (ANN) retrieval & vector search"
+            ],
+            "keywords": [
+                "temporal features",
+                "cross-features",
+                "embeddings",
+                "feature hashing",
+                "session features"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Session-based & sequential recommendation",
+            "aliases": [
+                "sequence-aware recommendation",
+                "session-aware recommendation",
+                "RNN\/Transformer recommenders"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Modeling user behavior across sessions or sequences (using RNNs, CNNs, Transformers, and sequential pattern techniques) to make time-aware, next-item predictions.",
+            "parent_skill": "Recommendation systems",
+            "related_skills": [
+                "Feature engineering for recommendation",
+                "Graph-based recommendation & knowledge-graph embeddings",
+                "Recommender system evaluation & offline metrics"
+            ],
+            "keywords": [
+                "next-item prediction",
+                "sequence models",
+                "session context",
+                "attention",
+                "transformer"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Graph-based recommendation & knowledge-graph embeddings",
+            "aliases": [
+                "graph recommender",
+                "GNN for recommendation",
+                "knowledge graph for recommendations"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Using graphs and graph neural networks or knowledge-graph embeddings to capture relationships between users, items, and attributes for richer candidate generation and explainability.",
+            "parent_skill": "Recommendation systems",
+            "related_skills": [
+                "Approximate nearest neighbor (ANN) retrieval & vector search",
+                "Feature engineering for recommendation",
+                "Session-based & sequential recommendation"
+            ],
+            "keywords": [
+                "GNN",
+                "node embeddings",
+                "graph embeddings",
+                "heterogeneous graph",
+                "path-based features"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

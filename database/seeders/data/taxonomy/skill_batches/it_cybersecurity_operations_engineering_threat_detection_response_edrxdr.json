@@ -1,0 +1,302 @@
+{
+    "domain": "IT",
+    "category": "Cybersecurity Operations & Engineering",
+    "subcategory": "Threat detection & response (EDR\/XDR)",
+    "skills": [
+        {
+            "canonical_name": "Detection engineering",
+            "aliases": [
+                "Detection content development",
+                "Detection rule development",
+                "Signature development",
+                "Rule authoring"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, implementing and tuning detection logic and use cases across EDR\/XDR and SIEM platforms to reliably surface malicious activity while minimizing false positives.",
+            "parent_skill": "Threat detection & response (EDR\/XDR)",
+            "related_skills": [
+                "Log query authoring (KQL\/SPL\/SQL)",
+                "EDR platform administration",
+                "SIEM integration and correlation",
+                "Alert triage and investigation"
+            ],
+            "keywords": [
+                "use-case design",
+                "rule tuning",
+                "detections",
+                "false positive reduction",
+                "indicator-based detection"
+            ],
+            "common_roles": [
+                "Threat detection engineer",
+                "Detection content developer",
+                "SOC analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Threat hunting",
+            "aliases": [
+                "Proactive threat hunting",
+                "Hypothesis-driven hunting",
+                "Hunt operations"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Proactively searching telemetry to discover stealthy threats and anomalous behaviors using hypotheses, Sigma\/KQL searches, TTP frameworks (e.g., ATT&CK) and ad-hoc analytics.",
+            "parent_skill": "Threat detection & response (EDR\/XDR)",
+            "related_skills": [
+                "Behavioral analytics and anomaly detection",
+                "Threat intelligence ingestion and operationalization",
+                "Log query authoring (KQL\/SPL\/SQL)",
+                "Endpoint forensics and root cause analysis"
+            ],
+            "keywords": [
+                "IOC hunting",
+                "TTPs",
+                "hypothesis-based search",
+                "hunting queries",
+                "pivots"
+            ],
+            "common_roles": [
+                "Threat hunter",
+                "Senior SOC analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "EDR platform administration",
+            "aliases": [
+                "EDR administration",
+                "EDR management",
+                "Endpoint security administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring, deploying, and managing EDR\/XDR sensors and policies across endpoints, including sensor lifecycle, telemetry settings, update orchestration and health monitoring.",
+            "parent_skill": "Threat detection & response (EDR\/XDR)",
+            "related_skills": [
+                "EDR policy and sensor configuration",
+                "Telemetry ingestion and normalization",
+                "Incident triage and investigation"
+            ],
+            "keywords": [
+                "sensor deployment",
+                "policy management",
+                "endpoint telemetry",
+                "agent rollout",
+                "platform health"
+            ],
+            "common_roles": [
+                "EDR administrator",
+                "Endpoint security engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Alert triage and investigation",
+            "aliases": [
+                "Alert prioritization",
+                "Security alert triage",
+                "Investigation workflow"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Rapidly assessing alerts to determine scope, severity and next steps by analyzing telemetry, validating indicators, and escalating or resolving incidents per runbooks.",
+            "parent_skill": "Threat detection & response (EDR\/XDR)",
+            "related_skills": [
+                "Incident triage and investigation",
+                "Detection engineering",
+                "SIEM integration and correlation",
+                "EDR platform administration"
+            ],
+            "keywords": [
+                "prioritization",
+                "false positive assessment",
+                "investigation playbooks",
+                "evidence collection",
+                "escalation"
+            ],
+            "common_roles": [
+                "SOC analyst",
+                "Incident responder"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Endpoint forensics and root cause analysis",
+            "aliases": [
+                "Endpoint forensic analysis",
+                "Memory forensics",
+                "Host-based root cause analysis"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Collecting and analyzing host artifacts (memory, disk, logs, registry) to determine infection vectors, persistence mechanisms and full attack timelines at the endpoint level.",
+            "parent_skill": "Threat detection & response (EDR\/XDR)",
+            "related_skills": [
+                "Malware analysis (static\/dynamic)",
+                "Threat hunting",
+                "Incident containment and remediation"
+            ],
+            "keywords": [
+                "timeline analysis",
+                "memory analysis",
+                "artifact collection",
+                "volatile data",
+                "forensic triage"
+            ],
+            "common_roles": [
+                "Digital forensics analyst",
+                "Incident responder"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Log query authoring (KQL\/SPL\/SQL)",
+            "aliases": [
+                "Log query languages",
+                "Search query authoring",
+                "KQL\/SPL query writing"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Writing and optimizing log and telemetry queries in common languages (e.g., KQL, Splunk SPL, SQL) to support detections, hunts and investigations across observability tools.",
+            "parent_skill": "Threat detection & response (EDR\/XDR)",
+            "related_skills": [
+                "Detection engineering",
+                "Threat hunting",
+                "SIEM integration and correlation"
+            ],
+            "keywords": [
+                "KQL",
+                "SPL",
+                "log search",
+                "query optimization",
+                "telemetry queries"
+            ],
+            "common_roles": [
+                "SOC analyst",
+                "Detection engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SIEM integration and correlation",
+            "aliases": [
+                "SIEM correlation rule tuning",
+                "EDR-SIEM integration",
+                "Log correlation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Integrating EDR\/XDR telemetry with SIEM platforms and building correlation rules and dashboards to centralize detections, contextualize alerts and enable cross-source investigation.",
+            "parent_skill": "Threat detection & response (EDR\/XDR)",
+            "related_skills": [
+                "Log query authoring (KQL\/SPL\/SQL)",
+                "Detection engineering",
+                "Telemetry ingestion and normalization"
+            ],
+            "keywords": [
+                "correlation rules",
+                "event normalization",
+                "alert enrichment",
+                "dashboards",
+                "cross-source correlation"
+            ],
+            "common_roles": [
+                "SIEM engineer",
+                "SOC analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated response and playbook development (SOAR)",
+            "aliases": [
+                "SOAR playbook development",
+                "Automated incident response",
+                "Response orchestration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and implementing automated response workflows and playbooks to orchestrate containment, enrichment and remediation steps across security tools and EDR\/XDR platforms.",
+            "parent_skill": "Threat detection & response (EDR\/XDR)",
+            "related_skills": [
+                "EDR platform administration",
+                "SIEM integration and correlation",
+                "Incident triage and investigation"
+            ],
+            "keywords": [
+                "playbooks",
+                "automation",
+                "orchestration",
+                "enrichment",
+                "remediation"
+            ],
+            "common_roles": [
+                "SOAR engineer",
+                "Incident responder"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Behavioral analytics and anomaly detection",
+            "aliases": [
+                "User and entity behavior analytics",
+                "UEBA",
+                "Anomaly-based detection"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Using statistical and machine-learning methods to model normal user and host behavior, detect deviations and surface anomalous activities that signature-based systems may miss.",
+            "parent_skill": "Threat detection & response (EDR\/XDR)",
+            "related_skills": [
+                "Threat hunting",
+                "Detection engineering",
+                "Telemetry ingestion and normalization"
+            ],
+            "keywords": [
+                "UEBA",
+                "anomaly detection",
+                "behavioral baselining",
+                "unsupervised learning",
+                "feature engineering"
+            ],
+            "common_roles": [
+                "Security data scientist",
+                "Threat detection engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Threat intelligence ingestion and operationalization",
+            "aliases": [
+                "Threat intel integration",
+                "IOC operationalization",
+                "Intel enrichment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Ingesting, normalizing and enriching threat intelligence (IOCs, TTPs) and operationalizing it into detections, feed-based blocking, and hunting queries to improve response speed and context.",
+            "parent_skill": "Threat detection & response (EDR\/XDR)",
+            "related_skills": [
+                "Threat hunting",
+                "SIEM integration and correlation",
+                "Detection engineering"
+            ],
+            "keywords": [
+                "IOC ingestion",
+                "TTP mapping",
+                "enrichment",
+                "feed management",
+                "operational intel"
+            ],
+            "common_roles": [
+                "Threat intelligence analyst",
+                "SOC analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

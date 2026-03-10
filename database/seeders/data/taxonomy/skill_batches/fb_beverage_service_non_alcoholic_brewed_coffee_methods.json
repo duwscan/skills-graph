@@ -1,0 +1,294 @@
+{
+    "domain": "F&B",
+    "category": "Beverage Service (Non-Alcoholic)",
+    "subcategory": "Brewed coffee methods",
+    "skills": [
+        {
+            "canonical_name": "Pour-over brewing technique",
+            "aliases": [
+                "pour over",
+                "pour-over brewing",
+                "V60 brewing",
+                "Kalita brewing",
+                "chemex technique"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Perform and control manual pour-over brewing processes (bloom, pulse pouring, flow rate) across common devices to achieve consistent extraction.",
+            "parent_skill": "Brewed coffee methods",
+            "related_skills": [
+                "Grind size calibration and grinder setup",
+                "Temperature control and kettle pouring technique",
+                "Brew ratio and yield calculation"
+            ],
+            "keywords": [
+                "V60",
+                "Kalita",
+                "Chemex",
+                "bloom",
+                "pour-over"
+            ],
+            "common_roles": [
+                "café operations",
+                "specialty coffee retail",
+                "beverage preparation staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "French press brewing",
+            "aliases": [
+                "press pot brewing",
+                "cafetière technique"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Prepare immersion-style coffee using French press methods including correct grind, steep time, plunge technique and filtration handling.",
+            "parent_skill": "Brewed coffee methods",
+            "related_skills": [
+                "Grind size calibration and grinder setup",
+                "Brew ratio and yield calculation",
+                "Cold brew preparation and dilution"
+            ],
+            "keywords": [
+                "French press",
+                "immersion",
+                "steep time",
+                "plunge"
+            ],
+            "common_roles": [
+                "café operations",
+                "beverage preparation staff",
+                "hospitality foodservice"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cold brew preparation and dilution",
+            "aliases": [
+                "cold brew steeping",
+                "cold brew concentrate preparation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Formulate and execute long-steep cold brew processes, calculate concentrate-to-water dilutions, and manage storage\/serve procedures for flavor consistency and safety.",
+            "parent_skill": "Brewed coffee methods",
+            "related_skills": [
+                "Brew ratio and yield calculation",
+                "Water chemistry optimization for coffee brewing",
+                "Commercial drip\/batch coffee brewer operation and maintenance"
+            ],
+            "keywords": [
+                "cold brew",
+                "steeping",
+                "concentrate",
+                "dilution"
+            ],
+            "common_roles": [
+                "specialty coffee retail",
+                "beverage preparation staff",
+                "café operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "AeroPress technique and recipe development",
+            "aliases": [
+                "AeroPress brewing",
+                "AeroPress recipes",
+                "pressurized immersion brewing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Execute and adapt AeroPress methods (standard and inverted), optimize recipes for grind, dose, water temp and plunge speed to achieve desired cup profiles.",
+            "parent_skill": "Brewed coffee methods",
+            "related_skills": [
+                "Grind size calibration and grinder setup",
+                "Temperature control and kettle pouring technique",
+                "Brew ratio and yield calculation"
+            ],
+            "keywords": [
+                "AeroPress",
+                "inverted method",
+                "plunge",
+                "recipe development"
+            ],
+            "common_roles": [
+                "specialty coffee retail",
+                "café operations",
+                "beverage preparation staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Siphon (vacuum pot) brewing",
+            "aliases": [
+                "vacuum pot brewing",
+                "syphon brewing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operate siphon\/vacuum coffee equipment including heat control, timing, filter handling and assembly to produce clear, balanced brews.",
+            "parent_skill": "Brewed coffee methods",
+            "related_skills": [
+                "Temperature control and kettle pouring technique",
+                "Grind size calibration and grinder setup",
+                "Brew ratio and yield calculation"
+            ],
+            "keywords": [
+                "siphon",
+                "vacuum pot",
+                "heat control",
+                "vacuum brewing"
+            ],
+            "common_roles": [
+                "specialty coffee retail",
+                "beverage preparation staff",
+                "café operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Moka pot preparation",
+            "aliases": [
+                "stovetop espresso",
+                "Moka brewing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Brew coffee using a Moka pot, managing grind, dose, heat application and extraction timing to avoid bitterness and ensure proper pressure extraction.",
+            "parent_skill": "Brewed coffee methods",
+            "related_skills": [
+                "Grind size calibration and grinder setup",
+                "Temperature control and kettle pouring technique"
+            ],
+            "keywords": [
+                "Moka pot",
+                "stovetop",
+                "pressure extraction",
+                "stove"
+            ],
+            "common_roles": [
+                "café operations",
+                "beverage preparation staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Commercial drip\/batch coffee brewer operation and maintenance",
+            "aliases": [
+                "commercial drip brewer operation",
+                "batch brewer maintenance",
+                "coffee urn operation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Operate, calibrate and maintain commercial drip and batch brewers (setting grind, dose, water volume, cleaning cycles and basic troubleshooting) for high-volume service.",
+            "parent_skill": "Brewed coffee methods",
+            "related_skills": [
+                "Water chemistry optimization for coffee brewing",
+                "Brew ratio and yield calculation",
+                "Food safety and beverage sanitation"
+            ],
+            "keywords": [
+                "batch brewer",
+                "commercial drip",
+                "maintenance",
+                "calibration"
+            ],
+            "common_roles": [
+                "foodservice beverage operations",
+                "café operations",
+                "hospitality beverage staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Grind size calibration and grinder setup",
+            "aliases": [
+                "grinder calibration",
+                "grind adjustment",
+                "grinder setup and dosing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Select and adjust grinder settings and dosing for different brew methods, maintain consistent particle distribution and manage grinder cleaning\/maintenance routines.",
+            "parent_skill": "Brewed coffee methods",
+            "related_skills": [
+                "Pour-over brewing technique",
+                "Espresso extraction measurement and control",
+                "Brew ratio and yield calculation"
+            ],
+            "keywords": [
+                "grinder",
+                "calibration",
+                "particle size",
+                "dosing"
+            ],
+            "common_roles": [
+                "café operations",
+                "specialty coffee retail",
+                "beverage preparation staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Brew ratio and yield calculation",
+            "aliases": [
+                "water-to-coffee ratio calculation",
+                "brew yield calculation",
+                "dose-to-water ratio"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculate and apply water-to-coffee ratios, dose, brew yield and percent extraction to standardize recipes and scale preparations across brew methods.",
+            "parent_skill": "Brewed coffee methods",
+            "related_skills": [
+                "Grind size calibration and grinder setup",
+                "Brew strength and extraction measurement (TDS\/refractometer)",
+                "Cold brew preparation and dilution"
+            ],
+            "keywords": [
+                "brew ratio",
+                "TDS",
+                "extraction yield",
+                "dose"
+            ],
+            "common_roles": [
+                "specialty coffee retail",
+                "beverage quality control",
+                "café operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Brew strength and extraction measurement (TDS\/refractometer)",
+            "aliases": [
+                "TDS measurement",
+                "refractometer use",
+                "extraction yield measurement"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Use refractometers\/TDS meters and calculation methods to measure brew strength and percent extraction, interpret results and adjust recipes for consistent cup quality.",
+            "parent_skill": "Brewed coffee methods",
+            "related_skills": [
+                "Brew ratio and yield calculation",
+                "Water chemistry optimization for coffee brewing",
+                "Grind size calibration and grinder setup"
+            ],
+            "keywords": [
+                "TDS",
+                "refractometer",
+                "extraction",
+                "brew strength"
+            ],
+            "common_roles": [
+                "beverage quality control",
+                "specialty coffee retail",
+                "café operations"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

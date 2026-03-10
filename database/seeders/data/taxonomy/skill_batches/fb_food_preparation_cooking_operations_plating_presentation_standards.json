@@ -1,0 +1,250 @@
+{
+    "domain": "F&B",
+    "category": "Food Preparation & Cooking Operations",
+    "subcategory": "Plating & presentation standards",
+    "skills": [
+        {
+            "canonical_name": "Plate composition and layout",
+            "aliases": [
+                "plating composition",
+                "plate layout",
+                "food plating design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing the arrangement and spatial relationships of food components on a plate to achieve visual harmony, portioning, and balance.",
+            "parent_skill": "Plating & presentation standards",
+            "related_skills": [
+                "Color and texture balance in plating",
+                "Garnish selection and application",
+                "Precision plating with tweezers and molds"
+            ],
+            "keywords": [
+                "composition",
+                "layout",
+                "negative space",
+                "focal point"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Garnish selection and application",
+            "aliases": [
+                "garnish placement",
+                "edible garnishing",
+                "finishing garnishes"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Choosing appropriate edible garnishes and applying them to enhance flavor, texture and visual appeal without overpowering the dish.",
+            "parent_skill": "Plating & presentation standards",
+            "related_skills": [
+                "Plate composition and layout",
+                "Precision plating with tweezers and molds",
+                "Saucing and finishing techniques"
+            ],
+            "keywords": [
+                "garnish",
+                "herbs",
+                "microgreens",
+                "edible flowers"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Saucing and finishing techniques",
+            "aliases": [
+                "saucing",
+                "sauce placement",
+                "sauce smear techniques"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying sauces and finishing touches (smears, dots, pours, glazes) to complement the dish aesthetically and in flavor while controlling portion and consistency.",
+            "parent_skill": "Plating & presentation standards",
+            "related_skills": [
+                "Garnish selection and application",
+                "Plate composition and layout",
+                "Piping bag technique for decorative applications"
+            ],
+            "keywords": [
+                "sauce",
+                "glaze",
+                "dotting",
+                "smear"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Portion control for plating consistency",
+            "aliases": [
+                "portioning",
+                "serving size consistency",
+                "consistent plating portions"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Measuring and controlling portion sizes and component weights to ensure consistent plating, cost control and customer experience across service.",
+            "parent_skill": "Plating & presentation standards",
+            "related_skills": [
+                "Service-pass plating & pass holding techniques",
+                "Plate composition and layout"
+            ],
+            "keywords": [
+                "portion control",
+                "weights",
+                "consistency",
+                "scales"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Color and texture balance in plating",
+            "aliases": [
+                "color balance",
+                "texture contrast",
+                "visual contrast in plating"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluating and composing contrasting colors, shapes and textures to create visually appealing and appetizing plates that also signal mouthfeel and flavor expectations.",
+            "parent_skill": "Plating & presentation standards",
+            "related_skills": [
+                "Plate composition and layout",
+                "Garnish selection and application"
+            ],
+            "keywords": [
+                "color theory",
+                "texture",
+                "contrast",
+                "visual appeal"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Service-pass plating & pass holding techniques",
+            "aliases": [
+                "pass plating",
+                "plating for service",
+                "pass holding techniques"
+            ],
+            "skill_type": "process_skill",
+            "description": "Plating and staging dishes for rapid pickup at the service pass, including timing, plating order and techniques to maintain temperature, integrity and appearance during service.",
+            "parent_skill": "Plating & presentation standards",
+            "related_skills": [
+                "Portion control for plating consistency",
+                "Temperature management during plating"
+            ],
+            "keywords": [
+                "service pass",
+                "timing",
+                "hold time",
+                "expediting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Precision plating (tweezers, molds, fine placement)",
+            "aliases": [
+                "precision plating",
+                "tweezer plating",
+                "mold plating"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Executing exact placement of small components and delicate garnishes using fine motor control and precision tools to achieve refined, high-end presentation.",
+            "parent_skill": "Plating & presentation standards",
+            "related_skills": [
+                "Plating tools operation (tweezers, squeeze bottles, ring molds)",
+                "Garnish selection and application"
+            ],
+            "keywords": [
+                "precision",
+                "tweezers",
+                "fine placement",
+                "molds"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Plating tools operation (tweezers, squeeze bottles, ring molds)",
+            "aliases": [
+                "plating tool use",
+                "use of tweezers and ring molds",
+                "squeeze bottle handling"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Proper selection, handling and maintenance of common plating tools (e.g., tweezers, squeeze bottles, ring molds, offset spatulas) to enable precise and efficient presentation work.",
+            "parent_skill": "Plating & presentation standards",
+            "related_skills": [
+                "Precision plating (tweezers, molds, fine placement)",
+                "Piping bag technique for decorative applications"
+            ],
+            "keywords": [
+                "tweezers",
+                "squeeze bottle",
+                "ring mold",
+                "offset spatula"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Piping bag technique for decorative applications",
+            "aliases": [
+                "piping bag technique",
+                "pastry bag technique",
+                "decorative piping"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Controlling piping bags, tips and consistencies to apply purees, mousses, creams or gels in precise decorative patterns and portions on plates.",
+            "parent_skill": "Plating & presentation standards",
+            "related_skills": [
+                "Saucing and finishing techniques",
+                "Plating tools operation (tweezers, squeeze bottles, ring molds)"
+            ],
+            "keywords": [
+                "piping",
+                "pastry bag",
+                "nozzles",
+                "consistency"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen-aware plating and cross-contact prevention",
+            "aliases": [
+                "allergen-safe plating",
+                "allergen segregation",
+                "cross-contact prevention"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Practices to prevent cross-contact and ensure correct labeling\/placement of allergen-free components during plating, safeguarding guests with food allergies and complying with safety protocols.",
+            "parent_skill": "Plating & presentation standards",
+            "related_skills": [
+                "Service-pass plating & pass holding techniques",
+                "Portion control for plating consistency"
+            ],
+            "keywords": [
+                "allergens",
+                "cross-contact",
+                "segregation",
+                "food allergy safety"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

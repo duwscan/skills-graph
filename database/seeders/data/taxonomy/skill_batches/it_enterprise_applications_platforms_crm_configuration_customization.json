@@ -1,0 +1,278 @@
+{
+    "domain": "IT",
+    "category": "Enterprise Applications & Platforms",
+    "subcategory": "CRM configuration & customization",
+    "skills": [
+        {
+            "canonical_name": "Salesforce Platform Configuration",
+            "aliases": [
+                "Salesforce configuration",
+                "Salesforce setup",
+                "Salesforce declarative customization",
+                "Salesforce admin configuration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring Salesforce orgs using declarative features (Objects, Fields, Page Layouts, Profiles, Permission Sets, Record Types, Validation Rules, Flows) without writing custom Apex code.",
+            "parent_skill": "CRM configuration & customization",
+            "related_skills": [
+                "CRM Data Modeling",
+                "CRM UI\/UX Customization",
+                "CRM Security & Access Model Configuration",
+                "CRM Workflow & Process Automation",
+                "CRM Reporting & Dashboard Configuration"
+            ],
+            "keywords": [
+                "Salesforce",
+                "Objects",
+                "Page Layouts",
+                "Permission Sets",
+                "Validation Rules",
+                "Flows"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Microsoft Dynamics 365 CE Customization",
+            "aliases": [
+                "Dynamics 365 customization",
+                "D365 CE customization",
+                "Dynamics CRM configuration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Customizing Microsoft Dynamics 365 Customer Engagement using built-in configuration tools (entities, forms, business rules, Business Process Flows, Power Automate integration).",
+            "parent_skill": "CRM configuration & customization",
+            "related_skills": [
+                "CRM Data Modeling",
+                "CRM Workflow & Process Automation",
+                "CRM Integration using APIs & Middleware",
+                "CRM Security & Access Model Configuration"
+            ],
+            "keywords": [
+                "Dynamics 365",
+                "D365",
+                "entities",
+                "forms",
+                "Power Automate",
+                "Business Process Flows"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "CRM Data Modeling",
+            "aliases": [
+                "CRM data model design",
+                "Entity and relationship design",
+                "CRM schema design"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Designing CRM data structures and relationships (entities\/objects, fields, lookup\/relationship types, normalization) to support business processes and reporting needs.",
+            "parent_skill": "CRM configuration & customization",
+            "related_skills": [
+                "Salesforce Platform Configuration",
+                "Microsoft Dynamics 365 CE Customization",
+                "CRM Data Migration & ETL",
+                "CRM Reporting & Dashboard Configuration"
+            ],
+            "keywords": [
+                "data model",
+                "entities",
+                "relationships",
+                "normalization",
+                "lookups"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "CRM Workflow & Process Automation",
+            "aliases": [
+                "CRM process automation",
+                "Declarative automation",
+                "Workflow rules and flows"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and implementing automated CRM processes (workflows, flows, process builders, scheduled automation) to enforce business rules, route records and trigger actions.",
+            "parent_skill": "CRM configuration & customization",
+            "related_skills": [
+                "Salesforce Platform Configuration",
+                "Microsoft Dynamics 365 CE Customization",
+                "CRM Integration using APIs & Middleware",
+                "CRM Data Modeling"
+            ],
+            "keywords": [
+                "automation",
+                "workflows",
+                "flows",
+                "business rules",
+                "process builder"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "CRM Integration using APIs & Middleware",
+            "aliases": [
+                "CRM API integration",
+                "CRM middleware integration",
+                "CRM connector development"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Integrating CRM systems with external systems using REST\/SOAP APIs, middleware platforms (MuleSoft, Boomi, Logic Apps, Zapier), and ETL tools to synchronize data and orchestrate processes.",
+            "parent_skill": "CRM configuration & customization",
+            "related_skills": [
+                "CRM Data Migration & ETL",
+                "CRM Workflow & Process Automation",
+                "CRM Custom Code Development",
+                "CRM Security & Access Model Configuration"
+            ],
+            "keywords": [
+                "API",
+                "REST",
+                "SOAP",
+                "middleware",
+                "MuleSoft",
+                "Boomi",
+                "ETL"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "CRM Data Migration & ETL",
+            "aliases": [
+                "CRM migration",
+                "CRM ETL",
+                "data import\/export for CRM"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning and executing data migration into CRM systems, including mapping, cleansing, deduplication, batch imports, validation, and using ETL tools\/scripting to move and transform data.",
+            "parent_skill": "CRM configuration & customization",
+            "related_skills": [
+                "CRM Data Modeling",
+                "CRM Integration using APIs & Middleware",
+                "CRM Reporting & Dashboard Configuration"
+            ],
+            "keywords": [
+                "data migration",
+                "ETL",
+                "data cleansing",
+                "deduplication",
+                "data mapping"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "CRM Security & Access Model Configuration",
+            "aliases": [
+                "CRM security configuration",
+                "CRM access control",
+                "roles and permissions configuration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Defining and configuring CRM security: role hierarchies, profiles, permission sets, sharing rules, field-level security and org-wide defaults to enforce least privilege and compliance requirements.",
+            "parent_skill": "CRM configuration & customization",
+            "related_skills": [
+                "Salesforce Platform Configuration",
+                "Microsoft Dynamics 365 CE Customization",
+                "CRM Integration using APIs & Middleware"
+            ],
+            "keywords": [
+                "security model",
+                "roles",
+                "permissions",
+                "sharing rules",
+                "field-level security"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "CRM UI\/UX Customization",
+            "aliases": [
+                "CRM user interface customization",
+                "page layout customization",
+                "form and view customization"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Customizing CRM user interfaces and user experience (page layouts, mobile layouts, Lightning pages, quick actions, custom forms and components) to optimize user workflows and adoption.",
+            "parent_skill": "CRM configuration & customization",
+            "related_skills": [
+                "Salesforce Platform Configuration",
+                "Microsoft Dynamics 365 CE Customization",
+                "CRM Workflow & Process Automation"
+            ],
+            "keywords": [
+                "page layouts",
+                "forms",
+                "Lightning",
+                "UX",
+                "mobile"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "CRM Reporting & Dashboard Configuration",
+            "aliases": [
+                "CRM report building",
+                "CRM dashboard design",
+                "analytics configuration in CRM"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Designing and configuring reports, dashboards and analytics within CRM platforms (custom report types, joined reports, dashboards, metrics and scheduled reporting) to support decision-making.",
+            "parent_skill": "CRM configuration & customization",
+            "related_skills": [
+                "CRM Data Modeling",
+                "CRM Data Migration & ETL",
+                "CRM Integration using APIs & Middleware"
+            ],
+            "keywords": [
+                "reports",
+                "dashboards",
+                "metrics",
+                "analytics",
+                "report types"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "CRM Custom Code Development",
+            "aliases": [
+                "CRM platform scripting",
+                "Apex development",
+                "CRM JavaScript customization"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Developing custom CRM functionality using platform-specific programming and scripting languages (Apex, JavaScript, plugins) and extending platform capabilities where declarative options are insufficient.",
+            "parent_skill": "CRM configuration & customization",
+            "related_skills": [
+                "Salesforce Platform Configuration",
+                "Microsoft Dynamics 365 CE Customization",
+                "CRM Integration using APIs & Middleware"
+            ],
+            "keywords": [
+                "Apex",
+                "JavaScript",
+                "custom code",
+                "plugins",
+                "extensions"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

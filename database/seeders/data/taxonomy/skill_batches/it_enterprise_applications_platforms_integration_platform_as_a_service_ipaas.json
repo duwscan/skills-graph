@@ -1,0 +1,308 @@
+{
+    "domain": "IT",
+    "category": "Enterprise Applications & Platforms",
+    "subcategory": "Integration platform as a service (iPaaS)",
+    "skills": [
+        {
+            "canonical_name": "iPaaS architecture and solution design",
+            "aliases": [
+                "integration platform architecture",
+                "iPaaS solution design",
+                "integration reference architecture"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Design scalable, resilient integration solutions and reference architectures using iPaaS platforms, including topology, failover, and deployment patterns.",
+            "parent_skill": "",
+            "related_skills": [
+                "API design and management for integrations",
+                "Hybrid integration",
+                "Integration security and identity"
+            ],
+            "keywords": [
+                "architecture",
+                "scalability",
+                "resilience",
+                "deployment model",
+                "integration patterns"
+            ],
+            "common_roles": [
+                "Integration Architect",
+                "iPaaS Architect",
+                "Cloud Integration Lead"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "API design and management for integrations",
+            "aliases": [
+                "REST API design",
+                "API governance for integrations",
+                "API lifecycle management"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Design, version, govern and manage APIs used as integration interfaces, including contracts, throttling, documentation and lifecycle policies.",
+            "parent_skill": "iPaaS architecture and solution design",
+            "related_skills": [
+                "Integration security and identity",
+                "Monitoring, logging and observability for integrations",
+                "Connector and adapter development"
+            ],
+            "keywords": [
+                "API",
+                "REST",
+                "OpenAPI",
+                "versioning",
+                "rate limiting"
+            ],
+            "common_roles": [
+                "API Developer",
+                "Integration Developer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data mapping and transformation",
+            "aliases": [
+                "data transformation",
+                "message transformation",
+                "ETL mapping"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Define and implement mappings and transformations between data schemas and message formats used in integration flows (XML, JSON, CSV, Avro, etc.).",
+            "parent_skill": "",
+            "related_skills": [
+                "Connector and adapter development",
+                "API design and management for integrations",
+                "Event-driven integration and messaging"
+            ],
+            "keywords": [
+                "mapping",
+                "XSLT",
+                "data format",
+                "schema mapping",
+                "transform"
+            ],
+            "common_roles": [
+                "Integration Developer",
+                "Data Integration Engineer",
+                "ETL Developer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Connector and adapter development",
+            "aliases": [
+                "custom connector development",
+                "adapter development",
+                "integration connector development"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Build, extend and maintain connectors\/adapters to integrate applications, databases and services with iPaaS platforms using SDKs, connectors frameworks or custom code.",
+            "parent_skill": "",
+            "related_skills": [
+                "Data mapping and transformation",
+                "MuleSoft Anypoint Platform",
+                "Integration testing and CI\/CD for iPaaS"
+            ],
+            "keywords": [
+                "connector",
+                "adapter",
+                "SDK",
+                "API client",
+                "connector lifecycle"
+            ],
+            "common_roles": [
+                "Integration Developer",
+                "Platform Engineer",
+                "iPaaS Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Event-driven integration and messaging",
+            "aliases": [
+                "event-driven architecture",
+                "pub\/sub integration",
+                "message-based integration"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Design and implement event-driven integration patterns using messaging, pub\/sub, streaming and event brokers to enable asynchronous communication between systems.",
+            "parent_skill": "",
+            "related_skills": [
+                "Monitoring, logging and observability for integrations",
+                "Hybrid integration",
+                "Data mapping and transformation"
+            ],
+            "keywords": [
+                "events",
+                "pub\/sub",
+                "message broker",
+                "streaming",
+                "asynchronous"
+            ],
+            "common_roles": [
+                "Integration Developer",
+                "Event Streaming Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Hybrid integration (on-premises to cloud)",
+            "aliases": [
+                "on-premises to cloud integration",
+                "hybrid cloud integration",
+                "hybrid connectivity"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Plan and implement integration strategies that bridge on-premises systems and cloud services, addressing network connectivity, data locality, latency and deployment models.",
+            "parent_skill": "iPaaS architecture and solution design",
+            "related_skills": [
+                "Integration security and identity",
+                "Connector and adapter development",
+                "Monitoring, logging and observability for integrations"
+            ],
+            "keywords": [
+                "hybrid",
+                "on-prem",
+                "cloud",
+                "connectivity",
+                "VPN",
+                "express route"
+            ],
+            "common_roles": [
+                "Integration Architect",
+                "Cloud Integration Engineer",
+                "iPaaS Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Integration testing and CI\/CD for iPaaS",
+            "aliases": [
+                "automated integration testing",
+                "integration pipeline automation",
+                "iPaaS CI\/CD"
+            ],
+            "skill_type": "process_skill",
+            "description": "Create automated tests and CI\/CD pipelines for integration artifacts (flows, connectors, APIs) to ensure quality, repeatable deployments and rollback capability.",
+            "parent_skill": "",
+            "related_skills": [
+                "Connector and adapter development",
+                "Monitoring, logging and observability for integrations",
+                "MuleSoft Anypoint Platform"
+            ],
+            "keywords": [
+                "CI\/CD",
+                "automation",
+                "integration tests",
+                "pipeline",
+                "unit test"
+            ],
+            "common_roles": [
+                "DevOps Engineer",
+                "Integration Developer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Monitoring, logging and observability for integrations",
+            "aliases": [
+                "integration observability",
+                "integration monitoring",
+                "log aggregation for integrations"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implement monitoring, centralized logging, tracing and alerting for integration flows and APIs to detect failures, measure SLAs and support incident response.",
+            "parent_skill": "",
+            "related_skills": [
+                "Integration testing and CI\/CD for iPaaS",
+                "Event-driven integration and messaging",
+                "Integration security and identity"
+            ],
+            "keywords": [
+                "observability",
+                "logging",
+                "tracing",
+                "metrics",
+                "alerts"
+            ],
+            "common_roles": [
+                "Site Reliability Engineer",
+                "Integration Operations",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Integration security and identity",
+            "aliases": [
+                "authentication and authorization for integrations",
+                "API security",
+                "identity federation for integrations"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Apply security controls to integrations including authentication\/authorization (OAuth, SAML, JWT), encryption, token management and compliance controls for data in transit and at rest.",
+            "parent_skill": "",
+            "related_skills": [
+                "API design and management for integrations",
+                "Hybrid integration",
+                "Monitoring, logging and observability for integrations"
+            ],
+            "keywords": [
+                "OAuth",
+                "SAML",
+                "JWT",
+                "encryption",
+                "token"
+            ],
+            "common_roles": [
+                "Security Engineer",
+                "Integration Architect",
+                "Cloud Security Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "MuleSoft Anypoint Platform",
+            "aliases": [
+                "MuleSoft",
+                "Anypoint Platform",
+                "Mule ESB (Anypoint)"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use MuleSoft Anypoint Platform to design, develop, deploy and manage integrations, APIs and connectors on an iPaaS environment.",
+            "parent_skill": "Connector and adapter development",
+            "related_skills": [
+                "API design and management for integrations",
+                "Integration testing and CI\/CD for iPaaS",
+                "Data mapping and transformation"
+            ],
+            "keywords": [
+                "MuleSoft",
+                "Anypoint",
+                "flow design",
+                "RAML",
+                "DataWeave"
+            ],
+            "common_roles": [
+                "Integration Developer",
+                "MuleSoft Developer",
+                "iPaaS Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

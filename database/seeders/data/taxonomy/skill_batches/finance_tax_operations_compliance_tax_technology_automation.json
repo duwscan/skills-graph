@@ -1,0 +1,272 @@
+{
+    "domain": "Finance",
+    "category": "Tax Operations & Compliance",
+    "subcategory": "Tax technology & automation",
+    "skills": [
+        {
+            "canonical_name": "Robotic Process Automation (RPA) for tax",
+            "aliases": [
+                "RPA for tax",
+                "Tax RPA",
+                "Robotic process automation (tax)"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design, implement and operate RPA bots to automate repetitive tax tasks such as data entry, reconciliations, returns assembly and routine calculations.",
+            "parent_skill": "Tax technology & automation",
+            "related_skills": [
+                "Intelligent Document Processing (IDP) & OCR for tax",
+                "Tax data integration & ETL pipelines",
+                "Tax process orchestration & workflow automation (BPM)",
+                "Automated tax reporting & statutory submission"
+            ],
+            "keywords": [
+                "rpa",
+                "bot",
+                "automation",
+                "UiPath",
+                "Automation Anywhere",
+                "Blue Prism"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intelligent Document Processing (IDP) & OCR for tax",
+            "aliases": [
+                "Tax OCR",
+                "IDP for tax",
+                "Document extraction for tax"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use OCR, machine learning and IDP solutions to extract structured tax data from invoices, exemption certificates, tax notices and other source documents.",
+            "parent_skill": "Tax technology & automation",
+            "related_skills": [
+                "Tax data integration & ETL pipelines",
+                "Robotic Process Automation (RPA) for tax",
+                "Automated tax reporting & statutory submission"
+            ],
+            "keywords": [
+                "ocr",
+                "idp",
+                "document extraction",
+                "invoice capture",
+                "ABBYY",
+                "Form Recognizer"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax data integration & ETL pipelines",
+            "aliases": [
+                "Tax ETL",
+                "Tax data pipelines",
+                "Data ingestion for tax"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Design and build ETL\/data pipelines to ingest, transform and consolidate tax-relevant data from ERPs, GLs, AP\/AR and external sources into tax systems or data warehouses.",
+            "parent_skill": "Tax technology & automation",
+            "related_skills": [
+                "Tax data modeling & architecture",
+                "Tax system API integration (REST\/SOAP)",
+                "Intelligent Document Processing (IDP) & OCR for tax"
+            ],
+            "keywords": [
+                "etl",
+                "data pipeline",
+                "sql",
+                "airflow",
+                "talend",
+                "data ingestion"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax system API integration (REST\/SOAP)",
+            "aliases": [
+                "Tax API integration",
+                "REST API for tax systems",
+                "SOAP integrations for tax"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Develop and manage API integrations between tax engines, e‑filing services, ERPs and third‑party tax solutions using REST, SOAP, JSON and authentication standards.",
+            "parent_skill": "Tax technology & automation",
+            "related_skills": [
+                "Tax engine implementation & configuration",
+                "Tax data integration & ETL pipelines",
+                "Automated tax reporting & statutory submission"
+            ],
+            "keywords": [
+                "api",
+                "rest",
+                "soap",
+                "json",
+                "oauth",
+                "integration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax engine implementation & configuration",
+            "aliases": [
+                "Tax engine implementation",
+                "Tax calculation engine configuration",
+                "Tax engine setup"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Configure and deploy tax calculation engines including mapping business rules, rate tables, jurisdiction logic and nexus to automate tax determination and calculation.",
+            "parent_skill": "Tax technology & automation",
+            "related_skills": [
+                "Tax data modeling & architecture",
+                "Tax system API integration (REST\/SOAP)",
+                "Automated indirect tax (VAT\/GST) processes"
+            ],
+            "keywords": [
+                "tax engine",
+                "rate tables",
+                "tax determination",
+                "nexus",
+                "mapping"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated tax reporting & statutory submission",
+            "aliases": [
+                "Tax reporting automation",
+                "E-filing automation",
+                "Automated tax returns"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Build and operate end‑to‑end automated processes to prepare, validate and submit statutory tax returns and management tax reports to authorities and stakeholders.",
+            "parent_skill": "Tax technology & automation",
+            "related_skills": [
+                "Tax data integration & ETL pipelines",
+                "Tax process orchestration & workflow automation (BPM)",
+                "Tax automation testing & validation"
+            ],
+            "keywords": [
+                "e-filing",
+                "tax returns",
+                "statutory reporting",
+                "submission",
+                "validation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax data modeling & architecture",
+            "aliases": [
+                "Tax data architecture",
+                "Tax data model design"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Design canonical tax data models, schemas and master data definitions to support consistent tax calculation, reporting and analytics across systems and jurisdictions.",
+            "parent_skill": "Tax technology & automation",
+            "related_skills": [
+                "Tax data integration & ETL pipelines",
+                "Tax engine implementation & configuration",
+                "Tax automation testing & validation"
+            ],
+            "keywords": [
+                "data model",
+                "schema",
+                "master data",
+                "taxonomy",
+                "normalization"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated indirect tax (VAT\/GST) processes",
+            "aliases": [
+                "Indirect tax automation",
+                "VAT automation",
+                "GST automation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Automate validation, calculation, reporting and recovery workflows specific to indirect taxes such as VAT, GST and sales tax, including taxability and exemption handling.",
+            "parent_skill": "Tax technology & automation",
+            "related_skills": [
+                "Tax engine implementation & configuration",
+                "Automated tax reporting & statutory submission",
+                "Tax data integration & ETL pipelines"
+            ],
+            "keywords": [
+                "vat",
+                "gst",
+                "sales tax",
+                "indirect tax",
+                "taxability"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax process orchestration & workflow automation (BPM)",
+            "aliases": [
+                "Tax workflow orchestration",
+                "BPM for tax",
+                "Tax process orchestration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and implement workflow orchestration, approval routing, exception handling and task automation for tax operations using BPM\/workflow platforms.",
+            "parent_skill": "Tax technology & automation",
+            "related_skills": [
+                "Robotic Process Automation (RPA) for tax",
+                "Automated tax reporting & statutory submission",
+                "Tax automation testing & validation"
+            ],
+            "keywords": [
+                "bpm",
+                "workflow",
+                "orchestration",
+                "approvals",
+                "Camunda",
+                "Nintex"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax automation testing & validation",
+            "aliases": [
+                "Tax system testing",
+                "Tax automation QA",
+                "Tax validation automation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Design test cases, automated test suites and validation frameworks to verify accuracy of tax calculations, mappings, integrations and end‑to‑end automated tax processes.",
+            "parent_skill": "Tax technology & automation",
+            "related_skills": [
+                "Tax engine implementation & configuration",
+                "Tax data modeling & architecture",
+                "Automated tax reporting & statutory submission"
+            ],
+            "keywords": [
+                "test automation",
+                "regression testing",
+                "data validation",
+                "unit tests",
+                "qa"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

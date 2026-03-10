@@ -1,0 +1,272 @@
+{
+    "domain": "Finance",
+    "category": "Risk, Compliance & Financial Crime (Finance-Side)",
+    "subcategory": "Third-party risk reporting support",
+    "skills": [
+        {
+            "canonical_name": "Third-party risk reporting",
+            "aliases": [
+                "Vendor risk reporting",
+                "Third party risk reporting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Preparing, consolidating, and distributing periodic and ad-hoc reports that communicate third‑party\/vendor risk exposures, status of assessments, remediation progress, and key risk indicators.",
+            "parent_skill": "Third-party risk reporting support",
+            "related_skills": [
+                "Risk data aggregation for third-party reporting",
+                "Risk reporting dashboards and visualization",
+                "Stakeholder reporting and governance communication for third-party risk",
+                "Data quality controls for vendor data"
+            ],
+            "keywords": [
+                "vendor report",
+                "third-party report",
+                "KRI",
+                "risk reporting cadence"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Risk data aggregation for third-party reporting",
+            "aliases": [
+                "Third-party risk data consolidation",
+                "Vendor risk data aggregation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Collecting and normalizing data from multiple vendor management, procurement, and operational sources to produce a single dataset suitable for risk reporting and analytics.",
+            "parent_skill": "Third-party risk reporting support",
+            "related_skills": [
+                "SQL for risk reporting and data extraction",
+                "Data quality controls for vendor data",
+                "Third-party inventory reconciliation and data lineage mapping"
+            ],
+            "keywords": [
+                "ETL",
+                "data consolidation",
+                "data normalization",
+                "data ingestion"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SQL for risk reporting and data extraction",
+            "aliases": [
+                "SQL for reporting",
+                "T-SQL for risk reporting"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Writing queries and scripts to extract, transform, join and aggregate third‑party risk data from relational databases for reports, dashboards, and analysis.",
+            "parent_skill": "Third-party risk reporting support",
+            "related_skills": [
+                "Risk data aggregation for third-party reporting",
+                "Advanced Excel for risk reporting",
+                "Report automation with ETL tools"
+            ],
+            "keywords": [
+                "SELECT",
+                "JOIN",
+                "GROUP BY",
+                "stored procedures",
+                "query optimization"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Advanced Excel for risk reporting",
+            "aliases": [
+                "Excel (PivotTables & Power Query)",
+                "Advanced Excel for reporting"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Excel features (PivotTables, Power Query, formulas, VBA\/macros where appropriate) to clean, model and present third‑party risk data for ad-hoc analysis and reporting.",
+            "parent_skill": "Third-party risk reporting support",
+            "related_skills": [
+                "SQL for risk reporting and data extraction",
+                "Risk reporting dashboards and visualization",
+                "Data quality controls for vendor data"
+            ],
+            "keywords": [
+                "PivotTable",
+                "Power Query",
+                "VLOOKUP",
+                "INDEX\/MATCH",
+                "macros"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Risk reporting dashboards and visualization",
+            "aliases": [
+                "Vendor risk dashboards",
+                "Third-party risk visualization"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing, building and maintaining interactive dashboards and visualizations that communicate trends, KRIs, heatmaps and key findings related to third‑party risk.",
+            "parent_skill": "Third-party risk reporting support",
+            "related_skills": [
+                "Power BI for risk reporting",
+                "Tableau for risk reporting",
+                "Third-party risk reporting"
+            ],
+            "keywords": [
+                "dashboard design",
+                "KPI visualization",
+                "heatmap",
+                "storytelling"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Power BI for risk reporting",
+            "aliases": [
+                "Microsoft Power BI for reporting",
+                "PowerBI for vendor risk"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using Microsoft Power BI to build data models, reports and dashboards that surface third‑party risk KPIs, trends and drill‑through analysis for stakeholders.",
+            "parent_skill": "Third-party risk reporting support",
+            "related_skills": [
+                "Risk reporting dashboards and visualization",
+                "Risk data aggregation for third-party reporting"
+            ],
+            "keywords": [
+                "Power Query",
+                "DAX",
+                "report builder",
+                "dashboard"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor risk scoring and classification models",
+            "aliases": [
+                "Third-party risk scoring",
+                "Vendor risk classification"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Developing and applying quantitative and qualitative scoring models to classify vendors by risk level, impact, and required control intensity for reporting and prioritization.",
+            "parent_skill": "Third-party risk reporting support",
+            "related_skills": [
+                "Data quality controls for vendor data",
+                "Third-party inventory reconciliation and data lineage mapping",
+                "Risk reporting dashboards and visualization"
+            ],
+            "keywords": [
+                "risk score",
+                "risk tiering",
+                "weighting",
+                "materiality"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Remediation tracking and exception management for third parties",
+            "aliases": [
+                "Vendor remediation tracking",
+                "Third-party remediation management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Tracking, reporting and coordinating remediation activities for third‑party control gaps and exceptions, including status updates, escalations and SLA monitoring.",
+            "parent_skill": "Third-party risk reporting support",
+            "related_skills": [
+                "Third-party risk reporting",
+                "Stakeholder reporting and governance communication for third-party risk"
+            ],
+            "keywords": [
+                "remediation log",
+                "issue tracking",
+                "SLA",
+                "escalation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Third-party inventory reconciliation and data lineage mapping",
+            "aliases": [
+                "Vendor inventory reconciliation",
+                "Third-party data lineage mapping"
+            ],
+            "skill_type": "process_skill",
+            "description": "Reconciling vendor and contract inventories across systems and mapping data lineage to ensure accurate, auditable inputs into third‑party risk reports.",
+            "parent_skill": "Third-party risk reporting support",
+            "related_skills": [
+                "Risk data aggregation for third-party reporting",
+                "Data quality controls for vendor data",
+                "Vendor risk scoring and classification models"
+            ],
+            "keywords": [
+                "supplier inventory",
+                "system reconciliation",
+                "data lineage",
+                "source-to-report mapping"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Data quality controls for vendor data",
+            "aliases": [
+                "Vendor data validation",
+                "Third-party data quality management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implementing validation rules, reconciliation checks and exception handling to ensure accuracy, completeness and timeliness of data used in third‑party risk reporting.",
+            "parent_skill": "Third-party risk reporting support",
+            "related_skills": [
+                "Risk data aggregation for third-party reporting",
+                "Third-party inventory reconciliation and data lineage mapping",
+                "SQL for risk reporting and data extraction"
+            ],
+            "keywords": [
+                "data validation",
+                "reconciliation",
+                "data governance",
+                "data accuracy"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Stakeholder reporting and governance communication for third-party risk",
+            "aliases": [
+                "Vendor risk stakeholder communication",
+                "Third-party risk governance reporting"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Preparing targeted narrative, executive summaries and governance-ready materials; presenting third‑party risk findings to risk committees and business stakeholders and coordinating follow-ups.",
+            "parent_skill": "Third-party risk reporting support",
+            "related_skills": [
+                "Third-party risk reporting",
+                "Remediation tracking and exception management for third parties",
+                "Risk reporting dashboards and visualization"
+            ],
+            "keywords": [
+                "executive summary",
+                "risk committee",
+                "presentation",
+                "stakeholder engagement"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

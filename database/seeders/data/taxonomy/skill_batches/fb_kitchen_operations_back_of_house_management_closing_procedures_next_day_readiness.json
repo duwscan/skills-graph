@@ -1,0 +1,301 @@
+{
+    "domain": "F&B",
+    "category": "Kitchen Operations & Back-of-House Management",
+    "subcategory": "Closing procedures & next-day readiness",
+    "skills": [
+        {
+            "canonical_name": "End-of-shift inventory reconciliation",
+            "aliases": [
+                "end of day inventory",
+                "EOD inventory reconciliation",
+                "closing inventory count"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Performing accurate counts and adjustments of food, beverage, and supply stock at shift end to reconcile records with physical inventory.",
+            "parent_skill": "Closing procedures & next-day readiness",
+            "related_skills": [
+                "Stock rotation (FIFO) implementation",
+                "Waste tracking & regulated disposal",
+                "POS end-of-day reconciliation",
+                "Next-day prep list creation & shift handover"
+            ],
+            "keywords": [
+                "inventory count",
+                "par level",
+                "stock reconciliation",
+                "variance reporting"
+            ],
+            "common_roles": [
+                "Back-of-house staff",
+                "Line cook",
+                "Prep cook",
+                "Kitchen manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Food safety closing checks",
+            "aliases": [
+                "closing food safety inspection",
+                "end-of-day HACCP checks",
+                "sanitation closing checks"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Conducting mandated end-of-day food safety and sanitation verifications (cleaning, temp checks, cross-contamination controls) to meet regulatory and internal standards.",
+            "parent_skill": "Closing procedures & next-day readiness",
+            "related_skills": [
+                "Temperature logging & cold-chain verification",
+                "Kitchen equipment shutdown & cleaning",
+                "Waste tracking & regulated disposal"
+            ],
+            "keywords": [
+                "HACCP",
+                "sanitation",
+                "food safety checklist",
+                "compliance"
+            ],
+            "common_roles": [
+                "Kitchen manager",
+                "Sous chef",
+                "Closing cook",
+                "Food safety officer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Kitchen equipment shutdown & cleaning",
+            "aliases": [
+                "equipment power-down",
+                "appliance cleaning & shutdown",
+                "end-of-day equipment cleaning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Safely powering down, cleaning, and securing kitchen appliances and equipment per manufacturer and site procedures during closing.",
+            "parent_skill": "Closing procedures & next-day readiness",
+            "related_skills": [
+                "Food safety closing checks",
+                "Equipment maintenance reporting & log",
+                "Sanitization scheduling"
+            ],
+            "keywords": [
+                "deep clean",
+                "equipment sanitation",
+                "power down",
+                "cleaning protocol"
+            ],
+            "common_roles": [
+                "Line cook",
+                "Dishwasher",
+                "Kitchen manager",
+                "Maintenance technician"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Waste tracking & regulated disposal",
+            "aliases": [
+                "waste log",
+                "food waste tracking",
+                "regulated waste disposal"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Recording and disposing of waste (food, recyclable, hazardous where applicable) in compliance with local regulations and company policies, including waste logging.",
+            "parent_skill": "Closing procedures & next-day readiness",
+            "related_skills": [
+                "End-of-shift inventory reconciliation",
+                "Food safety closing checks",
+                "Grease trap management"
+            ],
+            "keywords": [
+                "waste log",
+                "disposal compliance",
+                "recycling",
+                "organic waste"
+            ],
+            "common_roles": [
+                "Kitchen manager",
+                "Closing cook",
+                "Back-of-house staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Next-day prep list creation & shift handover",
+            "aliases": [
+                "prep list generation",
+                "closing prep planner",
+                "shift handoff for next day"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating clear, prioritized preparation lists and communicating key information to next shift to ensure efficient next-day service readiness.",
+            "parent_skill": "Closing procedures & next-day readiness",
+            "related_skills": [
+                "Prep batching & portioning for next-day service",
+                "End-of-shift inventory reconciliation",
+                "Closing checklist creation & audit"
+            ],
+            "keywords": [
+                "prep list",
+                "handover notes",
+                "shift communication",
+                "par planning"
+            ],
+            "common_roles": [
+                "Closing cook",
+                "Prep cook",
+                "Kitchen manager",
+                "Sous chef"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Temperature logging & cold-chain verification",
+            "aliases": [
+                "temp log maintenance",
+                "cold chain checks",
+                "refrigeration temperature monitoring"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Recording and verifying refrigeration\/freezer and holding temperatures at close to maintain cold-chain integrity and meet food safety regulations.",
+            "parent_skill": "Closing procedures & next-day readiness",
+            "related_skills": [
+                "Food safety closing checks",
+                "End-of-shift inventory reconciliation",
+                "Stock rotation (FIFO) implementation"
+            ],
+            "keywords": [
+                "temperature log",
+                "cold chain",
+                "refrigeration monitoring",
+                "temps check"
+            ],
+            "common_roles": [
+                "Kitchen manager",
+                "Closing cook",
+                "Food safety officer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "POS end-of-day reconciliation",
+            "aliases": [
+                "cashout and POS close",
+                "register closeout",
+                "end of day till reconciliation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Reconciling sales, cash, and electronic transactions in the point-of-sale system and resolving variances at shift close.",
+            "parent_skill": "Closing procedures & next-day readiness",
+            "related_skills": [
+                "End-of-shift inventory reconciliation",
+                "Waste tracking & regulated disposal"
+            ],
+            "keywords": [
+                "POS close",
+                "cash reconciliation",
+                "till count",
+                "sales reporting"
+            ],
+            "common_roles": [
+                "Shift supervisor",
+                "Kitchen manager",
+                "Closing cook"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Stock rotation (FIFO) implementation",
+            "aliases": [
+                "FIFO rotation",
+                "first in first out stock rotation",
+                "product rotation for freshness"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Applying First-In-First-Out principles to store, label, and rotate inventory to minimize spoilage and ensure ingredient freshness for the next day.",
+            "parent_skill": "Closing procedures & next-day readiness",
+            "related_skills": [
+                "End-of-shift inventory reconciliation",
+                "Temperature logging & cold-chain verification",
+                "Prep batching & portioning for next-day service"
+            ],
+            "keywords": [
+                "FIFO",
+                "labeling",
+                "expiry management",
+                "stock rotation"
+            ],
+            "common_roles": [
+                "Prep cook",
+                "Line cook",
+                "Kitchen manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Prep batching & portioning for next-day service",
+            "aliases": [
+                "next day batch prep",
+                "portioning for service",
+                "mise en place restocking"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Preparing, batching, and portioning ingredients and components during closing to streamline next-day service and reduce morning workload.",
+            "parent_skill": "Closing procedures & next-day readiness",
+            "related_skills": [
+                "Next-day prep list creation & shift handover",
+                "Stock rotation (FIFO) implementation",
+                "End-of-shift inventory reconciliation"
+            ],
+            "keywords": [
+                "batch prep",
+                "portion control",
+                "mise en place",
+                "pre-prep"
+            ],
+            "common_roles": [
+                "Prep cook",
+                "Line cook",
+                "Closing cook"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Closing checklist creation & audit",
+            "aliases": [
+                "closing audit",
+                "end-of-shift checklist management",
+                "closing SOP checklist"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, maintaining, and auditing standardized closing checklists (SOPs) to ensure consistent completion of closing tasks and compliance verification.",
+            "parent_skill": "Closing procedures & next-day readiness",
+            "related_skills": [
+                "Food safety closing checks",
+                "Next-day prep list creation & shift handover",
+                "Kitchen equipment shutdown & cleaning"
+            ],
+            "keywords": [
+                "SOP",
+                "checklist audit",
+                "standard operating procedure",
+                "closing SOP"
+            ],
+            "common_roles": [
+                "Kitchen manager",
+                "Shift supervisor",
+                "Senior line cook"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

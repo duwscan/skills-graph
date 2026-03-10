@@ -1,0 +1,258 @@
+{
+    "domain": "Finance",
+    "category": "Accounting Operations (Record-to-Report)",
+    "subcategory": "Accounting policy application",
+    "skills": [
+        {
+            "canonical_name": "Revenue recognition policy application",
+            "aliases": [
+                "ASC 606 application",
+                "IFRS 15 application",
+                "Revenue accounting policy"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Applying and interpreting revenue recognition policies (ASC 606 \/ IFRS 15) to transactions, contracts and disclosures, including identification of performance obligations and timing of revenue.",
+            "parent_skill": "Accounting policy application",
+            "related_skills": [
+                "Period-end close policy application and cut-off testing",
+                "Accounting estimates, judgment and disclosure documentation",
+                "Internal control and policy compliance for Record-to-Report"
+            ],
+            "keywords": [
+                "revenue recognition",
+                "performance obligations",
+                "transaction price",
+                "contract liabilities",
+                "variable consideration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Lease accounting policy application",
+            "aliases": [
+                "ASC 842 application",
+                "IFRS 16 application",
+                "Lease accounting"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Applying lease accounting policies for right-of-use assets, lease liabilities, lease classification and related disclosures in accordance with current standards.",
+            "parent_skill": "Accounting policy application",
+            "related_skills": [
+                "Impairment testing and asset valuation policy application",
+                "Accounting estimates, judgment and disclosure documentation"
+            ],
+            "keywords": [
+                "right-of-use",
+                "lease liability",
+                "lease term",
+                "discount rate",
+                "operating vs finance lease"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial consolidation and intercompany eliminations",
+            "aliases": [
+                "consolidation accounting",
+                "intercompany eliminations",
+                "group reporting"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Applying group consolidation policies including preparation of consolidation entries, minority interest treatment, intercompany reconciliation and elimination adjustments for group financial statements.",
+            "parent_skill": "Accounting policy application",
+            "related_skills": [
+                "Internal control and policy compliance for Record-to-Report",
+                "Period-end close policy application and cut-off testing"
+            ],
+            "keywords": [
+                "consolidation entries",
+                "non-controlling interest",
+                "intercompany",
+                "eliminations",
+                "investment in subsidiary"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Impairment testing and asset valuation policy application",
+            "aliases": [
+                "asset impairment policy",
+                "IAS 36 application",
+                "impairment accounting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Performing impairment assessments and fair value\/discounted cash flow valuations in line with policy, including identification of cash-generating units and impairment reversals.",
+            "parent_skill": "Accounting policy application",
+            "related_skills": [
+                "Lease accounting policy application",
+                "Accounting estimates, judgment and disclosure documentation"
+            ],
+            "keywords": [
+                "impairment",
+                "recoverable amount",
+                "fair value",
+                "discounted cash flow",
+                "cash-generating unit"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Accounting for income taxes policy application",
+            "aliases": [
+                "tax provision accounting",
+                "IAS 12 application",
+                "ASC 740 application"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Applying accounting policies for current and deferred tax accounting, tax provision calculations, valuation allowances and related disclosures under applicable standards.",
+            "parent_skill": "Accounting policy application",
+            "related_skills": [
+                "Internal control and policy compliance for Record-to-Report",
+                "Accounting estimates, judgment and disclosure documentation"
+            ],
+            "keywords": [
+                "deferred tax",
+                "current tax",
+                "valuation allowance",
+                "temporary differences",
+                "tax provision"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Foreign currency translation and hedge accounting policy application",
+            "aliases": [
+                "FX translation accounting",
+                "hedge accounting policy",
+                "IAS 21 \/ IFRS 9 application"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Applying policies for translation of foreign operations, remeasurement, functional currency determination and hedge accounting for derivatives and cash flow hedges.",
+            "parent_skill": "Accounting policy application",
+            "related_skills": [
+                "Internal control and policy compliance for Record-to-Report",
+                "Period-end close policy application and cut-off testing"
+            ],
+            "keywords": [
+                "functional currency",
+                "translation",
+                "remeasurement",
+                "hedge accounting",
+                "derivatives"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Accounting estimates, judgment and disclosure documentation",
+            "aliases": [
+                "accounting estimates policy",
+                "judgment documentation",
+                "accounting disclosures process"
+            ],
+            "skill_type": "process_skill",
+            "description": "Establishing, documenting and testing accounting estimates and management judgments (e.g., reserves, useful lives, contingencies) and preparing related disclosures per policy.",
+            "parent_skill": "Accounting policy application",
+            "related_skills": [
+                "Impairment testing and asset valuation policy application",
+                "Accounting for income taxes policy application"
+            ],
+            "keywords": [
+                "estimates",
+                "judgment",
+                "disclosure",
+                "management assumptions",
+                "reserve calculation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Accounting policy change management and restatements",
+            "aliases": [
+                "policy change implementation",
+                "retrospective application",
+                "accounting restatement process"
+            ],
+            "skill_type": "process_skill",
+            "description": "Managing changes to accounting policies, assessing voluntary\/mandatory changes, applying retrospective or prospective treatments and preparing restatement adjustments and disclosures.",
+            "parent_skill": "Accounting policy application",
+            "related_skills": [
+                "Internal control and policy compliance for Record-to-Report",
+                "Financial consolidation and intercompany eliminations"
+            ],
+            "keywords": [
+                "policy change",
+                "retrospective application",
+                "restatement",
+                "disclosure",
+                "transition adjustment"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Internal control and policy compliance for Record-to-Report",
+            "aliases": [
+                "R2R internal controls",
+                "SOX-related policy compliance",
+                "policy controls testing"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Designing, operating and testing internal controls to ensure accounting policies are correctly applied across the Record-to-Report cycle, including control documentation and remediation.",
+            "parent_skill": "Accounting policy application",
+            "related_skills": [
+                "Accounting policy change management and restatements",
+                "Period-end close policy application and cut-off testing"
+            ],
+            "keywords": [
+                "internal control",
+                "control testing",
+                "policy compliance",
+                "remediation",
+                "segregation of duties"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Period-end close policy application and cut-off testing",
+            "aliases": [
+                "close process policy",
+                "cut-off procedures",
+                "period-end accounting policy"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Applying period-end accounting policies and performing cut-off testing to ensure transactions are recorded in the correct reporting period and close timelines are met.",
+            "parent_skill": "Accounting policy application",
+            "related_skills": [
+                "Revenue recognition policy application",
+                "Financial consolidation and intercompany eliminations"
+            ],
+            "keywords": [
+                "period-end close",
+                "cut-off testing",
+                "accruals",
+                "reconciliations",
+                "close calendar"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

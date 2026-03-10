@@ -1,0 +1,306 @@
+{
+    "domain": "Finance",
+    "category": "Corporate Finance & Capital Structure",
+    "subcategory": "Transaction due diligence support",
+    "skills": [
+        {
+            "canonical_name": "Financial due diligence",
+            "aliases": [
+                "transaction due diligence",
+                "commercial due diligence (financial)",
+                "deal due diligence"
+            ],
+            "skill_type": "process_skill",
+            "description": "Systematic assessment of a target's historical and forecast financial performance, risks and drivers to support transaction valuation and decision-making.",
+            "parent_skill": "Transaction due diligence support",
+            "related_skills": [
+                "Quality of earnings analysis",
+                "Financial statement analysis",
+                "Transaction financial modeling"
+            ],
+            "keywords": [
+                "deal",
+                "assessment",
+                "financial performance",
+                "risk identification",
+                "valuation support"
+            ],
+            "common_roles": [
+                "M&A advisory professionals",
+                "Transaction advisory teams",
+                "Private equity and corporate development"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Quality of earnings analysis",
+            "aliases": [
+                "QoE analysis",
+                "earnings quality review",
+                "normalized EBITDA analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Identifying one-off, non-recurring, and accounting adjustments to normalize reported earnings and estimate sustainable cash flow for valuation.",
+            "parent_skill": "Transaction due diligence support",
+            "related_skills": [
+                "Financial due diligence",
+                "Working capital and cash flow analysis",
+                "Financial statement analysis"
+            ],
+            "keywords": [
+                "EBITDA adjustments",
+                "non-recurring items",
+                "normalization",
+                "sustainable earnings"
+            ],
+            "common_roles": [
+                "M&A advisory professionals",
+                "Private equity analysts",
+                "Transaction advisory consultants"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Transaction financial modeling",
+            "aliases": [
+                "deal modeling",
+                "M&A financial modeling",
+                "transaction valuation modeling"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Building integrated financial models (cash flow, debt schedules, purchase price allocation, sensitivity and accretion\/dilution) to support transaction structuring and valuation.",
+            "parent_skill": "Transaction due diligence support",
+            "related_skills": [
+                "Financial due diligence",
+                "Working capital and cash flow analysis",
+                "Integration readiness assessment"
+            ],
+            "keywords": [
+                "DCF",
+                "LBO",
+                "sensitivity analysis",
+                "purchase price allocation",
+                "debt schedule"
+            ],
+            "common_roles": [
+                "Corporate development",
+                "Investment professionals",
+                "Transaction advisory teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Working capital and cash flow analysis",
+            "aliases": [
+                "working capital analysis",
+                "cash conversion cycle analysis",
+                "operating cash flow assessment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Assessing receivables, payables, inventory and other operating items to determine normalized working capital needs and cash conversion implications for a transaction.",
+            "parent_skill": "Transaction due diligence support",
+            "related_skills": [
+                "Quality of earnings analysis",
+                "Transaction financial modeling",
+                "Financial statement analysis"
+            ],
+            "keywords": [
+                "inventory",
+                "AR days",
+                "AP days",
+                "cash conversion",
+                "normalized working capital"
+            ],
+            "common_roles": [
+                "Transaction advisory consultants",
+                "Private equity analysts",
+                "Corporate finance teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax due diligence",
+            "aliases": [
+                "tax diligence",
+                "tax transactional review",
+                "tax risk assessment"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Reviewing historical and prospective tax positions, exposures, structuring issues and compliance requirements that affect deal valuation and post-close obligations.",
+            "parent_skill": "Transaction due diligence support",
+            "related_skills": [
+                "Financial due diligence",
+                "Accounting adjustments and normalization",
+                "Integration readiness assessment"
+            ],
+            "keywords": [
+                "tax exposures",
+                "tax structuring",
+                "deferred tax",
+                "transfer pricing",
+                "tax liabilities"
+            ],
+            "common_roles": [
+                "Transaction advisory teams",
+                "Tax advisory professionals",
+                "Private equity due diligence"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Accounting adjustments and normalization",
+            "aliases": [
+                "accounting normalization",
+                "financial statement adjustments",
+                "IFRS\/GAAP adjustments"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Identifying and applying accounting adjustments under relevant standards to restate financial statements for comparability and valuation purposes.",
+            "parent_skill": "Transaction due diligence support",
+            "related_skills": [
+                "Quality of earnings analysis",
+                "Financial statement analysis",
+                "Tax due diligence"
+            ],
+            "keywords": [
+                "IFRS",
+                "GAAP",
+                "restatement",
+                "adjustments",
+                "comparability"
+            ],
+            "common_roles": [
+                "Transaction advisory professionals",
+                "Audit and accounting specialists",
+                "Private equity analysts"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Due diligence data analytics",
+            "aliases": [
+                "transaction data analytics",
+                "data analytics for due diligence",
+                "forensic data analysis (due diligence)"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using data extraction, querying and analytical tools (e.g., SQL, Python, Alteryx, IDEA) to analyze large transactional datasets for revenue, margin, and anomaly detection in diligence.",
+            "parent_skill": "Transaction due diligence support",
+            "related_skills": [
+                "Quality of earnings analysis",
+                "Financial statement analysis",
+                "Virtual data room management"
+            ],
+            "keywords": [
+                "SQL",
+                "Python",
+                "Alteryx",
+                "data extraction",
+                "anomaly detection"
+            ],
+            "common_roles": [
+                "Due diligence analysts",
+                "Forensic accountants",
+                "Transaction advisory teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Vendor and customer concentration analysis",
+            "aliases": [
+                "counterparty concentration analysis",
+                "customer concentration review",
+                "supplier concentration assessment"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Evaluating revenue and supplier concentration, contract terms and exposure to key counterparties to identify dependency risks and value implications for a deal.",
+            "parent_skill": "Transaction due diligence support",
+            "related_skills": [
+                "Due diligence data analytics",
+                "Financial due diligence",
+                "Contract and commercial review"
+            ],
+            "keywords": [
+                "concentration risk",
+                "major customers",
+                "major suppliers",
+                "contract terms",
+                "dependency"
+            ],
+            "common_roles": [
+                "M&A advisors",
+                "Commercial due diligence teams",
+                "Private equity deal teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Integration readiness and carve-out planning",
+            "aliases": [
+                "post-merger integration readiness",
+                "carve-out due diligence",
+                "separation planning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Assessing operational separation points, IT and finance carve-out requirements, and integration risks to inform transaction structuring and transition planning.",
+            "parent_skill": "Transaction due diligence support",
+            "related_skills": [
+                "Transaction financial modeling",
+                "Virtual data room management",
+                "Accounting adjustments and normalization"
+            ],
+            "keywords": [
+                "carve-out",
+                "integration",
+                "separation",
+                "transition services",
+                "IT separation"
+            ],
+            "common_roles": [
+                "Corporate development teams",
+                "Integration planners",
+                "Transaction advisory professionals"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Virtual data room (VDR) administration",
+            "aliases": [
+                "data room management",
+                "VDR management",
+                "document management for deals"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Organizing, securing and managing due diligence documentation in virtual data rooms (e.g., setting permissions, indexing documents and audit trails) to support efficient deal review.",
+            "parent_skill": "Transaction due diligence support",
+            "related_skills": [
+                "Due diligence data analytics",
+                "Integration readiness and carve-out planning",
+                "Financial due diligence"
+            ],
+            "keywords": [
+                "VDR",
+                "Intralinks",
+                "Datasite",
+                "document indexing",
+                "access controls"
+            ],
+            "common_roles": [
+                "Transaction support coordinators",
+                "Deal managers",
+                "M&A project teams"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

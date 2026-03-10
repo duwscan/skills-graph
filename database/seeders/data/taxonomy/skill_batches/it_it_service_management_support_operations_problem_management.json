@@ -1,0 +1,250 @@
+{
+    "domain": "IT",
+    "category": "IT Service Management & Support Operations",
+    "subcategory": "Problem management",
+    "skills": [
+        {
+            "canonical_name": "Root cause analysis (RCA)",
+            "aliases": [
+                "RCA",
+                "Root-cause analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Structured techniques and methods used to identify the underlying cause(s) of incidents and recurring issues.",
+            "parent_skill": "Problem management",
+            "related_skills": [
+                "RCA facilitation and cross-functional workshops",
+                "Problem investigation and diagnostics",
+                "Problem trend analysis and reporting"
+            ],
+            "keywords": [
+                "5 Whys",
+                "Fishbone",
+                "fault tree",
+                "causal analysis"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Problem investigation and diagnostics",
+            "aliases": [
+                "Problem diagnosis",
+                "Technical problem investigation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Technical troubleshooting methods for reproducing, isolating and diagnosing the causes of service problems using logs, traces and monitoring data.",
+            "parent_skill": "Problem management",
+            "related_skills": [
+                "Root cause analysis (RCA)",
+                "ITSM tools: problem management configuration (ServiceNow, Jira Service Management)",
+                "Proactive problem identification"
+            ],
+            "keywords": [
+                "log analysis",
+                "debugging",
+                "replication",
+                "observability"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Known Error Database (KEDB) management",
+            "aliases": [
+                "Known error database management",
+                "KEDB maintenance",
+                "Known-error lifecycle management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Creation, maintenance and lifecycle governance of known error records and documented workarounds to reduce incident impact and accelerate resolution.",
+            "parent_skill": "Problem management",
+            "related_skills": [
+                "Problem closure and verification",
+                "Problem metrics and KPI definition & governance",
+                "Problem-to-change coordination"
+            ],
+            "keywords": [
+                "workaround",
+                "known error",
+                "knowledge base",
+                "record maintenance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Problem trend analysis and reporting",
+            "aliases": [
+                "Problem analytics",
+                "Problem trend detection"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyzing incident and problem data to identify patterns, recurring issues and long‑term trends and producing actionable reports and dashboards.",
+            "parent_skill": "Problem management",
+            "related_skills": [
+                "Problem metrics and KPI definition & governance",
+                "Root cause analysis (RCA)",
+                "Proactive problem identification"
+            ],
+            "keywords": [
+                "trend analysis",
+                "dashboards",
+                "root cause trends",
+                "data aggregation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Problem prioritization and impact assessment",
+            "aliases": [
+                "Problem prioritization",
+                "Impact assessment for problems"
+            ],
+            "skill_type": "process_skill",
+            "description": "Assessing business and technical impact to assign priority levels and drive remediation ordering for problems based on risk and ROI.",
+            "parent_skill": "Problem management",
+            "related_skills": [
+                "Problem metrics and KPI definition & governance",
+                "Problem-to-change coordination",
+                "Problem management process design & continual improvement"
+            ],
+            "keywords": [
+                "business impact",
+                "priority model",
+                "risk assessment",
+                "severity"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Problem-to-change coordination",
+            "aliases": [
+                "Problem-change linkage",
+                "Problem and change coordination"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing the transition of problem solutions into change requests and coordinating with change management to ensure safe deployment of fixes.",
+            "parent_skill": "Problem management",
+            "related_skills": [
+                "Known Error Database (KEDB) management",
+                "Problem prioritization and impact assessment",
+                "ITSM tools: problem management configuration (ServiceNow, Jira Service Management)"
+            ],
+            "keywords": [
+                "RFC",
+                "change advisory board",
+                "release coordination",
+                "deployment planning"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Problem management process design & continual improvement",
+            "aliases": [
+                "Problem management process design",
+                "Problem process improvement"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing, documenting and continuously improving end-to-end problem management processes, workflows and handoffs to increase efficiency and reduce recurrence.",
+            "parent_skill": "Problem management",
+            "related_skills": [
+                "Problem prioritization and impact assessment",
+                "Problem metrics and KPI definition & governance",
+                "Known Error Database (KEDB) management"
+            ],
+            "keywords": [
+                "process mapping",
+                "ITIL",
+                "PDCA",
+                "SLA alignment"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ITSM tools: problem management configuration (ServiceNow, Jira Service Management)",
+            "aliases": [
+                "ServiceNow Problem Management",
+                "Jira Service Management - Problem",
+                "ITSM problem module configuration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and using IT service management platforms' problem modules (workflows, KEDB, integrations, reporting) to support problem lifecycle activities.",
+            "parent_skill": "Problem management",
+            "related_skills": [
+                "Known Error Database (KEDB) management",
+                "Problem investigation and diagnostics",
+                "Problem-to-change coordination"
+            ],
+            "keywords": [
+                "ServiceNow",
+                "Jira Service Management",
+                "workflow configuration",
+                "ITSM integration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "RCA facilitation and cross-functional workshops",
+            "aliases": [
+                "RCA facilitation",
+                "Blameless postmortem facilitation",
+                "Cross-functional problem workshops"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Leading cross-team investigative sessions and blameless postmortems to extract knowledge, align stakeholders and produce actionable corrective plans.",
+            "parent_skill": "Problem management",
+            "related_skills": [
+                "Root cause analysis (RCA)",
+                "Problem management process design & continual improvement",
+                "Problem closure and verification"
+            ],
+            "keywords": [
+                "facilitation",
+                "stakeholder engagement",
+                "postmortem",
+                "action tracking"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Problem metrics and KPI definition & governance",
+            "aliases": [
+                "Problem metrics",
+                "Problem KPI definition"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Defining, measuring and governing KPIs and SLAs for problem management (e.g., time-to-root-cause, recurrence rates, KEDB coverage) to drive accountability and improvement.",
+            "parent_skill": "Problem management",
+            "related_skills": [
+                "Problem trend analysis and reporting",
+                "Problem prioritization and impact assessment",
+                "Problem management process design & continual improvement"
+            ],
+            "keywords": [
+                "MTTR",
+                "recurrence rate",
+                "KPI",
+                "governance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

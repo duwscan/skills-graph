@@ -1,0 +1,298 @@
+{
+    "domain": "Finance",
+    "category": "Cost Accounting & Operational Finance",
+    "subcategory": "Cost allocation methodologies",
+    "skills": [
+        {
+            "canonical_name": "Activity-Based Costing (ABC)",
+            "aliases": [
+                "ABC",
+                "Activity Based Costing",
+                "Activity-based costing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Methodology that allocates overhead and indirect costs to products\/services based on activities and measurable cost drivers to improve cost accuracy.",
+            "parent_skill": "Cost allocation methodologies",
+            "related_skills": [
+                "Cost Driver Analysis",
+                "Time-Driven Activity-Based Costing (TDABC)",
+                "Cost Pool Design",
+                "Overhead Allocation"
+            ],
+            "keywords": [
+                "activities",
+                "cost drivers",
+                "overhead",
+                "activity cost pools"
+            ],
+            "common_roles": [
+                "Cost Accountant",
+                "Management Accountant",
+                "Financial Analyst",
+                "FP&A Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Time-Driven Activity-Based Costing (TDABC)",
+            "aliases": [
+                "TDABC",
+                "Time Driven ABC",
+                "Time-driven activity based costing"
+            ],
+            "skill_type": "process_skill",
+            "description": "ABC variant that assigns resource costs to activities using time equations and practical capacity to simplify data requirements and support time-based costing.",
+            "parent_skill": "Cost allocation methodologies",
+            "related_skills": [
+                "Activity-Based Costing (ABC)",
+                "Cost Driver Analysis",
+                "Cost Allocation Modeling"
+            ],
+            "keywords": [
+                "time equations",
+                "practical capacity",
+                "time-driven",
+                "resource consumption"
+            ],
+            "common_roles": [
+                "Management Accountant",
+                "Cost Accountant",
+                "Operational Finance Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Standard Costing and Variance Analysis",
+            "aliases": [
+                "Standard costing",
+                "Variance analysis",
+                "Standard cost variance analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Use of predetermined standard costs for products\/services and analysis of variances between standard and actual costs to control costs and support pricing decisions.",
+            "parent_skill": "Cost allocation methodologies",
+            "related_skills": [
+                "Cost Pool Design",
+                "Overhead Allocation",
+                "Cost Allocation Modeling"
+            ],
+            "keywords": [
+                "standards",
+                "material variance",
+                "labor variance",
+                "overhead variances"
+            ],
+            "common_roles": [
+                "Cost Accountant",
+                "Manufacturing Accountant",
+                "Financial Controller"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Overhead Allocation",
+            "aliases": [
+                "Overhead apportionment",
+                "Indirect cost allocation",
+                "Overhead cost allocation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Techniques for assigning indirect and overhead costs (rent, utilities, corporate functions) to products, services, or business units using allocation bases and drivers.",
+            "parent_skill": "Cost allocation methodologies",
+            "related_skills": [
+                "Cost Pool Design",
+                "Activity-Based Costing (ABC)",
+                "Step-down Allocation Method"
+            ],
+            "keywords": [
+                "indirect costs",
+                "allocation base",
+                "apportionment",
+                "overhead rate"
+            ],
+            "common_roles": [
+                "Financial Analyst",
+                "Cost Accountant",
+                "FP&A Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cost Pool Design",
+            "aliases": [
+                "Cost pool creation",
+                "Cost center pooling",
+                "Designing cost pools"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and structuring logical groups of costs (cost pools) for allocation to cost objects, including selection of homogeneous cost elements and drivers.",
+            "parent_skill": "Cost allocation methodologies",
+            "related_skills": [
+                "Overhead Allocation",
+                "Activity-Based Costing (ABC)",
+                "Cost Driver Analysis"
+            ],
+            "keywords": [
+                "cost pools",
+                "homogeneous costs",
+                "allocation bases",
+                "cost centers"
+            ],
+            "common_roles": [
+                "Management Accountant",
+                "Cost Accountant",
+                "Operational Finance Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cost Driver Analysis",
+            "aliases": [
+                "Driver analysis",
+                "Cost-driver identification",
+                "Driver-based costing"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Identifying, measuring and validating the factors (drivers) that cause costs to be incurred, and using them to improve allocation accuracy and model behavior under scenarios.",
+            "parent_skill": "Cost allocation methodologies",
+            "related_skills": [
+                "Activity-Based Costing (ABC)",
+                "Time-Driven Activity-Based Costing (TDABC)",
+                "Cost Allocation Modeling"
+            ],
+            "keywords": [
+                "drivers",
+                "causal factors",
+                "regression",
+                "correlation"
+            ],
+            "common_roles": [
+                "Financial Analyst",
+                "Cost Analyst",
+                "FP&A Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Job-order Costing (Job Costing)",
+            "aliases": [
+                "Job costing",
+                "Job-order costing system",
+                "Job-based costing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Method for tracking costs by individual jobs or orders where costs are accumulated for discrete units or batches rather than averaged over continuous production.",
+            "parent_skill": "Cost allocation methodologies",
+            "related_skills": [
+                "Process Costing (Batch\/Process Costing)",
+                "Overhead Allocation",
+                "Cost Pool Design"
+            ],
+            "keywords": [
+                "job cost sheets",
+                "direct costs",
+                "job tracking",
+                "allocation rates"
+            ],
+            "common_roles": [
+                "Cost Accountant",
+                "Manufacturing Accountant",
+                "Project Accountant"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Process Costing (Batch\/Process Costing)",
+            "aliases": [
+                "Process costing",
+                "Batch costing",
+                "Continuous production costing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Costing approach that averages costs over large volumes or continuous production processes, used when products are indistinguishable across units or batches.",
+            "parent_skill": "Cost allocation methodologies",
+            "related_skills": [
+                "Job-order Costing (Job Costing)",
+                "Standard Costing and Variance Analysis",
+                "Overhead Allocation"
+            ],
+            "keywords": [
+                "unit cost",
+                "equivalent units",
+                "process flows",
+                "batch costs"
+            ],
+            "common_roles": [
+                "Cost Accountant",
+                "Manufacturing Accountant",
+                "Production Controller"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Reciprocal Allocation Method (Algebraic Allocation)",
+            "aliases": [
+                "Reciprocal method",
+                "Algebraic allocation",
+                "Full cost allocation reciprocal method"
+            ],
+            "skill_type": "process_skill",
+            "description": "Technique for allocating costs among support departments that accounts for mutual services using simultaneous equations or matrix algebra to produce fully reciprocal allocations.",
+            "parent_skill": "Cost allocation methodologies",
+            "related_skills": [
+                "Step-down Allocation Method",
+                "Overhead Allocation",
+                "Cost Allocation Modeling"
+            ],
+            "keywords": [
+                "reciprocal services",
+                "simultaneous equations",
+                "matrix algebra",
+                "support departments"
+            ],
+            "common_roles": [
+                "Cost Accountant",
+                "Financial Analyst",
+                "Controller"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Joint Product and By-product Cost Allocation",
+            "aliases": [
+                "Joint cost allocation",
+                "By-product accounting",
+                "Split-off allocation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Methods for apportioning costs among joint products and accounting for by-products at split-off points, including physical measures, NRV and market-based approaches.",
+            "parent_skill": "Cost allocation methodologies",
+            "related_skills": [
+                "Process Costing (Batch\/Process Costing)",
+                "Standard Costing and Variance Analysis"
+            ],
+            "keywords": [
+                "split-off",
+                "net realizable value",
+                "joint costs",
+                "by-product"
+            ],
+            "common_roles": [
+                "Cost Accountant",
+                "Commodities Accountant",
+                "Manufacturing Accountant"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,301 @@
+{
+    "domain": "F&B",
+    "category": "Baking, Pastry & Desserts",
+    "subcategory": "Cakes, sponges & laminated pastries",
+    "skills": [
+        {
+            "canonical_name": "Sponge cake mixing techniques",
+            "aliases": [
+                "genoise mixing",
+                "chiffon cake mixing",
+                "whisked sponge technique"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Methods for creating aerated sponge batters (whisked, genoise, chiffon, creaming variants), controlling air incorporation and protein\/coagulation behavior for consistent crumb and volume.",
+            "parent_skill": "Cakes, sponges & laminated pastries",
+            "related_skills": [
+                "Cake batter formulation & scaling",
+                "Cake baking and troubleshooting",
+                "Syruping and sponge stabilization for cake assembly"
+            ],
+            "keywords": [
+                "whisking",
+                "genoise",
+                "chiffon",
+                "aeration",
+                "meringue"
+            ],
+            "common_roles": [
+                "Pastry Chef",
+                "Pastry Cook",
+                "Production Baker"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cake batter formulation & scaling",
+            "aliases": [
+                "batter formulation",
+                "recipe scaling for cakes",
+                "ingredient scaling (cakes)"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculating and adjusting cake recipes for yield, cost and consistency using baker's percentages, ingredient substitution, and scale-up\/scale-down techniques.",
+            "parent_skill": "Cakes, sponges & laminated pastries",
+            "related_skills": [
+                "Sponge cake mixing techniques",
+                "Cake baking and troubleshooting",
+                "Syruping and sponge stabilization for cake assembly"
+            ],
+            "keywords": [
+                "scaling",
+                "baker's percentage",
+                "yield",
+                "recipe conversion"
+            ],
+            "common_roles": [
+                "Production Baker",
+                "Pastry Chef",
+                "Bakery Supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dough lamination (puff pastry & croissant)",
+            "aliases": [
+                "lamination technique",
+                "puff pastry lamination",
+                "croissant lamination"
+            ],
+            "skill_type": "process_skill",
+            "description": "Layering fat and dough through rolling and folding (turns) to produce laminated structures with controlled layers, lift and mouthfeel for puff pastry and viennoiserie.",
+            "parent_skill": "Cakes, sponges & laminated pastries",
+            "related_skills": [
+                "Dough sheeting and rolling",
+                "Temperature and humidity control for laminated pastry production",
+                "Laminated pastry shaping and finishing"
+            ],
+            "keywords": [
+                "turns",
+                "layers",
+                "butter block",
+                "viennoiserie",
+                "puff"
+            ],
+            "common_roles": [
+                "Pastry Chef",
+                "Pastry Cook",
+                "Viennoiserie Baker"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dough sheeting and rolling",
+            "aliases": [
+                "pastry sheeting",
+                "sheeter operation",
+                "rolling pastry dough"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Techniques and safe operation for hand- or machine-sheeting doughs to target thicknesses, including tension control, even rolling, and adapting sheeted dough for folding, shaping or lamination.",
+            "parent_skill": "Cakes, sponges & laminated pastries",
+            "related_skills": [
+                "Dough lamination (puff pastry & croissant)",
+                "Laminated pastry shaping and finishing",
+                "Temperature and humidity control for laminated pastry production"
+            ],
+            "keywords": [
+                "sheeter",
+                "rolling",
+                "thickness",
+                "evenness"
+            ],
+            "common_roles": [
+                "Production Baker",
+                "Pastry Cook",
+                "Bakery Line Operator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Enriched dough production",
+            "aliases": [
+                "brioche dough making",
+                "croissant dough production",
+                "enriched yeast dough"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Formulation and handling of yeast-enriched doughs with higher fat\/sugar content, including mixing, maturation, degassing and handling to achieve desired crumb, elasticity and flavor.",
+            "parent_skill": "Cakes, sponges & laminated pastries",
+            "related_skills": [
+                "Proofing and fermentation control",
+                "Dough lamination (puff pastry & croissant)",
+                "Dough sheeting and rolling"
+            ],
+            "keywords": [
+                "enriched dough",
+                "brioche",
+                "butter",
+                "yeast",
+                "maturation"
+            ],
+            "common_roles": [
+                "Viennoiserie Baker",
+                "Pastry Chef",
+                "Production Baker"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Proofing and fermentation control",
+            "aliases": [
+                "dough proofing control",
+                "yeast fermentation management",
+                "proving control"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Monitoring and controlling proofing parameters (time, temperature, humidity) and fermentation activity to achieve predictable dough rise, structure and flavor for sponges and enriched pastries.",
+            "parent_skill": "Cakes, sponges & laminated pastries",
+            "related_skills": [
+                "Enriched dough production",
+                "Temperature and humidity control for laminated pastry production",
+                "Cake baking and troubleshooting"
+            ],
+            "keywords": [
+                "proof",
+                "fermentation",
+                "temperature",
+                "humidity"
+            ],
+            "common_roles": [
+                "Production Baker",
+                "Pastry Chef",
+                "Bakery Supervisor"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Temperature and humidity control for laminated pastry production",
+            "aliases": [
+                "lamination temperature control",
+                "pastry humidity management",
+                "proof chamber control (lamination)"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Managing environmental and ingredient temperatures and humidity during lamination and resting to prevent butter migration, ensure consistent layers and control dough relax\/elasticity.",
+            "parent_skill": "Cakes, sponges & laminated pastries",
+            "related_skills": [
+                "Dough lamination (puff pastry & croissant)",
+                "Dough sheeting and rolling",
+                "Proofing and fermentation control"
+            ],
+            "keywords": [
+                "temperature",
+                "humidity",
+                "butter temper",
+                "chill"
+            ],
+            "common_roles": [
+                "Viennoiserie Baker",
+                "Pastry Chef",
+                "Production Baker"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cake baking and troubleshooting",
+            "aliases": [
+                "oven management (cakes)",
+                "cake bake troubleshooting",
+                "even bake techniques"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Controlling oven profiles, rack placement, heat transfer and bake time to avoid common cake issues (sinking, doming, uneven crumb) and diagnosing causes from recipe or process variations.",
+            "parent_skill": "Cakes, sponges & laminated pastries",
+            "related_skills": [
+                "Sponge cake mixing techniques",
+                "Cake batter formulation & scaling",
+                "Proofing and fermentation control"
+            ],
+            "keywords": [
+                "oven",
+                "bake",
+                "crust",
+                "temperature",
+                "uniformity"
+            ],
+            "common_roles": [
+                "Pastry Chef",
+                "Production Baker",
+                "Pastry Cook"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Laminated pastry shaping and finishing",
+            "aliases": [
+                "croissant shaping",
+                "puff pastry finishing",
+                "viennoiserie shaping"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Shaping, scoring, filling and finishing laminated items (croissants, pains, turnovers) to specified weights and appearance, including egg wash, docking and final assembly before bake.",
+            "parent_skill": "Cakes, sponges & laminated pastries",
+            "related_skills": [
+                "Dough lamination (puff pastry & croissant)",
+                "Dough sheeting and rolling",
+                "Temperature and humidity control for laminated pastry production"
+            ],
+            "keywords": [
+                "shaping",
+                "scoring",
+                "egg wash",
+                "forming"
+            ],
+            "common_roles": [
+                "Pastry Cook",
+                "Viennoiserie Baker",
+                "Pastry Chef"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Syruping and sponge stabilization for cake assembly",
+            "aliases": [
+                "syrup brushing",
+                "crumb stabilization",
+                "sponge syruping"
+            ],
+            "skill_type": "process_skill",
+            "description": "Applying syrups, soaking techniques and stabilization steps (simple syrups, soak times, crumb coats) to control moisture, flavor infusion and structural integrity during cake stacking and finishing.",
+            "parent_skill": "Cakes, sponges & laminated pastries",
+            "related_skills": [
+                "Sponge cake mixing techniques",
+                "Cake batter formulation & scaling",
+                "Cake baking and troubleshooting"
+            ],
+            "keywords": [
+                "syrup",
+                "soak",
+                "crumb coat",
+                "moisture control"
+            ],
+            "common_roles": [
+                "Cake Decorator",
+                "Pastry Chef",
+                "Pastry Cook"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

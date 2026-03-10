@@ -1,0 +1,308 @@
+{
+    "domain": "IT",
+    "category": "Cloud Platforms & Infrastructure",
+    "subcategory": "Hybrid & multi-cloud operations",
+    "skills": [
+        {
+            "canonical_name": "Multi-cloud architecture design",
+            "aliases": [
+                "multi cloud architecture",
+                "hybrid & multi-cloud architecture",
+                "multi-cloud architectural patterns"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing application and platform architectures that span two or more cloud providers and on-premises environments, including topology, service partitioning, and resiliency patterns.",
+            "parent_skill": "Hybrid & multi-cloud operations",
+            "related_skills": [
+                "Infrastructure as Code (multi-cloud IaC)",
+                "Hybrid cloud networking",
+                "Containerization & workload portability",
+                "Multi-cloud governance & policy management"
+            ],
+            "keywords": [
+                "architecture",
+                "multi-cloud",
+                "hybrid-cloud",
+                "resiliency",
+                "cloud-patterns"
+            ],
+            "common_roles": [
+                "Cloud Architect",
+                "Cloud Solutions Architect",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Hybrid cloud networking",
+            "aliases": [
+                "hybrid networking",
+                "multi-cloud networking",
+                "cloud connectivity"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and operating network connectivity across on-premises data centers and multiple cloud providers, including VPN, direct connections, SD-WAN, routing, and network segmentation.",
+            "parent_skill": "Hybrid & multi-cloud operations",
+            "related_skills": [
+                "Multi-cloud architecture design",
+                "Hybrid identity and access management (IAM)",
+                "Multi-cloud security controls"
+            ],
+            "keywords": [
+                "VPN",
+                "SD-WAN",
+                "direct-connect",
+                "routing",
+                "network-segmentation"
+            ],
+            "common_roles": [
+                "Network Engineer",
+                "Cloud Network Engineer",
+                "Cloud Infrastructure Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Infrastructure as Code (multi-cloud IaC)",
+            "aliases": [
+                "IaC multi-cloud",
+                "infrastructure-as-code",
+                "declarative infrastructure"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying IaC principles and patterns to provision and manage resources consistently across multiple cloud providers and on-premises, including idempotency, modularization, and environment drift prevention.",
+            "parent_skill": "Hybrid & multi-cloud operations",
+            "related_skills": [
+                "Terraform",
+                "Multi-cloud automation & orchestration",
+                "Kubernetes",
+                "Cloud migration strategy & execution"
+            ],
+            "keywords": [
+                "IaC",
+                "declarative",
+                "provisioning",
+                "drift-management",
+                "multi-cloud"
+            ],
+            "common_roles": [
+                "DevOps Engineer",
+                "Platform Engineer",
+                "Infrastructure Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Terraform",
+            "aliases": [
+                "hashiCorp Terraform",
+                "terraform-cli"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using HashiCorp Terraform to define, provision, and manage infrastructure across multiple cloud providers through declarative configuration and state management.",
+            "parent_skill": "Hybrid & multi-cloud operations",
+            "related_skills": [
+                "Infrastructure as Code (multi-cloud IaC)",
+                "Multi-cloud automation & orchestration",
+                "Cloud migration strategy & execution"
+            ],
+            "keywords": [
+                "terraform",
+                "hashicorp",
+                "hcl",
+                "state",
+                "modules"
+            ],
+            "common_roles": [
+                "DevOps Engineer",
+                "Cloud Engineer",
+                "Site Reliability Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Kubernetes",
+            "aliases": [
+                "k8s",
+                "kube",
+                "kubernetes orchestration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Deploying, operating and troubleshooting container orchestration using Kubernetes across hybrid and multi-cloud environments to enable portable, scalable workloads.",
+            "parent_skill": "Hybrid & multi-cloud operations",
+            "related_skills": [
+                "Containerization & workload portability",
+                "Multi-cloud observability & monitoring",
+                "Multi-cloud automation & orchestration"
+            ],
+            "keywords": [
+                "kubernetes",
+                "containers",
+                "pods",
+                "operators",
+                "clusters"
+            ],
+            "common_roles": [
+                "Platform Engineer",
+                "DevOps Engineer",
+                "SRE"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cloud migration strategy & execution",
+            "aliases": [
+                "cloud migration planning",
+                "cloud migration execution",
+                "lift-and-shift \/ replatform strategies"
+            ],
+            "skill_type": "process_skill",
+            "description": "Planning and executing migrations of applications and data across on-premises and multiple cloud providers, including discovery, dependency mapping, cutover planning, and rollback strategies.",
+            "parent_skill": "Hybrid & multi-cloud operations",
+            "related_skills": [
+                "Infrastructure as Code (multi-cloud IaC)",
+                "Multi-cloud observability & monitoring",
+                "Containerization & workload portability"
+            ],
+            "keywords": [
+                "migration",
+                "discovery",
+                "cutover",
+                "replatform",
+                "lift-and-shift"
+            ],
+            "common_roles": [
+                "Cloud Migration Engineer",
+                "Cloud Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Multi-cloud cost optimization (FinOps)",
+            "aliases": [
+                "multi-cloud cost management",
+                "cloud FinOps",
+                "cloud cost governance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Monitoring, analyzing and optimizing cloud spend across providers through tagging, rightsizing, reserved\/commitment strategies and cost allocation practices.",
+            "parent_skill": "Hybrid & multi-cloud operations",
+            "related_skills": [
+                "Multi-cloud governance & policy management",
+                "Infrastructure as Code (multi-cloud IaC)",
+                "Multi-cloud observability & monitoring"
+            ],
+            "keywords": [
+                "FinOps",
+                "cost-optimization",
+                "rightsizing",
+                "tagging",
+                "reserved-instances"
+            ],
+            "common_roles": [
+                "Cloud Financial Analyst",
+                "Cloud Operations Engineer",
+                "FinOps Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Multi-cloud governance & policy management",
+            "aliases": [
+                "cloud governance",
+                "multi cloud policy management",
+                "policy-as-code for multi-cloud"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Defining and enforcing policies, standards and guardrails across multiple clouds and on-premises environments, including policy-as-code, compliance frameworks, and access controls.",
+            "parent_skill": "Hybrid & multi-cloud operations",
+            "related_skills": [
+                "Multi-cloud cost optimization (FinOps)",
+                "Hybrid identity and access management (IAM)",
+                "Multi-cloud security controls"
+            ],
+            "keywords": [
+                "governance",
+                "policy",
+                "policy-as-code",
+                "compliance",
+                "guardrails"
+            ],
+            "common_roles": [
+                "Cloud Governance Lead",
+                "Cloud Security Engineer",
+                "Platform Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Multi-cloud observability & monitoring",
+            "aliases": [
+                "cross-cloud monitoring",
+                "multi-cloud observability",
+                "distributed tracing across clouds"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Implementing logging, metrics, tracing and alerting that aggregate and correlate telemetry across multiple cloud providers and on-premises systems for operational visibility.",
+            "parent_skill": "Hybrid & multi-cloud operations",
+            "related_skills": [
+                "Kubernetes",
+                "Multi-cloud cost optimization (FinOps)",
+                "Cloud migration strategy & execution"
+            ],
+            "keywords": [
+                "observability",
+                "monitoring",
+                "tracing",
+                "logs",
+                "alerting"
+            ],
+            "common_roles": [
+                "SRE",
+                "Monitoring Engineer",
+                "Cloud Operations Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Hybrid identity and access management (IAM) for multi-cloud",
+            "aliases": [
+                "multi-cloud IAM",
+                "hybrid identity management",
+                "cross-cloud access control"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Designing and operating identity and access controls that span on-premises directories and multiple cloud provider IAM systems, including federation, least-privilege models and privileged access management.",
+            "parent_skill": "Hybrid & multi-cloud operations",
+            "related_skills": [
+                "Hybrid cloud networking",
+                "Multi-cloud governance & policy management",
+                "Multi-cloud security controls"
+            ],
+            "keywords": [
+                "IAM",
+                "federation",
+                "SSO",
+                "least-privilege",
+                "access-control"
+            ],
+            "common_roles": [
+                "Cloud Security Engineer",
+                "Identity Engineer",
+                "Cloud Operations Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

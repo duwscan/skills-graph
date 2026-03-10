@@ -1,0 +1,265 @@
+{
+    "domain": "IT",
+    "category": "DevOps, CI\/CD & Release Engineering",
+    "subcategory": "Environment provisioning & automation",
+    "skills": [
+        {
+            "canonical_name": "Infrastructure as Code (IaC)",
+            "aliases": [
+                "IaC",
+                "Infrastructure-as-Code",
+                "infrastructure as code"
+            ],
+            "skill_type": "process_skill",
+            "description": "Methodology for defining and managing infrastructure through machine-readable, version-controlled configuration files instead of manual processes.",
+            "parent_skill": "Environment provisioning & automation",
+            "related_skills": [
+                "Terraform",
+                "AWS CloudFormation",
+                "Immutable infrastructure",
+                "Infrastructure testing and validation",
+                "GitOps"
+            ],
+            "keywords": [
+                "declarative",
+                "idempotent",
+                "templates",
+                "state management",
+                "version-controlled infrastructure"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Terraform",
+            "aliases": [
+                "HashiCorp Terraform"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Declarative multi-cloud provisioning tool using HCL for defining reusable modules, state management, and lifecycle operations.",
+            "parent_skill": "Environment provisioning & automation",
+            "related_skills": [
+                "Infrastructure as Code (IaC)",
+                "Terragrunt",
+                "Remote state management",
+                "Immutable infrastructure"
+            ],
+            "keywords": [
+                "HCL",
+                "modules",
+                "state",
+                "plan\/apply",
+                "providers"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "AWS CloudFormation",
+            "aliases": [
+                "CloudFormation",
+                "AWS CFN"
+            ],
+            "skill_type": "tool_skill",
+            "description": "AWS-native infrastructure provisioning service for declaratively modeling and provisioning AWS resources using templates (YAML\/JSON).",
+            "parent_skill": "Environment provisioning & automation",
+            "related_skills": [
+                "Infrastructure as Code (IaC)",
+                "Stack management",
+                "Change sets",
+                "AWS Resource provisioning"
+            ],
+            "keywords": [
+                "templates",
+                "stacks",
+                "YAML",
+                "JSON",
+                "drift detection"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ansible",
+            "aliases": [
+                "Ansible Playbooks",
+                "Red Hat Ansible"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Agentless automation and configuration management tool using YAML playbooks for provisioning, configuration, and orchestration of servers and services.",
+            "parent_skill": "Environment provisioning & automation",
+            "related_skills": [
+                "Configuration management",
+                "Infrastructure as Code (IaC)",
+                "Immutable infrastructure (when used for orchestration)"
+            ],
+            "keywords": [
+                "playbooks",
+                "idempotent",
+                "inventory",
+                "roles",
+                "modules"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Packer (machine image creation)",
+            "aliases": [
+                "Packer",
+                "machine image building"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Automated image-building tool for creating reproducible machine images and containers (golden images) for use in immutable infrastructure and deployment pipelines.",
+            "parent_skill": "Environment provisioning & automation",
+            "related_skills": [
+                "Immutable infrastructure",
+                "Terraform",
+                "Container image build pipelines"
+            ],
+            "keywords": [
+                "golden images",
+                "image templates",
+                "builders",
+                "provisioners"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Immutable infrastructure",
+            "aliases": [
+                "immutable deployments",
+                "golden image strategy"
+            ],
+            "skill_type": "process_skill",
+            "description": "Practice of replacing rather than modifying running infrastructure, using pre-baked images or containers to avoid configuration drift and enable predictable deployments.",
+            "parent_skill": "Environment provisioning & automation",
+            "related_skills": [
+                "Packer (machine image creation)",
+                "Containerization",
+                "Infrastructure as Code (IaC)",
+                "Blue\/Green deployments"
+            ],
+            "keywords": [
+                "image-based",
+                "no in-place changes",
+                "reproducible infrastructure",
+                "replacement strategy"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "GitOps",
+            "aliases": [
+                "GitOps workflows",
+                "repository-driven provisioning"
+            ],
+            "skill_type": "process_skill",
+            "description": "Operational model using Git as the single source of truth for infrastructure and application declarative configuration, enabling automated reconciliation and auditable change history.",
+            "parent_skill": "Environment provisioning & automation",
+            "related_skills": [
+                "Infrastructure as Code (IaC)",
+                "Continuous deployment",
+                "Argo CD",
+                "Flux"
+            ],
+            "keywords": [
+                "git as source of truth",
+                "reconciliation",
+                "pull-based deployment",
+                "observability"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Infrastructure testing and validation",
+            "aliases": [
+                "IaC testing",
+                "infrastructure validation",
+                "infrastructure unit testing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Techniques and practices for verifying infrastructure definitions and deployments through automated tests, policy checks and integration tests to prevent misconfiguration and regressions.",
+            "parent_skill": "Environment provisioning & automation",
+            "related_skills": [
+                "Infrastructure as Code (IaC)",
+                "Policy as code",
+                "Terratest",
+                "CI pipeline testing"
+            ],
+            "keywords": [
+                "unit tests",
+                "integration tests",
+                "policy checks",
+                "drift detection",
+                "linting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Configuration management",
+            "aliases": [
+                "system configuration management",
+                "config management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Practices for maintaining consistent configuration of systems and services across environments, including desired-state enforcement, package management and service configuration.",
+            "parent_skill": "Environment provisioning & automation",
+            "related_skills": [
+                "Ansible",
+                "Puppet",
+                "Chef",
+                "Infrastructure as Code (IaC)"
+            ],
+            "keywords": [
+                "desired state",
+                "idempotency",
+                "configuration drift",
+                "templates",
+                "inventory"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Automated provisioning pipelines",
+            "aliases": [
+                "provisioning pipelines",
+                "infrastructure CI\/CD",
+                "pipeline-driven provisioning"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Design and implementation of CI\/CD pipelines that automate provisioning, testing, and promotion of environments (ephemeral environments, environment orchestration, environment teardown).",
+            "parent_skill": "Environment provisioning & automation",
+            "related_skills": [
+                "GitOps",
+                "Infrastructure testing and validation",
+                "Terraform",
+                "Immutable infrastructure"
+            ],
+            "keywords": [
+                "CI\/CD",
+                "pipeline-as-code",
+                "ephemeral environments",
+                "promotion gates",
+                "automated teardown"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

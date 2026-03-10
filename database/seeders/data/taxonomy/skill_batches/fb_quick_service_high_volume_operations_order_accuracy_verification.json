@@ -1,0 +1,308 @@
+{
+    "domain": "F&B",
+    "category": "Quick Service & High-Volume Operations",
+    "subcategory": "Order accuracy & verification",
+    "skills": [
+        {
+            "canonical_name": "Order verification",
+            "aliases": [
+                "order checking",
+                "verify order",
+                "order confirmation (internal)"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Performing final checks that a prepared order matches the customer ticket\/receipt and requested modifications before delivery or pickup.",
+            "parent_skill": "Order accuracy & verification",
+            "related_skills": [
+                "Ticket matching and staging",
+                "Order packing accuracy",
+                "Customer order confirmation (verbal readback)",
+                "POS order reconciliation"
+            ],
+            "keywords": [
+                "verify",
+                "check order",
+                "accuracy",
+                "order mismatch",
+                "final check"
+            ],
+            "common_roles": [
+                "frontline staff",
+                "counter staff",
+                "order fulfillment staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "POS order reconciliation",
+            "aliases": [
+                "order-payment reconciliation",
+                "cash register order reconciliation",
+                "POS reconciliation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Reconciling point-of-sale order records, receipts and payments with prepared\/finalized items to ensure accounting and order accuracy.",
+            "parent_skill": "Order accuracy & verification",
+            "related_skills": [
+                "Order verification",
+                "Ticket matching and staging",
+                "Pickup and third-party delivery verification"
+            ],
+            "keywords": [
+                "POS",
+                "reconcile",
+                "receipt matching",
+                "transactions",
+                "till reconciliation"
+            ],
+            "common_roles": [
+                "frontline staff",
+                "shift-level operational staff",
+                "order fulfillment staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Kitchen Display System (KDS) operation",
+            "aliases": [
+                "KDS use",
+                "kitchen monitor operation",
+                "display ticket management"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Using a kitchen display system to view, route, update and clear orders; prioritize items and indicate completion for front-of-house coordination.",
+            "parent_skill": "Order accuracy & verification",
+            "related_skills": [
+                "Ticket matching and staging",
+                "Order verification",
+                "Handheld\/mobile order scanner operation"
+            ],
+            "keywords": [
+                "KDS",
+                "kitchen display",
+                "order routing",
+                "order status",
+                "display system"
+            ],
+            "common_roles": [
+                "kitchen staff",
+                "expeditor functions",
+                "order fulfillment staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Drive-thru order confirmation protocol",
+            "aliases": [
+                "drive-thru order verification",
+                "drive-thru readback",
+                "drive-through confirmation"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Applying standard procedures for confirming drive-thru orders with customers, including readback, price confirmation and staged handoff checks.",
+            "parent_skill": "Order accuracy & verification",
+            "related_skills": [
+                "Customer order confirmation (verbal readback)",
+                "Order packing accuracy",
+                "Pickup and third-party delivery verification"
+            ],
+            "keywords": [
+                "drive-thru",
+                "readback",
+                "handoff",
+                "handover checks",
+                "window confirmation"
+            ],
+            "common_roles": [
+                "drive-thru attendants",
+                "customer service staff",
+                "frontline staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Order packing accuracy",
+            "aliases": [
+                "packing accuracy",
+                "bagging accuracy",
+                "packing quality check"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Ensuring items are correctly packaged, labeled and bundled per order (including modifiers, condiments and utensils) to prevent missing or incorrect items.",
+            "parent_skill": "Order accuracy & verification",
+            "related_skills": [
+                "Order verification",
+                "Ticket matching and staging",
+                "Pickup and third-party delivery verification"
+            ],
+            "keywords": [
+                "pack",
+                "bagging",
+                "bundle",
+                "label",
+                "completeness"
+            ],
+            "common_roles": [
+                "order fulfillment staff",
+                "kitchen staff",
+                "counter staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen and ingredient verification",
+            "aliases": [
+                "allergy check",
+                "ingredient confirmation",
+                "special-diet verification"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Identifying and verifying ingredients, meal modifications and cross-contact risks to ensure orders meet customers' allergy or dietary requirements and regulatory expectations.",
+            "parent_skill": "Order accuracy & verification",
+            "related_skills": [
+                "Order verification",
+                "Order packing accuracy",
+                "Customer order confirmation (verbal readback)"
+            ],
+            "keywords": [
+                "allergen",
+                "ingredient",
+                "dietary restriction",
+                "cross-contact",
+                "special request"
+            ],
+            "common_roles": [
+                "frontline staff",
+                "service staff",
+                "kitchen staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Handheld\/mobile order scanner operation",
+            "aliases": [
+                "handheld POS scanner",
+                "mobile order device use",
+                "scanning terminal operation"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Operating handheld devices or mobile terminals to scan order tickets, confirm items, update order status and capture pickup\/delivery confirmations.",
+            "parent_skill": "Order accuracy & verification",
+            "related_skills": [
+                "Kitchen Display System (KDS) operation",
+                "Ticket matching and staging",
+                "Order verification"
+            ],
+            "keywords": [
+                "handheld",
+                "scanner",
+                "mobile POS",
+                "scan",
+                "device"
+            ],
+            "common_roles": [
+                "frontline staff",
+                "order fulfillment staff",
+                "pickup staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ticket matching and staging",
+            "aliases": [
+                "meal ticket matching",
+                "order staging",
+                "staging and sequencing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Organizing and sequencing orders by matching kitchen tickets to completed items, staging them for pickup or delivery in the correct order and timeframe.",
+            "parent_skill": "Order accuracy & verification",
+            "related_skills": [
+                "Kitchen Display System (KDS) operation",
+                "Order packing accuracy",
+                "POS order reconciliation"
+            ],
+            "keywords": [
+                "staging",
+                "sequence",
+                "ticket",
+                "matching",
+                "pickup order"
+            ],
+            "common_roles": [
+                "kitchen staff",
+                "expeditor functions",
+                "order fulfillment staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Customer order confirmation (verbal readback)",
+            "aliases": [
+                "verbal readback",
+                "order readback",
+                "customer confirmation"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Using clear verbal communication to repeat order details back to customers (in-person, drive-thru or phone) to prevent misunderstandings and confirm modifications.",
+            "parent_skill": "Order accuracy & verification",
+            "related_skills": [
+                "Drive-thru order confirmation protocol",
+                "Order verification",
+                "Allergen and ingredient verification"
+            ],
+            "keywords": [
+                "readback",
+                "confirm",
+                "verbal",
+                "communication",
+                "customer confirmation"
+            ],
+            "common_roles": [
+                "customer service staff",
+                "frontline staff",
+                "drive-thru attendants"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Pickup and third-party delivery verification",
+            "aliases": [
+                "delivery pickup verification",
+                "third-party order check",
+                "platform order verification"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Verifying orders handed to customers or third-party couriers (including app order IDs, contents and packaging) and ensuring platform-specific pickup procedures are followed.",
+            "parent_skill": "Order accuracy & verification",
+            "related_skills": [
+                "Order packing accuracy",
+                "POS order reconciliation",
+                "Order verification"
+            ],
+            "keywords": [
+                "pickup",
+                "third-party",
+                "delivery",
+                "courier",
+                "app order"
+            ],
+            "common_roles": [
+                "pickup staff",
+                "frontline staff",
+                "order fulfillment staff"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

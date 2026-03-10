@@ -1,0 +1,262 @@
+{
+    "domain": "IT",
+    "category": "IT Service Management & Support Operations",
+    "subcategory": "End-user support & troubleshooting",
+    "skills": [
+        {
+            "canonical_name": "Incident triage & prioritization",
+            "aliases": [
+                "ticket triage",
+                "incident prioritization"
+            ],
+            "skill_type": "process_skill",
+            "description": "Assess, categorize, and prioritize incoming incidents and service requests based on impact, urgency, and SLAs to determine routing and remediation order.",
+            "parent_skill": "End-user support & troubleshooting",
+            "related_skills": [
+                "ITSM ticketing systems (incident & request management)",
+                "SLA management",
+                "Escalation management"
+            ],
+            "keywords": [
+                "triage",
+                "priority",
+                "impact assessment",
+                "urgency",
+                "SLA"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ITSM ticketing systems (incident & request management)",
+            "aliases": [
+                "service desk ticketing",
+                "helpdesk software",
+                "ticketing systems"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Use and configure IT service management (ITSM) and helpdesk platforms to log, route, update, and close incidents and service requests while maintaining audit trails and SLA data.",
+            "parent_skill": "End-user support & troubleshooting",
+            "related_skills": [
+                "Incident triage & prioritization",
+                "Knowledge base management",
+                "Change & release coordination"
+            ],
+            "keywords": [
+                "ticketing",
+                "incident management",
+                "service requests",
+                "workflow",
+                "queue management"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Remote support & screen sharing",
+            "aliases": [
+                "remote desktop support",
+                "remote troubleshooting",
+                "screen sharing support"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Remotely connect to end-user devices using remote access and collaboration tools to diagnose, demonstrate, and remediate issues while maintaining security and user consent.",
+            "parent_skill": "End-user support & troubleshooting",
+            "related_skills": [
+                "Remote access tools",
+                "Technical customer support & user communication",
+                "Network connectivity troubleshooting for end-user devices"
+            ],
+            "keywords": [
+                "remote access",
+                "screen share",
+                "RDP",
+                "remote assistance",
+                "collaboration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Endpoint hardware diagnostics & repair",
+            "aliases": [
+                "desktop hardware repair",
+                "laptop hardware troubleshooting",
+                "workstation hardware diagnostics"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Perform hands-on diagnostics, component-level troubleshooting, and hardware repair or replacement for desktops, laptops, and peripherals to restore device functionality.",
+            "parent_skill": "End-user support & troubleshooting",
+            "related_skills": [
+                "Software deployment & patch management (end-user systems)",
+                "Endpoint security administration"
+            ],
+            "keywords": [
+                "diagnostics",
+                "SSD",
+                "RAM",
+                "motherboard",
+                "peripherals",
+                "repair"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Windows desktop troubleshooting",
+            "aliases": [
+                "Windows OS troubleshooting",
+                "Windows 10\/11 support"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Diagnose and resolve issues specific to Microsoft Windows desktop environments, including OS errors, update failures, user profile problems, and application compatibility.",
+            "parent_skill": "End-user support & troubleshooting",
+            "related_skills": [
+                "Active Directory user & group administration",
+                "Endpoint security administration",
+                "ITSM ticketing systems (incident & request management)"
+            ],
+            "keywords": [
+                "Event Viewer",
+                "Windows Update",
+                "registry",
+                "BSOD",
+                "user profile"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "macOS troubleshooting",
+            "aliases": [
+                "Mac troubleshooting",
+                "Apple macOS support"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Identify and fix operating system and application issues on Apple macOS devices, including system updates, application conflicts, user account problems, and macOS-specific diagnostics.",
+            "parent_skill": "End-user support & troubleshooting",
+            "related_skills": [
+                "Endpoint hardware diagnostics & repair",
+                "Endpoint security administration",
+                "Remote support & screen sharing"
+            ],
+            "keywords": [
+                "Finder",
+                "Time Machine",
+                "kernel panic",
+                "macOS update",
+                "application compatibility"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Active Directory user & group administration",
+            "aliases": [
+                "AD administration",
+                "Active Directory management"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Manage user accounts, groups, permissions, password resets, and basic Group Policy tasks within Active Directory or equivalent directory services for workplace authentication and access control.",
+            "parent_skill": "End-user support & troubleshooting",
+            "related_skills": [
+                "Windows desktop troubleshooting",
+                "Identity & access management",
+                "ITSM ticketing systems (incident & request management)"
+            ],
+            "keywords": [
+                "user provisioning",
+                "group membership",
+                "LDAP",
+                "domain controller",
+                "password reset"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Software deployment & patch management (end-user systems)",
+            "aliases": [
+                "application deployment",
+                "endpoint patch management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Plan, package, deploy, and verify software applications and security patches across end-user devices using deployment tools and standardized processes to maintain consistency and compliance.",
+            "parent_skill": "End-user support & troubleshooting",
+            "related_skills": [
+                "Endpoint security administration",
+                "ITSM ticketing systems (incident & request management)",
+                "Change & release coordination"
+            ],
+            "keywords": [
+                "patching",
+                "deployment",
+                "application packaging",
+                "updates",
+                "WSUS"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Network connectivity troubleshooting for end-user devices",
+            "aliases": [
+                "end-user network troubleshooting",
+                "Wi-Fi troubleshooting"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Troubleshoot and resolve connectivity issues affecting end-user devices on wired and wireless networks, including IP configuration, DNS, DHCP, SSID, and VPN-related problems.",
+            "parent_skill": "End-user support & troubleshooting",
+            "related_skills": [
+                "Remote support & screen sharing",
+                "Windows desktop troubleshooting",
+                "macOS troubleshooting"
+            ],
+            "keywords": [
+                "DNS",
+                "DHCP",
+                "IP address",
+                "SSID",
+                "VPN",
+                "latency"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Technical customer support & user communication",
+            "aliases": [
+                "user-facing technical support",
+                "customer-facing IT support",
+                "helpdesk communication"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Convey technical information clearly to non-technical users, manage expectations, document interactions, and provide guidance to resolve issues while maintaining professionalism and empathy.",
+            "parent_skill": "End-user support & troubleshooting",
+            "related_skills": [
+                "Knowledge base management",
+                "Incident triage & prioritization",
+                "Remote support & screen sharing"
+            ],
+            "keywords": [
+                "communication",
+                "user guidance",
+                "empathy",
+                "documentation",
+                "knowledge transfer"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

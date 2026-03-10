@@ -1,0 +1,306 @@
+{
+    "domain": "F&B",
+    "category": "Menu Development & Culinary R&D",
+    "subcategory": "Dietary preference adaptation",
+    "skills": [
+        {
+            "canonical_name": "Plant-based recipe formulation",
+            "aliases": [
+                "Vegan recipe formulation",
+                "Plant-based product formulation",
+                "Vegan recipe development"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Design and optimize recipes using plant-based ingredients to replicate or replace animal-based taste, texture, and nutritional profiles.",
+            "parent_skill": "Dietary preference adaptation",
+            "related_skills": [
+                "Ingredient functional substitution",
+                "Shelf-life and stability testing",
+                "Nutritional profiling and analysis"
+            ],
+            "keywords": [
+                "plant-based",
+                "vegan",
+                "alternative proteins",
+                "meat analogs",
+                "recipe optimization"
+            ],
+            "common_roles": [
+                "Culinary R&D",
+                "Menu development teams",
+                "Product development teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Allergen-free formulation",
+            "aliases": [
+                "Free-from formulation",
+                "Allergen-free recipe development",
+                "Allergen-safe formulation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Develop recipes and formulations that exclude specified allergens while maintaining safety, sensory quality, and nutritional balance.",
+            "parent_skill": "Dietary preference adaptation",
+            "related_skills": [
+                "Cross-contact prevention in food production",
+                "Menu labeling for dietary preferences",
+                "Ingredient functional substitution"
+            ],
+            "keywords": [
+                "allergen-free",
+                "free-from",
+                "peanut-free",
+                "tree-nut-free",
+                "dairy-free"
+            ],
+            "common_roles": [
+                "Culinary R&D",
+                "Menu development teams",
+                "Nutrition & labeling teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Gluten-free product development",
+            "aliases": [
+                "Gluten-free recipe formulation",
+                "Celiac-safe product formulation",
+                "Gluten-free formulation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Formulate and test recipes that meet gluten-free requirements, addressing texture, binding, and shelf-life challenges without gluten-containing ingredients.",
+            "parent_skill": "Dietary preference adaptation",
+            "related_skills": [
+                "Ingredient functional substitution",
+                "Shelf-life and stability testing",
+                "Allergen-free formulation"
+            ],
+            "keywords": [
+                "gluten-free",
+                "GF",
+                "wheat-free",
+                "texture modification",
+                "binding agents"
+            ],
+            "common_roles": [
+                "Culinary R&D",
+                "Product development teams",
+                "Menu development teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Low-FODMAP recipe development",
+            "aliases": [
+                "Low FODMAP formulation",
+                "Low-FODMAP recipe development"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Create recipes that minimize fermentable oligo-, di-, mono-saccharides and polyols (FODMAPs) to reduce digestive symptoms while preserving flavor and nutrition.",
+            "parent_skill": "Dietary preference adaptation",
+            "related_skills": [
+                "Nutritional profiling and analysis",
+                "Ingredient functional substitution",
+                "Menu labeling for dietary preferences"
+            ],
+            "keywords": [
+                "low-FODMAP",
+                "IBS-friendly",
+                "digestive health",
+                "FODMAPs",
+                "ingredient selection"
+            ],
+            "common_roles": [
+                "Culinary R&D",
+                "Menu development teams",
+                "Nutrition & labeling teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Sugar-reduction reformulation",
+            "aliases": [
+                "Reduced-sugar product formulation",
+                "No-added-sugar reformulation",
+                "Sugar-reduction recipe development"
+            ],
+            "skill_type": "process_skill",
+            "description": "Apply reformulation techniques to lower added sugar in products while maintaining sweetness perception, texture, preservation, and consumer acceptance.",
+            "parent_skill": "Dietary preference adaptation",
+            "related_skills": [
+                "Ingredient functional substitution",
+                "Shelf-life and stability testing",
+                "Nutritional profiling and analysis"
+            ],
+            "keywords": [
+                "sugar reduction",
+                "reformulation",
+                "sweetener substitution",
+                "sugar alternatives",
+                "calorie reduction"
+            ],
+            "common_roles": [
+                "Product development teams",
+                "Culinary R&D",
+                "Nutrition & labeling teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Ingredient functional substitution",
+            "aliases": [
+                "Functional ingredient substitution",
+                "Ingredient replacement for functionality",
+                "Ingredient functionality optimization"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Identify and apply ingredient replacements that replicate functional properties (binding, emulsification, bulking, gelling) to meet dietary constraints or improve formulation.",
+            "parent_skill": "Dietary preference adaptation",
+            "related_skills": [
+                "Plant-based recipe formulation",
+                "Gluten-free product development",
+                "Sugar-reduction reformulation"
+            ],
+            "keywords": [
+                "substitutes",
+                "binders",
+                "emulsifiers",
+                "texturizers",
+                "functional ingredients"
+            ],
+            "common_roles": [
+                "Culinary R&D",
+                "Product development teams",
+                "Procurement teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-contact prevention in food production",
+            "aliases": [
+                "Cross-contact control",
+                "Allergen segregation practices",
+                "Cross-contamination prevention"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Implement and document operational controls (segregation, cleaning, scheduling) to prevent allergen cross-contact and ensure compliance with food safety requirements.",
+            "parent_skill": "Dietary preference adaptation",
+            "related_skills": [
+                "Allergen-free formulation",
+                "Menu labeling for dietary preferences",
+                "Shelf-life and stability testing"
+            ],
+            "keywords": [
+                "cross-contact",
+                "segregation",
+                "cleaning protocols",
+                "allergen control",
+                "HACCP"
+            ],
+            "common_roles": [
+                "Culinary R&D",
+                "Quality & food safety teams",
+                "Menu development teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Menu labeling for dietary preferences",
+            "aliases": [
+                "Dietary labeling and iconography",
+                "Allergen and dietary labeling",
+                "Dietary preference menu labeling"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Create clear menu labels and icons that communicate dietary attributes (e.g., vegan, gluten-free, nut-free) and allergen information in accordance with regulatory and consumer clarity needs.",
+            "parent_skill": "Dietary preference adaptation",
+            "related_skills": [
+                "Nutritional profiling and analysis",
+                "Cross-contact prevention in food production",
+                "Allergen-free formulation"
+            ],
+            "keywords": [
+                "menu labeling",
+                "allergen labeling",
+                "dietary icons",
+                "consumer information",
+                "nutrition claims"
+            ],
+            "common_roles": [
+                "Menu development teams",
+                "Nutrition & labeling teams",
+                "Culinary R&D"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Nutritional profiling and analysis",
+            "aliases": [
+                "Nutrition analysis",
+                "Macro\/micronutrient profiling",
+                "Nutrition labeling analysis"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Calculate and interpret macro- and micronutrient content of recipes and products to support nutrition labeling, dietary claims, and recipe adjustment for targeted diets.",
+            "parent_skill": "Dietary preference adaptation",
+            "related_skills": [
+                "Menu labeling for dietary preferences",
+                "Sugar-reduction reformulation",
+                "Low-FODMAP recipe development"
+            ],
+            "keywords": [
+                "nutrition analysis",
+                "calorie calculation",
+                "macronutrients",
+                "micronutrients",
+                "nutrition labeling"
+            ],
+            "common_roles": [
+                "Nutrition & labeling teams",
+                "Product development teams",
+                "Culinary R&D"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Shelf-life and stability testing",
+            "aliases": [
+                "Product stability testing",
+                "Shelf life assessment",
+                "Stability testing for reformulated products"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Design and execute stability and shelf-life tests for new or reformulated products to evaluate microbial safety, quality degradation, and sensory shelf-life under expected storage conditions.",
+            "parent_skill": "Dietary preference adaptation",
+            "related_skills": [
+                "Plant-based recipe formulation",
+                "Gluten-free product development",
+                "Cross-contact prevention in food production"
+            ],
+            "keywords": [
+                "shelf-life",
+                "stability testing",
+                "accelerated shelf-life",
+                "microbial testing",
+                "product quality"
+            ],
+            "common_roles": [
+                "Quality & food safety teams",
+                "Product development teams",
+                "Culinary R&D"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,298 @@
+{
+    "domain": "F&B",
+    "category": "Food Preparation & Cooking Operations",
+    "subcategory": "Knife skills & ingredient prep",
+    "skills": [
+        {
+            "canonical_name": "Knife handling & safety",
+            "aliases": [
+                "knife safety",
+                "knife handling",
+                "safe knife use"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Safe gripping, cutting posture, hand placement and movement to control the blade and prevent injury during ingredient preparation.",
+            "parent_skill": "Knife skills & ingredient prep",
+            "related_skills": [
+                "Knife sharpening & maintenance",
+                "Precision slicing & julienne cuts",
+                "Dicing & brunoise cuts",
+                "Mandoline & mechanical slicer operation"
+            ],
+            "keywords": [
+                "blade control",
+                "cutting technique",
+                "finger guard",
+                "ergonomics"
+            ],
+            "common_roles": [
+                "Culinary professionals",
+                "Kitchen prep staff",
+                "Commercial kitchen staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Knife sharpening & maintenance",
+            "aliases": [
+                "knife honing",
+                "strop and sharpening",
+                "edge maintenance"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintaining blade edges through correct sharpening, honing and stropping techniques, plus proper storage and inspection to ensure consistent performance.",
+            "parent_skill": "Knife skills & ingredient prep",
+            "related_skills": [
+                "Knife handling & safety",
+                "Deboning & trimming meat",
+                "Filleting fish"
+            ],
+            "keywords": [
+                "honing steel",
+                "whetstone",
+                "strop",
+                "edge angle"
+            ],
+            "common_roles": [
+                "Culinary professionals",
+                "Kitchen prep staff",
+                "Butchery assistants"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Precision slicing & julienne cuts",
+            "aliases": [
+                "slicing",
+                "julienne",
+                "thin slicing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Producing uniform long slices and julienne strips for consistent cooking, plating and texture across ingredients.",
+            "parent_skill": "Knife skills & ingredient prep",
+            "related_skills": [
+                "Knife handling & safety",
+                "Mandoline & mechanical slicer operation",
+                "Dicing & brunoise cuts"
+            ],
+            "keywords": [
+                "uniform slices",
+                "julienne",
+                "even thickness",
+                "presentation"
+            ],
+            "common_roles": [
+                "Culinary professionals",
+                "Kitchen prep staff",
+                "Garde manger"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Dicing & brunoise cuts",
+            "aliases": [
+                "dicing",
+                "brunoise",
+                "small dice"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Cutting vegetables, aromatics and other ingredients into regular cubes (including brunoise) to ensure uniform cook times and consistent texture.",
+            "parent_skill": "Knife skills & ingredient prep",
+            "related_skills": [
+                "Precision slicing & julienne cuts",
+                "Knife handling & safety",
+                "Yield optimization & waste reduction in prep"
+            ],
+            "keywords": [
+                "dice",
+                "brunoise",
+                "uniform cubes",
+                "knife control"
+            ],
+            "common_roles": [
+                "Culinary professionals",
+                "Kitchen prep staff",
+                "Garde manger"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Filleting fish",
+            "aliases": [
+                "fish filleting",
+                "fillet preparation",
+                "fish boning"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Removing bones, skin and unwanted tissue to produce clean, presentation-ready fish fillets using appropriate knives and techniques.",
+            "parent_skill": "Knife skills & ingredient prep",
+            "related_skills": [
+                "Knife sharpening & maintenance",
+                "Deboning & trimming meat",
+                "Cross-contamination control & allergen segregation"
+            ],
+            "keywords": [
+                "fillet knife",
+                "pin bones",
+                "skin removal",
+                "fish portioning"
+            ],
+            "common_roles": [
+                "Culinary professionals",
+                "Fish processors",
+                "Kitchen prep staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Deboning & trimming meat",
+            "aliases": [
+                "meat deboning",
+                "trimming fat",
+                "butchery trimming"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Removing bones, silverskin and excess fat from meat and trimming cuts to specification for portioning and cooking.",
+            "parent_skill": "Knife skills & ingredient prep",
+            "related_skills": [
+                "Knife sharpening & maintenance",
+                "Yield optimization & waste reduction in prep",
+                "Poultry trussing & portioning"
+            ],
+            "keywords": [
+                "debone",
+                "trim",
+                "silverskin",
+                "fat cap"
+            ],
+            "common_roles": [
+                "Culinary professionals",
+                "Butchery assistants",
+                "Kitchen prep staff"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Poultry trussing & portioning",
+            "aliases": [
+                "trussing poultry",
+                "portioning poultry",
+                "spatchcocking"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Securing whole birds for even cooking (trussing) and breaking down poultry into standardized portions, including spatchcocking and jointing techniques.",
+            "parent_skill": "Knife skills & ingredient prep",
+            "related_skills": [
+                "Deboning & trimming meat",
+                "Knife handling & safety",
+                "Yield optimization & waste reduction in prep"
+            ],
+            "keywords": [
+                "truss",
+                "portion",
+                "jointing",
+                "spatchcock"
+            ],
+            "common_roles": [
+                "Culinary professionals",
+                "Kitchen prep staff",
+                "Butchery assistants"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Mandoline & mechanical slicer operation",
+            "aliases": [
+                "mandoline use",
+                "slicer operation",
+                "mechanical slicer"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Safe setup, adjustment and operation of mandolines and commercial slicers to achieve consistent thickness and throughput while minimizing risk of injury.",
+            "parent_skill": "Knife skills & ingredient prep",
+            "related_skills": [
+                "Precision slicing & julienne cuts",
+                "Knife handling & safety",
+                "Cross-contamination control & allergen segregation"
+            ],
+            "keywords": [
+                "mandoline",
+                "slicer safety",
+                "thickness adjustment",
+                "guard use"
+            ],
+            "common_roles": [
+                "Culinary professionals",
+                "Kitchen prep staff",
+                "Food production operators"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-contamination control & allergen segregation",
+            "aliases": [
+                "allergen control",
+                "cross-contamination prevention",
+                "allergen segregation"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Practices and procedures to prevent biological contamination and allergen cross-contact during ingredient receipt, storage, prep and plating.",
+            "parent_skill": "Knife skills & ingredient prep",
+            "related_skills": [
+                "Filleting fish",
+                "Mandoline & mechanical slicer operation",
+                "Knife handling & safety"
+            ],
+            "keywords": [
+                "allergen management",
+                "segregation",
+                "sanitation",
+                "cross-contact"
+            ],
+            "common_roles": [
+                "Culinary professionals",
+                "Kitchen prep staff",
+                "Food safety teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Yield optimization & waste reduction in prep",
+            "aliases": [
+                "yield optimization",
+                "trim utilization",
+                "waste reduction"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Techniques to maximize usable yield from raw ingredients, repurpose trimmings appropriately and reduce food waste and cost in prep operations.",
+            "parent_skill": "Knife skills & ingredient prep",
+            "related_skills": [
+                "Deboning & trimming meat",
+                "Dicing & brunoise cuts",
+                "Poultry trussing & portioning"
+            ],
+            "keywords": [
+                "trim utilization",
+                "butterfly for yield",
+                "cost control",
+                "waste minimization"
+            ],
+            "common_roles": [
+                "Culinary professionals",
+                "Kitchen prep staff",
+                "Food production operators"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

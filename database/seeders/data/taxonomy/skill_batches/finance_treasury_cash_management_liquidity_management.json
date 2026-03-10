@@ -1,0 +1,266 @@
+{
+    "domain": "Finance",
+    "category": "Treasury & Cash Management",
+    "subcategory": "Liquidity management",
+    "skills": [
+        {
+            "canonical_name": "Cash forecasting",
+            "aliases": [
+                "cash flow forecasting",
+                "rolling cash forecast",
+                "short-term cash forecasting",
+                "daily cash forecast"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Creating and maintaining forward-looking cash projections (daily to 12-month horizon) using receipts\/payments data, seasonality, and forecast models to predict liquidity needs.",
+            "parent_skill": "Liquidity management",
+            "related_skills": [
+                "Treasury Management System (TMS) configuration & operation",
+                "Intraday liquidity management",
+                "Working capital optimization",
+                "Short-term investment management"
+            ],
+            "keywords": [
+                "rolling forecast",
+                "cashflow",
+                "forecast model",
+                "projection",
+                "AR\/AP timing"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Intraday liquidity management",
+            "aliases": [
+                "intraday cash management",
+                "intraday cash monitoring",
+                "real-time liquidity monitoring"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Monitoring and actively managing cash balances and payment flows throughout the business day to ensure settlement obligations and avoid intraday overdrafts.",
+            "parent_skill": "Liquidity management",
+            "related_skills": [
+                "Cash concentration and sweeping",
+                "Payments processing",
+                "Treasury Management System (TMS) configuration & operation"
+            ],
+            "keywords": [
+                "RTGS",
+                "CHAPS",
+                "payment cut-offs",
+                "intraday limits",
+                "real-time balance"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash concentration and sweeping",
+            "aliases": [
+                "cash sweeping",
+                "bank sweep",
+                "cash concentration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and operating automated processes that move balances from subsidiary or branch accounts into central accounts to optimize liquidity and reduce idle cash.",
+            "parent_skill": "Liquidity management",
+            "related_skills": [
+                "Cash pooling (physical & notional)",
+                "Bank account and liquidity structure management",
+                "Treasury Management System (TMS) configuration & operation"
+            ],
+            "keywords": [
+                "sweep",
+                "notional sweep",
+                "physical sweep",
+                "bank mechanics",
+                "concentration account"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash pooling (physical & notional)",
+            "aliases": [
+                "notional pooling",
+                "physical pooling",
+                "intercompany pooling"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing, implementing and managing physical and notional pooling arrangements to centralize balances, reduce external borrowing, and optimize group liquidity.",
+            "parent_skill": "Liquidity management",
+            "related_skills": [
+                "Cash concentration and sweeping",
+                "Intercompany netting",
+                "Bank account and liquidity structure management"
+            ],
+            "keywords": [
+                "notional pool",
+                "physical pool",
+                "intercompany cash",
+                "zero balancing",
+                "pooling agreement"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Liquidity stress testing",
+            "aliases": [
+                "liquidity scenario analysis",
+                "contingency liquidity testing"
+            ],
+            "skill_type": "process_skill",
+            "description": "Creating and executing scenario-driven tests to quantify liquidity exposure under stressed conditions and assess the resilience of funding and cash flows.",
+            "parent_skill": "Liquidity management",
+            "related_skills": [
+                "Contingency funding planning",
+                "Liquidity risk measurement & regulatory reporting",
+                "Cash forecasting"
+            ],
+            "keywords": [
+                "scenario analysis",
+                "severe stress",
+                "reverse stress testing",
+                "liquidity gap"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Contingency funding planning",
+            "aliases": [
+                "contingency funding plan",
+                "liquidity contingency planning",
+                "CFP"
+            ],
+            "skill_type": "process_skill",
+            "description": "Developing and maintaining plans for alternative funding sources, escalation procedures, and liquidity actions to be used during liquidity shortfalls or crises.",
+            "parent_skill": "Liquidity management",
+            "related_skills": [
+                "Liquidity stress testing",
+                "Bank account and liquidity structure management",
+                "Liquidity risk measurement & regulatory reporting"
+            ],
+            "keywords": [
+                "backup facilities",
+                "survival horizon",
+                "emergency funding",
+                "escalation matrix"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Short-term investment management",
+            "aliases": [
+                "cash investments",
+                "short-term cash placement",
+                "money market investing"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Selecting, executing and monitoring short-duration investment instruments and counterparties to earn returns on excess cash while preserving liquidity and capital.",
+            "parent_skill": "Liquidity management",
+            "related_skills": [
+                "Counterparty credit assessment",
+                "Cash forecasting",
+                "Treasury investment policy"
+            ],
+            "keywords": [
+                "MMF",
+                "repo",
+                "commercial paper",
+                "liquidity ladder",
+                "overnight deposits"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Treasury Management System (TMS) configuration & operation",
+            "aliases": [
+                "treasury management system",
+                "TMS configuration",
+                "treasury system administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring and operating TMS platforms to support cash visibility, forecasting, payments, bank connectivity and liquidity reporting.",
+            "parent_skill": "Liquidity management",
+            "related_skills": [
+                "Cash forecasting",
+                "Intraday liquidity management",
+                "Payments processing"
+            ],
+            "keywords": [
+                "TMS",
+                "host-to-host",
+                "ERP integration",
+                "bank connectivity",
+                "systems config"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bank account and liquidity structure management",
+            "aliases": [
+                "bank account management",
+                "account rationalization",
+                "bank structure optimization"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Designing and managing the organization's bank account landscape, signatory arrangements and connectivity to optimize liquidity, reduce fees and meet operational needs.",
+            "parent_skill": "Liquidity management",
+            "related_skills": [
+                "Cash pooling (physical & notional)",
+                "Cash concentration and sweeping",
+                "Treasury Management System (TMS) configuration & operation"
+            ],
+            "keywords": [
+                "account rationalization",
+                "bank signatories",
+                "payment rails",
+                "bank connectivity",
+                "account structure"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Liquidity risk measurement & regulatory reporting",
+            "aliases": [
+                "LCR reporting",
+                "NSFR assessment",
+                "liquidity regulatory reporting"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Measuring regulatory liquidity metrics (e.g., LCR, NSFR), preparing required reports and ensuring internal metrics meet regulatory and internal risk appetite thresholds.",
+            "parent_skill": "Liquidity management",
+            "related_skills": [
+                "Liquidity stress testing",
+                "Contingency funding planning",
+                "Treasury reporting & analytics"
+            ],
+            "keywords": [
+                "LCR",
+                "NSFR",
+                "regulatory liquidity",
+                "liquidity ratios",
+                "reporting"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

@@ -1,0 +1,305 @@
+{
+    "domain": "Finance",
+    "category": "Accounts Receivable & Order-to-Cash",
+    "subcategory": "Billing & invoicing operations",
+    "skills": [
+        {
+            "canonical_name": "Invoice generation and delivery",
+            "aliases": [
+                "Invoice creation",
+                "Billing generation",
+                "Invoice processing and delivery"
+            ],
+            "skill_type": "operational_skill",
+            "description": "End-to-end operational tasks to produce, format and deliver customer invoices (paper, PDF, email), including template use, batching and delivery tracking.",
+            "parent_skill": "Billing & invoicing operations",
+            "related_skills": [
+                "Invoice validation and controls",
+                "Electronic invoicing (e-invoicing) standards and formats",
+                "Recurring and subscription billing management",
+                "Invoice presentment and payment portal administration",
+                "EDI and automated invoice exchange"
+            ],
+            "keywords": [
+                "invoice generation",
+                "billing cycle",
+                "invoice delivery",
+                "batch invoicing",
+                "invoice template"
+            ],
+            "common_roles": [
+                "Finance operations professionals",
+                "Order-to-Cash practitioners"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Electronic invoicing (e-invoicing) standards and formats",
+            "aliases": [
+                "e-invoicing",
+                "UBL",
+                "PEPPOL",
+                "Factur-X",
+                "XML invoicing"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Knowledge of structured electronic invoice standards, message formats and legal\/regulatory requirements for automated invoice exchange across jurisdictions.",
+            "parent_skill": "Billing & invoicing operations",
+            "related_skills": [
+                "EDI and automated invoice exchange",
+                "Tax calculation and compliance for invoicing (VAT\/GST\/sales tax)",
+                "Invoice presentment and payment portal administration",
+                "Invoice generation and delivery"
+            ],
+            "keywords": [
+                "e-invoice",
+                "UBL",
+                "PEPPOL",
+                "Factur-X",
+                "electronic invoice format"
+            ],
+            "common_roles": [
+                "Finance operations professionals",
+                "Order-to-Cash practitioners"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Recurring and subscription billing management",
+            "aliases": [
+                "Subscription billing",
+                "Recurring invoices",
+                "SaaS billing management",
+                "Recurring charge management"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and operating recurring billing processes including subscription lifecycle events, proration, renewals, upgrades\/downgrades and automated recurring invoice scheduling.",
+            "parent_skill": "Billing & invoicing operations",
+            "related_skills": [
+                "Invoice generation and delivery",
+                "Billing-to-revenue reconciliation and reporting",
+                "Billing system configuration and setup",
+                "Invoice validation and controls"
+            ],
+            "keywords": [
+                "recurring billing",
+                "subscription management",
+                "proration",
+                "renewal billing",
+                "recurring invoice"
+            ],
+            "common_roles": [
+                "Finance operations professionals",
+                "Revenue operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Credit memo and billing adjustments processing",
+            "aliases": [
+                "Credit note processing",
+                "Billing adjustments",
+                "Invoice refunds and corrections"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Processing and controlling credit memos, debit adjustments and refunds to correct invoicing errors or reflect returns, discounts or contractual adjustments.",
+            "parent_skill": "Billing & invoicing operations",
+            "related_skills": [
+                "Billing dispute resolution and customer investigations",
+                "Invoice validation and controls",
+                "Billing-to-revenue reconciliation and reporting"
+            ],
+            "keywords": [
+                "credit memo",
+                "adjustment",
+                "refund",
+                "invoice correction",
+                "credit note"
+            ],
+            "common_roles": [
+                "Finance operations professionals",
+                "Order-to-Cash practitioners"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Billing dispute resolution and customer investigations",
+            "aliases": [
+                "Invoice dispute management",
+                "Dispute handling and investigations",
+                "Billing investigations"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Managing customer disputes related to invoices — investigating root causes, coordinating with sales\/operations, negotiating resolutions and documenting outcomes.",
+            "parent_skill": "Billing & invoicing operations",
+            "related_skills": [
+                "Credit memo and billing adjustments processing",
+                "Collections coordination",
+                "Invoice validation and controls"
+            ],
+            "keywords": [
+                "dispute resolution",
+                "invoice investigation",
+                "claim handling",
+                "billing dispute",
+                "customer dispute"
+            ],
+            "common_roles": [
+                "Finance operations professionals",
+                "Customer billing support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Invoice validation and controls",
+            "aliases": [
+                "Invoice auditing",
+                "Billing validation",
+                "Invoice accuracy checks"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implementing validation rules, pre-posting checks and exception handling to ensure invoices are accurate, compliant with contracts\/pricing and free of data errors before issuance.",
+            "parent_skill": "Billing & invoicing operations",
+            "related_skills": [
+                "Invoice generation and delivery",
+                "Billing system configuration and setup",
+                "Tax calculation and compliance for invoicing (VAT\/GST\/sales tax)",
+                "Billing-to-revenue reconciliation and reporting"
+            ],
+            "keywords": [
+                "validation rules",
+                "invoice audit",
+                "data quality",
+                "billing controls",
+                "exception handling"
+            ],
+            "common_roles": [
+                "Finance operations professionals",
+                "Order-to-Cash practitioners"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax calculation and compliance for invoicing (VAT\/GST\/sales tax)",
+            "aliases": [
+                "VAT on invoices",
+                "Sales tax invoicing",
+                "GST calculation for invoices"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Applying jurisdictional indirect tax rules and tax codes to invoices, ensuring correct tax calculation, tax reporting fields and supporting documentation for compliance.",
+            "parent_skill": "Billing & invoicing operations",
+            "related_skills": [
+                "Electronic invoicing (e-invoicing) standards and formats",
+                "Invoice validation and controls",
+                "Billing-to-revenue reconciliation and reporting"
+            ],
+            "keywords": [
+                "VAT",
+                "GST",
+                "sales tax",
+                "tax codes",
+                "tax calculation"
+            ],
+            "common_roles": [
+                "Finance operations professionals",
+                "Tax compliance teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "EDI and automated invoice exchange",
+            "aliases": [
+                "EDI invoicing",
+                "AS2 invoicing",
+                "X12 invoicing"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configuring, mapping and operating electronic data interchange (EDI) or API-based integrations to exchange invoices automatically between systems and trading partners.",
+            "parent_skill": "Billing & invoicing operations",
+            "related_skills": [
+                "Electronic invoicing (e-invoicing) standards and formats",
+                "Invoice presentment and payment portal administration",
+                "Billing system configuration and setup"
+            ],
+            "keywords": [
+                "EDI",
+                "AS2",
+                "invoice mapping",
+                "invoice integration",
+                "automated invoice exchange"
+            ],
+            "common_roles": [
+                "Finance operations professionals",
+                "Order-to-Cash practitioners"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Invoice presentment and payment portal administration",
+            "aliases": [
+                "Online invoice presentment",
+                "Payment portal management",
+                "IPN administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Managing customer-facing invoice presentment systems and payment portals, including configuration of invoice views, payment methods, reconciliation hooks and customer access.",
+            "parent_skill": "Billing & invoicing operations",
+            "related_skills": [
+                "Invoice generation and delivery",
+                "EDI and automated invoice exchange",
+                "Tax calculation and compliance for invoicing (VAT\/GST\/sales tax)"
+            ],
+            "keywords": [
+                "invoice presentment",
+                "payment portal",
+                "online billing",
+                "customer portal",
+                "payment methods"
+            ],
+            "common_roles": [
+                "Finance operations professionals",
+                "Customer billing support"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Billing-to-revenue reconciliation and reporting",
+            "aliases": [
+                "Billing reconciliation",
+                "Invoice to revenue reconciliation",
+                "Billing analytics and reporting"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Reconciliations and analysis to ensure billed amounts tie to reported revenue, producing month-end reports, KPI tracking and investigation of variances between billing and accounting records.",
+            "parent_skill": "Billing & invoicing operations",
+            "related_skills": [
+                "Invoice validation and controls",
+                "Credit memo and billing adjustments processing",
+                "Tax calculation and compliance for invoicing (VAT\/GST\/sales tax)"
+            ],
+            "keywords": [
+                "reconciliation",
+                "billing analytics",
+                "variance analysis",
+                "month-end close",
+                "billing reports"
+            ],
+            "common_roles": [
+                "Finance operations professionals",
+                "Revenue operations"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

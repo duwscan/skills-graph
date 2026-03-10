@@ -1,0 +1,309 @@
+{
+    "domain": "Finance",
+    "category": "Treasury & Cash Management",
+    "subcategory": "Bank account management",
+    "skills": [
+        {
+            "canonical_name": "Bank account administration",
+            "aliases": [
+                "account administration",
+                "bank account maintenance",
+                "account master data management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintain and update corporate bank account records, signatory lists, account metadata, and banking mandates throughout the account lifecycle.",
+            "parent_skill": "Bank account management",
+            "related_skills": [
+                "Account opening & closure",
+                "Bank signatory and mandate management",
+                "Bank statement processing & reconciliation"
+            ],
+            "keywords": [
+                "account records",
+                "account metadata",
+                "signatories",
+                "mandates",
+                "account status"
+            ],
+            "common_roles": [
+                "Treasury Analyst",
+                "Cash Manager",
+                "Treasury Operations Specialist",
+                "Finance Operations Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Account opening & closure",
+            "aliases": [
+                "bank account opening",
+                "account onboarding",
+                "account closure process"
+            ],
+            "skill_type": "process_skill",
+            "description": "Execute and coordinate bank account onboarding and closure processes including documentation collection, bank applications, internal approvals and post-close actions.",
+            "parent_skill": "Bank account management",
+            "related_skills": [
+                "KYC\/AML account onboarding compliance",
+                "Bank account administration",
+                "Bank signatory and mandate management"
+            ],
+            "keywords": [
+                "onboarding",
+                "closure",
+                "documentation",
+                "application forms",
+                "account setup"
+            ],
+            "common_roles": [
+                "Treasury Analyst",
+                "Treasury Operations Specialist",
+                "Cash Operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bank signatory and mandate management",
+            "aliases": [
+                "signatory management",
+                "mandate management",
+                "power of attorney management"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Manage bank signatories, signature authorities, mandates and corporate resolutions to ensure correct authorization and segregation of duties on accounts.",
+            "parent_skill": "Bank account management",
+            "related_skills": [
+                "Bank account administration",
+                "Account opening & closure",
+                "KYC\/AML account onboarding compliance"
+            ],
+            "keywords": [
+                "signatures",
+                "authorities",
+                "mandates",
+                "board resolutions",
+                "segregation of duties"
+            ],
+            "common_roles": [
+                "Treasury Manager",
+                "Treasury Analyst",
+                "Corporate Treasurer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bank statement processing & reconciliation",
+            "aliases": [
+                "bank reconciliation",
+                "statement processing",
+                "bank statement reconciliation"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Ingest, match and reconcile bank statements to ledger entries, resolve variances, and prepare periodic reconciliation reports for cash control.",
+            "parent_skill": "Bank account management",
+            "related_skills": [
+                "Bank account administration",
+                "Electronic banking & host-to-host integrations",
+                "Treasury reporting"
+            ],
+            "keywords": [
+                "reconciliation",
+                "bank statements",
+                "cash control",
+                "variance resolution",
+                "statement matching"
+            ],
+            "common_roles": [
+                "Treasury Analyst",
+                "Cash Analyst",
+                "Finance Operations Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cash concentration & zero-balancing",
+            "aliases": [
+                "cash pooling",
+                "zero balance accounting",
+                "in-house banking concentration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and operate cash concentration structures (notional or physical), zero-balance accounts and intra-group sweeps to centralize liquidity and optimize funding.",
+            "parent_skill": "Bank account management",
+            "related_skills": [
+                "Multi-currency account management",
+                "Cash forecasting",
+                "Bank account administration"
+            ],
+            "keywords": [
+                "cash pooling",
+                "zero balance",
+                "sweeps",
+                "liquidity concentration",
+                "in-house bank"
+            ],
+            "common_roles": [
+                "Treasury Manager",
+                "Head of Treasury",
+                "Cash Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Multi-currency account management",
+            "aliases": [
+                "FX account management",
+                "foreign currency account administration",
+                "multi-currency banking"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Manage accounts denominated in multiple currencies, handle currency conversions, hedging interface points and accounting impacts for cross-border cash operations.",
+            "parent_skill": "Bank account management",
+            "related_skills": [
+                "Cash concentration & zero-balancing",
+                "FX exposure management",
+                "Bank account administration"
+            ],
+            "keywords": [
+                "multi-currency",
+                "foreign currency",
+                "FX",
+                "currency conversion",
+                "cross-border"
+            ],
+            "common_roles": [
+                "Treasury Analyst",
+                "Cash Manager",
+                "Corporate Treasurer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Electronic banking & host-to-host integrations",
+            "aliases": [
+                "SWIFT\/EBICS\/H2H integrations",
+                "electronic bank connectivity",
+                "bank file format management"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Implement and operate electronic banking channels and host-to-host integrations (SWIFT, EBICS, API\/H2H), manage file formats, transmission schedules and secure connectivity.",
+            "parent_skill": "Bank account management",
+            "related_skills": [
+                "Bank statement processing & reconciliation",
+                "Payments initiation",
+                "Treasury systems"
+            ],
+            "keywords": [
+                "SWIFT",
+                "EBICS",
+                "host-to-host",
+                "H2H",
+                "bank APIs",
+                "file formats"
+            ],
+            "common_roles": [
+                "Treasury Systems Analyst",
+                "Payments Operations",
+                "Treasury Operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bank fee analysis & cost optimization",
+            "aliases": [
+                "bank charges analysis",
+                "bank fee benchmarking",
+                "banking cost optimization"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Analyze bank tariffs and transaction costs, identify fee drivers, perform benchmarking and recommend fee optimization and renegotiation strategies.",
+            "parent_skill": "Bank account management",
+            "related_skills": [
+                "Bank relationship management",
+                "Treasury reporting",
+                "Electronic banking & host-to-host integrations"
+            ],
+            "keywords": [
+                "bank fees",
+                "tariffs",
+                "benchmarking",
+                "cost reduction",
+                "fee analysis"
+            ],
+            "common_roles": [
+                "Treasury Manager",
+                "Treasury Analyst",
+                "Finance Operations Manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "KYC\/AML account onboarding compliance",
+            "aliases": [
+                "account KYC",
+                "anti-money laundering account checks",
+                "customer due diligence for accounts"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Ensure bank account onboarding and maintenance comply with KYC\/AML requirements, perform customer due diligence, PEP checks and ongoing monitoring related to accounts.",
+            "parent_skill": "Bank account management",
+            "related_skills": [
+                "Account opening & closure",
+                "Bank signatory and mandate management",
+                "Transaction monitoring"
+            ],
+            "keywords": [
+                "KYC",
+                "AML",
+                "CDD",
+                "PEP",
+                "compliance checks"
+            ],
+            "common_roles": [
+                "Treasury Operations Specialist",
+                "Compliance Analyst",
+                "Treasury Analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Bank relationship management",
+            "aliases": [
+                "bank liaison",
+                "bank relationship governance",
+                "bank service management"
+            ],
+            "skill_type": "communication_skill",
+            "description": "Manage operational and strategic relationships with banking partners, including SLA management, escalation handling, service reviews and negotiation of operational terms.",
+            "parent_skill": "Bank account management",
+            "related_skills": [
+                "Bank fee analysis & cost optimization",
+                "Electronic banking & host-to-host integrations",
+                "Account opening & closure"
+            ],
+            "keywords": [
+                "bank relationships",
+                "SLA",
+                "vendor management",
+                "escalation",
+                "service reviews"
+            ],
+            "common_roles": [
+                "Treasury Manager",
+                "Corporate Treasurer",
+                "Head of Treasury"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

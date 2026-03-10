@@ -1,0 +1,258 @@
+{
+    "domain": "Finance",
+    "category": "Tax Operations & Compliance",
+    "subcategory": "Withholding tax processing",
+    "skills": [
+        {
+            "canonical_name": "Withholding tax calculation",
+            "aliases": [
+                "withholding tax computation",
+                "tax withholding calculation",
+                "calculate withholding tax"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Compute withholding tax amounts for payments to vendors, employees, and non-residents using applicable rates, exemptions, and gross-up rules.",
+            "parent_skill": "Withholding tax processing",
+            "related_skills": [
+                "Withholding tax rate table management",
+                "Payroll tax withholding",
+                "Tax treaty application for withholding"
+            ],
+            "keywords": [
+                "tax base",
+                "gross-up",
+                "applicable rate",
+                "withholding amount",
+                "net of tax"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Withholding tax rate table management",
+            "aliases": [
+                "tax rate maintenance",
+                "withholding rate maintenance",
+                "tax rate table updates"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Maintain and update withholding tax rate tables and mapping logic used across payroll, accounts payable, and payments systems to ensure correct tax application.",
+            "parent_skill": "Withholding tax processing",
+            "related_skills": [
+                "Withholding tax calculation",
+                "ERP tax engine configuration (withholding)",
+                "Withholding tax reporting and filings"
+            ],
+            "keywords": [
+                "rate table",
+                "tax mapping",
+                "rate refresh",
+                "effective date"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Tax treaty application for withholding",
+            "aliases": [
+                "tax treaty relief application",
+                "treaty withholding",
+                "apply tax treaty benefits"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Interpret and apply bilateral tax treaty provisions and certificate requirements to determine reduced or exempt withholding on cross-border payments.",
+            "parent_skill": "Withholding tax processing",
+            "related_skills": [
+                "Non-resident withholding procedures",
+                "Cross-border payment withholding compliance",
+                "Withholding tax documentation & certification management"
+            ],
+            "keywords": [
+                "tax treaty",
+                "reduced rate",
+                "residency certificate",
+                "double taxation relief"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Non-resident withholding procedures",
+            "aliases": [
+                "non-resident withholding",
+                "NR withholding processing",
+                "nonresident tax withholding"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Apply jurisdictional rules for withholding on payments to non-resident individuals and entities, including residency determination and special rates.",
+            "parent_skill": "Withholding tax processing",
+            "related_skills": [
+                "Tax treaty application for withholding",
+                "Withholding tax documentation & certification management",
+                "Withholding tax calculation"
+            ],
+            "keywords": [
+                "non-resident",
+                "source country rules",
+                "withholding obligations",
+                "tax residency"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Withholding tax reporting and filings",
+            "aliases": [
+                "withholding tax returns",
+                "withholding reporting",
+                "tax withholding filings"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Prepare and submit statutory withholding tax reports, summary filings, and remittances to tax authorities according to local filing schedules and formats.",
+            "parent_skill": "Withholding tax processing",
+            "related_skills": [
+                "Withholding tax calculation",
+                "Withholding tax rate table management",
+                "Withholding tax audit & dispute support"
+            ],
+            "keywords": [
+                "remittance",
+                "reporting deadlines",
+                "tax authority filing",
+                "periodic return"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Withholding tax reclaim and refund processing",
+            "aliases": [
+                "withholding tax recovery",
+                "tax refund processing",
+                "withholding reclaim"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Manage claims for refund or credit of overwithheld tax, including preparing supporting documentation, liaising with payees and tax authorities, and tracking outcomes.",
+            "parent_skill": "Withholding tax processing",
+            "related_skills": [
+                "Withholding tax documentation & certification management",
+                "Withholding tax reporting and filings",
+                "Withholding tax audit & dispute support"
+            ],
+            "keywords": [
+                "refund claim",
+                "overwithholding",
+                "credit application",
+                "supporting documentation"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Withholding tax documentation & certification management",
+            "aliases": [
+                "withholding documentation management",
+                "tax residency certificate handling",
+                "documentary evidence management"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Collect, validate, and manage required documentary evidence (e.g., residency certificates, exemption forms) to support withholding positions and treaty claims.",
+            "parent_skill": "Withholding tax processing",
+            "related_skills": [
+                "Tax treaty application for withholding",
+                "Non-resident withholding procedures",
+                "Withholding tax reclaim and refund processing"
+            ],
+            "keywords": [
+                "residency certificate",
+                "evidence retention",
+                "form validation",
+                "document verification"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Cross-border payment withholding compliance",
+            "aliases": [
+                "international withholding",
+                "cross-border withholding",
+                "global withholding compliance"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Ensure withholding compliance for international payments by coordinating multi-jurisdictional rules, bank requirements, and intercompany flows across countries.",
+            "parent_skill": "Withholding tax processing",
+            "related_skills": [
+                "Tax treaty application for withholding",
+                "ERP tax engine configuration (withholding)",
+                "Non-resident withholding procedures"
+            ],
+            "keywords": [
+                "cross-border",
+                "multi-jurisdiction",
+                "payment routing",
+                "bank withholding"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ERP tax engine configuration (withholding)",
+            "aliases": [
+                "tax engine configuration",
+                "ERP withholding setup",
+                "withholding tax system configuration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configure and maintain withholding tax logic, rate tables, posting rules, and integration points within enterprise payment or payroll systems (ERP\/tax engines) to automate withholding.",
+            "parent_skill": "Withholding tax processing",
+            "related_skills": [
+                "Withholding tax rate table management",
+                "Withholding tax calculation",
+                "Withholding tax reporting and filings"
+            ],
+            "keywords": [
+                "tax engine",
+                "configuration",
+                "system mapping",
+                "payment integration"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Withholding tax audit & dispute support",
+            "aliases": [
+                "withholding audit support",
+                "tax withholding dispute resolution",
+                "withholding controversy support"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Support tax audits and disputes related to withholding positions by preparing reconciliations, evidence packages, explanations of positions, and coordinating with external advisors.",
+            "parent_skill": "Withholding tax processing",
+            "related_skills": [
+                "Withholding tax reporting and filings",
+                "Withholding tax documentation & certification management",
+                "Withholding tax reclaim and refund processing"
+            ],
+            "keywords": [
+                "audit response",
+                "reconciliation",
+                "dispute resolution",
+                "evidence package"
+            ],
+            "common_roles": [],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

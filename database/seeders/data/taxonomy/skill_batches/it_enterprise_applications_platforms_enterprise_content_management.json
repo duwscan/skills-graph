@@ -1,0 +1,306 @@
+{
+    "domain": "IT",
+    "category": "Enterprise Applications & Platforms",
+    "subcategory": "Enterprise content management",
+    "skills": [
+        {
+            "canonical_name": "Document Management",
+            "aliases": [
+                "document repository management",
+                "document control",
+                "ECM document management",
+                "document versioning"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Managing the capture, storage, versioning, retrieval, access control and lifecycle of electronic documents within enterprise content management systems.",
+            "parent_skill": "Enterprise content management",
+            "related_skills": [
+                "Metadata and Taxonomy Design",
+                "Content Security and Rights Management",
+                "Content Management APIs & Integration",
+                "Content Migration and Data Mapping"
+            ],
+            "keywords": [
+                "versioning",
+                "check-in check-out",
+                "document repository",
+                "content library",
+                "access control"
+            ],
+            "common_roles": [
+                "ECM administrator",
+                "content operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Records Management",
+            "aliases": [
+                "records lifecycle management",
+                "records retention",
+                "legal hold management"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Implementing policies and technical controls for records retention, disposition, legal holds and audit trails to meet regulatory and organizational requirements.",
+            "parent_skill": "Enterprise content management",
+            "related_skills": [
+                "Content Security and Rights Management",
+                "Information Lifecycle Management",
+                "Metadata and Taxonomy Design"
+            ],
+            "keywords": [
+                "retention schedule",
+                "disposition",
+                "legal hold",
+                "audit trail",
+                "compliance"
+            ],
+            "common_roles": [
+                "compliance teams",
+                "records teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Metadata and Taxonomy Design",
+            "aliases": [
+                "taxonomy management",
+                "metadata modeling",
+                "controlled vocabulary design",
+                "content classification"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Designing metadata schemas, taxonomies and controlled vocabularies to enable content discovery, classification, governance and lifecycle policies.",
+            "parent_skill": "Enterprise content management",
+            "related_skills": [
+                "Enterprise Search and Indexing for Content",
+                "Document Management",
+                "Content Migration and Data Mapping"
+            ],
+            "keywords": [
+                "taxonomy",
+                "ontology",
+                "metadata schema",
+                "tagging",
+                "classification"
+            ],
+            "common_roles": [
+                "information architecture",
+                "content strategy"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Content Migration and Data Mapping",
+            "aliases": [
+                "content migration",
+                "data mapping for ECM",
+                "content transformation",
+                "system-to-system content migration"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Planning and executing bulk content migrations between repositories, including content extraction, transformation, metadata mapping, validation and cutover procedures.",
+            "parent_skill": "Enterprise content management",
+            "related_skills": [
+                "Metadata and Taxonomy Design",
+                "Content Management APIs & Integration",
+                "Document Management"
+            ],
+            "keywords": [
+                "ETL",
+                "migration plan",
+                "metadata mapping",
+                "content remediation",
+                "bulk ingestion"
+            ],
+            "common_roles": [
+                "migration teams",
+                "application deployment"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Workflow and Business Process Automation for Content",
+            "aliases": [
+                "content workflow design",
+                "BPM for content",
+                "workflow automation (ECM)",
+                "document approval workflows"
+            ],
+            "skill_type": "process_skill",
+            "description": "Designing and implementing automated content-centric workflows and approval processes using BPM\/workflow tools integrated with ECM systems.",
+            "parent_skill": "Enterprise content management",
+            "related_skills": [
+                "Content Management APIs & Integration",
+                "Document Management",
+                "Enterprise Search and Indexing for Content"
+            ],
+            "keywords": [
+                "workflow",
+                "BPM",
+                "approval routing",
+                "process automation",
+                "notifications"
+            ],
+            "common_roles": [
+                "process owners",
+                "automation teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Digital Asset Management (DAM)",
+            "aliases": [
+                "dam",
+                "digital asset lifecycle management",
+                "rich media management"
+            ],
+            "skill_type": "analytical_skill",
+            "description": "Managing storage, metadata, delivery and lifecycle of rich media (images, video, audio) and marketing assets within DAM platforms and integrations with ECM.",
+            "parent_skill": "Enterprise content management",
+            "related_skills": [
+                "Metadata and Taxonomy Design",
+                "Enterprise Search and Indexing for Content",
+                "Content Delivery & CDN Integration"
+            ],
+            "keywords": [
+                "rich media",
+                "asset rendition",
+                "thumbnails",
+                "preservation",
+                "media metadata"
+            ],
+            "common_roles": [
+                "marketing operations",
+                "content operations"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Enterprise Search and Indexing for Content",
+            "aliases": [
+                "enterprise search",
+                "search indexing",
+                "full-text search",
+                "content indexing"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing search architectures, indexing pipelines, relevance tuning and facets for enterprise content using search engines and CMS-integrated search.",
+            "parent_skill": "Enterprise content management",
+            "related_skills": [
+                "Metadata and Taxonomy Design",
+                "Document Management",
+                "Content Management APIs & Integration"
+            ],
+            "keywords": [
+                "indexing",
+                "full-text search",
+                "relevance",
+                "Elasticsearch",
+                "SOLR"
+            ],
+            "common_roles": [
+                "search teams",
+                "platform engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Content Security and Rights Management",
+            "aliases": [
+                "information rights management",
+                "content access controls",
+                "content encryption",
+                "document-level security"
+            ],
+            "skill_type": "compliance_skill",
+            "description": "Applying access controls, encryption, DRM\/IRM, auditing and monitoring to protect sensitive content and enforce usage rights across ECM systems.",
+            "parent_skill": "Enterprise content management",
+            "related_skills": [
+                "Records Management",
+                "Document Management",
+                "Content Management APIs & Integration"
+            ],
+            "keywords": [
+                "IRM",
+                "encryption",
+                "access control",
+                "audit logs",
+                "data loss prevention"
+            ],
+            "common_roles": [
+                "security teams",
+                "compliance teams"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Content Management APIs & Integration",
+            "aliases": [
+                "CMIS",
+                "REST APIs for CMS",
+                "content integration",
+                "content connectors"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Developing and maintaining integrations between ECM systems and other applications using standards (CMIS), REST APIs, webhooks and middleware for content exchange and synchronization.",
+            "parent_skill": "Enterprise content management",
+            "related_skills": [
+                "Content Migration and Data Mapping",
+                "Workflow and Business Process Automation for Content",
+                "Enterprise Search and Indexing for Content"
+            ],
+            "keywords": [
+                "CMIS",
+                "REST",
+                "API",
+                "webhooks",
+                "middleware"
+            ],
+            "common_roles": [
+                "integration teams",
+                "platform engineering"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "OCR and Intelligent Document Processing (IDP)",
+            "aliases": [
+                "optical character recognition",
+                "intelligent document processing",
+                "ICR",
+                "document capture and extraction"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying OCR\/ICR and AI-driven extraction techniques to convert scanned or image-based content to structured, searchable data and to automate classification and data capture.",
+            "parent_skill": "Enterprise content management",
+            "related_skills": [
+                "Document Management",
+                "Content Migration and Data Mapping",
+                "Metadata and Taxonomy Design"
+            ],
+            "keywords": [
+                "OCR",
+                "IDP",
+                "text extraction",
+                "image preprocessing",
+                "data capture"
+            ],
+            "common_roles": [
+                "capture\/scan operations",
+                "automation teams"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

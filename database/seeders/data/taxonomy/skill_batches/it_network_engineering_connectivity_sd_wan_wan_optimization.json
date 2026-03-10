@@ -1,0 +1,323 @@
+{
+    "domain": "IT",
+    "category": "Network Engineering & Connectivity",
+    "subcategory": "SD-WAN & WAN optimization",
+    "skills": [
+        {
+            "canonical_name": "SD-WAN architecture design",
+            "aliases": [
+                "software-defined WAN design",
+                "SD-WAN solution design"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing end-to-end SD-WAN solutions including overlay topology, underlay transport selection, resiliency, scaling, multi-site and cloud connectivity patterns.",
+            "parent_skill": "SD-WAN & WAN optimization",
+            "related_skills": [
+                "Overlay and underlay network design",
+                "SD-WAN deployment & orchestration",
+                "Application-aware routing & traffic steering",
+                "Secure SD-WAN configuration",
+                "Routing protocols for WAN (BGP & OSPF)"
+            ],
+            "keywords": [
+                "sd-wan",
+                "architecture",
+                "design",
+                "overlay",
+                "underlay",
+                "topology",
+                "resiliency"
+            ],
+            "common_roles": [
+                "Network Architect",
+                "SD-WAN Engineer",
+                "Senior Network Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SD-WAN deployment & orchestration",
+            "aliases": [
+                "SD-WAN rollout",
+                "SD-WAN provisioning",
+                "SD-WAN lifecycle management"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Hands-on implementation and lifecycle management of SD-WAN solutions: controller\/controller clusters, policy push, firmware\/upgrades, scaling and change management.",
+            "parent_skill": "SD-WAN & WAN optimization",
+            "related_skills": [
+                "Zero-touch provisioning (ZTP) for SD-WAN",
+                "SD-WAN monitoring, analytics & troubleshooting",
+                "SD-WAN architecture design",
+                "Secure SD-WAN configuration"
+            ],
+            "keywords": [
+                "deployment",
+                "orchestration",
+                "controller",
+                "policy push",
+                "provisioning",
+                "upgrade"
+            ],
+            "common_roles": [
+                "SD-WAN Engineer",
+                "Network Engineer",
+                "Connectivity Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Zero-touch provisioning (ZTP) for SD-WAN",
+            "aliases": [
+                "zero-touch deployment",
+                "automated branch provisioning",
+                "ZTP for WAN"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implementing automated device bootstrap and provisioning workflows (templates, certificates, bootstrap servers) to enable rapid, consistent branch deployments.",
+            "parent_skill": "SD-WAN & WAN optimization",
+            "related_skills": [
+                "SD-WAN deployment & orchestration",
+                "SD-WAN monitoring, analytics & troubleshooting",
+                "Vendor SD-WAN administration"
+            ],
+            "keywords": [
+                "zero-touch",
+                "ztp",
+                "bootstrap",
+                "automation",
+                "templates",
+                "provisioning"
+            ],
+            "common_roles": [
+                "Network Engineer",
+                "SD-WAN Engineer",
+                "Field Network Technician"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "WAN optimization (WAN acceleration)",
+            "aliases": [
+                "WAN accel",
+                "WAN optimization techniques",
+                "WAN acceleration"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Applying techniques and appliances to improve WAN throughput and user experience using compression, deduplication, caching, protocol optimization and TCP acceleration.",
+            "parent_skill": "SD-WAN & WAN optimization",
+            "related_skills": [
+                "Quality of Service (QoS) for WAN and SD-WAN",
+                "SD-WAN monitoring, analytics & troubleshooting",
+                "Application-aware routing & traffic steering"
+            ],
+            "keywords": [
+                "wan optimization",
+                "acceleration",
+                "compression",
+                "deduplication",
+                "tcp optimization",
+                "caching"
+            ],
+            "common_roles": [
+                "WAN Engineer",
+                "Network Engineer",
+                "SD-WAN Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Application-aware routing & traffic steering",
+            "aliases": [
+                "application-aware SD-WAN routing",
+                "path steering",
+                "traffic steering"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Configuring policies to steer traffic based on application identity, SLA (latency\/jitter\/loss), business intent or user, using DPI\/app classification and multi-path decisioning.",
+            "parent_skill": "SD-WAN & WAN optimization",
+            "related_skills": [
+                "Quality of Service (QoS) for WAN and SD-WAN",
+                "SD-WAN architecture design",
+                "SD-WAN monitoring, analytics & troubleshooting",
+                "WAN optimization (WAN acceleration)"
+            ],
+            "keywords": [
+                "application routing",
+                "traffic steering",
+                "dpi",
+                "app classification",
+                "path selection",
+                "sla-based routing"
+            ],
+            "common_roles": [
+                "Network Engineer",
+                "SD-WAN Engineer",
+                "Application Network Specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Quality of Service (QoS) for WAN and SD-WAN",
+            "aliases": [
+                "WAN QoS",
+                "traffic prioritization",
+                "QoS configuration"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and implementing QoS policies across WAN and SD-WAN environments including marking, classification, shaping, policing and queue management to meet application SLAs.",
+            "parent_skill": "SD-WAN & WAN optimization",
+            "related_skills": [
+                "Application-aware routing & traffic steering",
+                "WAN optimization (WAN acceleration)",
+                "SD-WAN monitoring, analytics & troubleshooting"
+            ],
+            "keywords": [
+                "qos",
+                "traffic prioritization",
+                "shaping",
+                "policing",
+                "cbq",
+                "queueing",
+                "sla"
+            ],
+            "common_roles": [
+                "Network Engineer",
+                "SD-WAN Engineer",
+                "Voice\/Video Network Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Secure SD-WAN configuration",
+            "aliases": [
+                "SD-WAN security integration",
+                "SD-WAN firewall segmentation",
+                "IPSec for SD-WAN"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Integrating security controls into SD-WAN: IPSec\/VPN encryption, segmentation, next‑gen firewall integration, secure internet breakout and policy-based security enforcement.",
+            "parent_skill": "SD-WAN & WAN optimization",
+            "related_skills": [
+                "SD-WAN deployment & orchestration",
+                "SD-WAN monitoring, analytics & troubleshooting",
+                "SD-WAN architecture design"
+            ],
+            "keywords": [
+                "secure sd-wan",
+                "encryption",
+                "ipsec",
+                "segmentation",
+                "firewall",
+                "secure internet breakout"
+            ],
+            "common_roles": [
+                "Network Security Engineer",
+                "SD-WAN Engineer",
+                "Network Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Overlay and underlay network design",
+            "aliases": [
+                "underlay design",
+                "overlay networking",
+                "transport design for SD-WAN"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Design and configuration of underlay transports (MPLS, Internet, broadband) and overlay topologies (tunnels, encapsulation), transport SLA mapping and route integration strategies.",
+            "parent_skill": "SD-WAN & WAN optimization",
+            "related_skills": [
+                "Routing protocols for WAN (BGP & OSPF)",
+                "SD-WAN architecture design",
+                "Application-aware routing & traffic steering"
+            ],
+            "keywords": [
+                "overlay",
+                "underlay",
+                "mpls",
+                "internet transport",
+                "tunnels",
+                "encapsulation",
+                "sla"
+            ],
+            "common_roles": [
+                "Network Architect",
+                "Network Engineer",
+                "SD-WAN Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Routing protocols for WAN (BGP & OSPF)",
+            "aliases": [
+                "BGP for SD-WAN",
+                "OSPF for WAN",
+                "WAN routing protocols"
+            ],
+            "skill_type": "hard_skill",
+            "description": "Designing and configuring BGP and OSPF in WAN\/SD-WAN contexts, including route policies, redistribution between overlays\/underlays, path selection and scaling considerations.",
+            "parent_skill": "SD-WAN & WAN optimization",
+            "related_skills": [
+                "Overlay and underlay network design",
+                "SD-WAN architecture design",
+                "SD-WAN deployment & orchestration"
+            ],
+            "keywords": [
+                "bgp",
+                "ospf",
+                "routing",
+                "route policies",
+                "redistribution",
+                "path selection"
+            ],
+            "common_roles": [
+                "Network Engineer",
+                "WAN Engineer",
+                "SD-WAN Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SD-WAN monitoring, analytics & troubleshooting",
+            "aliases": [
+                "SD-WAN performance monitoring",
+                "WAN troubleshooting",
+                "SD-WAN analytics"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Using telemetry, logging, synthetic testing, packet capture and analytics to monitor SD-WAN health, diagnose performance issues, validate policies and optimize link usage.",
+            "parent_skill": "SD-WAN & WAN optimization",
+            "related_skills": [
+                "Quality of Service (QoS) for WAN and SD-WAN",
+                "Zero-touch provisioning (ZTP) for SD-WAN",
+                "Application-aware routing & traffic steering"
+            ],
+            "keywords": [
+                "monitoring",
+                "telemetry",
+                "packet capture",
+                "synthetic tests",
+                "troubleshooting",
+                "analytics"
+            ],
+            "common_roles": [
+                "Network Operations Engineer",
+                "SD-WAN Engineer",
+                "NOC Engineer"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}

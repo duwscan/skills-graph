@@ -1,0 +1,298 @@
+{
+    "domain": "Finance",
+    "category": "Finance Data, Systems & Automation",
+    "subcategory": "ERP finance module administration",
+    "skills": [
+        {
+            "canonical_name": "ERP financial master data management",
+            "aliases": [
+                "financial master data governance",
+                "finance master data management",
+                "master data administration (finance)"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Govern and maintain core finance master records (chart of accounts, customers, vendors, cost centers), ensuring data quality, lifecycle processes, and system controls across ERP finance modules.",
+            "parent_skill": "ERP finance module administration",
+            "related_skills": [
+                "Chart of accounts design & configuration",
+                "Accounts payable module administration",
+                "Accounts receivable module administration",
+                "Financial data integration (APIs & ETL)"
+            ],
+            "keywords": [
+                "master data",
+                "vendor master",
+                "customer master",
+                "cost center",
+                "data stewardship"
+            ],
+            "common_roles": [
+                "Finance systems administrator",
+                "ERP functional consultant",
+                "Master data lead"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Chart of accounts design & configuration",
+            "aliases": [
+                "COA design",
+                "chart of accounts setup",
+                "account structure configuration"
+            ],
+            "skill_type": "process_skill",
+            "description": "Design and implement the chart of accounts structure, numbering, segments and accounting hierarchies in the ERP to support reporting, statutory requirements and business processes.",
+            "parent_skill": "ERP finance module administration",
+            "related_skills": [
+                "ERP financial master data management",
+                "General ledger configuration & month‑end close automation",
+                "Financial reporting & embedded analytics configuration"
+            ],
+            "keywords": [
+                "chart of accounts",
+                "account segmentation",
+                "account hierarchy",
+                "GL structure"
+            ],
+            "common_roles": [
+                "Finance application manager",
+                "Financial systems analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "General ledger configuration & month‑end close automation",
+            "aliases": [
+                "GL configuration",
+                "general ledger setup",
+                "month end close automation"
+            ],
+            "skill_type": "process_skill",
+            "description": "Configure general ledger settings, posting rules, period controls and automated close tasks in ERP systems to support accurate financial close cycles and statutory reporting.",
+            "parent_skill": "ERP finance module administration",
+            "related_skills": [
+                "Chart of accounts design & configuration",
+                "Financial reporting & embedded analytics configuration",
+                "ERP financial master data management"
+            ],
+            "keywords": [
+                "general ledger",
+                "period close",
+                "reconciliations",
+                "posting rules",
+                "close automation"
+            ],
+            "common_roles": [
+                "Finance systems administrator",
+                "Close process specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Accounts payable module administration",
+            "aliases": [
+                "AP module configuration",
+                "accounts payable configuration",
+                "vendor invoice processing setup"
+            ],
+            "skill_type": "process_skill",
+            "description": "Administer and configure the accounts payable module including invoice processing, payment runs, supplier management, approval workflows and AP controls within the ERP.",
+            "parent_skill": "ERP finance module administration",
+            "related_skills": [
+                "ERP financial master data management",
+                "Financial data integration (APIs & ETL)",
+                "ERP security & role‑based access control for finance"
+            ],
+            "keywords": [
+                "accounts payable",
+                "invoice workflow",
+                "payment processing",
+                "supplier setup",
+                "three‑way match"
+            ],
+            "common_roles": [
+                "ERP functional consultant",
+                "Finance systems analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Accounts receivable module administration",
+            "aliases": [
+                "AR module configuration",
+                "accounts receivable configuration",
+                "customer invoice processing setup"
+            ],
+            "skill_type": "process_skill",
+            "description": "Configure and maintain accounts receivable processes in the ERP including billing, cash application, credit management, customer master integration and AR aging\/reporting.",
+            "parent_skill": "ERP finance module administration",
+            "related_skills": [
+                "ERP financial master data management",
+                "Financial reporting & embedded analytics configuration",
+                "Financial data integration (APIs & ETL)"
+            ],
+            "keywords": [
+                "accounts receivable",
+                "cash application",
+                "billing",
+                "credit management",
+                "AR aging"
+            ],
+            "common_roles": [
+                "Finance systems administrator",
+                "ERP functional consultant"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Fixed assets module configuration & depreciation management",
+            "aliases": [
+                "fixed assets setup",
+                "asset accounting configuration",
+                "asset lifecycle management (ERP)"
+            ],
+            "skill_type": "process_skill",
+            "description": "Implement and manage fixed assets processes in ERP systems, including asset master setup, capitalization, depreciation rules, revaluations, disposals and statutory reporting interfaces.",
+            "parent_skill": "ERP finance module administration",
+            "related_skills": [
+                "ERP financial master data management",
+                "General ledger configuration & month‑end close automation",
+                "Financial reporting & embedded analytics configuration"
+            ],
+            "keywords": [
+                "fixed assets",
+                "depreciation",
+                "asset register",
+                "capitalization",
+                "disposals"
+            ],
+            "common_roles": [
+                "Fixed assets administrator",
+                "Finance systems analyst"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "ERP security & role‑based access control for finance",
+            "aliases": [
+                "finance RBAC",
+                "ERP access control (finance)",
+                "segregation of duties configuration"
+            ],
+            "skill_type": "operational_skill",
+            "description": "Design, implement and maintain role definitions, segregation of duties (SoD) rules, user provisioning and access controls in ERP finance modules to enforce compliance and operational controls.",
+            "parent_skill": "ERP finance module administration",
+            "related_skills": [
+                "Accounts payable module administration",
+                "Accounts receivable module administration",
+                "ERP financial master data management"
+            ],
+            "keywords": [
+                "RBAC",
+                "SoD",
+                "user provisioning",
+                "access control",
+                "security roles"
+            ],
+            "common_roles": [
+                "ERP security administrator",
+                "Finance applications manager"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial reporting & embedded analytics configuration",
+            "aliases": [
+                "financial report writer configuration",
+                "embedded financial analytics setup",
+                "reporting pack configuration (ERP)"
+            ],
+            "skill_type": "process_skill",
+            "description": "Configure native ERP reporting tools and embedded analytics (report builders, dashboards, financial statement packs) including dataset design, consolidation mappings and scheduled distribution.",
+            "parent_skill": "ERP finance module administration",
+            "related_skills": [
+                "Chart of accounts design & configuration",
+                "General ledger configuration & month‑end close automation",
+                "Financial data integration (APIs & ETL)"
+            ],
+            "keywords": [
+                "financial reporting",
+                "dashboards",
+                "report writer",
+                "management reports",
+                "scheduled reports"
+            ],
+            "common_roles": [
+                "Financial reporting analyst",
+                "Finance systems administrator"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "Financial data integration (APIs & ETL)",
+            "aliases": [
+                "ERP finance integrations",
+                "financial interfaces setup",
+                "ETL for financial data"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Design and manage integrations between ERP finance modules and external systems using APIs, middleware, ETL tools or file‑based interfaces to ensure reliable inbound\/outbound financial data flows.",
+            "parent_skill": "ERP finance module administration",
+            "related_skills": [
+                "ERP financial master data management",
+                "Accounts payable module administration",
+                "Accounts receivable module administration"
+            ],
+            "keywords": [
+                "API integration",
+                "ETL",
+                "middleware",
+                "EDI",
+                "interface mapping"
+            ],
+            "common_roles": [
+                "Integration engineer",
+                "ERP technical consultant"
+            ],
+            "language": "en",
+            "status": "active"
+        },
+        {
+            "canonical_name": "SAP FI module configuration",
+            "aliases": [
+                "SAP Financial Accounting (FI) configuration",
+                "SAP FI setup",
+                "SAP FI\/GL administration"
+            ],
+            "skill_type": "tool_skill",
+            "description": "Configure and administer SAP Financial Accounting (FI) module components including GL, AP, AR, asset accounting, tax configuration and FI‑MM\/SD interface points in S\/4HANA or ECC.",
+            "parent_skill": "ERP finance module administration",
+            "related_skills": [
+                "General ledger configuration & month‑end close automation",
+                "Fixed assets module configuration & depreciation management",
+                "Financial data integration (APIs & ETL)"
+            ],
+            "keywords": [
+                "SAP FI",
+                "S\/4HANA FI",
+                "GL",
+                "asset accounting",
+                "vendor\/customer integration"
+            ],
+            "common_roles": [
+                "SAP FI consultant",
+                "ERP finance specialist"
+            ],
+            "language": "en",
+            "status": "active"
+        }
+    ]
+}
