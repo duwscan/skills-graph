@@ -123,7 +123,7 @@ class TaxonomyService
         foreach (array_chunk($skills, self::NORMALIZE_CHUNK_SIZE) as $chunk) {
             $agent = new SkillNormalizer;
 
-            $skillsJson = json_encode($chunk, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+            $skillsJson = json_encode($chunk, flags: JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
             $prompt = "Normalize and deduplicate the following skill records:\n\n{$skillsJson}";
 
             /** @var StructuredAgentResponse $response */
