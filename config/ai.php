@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('DEFAULT_AI_PROVIDER', 'openai'),
+    'default' => env('DEFAULT_AI_PROVIDER', 'ollama_openai'),
 
     /*
     |--------------------------------------------------------------------------

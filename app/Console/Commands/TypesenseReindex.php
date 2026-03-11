@@ -15,7 +15,7 @@ class TypesenseReindex extends Command
     /**
      * @var string
      */
-    protected $description = 'Reindex all active skills into Typesense.';
+    protected $description = 'Drop the current Typesense skills collection and rebuild it from all active skills.';
 
     public function __construct(private readonly TypesenseSearchService $typesense)
     {
@@ -24,11 +24,11 @@ class TypesenseReindex extends Command
 
     public function handle(): int
     {
-        $this->components->info('Reindexing all active skills into Typesense...');
+        $this->components->info('Dropping the current Typesense skills collection and rebuilding it from all active skills...');
 
         $this->typesense->reindexAll();
 
-        $this->components->info('Typesense reindex completed.');
+        $this->components->info('Typesense reindex completed with a fresh collection rebuild.');
 
         return self::SUCCESS;
     }

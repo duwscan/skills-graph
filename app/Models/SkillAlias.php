@@ -24,6 +24,10 @@ class SkillAlias extends Model
      */
     public $incrementing = false;
 
+    protected $hidden = [
+        'alias_embedding',
+    ];
+
     /**
      * The attributes that are mass assignable.
      *

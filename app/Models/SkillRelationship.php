@@ -25,6 +25,7 @@ class SkillRelationship extends Model
         'status',
     ];
 
+
     /**
      * Get the attributes that should be cast.
      *

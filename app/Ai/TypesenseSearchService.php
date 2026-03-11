@@ -69,6 +69,9 @@ class TypesenseSearchService
         $client->collections[$collectionName]->documents[$skillId]->delete();
     }
 
+    /**
+     * Drop and rebuild the skills collection before importing all active skills.
+     */
     public function reindexAll(): void
     {
         $this->setupCollection();

@@ -194,6 +194,8 @@ class TaxonomyService
      */
     public function importToDatabase(array $skills, ?array $taxonomyMap = null): void
     {
+        $this->truncateSkillGraphTables();
+
         $timestamp = now();
         $skillRows = [];
         $aliasRows = [];
@@ -246,7 +248,7 @@ class TaxonomyService
                 'canonical_name' => $canonicalName,
                 'slug' => $slug,
                 'description' => $skill['description'] ?? "{$canonicalName} skill.",
-                'status' => $skill['status'] ?? 'active',
+                'status' => $this->mapStatusToValid($skill['status'] ?? 'active'),
                 'category' => $skillType,
                 'path' => $path,
                 'embedding' => null,
@@ -257,11 +259,18 @@ class TaxonomyService
             ];
 
             $aliases = $skill['aliases'] ?? [];
+            $seenAliasKey = [];
             foreach ($aliases as $aliasIndex => $alias) {
                 $alias = trim($alias);
                 if ($alias === '' || Str::lower($alias) === Str::lower($canonicalName)) {
                     continue;
                 }
+
+                $aliasKey = $id.'|'.($skill['language'] ?? 'en').'|'.$alias;
+                if (isset($seenAliasKey[$aliasKey])) {
+                    continue;
+                }
+                $seenAliasKey[$aliasKey] = true;
 
                 $aliasRows[] = [
                     'id' => (string) Str::uuid(),
@@ -304,6 +313,14 @@ class TaxonomyService
         $this->insertRelationships($relationshipQueue, $canonicalToId, $timestamp);
     }
 
+    private function truncateSkillGraphTables(): void
+    {
+        DB::table('skill_co_occurrences')->delete();
+        DB::table('skill_relationships')->delete();
+        DB::table('skill_aliases')->delete();
+        DB::table('skills')->delete();
+    }
+
     /**
      * Run the full pipeline.
      *
@@ -318,148 +335,159 @@ class TaxonomyService
         ?Closure $onProgress = null,
         ?Closure $onLogOutput = null,
     ): void {
-        $phase ??= 'all';
-        $shouldRun = fn (string $p): bool => $phase === 'all' || $phase === $p;
+        $taxonomyMap = $this->loadTaxonomyMap();
+        // $phase ??= 'all';
+        // $shouldRun = fn (string $p): bool => $phase === 'all' || $phase === $p;
 
-        $taxonomyMap = null;
-        if ($shouldRun('taxonomy')) {
-            $this->notify($onProgress, 'phase_start', ['phase' => 'taxonomy']);
+        // $taxonomyMap = null;
+        // if ($shouldRun('taxonomy')) {
+        //     $this->notify($onProgress, 'phase_start', ['phase' => 'taxonomy']);
 
-            $taxonomyMap = $resume ? $this->loadTaxonomyMap() : null;
-            if ($taxonomyMap === null) {
-                $taxonomyMap = $this->designTaxonomy($domains, $provider, $onLogOutput);
-            }
+        //     $taxonomyMap = $resume ? $this->loadTaxonomyMap() : null;
+        //     if ($taxonomyMap === null) {
+        //         $taxonomyMap = $this->designTaxonomy($domains, $provider, $onLogOutput);
+        //     }
 
-            $this->notify($onProgress, 'phase_complete', ['phase' => 'taxonomy', 'domains' => count($taxonomyMap['domains'] ?? [])]);
-        }
+        //     $this->notify($onProgress, 'phase_complete', ['phase' => 'taxonomy', 'domains' => count($taxonomyMap['domains'] ?? [])]);
+        // }
 
+        // $allSkills = [];
+        // if ($shouldRun('skills')) {
+        //     $taxonomyMap ??= $this->loadTaxonomyMap();
+        //     if ($taxonomyMap === null) {
+        //         throw new \RuntimeException('Taxonomy map not found. Run the taxonomy phase first.');
+        //     }
+
+        //     $this->notify($onProgress, 'phase_start', ['phase' => 'skills']);
+
+        //     $totalBatches = $this->countBatches($taxonomyMap);
+        //     $completedBatches = 0;
+
+        //     foreach ($taxonomyMap['domains'] as $domainData) {
+        //         $domainName = $domainData['domain'];
+
+        //         foreach ($domainData['categories'] as $categoryData) {
+        //             $categoryName = $categoryData['category'];
+
+        //             foreach ($categoryData['subcategories'] as $subcategoryName) {
+        //                 $batchFile = $this->batchFilename($domainName, $categoryName, $subcategoryName);
+
+        //                 if ($resume && $this->jsonFileExists("skill_batches/{$batchFile}")) {
+        //                     $cached = $this->readJson("skill_batches/{$batchFile}");
+        //                     if ($cached !== null) {
+        //                         $batchSkills = $cached['skills'] ?? [];
+        //                         foreach ($batchSkills as $s) {
+        //                             $allSkills[] = array_merge($s, [
+        //                                 'domain' => $domainName,
+        //                                 'category' => $categoryName,
+        //                                 'subcategory' => $subcategoryName,
+        //                             ]);
+        //                         }
+        //                         $completedBatches++;
+        //                         $this->notify($onProgress, 'batch_complete', [
+        //                             'domain' => $domainName,
+        //                             'category' => $categoryName,
+        //                             'subcategory' => $subcategoryName,
+        //                             'count' => count($batchSkills),
+        //                             'progress' => $completedBatches,
+        //                             'total' => $totalBatches,
+        //                         ]);
+
+        //                         continue;
+        //                     }
+        //                 }
+
+        //                 $targetCount = $this->targetCountForDomain($domainName, count($categoryData['subcategories']));
+
+        //                 $batch = $this->generateSkillBatch(
+        //                     domain: $domainName,
+        //                     category: $categoryName,
+        //                     subcategory: $subcategoryName,
+        //                     targetCount: $targetCount,
+        //                     provider: $provider,
+        //                     onLogOutput: $onLogOutput,
+        //                 );
+
+        //                 $batchSkills = $batch['skills'] ?? [];
+        //                 foreach ($batchSkills as $s) {
+        //                     $allSkills[] = array_merge($s, [
+        //                         'domain' => $domainName,
+        //                         'category' => $categoryName,
+        //                         'subcategory' => $subcategoryName,
+        //                     ]);
+        //                 }
+
+        //                 $completedBatches++;
+        //                 $this->notify($onProgress, 'batch_complete', [
+        //                     'domain' => $domainName,
+        //                     'category' => $categoryName,
+        //                     'subcategory' => $subcategoryName,
+        //                     'count' => count($batchSkills),
+        //                     'progress' => $completedBatches,
+        //                     'total' => $totalBatches,
+        //                 ]);
+        //             }
+        //         }
+        //     }
+
+        //     $this->notify($onProgress, 'phase_complete', ['phase' => 'skills', 'total_skills' => count($allSkills)]);
+        // }
+
+        // if ($shouldRun('normalize')) {
+        //     $this->notify($onProgress, 'phase_start', ['phase' => 'normalize']);
+
+        //     if ($allSkills === []) {
+        //         $allSkills = $this->loadAllBatchSkills();
+        //     }
+
+        //     $normalized = $this->normalizeSkills($allSkills, $provider, $onLogOutput);
+        //     $allSkills = $normalized['merged_skills'];
+
+        //     $this->notify($onProgress, 'phase_complete', [
+        //         'phase' => 'normalize',
+        //         'merged_count' => count($allSkills),
+        //         'removed_count' => count($normalized['removed_duplicates']),
+        //     ]);
+        // }
+
+        // if ($shouldRun('enrich')) {
+        //     $this->notify($onProgress, 'phase_start', ['phase' => 'enrich']);
+
+        //     if ($allSkills === []) {
+        //         $normalized = $this->loadNormalized();
+        //         $allSkills = $normalized['merged_skills'] ?? [];
+        //     }
+
+        //     $enriched = $this->enrichSkills($allSkills, $provider, $onLogOutput);
+        //     $allSkills = $this->mergeEnrichedData($allSkills, $enriched['skills'] ?? []);
+
+        //     $this->writeJson('skills_final.json', ['skills' => $allSkills]);
+
+        //     $this->notify($onProgress, 'phase_complete', ['phase' => 'enrich', 'enriched_count' => count($allSkills)]);
+        // }
+
+        // if ($shouldRun('import')) {
+        //     $this->notify($onProgress, 'phase_start', ['phase' => 'import']);
+
+        //     if ($allSkills === []) {
+        //         $final = $this->readJson('skills_final.json') ?? $this->readJson('skills_enriched.json');
+        //         $allSkills = $final['skills'] ?? [];
+        //     }
+
+        //     $this->importToDatabase($allSkills, $taxonomyMap);
+
+        //     $this->notify($onProgress, 'phase_complete', ['phase' => 'import', 'imported_count' => count($allSkills)]);
+        // }
+        $this->notify($onProgress, 'phase_start', ['phase' => 'import']);
         $allSkills = [];
-        if ($shouldRun('skills')) {
-            $taxonomyMap ??= $this->loadTaxonomyMap();
-            if ($taxonomyMap === null) {
-                throw new \RuntimeException('Taxonomy map not found. Run the taxonomy phase first.');
-            }
-
-            $this->notify($onProgress, 'phase_start', ['phase' => 'skills']);
-
-            $totalBatches = $this->countBatches($taxonomyMap);
-            $completedBatches = 0;
-
-            foreach ($taxonomyMap['domains'] as $domainData) {
-                $domainName = $domainData['domain'];
-
-                foreach ($domainData['categories'] as $categoryData) {
-                    $categoryName = $categoryData['category'];
-
-                    foreach ($categoryData['subcategories'] as $subcategoryName) {
-                        $batchFile = $this->batchFilename($domainName, $categoryName, $subcategoryName);
-
-                        if ($resume && $this->jsonFileExists("skill_batches/{$batchFile}")) {
-                            $cached = $this->readJson("skill_batches/{$batchFile}");
-                            if ($cached !== null) {
-                                $batchSkills = $cached['skills'] ?? [];
-                                foreach ($batchSkills as $s) {
-                                    $allSkills[] = array_merge($s, [
-                                        'domain' => $domainName,
-                                        'category' => $categoryName,
-                                        'subcategory' => $subcategoryName,
-                                    ]);
-                                }
-                                $completedBatches++;
-                                $this->notify($onProgress, 'batch_complete', [
-                                    'domain' => $domainName,
-                                    'category' => $categoryName,
-                                    'subcategory' => $subcategoryName,
-                                    'count' => count($batchSkills),
-                                    'progress' => $completedBatches,
-                                    'total' => $totalBatches,
-                                ]);
-
-                                continue;
-                            }
-                        }
-
-                        $targetCount = $this->targetCountForDomain($domainName, count($categoryData['subcategories']));
-
-                        $batch = $this->generateSkillBatch(
-                            domain: $domainName,
-                            category: $categoryName,
-                            subcategory: $subcategoryName,
-                            targetCount: $targetCount,
-                            provider: $provider,
-                            onLogOutput: $onLogOutput,
-                        );
-
-                        $batchSkills = $batch['skills'] ?? [];
-                        foreach ($batchSkills as $s) {
-                            $allSkills[] = array_merge($s, [
-                                'domain' => $domainName,
-                                'category' => $categoryName,
-                                'subcategory' => $subcategoryName,
-                            ]);
-                        }
-
-                        $completedBatches++;
-                        $this->notify($onProgress, 'batch_complete', [
-                            'domain' => $domainName,
-                            'category' => $categoryName,
-                            'subcategory' => $subcategoryName,
-                            'count' => count($batchSkills),
-                            'progress' => $completedBatches,
-                            'total' => $totalBatches,
-                        ]);
-                    }
-                }
-            }
-
-            $this->notify($onProgress, 'phase_complete', ['phase' => 'skills', 'total_skills' => count($allSkills)]);
+        if ($allSkills === []) {
+            $final = $this->readJson('skills_final.json') ?? $this->readJson('skills_enriched.json');
+            $allSkills = $final['skills'] ?? [];
         }
 
-        if ($shouldRun('normalize')) {
-            $this->notify($onProgress, 'phase_start', ['phase' => 'normalize']);
+        $this->importToDatabase($allSkills, $taxonomyMap);
 
-            if ($allSkills === []) {
-                $allSkills = $this->loadAllBatchSkills();
-            }
-
-            $normalized = $this->normalizeSkills($allSkills, $provider, $onLogOutput);
-            $allSkills = $normalized['merged_skills'];
-
-            $this->notify($onProgress, 'phase_complete', [
-                'phase' => 'normalize',
-                'merged_count' => count($allSkills),
-                'removed_count' => count($normalized['removed_duplicates']),
-            ]);
-        }
-
-        if ($shouldRun('enrich')) {
-            $this->notify($onProgress, 'phase_start', ['phase' => 'enrich']);
-
-            if ($allSkills === []) {
-                $normalized = $this->loadNormalized();
-                $allSkills = $normalized['merged_skills'] ?? [];
-            }
-
-            $enriched = $this->enrichSkills($allSkills, $provider, $onLogOutput);
-            $allSkills = $this->mergeEnrichedData($allSkills, $enriched['skills'] ?? []);
-
-            $this->writeJson('skills_final.json', ['skills' => $allSkills]);
-
-            $this->notify($onProgress, 'phase_complete', ['phase' => 'enrich', 'enriched_count' => count($allSkills)]);
-        }
-
-        if ($shouldRun('import')) {
-            $this->notify($onProgress, 'phase_start', ['phase' => 'import']);
-
-            if ($allSkills === []) {
-                $final = $this->readJson('skills_final.json') ?? $this->readJson('skills_enriched.json');
-                $allSkills = $final['skills'] ?? [];
-            }
-
-            $this->importToDatabase($allSkills, $taxonomyMap);
-
-            $this->notify($onProgress, 'phase_complete', ['phase' => 'import', 'imported_count' => count($allSkills)]);
-        }
+        $this->notify($onProgress, 'phase_complete', ['phase' => 'import', 'imported_count' => count($allSkills)]);
     }
 
     /**
@@ -675,6 +703,18 @@ class TaxonomyService
         return Str::slug("{$domain} {$category} {$subcategory}", '_').'.json';
     }
 
+    private function mapStatusToValid(string $status): string
+    {
+        $validStatuses = ['candidate', 'active', 'deprecated', 'merged'];
+        $normalized = strtolower(trim($status));
+
+        if (in_array($normalized, $validStatuses, true)) {
+            return $normalized;
+        }
+
+        return 'active';
+    }
+
     private function mapSkillTypeToCategory(string $skillType): string
     {
         $validCategories = [
@@ -683,11 +723,23 @@ class TaxonomyService
             'compliance_skill', 'communication_skill', 'operational_skill',
         ];
 
-        if (in_array($skillType, $validCategories, true)) {
-            return $skillType;
+        $normalized = strtolower(trim($skillType));
+
+        if (in_array($normalized, $validCategories, true)) {
+            return $normalized;
         }
 
-        return 'hard_skill';
+        $variantMap = [
+            'hard skill' => 'hard_skill',
+            'tool skill' => 'tool_skill',
+            'process skill' => 'process_skill',
+            'analytical skill' => 'analytical_skill',
+            'compliance skill' => 'compliance_skill',
+            'communication skill' => 'communication_skill',
+            'operational skill' => 'operational_skill',
+        ];
+
+        return $variantMap[$normalized] ?? 'hard_skill';
     }
 
     /**
