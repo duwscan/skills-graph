@@ -126,7 +126,7 @@ class HybridSearchService
                 ? min(1.0, (float) $item['keyword_score'] / $maxKeywordScore)
                 : 0.0;
             $similarity = (float) ($item['similarity'] ?? 0.0);
-            $relevance = min(1.0, max($keywordNorm, $similarity));
+            $relevance = min(1.0, 0.7 * $similarity + 0.3 * $keywordNorm);
 
             return [
                 'skill' => $item['skill'],
