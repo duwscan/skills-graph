@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "skills": {
+    "neo4j-cypher": {
+      "source": "michaelkeevildown/claude-agents-skills",
+      "sourceType": "github",
+      "computedHash": "510aa99b1b3619e2d5b98b38e078f9fc8b48f06a64e0d127ede1ba043b935a3c"
+    },
+    "neo4j-cypher-guide": {
+      "source": "tomasonjo/blogs",
+      "sourceType": "github",
+      "computedHash": "2ff7242c1f42db2643f0ba0f55549c562a6c9cdeb72d4bb4015794233e1bce4a"
+    },
+    "neo4j-data-models": {
+      "source": "michaelkeevildown/claude-agents-skills",
+      "sourceType": "github",
+      "computedHash": "6587b6e507a163eb65edfdf117045ac282b7e3d13a4af7c5fe16c45c533ba6a2"
+    },
+    "neo4j-driver-python": {
+      "source": "michaelkeevildown/claude-agents-skills",
+      "sourceType": "github",
+      "computedHash": "b93820109318456d7fc9115f441f97aa37a55bfbc12b317863695cb251697ef1"
+    },
+    "python-best-practices": {
+      "source": "0xbigboss/claude-code",
+      "sourceType": "github",
+      "computedHash": "908129d87bc8e2e32492154ef38c319a846d8e6ad12e1ed2476d25a67b74677b"
+    },
+    "python-code-style": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "computedHash": "35ed0c437f33462187b0a89da8e5bfe9ac259dbc8731257c5445f1a5e1229acf"
+    },
+    "python-patterns": {
+      "source": "affaan-m/everything-claude-code",
+      "sourceType": "github",
+      "computedHash": "16fa370e24821a211eff44d9deb129e05f4ccebfaa8c14277824fd4103635af5"
+    },
+    "python-project-structure": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "computedHash": "2f4f560964af8ecad4d54666c044baa54671d0abd1136c848b539befe24db170"
+    },
+    "python-type-safety": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "computedHash": "f011d9018935ae01209f30c0a0f9d2f15f3058867baeb7a8c820bc54c8394645"
+    }
+  }
+}

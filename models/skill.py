@@ -1,0 +1,100 @@
+"""Skill node model."""
+
+from __future__ import annotations
+
+from datetime import datetime
+from typing import TYPE_CHECKING, ClassVar
+from uuid import uuid4
+
+from neomodel import (  # type: ignore[import-untyped]
+    ArrayProperty,
+    DateTimeProperty,
+    FloatProperty,
+    IntegerProperty,
+    RelationshipTo,
+    StringProperty,
+    StructuredNode,
+)
+
+from models.is_a_rel import IsARel
+from models.related_to_rel import RelatedToRel
+from models.requires_rel import RequiresRel
+
+if TYPE_CHECKING:
+    pass
+
+
+class Skill(StructuredNode):
+    """Skill node representing a learnable skill in the graph.
+
+    Attributes:
+        uid: Unique identifier (format: skill_[uuid])
+        name: Human-readable skill name
+        skill_type: Category (technical, soft, domain, tool)
+        high_surface_forms: Primary surface forms/aliases
+        low_surface_forms: Secondary surface forms/aliases
+        abbreviations: Common abbreviations for the skill
+        created_at: Creation timestamp
+        updated_at: Last update timestamp
+        version: Schema version for migrations
+        confidence_score: Confidence in the skill definition (0.0-1.0)
+    """
+
+    SKILL_TYPE_CHOICES: ClassVar[set[str]] = {"technical", "soft", "domain", "tool"}
+
+    uid = StringProperty(unique_index=True, required=True)
+    name = StringProperty(unique_index=True, required=True)
+    skill_type = StringProperty(required=True)
+    high_surface_forms = ArrayProperty(StringProperty(), default=list)
+    low_surface_forms = ArrayProperty(StringProperty(), default=list)
+    abbreviations = ArrayProperty(StringProperty(), default=list)
+    created_at = DateTimeProperty(default_now=True)
+    updated_at = DateTimeProperty(default_now=True)
+    version = IntegerProperty(default=1)
+    confidence_score = FloatProperty(default=None)
+
+    is_a = RelationshipTo("Skill", "IS_A", model=IsARel)
+    requires = RelationshipTo("Skill", "REQUIRES", model=RequiresRel)
+    related_to = RelationshipTo("Skill", "RELATED_TO", model=RelatedToRel)
+
+    def pre_save(self) -> None:
+        """Update timestamp and validate before saving."""
+        self.updated_at = datetime.utcnow()  # type: ignore[assignment]
+        self._validate_skill_type()
+        self._validate_uid_format()
+
+    def _validate_skill_type(self) -> None:
+        if self.skill_type not in self.SKILL_TYPE_CHOICES:
+            valid = ", ".join(sorted(self.SKILL_TYPE_CHOICES))
+            raise ValueError(f"skill_type must be one of: {valid}")
+
+    def _validate_uid_format(self) -> None:
+        if not self.uid.startswith("skill_"):
+            raise ValueError("uid must start with 'skill_'")
+
+    @classmethod
+    def create_skill(
+        cls,
+        name: str,
+        skill_type: str,
+        high_surface_forms: list[str] | None = None,
+        low_surface_forms: list[str] | None = None,
+        abbreviations: list[str] | None = None,
+        confidence_score: float | None = None,
+    ) -> "Skill":
+        """Create a new Skill with auto-generated UID."""
+        uid = f"skill_{uuid4().hex[:24]}"
+        return cls(
+            uid=uid,
+            name=name,
+            skill_type=skill_type,
+            high_surface_forms=high_surface_forms or [],
+            low_surface_forms=low_surface_forms or [],
+            abbreviations=abbreviations or [],
+            confidence_score=confidence_score,
+        ).save()
+
+    def increment_version(self) -> "Skill":
+        """Increment version and save."""
+        self.version += 1  # type: ignore[operator]
+        return self.save()
