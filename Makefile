@@ -1,4 +1,4 @@
-.PHONY: up down logs shell test clean install sync help
+.PHONY: up down logs shell test clean install sync help graph-fresh
 
 help:
 	@echo "Skills Graph - Available commands:"
@@ -13,6 +13,7 @@ help:
 	@echo "  make clean    Remove cache and compiled files"
 	@echo "  make install  Install dependencies"
 	@echo "  make sync     Sync dependencies"
+	@echo "  make graph-fresh  Clear all data in Neo4j graph"
 
 up:
 	docker compose up -d
@@ -48,3 +49,6 @@ install:
 
 sync:
 	uv sync
+
+graph-fresh:
+	uv run python -c "from db import init_db; import neomodel; init_db(); neomodel.db.cypher_query('MATCH (n) DETACH DELETE n'); print('Graph cleared')"
