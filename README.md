@@ -2,31 +2,53 @@
 
 A Python project for modeling skills as a graph using Neo4j and neomodel.
 
-## Setup
+## Quick Start
+
+```bash
+# 1. Start Neo4j with Docker
+make up
+
+# 2. Setup environment
+cp .env.example .env
+
+# 3. Install dependencies
+make install
+
+# 4. Run smoke test
+make test
+```
+
+Neo4j Browser: http://localhost:7474 (neo4j / skillsgraph123)
+
+## Make Commands
+
+```
+make up       Start Neo4j container
+make down     Stop Neo4j container
+make logs     Show Neo4j logs
+make shell    Open Python shell with models loaded
+make test     Run smoke test
+make lint     Run linter (ruff)
+make format   Format code (ruff)
+make clean    Remove cache files
+```
+
+## Setup (Manual)
 
 1. Install dependencies with uv:
    ```bash
    uv sync
    ```
 
-2. Copy `.env.example` to `.env` and configure your Neo4j connection:
+2. Start Neo4j:
+   ```bash
+   docker compose up -d
+   ```
+
+3. Copy `.env.example` to `.env`:
    ```bash
    cp .env.example .env
    ```
-
-3. Edit `.env` with your Neo4j credentials:
-   ```
-   NEO4J_URI=bolt://localhost:7687
-   NEO4J_USER=neo4j
-   NEO4J_PASSWORD=your_password
-   NEO4J_DATABASE=neo4j
-   ```
-
-## Running the Smoke Test
-
-```bash
-uv run main.py
-```
 
 ## Project Structure
 
