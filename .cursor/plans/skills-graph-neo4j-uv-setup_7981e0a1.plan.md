@@ -107,7 +107,7 @@ Each relationship gets its own `StructuredRel` subclass in a dedicated file unde
       - (We can add explicit validation enforcing these ranges for future queries.)
     - `min_level`: `StringProperty(choices={"beginner", "intermediate", "advanced"}, required=True)`.
     - `is_mandatory`: `BooleanProperty(required=True)` (should correlate with the weight range; we can add logic to keep them consistent).
-- `**[models/related_to_rel.py](models/related_to_rel.py)**`
+- `**[models/related_to_rel.py](models/related_to_rel.py)`**
   - `class RelatedToRel(StructuredRel):`
     - `weight`: `FloatProperty(required=True)` (0–1 relevance score).
     - `relation_type`: `StringProperty(choices={"similar", "complementary"}, required=True)`.
