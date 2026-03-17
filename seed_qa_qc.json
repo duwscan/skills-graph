@@ -350,11 +350,11 @@
         },
         {
           "uid": "skill_6359b0f436614016acfa390e",
-          "name": "Quality Planning 001",
-          "label": "Quality Planning 001",
+          "name": "Quality Planning Fundamentals",
+          "label": "Quality Planning Fundamentals",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Quality Planning 001"
+            "Quality Planning Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -362,11 +362,11 @@
         },
         {
           "uid": "skill_352119453f3d4804bdc65fb1",
-          "name": "Inspection Execution 002",
-          "label": "Inspection Execution 002",
+          "name": "Quality Planning Execution",
+          "label": "Quality Planning Execution",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Inspection Execution 002"
+            "Quality Planning Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -374,11 +374,11 @@
         },
         {
           "uid": "skill_fb6d484e0f6640b0a4aca93f",
-          "name": "Defect Analysis 003",
-          "label": "Defect Analysis 003",
+          "name": "Quality Planning Optimization",
+          "label": "Quality Planning Optimization",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Defect Analysis 003"
+            "Quality Planning Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -386,11 +386,11 @@
         },
         {
           "uid": "skill_a3ddcdca9d8c4db6b132716f",
-          "name": "Compliance Verification 004",
-          "label": "Compliance Verification 004",
+          "name": "Quality Planning Analysis",
+          "label": "Quality Planning Analysis",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Compliance Verification 004"
+            "Quality Planning Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -398,11 +398,11 @@
         },
         {
           "uid": "skill_1f38c776a3a04ff2a11f2066",
-          "name": "Test Documentation 005",
-          "label": "Test Documentation 005",
+          "name": "Quality Planning Governance",
+          "label": "Quality Planning Governance",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Test Documentation 005"
+            "Quality Planning Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -410,11 +410,11 @@
         },
         {
           "uid": "skill_eba7876d9893453ea211da7a",
-          "name": "Quality Metrics Review 006",
-          "label": "Quality Metrics Review 006",
+          "name": "Quality Planning Planning",
+          "label": "Quality Planning Planning",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Quality Metrics Review 006"
+            "Quality Planning Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -422,11 +422,11 @@
         },
         {
           "uid": "skill_758a12905d324f01a5af22a3",
-          "name": "Corrective Action Tracking 007",
-          "label": "Corrective Action Tracking 007",
+          "name": "Quality Planning Integration",
+          "label": "Quality Planning Integration",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Corrective Action Tracking 007"
+            "Quality Planning Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -434,11 +434,11 @@
         },
         {
           "uid": "skill_fea4a2f01a6f42fcbe6080af",
-          "name": "Audit Preparation 008",
-          "label": "Audit Preparation 008",
+          "name": "Quality Planning Collaboration",
+          "label": "Quality Planning Collaboration",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Audit Preparation 008"
+            "Quality Planning Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -446,11 +446,11 @@
         },
         {
           "uid": "skill_322af49f3bdd4ea5bb2abb83",
-          "name": "Validation Support 009",
-          "label": "Validation Support 009",
+          "name": "Quality Planning Evaluation",
+          "label": "Quality Planning Evaluation",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Validation Support 009"
+            "Quality Planning Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -458,11 +458,11 @@
         },
         {
           "uid": "skill_6989b991efee4b8283aafea2",
-          "name": "Risk Assessment 010",
-          "label": "Risk Assessment 010",
+          "name": "Quality Planning Strategy",
+          "label": "Quality Planning Strategy",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Risk Assessment 010"
+            "Quality Planning Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -470,11 +470,11 @@
         },
         {
           "uid": "skill_7de4a653d8f54a96aab9aa78",
-          "name": "Quality Planning 011",
-          "label": "Quality Planning 011",
+          "name": "Inspection Management Fundamentals",
+          "label": "Inspection Management Fundamentals",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Quality Planning 011"
+            "Inspection Management Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -482,11 +482,11 @@
         },
         {
           "uid": "skill_a8be8209cc424824bb31a8e8",
-          "name": "Inspection Execution 012",
-          "label": "Inspection Execution 012",
+          "name": "Inspection Management Execution",
+          "label": "Inspection Management Execution",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Inspection Execution 012"
+            "Inspection Management Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -494,11 +494,11 @@
         },
         {
           "uid": "skill_4662b8b203a642f7912297ca",
-          "name": "Defect Analysis 013",
-          "label": "Defect Analysis 013",
+          "name": "Inspection Management Optimization",
+          "label": "Inspection Management Optimization",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Defect Analysis 013"
+            "Inspection Management Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -506,11 +506,11 @@
         },
         {
           "uid": "skill_4e5a9a3eafbb46a9820be57f",
-          "name": "Compliance Verification 014",
-          "label": "Compliance Verification 014",
+          "name": "Inspection Management Analysis",
+          "label": "Inspection Management Analysis",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Compliance Verification 014"
+            "Inspection Management Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -518,11 +518,11 @@
         },
         {
           "uid": "skill_34d174b315d042cc964c5770",
-          "name": "Test Documentation 015",
-          "label": "Test Documentation 015",
+          "name": "Inspection Management Governance",
+          "label": "Inspection Management Governance",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Test Documentation 015"
+            "Inspection Management Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -530,11 +530,11 @@
         },
         {
           "uid": "skill_42ba4d95d91344baa413255b",
-          "name": "Quality Metrics Review 016",
-          "label": "Quality Metrics Review 016",
+          "name": "Inspection Management Planning",
+          "label": "Inspection Management Planning",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Quality Metrics Review 016"
+            "Inspection Management Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -542,11 +542,11 @@
         },
         {
           "uid": "skill_32bc7fd9d325480da91662e7",
-          "name": "Corrective Action Tracking 017",
-          "label": "Corrective Action Tracking 017",
+          "name": "Inspection Management Integration",
+          "label": "Inspection Management Integration",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Corrective Action Tracking 017"
+            "Inspection Management Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -554,11 +554,11 @@
         },
         {
           "uid": "skill_7029f4b39d83478faf24be69",
-          "name": "Audit Preparation 018",
-          "label": "Audit Preparation 018",
+          "name": "Inspection Management Collaboration",
+          "label": "Inspection Management Collaboration",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Audit Preparation 018"
+            "Inspection Management Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -566,11 +566,11 @@
         },
         {
           "uid": "skill_c017c0782e8a49aa890fd8e6",
-          "name": "Validation Support 019",
-          "label": "Validation Support 019",
+          "name": "Inspection Management Evaluation",
+          "label": "Inspection Management Evaluation",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Validation Support 019"
+            "Inspection Management Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -578,11 +578,11 @@
         },
         {
           "uid": "skill_e2dbfbdb92174cd5b518c66c",
-          "name": "Risk Assessment 020",
-          "label": "Risk Assessment 020",
+          "name": "Inspection Management Strategy",
+          "label": "Inspection Management Strategy",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Risk Assessment 020"
+            "Inspection Management Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -590,11 +590,11 @@
         },
         {
           "uid": "skill_cfc9961b7f3b412a97d1b004",
-          "name": "Quality Planning 021",
-          "label": "Quality Planning 021",
+          "name": "Defect Analysis Fundamentals",
+          "label": "Defect Analysis Fundamentals",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Quality Planning 021"
+            "Defect Analysis Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -602,11 +602,11 @@
         },
         {
           "uid": "skill_fc4ace84940b438cb3f84e5d",
-          "name": "Inspection Execution 022",
-          "label": "Inspection Execution 022",
+          "name": "Defect Analysis Execution",
+          "label": "Defect Analysis Execution",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Inspection Execution 022"
+            "Defect Analysis Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -614,11 +614,11 @@
         },
         {
           "uid": "skill_dbbe701302f14934b0ec3728",
-          "name": "Defect Analysis 023",
-          "label": "Defect Analysis 023",
+          "name": "Defect Analysis Optimization",
+          "label": "Defect Analysis Optimization",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Defect Analysis 023"
+            "Defect Analysis Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -626,11 +626,11 @@
         },
         {
           "uid": "skill_abd27ef658e14570b29c6c5f",
-          "name": "Compliance Verification 024",
-          "label": "Compliance Verification 024",
+          "name": "Defect Analysis Analysis",
+          "label": "Defect Analysis Analysis",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Compliance Verification 024"
+            "Defect Analysis Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -638,11 +638,11 @@
         },
         {
           "uid": "skill_f35555a14401478f85b66cd9",
-          "name": "Test Documentation 025",
-          "label": "Test Documentation 025",
+          "name": "Defect Analysis Governance",
+          "label": "Defect Analysis Governance",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Test Documentation 025"
+            "Defect Analysis Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -650,11 +650,11 @@
         },
         {
           "uid": "skill_91fa61b379ef42968a0c7083",
-          "name": "Quality Metrics Review 026",
-          "label": "Quality Metrics Review 026",
+          "name": "Defect Analysis Planning",
+          "label": "Defect Analysis Planning",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Quality Metrics Review 026"
+            "Defect Analysis Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -662,11 +662,11 @@
         },
         {
           "uid": "skill_102f66a6a6544d82ad905ccf",
-          "name": "Corrective Action Tracking 027",
-          "label": "Corrective Action Tracking 027",
+          "name": "Defect Analysis Integration",
+          "label": "Defect Analysis Integration",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Corrective Action Tracking 027"
+            "Defect Analysis Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -674,11 +674,11 @@
         },
         {
           "uid": "skill_7cdc8fc8e63e4f689e8e0bdd",
-          "name": "Audit Preparation 028",
-          "label": "Audit Preparation 028",
+          "name": "Defect Analysis Collaboration",
+          "label": "Defect Analysis Collaboration",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Audit Preparation 028"
+            "Defect Analysis Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -686,11 +686,11 @@
         },
         {
           "uid": "skill_ce0986b041a74afcb2a6c1e5",
-          "name": "Validation Support 029",
-          "label": "Validation Support 029",
+          "name": "Defect Analysis Evaluation",
+          "label": "Defect Analysis Evaluation",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Validation Support 029"
+            "Defect Analysis Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -698,11 +698,11 @@
         },
         {
           "uid": "skill_2374982225ec46dbb98ba9e8",
-          "name": "Risk Assessment 030",
-          "label": "Risk Assessment 030",
+          "name": "Defect Analysis Strategy",
+          "label": "Defect Analysis Strategy",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Risk Assessment 030"
+            "Defect Analysis Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -710,11 +710,11 @@
         },
         {
           "uid": "skill_ff09f9ec916540aa91b19b86",
-          "name": "Quality Planning 031",
-          "label": "Quality Planning 031",
+          "name": "Compliance Auditing Fundamentals",
+          "label": "Compliance Auditing Fundamentals",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Quality Planning 031"
+            "Compliance Auditing Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -722,11 +722,11 @@
         },
         {
           "uid": "skill_a0eea590cc8541149f03fafb",
-          "name": "Inspection Execution 032",
-          "label": "Inspection Execution 032",
+          "name": "Compliance Auditing Execution",
+          "label": "Compliance Auditing Execution",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Inspection Execution 032"
+            "Compliance Auditing Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -734,11 +734,11 @@
         },
         {
           "uid": "skill_381fdca14ad64ce5baf3028c",
-          "name": "Defect Analysis 033",
-          "label": "Defect Analysis 033",
+          "name": "Compliance Auditing Optimization",
+          "label": "Compliance Auditing Optimization",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Defect Analysis 033"
+            "Compliance Auditing Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -746,11 +746,11 @@
         },
         {
           "uid": "skill_4731ab6f3eb44c31989fd49e",
-          "name": "Compliance Verification 034",
-          "label": "Compliance Verification 034",
+          "name": "Compliance Auditing Analysis",
+          "label": "Compliance Auditing Analysis",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Compliance Verification 034"
+            "Compliance Auditing Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -758,11 +758,11 @@
         },
         {
           "uid": "skill_0f171864901040a3957087cd",
-          "name": "Test Documentation 035",
-          "label": "Test Documentation 035",
+          "name": "Compliance Auditing Governance",
+          "label": "Compliance Auditing Governance",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Test Documentation 035"
+            "Compliance Auditing Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -770,11 +770,11 @@
         },
         {
           "uid": "skill_c485d888f1364fd9a6ce1a0c",
-          "name": "Quality Metrics Review 036",
-          "label": "Quality Metrics Review 036",
+          "name": "Compliance Auditing Planning",
+          "label": "Compliance Auditing Planning",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Quality Metrics Review 036"
+            "Compliance Auditing Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -782,11 +782,11 @@
         },
         {
           "uid": "skill_ae1608647ea547e5bf89ae51",
-          "name": "Corrective Action Tracking 037",
-          "label": "Corrective Action Tracking 037",
+          "name": "Compliance Auditing Integration",
+          "label": "Compliance Auditing Integration",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Corrective Action Tracking 037"
+            "Compliance Auditing Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -794,11 +794,11 @@
         },
         {
           "uid": "skill_d563d56c991f4be3b6e56a71",
-          "name": "Audit Preparation 038",
-          "label": "Audit Preparation 038",
+          "name": "Compliance Auditing Collaboration",
+          "label": "Compliance Auditing Collaboration",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Audit Preparation 038"
+            "Compliance Auditing Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -806,11 +806,11 @@
         },
         {
           "uid": "skill_5726249283914a0389a54e7f",
-          "name": "Validation Support 039",
-          "label": "Validation Support 039",
+          "name": "Compliance Auditing Evaluation",
+          "label": "Compliance Auditing Evaluation",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Validation Support 039"
+            "Compliance Auditing Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -818,11 +818,11 @@
         },
         {
           "uid": "skill_54e5ab8fa9f541bd95e9b8df",
-          "name": "Risk Assessment 040",
-          "label": "Risk Assessment 040",
+          "name": "Compliance Auditing Strategy",
+          "label": "Compliance Auditing Strategy",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Risk Assessment 040"
+            "Compliance Auditing Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -830,11 +830,11 @@
         },
         {
           "uid": "skill_6fae4a9e5f6446a3a0899c4e",
-          "name": "Quality Planning 041",
-          "label": "Quality Planning 041",
+          "name": "Test Design Fundamentals",
+          "label": "Test Design Fundamentals",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Quality Planning 041"
+            "Test Design Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -842,11 +842,11 @@
         },
         {
           "uid": "skill_9d18636749b342d99709e6df",
-          "name": "Inspection Execution 042",
-          "label": "Inspection Execution 042",
+          "name": "Test Design Execution",
+          "label": "Test Design Execution",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Inspection Execution 042"
+            "Test Design Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -854,11 +854,11 @@
         },
         {
           "uid": "skill_c3f0497bf5574bef90f3520b",
-          "name": "Defect Analysis 043",
-          "label": "Defect Analysis 043",
+          "name": "Test Design Optimization",
+          "label": "Test Design Optimization",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Defect Analysis 043"
+            "Test Design Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -866,11 +866,11 @@
         },
         {
           "uid": "skill_e49b2392b16547a5bd9ea788",
-          "name": "Compliance Verification 044",
-          "label": "Compliance Verification 044",
+          "name": "Test Design Analysis",
+          "label": "Test Design Analysis",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Compliance Verification 044"
+            "Test Design Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -878,11 +878,11 @@
         },
         {
           "uid": "skill_732707c9c1fa4b6f8bac2551",
-          "name": "Test Documentation 045",
-          "label": "Test Documentation 045",
+          "name": "Test Design Governance",
+          "label": "Test Design Governance",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Test Documentation 045"
+            "Test Design Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -890,11 +890,11 @@
         },
         {
           "uid": "skill_7a62d7e3ddd64bbb95314476",
-          "name": "Quality Metrics Review 046",
-          "label": "Quality Metrics Review 046",
+          "name": "Test Design Planning",
+          "label": "Test Design Planning",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Quality Metrics Review 046"
+            "Test Design Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -902,11 +902,11 @@
         },
         {
           "uid": "skill_653e6df16740426ead188c1b",
-          "name": "Corrective Action Tracking 047",
-          "label": "Corrective Action Tracking 047",
+          "name": "Test Design Integration",
+          "label": "Test Design Integration",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Corrective Action Tracking 047"
+            "Test Design Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -914,11 +914,11 @@
         },
         {
           "uid": "skill_745855e7fc954f27bec7080a",
-          "name": "Audit Preparation 048",
-          "label": "Audit Preparation 048",
+          "name": "Test Design Collaboration",
+          "label": "Test Design Collaboration",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Audit Preparation 048"
+            "Test Design Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -926,11 +926,11 @@
         },
         {
           "uid": "skill_693fb681bd534077ad9c1980",
-          "name": "Validation Support 049",
-          "label": "Validation Support 049",
+          "name": "Test Design Evaluation",
+          "label": "Test Design Evaluation",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Validation Support 049"
+            "Test Design Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -938,11 +938,11 @@
         },
         {
           "uid": "skill_5c9759e2b02540d99784a4ce",
-          "name": "Risk Assessment 050",
-          "label": "Risk Assessment 050",
+          "name": "Test Design Strategy",
+          "label": "Test Design Strategy",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Risk Assessment 050"
+            "Test Design Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -950,11 +950,11 @@
         },
         {
           "uid": "skill_020a91ecfc334aa1a7499b29",
-          "name": "Quality Planning 051",
-          "label": "Quality Planning 051",
+          "name": "Corrective Action Fundamentals",
+          "label": "Corrective Action Fundamentals",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Quality Planning 051"
+            "Corrective Action Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -962,11 +962,11 @@
         },
         {
           "uid": "skill_07c947224b0142a8b772acf3",
-          "name": "Inspection Execution 052",
-          "label": "Inspection Execution 052",
+          "name": "Corrective Action Execution",
+          "label": "Corrective Action Execution",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Inspection Execution 052"
+            "Corrective Action Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -974,11 +974,11 @@
         },
         {
           "uid": "skill_95d5a840abee47809fb6ecd6",
-          "name": "Defect Analysis 053",
-          "label": "Defect Analysis 053",
+          "name": "Corrective Action Optimization",
+          "label": "Corrective Action Optimization",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Defect Analysis 053"
+            "Corrective Action Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -986,11 +986,11 @@
         },
         {
           "uid": "skill_a11289e95f1a42e28cac0de4",
-          "name": "Compliance Verification 054",
-          "label": "Compliance Verification 054",
+          "name": "Corrective Action Analysis",
+          "label": "Corrective Action Analysis",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Compliance Verification 054"
+            "Corrective Action Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -998,11 +998,11 @@
         },
         {
           "uid": "skill_7aff96dfa39a4bc6b3960de1",
-          "name": "Test Documentation 055",
-          "label": "Test Documentation 055",
+          "name": "Corrective Action Governance",
+          "label": "Corrective Action Governance",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Test Documentation 055"
+            "Corrective Action Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1010,11 +1010,11 @@
         },
         {
           "uid": "skill_77d4071f7aec48e3bd989494",
-          "name": "Quality Metrics Review 056",
-          "label": "Quality Metrics Review 056",
+          "name": "Corrective Action Planning",
+          "label": "Corrective Action Planning",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Quality Metrics Review 056"
+            "Corrective Action Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1022,11 +1022,11 @@
         },
         {
           "uid": "skill_47a3ad43c7784104b6d0a74f",
-          "name": "Corrective Action Tracking 057",
-          "label": "Corrective Action Tracking 057",
+          "name": "Corrective Action Integration",
+          "label": "Corrective Action Integration",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Corrective Action Tracking 057"
+            "Corrective Action Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1034,11 +1034,11 @@
         },
         {
           "uid": "skill_1e72082121b246b9be92a850",
-          "name": "Audit Preparation 058",
-          "label": "Audit Preparation 058",
+          "name": "Corrective Action Collaboration",
+          "label": "Corrective Action Collaboration",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Audit Preparation 058"
+            "Corrective Action Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1046,11 +1046,11 @@
         },
         {
           "uid": "skill_ff466315ee7040f1b62b75f7",
-          "name": "Validation Support 059",
-          "label": "Validation Support 059",
+          "name": "Corrective Action Evaluation",
+          "label": "Corrective Action Evaluation",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Validation Support 059"
+            "Corrective Action Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1058,11 +1058,11 @@
         },
         {
           "uid": "skill_451aaf9eea3142a19f3d0551",
-          "name": "Risk Assessment 060",
-          "label": "Risk Assessment 060",
+          "name": "Corrective Action Strategy",
+          "label": "Corrective Action Strategy",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Risk Assessment 060"
+            "Corrective Action Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1070,11 +1070,11 @@
         },
         {
           "uid": "skill_4a080a2e449d445882818410",
-          "name": "Quality Planning 061",
-          "label": "Quality Planning 061",
+          "name": "Preventive Action Fundamentals",
+          "label": "Preventive Action Fundamentals",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Quality Planning 061"
+            "Preventive Action Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1082,11 +1082,11 @@
         },
         {
           "uid": "skill_053a73d82dd34e5db797673f",
-          "name": "Inspection Execution 062",
-          "label": "Inspection Execution 062",
+          "name": "Preventive Action Execution",
+          "label": "Preventive Action Execution",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Inspection Execution 062"
+            "Preventive Action Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1094,11 +1094,11 @@
         },
         {
           "uid": "skill_2d7924bb2a3e48268b3005b9",
-          "name": "Defect Analysis 063",
-          "label": "Defect Analysis 063",
+          "name": "Preventive Action Optimization",
+          "label": "Preventive Action Optimization",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Defect Analysis 063"
+            "Preventive Action Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1106,11 +1106,11 @@
         },
         {
           "uid": "skill_3ff297614cf0435da8aca5e9",
-          "name": "Compliance Verification 064",
-          "label": "Compliance Verification 064",
+          "name": "Preventive Action Analysis",
+          "label": "Preventive Action Analysis",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Compliance Verification 064"
+            "Preventive Action Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1118,11 +1118,11 @@
         },
         {
           "uid": "skill_9556d1acb7f0406681aaaf39",
-          "name": "Test Documentation 065",
-          "label": "Test Documentation 065",
+          "name": "Preventive Action Governance",
+          "label": "Preventive Action Governance",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Test Documentation 065"
+            "Preventive Action Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1130,11 +1130,11 @@
         },
         {
           "uid": "skill_9a2cd29733944ad59c800a83",
-          "name": "Quality Metrics Review 066",
-          "label": "Quality Metrics Review 066",
+          "name": "Preventive Action Planning",
+          "label": "Preventive Action Planning",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Quality Metrics Review 066"
+            "Preventive Action Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1142,11 +1142,11 @@
         },
         {
           "uid": "skill_dfc88c5065774f3194776830",
-          "name": "Corrective Action Tracking 067",
-          "label": "Corrective Action Tracking 067",
+          "name": "Preventive Action Integration",
+          "label": "Preventive Action Integration",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Corrective Action Tracking 067"
+            "Preventive Action Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1154,11 +1154,11 @@
         },
         {
           "uid": "skill_82b2dd75e8454a50a1d4b1a1",
-          "name": "Audit Preparation 068",
-          "label": "Audit Preparation 068",
+          "name": "Preventive Action Collaboration",
+          "label": "Preventive Action Collaboration",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Audit Preparation 068"
+            "Preventive Action Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1166,11 +1166,11 @@
         },
         {
           "uid": "skill_de07b6db116344188a0a4413",
-          "name": "Validation Support 069",
-          "label": "Validation Support 069",
+          "name": "Preventive Action Evaluation",
+          "label": "Preventive Action Evaluation",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Validation Support 069"
+            "Preventive Action Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1178,11 +1178,11 @@
         },
         {
           "uid": "skill_4b0405ecfd2e400e883f9ff2",
-          "name": "Risk Assessment 070",
-          "label": "Risk Assessment 070",
+          "name": "Preventive Action Strategy",
+          "label": "Preventive Action Strategy",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Risk Assessment 070"
+            "Preventive Action Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1190,11 +1190,11 @@
         },
         {
           "uid": "skill_1d7027f2b606421ca15bcd23",
-          "name": "Quality Planning 071",
-          "label": "Quality Planning 071",
+          "name": "Validation Management Fundamentals",
+          "label": "Validation Management Fundamentals",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Quality Planning 071"
+            "Validation Management Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1202,11 +1202,11 @@
         },
         {
           "uid": "skill_eead00e852bc4525bb864bd7",
-          "name": "Inspection Execution 072",
-          "label": "Inspection Execution 072",
+          "name": "Validation Management Execution",
+          "label": "Validation Management Execution",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Inspection Execution 072"
+            "Validation Management Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],

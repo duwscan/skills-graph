@@ -344,11 +344,11 @@
         },
         {
           "uid": "skill_f247500f6dc04f9aa04398f0",
-          "name": "Clinical Support 001",
-          "label": "Clinical Support 001",
+          "name": "Patient Care Coordination Fundamentals",
+          "label": "Patient Care Coordination Fundamentals",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Clinical Support 001"
+            "Patient Care Coordination Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -356,11 +356,11 @@
         },
         {
           "uid": "skill_3665227edc324738b9346f8f",
-          "name": "Patient Coordination 002",
-          "label": "Patient Coordination 002",
+          "name": "Patient Care Coordination Execution",
+          "label": "Patient Care Coordination Execution",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Patient Coordination 002"
+            "Patient Care Coordination Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -368,11 +368,11 @@
         },
         {
           "uid": "skill_0a9cdb0fcd4b44a8bdf90539",
-          "name": "Care Documentation 003",
-          "label": "Care Documentation 003",
+          "name": "Patient Care Coordination Optimization",
+          "label": "Patient Care Coordination Optimization",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Care Documentation 003"
+            "Patient Care Coordination Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -380,11 +380,11 @@
         },
         {
           "uid": "skill_5987cebee9df4c9582591606",
-          "name": "Safety Monitoring 004",
-          "label": "Safety Monitoring 004",
+          "name": "Patient Care Coordination Analysis",
+          "label": "Patient Care Coordination Analysis",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Safety Monitoring 004"
+            "Patient Care Coordination Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -392,11 +392,11 @@
         },
         {
           "uid": "skill_f07df399dee743308629fb57",
-          "name": "Treatment Follow-Up 005",
-          "label": "Treatment Follow-Up 005",
+          "name": "Patient Care Coordination Governance",
+          "label": "Patient Care Coordination Governance",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Treatment Follow-Up 005"
+            "Patient Care Coordination Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -404,11 +404,11 @@
         },
         {
           "uid": "skill_94f5dc6791a34a1e963642d9",
-          "name": "Case Review 006",
-          "label": "Case Review 006",
+          "name": "Patient Care Coordination Planning",
+          "label": "Patient Care Coordination Planning",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Case Review 006"
+            "Patient Care Coordination Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -416,11 +416,11 @@
         },
         {
           "uid": "skill_dc23a1b255404757a61130c9",
-          "name": "Clinical Communication 007",
-          "label": "Clinical Communication 007",
+          "name": "Patient Care Coordination Integration",
+          "label": "Patient Care Coordination Integration",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Clinical Communication 007"
+            "Patient Care Coordination Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -428,11 +428,11 @@
         },
         {
           "uid": "skill_2db2713834c34cdc9422d107",
-          "name": "Health Data Management 008",
-          "label": "Health Data Management 008",
+          "name": "Patient Care Coordination Collaboration",
+          "label": "Patient Care Coordination Collaboration",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Health Data Management 008"
+            "Patient Care Coordination Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -440,11 +440,11 @@
         },
         {
           "uid": "skill_6f378b55ee0e4d6b8594f9f0",
-          "name": "Care Quality Review 009",
-          "label": "Care Quality Review 009",
+          "name": "Patient Care Coordination Evaluation",
+          "label": "Patient Care Coordination Evaluation",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Care Quality Review 009"
+            "Patient Care Coordination Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -452,11 +452,11 @@
         },
         {
           "uid": "skill_9c12619f9d8a4b36bf8bf3a9",
-          "name": "Service Coordination 010",
-          "label": "Service Coordination 010",
+          "name": "Patient Care Coordination Strategy",
+          "label": "Patient Care Coordination Strategy",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Service Coordination 010"
+            "Patient Care Coordination Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -464,11 +464,11 @@
         },
         {
           "uid": "skill_9fb05670cbe84c22988ce7e3",
-          "name": "Clinical Support 011",
-          "label": "Clinical Support 011",
+          "name": "Clinical Documentation Fundamentals",
+          "label": "Clinical Documentation Fundamentals",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Clinical Support 011"
+            "Clinical Documentation Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -476,11 +476,11 @@
         },
         {
           "uid": "skill_37db5edeebc8460a8244f0f6",
-          "name": "Patient Coordination 012",
-          "label": "Patient Coordination 012",
+          "name": "Clinical Documentation Execution",
+          "label": "Clinical Documentation Execution",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Patient Coordination 012"
+            "Clinical Documentation Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -488,11 +488,11 @@
         },
         {
           "uid": "skill_b5e3fe909d614a8ab0611111",
-          "name": "Care Documentation 013",
-          "label": "Care Documentation 013",
+          "name": "Clinical Documentation Optimization",
+          "label": "Clinical Documentation Optimization",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Care Documentation 013"
+            "Clinical Documentation Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -500,11 +500,11 @@
         },
         {
           "uid": "skill_c36bca4bceb04fecae4c4983",
-          "name": "Safety Monitoring 014",
-          "label": "Safety Monitoring 014",
+          "name": "Clinical Documentation Analysis",
+          "label": "Clinical Documentation Analysis",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Safety Monitoring 014"
+            "Clinical Documentation Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -512,11 +512,11 @@
         },
         {
           "uid": "skill_f37354c7223040baa267f54e",
-          "name": "Treatment Follow-Up 015",
-          "label": "Treatment Follow-Up 015",
+          "name": "Clinical Documentation Governance",
+          "label": "Clinical Documentation Governance",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Treatment Follow-Up 015"
+            "Clinical Documentation Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -524,11 +524,11 @@
         },
         {
           "uid": "skill_c820851a639341649bc2cec4",
-          "name": "Case Review 016",
-          "label": "Case Review 016",
+          "name": "Clinical Documentation Planning",
+          "label": "Clinical Documentation Planning",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Case Review 016"
+            "Clinical Documentation Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -536,11 +536,11 @@
         },
         {
           "uid": "skill_a7ffb68f21f344da921e7c51",
-          "name": "Clinical Communication 017",
-          "label": "Clinical Communication 017",
+          "name": "Clinical Documentation Integration",
+          "label": "Clinical Documentation Integration",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Clinical Communication 017"
+            "Clinical Documentation Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -548,11 +548,11 @@
         },
         {
           "uid": "skill_9364d230980e442e84aa4bea",
-          "name": "Health Data Management 018",
-          "label": "Health Data Management 018",
+          "name": "Clinical Documentation Collaboration",
+          "label": "Clinical Documentation Collaboration",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Health Data Management 018"
+            "Clinical Documentation Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -560,11 +560,11 @@
         },
         {
           "uid": "skill_05d47ccfd568451494b1de50",
-          "name": "Care Quality Review 019",
-          "label": "Care Quality Review 019",
+          "name": "Clinical Documentation Evaluation",
+          "label": "Clinical Documentation Evaluation",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Care Quality Review 019"
+            "Clinical Documentation Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -572,11 +572,11 @@
         },
         {
           "uid": "skill_99912a2759a94a97be2f9a30",
-          "name": "Service Coordination 020",
-          "label": "Service Coordination 020",
+          "name": "Clinical Documentation Strategy",
+          "label": "Clinical Documentation Strategy",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Service Coordination 020"
+            "Clinical Documentation Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -584,11 +584,11 @@
         },
         {
           "uid": "skill_13e7808bf12946bf97dd8060",
-          "name": "Clinical Support 021",
-          "label": "Clinical Support 021",
+          "name": "Medication Safety Fundamentals",
+          "label": "Medication Safety Fundamentals",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Clinical Support 021"
+            "Medication Safety Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -596,11 +596,11 @@
         },
         {
           "uid": "skill_4dca897b3d13493d98f48f6b",
-          "name": "Patient Coordination 022",
-          "label": "Patient Coordination 022",
+          "name": "Medication Safety Execution",
+          "label": "Medication Safety Execution",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Patient Coordination 022"
+            "Medication Safety Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -608,11 +608,11 @@
         },
         {
           "uid": "skill_e721ae2eaa02474980e667b5",
-          "name": "Care Documentation 023",
-          "label": "Care Documentation 023",
+          "name": "Medication Safety Optimization",
+          "label": "Medication Safety Optimization",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Care Documentation 023"
+            "Medication Safety Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -620,11 +620,11 @@
         },
         {
           "uid": "skill_8136f20c901b4b0bb3a7430b",
-          "name": "Safety Monitoring 024",
-          "label": "Safety Monitoring 024",
+          "name": "Medication Safety Analysis",
+          "label": "Medication Safety Analysis",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Safety Monitoring 024"
+            "Medication Safety Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -632,11 +632,11 @@
         },
         {
           "uid": "skill_96efccf14470428f9fff1618",
-          "name": "Treatment Follow-Up 025",
-          "label": "Treatment Follow-Up 025",
+          "name": "Medication Safety Governance",
+          "label": "Medication Safety Governance",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Treatment Follow-Up 025"
+            "Medication Safety Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -644,11 +644,11 @@
         },
         {
           "uid": "skill_cecba280882942da855cde1c",
-          "name": "Case Review 026",
-          "label": "Case Review 026",
+          "name": "Medication Safety Planning",
+          "label": "Medication Safety Planning",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Case Review 026"
+            "Medication Safety Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -656,11 +656,11 @@
         },
         {
           "uid": "skill_b29b28ffe477486db7971782",
-          "name": "Clinical Communication 027",
-          "label": "Clinical Communication 027",
+          "name": "Medication Safety Integration",
+          "label": "Medication Safety Integration",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Clinical Communication 027"
+            "Medication Safety Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -668,11 +668,11 @@
         },
         {
           "uid": "skill_499e9b3141c04708b228fd71",
-          "name": "Health Data Management 028",
-          "label": "Health Data Management 028",
+          "name": "Medication Safety Collaboration",
+          "label": "Medication Safety Collaboration",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Health Data Management 028"
+            "Medication Safety Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -680,11 +680,11 @@
         },
         {
           "uid": "skill_e4056b25add842adb1971746",
-          "name": "Care Quality Review 029",
-          "label": "Care Quality Review 029",
+          "name": "Medication Safety Evaluation",
+          "label": "Medication Safety Evaluation",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Care Quality Review 029"
+            "Medication Safety Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -692,11 +692,11 @@
         },
         {
           "uid": "skill_67492f9e9a1543d09eac3bf2",
-          "name": "Service Coordination 030",
-          "label": "Service Coordination 030",
+          "name": "Medication Safety Strategy",
+          "label": "Medication Safety Strategy",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Service Coordination 030"
+            "Medication Safety Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -704,11 +704,11 @@
         },
         {
           "uid": "skill_f4841f80efd642c9b40b1f69",
-          "name": "Clinical Support 031",
-          "label": "Clinical Support 031",
+          "name": "Infection Prevention Fundamentals",
+          "label": "Infection Prevention Fundamentals",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Clinical Support 031"
+            "Infection Prevention Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -716,11 +716,11 @@
         },
         {
           "uid": "skill_5b8ddac54b9041f298bbc514",
-          "name": "Patient Coordination 032",
-          "label": "Patient Coordination 032",
+          "name": "Infection Prevention Execution",
+          "label": "Infection Prevention Execution",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Patient Coordination 032"
+            "Infection Prevention Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -728,11 +728,11 @@
         },
         {
           "uid": "skill_2d713ccaa0cc4a868127ab14",
-          "name": "Care Documentation 033",
-          "label": "Care Documentation 033",
+          "name": "Infection Prevention Optimization",
+          "label": "Infection Prevention Optimization",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Care Documentation 033"
+            "Infection Prevention Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -740,11 +740,11 @@
         },
         {
           "uid": "skill_3bfb1bc75809431a9366e906",
-          "name": "Safety Monitoring 034",
-          "label": "Safety Monitoring 034",
+          "name": "Infection Prevention Analysis",
+          "label": "Infection Prevention Analysis",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Safety Monitoring 034"
+            "Infection Prevention Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -752,11 +752,11 @@
         },
         {
           "uid": "skill_0b7afa3daf9f43399988f98d",
-          "name": "Treatment Follow-Up 035",
-          "label": "Treatment Follow-Up 035",
+          "name": "Infection Prevention Governance",
+          "label": "Infection Prevention Governance",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Treatment Follow-Up 035"
+            "Infection Prevention Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -764,11 +764,11 @@
         },
         {
           "uid": "skill_c2d2a82c5c584830bf60bb52",
-          "name": "Case Review 036",
-          "label": "Case Review 036",
+          "name": "Infection Prevention Planning",
+          "label": "Infection Prevention Planning",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Case Review 036"
+            "Infection Prevention Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -776,11 +776,11 @@
         },
         {
           "uid": "skill_999820f1d8734735bb8a4b03",
-          "name": "Clinical Communication 037",
-          "label": "Clinical Communication 037",
+          "name": "Infection Prevention Integration",
+          "label": "Infection Prevention Integration",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Clinical Communication 037"
+            "Infection Prevention Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -788,11 +788,11 @@
         },
         {
           "uid": "skill_eca2c62022de4da2b71af0d5",
-          "name": "Health Data Management 038",
-          "label": "Health Data Management 038",
+          "name": "Infection Prevention Collaboration",
+          "label": "Infection Prevention Collaboration",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Health Data Management 038"
+            "Infection Prevention Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -800,11 +800,11 @@
         },
         {
           "uid": "skill_6e42000775864fcc9449439a",
-          "name": "Care Quality Review 039",
-          "label": "Care Quality Review 039",
+          "name": "Infection Prevention Evaluation",
+          "label": "Infection Prevention Evaluation",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Care Quality Review 039"
+            "Infection Prevention Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -812,11 +812,11 @@
         },
         {
           "uid": "skill_aabc78db388b4f5aa63780a8",
-          "name": "Service Coordination 040",
-          "label": "Service Coordination 040",
+          "name": "Infection Prevention Strategy",
+          "label": "Infection Prevention Strategy",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Service Coordination 040"
+            "Infection Prevention Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -824,11 +824,11 @@
         },
         {
           "uid": "skill_429a079987594fa5b1a98121",
-          "name": "Clinical Support 041",
-          "label": "Clinical Support 041",
+          "name": "Health Assessment Fundamentals",
+          "label": "Health Assessment Fundamentals",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Clinical Support 041"
+            "Health Assessment Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -836,11 +836,11 @@
         },
         {
           "uid": "skill_6c212ed7d66647f693eb0127",
-          "name": "Patient Coordination 042",
-          "label": "Patient Coordination 042",
+          "name": "Health Assessment Execution",
+          "label": "Health Assessment Execution",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Patient Coordination 042"
+            "Health Assessment Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -848,11 +848,11 @@
         },
         {
           "uid": "skill_e320df252a62417ab977be95",
-          "name": "Care Documentation 043",
-          "label": "Care Documentation 043",
+          "name": "Health Assessment Optimization",
+          "label": "Health Assessment Optimization",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Care Documentation 043"
+            "Health Assessment Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -860,11 +860,11 @@
         },
         {
           "uid": "skill_f526ce07de104693a87ae987",
-          "name": "Safety Monitoring 044",
-          "label": "Safety Monitoring 044",
+          "name": "Health Assessment Analysis",
+          "label": "Health Assessment Analysis",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Safety Monitoring 044"
+            "Health Assessment Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -872,11 +872,11 @@
         },
         {
           "uid": "skill_5f60d13e38364090b309d6b8",
-          "name": "Treatment Follow-Up 045",
-          "label": "Treatment Follow-Up 045",
+          "name": "Health Assessment Governance",
+          "label": "Health Assessment Governance",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Treatment Follow-Up 045"
+            "Health Assessment Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -884,11 +884,11 @@
         },
         {
           "uid": "skill_02653c6eaa5e4abfbe8f2d8c",
-          "name": "Case Review 046",
-          "label": "Case Review 046",
+          "name": "Health Assessment Planning",
+          "label": "Health Assessment Planning",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Case Review 046"
+            "Health Assessment Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -896,11 +896,11 @@
         },
         {
           "uid": "skill_3f08d6e9bb124e52bda51e4e",
-          "name": "Clinical Communication 047",
-          "label": "Clinical Communication 047",
+          "name": "Health Assessment Integration",
+          "label": "Health Assessment Integration",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Clinical Communication 047"
+            "Health Assessment Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -908,11 +908,11 @@
         },
         {
           "uid": "skill_6f10892a290a46bb80d5795c",
-          "name": "Health Data Management 048",
-          "label": "Health Data Management 048",
+          "name": "Health Assessment Collaboration",
+          "label": "Health Assessment Collaboration",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Health Data Management 048"
+            "Health Assessment Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -920,11 +920,11 @@
         },
         {
           "uid": "skill_f1004ce4eee9472b9961c6e3",
-          "name": "Care Quality Review 049",
-          "label": "Care Quality Review 049",
+          "name": "Health Assessment Evaluation",
+          "label": "Health Assessment Evaluation",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Care Quality Review 049"
+            "Health Assessment Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -932,11 +932,11 @@
         },
         {
           "uid": "skill_fd6fc162350a410bb8278cc9",
-          "name": "Service Coordination 050",
-          "label": "Service Coordination 050",
+          "name": "Health Assessment Strategy",
+          "label": "Health Assessment Strategy",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Service Coordination 050"
+            "Health Assessment Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -944,11 +944,11 @@
         },
         {
           "uid": "skill_77a5120985094eabac39cb3d",
-          "name": "Clinical Support 051",
-          "label": "Clinical Support 051",
+          "name": "Care Transition Fundamentals",
+          "label": "Care Transition Fundamentals",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Clinical Support 051"
+            "Care Transition Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -956,11 +956,11 @@
         },
         {
           "uid": "skill_828d7687661241c796024145",
-          "name": "Patient Coordination 052",
-          "label": "Patient Coordination 052",
+          "name": "Care Transition Execution",
+          "label": "Care Transition Execution",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Patient Coordination 052"
+            "Care Transition Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -968,11 +968,11 @@
         },
         {
           "uid": "skill_f04c7da88ff0442281d3f868",
-          "name": "Care Documentation 053",
-          "label": "Care Documentation 053",
+          "name": "Care Transition Optimization",
+          "label": "Care Transition Optimization",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Care Documentation 053"
+            "Care Transition Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -980,11 +980,11 @@
         },
         {
           "uid": "skill_c6e731e196204da398d21957",
-          "name": "Safety Monitoring 054",
-          "label": "Safety Monitoring 054",
+          "name": "Care Transition Analysis",
+          "label": "Care Transition Analysis",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Safety Monitoring 054"
+            "Care Transition Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -992,11 +992,11 @@
         },
         {
           "uid": "skill_69a0da55ee4b4e198f065b39",
-          "name": "Treatment Follow-Up 055",
-          "label": "Treatment Follow-Up 055",
+          "name": "Care Transition Governance",
+          "label": "Care Transition Governance",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Treatment Follow-Up 055"
+            "Care Transition Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1004,11 +1004,11 @@
         },
         {
           "uid": "skill_17c27410db60474fabb939f4",
-          "name": "Case Review 056",
-          "label": "Case Review 056",
+          "name": "Care Transition Planning",
+          "label": "Care Transition Planning",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Case Review 056"
+            "Care Transition Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1016,11 +1016,11 @@
         },
         {
           "uid": "skill_c2231ac9ab20484b8a94dc24",
-          "name": "Clinical Communication 057",
-          "label": "Clinical Communication 057",
+          "name": "Care Transition Integration",
+          "label": "Care Transition Integration",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Clinical Communication 057"
+            "Care Transition Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1028,11 +1028,11 @@
         },
         {
           "uid": "skill_5738e4a79b40445b98d50857",
-          "name": "Health Data Management 058",
-          "label": "Health Data Management 058",
+          "name": "Care Transition Collaboration",
+          "label": "Care Transition Collaboration",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Health Data Management 058"
+            "Care Transition Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1040,11 +1040,11 @@
         },
         {
           "uid": "skill_212d8535c89d462e9aae511d",
-          "name": "Care Quality Review 059",
-          "label": "Care Quality Review 059",
+          "name": "Care Transition Evaluation",
+          "label": "Care Transition Evaluation",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Care Quality Review 059"
+            "Care Transition Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1052,11 +1052,11 @@
         },
         {
           "uid": "skill_da1f2045440c473e8b69302f",
-          "name": "Service Coordination 060",
-          "label": "Service Coordination 060",
+          "name": "Care Transition Strategy",
+          "label": "Care Transition Strategy",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Service Coordination 060"
+            "Care Transition Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1064,11 +1064,11 @@
         },
         {
           "uid": "skill_9720a39d37194be99fcb657f",
-          "name": "Clinical Support 061",
-          "label": "Clinical Support 061",
+          "name": "Clinical Communication Fundamentals",
+          "label": "Clinical Communication Fundamentals",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Clinical Support 061"
+            "Clinical Communication Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1076,11 +1076,11 @@
         },
         {
           "uid": "skill_fe9ee33ce6bb4a88a79088f0",
-          "name": "Patient Coordination 062",
-          "label": "Patient Coordination 062",
+          "name": "Clinical Communication Execution",
+          "label": "Clinical Communication Execution",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Patient Coordination 062"
+            "Clinical Communication Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1088,11 +1088,11 @@
         },
         {
           "uid": "skill_6f54843508fc4907a108fc7d",
-          "name": "Care Documentation 063",
-          "label": "Care Documentation 063",
+          "name": "Clinical Communication Optimization",
+          "label": "Clinical Communication Optimization",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Care Documentation 063"
+            "Clinical Communication Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1100,11 +1100,11 @@
         },
         {
           "uid": "skill_dd5c301063254ed18396e9aa",
-          "name": "Safety Monitoring 064",
-          "label": "Safety Monitoring 064",
+          "name": "Clinical Communication Analysis",
+          "label": "Clinical Communication Analysis",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Safety Monitoring 064"
+            "Clinical Communication Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1112,11 +1112,11 @@
         },
         {
           "uid": "skill_2eb38faeb95f4526ad9f583d",
-          "name": "Treatment Follow-Up 065",
-          "label": "Treatment Follow-Up 065",
+          "name": "Clinical Communication Governance",
+          "label": "Clinical Communication Governance",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Treatment Follow-Up 065"
+            "Clinical Communication Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1124,11 +1124,11 @@
         },
         {
           "uid": "skill_8af43838762446e1a15bc682",
-          "name": "Case Review 066",
-          "label": "Case Review 066",
+          "name": "Clinical Communication Planning",
+          "label": "Clinical Communication Planning",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Case Review 066"
+            "Clinical Communication Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1136,11 +1136,11 @@
         },
         {
           "uid": "skill_a7e5e3c618914541972c5a16",
-          "name": "Clinical Communication 067",
-          "label": "Clinical Communication 067",
+          "name": "Clinical Communication Integration",
+          "label": "Clinical Communication Integration",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Clinical Communication 067"
+            "Clinical Communication Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1148,11 +1148,11 @@
         },
         {
           "uid": "skill_e9fa7cd5533145b5a87f9850",
-          "name": "Health Data Management 068",
-          "label": "Health Data Management 068",
+          "name": "Clinical Communication Collaboration",
+          "label": "Clinical Communication Collaboration",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Health Data Management 068"
+            "Clinical Communication Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1160,11 +1160,11 @@
         },
         {
           "uid": "skill_8cb3a515b3dd48a5874a979e",
-          "name": "Care Quality Review 069",
-          "label": "Care Quality Review 069",
+          "name": "Clinical Communication Evaluation",
+          "label": "Clinical Communication Evaluation",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Care Quality Review 069"
+            "Clinical Communication Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1172,11 +1172,11 @@
         },
         {
           "uid": "skill_d9b6d7240d234d80884d35c6",
-          "name": "Service Coordination 070",
-          "label": "Service Coordination 070",
+          "name": "Clinical Communication Strategy",
+          "label": "Clinical Communication Strategy",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Service Coordination 070"
+            "Clinical Communication Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1184,11 +1184,11 @@
         },
         {
           "uid": "skill_ddfba9c180a74149979af152",
-          "name": "Clinical Support 071",
-          "label": "Clinical Support 071",
+          "name": "Population Health Fundamentals",
+          "label": "Population Health Fundamentals",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Clinical Support 071"
+            "Population Health Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1196,11 +1196,11 @@
         },
         {
           "uid": "skill_915fc30941ce427188d68233",
-          "name": "Patient Coordination 072",
-          "label": "Patient Coordination 072",
+          "name": "Population Health Execution",
+          "label": "Population Health Execution",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Patient Coordination 072"
+            "Population Health Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],

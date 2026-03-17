@@ -354,11 +354,11 @@
         },
         {
           "uid": "skill_471defd44d2344118f1c3361",
-          "name": "Campaign Strategy 001",
-          "label": "Campaign Strategy 001",
+          "name": "Campaign Strategy Fundamentals",
+          "label": "Campaign Strategy Fundamentals",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Campaign Strategy 001"
+            "Campaign Strategy Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -366,11 +366,11 @@
         },
         {
           "uid": "skill_4bd2fe47b32f4e73ba788669",
-          "name": "Audience Segmentation 002",
-          "label": "Audience Segmentation 002",
+          "name": "Campaign Strategy Execution",
+          "label": "Campaign Strategy Execution",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Audience Segmentation 002"
+            "Campaign Strategy Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -378,11 +378,11 @@
         },
         {
           "uid": "skill_5efdd4dcee414ad5a580e3b3",
-          "name": "Brand Positioning 003",
-          "label": "Brand Positioning 003",
+          "name": "Campaign Strategy Optimization",
+          "label": "Campaign Strategy Optimization",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Brand Positioning 003"
+            "Campaign Strategy Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -390,11 +390,11 @@
         },
         {
           "uid": "skill_080132f8c98b4a08a374cfa7",
-          "name": "Lead Nurturing 004",
-          "label": "Lead Nurturing 004",
+          "name": "Campaign Strategy Analysis",
+          "label": "Campaign Strategy Analysis",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Lead Nurturing 004"
+            "Campaign Strategy Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -402,11 +402,11 @@
         },
         {
           "uid": "skill_02751c14d7134b509b86fc96",
-          "name": "Channel Optimization 005",
-          "label": "Channel Optimization 005",
+          "name": "Campaign Strategy Governance",
+          "label": "Campaign Strategy Governance",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Channel Optimization 005"
+            "Campaign Strategy Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -414,11 +414,11 @@
         },
         {
           "uid": "skill_cad382e2f0aa4ef183db9223",
-          "name": "Funnel Analysis 006",
-          "label": "Funnel Analysis 006",
+          "name": "Campaign Strategy Planning",
+          "label": "Campaign Strategy Planning",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Funnel Analysis 006"
+            "Campaign Strategy Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -426,11 +426,11 @@
         },
         {
           "uid": "skill_b4f7836bb5794f62bc1f81aa",
-          "name": "Content Distribution 007",
-          "label": "Content Distribution 007",
+          "name": "Campaign Strategy Integration",
+          "label": "Campaign Strategy Integration",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Content Distribution 007"
+            "Campaign Strategy Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -438,11 +438,11 @@
         },
         {
           "uid": "skill_e4ae456384bb457e884f49d8",
-          "name": "Growth Planning 008",
-          "label": "Growth Planning 008",
+          "name": "Campaign Strategy Collaboration",
+          "label": "Campaign Strategy Collaboration",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Growth Planning 008"
+            "Campaign Strategy Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -450,11 +450,11 @@
         },
         {
           "uid": "skill_a2b3c9b747864854a559150d",
-          "name": "Customer Journey Mapping 009",
-          "label": "Customer Journey Mapping 009",
+          "name": "Campaign Strategy Evaluation",
+          "label": "Campaign Strategy Evaluation",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Customer Journey Mapping 009"
+            "Campaign Strategy Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -462,11 +462,11 @@
         },
         {
           "uid": "skill_e71481a6abba410ca249c017",
-          "name": "Performance Reporting 010",
-          "label": "Performance Reporting 010",
+          "name": "Campaign Strategy Strategy",
+          "label": "Campaign Strategy Strategy",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Performance Reporting 010"
+            "Campaign Strategy Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -474,11 +474,11 @@
         },
         {
           "uid": "skill_7976fbbd8f4b4028b6010878",
-          "name": "Campaign Strategy 011",
-          "label": "Campaign Strategy 011",
+          "name": "Audience Research Fundamentals",
+          "label": "Audience Research Fundamentals",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Campaign Strategy 011"
+            "Audience Research Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -486,11 +486,11 @@
         },
         {
           "uid": "skill_1238306d9024423ba803127c",
-          "name": "Audience Segmentation 012",
-          "label": "Audience Segmentation 012",
+          "name": "Audience Research Execution",
+          "label": "Audience Research Execution",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Audience Segmentation 012"
+            "Audience Research Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -498,11 +498,11 @@
         },
         {
           "uid": "skill_9a548f9431ea40d797d1ff66",
-          "name": "Brand Positioning 013",
-          "label": "Brand Positioning 013",
+          "name": "Audience Research Optimization",
+          "label": "Audience Research Optimization",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Brand Positioning 013"
+            "Audience Research Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -510,11 +510,11 @@
         },
         {
           "uid": "skill_485ad4b3d7494fae95ba6ee8",
-          "name": "Lead Nurturing 014",
-          "label": "Lead Nurturing 014",
+          "name": "Audience Research Analysis",
+          "label": "Audience Research Analysis",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Lead Nurturing 014"
+            "Audience Research Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -522,11 +522,11 @@
         },
         {
           "uid": "skill_d222e33857434ddb8623b090",
-          "name": "Channel Optimization 015",
-          "label": "Channel Optimization 015",
+          "name": "Audience Research Governance",
+          "label": "Audience Research Governance",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Channel Optimization 015"
+            "Audience Research Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -534,11 +534,11 @@
         },
         {
           "uid": "skill_91dcce40d24c426bb315504b",
-          "name": "Funnel Analysis 016",
-          "label": "Funnel Analysis 016",
+          "name": "Audience Research Planning",
+          "label": "Audience Research Planning",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Funnel Analysis 016"
+            "Audience Research Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -546,11 +546,11 @@
         },
         {
           "uid": "skill_baa624f819644948817f015b",
-          "name": "Content Distribution 017",
-          "label": "Content Distribution 017",
+          "name": "Audience Research Integration",
+          "label": "Audience Research Integration",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Content Distribution 017"
+            "Audience Research Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -558,11 +558,11 @@
         },
         {
           "uid": "skill_18a9041dcb7c420080adda87",
-          "name": "Growth Planning 018",
-          "label": "Growth Planning 018",
+          "name": "Audience Research Collaboration",
+          "label": "Audience Research Collaboration",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Growth Planning 018"
+            "Audience Research Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -570,11 +570,11 @@
         },
         {
           "uid": "skill_3f20433158f6411dac22bb7a",
-          "name": "Customer Journey Mapping 019",
-          "label": "Customer Journey Mapping 019",
+          "name": "Audience Research Evaluation",
+          "label": "Audience Research Evaluation",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Customer Journey Mapping 019"
+            "Audience Research Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -582,11 +582,11 @@
         },
         {
           "uid": "skill_d3a8e9878c1741ccaff0204f",
-          "name": "Performance Reporting 020",
-          "label": "Performance Reporting 020",
+          "name": "Audience Research Strategy",
+          "label": "Audience Research Strategy",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Performance Reporting 020"
+            "Audience Research Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -594,11 +594,11 @@
         },
         {
           "uid": "skill_2f27269bde4747cbb05eab2c",
-          "name": "Campaign Strategy 021",
-          "label": "Campaign Strategy 021",
+          "name": "Brand Positioning Fundamentals",
+          "label": "Brand Positioning Fundamentals",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Campaign Strategy 021"
+            "Brand Positioning Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -606,11 +606,11 @@
         },
         {
           "uid": "skill_f1a77d89635d44058159c134",
-          "name": "Audience Segmentation 022",
-          "label": "Audience Segmentation 022",
+          "name": "Brand Positioning Execution",
+          "label": "Brand Positioning Execution",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Audience Segmentation 022"
+            "Brand Positioning Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -618,11 +618,11 @@
         },
         {
           "uid": "skill_dc4205d9c8ab4e10b85f23cd",
-          "name": "Brand Positioning 023",
-          "label": "Brand Positioning 023",
+          "name": "Brand Positioning Optimization",
+          "label": "Brand Positioning Optimization",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Brand Positioning 023"
+            "Brand Positioning Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -630,11 +630,11 @@
         },
         {
           "uid": "skill_dc3ba015519f48ea88cc5b69",
-          "name": "Lead Nurturing 024",
-          "label": "Lead Nurturing 024",
+          "name": "Brand Positioning Analysis",
+          "label": "Brand Positioning Analysis",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Lead Nurturing 024"
+            "Brand Positioning Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -642,11 +642,11 @@
         },
         {
           "uid": "skill_ca8a096dc01f4b93beee8cfb",
-          "name": "Channel Optimization 025",
-          "label": "Channel Optimization 025",
+          "name": "Brand Positioning Governance",
+          "label": "Brand Positioning Governance",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Channel Optimization 025"
+            "Brand Positioning Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -654,11 +654,11 @@
         },
         {
           "uid": "skill_2de5021f35e849b3917770a7",
-          "name": "Funnel Analysis 026",
-          "label": "Funnel Analysis 026",
+          "name": "Brand Positioning Planning",
+          "label": "Brand Positioning Planning",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Funnel Analysis 026"
+            "Brand Positioning Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -666,11 +666,11 @@
         },
         {
           "uid": "skill_137c8e4900e94a8483b1a2a9",
-          "name": "Content Distribution 027",
-          "label": "Content Distribution 027",
+          "name": "Brand Positioning Integration",
+          "label": "Brand Positioning Integration",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Content Distribution 027"
+            "Brand Positioning Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -678,11 +678,11 @@
         },
         {
           "uid": "skill_3adff322af1744a2b96cdcf2",
-          "name": "Growth Planning 028",
-          "label": "Growth Planning 028",
+          "name": "Brand Positioning Collaboration",
+          "label": "Brand Positioning Collaboration",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Growth Planning 028"
+            "Brand Positioning Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -690,11 +690,11 @@
         },
         {
           "uid": "skill_4a1d7bc64f8d488aa4075fa9",
-          "name": "Customer Journey Mapping 029",
-          "label": "Customer Journey Mapping 029",
+          "name": "Brand Positioning Evaluation",
+          "label": "Brand Positioning Evaluation",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Customer Journey Mapping 029"
+            "Brand Positioning Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -702,11 +702,11 @@
         },
         {
           "uid": "skill_6d819d15a5c7459a9255ac25",
-          "name": "Performance Reporting 030",
-          "label": "Performance Reporting 030",
+          "name": "Brand Positioning Strategy",
+          "label": "Brand Positioning Strategy",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Performance Reporting 030"
+            "Brand Positioning Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -714,11 +714,11 @@
         },
         {
           "uid": "skill_8ef44f29409d4a9ca78d8c42",
-          "name": "Campaign Strategy 031",
-          "label": "Campaign Strategy 031",
+          "name": "Lead Management Fundamentals",
+          "label": "Lead Management Fundamentals",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Campaign Strategy 031"
+            "Lead Management Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -726,11 +726,11 @@
         },
         {
           "uid": "skill_764fd9cbe3ae4a80adc47f4e",
-          "name": "Audience Segmentation 032",
-          "label": "Audience Segmentation 032",
+          "name": "Lead Management Execution",
+          "label": "Lead Management Execution",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Audience Segmentation 032"
+            "Lead Management Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -738,11 +738,11 @@
         },
         {
           "uid": "skill_b2a7b9dda6f3414ebcac9fac",
-          "name": "Brand Positioning 033",
-          "label": "Brand Positioning 033",
+          "name": "Lead Management Optimization",
+          "label": "Lead Management Optimization",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Brand Positioning 033"
+            "Lead Management Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -750,11 +750,11 @@
         },
         {
           "uid": "skill_49dec3d406194c0f95d997e1",
-          "name": "Lead Nurturing 034",
-          "label": "Lead Nurturing 034",
+          "name": "Lead Management Analysis",
+          "label": "Lead Management Analysis",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Lead Nurturing 034"
+            "Lead Management Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -762,11 +762,11 @@
         },
         {
           "uid": "skill_b19dea6170b14d1895989cac",
-          "name": "Channel Optimization 035",
-          "label": "Channel Optimization 035",
+          "name": "Lead Management Governance",
+          "label": "Lead Management Governance",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Channel Optimization 035"
+            "Lead Management Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -774,11 +774,11 @@
         },
         {
           "uid": "skill_0d2cbd921ee94a05820f1ae3",
-          "name": "Funnel Analysis 036",
-          "label": "Funnel Analysis 036",
+          "name": "Lead Management Planning",
+          "label": "Lead Management Planning",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Funnel Analysis 036"
+            "Lead Management Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -786,11 +786,11 @@
         },
         {
           "uid": "skill_ee38a5863b1a45779d37b63d",
-          "name": "Content Distribution 037",
-          "label": "Content Distribution 037",
+          "name": "Lead Management Integration",
+          "label": "Lead Management Integration",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Content Distribution 037"
+            "Lead Management Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -798,11 +798,11 @@
         },
         {
           "uid": "skill_026c60cd58224dfcbdbd7564",
-          "name": "Growth Planning 038",
-          "label": "Growth Planning 038",
+          "name": "Lead Management Collaboration",
+          "label": "Lead Management Collaboration",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Growth Planning 038"
+            "Lead Management Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -810,11 +810,11 @@
         },
         {
           "uid": "skill_8bfd21ef2e064bca8005e300",
-          "name": "Customer Journey Mapping 039",
-          "label": "Customer Journey Mapping 039",
+          "name": "Lead Management Evaluation",
+          "label": "Lead Management Evaluation",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Customer Journey Mapping 039"
+            "Lead Management Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -822,11 +822,11 @@
         },
         {
           "uid": "skill_5555650bfa9542d4901280ec",
-          "name": "Performance Reporting 040",
-          "label": "Performance Reporting 040",
+          "name": "Lead Management Strategy",
+          "label": "Lead Management Strategy",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Performance Reporting 040"
+            "Lead Management Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -834,11 +834,11 @@
         },
         {
           "uid": "skill_3d97808efbd44c33be2d86e4",
-          "name": "Campaign Strategy 041",
-          "label": "Campaign Strategy 041",
+          "name": "Content Planning Fundamentals",
+          "label": "Content Planning Fundamentals",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Campaign Strategy 041"
+            "Content Planning Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -846,11 +846,11 @@
         },
         {
           "uid": "skill_17586e8a383a4f488d898369",
-          "name": "Audience Segmentation 042",
-          "label": "Audience Segmentation 042",
+          "name": "Content Planning Execution",
+          "label": "Content Planning Execution",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Audience Segmentation 042"
+            "Content Planning Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -858,11 +858,11 @@
         },
         {
           "uid": "skill_5b729d010912450393a8e1b5",
-          "name": "Brand Positioning 043",
-          "label": "Brand Positioning 043",
+          "name": "Content Planning Optimization",
+          "label": "Content Planning Optimization",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Brand Positioning 043"
+            "Content Planning Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -870,11 +870,11 @@
         },
         {
           "uid": "skill_198fda3afabc443ba8a6d1b5",
-          "name": "Lead Nurturing 044",
-          "label": "Lead Nurturing 044",
+          "name": "Content Planning Analysis",
+          "label": "Content Planning Analysis",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Lead Nurturing 044"
+            "Content Planning Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -882,11 +882,11 @@
         },
         {
           "uid": "skill_5cd6b9d2199c4b5e83c1248b",
-          "name": "Channel Optimization 045",
-          "label": "Channel Optimization 045",
+          "name": "Content Planning Governance",
+          "label": "Content Planning Governance",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Channel Optimization 045"
+            "Content Planning Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -894,11 +894,11 @@
         },
         {
           "uid": "skill_5abcda63341841e79931e75b",
-          "name": "Funnel Analysis 046",
-          "label": "Funnel Analysis 046",
+          "name": "Content Planning Planning",
+          "label": "Content Planning Planning",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Funnel Analysis 046"
+            "Content Planning Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -906,11 +906,11 @@
         },
         {
           "uid": "skill_021856f5ce654061b6f92dc9",
-          "name": "Content Distribution 047",
-          "label": "Content Distribution 047",
+          "name": "Content Planning Integration",
+          "label": "Content Planning Integration",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Content Distribution 047"
+            "Content Planning Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -918,11 +918,11 @@
         },
         {
           "uid": "skill_62a0d9d7c7f546edb52f60b9",
-          "name": "Growth Planning 048",
-          "label": "Growth Planning 048",
+          "name": "Content Planning Collaboration",
+          "label": "Content Planning Collaboration",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Growth Planning 048"
+            "Content Planning Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -930,11 +930,11 @@
         },
         {
           "uid": "skill_fa4a0f566fe24078a04f333c",
-          "name": "Customer Journey Mapping 049",
-          "label": "Customer Journey Mapping 049",
+          "name": "Content Planning Evaluation",
+          "label": "Content Planning Evaluation",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Customer Journey Mapping 049"
+            "Content Planning Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -942,11 +942,11 @@
         },
         {
           "uid": "skill_ef17aae4935d4769bffc72f7",
-          "name": "Performance Reporting 050",
-          "label": "Performance Reporting 050",
+          "name": "Content Planning Strategy",
+          "label": "Content Planning Strategy",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Performance Reporting 050"
+            "Content Planning Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -954,11 +954,11 @@
         },
         {
           "uid": "skill_7bdbac17a6f442799eda1b0e",
-          "name": "Campaign Strategy 051",
-          "label": "Campaign Strategy 051",
+          "name": "Channel Management Fundamentals",
+          "label": "Channel Management Fundamentals",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Campaign Strategy 051"
+            "Channel Management Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -966,11 +966,11 @@
         },
         {
           "uid": "skill_08c58d1b30fb4f609a87488a",
-          "name": "Audience Segmentation 052",
-          "label": "Audience Segmentation 052",
+          "name": "Channel Management Execution",
+          "label": "Channel Management Execution",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Audience Segmentation 052"
+            "Channel Management Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -978,11 +978,11 @@
         },
         {
           "uid": "skill_371f9b340ea94cfebfd047ac",
-          "name": "Brand Positioning 053",
-          "label": "Brand Positioning 053",
+          "name": "Channel Management Optimization",
+          "label": "Channel Management Optimization",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Brand Positioning 053"
+            "Channel Management Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -990,11 +990,11 @@
         },
         {
           "uid": "skill_9d63d26109c14eb5b1e8cf15",
-          "name": "Lead Nurturing 054",
-          "label": "Lead Nurturing 054",
+          "name": "Channel Management Analysis",
+          "label": "Channel Management Analysis",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Lead Nurturing 054"
+            "Channel Management Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1002,11 +1002,11 @@
         },
         {
           "uid": "skill_dec14234420d4e959a8c51be",
-          "name": "Channel Optimization 055",
-          "label": "Channel Optimization 055",
+          "name": "Channel Management Governance",
+          "label": "Channel Management Governance",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Channel Optimization 055"
+            "Channel Management Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1014,11 +1014,11 @@
         },
         {
           "uid": "skill_b7876247431e4500940a837b",
-          "name": "Funnel Analysis 056",
-          "label": "Funnel Analysis 056",
+          "name": "Channel Management Planning",
+          "label": "Channel Management Planning",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Funnel Analysis 056"
+            "Channel Management Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1026,11 +1026,11 @@
         },
         {
           "uid": "skill_0da3826d8fb84f8598563094",
-          "name": "Content Distribution 057",
-          "label": "Content Distribution 057",
+          "name": "Channel Management Integration",
+          "label": "Channel Management Integration",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Content Distribution 057"
+            "Channel Management Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1038,11 +1038,11 @@
         },
         {
           "uid": "skill_4311959be99a4e2990b0ae6c",
-          "name": "Growth Planning 058",
-          "label": "Growth Planning 058",
+          "name": "Channel Management Collaboration",
+          "label": "Channel Management Collaboration",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Growth Planning 058"
+            "Channel Management Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1050,11 +1050,11 @@
         },
         {
           "uid": "skill_7a981d4136ba4fec932df242",
-          "name": "Customer Journey Mapping 059",
-          "label": "Customer Journey Mapping 059",
+          "name": "Channel Management Evaluation",
+          "label": "Channel Management Evaluation",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Customer Journey Mapping 059"
+            "Channel Management Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1062,11 +1062,11 @@
         },
         {
           "uid": "skill_afde98b1042e463783722867",
-          "name": "Performance Reporting 060",
-          "label": "Performance Reporting 060",
+          "name": "Channel Management Strategy",
+          "label": "Channel Management Strategy",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Performance Reporting 060"
+            "Channel Management Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1074,11 +1074,11 @@
         },
         {
           "uid": "skill_663d82bba7014f53a2d41a9b",
-          "name": "Campaign Strategy 061",
-          "label": "Campaign Strategy 061",
+          "name": "Customer Journey Analysis Fundamentals",
+          "label": "Customer Journey Analysis Fundamentals",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Campaign Strategy 061"
+            "Customer Journey Analysis Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1086,11 +1086,11 @@
         },
         {
           "uid": "skill_6ca3a15c3dfd41d08bee9d11",
-          "name": "Audience Segmentation 062",
-          "label": "Audience Segmentation 062",
+          "name": "Customer Journey Analysis Execution",
+          "label": "Customer Journey Analysis Execution",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Audience Segmentation 062"
+            "Customer Journey Analysis Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1098,11 +1098,11 @@
         },
         {
           "uid": "skill_a6db0ce5bc9c459bb91ae561",
-          "name": "Brand Positioning 063",
-          "label": "Brand Positioning 063",
+          "name": "Customer Journey Analysis Optimization",
+          "label": "Customer Journey Analysis Optimization",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Brand Positioning 063"
+            "Customer Journey Analysis Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1110,11 +1110,11 @@
         },
         {
           "uid": "skill_1ffffc23f2944dd18d8cc5b1",
-          "name": "Lead Nurturing 064",
-          "label": "Lead Nurturing 064",
+          "name": "Customer Journey Analysis Analysis",
+          "label": "Customer Journey Analysis Analysis",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Lead Nurturing 064"
+            "Customer Journey Analysis Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1122,11 +1122,11 @@
         },
         {
           "uid": "skill_9ac43e4b2281447c803b0aa5",
-          "name": "Channel Optimization 065",
-          "label": "Channel Optimization 065",
+          "name": "Customer Journey Analysis Governance",
+          "label": "Customer Journey Analysis Governance",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Channel Optimization 065"
+            "Customer Journey Analysis Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1134,11 +1134,11 @@
         },
         {
           "uid": "skill_016f99cdd1c2450e8c66b347",
-          "name": "Funnel Analysis 066",
-          "label": "Funnel Analysis 066",
+          "name": "Customer Journey Analysis Planning",
+          "label": "Customer Journey Analysis Planning",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Funnel Analysis 066"
+            "Customer Journey Analysis Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1146,11 +1146,11 @@
         },
         {
           "uid": "skill_077cd6d81a4544b693424058",
-          "name": "Content Distribution 067",
-          "label": "Content Distribution 067",
+          "name": "Customer Journey Analysis Integration",
+          "label": "Customer Journey Analysis Integration",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Content Distribution 067"
+            "Customer Journey Analysis Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1158,11 +1158,11 @@
         },
         {
           "uid": "skill_eaf5e1f4b87b470b95327a69",
-          "name": "Growth Planning 068",
-          "label": "Growth Planning 068",
+          "name": "Customer Journey Analysis Collaboration",
+          "label": "Customer Journey Analysis Collaboration",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Growth Planning 068"
+            "Customer Journey Analysis Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1170,11 +1170,11 @@
         },
         {
           "uid": "skill_8ebca830d96941039586e3a2",
-          "name": "Customer Journey Mapping 069",
-          "label": "Customer Journey Mapping 069",
+          "name": "Customer Journey Analysis Evaluation",
+          "label": "Customer Journey Analysis Evaluation",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Customer Journey Mapping 069"
+            "Customer Journey Analysis Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1182,11 +1182,11 @@
         },
         {
           "uid": "skill_439dd4d545354cc080080e6d",
-          "name": "Performance Reporting 070",
-          "label": "Performance Reporting 070",
+          "name": "Customer Journey Analysis Strategy",
+          "label": "Customer Journey Analysis Strategy",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Performance Reporting 070"
+            "Customer Journey Analysis Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1194,11 +1194,11 @@
         },
         {
           "uid": "skill_0b0be9f4f9734b1e986be930",
-          "name": "Campaign Strategy 071",
-          "label": "Campaign Strategy 071",
+          "name": "Growth Marketing Fundamentals",
+          "label": "Growth Marketing Fundamentals",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Campaign Strategy 071"
+            "Growth Marketing Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1206,11 +1206,11 @@
         },
         {
           "uid": "skill_3a49f4172130463781d7bec3",
-          "name": "Audience Segmentation 072",
-          "label": "Audience Segmentation 072",
+          "name": "Growth Marketing Execution",
+          "label": "Growth Marketing Execution",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Audience Segmentation 072"
+            "Growth Marketing Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],

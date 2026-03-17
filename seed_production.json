@@ -348,11 +348,11 @@
         },
         {
           "uid": "skill_f87a06cd118a4bc7b14ed5c0",
-          "name": "Line Operations 001",
-          "label": "Line Operations 001",
+          "name": "Line Operations Fundamentals",
+          "label": "Line Operations Fundamentals",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Line Operations 001"
+            "Line Operations Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -360,11 +360,11 @@
         },
         {
           "uid": "skill_a54aa9a44bbc456f9fcf9812",
-          "name": "Capacity Utilization 002",
-          "label": "Capacity Utilization 002",
+          "name": "Line Operations Execution",
+          "label": "Line Operations Execution",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Capacity Utilization 002"
+            "Line Operations Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -372,11 +372,11 @@
         },
         {
           "uid": "skill_0fe6a448d005454ea22fca4a",
-          "name": "Production Scheduling 003",
-          "label": "Production Scheduling 003",
+          "name": "Line Operations Optimization",
+          "label": "Line Operations Optimization",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Production Scheduling 003"
+            "Line Operations Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -384,11 +384,11 @@
         },
         {
           "uid": "skill_38fde1b4647e484592aca10d",
-          "name": "Workflow Optimization 004",
-          "label": "Workflow Optimization 004",
+          "name": "Line Operations Analysis",
+          "label": "Line Operations Analysis",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Workflow Optimization 004"
+            "Line Operations Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -396,11 +396,11 @@
         },
         {
           "uid": "skill_c2bd13cf959e49e3b10ba922",
-          "name": "Downtime Reduction 005",
-          "label": "Downtime Reduction 005",
+          "name": "Line Operations Governance",
+          "label": "Line Operations Governance",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Downtime Reduction 005"
+            "Line Operations Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -408,11 +408,11 @@
         },
         {
           "uid": "skill_5593d1af64b143538de2ca57",
-          "name": "Process Coordination 006",
-          "label": "Process Coordination 006",
+          "name": "Line Operations Planning",
+          "label": "Line Operations Planning",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Process Coordination 006"
+            "Line Operations Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -420,11 +420,11 @@
         },
         {
           "uid": "skill_7811d99f3af040c2afd70b2c",
-          "name": "Output Monitoring 007",
-          "label": "Output Monitoring 007",
+          "name": "Line Operations Integration",
+          "label": "Line Operations Integration",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Output Monitoring 007"
+            "Line Operations Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -432,11 +432,11 @@
         },
         {
           "uid": "skill_f680f3a07c9e433b8872d382",
-          "name": "Resource Planning 008",
-          "label": "Resource Planning 008",
+          "name": "Line Operations Collaboration",
+          "label": "Line Operations Collaboration",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Resource Planning 008"
+            "Line Operations Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -444,11 +444,11 @@
         },
         {
           "uid": "skill_8e0ccf99ae1b45a99e0a3ecd",
-          "name": "Shift Supervision 009",
-          "label": "Shift Supervision 009",
+          "name": "Line Operations Evaluation",
+          "label": "Line Operations Evaluation",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Shift Supervision 009"
+            "Line Operations Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -456,11 +456,11 @@
         },
         {
           "uid": "skill_ffd57242c8834700958da609",
-          "name": "Throughput Management 010",
-          "label": "Throughput Management 010",
+          "name": "Line Operations Strategy",
+          "label": "Line Operations Strategy",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Throughput Management 010"
+            "Line Operations Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -468,11 +468,11 @@
         },
         {
           "uid": "skill_f038762823f5402a9df0a512",
-          "name": "Line Operations 011",
-          "label": "Line Operations 011",
+          "name": "Production Scheduling Fundamentals",
+          "label": "Production Scheduling Fundamentals",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Line Operations 011"
+            "Production Scheduling Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -480,11 +480,11 @@
         },
         {
           "uid": "skill_056f46e93d6a4238aa4f0570",
-          "name": "Capacity Utilization 012",
-          "label": "Capacity Utilization 012",
+          "name": "Production Scheduling Execution",
+          "label": "Production Scheduling Execution",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Capacity Utilization 012"
+            "Production Scheduling Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -492,11 +492,11 @@
         },
         {
           "uid": "skill_ea7c8cb5cbae437dab09dddd",
-          "name": "Production Scheduling 013",
-          "label": "Production Scheduling 013",
+          "name": "Production Scheduling Optimization",
+          "label": "Production Scheduling Optimization",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Production Scheduling 013"
+            "Production Scheduling Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -504,11 +504,11 @@
         },
         {
           "uid": "skill_1735d7b4b749470da60d4d82",
-          "name": "Workflow Optimization 014",
-          "label": "Workflow Optimization 014",
+          "name": "Production Scheduling Analysis",
+          "label": "Production Scheduling Analysis",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Workflow Optimization 014"
+            "Production Scheduling Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -516,11 +516,11 @@
         },
         {
           "uid": "skill_7fa0f70b60e64ece828ea91f",
-          "name": "Downtime Reduction 015",
-          "label": "Downtime Reduction 015",
+          "name": "Production Scheduling Governance",
+          "label": "Production Scheduling Governance",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Downtime Reduction 015"
+            "Production Scheduling Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -528,11 +528,11 @@
         },
         {
           "uid": "skill_d179b027e22a4aabaefc65cf",
-          "name": "Process Coordination 016",
-          "label": "Process Coordination 016",
+          "name": "Production Scheduling Planning",
+          "label": "Production Scheduling Planning",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Process Coordination 016"
+            "Production Scheduling Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -540,11 +540,11 @@
         },
         {
           "uid": "skill_0e0baa3a542c4e419b90fc31",
-          "name": "Output Monitoring 017",
-          "label": "Output Monitoring 017",
+          "name": "Production Scheduling Integration",
+          "label": "Production Scheduling Integration",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Output Monitoring 017"
+            "Production Scheduling Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -552,11 +552,11 @@
         },
         {
           "uid": "skill_d775d01a55f94fada7948928",
-          "name": "Resource Planning 018",
-          "label": "Resource Planning 018",
+          "name": "Production Scheduling Collaboration",
+          "label": "Production Scheduling Collaboration",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Resource Planning 018"
+            "Production Scheduling Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -564,11 +564,11 @@
         },
         {
           "uid": "skill_5431e43ce8ea4577baace5ba",
-          "name": "Shift Supervision 019",
-          "label": "Shift Supervision 019",
+          "name": "Production Scheduling Evaluation",
+          "label": "Production Scheduling Evaluation",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Shift Supervision 019"
+            "Production Scheduling Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -576,11 +576,11 @@
         },
         {
           "uid": "skill_33e4509a193542aa9bfd32a4",
-          "name": "Throughput Management 020",
-          "label": "Throughput Management 020",
+          "name": "Production Scheduling Strategy",
+          "label": "Production Scheduling Strategy",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Throughput Management 020"
+            "Production Scheduling Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -588,11 +588,11 @@
         },
         {
           "uid": "skill_71fcb29a33b4488d877b3146",
-          "name": "Line Operations 021",
-          "label": "Line Operations 021",
+          "name": "Capacity Management Fundamentals",
+          "label": "Capacity Management Fundamentals",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Line Operations 021"
+            "Capacity Management Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -600,11 +600,11 @@
         },
         {
           "uid": "skill_bdcdda3d480c4bdd92c6669f",
-          "name": "Capacity Utilization 022",
-          "label": "Capacity Utilization 022",
+          "name": "Capacity Management Execution",
+          "label": "Capacity Management Execution",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Capacity Utilization 022"
+            "Capacity Management Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -612,11 +612,11 @@
         },
         {
           "uid": "skill_536be9d8fc5043f6b7ff6974",
-          "name": "Production Scheduling 023",
-          "label": "Production Scheduling 023",
+          "name": "Capacity Management Optimization",
+          "label": "Capacity Management Optimization",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Production Scheduling 023"
+            "Capacity Management Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -624,11 +624,11 @@
         },
         {
           "uid": "skill_17fba8cd92b34540a839511c",
-          "name": "Workflow Optimization 024",
-          "label": "Workflow Optimization 024",
+          "name": "Capacity Management Analysis",
+          "label": "Capacity Management Analysis",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Workflow Optimization 024"
+            "Capacity Management Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -636,11 +636,11 @@
         },
         {
           "uid": "skill_e30768fc287e4050ade6f7d9",
-          "name": "Downtime Reduction 025",
-          "label": "Downtime Reduction 025",
+          "name": "Capacity Management Governance",
+          "label": "Capacity Management Governance",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Downtime Reduction 025"
+            "Capacity Management Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -648,11 +648,11 @@
         },
         {
           "uid": "skill_15cd5553c91d40f9805bf8a9",
-          "name": "Process Coordination 026",
-          "label": "Process Coordination 026",
+          "name": "Capacity Management Planning",
+          "label": "Capacity Management Planning",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Process Coordination 026"
+            "Capacity Management Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -660,11 +660,11 @@
         },
         {
           "uid": "skill_1c69fc353a654baf9f45fbed",
-          "name": "Output Monitoring 027",
-          "label": "Output Monitoring 027",
+          "name": "Capacity Management Integration",
+          "label": "Capacity Management Integration",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Output Monitoring 027"
+            "Capacity Management Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -672,11 +672,11 @@
         },
         {
           "uid": "skill_09fce3c1cd864e5f80d5e214",
-          "name": "Resource Planning 028",
-          "label": "Resource Planning 028",
+          "name": "Capacity Management Collaboration",
+          "label": "Capacity Management Collaboration",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Resource Planning 028"
+            "Capacity Management Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -684,11 +684,11 @@
         },
         {
           "uid": "skill_75b990c4729f4c84ba042d9c",
-          "name": "Shift Supervision 029",
-          "label": "Shift Supervision 029",
+          "name": "Capacity Management Evaluation",
+          "label": "Capacity Management Evaluation",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Shift Supervision 029"
+            "Capacity Management Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -696,11 +696,11 @@
         },
         {
           "uid": "skill_4237a6aeac6b49ff97b2e6cb",
-          "name": "Throughput Management 030",
-          "label": "Throughput Management 030",
+          "name": "Capacity Management Strategy",
+          "label": "Capacity Management Strategy",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Throughput Management 030"
+            "Capacity Management Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -708,11 +708,11 @@
         },
         {
           "uid": "skill_fa7566aab1f84cd3a6db6081",
-          "name": "Line Operations 031",
-          "label": "Line Operations 031",
+          "name": "Workflow Coordination Fundamentals",
+          "label": "Workflow Coordination Fundamentals",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Line Operations 031"
+            "Workflow Coordination Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -720,11 +720,11 @@
         },
         {
           "uid": "skill_17cb10414b21407382187916",
-          "name": "Capacity Utilization 032",
-          "label": "Capacity Utilization 032",
+          "name": "Workflow Coordination Execution",
+          "label": "Workflow Coordination Execution",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Capacity Utilization 032"
+            "Workflow Coordination Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -732,11 +732,11 @@
         },
         {
           "uid": "skill_850dc2199a314d2e99e350ad",
-          "name": "Production Scheduling 033",
-          "label": "Production Scheduling 033",
+          "name": "Workflow Coordination Optimization",
+          "label": "Workflow Coordination Optimization",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Production Scheduling 033"
+            "Workflow Coordination Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -744,11 +744,11 @@
         },
         {
           "uid": "skill_a38c7a7e15244e0d8b2da550",
-          "name": "Workflow Optimization 034",
-          "label": "Workflow Optimization 034",
+          "name": "Workflow Coordination Analysis",
+          "label": "Workflow Coordination Analysis",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Workflow Optimization 034"
+            "Workflow Coordination Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -756,11 +756,11 @@
         },
         {
           "uid": "skill_1cfcfbf9bf8a47aca588b2bf",
-          "name": "Downtime Reduction 035",
-          "label": "Downtime Reduction 035",
+          "name": "Workflow Coordination Governance",
+          "label": "Workflow Coordination Governance",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Downtime Reduction 035"
+            "Workflow Coordination Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -768,11 +768,11 @@
         },
         {
           "uid": "skill_c350f68e1f274b57870dea1d",
-          "name": "Process Coordination 036",
-          "label": "Process Coordination 036",
+          "name": "Workflow Coordination Planning",
+          "label": "Workflow Coordination Planning",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Process Coordination 036"
+            "Workflow Coordination Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -780,11 +780,11 @@
         },
         {
           "uid": "skill_5bebbb1d9fa14716b54f14a3",
-          "name": "Output Monitoring 037",
-          "label": "Output Monitoring 037",
+          "name": "Workflow Coordination Integration",
+          "label": "Workflow Coordination Integration",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Output Monitoring 037"
+            "Workflow Coordination Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -792,11 +792,11 @@
         },
         {
           "uid": "skill_33d065ef414c47ba9befebf1",
-          "name": "Resource Planning 038",
-          "label": "Resource Planning 038",
+          "name": "Workflow Coordination Collaboration",
+          "label": "Workflow Coordination Collaboration",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Resource Planning 038"
+            "Workflow Coordination Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -804,11 +804,11 @@
         },
         {
           "uid": "skill_8cb4ee4677384fe6a219c2db",
-          "name": "Shift Supervision 039",
-          "label": "Shift Supervision 039",
+          "name": "Workflow Coordination Evaluation",
+          "label": "Workflow Coordination Evaluation",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Shift Supervision 039"
+            "Workflow Coordination Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -816,11 +816,11 @@
         },
         {
           "uid": "skill_f351da36012d40c581eb06a9",
-          "name": "Throughput Management 040",
-          "label": "Throughput Management 040",
+          "name": "Workflow Coordination Strategy",
+          "label": "Workflow Coordination Strategy",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Throughput Management 040"
+            "Workflow Coordination Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -828,11 +828,11 @@
         },
         {
           "uid": "skill_11ee4be1c94b46d9896c2caf",
-          "name": "Line Operations 041",
-          "label": "Line Operations 041",
+          "name": "Resource Allocation Fundamentals",
+          "label": "Resource Allocation Fundamentals",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Line Operations 041"
+            "Resource Allocation Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -840,11 +840,11 @@
         },
         {
           "uid": "skill_d85f2bf61a5f493a849c1fe3",
-          "name": "Capacity Utilization 042",
-          "label": "Capacity Utilization 042",
+          "name": "Resource Allocation Execution",
+          "label": "Resource Allocation Execution",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Capacity Utilization 042"
+            "Resource Allocation Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -852,11 +852,11 @@
         },
         {
           "uid": "skill_7694bfbb997245fbbb50d72f",
-          "name": "Production Scheduling 043",
-          "label": "Production Scheduling 043",
+          "name": "Resource Allocation Optimization",
+          "label": "Resource Allocation Optimization",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Production Scheduling 043"
+            "Resource Allocation Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -864,11 +864,11 @@
         },
         {
           "uid": "skill_2dbacc80fe8f4feb97ba592a",
-          "name": "Workflow Optimization 044",
-          "label": "Workflow Optimization 044",
+          "name": "Resource Allocation Analysis",
+          "label": "Resource Allocation Analysis",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Workflow Optimization 044"
+            "Resource Allocation Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -876,11 +876,11 @@
         },
         {
           "uid": "skill_9806988839ad4ca0b59fcaa8",
-          "name": "Downtime Reduction 045",
-          "label": "Downtime Reduction 045",
+          "name": "Resource Allocation Governance",
+          "label": "Resource Allocation Governance",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Downtime Reduction 045"
+            "Resource Allocation Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -888,11 +888,11 @@
         },
         {
           "uid": "skill_4106d680fd1c4cb08bd92e67",
-          "name": "Process Coordination 046",
-          "label": "Process Coordination 046",
+          "name": "Resource Allocation Planning",
+          "label": "Resource Allocation Planning",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Process Coordination 046"
+            "Resource Allocation Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -900,11 +900,11 @@
         },
         {
           "uid": "skill_09ccbe9216314973902a925e",
-          "name": "Output Monitoring 047",
-          "label": "Output Monitoring 047",
+          "name": "Resource Allocation Integration",
+          "label": "Resource Allocation Integration",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Output Monitoring 047"
+            "Resource Allocation Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -912,11 +912,11 @@
         },
         {
           "uid": "skill_1f40ef1063e2488bb49a3562",
-          "name": "Resource Planning 048",
-          "label": "Resource Planning 048",
+          "name": "Resource Allocation Collaboration",
+          "label": "Resource Allocation Collaboration",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Resource Planning 048"
+            "Resource Allocation Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -924,11 +924,11 @@
         },
         {
           "uid": "skill_086955496d56446d827fc89a",
-          "name": "Shift Supervision 049",
-          "label": "Shift Supervision 049",
+          "name": "Resource Allocation Evaluation",
+          "label": "Resource Allocation Evaluation",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Shift Supervision 049"
+            "Resource Allocation Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -936,11 +936,11 @@
         },
         {
           "uid": "skill_a5edb94a2d82446294ea603b",
-          "name": "Throughput Management 050",
-          "label": "Throughput Management 050",
+          "name": "Resource Allocation Strategy",
+          "label": "Resource Allocation Strategy",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Throughput Management 050"
+            "Resource Allocation Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -948,11 +948,11 @@
         },
         {
           "uid": "skill_219cbcdcb1aa42fd9f9a9140",
-          "name": "Line Operations 051",
-          "label": "Line Operations 051",
+          "name": "Throughput Optimization Fundamentals",
+          "label": "Throughput Optimization Fundamentals",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Line Operations 051"
+            "Throughput Optimization Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -960,11 +960,11 @@
         },
         {
           "uid": "skill_ba9a2d6b3f344f908c218eaa",
-          "name": "Capacity Utilization 052",
-          "label": "Capacity Utilization 052",
+          "name": "Throughput Optimization Execution",
+          "label": "Throughput Optimization Execution",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Capacity Utilization 052"
+            "Throughput Optimization Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -972,11 +972,11 @@
         },
         {
           "uid": "skill_5fa5b0fd057a45ce9a160806",
-          "name": "Production Scheduling 053",
-          "label": "Production Scheduling 053",
+          "name": "Throughput Optimization Optimization",
+          "label": "Throughput Optimization Optimization",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Production Scheduling 053"
+            "Throughput Optimization Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -984,11 +984,11 @@
         },
         {
           "uid": "skill_77fa3e992c4d419e94d81b2f",
-          "name": "Workflow Optimization 054",
-          "label": "Workflow Optimization 054",
+          "name": "Throughput Optimization Analysis",
+          "label": "Throughput Optimization Analysis",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Workflow Optimization 054"
+            "Throughput Optimization Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -996,11 +996,11 @@
         },
         {
           "uid": "skill_673c27296396423bae88e8c8",
-          "name": "Downtime Reduction 055",
-          "label": "Downtime Reduction 055",
+          "name": "Throughput Optimization Governance",
+          "label": "Throughput Optimization Governance",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Downtime Reduction 055"
+            "Throughput Optimization Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1008,11 +1008,11 @@
         },
         {
           "uid": "skill_4dff03bb6a21459aaedc6d0a",
-          "name": "Process Coordination 056",
-          "label": "Process Coordination 056",
+          "name": "Throughput Optimization Planning",
+          "label": "Throughput Optimization Planning",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Process Coordination 056"
+            "Throughput Optimization Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1020,11 +1020,11 @@
         },
         {
           "uid": "skill_753f1949b527401a857986e0",
-          "name": "Output Monitoring 057",
-          "label": "Output Monitoring 057",
+          "name": "Throughput Optimization Integration",
+          "label": "Throughput Optimization Integration",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Output Monitoring 057"
+            "Throughput Optimization Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1032,11 +1032,11 @@
         },
         {
           "uid": "skill_10acd32332814337b87a46f2",
-          "name": "Resource Planning 058",
-          "label": "Resource Planning 058",
+          "name": "Throughput Optimization Collaboration",
+          "label": "Throughput Optimization Collaboration",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Resource Planning 058"
+            "Throughput Optimization Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1044,11 +1044,11 @@
         },
         {
           "uid": "skill_1a257c27adef4c0290b545e9",
-          "name": "Shift Supervision 059",
-          "label": "Shift Supervision 059",
+          "name": "Throughput Optimization Evaluation",
+          "label": "Throughput Optimization Evaluation",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Shift Supervision 059"
+            "Throughput Optimization Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1056,11 +1056,11 @@
         },
         {
           "uid": "skill_d9cf40dffc5a4a96adda7c14",
-          "name": "Throughput Management 060",
-          "label": "Throughput Management 060",
+          "name": "Throughput Optimization Strategy",
+          "label": "Throughput Optimization Strategy",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Throughput Management 060"
+            "Throughput Optimization Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1068,11 +1068,11 @@
         },
         {
           "uid": "skill_b7a47822ccad428f9085251f",
-          "name": "Line Operations 061",
-          "label": "Line Operations 061",
+          "name": "Downtime Management Fundamentals",
+          "label": "Downtime Management Fundamentals",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Line Operations 061"
+            "Downtime Management Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1080,11 +1080,11 @@
         },
         {
           "uid": "skill_b3c3cc6a3b9247c1b92c9f77",
-          "name": "Capacity Utilization 062",
-          "label": "Capacity Utilization 062",
+          "name": "Downtime Management Execution",
+          "label": "Downtime Management Execution",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Capacity Utilization 062"
+            "Downtime Management Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1092,11 +1092,11 @@
         },
         {
           "uid": "skill_52aab3e1563c43588d1a62cc",
-          "name": "Production Scheduling 063",
-          "label": "Production Scheduling 063",
+          "name": "Downtime Management Optimization",
+          "label": "Downtime Management Optimization",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Production Scheduling 063"
+            "Downtime Management Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1104,11 +1104,11 @@
         },
         {
           "uid": "skill_acaa4aefc4b3414e9047d9da",
-          "name": "Workflow Optimization 064",
-          "label": "Workflow Optimization 064",
+          "name": "Downtime Management Analysis",
+          "label": "Downtime Management Analysis",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Workflow Optimization 064"
+            "Downtime Management Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1116,11 +1116,11 @@
         },
         {
           "uid": "skill_ec87a62875814658822f2ed9",
-          "name": "Downtime Reduction 065",
-          "label": "Downtime Reduction 065",
+          "name": "Downtime Management Governance",
+          "label": "Downtime Management Governance",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Downtime Reduction 065"
+            "Downtime Management Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1128,11 +1128,11 @@
         },
         {
           "uid": "skill_27ec769077fd477cb2e81cd8",
-          "name": "Process Coordination 066",
-          "label": "Process Coordination 066",
+          "name": "Downtime Management Planning",
+          "label": "Downtime Management Planning",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Process Coordination 066"
+            "Downtime Management Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1140,11 +1140,11 @@
         },
         {
           "uid": "skill_555be939e4b242719e9a9641",
-          "name": "Output Monitoring 067",
-          "label": "Output Monitoring 067",
+          "name": "Downtime Management Integration",
+          "label": "Downtime Management Integration",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Output Monitoring 067"
+            "Downtime Management Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1152,11 +1152,11 @@
         },
         {
           "uid": "skill_6dc9452d254a469e9dff0820",
-          "name": "Resource Planning 068",
-          "label": "Resource Planning 068",
+          "name": "Downtime Management Collaboration",
+          "label": "Downtime Management Collaboration",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Resource Planning 068"
+            "Downtime Management Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1164,11 +1164,11 @@
         },
         {
           "uid": "skill_37d3522d6a6349d082e3da5a",
-          "name": "Shift Supervision 069",
-          "label": "Shift Supervision 069",
+          "name": "Downtime Management Evaluation",
+          "label": "Downtime Management Evaluation",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Shift Supervision 069"
+            "Downtime Management Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1176,11 +1176,11 @@
         },
         {
           "uid": "skill_d6a329241d4d47be8fbfd4d4",
-          "name": "Throughput Management 070",
-          "label": "Throughput Management 070",
+          "name": "Downtime Management Strategy",
+          "label": "Downtime Management Strategy",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Throughput Management 070"
+            "Downtime Management Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1188,11 +1188,11 @@
         },
         {
           "uid": "skill_1422e8396e4a4e8195347afe",
-          "name": "Line Operations 071",
-          "label": "Line Operations 071",
+          "name": "Maintenance Planning Fundamentals",
+          "label": "Maintenance Planning Fundamentals",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Line Operations 071"
+            "Maintenance Planning Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1200,11 +1200,11 @@
         },
         {
           "uid": "skill_3de25533a529489b8a89a385",
-          "name": "Capacity Utilization 072",
-          "label": "Capacity Utilization 072",
+          "name": "Maintenance Planning Execution",
+          "label": "Maintenance Planning Execution",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Capacity Utilization 072"
+            "Maintenance Planning Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],

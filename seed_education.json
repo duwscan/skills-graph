@@ -344,11 +344,11 @@
         },
         {
           "uid": "skill_5242a992170b483786283f16",
-          "name": "Learning Facilitation 001",
-          "label": "Learning Facilitation 001",
+          "name": "Curriculum Design Fundamentals",
+          "label": "Curriculum Design Fundamentals",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Learning Facilitation 001"
+            "Curriculum Design Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -356,11 +356,11 @@
         },
         {
           "uid": "skill_da1cd8c2df0844509304288a",
-          "name": "Curriculum Delivery 002",
-          "label": "Curriculum Delivery 002",
+          "name": "Curriculum Design Execution",
+          "label": "Curriculum Design Execution",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Curriculum Delivery 002"
+            "Curriculum Design Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -368,11 +368,11 @@
         },
         {
           "uid": "skill_303536f9cf8f48798cb6f5d1",
-          "name": "Assessment Review 003",
-          "label": "Assessment Review 003",
+          "name": "Curriculum Design Optimization",
+          "label": "Curriculum Design Optimization",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Assessment Review 003"
+            "Curriculum Design Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -380,11 +380,11 @@
         },
         {
           "uid": "skill_82b7d04b65ba4b498611cbec",
-          "name": "Classroom Support 004",
-          "label": "Classroom Support 004",
+          "name": "Curriculum Design Analysis",
+          "label": "Curriculum Design Analysis",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Classroom Support 004"
+            "Curriculum Design Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -392,11 +392,11 @@
         },
         {
           "uid": "skill_b24660626a194f8a8af878a2",
-          "name": "Student Progress Tracking 005",
-          "label": "Student Progress Tracking 005",
+          "name": "Curriculum Design Governance",
+          "label": "Curriculum Design Governance",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Student Progress Tracking 005"
+            "Curriculum Design Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -404,11 +404,11 @@
         },
         {
           "uid": "skill_9171581516854574af108eb4",
-          "name": "Instructional Improvement 006",
-          "label": "Instructional Improvement 006",
+          "name": "Curriculum Design Planning",
+          "label": "Curriculum Design Planning",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Instructional Improvement 006"
+            "Curriculum Design Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -416,11 +416,11 @@
         },
         {
           "uid": "skill_1d0ea2a565be4f21b9597a9d",
-          "name": "Learner Engagement 007",
-          "label": "Learner Engagement 007",
+          "name": "Curriculum Design Integration",
+          "label": "Curriculum Design Integration",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Learner Engagement 007"
+            "Curriculum Design Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -428,11 +428,11 @@
         },
         {
           "uid": "skill_8fc84501e8554ced9ec41b59",
-          "name": "Academic Communication 008",
-          "label": "Academic Communication 008",
+          "name": "Curriculum Design Collaboration",
+          "label": "Curriculum Design Collaboration",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Academic Communication 008"
+            "Curriculum Design Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -440,11 +440,11 @@
         },
         {
           "uid": "skill_eeb460e48c9b47dcb0e71130",
-          "name": "Teaching Reflection 009",
-          "label": "Teaching Reflection 009",
+          "name": "Curriculum Design Evaluation",
+          "label": "Curriculum Design Evaluation",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Teaching Reflection 009"
+            "Curriculum Design Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -452,11 +452,11 @@
         },
         {
           "uid": "skill_23c07ae575174f50b7d9eb43",
-          "name": "Program Evaluation 010",
-          "label": "Program Evaluation 010",
+          "name": "Curriculum Design Strategy",
+          "label": "Curriculum Design Strategy",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Program Evaluation 010"
+            "Curriculum Design Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -464,11 +464,11 @@
         },
         {
           "uid": "skill_051483b7ef654be6af234b5a",
-          "name": "Learning Facilitation 011",
-          "label": "Learning Facilitation 011",
+          "name": "Lesson Facilitation Fundamentals",
+          "label": "Lesson Facilitation Fundamentals",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Learning Facilitation 011"
+            "Lesson Facilitation Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -476,11 +476,11 @@
         },
         {
           "uid": "skill_9620d22a738b4ec385df5633",
-          "name": "Curriculum Delivery 012",
-          "label": "Curriculum Delivery 012",
+          "name": "Lesson Facilitation Execution",
+          "label": "Lesson Facilitation Execution",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Curriculum Delivery 012"
+            "Lesson Facilitation Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -488,11 +488,11 @@
         },
         {
           "uid": "skill_a11efeb8ab77461b917da6f6",
-          "name": "Assessment Review 013",
-          "label": "Assessment Review 013",
+          "name": "Lesson Facilitation Optimization",
+          "label": "Lesson Facilitation Optimization",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Assessment Review 013"
+            "Lesson Facilitation Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -500,11 +500,11 @@
         },
         {
           "uid": "skill_2a2bcac54db74fac8e72dc78",
-          "name": "Classroom Support 014",
-          "label": "Classroom Support 014",
+          "name": "Lesson Facilitation Analysis",
+          "label": "Lesson Facilitation Analysis",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Classroom Support 014"
+            "Lesson Facilitation Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -512,11 +512,11 @@
         },
         {
           "uid": "skill_5605e3201ba34e8b8fefc86f",
-          "name": "Student Progress Tracking 015",
-          "label": "Student Progress Tracking 015",
+          "name": "Lesson Facilitation Governance",
+          "label": "Lesson Facilitation Governance",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Student Progress Tracking 015"
+            "Lesson Facilitation Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -524,11 +524,11 @@
         },
         {
           "uid": "skill_e08343dd40604b10b2f63abc",
-          "name": "Instructional Improvement 016",
-          "label": "Instructional Improvement 016",
+          "name": "Lesson Facilitation Planning",
+          "label": "Lesson Facilitation Planning",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Instructional Improvement 016"
+            "Lesson Facilitation Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -536,11 +536,11 @@
         },
         {
           "uid": "skill_05d98022345f4ac58d04ed37",
-          "name": "Learner Engagement 017",
-          "label": "Learner Engagement 017",
+          "name": "Lesson Facilitation Integration",
+          "label": "Lesson Facilitation Integration",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Learner Engagement 017"
+            "Lesson Facilitation Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -548,11 +548,11 @@
         },
         {
           "uid": "skill_556f22a9cc2f458680c1f642",
-          "name": "Academic Communication 018",
-          "label": "Academic Communication 018",
+          "name": "Lesson Facilitation Collaboration",
+          "label": "Lesson Facilitation Collaboration",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Academic Communication 018"
+            "Lesson Facilitation Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -560,11 +560,11 @@
         },
         {
           "uid": "skill_fca2daa55f3340079dcd6dbd",
-          "name": "Teaching Reflection 019",
-          "label": "Teaching Reflection 019",
+          "name": "Lesson Facilitation Evaluation",
+          "label": "Lesson Facilitation Evaluation",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Teaching Reflection 019"
+            "Lesson Facilitation Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -572,11 +572,11 @@
         },
         {
           "uid": "skill_aafa360051e4417f966b2d98",
-          "name": "Program Evaluation 020",
-          "label": "Program Evaluation 020",
+          "name": "Lesson Facilitation Strategy",
+          "label": "Lesson Facilitation Strategy",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Program Evaluation 020"
+            "Lesson Facilitation Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -584,11 +584,11 @@
         },
         {
           "uid": "skill_5e75a5f6cfc142a5b527984d",
-          "name": "Learning Facilitation 021",
-          "label": "Learning Facilitation 021",
+          "name": "Learning Assessment Fundamentals",
+          "label": "Learning Assessment Fundamentals",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Learning Facilitation 021"
+            "Learning Assessment Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -596,11 +596,11 @@
         },
         {
           "uid": "skill_492d787ddd284054a141e34e",
-          "name": "Curriculum Delivery 022",
-          "label": "Curriculum Delivery 022",
+          "name": "Learning Assessment Execution",
+          "label": "Learning Assessment Execution",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Curriculum Delivery 022"
+            "Learning Assessment Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -608,11 +608,11 @@
         },
         {
           "uid": "skill_1fc98581a7f249b2a2a44dd8",
-          "name": "Assessment Review 023",
-          "label": "Assessment Review 023",
+          "name": "Learning Assessment Optimization",
+          "label": "Learning Assessment Optimization",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Assessment Review 023"
+            "Learning Assessment Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -620,11 +620,11 @@
         },
         {
           "uid": "skill_d422d724b29a477cb52dd699",
-          "name": "Classroom Support 024",
-          "label": "Classroom Support 024",
+          "name": "Learning Assessment Analysis",
+          "label": "Learning Assessment Analysis",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Classroom Support 024"
+            "Learning Assessment Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -632,11 +632,11 @@
         },
         {
           "uid": "skill_dd222f7dc84a4215a7824255",
-          "name": "Student Progress Tracking 025",
-          "label": "Student Progress Tracking 025",
+          "name": "Learning Assessment Governance",
+          "label": "Learning Assessment Governance",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Student Progress Tracking 025"
+            "Learning Assessment Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -644,11 +644,11 @@
         },
         {
           "uid": "skill_e7807a02f0f748eea5105dc8",
-          "name": "Instructional Improvement 026",
-          "label": "Instructional Improvement 026",
+          "name": "Learning Assessment Planning",
+          "label": "Learning Assessment Planning",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Instructional Improvement 026"
+            "Learning Assessment Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -656,11 +656,11 @@
         },
         {
           "uid": "skill_dd1ae05d4e2144b5b12d82ea",
-          "name": "Learner Engagement 027",
-          "label": "Learner Engagement 027",
+          "name": "Learning Assessment Integration",
+          "label": "Learning Assessment Integration",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Learner Engagement 027"
+            "Learning Assessment Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -668,11 +668,11 @@
         },
         {
           "uid": "skill_a1d6eed9da584866aed6aa96",
-          "name": "Academic Communication 028",
-          "label": "Academic Communication 028",
+          "name": "Learning Assessment Collaboration",
+          "label": "Learning Assessment Collaboration",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Academic Communication 028"
+            "Learning Assessment Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -680,11 +680,11 @@
         },
         {
           "uid": "skill_68165473c13f4842a2c4ff7d",
-          "name": "Teaching Reflection 029",
-          "label": "Teaching Reflection 029",
+          "name": "Learning Assessment Evaluation",
+          "label": "Learning Assessment Evaluation",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Teaching Reflection 029"
+            "Learning Assessment Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -692,11 +692,11 @@
         },
         {
           "uid": "skill_232dd4ce27214930abf005bf",
-          "name": "Program Evaluation 030",
-          "label": "Program Evaluation 030",
+          "name": "Learning Assessment Strategy",
+          "label": "Learning Assessment Strategy",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Program Evaluation 030"
+            "Learning Assessment Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -704,11 +704,11 @@
         },
         {
           "uid": "skill_34ea2e82b3884af389151b48",
-          "name": "Learning Facilitation 031",
-          "label": "Learning Facilitation 031",
+          "name": "Classroom Management Fundamentals",
+          "label": "Classroom Management Fundamentals",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Learning Facilitation 031"
+            "Classroom Management Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -716,11 +716,11 @@
         },
         {
           "uid": "skill_ccc07740cdb1405ca8bdbfb7",
-          "name": "Curriculum Delivery 032",
-          "label": "Curriculum Delivery 032",
+          "name": "Classroom Management Execution",
+          "label": "Classroom Management Execution",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Curriculum Delivery 032"
+            "Classroom Management Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -728,11 +728,11 @@
         },
         {
           "uid": "skill_d80abe70276f40e1bf6f315b",
-          "name": "Assessment Review 033",
-          "label": "Assessment Review 033",
+          "name": "Classroom Management Optimization",
+          "label": "Classroom Management Optimization",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Assessment Review 033"
+            "Classroom Management Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -740,11 +740,11 @@
         },
         {
           "uid": "skill_539633a790aa43ee8f6222f7",
-          "name": "Classroom Support 034",
-          "label": "Classroom Support 034",
+          "name": "Classroom Management Analysis",
+          "label": "Classroom Management Analysis",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Classroom Support 034"
+            "Classroom Management Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -752,11 +752,11 @@
         },
         {
           "uid": "skill_0503613938cb405581f735f2",
-          "name": "Student Progress Tracking 035",
-          "label": "Student Progress Tracking 035",
+          "name": "Classroom Management Governance",
+          "label": "Classroom Management Governance",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Student Progress Tracking 035"
+            "Classroom Management Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -764,11 +764,11 @@
         },
         {
           "uid": "skill_6a194c059c994546af591fe8",
-          "name": "Instructional Improvement 036",
-          "label": "Instructional Improvement 036",
+          "name": "Classroom Management Planning",
+          "label": "Classroom Management Planning",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Instructional Improvement 036"
+            "Classroom Management Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -776,11 +776,11 @@
         },
         {
           "uid": "skill_e84fe81be5aa4bd3ada16575",
-          "name": "Learner Engagement 037",
-          "label": "Learner Engagement 037",
+          "name": "Classroom Management Integration",
+          "label": "Classroom Management Integration",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Learner Engagement 037"
+            "Classroom Management Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -788,11 +788,11 @@
         },
         {
           "uid": "skill_7d90d229fedc44c3afedb027",
-          "name": "Academic Communication 038",
-          "label": "Academic Communication 038",
+          "name": "Classroom Management Collaboration",
+          "label": "Classroom Management Collaboration",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Academic Communication 038"
+            "Classroom Management Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -800,11 +800,11 @@
         },
         {
           "uid": "skill_a228de184b3d4e59bbea135c",
-          "name": "Teaching Reflection 039",
-          "label": "Teaching Reflection 039",
+          "name": "Classroom Management Evaluation",
+          "label": "Classroom Management Evaluation",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Teaching Reflection 039"
+            "Classroom Management Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -812,11 +812,11 @@
         },
         {
           "uid": "skill_7e193cda643549309a36169a",
-          "name": "Program Evaluation 040",
-          "label": "Program Evaluation 040",
+          "name": "Classroom Management Strategy",
+          "label": "Classroom Management Strategy",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Program Evaluation 040"
+            "Classroom Management Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -824,11 +824,11 @@
         },
         {
           "uid": "skill_434de77f967b415691d82e79",
-          "name": "Learning Facilitation 041",
-          "label": "Learning Facilitation 041",
+          "name": "Instructional Improvement Fundamentals",
+          "label": "Instructional Improvement Fundamentals",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Learning Facilitation 041"
+            "Instructional Improvement Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -836,11 +836,11 @@
         },
         {
           "uid": "skill_edb62548466f40daab27790d",
-          "name": "Curriculum Delivery 042",
-          "label": "Curriculum Delivery 042",
+          "name": "Instructional Improvement Execution",
+          "label": "Instructional Improvement Execution",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Curriculum Delivery 042"
+            "Instructional Improvement Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -848,11 +848,11 @@
         },
         {
           "uid": "skill_68b87d64f3194e67a65ecd65",
-          "name": "Assessment Review 043",
-          "label": "Assessment Review 043",
+          "name": "Instructional Improvement Optimization",
+          "label": "Instructional Improvement Optimization",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Assessment Review 043"
+            "Instructional Improvement Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -860,11 +860,11 @@
         },
         {
           "uid": "skill_4f5bf250e6a34d0cb167b729",
-          "name": "Classroom Support 044",
-          "label": "Classroom Support 044",
+          "name": "Instructional Improvement Analysis",
+          "label": "Instructional Improvement Analysis",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Classroom Support 044"
+            "Instructional Improvement Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -872,11 +872,11 @@
         },
         {
           "uid": "skill_48e799f771a449aba2ffd992",
-          "name": "Student Progress Tracking 045",
-          "label": "Student Progress Tracking 045",
+          "name": "Instructional Improvement Governance",
+          "label": "Instructional Improvement Governance",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Student Progress Tracking 045"
+            "Instructional Improvement Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -884,11 +884,11 @@
         },
         {
           "uid": "skill_7d4c13babc1348dfb4f2642d",
-          "name": "Instructional Improvement 046",
-          "label": "Instructional Improvement 046",
+          "name": "Instructional Improvement Planning",
+          "label": "Instructional Improvement Planning",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Instructional Improvement 046"
+            "Instructional Improvement Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -896,11 +896,11 @@
         },
         {
           "uid": "skill_82badc2f271c42ffa7ea74bd",
-          "name": "Learner Engagement 047",
-          "label": "Learner Engagement 047",
+          "name": "Instructional Improvement Integration",
+          "label": "Instructional Improvement Integration",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Learner Engagement 047"
+            "Instructional Improvement Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -908,11 +908,11 @@
         },
         {
           "uid": "skill_158ba3a5c6034eb0b4387e3b",
-          "name": "Academic Communication 048",
-          "label": "Academic Communication 048",
+          "name": "Instructional Improvement Collaboration",
+          "label": "Instructional Improvement Collaboration",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Academic Communication 048"
+            "Instructional Improvement Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -920,11 +920,11 @@
         },
         {
           "uid": "skill_cfefe209eda84de79c2f81de",
-          "name": "Teaching Reflection 049",
-          "label": "Teaching Reflection 049",
+          "name": "Instructional Improvement Evaluation",
+          "label": "Instructional Improvement Evaluation",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Teaching Reflection 049"
+            "Instructional Improvement Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -932,11 +932,11 @@
         },
         {
           "uid": "skill_eeac64431e084c679d3378a2",
-          "name": "Program Evaluation 050",
-          "label": "Program Evaluation 050",
+          "name": "Instructional Improvement Strategy",
+          "label": "Instructional Improvement Strategy",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Program Evaluation 050"
+            "Instructional Improvement Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -944,11 +944,11 @@
         },
         {
           "uid": "skill_650711f142b84f7ba7e8b71e",
-          "name": "Learning Facilitation 051",
-          "label": "Learning Facilitation 051",
+          "name": "Learner Support Fundamentals",
+          "label": "Learner Support Fundamentals",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Learning Facilitation 051"
+            "Learner Support Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -956,11 +956,11 @@
         },
         {
           "uid": "skill_d28c797a7d68417f9404d76e",
-          "name": "Curriculum Delivery 052",
-          "label": "Curriculum Delivery 052",
+          "name": "Learner Support Execution",
+          "label": "Learner Support Execution",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Curriculum Delivery 052"
+            "Learner Support Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -968,11 +968,11 @@
         },
         {
           "uid": "skill_4c64c1908f0e41be85888647",
-          "name": "Assessment Review 053",
-          "label": "Assessment Review 053",
+          "name": "Learner Support Optimization",
+          "label": "Learner Support Optimization",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Assessment Review 053"
+            "Learner Support Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -980,11 +980,11 @@
         },
         {
           "uid": "skill_3ce966c2003541079da16041",
-          "name": "Classroom Support 054",
-          "label": "Classroom Support 054",
+          "name": "Learner Support Analysis",
+          "label": "Learner Support Analysis",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Classroom Support 054"
+            "Learner Support Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -992,11 +992,11 @@
         },
         {
           "uid": "skill_5bebef4e58084e6c83e4eb89",
-          "name": "Student Progress Tracking 055",
-          "label": "Student Progress Tracking 055",
+          "name": "Learner Support Governance",
+          "label": "Learner Support Governance",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Student Progress Tracking 055"
+            "Learner Support Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1004,11 +1004,11 @@
         },
         {
           "uid": "skill_6ddcb74e015044019451ba2d",
-          "name": "Instructional Improvement 056",
-          "label": "Instructional Improvement 056",
+          "name": "Learner Support Planning",
+          "label": "Learner Support Planning",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Instructional Improvement 056"
+            "Learner Support Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1016,11 +1016,11 @@
         },
         {
           "uid": "skill_21036a022f5e4973ac0ea09f",
-          "name": "Learner Engagement 057",
-          "label": "Learner Engagement 057",
+          "name": "Learner Support Integration",
+          "label": "Learner Support Integration",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Learner Engagement 057"
+            "Learner Support Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1028,11 +1028,11 @@
         },
         {
           "uid": "skill_8f8c4aef16f24573b6970c7a",
-          "name": "Academic Communication 058",
-          "label": "Academic Communication 058",
+          "name": "Learner Support Collaboration",
+          "label": "Learner Support Collaboration",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Academic Communication 058"
+            "Learner Support Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1040,11 +1040,11 @@
         },
         {
           "uid": "skill_237e0ede7684440fa5904685",
-          "name": "Teaching Reflection 059",
-          "label": "Teaching Reflection 059",
+          "name": "Learner Support Evaluation",
+          "label": "Learner Support Evaluation",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Teaching Reflection 059"
+            "Learner Support Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1052,11 +1052,11 @@
         },
         {
           "uid": "skill_7fadda0c3be14c33ba095b70",
-          "name": "Program Evaluation 060",
-          "label": "Program Evaluation 060",
+          "name": "Learner Support Strategy",
+          "label": "Learner Support Strategy",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Program Evaluation 060"
+            "Learner Support Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1064,11 +1064,11 @@
         },
         {
           "uid": "skill_47a2fc571ff94cc2a0bf1054",
-          "name": "Learning Facilitation 061",
-          "label": "Learning Facilitation 061",
+          "name": "Academic Advising Fundamentals",
+          "label": "Academic Advising Fundamentals",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Learning Facilitation 061"
+            "Academic Advising Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1076,11 +1076,11 @@
         },
         {
           "uid": "skill_7df9b64e85e74b1fa6c2b35d",
-          "name": "Curriculum Delivery 062",
-          "label": "Curriculum Delivery 062",
+          "name": "Academic Advising Execution",
+          "label": "Academic Advising Execution",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Curriculum Delivery 062"
+            "Academic Advising Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1088,11 +1088,11 @@
         },
         {
           "uid": "skill_83c3bbcea2854baab0a024aa",
-          "name": "Assessment Review 063",
-          "label": "Assessment Review 063",
+          "name": "Academic Advising Optimization",
+          "label": "Academic Advising Optimization",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Assessment Review 063"
+            "Academic Advising Optimization"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1100,11 +1100,11 @@
         },
         {
           "uid": "skill_081b7dd22e1545bc9b77e2bc",
-          "name": "Classroom Support 064",
-          "label": "Classroom Support 064",
+          "name": "Academic Advising Analysis",
+          "label": "Academic Advising Analysis",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Classroom Support 064"
+            "Academic Advising Analysis"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1112,11 +1112,11 @@
         },
         {
           "uid": "skill_6d01cfcb2ce7449b9c35119a",
-          "name": "Student Progress Tracking 065",
-          "label": "Student Progress Tracking 065",
+          "name": "Academic Advising Governance",
+          "label": "Academic Advising Governance",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Student Progress Tracking 065"
+            "Academic Advising Governance"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1124,11 +1124,11 @@
         },
         {
           "uid": "skill_2aaa42988a124ea584129eb4",
-          "name": "Instructional Improvement 066",
-          "label": "Instructional Improvement 066",
+          "name": "Academic Advising Planning",
+          "label": "Academic Advising Planning",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Instructional Improvement 066"
+            "Academic Advising Planning"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1136,11 +1136,11 @@
         },
         {
           "uid": "skill_6296ae0472c54aaa8f391bd0",
-          "name": "Learner Engagement 067",
-          "label": "Learner Engagement 067",
+          "name": "Academic Advising Integration",
+          "label": "Academic Advising Integration",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Learner Engagement 067"
+            "Academic Advising Integration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1148,11 +1148,11 @@
         },
         {
           "uid": "skill_235e4bbbdaf44b94a1e6613d",
-          "name": "Academic Communication 068",
-          "label": "Academic Communication 068",
+          "name": "Academic Advising Collaboration",
+          "label": "Academic Advising Collaboration",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Academic Communication 068"
+            "Academic Advising Collaboration"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1160,11 +1160,11 @@
         },
         {
           "uid": "skill_7ab5132c43be4cab9b109a11",
-          "name": "Teaching Reflection 069",
-          "label": "Teaching Reflection 069",
+          "name": "Academic Advising Evaluation",
+          "label": "Academic Advising Evaluation",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Teaching Reflection 069"
+            "Academic Advising Evaluation"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1172,11 +1172,11 @@
         },
         {
           "uid": "skill_4e56d82fd0d84fe2b93b4fd6",
-          "name": "Program Evaluation 070",
-          "label": "Program Evaluation 070",
+          "name": "Academic Advising Strategy",
+          "label": "Academic Advising Strategy",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Program Evaluation 070"
+            "Academic Advising Strategy"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1184,11 +1184,11 @@
         },
         {
           "uid": "skill_923686a33b7b43689c15d360",
-          "name": "Learning Facilitation 071",
-          "label": "Learning Facilitation 071",
+          "name": "Educational Technology Fundamentals",
+          "label": "Educational Technology Fundamentals",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Learning Facilitation 071"
+            "Educational Technology Fundamentals"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1196,11 +1196,11 @@
         },
         {
           "uid": "skill_357b29cc6ead4275ac4090f1",
-          "name": "Curriculum Delivery 072",
-          "label": "Curriculum Delivery 072",
+          "name": "Educational Technology Execution",
+          "label": "Educational Technology Execution",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Curriculum Delivery 072"
+            "Educational Technology Execution"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
