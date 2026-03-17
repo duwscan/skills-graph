@@ -6,7 +6,7 @@ import argparse
 import json
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Literal, TypedDict
+from typing import Any, Literal, TypedDict, cast
 
 import neomodel
 
@@ -14,6 +14,27 @@ from db import ensure_indexes, init_db
 from models import Skill
 
 RelationshipType = Literal["IS_A", "REQUIRES", "RELATED_TO"]
+VALID_RELATIONSHIP_TYPES: set[str] = {"IS_A", "REQUIRES", "RELATED_TO"}
+RELATIONSHIP_QUERIES: dict[RelationshipType, str] = {
+    "IS_A": (
+        "MATCH (source:Skill {uid: $source_uid}) "
+        "MATCH (target:Skill {uid: $target_uid}) "
+        "MERGE (source)-[rel:IS_A]->(target) "
+        "SET rel += $properties"
+    ),
+    "REQUIRES": (
+        "MATCH (source:Skill {uid: $source_uid}) "
+        "MATCH (target:Skill {uid: $target_uid}) "
+        "MERGE (source)-[rel:REQUIRES]->(target) "
+        "SET rel += $properties"
+    ),
+    "RELATED_TO": (
+        "MATCH (source:Skill {uid: $source_uid}) "
+        "MATCH (target:Skill {uid: $target_uid}) "
+        "MERGE (source)-[rel:RELATED_TO]->(target) "
+        "SET rel += $properties"
+    ),
+}
 
 
 class SkillPayload(TypedDict):
@@ -65,12 +86,9 @@ def _merge_relationship(
     relationship_type: RelationshipType,
     properties: dict[str, Any],
 ) -> None:
-    query = (
-        f"MATCH (source:Skill {{uid: $source_uid}}) "
-        f"MATCH (target:Skill {{uid: $target_uid}}) "
-        f"MERGE (source)-[rel:{relationship_type}]->(target) "
-        "SET rel += $properties"
-    )
+    query = RELATIONSHIP_QUERIES.get(relationship_type)
+    if query is None:
+        raise ValueError(f"Unsupported relationship type: {relationship_type}")
     neomodel.db.cypher_query(
         query,
         {
@@ -82,7 +100,7 @@ def _merge_relationship(
 
 
 def _apply_skill_payload(existing: Skill, payload: SkillPayload) -> Skill:
-    existing.label = payload.get("label") or payload["name"]
+    existing.label = payload.get("label", payload["name"])
     existing.skill_type = payload["skill_type"]
     existing.high_surface_forms = payload.get("high_surface_forms", [])
     existing.low_surface_forms = payload.get("low_surface_forms", [])
@@ -103,7 +121,7 @@ def _upsert_skill(payload: SkillPayload) -> tuple[Skill, bool]:
     created = Skill(
         uid=payload["uid"],
         name=payload["name"],
-        label=payload.get("label") or payload["name"],
+        label=payload.get("label", payload["name"]),
         skill_type=payload["skill_type"],
         high_surface_forms=payload.get("high_surface_forms", []),
         low_surface_forms=payload.get("low_surface_forms", []),
@@ -113,9 +131,59 @@ def _upsert_skill(payload: SkillPayload) -> tuple[Skill, bool]:
     return created, True
 
 
-def _collect_seed_files(repo_root: Path, explicit_files: list[str]) -> list[Path]:
-    if explicit_files:
-        files = [Path(file_name).expanduser() for file_name in explicit_files]
+def _resolve_uid(
+    original_uid: str,
+    dataset_uid_map: dict[str, str],
+    global_uid_map: dict[str, str],
+) -> str | None:
+    return dataset_uid_map.get(original_uid) or global_uid_map.get(original_uid)
+
+
+def _validate_relationship_payload(
+    relationship: RelationshipPayload, seed_file: Path, relationship_type: str
+) -> None:
+    required_fields = {
+        "IS_A": ("weight", "level", "confidence"),
+        "REQUIRES": ("weight", "min_level", "is_mandatory"),
+        "RELATED_TO": ("weight", "relation_type"),
+    }
+    keys = required_fields.get(relationship_type)
+    if keys is None:
+        raise ValueError(f"Unsupported relationship type: {relationship_type}")
+    missing = [key for key in keys if key not in relationship]
+    if missing:
+        raise ValueError(
+            f"Relationship in {seed_file} is missing required fields for {relationship_type}: "
+            f"{', '.join(missing)}"
+        )
+
+
+def _relationship_properties(
+    relationship: RelationshipPayload, relationship_type: RelationshipType
+) -> dict[str, Any]:
+    if relationship_type == "IS_A":
+        return {
+            "weight": relationship["weight"],
+            "level": relationship["level"],
+            "confidence": relationship["confidence"],
+        }
+    if relationship_type == "REQUIRES":
+        return {
+            "weight": relationship["weight"],
+            "min_level": relationship["min_level"],
+            "is_mandatory": relationship["is_mandatory"],
+        }
+    if relationship_type == "RELATED_TO":
+        return {
+            "weight": relationship["weight"],
+            "relation_type": relationship["relation_type"],
+        }
+    raise ValueError(f"Unsupported relationship type: {relationship_type}")
+
+
+def _collect_seed_files(repo_root: Path, specified_files: list[str]) -> list[Path]:
+    if specified_files:
+        files = [Path(file_name).expanduser() for file_name in specified_files]
     else:
         files = sorted(
             path
@@ -140,6 +208,7 @@ def seed_all(seed_files: list[Path]) -> SeedStats:
     skills_updated = 0
     relationships_merged = 0
     datasets_loaded = 0
+    global_uid_map: dict[str, str] = {}
 
     for seed_file in seed_files:
         with seed_file.open("r", encoding="utf-8") as stream:
@@ -152,14 +221,23 @@ def seed_all(seed_files: list[Path]) -> SeedStats:
             for skill_payload in dataset.get("skills", []):
                 skill, was_created = _upsert_skill(skill_payload)
                 uid_map[skill_payload["uid"]] = skill.uid
+                global_uid_map[skill_payload["uid"]] = skill.uid
                 if was_created:
                     skills_created += 1
                 else:
                     skills_updated += 1
 
             for relationship in dataset.get("relationships", []):
-                source_uid = uid_map.get(relationship["source_uid"])
-                target_uid = uid_map.get(relationship["target_uid"])
+                source_uid = _resolve_uid(
+                    relationship["source_uid"],
+                    uid_map,
+                    global_uid_map,
+                )
+                target_uid = _resolve_uid(
+                    relationship["target_uid"],
+                    uid_map,
+                    global_uid_map,
+                )
                 if source_uid is None or target_uid is None:
                     missing_uid = (
                         relationship["source_uid"]
@@ -171,30 +249,16 @@ def seed_all(seed_files: list[Path]) -> SeedStats:
                     )
 
                 relationship_type = relationship["type"]
-                if relationship_type == "IS_A":
-                    props = {
-                        "weight": relationship["weight"],
-                        "level": relationship["level"],
-                        "confidence": relationship["confidence"],
-                    }
-                elif relationship_type == "REQUIRES":
-                    props = {
-                        "weight": relationship["weight"],
-                        "min_level": relationship["min_level"],
-                        "is_mandatory": relationship["is_mandatory"],
-                    }
-                elif relationship_type == "RELATED_TO":
-                    props = {
-                        "weight": relationship["weight"],
-                        "relation_type": relationship["relation_type"],
-                    }
-                else:
+                if relationship_type not in VALID_RELATIONSHIP_TYPES:
                     raise ValueError(f"Unsupported relationship type: {relationship_type}")
+                _validate_relationship_payload(relationship, seed_file, relationship_type)
+                typed_relationship = cast(RelationshipType, relationship_type)
+                props = _relationship_properties(relationship, typed_relationship)
 
                 _merge_relationship(
                     source_uid=source_uid,
                     target_uid=target_uid,
-                    relationship_type=relationship_type,
+                    relationship_type=typed_relationship,
                     properties=props,
                 )
                 relationships_merged += 1
@@ -224,7 +288,7 @@ def _parse_args() -> argparse.Namespace:
 def main() -> None:
     args = _parse_args()
     repo_root = Path(__file__).resolve().parent
-    seed_files = _collect_seed_files(repo_root=repo_root, explicit_files=args.file)
+    seed_files = _collect_seed_files(repo_root=repo_root, specified_files=args.file)
     stats = seed_all(seed_files)
     print(
         "Seed complete: "
