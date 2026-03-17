@@ -341,6 +341,870 @@
           "low_surface_forms": [],
           "abbreviations": [],
           "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_f247500f6dc04f9aa04398f0",
+          "name": "Healthcare Skill 001",
+          "label": "Healthcare Skill 001",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Healthcare Skill 001"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_3665227edc324738b9346f8f",
+          "name": "Healthcare Skill 002",
+          "label": "Healthcare Skill 002",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Healthcare Skill 002"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_0a9cdb0fcd4b44a8bdf90539",
+          "name": "Healthcare Skill 003",
+          "label": "Healthcare Skill 003",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Healthcare Skill 003"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_5987cebee9df4c9582591606",
+          "name": "Healthcare Skill 004",
+          "label": "Healthcare Skill 004",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Healthcare Skill 004"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_f07df399dee743308629fb57",
+          "name": "Healthcare Skill 005",
+          "label": "Healthcare Skill 005",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Healthcare Skill 005"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_94f5dc6791a34a1e963642d9",
+          "name": "Healthcare Skill 006",
+          "label": "Healthcare Skill 006",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Healthcare Skill 006"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_dc23a1b255404757a61130c9",
+          "name": "Healthcare Skill 007",
+          "label": "Healthcare Skill 007",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Healthcare Skill 007"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_2db2713834c34cdc9422d107",
+          "name": "Healthcare Skill 008",
+          "label": "Healthcare Skill 008",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Healthcare Skill 008"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_6f378b55ee0e4d6b8594f9f0",
+          "name": "Healthcare Skill 009",
+          "label": "Healthcare Skill 009",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Healthcare Skill 009"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_9c12619f9d8a4b36bf8bf3a9",
+          "name": "Healthcare Skill 010",
+          "label": "Healthcare Skill 010",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Healthcare Skill 010"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_9fb05670cbe84c22988ce7e3",
+          "name": "Healthcare Skill 011",
+          "label": "Healthcare Skill 011",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Healthcare Skill 011"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_37db5edeebc8460a8244f0f6",
+          "name": "Healthcare Skill 012",
+          "label": "Healthcare Skill 012",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Healthcare Skill 012"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_b5e3fe909d614a8ab0611111",
+          "name": "Healthcare Skill 013",
+          "label": "Healthcare Skill 013",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Healthcare Skill 013"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_c36bca4bceb04fecae4c4983",
+          "name": "Healthcare Skill 014",
+          "label": "Healthcare Skill 014",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Healthcare Skill 014"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_f37354c7223040baa267f54e",
+          "name": "Healthcare Skill 015",
+          "label": "Healthcare Skill 015",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Healthcare Skill 015"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_c820851a639341649bc2cec4",
+          "name": "Healthcare Skill 016",
+          "label": "Healthcare Skill 016",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Healthcare Skill 016"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_a7ffb68f21f344da921e7c51",
+          "name": "Healthcare Skill 017",
+          "label": "Healthcare Skill 017",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Healthcare Skill 017"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_9364d230980e442e84aa4bea",
+          "name": "Healthcare Skill 018",
+          "label": "Healthcare Skill 018",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Healthcare Skill 018"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_05d47ccfd568451494b1de50",
+          "name": "Healthcare Skill 019",
+          "label": "Healthcare Skill 019",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Healthcare Skill 019"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_99912a2759a94a97be2f9a30",
+          "name": "Healthcare Skill 020",
+          "label": "Healthcare Skill 020",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Healthcare Skill 020"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_13e7808bf12946bf97dd8060",
+          "name": "Healthcare Skill 021",
+          "label": "Healthcare Skill 021",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Healthcare Skill 021"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_4dca897b3d13493d98f48f6b",
+          "name": "Healthcare Skill 022",
+          "label": "Healthcare Skill 022",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Healthcare Skill 022"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_e721ae2eaa02474980e667b5",
+          "name": "Healthcare Skill 023",
+          "label": "Healthcare Skill 023",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Healthcare Skill 023"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_8136f20c901b4b0bb3a7430b",
+          "name": "Healthcare Skill 024",
+          "label": "Healthcare Skill 024",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Healthcare Skill 024"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_96efccf14470428f9fff1618",
+          "name": "Healthcare Skill 025",
+          "label": "Healthcare Skill 025",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Healthcare Skill 025"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_cecba280882942da855cde1c",
+          "name": "Healthcare Skill 026",
+          "label": "Healthcare Skill 026",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Healthcare Skill 026"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_b29b28ffe477486db7971782",
+          "name": "Healthcare Skill 027",
+          "label": "Healthcare Skill 027",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Healthcare Skill 027"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_499e9b3141c04708b228fd71",
+          "name": "Healthcare Skill 028",
+          "label": "Healthcare Skill 028",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Healthcare Skill 028"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_e4056b25add842adb1971746",
+          "name": "Healthcare Skill 029",
+          "label": "Healthcare Skill 029",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Healthcare Skill 029"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_67492f9e9a1543d09eac3bf2",
+          "name": "Healthcare Skill 030",
+          "label": "Healthcare Skill 030",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Healthcare Skill 030"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_f4841f80efd642c9b40b1f69",
+          "name": "Healthcare Skill 031",
+          "label": "Healthcare Skill 031",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Healthcare Skill 031"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_5b8ddac54b9041f298bbc514",
+          "name": "Healthcare Skill 032",
+          "label": "Healthcare Skill 032",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Healthcare Skill 032"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_2d713ccaa0cc4a868127ab14",
+          "name": "Healthcare Skill 033",
+          "label": "Healthcare Skill 033",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Healthcare Skill 033"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_3bfb1bc75809431a9366e906",
+          "name": "Healthcare Skill 034",
+          "label": "Healthcare Skill 034",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Healthcare Skill 034"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_0b7afa3daf9f43399988f98d",
+          "name": "Healthcare Skill 035",
+          "label": "Healthcare Skill 035",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Healthcare Skill 035"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_c2d2a82c5c584830bf60bb52",
+          "name": "Healthcare Skill 036",
+          "label": "Healthcare Skill 036",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Healthcare Skill 036"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_999820f1d8734735bb8a4b03",
+          "name": "Healthcare Skill 037",
+          "label": "Healthcare Skill 037",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Healthcare Skill 037"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_eca2c62022de4da2b71af0d5",
+          "name": "Healthcare Skill 038",
+          "label": "Healthcare Skill 038",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Healthcare Skill 038"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_6e42000775864fcc9449439a",
+          "name": "Healthcare Skill 039",
+          "label": "Healthcare Skill 039",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Healthcare Skill 039"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_aabc78db388b4f5aa63780a8",
+          "name": "Healthcare Skill 040",
+          "label": "Healthcare Skill 040",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Healthcare Skill 040"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_429a079987594fa5b1a98121",
+          "name": "Healthcare Skill 041",
+          "label": "Healthcare Skill 041",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Healthcare Skill 041"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_6c212ed7d66647f693eb0127",
+          "name": "Healthcare Skill 042",
+          "label": "Healthcare Skill 042",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Healthcare Skill 042"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_e320df252a62417ab977be95",
+          "name": "Healthcare Skill 043",
+          "label": "Healthcare Skill 043",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Healthcare Skill 043"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_f526ce07de104693a87ae987",
+          "name": "Healthcare Skill 044",
+          "label": "Healthcare Skill 044",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Healthcare Skill 044"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_5f60d13e38364090b309d6b8",
+          "name": "Healthcare Skill 045",
+          "label": "Healthcare Skill 045",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Healthcare Skill 045"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_02653c6eaa5e4abfbe8f2d8c",
+          "name": "Healthcare Skill 046",
+          "label": "Healthcare Skill 046",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Healthcare Skill 046"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_3f08d6e9bb124e52bda51e4e",
+          "name": "Healthcare Skill 047",
+          "label": "Healthcare Skill 047",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Healthcare Skill 047"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_6f10892a290a46bb80d5795c",
+          "name": "Healthcare Skill 048",
+          "label": "Healthcare Skill 048",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Healthcare Skill 048"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_f1004ce4eee9472b9961c6e3",
+          "name": "Healthcare Skill 049",
+          "label": "Healthcare Skill 049",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Healthcare Skill 049"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_fd6fc162350a410bb8278cc9",
+          "name": "Healthcare Skill 050",
+          "label": "Healthcare Skill 050",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Healthcare Skill 050"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_77a5120985094eabac39cb3d",
+          "name": "Healthcare Skill 051",
+          "label": "Healthcare Skill 051",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Healthcare Skill 051"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_828d7687661241c796024145",
+          "name": "Healthcare Skill 052",
+          "label": "Healthcare Skill 052",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Healthcare Skill 052"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_f04c7da88ff0442281d3f868",
+          "name": "Healthcare Skill 053",
+          "label": "Healthcare Skill 053",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Healthcare Skill 053"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_c6e731e196204da398d21957",
+          "name": "Healthcare Skill 054",
+          "label": "Healthcare Skill 054",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Healthcare Skill 054"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_69a0da55ee4b4e198f065b39",
+          "name": "Healthcare Skill 055",
+          "label": "Healthcare Skill 055",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Healthcare Skill 055"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_17c27410db60474fabb939f4",
+          "name": "Healthcare Skill 056",
+          "label": "Healthcare Skill 056",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Healthcare Skill 056"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_c2231ac9ab20484b8a94dc24",
+          "name": "Healthcare Skill 057",
+          "label": "Healthcare Skill 057",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Healthcare Skill 057"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_5738e4a79b40445b98d50857",
+          "name": "Healthcare Skill 058",
+          "label": "Healthcare Skill 058",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Healthcare Skill 058"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_212d8535c89d462e9aae511d",
+          "name": "Healthcare Skill 059",
+          "label": "Healthcare Skill 059",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Healthcare Skill 059"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_da1f2045440c473e8b69302f",
+          "name": "Healthcare Skill 060",
+          "label": "Healthcare Skill 060",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Healthcare Skill 060"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_9720a39d37194be99fcb657f",
+          "name": "Healthcare Skill 061",
+          "label": "Healthcare Skill 061",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Healthcare Skill 061"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_fe9ee33ce6bb4a88a79088f0",
+          "name": "Healthcare Skill 062",
+          "label": "Healthcare Skill 062",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Healthcare Skill 062"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_6f54843508fc4907a108fc7d",
+          "name": "Healthcare Skill 063",
+          "label": "Healthcare Skill 063",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Healthcare Skill 063"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_dd5c301063254ed18396e9aa",
+          "name": "Healthcare Skill 064",
+          "label": "Healthcare Skill 064",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Healthcare Skill 064"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_2eb38faeb95f4526ad9f583d",
+          "name": "Healthcare Skill 065",
+          "label": "Healthcare Skill 065",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Healthcare Skill 065"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_8af43838762446e1a15bc682",
+          "name": "Healthcare Skill 066",
+          "label": "Healthcare Skill 066",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Healthcare Skill 066"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_a7e5e3c618914541972c5a16",
+          "name": "Healthcare Skill 067",
+          "label": "Healthcare Skill 067",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Healthcare Skill 067"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_e9fa7cd5533145b5a87f9850",
+          "name": "Healthcare Skill 068",
+          "label": "Healthcare Skill 068",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Healthcare Skill 068"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_8cb3a515b3dd48a5874a979e",
+          "name": "Healthcare Skill 069",
+          "label": "Healthcare Skill 069",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Healthcare Skill 069"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_d9b6d7240d234d80884d35c6",
+          "name": "Healthcare Skill 070",
+          "label": "Healthcare Skill 070",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Healthcare Skill 070"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_ddfba9c180a74149979af152",
+          "name": "Healthcare Skill 071",
+          "label": "Healthcare Skill 071",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Healthcare Skill 071"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_915fc30941ce427188d68233",
+          "name": "Healthcare Skill 072",
+          "label": "Healthcare Skill 072",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Healthcare Skill 072"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
         }
       ],
       "relationships": [
@@ -489,6 +1353,627 @@
           "type": "RELATED_TO",
           "weight": 0.78,
           "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_c8ec147e57584be98a54bd5e",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_fb979c9a192b447aa0f14e72",
+          "target_uid": "skill_8fc7243b374b4fd0a8328ad2",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_8fc7243b374b4fd0a8328ad2",
+          "target_uid": "skill_519c764135cc4f1c9f121c33",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_519c764135cc4f1c9f121c33",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_47b78a3912254355bac4cd16",
+          "target_uid": "skill_1ee0895e8eee45c5940c602d",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_1ee0895e8eee45c5940c602d",
+          "target_uid": "skill_24e601825f5f46e396842c17",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_24e601825f5f46e396842c17",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_39db142a11eb419aab97b137",
+          "target_uid": "skill_9f99d20de0fa41eda09230a8",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_9f99d20de0fa41eda09230a8",
+          "target_uid": "skill_448446cbcb744a5bbe945dca",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_448446cbcb744a5bbe945dca",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_25c2699711a744348a5d5bc3",
+          "target_uid": "skill_bc0156a54afd40bba24dfa1e",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_bc0156a54afd40bba24dfa1e",
+          "target_uid": "skill_41e3770cfa1445469e06daf2",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_41e3770cfa1445469e06daf2",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_32c23d79e48a424dad8946a1",
+          "target_uid": "skill_c19861019a9546cfafc03b1c",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_c19861019a9546cfafc03b1c",
+          "target_uid": "skill_37f02ef1c6fe408f8e6cc925",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_37f02ef1c6fe408f8e6cc925",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_d03223909d4b4cc795586bc7",
+          "target_uid": "skill_73176df6d91840e1964ff02c",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_73176df6d91840e1964ff02c",
+          "target_uid": "skill_62ae1b1b8c7a4790a83a6a71",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_62ae1b1b8c7a4790a83a6a71",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_3375d8d13d254a818ca2724f",
+          "target_uid": "skill_c983a5c476cd430682e0b69c",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_c983a5c476cd430682e0b69c",
+          "target_uid": "skill_af1177dc4f194e199797bb6d",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_af1177dc4f194e199797bb6d",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_5f144d27e73047f1a940cf23",
+          "target_uid": "skill_0fccd646a0f2407b912d6bd4",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_0fccd646a0f2407b912d6bd4",
+          "target_uid": "skill_e238dc44bea14013b6e24d97",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_e238dc44bea14013b6e24d97",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_37bd4c71e2eb411c90a48f79",
+          "target_uid": "skill_94b35f049d7c48a9a4e96e8e",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_94b35f049d7c48a9a4e96e8e",
+          "target_uid": "skill_f247500f6dc04f9aa04398f0",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_f247500f6dc04f9aa04398f0",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_3665227edc324738b9346f8f",
+          "target_uid": "skill_0a9cdb0fcd4b44a8bdf90539",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_0a9cdb0fcd4b44a8bdf90539",
+          "target_uid": "skill_5987cebee9df4c9582591606",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_5987cebee9df4c9582591606",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_f07df399dee743308629fb57",
+          "target_uid": "skill_94f5dc6791a34a1e963642d9",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_94f5dc6791a34a1e963642d9",
+          "target_uid": "skill_dc23a1b255404757a61130c9",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_dc23a1b255404757a61130c9",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_2db2713834c34cdc9422d107",
+          "target_uid": "skill_6f378b55ee0e4d6b8594f9f0",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_6f378b55ee0e4d6b8594f9f0",
+          "target_uid": "skill_9c12619f9d8a4b36bf8bf3a9",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_9c12619f9d8a4b36bf8bf3a9",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_9fb05670cbe84c22988ce7e3",
+          "target_uid": "skill_37db5edeebc8460a8244f0f6",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_37db5edeebc8460a8244f0f6",
+          "target_uid": "skill_b5e3fe909d614a8ab0611111",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_b5e3fe909d614a8ab0611111",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_c36bca4bceb04fecae4c4983",
+          "target_uid": "skill_f37354c7223040baa267f54e",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_f37354c7223040baa267f54e",
+          "target_uid": "skill_c820851a639341649bc2cec4",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_c820851a639341649bc2cec4",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_a7ffb68f21f344da921e7c51",
+          "target_uid": "skill_9364d230980e442e84aa4bea",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_9364d230980e442e84aa4bea",
+          "target_uid": "skill_05d47ccfd568451494b1de50",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_05d47ccfd568451494b1de50",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_99912a2759a94a97be2f9a30",
+          "target_uid": "skill_13e7808bf12946bf97dd8060",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_13e7808bf12946bf97dd8060",
+          "target_uid": "skill_4dca897b3d13493d98f48f6b",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_4dca897b3d13493d98f48f6b",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_e721ae2eaa02474980e667b5",
+          "target_uid": "skill_8136f20c901b4b0bb3a7430b",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_8136f20c901b4b0bb3a7430b",
+          "target_uid": "skill_96efccf14470428f9fff1618",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_96efccf14470428f9fff1618",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_cecba280882942da855cde1c",
+          "target_uid": "skill_b29b28ffe477486db7971782",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_b29b28ffe477486db7971782",
+          "target_uid": "skill_499e9b3141c04708b228fd71",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_499e9b3141c04708b228fd71",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_e4056b25add842adb1971746",
+          "target_uid": "skill_67492f9e9a1543d09eac3bf2",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_67492f9e9a1543d09eac3bf2",
+          "target_uid": "skill_f4841f80efd642c9b40b1f69",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_f4841f80efd642c9b40b1f69",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_5b8ddac54b9041f298bbc514",
+          "target_uid": "skill_2d713ccaa0cc4a868127ab14",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_2d713ccaa0cc4a868127ab14",
+          "target_uid": "skill_3bfb1bc75809431a9366e906",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_3bfb1bc75809431a9366e906",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_0b7afa3daf9f43399988f98d",
+          "target_uid": "skill_c2d2a82c5c584830bf60bb52",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_c2d2a82c5c584830bf60bb52",
+          "target_uid": "skill_999820f1d8734735bb8a4b03",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_999820f1d8734735bb8a4b03",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_eca2c62022de4da2b71af0d5",
+          "target_uid": "skill_6e42000775864fcc9449439a",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_6e42000775864fcc9449439a",
+          "target_uid": "skill_aabc78db388b4f5aa63780a8",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_aabc78db388b4f5aa63780a8",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_429a079987594fa5b1a98121",
+          "target_uid": "skill_6c212ed7d66647f693eb0127",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_6c212ed7d66647f693eb0127",
+          "target_uid": "skill_e320df252a62417ab977be95",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_e320df252a62417ab977be95",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_f526ce07de104693a87ae987",
+          "target_uid": "skill_5f60d13e38364090b309d6b8",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_5f60d13e38364090b309d6b8",
+          "target_uid": "skill_02653c6eaa5e4abfbe8f2d8c",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_02653c6eaa5e4abfbe8f2d8c",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_3f08d6e9bb124e52bda51e4e",
+          "target_uid": "skill_6f10892a290a46bb80d5795c",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_6f10892a290a46bb80d5795c",
+          "target_uid": "skill_f1004ce4eee9472b9961c6e3",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_f1004ce4eee9472b9961c6e3",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_fd6fc162350a410bb8278cc9",
+          "target_uid": "skill_77a5120985094eabac39cb3d",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_77a5120985094eabac39cb3d",
+          "target_uid": "skill_828d7687661241c796024145",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_828d7687661241c796024145",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_f04c7da88ff0442281d3f868",
+          "target_uid": "skill_c6e731e196204da398d21957",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_c6e731e196204da398d21957",
+          "target_uid": "skill_69a0da55ee4b4e198f065b39",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
         }
       ]
     }

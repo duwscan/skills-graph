@@ -347,6 +347,870 @@
           "low_surface_forms": [],
           "abbreviations": [],
           "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_6359b0f436614016acfa390e",
+          "name": "Qa Qc Skill 001",
+          "label": "Qa Qc Skill 001",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Qa Qc Skill 001"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_352119453f3d4804bdc65fb1",
+          "name": "Qa Qc Skill 002",
+          "label": "Qa Qc Skill 002",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Qa Qc Skill 002"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_fb6d484e0f6640b0a4aca93f",
+          "name": "Qa Qc Skill 003",
+          "label": "Qa Qc Skill 003",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Qa Qc Skill 003"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_a3ddcdca9d8c4db6b132716f",
+          "name": "Qa Qc Skill 004",
+          "label": "Qa Qc Skill 004",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Qa Qc Skill 004"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_1f38c776a3a04ff2a11f2066",
+          "name": "Qa Qc Skill 005",
+          "label": "Qa Qc Skill 005",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Qa Qc Skill 005"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_eba7876d9893453ea211da7a",
+          "name": "Qa Qc Skill 006",
+          "label": "Qa Qc Skill 006",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Qa Qc Skill 006"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_758a12905d324f01a5af22a3",
+          "name": "Qa Qc Skill 007",
+          "label": "Qa Qc Skill 007",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Qa Qc Skill 007"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_fea4a2f01a6f42fcbe6080af",
+          "name": "Qa Qc Skill 008",
+          "label": "Qa Qc Skill 008",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Qa Qc Skill 008"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_322af49f3bdd4ea5bb2abb83",
+          "name": "Qa Qc Skill 009",
+          "label": "Qa Qc Skill 009",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Qa Qc Skill 009"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_6989b991efee4b8283aafea2",
+          "name": "Qa Qc Skill 010",
+          "label": "Qa Qc Skill 010",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Qa Qc Skill 010"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_7de4a653d8f54a96aab9aa78",
+          "name": "Qa Qc Skill 011",
+          "label": "Qa Qc Skill 011",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Qa Qc Skill 011"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_a8be8209cc424824bb31a8e8",
+          "name": "Qa Qc Skill 012",
+          "label": "Qa Qc Skill 012",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Qa Qc Skill 012"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_4662b8b203a642f7912297ca",
+          "name": "Qa Qc Skill 013",
+          "label": "Qa Qc Skill 013",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Qa Qc Skill 013"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_4e5a9a3eafbb46a9820be57f",
+          "name": "Qa Qc Skill 014",
+          "label": "Qa Qc Skill 014",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Qa Qc Skill 014"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_34d174b315d042cc964c5770",
+          "name": "Qa Qc Skill 015",
+          "label": "Qa Qc Skill 015",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Qa Qc Skill 015"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_42ba4d95d91344baa413255b",
+          "name": "Qa Qc Skill 016",
+          "label": "Qa Qc Skill 016",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Qa Qc Skill 016"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_32bc7fd9d325480da91662e7",
+          "name": "Qa Qc Skill 017",
+          "label": "Qa Qc Skill 017",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Qa Qc Skill 017"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_7029f4b39d83478faf24be69",
+          "name": "Qa Qc Skill 018",
+          "label": "Qa Qc Skill 018",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Qa Qc Skill 018"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_c017c0782e8a49aa890fd8e6",
+          "name": "Qa Qc Skill 019",
+          "label": "Qa Qc Skill 019",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Qa Qc Skill 019"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_e2dbfbdb92174cd5b518c66c",
+          "name": "Qa Qc Skill 020",
+          "label": "Qa Qc Skill 020",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Qa Qc Skill 020"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_cfc9961b7f3b412a97d1b004",
+          "name": "Qa Qc Skill 021",
+          "label": "Qa Qc Skill 021",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Qa Qc Skill 021"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_fc4ace84940b438cb3f84e5d",
+          "name": "Qa Qc Skill 022",
+          "label": "Qa Qc Skill 022",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Qa Qc Skill 022"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_dbbe701302f14934b0ec3728",
+          "name": "Qa Qc Skill 023",
+          "label": "Qa Qc Skill 023",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Qa Qc Skill 023"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_abd27ef658e14570b29c6c5f",
+          "name": "Qa Qc Skill 024",
+          "label": "Qa Qc Skill 024",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Qa Qc Skill 024"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_f35555a14401478f85b66cd9",
+          "name": "Qa Qc Skill 025",
+          "label": "Qa Qc Skill 025",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Qa Qc Skill 025"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_91fa61b379ef42968a0c7083",
+          "name": "Qa Qc Skill 026",
+          "label": "Qa Qc Skill 026",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Qa Qc Skill 026"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_102f66a6a6544d82ad905ccf",
+          "name": "Qa Qc Skill 027",
+          "label": "Qa Qc Skill 027",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Qa Qc Skill 027"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_7cdc8fc8e63e4f689e8e0bdd",
+          "name": "Qa Qc Skill 028",
+          "label": "Qa Qc Skill 028",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Qa Qc Skill 028"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_ce0986b041a74afcb2a6c1e5",
+          "name": "Qa Qc Skill 029",
+          "label": "Qa Qc Skill 029",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Qa Qc Skill 029"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_2374982225ec46dbb98ba9e8",
+          "name": "Qa Qc Skill 030",
+          "label": "Qa Qc Skill 030",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Qa Qc Skill 030"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_ff09f9ec916540aa91b19b86",
+          "name": "Qa Qc Skill 031",
+          "label": "Qa Qc Skill 031",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Qa Qc Skill 031"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_a0eea590cc8541149f03fafb",
+          "name": "Qa Qc Skill 032",
+          "label": "Qa Qc Skill 032",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Qa Qc Skill 032"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_381fdca14ad64ce5baf3028c",
+          "name": "Qa Qc Skill 033",
+          "label": "Qa Qc Skill 033",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Qa Qc Skill 033"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_4731ab6f3eb44c31989fd49e",
+          "name": "Qa Qc Skill 034",
+          "label": "Qa Qc Skill 034",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Qa Qc Skill 034"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_0f171864901040a3957087cd",
+          "name": "Qa Qc Skill 035",
+          "label": "Qa Qc Skill 035",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Qa Qc Skill 035"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_c485d888f1364fd9a6ce1a0c",
+          "name": "Qa Qc Skill 036",
+          "label": "Qa Qc Skill 036",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Qa Qc Skill 036"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_ae1608647ea547e5bf89ae51",
+          "name": "Qa Qc Skill 037",
+          "label": "Qa Qc Skill 037",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Qa Qc Skill 037"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_d563d56c991f4be3b6e56a71",
+          "name": "Qa Qc Skill 038",
+          "label": "Qa Qc Skill 038",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Qa Qc Skill 038"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_5726249283914a0389a54e7f",
+          "name": "Qa Qc Skill 039",
+          "label": "Qa Qc Skill 039",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Qa Qc Skill 039"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_54e5ab8fa9f541bd95e9b8df",
+          "name": "Qa Qc Skill 040",
+          "label": "Qa Qc Skill 040",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Qa Qc Skill 040"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_6fae4a9e5f6446a3a0899c4e",
+          "name": "Qa Qc Skill 041",
+          "label": "Qa Qc Skill 041",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Qa Qc Skill 041"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_9d18636749b342d99709e6df",
+          "name": "Qa Qc Skill 042",
+          "label": "Qa Qc Skill 042",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Qa Qc Skill 042"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_c3f0497bf5574bef90f3520b",
+          "name": "Qa Qc Skill 043",
+          "label": "Qa Qc Skill 043",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Qa Qc Skill 043"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_e49b2392b16547a5bd9ea788",
+          "name": "Qa Qc Skill 044",
+          "label": "Qa Qc Skill 044",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Qa Qc Skill 044"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_732707c9c1fa4b6f8bac2551",
+          "name": "Qa Qc Skill 045",
+          "label": "Qa Qc Skill 045",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Qa Qc Skill 045"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_7a62d7e3ddd64bbb95314476",
+          "name": "Qa Qc Skill 046",
+          "label": "Qa Qc Skill 046",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Qa Qc Skill 046"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_653e6df16740426ead188c1b",
+          "name": "Qa Qc Skill 047",
+          "label": "Qa Qc Skill 047",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Qa Qc Skill 047"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_745855e7fc954f27bec7080a",
+          "name": "Qa Qc Skill 048",
+          "label": "Qa Qc Skill 048",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Qa Qc Skill 048"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_693fb681bd534077ad9c1980",
+          "name": "Qa Qc Skill 049",
+          "label": "Qa Qc Skill 049",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Qa Qc Skill 049"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_5c9759e2b02540d99784a4ce",
+          "name": "Qa Qc Skill 050",
+          "label": "Qa Qc Skill 050",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Qa Qc Skill 050"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_020a91ecfc334aa1a7499b29",
+          "name": "Qa Qc Skill 051",
+          "label": "Qa Qc Skill 051",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Qa Qc Skill 051"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_07c947224b0142a8b772acf3",
+          "name": "Qa Qc Skill 052",
+          "label": "Qa Qc Skill 052",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Qa Qc Skill 052"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_95d5a840abee47809fb6ecd6",
+          "name": "Qa Qc Skill 053",
+          "label": "Qa Qc Skill 053",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Qa Qc Skill 053"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_a11289e95f1a42e28cac0de4",
+          "name": "Qa Qc Skill 054",
+          "label": "Qa Qc Skill 054",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Qa Qc Skill 054"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_7aff96dfa39a4bc6b3960de1",
+          "name": "Qa Qc Skill 055",
+          "label": "Qa Qc Skill 055",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Qa Qc Skill 055"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_77d4071f7aec48e3bd989494",
+          "name": "Qa Qc Skill 056",
+          "label": "Qa Qc Skill 056",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Qa Qc Skill 056"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_47a3ad43c7784104b6d0a74f",
+          "name": "Qa Qc Skill 057",
+          "label": "Qa Qc Skill 057",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Qa Qc Skill 057"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_1e72082121b246b9be92a850",
+          "name": "Qa Qc Skill 058",
+          "label": "Qa Qc Skill 058",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Qa Qc Skill 058"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_ff466315ee7040f1b62b75f7",
+          "name": "Qa Qc Skill 059",
+          "label": "Qa Qc Skill 059",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Qa Qc Skill 059"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_451aaf9eea3142a19f3d0551",
+          "name": "Qa Qc Skill 060",
+          "label": "Qa Qc Skill 060",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Qa Qc Skill 060"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_4a080a2e449d445882818410",
+          "name": "Qa Qc Skill 061",
+          "label": "Qa Qc Skill 061",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Qa Qc Skill 061"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_053a73d82dd34e5db797673f",
+          "name": "Qa Qc Skill 062",
+          "label": "Qa Qc Skill 062",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Qa Qc Skill 062"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_2d7924bb2a3e48268b3005b9",
+          "name": "Qa Qc Skill 063",
+          "label": "Qa Qc Skill 063",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Qa Qc Skill 063"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_3ff297614cf0435da8aca5e9",
+          "name": "Qa Qc Skill 064",
+          "label": "Qa Qc Skill 064",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Qa Qc Skill 064"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_9556d1acb7f0406681aaaf39",
+          "name": "Qa Qc Skill 065",
+          "label": "Qa Qc Skill 065",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Qa Qc Skill 065"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_9a2cd29733944ad59c800a83",
+          "name": "Qa Qc Skill 066",
+          "label": "Qa Qc Skill 066",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Qa Qc Skill 066"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_dfc88c5065774f3194776830",
+          "name": "Qa Qc Skill 067",
+          "label": "Qa Qc Skill 067",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Qa Qc Skill 067"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_82b2dd75e8454a50a1d4b1a1",
+          "name": "Qa Qc Skill 068",
+          "label": "Qa Qc Skill 068",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Qa Qc Skill 068"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_de07b6db116344188a0a4413",
+          "name": "Qa Qc Skill 069",
+          "label": "Qa Qc Skill 069",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Qa Qc Skill 069"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_4b0405ecfd2e400e883f9ff2",
+          "name": "Qa Qc Skill 070",
+          "label": "Qa Qc Skill 070",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Qa Qc Skill 070"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_1d7027f2b606421ca15bcd23",
+          "name": "Qa Qc Skill 071",
+          "label": "Qa Qc Skill 071",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Qa Qc Skill 071"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_eead00e852bc4525bb864bd7",
+          "name": "Qa Qc Skill 072",
+          "label": "Qa Qc Skill 072",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Qa Qc Skill 072"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.85
         }
       ],
       "relationships": [
@@ -495,6 +1359,627 @@
           "type": "RELATED_TO",
           "weight": 0.78,
           "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_de34be206aca4152aef2e624",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_6facdc059144407c8b0a3ea2",
+          "target_uid": "skill_b57985b567e94559ba0a05fb",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_b57985b567e94559ba0a05fb",
+          "target_uid": "skill_29069b531e514ed49e165971",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_29069b531e514ed49e165971",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_aceab006f4c747038333021a",
+          "target_uid": "skill_364ff6b7391b40c796e4f35a",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_364ff6b7391b40c796e4f35a",
+          "target_uid": "skill_84881f415ef04f7883facd42",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_84881f415ef04f7883facd42",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_ea0aa286d1ca4dfdb6c1680a",
+          "target_uid": "skill_b2833b8db2d7464bad62d410",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_b2833b8db2d7464bad62d410",
+          "target_uid": "skill_a1e5c4d7543b46058eb0609e",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_a1e5c4d7543b46058eb0609e",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_2f416f314a904f47b2043fbf",
+          "target_uid": "skill_cdb4fc4b9bb0454f94c1ecf6",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_cdb4fc4b9bb0454f94c1ecf6",
+          "target_uid": "skill_1d0c0c6366b14ef584212ee4",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_1d0c0c6366b14ef584212ee4",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_9bf56005ac1a4b338a64ed4a",
+          "target_uid": "skill_a556d1c188594a5dbf944394",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_a556d1c188594a5dbf944394",
+          "target_uid": "skill_814997c6a9ec4b96a38b9024",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_814997c6a9ec4b96a38b9024",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_ef3c43ef72294d9ba4d8e999",
+          "target_uid": "skill_374624c341714658a2189746",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_374624c341714658a2189746",
+          "target_uid": "skill_f9676f1a39094262acc3c5d3",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_f9676f1a39094262acc3c5d3",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_7bd763a54d314c288783dd1c",
+          "target_uid": "skill_bedf40398c564f7daaad37a5",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_bedf40398c564f7daaad37a5",
+          "target_uid": "skill_d56eed7dbf544871b5246e28",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_d56eed7dbf544871b5246e28",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_bfc7822175d74a2ab1eb44f7",
+          "target_uid": "skill_273bbb3310d34cfaa28a593e",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_273bbb3310d34cfaa28a593e",
+          "target_uid": "skill_4d5c63e817874c89bf922507",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_4d5c63e817874c89bf922507",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_d4d374f6605b4e82bd5d67dc",
+          "target_uid": "skill_2a73bef73414446ea461cb90",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_2a73bef73414446ea461cb90",
+          "target_uid": "skill_6359b0f436614016acfa390e",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_6359b0f436614016acfa390e",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_352119453f3d4804bdc65fb1",
+          "target_uid": "skill_fb6d484e0f6640b0a4aca93f",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_fb6d484e0f6640b0a4aca93f",
+          "target_uid": "skill_a3ddcdca9d8c4db6b132716f",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_a3ddcdca9d8c4db6b132716f",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_1f38c776a3a04ff2a11f2066",
+          "target_uid": "skill_eba7876d9893453ea211da7a",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_eba7876d9893453ea211da7a",
+          "target_uid": "skill_758a12905d324f01a5af22a3",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_758a12905d324f01a5af22a3",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_fea4a2f01a6f42fcbe6080af",
+          "target_uid": "skill_322af49f3bdd4ea5bb2abb83",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_322af49f3bdd4ea5bb2abb83",
+          "target_uid": "skill_6989b991efee4b8283aafea2",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_6989b991efee4b8283aafea2",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_7de4a653d8f54a96aab9aa78",
+          "target_uid": "skill_a8be8209cc424824bb31a8e8",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_a8be8209cc424824bb31a8e8",
+          "target_uid": "skill_4662b8b203a642f7912297ca",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_4662b8b203a642f7912297ca",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_4e5a9a3eafbb46a9820be57f",
+          "target_uid": "skill_34d174b315d042cc964c5770",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_34d174b315d042cc964c5770",
+          "target_uid": "skill_42ba4d95d91344baa413255b",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_42ba4d95d91344baa413255b",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_32bc7fd9d325480da91662e7",
+          "target_uid": "skill_7029f4b39d83478faf24be69",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_7029f4b39d83478faf24be69",
+          "target_uid": "skill_c017c0782e8a49aa890fd8e6",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_c017c0782e8a49aa890fd8e6",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_e2dbfbdb92174cd5b518c66c",
+          "target_uid": "skill_cfc9961b7f3b412a97d1b004",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_cfc9961b7f3b412a97d1b004",
+          "target_uid": "skill_fc4ace84940b438cb3f84e5d",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_fc4ace84940b438cb3f84e5d",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_dbbe701302f14934b0ec3728",
+          "target_uid": "skill_abd27ef658e14570b29c6c5f",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_abd27ef658e14570b29c6c5f",
+          "target_uid": "skill_f35555a14401478f85b66cd9",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_f35555a14401478f85b66cd9",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_91fa61b379ef42968a0c7083",
+          "target_uid": "skill_102f66a6a6544d82ad905ccf",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_102f66a6a6544d82ad905ccf",
+          "target_uid": "skill_7cdc8fc8e63e4f689e8e0bdd",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_7cdc8fc8e63e4f689e8e0bdd",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_ce0986b041a74afcb2a6c1e5",
+          "target_uid": "skill_2374982225ec46dbb98ba9e8",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_2374982225ec46dbb98ba9e8",
+          "target_uid": "skill_ff09f9ec916540aa91b19b86",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_ff09f9ec916540aa91b19b86",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_a0eea590cc8541149f03fafb",
+          "target_uid": "skill_381fdca14ad64ce5baf3028c",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_381fdca14ad64ce5baf3028c",
+          "target_uid": "skill_4731ab6f3eb44c31989fd49e",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_4731ab6f3eb44c31989fd49e",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_0f171864901040a3957087cd",
+          "target_uid": "skill_c485d888f1364fd9a6ce1a0c",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_c485d888f1364fd9a6ce1a0c",
+          "target_uid": "skill_ae1608647ea547e5bf89ae51",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_ae1608647ea547e5bf89ae51",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_d563d56c991f4be3b6e56a71",
+          "target_uid": "skill_5726249283914a0389a54e7f",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_5726249283914a0389a54e7f",
+          "target_uid": "skill_54e5ab8fa9f541bd95e9b8df",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_54e5ab8fa9f541bd95e9b8df",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_6fae4a9e5f6446a3a0899c4e",
+          "target_uid": "skill_9d18636749b342d99709e6df",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_9d18636749b342d99709e6df",
+          "target_uid": "skill_c3f0497bf5574bef90f3520b",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_c3f0497bf5574bef90f3520b",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_e49b2392b16547a5bd9ea788",
+          "target_uid": "skill_732707c9c1fa4b6f8bac2551",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_732707c9c1fa4b6f8bac2551",
+          "target_uid": "skill_7a62d7e3ddd64bbb95314476",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_7a62d7e3ddd64bbb95314476",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_653e6df16740426ead188c1b",
+          "target_uid": "skill_745855e7fc954f27bec7080a",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_745855e7fc954f27bec7080a",
+          "target_uid": "skill_693fb681bd534077ad9c1980",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_693fb681bd534077ad9c1980",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_5c9759e2b02540d99784a4ce",
+          "target_uid": "skill_020a91ecfc334aa1a7499b29",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_020a91ecfc334aa1a7499b29",
+          "target_uid": "skill_07c947224b0142a8b772acf3",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_07c947224b0142a8b772acf3",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.8,
+          "level": 1,
+          "confidence": 0.85
+        },
+        {
+          "source_uid": "skill_95d5a840abee47809fb6ecd6",
+          "target_uid": "skill_a11289e95f1a42e28cac0de4",
+          "type": "REQUIRES",
+          "weight": 0.75,
+          "min_level": "intermediate",
+          "is_mandatory": false
+        },
+        {
+          "source_uid": "skill_a11289e95f1a42e28cac0de4",
+          "target_uid": "skill_7aff96dfa39a4bc6b3960de1",
+          "type": "RELATED_TO",
+          "weight": 0.7,
+          "relation_type": "complementary"
         }
       ]
     }
