@@ -344,11 +344,11 @@
         },
         {
           "uid": "skill_f247500f6dc04f9aa04398f0",
-          "name": "Healthcare Skill 001",
-          "label": "Healthcare Skill 001",
+          "name": "Clinical Support 001",
+          "label": "Clinical Support 001",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Healthcare Skill 001"
+            "Clinical Support 001"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -356,11 +356,11 @@
         },
         {
           "uid": "skill_3665227edc324738b9346f8f",
-          "name": "Healthcare Skill 002",
-          "label": "Healthcare Skill 002",
+          "name": "Patient Coordination 002",
+          "label": "Patient Coordination 002",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Healthcare Skill 002"
+            "Patient Coordination 002"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -368,11 +368,11 @@
         },
         {
           "uid": "skill_0a9cdb0fcd4b44a8bdf90539",
-          "name": "Healthcare Skill 003",
-          "label": "Healthcare Skill 003",
+          "name": "Care Documentation 003",
+          "label": "Care Documentation 003",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Healthcare Skill 003"
+            "Care Documentation 003"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -380,11 +380,11 @@
         },
         {
           "uid": "skill_5987cebee9df4c9582591606",
-          "name": "Healthcare Skill 004",
-          "label": "Healthcare Skill 004",
+          "name": "Safety Monitoring 004",
+          "label": "Safety Monitoring 004",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Healthcare Skill 004"
+            "Safety Monitoring 004"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -392,11 +392,11 @@
         },
         {
           "uid": "skill_f07df399dee743308629fb57",
-          "name": "Healthcare Skill 005",
-          "label": "Healthcare Skill 005",
+          "name": "Treatment Follow-Up 005",
+          "label": "Treatment Follow-Up 005",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Healthcare Skill 005"
+            "Treatment Follow-Up 005"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -404,11 +404,11 @@
         },
         {
           "uid": "skill_94f5dc6791a34a1e963642d9",
-          "name": "Healthcare Skill 006",
-          "label": "Healthcare Skill 006",
+          "name": "Case Review 006",
+          "label": "Case Review 006",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Healthcare Skill 006"
+            "Case Review 006"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -416,11 +416,11 @@
         },
         {
           "uid": "skill_dc23a1b255404757a61130c9",
-          "name": "Healthcare Skill 007",
-          "label": "Healthcare Skill 007",
+          "name": "Clinical Communication 007",
+          "label": "Clinical Communication 007",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Healthcare Skill 007"
+            "Clinical Communication 007"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -428,11 +428,11 @@
         },
         {
           "uid": "skill_2db2713834c34cdc9422d107",
-          "name": "Healthcare Skill 008",
-          "label": "Healthcare Skill 008",
+          "name": "Health Data Management 008",
+          "label": "Health Data Management 008",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Healthcare Skill 008"
+            "Health Data Management 008"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -440,11 +440,11 @@
         },
         {
           "uid": "skill_6f378b55ee0e4d6b8594f9f0",
-          "name": "Healthcare Skill 009",
-          "label": "Healthcare Skill 009",
+          "name": "Care Quality Review 009",
+          "label": "Care Quality Review 009",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Healthcare Skill 009"
+            "Care Quality Review 009"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -452,11 +452,11 @@
         },
         {
           "uid": "skill_9c12619f9d8a4b36bf8bf3a9",
-          "name": "Healthcare Skill 010",
-          "label": "Healthcare Skill 010",
+          "name": "Service Coordination 010",
+          "label": "Service Coordination 010",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Healthcare Skill 010"
+            "Service Coordination 010"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -464,11 +464,11 @@
         },
         {
           "uid": "skill_9fb05670cbe84c22988ce7e3",
-          "name": "Healthcare Skill 011",
-          "label": "Healthcare Skill 011",
+          "name": "Clinical Support 011",
+          "label": "Clinical Support 011",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Healthcare Skill 011"
+            "Clinical Support 011"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -476,11 +476,11 @@
         },
         {
           "uid": "skill_37db5edeebc8460a8244f0f6",
-          "name": "Healthcare Skill 012",
-          "label": "Healthcare Skill 012",
+          "name": "Patient Coordination 012",
+          "label": "Patient Coordination 012",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Healthcare Skill 012"
+            "Patient Coordination 012"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -488,11 +488,11 @@
         },
         {
           "uid": "skill_b5e3fe909d614a8ab0611111",
-          "name": "Healthcare Skill 013",
-          "label": "Healthcare Skill 013",
+          "name": "Care Documentation 013",
+          "label": "Care Documentation 013",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Healthcare Skill 013"
+            "Care Documentation 013"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -500,11 +500,11 @@
         },
         {
           "uid": "skill_c36bca4bceb04fecae4c4983",
-          "name": "Healthcare Skill 014",
-          "label": "Healthcare Skill 014",
+          "name": "Safety Monitoring 014",
+          "label": "Safety Monitoring 014",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Healthcare Skill 014"
+            "Safety Monitoring 014"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -512,11 +512,11 @@
         },
         {
           "uid": "skill_f37354c7223040baa267f54e",
-          "name": "Healthcare Skill 015",
-          "label": "Healthcare Skill 015",
+          "name": "Treatment Follow-Up 015",
+          "label": "Treatment Follow-Up 015",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Healthcare Skill 015"
+            "Treatment Follow-Up 015"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -524,11 +524,11 @@
         },
         {
           "uid": "skill_c820851a639341649bc2cec4",
-          "name": "Healthcare Skill 016",
-          "label": "Healthcare Skill 016",
+          "name": "Case Review 016",
+          "label": "Case Review 016",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Healthcare Skill 016"
+            "Case Review 016"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -536,11 +536,11 @@
         },
         {
           "uid": "skill_a7ffb68f21f344da921e7c51",
-          "name": "Healthcare Skill 017",
-          "label": "Healthcare Skill 017",
+          "name": "Clinical Communication 017",
+          "label": "Clinical Communication 017",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Healthcare Skill 017"
+            "Clinical Communication 017"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -548,11 +548,11 @@
         },
         {
           "uid": "skill_9364d230980e442e84aa4bea",
-          "name": "Healthcare Skill 018",
-          "label": "Healthcare Skill 018",
+          "name": "Health Data Management 018",
+          "label": "Health Data Management 018",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Healthcare Skill 018"
+            "Health Data Management 018"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -560,11 +560,11 @@
         },
         {
           "uid": "skill_05d47ccfd568451494b1de50",
-          "name": "Healthcare Skill 019",
-          "label": "Healthcare Skill 019",
+          "name": "Care Quality Review 019",
+          "label": "Care Quality Review 019",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Healthcare Skill 019"
+            "Care Quality Review 019"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -572,11 +572,11 @@
         },
         {
           "uid": "skill_99912a2759a94a97be2f9a30",
-          "name": "Healthcare Skill 020",
-          "label": "Healthcare Skill 020",
+          "name": "Service Coordination 020",
+          "label": "Service Coordination 020",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Healthcare Skill 020"
+            "Service Coordination 020"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -584,11 +584,11 @@
         },
         {
           "uid": "skill_13e7808bf12946bf97dd8060",
-          "name": "Healthcare Skill 021",
-          "label": "Healthcare Skill 021",
+          "name": "Clinical Support 021",
+          "label": "Clinical Support 021",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Healthcare Skill 021"
+            "Clinical Support 021"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -596,11 +596,11 @@
         },
         {
           "uid": "skill_4dca897b3d13493d98f48f6b",
-          "name": "Healthcare Skill 022",
-          "label": "Healthcare Skill 022",
+          "name": "Patient Coordination 022",
+          "label": "Patient Coordination 022",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Healthcare Skill 022"
+            "Patient Coordination 022"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -608,11 +608,11 @@
         },
         {
           "uid": "skill_e721ae2eaa02474980e667b5",
-          "name": "Healthcare Skill 023",
-          "label": "Healthcare Skill 023",
+          "name": "Care Documentation 023",
+          "label": "Care Documentation 023",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Healthcare Skill 023"
+            "Care Documentation 023"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -620,11 +620,11 @@
         },
         {
           "uid": "skill_8136f20c901b4b0bb3a7430b",
-          "name": "Healthcare Skill 024",
-          "label": "Healthcare Skill 024",
+          "name": "Safety Monitoring 024",
+          "label": "Safety Monitoring 024",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Healthcare Skill 024"
+            "Safety Monitoring 024"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -632,11 +632,11 @@
         },
         {
           "uid": "skill_96efccf14470428f9fff1618",
-          "name": "Healthcare Skill 025",
-          "label": "Healthcare Skill 025",
+          "name": "Treatment Follow-Up 025",
+          "label": "Treatment Follow-Up 025",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Healthcare Skill 025"
+            "Treatment Follow-Up 025"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -644,11 +644,11 @@
         },
         {
           "uid": "skill_cecba280882942da855cde1c",
-          "name": "Healthcare Skill 026",
-          "label": "Healthcare Skill 026",
+          "name": "Case Review 026",
+          "label": "Case Review 026",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Healthcare Skill 026"
+            "Case Review 026"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -656,11 +656,11 @@
         },
         {
           "uid": "skill_b29b28ffe477486db7971782",
-          "name": "Healthcare Skill 027",
-          "label": "Healthcare Skill 027",
+          "name": "Clinical Communication 027",
+          "label": "Clinical Communication 027",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Healthcare Skill 027"
+            "Clinical Communication 027"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -668,11 +668,11 @@
         },
         {
           "uid": "skill_499e9b3141c04708b228fd71",
-          "name": "Healthcare Skill 028",
-          "label": "Healthcare Skill 028",
+          "name": "Health Data Management 028",
+          "label": "Health Data Management 028",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Healthcare Skill 028"
+            "Health Data Management 028"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -680,11 +680,11 @@
         },
         {
           "uid": "skill_e4056b25add842adb1971746",
-          "name": "Healthcare Skill 029",
-          "label": "Healthcare Skill 029",
+          "name": "Care Quality Review 029",
+          "label": "Care Quality Review 029",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Healthcare Skill 029"
+            "Care Quality Review 029"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -692,11 +692,11 @@
         },
         {
           "uid": "skill_67492f9e9a1543d09eac3bf2",
-          "name": "Healthcare Skill 030",
-          "label": "Healthcare Skill 030",
+          "name": "Service Coordination 030",
+          "label": "Service Coordination 030",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Healthcare Skill 030"
+            "Service Coordination 030"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -704,11 +704,11 @@
         },
         {
           "uid": "skill_f4841f80efd642c9b40b1f69",
-          "name": "Healthcare Skill 031",
-          "label": "Healthcare Skill 031",
+          "name": "Clinical Support 031",
+          "label": "Clinical Support 031",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Healthcare Skill 031"
+            "Clinical Support 031"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -716,11 +716,11 @@
         },
         {
           "uid": "skill_5b8ddac54b9041f298bbc514",
-          "name": "Healthcare Skill 032",
-          "label": "Healthcare Skill 032",
+          "name": "Patient Coordination 032",
+          "label": "Patient Coordination 032",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Healthcare Skill 032"
+            "Patient Coordination 032"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -728,11 +728,11 @@
         },
         {
           "uid": "skill_2d713ccaa0cc4a868127ab14",
-          "name": "Healthcare Skill 033",
-          "label": "Healthcare Skill 033",
+          "name": "Care Documentation 033",
+          "label": "Care Documentation 033",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Healthcare Skill 033"
+            "Care Documentation 033"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -740,11 +740,11 @@
         },
         {
           "uid": "skill_3bfb1bc75809431a9366e906",
-          "name": "Healthcare Skill 034",
-          "label": "Healthcare Skill 034",
+          "name": "Safety Monitoring 034",
+          "label": "Safety Monitoring 034",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Healthcare Skill 034"
+            "Safety Monitoring 034"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -752,11 +752,11 @@
         },
         {
           "uid": "skill_0b7afa3daf9f43399988f98d",
-          "name": "Healthcare Skill 035",
-          "label": "Healthcare Skill 035",
+          "name": "Treatment Follow-Up 035",
+          "label": "Treatment Follow-Up 035",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Healthcare Skill 035"
+            "Treatment Follow-Up 035"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -764,11 +764,11 @@
         },
         {
           "uid": "skill_c2d2a82c5c584830bf60bb52",
-          "name": "Healthcare Skill 036",
-          "label": "Healthcare Skill 036",
+          "name": "Case Review 036",
+          "label": "Case Review 036",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Healthcare Skill 036"
+            "Case Review 036"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -776,11 +776,11 @@
         },
         {
           "uid": "skill_999820f1d8734735bb8a4b03",
-          "name": "Healthcare Skill 037",
-          "label": "Healthcare Skill 037",
+          "name": "Clinical Communication 037",
+          "label": "Clinical Communication 037",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Healthcare Skill 037"
+            "Clinical Communication 037"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -788,11 +788,11 @@
         },
         {
           "uid": "skill_eca2c62022de4da2b71af0d5",
-          "name": "Healthcare Skill 038",
-          "label": "Healthcare Skill 038",
+          "name": "Health Data Management 038",
+          "label": "Health Data Management 038",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Healthcare Skill 038"
+            "Health Data Management 038"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -800,11 +800,11 @@
         },
         {
           "uid": "skill_6e42000775864fcc9449439a",
-          "name": "Healthcare Skill 039",
-          "label": "Healthcare Skill 039",
+          "name": "Care Quality Review 039",
+          "label": "Care Quality Review 039",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Healthcare Skill 039"
+            "Care Quality Review 039"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -812,11 +812,11 @@
         },
         {
           "uid": "skill_aabc78db388b4f5aa63780a8",
-          "name": "Healthcare Skill 040",
-          "label": "Healthcare Skill 040",
+          "name": "Service Coordination 040",
+          "label": "Service Coordination 040",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Healthcare Skill 040"
+            "Service Coordination 040"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -824,11 +824,11 @@
         },
         {
           "uid": "skill_429a079987594fa5b1a98121",
-          "name": "Healthcare Skill 041",
-          "label": "Healthcare Skill 041",
+          "name": "Clinical Support 041",
+          "label": "Clinical Support 041",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Healthcare Skill 041"
+            "Clinical Support 041"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -836,11 +836,11 @@
         },
         {
           "uid": "skill_6c212ed7d66647f693eb0127",
-          "name": "Healthcare Skill 042",
-          "label": "Healthcare Skill 042",
+          "name": "Patient Coordination 042",
+          "label": "Patient Coordination 042",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Healthcare Skill 042"
+            "Patient Coordination 042"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -848,11 +848,11 @@
         },
         {
           "uid": "skill_e320df252a62417ab977be95",
-          "name": "Healthcare Skill 043",
-          "label": "Healthcare Skill 043",
+          "name": "Care Documentation 043",
+          "label": "Care Documentation 043",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Healthcare Skill 043"
+            "Care Documentation 043"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -860,11 +860,11 @@
         },
         {
           "uid": "skill_f526ce07de104693a87ae987",
-          "name": "Healthcare Skill 044",
-          "label": "Healthcare Skill 044",
+          "name": "Safety Monitoring 044",
+          "label": "Safety Monitoring 044",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Healthcare Skill 044"
+            "Safety Monitoring 044"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -872,11 +872,11 @@
         },
         {
           "uid": "skill_5f60d13e38364090b309d6b8",
-          "name": "Healthcare Skill 045",
-          "label": "Healthcare Skill 045",
+          "name": "Treatment Follow-Up 045",
+          "label": "Treatment Follow-Up 045",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Healthcare Skill 045"
+            "Treatment Follow-Up 045"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -884,11 +884,11 @@
         },
         {
           "uid": "skill_02653c6eaa5e4abfbe8f2d8c",
-          "name": "Healthcare Skill 046",
-          "label": "Healthcare Skill 046",
+          "name": "Case Review 046",
+          "label": "Case Review 046",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Healthcare Skill 046"
+            "Case Review 046"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -896,11 +896,11 @@
         },
         {
           "uid": "skill_3f08d6e9bb124e52bda51e4e",
-          "name": "Healthcare Skill 047",
-          "label": "Healthcare Skill 047",
+          "name": "Clinical Communication 047",
+          "label": "Clinical Communication 047",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Healthcare Skill 047"
+            "Clinical Communication 047"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -908,11 +908,11 @@
         },
         {
           "uid": "skill_6f10892a290a46bb80d5795c",
-          "name": "Healthcare Skill 048",
-          "label": "Healthcare Skill 048",
+          "name": "Health Data Management 048",
+          "label": "Health Data Management 048",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Healthcare Skill 048"
+            "Health Data Management 048"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -920,11 +920,11 @@
         },
         {
           "uid": "skill_f1004ce4eee9472b9961c6e3",
-          "name": "Healthcare Skill 049",
-          "label": "Healthcare Skill 049",
+          "name": "Care Quality Review 049",
+          "label": "Care Quality Review 049",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Healthcare Skill 049"
+            "Care Quality Review 049"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -932,11 +932,11 @@
         },
         {
           "uid": "skill_fd6fc162350a410bb8278cc9",
-          "name": "Healthcare Skill 050",
-          "label": "Healthcare Skill 050",
+          "name": "Service Coordination 050",
+          "label": "Service Coordination 050",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Healthcare Skill 050"
+            "Service Coordination 050"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -944,11 +944,11 @@
         },
         {
           "uid": "skill_77a5120985094eabac39cb3d",
-          "name": "Healthcare Skill 051",
-          "label": "Healthcare Skill 051",
+          "name": "Clinical Support 051",
+          "label": "Clinical Support 051",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Healthcare Skill 051"
+            "Clinical Support 051"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -956,11 +956,11 @@
         },
         {
           "uid": "skill_828d7687661241c796024145",
-          "name": "Healthcare Skill 052",
-          "label": "Healthcare Skill 052",
+          "name": "Patient Coordination 052",
+          "label": "Patient Coordination 052",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Healthcare Skill 052"
+            "Patient Coordination 052"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -968,11 +968,11 @@
         },
         {
           "uid": "skill_f04c7da88ff0442281d3f868",
-          "name": "Healthcare Skill 053",
-          "label": "Healthcare Skill 053",
+          "name": "Care Documentation 053",
+          "label": "Care Documentation 053",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Healthcare Skill 053"
+            "Care Documentation 053"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -980,11 +980,11 @@
         },
         {
           "uid": "skill_c6e731e196204da398d21957",
-          "name": "Healthcare Skill 054",
-          "label": "Healthcare Skill 054",
+          "name": "Safety Monitoring 054",
+          "label": "Safety Monitoring 054",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Healthcare Skill 054"
+            "Safety Monitoring 054"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -992,11 +992,11 @@
         },
         {
           "uid": "skill_69a0da55ee4b4e198f065b39",
-          "name": "Healthcare Skill 055",
-          "label": "Healthcare Skill 055",
+          "name": "Treatment Follow-Up 055",
+          "label": "Treatment Follow-Up 055",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Healthcare Skill 055"
+            "Treatment Follow-Up 055"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1004,11 +1004,11 @@
         },
         {
           "uid": "skill_17c27410db60474fabb939f4",
-          "name": "Healthcare Skill 056",
-          "label": "Healthcare Skill 056",
+          "name": "Case Review 056",
+          "label": "Case Review 056",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Healthcare Skill 056"
+            "Case Review 056"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1016,11 +1016,11 @@
         },
         {
           "uid": "skill_c2231ac9ab20484b8a94dc24",
-          "name": "Healthcare Skill 057",
-          "label": "Healthcare Skill 057",
+          "name": "Clinical Communication 057",
+          "label": "Clinical Communication 057",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Healthcare Skill 057"
+            "Clinical Communication 057"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1028,11 +1028,11 @@
         },
         {
           "uid": "skill_5738e4a79b40445b98d50857",
-          "name": "Healthcare Skill 058",
-          "label": "Healthcare Skill 058",
+          "name": "Health Data Management 058",
+          "label": "Health Data Management 058",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Healthcare Skill 058"
+            "Health Data Management 058"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1040,11 +1040,11 @@
         },
         {
           "uid": "skill_212d8535c89d462e9aae511d",
-          "name": "Healthcare Skill 059",
-          "label": "Healthcare Skill 059",
+          "name": "Care Quality Review 059",
+          "label": "Care Quality Review 059",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Healthcare Skill 059"
+            "Care Quality Review 059"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1052,11 +1052,11 @@
         },
         {
           "uid": "skill_da1f2045440c473e8b69302f",
-          "name": "Healthcare Skill 060",
-          "label": "Healthcare Skill 060",
+          "name": "Service Coordination 060",
+          "label": "Service Coordination 060",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Healthcare Skill 060"
+            "Service Coordination 060"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1064,11 +1064,11 @@
         },
         {
           "uid": "skill_9720a39d37194be99fcb657f",
-          "name": "Healthcare Skill 061",
-          "label": "Healthcare Skill 061",
+          "name": "Clinical Support 061",
+          "label": "Clinical Support 061",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Healthcare Skill 061"
+            "Clinical Support 061"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1076,11 +1076,11 @@
         },
         {
           "uid": "skill_fe9ee33ce6bb4a88a79088f0",
-          "name": "Healthcare Skill 062",
-          "label": "Healthcare Skill 062",
+          "name": "Patient Coordination 062",
+          "label": "Patient Coordination 062",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Healthcare Skill 062"
+            "Patient Coordination 062"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1088,11 +1088,11 @@
         },
         {
           "uid": "skill_6f54843508fc4907a108fc7d",
-          "name": "Healthcare Skill 063",
-          "label": "Healthcare Skill 063",
+          "name": "Care Documentation 063",
+          "label": "Care Documentation 063",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Healthcare Skill 063"
+            "Care Documentation 063"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1100,11 +1100,11 @@
         },
         {
           "uid": "skill_dd5c301063254ed18396e9aa",
-          "name": "Healthcare Skill 064",
-          "label": "Healthcare Skill 064",
+          "name": "Safety Monitoring 064",
+          "label": "Safety Monitoring 064",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Healthcare Skill 064"
+            "Safety Monitoring 064"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1112,11 +1112,11 @@
         },
         {
           "uid": "skill_2eb38faeb95f4526ad9f583d",
-          "name": "Healthcare Skill 065",
-          "label": "Healthcare Skill 065",
+          "name": "Treatment Follow-Up 065",
+          "label": "Treatment Follow-Up 065",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Healthcare Skill 065"
+            "Treatment Follow-Up 065"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1124,11 +1124,11 @@
         },
         {
           "uid": "skill_8af43838762446e1a15bc682",
-          "name": "Healthcare Skill 066",
-          "label": "Healthcare Skill 066",
+          "name": "Case Review 066",
+          "label": "Case Review 066",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Healthcare Skill 066"
+            "Case Review 066"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1136,11 +1136,11 @@
         },
         {
           "uid": "skill_a7e5e3c618914541972c5a16",
-          "name": "Healthcare Skill 067",
-          "label": "Healthcare Skill 067",
+          "name": "Clinical Communication 067",
+          "label": "Clinical Communication 067",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Healthcare Skill 067"
+            "Clinical Communication 067"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1148,11 +1148,11 @@
         },
         {
           "uid": "skill_e9fa7cd5533145b5a87f9850",
-          "name": "Healthcare Skill 068",
-          "label": "Healthcare Skill 068",
+          "name": "Health Data Management 068",
+          "label": "Health Data Management 068",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Healthcare Skill 068"
+            "Health Data Management 068"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1160,11 +1160,11 @@
         },
         {
           "uid": "skill_8cb3a515b3dd48a5874a979e",
-          "name": "Healthcare Skill 069",
-          "label": "Healthcare Skill 069",
+          "name": "Care Quality Review 069",
+          "label": "Care Quality Review 069",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Healthcare Skill 069"
+            "Care Quality Review 069"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1172,11 +1172,11 @@
         },
         {
           "uid": "skill_d9b6d7240d234d80884d35c6",
-          "name": "Healthcare Skill 070",
-          "label": "Healthcare Skill 070",
+          "name": "Service Coordination 070",
+          "label": "Service Coordination 070",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Healthcare Skill 070"
+            "Service Coordination 070"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1184,11 +1184,11 @@
         },
         {
           "uid": "skill_ddfba9c180a74149979af152",
-          "name": "Healthcare Skill 071",
-          "label": "Healthcare Skill 071",
+          "name": "Clinical Support 071",
+          "label": "Clinical Support 071",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Healthcare Skill 071"
+            "Clinical Support 071"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1196,11 +1196,11 @@
         },
         {
           "uid": "skill_915fc30941ce427188d68233",
-          "name": "Healthcare Skill 072",
-          "label": "Healthcare Skill 072",
+          "name": "Patient Coordination 072",
+          "label": "Patient Coordination 072",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Healthcare Skill 072"
+            "Patient Coordination 072"
           ],
           "low_surface_forms": [],
           "abbreviations": [],

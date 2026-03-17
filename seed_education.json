@@ -344,11 +344,11 @@
         },
         {
           "uid": "skill_5242a992170b483786283f16",
-          "name": "Education Skill 001",
-          "label": "Education Skill 001",
+          "name": "Learning Facilitation 001",
+          "label": "Learning Facilitation 001",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Education Skill 001"
+            "Learning Facilitation 001"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -356,11 +356,11 @@
         },
         {
           "uid": "skill_da1cd8c2df0844509304288a",
-          "name": "Education Skill 002",
-          "label": "Education Skill 002",
+          "name": "Curriculum Delivery 002",
+          "label": "Curriculum Delivery 002",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Education Skill 002"
+            "Curriculum Delivery 002"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -368,11 +368,11 @@
         },
         {
           "uid": "skill_303536f9cf8f48798cb6f5d1",
-          "name": "Education Skill 003",
-          "label": "Education Skill 003",
+          "name": "Assessment Review 003",
+          "label": "Assessment Review 003",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Education Skill 003"
+            "Assessment Review 003"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -380,11 +380,11 @@
         },
         {
           "uid": "skill_82b7d04b65ba4b498611cbec",
-          "name": "Education Skill 004",
-          "label": "Education Skill 004",
+          "name": "Classroom Support 004",
+          "label": "Classroom Support 004",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Education Skill 004"
+            "Classroom Support 004"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -392,11 +392,11 @@
         },
         {
           "uid": "skill_b24660626a194f8a8af878a2",
-          "name": "Education Skill 005",
-          "label": "Education Skill 005",
+          "name": "Student Progress Tracking 005",
+          "label": "Student Progress Tracking 005",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Education Skill 005"
+            "Student Progress Tracking 005"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -404,11 +404,11 @@
         },
         {
           "uid": "skill_9171581516854574af108eb4",
-          "name": "Education Skill 006",
-          "label": "Education Skill 006",
+          "name": "Instructional Improvement 006",
+          "label": "Instructional Improvement 006",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Education Skill 006"
+            "Instructional Improvement 006"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -416,11 +416,11 @@
         },
         {
           "uid": "skill_1d0ea2a565be4f21b9597a9d",
-          "name": "Education Skill 007",
-          "label": "Education Skill 007",
+          "name": "Learner Engagement 007",
+          "label": "Learner Engagement 007",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Education Skill 007"
+            "Learner Engagement 007"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -428,11 +428,11 @@
         },
         {
           "uid": "skill_8fc84501e8554ced9ec41b59",
-          "name": "Education Skill 008",
-          "label": "Education Skill 008",
+          "name": "Academic Communication 008",
+          "label": "Academic Communication 008",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Education Skill 008"
+            "Academic Communication 008"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -440,11 +440,11 @@
         },
         {
           "uid": "skill_eeb460e48c9b47dcb0e71130",
-          "name": "Education Skill 009",
-          "label": "Education Skill 009",
+          "name": "Teaching Reflection 009",
+          "label": "Teaching Reflection 009",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Education Skill 009"
+            "Teaching Reflection 009"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -452,11 +452,11 @@
         },
         {
           "uid": "skill_23c07ae575174f50b7d9eb43",
-          "name": "Education Skill 010",
-          "label": "Education Skill 010",
+          "name": "Program Evaluation 010",
+          "label": "Program Evaluation 010",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Education Skill 010"
+            "Program Evaluation 010"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -464,11 +464,11 @@
         },
         {
           "uid": "skill_051483b7ef654be6af234b5a",
-          "name": "Education Skill 011",
-          "label": "Education Skill 011",
+          "name": "Learning Facilitation 011",
+          "label": "Learning Facilitation 011",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Education Skill 011"
+            "Learning Facilitation 011"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -476,11 +476,11 @@
         },
         {
           "uid": "skill_9620d22a738b4ec385df5633",
-          "name": "Education Skill 012",
-          "label": "Education Skill 012",
+          "name": "Curriculum Delivery 012",
+          "label": "Curriculum Delivery 012",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Education Skill 012"
+            "Curriculum Delivery 012"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -488,11 +488,11 @@
         },
         {
           "uid": "skill_a11efeb8ab77461b917da6f6",
-          "name": "Education Skill 013",
-          "label": "Education Skill 013",
+          "name": "Assessment Review 013",
+          "label": "Assessment Review 013",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Education Skill 013"
+            "Assessment Review 013"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -500,11 +500,11 @@
         },
         {
           "uid": "skill_2a2bcac54db74fac8e72dc78",
-          "name": "Education Skill 014",
-          "label": "Education Skill 014",
+          "name": "Classroom Support 014",
+          "label": "Classroom Support 014",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Education Skill 014"
+            "Classroom Support 014"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -512,11 +512,11 @@
         },
         {
           "uid": "skill_5605e3201ba34e8b8fefc86f",
-          "name": "Education Skill 015",
-          "label": "Education Skill 015",
+          "name": "Student Progress Tracking 015",
+          "label": "Student Progress Tracking 015",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Education Skill 015"
+            "Student Progress Tracking 015"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -524,11 +524,11 @@
         },
         {
           "uid": "skill_e08343dd40604b10b2f63abc",
-          "name": "Education Skill 016",
-          "label": "Education Skill 016",
+          "name": "Instructional Improvement 016",
+          "label": "Instructional Improvement 016",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Education Skill 016"
+            "Instructional Improvement 016"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -536,11 +536,11 @@
         },
         {
           "uid": "skill_05d98022345f4ac58d04ed37",
-          "name": "Education Skill 017",
-          "label": "Education Skill 017",
+          "name": "Learner Engagement 017",
+          "label": "Learner Engagement 017",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Education Skill 017"
+            "Learner Engagement 017"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -548,11 +548,11 @@
         },
         {
           "uid": "skill_556f22a9cc2f458680c1f642",
-          "name": "Education Skill 018",
-          "label": "Education Skill 018",
+          "name": "Academic Communication 018",
+          "label": "Academic Communication 018",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Education Skill 018"
+            "Academic Communication 018"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -560,11 +560,11 @@
         },
         {
           "uid": "skill_fca2daa55f3340079dcd6dbd",
-          "name": "Education Skill 019",
-          "label": "Education Skill 019",
+          "name": "Teaching Reflection 019",
+          "label": "Teaching Reflection 019",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Education Skill 019"
+            "Teaching Reflection 019"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -572,11 +572,11 @@
         },
         {
           "uid": "skill_aafa360051e4417f966b2d98",
-          "name": "Education Skill 020",
-          "label": "Education Skill 020",
+          "name": "Program Evaluation 020",
+          "label": "Program Evaluation 020",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Education Skill 020"
+            "Program Evaluation 020"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -584,11 +584,11 @@
         },
         {
           "uid": "skill_5e75a5f6cfc142a5b527984d",
-          "name": "Education Skill 021",
-          "label": "Education Skill 021",
+          "name": "Learning Facilitation 021",
+          "label": "Learning Facilitation 021",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Education Skill 021"
+            "Learning Facilitation 021"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -596,11 +596,11 @@
         },
         {
           "uid": "skill_492d787ddd284054a141e34e",
-          "name": "Education Skill 022",
-          "label": "Education Skill 022",
+          "name": "Curriculum Delivery 022",
+          "label": "Curriculum Delivery 022",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Education Skill 022"
+            "Curriculum Delivery 022"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -608,11 +608,11 @@
         },
         {
           "uid": "skill_1fc98581a7f249b2a2a44dd8",
-          "name": "Education Skill 023",
-          "label": "Education Skill 023",
+          "name": "Assessment Review 023",
+          "label": "Assessment Review 023",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Education Skill 023"
+            "Assessment Review 023"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -620,11 +620,11 @@
         },
         {
           "uid": "skill_d422d724b29a477cb52dd699",
-          "name": "Education Skill 024",
-          "label": "Education Skill 024",
+          "name": "Classroom Support 024",
+          "label": "Classroom Support 024",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Education Skill 024"
+            "Classroom Support 024"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -632,11 +632,11 @@
         },
         {
           "uid": "skill_dd222f7dc84a4215a7824255",
-          "name": "Education Skill 025",
-          "label": "Education Skill 025",
+          "name": "Student Progress Tracking 025",
+          "label": "Student Progress Tracking 025",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Education Skill 025"
+            "Student Progress Tracking 025"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -644,11 +644,11 @@
         },
         {
           "uid": "skill_e7807a02f0f748eea5105dc8",
-          "name": "Education Skill 026",
-          "label": "Education Skill 026",
+          "name": "Instructional Improvement 026",
+          "label": "Instructional Improvement 026",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Education Skill 026"
+            "Instructional Improvement 026"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -656,11 +656,11 @@
         },
         {
           "uid": "skill_dd1ae05d4e2144b5b12d82ea",
-          "name": "Education Skill 027",
-          "label": "Education Skill 027",
+          "name": "Learner Engagement 027",
+          "label": "Learner Engagement 027",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Education Skill 027"
+            "Learner Engagement 027"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -668,11 +668,11 @@
         },
         {
           "uid": "skill_a1d6eed9da584866aed6aa96",
-          "name": "Education Skill 028",
-          "label": "Education Skill 028",
+          "name": "Academic Communication 028",
+          "label": "Academic Communication 028",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Education Skill 028"
+            "Academic Communication 028"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -680,11 +680,11 @@
         },
         {
           "uid": "skill_68165473c13f4842a2c4ff7d",
-          "name": "Education Skill 029",
-          "label": "Education Skill 029",
+          "name": "Teaching Reflection 029",
+          "label": "Teaching Reflection 029",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Education Skill 029"
+            "Teaching Reflection 029"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -692,11 +692,11 @@
         },
         {
           "uid": "skill_232dd4ce27214930abf005bf",
-          "name": "Education Skill 030",
-          "label": "Education Skill 030",
+          "name": "Program Evaluation 030",
+          "label": "Program Evaluation 030",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Education Skill 030"
+            "Program Evaluation 030"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -704,11 +704,11 @@
         },
         {
           "uid": "skill_34ea2e82b3884af389151b48",
-          "name": "Education Skill 031",
-          "label": "Education Skill 031",
+          "name": "Learning Facilitation 031",
+          "label": "Learning Facilitation 031",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Education Skill 031"
+            "Learning Facilitation 031"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -716,11 +716,11 @@
         },
         {
           "uid": "skill_ccc07740cdb1405ca8bdbfb7",
-          "name": "Education Skill 032",
-          "label": "Education Skill 032",
+          "name": "Curriculum Delivery 032",
+          "label": "Curriculum Delivery 032",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Education Skill 032"
+            "Curriculum Delivery 032"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -728,11 +728,11 @@
         },
         {
           "uid": "skill_d80abe70276f40e1bf6f315b",
-          "name": "Education Skill 033",
-          "label": "Education Skill 033",
+          "name": "Assessment Review 033",
+          "label": "Assessment Review 033",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Education Skill 033"
+            "Assessment Review 033"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -740,11 +740,11 @@
         },
         {
           "uid": "skill_539633a790aa43ee8f6222f7",
-          "name": "Education Skill 034",
-          "label": "Education Skill 034",
+          "name": "Classroom Support 034",
+          "label": "Classroom Support 034",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Education Skill 034"
+            "Classroom Support 034"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -752,11 +752,11 @@
         },
         {
           "uid": "skill_0503613938cb405581f735f2",
-          "name": "Education Skill 035",
-          "label": "Education Skill 035",
+          "name": "Student Progress Tracking 035",
+          "label": "Student Progress Tracking 035",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Education Skill 035"
+            "Student Progress Tracking 035"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -764,11 +764,11 @@
         },
         {
           "uid": "skill_6a194c059c994546af591fe8",
-          "name": "Education Skill 036",
-          "label": "Education Skill 036",
+          "name": "Instructional Improvement 036",
+          "label": "Instructional Improvement 036",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Education Skill 036"
+            "Instructional Improvement 036"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -776,11 +776,11 @@
         },
         {
           "uid": "skill_e84fe81be5aa4bd3ada16575",
-          "name": "Education Skill 037",
-          "label": "Education Skill 037",
+          "name": "Learner Engagement 037",
+          "label": "Learner Engagement 037",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Education Skill 037"
+            "Learner Engagement 037"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -788,11 +788,11 @@
         },
         {
           "uid": "skill_7d90d229fedc44c3afedb027",
-          "name": "Education Skill 038",
-          "label": "Education Skill 038",
+          "name": "Academic Communication 038",
+          "label": "Academic Communication 038",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Education Skill 038"
+            "Academic Communication 038"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -800,11 +800,11 @@
         },
         {
           "uid": "skill_a228de184b3d4e59bbea135c",
-          "name": "Education Skill 039",
-          "label": "Education Skill 039",
+          "name": "Teaching Reflection 039",
+          "label": "Teaching Reflection 039",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Education Skill 039"
+            "Teaching Reflection 039"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -812,11 +812,11 @@
         },
         {
           "uid": "skill_7e193cda643549309a36169a",
-          "name": "Education Skill 040",
-          "label": "Education Skill 040",
+          "name": "Program Evaluation 040",
+          "label": "Program Evaluation 040",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Education Skill 040"
+            "Program Evaluation 040"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -824,11 +824,11 @@
         },
         {
           "uid": "skill_434de77f967b415691d82e79",
-          "name": "Education Skill 041",
-          "label": "Education Skill 041",
+          "name": "Learning Facilitation 041",
+          "label": "Learning Facilitation 041",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Education Skill 041"
+            "Learning Facilitation 041"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -836,11 +836,11 @@
         },
         {
           "uid": "skill_edb62548466f40daab27790d",
-          "name": "Education Skill 042",
-          "label": "Education Skill 042",
+          "name": "Curriculum Delivery 042",
+          "label": "Curriculum Delivery 042",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Education Skill 042"
+            "Curriculum Delivery 042"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -848,11 +848,11 @@
         },
         {
           "uid": "skill_68b87d64f3194e67a65ecd65",
-          "name": "Education Skill 043",
-          "label": "Education Skill 043",
+          "name": "Assessment Review 043",
+          "label": "Assessment Review 043",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Education Skill 043"
+            "Assessment Review 043"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -860,11 +860,11 @@
         },
         {
           "uid": "skill_4f5bf250e6a34d0cb167b729",
-          "name": "Education Skill 044",
-          "label": "Education Skill 044",
+          "name": "Classroom Support 044",
+          "label": "Classroom Support 044",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Education Skill 044"
+            "Classroom Support 044"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -872,11 +872,11 @@
         },
         {
           "uid": "skill_48e799f771a449aba2ffd992",
-          "name": "Education Skill 045",
-          "label": "Education Skill 045",
+          "name": "Student Progress Tracking 045",
+          "label": "Student Progress Tracking 045",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Education Skill 045"
+            "Student Progress Tracking 045"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -884,11 +884,11 @@
         },
         {
           "uid": "skill_7d4c13babc1348dfb4f2642d",
-          "name": "Education Skill 046",
-          "label": "Education Skill 046",
+          "name": "Instructional Improvement 046",
+          "label": "Instructional Improvement 046",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Education Skill 046"
+            "Instructional Improvement 046"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -896,11 +896,11 @@
         },
         {
           "uid": "skill_82badc2f271c42ffa7ea74bd",
-          "name": "Education Skill 047",
-          "label": "Education Skill 047",
+          "name": "Learner Engagement 047",
+          "label": "Learner Engagement 047",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Education Skill 047"
+            "Learner Engagement 047"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -908,11 +908,11 @@
         },
         {
           "uid": "skill_158ba3a5c6034eb0b4387e3b",
-          "name": "Education Skill 048",
-          "label": "Education Skill 048",
+          "name": "Academic Communication 048",
+          "label": "Academic Communication 048",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Education Skill 048"
+            "Academic Communication 048"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -920,11 +920,11 @@
         },
         {
           "uid": "skill_cfefe209eda84de79c2f81de",
-          "name": "Education Skill 049",
-          "label": "Education Skill 049",
+          "name": "Teaching Reflection 049",
+          "label": "Teaching Reflection 049",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Education Skill 049"
+            "Teaching Reflection 049"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -932,11 +932,11 @@
         },
         {
           "uid": "skill_eeac64431e084c679d3378a2",
-          "name": "Education Skill 050",
-          "label": "Education Skill 050",
+          "name": "Program Evaluation 050",
+          "label": "Program Evaluation 050",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Education Skill 050"
+            "Program Evaluation 050"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -944,11 +944,11 @@
         },
         {
           "uid": "skill_650711f142b84f7ba7e8b71e",
-          "name": "Education Skill 051",
-          "label": "Education Skill 051",
+          "name": "Learning Facilitation 051",
+          "label": "Learning Facilitation 051",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Education Skill 051"
+            "Learning Facilitation 051"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -956,11 +956,11 @@
         },
         {
           "uid": "skill_d28c797a7d68417f9404d76e",
-          "name": "Education Skill 052",
-          "label": "Education Skill 052",
+          "name": "Curriculum Delivery 052",
+          "label": "Curriculum Delivery 052",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Education Skill 052"
+            "Curriculum Delivery 052"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -968,11 +968,11 @@
         },
         {
           "uid": "skill_4c64c1908f0e41be85888647",
-          "name": "Education Skill 053",
-          "label": "Education Skill 053",
+          "name": "Assessment Review 053",
+          "label": "Assessment Review 053",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Education Skill 053"
+            "Assessment Review 053"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -980,11 +980,11 @@
         },
         {
           "uid": "skill_3ce966c2003541079da16041",
-          "name": "Education Skill 054",
-          "label": "Education Skill 054",
+          "name": "Classroom Support 054",
+          "label": "Classroom Support 054",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Education Skill 054"
+            "Classroom Support 054"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -992,11 +992,11 @@
         },
         {
           "uid": "skill_5bebef4e58084e6c83e4eb89",
-          "name": "Education Skill 055",
-          "label": "Education Skill 055",
+          "name": "Student Progress Tracking 055",
+          "label": "Student Progress Tracking 055",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Education Skill 055"
+            "Student Progress Tracking 055"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1004,11 +1004,11 @@
         },
         {
           "uid": "skill_6ddcb74e015044019451ba2d",
-          "name": "Education Skill 056",
-          "label": "Education Skill 056",
+          "name": "Instructional Improvement 056",
+          "label": "Instructional Improvement 056",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Education Skill 056"
+            "Instructional Improvement 056"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1016,11 +1016,11 @@
         },
         {
           "uid": "skill_21036a022f5e4973ac0ea09f",
-          "name": "Education Skill 057",
-          "label": "Education Skill 057",
+          "name": "Learner Engagement 057",
+          "label": "Learner Engagement 057",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Education Skill 057"
+            "Learner Engagement 057"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1028,11 +1028,11 @@
         },
         {
           "uid": "skill_8f8c4aef16f24573b6970c7a",
-          "name": "Education Skill 058",
-          "label": "Education Skill 058",
+          "name": "Academic Communication 058",
+          "label": "Academic Communication 058",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Education Skill 058"
+            "Academic Communication 058"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1040,11 +1040,11 @@
         },
         {
           "uid": "skill_237e0ede7684440fa5904685",
-          "name": "Education Skill 059",
-          "label": "Education Skill 059",
+          "name": "Teaching Reflection 059",
+          "label": "Teaching Reflection 059",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Education Skill 059"
+            "Teaching Reflection 059"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1052,11 +1052,11 @@
         },
         {
           "uid": "skill_7fadda0c3be14c33ba095b70",
-          "name": "Education Skill 060",
-          "label": "Education Skill 060",
+          "name": "Program Evaluation 060",
+          "label": "Program Evaluation 060",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Education Skill 060"
+            "Program Evaluation 060"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1064,11 +1064,11 @@
         },
         {
           "uid": "skill_47a2fc571ff94cc2a0bf1054",
-          "name": "Education Skill 061",
-          "label": "Education Skill 061",
+          "name": "Learning Facilitation 061",
+          "label": "Learning Facilitation 061",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Education Skill 061"
+            "Learning Facilitation 061"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1076,11 +1076,11 @@
         },
         {
           "uid": "skill_7df9b64e85e74b1fa6c2b35d",
-          "name": "Education Skill 062",
-          "label": "Education Skill 062",
+          "name": "Curriculum Delivery 062",
+          "label": "Curriculum Delivery 062",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Education Skill 062"
+            "Curriculum Delivery 062"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1088,11 +1088,11 @@
         },
         {
           "uid": "skill_83c3bbcea2854baab0a024aa",
-          "name": "Education Skill 063",
-          "label": "Education Skill 063",
+          "name": "Assessment Review 063",
+          "label": "Assessment Review 063",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Education Skill 063"
+            "Assessment Review 063"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1100,11 +1100,11 @@
         },
         {
           "uid": "skill_081b7dd22e1545bc9b77e2bc",
-          "name": "Education Skill 064",
-          "label": "Education Skill 064",
+          "name": "Classroom Support 064",
+          "label": "Classroom Support 064",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Education Skill 064"
+            "Classroom Support 064"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1112,11 +1112,11 @@
         },
         {
           "uid": "skill_6d01cfcb2ce7449b9c35119a",
-          "name": "Education Skill 065",
-          "label": "Education Skill 065",
+          "name": "Student Progress Tracking 065",
+          "label": "Student Progress Tracking 065",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Education Skill 065"
+            "Student Progress Tracking 065"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1124,11 +1124,11 @@
         },
         {
           "uid": "skill_2aaa42988a124ea584129eb4",
-          "name": "Education Skill 066",
-          "label": "Education Skill 066",
+          "name": "Instructional Improvement 066",
+          "label": "Instructional Improvement 066",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Education Skill 066"
+            "Instructional Improvement 066"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1136,11 +1136,11 @@
         },
         {
           "uid": "skill_6296ae0472c54aaa8f391bd0",
-          "name": "Education Skill 067",
-          "label": "Education Skill 067",
+          "name": "Learner Engagement 067",
+          "label": "Learner Engagement 067",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Education Skill 067"
+            "Learner Engagement 067"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1148,11 +1148,11 @@
         },
         {
           "uid": "skill_235e4bbbdaf44b94a1e6613d",
-          "name": "Education Skill 068",
-          "label": "Education Skill 068",
+          "name": "Academic Communication 068",
+          "label": "Academic Communication 068",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Education Skill 068"
+            "Academic Communication 068"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1160,11 +1160,11 @@
         },
         {
           "uid": "skill_7ab5132c43be4cab9b109a11",
-          "name": "Education Skill 069",
-          "label": "Education Skill 069",
+          "name": "Teaching Reflection 069",
+          "label": "Teaching Reflection 069",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Education Skill 069"
+            "Teaching Reflection 069"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1172,11 +1172,11 @@
         },
         {
           "uid": "skill_4e56d82fd0d84fe2b93b4fd6",
-          "name": "Education Skill 070",
-          "label": "Education Skill 070",
+          "name": "Program Evaluation 070",
+          "label": "Program Evaluation 070",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Education Skill 070"
+            "Program Evaluation 070"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1184,11 +1184,11 @@
         },
         {
           "uid": "skill_923686a33b7b43689c15d360",
-          "name": "Education Skill 071",
-          "label": "Education Skill 071",
+          "name": "Learning Facilitation 071",
+          "label": "Learning Facilitation 071",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Education Skill 071"
+            "Learning Facilitation 071"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1196,11 +1196,11 @@
         },
         {
           "uid": "skill_357b29cc6ead4275ac4090f1",
-          "name": "Education Skill 072",
-          "label": "Education Skill 072",
+          "name": "Curriculum Delivery 072",
+          "label": "Curriculum Delivery 072",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Education Skill 072"
+            "Curriculum Delivery 072"
           ],
           "low_surface_forms": [],
           "abbreviations": [],

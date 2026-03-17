@@ -342,11 +342,11 @@
         },
         {
           "uid": "skill_04389e8b730c4fb993935a86",
-          "name": "Creative Skill 001",
-          "label": "Creative Skill 001",
+          "name": "Concept Development 001",
+          "label": "Concept Development 001",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Creative Skill 001"
+            "Concept Development 001"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -354,11 +354,11 @@
         },
         {
           "uid": "skill_8f74552c7b564ff5b49081be",
-          "name": "Creative Skill 002",
-          "label": "Creative Skill 002",
+          "name": "Visual Communication 002",
+          "label": "Visual Communication 002",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Creative Skill 002"
+            "Visual Communication 002"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -366,11 +366,11 @@
         },
         {
           "uid": "skill_8e886a9a5f364f828ced6af3",
-          "name": "Creative Skill 003",
-          "label": "Creative Skill 003",
+          "name": "Design Iteration 003",
+          "label": "Design Iteration 003",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Creative Skill 003"
+            "Design Iteration 003"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -378,11 +378,11 @@
         },
         {
           "uid": "skill_fc1168199e734aa39d782889",
-          "name": "Creative Skill 004",
-          "label": "Creative Skill 004",
+          "name": "Creative Presentation 004",
+          "label": "Creative Presentation 004",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Creative Skill 004"
+            "Creative Presentation 004"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -390,11 +390,11 @@
         },
         {
           "uid": "skill_1527b9be45864446af9675e4",
-          "name": "Creative Skill 005",
-          "label": "Creative Skill 005",
+          "name": "Asset Production 005",
+          "label": "Asset Production 005",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Creative Skill 005"
+            "Asset Production 005"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -402,11 +402,11 @@
         },
         {
           "uid": "skill_a7de5329043243139c6341ff",
-          "name": "Creative Skill 006",
-          "label": "Creative Skill 006",
+          "name": "Narrative Development 006",
+          "label": "Narrative Development 006",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Creative Skill 006"
+            "Narrative Development 006"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -414,11 +414,11 @@
         },
         {
           "uid": "skill_ac8808ff0e314890b14ca393",
-          "name": "Creative Skill 007",
-          "label": "Creative Skill 007",
+          "name": "Aesthetic Evaluation 007",
+          "label": "Aesthetic Evaluation 007",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Creative Skill 007"
+            "Aesthetic Evaluation 007"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -426,11 +426,11 @@
         },
         {
           "uid": "skill_d881396da47a4388b710583a",
-          "name": "Creative Skill 008",
-          "label": "Creative Skill 008",
+          "name": "Portfolio Enhancement 008",
+          "label": "Portfolio Enhancement 008",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Creative Skill 008"
+            "Portfolio Enhancement 008"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -438,11 +438,11 @@
         },
         {
           "uid": "skill_c0b7f45059b846b89028f5f7",
-          "name": "Creative Skill 009",
-          "label": "Creative Skill 009",
+          "name": "Collaborative Design 009",
+          "label": "Collaborative Design 009",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Creative Skill 009"
+            "Collaborative Design 009"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -450,11 +450,11 @@
         },
         {
           "uid": "skill_cc32774c210a48518906608b",
-          "name": "Creative Skill 010",
-          "label": "Creative Skill 010",
+          "name": "Creative Execution 010",
+          "label": "Creative Execution 010",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Creative Skill 010"
+            "Creative Execution 010"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -462,11 +462,11 @@
         },
         {
           "uid": "skill_3406d441a9704678b18545b3",
-          "name": "Creative Skill 011",
-          "label": "Creative Skill 011",
+          "name": "Concept Development 011",
+          "label": "Concept Development 011",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Creative Skill 011"
+            "Concept Development 011"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -474,11 +474,11 @@
         },
         {
           "uid": "skill_ece25ddb09f8465885ae6480",
-          "name": "Creative Skill 012",
-          "label": "Creative Skill 012",
+          "name": "Visual Communication 012",
+          "label": "Visual Communication 012",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Creative Skill 012"
+            "Visual Communication 012"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -486,11 +486,11 @@
         },
         {
           "uid": "skill_fb210ea5c3e04c5ea44653b4",
-          "name": "Creative Skill 013",
-          "label": "Creative Skill 013",
+          "name": "Design Iteration 013",
+          "label": "Design Iteration 013",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Creative Skill 013"
+            "Design Iteration 013"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -498,11 +498,11 @@
         },
         {
           "uid": "skill_29c0edc007e1451dab5e28a4",
-          "name": "Creative Skill 014",
-          "label": "Creative Skill 014",
+          "name": "Creative Presentation 014",
+          "label": "Creative Presentation 014",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Creative Skill 014"
+            "Creative Presentation 014"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -510,11 +510,11 @@
         },
         {
           "uid": "skill_803b6c62a2894fe8a9738b24",
-          "name": "Creative Skill 015",
-          "label": "Creative Skill 015",
+          "name": "Asset Production 015",
+          "label": "Asset Production 015",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Creative Skill 015"
+            "Asset Production 015"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -522,11 +522,11 @@
         },
         {
           "uid": "skill_749e4f482392486a923b1782",
-          "name": "Creative Skill 016",
-          "label": "Creative Skill 016",
+          "name": "Narrative Development 016",
+          "label": "Narrative Development 016",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Creative Skill 016"
+            "Narrative Development 016"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -534,11 +534,11 @@
         },
         {
           "uid": "skill_4ffb9ca278c648f9aab801ab",
-          "name": "Creative Skill 017",
-          "label": "Creative Skill 017",
+          "name": "Aesthetic Evaluation 017",
+          "label": "Aesthetic Evaluation 017",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Creative Skill 017"
+            "Aesthetic Evaluation 017"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -546,11 +546,11 @@
         },
         {
           "uid": "skill_43f66ddcf4874d599e7d4237",
-          "name": "Creative Skill 018",
-          "label": "Creative Skill 018",
+          "name": "Portfolio Enhancement 018",
+          "label": "Portfolio Enhancement 018",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Creative Skill 018"
+            "Portfolio Enhancement 018"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -558,11 +558,11 @@
         },
         {
           "uid": "skill_8d18a1173b844421accbfc6e",
-          "name": "Creative Skill 019",
-          "label": "Creative Skill 019",
+          "name": "Collaborative Design 019",
+          "label": "Collaborative Design 019",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Creative Skill 019"
+            "Collaborative Design 019"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -570,11 +570,11 @@
         },
         {
           "uid": "skill_15a29ca1952143179365044d",
-          "name": "Creative Skill 020",
-          "label": "Creative Skill 020",
+          "name": "Creative Execution 020",
+          "label": "Creative Execution 020",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Creative Skill 020"
+            "Creative Execution 020"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -582,11 +582,11 @@
         },
         {
           "uid": "skill_8c82ff35af364abfb61b5669",
-          "name": "Creative Skill 021",
-          "label": "Creative Skill 021",
+          "name": "Concept Development 021",
+          "label": "Concept Development 021",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Creative Skill 021"
+            "Concept Development 021"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -594,11 +594,11 @@
         },
         {
           "uid": "skill_f75d8300149240d98bf958ae",
-          "name": "Creative Skill 022",
-          "label": "Creative Skill 022",
+          "name": "Visual Communication 022",
+          "label": "Visual Communication 022",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Creative Skill 022"
+            "Visual Communication 022"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -606,11 +606,11 @@
         },
         {
           "uid": "skill_b6c4b32649e6436f87cc27d6",
-          "name": "Creative Skill 023",
-          "label": "Creative Skill 023",
+          "name": "Design Iteration 023",
+          "label": "Design Iteration 023",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Creative Skill 023"
+            "Design Iteration 023"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -618,11 +618,11 @@
         },
         {
           "uid": "skill_9a4746526fa7444686a09be5",
-          "name": "Creative Skill 024",
-          "label": "Creative Skill 024",
+          "name": "Creative Presentation 024",
+          "label": "Creative Presentation 024",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Creative Skill 024"
+            "Creative Presentation 024"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -630,11 +630,11 @@
         },
         {
           "uid": "skill_4e6faaf2fc1b418ea188fd4f",
-          "name": "Creative Skill 025",
-          "label": "Creative Skill 025",
+          "name": "Asset Production 025",
+          "label": "Asset Production 025",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Creative Skill 025"
+            "Asset Production 025"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -642,11 +642,11 @@
         },
         {
           "uid": "skill_e25ecbbcc9a0456cbb569d01",
-          "name": "Creative Skill 026",
-          "label": "Creative Skill 026",
+          "name": "Narrative Development 026",
+          "label": "Narrative Development 026",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Creative Skill 026"
+            "Narrative Development 026"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -654,11 +654,11 @@
         },
         {
           "uid": "skill_2fda8869b6334a59961f0a76",
-          "name": "Creative Skill 027",
-          "label": "Creative Skill 027",
+          "name": "Aesthetic Evaluation 027",
+          "label": "Aesthetic Evaluation 027",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Creative Skill 027"
+            "Aesthetic Evaluation 027"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -666,11 +666,11 @@
         },
         {
           "uid": "skill_23d367e46082491e8a5c5e9d",
-          "name": "Creative Skill 028",
-          "label": "Creative Skill 028",
+          "name": "Portfolio Enhancement 028",
+          "label": "Portfolio Enhancement 028",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Creative Skill 028"
+            "Portfolio Enhancement 028"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -678,11 +678,11 @@
         },
         {
           "uid": "skill_0628f5ca0bbb4e96b832a8a3",
-          "name": "Creative Skill 029",
-          "label": "Creative Skill 029",
+          "name": "Collaborative Design 029",
+          "label": "Collaborative Design 029",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Creative Skill 029"
+            "Collaborative Design 029"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -690,11 +690,11 @@
         },
         {
           "uid": "skill_7bc7a20efad34affba301fde",
-          "name": "Creative Skill 030",
-          "label": "Creative Skill 030",
+          "name": "Creative Execution 030",
+          "label": "Creative Execution 030",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Creative Skill 030"
+            "Creative Execution 030"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -702,11 +702,11 @@
         },
         {
           "uid": "skill_a3cf2d8d3aa4427c9e050674",
-          "name": "Creative Skill 031",
-          "label": "Creative Skill 031",
+          "name": "Concept Development 031",
+          "label": "Concept Development 031",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Creative Skill 031"
+            "Concept Development 031"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -714,11 +714,11 @@
         },
         {
           "uid": "skill_fd92e791abee49059742291f",
-          "name": "Creative Skill 032",
-          "label": "Creative Skill 032",
+          "name": "Visual Communication 032",
+          "label": "Visual Communication 032",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Creative Skill 032"
+            "Visual Communication 032"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -726,11 +726,11 @@
         },
         {
           "uid": "skill_b4b75c9a458c4073ba503c22",
-          "name": "Creative Skill 033",
-          "label": "Creative Skill 033",
+          "name": "Design Iteration 033",
+          "label": "Design Iteration 033",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Creative Skill 033"
+            "Design Iteration 033"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -738,11 +738,11 @@
         },
         {
           "uid": "skill_05fd0a5347a148309f04bd2e",
-          "name": "Creative Skill 034",
-          "label": "Creative Skill 034",
+          "name": "Creative Presentation 034",
+          "label": "Creative Presentation 034",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Creative Skill 034"
+            "Creative Presentation 034"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -750,11 +750,11 @@
         },
         {
           "uid": "skill_dfd5bc19e8fe4ead8c8b3ee6",
-          "name": "Creative Skill 035",
-          "label": "Creative Skill 035",
+          "name": "Asset Production 035",
+          "label": "Asset Production 035",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Creative Skill 035"
+            "Asset Production 035"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -762,11 +762,11 @@
         },
         {
           "uid": "skill_b5134e0149cf491aaca30eaa",
-          "name": "Creative Skill 036",
-          "label": "Creative Skill 036",
+          "name": "Narrative Development 036",
+          "label": "Narrative Development 036",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Creative Skill 036"
+            "Narrative Development 036"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -774,11 +774,11 @@
         },
         {
           "uid": "skill_4f444ed87e3a4698b89dc93e",
-          "name": "Creative Skill 037",
-          "label": "Creative Skill 037",
+          "name": "Aesthetic Evaluation 037",
+          "label": "Aesthetic Evaluation 037",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Creative Skill 037"
+            "Aesthetic Evaluation 037"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -786,11 +786,11 @@
         },
         {
           "uid": "skill_8138787b635b4f50b2b6c2eb",
-          "name": "Creative Skill 038",
-          "label": "Creative Skill 038",
+          "name": "Portfolio Enhancement 038",
+          "label": "Portfolio Enhancement 038",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Creative Skill 038"
+            "Portfolio Enhancement 038"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -798,11 +798,11 @@
         },
         {
           "uid": "skill_fc98f0ef39b94e7aa0bc9b59",
-          "name": "Creative Skill 039",
-          "label": "Creative Skill 039",
+          "name": "Collaborative Design 039",
+          "label": "Collaborative Design 039",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Creative Skill 039"
+            "Collaborative Design 039"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -810,11 +810,11 @@
         },
         {
           "uid": "skill_05f0a373ab1248758dc8d6a3",
-          "name": "Creative Skill 040",
-          "label": "Creative Skill 040",
+          "name": "Creative Execution 040",
+          "label": "Creative Execution 040",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Creative Skill 040"
+            "Creative Execution 040"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -822,11 +822,11 @@
         },
         {
           "uid": "skill_8698493612aa4810a6332873",
-          "name": "Creative Skill 041",
-          "label": "Creative Skill 041",
+          "name": "Concept Development 041",
+          "label": "Concept Development 041",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Creative Skill 041"
+            "Concept Development 041"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -834,11 +834,11 @@
         },
         {
           "uid": "skill_15c5ecd2576b4b95bedf698b",
-          "name": "Creative Skill 042",
-          "label": "Creative Skill 042",
+          "name": "Visual Communication 042",
+          "label": "Visual Communication 042",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Creative Skill 042"
+            "Visual Communication 042"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -846,11 +846,11 @@
         },
         {
           "uid": "skill_b431ca47fa164743a216474c",
-          "name": "Creative Skill 043",
-          "label": "Creative Skill 043",
+          "name": "Design Iteration 043",
+          "label": "Design Iteration 043",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Creative Skill 043"
+            "Design Iteration 043"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -858,11 +858,11 @@
         },
         {
           "uid": "skill_52c55d8932854b02a80e1854",
-          "name": "Creative Skill 044",
-          "label": "Creative Skill 044",
+          "name": "Creative Presentation 044",
+          "label": "Creative Presentation 044",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Creative Skill 044"
+            "Creative Presentation 044"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -870,11 +870,11 @@
         },
         {
           "uid": "skill_0146ea2ae9c44fceb8a16675",
-          "name": "Creative Skill 045",
-          "label": "Creative Skill 045",
+          "name": "Asset Production 045",
+          "label": "Asset Production 045",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Creative Skill 045"
+            "Asset Production 045"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -882,11 +882,11 @@
         },
         {
           "uid": "skill_c472ba3c92f94af599920c09",
-          "name": "Creative Skill 046",
-          "label": "Creative Skill 046",
+          "name": "Narrative Development 046",
+          "label": "Narrative Development 046",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Creative Skill 046"
+            "Narrative Development 046"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -894,11 +894,11 @@
         },
         {
           "uid": "skill_fae90e565ed34b008f4f059a",
-          "name": "Creative Skill 047",
-          "label": "Creative Skill 047",
+          "name": "Aesthetic Evaluation 047",
+          "label": "Aesthetic Evaluation 047",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Creative Skill 047"
+            "Aesthetic Evaluation 047"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -906,11 +906,11 @@
         },
         {
           "uid": "skill_8825169387624b8d941499ad",
-          "name": "Creative Skill 048",
-          "label": "Creative Skill 048",
+          "name": "Portfolio Enhancement 048",
+          "label": "Portfolio Enhancement 048",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Creative Skill 048"
+            "Portfolio Enhancement 048"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -918,11 +918,11 @@
         },
         {
           "uid": "skill_ede0583fb23848a5acc28da2",
-          "name": "Creative Skill 049",
-          "label": "Creative Skill 049",
+          "name": "Collaborative Design 049",
+          "label": "Collaborative Design 049",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Creative Skill 049"
+            "Collaborative Design 049"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -930,11 +930,11 @@
         },
         {
           "uid": "skill_1e819ef3b44b4d1689e286a4",
-          "name": "Creative Skill 050",
-          "label": "Creative Skill 050",
+          "name": "Creative Execution 050",
+          "label": "Creative Execution 050",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Creative Skill 050"
+            "Creative Execution 050"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -942,11 +942,11 @@
         },
         {
           "uid": "skill_db2ad5f391dc49728e18d38a",
-          "name": "Creative Skill 051",
-          "label": "Creative Skill 051",
+          "name": "Concept Development 051",
+          "label": "Concept Development 051",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Creative Skill 051"
+            "Concept Development 051"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -954,11 +954,11 @@
         },
         {
           "uid": "skill_85e2fed5f1a24382a8ac05ea",
-          "name": "Creative Skill 052",
-          "label": "Creative Skill 052",
+          "name": "Visual Communication 052",
+          "label": "Visual Communication 052",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Creative Skill 052"
+            "Visual Communication 052"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -966,11 +966,11 @@
         },
         {
           "uid": "skill_bc6f4c0fe8cb4877a8e219a8",
-          "name": "Creative Skill 053",
-          "label": "Creative Skill 053",
+          "name": "Design Iteration 053",
+          "label": "Design Iteration 053",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Creative Skill 053"
+            "Design Iteration 053"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -978,11 +978,11 @@
         },
         {
           "uid": "skill_ab9f8fb0660b4ebead68664c",
-          "name": "Creative Skill 054",
-          "label": "Creative Skill 054",
+          "name": "Creative Presentation 054",
+          "label": "Creative Presentation 054",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Creative Skill 054"
+            "Creative Presentation 054"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -990,11 +990,11 @@
         },
         {
           "uid": "skill_57efb9893864440fa0eae299",
-          "name": "Creative Skill 055",
-          "label": "Creative Skill 055",
+          "name": "Asset Production 055",
+          "label": "Asset Production 055",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Creative Skill 055"
+            "Asset Production 055"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1002,11 +1002,11 @@
         },
         {
           "uid": "skill_aa927bbd38b5456984758f6e",
-          "name": "Creative Skill 056",
-          "label": "Creative Skill 056",
+          "name": "Narrative Development 056",
+          "label": "Narrative Development 056",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Creative Skill 056"
+            "Narrative Development 056"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1014,11 +1014,11 @@
         },
         {
           "uid": "skill_d6dfc827e8ac42ba97678dd6",
-          "name": "Creative Skill 057",
-          "label": "Creative Skill 057",
+          "name": "Aesthetic Evaluation 057",
+          "label": "Aesthetic Evaluation 057",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Creative Skill 057"
+            "Aesthetic Evaluation 057"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1026,11 +1026,11 @@
         },
         {
           "uid": "skill_0cc6986dc2a64598b298ac09",
-          "name": "Creative Skill 058",
-          "label": "Creative Skill 058",
+          "name": "Portfolio Enhancement 058",
+          "label": "Portfolio Enhancement 058",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Creative Skill 058"
+            "Portfolio Enhancement 058"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1038,11 +1038,11 @@
         },
         {
           "uid": "skill_846cbb4f15e14227acff48f6",
-          "name": "Creative Skill 059",
-          "label": "Creative Skill 059",
+          "name": "Collaborative Design 059",
+          "label": "Collaborative Design 059",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Creative Skill 059"
+            "Collaborative Design 059"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1050,11 +1050,11 @@
         },
         {
           "uid": "skill_b0407693bd864d5a916e597f",
-          "name": "Creative Skill 060",
-          "label": "Creative Skill 060",
+          "name": "Creative Execution 060",
+          "label": "Creative Execution 060",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Creative Skill 060"
+            "Creative Execution 060"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1062,11 +1062,11 @@
         },
         {
           "uid": "skill_06ff326cfec14005b5ec309d",
-          "name": "Creative Skill 061",
-          "label": "Creative Skill 061",
+          "name": "Concept Development 061",
+          "label": "Concept Development 061",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Creative Skill 061"
+            "Concept Development 061"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1074,11 +1074,11 @@
         },
         {
           "uid": "skill_9f979e0718384b468b1224fc",
-          "name": "Creative Skill 062",
-          "label": "Creative Skill 062",
+          "name": "Visual Communication 062",
+          "label": "Visual Communication 062",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Creative Skill 062"
+            "Visual Communication 062"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1086,11 +1086,11 @@
         },
         {
           "uid": "skill_540b31774235401ea5b727a3",
-          "name": "Creative Skill 063",
-          "label": "Creative Skill 063",
+          "name": "Design Iteration 063",
+          "label": "Design Iteration 063",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Creative Skill 063"
+            "Design Iteration 063"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1098,11 +1098,11 @@
         },
         {
           "uid": "skill_6e8ccdc1b8b34cfc89ea7de2",
-          "name": "Creative Skill 064",
-          "label": "Creative Skill 064",
+          "name": "Creative Presentation 064",
+          "label": "Creative Presentation 064",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Creative Skill 064"
+            "Creative Presentation 064"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1110,11 +1110,11 @@
         },
         {
           "uid": "skill_2465bd3a480044be819e06ea",
-          "name": "Creative Skill 065",
-          "label": "Creative Skill 065",
+          "name": "Asset Production 065",
+          "label": "Asset Production 065",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Creative Skill 065"
+            "Asset Production 065"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1122,11 +1122,11 @@
         },
         {
           "uid": "skill_e1c14fc3354a4d01bf9805ed",
-          "name": "Creative Skill 066",
-          "label": "Creative Skill 066",
+          "name": "Narrative Development 066",
+          "label": "Narrative Development 066",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Creative Skill 066"
+            "Narrative Development 066"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1134,11 +1134,11 @@
         },
         {
           "uid": "skill_487c734c997f4aa0910c842b",
-          "name": "Creative Skill 067",
-          "label": "Creative Skill 067",
+          "name": "Aesthetic Evaluation 067",
+          "label": "Aesthetic Evaluation 067",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Creative Skill 067"
+            "Aesthetic Evaluation 067"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1146,11 +1146,11 @@
         },
         {
           "uid": "skill_627b435d90404a14b1a5b96d",
-          "name": "Creative Skill 068",
-          "label": "Creative Skill 068",
+          "name": "Portfolio Enhancement 068",
+          "label": "Portfolio Enhancement 068",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Creative Skill 068"
+            "Portfolio Enhancement 068"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1158,11 +1158,11 @@
         },
         {
           "uid": "skill_ba139f6464c9445e83bf638b",
-          "name": "Creative Skill 069",
-          "label": "Creative Skill 069",
+          "name": "Collaborative Design 069",
+          "label": "Collaborative Design 069",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Creative Skill 069"
+            "Collaborative Design 069"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1170,11 +1170,11 @@
         },
         {
           "uid": "skill_2fc13c0b96314c88912747ec",
-          "name": "Creative Skill 070",
-          "label": "Creative Skill 070",
+          "name": "Creative Execution 070",
+          "label": "Creative Execution 070",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Creative Skill 070"
+            "Creative Execution 070"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1182,11 +1182,11 @@
         },
         {
           "uid": "skill_4c26760d4a96450f9617ecac",
-          "name": "Creative Skill 071",
-          "label": "Creative Skill 071",
+          "name": "Concept Development 071",
+          "label": "Concept Development 071",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Creative Skill 071"
+            "Concept Development 071"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1194,11 +1194,11 @@
         },
         {
           "uid": "skill_79cd361e1a6644fba17d39f9",
-          "name": "Creative Skill 072",
-          "label": "Creative Skill 072",
+          "name": "Visual Communication 072",
+          "label": "Visual Communication 072",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Creative Skill 072"
+            "Visual Communication 072"
           ],
           "low_surface_forms": [],
           "abbreviations": [],

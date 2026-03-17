@@ -354,11 +354,11 @@
         },
         {
           "uid": "skill_471defd44d2344118f1c3361",
-          "name": "Marketing Skill 001",
-          "label": "Marketing Skill 001",
+          "name": "Campaign Strategy 001",
+          "label": "Campaign Strategy 001",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Marketing Skill 001"
+            "Campaign Strategy 001"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -366,11 +366,11 @@
         },
         {
           "uid": "skill_4bd2fe47b32f4e73ba788669",
-          "name": "Marketing Skill 002",
-          "label": "Marketing Skill 002",
+          "name": "Audience Segmentation 002",
+          "label": "Audience Segmentation 002",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Marketing Skill 002"
+            "Audience Segmentation 002"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -378,11 +378,11 @@
         },
         {
           "uid": "skill_5efdd4dcee414ad5a580e3b3",
-          "name": "Marketing Skill 003",
-          "label": "Marketing Skill 003",
+          "name": "Brand Positioning 003",
+          "label": "Brand Positioning 003",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Marketing Skill 003"
+            "Brand Positioning 003"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -390,11 +390,11 @@
         },
         {
           "uid": "skill_080132f8c98b4a08a374cfa7",
-          "name": "Marketing Skill 004",
-          "label": "Marketing Skill 004",
+          "name": "Lead Nurturing 004",
+          "label": "Lead Nurturing 004",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Marketing Skill 004"
+            "Lead Nurturing 004"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -402,11 +402,11 @@
         },
         {
           "uid": "skill_02751c14d7134b509b86fc96",
-          "name": "Marketing Skill 005",
-          "label": "Marketing Skill 005",
+          "name": "Channel Optimization 005",
+          "label": "Channel Optimization 005",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Marketing Skill 005"
+            "Channel Optimization 005"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -414,11 +414,11 @@
         },
         {
           "uid": "skill_cad382e2f0aa4ef183db9223",
-          "name": "Marketing Skill 006",
-          "label": "Marketing Skill 006",
+          "name": "Funnel Analysis 006",
+          "label": "Funnel Analysis 006",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Marketing Skill 006"
+            "Funnel Analysis 006"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -426,11 +426,11 @@
         },
         {
           "uid": "skill_b4f7836bb5794f62bc1f81aa",
-          "name": "Marketing Skill 007",
-          "label": "Marketing Skill 007",
+          "name": "Content Distribution 007",
+          "label": "Content Distribution 007",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Marketing Skill 007"
+            "Content Distribution 007"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -438,11 +438,11 @@
         },
         {
           "uid": "skill_e4ae456384bb457e884f49d8",
-          "name": "Marketing Skill 008",
-          "label": "Marketing Skill 008",
+          "name": "Growth Planning 008",
+          "label": "Growth Planning 008",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Marketing Skill 008"
+            "Growth Planning 008"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -450,11 +450,11 @@
         },
         {
           "uid": "skill_a2b3c9b747864854a559150d",
-          "name": "Marketing Skill 009",
-          "label": "Marketing Skill 009",
+          "name": "Customer Journey Mapping 009",
+          "label": "Customer Journey Mapping 009",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Marketing Skill 009"
+            "Customer Journey Mapping 009"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -462,11 +462,11 @@
         },
         {
           "uid": "skill_e71481a6abba410ca249c017",
-          "name": "Marketing Skill 010",
-          "label": "Marketing Skill 010",
+          "name": "Performance Reporting 010",
+          "label": "Performance Reporting 010",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Marketing Skill 010"
+            "Performance Reporting 010"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -474,11 +474,11 @@
         },
         {
           "uid": "skill_7976fbbd8f4b4028b6010878",
-          "name": "Marketing Skill 011",
-          "label": "Marketing Skill 011",
+          "name": "Campaign Strategy 011",
+          "label": "Campaign Strategy 011",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Marketing Skill 011"
+            "Campaign Strategy 011"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -486,11 +486,11 @@
         },
         {
           "uid": "skill_1238306d9024423ba803127c",
-          "name": "Marketing Skill 012",
-          "label": "Marketing Skill 012",
+          "name": "Audience Segmentation 012",
+          "label": "Audience Segmentation 012",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Marketing Skill 012"
+            "Audience Segmentation 012"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -498,11 +498,11 @@
         },
         {
           "uid": "skill_9a548f9431ea40d797d1ff66",
-          "name": "Marketing Skill 013",
-          "label": "Marketing Skill 013",
+          "name": "Brand Positioning 013",
+          "label": "Brand Positioning 013",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Marketing Skill 013"
+            "Brand Positioning 013"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -510,11 +510,11 @@
         },
         {
           "uid": "skill_485ad4b3d7494fae95ba6ee8",
-          "name": "Marketing Skill 014",
-          "label": "Marketing Skill 014",
+          "name": "Lead Nurturing 014",
+          "label": "Lead Nurturing 014",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Marketing Skill 014"
+            "Lead Nurturing 014"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -522,11 +522,11 @@
         },
         {
           "uid": "skill_d222e33857434ddb8623b090",
-          "name": "Marketing Skill 015",
-          "label": "Marketing Skill 015",
+          "name": "Channel Optimization 015",
+          "label": "Channel Optimization 015",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Marketing Skill 015"
+            "Channel Optimization 015"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -534,11 +534,11 @@
         },
         {
           "uid": "skill_91dcce40d24c426bb315504b",
-          "name": "Marketing Skill 016",
-          "label": "Marketing Skill 016",
+          "name": "Funnel Analysis 016",
+          "label": "Funnel Analysis 016",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Marketing Skill 016"
+            "Funnel Analysis 016"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -546,11 +546,11 @@
         },
         {
           "uid": "skill_baa624f819644948817f015b",
-          "name": "Marketing Skill 017",
-          "label": "Marketing Skill 017",
+          "name": "Content Distribution 017",
+          "label": "Content Distribution 017",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Marketing Skill 017"
+            "Content Distribution 017"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -558,11 +558,11 @@
         },
         {
           "uid": "skill_18a9041dcb7c420080adda87",
-          "name": "Marketing Skill 018",
-          "label": "Marketing Skill 018",
+          "name": "Growth Planning 018",
+          "label": "Growth Planning 018",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Marketing Skill 018"
+            "Growth Planning 018"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -570,11 +570,11 @@
         },
         {
           "uid": "skill_3f20433158f6411dac22bb7a",
-          "name": "Marketing Skill 019",
-          "label": "Marketing Skill 019",
+          "name": "Customer Journey Mapping 019",
+          "label": "Customer Journey Mapping 019",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Marketing Skill 019"
+            "Customer Journey Mapping 019"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -582,11 +582,11 @@
         },
         {
           "uid": "skill_d3a8e9878c1741ccaff0204f",
-          "name": "Marketing Skill 020",
-          "label": "Marketing Skill 020",
+          "name": "Performance Reporting 020",
+          "label": "Performance Reporting 020",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Marketing Skill 020"
+            "Performance Reporting 020"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -594,11 +594,11 @@
         },
         {
           "uid": "skill_2f27269bde4747cbb05eab2c",
-          "name": "Marketing Skill 021",
-          "label": "Marketing Skill 021",
+          "name": "Campaign Strategy 021",
+          "label": "Campaign Strategy 021",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Marketing Skill 021"
+            "Campaign Strategy 021"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -606,11 +606,11 @@
         },
         {
           "uid": "skill_f1a77d89635d44058159c134",
-          "name": "Marketing Skill 022",
-          "label": "Marketing Skill 022",
+          "name": "Audience Segmentation 022",
+          "label": "Audience Segmentation 022",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Marketing Skill 022"
+            "Audience Segmentation 022"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -618,11 +618,11 @@
         },
         {
           "uid": "skill_dc4205d9c8ab4e10b85f23cd",
-          "name": "Marketing Skill 023",
-          "label": "Marketing Skill 023",
+          "name": "Brand Positioning 023",
+          "label": "Brand Positioning 023",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Marketing Skill 023"
+            "Brand Positioning 023"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -630,11 +630,11 @@
         },
         {
           "uid": "skill_dc3ba015519f48ea88cc5b69",
-          "name": "Marketing Skill 024",
-          "label": "Marketing Skill 024",
+          "name": "Lead Nurturing 024",
+          "label": "Lead Nurturing 024",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Marketing Skill 024"
+            "Lead Nurturing 024"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -642,11 +642,11 @@
         },
         {
           "uid": "skill_ca8a096dc01f4b93beee8cfb",
-          "name": "Marketing Skill 025",
-          "label": "Marketing Skill 025",
+          "name": "Channel Optimization 025",
+          "label": "Channel Optimization 025",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Marketing Skill 025"
+            "Channel Optimization 025"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -654,11 +654,11 @@
         },
         {
           "uid": "skill_2de5021f35e849b3917770a7",
-          "name": "Marketing Skill 026",
-          "label": "Marketing Skill 026",
+          "name": "Funnel Analysis 026",
+          "label": "Funnel Analysis 026",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Marketing Skill 026"
+            "Funnel Analysis 026"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -666,11 +666,11 @@
         },
         {
           "uid": "skill_137c8e4900e94a8483b1a2a9",
-          "name": "Marketing Skill 027",
-          "label": "Marketing Skill 027",
+          "name": "Content Distribution 027",
+          "label": "Content Distribution 027",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Marketing Skill 027"
+            "Content Distribution 027"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -678,11 +678,11 @@
         },
         {
           "uid": "skill_3adff322af1744a2b96cdcf2",
-          "name": "Marketing Skill 028",
-          "label": "Marketing Skill 028",
+          "name": "Growth Planning 028",
+          "label": "Growth Planning 028",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Marketing Skill 028"
+            "Growth Planning 028"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -690,11 +690,11 @@
         },
         {
           "uid": "skill_4a1d7bc64f8d488aa4075fa9",
-          "name": "Marketing Skill 029",
-          "label": "Marketing Skill 029",
+          "name": "Customer Journey Mapping 029",
+          "label": "Customer Journey Mapping 029",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Marketing Skill 029"
+            "Customer Journey Mapping 029"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -702,11 +702,11 @@
         },
         {
           "uid": "skill_6d819d15a5c7459a9255ac25",
-          "name": "Marketing Skill 030",
-          "label": "Marketing Skill 030",
+          "name": "Performance Reporting 030",
+          "label": "Performance Reporting 030",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Marketing Skill 030"
+            "Performance Reporting 030"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -714,11 +714,11 @@
         },
         {
           "uid": "skill_8ef44f29409d4a9ca78d8c42",
-          "name": "Marketing Skill 031",
-          "label": "Marketing Skill 031",
+          "name": "Campaign Strategy 031",
+          "label": "Campaign Strategy 031",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Marketing Skill 031"
+            "Campaign Strategy 031"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -726,11 +726,11 @@
         },
         {
           "uid": "skill_764fd9cbe3ae4a80adc47f4e",
-          "name": "Marketing Skill 032",
-          "label": "Marketing Skill 032",
+          "name": "Audience Segmentation 032",
+          "label": "Audience Segmentation 032",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Marketing Skill 032"
+            "Audience Segmentation 032"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -738,11 +738,11 @@
         },
         {
           "uid": "skill_b2a7b9dda6f3414ebcac9fac",
-          "name": "Marketing Skill 033",
-          "label": "Marketing Skill 033",
+          "name": "Brand Positioning 033",
+          "label": "Brand Positioning 033",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Marketing Skill 033"
+            "Brand Positioning 033"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -750,11 +750,11 @@
         },
         {
           "uid": "skill_49dec3d406194c0f95d997e1",
-          "name": "Marketing Skill 034",
-          "label": "Marketing Skill 034",
+          "name": "Lead Nurturing 034",
+          "label": "Lead Nurturing 034",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Marketing Skill 034"
+            "Lead Nurturing 034"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -762,11 +762,11 @@
         },
         {
           "uid": "skill_b19dea6170b14d1895989cac",
-          "name": "Marketing Skill 035",
-          "label": "Marketing Skill 035",
+          "name": "Channel Optimization 035",
+          "label": "Channel Optimization 035",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Marketing Skill 035"
+            "Channel Optimization 035"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -774,11 +774,11 @@
         },
         {
           "uid": "skill_0d2cbd921ee94a05820f1ae3",
-          "name": "Marketing Skill 036",
-          "label": "Marketing Skill 036",
+          "name": "Funnel Analysis 036",
+          "label": "Funnel Analysis 036",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Marketing Skill 036"
+            "Funnel Analysis 036"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -786,11 +786,11 @@
         },
         {
           "uid": "skill_ee38a5863b1a45779d37b63d",
-          "name": "Marketing Skill 037",
-          "label": "Marketing Skill 037",
+          "name": "Content Distribution 037",
+          "label": "Content Distribution 037",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Marketing Skill 037"
+            "Content Distribution 037"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -798,11 +798,11 @@
         },
         {
           "uid": "skill_026c60cd58224dfcbdbd7564",
-          "name": "Marketing Skill 038",
-          "label": "Marketing Skill 038",
+          "name": "Growth Planning 038",
+          "label": "Growth Planning 038",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Marketing Skill 038"
+            "Growth Planning 038"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -810,11 +810,11 @@
         },
         {
           "uid": "skill_8bfd21ef2e064bca8005e300",
-          "name": "Marketing Skill 039",
-          "label": "Marketing Skill 039",
+          "name": "Customer Journey Mapping 039",
+          "label": "Customer Journey Mapping 039",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Marketing Skill 039"
+            "Customer Journey Mapping 039"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -822,11 +822,11 @@
         },
         {
           "uid": "skill_5555650bfa9542d4901280ec",
-          "name": "Marketing Skill 040",
-          "label": "Marketing Skill 040",
+          "name": "Performance Reporting 040",
+          "label": "Performance Reporting 040",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Marketing Skill 040"
+            "Performance Reporting 040"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -834,11 +834,11 @@
         },
         {
           "uid": "skill_3d97808efbd44c33be2d86e4",
-          "name": "Marketing Skill 041",
-          "label": "Marketing Skill 041",
+          "name": "Campaign Strategy 041",
+          "label": "Campaign Strategy 041",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Marketing Skill 041"
+            "Campaign Strategy 041"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -846,11 +846,11 @@
         },
         {
           "uid": "skill_17586e8a383a4f488d898369",
-          "name": "Marketing Skill 042",
-          "label": "Marketing Skill 042",
+          "name": "Audience Segmentation 042",
+          "label": "Audience Segmentation 042",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Marketing Skill 042"
+            "Audience Segmentation 042"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -858,11 +858,11 @@
         },
         {
           "uid": "skill_5b729d010912450393a8e1b5",
-          "name": "Marketing Skill 043",
-          "label": "Marketing Skill 043",
+          "name": "Brand Positioning 043",
+          "label": "Brand Positioning 043",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Marketing Skill 043"
+            "Brand Positioning 043"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -870,11 +870,11 @@
         },
         {
           "uid": "skill_198fda3afabc443ba8a6d1b5",
-          "name": "Marketing Skill 044",
-          "label": "Marketing Skill 044",
+          "name": "Lead Nurturing 044",
+          "label": "Lead Nurturing 044",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Marketing Skill 044"
+            "Lead Nurturing 044"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -882,11 +882,11 @@
         },
         {
           "uid": "skill_5cd6b9d2199c4b5e83c1248b",
-          "name": "Marketing Skill 045",
-          "label": "Marketing Skill 045",
+          "name": "Channel Optimization 045",
+          "label": "Channel Optimization 045",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Marketing Skill 045"
+            "Channel Optimization 045"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -894,11 +894,11 @@
         },
         {
           "uid": "skill_5abcda63341841e79931e75b",
-          "name": "Marketing Skill 046",
-          "label": "Marketing Skill 046",
+          "name": "Funnel Analysis 046",
+          "label": "Funnel Analysis 046",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Marketing Skill 046"
+            "Funnel Analysis 046"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -906,11 +906,11 @@
         },
         {
           "uid": "skill_021856f5ce654061b6f92dc9",
-          "name": "Marketing Skill 047",
-          "label": "Marketing Skill 047",
+          "name": "Content Distribution 047",
+          "label": "Content Distribution 047",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Marketing Skill 047"
+            "Content Distribution 047"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -918,11 +918,11 @@
         },
         {
           "uid": "skill_62a0d9d7c7f546edb52f60b9",
-          "name": "Marketing Skill 048",
-          "label": "Marketing Skill 048",
+          "name": "Growth Planning 048",
+          "label": "Growth Planning 048",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Marketing Skill 048"
+            "Growth Planning 048"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -930,11 +930,11 @@
         },
         {
           "uid": "skill_fa4a0f566fe24078a04f333c",
-          "name": "Marketing Skill 049",
-          "label": "Marketing Skill 049",
+          "name": "Customer Journey Mapping 049",
+          "label": "Customer Journey Mapping 049",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Marketing Skill 049"
+            "Customer Journey Mapping 049"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -942,11 +942,11 @@
         },
         {
           "uid": "skill_ef17aae4935d4769bffc72f7",
-          "name": "Marketing Skill 050",
-          "label": "Marketing Skill 050",
+          "name": "Performance Reporting 050",
+          "label": "Performance Reporting 050",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Marketing Skill 050"
+            "Performance Reporting 050"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -954,11 +954,11 @@
         },
         {
           "uid": "skill_7bdbac17a6f442799eda1b0e",
-          "name": "Marketing Skill 051",
-          "label": "Marketing Skill 051",
+          "name": "Campaign Strategy 051",
+          "label": "Campaign Strategy 051",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Marketing Skill 051"
+            "Campaign Strategy 051"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -966,11 +966,11 @@
         },
         {
           "uid": "skill_08c58d1b30fb4f609a87488a",
-          "name": "Marketing Skill 052",
-          "label": "Marketing Skill 052",
+          "name": "Audience Segmentation 052",
+          "label": "Audience Segmentation 052",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Marketing Skill 052"
+            "Audience Segmentation 052"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -978,11 +978,11 @@
         },
         {
           "uid": "skill_371f9b340ea94cfebfd047ac",
-          "name": "Marketing Skill 053",
-          "label": "Marketing Skill 053",
+          "name": "Brand Positioning 053",
+          "label": "Brand Positioning 053",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Marketing Skill 053"
+            "Brand Positioning 053"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -990,11 +990,11 @@
         },
         {
           "uid": "skill_9d63d26109c14eb5b1e8cf15",
-          "name": "Marketing Skill 054",
-          "label": "Marketing Skill 054",
+          "name": "Lead Nurturing 054",
+          "label": "Lead Nurturing 054",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Marketing Skill 054"
+            "Lead Nurturing 054"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1002,11 +1002,11 @@
         },
         {
           "uid": "skill_dec14234420d4e959a8c51be",
-          "name": "Marketing Skill 055",
-          "label": "Marketing Skill 055",
+          "name": "Channel Optimization 055",
+          "label": "Channel Optimization 055",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Marketing Skill 055"
+            "Channel Optimization 055"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1014,11 +1014,11 @@
         },
         {
           "uid": "skill_b7876247431e4500940a837b",
-          "name": "Marketing Skill 056",
-          "label": "Marketing Skill 056",
+          "name": "Funnel Analysis 056",
+          "label": "Funnel Analysis 056",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Marketing Skill 056"
+            "Funnel Analysis 056"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1026,11 +1026,11 @@
         },
         {
           "uid": "skill_0da3826d8fb84f8598563094",
-          "name": "Marketing Skill 057",
-          "label": "Marketing Skill 057",
+          "name": "Content Distribution 057",
+          "label": "Content Distribution 057",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Marketing Skill 057"
+            "Content Distribution 057"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1038,11 +1038,11 @@
         },
         {
           "uid": "skill_4311959be99a4e2990b0ae6c",
-          "name": "Marketing Skill 058",
-          "label": "Marketing Skill 058",
+          "name": "Growth Planning 058",
+          "label": "Growth Planning 058",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Marketing Skill 058"
+            "Growth Planning 058"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1050,11 +1050,11 @@
         },
         {
           "uid": "skill_7a981d4136ba4fec932df242",
-          "name": "Marketing Skill 059",
-          "label": "Marketing Skill 059",
+          "name": "Customer Journey Mapping 059",
+          "label": "Customer Journey Mapping 059",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Marketing Skill 059"
+            "Customer Journey Mapping 059"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1062,11 +1062,11 @@
         },
         {
           "uid": "skill_afde98b1042e463783722867",
-          "name": "Marketing Skill 060",
-          "label": "Marketing Skill 060",
+          "name": "Performance Reporting 060",
+          "label": "Performance Reporting 060",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Marketing Skill 060"
+            "Performance Reporting 060"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1074,11 +1074,11 @@
         },
         {
           "uid": "skill_663d82bba7014f53a2d41a9b",
-          "name": "Marketing Skill 061",
-          "label": "Marketing Skill 061",
+          "name": "Campaign Strategy 061",
+          "label": "Campaign Strategy 061",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Marketing Skill 061"
+            "Campaign Strategy 061"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1086,11 +1086,11 @@
         },
         {
           "uid": "skill_6ca3a15c3dfd41d08bee9d11",
-          "name": "Marketing Skill 062",
-          "label": "Marketing Skill 062",
+          "name": "Audience Segmentation 062",
+          "label": "Audience Segmentation 062",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Marketing Skill 062"
+            "Audience Segmentation 062"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1098,11 +1098,11 @@
         },
         {
           "uid": "skill_a6db0ce5bc9c459bb91ae561",
-          "name": "Marketing Skill 063",
-          "label": "Marketing Skill 063",
+          "name": "Brand Positioning 063",
+          "label": "Brand Positioning 063",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Marketing Skill 063"
+            "Brand Positioning 063"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1110,11 +1110,11 @@
         },
         {
           "uid": "skill_1ffffc23f2944dd18d8cc5b1",
-          "name": "Marketing Skill 064",
-          "label": "Marketing Skill 064",
+          "name": "Lead Nurturing 064",
+          "label": "Lead Nurturing 064",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Marketing Skill 064"
+            "Lead Nurturing 064"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1122,11 +1122,11 @@
         },
         {
           "uid": "skill_9ac43e4b2281447c803b0aa5",
-          "name": "Marketing Skill 065",
-          "label": "Marketing Skill 065",
+          "name": "Channel Optimization 065",
+          "label": "Channel Optimization 065",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Marketing Skill 065"
+            "Channel Optimization 065"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1134,11 +1134,11 @@
         },
         {
           "uid": "skill_016f99cdd1c2450e8c66b347",
-          "name": "Marketing Skill 066",
-          "label": "Marketing Skill 066",
+          "name": "Funnel Analysis 066",
+          "label": "Funnel Analysis 066",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Marketing Skill 066"
+            "Funnel Analysis 066"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1146,11 +1146,11 @@
         },
         {
           "uid": "skill_077cd6d81a4544b693424058",
-          "name": "Marketing Skill 067",
-          "label": "Marketing Skill 067",
+          "name": "Content Distribution 067",
+          "label": "Content Distribution 067",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Marketing Skill 067"
+            "Content Distribution 067"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1158,11 +1158,11 @@
         },
         {
           "uid": "skill_eaf5e1f4b87b470b95327a69",
-          "name": "Marketing Skill 068",
-          "label": "Marketing Skill 068",
+          "name": "Growth Planning 068",
+          "label": "Growth Planning 068",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Marketing Skill 068"
+            "Growth Planning 068"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1170,11 +1170,11 @@
         },
         {
           "uid": "skill_8ebca830d96941039586e3a2",
-          "name": "Marketing Skill 069",
-          "label": "Marketing Skill 069",
+          "name": "Customer Journey Mapping 069",
+          "label": "Customer Journey Mapping 069",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Marketing Skill 069"
+            "Customer Journey Mapping 069"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1182,11 +1182,11 @@
         },
         {
           "uid": "skill_439dd4d545354cc080080e6d",
-          "name": "Marketing Skill 070",
-          "label": "Marketing Skill 070",
+          "name": "Performance Reporting 070",
+          "label": "Performance Reporting 070",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Marketing Skill 070"
+            "Performance Reporting 070"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1194,11 +1194,11 @@
         },
         {
           "uid": "skill_0b0be9f4f9734b1e986be930",
-          "name": "Marketing Skill 071",
-          "label": "Marketing Skill 071",
+          "name": "Campaign Strategy 071",
+          "label": "Campaign Strategy 071",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Marketing Skill 071"
+            "Campaign Strategy 071"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1206,11 +1206,11 @@
         },
         {
           "uid": "skill_3a49f4172130463781d7bec3",
-          "name": "Marketing Skill 072",
-          "label": "Marketing Skill 072",
+          "name": "Audience Segmentation 072",
+          "label": "Audience Segmentation 072",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Marketing Skill 072"
+            "Audience Segmentation 072"
           ],
           "low_surface_forms": [],
           "abbreviations": [],

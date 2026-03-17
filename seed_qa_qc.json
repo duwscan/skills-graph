@@ -350,11 +350,11 @@
         },
         {
           "uid": "skill_6359b0f436614016acfa390e",
-          "name": "Qa Qc Skill 001",
-          "label": "Qa Qc Skill 001",
+          "name": "Quality Planning 001",
+          "label": "Quality Planning 001",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Qa Qc Skill 001"
+            "Quality Planning 001"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -362,11 +362,11 @@
         },
         {
           "uid": "skill_352119453f3d4804bdc65fb1",
-          "name": "Qa Qc Skill 002",
-          "label": "Qa Qc Skill 002",
+          "name": "Inspection Execution 002",
+          "label": "Inspection Execution 002",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Qa Qc Skill 002"
+            "Inspection Execution 002"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -374,11 +374,11 @@
         },
         {
           "uid": "skill_fb6d484e0f6640b0a4aca93f",
-          "name": "Qa Qc Skill 003",
-          "label": "Qa Qc Skill 003",
+          "name": "Defect Analysis 003",
+          "label": "Defect Analysis 003",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Qa Qc Skill 003"
+            "Defect Analysis 003"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -386,11 +386,11 @@
         },
         {
           "uid": "skill_a3ddcdca9d8c4db6b132716f",
-          "name": "Qa Qc Skill 004",
-          "label": "Qa Qc Skill 004",
+          "name": "Compliance Verification 004",
+          "label": "Compliance Verification 004",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Qa Qc Skill 004"
+            "Compliance Verification 004"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -398,11 +398,11 @@
         },
         {
           "uid": "skill_1f38c776a3a04ff2a11f2066",
-          "name": "Qa Qc Skill 005",
-          "label": "Qa Qc Skill 005",
+          "name": "Test Documentation 005",
+          "label": "Test Documentation 005",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Qa Qc Skill 005"
+            "Test Documentation 005"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -410,11 +410,11 @@
         },
         {
           "uid": "skill_eba7876d9893453ea211da7a",
-          "name": "Qa Qc Skill 006",
-          "label": "Qa Qc Skill 006",
+          "name": "Quality Metrics Review 006",
+          "label": "Quality Metrics Review 006",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Qa Qc Skill 006"
+            "Quality Metrics Review 006"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -422,11 +422,11 @@
         },
         {
           "uid": "skill_758a12905d324f01a5af22a3",
-          "name": "Qa Qc Skill 007",
-          "label": "Qa Qc Skill 007",
+          "name": "Corrective Action Tracking 007",
+          "label": "Corrective Action Tracking 007",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Qa Qc Skill 007"
+            "Corrective Action Tracking 007"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -434,11 +434,11 @@
         },
         {
           "uid": "skill_fea4a2f01a6f42fcbe6080af",
-          "name": "Qa Qc Skill 008",
-          "label": "Qa Qc Skill 008",
+          "name": "Audit Preparation 008",
+          "label": "Audit Preparation 008",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Qa Qc Skill 008"
+            "Audit Preparation 008"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -446,11 +446,11 @@
         },
         {
           "uid": "skill_322af49f3bdd4ea5bb2abb83",
-          "name": "Qa Qc Skill 009",
-          "label": "Qa Qc Skill 009",
+          "name": "Validation Support 009",
+          "label": "Validation Support 009",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Qa Qc Skill 009"
+            "Validation Support 009"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -458,11 +458,11 @@
         },
         {
           "uid": "skill_6989b991efee4b8283aafea2",
-          "name": "Qa Qc Skill 010",
-          "label": "Qa Qc Skill 010",
+          "name": "Risk Assessment 010",
+          "label": "Risk Assessment 010",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Qa Qc Skill 010"
+            "Risk Assessment 010"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -470,11 +470,11 @@
         },
         {
           "uid": "skill_7de4a653d8f54a96aab9aa78",
-          "name": "Qa Qc Skill 011",
-          "label": "Qa Qc Skill 011",
+          "name": "Quality Planning 011",
+          "label": "Quality Planning 011",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Qa Qc Skill 011"
+            "Quality Planning 011"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -482,11 +482,11 @@
         },
         {
           "uid": "skill_a8be8209cc424824bb31a8e8",
-          "name": "Qa Qc Skill 012",
-          "label": "Qa Qc Skill 012",
+          "name": "Inspection Execution 012",
+          "label": "Inspection Execution 012",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Qa Qc Skill 012"
+            "Inspection Execution 012"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -494,11 +494,11 @@
         },
         {
           "uid": "skill_4662b8b203a642f7912297ca",
-          "name": "Qa Qc Skill 013",
-          "label": "Qa Qc Skill 013",
+          "name": "Defect Analysis 013",
+          "label": "Defect Analysis 013",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Qa Qc Skill 013"
+            "Defect Analysis 013"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -506,11 +506,11 @@
         },
         {
           "uid": "skill_4e5a9a3eafbb46a9820be57f",
-          "name": "Qa Qc Skill 014",
-          "label": "Qa Qc Skill 014",
+          "name": "Compliance Verification 014",
+          "label": "Compliance Verification 014",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Qa Qc Skill 014"
+            "Compliance Verification 014"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -518,11 +518,11 @@
         },
         {
           "uid": "skill_34d174b315d042cc964c5770",
-          "name": "Qa Qc Skill 015",
-          "label": "Qa Qc Skill 015",
+          "name": "Test Documentation 015",
+          "label": "Test Documentation 015",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Qa Qc Skill 015"
+            "Test Documentation 015"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -530,11 +530,11 @@
         },
         {
           "uid": "skill_42ba4d95d91344baa413255b",
-          "name": "Qa Qc Skill 016",
-          "label": "Qa Qc Skill 016",
+          "name": "Quality Metrics Review 016",
+          "label": "Quality Metrics Review 016",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Qa Qc Skill 016"
+            "Quality Metrics Review 016"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -542,11 +542,11 @@
         },
         {
           "uid": "skill_32bc7fd9d325480da91662e7",
-          "name": "Qa Qc Skill 017",
-          "label": "Qa Qc Skill 017",
+          "name": "Corrective Action Tracking 017",
+          "label": "Corrective Action Tracking 017",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Qa Qc Skill 017"
+            "Corrective Action Tracking 017"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -554,11 +554,11 @@
         },
         {
           "uid": "skill_7029f4b39d83478faf24be69",
-          "name": "Qa Qc Skill 018",
-          "label": "Qa Qc Skill 018",
+          "name": "Audit Preparation 018",
+          "label": "Audit Preparation 018",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Qa Qc Skill 018"
+            "Audit Preparation 018"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -566,11 +566,11 @@
         },
         {
           "uid": "skill_c017c0782e8a49aa890fd8e6",
-          "name": "Qa Qc Skill 019",
-          "label": "Qa Qc Skill 019",
+          "name": "Validation Support 019",
+          "label": "Validation Support 019",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Qa Qc Skill 019"
+            "Validation Support 019"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -578,11 +578,11 @@
         },
         {
           "uid": "skill_e2dbfbdb92174cd5b518c66c",
-          "name": "Qa Qc Skill 020",
-          "label": "Qa Qc Skill 020",
+          "name": "Risk Assessment 020",
+          "label": "Risk Assessment 020",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Qa Qc Skill 020"
+            "Risk Assessment 020"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -590,11 +590,11 @@
         },
         {
           "uid": "skill_cfc9961b7f3b412a97d1b004",
-          "name": "Qa Qc Skill 021",
-          "label": "Qa Qc Skill 021",
+          "name": "Quality Planning 021",
+          "label": "Quality Planning 021",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Qa Qc Skill 021"
+            "Quality Planning 021"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -602,11 +602,11 @@
         },
         {
           "uid": "skill_fc4ace84940b438cb3f84e5d",
-          "name": "Qa Qc Skill 022",
-          "label": "Qa Qc Skill 022",
+          "name": "Inspection Execution 022",
+          "label": "Inspection Execution 022",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Qa Qc Skill 022"
+            "Inspection Execution 022"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -614,11 +614,11 @@
         },
         {
           "uid": "skill_dbbe701302f14934b0ec3728",
-          "name": "Qa Qc Skill 023",
-          "label": "Qa Qc Skill 023",
+          "name": "Defect Analysis 023",
+          "label": "Defect Analysis 023",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Qa Qc Skill 023"
+            "Defect Analysis 023"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -626,11 +626,11 @@
         },
         {
           "uid": "skill_abd27ef658e14570b29c6c5f",
-          "name": "Qa Qc Skill 024",
-          "label": "Qa Qc Skill 024",
+          "name": "Compliance Verification 024",
+          "label": "Compliance Verification 024",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Qa Qc Skill 024"
+            "Compliance Verification 024"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -638,11 +638,11 @@
         },
         {
           "uid": "skill_f35555a14401478f85b66cd9",
-          "name": "Qa Qc Skill 025",
-          "label": "Qa Qc Skill 025",
+          "name": "Test Documentation 025",
+          "label": "Test Documentation 025",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Qa Qc Skill 025"
+            "Test Documentation 025"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -650,11 +650,11 @@
         },
         {
           "uid": "skill_91fa61b379ef42968a0c7083",
-          "name": "Qa Qc Skill 026",
-          "label": "Qa Qc Skill 026",
+          "name": "Quality Metrics Review 026",
+          "label": "Quality Metrics Review 026",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Qa Qc Skill 026"
+            "Quality Metrics Review 026"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -662,11 +662,11 @@
         },
         {
           "uid": "skill_102f66a6a6544d82ad905ccf",
-          "name": "Qa Qc Skill 027",
-          "label": "Qa Qc Skill 027",
+          "name": "Corrective Action Tracking 027",
+          "label": "Corrective Action Tracking 027",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Qa Qc Skill 027"
+            "Corrective Action Tracking 027"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -674,11 +674,11 @@
         },
         {
           "uid": "skill_7cdc8fc8e63e4f689e8e0bdd",
-          "name": "Qa Qc Skill 028",
-          "label": "Qa Qc Skill 028",
+          "name": "Audit Preparation 028",
+          "label": "Audit Preparation 028",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Qa Qc Skill 028"
+            "Audit Preparation 028"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -686,11 +686,11 @@
         },
         {
           "uid": "skill_ce0986b041a74afcb2a6c1e5",
-          "name": "Qa Qc Skill 029",
-          "label": "Qa Qc Skill 029",
+          "name": "Validation Support 029",
+          "label": "Validation Support 029",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Qa Qc Skill 029"
+            "Validation Support 029"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -698,11 +698,11 @@
         },
         {
           "uid": "skill_2374982225ec46dbb98ba9e8",
-          "name": "Qa Qc Skill 030",
-          "label": "Qa Qc Skill 030",
+          "name": "Risk Assessment 030",
+          "label": "Risk Assessment 030",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Qa Qc Skill 030"
+            "Risk Assessment 030"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -710,11 +710,11 @@
         },
         {
           "uid": "skill_ff09f9ec916540aa91b19b86",
-          "name": "Qa Qc Skill 031",
-          "label": "Qa Qc Skill 031",
+          "name": "Quality Planning 031",
+          "label": "Quality Planning 031",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Qa Qc Skill 031"
+            "Quality Planning 031"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -722,11 +722,11 @@
         },
         {
           "uid": "skill_a0eea590cc8541149f03fafb",
-          "name": "Qa Qc Skill 032",
-          "label": "Qa Qc Skill 032",
+          "name": "Inspection Execution 032",
+          "label": "Inspection Execution 032",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Qa Qc Skill 032"
+            "Inspection Execution 032"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -734,11 +734,11 @@
         },
         {
           "uid": "skill_381fdca14ad64ce5baf3028c",
-          "name": "Qa Qc Skill 033",
-          "label": "Qa Qc Skill 033",
+          "name": "Defect Analysis 033",
+          "label": "Defect Analysis 033",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Qa Qc Skill 033"
+            "Defect Analysis 033"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -746,11 +746,11 @@
         },
         {
           "uid": "skill_4731ab6f3eb44c31989fd49e",
-          "name": "Qa Qc Skill 034",
-          "label": "Qa Qc Skill 034",
+          "name": "Compliance Verification 034",
+          "label": "Compliance Verification 034",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Qa Qc Skill 034"
+            "Compliance Verification 034"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -758,11 +758,11 @@
         },
         {
           "uid": "skill_0f171864901040a3957087cd",
-          "name": "Qa Qc Skill 035",
-          "label": "Qa Qc Skill 035",
+          "name": "Test Documentation 035",
+          "label": "Test Documentation 035",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Qa Qc Skill 035"
+            "Test Documentation 035"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -770,11 +770,11 @@
         },
         {
           "uid": "skill_c485d888f1364fd9a6ce1a0c",
-          "name": "Qa Qc Skill 036",
-          "label": "Qa Qc Skill 036",
+          "name": "Quality Metrics Review 036",
+          "label": "Quality Metrics Review 036",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Qa Qc Skill 036"
+            "Quality Metrics Review 036"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -782,11 +782,11 @@
         },
         {
           "uid": "skill_ae1608647ea547e5bf89ae51",
-          "name": "Qa Qc Skill 037",
-          "label": "Qa Qc Skill 037",
+          "name": "Corrective Action Tracking 037",
+          "label": "Corrective Action Tracking 037",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Qa Qc Skill 037"
+            "Corrective Action Tracking 037"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -794,11 +794,11 @@
         },
         {
           "uid": "skill_d563d56c991f4be3b6e56a71",
-          "name": "Qa Qc Skill 038",
-          "label": "Qa Qc Skill 038",
+          "name": "Audit Preparation 038",
+          "label": "Audit Preparation 038",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Qa Qc Skill 038"
+            "Audit Preparation 038"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -806,11 +806,11 @@
         },
         {
           "uid": "skill_5726249283914a0389a54e7f",
-          "name": "Qa Qc Skill 039",
-          "label": "Qa Qc Skill 039",
+          "name": "Validation Support 039",
+          "label": "Validation Support 039",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Qa Qc Skill 039"
+            "Validation Support 039"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -818,11 +818,11 @@
         },
         {
           "uid": "skill_54e5ab8fa9f541bd95e9b8df",
-          "name": "Qa Qc Skill 040",
-          "label": "Qa Qc Skill 040",
+          "name": "Risk Assessment 040",
+          "label": "Risk Assessment 040",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Qa Qc Skill 040"
+            "Risk Assessment 040"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -830,11 +830,11 @@
         },
         {
           "uid": "skill_6fae4a9e5f6446a3a0899c4e",
-          "name": "Qa Qc Skill 041",
-          "label": "Qa Qc Skill 041",
+          "name": "Quality Planning 041",
+          "label": "Quality Planning 041",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Qa Qc Skill 041"
+            "Quality Planning 041"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -842,11 +842,11 @@
         },
         {
           "uid": "skill_9d18636749b342d99709e6df",
-          "name": "Qa Qc Skill 042",
-          "label": "Qa Qc Skill 042",
+          "name": "Inspection Execution 042",
+          "label": "Inspection Execution 042",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Qa Qc Skill 042"
+            "Inspection Execution 042"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -854,11 +854,11 @@
         },
         {
           "uid": "skill_c3f0497bf5574bef90f3520b",
-          "name": "Qa Qc Skill 043",
-          "label": "Qa Qc Skill 043",
+          "name": "Defect Analysis 043",
+          "label": "Defect Analysis 043",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Qa Qc Skill 043"
+            "Defect Analysis 043"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -866,11 +866,11 @@
         },
         {
           "uid": "skill_e49b2392b16547a5bd9ea788",
-          "name": "Qa Qc Skill 044",
-          "label": "Qa Qc Skill 044",
+          "name": "Compliance Verification 044",
+          "label": "Compliance Verification 044",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Qa Qc Skill 044"
+            "Compliance Verification 044"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -878,11 +878,11 @@
         },
         {
           "uid": "skill_732707c9c1fa4b6f8bac2551",
-          "name": "Qa Qc Skill 045",
-          "label": "Qa Qc Skill 045",
+          "name": "Test Documentation 045",
+          "label": "Test Documentation 045",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Qa Qc Skill 045"
+            "Test Documentation 045"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -890,11 +890,11 @@
         },
         {
           "uid": "skill_7a62d7e3ddd64bbb95314476",
-          "name": "Qa Qc Skill 046",
-          "label": "Qa Qc Skill 046",
+          "name": "Quality Metrics Review 046",
+          "label": "Quality Metrics Review 046",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Qa Qc Skill 046"
+            "Quality Metrics Review 046"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -902,11 +902,11 @@
         },
         {
           "uid": "skill_653e6df16740426ead188c1b",
-          "name": "Qa Qc Skill 047",
-          "label": "Qa Qc Skill 047",
+          "name": "Corrective Action Tracking 047",
+          "label": "Corrective Action Tracking 047",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Qa Qc Skill 047"
+            "Corrective Action Tracking 047"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -914,11 +914,11 @@
         },
         {
           "uid": "skill_745855e7fc954f27bec7080a",
-          "name": "Qa Qc Skill 048",
-          "label": "Qa Qc Skill 048",
+          "name": "Audit Preparation 048",
+          "label": "Audit Preparation 048",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Qa Qc Skill 048"
+            "Audit Preparation 048"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -926,11 +926,11 @@
         },
         {
           "uid": "skill_693fb681bd534077ad9c1980",
-          "name": "Qa Qc Skill 049",
-          "label": "Qa Qc Skill 049",
+          "name": "Validation Support 049",
+          "label": "Validation Support 049",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Qa Qc Skill 049"
+            "Validation Support 049"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -938,11 +938,11 @@
         },
         {
           "uid": "skill_5c9759e2b02540d99784a4ce",
-          "name": "Qa Qc Skill 050",
-          "label": "Qa Qc Skill 050",
+          "name": "Risk Assessment 050",
+          "label": "Risk Assessment 050",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Qa Qc Skill 050"
+            "Risk Assessment 050"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -950,11 +950,11 @@
         },
         {
           "uid": "skill_020a91ecfc334aa1a7499b29",
-          "name": "Qa Qc Skill 051",
-          "label": "Qa Qc Skill 051",
+          "name": "Quality Planning 051",
+          "label": "Quality Planning 051",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Qa Qc Skill 051"
+            "Quality Planning 051"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -962,11 +962,11 @@
         },
         {
           "uid": "skill_07c947224b0142a8b772acf3",
-          "name": "Qa Qc Skill 052",
-          "label": "Qa Qc Skill 052",
+          "name": "Inspection Execution 052",
+          "label": "Inspection Execution 052",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Qa Qc Skill 052"
+            "Inspection Execution 052"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -974,11 +974,11 @@
         },
         {
           "uid": "skill_95d5a840abee47809fb6ecd6",
-          "name": "Qa Qc Skill 053",
-          "label": "Qa Qc Skill 053",
+          "name": "Defect Analysis 053",
+          "label": "Defect Analysis 053",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Qa Qc Skill 053"
+            "Defect Analysis 053"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -986,11 +986,11 @@
         },
         {
           "uid": "skill_a11289e95f1a42e28cac0de4",
-          "name": "Qa Qc Skill 054",
-          "label": "Qa Qc Skill 054",
+          "name": "Compliance Verification 054",
+          "label": "Compliance Verification 054",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Qa Qc Skill 054"
+            "Compliance Verification 054"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -998,11 +998,11 @@
         },
         {
           "uid": "skill_7aff96dfa39a4bc6b3960de1",
-          "name": "Qa Qc Skill 055",
-          "label": "Qa Qc Skill 055",
+          "name": "Test Documentation 055",
+          "label": "Test Documentation 055",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Qa Qc Skill 055"
+            "Test Documentation 055"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1010,11 +1010,11 @@
         },
         {
           "uid": "skill_77d4071f7aec48e3bd989494",
-          "name": "Qa Qc Skill 056",
-          "label": "Qa Qc Skill 056",
+          "name": "Quality Metrics Review 056",
+          "label": "Quality Metrics Review 056",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Qa Qc Skill 056"
+            "Quality Metrics Review 056"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1022,11 +1022,11 @@
         },
         {
           "uid": "skill_47a3ad43c7784104b6d0a74f",
-          "name": "Qa Qc Skill 057",
-          "label": "Qa Qc Skill 057",
+          "name": "Corrective Action Tracking 057",
+          "label": "Corrective Action Tracking 057",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Qa Qc Skill 057"
+            "Corrective Action Tracking 057"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1034,11 +1034,11 @@
         },
         {
           "uid": "skill_1e72082121b246b9be92a850",
-          "name": "Qa Qc Skill 058",
-          "label": "Qa Qc Skill 058",
+          "name": "Audit Preparation 058",
+          "label": "Audit Preparation 058",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Qa Qc Skill 058"
+            "Audit Preparation 058"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1046,11 +1046,11 @@
         },
         {
           "uid": "skill_ff466315ee7040f1b62b75f7",
-          "name": "Qa Qc Skill 059",
-          "label": "Qa Qc Skill 059",
+          "name": "Validation Support 059",
+          "label": "Validation Support 059",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Qa Qc Skill 059"
+            "Validation Support 059"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1058,11 +1058,11 @@
         },
         {
           "uid": "skill_451aaf9eea3142a19f3d0551",
-          "name": "Qa Qc Skill 060",
-          "label": "Qa Qc Skill 060",
+          "name": "Risk Assessment 060",
+          "label": "Risk Assessment 060",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Qa Qc Skill 060"
+            "Risk Assessment 060"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1070,11 +1070,11 @@
         },
         {
           "uid": "skill_4a080a2e449d445882818410",
-          "name": "Qa Qc Skill 061",
-          "label": "Qa Qc Skill 061",
+          "name": "Quality Planning 061",
+          "label": "Quality Planning 061",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Qa Qc Skill 061"
+            "Quality Planning 061"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1082,11 +1082,11 @@
         },
         {
           "uid": "skill_053a73d82dd34e5db797673f",
-          "name": "Qa Qc Skill 062",
-          "label": "Qa Qc Skill 062",
+          "name": "Inspection Execution 062",
+          "label": "Inspection Execution 062",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Qa Qc Skill 062"
+            "Inspection Execution 062"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1094,11 +1094,11 @@
         },
         {
           "uid": "skill_2d7924bb2a3e48268b3005b9",
-          "name": "Qa Qc Skill 063",
-          "label": "Qa Qc Skill 063",
+          "name": "Defect Analysis 063",
+          "label": "Defect Analysis 063",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Qa Qc Skill 063"
+            "Defect Analysis 063"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1106,11 +1106,11 @@
         },
         {
           "uid": "skill_3ff297614cf0435da8aca5e9",
-          "name": "Qa Qc Skill 064",
-          "label": "Qa Qc Skill 064",
+          "name": "Compliance Verification 064",
+          "label": "Compliance Verification 064",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Qa Qc Skill 064"
+            "Compliance Verification 064"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1118,11 +1118,11 @@
         },
         {
           "uid": "skill_9556d1acb7f0406681aaaf39",
-          "name": "Qa Qc Skill 065",
-          "label": "Qa Qc Skill 065",
+          "name": "Test Documentation 065",
+          "label": "Test Documentation 065",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Qa Qc Skill 065"
+            "Test Documentation 065"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1130,11 +1130,11 @@
         },
         {
           "uid": "skill_9a2cd29733944ad59c800a83",
-          "name": "Qa Qc Skill 066",
-          "label": "Qa Qc Skill 066",
+          "name": "Quality Metrics Review 066",
+          "label": "Quality Metrics Review 066",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Qa Qc Skill 066"
+            "Quality Metrics Review 066"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1142,11 +1142,11 @@
         },
         {
           "uid": "skill_dfc88c5065774f3194776830",
-          "name": "Qa Qc Skill 067",
-          "label": "Qa Qc Skill 067",
+          "name": "Corrective Action Tracking 067",
+          "label": "Corrective Action Tracking 067",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Qa Qc Skill 067"
+            "Corrective Action Tracking 067"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1154,11 +1154,11 @@
         },
         {
           "uid": "skill_82b2dd75e8454a50a1d4b1a1",
-          "name": "Qa Qc Skill 068",
-          "label": "Qa Qc Skill 068",
+          "name": "Audit Preparation 068",
+          "label": "Audit Preparation 068",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Qa Qc Skill 068"
+            "Audit Preparation 068"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1166,11 +1166,11 @@
         },
         {
           "uid": "skill_de07b6db116344188a0a4413",
-          "name": "Qa Qc Skill 069",
-          "label": "Qa Qc Skill 069",
+          "name": "Validation Support 069",
+          "label": "Validation Support 069",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Qa Qc Skill 069"
+            "Validation Support 069"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1178,11 +1178,11 @@
         },
         {
           "uid": "skill_4b0405ecfd2e400e883f9ff2",
-          "name": "Qa Qc Skill 070",
-          "label": "Qa Qc Skill 070",
+          "name": "Risk Assessment 070",
+          "label": "Risk Assessment 070",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Qa Qc Skill 070"
+            "Risk Assessment 070"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1190,11 +1190,11 @@
         },
         {
           "uid": "skill_1d7027f2b606421ca15bcd23",
-          "name": "Qa Qc Skill 071",
-          "label": "Qa Qc Skill 071",
+          "name": "Quality Planning 071",
+          "label": "Quality Planning 071",
           "skill_type": "domain",
           "high_surface_forms": [
-            "Qa Qc Skill 071"
+            "Quality Planning 071"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1202,11 +1202,11 @@
         },
         {
           "uid": "skill_eead00e852bc4525bb864bd7",
-          "name": "Qa Qc Skill 072",
-          "label": "Qa Qc Skill 072",
+          "name": "Inspection Execution 072",
+          "label": "Inspection Execution 072",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Qa Qc Skill 072"
+            "Inspection Execution 072"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
