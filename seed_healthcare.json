@@ -1205,6 +1205,246 @@
           "low_surface_forms": [],
           "abbreviations": [],
           "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_b2e009d4e33a46c98917f2e4",
+          "name": "Patient Triage",
+          "label": "Patient Triage",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Patient Triage"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_ece44c581d544598a9a0b45d",
+          "name": "Care Plan Development",
+          "label": "Care Plan Development",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Care Plan Development"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_04feba097c264bf18c854d76",
+          "name": "Medication Reconciliation",
+          "label": "Medication Reconciliation",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Medication Reconciliation"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_39955477dea94f838f486d42",
+          "name": "Telehealth Operations",
+          "label": "Telehealth Operations",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Telehealth Operations"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_7393b243e4dc4aeaa188f5a5",
+          "name": "Medical Coding ICD-10",
+          "label": "Medical Coding ICD-10",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Medical Coding ICD-10"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_55f79ab0556e4045bd62bfe8",
+          "name": "Revenue Cycle Management",
+          "label": "Revenue Cycle Management",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Revenue Cycle Management"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_1ed86cb3fb0e43f5b0cf65c9",
+          "name": "Health Insurance Verification",
+          "label": "Health Insurance Verification",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Health Insurance Verification"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_a5061a6f16ee49b0a2fb6c3e",
+          "name": "Clinical Quality Metrics",
+          "label": "Clinical Quality Metrics",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Clinical Quality Metrics"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_71f8de6cd37940d6a683ef6f",
+          "name": "Population Health Analytics",
+          "label": "Population Health Analytics",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Population Health Analytics"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_10eb75610af5427cb7d9a2df",
+          "name": "Prior Authorization",
+          "label": "Prior Authorization",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Prior Authorization"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_514b21ea6217452db3740146",
+          "name": "Infection Control Protocols",
+          "label": "Infection Control Protocols",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Infection Control Protocols"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_4dd9e7634ce04a74901c67ab",
+          "name": "Clinical Workflow Optimization",
+          "label": "Clinical Workflow Optimization",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Clinical Workflow Optimization"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_d3e57a2107e943839f5ccc8f",
+          "name": "Nursing Informatics",
+          "label": "Nursing Informatics",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Nursing Informatics"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_827e1965c41249eebfc91de0",
+          "name": "Behavioral Health Support",
+          "label": "Behavioral Health Support",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Behavioral Health Support"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_e9d15cb6e19348f2a1ab8812",
+          "name": "Chronic Disease Management",
+          "label": "Chronic Disease Management",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Chronic Disease Management"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_0dc6e46b67cb44f28b6ba69f",
+          "name": "Emergency Response Coordination",
+          "label": "Emergency Response Coordination",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Emergency Response Coordination"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_c590a01691e548f295433583",
+          "name": "Caregiver Communication",
+          "label": "Caregiver Communication",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Caregiver Communication"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_76695334260640729a196cc3",
+          "name": "Patient Experience Management",
+          "label": "Patient Experience Management",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Patient Experience Management"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_c05caa9e903a4a7dac14b30c",
+          "name": "Clinical Risk Management",
+          "label": "Clinical Risk Management",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Clinical Risk Management"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_54b3bfa58f824dc5b4f7ab72",
+          "name": "Clinical Pathway Management",
+          "label": "Clinical Pathway Management",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Clinical Pathway Management"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
         }
       ],
       "relationships": [
@@ -1973,6 +2213,306 @@
           "target_uid": "skill_69a0da55ee4b4e198f065b39",
           "type": "RELATED_TO",
           "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_b2e009d4e33a46c98917f2e4",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_b2e009d4e33a46c98917f2e4",
+          "target_uid": "skill_24e601825f5f46e396842c17",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_ece44c581d544598a9a0b45d",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_ece44c581d544598a9a0b45d",
+          "target_uid": "skill_39db142a11eb419aab97b137",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_04feba097c264bf18c854d76",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_04feba097c264bf18c854d76",
+          "target_uid": "skill_9f99d20de0fa41eda09230a8",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_39955477dea94f838f486d42",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_39955477dea94f838f486d42",
+          "target_uid": "skill_448446cbcb744a5bbe945dca",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_7393b243e4dc4aeaa188f5a5",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_7393b243e4dc4aeaa188f5a5",
+          "target_uid": "skill_25c2699711a744348a5d5bc3",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_55f79ab0556e4045bd62bfe8",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_55f79ab0556e4045bd62bfe8",
+          "target_uid": "skill_bc0156a54afd40bba24dfa1e",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_1ed86cb3fb0e43f5b0cf65c9",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_1ed86cb3fb0e43f5b0cf65c9",
+          "target_uid": "skill_41e3770cfa1445469e06daf2",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_a5061a6f16ee49b0a2fb6c3e",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_a5061a6f16ee49b0a2fb6c3e",
+          "target_uid": "skill_32c23d79e48a424dad8946a1",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_71f8de6cd37940d6a683ef6f",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_71f8de6cd37940d6a683ef6f",
+          "target_uid": "skill_c19861019a9546cfafc03b1c",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_10eb75610af5427cb7d9a2df",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_10eb75610af5427cb7d9a2df",
+          "target_uid": "skill_37f02ef1c6fe408f8e6cc925",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_514b21ea6217452db3740146",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_514b21ea6217452db3740146",
+          "target_uid": "skill_d03223909d4b4cc795586bc7",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_4dd9e7634ce04a74901c67ab",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_4dd9e7634ce04a74901c67ab",
+          "target_uid": "skill_73176df6d91840e1964ff02c",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_d3e57a2107e943839f5ccc8f",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_d3e57a2107e943839f5ccc8f",
+          "target_uid": "skill_62ae1b1b8c7a4790a83a6a71",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_827e1965c41249eebfc91de0",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_827e1965c41249eebfc91de0",
+          "target_uid": "skill_3375d8d13d254a818ca2724f",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_e9d15cb6e19348f2a1ab8812",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_e9d15cb6e19348f2a1ab8812",
+          "target_uid": "skill_c983a5c476cd430682e0b69c",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_0dc6e46b67cb44f28b6ba69f",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_0dc6e46b67cb44f28b6ba69f",
+          "target_uid": "skill_af1177dc4f194e199797bb6d",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_c590a01691e548f295433583",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_c590a01691e548f295433583",
+          "target_uid": "skill_5f144d27e73047f1a940cf23",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_76695334260640729a196cc3",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_76695334260640729a196cc3",
+          "target_uid": "skill_0fccd646a0f2407b912d6bd4",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_c05caa9e903a4a7dac14b30c",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_c05caa9e903a4a7dac14b30c",
+          "target_uid": "skill_e238dc44bea14013b6e24d97",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_54b3bfa58f824dc5b4f7ab72",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_54b3bfa58f824dc5b4f7ab72",
+          "target_uid": "skill_0dc6e46b67cb44f28b6ba69f",
+          "type": "RELATED_TO",
+          "weight": 0.74,
           "relation_type": "complementary"
         }
       ]

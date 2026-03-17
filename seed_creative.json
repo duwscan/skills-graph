@@ -1203,6 +1203,246 @@
           "low_surface_forms": [],
           "abbreviations": [],
           "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_bf858eaa45c346aba23b1b95",
+          "name": "UX Research",
+          "label": "UX Research",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "UX Research"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_3e4c2ae34b7d494c9076ff8f",
+          "name": "UI Design Systems",
+          "label": "UI Design Systems",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "UI Design Systems"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_1c4917e120614c8dbf99de88",
+          "name": "Figma Prototyping",
+          "label": "Figma Prototyping",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Figma Prototyping"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_dcb445564800486e863feaa1",
+          "name": "3D Modeling",
+          "label": "3D Modeling",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "3D Modeling"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_118d471db84a46e5b2b4e6f3",
+          "name": "Content Production",
+          "label": "Content Production",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Content Production"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_37107fa734cb46428b2dd19c",
+          "name": "Photography Direction",
+          "label": "Photography Direction",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Photography Direction"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_08bde804969e49909d147e33",
+          "name": "Illustration Techniques",
+          "label": "Illustration Techniques",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Illustration Techniques"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_47e8657b28bd4a2a8b896664",
+          "name": "Animation Principles",
+          "label": "Animation Principles",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Animation Principles"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_62489999f6e3438b87b2778e",
+          "name": "Creative Brief Development",
+          "label": "Creative Brief Development",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Creative Brief Development"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_d0d35313073b454ea4306416",
+          "name": "Art Production Management",
+          "label": "Art Production Management",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Art Production Management"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_6eb9cb4b4cca4f81886a28c6",
+          "name": "Creative Strategy",
+          "label": "Creative Strategy",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Creative Strategy"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_b7b2e07e788b44babe77613d",
+          "name": "Experience Design",
+          "label": "Experience Design",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Experience Design"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_a5662b022196462a9ea32876",
+          "name": "Information Architecture",
+          "label": "Information Architecture",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Information Architecture"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_2f886dc6a3504648bf085245",
+          "name": "Design QA",
+          "label": "Design QA",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Design QA"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_8b25686794a841c6b0a9a0b6",
+          "name": "Accessibility Design",
+          "label": "Accessibility Design",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Accessibility Design"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_fa7d3e82d3b64ac9a52f95f6",
+          "name": "Social Content Design",
+          "label": "Social Content Design",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Social Content Design"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_38d6330c92fd42019c378dea",
+          "name": "Print Production",
+          "label": "Print Production",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Print Production"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_6b258addae124022b5fee66f",
+          "name": "Typography Systems",
+          "label": "Typography Systems",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Typography Systems"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_84ed4c95df294397a5b4b186",
+          "name": "Packaging Design",
+          "label": "Packaging Design",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Packaging Design"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_1ffd1dac3ff04f5f848afce5",
+          "name": "Sound Design",
+          "label": "Sound Design",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Sound Design"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
         }
       ],
       "relationships": [
@@ -1971,6 +2211,306 @@
           "target_uid": "skill_57efb9893864440fa0eae299",
           "type": "RELATED_TO",
           "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_bf858eaa45c346aba23b1b95",
+          "target_uid": "skill_d1e978ea254240069d35589a",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_bf858eaa45c346aba23b1b95",
+          "target_uid": "skill_2455842921de45f58afcda57",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_3e4c2ae34b7d494c9076ff8f",
+          "target_uid": "skill_d1e978ea254240069d35589a",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_3e4c2ae34b7d494c9076ff8f",
+          "target_uid": "skill_02f601bd2e6f472787c82eba",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_1c4917e120614c8dbf99de88",
+          "target_uid": "skill_d1e978ea254240069d35589a",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_1c4917e120614c8dbf99de88",
+          "target_uid": "skill_6af604f873f94ef19d70d50f",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_dcb445564800486e863feaa1",
+          "target_uid": "skill_d1e978ea254240069d35589a",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_dcb445564800486e863feaa1",
+          "target_uid": "skill_06d8ae0776a647ac85ef84d0",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_118d471db84a46e5b2b4e6f3",
+          "target_uid": "skill_d1e978ea254240069d35589a",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_118d471db84a46e5b2b4e6f3",
+          "target_uid": "skill_7f9db77713694b8b995774af",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_37107fa734cb46428b2dd19c",
+          "target_uid": "skill_d1e978ea254240069d35589a",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_37107fa734cb46428b2dd19c",
+          "target_uid": "skill_0486027254b941e384bfc80c",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_08bde804969e49909d147e33",
+          "target_uid": "skill_d1e978ea254240069d35589a",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_08bde804969e49909d147e33",
+          "target_uid": "skill_236d9c23cf844fc6add8278f",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_47e8657b28bd4a2a8b896664",
+          "target_uid": "skill_d1e978ea254240069d35589a",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_47e8657b28bd4a2a8b896664",
+          "target_uid": "skill_57e8b09538f94042a89930df",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_62489999f6e3438b87b2778e",
+          "target_uid": "skill_d1e978ea254240069d35589a",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_62489999f6e3438b87b2778e",
+          "target_uid": "skill_9be87805c4264c9cbfc9b7f7",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_d0d35313073b454ea4306416",
+          "target_uid": "skill_d1e978ea254240069d35589a",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_d0d35313073b454ea4306416",
+          "target_uid": "skill_1fe53cad74094f8d9059989f",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_6eb9cb4b4cca4f81886a28c6",
+          "target_uid": "skill_d1e978ea254240069d35589a",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_6eb9cb4b4cca4f81886a28c6",
+          "target_uid": "skill_fa7fc1bb87a34e0e800bb4fe",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_b7b2e07e788b44babe77613d",
+          "target_uid": "skill_d1e978ea254240069d35589a",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_b7b2e07e788b44babe77613d",
+          "target_uid": "skill_87cbe733c7024316ab5dea09",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_a5662b022196462a9ea32876",
+          "target_uid": "skill_d1e978ea254240069d35589a",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_a5662b022196462a9ea32876",
+          "target_uid": "skill_0d084b34592249349d5418d5",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_2f886dc6a3504648bf085245",
+          "target_uid": "skill_d1e978ea254240069d35589a",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_2f886dc6a3504648bf085245",
+          "target_uid": "skill_f03d7e1254d044c180a5fa33",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_8b25686794a841c6b0a9a0b6",
+          "target_uid": "skill_d1e978ea254240069d35589a",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_8b25686794a841c6b0a9a0b6",
+          "target_uid": "skill_7c700f14460d4f90ae5635f5",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_fa7d3e82d3b64ac9a52f95f6",
+          "target_uid": "skill_d1e978ea254240069d35589a",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_fa7d3e82d3b64ac9a52f95f6",
+          "target_uid": "skill_f5cf12d4fb5340758e91e85e",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_38d6330c92fd42019c378dea",
+          "target_uid": "skill_d1e978ea254240069d35589a",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_38d6330c92fd42019c378dea",
+          "target_uid": "skill_1872e9e6831e49ad8210fa5c",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_6b258addae124022b5fee66f",
+          "target_uid": "skill_d1e978ea254240069d35589a",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_6b258addae124022b5fee66f",
+          "target_uid": "skill_0ec25ce15e9d4d8aa8aeb0ce",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_84ed4c95df294397a5b4b186",
+          "target_uid": "skill_d1e978ea254240069d35589a",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_84ed4c95df294397a5b4b186",
+          "target_uid": "skill_7273512e2b144f03ac6fc2b6",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_1ffd1dac3ff04f5f848afce5",
+          "target_uid": "skill_d1e978ea254240069d35589a",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_1ffd1dac3ff04f5f848afce5",
+          "target_uid": "skill_5448fbc64cd04d8fa6d85e6d",
+          "type": "RELATED_TO",
+          "weight": 0.74,
           "relation_type": "complementary"
         }
       ]

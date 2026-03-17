@@ -1211,6 +1211,246 @@
           "low_surface_forms": [],
           "abbreviations": [],
           "confidence_score": 0.85
+        },
+        {
+          "uid": "skill_ccebb1ea8f214dfd90506d17",
+          "name": "Test Automation Frameworks",
+          "label": "Test Automation Frameworks",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Test Automation Frameworks"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_450b752c665147c2bba10add",
+          "name": "Manual Test Execution",
+          "label": "Manual Test Execution",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Manual Test Execution"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_6e898725114347e4a40ef3c0",
+          "name": "API Testing",
+          "label": "API Testing",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "API Testing"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_5c71826abcf34d14b9fb925e",
+          "name": "Performance Testing",
+          "label": "Performance Testing",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Performance Testing"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_f043c2635b3548dfb708555b",
+          "name": "Security Testing",
+          "label": "Security Testing",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Security Testing"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_f5560f87b74c404e8a7b55d1",
+          "name": "Regression Testing",
+          "label": "Regression Testing",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Regression Testing"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_5c39bdeba83b4bf2bb729946",
+          "name": "User Acceptance Testing",
+          "label": "User Acceptance Testing",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "User Acceptance Testing"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_9bcfc31b4c4d4d7382b0531e",
+          "name": "Defect Lifecycle Management",
+          "label": "Defect Lifecycle Management",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Defect Lifecycle Management"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_501500aff582427e8f6f2eba",
+          "name": "Test Case Management",
+          "label": "Test Case Management",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Test Case Management"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_d54b97eefcc044d18c95debc",
+          "name": "Quality Assurance Documentation",
+          "label": "Quality Assurance Documentation",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Quality Assurance Documentation"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_daf82a755d3d4d9eb2701870",
+          "name": "Validation Protocol Design",
+          "label": "Validation Protocol Design",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Validation Protocol Design"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_8a209287b5d94f3e90ad9276",
+          "name": "Statistical Process Control",
+          "label": "Statistical Process Control",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Statistical Process Control"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_edf2c50fa99e45fc9abe7402",
+          "name": "Calibration Management",
+          "label": "Calibration Management",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Calibration Management"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_a65dc42c78fc4fd392024554",
+          "name": "Nonconformance Reporting",
+          "label": "Nonconformance Reporting",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Nonconformance Reporting"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_e156cb46879a4fc88a6629c7",
+          "name": "Corrective and Preventive Actions",
+          "label": "Corrective and Preventive Actions",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Corrective and Preventive Actions"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_888d6da980d74a98bfae056c",
+          "name": "Supplier Quality Audits",
+          "label": "Supplier Quality Audits",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Supplier Quality Audits"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_e25f7af0b2c440149fe4982e",
+          "name": "GxP Compliance",
+          "label": "GxP Compliance",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "GxP Compliance"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_78c18228060e4bdf912c8a3b",
+          "name": "ISO 9001 Auditing",
+          "label": "ISO 9001 Auditing",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "ISO 9001 Auditing"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_78c5dba3e9b7462e8eb5f570",
+          "name": "Requirements Traceability",
+          "label": "Requirements Traceability",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Requirements Traceability"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_82a9a48d4dce44a9b830a86c",
+          "name": "Data Integrity Review",
+          "label": "Data Integrity Review",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Data Integrity Review"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
         }
       ],
       "relationships": [
@@ -1979,6 +2219,306 @@
           "target_uid": "skill_7aff96dfa39a4bc6b3960de1",
           "type": "RELATED_TO",
           "weight": 0.7,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_ccebb1ea8f214dfd90506d17",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_ccebb1ea8f214dfd90506d17",
+          "target_uid": "skill_84881f415ef04f7883facd42",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_450b752c665147c2bba10add",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_450b752c665147c2bba10add",
+          "target_uid": "skill_ea0aa286d1ca4dfdb6c1680a",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_6e898725114347e4a40ef3c0",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_6e898725114347e4a40ef3c0",
+          "target_uid": "skill_b2833b8db2d7464bad62d410",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_5c71826abcf34d14b9fb925e",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_5c71826abcf34d14b9fb925e",
+          "target_uid": "skill_a1e5c4d7543b46058eb0609e",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_f043c2635b3548dfb708555b",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_f043c2635b3548dfb708555b",
+          "target_uid": "skill_2f416f314a904f47b2043fbf",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_f5560f87b74c404e8a7b55d1",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_f5560f87b74c404e8a7b55d1",
+          "target_uid": "skill_cdb4fc4b9bb0454f94c1ecf6",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_5c39bdeba83b4bf2bb729946",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_5c39bdeba83b4bf2bb729946",
+          "target_uid": "skill_1d0c0c6366b14ef584212ee4",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_9bcfc31b4c4d4d7382b0531e",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_9bcfc31b4c4d4d7382b0531e",
+          "target_uid": "skill_9bf56005ac1a4b338a64ed4a",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_501500aff582427e8f6f2eba",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_501500aff582427e8f6f2eba",
+          "target_uid": "skill_a556d1c188594a5dbf944394",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_d54b97eefcc044d18c95debc",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_d54b97eefcc044d18c95debc",
+          "target_uid": "skill_814997c6a9ec4b96a38b9024",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_daf82a755d3d4d9eb2701870",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_daf82a755d3d4d9eb2701870",
+          "target_uid": "skill_ef3c43ef72294d9ba4d8e999",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_8a209287b5d94f3e90ad9276",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_8a209287b5d94f3e90ad9276",
+          "target_uid": "skill_374624c341714658a2189746",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_edf2c50fa99e45fc9abe7402",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_edf2c50fa99e45fc9abe7402",
+          "target_uid": "skill_f9676f1a39094262acc3c5d3",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_a65dc42c78fc4fd392024554",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_a65dc42c78fc4fd392024554",
+          "target_uid": "skill_7bd763a54d314c288783dd1c",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_e156cb46879a4fc88a6629c7",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_e156cb46879a4fc88a6629c7",
+          "target_uid": "skill_bedf40398c564f7daaad37a5",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_888d6da980d74a98bfae056c",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_888d6da980d74a98bfae056c",
+          "target_uid": "skill_d56eed7dbf544871b5246e28",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_e25f7af0b2c440149fe4982e",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_e25f7af0b2c440149fe4982e",
+          "target_uid": "skill_bfc7822175d74a2ab1eb44f7",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_78c18228060e4bdf912c8a3b",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_78c18228060e4bdf912c8a3b",
+          "target_uid": "skill_273bbb3310d34cfaa28a593e",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_78c5dba3e9b7462e8eb5f570",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_78c5dba3e9b7462e8eb5f570",
+          "target_uid": "skill_4d5c63e817874c89bf922507",
+          "type": "RELATED_TO",
+          "weight": 0.74,
+          "relation_type": "complementary"
+        },
+        {
+          "source_uid": "skill_82a9a48d4dce44a9b830a86c",
+          "target_uid": "skill_8bae5debfd1d4c6a9908bd0b",
+          "type": "IS_A",
+          "weight": 0.78,
+          "level": 1,
+          "confidence": 0.86
+        },
+        {
+          "source_uid": "skill_82a9a48d4dce44a9b830a86c",
+          "target_uid": "skill_d4d374f6605b4e82bd5d67dc",
+          "type": "RELATED_TO",
+          "weight": 0.74,
           "relation_type": "complementary"
         }
       ]
