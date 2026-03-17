@@ -1,4 +1,4 @@
-.PHONY: up down logs shell test clean install sync help graph-fresh
+.PHONY: up down logs shell test clean install sync help graph-fresh seed-all
 
 help:
 	@echo "Skills Graph - Available commands:"
@@ -14,6 +14,7 @@ help:
 	@echo "  make install  Install dependencies"
 	@echo "  make sync     Sync dependencies"
 	@echo "  make graph-fresh  Clear all data in Neo4j graph"
+	@echo "  make seed-all Seed all root JSON data files into Neo4j"
 
 up:
 	docker compose up -d
@@ -52,3 +53,6 @@ sync:
 
 graph-fresh:
 	uv run python -c "from db import init_db; import neomodel; init_db(); neomodel.db.cypher_query('MATCH (n) DETACH DELETE n'); print('Graph cleared')"
+
+seed-all:
+	uv run python seed_all_data.py

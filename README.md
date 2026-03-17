@@ -31,6 +31,17 @@ make test     Run smoke test
 make lint     Run linter (ruff)
 make format   Format code (ruff)
 make clean    Remove cache files
+make seed-all Seed all root JSON files into Neo4j
+```
+
+## Seed graph data
+
+```bash
+# Seed all root files matching seed*.json
+make seed-all
+
+# Or seed a specific file
+uv run python seed_all_data.py --file seed_marketing.json
 ```
 
 ## Setup (Manual)
