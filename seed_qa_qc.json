@@ -410,11 +410,11 @@
         },
         {
           "uid": "skill_eba7876d9893453ea211da7a",
-          "name": "Quality Planning Planning",
-          "label": "Quality Planning Planning",
+          "name": "Quality Planning Methods",
+          "label": "Quality Planning Methods",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Quality Planning Planning"
+            "Quality Planning Methods"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -626,11 +626,11 @@
         },
         {
           "uid": "skill_abd27ef658e14570b29c6c5f",
-          "name": "Defect Analysis Analysis",
-          "label": "Defect Analysis Analysis",
+          "name": "Defect Analysis Methods",
+          "label": "Defect Analysis Methods",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Defect Analysis Analysis"
+            "Defect Analysis Methods"
           ],
           "low_surface_forms": [],
           "abbreviations": [],

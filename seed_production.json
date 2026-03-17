@@ -972,11 +972,11 @@
         },
         {
           "uid": "skill_5fa5b0fd057a45ce9a160806",
-          "name": "Throughput Optimization Optimization",
-          "label": "Throughput Optimization Optimization",
+          "name": "Throughput Optimization Methods",
+          "label": "Throughput Optimization Methods",
           "skill_type": "technical",
           "high_surface_forms": [
-            "Throughput Optimization Optimization"
+            "Throughput Optimization Methods"
           ],
           "low_surface_forms": [],
           "abbreviations": [],

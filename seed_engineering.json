@@ -744,11 +744,11 @@
         },
         {
           "uid": "skill_af2f90e69dda4c19a28b0f1e",
-          "name": "Failure Analysis Analysis",
-          "label": "Failure Analysis Analysis",
+          "name": "Failure Analysis Methods",
+          "label": "Failure Analysis Methods",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Failure Analysis Analysis"
+            "Failure Analysis Methods"
           ],
           "low_surface_forms": [],
           "abbreviations": [],

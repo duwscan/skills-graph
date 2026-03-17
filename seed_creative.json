@@ -1146,11 +1146,11 @@
         },
         {
           "uid": "skill_627b435d90404a14b1a5b96d",
-          "name": "Design Collaboration Collaboration",
-          "label": "Design Collaboration Collaboration",
+          "name": "Design Collaboration Methods",
+          "label": "Design Collaboration Methods",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Design Collaboration Collaboration"
+            "Design Collaboration Methods"
           ],
           "low_surface_forms": [],
           "abbreviations": [],

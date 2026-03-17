@@ -462,11 +462,11 @@
         },
         {
           "uid": "skill_e71481a6abba410ca249c017",
-          "name": "Campaign Strategy Strategy",
-          "label": "Campaign Strategy Strategy",
+          "name": "Campaign Strategy Methods",
+          "label": "Campaign Strategy Methods",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Campaign Strategy Strategy"
+            "Campaign Strategy Methods"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -894,11 +894,11 @@
         },
         {
           "uid": "skill_5abcda63341841e79931e75b",
-          "name": "Content Planning Planning",
-          "label": "Content Planning Planning",
+          "name": "Content Planning Methods",
+          "label": "Content Planning Methods",
           "skill_type": "soft",
           "high_surface_forms": [
-            "Content Planning Planning"
+            "Content Planning Methods"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
@@ -1110,11 +1110,11 @@
         },
         {
           "uid": "skill_1ffffc23f2944dd18d8cc5b1",
-          "name": "Customer Journey Analysis Analysis",
-          "label": "Customer Journey Analysis Analysis",
+          "name": "Customer Journey Analysis Methods",
+          "label": "Customer Journey Analysis Methods",
           "skill_type": "tool",
           "high_surface_forms": [
-            "Customer Journey Analysis Analysis"
+            "Customer Journey Analysis Methods"
           ],
           "low_surface_forms": [],
           "abbreviations": [],
