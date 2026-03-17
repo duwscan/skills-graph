@@ -1,0 +1,508 @@
+{
+  "industries": [
+    {
+      "name": "Engineering Category",
+      "description": "Skill seed data for the Engineering category",
+      "skills": [
+        {
+          "uid": "skill_067a76f73f3c40ea9b1c37d3",
+          "name": "Engineering",
+          "label": "Engineering",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Engineering"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_1bc24343d29e4fb39998ebc5",
+          "name": "Systems Engineering",
+          "label": "Systems Engineering",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Systems Engineering"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_3fd6563c15d04f63847d5ac3",
+          "name": "Mechanical Engineering",
+          "label": "Mechanical Engineering",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Mechanical Engineering"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_7f27b473c683445090f971c0",
+          "name": "Electrical Engineering",
+          "label": "Electrical Engineering",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Electrical Engineering"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_7486d00c7306420daf8be7fb",
+          "name": "Civil Engineering",
+          "label": "Civil Engineering",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Civil Engineering"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_e070da63d8d64c3cbc6b9c0c",
+          "name": "Process Engineering",
+          "label": "Process Engineering",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Process Engineering"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_77c512ff93e54f23b493bed1",
+          "name": "CAD",
+          "label": "CAD",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Computer Aided Design"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [
+            "CAD"
+          ],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_fa88b7269b2546bea8561589",
+          "name": "AutoCAD",
+          "label": "AutoCAD",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "AutoCAD"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_7ef4c6d3a3d747849116b18c",
+          "name": "SolidWorks",
+          "label": "SolidWorks",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "SolidWorks"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_b33e3067020945a58ffef2fe",
+          "name": "MATLAB",
+          "label": "MATLAB",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "MATLAB"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_0ea4e08f1f994fda810423fc",
+          "name": "Engineering Mathematics",
+          "label": "Engineering Mathematics",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Engineering Mathematics"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_0b5ad9741027424aa38d5d27",
+          "name": "Physics",
+          "label": "Physics",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Physics"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_8169f1fbe311406d8b0e6b1b",
+          "name": "Technical Drawing",
+          "label": "Technical Drawing",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Technical Drawing"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_656dc4d214604cfab2c7de87",
+          "name": "Failure Analysis",
+          "label": "Failure Analysis",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Failure Analysis"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_b00fabf876434128867fd30c",
+          "name": "Root Cause Analysis",
+          "label": "Root Cause Analysis",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Root Cause Analysis"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_13f9d8edf24e4f5786e96951",
+          "name": "Design of Experiments",
+          "label": "Design of Experiments",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "DOE"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [
+            "DOE"
+          ],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_810aa885388d40f9a2f6a14d",
+          "name": "Quality Engineering",
+          "label": "Quality Engineering",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Quality Engineering"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_dca93cc3628546d693506a87",
+          "name": "Project Management",
+          "label": "Project Management",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Project Management"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_2d74c59076624c8f9a33ff93",
+          "name": "Risk Assessment",
+          "label": "Risk Assessment",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Risk Assessment"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_4bbf320094ab495cb0cefd23",
+          "name": "Finite Element Analysis",
+          "label": "Finite Element Analysis",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "FEA"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [
+            "FEA"
+          ],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_40b700a667bd477d9dbeb374",
+          "name": "Thermodynamics",
+          "label": "Thermodynamics",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Thermodynamics"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_cf011f3e8e104daa882b7bc1",
+          "name": "Control Systems",
+          "label": "Control Systems",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Control Systems"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_1737a7ae463049298ecdfa52",
+          "name": "Instrumentation",
+          "label": "Instrumentation",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Instrumentation"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_398f87a8217748a5ac5218ca",
+          "name": "Materials Science",
+          "label": "Materials Science",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Materials Science"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_5924b031a12340c7a1bdfc99",
+          "name": "Manufacturing Engineering",
+          "label": "Manufacturing Engineering",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Manufacturing Engineering"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_5fe95c846bbb425f950a2ff2",
+          "name": "Product Design",
+          "label": "Product Design",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Product Design"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_0674ab0b39b646888b281b92",
+          "name": "Documentation",
+          "label": "Documentation",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Documentation"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_6aa75833761340ed9bcba3e8",
+          "name": "Safety Engineering",
+          "label": "Safety Engineering",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Safety Engineering"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        }
+      ],
+      "relationships": [
+        {
+          "source_uid": "skill_1bc24343d29e4fb39998ebc5",
+          "target_uid": "skill_067a76f73f3c40ea9b1c37d3",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_3fd6563c15d04f63847d5ac3",
+          "target_uid": "skill_067a76f73f3c40ea9b1c37d3",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_7f27b473c683445090f971c0",
+          "target_uid": "skill_067a76f73f3c40ea9b1c37d3",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_7486d00c7306420daf8be7fb",
+          "target_uid": "skill_067a76f73f3c40ea9b1c37d3",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_e070da63d8d64c3cbc6b9c0c",
+          "target_uid": "skill_067a76f73f3c40ea9b1c37d3",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_810aa885388d40f9a2f6a14d",
+          "target_uid": "skill_067a76f73f3c40ea9b1c37d3",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_5924b031a12340c7a1bdfc99",
+          "target_uid": "skill_067a76f73f3c40ea9b1c37d3",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_6aa75833761340ed9bcba3e8",
+          "target_uid": "skill_067a76f73f3c40ea9b1c37d3",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_fa88b7269b2546bea8561589",
+          "target_uid": "skill_77c512ff93e54f23b493bed1",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_7ef4c6d3a3d747849116b18c",
+          "target_uid": "skill_77c512ff93e54f23b493bed1",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_4bbf320094ab495cb0cefd23",
+          "target_uid": "skill_0ea4e08f1f994fda810423fc",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_cf011f3e8e104daa882b7bc1",
+          "target_uid": "skill_7f27b473c683445090f971c0",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_656dc4d214604cfab2c7de87",
+          "target_uid": "skill_b00fabf876434128867fd30c",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_5fe95c846bbb425f950a2ff2",
+          "target_uid": "skill_8169f1fbe311406d8b0e6b1b",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_067a76f73f3c40ea9b1c37d3",
+          "target_uid": "skill_1bc24343d29e4fb39998ebc5",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_3fd6563c15d04f63847d5ac3",
+          "target_uid": "skill_7f27b473c683445090f971c0",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_7486d00c7306420daf8be7fb",
+          "target_uid": "skill_e070da63d8d64c3cbc6b9c0c",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_77c512ff93e54f23b493bed1",
+          "target_uid": "skill_fa88b7269b2546bea8561589",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_7ef4c6d3a3d747849116b18c",
+          "target_uid": "skill_b33e3067020945a58ffef2fe",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_0ea4e08f1f994fda810423fc",
+          "target_uid": "skill_0b5ad9741027424aa38d5d27",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        }
+      ]
+    }
+  ]
+}

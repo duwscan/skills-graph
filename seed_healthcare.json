@@ -1,0 +1,496 @@
+{
+  "industries": [
+    {
+      "name": "Healthcare Category",
+      "description": "Skill seed data for the Healthcare category",
+      "skills": [
+        {
+          "uid": "skill_75b8b8001d5949948c9a78f2",
+          "name": "Healthcare",
+          "label": "Healthcare",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Healthcare"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_c8ec147e57584be98a54bd5e",
+          "name": "Patient Care",
+          "label": "Patient Care",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Patient Care"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_fb979c9a192b447aa0f14e72",
+          "name": "Clinical Assessment",
+          "label": "Clinical Assessment",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Clinical Assessment"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_8fc7243b374b4fd0a8328ad2",
+          "name": "Vital Signs Monitoring",
+          "label": "Vital Signs Monitoring",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Vital Signs Monitoring"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_519c764135cc4f1c9f121c33",
+          "name": "Electronic Health Records",
+          "label": "Electronic Health Records",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "EHR"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [
+            "EHR"
+          ],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_47b78a3912254355bac4cd16",
+          "name": "Medical Documentation",
+          "label": "Medical Documentation",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Medical Documentation"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_1ee0895e8eee45c5940c602d",
+          "name": "Infection Control",
+          "label": "Infection Control",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Infection Control"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_24e601825f5f46e396842c17",
+          "name": "Medication Administration",
+          "label": "Medication Administration",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Medication Administration"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_39db142a11eb419aab97b137",
+          "name": "Clinical Communication",
+          "label": "Clinical Communication",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Clinical Communication"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_9f99d20de0fa41eda09230a8",
+          "name": "HIPAA Compliance",
+          "label": "HIPAA Compliance",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "HIPAA Compliance"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_448446cbcb744a5bbe945dca",
+          "name": "Care Coordination",
+          "label": "Care Coordination",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Care Coordination"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_25c2699711a744348a5d5bc3",
+          "name": "Patient Education",
+          "label": "Patient Education",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Patient Education"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_bc0156a54afd40bba24dfa1e",
+          "name": "Triage",
+          "label": "Triage",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Triage"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_41e3770cfa1445469e06daf2",
+          "name": "Emergency Response",
+          "label": "Emergency Response",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Emergency Response"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_32c23d79e48a424dad8946a1",
+          "name": "Diagnostic Interpretation",
+          "label": "Diagnostic Interpretation",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Diagnostic Interpretation"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_c19861019a9546cfafc03b1c",
+          "name": "Clinical Workflow",
+          "label": "Clinical Workflow",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Clinical Workflow"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_37f02ef1c6fe408f8e6cc925",
+          "name": "Telemedicine",
+          "label": "Telemedicine",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Telemedicine"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_d03223909d4b4cc795586bc7",
+          "name": "Public Health",
+          "label": "Public Health",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Public Health"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_73176df6d91840e1964ff02c",
+          "name": "Preventive Care",
+          "label": "Preventive Care",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Preventive Care"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_62ae1b1b8c7a4790a83a6a71",
+          "name": "Case Management",
+          "label": "Case Management",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Case Management"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_3375d8d13d254a818ca2724f",
+          "name": "Evidence-Based Practice",
+          "label": "Evidence-Based Practice",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Evidence-Based Practice"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_c983a5c476cd430682e0b69c",
+          "name": "Quality Improvement in Healthcare",
+          "label": "Quality Improvement in Healthcare",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Quality Improvement in Healthcare"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_af1177dc4f194e199797bb6d",
+          "name": "Medical Ethics",
+          "label": "Medical Ethics",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Medical Ethics"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_5f144d27e73047f1a940cf23",
+          "name": "Health Informatics",
+          "label": "Health Informatics",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Health Informatics"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_0fccd646a0f2407b912d6bd4",
+          "name": "Clinical Decision Support",
+          "label": "Clinical Decision Support",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Clinical Decision Support"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_e238dc44bea14013b6e24d97",
+          "name": "Patient Safety",
+          "label": "Patient Safety",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Patient Safety"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_37bd4c71e2eb411c90a48f79",
+          "name": "Interdisciplinary Collaboration",
+          "label": "Interdisciplinary Collaboration",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Interdisciplinary Collaboration"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_94b35f049d7c48a9a4e96e8e",
+          "name": "Discharge Planning",
+          "label": "Discharge Planning",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Discharge Planning"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        }
+      ],
+      "relationships": [
+        {
+          "source_uid": "skill_c8ec147e57584be98a54bd5e",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_fb979c9a192b447aa0f14e72",
+          "target_uid": "skill_c8ec147e57584be98a54bd5e",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_bc0156a54afd40bba24dfa1e",
+          "target_uid": "skill_fb979c9a192b447aa0f14e72",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_41e3770cfa1445469e06daf2",
+          "target_uid": "skill_c8ec147e57584be98a54bd5e",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_d03223909d4b4cc795586bc7",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_5f144d27e73047f1a940cf23",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_e238dc44bea14013b6e24d97",
+          "target_uid": "skill_75b8b8001d5949948c9a78f2",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_519c764135cc4f1c9f121c33",
+          "target_uid": "skill_47b78a3912254355bac4cd16",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_24e601825f5f46e396842c17",
+          "target_uid": "skill_fb979c9a192b447aa0f14e72",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_0fccd646a0f2407b912d6bd4",
+          "target_uid": "skill_5f144d27e73047f1a940cf23",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_37f02ef1c6fe408f8e6cc925",
+          "target_uid": "skill_39db142a11eb419aab97b137",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_448446cbcb744a5bbe945dca",
+          "target_uid": "skill_37bd4c71e2eb411c90a48f79",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_94b35f049d7c48a9a4e96e8e",
+          "target_uid": "skill_448446cbcb744a5bbe945dca",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_75b8b8001d5949948c9a78f2",
+          "target_uid": "skill_c8ec147e57584be98a54bd5e",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_fb979c9a192b447aa0f14e72",
+          "target_uid": "skill_8fc7243b374b4fd0a8328ad2",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_519c764135cc4f1c9f121c33",
+          "target_uid": "skill_47b78a3912254355bac4cd16",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_1ee0895e8eee45c5940c602d",
+          "target_uid": "skill_24e601825f5f46e396842c17",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_39db142a11eb419aab97b137",
+          "target_uid": "skill_9f99d20de0fa41eda09230a8",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_448446cbcb744a5bbe945dca",
+          "target_uid": "skill_25c2699711a744348a5d5bc3",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,494 @@
+{
+  "industries": [
+    {
+      "name": "Creative Category",
+      "description": "Skill seed data for the Creative category",
+      "skills": [
+        {
+          "uid": "skill_d1e978ea254240069d35589a",
+          "name": "Creative",
+          "label": "Creative",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Creative"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_810298cf0eb445f49b9c3666",
+          "name": "Graphic Design",
+          "label": "Graphic Design",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Graphic Design"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_66d4b9fec9444e4d8045c96b",
+          "name": "Visual Design",
+          "label": "Visual Design",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Visual Design"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_765c19dfe3a64fa7a1d002cb",
+          "name": "Brand Identity Design",
+          "label": "Brand Identity Design",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Brand Identity Design"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_71d826915e3f4e7899942d40",
+          "name": "Typography",
+          "label": "Typography",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Typography"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_252e0b8f41ab462991dd5c83",
+          "name": "Color Theory",
+          "label": "Color Theory",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Color Theory"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_1c73f352afc94517aafe6e69",
+          "name": "Layout Composition",
+          "label": "Layout Composition",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Layout Composition"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_2455842921de45f58afcda57",
+          "name": "Illustration",
+          "label": "Illustration",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Illustration"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_02f601bd2e6f472787c82eba",
+          "name": "Motion Graphics",
+          "label": "Motion Graphics",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Motion Graphics"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_6af604f873f94ef19d70d50f",
+          "name": "Video Editing",
+          "label": "Video Editing",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Video Editing"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_06d8ae0776a647ac85ef84d0",
+          "name": "Storyboarding",
+          "label": "Storyboarding",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Storyboarding"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_7f9db77713694b8b995774af",
+          "name": "Copywriting",
+          "label": "Copywriting",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Copywriting"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_0486027254b941e384bfc80c",
+          "name": "Creative Direction",
+          "label": "Creative Direction",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Creative Direction"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_236d9c23cf844fc6add8278f",
+          "name": "Art Direction",
+          "label": "Art Direction",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Art Direction"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_57e8b09538f94042a89930df",
+          "name": "Adobe Photoshop",
+          "label": "Adobe Photoshop",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Adobe Photoshop"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_9be87805c4264c9cbfc9b7f7",
+          "name": "Adobe Illustrator",
+          "label": "Adobe Illustrator",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Adobe Illustrator"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_1fe53cad74094f8d9059989f",
+          "name": "Adobe Premiere Pro",
+          "label": "Adobe Premiere Pro",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Adobe Premiere Pro"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_fa7fc1bb87a34e0e800bb4fe",
+          "name": "After Effects",
+          "label": "After Effects",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "After Effects"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_87cbe733c7024316ab5dea09",
+          "name": "Figma",
+          "label": "Figma",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Figma"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_0d084b34592249349d5418d5",
+          "name": "Canva",
+          "label": "Canva",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Canva"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_f03d7e1254d044c180a5fa33",
+          "name": "UI Design Basics",
+          "label": "UI Design Basics",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "UI Design Basics"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_7c700f14460d4f90ae5635f5",
+          "name": "Photography",
+          "label": "Photography",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Photography"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_f5cf12d4fb5340758e91e85e",
+          "name": "Image Retouching",
+          "label": "Image Retouching",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Image Retouching"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_1872e9e6831e49ad8210fa5c",
+          "name": "Concept Development",
+          "label": "Concept Development",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Concept Development"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_0ec25ce15e9d4d8aa8aeb0ce",
+          "name": "Creative Briefing",
+          "label": "Creative Briefing",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Creative Briefing"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_7273512e2b144f03ac6fc2b6",
+          "name": "Presentation Skills",
+          "label": "Presentation Skills",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Presentation Skills"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_5448fbc64cd04d8fa6d85e6d",
+          "name": "Portfolio Curation",
+          "label": "Portfolio Curation",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Portfolio Curation"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_4c2f8dfe408e4b04823db07e",
+          "name": "Collaboration",
+          "label": "Collaboration",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Collaboration"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        }
+      ],
+      "relationships": [
+        {
+          "source_uid": "skill_810298cf0eb445f49b9c3666",
+          "target_uid": "skill_d1e978ea254240069d35589a",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_66d4b9fec9444e4d8045c96b",
+          "target_uid": "skill_d1e978ea254240069d35589a",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_765c19dfe3a64fa7a1d002cb",
+          "target_uid": "skill_810298cf0eb445f49b9c3666",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_02f601bd2e6f472787c82eba",
+          "target_uid": "skill_d1e978ea254240069d35589a",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_0486027254b941e384bfc80c",
+          "target_uid": "skill_d1e978ea254240069d35589a",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_236d9c23cf844fc6add8278f",
+          "target_uid": "skill_0486027254b941e384bfc80c",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_f03d7e1254d044c180a5fa33",
+          "target_uid": "skill_66d4b9fec9444e4d8045c96b",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_57e8b09538f94042a89930df",
+          "target_uid": "skill_f5cf12d4fb5340758e91e85e",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_9be87805c4264c9cbfc9b7f7",
+          "target_uid": "skill_2455842921de45f58afcda57",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_fa7fc1bb87a34e0e800bb4fe",
+          "target_uid": "skill_02f601bd2e6f472787c82eba",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_1fe53cad74094f8d9059989f",
+          "target_uid": "skill_6af604f873f94ef19d70d50f",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_765c19dfe3a64fa7a1d002cb",
+          "target_uid": "skill_71d826915e3f4e7899942d40",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_1872e9e6831e49ad8210fa5c",
+          "target_uid": "skill_0ec25ce15e9d4d8aa8aeb0ce",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_d1e978ea254240069d35589a",
+          "target_uid": "skill_810298cf0eb445f49b9c3666",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_66d4b9fec9444e4d8045c96b",
+          "target_uid": "skill_765c19dfe3a64fa7a1d002cb",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_71d826915e3f4e7899942d40",
+          "target_uid": "skill_252e0b8f41ab462991dd5c83",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_1c73f352afc94517aafe6e69",
+          "target_uid": "skill_2455842921de45f58afcda57",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_02f601bd2e6f472787c82eba",
+          "target_uid": "skill_6af604f873f94ef19d70d50f",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_06d8ae0776a647ac85ef84d0",
+          "target_uid": "skill_7f9db77713694b8b995774af",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,538 @@
+{
+  "industries": [
+    {
+      "name": "Marketing Category",
+      "description": "Skill seed data for the Marketing category",
+      "skills": [
+        {
+          "uid": "skill_85a653ca2d4240db898f1cef",
+          "name": "Marketing",
+          "label": "Marketing",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Marketing"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_8a80442cb18a4b0498c77a0c",
+          "name": "Digital Marketing",
+          "label": "Digital Marketing",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Digital Marketing"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_b394bff524ce4defb92e37c8",
+          "name": "Brand Management",
+          "label": "Brand Management",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Brand Management"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_54511accd279464f82bac049",
+          "name": "Content Marketing",
+          "label": "Content Marketing",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Content Marketing"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_c25387768ecd43ff98cea39f",
+          "name": "SEO",
+          "label": "SEO",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Search Engine Optimization"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [
+            "SEO"
+          ],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_1780422def914cd980b7d5c9",
+          "name": "SEM",
+          "label": "SEM",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "Search Engine Marketing"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [
+            "SEM"
+          ],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_f3235f8b7ae74f09b41d0090",
+          "name": "Social Media Marketing",
+          "label": "Social Media Marketing",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Social Media Marketing"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_b6c340976c974dca87ee438e",
+          "name": "Email Marketing",
+          "label": "Email Marketing",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Email Marketing"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_c38042c91f6249829d316646",
+          "name": "Marketing Analytics",
+          "label": "Marketing Analytics",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Marketing Analytics"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_54a64db9e2314dc5b57fa9e1",
+          "name": "Google Analytics",
+          "label": "Google Analytics",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "GA4"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [
+            "GA4"
+          ],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_9d15ba7351f34366acd963a5",
+          "name": "Market Research",
+          "label": "Market Research",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Market Research"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_89490ccf34bd44a0ad5096ee",
+          "name": "Consumer Behavior",
+          "label": "Consumer Behavior",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Consumer Behavior"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_347261e74d3545c5911de5a5",
+          "name": "Campaign Management",
+          "label": "Campaign Management",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Campaign Management"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_ffd5b11b1ecf4c66a1970942",
+          "name": "Copywriting",
+          "label": "Copywriting",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Copywriting"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_0217f61a994a4debb7106f2c",
+          "name": "Storytelling",
+          "label": "Storytelling",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Storytelling"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_02a2187ac2214434ad758182",
+          "name": "CRM",
+          "label": "CRM",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Customer Relationship Management"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [
+            "CRM"
+          ],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_1e9bb3460279437892a8325b",
+          "name": "HubSpot",
+          "label": "HubSpot",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "HubSpot"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_a4fab995efae4e01adddb8d0",
+          "name": "Salesforce Marketing Cloud",
+          "label": "Salesforce Marketing Cloud",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Salesforce Marketing Cloud"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_b5ef6afbff2e40e58514bb4c",
+          "name": "A/B Testing",
+          "label": "A/B Testing",
+          "skill_type": "technical",
+          "high_surface_forms": [
+            "A/B Testing"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_eabe843349864cbcb0a6121b",
+          "name": "Conversion Rate Optimization",
+          "label": "Conversion Rate Optimization",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "CRO"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [
+            "CRO"
+          ],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_9f46b214b9744054bf005120",
+          "name": "PPC Advertising",
+          "label": "PPC Advertising",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Pay Per Click"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [
+            "PPC"
+          ],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_80b3bc0a3d784ad898bd1685",
+          "name": "Influencer Marketing",
+          "label": "Influencer Marketing",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Influencer Marketing"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_b55a58f4e12f408fb1b3fa8e",
+          "name": "Marketing Automation",
+          "label": "Marketing Automation",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Marketing Automation"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_f4e08fc866f7406b96f29b50",
+          "name": "Media Planning",
+          "label": "Media Planning",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Media Planning"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_4eb938b735924f669e0d3fff",
+          "name": "PR Management",
+          "label": "PR Management",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "PR Management"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_b7c2b231028d43ea83dfcadf",
+          "name": "Product Marketing",
+          "label": "Product Marketing",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Product Marketing"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_86ba7a890fb14ab29d40adeb",
+          "name": "Segmentation",
+          "label": "Segmentation",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Segmentation"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_74ffe68354b742dfb08ab32d",
+          "name": "Positioning",
+          "label": "Positioning",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Positioning"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        }
+      ],
+      "relationships": [
+        {
+          "source_uid": "skill_8a80442cb18a4b0498c77a0c",
+          "target_uid": "skill_85a653ca2d4240db898f1cef",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_54511accd279464f82bac049",
+          "target_uid": "skill_8a80442cb18a4b0498c77a0c",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_c25387768ecd43ff98cea39f",
+          "target_uid": "skill_8a80442cb18a4b0498c77a0c",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_1780422def914cd980b7d5c9",
+          "target_uid": "skill_8a80442cb18a4b0498c77a0c",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_f3235f8b7ae74f09b41d0090",
+          "target_uid": "skill_8a80442cb18a4b0498c77a0c",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_b6c340976c974dca87ee438e",
+          "target_uid": "skill_8a80442cb18a4b0498c77a0c",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_c38042c91f6249829d316646",
+          "target_uid": "skill_8a80442cb18a4b0498c77a0c",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_347261e74d3545c5911de5a5",
+          "target_uid": "skill_85a653ca2d4240db898f1cef",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_b394bff524ce4defb92e37c8",
+          "target_uid": "skill_85a653ca2d4240db898f1cef",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_b7c2b231028d43ea83dfcadf",
+          "target_uid": "skill_85a653ca2d4240db898f1cef",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_c25387768ecd43ff98cea39f",
+          "target_uid": "skill_54511accd279464f82bac049",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_1780422def914cd980b7d5c9",
+          "target_uid": "skill_9f46b214b9744054bf005120",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_b5ef6afbff2e40e58514bb4c",
+          "target_uid": "skill_c38042c91f6249829d316646",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_eabe843349864cbcb0a6121b",
+          "target_uid": "skill_b5ef6afbff2e40e58514bb4c",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_b55a58f4e12f408fb1b3fa8e",
+          "target_uid": "skill_02a2187ac2214434ad758182",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_1e9bb3460279437892a8325b",
+          "target_uid": "skill_02a2187ac2214434ad758182",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_54a64db9e2314dc5b57fa9e1",
+          "target_uid": "skill_c38042c91f6249829d316646",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_85a653ca2d4240db898f1cef",
+          "target_uid": "skill_8a80442cb18a4b0498c77a0c",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_b394bff524ce4defb92e37c8",
+          "target_uid": "skill_54511accd279464f82bac049",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_c25387768ecd43ff98cea39f",
+          "target_uid": "skill_1780422def914cd980b7d5c9",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_f3235f8b7ae74f09b41d0090",
+          "target_uid": "skill_b6c340976c974dca87ee438e",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_c38042c91f6249829d316646",
+          "target_uid": "skill_54a64db9e2314dc5b57fa9e1",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_9d15ba7351f34366acd963a5",
+          "target_uid": "skill_89490ccf34bd44a0ad5096ee",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,496 @@
+{
+  "industries": [
+    {
+      "name": "Education Category",
+      "description": "Skill seed data for the Education category",
+      "skills": [
+        {
+          "uid": "skill_ff91e27d1abf4dc0a4197276",
+          "name": "Education",
+          "label": "Education",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Education"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_cf9d8aaa20154c7092f8902d",
+          "name": "Curriculum Design",
+          "label": "Curriculum Design",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Curriculum Design"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_18600e3c8deb406d8ab39cf5",
+          "name": "Lesson Planning",
+          "label": "Lesson Planning",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Lesson Planning"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_1cdc9eb7983242beb9a027db",
+          "name": "Classroom Management",
+          "label": "Classroom Management",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Classroom Management"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_1d5894362d244822bdcd7604",
+          "name": "Instructional Design",
+          "label": "Instructional Design",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Instructional Design"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_3ad5fd47cd9b4807bac301e8",
+          "name": "Assessment Design",
+          "label": "Assessment Design",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Assessment Design"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_2d4ae0116f7946af8f59d327",
+          "name": "Formative Assessment",
+          "label": "Formative Assessment",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Formative Assessment"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_4f5c4d48d7c842e4a9646550",
+          "name": "Summative Assessment",
+          "label": "Summative Assessment",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Summative Assessment"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_21c682f1afa74e78a9266607",
+          "name": "Differentiated Instruction",
+          "label": "Differentiated Instruction",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Differentiated Instruction"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_e98d26f081de4697936818d6",
+          "name": "Learning Outcomes",
+          "label": "Learning Outcomes",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Learning Outcomes"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_5949035b67034bd79577c3a0",
+          "name": "Pedagogy",
+          "label": "Pedagogy",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Pedagogy"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_c406b515ec92426f85b64143",
+          "name": "Educational Technology",
+          "label": "Educational Technology",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Educational Technology"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_b7323b215c7b4c539407e117",
+          "name": "Learning Management Systems",
+          "label": "Learning Management Systems",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "LMS"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [
+            "LMS"
+          ],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_acfb348c6e6b4c379ed6029b",
+          "name": "Google Classroom",
+          "label": "Google Classroom",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Google Classroom"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_cb80816acc1c47bda382b02d",
+          "name": "Moodle",
+          "label": "Moodle",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Moodle"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_0fb22975c0434f749ef5f483",
+          "name": "Student Engagement",
+          "label": "Student Engagement",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Student Engagement"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_408d7db8d3f248a8996cabef",
+          "name": "Inclusive Education",
+          "label": "Inclusive Education",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Inclusive Education"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_18c7d354a31c4b1880cf9e5f",
+          "name": "Special Education Support",
+          "label": "Special Education Support",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Special Education Support"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_10be3feec1e34e63b66545c1",
+          "name": "Academic Advising",
+          "label": "Academic Advising",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Academic Advising"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_2dd51b61ff514fadba1c16eb",
+          "name": "Feedback and Coaching",
+          "label": "Feedback and Coaching",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Feedback and Coaching"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_96eb196e0cad4d45912ab65c",
+          "name": "Rubric Development",
+          "label": "Rubric Development",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Rubric Development"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_e0f3648f38b94e94b9818f32",
+          "name": "Data-Driven Instruction",
+          "label": "Data-Driven Instruction",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Data-Driven Instruction"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_64958206b30f4304ae9b815e",
+          "name": "Parent Communication",
+          "label": "Parent Communication",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Parent Communication"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_501d33de66e24469b25179eb",
+          "name": "Blended Learning",
+          "label": "Blended Learning",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Blended Learning"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_c300caffb3b045e6a5d6a6cc",
+          "name": "Online Teaching",
+          "label": "Online Teaching",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Online Teaching"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_10726a6f293b495eaba442b3",
+          "name": "Mentoring",
+          "label": "Mentoring",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Mentoring"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_938c5c6b290f4f80b8a9525e",
+          "name": "Content Knowledge",
+          "label": "Content Knowledge",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Content Knowledge"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_a1b508a6679349f9be1e3f1a",
+          "name": "Professional Development",
+          "label": "Professional Development",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Professional Development"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        }
+      ],
+      "relationships": [
+        {
+          "source_uid": "skill_cf9d8aaa20154c7092f8902d",
+          "target_uid": "skill_ff91e27d1abf4dc0a4197276",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_18600e3c8deb406d8ab39cf5",
+          "target_uid": "skill_cf9d8aaa20154c7092f8902d",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_1d5894362d244822bdcd7604",
+          "target_uid": "skill_ff91e27d1abf4dc0a4197276",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_3ad5fd47cd9b4807bac301e8",
+          "target_uid": "skill_ff91e27d1abf4dc0a4197276",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_2d4ae0116f7946af8f59d327",
+          "target_uid": "skill_3ad5fd47cd9b4807bac301e8",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_4f5c4d48d7c842e4a9646550",
+          "target_uid": "skill_3ad5fd47cd9b4807bac301e8",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_c300caffb3b045e6a5d6a6cc",
+          "target_uid": "skill_ff91e27d1abf4dc0a4197276",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_acfb348c6e6b4c379ed6029b",
+          "target_uid": "skill_b7323b215c7b4c539407e117",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_cb80816acc1c47bda382b02d",
+          "target_uid": "skill_b7323b215c7b4c539407e117",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_e0f3648f38b94e94b9818f32",
+          "target_uid": "skill_3ad5fd47cd9b4807bac301e8",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_21c682f1afa74e78a9266607",
+          "target_uid": "skill_1cdc9eb7983242beb9a027db",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_501d33de66e24469b25179eb",
+          "target_uid": "skill_c406b515ec92426f85b64143",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_0fb22975c0434f749ef5f483",
+          "target_uid": "skill_18600e3c8deb406d8ab39cf5",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_ff91e27d1abf4dc0a4197276",
+          "target_uid": "skill_cf9d8aaa20154c7092f8902d",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_18600e3c8deb406d8ab39cf5",
+          "target_uid": "skill_1cdc9eb7983242beb9a027db",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_1d5894362d244822bdcd7604",
+          "target_uid": "skill_3ad5fd47cd9b4807bac301e8",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_2d4ae0116f7946af8f59d327",
+          "target_uid": "skill_4f5c4d48d7c842e4a9646550",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_21c682f1afa74e78a9266607",
+          "target_uid": "skill_e98d26f081de4697936818d6",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_5949035b67034bd79577c3a0",
+          "target_uid": "skill_c406b515ec92426f85b64143",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        }
+      ]
+    }
+  ]
+}

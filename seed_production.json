@@ -1,0 +1,500 @@
+{
+  "industries": [
+    {
+      "name": "Production Category",
+      "description": "Skill seed data for the Production category",
+      "skills": [
+        {
+          "uid": "skill_d8fcfa70868c404b8c90bd51",
+          "name": "Production",
+          "label": "Production",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Production"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_cd3832caf3964975aac1ba32",
+          "name": "Production Planning",
+          "label": "Production Planning",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Production Planning"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_291488cfe2024c4bac2ea867",
+          "name": "Scheduling",
+          "label": "Scheduling",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Scheduling"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_dd9f9d158bd34ee8b72ce7ab",
+          "name": "Capacity Planning",
+          "label": "Capacity Planning",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Capacity Planning"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_2d84d53c0c6f481fa387f306",
+          "name": "Lean Manufacturing",
+          "label": "Lean Manufacturing",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Lean Manufacturing"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_b12606d3fcd04bfda10c2dfd",
+          "name": "Six Sigma",
+          "label": "Six Sigma",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Six Sigma"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_a80ade5036434579bb2f4591",
+          "name": "Kaizen",
+          "label": "Kaizen",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Kaizen"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_4623af70158f49f094311f75",
+          "name": "5S",
+          "label": "5S",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "5S"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_5b1a79a77f424e59b8877fd8",
+          "name": "Work Instructions",
+          "label": "Work Instructions",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Work Instructions"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_e91ed28fbd614b32a066024e",
+          "name": "SOP Management",
+          "label": "SOP Management",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "SOP Management"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_b04fd6aa1bf54958a7fc05eb",
+          "name": "OEE",
+          "label": "OEE",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Overall Equipment Effectiveness"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [
+            "OEE"
+          ],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_8954eda1f02f4828ba85cb39",
+          "name": "Line Balancing",
+          "label": "Line Balancing",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Line Balancing"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_d4355ada63d04d2b84cf7c1f",
+          "name": "Bottleneck Analysis",
+          "label": "Bottleneck Analysis",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Bottleneck Analysis"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_97dc7d9eb1354888a406f052",
+          "name": "Inventory Control",
+          "label": "Inventory Control",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Inventory Control"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_04eb69deb1064e2d99de1354",
+          "name": "MRP",
+          "label": "MRP",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Material Requirements Planning"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [
+            "MRP"
+          ],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_a052204334384498b8f289dc",
+          "name": "ERP",
+          "label": "ERP",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "ERP"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_76305de01f9746efb81b952a",
+          "name": "SAP PP",
+          "label": "SAP PP",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "SAP PP"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_8708120a9a804082ad783c15",
+          "name": "MES",
+          "label": "MES",
+          "skill_type": "tool",
+          "high_surface_forms": [
+            "Manufacturing Execution System"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [
+            "MES"
+          ],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_3c3a2796d0754345b4ff3310",
+          "name": "Production KPI Tracking",
+          "label": "Production KPI Tracking",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Production KPI Tracking"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_3c8db48656a44828be12c0e5",
+          "name": "Downtime Analysis",
+          "label": "Downtime Analysis",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Downtime Analysis"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_a3164abffbaf4d94a141c685",
+          "name": "Maintenance Coordination",
+          "label": "Maintenance Coordination",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Maintenance Coordination"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_75af0ce2005c45c5a971c73c",
+          "name": "Changeover Optimization",
+          "label": "Changeover Optimization",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Changeover Optimization"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_b6565f87dd0d4493aeebf9e2",
+          "name": "Yield Optimization",
+          "label": "Yield Optimization",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Yield Optimization"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_735756127a4f4f478b50bf0b",
+          "name": "Throughput Improvement",
+          "label": "Throughput Improvement",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Throughput Improvement"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_b68724df153c45ddb68a45c9",
+          "name": "Shift Management",
+          "label": "Shift Management",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Shift Management"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_7f66ec70e71f4f2989593f64",
+          "name": "Operator Training",
+          "label": "Operator Training",
+          "skill_type": "soft",
+          "high_surface_forms": [
+            "Operator Training"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_15b391c1da954a80a7feeaef",
+          "name": "Cost Reduction",
+          "label": "Cost Reduction",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Cost Reduction"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        },
+        {
+          "uid": "skill_72c357d2d729436b9b9febb7",
+          "name": "Waste Reduction",
+          "label": "Waste Reduction",
+          "skill_type": "domain",
+          "high_surface_forms": [
+            "Waste Reduction"
+          ],
+          "low_surface_forms": [],
+          "abbreviations": [],
+          "confidence_score": 0.9
+        }
+      ],
+      "relationships": [
+        {
+          "source_uid": "skill_cd3832caf3964975aac1ba32",
+          "target_uid": "skill_d8fcfa70868c404b8c90bd51",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_291488cfe2024c4bac2ea867",
+          "target_uid": "skill_cd3832caf3964975aac1ba32",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_dd9f9d158bd34ee8b72ce7ab",
+          "target_uid": "skill_cd3832caf3964975aac1ba32",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_2d84d53c0c6f481fa387f306",
+          "target_uid": "skill_d8fcfa70868c404b8c90bd51",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_b12606d3fcd04bfda10c2dfd",
+          "target_uid": "skill_d8fcfa70868c404b8c90bd51",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_a80ade5036434579bb2f4591",
+          "target_uid": "skill_2d84d53c0c6f481fa387f306",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_4623af70158f49f094311f75",
+          "target_uid": "skill_2d84d53c0c6f481fa387f306",
+          "type": "IS_A",
+          "weight": 0.88,
+          "level": 1,
+          "confidence": 0.9
+        },
+        {
+          "source_uid": "skill_76305de01f9746efb81b952a",
+          "target_uid": "skill_a052204334384498b8f289dc",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_8708120a9a804082ad783c15",
+          "target_uid": "skill_d8fcfa70868c404b8c90bd51",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_b04fd6aa1bf54958a7fc05eb",
+          "target_uid": "skill_3c3a2796d0754345b4ff3310",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_b6565f87dd0d4493aeebf9e2",
+          "target_uid": "skill_d4355ada63d04d2b84cf7c1f",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_735756127a4f4f478b50bf0b",
+          "target_uid": "skill_8954eda1f02f4828ba85cb39",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_75af0ce2005c45c5a971c73c",
+          "target_uid": "skill_291488cfe2024c4bac2ea867",
+          "type": "REQUIRES",
+          "weight": 0.85,
+          "min_level": "intermediate",
+          "is_mandatory": true
+        },
+        {
+          "source_uid": "skill_d8fcfa70868c404b8c90bd51",
+          "target_uid": "skill_cd3832caf3964975aac1ba32",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_291488cfe2024c4bac2ea867",
+          "target_uid": "skill_dd9f9d158bd34ee8b72ce7ab",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_2d84d53c0c6f481fa387f306",
+          "target_uid": "skill_b12606d3fcd04bfda10c2dfd",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_a80ade5036434579bb2f4591",
+          "target_uid": "skill_4623af70158f49f094311f75",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_5b1a79a77f424e59b8877fd8",
+          "target_uid": "skill_e91ed28fbd614b32a066024e",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        },
+        {
+          "source_uid": "skill_b04fd6aa1bf54958a7fc05eb",
+          "target_uid": "skill_8954eda1f02f4828ba85cb39",
+          "type": "RELATED_TO",
+          "weight": 0.78,
+          "relation_type": "similar"
+        }
+      ]
+    }
+  ]
+}
