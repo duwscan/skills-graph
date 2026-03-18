@@ -59,14 +59,14 @@ The NER module should return:
 
 ```mermaid
 graph TD
-    subgraph SkillsGraph["Skills Graph DB (PostgreSQL)"]
-        SK[skills table]
-        AL[skill_aliases table]
-        CL[graph_changelog table]
+    subgraph SkillsGraph["Skills Graph DB (Neo4j)"]
+        SK[(Skill nodes)]
+        AL[(Alias nodes)]
+        CL[(Graph version marker)]
     end
 
     subgraph SyncLayer["Sync Layer"]
-        PG[PostgreSQL LISTEN/NOTIFY<br/>OR Redis pub/sub]
+        PG[Redis pub/sub<br/>OR polling version marker]
         SW[Sync Watcher<br/>polls / subscribes]
         IB[Index Builder<br/>builds new Aho-Corasick]
     end
@@ -90,7 +90,7 @@ graph TD
     end
 
     SkillsGraph -->|load all active skills + aliases| IB
-    CL -->|notify on mutation| PG
+    CL -->|version changed| PG
     PG --> SW
     SW -->|triggers rebuild| IB
     IB -->|atomic hot-swap| IndexLayer
@@ -149,7 +149,7 @@ The automaton is built from every active skill's names and aliases:
 ```
 For each skill WHERE status = 'active':
   - canonical_name (locale: en)
-  - All aliases from skill_aliases WHERE skill_id = skill.id
+  - All aliases connected to that skill in Neo4j
     including all locales (vi-VN, en-US, fr-FR, ...)
 ```
 
@@ -171,20 +171,20 @@ interface SkillEntry {
 
 ```typescript
 async function buildIndex(db: DatabaseClient): Promise<NerIndex> {
-  // 1. Fetch all active skills with their aliases in a single query
+  // 1. Fetch all active skills with aliases in a single Cypher query
   const rows = await db.query(`
-    SELECT
-      s.id          AS skill_id,
-      s.external_id,
-      s.canonical_name,
-      s.embedding,
-      a.surface_form,
-      a.locale,
-      a.source,
-      a.alias_embedding
-    FROM skills s
-    LEFT JOIN skill_aliases a ON a.skill_id = s.id
+    MATCH (s:Skill)
     WHERE s.status = 'active'
+    OPTIONAL MATCH (s)-[:HAS_ALIAS]->(a:Alias)
+    RETURN
+      s.id             AS skill_id,
+      s.external_id    AS external_id,
+      s.canonical_name AS canonical_name,
+      s.embedding      AS embedding,
+      a.surface_form   AS surface_form,
+      a.locale         AS locale,
+      a.source         AS source,
+      a.embedding      AS alias_embedding
     ORDER BY s.id
   `);
 
@@ -202,12 +202,10 @@ async function buildIndex(db: DatabaseClient): Promise<NerIndex> {
   // 3. Build Aho-Corasick automaton from all patterns
   const automaton = new AhoCorasick([...patternMap.keys()]);
 
-  // 4. Snapshot current graph version
-  const { graph_version } = await db.queryOne(
-    `SELECT MAX(graph_version) AS graph_version FROM graph_changelog`
-  );
+  // 4. Snapshot current graph version marker from Neo4j (integer from GraphMeta.version)
+  const graphVersion = await db.getGraphVersion();
 
-  return { automaton, patternMap, graphVersion: graph_version, builtAt: Date.now() };
+  return { automaton, patternMap, graphVersion, builtAt: Date.now() };
 }
 ```
 
@@ -237,20 +235,19 @@ class NerIndexRegistry {
 
 ## 4. Sync Layer — Graph Change Detection
 
-The NER index must be rebuilt whenever the skills-graph is mutated. Three mechanisms are supported, from lowest to highest latency:
+The NER index must be rebuilt whenever the skills-graph is mutated. Two Neo4j-compatible mechanisms are supported:
 
-### 4.1 Mechanism 1 — Polling (Default, Simplest)
+### 4.1 Mechanism 1 — Polling Graph Version (Default, Simplest)
 
-Poll the `graph_changelog` table every **N seconds** (default: 10 s) and compare the latest `graph_version` to the version in the current index.
+Poll a graph version marker every **N seconds** (default: 10 s) and compare it to the version in the current index.  
+The marker can be stored in Neo4j as a singleton node, e.g. `(:GraphMeta { key: "skills_graph", version: 42 })`.
 
 ```typescript
 async function startPollingWatcher(registry: NerIndexRegistry, db: DatabaseClient) {
   setInterval(async () => {
-    const { graph_version } = await db.queryOne(
-      `SELECT MAX(graph_version) AS graph_version FROM graph_changelog`
-    );
-    if (graph_version > registry.get().graphVersion) {
-      console.log(`[NER Sync] Graph changed (v${registry.get().graphVersion} → v${graph_version}), rebuilding index...`);
+    const graphVersion = await db.getGraphVersion(); // e.g. MATCH (m:GraphMeta {key: 'skills_graph'}) RETURN m.version AS version
+    if (graphVersion > registry.get().graphVersion) {
+      console.log(`[NER Sync] Graph changed (v${registry.get().graphVersion} → v${graphVersion}), rebuilding index...`);
       await registry.hotSwap(db);
     }
   }, NER_SYNC_POLL_INTERVAL_MS); // default: 10_000
@@ -259,41 +256,7 @@ async function startPollingWatcher(registry: NerIndexRegistry, db: DatabaseClien
 
 **Trade-off:** Index may be up to `NER_SYNC_POLL_INTERVAL_MS` stale. Suitable for most use cases.
 
-### 4.2 Mechanism 2 — PostgreSQL LISTEN/NOTIFY (Near Real-Time)
-
-A PostgreSQL trigger fires a `NOTIFY ner_graph_changed` event on every insert into `graph_changelog`. The NER service subscribes with a persistent `LISTEN` connection.
-
-```sql
--- Trigger on graph_changelog
-CREATE OR REPLACE FUNCTION notify_ner_on_graph_change()
-RETURNS trigger AS $$
-BEGIN
-  PERFORM pg_notify('ner_graph_changed', NEW.graph_version::text);
-  RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
-
-CREATE TRIGGER trg_ner_graph_change
-AFTER INSERT ON graph_changelog
-FOR EACH ROW EXECUTE FUNCTION notify_ner_on_graph_change();
-```
-
-```typescript
-async function startListenWatcher(registry: NerIndexRegistry, db: DatabaseClient) {
-  const listenClient = await db.getListenConnection();
-  await listenClient.query(`LISTEN ner_graph_changed`);
-  listenClient.on("notification", async (msg) => {
-    const incomingVersion = parseInt(msg.payload!, 10);
-    if (incomingVersion > registry.get().graphVersion) {
-      await registry.hotSwap(db);
-    }
-  });
-}
-```
-
-**Trade-off:** Near-instant propagation (< 100 ms). Requires a dedicated long-lived DB connection.
-
-### 4.3 Mechanism 3 — Redis Pub/Sub (Recommended for Multi-Instance)
+### 4.2 Mechanism 2 — Redis Pub/Sub (Recommended for Multi-Instance)
 
 When any service mutates the graph, it publishes to the `graph:mutated` Redis channel. All NER instances subscribe and rebuild their local index.
 
@@ -314,27 +277,27 @@ sub.on("message", async (channel, message) => {
 
 **Trade-off:** Best for horizontally scaled deployments — all instances receive the event simultaneously.
 
-### 4.4 Recommended Strategy
+### 4.3 Recommended Strategy
 
 | Environment | Mechanism | Rationale |
 |---|---|---|
 | Development / single instance | Polling (10 s) | Zero setup required |
-| Staging / single instance | PostgreSQL LISTEN/NOTIFY | Low latency, no extra infra |
+| Staging / single instance | Redis pub/sub + polling fallback | Low latency with simple operations |
 | Production / multi-instance | Redis pub/sub + polling fallback | Instant propagation + resilience |
 
 ```mermaid
 sequenceDiagram
     participant CM as Graph Mutation API
-    participant PG as PostgreSQL
+    participant NG as Neo4j
     participant RD as Redis
     participant NI as NER Instance(s)
 
-    CM->>PG: INSERT INTO graph_changelog
-    PG-->>CM: OK
+    CM->>NG: Write skill/alias mutation + increment GraphMeta.version
+    NG-->>CM: OK
     CM->>RD: PUBLISH graph:mutated {version: 42}
     RD-->>NI: MESSAGE graph:mutated {version: 42}
-    NI->>PG: Load active skills + aliases
-    PG-->>NI: rows[]
+    NI->>NG: Load active skills + aliases
+    NG-->>NI: rows[]
     NI->>NI: Build new Aho-Corasick automaton
     NI->>NI: Hot-swap index pointer
     NI-->>NI: Index ready (version 42)
@@ -580,7 +543,7 @@ Manually trigger an index rebuild. Protected by admin API key.
 |---|---|---|
 | **Runtime** | Bun + TypeScript | Consistent with existing skills-graph codebase |
 | **Pattern matching** | `aho-corasick-node` or `ahocorasick` npm package | O(n + m) multi-pattern scan; battle-tested |
-| **Graph DB** | PostgreSQL (same as skills-graph) | Single source of truth; no extra infra |
+| **Graph DB** | Neo4j (same as skills-graph) | Single source of truth; no extra infra |
 | **Change notification** | Redis pub/sub (primary) + polling (fallback) | Already in architecture; supports multi-instance |
 | **Embedding (disambiguation)** | `text-embedding-3-large` via Vercel AI SDK | Consistent with extraction pipeline |
 | **API framework** | Hono (consistent with existing `src/`) | Lightweight, Bun-native |
@@ -609,7 +572,7 @@ src/
 | Constant | Default | Description |
 |---|---|---|
 | `NER_SYNC_POLL_INTERVAL_MS` | `10_000` | Polling interval for graph change detection (ms) |
-| `NER_SYNC_MECHANISM` | `"redis_pubsub"` | `"polling"`, `"pg_listen"`, or `"redis_pubsub"` |
+| `NER_SYNC_MECHANISM` | `"redis_pubsub"` | `"polling"` or `"redis_pubsub"` |
 | `NER_EXPANSION_FACTOR` | `0.7` | Confidence multiplier for expanded skill entities |
 | `NER_EXPANSION_CHILD_FACTOR` | `0.5` | Confidence multiplier for child-expanded skills |
 | `NER_MIN_CONFIDENCE_DEFAULT` | `0.8` | Default minimum confidence for returned entities |
@@ -624,7 +587,7 @@ src/
 |---|---|---|
 | **Recognition latency (p50)** | < 0.5 ms | In-memory Aho-Corasick, no I/O |
 | **Recognition latency (p99)** | < 5 ms | Includes rare disambiguation embedding call |
-| **Index build time** | < 500 ms | Single SQL query, batch pattern insertion |
+| **Index build time** | < 500 ms | Single Cypher query, batch pattern insertion |
 | **Index memory footprint** | < 256 MB | For 50K skills / 500K aliases |
 | **Time-to-sync after graph change** | < 100 ms (Redis), < 10 s (polling) | Depends on sync mechanism |
 | **Throughput** | > 10,000 sentences/sec | Stateless, CPU-bound, Bun is fast |
@@ -660,7 +623,7 @@ ab -n 10000 -c 100 -T application/json \
 | **Phase C** | `sync-watcher.ts` — polling watcher + hot-swap | 0.5 day |
 | **Phase D** | `POST /api/ner/recognize` route + Zod validation | 0.5 day |
 | **Phase E** | `disambiguator.ts` — embedding-based homograph resolution | 1 day |
-| **Phase F** | Redis pub/sub watcher, PostgreSQL LISTEN/NOTIFY watcher | 1 day |
+| **Phase F** | Redis pub/sub watcher (+ polling fallback) | 1 day |
 | **Phase G** | Graph expansion integration (reuse extraction pipeline logic) | 0.5 day |
 | **Phase H** | Benchmarking, edge cases, unit tests | 1 day |
 | **Total** | Full NER module | ~6 days |
@@ -681,7 +644,6 @@ ab -n 10000 -c 100 -T application/json \
 - [ ] **Phase E** — Disambiguation uses sentence embedding vs skill embeddings
 - [ ] **Phase E** — Disambiguation only invoked for genuinely ambiguous surface forms
 - [ ] **Phase F** — Redis pub/sub watcher triggers rebuild within 100 ms of graph mutation
-- [ ] **Phase F** — PostgreSQL LISTEN/NOTIFY watcher as alternative
 - [ ] **Phase G** — `expand: true` adds parent/sibling/child skills with reduced confidence
 - [ ] **Phase H** — Unit tests for normalizer, scanner, deduplicator, disambiguator
 - [ ] **Phase H** — Integration test: graph mutation → index rebuild → new skill recognized
