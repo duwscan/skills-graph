@@ -8,7 +8,7 @@ from neo4j import GraphDatabase
 
 import neomodel
 
-from config import get_config
+from core.config import get_config
 
 
 def init_db() -> None:
