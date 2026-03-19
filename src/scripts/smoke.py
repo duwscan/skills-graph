@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from db import ensure_indexes, init_db, test_connection
+from core.db import ensure_indexes, init_db, test_connection
 from models import Skill
 
 
@@ -48,7 +48,7 @@ def main() -> None:
             programming_skill,
             {"weight": 0.9, "level": 1, "confidence": 0.95},
         )
-        print(f"   ✓ Created IS_A relationship: Python -> Programming")
+        print("   ✓ Created IS_A relationship: Python -> Programming")
 
         fetched = Skill.nodes.get(name="Python")
         print(f"   ✓ Fetched skill by name: {fetched.name}")

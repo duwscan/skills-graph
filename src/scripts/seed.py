@@ -10,7 +10,7 @@ from typing import Any, Literal, TypedDict, cast
 
 import neomodel
 
-from db import ensure_indexes, init_db
+from core.db import ensure_indexes, init_db
 from models import Skill
 
 RelationshipType = Literal["IS_A", "REQUIRES", "RELATED_TO"]
@@ -185,9 +185,10 @@ def _collect_seed_files(repo_root: Path, specified_files: list[str]) -> list[Pat
     if specified_files:
         files = [Path(file_name).expanduser() for file_name in specified_files]
     else:
+        seeds_dir = repo_root / "data" / "seeds"
         files = sorted(
             path
-            for path in repo_root.glob("seed*.json")
+            for path in seeds_dir.glob("seed*.json")
             if path.name == "seed.json" or path.name.startswith("seed_")
         )
 
@@ -280,14 +281,14 @@ def _parse_args() -> argparse.Namespace:
         "--file",
         action="append",
         default=[],
-        help="Seed file path to include (can be passed multiple times). Defaults to seed*.json at repo root.",
+        help="Seed file path to include (can be passed multiple times). Defaults to data/seeds/seed*.json.",
     )
     return parser.parse_args()
 
 
 def main() -> None:
     args = _parse_args()
-    repo_root = Path(__file__).resolve().parent
+    repo_root = Path.cwd()
     seed_files = _collect_seed_files(repo_root=repo_root, specified_files=args.file)
     stats = seed_all(seed_files)
     print(
